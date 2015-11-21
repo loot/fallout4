@@ -1,3 +1,8 @@
+common:
+  - &XIncludesY
+    name: '%1%'
+    display: '%1% includes %2%.'
+
 globals:
   - type: say
     content:
@@ -22,4 +27,39 @@ globals:
     subs: [ 'http://forums.bethsoft.com/topic/1557786-rel-loot-thread-21/' ]
 
 plugins:
-  #- name: …
+  - name: 'PipBoyShadows.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/281' ]
+    inc:
+      - 'LongerDistanceLightsNoShadows.esp' # Untested - inc target doesn't include the shadows.
+      - <<: *XIncludesY
+        subs:
+          - 'LongerDistanceLightsWithPipBoyShadows.esp'
+          - 'PipBoyShadows.esp'
+      - <<: *XIncludesY
+        subs:
+          - 'LongerDistanceLightsWithPipBoyShadows - No PipShadows.esp'
+          - 'PipBoyShadows.esp'
+  - name: 'LongerDistanceLightsNoShadows.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/1790' ]
+    inc:
+      - 'PipBoyShadows.esp' # Untested - this plugin doesn't include the shadows
+      - 'LongerDistanceLightsWithPipBoyShadows.esp'
+      - 'LongerDistanceLightsWithPipBoyShadows - No PipShadows.esp'
+  - name: 'LongerDistanceLightsWithPipBoyShadows.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/1790' ]
+    inc:
+      - 'LongerDistanceLightsNoShadows.esp'
+      - 'LongerDistanceLightsWithPipBoyShadows - No PipShadows.esp'
+      - <<: *XIncludesY
+        subs:
+          - 'LongerDistanceLightsWithPipBoyShadows.esp'
+          - 'PipBoyShadows.esp'
+  - name: 'LongerDistanceLightsWithPipBoyShadows - No PipShadows.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/1790' ]
+    inc:
+      - 'LongerDistanceLightsNoShadows.esp'
+      - 'LongerDistanceLightsWithPipBoyShadows.esp'
+      - <<: *XIncludesY
+        subs:
+          - 'LongerDistanceLightsWithPipBoyShadows - No PipShadows.esp'
+          - 'PipBoyShadows.esp'
