@@ -88,3 +88,9 @@ plugins:
       - type: error
         content: 'Realistic Survival Damage.esp alters the same game variables as the Survival X PC/EnemyDamage.esps. You should use either one or the other.'
         condition: 'regex("Survival((90|75|65|50|25|10)LESS|Normal|(10|20|30|40|50|60|70|80|90|100|150|200|250|300|350|400|450|500)more)(PC|Enemy)Damage\.esp")'
+  - name: 'Rainy_(25|50|75|100)\.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/1812' ]
+    msg:
+      - <<: *useOnlyOneX
+        condition: 'many("Rainy_(25|50|75|100)\.esp")'
+        subs: [ 'Rainy_X.esp' ]
