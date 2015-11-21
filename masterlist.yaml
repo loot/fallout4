@@ -1,3 +1,19 @@
+commons:
+# Messages
+  - &useOnlyOneX
+    type: error
+    content:
+      - lang: en
+        str: 'Use only one %1%.'
+      - lang: ru
+        str: 'Используйте только один %1%.'
+      - lang: es
+        str: 'Utilizar solo un %1%.'
+      - lang: ko
+        str: '%1%을 한개만 사용하십시오.'
+      - lang: zh_CN
+        str: '只使用一个%1%。'
+
 globals:
   - type: say
     content:
@@ -50,3 +66,25 @@ plugins:
       - 'LongerDistanceLightsWithPipBoyShadows.esp'
       - name: 'PipBoyShadows.esp'
         display: '"PipBoyShadows.esp" is included in "LongerDistanceLightsWithPipBoyShadows - No PipShadows.esp".'
+  - name: 'Survival((90|75|65|50|25|10)LESS|Normal|(10|20|30|40|50|60|70|80|90|100|150|200)more)PCDamage\.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/222' ]
+    inc:
+      - 'Realistic Survival Damage.esp'
+    msg:
+      - <<: *useOnlyOneX
+        condition: 'many("Survival((90|75|65|50|25|10)LESS|Normal|(10|20|30|40|50|60|70|80|90|100|150|200)more)PCDamage\.esp")'
+        subs: [ 'Survival X PCDamage.esp' ]
+  - name: 'Survival((50|25)LESS|Normal|(50|100|150|200|250|300|350|400|450|500)more)EnemyDamage\.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/222' ]
+    inc:
+      - 'Realistic Survival Damage.esp'
+    msg:
+      - <<: *useOnlyOneX
+        condition: 'many("Survival((50|25)LESS|Normal|(50|100|150|200|250|300|350|400|450|500)more)EnemyDamage\.esp")'
+        subs: [ 'Survival X EnemyDamage.esp' ]
+  - name: 'Realistic Survival Damage.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/333' ]
+    msg:
+      - type: error
+        content: 'Realistic Survival Damage.esp alters the same game variables as the Survival X PC/EnemyDamage.esps. You should use either one or the other.'
+        condition: 'regex("Survival((90|75|65|50|25|10)LESS|Normal|(10|20|30|40|50|60|70|80|90|100|150|200|250|300|350|400|450|500)more)(PC|Enemy)Damage\.esp")'
