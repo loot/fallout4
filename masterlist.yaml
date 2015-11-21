@@ -1,4 +1,4 @@
-commons:
+common:
 # Messages
   - &useOnlyOneX
     type: error
