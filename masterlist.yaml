@@ -94,3 +94,27 @@ plugins:
       - <<: *useOnlyOneX
         condition: 'many("Rainy_(25|50|75|100)\.esp")'
         subs: [ 'Rainy_X.esp' ]
+  - name: 'Ambient Radiation Storms.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/829' ]
+    inc:
+      - 'Strong Radiation Storms.esp'
+      - 'Hardcore Radiation Storms.esp'
+      - 'Deadly Radiation Storms.esp'
+  - name: 'Strong Radiation Storms.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/829' ]
+    inc:
+      - 'Ambient Radiation Storms.esp'
+      - 'Hardcore Radiation Storms.esp'
+      - 'Deadly Radiation Storms.esp'
+  - name: 'Hardcore Radiation Storms.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/829' ]
+    inc:
+      - 'Ambient Radiation Storms.esp'
+      - 'Strong Radiation Storms.esp'
+      - 'Deadly Radiation Storms.esp'
+  - name: 'Deadly Radiation Storms.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/829' ]
+    inc:
+      - 'Ambient Radiation Storms.esp'
+      - 'Strong Radiation Storms.esp'
+      - 'Hardcore Radiation Storms.esp'
