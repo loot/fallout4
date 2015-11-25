@@ -1,4 +1,9 @@
 common:
+# Files
+  - &F4SE
+    name: '..\f4se_loader.exe'
+    display: '[F4SE](http://f4se.silverlock.org)'
+
 # Messages
   - &useOnlyOneX
     type: error
@@ -36,6 +41,33 @@ globals:
       - lang: zh_CN
         str: '[最新的LOOT版本](%1%)。'
     subs: [ 'http://forums.bethsoft.com/topic/1557786-rel-loot-thread-21/' ]
+# F4SE Latest
+  - type: say
+    condition: 'file("..\f4se_loader.exe") and version("..\f4se_loader.exe", "0.0.1.1", <)'
+    content:
+      - lang: en
+        str: 'It appears you do not have the [latest version of F4SE](http://f4se.silverlock.org). Some mods may require functionality added in the latest version of F4SE to work.'
+      - lang: ru
+        str: 'Возможно, что вы используете НЕ [самую последнюю версию F4SE](http://f4se.silverlock.org). Для работы некоторых модов может требоваться функционал, добавленный в последнюю версию F4SE'
+      - lang: es
+        str: 'Parece que no tienes la última versión de F4SE. la nueva versión se puede encontrar [aquí](http://f4se.silverlock.org/).'
+      - lang: ko
+        str: '[F4SE의 최신 버전](http://f4se.silverlock.org)이 설치 되지 않은 것같습니다. 일부 모드가 동작하려면 F4SE의 최신 버전에서 추가된 기능을 필요로 할 수도 있습니다.'
+      - lang: zh_CN
+        str: '你的[F4SE](http://f4se.silverlock.org)似乎不是最新的。有些插件可能需要最新的F4SE才能工作。'
+  - type: say
+    condition: 'not version("..\f4se_loader.exe", "0.0.1.1", <)'
+    content:
+      - lang: en
+        str: 'Your F4SE is up-to-date.'
+      - lang: ru
+        str: 'Ваш F4SE имеет последнюю версию.'
+      - lang: es
+        str: 'Tienes la última versión de F4SE'
+      - lang: ko
+        str: 'F4SE가 최신버전입니다.'
+      - lang: zh_CN
+        str: '你的F4SE是最新的。'
 
 plugins:
   - name: 'PipBoyShadows.esp'
