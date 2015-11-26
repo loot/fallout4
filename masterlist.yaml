@@ -132,3 +132,7 @@ plugins:
       - <<: *useOnlyOneX
         condition: 'many("(Ambient|Strong|Hardcore|Deadly) Radiation Storms\.esp")'
         subs: [ 'Hardcore Radiation Storm .esp' ]
+  - name: 'Simple Bug Fixes - Better Item Sorting Patch.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/2142' ]
+    after:
+      - 'Simple Bug Fixes.esp'
