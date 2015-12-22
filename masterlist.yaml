@@ -140,71 +140,59 @@ plugins:
   - name: 'DarkerNights-TrueStorms-LITE-Audio.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/191' ]
     after:
-      # Place DarkerNights-TrueStorms-LITE-Audio.esp after TrueStormsFO4-LITE-Audio.esp
-      # to ensure the magic of Darker Nights is applied to WTHR records modified by the True Storms LITE Audio addon
+      # Ensure the magic of Darker Nights is applied to WTHR records modified by the True Storms LITE Audio addon
       - 'TrueStormsFO4-LITE-Audio.esp'
     msg:
-      # Display a warning when Darker Nights patch for True Storms LITE Audio addon is NOT used along with the True Storms LITE Audio addon
       - type: warn
-        content: 'When plugin ''TrueStormsFO4-LITE-Audio.esp'' is **NOT** active plugin ''DarkerNights-TrueStorms.esp'' should be used instead. TIP: Reinstall the **Darker Nights for True Storms** patch and select the option which matches your True Storms mod installation.'
+        content: 'This plugin does not match the active True Storms plugins. Reinstall the **Darker Nights for True Storms** patch and select the option which matches your True Storms installation.'
         lang: eng
         condition: 'not(active("TrueStormsFO4-LITE-Audio.esp")) and active("DarkerNights-TrueStorms-LITE-Audio.esp")'
     inc:
-      # Indicate file DarkerNights-TrueStorms-LITE-Audio.esp and DarkerNights-TrueStorms.esp should not be used together
       - 'DarkerNights-TrueStorms.esp'
 
   - name: 'DarkerNights-TrueStorms.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/191' ]
     msg:
-      # Display a warning when Darker Nights patch for True Storms STANDARD is used along with the True Storms LITE Audio addon
       - type: warn
-        content: 'When plugin ''TrueStormsFO4-LITE-Audio.esp'' is active plugin ''DarkerNights-TrueStorms-LITE-Audio.esp'' should be used instead. TIP: Reinstall the **Darker Nights for True Storms** patch and select the option which matches your True Storms mod installation.'
+        content: 'This plugin does not match the active True Storms plugins. Reinstall the **Darker Nights for True Storms** patch and select the option which matches your True Storms installation.'
         lang: eng
         condition: 'active("TrueStormsFO4-LITE-Audio.esp") and active("DarkerNights-TrueStorms.esp")'
+    inc:
+      - 'DarkerNights-TrueStorms-LITE-Audio.esp'
 
   - name: 'TrueStormsFO4.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/4472' ]
     after:
-      # Place TrueStormsFO4.esp after DarkerNights.esp
-      # This is the order in which masters appear in the Darker Nights patches
       - 'DarkerNights.esp'
     msg:
-      # Display a message when none of the Darker Nights patches is not used
       - type: say
-        content: 'This plugin conflicts with plugin ''DarkerNights.esp''. TIP: Install and activate the appropriate Darker Nights patch.'
+        content: 'This plugin conflicts with plugin ''DarkerNights.esp''. Install and activate the appropriate Darker Nights patch.'
         lang: eng
         condition: 'active("TrueStormsFO4.esp") and active("DarkerNights.esp") and not active("DarkerNights-TrueStorms.esp") and not active("DarkerNights-TrueStorms-LITE-Audio.esp")'
 
   - name: 'TrueStormsFO4-LITE-Audio.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/4472' ]
     after:
-      # Place TrueStormsFO4-LITE-Audio.esp after DarkerNights-TrueStorms.esp (in the event they are used together - which is not correct)
-      # to ensure the WTHR record changes brought by the True Storms LITE Audio addon are not overwritten by the Darker Nights patch intended for the STANDARD version of True Storms only
+      # Ensure the WTHR record changes brought by the True Storms LITE Audio addon are not overwritten by the Darker Nights patch which is intended for the STANDARD version of True Storms only
       # Note: Conflicting WTHR records will not be darkened but that is the guaranteed "lesser evil".
       - 'DarkerNights-TrueStorms.esp'
 
   - name: 'FogOut.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/2428' ]
     after:
-      # Place FogOut.esp after DarkerNights.esp
-      # This is the order in which masters appear in the Darker Nights patches
       - 'DarkerNights.esp'
     msg:
-      # Display a message when Darker Nights patch is not used
       - type: say
-        content: 'This plugin conflicts with plugin ''DarkerNights.esp''. TIP: Install and activate the appropriate Darker Nights patch.'
+        content: 'This plugin conflicts with plugin ''DarkerNights.esp''. Install and activate the appropriate Darker Nights patch.'
         lang: eng
         condition: 'active("FogOut.esp") and active("DarkerNights.esp") and not active("DarkerNights-FogOut.esp")'
 
   - name: 'Radiant Clouds and Fogs.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/735' ]
     after:
-      # Place 'Radiant Clouds and Fogs.esp' after DarkerNights.esp
-      # This is the order in which masters appear in the Darker Nights patches
       - 'DarkerNights.esp'
     msg:
-      # Display a message when Darker Nights patch is not used
       - type: say
-        content: 'This plugin conflicts with plugin ''DarkerNights.esp''. TIP: Install and activate the appropriate Darker Nights patch.'
+        content: 'This plugin conflicts with plugin ''DarkerNights.esp''. Install and activate the appropriate Darker Nights patch.'
         lang: eng
         condition: 'active("Radiant Clouds and Fogs.esp") and active("DarkerNights.esp") and not active("DarkerNights-Radiant.esp")'
