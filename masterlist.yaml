@@ -19,6 +19,12 @@ common:
       - lang: zh_CN
         str: '只使用一个%1%。'
 
+  - &patchAvailable
+    type: say
+    content:
+      - lang: en
+        str: 'This plugin conflicts with plugin "%1%", however a patch is available.'
+
 globals:
   - type: say
     content:
@@ -145,7 +151,7 @@ plugins:
     msg:
       - type: warn
         content: 'This plugin does not match the active True Storms plugins. Reinstall the **Darker Nights for True Storms** patch and select the option which matches your True Storms installation.'
-        lang: eng
+        lang: en
         condition: 'not(active("TrueStormsFO4-LITE-Audio.esp")) and active("DarkerNights-TrueStorms-LITE-Audio.esp")'
     inc:
       - 'DarkerNights-TrueStorms.esp'
@@ -155,7 +161,7 @@ plugins:
     msg:
       - type: warn
         content: 'This plugin does not match the active True Storms plugins. Reinstall the **Darker Nights for True Storms** patch and select the option which matches your True Storms installation.'
-        lang: eng
+        lang: en
         condition: 'active("TrueStormsFO4-LITE-Audio.esp") and active("DarkerNights-TrueStorms.esp")'
     inc:
       - 'DarkerNights-TrueStorms-LITE-Audio.esp'
@@ -165,9 +171,8 @@ plugins:
     after:
       - 'DarkerNights.esp'
     msg:
-      - type: say
-        content: 'This plugin conflicts with plugin ''DarkerNights.esp''. Install and activate the appropriate Darker Nights patch.'
-        lang: eng
+      - <<: *patchAvailable
+        subs: [ 'DarkerNights.esp' ]
         condition: 'active("TrueStormsFO4.esp") and active("DarkerNights.esp") and not active("DarkerNights-TrueStorms.esp") and not active("DarkerNights-TrueStorms-LITE-Audio.esp")'
 
   - name: 'TrueStormsFO4-LITE-Audio.esp'
@@ -182,9 +187,8 @@ plugins:
     after:
       - 'DarkerNights.esp'
     msg:
-      - type: say
-        content: 'This plugin conflicts with plugin ''DarkerNights.esp''. Install and activate the appropriate Darker Nights patch.'
-        lang: eng
+      - <<: *patchAvailable
+        subs: [ 'DarkerNights.esp' ]
         condition: 'active("FogOut.esp") and active("DarkerNights.esp") and not active("DarkerNights-FogOut.esp")'
 
   - name: 'Radiant Clouds and Fogs.esp'
@@ -192,7 +196,6 @@ plugins:
     after:
       - 'DarkerNights.esp'
     msg:
-      - type: say
-        content: 'This plugin conflicts with plugin ''DarkerNights.esp''. Install and activate the appropriate Darker Nights patch.'
-        lang: eng
+      - <<: *patchAvailable
+        subs: [ 'DarkerNights.esp' ]
         condition: 'active("Radiant Clouds and Fogs.esp") and active("DarkerNights.esp") and not active("DarkerNights-Radiant.esp")'
