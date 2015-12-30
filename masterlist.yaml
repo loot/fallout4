@@ -5,6 +5,19 @@ common:
     display: '[F4SE](http://f4se.silverlock.org)'
 
 # Messages
+  - &obsolete
+    type: say
+    content:
+      - lang: en
+        str: 'Obsolete. Update to latest version.'
+      - lang: ru
+        str: 'Устарело. Обновите до последней версии.'
+      - lang: es
+        str: 'Obsoleto. Actualizar a la última versión.'
+      - lang: ko
+        str: '사용되지 않습니다. 최신 버전으로 업데이트하십시오.'
+      - lang: zh_CN
+        str: '已过时。请升级到最新版本。'
   - &useOnlyOneX
     type: error
     content:
@@ -142,6 +155,16 @@ plugins:
     url: [ 'http://www.nexusmods.com/fallout4/mods/2142' ]
     after:
       - 'Simple Bug Fixes.esp'
+  - name: 'NoGunSneakAttackMultiplier.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/2114' ]
+    msg:
+      - <<: *obsolete
+        condition: 'version("NoGunSneakAttackMultiplier.esp", "1.1", <)'
+  - name: 'Freso''s TTYM - Think to Yourself Messages for FO4.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/2955' ]
+    msg:
+      - <<: *obsolete
+        condition: 'version("Freso''s TTYM - Think to Yourself Messages for FO4.esp", "0.3", <)'
 
   - name: 'DarkerNights-TrueStorms-LITE-Audio.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/191' ]
