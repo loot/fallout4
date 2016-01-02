@@ -19,7 +19,7 @@ common:
       - lang: zh_CN
         str: '已过时。请升级到最新版本。'
   - &useOnlyOneX
-    type: error
+    type: warn
     content:
       - lang: en
         str: 'Use only one %1%.'
