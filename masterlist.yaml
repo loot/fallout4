@@ -214,6 +214,21 @@ plugins:
     msg:
       - <<: *obsolete
         condition: 'version("Freso''s TTYM - Think to Yourself Messages for FO4.esp", "0.3", <)'
+  - name: 'ShaikujinSettlementAttacked.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/4106' ]
+    inc:
+      - 'ShaikujinSettlementAttacked_NoInfo.esp'
+      - 'ChimeAttack.esp'
+  - name: 'ShaikujinSettlementAttacked_NoInfo.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/4106' ]
+    inc:
+      - 'ShaikujinSettlementAttacked.esp'
+      - 'ChimeAttack.esp'
+  - name: 'ChimeAttack.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/4106' ]
+    inc:
+      - 'ShaikujinSettlementAttacked.esp'
+      - 'ShaikujinSettlementAttacked_NoInfo.esp'
 
   - name: 'DarkerNights-TrueStorms-LITE-Audio.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/191' ]
