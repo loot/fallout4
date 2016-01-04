@@ -163,14 +163,16 @@ plugins:
       - <<: *useOnlyOneX
         condition: 'many("(Higher|Deeper) Female Protagonist Voice (\((Japanese|Spanish|French|German)\) )?- Type [A-U]\d?\.esp")'
         subs: [ 'Higher or Deeper Female Protagonist Voice plugin' ]
-  - name: '(Deeper|Higher) Male Protagonist Voice (\(Spanish\) )?- Type [A-U]\d?\.esp'
+  - name: '(Deeper|Higher) Male Protagonist Voice (\((Japanese|Spanish)\) )?- Type [A-U]\d?\.esp'
     url:
       - 'http://www.nexusmods.com/fallout4/mods/1597' # Deeper
+      - 'http://www.nexusmods.com/fallout4/mods/7443' # Deeper, Japanese
       - 'http://www.nexusmods.com/fallout4/mods/3249' # Higher
+      - 'http://www.nexusmods.com/fallout4/mods/7535' # Higher, Japanese
       - 'http://www.nexusmods.com/fallout4/mods/7158' # Higher, Spanish
     msg:
       - <<: *useOnlyOneX
-        condition: 'many("(Deeper|Higher) Male Protagonist Voice (\(Spanish\) )?- Type [A-U]\d?\.esp")'
+        condition: 'many("(Deeper|Higher) Male Protagonist Voice (\((Japanese|Spanish)\) )?- Type [A-U]\d?\.esp")'
         subs: [ 'Deeper or Higher Male Protagonist Voice plugin' ]
   - name: 'Higher Voice For Curie (\((Japanese)\) )?- Type [A-U]\d(-(R|S))?\.esp'
     url:
