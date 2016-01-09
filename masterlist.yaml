@@ -154,11 +154,12 @@ plugins:
   - name: '(Higher|Deeper) Female Protagonist Voice (\((Japanese|Spanish|French|German)\) )?- Type [A-U]\d?\.esp'
     url:
       - 'http://www.nexusmods.com/fallout4/mods/288' # Higher
-      - 'http://www.nexusmods.com/fallout4/mods/5088' # Deeper
       - 'http://www.nexusmods.com/fallout4/mods/6305' # Higher, Japanese
       - 'http://www.nexusmods.com/fallout4/mods/5571' # Higher, Spanish
       - 'http://www.nexusmods.com/fallout4/mods/4244' # Higher, French
       - 'http://www.nexusmods.com/fallout4/mods/7299' # Higher, German
+      - 'http://www.nexusmods.com/fallout4/mods/5088' # Deeper
+      - 'http://www.nexusmods.com/fallout4/mods/7650' # Deeper, Japanese
     msg:
       - <<: *useOnlyOneX
         condition: 'many("(Higher|Deeper) Female Protagonist Voice (\((Japanese|Spanish|French|German)\) )?- Type [A-U]\d?\.esp")'
@@ -202,6 +203,18 @@ plugins:
       - <<: *useOnlyOneX
         condition: 'many("Deeper Voice For Super Mutants - Type A\d\.esp")'
         subs: [ 'Deeper Voice For Super Mutants plugin' ]
+  - name: 'Deeper Voice For Preston - Type A\d\.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/7701' ]
+    msg:
+      - <<: *useOnlyOneX
+        condition: 'many("Deeper Voice For Preston - Type A\d\.esp")'
+        subs: [ 'Deeper Voice For Preston plugin' ]
+  - name: 'Deeper Voice For X6-88 - Type A\d\.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/7712' ]
+    msg:
+      - <<: *useOnlyOneX
+        condition: 'many("Deeper Voice For X6-88 - Type A\d\.esp")'
+        subs: [ 'Deeper Voice For X6-88 plugin' ]
   - name: 'Simple Bug Fixes - Better Item Sorting Patch.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/2142' ]
     after:
