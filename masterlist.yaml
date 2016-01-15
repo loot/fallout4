@@ -31,7 +31,17 @@ common:
         str: '%1%을 한개만 사용하십시오.'
       - lang: zh_CN
         str: '只使用一个%1%。'
-
+  - &doNotClean
+    type: say
+    content:
+      - lang: en
+        str: 'Do not clean ITM records, they are intentional and required for the mod to function. It is safe to undelete records, but do not do anything other than that.'
+      - lang: ru
+        str: 'Не очищать. "Грязные" правки оставлены специально и требуются для функционирования мода.'
+      - lang: es
+        str: 'No limpiar las referencias ITM (iguales al master), ya que son intencionales y necesarias para que el Mod funcione. Sí es seguro restaurar las UDR (referencias borradas), pero no haga más que eso.'
+      - lang: zh_CN
+        str: '不干净。"脏"数据是故意的，这是mod需要的功能。'
   - &patchAvailable
     type: say
     content:
@@ -244,7 +254,6 @@ plugins:
     inc:
       - 'ShaikujinSettlementAttacked.esp'
       - 'ShaikujinSettlementAttacked_NoInfo.esp'
-
   - name: 'DarkerNights-TrueStorms-LITE-Audio.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/191' ]
     after:
@@ -257,7 +266,6 @@ plugins:
         condition: 'not(active("TrueStormsFO4-LITE-Audio.esp")) and active("DarkerNights-TrueStorms-LITE-Audio.esp")'
     inc:
       - 'DarkerNights-TrueStorms.esp'
-
   - name: 'DarkerNights-TrueStorms.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/191' ]
     msg:
@@ -267,7 +275,6 @@ plugins:
         condition: 'active("TrueStormsFO4-LITE-Audio.esp") and active("DarkerNights-TrueStorms.esp")'
     inc:
       - 'DarkerNights-TrueStorms-LITE-Audio.esp'
-
   - name: 'TrueStormsFO4.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/4472' ]
     after:
@@ -276,14 +283,12 @@ plugins:
       - <<: *patchAvailable
         subs: [ 'DarkerNights.esp' ]
         condition: 'active("TrueStormsFO4.esp") and active("DarkerNights.esp") and not active("DarkerNights-TrueStorms.esp") and not active("DarkerNights-TrueStorms-LITE-Audio.esp")'
-
   - name: 'TrueStormsFO4-LITE-Audio.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/4472' ]
     after:
       # Ensure the WTHR record changes brought by the True Storms LITE Audio addon are not overwritten by the Darker Nights patch which is intended for the STANDARD version of True Storms only
       # Note: Conflicting WTHR records will not be darkened but that is the guaranteed "lesser evil".
       - 'DarkerNights-TrueStorms.esp'
-
   - name: 'FogOut.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/2428' ]
     after:
@@ -292,7 +297,6 @@ plugins:
       - <<: *patchAvailable
         subs: [ 'DarkerNights.esp' ]
         condition: 'active("FogOut.esp") and active("DarkerNights.esp") and not active("DarkerNights-FogOut.esp")'
-
   - name: 'Radiant Clouds and Fogs.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/735' ]
     after:
@@ -301,3 +305,6 @@ plugins:
       - <<: *patchAvailable
         subs: [ 'DarkerNights.esp' ]
         condition: 'active("Radiant Clouds and Fogs.esp") and active("DarkerNights.esp") and not active("DarkerNights-Radiant.esp")'
+  - name: 'Scrap Everything.esp'
+    msg: [ *doNotClean ]
+    url: [ 'http://www.nexusmods.com/fallout4/mods/5320' ]
