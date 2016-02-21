@@ -99,6 +99,12 @@ globals:
         str: '你的F4SE是最新的。'
 
 plugins:
+  - name: 'SettlementKeywords.esm'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/7259' ]
+    priority: -400998000
+  - name: 'ArmorKeywords.esm'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/6091' ]
+    priority: -400998000
   - name: 'PipBoyShadows.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/281' ]
     inc:
