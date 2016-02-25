@@ -85,7 +85,7 @@ globals:
     subs: [ 'https://loot.github.io/latest-thread/' ]
 # F4SE Latest
   - type: say
-    condition: 'file("..\f4se_loader.exe") and version("..\f4se_loader.exe", "0.0.1.1", <)'
+    condition: 'file("..\f4se_loader.exe") and version("..\f4se_loader.exe", "0.0.1.5", <)'
     content:
       - lang: en
         str: 'It appears you do not have the [latest version of F4SE](http://f4se.silverlock.org). Some mods may require functionality added in the latest version of F4SE to work.'
@@ -98,7 +98,7 @@ globals:
       - lang: zh_CN
         str: '你的[F4SE](http://f4se.silverlock.org)似乎不是最新的。有些插件可能需要最新的F4SE才能工作。'
   - type: say
-    condition: 'not version("..\f4se_loader.exe", "0.0.1.1", <)'
+    condition: 'not version("..\f4se_loader.exe", "0.0.1.5", <)'
     content:
       - lang: en
         str: 'Your F4SE is up-to-date.'
