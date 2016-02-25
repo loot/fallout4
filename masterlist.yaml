@@ -18,6 +18,19 @@ common:
         str: '사용되지 않습니다. 최신 버전으로 업데이트하십시오.'
       - lang: zh_CN
         str: '已过时。请升级到最新版本。'
+  - &AlreadyInX
+    type: error
+    content:
+      - lang: en
+        str: 'Delete. Already included in %1%.'
+      - lang: ru
+        str: 'Удалите. Уже включено в %1%.'
+      - lang: es
+        str: 'Borrar. Esta incluido en %1%.'
+      - lang: ko
+        str: '삭제하십시오. 이미 %1%에 포함되어 있습니다.'
+      - lang: zh_CN
+        str: '删除。已包含在%1%中。'
   - &useOnlyOneX
     type: warn
     content:
@@ -314,3 +327,9 @@ plugins:
   - name: 'Scrap Everything.esp'
     msg: [ *doNotClean ]
     url: [ 'http://www.nexusmods.com/fallout4/mods/5320' ]
+  - name: 'Synth Armor Fix.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/6424' ]
+    msg:
+      - <<: *AlreadyInX
+        condition: 'active("ArmorKeywords.esm")'
+        subs: [ 'ArmorKeywords.esm' ]
