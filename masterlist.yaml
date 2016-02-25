@@ -244,6 +244,18 @@ plugins:
       - <<: *useOnlyOneX
         condition: 'many("Deeper Voice For Cait - Type A\d\.esp")'
         subs: [ 'Deeper Voice For Cait plugin' ]
+  - name: 'DeadlyRadstorms_Climate_\d+\.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/829' ]
+    msg:
+      - <<: *useOnlyOneX
+        condition: 'many("DeadlyRadstorms_Climate_\d+\.esp")'
+        subs: [ 'DeadlyRadstorms_Climate .esp' ]
+  - name: 'DeadlyRadstorms_Damage_\d+\.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/829' ]
+    msg:
+      - <<: *useOnlyOneX
+        condition: 'many("DeadlyRadstorms_Damage_\d+\.esp")'
+        subs: [ 'DeadlyRadstorms_Damage .esp' ]
   - name: 'Simple Bug Fixes - Better Item Sorting Patch.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/2142' ]
     after:
