@@ -375,3 +375,9 @@ plugins:
       - <<: *AlreadyInX
         condition: 'active("ArmorKeywords.esm")'
         subs: [ 'ArmorKeywords.esm' ]
+  - name: 'WET Clearer.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/244' ]
+    inc: [ 'WET Murkier.esp' ]
+  - name: 'WET Murkier.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/244' ]
+    inc: [ 'WET Clearer.esp' ]
