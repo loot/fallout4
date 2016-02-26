@@ -110,6 +110,11 @@ globals:
         str: 'F4SE가 최신버전입니다.'
       - lang: zh_CN
         str: '你的F4SE是最新的。'
+  - type: error
+    condition: '(version("..\f4se_loader.exe", "0.0.1.5", ==) and not version("..\Fallout4.exe", "1.3.47.0", ==)) or (version("..\f4se_loader.exe", "0.0.1.6", ==) and not version("..\Fallout4.exe", "1.4.125.0", ==))'
+    content:
+      - lang: en
+        str: 'Your version of F4SE is not compatible with your version of Fallout 4.'
 
 plugins:
   - name: 'PipBoyShadows.esp'
