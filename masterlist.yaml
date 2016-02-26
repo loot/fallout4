@@ -60,6 +60,20 @@ common:
     content:
       - lang: en
         str: 'This plugin conflicts with plugin "%1%", however a patch is available.'
+  - &requireF4SE
+    type: error
+    content:
+      - lang: en
+        str: 'You have installed %1% but F4SE not found! See F4SE download page: [F4SE](http://f4se.silverlock.org).'
+      - lang: ru
+        str: 'У вас установлен %1%, но F4SE не найден! Смотрите страницу загрузки [F4SE](http://f4se.silverlock.org).'
+      - lang: es
+        str: 'Tienes %1% instalado pero F4SE no se pudo encontrar! Por favor descarga F4SE: [F4SE](http://f4se.silverlock.org)'
+      - lang: ko
+        str: '%1%가 설치되었지만 F4SE를 찾을 수 없습니다! F4SE 다운로드 페이지를 참조하십시오: [F4SE](http://f4se.silverlock.org).'
+      - lang: zh_CN
+        str: '你已经安装了%1%，但是未发现F4SE！请查看F4SE的下载页面：[F4SE](http://f4se.silverlock.org)。'
+
 
 globals:
   - type: say
@@ -83,6 +97,17 @@ globals:
       - lang: zh_CN
         str: '[最新的LOOT版本](%1%)。'
     subs: [ 'https://loot.github.io/latest-thread/' ]
+# F4SE plugin versions
+  - <<: *requireF4SE
+    subs: [ 'Place Everywhere' ]
+    condition: 'file("F4SE\Plugins\place.dll") and not file("..\f4se_loader.exe")'
+  - type: error
+    content:
+      - lang: en
+        str: 'Your installed version of Place Everywhere is not compatible with your version of Fallout 4.'
+    # 0x78374099: v1.9.4 for FO4 1.3.47
+    # 0x95eab074: v1.9.4 for FO4 1.4.125
+    condition: '(checksum("F4SE\Plugins\place.dll", 78374099) and not version("..\Fallout4.exe", "1.3.47.0", ==)) or (checksum("F4SE\Plugins\place.dll", 95eab074) and not version("..\Fallout4.exe", "1.4.125.0", ==))'
 # F4SE Latest
   - type: say
     condition: 'file("..\f4se_loader.exe") and version("..\f4se_loader.exe", "0.0.1.5", <)'
