@@ -97,17 +97,6 @@ globals:
       - lang: zh_CN
         str: '[最新的LOOT版本](%1%)。'
     subs: [ 'https://loot.github.io/latest-thread/' ]
-# F4SE plugin versions
-  - <<: *requireF4SE
-    subs: [ 'Place Everywhere' ]
-    condition: 'file("F4SE\Plugins\place.dll") and not file("..\f4se_loader.exe")'
-  - type: error
-    content:
-      - lang: en
-        str: 'Your installed version of Place Everywhere is not compatible with your version of Fallout 4.'
-    # 0x78374099: v1.9.3 for FO4 1.3.47
-    # 0x95eab074: v1.9.3 for FO4 1.4.125
-    condition: '(checksum("F4SE\Plugins\place.dll", 78374099) and not version("..\Fallout4.exe", "1.3.47.0", ==)) or (checksum("F4SE\Plugins\place.dll", 95eab074) and not version("..\Fallout4.exe", "1.4.125.0", ==))'
 # F4SE Latest
   - type: say
     condition: 'file("..\f4se_loader.exe") and version("..\f4se_loader.exe", "0.0.1.5", <)'
@@ -140,6 +129,17 @@ globals:
     content:
       - lang: en
         str: 'Your version of F4SE is not compatible with your version of Fallout 4.'
+# F4SE plugins
+  - <<: *requireF4SE
+    subs: [ 'Place Everywhere' ]
+    condition: 'file("F4SE\Plugins\place.dll") and not file("..\f4se_loader.exe")'
+  - type: error
+    content:
+      - lang: en
+        str: 'Your installed version of Place Everywhere is not compatible with your version of Fallout 4.'
+    # 0x78374099: v1.9.3 for FO4 1.3.47
+    # 0x95eab074: v1.9.3 for FO4 1.4.125
+    condition: '(checksum("F4SE\Plugins\place.dll", 78374099) and not version("..\Fallout4.exe", "1.3.47.0", ==)) or (checksum("F4SE\Plugins\place.dll", 95eab074) and not version("..\Fallout4.exe", "1.4.125.0", ==))'
 
 plugins:
   - name: 'PipBoyShadows.esp'
