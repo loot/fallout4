@@ -139,8 +139,9 @@ globals:
         str: 'Your installed version of Place Everywhere is not compatible with your version of Fallout 4.'
     # 0x78374099: v1.9.3 for FO4 1.3.47
     # 0x988580db: v1.10.0 for FO4 1.3.47
+    # 0x6a0dbf55: v1.11.0 for FO4 1.3.47
     # 0x95eab074: v1.9.3 for FO4 1.4.125
-    condition: '((checksum("F4SE\Plugins\place.dll", 78374099) or checksum("F4SE\Plugins\place.dll", 988580db)) and not version("..\Fallout4.exe", "1.3.47.0", ==)) or (checksum("F4SE\Plugins\place.dll", 95eab074) and not version("..\Fallout4.exe", "1.4.125.0", ==))'
+    condition: '((checksum("F4SE\Plugins\place.dll", 78374099) or checksum("F4SE\Plugins\place.dll", 988580db) or checksum("F4SE\Plugins\place.dll", 6a0dbf55)) and not version("..\Fallout4.exe", "1.3.47.0", ==)) or (checksum("F4SE\Plugins\place.dll", 95eab074) and not version("..\Fallout4.exe", "1.4.125.0", ==))'
 
 plugins:
   - name: 'PipBoyShadows.esp'
