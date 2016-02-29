@@ -239,14 +239,15 @@ plugins:
       - <<: *useOnlyOneX
         condition: 'many("Higher Voice For Curie (\(Japanese\) )?- Type [A-U]\d(-(R|S))?\.esp")'
         subs: [ 'Higher Voice For Curie plugin' ]
-  - name: 'Higher Voice For Piper (\(Japanese\) )?- Type [A-U]\d\.esp'
+  - name: '(Higher|Deeper) Voice For Piper (\(Japanese\) )?- Type [A-U]\d\.esp'
     url:
-      - 'http://www.nexusmods.com/fallout4/mods/6560' # English
-      - 'http://www.nexusmods.com/fallout4/mods/6492' # Japanese
+      - 'http://www.nexusmods.com/fallout4/mods/6560' # Higher, English
+      - 'http://www.nexusmods.com/fallout4/mods/6492' # Higher, Japanese
+      - 'http://www.nexusmods.com/fallout4/mods/8659' # Deeper, English
     msg:
       - <<: *useOnlyOneX
-        condition: 'many("Higher Voice For Piper - Type [A-U]\d\.esp")'
-        subs: [ 'Higher Voice For Piper plugin' ]
+        condition: 'many("(Higher|Deeper) Voice For Piper - Type [A-U]\d\.esp")'
+        subs: [ 'Higher/Deeper Voice For Piper plugin' ]
   - name: 'Deeper Voice For Strong - Type A\d\.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/3876' ]
     msg:
@@ -271,12 +272,14 @@ plugins:
       - <<: *useOnlyOneX
         condition: 'many("Deeper Voice For X6-88 - Type A\d\.esp")'
         subs: [ 'Deeper Voice For X6-88 plugin' ]
-  - name: 'Deeper Voice For Cait - Type A\d\.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/8634' ]
+  - name: '(Higher|Deeper) Voice For Cait - Type A\d\.esp'
+    url:
+      - 'http://www.nexusmods.com/fallout4/mods/6743' # Higher
+      - 'http://www.nexusmods.com/fallout4/mods/8634' # Deeper
     msg:
       - <<: *useOnlyOneX
-        condition: 'many("Deeper Voice For Cait - Type A\d\.esp")'
-        subs: [ 'Deeper Voice For Cait plugin' ]
+        condition: 'many("(Higher|Deeper) Voice For Cait - Type A\d\.esp")'
+        subs: [ 'Higher/Deeper Voice For Cait plugin' ]
   - name: 'DeadlyRadstorms_Climate_\d+\.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/829' ]
     msg:
