@@ -97,6 +97,17 @@ globals:
       - lang: zh_CN
         str: '[最新的LOOT版本](%1%)。'
     subs: [ 'https://loot.github.io/latest-thread/' ]
+# Fallout 4 latest
+  - type: say
+    condition: 'file("..\Fallout4.exe") and version("..\Fallout4.exe", "1.4.132.0", <)'
+    content:
+      - lang: en
+        str: 'It appears you do not have the latest version of Fallout 4.'
+  - type: say
+    condition: 'not version("..\Fallout4.exe", "1.4.132.0", <)'
+    content:
+      - lang: en
+        str: 'Your Fallout 4 is up-to-date.'
 # F4SE Latest
   - type: say
     condition: 'file("..\f4se_loader.exe") and version("..\f4se_loader.exe", "0.0.1.8", <)'
