@@ -99,7 +99,7 @@ globals:
     subs: [ 'https://loot.github.io/latest-thread/' ]
 # F4SE Latest
   - type: say
-    condition: 'file("..\f4se_loader.exe") and version("..\f4se_loader.exe", "0.0.1.5", <)'
+    condition: 'file("..\f4se_loader.exe") and version("..\f4se_loader.exe", "0.0.1.8", <)'
     content:
       - lang: en
         str: 'It appears you do not have the [latest version of F4SE](http://f4se.silverlock.org). Some mods may require functionality added in the latest version of F4SE to work.'
@@ -112,7 +112,7 @@ globals:
       - lang: zh_CN
         str: '你的[F4SE](http://f4se.silverlock.org)似乎不是最新的。有些插件可能需要最新的F4SE才能工作。'
   - type: say
-    condition: 'not version("..\f4se_loader.exe", "0.0.1.5", <)'
+    condition: 'not version("..\f4se_loader.exe", "0.0.1.8", <)'
     content:
       - lang: en
         str: 'Your F4SE is up-to-date.'
@@ -125,7 +125,7 @@ globals:
       - lang: zh_CN
         str: '你的F4SE是最新的。'
   - type: error
-    condition: '(version("..\f4se_loader.exe", "0.0.1.5", ==) and not version("..\Fallout4.exe", "1.3.47.0", ==)) or (version("..\f4se_loader.exe", "0.0.1.6", ==) and not version("..\Fallout4.exe", "1.4.125.0", ==)) or (version("..\f4se_loader.exe", "0.0.1.7", ==) and not version("..\Fallout4.exe", "1.4.131.0", ==))'
+    condition: '(version("..\f4se_loader.exe", "0.0.1.5", ==) and not version("..\Fallout4.exe", "1.3.47.0", ==)) or (version("..\f4se_loader.exe", "0.0.1.6", ==) and not version("..\Fallout4.exe", "1.4.125.0", ==)) or (version("..\f4se_loader.exe", "0.0.1.7", ==) and not version("..\Fallout4.exe", "1.4.131.0", ==)) or (version("..\f4se_loader.exe", "0.0.1.8", ==) and not version("..\Fallout4.exe", "1.4.132.0", ==))'
     content:
       - lang: en
         str: 'Your version of F4SE is not compatible with your version of Fallout 4.'
