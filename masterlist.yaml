@@ -149,7 +149,9 @@ globals:
     # 0x95eab074: v1.9.3 for FO4 1.4.125
     # 0xc2e4481a: v1.11.0 for FO4 1.4.131
     # 0x89ceec93: v1.13 for FO4 1.4.132
-    condition: '((checksum("F4SE\Plugins\place.dll", 78374099) or checksum("F4SE\Plugins\place.dll", 988580db) or checksum("F4SE\Plugins\place.dll", 6a0dbf55)) and not version("..\Fallout4.exe", "1.3.47.0", ==)) or (checksum("F4SE\Plugins\place.dll", 95eab074) and not version("..\Fallout4.exe", "1.4.125.0", ==)) or (checksum("F4SE\Plugins\place.dll", c2e4481a) and not version("..\Fallout4.exe", "1.4.131.0", ==)) or (checksum("F4SE\Plugins\place.dll", 89ceec93) and not version("..\Fallout4.exe", "1.4.132.0", ==))'
+    # 0xc202af85: v1.14 for FO4 1.4.132
+    # 0x44af914a: v1.14.1 for FO4 1.4.32
+    condition: '((checksum("F4SE\Plugins\place.dll", 78374099) or checksum("F4SE\Plugins\place.dll", 988580db) or checksum("F4SE\Plugins\place.dll", 6a0dbf55)) and not version("..\Fallout4.exe", "1.3.47.0", ==)) or (checksum("F4SE\Plugins\place.dll", 95eab074) and not version("..\Fallout4.exe", "1.4.125.0", ==)) or (checksum("F4SE\Plugins\place.dll", c2e4481a) and not version("..\Fallout4.exe", "1.4.131.0", ==)) or ((checksum("F4SE\Plugins\place.dll", 89ceec93) or checksum("F4SE\Plugins\place.dll", c202af85) or checksum("F4SE\Plugins\place.dll", 44af914a)) and not version("..\Fallout4.exe", "1.4.132.0", ==))'
 
 plugins:
   - name: 'Simple Bug Fixes.esp'
