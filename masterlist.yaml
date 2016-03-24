@@ -419,3 +419,18 @@ plugins:
       - <<: *AlreadyInX
         condition: 'version("..\Fallout4.exe", "1.3.47.0", >=)'
         subs: [ 'Fallout4.esm' ]
+  - name: 'Lasers Have No Recoil.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/9417/' ]
+    inc: [ 'Concentrated Splitter.esp' ]
+  - name: 'LasersNoRecoil - Beam Splitters Patch.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/9417/' ]
+    inc: [ 'Concentrated Splitter - No Recoil.esp' ]
+  - name: 'Concentrated Splitter.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/10193/' ]
+    inc:
+      - 'Concentrated Splitter - No Recoil.esp'
+      - 'Lasers Have No Recoil.esp'
+  - name: 'Concentrated Splitter - No Recoil.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/10193' ]
+    inc: [ 'Concentrated Splitter.esp' ]
+    req: [ 'Lasers Have No Recoil.esp' ]
