@@ -156,6 +156,8 @@ globals:
     condition: '((checksum("F4SE\Plugins\place.dll", 78374099) or checksum("F4SE\Plugins\place.dll", 988580db) or checksum("F4SE\Plugins\place.dll", 6a0dbf55)) and not version("..\Fallout4.exe", "1.3.47.0", ==)) or (checksum("F4SE\Plugins\place.dll", 95eab074) and not version("..\Fallout4.exe", "1.4.125.0", ==)) or (checksum("F4SE\Plugins\place.dll", c2e4481a) and not version("..\Fallout4.exe", "1.4.131.0", ==)) or ((checksum("F4SE\Plugins\place.dll", 89ceec93) or checksum("F4SE\Plugins\place.dll", c202af85) or checksum("F4SE\Plugins\place.dll", 44af914a) or checksum("F4SE\Plugins\place.dll", ace2ed7e) or checksum("F4SE\Plugins\place.dll", 1bf865e4)) and not version("..\Fallout4.exe", "1.4.132.0", ==))'
 
 plugins:
+  - name: 'DLCRobot.esm'
+    priority: -1999000
   - name: 'Simple Bug Fixes.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/2142' ]
     priority: -1999000
