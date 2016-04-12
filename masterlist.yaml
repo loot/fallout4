@@ -73,7 +73,13 @@ common:
         str: '%1%가 설치되었지만 F4SE를 찾을 수 없습니다! F4SE 다운로드 페이지를 참조하십시오: [F4SE](http://f4se.silverlock.org).'
       - lang: zh_CN
         str: '你已经安装了%1%，但是未发现F4SE！请查看F4SE的下载页面：[F4SE](http://f4se.silverlock.org)。'
-
+  - &SmashedVsBashedPatch
+    type: say
+    content:
+      - lang: en
+        str: 'Can be used with a %1% but would require additional work. A Smashed Patch or Bash Patch should be used independently of one another.'
+      - lang: es
+        str: 'Se puede utilizar con un %1% pero requeriría un trabajo adicional. Deben de estar utilizado un Smashed Patch o un Bash Patch independiente del uno el otro.'
 
 globals:
   - type: say
@@ -449,22 +455,14 @@ plugins:
     tag:
       - NoMerge
     msg:
-      - type: say
+      - <<: *SmashedVsBashedPatch
         condition: 'regex("Bashed Patch.*\.esp")'
-        content:
-          - lang: en
-            str: 'Can be used with a Bashed Patch but would require extra work. It''s suggested to use either a Smashed Patch or a Bash Patch independently.'
-          - lang: es
-            str: 'Se puede utilizar con un Bashed Patch pero requeriría un trabajo adicional. Deben de estar utilizado un Smashed Patch o un Bash Patch independiente del uno el otro.'
+        subs: [ 'Bashed Patch' ]
   - name: 'Bashed Patch.*\.esp'
     priority: 1991000
     after:
       - 'FO4Merged.esp'
     msg:
-      - type: say
+      - <<: *SmashedVsBashedPatch
         condition: 'file("Smashed Patch.esp")'
-        content:
-          - lang: en
-            str: 'Can be used with a Smashed Patch.esp but would require additional work. A Smashed Patch or Bash Patch should be used independently of one another.'
-          - lang: es
-            str: 'Se puede utilizar con un Smashed Patch.esp pero requeriría un trabajo adicional. Deben de estar utilizado un Smashed Patch o un Bash Patch independiente del uno el otro.'
+        subs: [ 'Smashed Patch.esp' ]
