@@ -23,6 +23,20 @@ common:
     content:
       - lang: en
         str: 'Delete. Already patched in Fallout 4 by Bethesda.'
+  - &AlreadyInUFO4P
+    type: error
+    content:
+      - lang: en
+        str: 'Delete. Already included in Unofficial Fallout 4 Patch.esp.'
+      - lang: ru
+        str: 'Удалите. Уже включено в Unofficial Fallout 4 Patch.esp.'
+      - lang: es
+        str: 'Borrar. Esta incluido en Unofficial Fallout 4 Patch.esp.'
+      - lang: ko
+        str: '삭제하십시오. 이미 Unofficial Fallout 4 Patch.esp에 포함되어 있습니다.'
+      - lang: zh_CN
+        str: '删除。已包含在Unofficial Fallout 4 Patch.esp中。'
+    condition: 'active("Unofficial Fallout 4 Patch.esp")'
   - &AlreadyInX
     type: error
     content:
@@ -207,12 +221,44 @@ plugins:
   - name: 'Simple Bug Fixes.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/2142' ]
     priority: -1999000
+    msg:
+      - *AlreadyInUFO4P
+  - name: 'NX Desk Crafting Fix.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/2662' ]
+    priority: -1999000
+    msg:
+      - *AlreadyInUFO4P
+  - name: 'CompanionBugfixExperimental.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/2679' ]
+    priority: -1999000
+    msg:
+      - *AlreadyInUFO4P
   - name: 'ScroungerFix.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/3624' ]
     priority: -1999000
     msg:
       - <<: *AlreadyInFO4
         condition: 'version("..\Fallout4.exe", "1.4.132.0", >=)'
+  - name: 'UnofficialFallout4Patch.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/4526' ]
+    priority: -1999000
+    msg:
+      - *AlreadyInUFO4P
+  - name: 'SynthArmorFix.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/5054' ]
+    priority: -1999000
+    msg:
+      - *AlreadyInUFO4P
+  - name: 'Glow Front Sight Ring Fix.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/5205' ]
+    priority: -1999000
+    msg:
+      - *AlreadyInUFO4P
+  - name: 'WeaveFix.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/5847' ]
+    priority: -1999000
+    msg:
+      - *AlreadyInUFO4P
   - name: 'MakanarPerkBigLeaguesFix.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/5957' ]
     priority: -1999000
@@ -237,12 +283,57 @@ plugins:
     msg:
       - <<: *AlreadyInFO4
         condition: 'version("..\Fallout4.exe", "1.4.132.0", >=)'
+  - name: 'Worsins-T60-Headlamp-Fix.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/8164' ]
+    priority: -1999000
+    msg:
+      - *AlreadyInUFO4P
+  - name: 'Pipe_Revolver_Tuned_Receiver.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/8570' ]
+    priority: -1999000
+    msg:
+      - *AlreadyInUFO4P
   - name: 'Targeting HUD Berry Mentats Fix.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/8910' ]
     priority: -1999000
     msg:
       - <<: *AlreadyInFO4
         condition: 'version("..\Fallout4.exe", "1.5.0.0", >=)'
+  - name: 'RFG - Curie Inspirational Sneak L&L Fix.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/10047' ]
+    priority: -1999000
+    msg:
+      - *AlreadyInUFO4P
+  - name: 'SoldierToyFix.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/10229' ]
+    priority: -1999000
+    msg:
+      - *AlreadyInUFO4P
+  - name: 'FixTeslaScience.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/10319' ]
+    priority: -1999000
+    msg:
+      - *AlreadyInUFO4P
+  - name: 'ItemCapitalizationFixes.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/10416' ]
+    priority: -1999000
+    msg:
+      - *AlreadyInUFO4P
+  - name: 'DependencyQuestFix.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/10892' ]
+    priority: -1999000
+    msg:
+      - *AlreadyInUFO4P
+  - name: 'LiveNLoveMagazinePerkPatch.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/11083' ]
+    priority: -1999000
+    msg:
+      - *AlreadyInUFO4P
+  - name: 'Combat Armor Weight Fix.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/11541' ]
+    priority: -1999000
+    msg:
+      - *AlreadyInUFO4P
 
   - name: 'PipBoyShadows.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/281' ]
