@@ -163,7 +163,14 @@ globals:
 
 plugins:
   - name: 'Unofficial Fallout 4 Patch.esp'
+    url: [ 'http://afkmods.iguanadons.net/index.php?/files/file/1744-unofficial-fallout-4-patch-beta/' ]
     priority: -1999000
+    msg:
+      - type: warn
+        content: 'This is a BETA release of the Unofficial Fallout 4 Patch. DO NOT use this on a save you intend to keep!'
+      - type: error
+        content: 'Requires Fallout 4 patch 1.5.146 or greater.'
+        condition: 'version("Unofficial Fallout 4 Patch.esp", "1.0.0", ==) and not version("..\Fallout4.exe, "1.5.146.0", >=)'
   - name: 'DLCRobot.esm'
     priority: -1999000
     after:
