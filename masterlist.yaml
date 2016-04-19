@@ -192,8 +192,6 @@ plugins:
         condition: 'version("Unofficial Fallout 4 Patch.esp", "1.0.0", ==) and not version("..\Fallout4.exe", "1.5.146.0", >=)'
   - name: 'DLCRobot.esm'
     priority: -1999000
-    after:
-      - 'Unofficial Fallout 4 Patch.esp'
   - name: 'Unofficial Automatron Patch.esp'
     priority: -1999000
     after:
@@ -201,7 +199,6 @@ plugins:
   - name: 'DLCworkshop01.esm'
     priority: -1999000
     after:
-      - 'Unofficial Fallout 4 Patch.esp'
       - 'DLCRobot.esm'
       - 'Unofficial Automatron Patch.esp'
   - name: 'Unofficial Wasteland Workshop Patch.esp'
