@@ -18,6 +18,11 @@ common:
         str: '사용되지 않습니다. 최신 버전으로 업데이트하십시오.'
       - lang: zh_CN
         str: '已过时。请升级到最新版本。'
+  - &AlreadyInFO4
+    type: error
+    content:
+      - lang: en
+        str: 'Delete. Already patched in Fallout 4 by Bethesda.'
   - &AlreadyInX
     type: error
     content:
@@ -191,9 +196,48 @@ plugins:
       - 'Unofficial Fallout 4 Patch.esp'
       - 'DLCRobot.esm'
       - 'Unofficial Automatron Patch.esp'
+
+  ### Unofficial Unofficial Patches
+  - name: 'KillshotFix.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/1282' ]
+    priority: -1999000
+    msg:
+      - <<: *AlreadyInFO4
+        condition: 'version("..\Fallout4.exe", "1.3.47.0", >=)'
   - name: 'Simple Bug Fixes.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/2142' ]
     priority: -1999000
+  - name: 'ScroungerFix.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/3624' ]
+    priority: -1999000
+    msg:
+      - <<: *AlreadyInFO4
+        condition: 'version("..\Fallout4.exe", "1.4.132.0", >=)'
+  - name: 'MakanarBigLeaguesFix.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/6185' ]
+    priority: -1999000
+    msg:
+      - <<: *AlreadyInFO4
+        condition: 'version("..\Fallout4.exe", "1.3.47.0", >=)'
+  - name: 'RailroadGloryBugFix.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/6389' ]
+    priority: -1999000
+    msg:
+      - <<: *AlreadyInFO4
+        condition: 'version("..\Fallout4.exe", "1.3.47.0", >=)'
+  - name: 'Vault 81 Holding Cell Fix(| Alt)\.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/8033' ]
+    priority: -1999000
+    msg:
+      - <<: *AlreadyInFO4
+        condition: 'version("..\Fallout4.exe", "1.4.132.0", >=)'
+  - name: 'Targeting HUD Berry Mentats Fix.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/8910' ]
+    priority: -1999000
+    msg:
+      - <<: *AlreadyInFO4
+        condition: 'version("..\Fallout4.exe", "1.5.0.0", >=)'
+
   - name: 'PipBoyShadows.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/281' ]
     inc:
