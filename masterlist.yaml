@@ -99,6 +99,22 @@ common:
         str: 'Can be used with a %1% but would require additional work. A Smashed Patch or Bash Patch should be used independently of one another.'
       - lang: es
         str: 'Se puede utilizar con un %1% pero requeriría un trabajo adicional. Deben de estar utilizado un Smashed Patch o un Bash Patch independiente del uno el otro.'
+  - &UsingSKE
+    type: error
+    content:
+      - lang: en
+        str: 'This file is not compatable with SKE.'
+      - lang: es
+        str: 'Este archivo no es compatible con SKE.'
+    condition: 'active("SettlementKeywords.esm") and version("SettlementKeywords.esm", "1.0", >=)'
+  - &InsteadSKEPatch
+    type: warn
+    content:
+      - lang: en
+        str: 'This file changes vanilla menu Form Lists. Consider using a compatable SKE Patch instead.'
+      - lang: es
+        str: 'Este archivo cambia las Listas Forma de menús Settlement de vainilla. Considere el uso de un parche compatible con SKE.'
+    condition: 'active("SettlementKeywords.esm") and version("SettlementKeywords.esm", "1.0", >=)'
 
 globals:
   - type: say
@@ -218,6 +234,7 @@ plugins:
     priority: -1999000
     msg:
       - *AlreadyInUFO4P
+      - <<: *UsingSKE
   - name: 'NX Desk Crafting Fix.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/2662' ]
     priority: -1999000
@@ -587,6 +604,78 @@ plugins:
     url: [ 'http://www.nexusmods.com/fallout4/mods/10193' ]
     inc: [ 'Concentrated Splitter.esp' ]
     req: [ 'Lasers Have No Recoil.esp' ]
+  - name: 'WW_SK_PATCH.esp'
+    msg:
+      - <<: *UsingSKE
+  - name: 'Jzk_WW_Patch.esp'
+    msg:
+      - <<: *UsingSKE
+  - name: 'HMM-WWorkshop-Compatibility.esp'
+    msg:
+      - <<: *UsingSKE
+  - name: 'HMMOCD-WWorkshop-Compatibility.esp'
+    msg:
+      - <<: *UsingSKE
+  - name: 'OCD-WWorkshop-Compatibility.esp'
+    msg:
+      - <<: *UsingSKE
+  - name: 'BS-SKPatch.esp'
+    msg:
+      - <<: *UsingSKE
+  - name: 'SettleObjExpandPack-HM-SnB-Patch.esp'
+    msg:
+      - <<: *UsingSKE
+  - name: 'Snap''N Build - Patches.esp'
+    msg:
+      - <<: *UsingSKE
+  - name: 'PatchyMcPatcherson-SnB.esp'
+    msg:
+      - <<: *UsingSKE
+  - name: 'WastelandWorkshopPatch.esp'
+    msg:
+      - <<: *UsingSKE
+  - name: 'Homemaker - Greenhouse Disabler.esp'
+    msg:
+      - <<: *InsteadSKEPatch
+  - name: 'Homemaker - Greenhouse and Bunker Disabler.esp'
+    msg:
+      - <<: *InsteadSKEPatch
+  - name: 'Homemaker - SKE Integration Patch.esp'
+    msg:
+      - <<: *UsingSKE
+  - name: 'Homemaker - SK Integration Patch.esp'
+    msg:
+      - <<: *UsingSKE
+  - name: 'Homemaker - Bunker Disabler.esp'
+    msg:
+      - <<: *InsteadSKEPatch
+  - name: 'AdvBubbleTurretSet-SKPatch.esp'
+    msg:
+      - <<: *UsingSKE
+  - name: 'AdvBubbleTurretSet-RHDPatch.esp'
+    msg:
+      - <<: *UsingSKE
+  - name: 'AdvBubbleTurretSet-RHDSKPatch.esp'
+    msg:
+      - <<: *UsingSKE
+  - name: 'AdvBubbleTurretSet-Real-RHDSKPatch.esp'
+    msg:
+      - <<: *UsingSKE
+  - name: 'AdvBubbleTurretSet-Real-RHDPatch.esp'
+    msg:
+      - <<: *UsingSKE
+  - name: 'AdvBubbleTurretSet-Real-SKPatch.esp'
+    msg:
+      - <<: *UsingSKE
+  - name: 'AdvBubbleTurretSet-RealNP-RHDSKPatch.esp'
+    msg:
+      - <<: *UsingSKE
+  - name: 'AdvBubbleTurretSet-RealNP-SKPatch.esp'
+    msg:
+      - <<: *UsingSKE
+  - name: 'AdvBubbleTurretSet-RealNP-RHDPatch.esp'
+    msg:
+      - <<: *UsingSKE
   - name: 'FO4Merged.esp'
     priority: 1991000
     tag:
