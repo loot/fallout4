@@ -234,7 +234,7 @@ plugins:
     priority: -1999000
     msg:
       - *AlreadyInUFO4P
-      - <<: *UsingSKE
+      - *UsingSKE
   - name: 'NX Desk Crafting Fix.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/2662' ]
     priority: -1999000
@@ -606,76 +606,76 @@ plugins:
     req: [ 'Lasers Have No Recoil.esp' ]
   - name: 'WW_SK_PATCH.esp'
     msg:
-      - <<: *UsingSKE
+      - *UsingSKE
   - name: 'Jzk_WW_Patch.esp'
     msg:
-      - <<: *UsingSKE
+      - *UsingSKE
   - name: 'HMM-WWorkshop-Compatibility.esp'
     msg:
-      - <<: *UsingSKE
+      - *UsingSKE
   - name: 'HMMOCD-WWorkshop-Compatibility.esp'
     msg:
-      - <<: *UsingSKE
+      - *UsingSKE
   - name: 'OCD-WWorkshop-Compatibility.esp'
     msg:
-      - <<: *UsingSKE
+      - *UsingSKE
   - name: 'BS-SKPatch.esp'
     msg:
-      - <<: *UsingSKE
+      - *UsingSKE
   - name: 'SettleObjExpandPack-HM-SnB-Patch.esp'
     msg:
-      - <<: *UsingSKE
+      - *UsingSKE
   - name: 'Snap''N Build - Patches.esp'
     msg:
-      - <<: *UsingSKE
+      - *UsingSKE
   - name: 'PatchyMcPatcherson-SnB.esp'
     msg:
-      - <<: *UsingSKE
+      - *UsingSKE
   - name: 'WastelandWorkshopPatch.esp'
     msg:
-      - <<: *UsingSKE
+      - *UsingSKE
   - name: 'Homemaker - Greenhouse Disabler.esp'
     msg:
-      - <<: *InsteadSKEPatch
+      - *InsteadSKEPatch
   - name: 'Homemaker - Greenhouse and Bunker Disabler.esp'
     msg:
-      - <<: *InsteadSKEPatch
+      - *InsteadSKEPatch
   - name: 'Homemaker - SKE Integration Patch.esp'
     msg:
-      - <<: *UsingSKE
+      - *UsingSKE
   - name: 'Homemaker - SK Integration Patch.esp'
     msg:
-      - <<: *UsingSKE
+      - *UsingSKE
   - name: 'Homemaker - Bunker Disabler.esp'
     msg:
-      - <<: *InsteadSKEPatch
+      - *InsteadSKEPatch
   - name: 'AdvBubbleTurretSet-SKPatch.esp'
     msg:
-      - <<: *UsingSKE
+      - *UsingSKE
   - name: 'AdvBubbleTurretSet-RHDPatch.esp'
     msg:
-      - <<: *UsingSKE
+      - *UsingSKE
   - name: 'AdvBubbleTurretSet-RHDSKPatch.esp'
     msg:
-      - <<: *UsingSKE
+      - *UsingSKE
   - name: 'AdvBubbleTurretSet-Real-RHDSKPatch.esp'
     msg:
-      - <<: *UsingSKE
+      - *UsingSKE
   - name: 'AdvBubbleTurretSet-Real-RHDPatch.esp'
     msg:
-      - <<: *UsingSKE
+      - *UsingSKE
   - name: 'AdvBubbleTurretSet-Real-SKPatch.esp'
     msg:
-      - <<: *UsingSKE
+      - *UsingSKE
   - name: 'AdvBubbleTurretSet-RealNP-RHDSKPatch.esp'
     msg:
-      - <<: *UsingSKE
+      - *UsingSKE
   - name: 'AdvBubbleTurretSet-RealNP-SKPatch.esp'
     msg:
-      - <<: *UsingSKE
+      - *UsingSKE
   - name: 'AdvBubbleTurretSet-RealNP-RHDPatch.esp'
     msg:
-      - <<: *UsingSKE
+      - *UsingSKE
   - name: 'FO4Merged.esp'
     priority: 1991000
     tag:
