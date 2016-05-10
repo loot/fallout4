@@ -103,7 +103,7 @@ common:
     type: error
     content:
       - lang: en
-        str: 'This file is not compatable with SKE.'
+        str: 'This file is not compatible with SKE.'
       - lang: es
         str: 'Este archivo no es compatible con SKE.'
     condition: 'active("SettlementKeywords.esm") and version("SettlementKeywords.esm", "1.0", >=)'
@@ -111,10 +111,18 @@ common:
     type: warn
     content:
       - lang: en
-        str: 'This file changes vanilla menu Form Lists. Consider using a compatable SKE Patch instead.'
+        str: 'This file changes vanilla menu Form Lists. Consider using a compatible SKE Patch instead.'
       - lang: es
         str: 'Este archivo cambia las Listas Forma de menús Settlement de vainilla. Considere el uso de un parche compatible con SKE.'
     condition: 'active("SettlementKeywords.esm") and version("SettlementKeywords.esm", "1.0", >=)'
+  - &UsingSNB
+    type: error
+    content:
+      - lang: en
+        str: 'This file is unneeded with Snap''n Build.esm v1.9.  Consider upgrading and removing this file.'
+      - lang: es
+        str: 'No se requiere este archivo con Snap''n Build.esm version 1.9.  Considere actualizando y desinstalando este archivo.'
+    condition: 'active("Snap''n Build.esm")'
 
 globals:
   - type: say
@@ -625,30 +633,48 @@ plugins:
   - name: 'SettleObjExpandPack-HM-SnB-Patch.esp'
     msg:
       - *UsingSKE
-  - name: 'Snap''N Build - Patches.esp'
-    msg:
-      - *UsingSKE
   - name: 'PatchyMcPatcherson-SnB.esp'
     msg:
       - *UsingSKE
   - name: 'WastelandWorkshopPatch.esp'
     msg:
       - *UsingSKE
-  - name: 'Homemaker - Greenhouse Disabler.esp'
+  - name: 'Homemaker - Bunker Disabler SK.esp'
     msg:
-      - *InsteadSKEPatch
+      - *UsingSKE
+  - name: 'Homemaker - Bunker Disabler.esp'
+    msg:
+      - *UsingSKE
+  - name: 'Homemaker - Greenhouse and Bunker Disabler SK.esp'
+    msg:
+      - *UsingSKE
   - name: 'Homemaker - Greenhouse and Bunker Disabler.esp'
     msg:
-      - *InsteadSKEPatch
-  - name: 'Homemaker - SKE Integration Patch.esp'
+      - *UsingSKE
+  - name: 'Homemaker - Greenhouse Disabler SK.esp'
+    msg:
+      - *UsingSKE
+  - name: 'Homemaker - Greenhouse Disabler.esp'
     msg:
       - *UsingSKE
   - name: 'Homemaker - SK Integration Patch.esp'
     msg:
       - *UsingSKE
-  - name: 'Homemaker - Bunker Disabler.esp'
+  - name: 'Homemaker - SKE Integration Patch.esp'
     msg:
-      - *InsteadSKEPatch
+      - *UsingSKE
+  - name: 'Homemaker - SSEx Compatibility Patch.esp'
+    msg:
+      - *UsingSKE
+  - name: 'Homemaker - Streetlights Use Passive Power.esp'
+    msg:
+      - *UsingSKE
+  - name: 'Homemaker - Unlocked Institute Objects SK.esp'
+    msg:
+      - *UsingSKE
+  - name: 'Homemaker - Unlocked Institute Objects.esp'
+    msg:
+      - *UsingSKE
   - name: 'AdvBubbleTurretSet-SKPatch.esp'
     msg:
       - *UsingSKE
@@ -676,6 +702,30 @@ plugins:
   - name: 'AdvBubbleTurretSet-RealNP-RHDPatch.esp'
     msg:
       - *UsingSKE
+  - name: 'Snap''n Build - Bunker.esp'
+    msg:
+      - *UsingSNB
+  - name: 'Snap''n Build - Capsule.esp'
+    msg:
+      - *UsingSNB
+  - name: 'Snap''n Build - Greenhouse.esp'
+    msg:
+      - *UsingSNB
+  - name: 'Snap''n Build - Industrial.esp'
+    msg:
+      - *UsingSNB
+  - name: 'Snap''n Build - Patches_HMM.esp'
+    msg:
+      - *UsingSNB
+  - name: 'Snap''n Build - Patches_SK.esp'
+    msg:
+      - *UsingSNB
+  - name: 'Snap''n Build - Real Estate.esp'
+    msg:
+      - *UsingSNB
+  - name: 'Snap''n Build - Patches.esp'
+    msg:
+      - *UsingSNB
   - name: 'FO4Merged.esp'
     priority: 1991000
     tag:
