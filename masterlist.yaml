@@ -232,7 +232,6 @@ plugins:
   - name: 'DLCCoast.esm'
     priority: -1999000
     after:
-      - 'Unofficial Fallout 4 Patch.esp'
       - 'DLCRobot.esm'
       - 'Unofficial Automatron Patch.esp'
       - 'DLCworkshop01.esm'
