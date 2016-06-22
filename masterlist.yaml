@@ -206,12 +206,14 @@ globals:
 
 plugins:
   - name: 'Unofficial Fallout 4 Patch.esp'
-    url: [ 'http://afkmods.iguanadons.net/index.php?/files/file/1744-unofficial-fallout-4-patch-beta/' ]
+    url: [ 'http://afkmods.iguanadons.net/index.php?/files/file/1765-unofficial-fallout-4-patch/' ]
     priority: -1999000
     msg:
       - type: error
-        content: 'Requires Fallout 4 patch 1.5.146 or greater.'
-        condition: 'version("Unofficial Fallout 4 Patch.esp", "1.0.0", ==) and not version("..\Fallout4.exe", "1.5.146.0", >=)'
+        content: 'Requires Fallout 4 patch 1.5.157 or greater.'
+        condition: 'version("Unofficial Fallout 4 Patch.esp", "1.0.2", ==) and not version("..\Fallout4.exe", "1.5.157.0", >=)'
+      - <<: *obsolete
+        condition: 'version("Unofficial Fallout 4 Patch.esp", "1.0.2", <)'
   - name: 'DLCRobot.esm'
     priority: -1999000
   - name: 'Unofficial Automatron Patch.esp'
@@ -627,6 +629,7 @@ plugins:
     url: [ 'http://www.nexusmods.com/fallout4/mods/10193' ]
     inc: [ 'Concentrated Splitter.esp' ]
     req: [ 'Lasers Have No Recoil.esp' ]
+
   - name: 'WW_SK_PATCH.esp'
     msg:
       - *UsingSKE
@@ -714,6 +717,10 @@ plugins:
   - name: 'Snap''n Build - Patches.esp'
     msg:
       - *UsingSNB
+  - name: 'Homemaker.esm'
+    msg:
+      - *UsingSNB
+
   - name: 'FO4Merged.esp'
     priority: 1991000
     tag:
