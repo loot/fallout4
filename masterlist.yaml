@@ -236,6 +236,14 @@ plugins:
       - 'Unofficial Automatron Patch.esp'
       - 'DLCworkshop01.esm'
       - 'Unofficial Wasteland Workshop Patch.esp'
+  - name: 'DLCworkshop02.esm'
+    priority: -1999000
+    after:
+      - 'DLCRobot.esm'
+      - 'Unofficial Automatron Patch.esp'
+      - 'DLCworkshop01.esm'
+      - 'Unofficial Wasteland Workshop Patch.esp'
+      - 'DLCCoast.esm'
 
   ### Unofficial Unofficial Patches
   - name: 'KillshotFix.esp'
