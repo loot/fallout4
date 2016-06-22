@@ -728,6 +728,13 @@ plugins:
       - type: error
         content: 'Requires Fallout 4 patch 1.5.157 or greater.'
         condition: 'checksum("Homemaker.esm",A28ED2EC) and version("..\Fallout4.exe", "1.5.157.0", <)'
+  - name: 'SettlementKeywords.esm'
+    msg:
+      - type: error
+        content: 'Incompatibile with Fallout 4 patch 1.5.157 or greater.'
+        condition: 'checksum("SettlementKeywords.esm",8D550871) and version("..\Fallout4.exe", "1.5.157.0", >=)'
+      - <<: *obsolete
+        condition: 'version("SettlementKeywords.esm", "1.31", <)'
 
   - name: 'FO4Merged.esp'
     priority: 1991000
