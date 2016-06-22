@@ -719,7 +719,15 @@ plugins:
       - *UsingSNB
   - name: 'Homemaker.esm'
     msg:
-      - *UsingSNB
+      - type: error
+        content: 'Incompatibile with Fallout 4 patch 1.5.157 or greater.'
+        condition: 'checksum("Homemaker.esm",55D44FD5) and version("..\Fallout4.exe", "1.5.157.0", >=)'
+      - type: error
+        content: 'Incompatibile with Settlement Keywords Expanded.'
+        condition: '(checksum("Homemaker.esm",55D44FD5) or checksum("Homemaker.esm",A28ED2EC)) and version("SettlementKeywords.esm", "1.0", >=)'
+      - type: error
+        content: 'Requires Fallout 4 patch 1.5.157 or greater.'
+        condition: 'checksum("Homemaker.esm",A28ED2EC) and version("..\Fallout4.exe", "1.5.157.0", <)'
 
   - name: 'FO4Merged.esp'
     priority: 1991000
