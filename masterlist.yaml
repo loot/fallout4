@@ -677,7 +677,12 @@ plugins:
       - *UsingSKE
   - name: 'Homemaker - SK Integration Patch.esp'
     msg:
-      - *UsingSKE
+      - type: error
+        content: 'Requires Settlement Keywords v0.8.'
+        condition: 'not checksum("SettlementKeywords.esm",8D550871)'
+      - type: error
+        content: 'Incompatibile with Fallout 4 patch 1.5.157 or greater.'
+        condition: 'file("..\Fallout4.exe") and version("..\Fallout4.exe", "1.5.157.0", >=)'
   - name: 'Homemaker - SKE Integration Patch.esp'
     msg:
       - *UsingSKE
