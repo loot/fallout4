@@ -630,10 +630,59 @@ plugins:
     inc: [ 'Concentrated Splitter.esp' ]
     req: [ 'Lasers Have No Recoil.esp' ]
 
+  - name: 'OCDWorkshopDLCPatch.esp'
+    msg:
+      - type: error
+        content: 'Use OCDecorator.esp Wasteland Workshop version instead [Download](http://www.nexusmods.com/fallout4/mods/4270)'
+      - *UsingSKE
+  - name: 'OCDecorator_FarHarbor.esp'
+    msg:
+      - type: error
+        content: 'Use ''OCD FarHarborDLC.esp'' instead [Download](http://www.nexusmods.com/fallout4/mods/4270)'
+      - *UsingSKE
   - name: 'WW_SK_PATCH.esp'
     msg:
       - *UsingSKE
   - name: 'Jzk_WW_Patch.esp'
+    msg:
+      - *UsingSKE
+  - name: 'CW_PATCH.esp'
+    msg:
+      - *UsingSKE
+  - name: 'DLC_MainMenu.esm'
+    msg:
+      - *UsingSKE
+  - name: 'DLC_OCD_Patch.esp'
+    msg:
+      - *UsingSKE
+  - name: 'DLC_PATCH.esp'
+    msg:
+      - *UsingSKE
+  - name: 'DLC_PATCH_ENG.esp'
+    msg:
+      - *UsingSKE
+  - name: 'DLC_PATCH_integrated.esp'
+    msg:
+      - *UsingSKE
+  - name: 'DLC_SK_Patch.esp'
+    msg:
+      - *UsingSKE
+  - name: 'DLC_SKE_Patch.esp'
+    msg:
+      - *UsingSKE
+  - name: 'FH_PATCH.esp'
+    msg:
+      - *UsingSKE
+  - name: 'FH_PATCH_integrated.esp'
+    msg:
+      - *UsingSKE
+  - name: 'WW_PATCH.esp'
+    msg:
+      - *UsingSKE
+  - name: 'WW_PATCH_ENG.esp'
+    msg:
+      - *UsingSKE
+  - name: 'WW_PATCH_integrated.esp'
     msg:
       - *UsingSKE
   - name: 'HMM-WWorkshop-Compatibility.esp'
@@ -648,6 +697,9 @@ plugins:
   - name: 'BS-SKPatch.esp'
     msg:
       - *UsingSKE
+  - name: 'BS-HomemakerPatch.esp'
+    msg:
+      - *UsingSKE
   - name: 'SettleObjExpandPack-HM-SnB-Patch.esp'
     msg:
       - *UsingSKE
@@ -655,6 +707,27 @@ plugins:
     msg:
       - *UsingSKE
   - name: 'WastelandWorkshopPatch.esp'
+    msg:
+      - *UsingSKE
+  - name: 'FarHarborHomemakerFix.esp'
+    msg:
+      - *UsingSKE
+  - name: 'Robot Home Defence - Settlement Keywords.esp'
+    msg:
+      - *UsingSKE
+  - name: 'OCD_MO_Patch.esp'
+    msg:
+      - *UsingSKE
+  - name: 'MO_Propaganda.esp'
+    msg:
+      - *UsingSKE
+  - name: 'MO_HM_Patch.esp'
+    msg:
+      - *UsingSKE
+  - name: 'MO_HM_OCD_Patch.esp'
+    msg:
+      - *UsingSKE
+  - name: 'SKHMWW.esp'
     msg:
       - *UsingSKE
   - name: 'Homemaker - Bunker Disabler SK.esp'
