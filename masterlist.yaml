@@ -811,8 +811,11 @@ plugins:
       - type: error
         content: 'Incompatibile with Fallout 4 patch 1.5.157 or greater.'
         condition: 'checksum("SettlementKeywords.esm",8D550871) and version("..\Fallout4.exe", "1.5.157.0", >=)'
+      - type: warn
+        content: 'Incompatibile with current version of SKE.'
+        condition: 'not checksum("SettlementKeywords.esm",3FA051EB) and version("SettlementKeywords.esm", "1.33", <)'
       - <<: *obsolete
-        condition: 'version("SettlementKeywords.esm", "1.31", <)'
+        condition: 'version("SettlementKeywords.esm", "1.33", <)'
 
   - name: 'FO4Merged.esp'
     priority: 1991000
