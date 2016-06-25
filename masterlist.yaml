@@ -816,6 +816,11 @@ plugins:
         condition: 'not checksum("SettlementKeywords.esm",3FA051EB) and version("SettlementKeywords.esm", "1.33", <)'
       - <<: *obsolete
         condition: 'version("SettlementKeywords.esm", "1.33", <)'
+  - name: 'AlternateSettlements.esp'
+    msg:
+      - type: error
+        content: 'Outdated version of Alternate Settlements detected.  Verify the Settlement Keywords Expanded patch is properly installed.'
+        condition: '(checksum("AlternateSettlements.esp",D8906B4D) or checksum("AlternateSettlements.esp",5C36EB92)) and version("SettlementKeywords.esm", "1.0", >=)'
 
   - name: 'FO4Merged.esp'
     priority: 1991000
