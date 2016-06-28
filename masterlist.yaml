@@ -629,6 +629,9 @@ plugins:
     url: [ 'http://www.nexusmods.com/fallout4/mods/10193' ]
     inc: [ 'Concentrated Splitter.esp' ]
     req: [ 'Lasers Have No Recoil.esp' ]
+  - name: 'OSM_AlternateStart_Protocol-InfiniteAnswer.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/13762' ]
+    priority: 1999000
 
   - name: 'OCDWorkshopDLCPatch.esp'
     msg:
