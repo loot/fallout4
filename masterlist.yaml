@@ -632,6 +632,9 @@ plugins:
   - name: 'OSM_AlternateStart_Protocol-InfiniteAnswer.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/13762' ]
     priority: 1999000
+  - name: 'Vault-Tec Historical Preservation Initiative.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/12019' ]
+    priority: -1900000
 
   - name: 'OCDWorkshopDLCPatch.esp'
     msg:
