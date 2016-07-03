@@ -819,9 +819,9 @@ plugins:
         condition: 'checksum("SettlementKeywords.esm",8D550871) and version("..\Fallout4.exe", "1.5.157.0", >=)'
       - type: warn
         content: 'Incompatibile with current version of SKE.'
-        condition: 'not checksum("SettlementKeywords.esm",3FA051EB) and version("SettlementKeywords.esm", "1.33", <)'
+        condition: 'not checksum("SettlementKeywords.esm",DD6C26B1) and version("SettlementKeywords.esm", "1.35", <)'
       - <<: *obsolete
-        condition: 'version("SettlementKeywords.esm", "1.33", <)'
+        condition: 'version("SettlementKeywords.esm", "1.35", <)'
   - name: 'AlternateSettlements.esp'
     msg:
       - type: error
