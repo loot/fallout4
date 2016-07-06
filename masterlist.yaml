@@ -5,8 +5,53 @@ common:
     display: '[F4SE](http://f4se.silverlock.org)'
 
 # Messages
-  - &useOnlyOneX
+  - &obsolete
+    type: say
+    content:
+      - lang: en
+        str: 'Obsolete. Update to latest version.'
+      - lang: ru
+        str: 'Устарело. Обновите до последней версии.'
+      - lang: es
+        str: 'Obsoleto. Actualizar a la última versión.'
+      - lang: ko
+        str: '사용되지 않습니다. 최신 버전으로 업데이트하십시오.'
+      - lang: zh_CN
+        str: '已过时。请升级到最新版本。'
+  - &AlreadyInFO4
     type: error
+    content:
+      - lang: en
+        str: 'Delete. Already patched in Fallout 4 by Bethesda.'
+  - &AlreadyInUFO4P
+    type: error
+    content:
+      - lang: en
+        str: 'Delete. Already included in Unofficial Fallout 4 Patch.esp.'
+      - lang: ru
+        str: 'Удалите. Уже включено в Unofficial Fallout 4 Patch.esp.'
+      - lang: es
+        str: 'Borrar. Esta incluido en Unofficial Fallout 4 Patch.esp.'
+      - lang: ko
+        str: '삭제하십시오. 이미 Unofficial Fallout 4 Patch.esp에 포함되어 있습니다.'
+      - lang: zh_CN
+        str: '删除。已包含在Unofficial Fallout 4 Patch.esp中。'
+    condition: 'active("Unofficial Fallout 4 Patch.esp")'
+  - &AlreadyInX
+    type: error
+    content:
+      - lang: en
+        str: 'Delete. Already included in %1%.'
+      - lang: ru
+        str: 'Удалите. Уже включено в %1%.'
+      - lang: es
+        str: 'Borrar. Esta incluido en %1%.'
+      - lang: ko
+        str: '삭제하십시오. 이미 %1%에 포함되어 있습니다.'
+      - lang: zh_CN
+        str: '删除。已包含在%1%中。'
+  - &useOnlyOneX
+    type: warn
     content:
       - lang: en
         str: 'Use only one %1%.'
@@ -18,12 +63,66 @@ common:
         str: '%1%을 한개만 사용하십시오.'
       - lang: zh_CN
         str: '只使用一个%1%。'
-
+  - &doNotClean
+    type: say
+    content:
+      - lang: en
+        str: 'Do not clean ITM records, they are intentional and required for the mod to function. It is safe to undelete records, but do not do anything other than that.'
+      - lang: ru
+        str: 'Не очищать. "Грязные" правки оставлены специально и требуются для функционирования мода.'
+      - lang: es
+        str: 'No limpiar las referencias ITM (iguales al master), ya que son intencionales y necesarias para que el Mod funcione. Sí es seguro restaurar las UDR (referencias borradas), pero no haga más que eso.'
+      - lang: zh_CN
+        str: '不干净。"脏"数据是故意的，这是mod需要的功能。'
   - &patchAvailable
     type: say
     content:
       - lang: en
         str: 'This plugin conflicts with plugin "%1%", however a patch is available.'
+  - &requireF4SE
+    type: error
+    content:
+      - lang: en
+        str: 'You have installed %1% but F4SE not found! See F4SE download page: [F4SE](http://f4se.silverlock.org).'
+      - lang: ru
+        str: 'У вас установлен %1%, но F4SE не найден! Смотрите страницу загрузки [F4SE](http://f4se.silverlock.org).'
+      - lang: es
+        str: 'Tienes %1% instalado pero F4SE no se pudo encontrar! Por favor descarga F4SE: [F4SE](http://f4se.silverlock.org)'
+      - lang: ko
+        str: '%1%가 설치되었지만 F4SE를 찾을 수 없습니다! F4SE 다운로드 페이지를 참조하십시오: [F4SE](http://f4se.silverlock.org).'
+      - lang: zh_CN
+        str: '你已经安装了%1%，但是未发现F4SE！请查看F4SE的下载页面：[F4SE](http://f4se.silverlock.org)。'
+  - &SmashedVsBashedPatch
+    type: say
+    content:
+      - lang: en
+        str: 'Can be used with a %1% but would require additional work. A Smashed Patch or Bash Patch should be used independently of one another.'
+      - lang: es
+        str: 'Se puede utilizar con un %1% pero requeriría un trabajo adicional. Deben de estar utilizado un Smashed Patch o un Bash Patch independiente del uno el otro.'
+  - &UsingSKE
+    type: error
+    content:
+      - lang: en
+        str: 'This file is not compatible with SKE.'
+      - lang: es
+        str: 'Este archivo no es compatible con SKE.'
+    condition: 'active("SettlementKeywords.esm") and version("SettlementKeywords.esm", "1.0", >=)'
+  - &InsteadSKEPatch
+    type: warn
+    content:
+      - lang: en
+        str: 'This file changes vanilla menu Form Lists. Consider using a compatible SKE Patch instead.'
+      - lang: es
+        str: 'Este archivo cambia las Listas Forma de menús Settlement de vainilla. Considere el uso de un parche compatible con SKE.'
+    condition: 'active("SettlementKeywords.esm") and version("SettlementKeywords.esm", "1.0", >=)'
+  - &UsingSNB
+    type: error
+    content:
+      - lang: en
+        str: 'This file is unneeded with Snap''n Build.esm v1.9.  Consider upgrading and removing this file.'
+      - lang: es
+        str: 'No se requiere este archivo con Snap''n Build.esm version 1.9.  Considere actualizando y desinstalando este archivo.'
+    condition: 'active("Snap''n Build.esm")'
 
 globals:
   - type: say
@@ -33,7 +132,7 @@ globals:
       - lang: zh_CN
         str: '一个[新版本](%1%)的LOOT已发布。'
     subs: [ 'https://github.com/loot/loot/releases/latest' ]
-    condition: 'version("LOOT", "0.8.1.0", <)'
+    condition: 'version("LOOT", "0.9.1.0", <)'
   - type: say
     content:
       - lang: en
@@ -46,10 +145,16 @@ globals:
         str: '[최신 LOOT 스레드](%1%).'
       - lang: zh_CN
         str: '[最新的LOOT版本](%1%)。'
-    subs: [ 'http://forums.bethsoft.com/topic/1557786-rel-loot-thread-21/' ]
+    subs: [ 'https://loot.github.io/latest-thread/' ]
+# Fallout 4 latest
+  - type: say
+    condition: 'file("..\Fallout4.exe") and version("..\Fallout4.exe", "1.4.132.0", <)'
+    content:
+      - lang: en
+        str: 'It appears you do not have the latest version of Fallout 4.'
 # F4SE Latest
   - type: say
-    condition: 'file("..\f4se_loader.exe") and version("..\f4se_loader.exe", "0.0.1.1", <)'
+    condition: 'file("..\f4se_loader.exe") and version("..\f4se_loader.exe", "0.0.1.8", <)'
     content:
       - lang: en
         str: 'It appears you do not have the [latest version of F4SE](http://f4se.silverlock.org). Some mods may require functionality added in the latest version of F4SE to work.'
@@ -62,7 +167,7 @@ globals:
       - lang: zh_CN
         str: '你的[F4SE](http://f4se.silverlock.org)似乎不是最新的。有些插件可能需要最新的F4SE才能工作。'
   - type: say
-    condition: 'not version("..\f4se_loader.exe", "0.0.1.1", <)'
+    condition: 'not version("..\f4se_loader.exe", "0.0.1.8", <)'
     content:
       - lang: en
         str: 'Your F4SE is up-to-date.'
@@ -74,8 +179,199 @@ globals:
         str: 'F4SE가 최신버전입니다.'
       - lang: zh_CN
         str: '你的F4SE是最新的。'
+  - type: error
+    condition: 'version("..\f4se_loader.exe", "0.0.1.8", >=) and version("..\Fallout4.exe", "1.4.132.0", <)'
+    content:
+      - lang: en
+        str: 'Your version of F4SE is not compatible with your version of Fallout 4.'
+# F4SE plugins
+  - <<: *requireF4SE
+    subs: [ 'Place Everywhere' ]
+    condition: 'file("F4SE\Plugins\place.dll") and not file("..\f4se_loader.exe")'
+  - type: error
+    content:
+      - lang: en
+        str: 'Your installed version of Place Everywhere is not compatible with your version of Fallout 4.'
+    # 0x78374099: v1.9.3 for FO4 1.3.47
+    # 0x988580db: v1.10.0 for FO4 1.3.47
+    # 0x6a0dbf55: v1.11.0 for FO4 1.3.47
+    # 0x95eab074: v1.9.3 for FO4 1.4.125
+    # 0xc2e4481a: v1.11.0 for FO4 1.4.131
+    # 0x89ceec93: v1.13 for FO4 1.4.132
+    # 0xc202af85: v1.14 for FO4 1.4.132
+    # 0x44af914a: v1.14.1 for FO4 1.4.32
+    # 0xace2ed7e: v1.15 for FO4 1.4.32
+    # 0x1bf865e4: v1.15.1 for FO4 1.4.32
+    condition: '((checksum("F4SE\Plugins\place.dll", 78374099) or checksum("F4SE\Plugins\place.dll", 988580db) or checksum("F4SE\Plugins\place.dll", 6a0dbf55)) and not version("..\Fallout4.exe", "1.3.47.0", ==)) or (checksum("F4SE\Plugins\place.dll", 95eab074) and not version("..\Fallout4.exe", "1.4.125.0", ==)) or (checksum("F4SE\Plugins\place.dll", c2e4481a) and not version("..\Fallout4.exe", "1.4.131.0", ==)) or ((checksum("F4SE\Plugins\place.dll", 89ceec93) or checksum("F4SE\Plugins\place.dll", c202af85) or checksum("F4SE\Plugins\place.dll", 44af914a) or checksum("F4SE\Plugins\place.dll", ace2ed7e) or checksum("F4SE\Plugins\place.dll", 1bf865e4)) and not version("..\Fallout4.exe", "1.4.132.0", ==))'
 
 plugins:
+  - name: 'Unofficial Fallout 4 Patch.esp'
+    url: [ 'http://afkmods.iguanadons.net/index.php?/files/file/1765-unofficial-fallout-4-patch/' ]
+    priority: -1999000
+    msg:
+      - type: error
+        content: 'Requires Fallout 4 patch 1.5.157 or greater.'
+        condition: 'version("Unofficial Fallout 4 Patch.esp", "1.0.2", ==) and not version("..\Fallout4.exe", "1.5.157.0", >=)'
+      - <<: *obsolete
+        condition: 'version("Unofficial Fallout 4 Patch.esp", "1.0.2", <)'
+  - name: 'DLCRobot.esm'
+    priority: -1999000
+  - name: 'Unofficial Automatron Patch.esp'
+    priority: -1999000
+    after:
+      - 'Unofficial Fallout 4 Patch.esp'
+  - name: 'DLCworkshop01.esm'
+    priority: -1999000
+    after:
+      - 'DLCRobot.esm'
+      - 'Unofficial Automatron Patch.esp'
+  - name: 'Unofficial Wasteland Workshop Patch.esp'
+    priority: -1999000
+    after:
+      - 'Unofficial Fallout 4 Patch.esp'
+      - 'DLCRobot.esm'
+      - 'Unofficial Automatron Patch.esp'
+  - name: 'DLCCoast.esm'
+    priority: -1999000
+    after:
+      - 'DLCRobot.esm'
+      - 'Unofficial Automatron Patch.esp'
+      - 'DLCworkshop01.esm'
+      - 'Unofficial Wasteland Workshop Patch.esp'
+  - name: 'DLCworkshop02.esm'
+    priority: -1999000
+    after:
+      - 'DLCRobot.esm'
+      - 'Unofficial Automatron Patch.esp'
+      - 'DLCworkshop01.esm'
+      - 'Unofficial Wasteland Workshop Patch.esp'
+      - 'DLCCoast.esm'
+
+  ### Unofficial Unofficial Patches
+  - name: 'KillshotFix.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/1282' ]
+    priority: -1999000
+    msg:
+      - <<: *AlreadyInFO4
+        condition: 'version("..\Fallout4.exe", "1.3.47.0", >=)'
+  - name: 'Simple Bug Fixes.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/2142' ]
+    priority: -1999000
+    msg:
+      - *AlreadyInUFO4P
+      - *UsingSKE
+  - name: 'NX Desk Crafting Fix.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/2662' ]
+    priority: -1999000
+    msg:
+      - *AlreadyInUFO4P
+  - name: 'CompanionBugfixExperimental.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/2679' ]
+    priority: -1999000
+    msg:
+      - *AlreadyInUFO4P
+  - name: 'ScroungerFix.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/3624' ]
+    priority: -1999000
+    msg:
+      - <<: *AlreadyInFO4
+        condition: 'version("..\Fallout4.exe", "1.4.132.0", >=)'
+  - name: 'UnofficialFallout4Patch.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/4526' ]
+    priority: -1999000
+    msg:
+      - *AlreadyInUFO4P
+  - name: 'SynthArmorFix.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/5054' ]
+    priority: -1999000
+    msg:
+      - *AlreadyInUFO4P
+  - name: 'Glow Front Sight Ring Fix.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/5205' ]
+    priority: -1999000
+    msg:
+      - *AlreadyInUFO4P
+  - name: 'WeaveFix.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/5847' ]
+    priority: -1999000
+    msg:
+      - *AlreadyInUFO4P
+  - name: 'MakanarPerkBigLeaguesFix.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/5957' ]
+    priority: -1999000
+    msg:
+      - <<: *AlreadyInFO4
+        condition: 'version("..\Fallout4.exe", "1.3.47.0", >=)'
+  - name: 'MakanarBigLeaguesFix.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/6185' ]
+    priority: -1999000
+    msg:
+      - <<: *AlreadyInFO4
+        condition: 'version("..\Fallout4.exe", "1.3.47.0", >=)'
+  - name: 'RailroadGloryBugFix.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/6389' ]
+    priority: -1999000
+    msg:
+      - <<: *AlreadyInFO4
+        condition: 'version("..\Fallout4.exe", "1.3.47.0", >=)'
+  - name: 'Vault 81 Holding Cell Fix(| Alt)\.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/8033' ]
+    priority: -1999000
+    msg:
+      - <<: *AlreadyInFO4
+        condition: 'version("..\Fallout4.exe", "1.4.132.0", >=)'
+  - name: 'Worsins-T60-Headlamp-Fix.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/8164' ]
+    priority: -1999000
+    msg:
+      - *AlreadyInUFO4P
+  - name: 'Pipe_Revolver_Tuned_Receiver.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/8570' ]
+    priority: -1999000
+    msg:
+      - *AlreadyInUFO4P
+  - name: 'Targeting HUD Berry Mentats Fix.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/8910' ]
+    priority: -1999000
+    msg:
+      - <<: *AlreadyInFO4
+        condition: 'version("..\Fallout4.exe", "1.5.0.0", >=)'
+  - name: 'RFG - Curie Inspirational Sneak L&L Fix.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/10047' ]
+    priority: -1999000
+    msg:
+      - *AlreadyInUFO4P
+  - name: 'SoldierToyFix.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/10229' ]
+    priority: -1999000
+    msg:
+      - *AlreadyInUFO4P
+  - name: 'FixTeslaScience.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/10319' ]
+    priority: -1999000
+    msg:
+      - *AlreadyInUFO4P
+  - name: 'ItemCapitalizationFixes.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/10416' ]
+    priority: -1999000
+    msg:
+      - *AlreadyInUFO4P
+  - name: 'DependencyQuestFix.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/10892' ]
+    priority: -1999000
+    msg:
+      - *AlreadyInUFO4P
+  - name: 'LiveNLoveMagazinePerkPatch.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/11083' ]
+    priority: -1999000
+    msg:
+      - *AlreadyInUFO4P
+  - name: 'Combat Armor Weight Fix.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/11541' ]
+    priority: -1999000
+    msg:
+      - *AlreadyInUFO4P
+
   - name: 'PipBoyShadows.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/281' ]
     inc:
@@ -138,11 +434,120 @@ plugins:
       - <<: *useOnlyOneX
         condition: 'many("(Ambient|Strong|Hardcore|Deadly) Radiation Storms\.esp")'
         subs: [ 'Hardcore Radiation Storm .esp' ]
+  - name: '(Higher|Deeper) Female Protagonist Voice (\((Japanese|Spanish|French|German)\) )?- Type [A-U]\d?\.esp'
+    url:
+      - 'http://www.nexusmods.com/fallout4/mods/288' # Higher
+      - 'http://www.nexusmods.com/fallout4/mods/6305' # Higher, Japanese
+      - 'http://www.nexusmods.com/fallout4/mods/5571' # Higher, Spanish
+      - 'http://www.nexusmods.com/fallout4/mods/4244' # Higher, French
+      - 'http://www.nexusmods.com/fallout4/mods/7299' # Higher, German
+      - 'http://www.nexusmods.com/fallout4/mods/5088' # Deeper
+      - 'http://www.nexusmods.com/fallout4/mods/7650' # Deeper, Japanese
+    msg:
+      - <<: *useOnlyOneX
+        condition: 'many("(Higher|Deeper) Female Protagonist Voice (\((Japanese|Spanish|French|German)\) )?- Type [A-U]\d?\.esp")'
+        subs: [ 'Higher or Deeper Female Protagonist Voice plugin' ]
+  - name: '(Deeper|Higher) Male Protagonist Voice (\((Japanese|Spanish)\) )?- Type [A-U]\d?\.esp'
+    url:
+      - 'http://www.nexusmods.com/fallout4/mods/1597' # Deeper
+      - 'http://www.nexusmods.com/fallout4/mods/7443' # Deeper, Japanese
+      - 'http://www.nexusmods.com/fallout4/mods/3249' # Higher
+      - 'http://www.nexusmods.com/fallout4/mods/7535' # Higher, Japanese
+      - 'http://www.nexusmods.com/fallout4/mods/7158' # Higher, Spanish
+    msg:
+      - <<: *useOnlyOneX
+        condition: 'many("(Deeper|Higher) Male Protagonist Voice (\((Japanese|Spanish)\) )?- Type [A-U]\d?\.esp")'
+        subs: [ 'Deeper or Higher Male Protagonist Voice plugin' ]
+  - name: 'Higher Voice For Curie (\((Japanese)\) )?- Type [A-U]\d(-(R|S))?\.esp'
+    url:
+      - 'http://www.nexusmods.com/fallout4/mods/5978' # English
+      - 'http://www.nexusmods.com/fallout4/mods/6810' # Japanese
+    msg:
+      - <<: *useOnlyOneX
+        condition: 'many("Higher Voice For Curie (\(Japanese\) )?- Type [A-U]\d(-(R|S))?\.esp")'
+        subs: [ 'Higher Voice For Curie plugin' ]
+  - name: '(Higher|Deeper) Voice For Piper (\(Japanese\) )?- Type [A-U]\d\.esp'
+    url:
+      - 'http://www.nexusmods.com/fallout4/mods/6560' # Higher, English
+      - 'http://www.nexusmods.com/fallout4/mods/6492' # Higher, Japanese
+      - 'http://www.nexusmods.com/fallout4/mods/8659' # Deeper, English
+    msg:
+      - <<: *useOnlyOneX
+        condition: 'many("(Higher|Deeper) Voice For Piper - Type [A-U]\d\.esp")'
+        subs: [ 'Higher/Deeper Voice For Piper plugin' ]
+  - name: 'Deeper Voice For Strong - Type A\d\.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/3876' ]
+    msg:
+      - <<: *useOnlyOneX
+        condition: 'many("Deeper Voice For Strong - Type A\d\.esp")'
+        subs: [ 'Deeper Voice For Strong plugin' ]
+  - name: 'Deeper Voice For Super Mutants - Type A\d\.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/3884' ]
+    msg:
+      - <<: *useOnlyOneX
+        condition: 'many("Deeper Voice For Super Mutants - Type A\d\.esp")'
+        subs: [ 'Deeper Voice For Super Mutants plugin' ]
+  - name: 'Deeper Voice For Preston - Type A\d\.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/7701' ]
+    msg:
+      - <<: *useOnlyOneX
+        condition: 'many("Deeper Voice For Preston - Type A\d\.esp")'
+        subs: [ 'Deeper Voice For Preston plugin' ]
+  - name: 'Deeper Voice For X6-88 - Type A\d\.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/7712' ]
+    msg:
+      - <<: *useOnlyOneX
+        condition: 'many("Deeper Voice For X6-88 - Type A\d\.esp")'
+        subs: [ 'Deeper Voice For X6-88 plugin' ]
+  - name: '(Higher|Deeper) Voice For Cait - Type A\d\.esp'
+    url:
+      - 'http://www.nexusmods.com/fallout4/mods/6743' # Higher
+      - 'http://www.nexusmods.com/fallout4/mods/8634' # Deeper
+    msg:
+      - <<: *useOnlyOneX
+        condition: 'many("(Higher|Deeper) Voice For Cait - Type A\d\.esp")'
+        subs: [ 'Higher/Deeper Voice For Cait plugin' ]
+  - name: 'DeadlyRadstorms_Climate_\d+\.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/829' ]
+    msg:
+      - <<: *useOnlyOneX
+        condition: 'many("DeadlyRadstorms_Climate_\d+\.esp")'
+        subs: [ 'DeadlyRadstorms_Climate .esp' ]
+  - name: 'DeadlyRadstorms_Damage_\d+\.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/829' ]
+    msg:
+      - <<: *useOnlyOneX
+        condition: 'many("DeadlyRadstorms_Damage_\d+\.esp")'
+        subs: [ 'DeadlyRadstorms_Damage .esp' ]
   - name: 'Simple Bug Fixes - Better Item Sorting Patch.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/2142' ]
     after:
       - 'Simple Bug Fixes.esp'
-
+  - name: 'NoGunSneakAttackMultiplier.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/2114' ]
+    msg:
+      - <<: *obsolete
+        condition: 'version("NoGunSneakAttackMultiplier.esp", "1.1", <)'
+  - name: 'Freso''s TTYM - Think to Yourself Messages for FO4.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/2955' ]
+    msg:
+      - <<: *obsolete
+        condition: 'version("Freso''s TTYM - Think to Yourself Messages for FO4.esp", "0.3", <)'
+  - name: 'ShaikujinSettlementAttacked.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/4106' ]
+    inc:
+      - 'ShaikujinSettlementAttacked_NoInfo.esp'
+      - 'ChimeAttack.esp'
+  - name: 'ShaikujinSettlementAttacked_NoInfo.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/4106' ]
+    inc:
+      - 'ShaikujinSettlementAttacked.esp'
+      - 'ChimeAttack.esp'
+  - name: 'ChimeAttack.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/4106' ]
+    inc:
+      - 'ShaikujinSettlementAttacked.esp'
+      - 'ShaikujinSettlementAttacked_NoInfo.esp'
   - name: 'DarkerNights-TrueStorms-LITE-Audio.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/191' ]
     after:
@@ -155,7 +560,6 @@ plugins:
         condition: 'not(active("TrueStormsFO4-LITE-Audio.esp")) and active("DarkerNights-TrueStorms-LITE-Audio.esp")'
     inc:
       - 'DarkerNights-TrueStorms.esp'
-
   - name: 'DarkerNights-TrueStorms.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/191' ]
     msg:
@@ -165,7 +569,6 @@ plugins:
         condition: 'active("TrueStormsFO4-LITE-Audio.esp") and active("DarkerNights-TrueStorms.esp")'
     inc:
       - 'DarkerNights-TrueStorms-LITE-Audio.esp'
-
   - name: 'TrueStormsFO4.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/4472' ]
     after:
@@ -174,14 +577,12 @@ plugins:
       - <<: *patchAvailable
         subs: [ 'DarkerNights.esp' ]
         condition: 'active("TrueStormsFO4.esp") and active("DarkerNights.esp") and not active("DarkerNights-TrueStorms.esp") and not active("DarkerNights-TrueStorms-LITE-Audio.esp")'
-
   - name: 'TrueStormsFO4-LITE-Audio.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/4472' ]
     after:
       # Ensure the WTHR record changes brought by the True Storms LITE Audio addon are not overwritten by the Darker Nights patch which is intended for the STANDARD version of True Storms only
       # Note: Conflicting WTHR records will not be darkened but that is the guaranteed "lesser evil".
       - 'DarkerNights-TrueStorms.esp'
-
   - name: 'FogOut.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/2428' ]
     after:
@@ -190,7 +591,6 @@ plugins:
       - <<: *patchAvailable
         subs: [ 'DarkerNights.esp' ]
         condition: 'active("FogOut.esp") and active("DarkerNights.esp") and not active("DarkerNights-FogOut.esp")'
-
   - name: 'Radiant Clouds and Fogs.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/735' ]
     after:
@@ -199,3 +599,254 @@ plugins:
       - <<: *patchAvailable
         subs: [ 'DarkerNights.esp' ]
         condition: 'active("Radiant Clouds and Fogs.esp") and active("DarkerNights.esp") and not active("DarkerNights-Radiant.esp")'
+  - name: 'Scrap Everything.esp'
+    msg: [ *doNotClean ]
+    url: [ 'http://www.nexusmods.com/fallout4/mods/5320' ]
+  - name: 'Synth Armor Fix.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/6424' ]
+    msg:
+      - <<: *AlreadyInX
+        condition: 'active("ArmorKeywords.esm")'
+        subs: [ 'ArmorKeywords.esm' ]
+  - name: 'WET Clearer.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/244' ]
+    inc: [ 'WET Murkier.esp' ]
+  - name: 'WET Murkier.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/244' ]
+    inc: [ 'WET Clearer.esp' ]
+  - name: 'Lasers Have No Recoil.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/9417/' ]
+    inc: [ 'Concentrated Splitter.esp' ]
+  - name: 'LasersNoRecoil - Beam Splitters Patch.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/9417/' ]
+    inc: [ 'Concentrated Splitter - No Recoil.esp' ]
+  - name: 'Concentrated Splitter.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/10193/' ]
+    inc:
+      - 'Concentrated Splitter - No Recoil.esp'
+      - 'Lasers Have No Recoil.esp'
+  - name: 'Concentrated Splitter - No Recoil.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/10193' ]
+    inc: [ 'Concentrated Splitter.esp' ]
+    req: [ 'Lasers Have No Recoil.esp' ]
+  - name: 'OSM_AlternateStart_Protocol-InfiniteAnswer.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/13762' ]
+    priority: 1999000
+  - name: 'Vault-Tec Historical Preservation Initiative.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/12019' ]
+    priority: -1900000
+
+  - name: 'OCDWorkshopDLCPatch.esp'
+    msg:
+      - type: error
+        content: 'Use OCDecorator.esp Wasteland Workshop version instead [Download](http://www.nexusmods.com/fallout4/mods/4270)'
+      - *UsingSKE
+  - name: 'OCDecorator_FarHarbor.esp'
+    msg:
+      - type: error
+        content: 'Use ''OCD FarHarborDLC.esp'' instead [Download](http://www.nexusmods.com/fallout4/mods/4270)'
+      - *UsingSKE
+  - name: 'WW_SK_PATCH.esp'
+    msg:
+      - *UsingSKE
+  - name: 'Jzk_WW_Patch.esp'
+    msg:
+      - *UsingSKE
+  - name: 'CW_PATCH.esp'
+    msg:
+      - *UsingSKE
+  - name: 'DLC_MainMenu.esm'
+    msg:
+      - *UsingSKE
+  - name: 'DLC_OCD_Patch.esp'
+    msg:
+      - *UsingSKE
+  - name: 'DLC_PATCH.esp'
+    msg:
+      - *UsingSKE
+  - name: 'DLC_PATCH_ENG.esp'
+    msg:
+      - *UsingSKE
+  - name: 'DLC_PATCH_integrated.esp'
+    msg:
+      - *UsingSKE
+  - name: 'DLC_SK_Patch.esp'
+    msg:
+      - *UsingSKE
+  - name: 'DLC_SKE_Patch.esp'
+    msg:
+      - *UsingSKE
+  - name: 'FH_PATCH.esp'
+    msg:
+      - *UsingSKE
+  - name: 'FH_PATCH_integrated.esp'
+    msg:
+      - *UsingSKE
+  - name: 'WW_PATCH.esp'
+    msg:
+      - *UsingSKE
+  - name: 'WW_PATCH_ENG.esp'
+    msg:
+      - *UsingSKE
+  - name: 'WW_PATCH_integrated.esp'
+    msg:
+      - *UsingSKE
+  - name: 'HMM-WWorkshop-Compatibility.esp'
+    msg:
+      - *UsingSKE
+  - name: 'HMMOCD-WWorkshop-Compatibility.esp'
+    msg:
+      - *UsingSKE
+  - name: 'OCD-WWorkshop-Compatibility.esp'
+    msg:
+      - *UsingSKE
+  - name: 'BS-SKPatch.esp'
+    msg:
+      - *UsingSKE
+  - name: 'BS-HomemakerPatch.esp'
+    msg:
+      - *UsingSKE
+  - name: 'SettleObjExpandPack-HM-SnB-Patch.esp'
+    msg:
+      - *UsingSKE
+  - name: 'PatchyMcPatcherson-SnB.esp'
+    msg:
+      - *UsingSKE
+  - name: 'WastelandWorkshopPatch.esp'
+    msg:
+      - *UsingSKE
+  - name: 'FarHarborHomemakerFix.esp'
+    msg:
+      - *UsingSKE
+  - name: 'Robot Home Defence - Settlement Keywords.esp'
+    msg:
+      - *UsingSKE
+  - name: 'OCD_MO_Patch.esp'
+    msg:
+      - *UsingSKE
+  - name: 'MO_Propaganda.esp'
+    msg:
+      - *UsingSKE
+  - name: 'MO_HM_Patch.esp'
+    msg:
+      - *UsingSKE
+  - name: 'MO_HM_OCD_Patch.esp'
+    msg:
+      - *UsingSKE
+  - name: 'SKHMWW.esp'
+    msg:
+      - *UsingSKE
+  - name: 'Homemaker - Bunker Disabler SK.esp'
+    msg:
+      - *UsingSKE
+  - name: 'Homemaker - Bunker Disabler.esp'
+    msg:
+      - *UsingSKE
+  - name: 'Homemaker - Greenhouse and Bunker Disabler SK.esp'
+    msg:
+      - *UsingSKE
+  - name: 'Homemaker - Greenhouse and Bunker Disabler.esp'
+    msg:
+      - *UsingSKE
+  - name: 'Homemaker - Greenhouse Disabler SK.esp'
+    msg:
+      - *UsingSKE
+  - name: 'Homemaker - Greenhouse Disabler.esp'
+    msg:
+      - *UsingSKE
+  - name: 'Homemaker - SK Integration Patch.esp'
+    msg:
+      - type: error
+        content: 'Requires Settlement Keywords v0.8.'
+        condition: 'not checksum("SettlementKeywords.esm",8D550871)'
+      - type: error
+        content: 'Incompatibile with Fallout 4 patch 1.5.157 or greater.'
+        condition: 'file("..\Fallout4.exe") and version("..\Fallout4.exe", "1.5.157.0", >=)'
+  - name: 'Homemaker - SKE Integration Patch.esp'
+    msg:
+      - *UsingSKE
+  - name: 'Homemaker - SSEx Compatibility Patch.esp'
+    msg:
+      - *UsingSKE
+  - name: 'Homemaker - Streetlights Use Passive Power.esp'
+    msg:
+      - *UsingSKE
+  - name: 'Homemaker - Unlocked Institute Objects SK.esp'
+    msg:
+      - *UsingSKE
+  - name: 'Homemaker - Unlocked Institute Objects.esp'
+    msg:
+      - *UsingSKE
+  - name: 'Snap''n Build - Bunker.esp'
+    msg:
+      - *UsingSNB
+  - name: 'Snap''n Build - Capsule.esp'
+    msg:
+      - *UsingSNB
+  - name: 'Snap''n Build - Greenhouse.esp'
+    msg:
+      - *UsingSNB
+  - name: 'Snap''n Build - Industrial.esp'
+    msg:
+      - *UsingSNB
+  - name: 'Snap''n Build - Patches_HMM.esp'
+    msg:
+      - *UsingSNB
+  - name: 'Snap''n Build - Patches_SK.esp'
+    msg:
+      - *UsingSNB
+  - name: 'Snap''n Build - Real Estate.esp'
+    msg:
+      - *UsingSNB
+  - name: 'Snap''n Build - Patches.esp'
+    msg:
+      - *UsingSNB
+  - name: 'Homemaker.esm'
+    msg:
+      - type: error
+        content: 'Incompatibile with Fallout 4 patch 1.5.157 or greater.'
+        condition: 'checksum("Homemaker.esm",55D44FD5) and version("..\Fallout4.exe", "1.5.157.0", >=)'
+      - type: error
+        content: 'Incompatibile with Settlement Keywords Expanded.'
+        condition: '(checksum("Homemaker.esm",55D44FD5) or checksum("Homemaker.esm",A28ED2EC)) and version("SettlementKeywords.esm", "1.0", >=)'
+      - type: error
+        content: 'Requires Fallout 4 patch 1.5.157 or greater.'
+        condition: 'checksum("Homemaker.esm",A28ED2EC) and version("..\Fallout4.exe", "1.5.157.0", <)'
+  - name: 'SettlementKeywords.esm'
+    msg:
+      - type: error
+        content: 'Incompatibile with Fallout 4 patch 1.5.157 or greater.'
+        condition: 'checksum("SettlementKeywords.esm",8D550871) and version("..\Fallout4.exe", "1.5.157.0", >=)'
+      - type: warn
+        content: 'Incompatibile with current version of SKE.'
+        condition: 'not checksum("SettlementKeywords.esm",DD6C26B1) and version("SettlementKeywords.esm", "1.35", <)'
+      - <<: *obsolete
+        condition: 'version("SettlementKeywords.esm", "1.35", <)'
+  - name: 'AlternateSettlements.esp'
+    msg:
+      - type: error
+        content: 'Outdated version of Alternate Settlements detected.  Verify the Settlement Keywords Expanded patch is properly installed.'
+        condition: '(checksum("AlternateSettlements.esp",D8906B4D) or checksum("AlternateSettlements.esp",5C36EB92)) and version("SettlementKeywords.esm", "1.0", >=)'
+
+  - name: 'FO4Merged.esp'
+    priority: 1991000
+    tag:
+      - NoMerge
+  - name: 'Smashed Patch.esp'
+    priority: 1991000
+    after:
+      - 'FO4Merged.esp'
+    tag:
+      - NoMerge
+    msg:
+      - <<: *SmashedVsBashedPatch
+        condition: 'regex("Bashed Patch.*\.esp")'
+        subs: [ 'Bashed Patch' ]
+  - name: 'Bashed Patch.*\.esp'
+    priority: 1991000
+    after:
+      - 'FO4Merged.esp'
+    msg:
+      - <<: *SmashedVsBashedPatch
+        condition: 'file("Smashed Patch.esp")'
+        subs: [ 'Smashed Patch.esp' ]
