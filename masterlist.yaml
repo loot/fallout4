@@ -793,6 +793,12 @@ plugins:
       - type: error
         content: 'Outdated version of Alternate Settlements detected.  Verify the Settlement Keywords Expanded patch is properly installed.'
         condition: '(checksum("AlternateSettlements.esp",D8906B4D) or checksum("AlternateSettlements.esp",5C36EB92)) and version("SettlementKeywords.esm", "1.0", >=)'
+  - name: 'BetterJunkFences.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/9000' ]
+    inc: [ 'JunkWalls_More_Snaps.esp' ]
+  - name: 'JunkWalls_More_Snaps.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/13522' ]
+    inc: [ 'BetterJunkFences.esp' ]
 
   - name: 'FO4Merged.esp'
     priority: 1991000
