@@ -213,7 +213,7 @@ plugins:
     msg:
       - type: error
         content: 'Requires Fallout 4 patch 1.6.3 or greater.'
-        condition: 'version("Unofficial Fallout 4 Patch.esp", "1.0.4b", ==) and not version("..\Fallout4.exe", "1.6.3.0", >=)'
+        condition: 'version("Unofficial Fallout 4 Patch.esp", "1.0.4b", >=) and not version("..\Fallout4.exe", "1.6.3.0", >=)'
       - <<: *obsolete
         condition: 'version("Unofficial Fallout 4 Patch.esp", "1.0.4b", <)'
   - name: 'DLCRobot.esm'
