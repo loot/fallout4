@@ -206,7 +206,9 @@ globals:
 
 plugins:
   - name: 'Unofficial Fallout 4 Patch.esp'
-    url: [ 'http://afkmods.iguanadons.net/index.php?/files/file/1765-unofficial-fallout-4-patch/' ]
+    url:
+      - 'http://afkmods.iguanadons.net/index.php?/files/file/1765-unofficial-fallout-4-patch/'
+      - 'http://www.nexusmods.com/fallout4/mods/4526'
     priority: -1999000
     msg:
       - type: error
