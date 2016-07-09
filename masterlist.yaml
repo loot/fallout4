@@ -210,10 +210,10 @@ plugins:
     priority: -1999000
     msg:
       - type: error
-        content: 'Requires Fallout 4 patch 1.5.157 or greater.'
-        condition: 'version("Unofficial Fallout 4 Patch.esp", "1.0.2", ==) and not version("..\Fallout4.exe", "1.5.157.0", >=)'
+        content: 'Requires Fallout 4 patch 1.6.3 or greater.'
+        condition: 'version("Unofficial Fallout 4 Patch.esp", "1.0.4b", ==) and not version("..\Fallout4.exe", "1.6.3.0", >=)'
       - <<: *obsolete
-        condition: 'version("Unofficial Fallout 4 Patch.esp", "1.0.2", <)'
+        condition: 'version("Unofficial Fallout 4 Patch.esp", "1.0.4b", <)'
   - name: 'DLCRobot.esm'
     priority: -1999000
   - name: 'Unofficial Automatron Patch.esp'
