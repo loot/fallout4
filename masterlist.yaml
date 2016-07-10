@@ -767,6 +767,36 @@ plugins:
   - name: 'Snap''n Build - Patches.esp'
     msg:
       - *UsingSNB
+  - name: 'Snap and Build - Greenhouse.esp'
+    msg:
+      - type: error
+        content: 'Incompatibile with Fallout 4 patch 1.5.157 or greater.'
+        condition: 'file("..\Fallout4.exe") and version("..\Fallout4.exe", "1.5.157.0", >=)'
+      - *UsingSNB
+  - name: 'SnB - Greenhouse - Homemaker.esp'
+    msg:
+      - type: error
+        content: 'Incompatibile with Fallout 4 patch 1.5.157 or greater.'
+        condition: 'file("..\Fallout4.exe") and version("..\Fallout4.exe", "1.5.157.0", >=)'
+      - *UsingSNB
+  - name: 'SnB- Greenhouse - SK.esp'
+    msg:
+      - type: error
+        content: 'Incompatibile with Fallout 4 patch 1.5.157 or greater.'
+        condition: 'file("..\Fallout4.exe") and version("..\Fallout4.exe", "1.5.157.0", >=)'
+      - *UsingSNB
+  - name: 'SnB - Greenhouse - SSEx.esp'
+    msg:
+      - type: error
+        content: 'Incompatibile with Fallout 4 patch 1.5.157 or greater.'
+        condition: 'file("..\Fallout4.exe") and version("..\Fallout4.exe", "1.5.157.0", >=)'
+      - *UsingSNB
+  - name: 'SnB - Greenhouse - Homemaker - SSEx.esp'
+    msg:
+      - type: error
+        content: 'Incompatibile with Fallout 4 patch 1.5.157 or greater.'
+        condition: 'file("..\Fallout4.exe") and version("..\Fallout4.exe", "1.5.157.0", >=)'
+      - *UsingSNB
   - name: 'Homemaker.esm'
     msg:
       - type: error
@@ -793,6 +823,11 @@ plugins:
       - type: error
         content: 'Outdated version of Alternate Settlements detected.  Verify the Settlement Keywords Expanded patch is properly installed.'
         condition: '(checksum("AlternateSettlements.esp",D8906B4D) or checksum("AlternateSettlements.esp",5C36EB92)) and version("SettlementKeywords.esm", "1.0", >=)'
+  - name: 'Safe SSEx.esp'
+    msg:
+      - type: error
+        content: 'Incompatibile with Fallout 4 patch 1.5.157 or greater.'
+        condition: 'file("..\Fallout4.exe") and version("..\Fallout4.exe", "1.5.157.0", >=)'
   - name: 'BetterJunkFences.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/9000' ]
     inc: [ 'JunkWalls_More_Snaps.esp' ]
