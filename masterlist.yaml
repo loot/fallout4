@@ -834,6 +834,26 @@ plugins:
   - name: 'JunkWalls_More_Snaps.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/13522' ]
     inc: [ 'BetterJunkFences.esp' ]
+  - name: 'BrighterSettlementLights(_(ExtraBrightv1\.1|LessHarsh|LongAndSoft)| - (Extra Bright( v1\.1)?|Less Harsh))?\.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/2494' ]
+    msg:
+      - <<: *useOnlyOneX
+        condition: 'many("BrighterSettlementLights(_(ExtraBrightv1\.1|LessHarsh|LongAndSoft)| - (Extra Bright( v1\.1)?|Less Harsh))?\.esp")'
+        subs: [ 'BrighterSettlementLights .esp' ]
+  - name: 'ConstructionLight_\w+\.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/2474' ]
+    after:
+      - 'BrighterSettlementLights.esp'
+      - 'BrighterSettlementLights - Extra Bright.esp'
+      - 'BrighterSettlementLights - Extra Bright v1.1.esp'
+      - 'BrighterSettlementLights - Less Harsh.esp'
+      - 'BrighterSettlementLights_ExtraBrightv1.1.esp'
+      - 'BrighterSettlementLights_LessHarsh.esp'
+      - 'BrighterSettlementLights_LongAndSoft.esp'
+    msg:
+      - <<: *useOnlyOneX
+        condition: 'many("ConstructionLight_\w+\.esp")'
+        subs: [ 'ConstructionLight .esp' ]
 
   - name: 'FO4Merged.esp'
     priority: 1991000
