@@ -813,6 +813,12 @@ plugins:
       - type: error
         content: 'Incompatibile with Fallout 4 patch 1.5.157 or greater.'
         condition: 'checksum("SettlementKeywords.esm",8D550871) and version("..\Fallout4.exe", "1.5.157.0", >=)'
+      - type: error
+        content: 'Incompatibile with Fallout 4 patch 1.5.157 to 1.5.416. Use SKE 1.36 instead.'
+        condition: 'checksum("SettlementKeywords.esm",7E89C248) and (version("..\Fallout4.exe", "1.5.157.0", >=) and version("..\Fallout4.exe", "1.5.416.0", <=))'
+      - type: error
+        content: 'Incompatibile with Fallout 4 patch 1.6.3 or greater. Use SKE 1.37 instead.'
+        condition: 'checksum("SettlementKeywords.esm",CC36D4EF) and version("..\Fallout4.exe", "1.6.3", >=)'
       - type: warn
         content: 'Incompatibile with current version of SKE.'
         condition: '(not checksum("SettlementKeywords.esm",CC36D4EF) and version("SettlementKeywords.esm", "1.36", <=)) or (not checksum("SettlementKeywords.esm",7E89C248) and version("SettlementKeywords.esm", "1.37", ==))'
