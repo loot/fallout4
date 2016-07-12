@@ -726,7 +726,7 @@ plugins:
         content: 'Requires Settlement Keywords v0.8.'
         condition: 'not checksum("SettlementKeywords.esm",8D550871)'
       - type: error
-        content: 'Incompatibile with Fallout 4 patch 1.5.157 or greater.'
+        content: 'Incompatible with Fallout 4 patch 1.5.157 or greater.'
         condition: 'file("..\Fallout4.exe") and version("..\Fallout4.exe", "1.5.157.0", >=)'
   - name: 'Homemaker - SKE Integration Patch.esp'
     msg:
@@ -770,40 +770,40 @@ plugins:
   - name: 'Snap and Build - Greenhouse.esp'
     msg:
       - type: error
-        content: 'Incompatibile with Fallout 4 patch 1.5.157 or greater.'
+        content: 'Incompatible with Fallout 4 patch 1.5.157 or greater.'
         condition: 'file("..\Fallout4.exe") and version("..\Fallout4.exe", "1.5.157.0", >=)'
       - *UsingSNB
   - name: 'SnB - Greenhouse - Homemaker.esp'
     msg:
       - type: error
-        content: 'Incompatibile with Fallout 4 patch 1.5.157 or greater.'
+        content: 'Incompatible with Fallout 4 patch 1.5.157 or greater.'
         condition: 'file("..\Fallout4.exe") and version("..\Fallout4.exe", "1.5.157.0", >=)'
       - *UsingSNB
   - name: 'SnB- Greenhouse - SK.esp'
     msg:
       - type: error
-        content: 'Incompatibile with Fallout 4 patch 1.5.157 or greater.'
+        content: 'Incompatible with Fallout 4 patch 1.5.157 or greater.'
         condition: 'file("..\Fallout4.exe") and version("..\Fallout4.exe", "1.5.157.0", >=)'
       - *UsingSNB
   - name: 'SnB - Greenhouse - SSEx.esp'
     msg:
       - type: error
-        content: 'Incompatibile with Fallout 4 patch 1.5.157 or greater.'
+        content: 'Incompatible with Fallout 4 patch 1.5.157 or greater.'
         condition: 'file("..\Fallout4.exe") and version("..\Fallout4.exe", "1.5.157.0", >=)'
       - *UsingSNB
   - name: 'SnB - Greenhouse - Homemaker - SSEx.esp'
     msg:
       - type: error
-        content: 'Incompatibile with Fallout 4 patch 1.5.157 or greater.'
+        content: 'Incompatible with Fallout 4 patch 1.5.157 or greater.'
         condition: 'file("..\Fallout4.exe") and version("..\Fallout4.exe", "1.5.157.0", >=)'
       - *UsingSNB
   - name: 'Homemaker.esm'
     msg:
       - type: error
-        content: 'Incompatibile with Fallout 4 patch 1.5.157 or greater.'
+        content: 'Incompatible with Fallout 4 patch 1.5.157 or greater.'
         condition: 'checksum("Homemaker.esm",55D44FD5) and version("..\Fallout4.exe", "1.5.157.0", >=)'
       - type: error
-        content: 'Incompatibile with Settlement Keywords Expanded.'
+        content: 'Incompatible with Settlement Keywords Expanded.'
         condition: '(checksum("Homemaker.esm",55D44FD5) or checksum("Homemaker.esm",A28ED2EC)) and version("SettlementKeywords.esm", "1.0", >=)'
       - type: error
         content: 'Requires Fallout 4 patch 1.5.157 or greater.'
@@ -811,16 +811,16 @@ plugins:
   - name: 'SettlementKeywords.esm'
     msg:
       - type: error
-        content: 'Incompatibile with Fallout 4 patch 1.5.157 or greater.'
+        content: 'Incompatible with Fallout 4 patch 1.5.157 or greater.'
         condition: 'checksum("SettlementKeywords.esm",8D550871) and version("..\Fallout4.exe", "1.5.157.0", >=)'
       - type: error
-        content: 'Incompatibile with Fallout 4 patch 1.5.157 to 1.5.416. Use SKE 1.36 instead.'
+        content: 'Incompatible with Fallout 4 patch 1.5.157 to 1.5.416. Use SKE 1.36 instead.'
         condition: 'checksum("SettlementKeywords.esm",7E89C248) and (version("..\Fallout4.exe", "1.5.157.0", >=) and version("..\Fallout4.exe", "1.5.416.0", <=))'
       - type: error
-        content: 'Incompatibile with Fallout 4 patch 1.6.3 or greater. Use SKE 1.37 instead.'
+        content: 'Incompatible with Fallout 4 patch 1.6.3 or greater. Use SKE 1.37 instead.'
         condition: 'checksum("SettlementKeywords.esm",CC36D4EF) and version("..\Fallout4.exe", "1.6.3", >=)'
       - type: warn
-        content: 'Incompatibile with current version of SKE.'
+        content: 'Incompatible with current version of SKE.'
         condition: '(not checksum("SettlementKeywords.esm",CC36D4EF) and version("SettlementKeywords.esm", "1.36", <=)) or (not checksum("SettlementKeywords.esm",7E89C248) and version("SettlementKeywords.esm", "1.37", ==))'
       - <<: *obsolete
         condition: 'version("SettlementKeywords.esm", "1.37", <) and (not checksum("SettlementKeywords.esm",CC36D4EF) and not version("SettlementKeywords.esm", "1.36", ==))'
@@ -832,7 +832,7 @@ plugins:
   - name: 'Safe SSEx.esp'
     msg:
       - type: error
-        content: 'Incompatibile with Fallout 4 patch 1.5.157 or greater.'
+        content: 'Incompatible with Fallout 4 patch 1.5.157 or greater.'
         condition: 'file("..\Fallout4.exe") and version("..\Fallout4.exe", "1.5.157.0", >=)'
   - name: 'BetterJunkFences.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/9000' ]
