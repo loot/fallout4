@@ -180,7 +180,7 @@ globals:
       - lang: zh_CN
         str: '你的F4SE是最新的。'
   - type: error
-    condition: 'version("..\f4se_loader.exe", "0.0.1.19", >=) and version("..\Fallout4.exe", "1.6.3.0", <)'
+    condition: 'version("..\f4se_loader.exe", "0.0.1.19", ==) and version("..\Fallout4.exe", "1.6.3.0", !=)'
     content:
       - lang: en
         str: 'Your version of F4SE is not compatible with your version of Fallout 4.'
