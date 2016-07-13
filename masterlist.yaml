@@ -18,11 +18,15 @@ common:
         str: '사용되지 않습니다. 최신 버전으로 업데이트하십시오.'
       - lang: zh_CN
         str: '已过时。请升级到最新版本。'
+      - lang: da
+        str: 'Forældet. Opdatér til den nyeste version.'
   - &AlreadyInFO4
     type: error
     content:
       - lang: en
         str: 'Delete. Already patched in Fallout 4 by Bethesda.'
+      - lang: da
+        str: 'Slet. Allerede rettet i Fallout 4 af Bethesda.'
   - &AlreadyInUFO4P
     type: error
     content:
@@ -36,6 +40,8 @@ common:
         str: '삭제하십시오. 이미 Unofficial Fallout 4 Patch.esp에 포함되어 있습니다.'
       - lang: zh_CN
         str: '删除。已包含在Unofficial Fallout 4 Patch.esp中。'
+      - lang: da
+        str: 'Slet. Allerede inkluderet i Unofficial Fallout 4 Patch.esp.'
     condition: 'active("Unofficial Fallout 4 Patch.esp")'
   - &AlreadyInX
     type: error
@@ -50,6 +56,8 @@ common:
         str: '삭제하십시오. 이미 %1%에 포함되어 있습니다.'
       - lang: zh_CN
         str: '删除。已包含在%1%中。'
+      - lang: da
+        str: 'Slet. Allerede inkluderet i %1%.'
   - &useOnlyOneX
     type: warn
     content:
@@ -63,6 +71,8 @@ common:
         str: '%1%을 한개만 사용하십시오.'
       - lang: zh_CN
         str: '只使用一个%1%。'
+      - lang: da
+        str: 'Brug kun én %1%.'
   - &doNotClean
     type: say
     content:
@@ -74,11 +84,15 @@ common:
         str: 'No limpiar las referencias ITM (iguales al master), ya que son intencionales y necesarias para que el Mod funcione. Sí es seguro restaurar las UDR (referencias borradas), pero no haga más que eso.'
       - lang: zh_CN
         str: '不干净。"脏"数据是故意的，这是mod需要的功能。'
+      - lang: da
+        str: 'Rengør ikke ITM-poster: de er forsætlige og krævede for at mod’en fungerer. Det er sikkert at gendanne poster, men gør ikke andet end dét.'
   - &patchAvailable
     type: say
     content:
       - lang: en
         str: 'This plugin conflicts with plugin "%1%", however a patch is available.'
+      - lang: da
+        str: 'Dette plugin er i konflikt med pluginnet “%1%”, men en lap er tilgængelig.'
   - &requireF4SE
     type: error
     content:
@@ -92,6 +106,8 @@ common:
         str: '%1%가 설치되었지만 F4SE를 찾을 수 없습니다! F4SE 다운로드 페이지를 참조하십시오: [F4SE](http://f4se.silverlock.org).'
       - lang: zh_CN
         str: '你已经安装了%1%，但是未发现F4SE！请查看F4SE的下载页面：[F4SE](http://f4se.silverlock.org)。'
+      - lang: da
+        str: 'Du har installeret %1% men F4SE blev ikke fundet! Se F4SE-downloadsiden: [F4SE](http://f4se.silverlock.org).'
   - &SmashedVsBashedPatch
     type: say
     content:
@@ -99,6 +115,8 @@ common:
         str: 'Can be used with a %1% but would require additional work. A Smashed Patch or Bash Patch should be used independently of one another.'
       - lang: es
         str: 'Se puede utilizar con un %1% pero requeriría un trabajo adicional. Deben de estar utilizado un Smashed Patch o un Bash Patch independiente del uno el otro.'
+      - lang: da
+        str: 'Kan bruges sammen med %1% men det vil kræve ekstra arbejde. Smashed Patch og Bash Patch bør bruges uafhængigt af hinanden.'
   - &UsingSKE
     type: error
     content:
@@ -106,6 +124,8 @@ common:
         str: 'This file is not compatible with SKE.'
       - lang: es
         str: 'Este archivo no es compatible con SKE.'
+      - lang: da
+        str: 'Denne fil er ikke kompatibel med SKE.'
     condition: 'active("SettlementKeywords.esm") and version("SettlementKeywords.esm", "1.0", >=)'
   - &InsteadSKEPatch
     type: warn
@@ -122,6 +142,8 @@ common:
         str: 'This file is unneeded with Snap''n Build.esm v1.9.  Consider upgrading and removing this file.'
       - lang: es
         str: 'No se requiere este archivo con Snap''n Build.esm version 1.9.  Considere actualizando y desinstalando este archivo.'
+      - lang: da
+        str: 'Denne fil behøves ikke med Snap''n Build.esm v1.9. Overvej at opgradere og fjerne denne fil.'
     condition: 'active("Snap''n Build.esm")'
 
 globals:
