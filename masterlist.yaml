@@ -186,6 +186,10 @@ globals:
         str: 'Your version of F4SE is not compatible with your version of Fallout 4.'
 # F4SE plugins
   - <<: *requireF4SE
+    subs: [ 'Achievements' ]
+    # url: [ 'http://www.nexusmods.com/fallout4/mods/12465' ]
+    condition: 'file("F4SE\Plugins\achievements.dll") and not file("..\f4se_loader.exe")'
+  - <<: *requireF4SE
     subs: [ 'Place Everywhere' ]
     condition: 'file("F4SE\Plugins\place.dll") and not file("..\f4se_loader.exe")'
   - type: error
