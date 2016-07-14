@@ -807,7 +807,7 @@ plugins:
         content: 'Incompatible with Fallout 4 patch 1.5.157 or greater.'
         condition: 'checksum("Homemaker.esm",55D44FD5) and version("..\Fallout4.exe", "1.5.157.0", >=)'
       - type: error
-        content: 'Incompatible with Settlement Keywords Expanded.'
+        content: 'Homemaker patch for Settlement Keywords Expanded not installed. Reinstall SKE and place a check mark in the first box in the list of Homemaker patches to ensure the Homemaker patch will be properly installed.'
         condition: '(checksum("Homemaker.esm",55D44FD5) or checksum("Homemaker.esm",A28ED2EC)) and version("SettlementKeywords.esm", "1.0", >=)'
       - type: error
         content: 'Requires Fallout 4 patch 1.5.157 or greater.'
