@@ -838,6 +838,20 @@ plugins:
       - type: error
         content: 'Incompatible with Fallout 4 patch 1.5.157 or greater.'
         condition: 'file("..\Fallout4.exe") and version("..\Fallout4.exe", "1.5.157.0", >=)'
+  - name: 'Minutemenoverhaul.esp'
+    msg:
+      - type: error
+        content: 'Requires Fallout 4 patch 1.5.157 to 1.5.416. Use Minutemen Overhaul 2.0.5 instead.'
+        condition: 'checksum("Minutemenoverhaul.esp",8CD7D3C8) and version("..\Fallout4.exe", "1.6.3", >=)'
+      - type: error
+        content: 'Uninstall and use Minutemen Overhaul 2.0.3 or 2.0.5.'
+        condition: 'checksum("Minutemenoverhaul.esp",A66E1F17)'
+      - type: error
+        content: 'Requires Fallout 4 patch 1.6.3 or greater. Use Minutemen Overhaul 2.0.3 instead.'
+        condition: 'checksum("Minutemenoverhaul.esp",46A18495) and (version("..\Fallout4.exe", "1.5.157.0", >=) and version("..\Fallout4.exe", "1.5.416.0", <=))'
+      - type: error
+        content: 'Minutemen Overhaul patch for Settlement Keywords Expanded not installed. Reinstall SKE.'
+        condition: '(checksum("Minutemenoverhaul.esp",8CD7D3C8) or checksum("Minutemenoverhaul.esp",46A18495)) and version("SettlementKeywords.esm", "1.0", >=)'
   - name: 'BetterJunkFences.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/9000' ]
     inc: [ 'JunkWalls_More_Snaps.esp' ]
