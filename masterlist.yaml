@@ -378,6 +378,7 @@ plugins:
     msg:
       - *AlreadyInUFO4P
 
+  # Other plugins
   - name: 'PipBoyShadows.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/281' ]
     inc:
