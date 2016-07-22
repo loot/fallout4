@@ -583,7 +583,7 @@ plugins:
   - name: 'ValdacilsItemSorting-NotJunk.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/3877' ]
     inc:
-      - 'ValdacilsItemSorting-NotJunkJustMoney'
+      - 'ValdacilsItemSorting-NotJunkJustMoney.esp'
     after:
       - 'ValdacilsItemSorting-Junk.esp'
       - 'ValdacilsItemSorting-Junk+DEF_INV.esp'
@@ -594,10 +594,10 @@ plugins:
     msg:
       - *includedInValsPicks
       - *includedInValsPicksVanilla
-  - name: 'ValdacilsItemSorting-NotJunkJustMoney'
+  - name: 'ValdacilsItemSorting-NotJunkJustMoney.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/3877' ]
     inc:
-      - 'ValdacilsItemSorting-NotJunk'
+      - 'ValdacilsItemSorting-NotJunk.esp'
     after:
       - 'ValdacilsItemSorting-Junk.esp'
       - 'ValdacilsItemSorting-Junk+DEF_INV.esp'
