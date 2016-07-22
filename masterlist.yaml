@@ -378,6 +378,40 @@ plugins:
     msg:
       - *AlreadyInUFO4P
 
+  # Valdacil's Item Sorting
+  - name: 'ValdacilsItemSorting-00-ValsPicks-DLCVersion.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/3877' ]
+    inc:
+      - 'ValdacilsItemSorting-00-ValsPicks-NoDLCVersion.esp'
+      - 'ValdacilsItemSorting-00-ValsPicks-DLCVersion-VanillaWeight.esp'
+      - 'ValdacilsItemSorting-00-ValsPicks-NoDLCVersion-VanillaWeight.esp'
+  - name: 'ValdacilsItemSorting-00-ValsPicks-NoDLCVersion.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/3877' ]
+    inc:
+      - 'ValdacilsItemSorting-00-ValsPicks-DLCVersion.esp'
+      - 'ValdacilsItemSorting-00-ValsPicks-DLCVersion-VanillaWeight.esp'
+      - 'ValdacilsItemSorting-00-ValsPicks-NoDLCVersion-VanillaWeight.esp'
+    msg:
+      - type: say
+        content: 'This version does not include modifications for DLC content. Consider getting the DLC version instead.'
+        condition: 'active("DLCRobot.esm") and active("DLCworkshop01.esm") and active("DLCCoast.esm")'
+  - name: 'ValdacilsItemSorting-00-ValsPicks-DLCVersion-VanillaWeight.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/3877' ]
+    inc:
+      - 'ValdacilsItemSorting-00-ValsPicks-DLCVersion.esp'
+      - 'ValdacilsItemSorting-00-ValsPicks-NoDLCVersion.esp'
+      - 'ValdacilsItemSorting-00-ValsPicks-NoDLCVersion-VanillaWeight.esp'
+  - name: 'ValdacilsItemSorting-00-ValsPicks-NoDLCVersion-VanillaWeight.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/3877' ]
+    inc:
+      - 'ValdacilsItemSorting-00-ValsPicks-DLCVersion.esp'
+      - 'ValdacilsItemSorting-00-ValsPicks-NoDLCVersion.esp'
+      - 'ValdacilsItemSorting-00-ValsPicks-DLCVersion-VanillaWeight.esp'
+    msg:
+      - type: say
+        content: 'This version does not include modifications for DLC content. Consider getting the DLC version instead.'
+        condition: 'active("DLCRobot.esm") and active("DLCworkshop01.esm") and active("DLCCoast.esm")'
+
   # Other plugins
   - name: 'PipBoyShadows.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/281' ]
