@@ -580,6 +580,31 @@ plugins:
       - 'ValdacilsItemSorting-Mods.esp'
     msg:
       - *includedInValsPicks
+  - name: 'ValdacilsItemSorting-NotJunk.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/3877' ]
+    inc:
+      - 'ValdacilsItemSorting-NotJunkJustMoney'
+    after:
+      - 'ValdacilsItemSorting-Junk.esp'
+      - 'ValdacilsItemSorting-Junk+DEF_INV.esp'
+      - 'ValdacilsItemSorting-JunkWeightless.esp'
+      - 'ValdacilsItemSorting-JunkWeightless+DEF_INV.esp'
+      - 'ValdacilsItemSorting-JunkBetter.esp'
+      - 'ValdacilsItemSorting-JunkBetter+DEF_INV.esp'
+    msg:
+      - *includedInValsPicks
+      - *includedInValsPicksVanilla
+  - name: 'ValdacilsItemSorting-NotJunkJustMoney'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/3877' ]
+    inc:
+      - 'ValdacilsItemSorting-NotJunk'
+    after:
+      - 'ValdacilsItemSorting-Junk.esp'
+      - 'ValdacilsItemSorting-Junk+DEF_INV.esp'
+      - 'ValdacilsItemSorting-JunkWeightless.esp'
+      - 'ValdacilsItemSorting-JunkWeightless+DEF_INV.esp'
+      - 'ValdacilsItemSorting-JunkBetter.esp'
+      - 'ValdacilsItemSorting-JunkBetter+DEF_INV.esp'
 
   # Other plugins
   - name: 'PipBoyShadows.esp'
