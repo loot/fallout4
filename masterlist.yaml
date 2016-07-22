@@ -411,6 +411,14 @@ plugins:
       - type: say
         content: 'This version does not include modifications for DLC content. Consider getting the DLC version instead.'
         condition: 'active("DLCRobot.esm") and active("DLCworkshop01.esm") and active("DLCCoast.esm")'
+  - name: 'ValdacilsItemSorting-Weapons.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/3877' ]
+    msg:
+      - &includedInValsPicks
+        type: say
+        content: 'This plugin is also included in "Val''s Picks".'
+        # TODO: Replace with `active_regex()`.
+        condition: 'active("ValdacilsItemSorting-00-ValsPicks-DLCVersion.esp") or active("ValdacilsItemSorting-00-ValsPicks-NoDLCVersion.esp") or active("ValdacilsItemSorting-00-ValsPicks-DLCVersion-VanillaWeight.esp") or active("ValdacilsItemSorting-00-ValsPicks-NoDLCVersion-VanillaWeight.esp")'
 
   # Other plugins
   - name: 'PipBoyShadows.esp'
