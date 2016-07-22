@@ -605,6 +605,11 @@ plugins:
       - 'ValdacilsItemSorting-JunkWeightless+DEF_INV.esp'
       - 'ValdacilsItemSorting-JunkBetter.esp'
       - 'ValdacilsItemSorting-JunkBetter+DEF_INV.esp'
+  - name: 'ValdacilsItemSorting-Perks.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/3877' ]
+    msg:
+      - *includedInValsPicks
+      - *includedInValsPicksVanilla
 
   # Other plugins
   - name: 'PipBoyShadows.esp'
