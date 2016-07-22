@@ -417,13 +417,11 @@ plugins:
       - &includedInValsPicks
         type: say
         content: 'This plugin is also included in "Val''s Picks".'
-        # TODO: Replace with `active_regex()`.
-        condition: 'active("ValdacilsItemSorting-00-ValsPicks-DLCVersion.esp") or active("ValdacilsItemSorting-00-ValsPicks-NoDLCVersion.esp")'
+        condition: 'regex("ValdacilsItemSorting-00-ValsPicks-(No)?DLCVersion\.esp")'
       - &includedInValsPicksVanilla
         type: say
         content: 'This plugin is also included in "Val''s Picks - Vanilla Weight".'
-        # TODO: Replace with `active_regex()`.
-        condition: 'active("ValdacilsItemSorting-00-ValsPicks-DLCVersion-VanillaWeight.esp") or active("ValdacilsItemSorting-00-ValsPicks-NoDLCVersion-VanillaWeight.esp")'
+        condition: 'regex("ValdacilsItemSorting-00-ValsPicks-(No?)DLCVersion-VanillaWeight\.esp")'
   - name: 'ValdacilsItemSorting-Aid.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/3877' ]
     inc:
