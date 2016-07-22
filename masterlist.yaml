@@ -441,6 +441,18 @@ plugins:
     inc:
       - 'ValdacilsItemSorting-Aid.esp'
       - 'ValdacilsItemSorting-AidReducedWeight.esp'
+  - name: 'ValdacilsItemSorting-Ammo.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/3877' ]
+    inc:
+      - 'ValdacilsItemSorting-AmmoWeightless.esp'
+    msg:
+      - *includedInValsPicksVanilla
+  - name: 'ValdacilsItemSorting-AmmoWeightless.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/3877' ]
+    inc:
+      - 'ValdacilsItemSorting-Ammo.esp'
+    msg:
+      - *includedInValsPicks
 
   # Other plugins
   - name: 'PipBoyShadows.esp'
