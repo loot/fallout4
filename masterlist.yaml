@@ -624,6 +624,20 @@ plugins:
     msg:
       - <<: *includedInValsPicks
         condition: 'file("ValdacilsItemSorting-00-ValsPicks-DLCVersion.esp")'
+  - name: 'ValdacilsItemSorting-ZZ-DLCFarHarbor.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/3877' ]
+    inc:
+      - 'ValdacilsItemSorting-ZZ-DLCFarHarbor-Weightless.esp'
+    msg:
+      - <<: *includedInValsPicksVanilla
+        condition: 'file("ValdacilsItemSorting-00-ValsPicks-DLCVersion-VanillaWeight.esp")'
+  - name: 'ValdacilsItemSorting-ZZ-DLCFarHarbor-Weightless.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/3877' ]
+    inc:
+      - 'ValdacilsItemSorting-ZZ-DLCFarHarbor.esp'
+    msg:
+      - <<: *includedInValsPicks
+        condition: 'file("ValdacilsItemSorting-00-ValsPicks-DLCVersion.esp")'
 
   # Other plugins
   - name: 'PipBoyShadows.esp'
