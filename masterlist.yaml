@@ -418,7 +418,12 @@ plugins:
         type: say
         content: 'This plugin is also included in "Val''s Picks".'
         # TODO: Replace with `active_regex()`.
-        condition: 'active("ValdacilsItemSorting-00-ValsPicks-DLCVersion.esp") or active("ValdacilsItemSorting-00-ValsPicks-NoDLCVersion.esp") or active("ValdacilsItemSorting-00-ValsPicks-DLCVersion-VanillaWeight.esp") or active("ValdacilsItemSorting-00-ValsPicks-NoDLCVersion-VanillaWeight.esp")'
+        condition: 'active("ValdacilsItemSorting-00-ValsPicks-DLCVersion.esp") or active("ValdacilsItemSorting-00-ValsPicks-NoDLCVersion.esp")'
+      - &includedInValsPicksVanilla
+        type: say
+        content: 'This plugin is also included in "Val''s Picks - Vanilla Weight".'
+        # TODO: Replace with `active_regex()`.
+        condition: 'active("ValdacilsItemSorting-00-ValsPicks-DLCVersion-VanillaWeight.esp") or active("ValdacilsItemSorting-00-ValsPicks-NoDLCVersion-VanillaWeight.esp")'
 
   # Other plugins
   - name: 'PipBoyShadows.esp'
