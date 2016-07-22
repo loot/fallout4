@@ -475,6 +475,33 @@ plugins:
     url: [ 'http://www.nexusmods.com/fallout4/mods/3877' ]
     inc:
       - 'ValdacilsItemSorting-CosmeticsByClass.esp'
+  - name: 'ValdacilsItemSorting-ExplosivesSortBottom.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/3877' ]
+    inc:
+      - 'ValdacilsItemSorting-ExplosivesSortTop.esp'
+      - 'ValdacilsItemSorting-ExplosivesSortBottomWeightless.esp'
+      - 'ValdacilsItemSorting-ExplosivesSortTopWeightless.esp'
+  - name: 'ValdacilsItemSorting-ExplosivesSortTop.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/3877' ]
+    inc:
+      - 'ValdacilsItemSorting-ExplosivesSortBottom.esp'
+      - 'ValdacilsItemSorting-ExplosivesSortBottomWeightless.esp'
+      - 'ValdacilsItemSorting-ExplosivesSortTopWeightless.esp'
+    msg:
+      - *includedInValsPicks
+      - *includedInValsPicksVanilla
+  - name: 'ValdacilsItemSorting-ExplosivesSortBottomWeightless.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/3877' ]
+    inc:
+      - 'ValdacilsItemSorting-ExplosivesSortBottom.esp'
+      - 'ValdacilsItemSorting-ExplosivesSortTop.esp'
+      - 'ValdacilsItemSorting-ExplosivesSortTopWeightless.esp'
+  - name: 'ValdacilsItemSorting-ExplosivesSortTopWeightless.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/3877' ]
+    inc:
+      - 'ValdacilsItemSorting-ExplosivesSortBottom.esp'
+      - 'ValdacilsItemSorting-ExplosivesSortTop.esp'
+      - 'ValdacilsItemSorting-ExplosivesSortBottomWeightless.esp'
 
   # Other plugins
   - name: 'PipBoyShadows.esp'
