@@ -464,6 +464,17 @@ plugins:
     msg:
       - *includedInValsPicks
       - *includedInValsPicksVanilla
+  - name: 'ValdacilsItemSorting-CosmeticsByClass.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/3877' ]
+    inc:
+      - 'ValdacilsItemSorting-CosmeticsByType.esp'
+    msg:
+      - *includedInValsPicks
+      - *includedInValsPicksVanilla
+  - name: 'ValdacilsItemSorting-CosmeticsByType.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/3877' ]
+    inc:
+      - 'ValdacilsItemSorting-CosmeticsByClass.esp'
 
   # Other plugins
   - name: 'PipBoyShadows.esp'
