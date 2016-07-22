@@ -502,6 +502,60 @@ plugins:
       - 'ValdacilsItemSorting-ExplosivesSortBottom.esp'
       - 'ValdacilsItemSorting-ExplosivesSortTop.esp'
       - 'ValdacilsItemSorting-ExplosivesSortBottomWeightless.esp'
+  - name: 'ValdacilsItemSorting-Junk.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/3877' ]
+    inc:
+      - 'ValdacilsItemSorting-Junk+DEF_INV.esp'
+      - 'ValdacilsItemSorting-JunkWeightless.esp'
+      - 'ValdacilsItemSorting-JunkWeightless+DEF_INV.esp'
+      - 'ValdacilsItemSorting-JunkBetter.esp'
+      - 'ValdacilsItemSorting-JunkBetter+DEF_INV.esp'
+  - name: 'ValdacilsItemSorting-Junk+DEF_INV.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/3877' ]
+    inc:
+      - 'ValdacilsItemSorting-Junk.esp'
+      - 'ValdacilsItemSorting-JunkWeightless.esp'
+      - 'ValdacilsItemSorting-JunkWeightless+DEF_INV.esp'
+      - 'ValdacilsItemSorting-JunkBetter.esp'
+      - 'ValdacilsItemSorting-JunkBetter+DEF_INV.esp'
+    # TODO: Figure out a way to detect if DEF_INV is installed.
+  - name: 'ValdacilsItemSorting-JunkWeightless.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/3877' ]
+    inc:
+      - 'ValdacilsItemSorting-Junk.esp'
+      - 'ValdacilsItemSorting-Junk+DEF_INV.esp'
+      - 'ValdacilsItemSorting-JunkWeightless+DEF_INV.esp'
+      - 'ValdacilsItemSorting-JunkBetter.esp'
+      - 'ValdacilsItemSorting-JunkBetter+DEF_INV.esp'
+  - name: 'ValdacilsItemSorting-JunkWeightless+DEF_INV.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/3877' ]
+    inc:
+      - 'ValdacilsItemSorting-Junk.esp'
+      - 'ValdacilsItemSorting-Junk+DEF_INV.esp'
+      - 'ValdacilsItemSorting-JunkWeightless.esp'
+      - 'ValdacilsItemSorting-JunkBetter.esp'
+      - 'ValdacilsItemSorting-JunkBetter+DEF_INV.esp'
+    # TODO: Figure out a way to detect if DEF_INV is installed.
+  - name: 'ValdacilsItemSorting-JunkBetter.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/3877' ]
+    inc:
+      - 'ValdacilsItemSorting-Junk.esp'
+      - 'ValdacilsItemSorting-Junk+DEF_INV.esp'
+      - 'ValdacilsItemSorting-JunkWeightless.esp'
+      - 'ValdacilsItemSorting-JunkWeightless+DEF_INV.esp'
+      - 'ValdacilsItemSorting-JunkBetter+DEF_INV.esp'
+    msg:
+      - *includedInValsPicks
+      - *includedInValsPicksVanilla
+  - name: 'ValdacilsItemSorting-JunkBetter+DEF_INV.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/3877' ]
+    inc:
+      - 'ValdacilsItemSorting-Junk.esp'
+      - 'ValdacilsItemSorting-Junk+DEF_INV.esp'
+      - 'ValdacilsItemSorting-JunkWeightless.esp'
+      - 'ValdacilsItemSorting-JunkWeightless+DEF_INV.esp'
+      - 'ValdacilsItemSorting-JunkBetter.esp'
+    # TODO: Figure out a way to detect if DEF_INV is installed.
 
   # Other plugins
   - name: 'PipBoyShadows.esp'
