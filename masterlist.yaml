@@ -453,6 +453,17 @@ plugins:
       - 'ValdacilsItemSorting-Ammo.esp'
     msg:
       - *includedInValsPicks
+  - name: 'ValdacilsItemSorting-ArmorByClass.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/3877' ]
+    inc:
+      - 'ValdacilsItemSorting-ArmorBySlot.esp'
+  - name: 'ValdacilsItemSorting-ArmorBySlot.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/3877' ]
+    inc:
+      - 'ValdacilsItemSorting-ArmorByClass.esp'
+    msg:
+      - *includedInValsPicks
+      - *includedInValsPicksVanilla
 
   # Other plugins
   - name: 'PipBoyShadows.esp'
