@@ -457,6 +457,10 @@ plugins:
     url: [ 'http://www.nexusmods.com/fallout4/mods/3877' ]
     inc:
       - 'ValdacilsItemSorting-ArmorBySlot.esp'
+    msg:
+      - type: warn
+        content: 'You are sorting armor by class and also using DLCs. You may want to use "ValdacilsItemSorting-ZZ-DLCRuleArmorByClassOverride.esp" to enable the class sorting on DLC armor as well.'
+        condition: 'active("DLCRobot.esm") and active("DLCCoast.esm") and not active("ValdacilsItemSorting-ZZ-DLCRuleArmorByClassOverride.esp")'
   - name: 'ValdacilsItemSorting-ArmorBySlot.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/3877' ]
     inc:
@@ -638,6 +642,13 @@ plugins:
     msg:
       - <<: *includedInValsPicks
         condition: 'file("ValdacilsItemSorting-00-ValsPicks-DLCVersion.esp")'
+  - name: 'ValdacilsItemSorting-ZZ-DLCRuleArmorByClassOverride.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/3877' ]
+    after:
+      - 'ValdacilsItemSorting-ZZ-DLCAutomatron.esp'
+      - 'ValdacilsItemSorting-ZZ-DLCAutomatron-Weightless.esp'
+      - 'ValdacilsItemSorting-ZZ-DLCFarHarbor.esp'
+      - 'ValdacilsItemSorting-ZZ-DLCFarHarbor-Weightless.esp'
 
   # Other plugins
   - name: 'PipBoyShadows.esp'
