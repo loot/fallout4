@@ -424,6 +424,25 @@ plugins:
         content: 'This plugin is also included in "Val''s Picks - Vanilla Weight".'
         # TODO: Replace with `active_regex()`.
         condition: 'active("ValdacilsItemSorting-00-ValsPicks-DLCVersion-VanillaWeight.esp") or active("ValdacilsItemSorting-00-ValsPicks-NoDLCVersion-VanillaWeight.esp")'
+  - name: 'ValdacilsItemSorting-Aid.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/3877' ]
+    inc:
+      - 'ValdacilsItemSorting-AidReducedWeight.esp'
+      - 'ValdacilsItemSorting-AidWeightless.esp'
+    msg:
+      - *includedInValsPicksVanilla
+  - name: 'ValdacilsItemSorting-AidReducedWeight.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/3877' ]
+    inc:
+      - 'ValdacilsItemSorting-Aid.esp'
+      - 'ValdacilsItemSorting-AidWeightless.esp'
+    msg:
+      - *includedInValsPicks
+  - name: 'ValdacilsItemSorting-AidWeightless.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/3877' ]
+    inc:
+      - 'ValdacilsItemSorting-Aid.esp'
+      - 'ValdacilsItemSorting-AidReducedWeight.esp'
 
   # Other plugins
   - name: 'PipBoyShadows.esp'
