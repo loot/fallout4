@@ -623,7 +623,7 @@ plugins:
       - 'ValdacilsItemSorting-ZZ-DLCAutomatron.esp'
     msg:
       - <<: *includedInValsPicks
-        condition: 'file("ValdacilsItemSorting-00-ValsPicks-DLCVersion")'
+        condition: 'file("ValdacilsItemSorting-00-ValsPicks-DLCVersion.esp")'
 
   # Other plugins
   - name: 'PipBoyShadows.esp'
