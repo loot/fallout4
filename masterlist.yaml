@@ -610,6 +610,20 @@ plugins:
     msg:
       - *includedInValsPicks
       - *includedInValsPicksVanilla
+  - name: 'ValdacilsItemSorting-ZZ-DLCAutomatron.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/3877' ]
+    inc:
+      - 'ValdacilsItemSorting-ZZ-DLCAutomatron-Weightless.esp'
+    msg:
+      - <<: *includedInValsPicksVanilla
+        condition: 'file("ValdacilsItemSorting-00-ValsPicks-DLCVersion-VanillaWeight.esp")'
+  - name: 'ValdacilsItemSorting-ZZ-DLCAutomatron-Weightless.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/3877' ]
+    inc:
+      - 'ValdacilsItemSorting-ZZ-DLCAutomatron.esp'
+    msg:
+      - <<: *includedInValsPicks
+        condition: 'file("ValdacilsItemSorting-00-ValsPicks-DLCVersion")'
 
   # Other plugins
   - name: 'PipBoyShadows.esp'
