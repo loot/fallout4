@@ -131,9 +131,9 @@ common:
     type: warn
     content:
       - lang: en
-        str: 'This file changes vanilla menu Form Lists. Consider using a compatible SKE Patch instead.'
+        str: 'This can cause compatibility issues.  It is recomended to use compatible SKE files instead.'
       - lang: es
-        str: 'Este archivo cambia las Listas Forma de menús Settlement de vainilla. Considere el uso de un parche compatible con SKE.'
+        str: 'Este archivo puede causar problemas de compatibilidad. Se recomienda utilizar archivos compatibles proveidos con SKE.'
       - lang: da
         str: 'Denne fil ændrer Form-lister i vanilje menuer. Overvej at bruge en kompatibel SKE-lap i stedet.'
     condition: 'active("SettlementKeywords.esm") and version("SettlementKeywords.esm", "1.0", >=)'
