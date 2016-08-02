@@ -1112,7 +1112,7 @@ plugins:
         condition: 'checksum("Homemaker.esm",55D44FD5) and version("..\Fallout4.exe", "1.5.157.0", >=)'
       - type: error
         content: 'Homemaker patch for Settlement Keywords Expanded not installed. Reinstall SKE and place a check mark in the first box in the list of Homemaker patches to ensure the Homemaker patch will be properly installed.'
-        condition: '(checksum("Homemaker.esm",55D44FD5) or checksum("Homemaker.esm",A28ED2EC)) and version("SettlementKeywords.esm", "1.0", >=)'
+        condition: '(checksum("Homemaker.esm",55D44FD5) or checksum("Homemaker.esm",A28ED2EC) or checksum("Homemaker.esm",DF136FBA)) and version("SettlementKeywords.esm", "1.0", >=)'
       - type: error
         content: 'Requires Fallout 4 patch 1.5.157 or greater.'
         condition: 'checksum("Homemaker.esm",A28ED2EC) and version("..\Fallout4.exe", "1.5.157.0", <)'
@@ -1123,15 +1123,13 @@ plugins:
         condition: 'checksum("SettlementKeywords.esm",8D550871) and version("..\Fallout4.exe", "1.5.157.0", >=)'
       - type: error
         content: 'Incompatible with Fallout 4 patch 1.5.157 to 1.5.416. Use SKE 1.36 instead.'
-        condition: 'checksum("SettlementKeywords.esm",022CA5B4) and (version("..\Fallout4.exe", "1.5.157.0", >=) and version("..\Fallout4.exe", "1.5.416.0", <=))'
+        condition: 'checksum("SettlementKeywords.esm",6FDE00E4) and (version("..\Fallout4.exe", "1.5.157.0", >=) and version("..\Fallout4.exe", "1.5.416.0", <=))'
       - type: error
-        content: 'Incompatible with Fallout 4 patch 1.6.3 or greater. Use SKE 1.38 instead.'
+        content: 'Incompatible with Fallout 4 patch 1.6.3 or greater. Use SKE 1.40 instead.'
         condition: 'checksum("SettlementKeywords.esm",CC36D4EF) and version("..\Fallout4.exe", "1.6.3", >=)'
       - type: warn
-        content: 'Incompatible with current version of SKE.'
-        condition: '(not checksum("SettlementKeywords.esm",CC36D4EF) and version("SettlementKeywords.esm", "1.36", <=)) or (not checksum("SettlementKeywords.esm",022CA5B4) and version("SettlementKeywords.esm", "1.38", ==))'
-      - <<: *obsolete
-        condition: 'version("SettlementKeywords.esm", "1.38", <)'
+        content: 'This copy of SettlementKeywords.esm may be missing kewords required for certain mods.'
+        condition: 'version("SettlementKeywords.esm", "1.40", <)'
   - name: 'AlternateSettlements.esp'
     msg:
       - type: error
