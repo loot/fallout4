@@ -1113,20 +1113,22 @@ plugins:
         condition: 'checksum("Homemaker.esm",55D44FD5) and version("..\Fallout4.exe", "1.5.157.0", >=)'
       - type: error
         content: 'Homemaker patch for Settlement Keywords Expanded not installed. Reinstall SKE and place a check mark in the first box in the list of Homemaker patches to ensure the Homemaker patch will be properly installed.'
-        condition: '(checksum("Homemaker.esm",55D44FD5) or checksum("Homemaker.esm",A28ED2EC) or checksum("Homemaker.esm",DF136FBA) or checksum("Homemaker.esm",7207BE96) or checksum("Homemaker.esm",F6020126)) and version("SettlementKeywords.esm", "1.0", >=)'
+        condition: '(checksum("Homemaker.esm",55D44FD5) or checksum("Homemaker.esm",A28ED2EC) or checksum("Homemaker.esm",DF136FBA) or checksum("Homemaker.esm",E0D47FC0) or checksum("Homemaker.esm",79CA5BE5)) and version("SettlementKeywords.esm", "1.0", >=)'
 # Homemaker 1.35 CRC
       - type: error
         content: 'Requires Fallout 4 patch 1.5.157 or greater.'
         condition: 'checksum("Homemaker.esm",A28ED2EC) and version("..\Fallout4.exe", "1.5.157.0", <)'
 # Homemaker 1.36 CRC DF136FBA
 # For 1.37 and Fallout 4 patch 1.6.3 to 1.6.9
+# Homemaker 1.37 CRC Old: 7207BE96, New: E0D47FC0
       - type: error
         content: 'Incompatible with Fallout 4 patch 1.7.9 or greater. Use SKE 1.38 instead.'
-        condition: 'checksum("Homemaker.esm",7207BE96) and version("..\Fallout4.exe", "1.7.9", >=)'
+        condition: 'checksum("Homemaker.esm",E0D47FC0) and version("..\Fallout4.exe", "1.7.9", >=)'
 # For 1.38 and Fallout 4 patch 1.7.9 or greater
+# Homemaker 1.38 CRC Old: F6020126, New: 79CA5BE5
       - type: error
         content: 'Incompatible with Fallout 4 patch 1.6.3 to 1.6.9. Use SKE 1.37 instead.'
-        condition: 'checksum("Homemaker.esm",F6020126) and (version("..\Fallout4.exe", "1.6.3", >=) and version("..\Fallout4.exe", "1.6.9", <=))'
+        condition: 'checksum("Homemaker.esm",79CA5BE5) and (version("..\Fallout4.exe", "1.6.3", >=) and version("..\Fallout4.exe", "1.6.9", <=))'
   - name: 'SettlementKeywords.esm'
     msg:
       - type: error
