@@ -1122,12 +1122,12 @@ plugins:
 # For 1.37 and Fallout 4 patch 1.6.3 to 1.6.9
 # Homemaker 1.37 CRC Old: 7207BE96, New: E0D47FC0
       - type: error
-        content: 'Incompatible with Fallout 4 patch 1.7.9 or greater. Use SKE 1.38 instead.'
+        content: 'Incompatible with Fallout 4 patch 1.7.9 or greater. Use Homemaker 1.38 instead.'
         condition: 'checksum("Homemaker.esm",E0D47FC0) and version("..\Fallout4.exe", "1.7.9", >=)'
 # For 1.38 and Fallout 4 patch 1.7.9 or greater
 # Homemaker 1.38 CRC Old: F6020126, New: 79CA5BE5
       - type: error
-        content: 'Incompatible with Fallout 4 patch 1.6.3 to 1.6.9. Use SKE 1.37 instead.'
+        content: 'Incompatible with Fallout 4 patch 1.6.3 to 1.6.9. Use Homemaker 1.37 instead.'
         condition: 'checksum("Homemaker.esm",79CA5BE5) and (version("..\Fallout4.exe", "1.6.3", >=) and version("..\Fallout4.exe", "1.6.9", <=))'
   - name: 'SettlementKeywords.esm'
     msg:
