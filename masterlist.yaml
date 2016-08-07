@@ -1,7 +1,7 @@
 common:
 # Files
   - &F4SE
-    name: '..\f4se_loader.exe'
+    name: '../f4se_loader.exe'
     display: '[F4SE](http://f4se.silverlock.org)'
 
 # Messages
@@ -9,231 +9,231 @@ common:
     type: say
     content:
       - lang: en
-        str: 'Obsolete. Update to latest version.'
+        text: 'Obsolete. Update to latest version.'
       - lang: ru
-        str: 'Устарело. Обновите до последней версии.'
+        text: 'Устарело. Обновите до последней версии.'
       - lang: es
-        str: 'Obsoleto. Actualizar a la última versión.'
+        text: 'Obsoleto. Actualizar a la última versión.'
       - lang: ko
-        str: '사용되지 않습니다. 최신 버전으로 업데이트하십시오.'
+        text: '사용되지 않습니다. 최신 버전으로 업데이트하십시오.'
       - lang: zh_CN
-        str: '已过时。请升级到最新版本。'
+        text: '已过时。请升级到最新版本。'
       - lang: da
-        str: 'Forældet. Opdatér til den nyeste version.'
+        text: 'Forældet. Opdatér til den nyeste version.'
   - &AlreadyInFO4
     type: error
     content:
       - lang: en
-        str: 'Delete. Already patched in Fallout 4 by Bethesda.'
+        text: 'Delete. Already patched in Fallout 4 by Bethesda.'
       - lang: da
-        str: 'Slet. Allerede rettet i Fallout 4 af Bethesda.'
+        text: 'Slet. Allerede rettet i Fallout 4 af Bethesda.'
   - &AlreadyInUFO4P
     type: error
     content:
       - lang: en
-        str: 'Delete. Already included in Unofficial Fallout 4 Patch.esp.'
+        text: 'Delete. Already included in Unofficial Fallout 4 Patch.esp.'
       - lang: ru
-        str: 'Удалите. Уже включено в Unofficial Fallout 4 Patch.esp.'
+        text: 'Удалите. Уже включено в Unofficial Fallout 4 Patch.esp.'
       - lang: es
-        str: 'Borrar. Esta incluido en Unofficial Fallout 4 Patch.esp.'
+        text: 'Borrar. Esta incluido en Unofficial Fallout 4 Patch.esp.'
       - lang: ko
-        str: '삭제하십시오. 이미 Unofficial Fallout 4 Patch.esp에 포함되어 있습니다.'
+        text: '삭제하십시오. 이미 Unofficial Fallout 4 Patch.esp에 포함되어 있습니다.'
       - lang: zh_CN
-        str: '删除。已包含在Unofficial Fallout 4 Patch.esp中。'
+        text: '删除。已包含在Unofficial Fallout 4 Patch.esp中。'
       - lang: da
-        str: 'Slet. Allerede inkluderet i Unofficial Fallout 4 Patch.esp.'
+        text: 'Slet. Allerede inkluderet i Unofficial Fallout 4 Patch.esp.'
     condition: 'active("Unofficial Fallout 4 Patch.esp")'
   - &AlreadyInX
     type: error
     content:
       - lang: en
-        str: 'Delete. Already included in %1%.'
+        text: 'Delete. Already included in %1%.'
       - lang: ru
-        str: 'Удалите. Уже включено в %1%.'
+        text: 'Удалите. Уже включено в %1%.'
       - lang: es
-        str: 'Borrar. Esta incluido en %1%.'
+        text: 'Borrar. Esta incluido en %1%.'
       - lang: ko
-        str: '삭제하십시오. 이미 %1%에 포함되어 있습니다.'
+        text: '삭제하십시오. 이미 %1%에 포함되어 있습니다.'
       - lang: zh_CN
-        str: '删除。已包含在%1%中。'
+        text: '删除。已包含在%1%中。'
       - lang: da
-        str: 'Slet. Allerede inkluderet i %1%.'
+        text: 'Slet. Allerede inkluderet i %1%.'
   - &useOnlyOneX
     type: warn
     content:
       - lang: en
-        str: 'Use only one %1%.'
+        text: 'Use only one %1%.'
       - lang: ru
-        str: 'Используйте только один %1%.'
+        text: 'Используйте только один %1%.'
       - lang: es
-        str: 'Utilizar solo un %1%.'
+        text: 'Utilizar solo un %1%.'
       - lang: ko
-        str: '%1%을 한개만 사용하십시오.'
+        text: '%1%을 한개만 사용하십시오.'
       - lang: zh_CN
-        str: '只使用一个%1%。'
+        text: '只使用一个%1%。'
       - lang: da
-        str: 'Brug kun én %1%.'
+        text: 'Brug kun én %1%.'
   - &doNotClean
     type: say
     content:
       - lang: en
-        str: 'Do not clean ITM records, they are intentional and required for the mod to function. It is safe to undelete records, but do not do anything other than that.'
+        text: 'Do not clean ITM records, they are intentional and required for the mod to function. It is safe to undelete records, but do not do anything other than that.'
       - lang: ru
-        str: 'Не очищать. "Грязные" правки оставлены специально и требуются для функционирования мода.'
+        text: 'Не очищать. "Грязные" правки оставлены специально и требуются для функционирования мода.'
       - lang: es
-        str: 'No limpiar las referencias ITM (iguales al master), ya que son intencionales y necesarias para que el Mod funcione. Sí es seguro restaurar las UDR (referencias borradas), pero no haga más que eso.'
+        text: 'No limpiar las referencias ITM (iguales al master), ya que son intencionales y necesarias para que el Mod funcione. Sí es seguro restaurar las UDR (referencias borradas), pero no haga más que eso.'
       - lang: zh_CN
-        str: '不干净。"脏"数据是故意的，这是mod需要的功能。'
+        text: '不干净。"脏"数据是故意的，这是mod需要的功能。'
       - lang: da
-        str: 'Rengør ikke ITM-poster: de er forsætlige og krævede for at mod’en fungerer. Det er sikkert at gendanne poster, men gør ikke andet end dét.'
+        text: 'Rengør ikke ITM-poster: de er forsætlige og krævede for at mod’en fungerer. Det er sikkert at gendanne poster, men gør ikke andet end dét.'
   - &patchAvailable
     type: say
     content:
       - lang: en
-        str: 'This plugin conflicts with plugin "%1%", however a patch is available.'
+        text: 'This plugin conflicts with plugin "%1%", however a patch is available.'
       - lang: da
-        str: 'Dette plugin er i konflikt med pluginnet “%1%”, men en lap er tilgængelig.'
+        text: 'Dette plugin er i konflikt med pluginnet “%1%”, men en lap er tilgængelig.'
   - &requireF4SE
     type: error
     content:
       - lang: en
-        str: 'You have installed %1% but F4SE not found! See F4SE download page: [F4SE](http://f4se.silverlock.org).'
+        text: 'You have installed %1% but F4SE not found! See F4SE download page: [F4SE](http://f4se.silverlock.org).'
       - lang: ru
-        str: 'У вас установлен %1%, но F4SE не найден! Смотрите страницу загрузки [F4SE](http://f4se.silverlock.org).'
+        text: 'У вас установлен %1%, но F4SE не найден! Смотрите страницу загрузки [F4SE](http://f4se.silverlock.org).'
       - lang: es
-        str: 'Tienes %1% instalado pero F4SE no se pudo encontrar! Por favor descarga F4SE: [F4SE](http://f4se.silverlock.org)'
+        text: 'Tienes %1% instalado pero F4SE no se pudo encontrar! Por favor descarga F4SE: [F4SE](http://f4se.silverlock.org)'
       - lang: ko
-        str: '%1%가 설치되었지만 F4SE를 찾을 수 없습니다! F4SE 다운로드 페이지를 참조하십시오: [F4SE](http://f4se.silverlock.org).'
+        text: '%1%가 설치되었지만 F4SE를 찾을 수 없습니다! F4SE 다운로드 페이지를 참조하십시오: [F4SE](http://f4se.silverlock.org).'
       - lang: zh_CN
-        str: '你已经安装了%1%，但是未发现F4SE！请查看F4SE的下载页面：[F4SE](http://f4se.silverlock.org)。'
+        text: '你已经安装了%1%，但是未发现F4SE！请查看F4SE的下载页面：[F4SE](http://f4se.silverlock.org)。'
       - lang: da
-        str: 'Du har installeret %1% men F4SE blev ikke fundet! Se F4SE-downloadsiden: [F4SE](http://f4se.silverlock.org).'
+        text: 'Du har installeret %1% men F4SE blev ikke fundet! Se F4SE-downloadsiden: [F4SE](http://f4se.silverlock.org).'
   - &SmashedVsBashedPatch
     type: say
     content:
       - lang: en
-        str: 'Can be used with a %1% but would require additional work. A Smashed Patch or Bash Patch should be used independently of one another.'
+        text: 'Can be used with a %1% but would require additional work. A Smashed Patch or Bash Patch should be used independently of one another.'
       - lang: es
-        str: 'Se puede utilizar con un %1% pero requeriría un trabajo adicional. Deben de estar utilizado un Smashed Patch o un Bash Patch independiente del uno el otro.'
+        text: 'Se puede utilizar con un %1% pero requeriría un trabajo adicional. Deben de estar utilizado un Smashed Patch o un Bash Patch independiente del uno el otro.'
       - lang: da
-        str: 'Kan bruges sammen med %1% men det vil kræve ekstra arbejde. Smashed Patch og Bash Patch bør bruges uafhængigt af hinanden.'
+        text: 'Kan bruges sammen med %1% men det vil kræve ekstra arbejde. Smashed Patch og Bash Patch bør bruges uafhængigt af hinanden.'
   - &UsingSKE
     type: error
     content:
       - lang: en
-        str: 'This file is not compatible with SKE.'
+        text: 'This file is not compatible with SKE.'
       - lang: es
-        str: 'Este archivo no es compatible con SKE.'
+        text: 'Este archivo no es compatible con SKE.'
       - lang: da
-        str: 'Denne fil er ikke kompatibel med SKE.'
+        text: 'Denne fil er ikke kompatibel med SKE.'
     condition: 'active("SettlementKeywords.esm") and version("SettlementKeywords.esm", "1.0", >=)'
   - &InsteadSKEPatch
     type: warn
     content:
       - lang: en
-        str: 'This can cause compatibility issues.  It is recomended to use compatible SKE files instead.'
+        text: 'This can cause compatibility issues.  It is recomended to use compatible SKE files instead.'
       - lang: es
-        str: 'Este archivo puede causar problemas de compatibilidad. Se recomienda utilizar archivos compatibles proveidos con SKE.'
+        text: 'Este archivo puede causar problemas de compatibilidad. Se recomienda utilizar archivos compatibles proveidos con SKE.'
       - lang: da
-        str: 'Denne fil ændrer Form-lister i vanilje menuer. Overvej at bruge en kompatibel SKE-lap i stedet.'
+        text: 'Denne fil ændrer Form-lister i vanilje menuer. Overvej at bruge en kompatibel SKE-lap i stedet.'
     condition: 'active("SettlementKeywords.esm") and version("SettlementKeywords.esm", "1.0", >=)'
   - &UsingSNB
     type: error
     content:
       - lang: en
-        str: 'This file is unneeded with Snap''n Build.esm v1.9.  Consider upgrading and removing this file.'
+        text: 'This file is unneeded with Snap''n Build.esm v1.9.  Consider upgrading and removing this file.'
       - lang: es
-        str: 'No se requiere este archivo con Snap''n Build.esm version 1.9.  Considere actualizando y desinstalando este archivo.'
+        text: 'No se requiere este archivo con Snap''n Build.esm version 1.9.  Considere actualizando y desinstalando este archivo.'
       - lang: da
-        str: 'Denne fil behøves ikke med Snap''n Build.esm v1.9. Overvej at opgradere og fjerne denne fil.'
+        text: 'Denne fil behøves ikke med Snap''n Build.esm v1.9. Overvej at opgradere og fjerne denne fil.'
     condition: 'active("Snap''n Build.esm")'
 
 globals:
   - type: say
     content:
       - lang: en
-        str: 'A [new release](%1%) of LOOT is available.'
+        text: 'A [new release](%1%) of LOOT is available.'
       - lang: zh_CN
-        str: '一个[新版本](%1%)的LOOT已发布。'
+        text: '一个[新版本](%1%)的LOOT已发布。'
       - lang: da
-        str: 'En [ny version](%1%) af LOOT er tilgængelig.'
+        text: 'En [ny version](%1%) af LOOT er tilgængelig.'
     subs: [ 'https://github.com/loot/loot/releases/latest' ]
     condition: 'version("LOOT", "0.9.2.0", <)'
   - type: say
     content:
       - lang: en
-        str: '[Latest LOOT thread](%1%).'
+        text: '[Latest LOOT thread](%1%).'
       - lang: ru
-        str: '[Обсуждение LOOT "(Eng)"](%1%).'
+        text: '[Обсуждение LOOT "(Eng)"](%1%).'
       - lang: es
-        str: '[Forum de LOOT](%1%).'
+        text: '[Forum de LOOT](%1%).'
       - lang: ko
-        str: '[최신 LOOT 스레드](%1%).'
+        text: '[최신 LOOT 스레드](%1%).'
       - lang: zh_CN
-        str: '[最新的LOOT版本](%1%)。'
+        text: '[最新的LOOT版本](%1%)。'
       - lang: da
-        str: '[Seneste LOOT-tråd](%1%).'
+        text: '[Seneste LOOT-tråd](%1%).'
     subs: [ 'https://loot.github.io/latest-thread/' ]
 # Fallout 4 latest
   - type: say
-    condition: 'file("..\Fallout4.exe") and version("..\Fallout4.exe", "1.6.9.0", <)'
+    condition: 'file("../Fallout4.exe") and version("../Fallout4.exe", "1.6.9.0", <)'
     content:
       - lang: en
-        str: 'It appears you do not have the latest version of Fallout 4.'
+        text: 'It appears you do not have the latest version of Fallout 4.'
       - lang: da
-        str: 'Det ser ikke ud til at du har den seneste version af Fallout 4.'
+        text: 'Det ser ikke ud til at du har den seneste version af Fallout 4.'
 # F4SE Latest
   - type: say
-    condition: 'file("..\f4se_loader.exe") and version("..\f4se_loader.exe", "0.0.2.0", <)'
+    condition: 'file("../f4se_loader.exe") and version("../f4se_loader.exe", "0.0.2.0", <)'
     content:
       - lang: en
-        str: 'It appears you do not have the [latest version of F4SE](http://f4se.silverlock.org). Some mods may require functionality added in the latest version of F4SE to work.'
+        text: 'It appears you do not have the [latest version of F4SE](http://f4se.silverlock.org). Some mods may require functionality added in the latest version of F4SE to work.'
       - lang: ru
-        str: 'Возможно, что вы используете НЕ [самую последнюю версию F4SE](http://f4se.silverlock.org). Для работы некоторых модов может требоваться функционал, добавленный в последнюю версию F4SE'
+        text: 'Возможно, что вы используете НЕ [самую последнюю версию F4SE](http://f4se.silverlock.org). Для работы некоторых модов может требоваться функционал, добавленный в последнюю версию F4SE'
       - lang: es
-        str: 'Parece que no tienes la última versión de F4SE. la nueva versión se puede encontrar [aquí](http://f4se.silverlock.org/).'
+        text: 'Parece que no tienes la última versión de F4SE. la nueva versión se puede encontrar [aquí](http://f4se.silverlock.org/).'
       - lang: ko
-        str: '[F4SE의 최신 버전](http://f4se.silverlock.org)이 설치 되지 않은 것같습니다. 일부 모드가 동작하려면 F4SE의 최신 버전에서 추가된 기능을 필요로 할 수도 있습니다.'
+        text: '[F4SE의 최신 버전](http://f4se.silverlock.org)이 설치 되지 않은 것같습니다. 일부 모드가 동작하려면 F4SE의 최신 버전에서 추가된 기능을 필요로 할 수도 있습니다.'
       - lang: zh_CN
-        str: '你的[F4SE](http://f4se.silverlock.org)似乎不是最新的。有些插件可能需要最新的F4SE才能工作。'
+        text: '你的[F4SE](http://f4se.silverlock.org)似乎不是最新的。有些插件可能需要最新的F4SE才能工作。'
       - lang: da
-        str: 'Det ser ud til at du ikke har den [seneste version af F4SE](http://f4se.silverlock.org). Nogle mods kan afhænge af funktionalitet tilføjet i den nyeste version af F4SE for at virke.'
+        text: 'Det ser ud til at du ikke har den [seneste version af F4SE](http://f4se.silverlock.org). Nogle mods kan afhænge af funktionalitet tilføjet i den nyeste version af F4SE for at virke.'
   - type: say
-    condition: 'not version("..\f4se_loader.exe", "0.0.2.0", <)'
+    condition: 'not version("../f4se_loader.exe", "0.0.2.0", <)'
     content:
       - lang: en
-        str: 'Your F4SE is up-to-date.'
+        text: 'Your F4SE is up-to-date.'
       - lang: ru
-        str: 'Ваш F4SE имеет последнюю версию.'
+        text: 'Ваш F4SE имеет последнюю версию.'
       - lang: es
-        str: 'Tienes la última versión de F4SE'
+        text: 'Tienes la última versión de F4SE'
       - lang: ko
-        str: 'F4SE가 최신버전입니다.'
+        text: 'F4SE가 최신버전입니다.'
       - lang: zh_CN
-        str: '你的F4SE是最新的。'
+        text: '你的F4SE是最新的。'
       - lang: da
-        str: 'Din F4SE er opdateret.'
+        text: 'Din F4SE er opdateret.'
   - type: error
-    condition: 'version("..\f4se_loader.exe", "0.0.2.0", ==) and version("..\Fallout4.exe", "1.6.9.0", !=)'
+    condition: 'version("../f4se_loader.exe", "0.0.2.0", ==) and version("../Fallout4.exe", "1.6.9.0", !=)'
     content:
       - lang: en
-        str: 'Your version of F4SE is not compatible with your version of Fallout 4.'
+        text: 'Your version of F4SE is not compatible with your version of Fallout 4.'
       - lang: da
-        str: 'Din version af F4SE er ikke kompatibel med din version af Fallout 4.'
+        text: 'Din version af F4SE er ikke kompatibel med din version af Fallout 4.'
 # F4SE plugins
   - <<: *requireF4SE
     subs: [ 'Achievements' ]
     # url: [ 'http://www.nexusmods.com/fallout4/mods/12465' ]
-    condition: 'file("F4SE\Plugins\achievements.dll") and not file("..\f4se_loader.exe")'
+    condition: 'file("F4SE/Plugins/achievements.dll") and not file("../f4se_loader.exe")'
   - <<: *requireF4SE
     subs: [ 'Place Everywhere' ]
-    condition: 'file("F4SE\Plugins\place.dll") and not file("..\f4se_loader.exe")'
+    condition: 'file("F4SE/Plugins/place.dll") and not file("../f4se_loader.exe")'
   - type: error
     content:
       - lang: en
-        str: 'Your installed version of Place Everywhere is not compatible with your version of Fallout 4.'
+        text: 'Your installed version of Place Everywhere is not compatible with your version of Fallout 4.'
       - lang: da
-        str: 'Din installerede version af Place Everywhere er ikke kompatibel med din version af Fallout 4.'
+        text: 'Din installerede version af Place Everywhere er ikke kompatibel med din version af Fallout 4.'
     # 0x78374099: v1.9.3 for FO4 1.3.47
     # 0x988580db: v1.10.0 for FO4 1.3.47
     # 0x6a0dbf55: v1.11.0 for FO4 1.3.47
@@ -244,29 +244,29 @@ globals:
     # 0x44af914a: v1.14.1 for FO4 1.4.32
     # 0xace2ed7e: v1.15 for FO4 1.4.32
     # 0x1bf865e4: v1.15.1 for FO4 1.4.32
-    condition: '((checksum("F4SE\Plugins\place.dll", 78374099) or checksum("F4SE\Plugins\place.dll", 988580db) or checksum("F4SE\Plugins\place.dll", 6a0dbf55)) and not version("..\Fallout4.exe", "1.3.47.0", ==)) or (checksum("F4SE\Plugins\place.dll", 95eab074) and not version("..\Fallout4.exe", "1.4.125.0", ==)) or (checksum("F4SE\Plugins\place.dll", c2e4481a) and not version("..\Fallout4.exe", "1.4.131.0", ==)) or ((checksum("F4SE\Plugins\place.dll", 89ceec93) or checksum("F4SE\Plugins\place.dll", c202af85) or checksum("F4SE\Plugins\place.dll", 44af914a) or checksum("F4SE\Plugins\place.dll", ace2ed7e) or checksum("F4SE\Plugins\place.dll", 1bf865e4)) and not version("..\Fallout4.exe", "1.4.132.0", ==))'
+    condition: '((checksum("F4SE/Plugins/place.dll", 78374099) or checksum("F4SE/Plugins/place.dll", 988580db) or checksum("F4SE/Plugins/place.dll", 6a0dbf55)) and not version("../Fallout4.exe", "1.3.47.0", ==)) or (checksum("F4SE/Plugins/place.dll", 95eab074) and not version("../Fallout4.exe", "1.4.125.0", ==)) or (checksum("F4SE/Plugins/place.dll", c2e4481a) and not version("../Fallout4.exe", "1.4.131.0", ==)) or ((checksum("F4SE/Plugins/place.dll", 89ceec93) or checksum("F4SE/Plugins/place.dll", c202af85) or checksum("F4SE/Plugins/place.dll", 44af914a) or checksum("F4SE/Plugins/place.dll", ace2ed7e) or checksum("F4SE/Plugins/place.dll", 1bf865e4)) and not version("../Fallout4.exe", "1.4.132.0", ==))'
 
 plugins:
   ### Official DLC plugins
   - name: 'DLCRobot.esm'
-    priority: -1999000
+    global_priority: -120
   - name: 'DLCworkshop01.esm'
-    priority: -1999000
+    global_priority: -120
     after:
       - 'DLCRobot.esm'
   - name: 'DLCCoast.esm'
-    priority: -1999000
+    global_priority: -120
     after:
       - 'DLCRobot.esm'
       - 'DLCworkshop01.esm'
   - name: 'DLCworkshop02.esm'
-    priority: -1999000
+    global_priority: -120
     after:
       - 'DLCRobot.esm'
       - 'DLCworkshop01.esm'
       - 'DLCCoast.esm'
   - name: 'DLCworkshop03.esm'
-    priority: -1999000
+    global_priority: -120
     after:
       - 'DLCRobot.esm'
       - 'DLCworkshop01.esm'
@@ -278,134 +278,134 @@ plugins:
     url:
       - 'http://afkmods.iguanadons.net/index.php?/files/file/1765-unofficial-fallout-4-patch/'
       - 'http://www.nexusmods.com/fallout4/mods/4526'
-    priority: -1999000
+    global_priority: -120
     msg:
       - type: error
         content: 'Requires Fallout 4 patch 1.6.3 or greater.'
-        condition: 'version("Unofficial Fallout 4 Patch.esp", "1.0.4c", >=) and not version("..\Fallout4.exe", "1.6.3.0", >=)'
+        condition: 'version("Unofficial Fallout 4 Patch.esp", "1.0.4c", >=) and not version("../Fallout4.exe", "1.6.3.0", >=)'
       - <<: *obsolete
         condition: 'version("Unofficial Fallout 4 Patch.esp", "1.0.4c", <)'
   - name: 'KillshotFix.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/1282' ]
-    priority: -1999000
+    global_priority: -120
     msg:
       - <<: *AlreadyInFO4
-        condition: 'version("..\Fallout4.exe", "1.3.47.0", >=)'
+        condition: 'version("../Fallout4.exe", "1.3.47.0", >=)'
   - name: 'Simple Bug Fixes.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/2142' ]
-    priority: -1999000
+    global_priority: -120
     msg:
       - *AlreadyInUFO4P
       - *UsingSKE
   - name: 'NX Desk Crafting Fix.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/2662' ]
-    priority: -1999000
+    global_priority: -120
     msg:
       - *AlreadyInUFO4P
   - name: 'CompanionBugfixExperimental.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/2679' ]
-    priority: -1999000
+    global_priority: -120
     msg:
       - *AlreadyInUFO4P
   - name: 'ScroungerFix.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/3624' ]
-    priority: -1999000
+    global_priority: -120
     msg:
       - <<: *AlreadyInFO4
-        condition: 'version("..\Fallout4.exe", "1.4.132.0", >=)'
+        condition: 'version("../Fallout4.exe", "1.4.132.0", >=)'
   - name: 'UnofficialFallout4Patch.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/4526' ]
-    priority: -1999000
+    global_priority: -120
     msg:
       - *AlreadyInUFO4P
   - name: 'SynthArmorFix.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/5054' ]
-    priority: -1999000
+    global_priority: -120
     msg:
       - *AlreadyInUFO4P
   - name: 'Glow Front Sight Ring Fix.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/5205' ]
-    priority: -1999000
+    global_priority: -120
     msg:
       - *AlreadyInUFO4P
   - name: 'WeaveFix.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/5847' ]
-    priority: -1999000
+    global_priority: -120
     msg:
       - *AlreadyInUFO4P
   - name: 'MakanarPerkBigLeaguesFix.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/5957' ]
-    priority: -1999000
+    global_priority: -120
     msg:
       - <<: *AlreadyInFO4
-        condition: 'version("..\Fallout4.exe", "1.3.47.0", >=)'
+        condition: 'version("../Fallout4.exe", "1.3.47.0", >=)'
   - name: 'MakanarBigLeaguesFix.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/6185' ]
-    priority: -1999000
+    global_priority: -120
     msg:
       - <<: *AlreadyInFO4
-        condition: 'version("..\Fallout4.exe", "1.3.47.0", >=)'
+        condition: 'version("../Fallout4.exe", "1.3.47.0", >=)'
   - name: 'RailroadGloryBugFix.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/6389' ]
-    priority: -1999000
+    global_priority: -120
     msg:
       - <<: *AlreadyInFO4
-        condition: 'version("..\Fallout4.exe", "1.3.47.0", >=)'
+        condition: 'version("../Fallout4.exe", "1.3.47.0", >=)'
   - name: 'Vault 81 Holding Cell Fix(| Alt)\.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/8033' ]
-    priority: -1999000
+    global_priority: -120
     msg:
       - <<: *AlreadyInFO4
-        condition: 'version("..\Fallout4.exe", "1.4.132.0", >=)'
+        condition: 'version("../Fallout4.exe", "1.4.132.0", >=)'
   - name: 'Worsins-T60-Headlamp-Fix.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/8164' ]
-    priority: -1999000
+    global_priority: -120
     msg:
       - *AlreadyInUFO4P
   - name: 'Pipe_Revolver_Tuned_Receiver.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/8570' ]
-    priority: -1999000
+    global_priority: -120
     msg:
       - *AlreadyInUFO4P
   - name: 'Targeting HUD Berry Mentats Fix.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/8910' ]
-    priority: -1999000
+    global_priority: -120
     msg:
       - <<: *AlreadyInFO4
-        condition: 'version("..\Fallout4.exe", "1.5.0.0", >=)'
+        condition: 'version("../Fallout4.exe", "1.5.0.0", >=)'
   - name: 'RFG - Curie Inspirational Sneak L&L Fix.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/10047' ]
-    priority: -1999000
+    global_priority: -120
     msg:
       - *AlreadyInUFO4P
   - name: 'SoldierToyFix.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/10229' ]
-    priority: -1999000
+    global_priority: -120
     msg:
       - *AlreadyInUFO4P
   - name: 'FixTeslaScience.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/10319' ]
-    priority: -1999000
+    global_priority: -120
     msg:
       - *AlreadyInUFO4P
   - name: 'ItemCapitalizationFixes.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/10416' ]
-    priority: -1999000
+    global_priority: -120
     msg:
       - *AlreadyInUFO4P
   - name: 'DependencyQuestFix.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/10892' ]
-    priority: -1999000
+    global_priority: -120
     msg:
       - *AlreadyInUFO4P
   - name: 'LiveNLoveMagazinePerkPatch.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/11083' ]
-    priority: -1999000
+    global_priority: -120
     msg:
       - *AlreadyInUFO4P
   - name: 'Combat Armor Weight Fix.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/11541' ]
-    priority: -1999000
+    global_priority: -120
     msg:
       - *AlreadyInUFO4P
 
@@ -448,11 +448,11 @@ plugins:
       - &includedInValsPicks
         type: say
         content: 'This plugin is also included in "Val''s Picks".'
-        condition: 'regex("ValdacilsItemSorting-00-ValsPicks-(No)?DLCVersion\.esp")'
+        condition: 'file("ValdacilsItemSorting-00-ValsPicks-(No)?DLCVersion\.esp")'
       - &includedInValsPicksVanilla
         type: say
         content: 'This plugin is also included in "Val''s Picks - Vanilla Weight".'
-        condition: 'regex("ValdacilsItemSorting-00-ValsPicks-(No?)DLCVersion-VanillaWeight\.esp")'
+        condition: 'file("ValdacilsItemSorting-00-ValsPicks-(No?)DLCVersion-VanillaWeight\.esp")'
   - name: 'ValdacilsItemSorting-Aid.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/3877' ]
     inc:
@@ -731,7 +731,7 @@ plugins:
     msg:
       - type: error
         content: 'Realistic Survival Damage.esp alters the same game variables as the Survival X PC/EnemyDamage.esps. You should use either one or the other.'
-        condition: 'regex("Survival((90|75|65|50|25|10)LESS|Normal|(10|20|30|40|50|60|70|80|90|100|150|200|250|300|350|400|450|500)more)(PC|Enemy)Damage\.esp")'
+        condition: 'file("Survival((90|75|65|50|25|10)LESS|Normal|(10|20|30|40|50|60|70|80|90|100|150|200|250|300|350|400|450|500)more)(PC|Enemy)Damage\.esp")'
   - name: 'Rainy_(25|50|75|100)\.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/1812' ]
     msg:
@@ -905,10 +905,10 @@ plugins:
     req: [ 'Lasers Have No Recoil.esp' ]
   - name: 'OSM_AlternateStart_Protocol-InfiniteAnswer.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/13762' ]
-    priority: 1999000
+    global_priority: 120
   - name: 'Vault-Tec Historical Preservation Initiative.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/12019' ]
-    priority: -1900000
+    global_priority: -110
 
   - name: 'OCDWorkshopDLCPatch.esp'
     msg:
@@ -1035,7 +1035,7 @@ plugins:
         condition: 'not checksum("SettlementKeywords.esm",8D550871)'
       - type: error
         content: 'Incompatible with Fallout 4 patch 1.5.157 or greater.'
-        condition: 'file("..\Fallout4.exe") and version("..\Fallout4.exe", "1.5.157.0", >=)'
+        condition: 'file("../Fallout4.exe") and version("../Fallout4.exe", "1.5.157.0", >=)'
   - name: 'Homemaker - SKE Integration Patch.esp'
     msg:
       - *UsingSKE
@@ -1079,69 +1079,69 @@ plugins:
     msg:
       - type: error
         content: 'Incompatible with Fallout 4 patch 1.5.157 or greater.'
-        condition: 'file("..\Fallout4.exe") and version("..\Fallout4.exe", "1.5.157.0", >=)'
+        condition: 'file("../Fallout4.exe") and version("../Fallout4.exe", "1.5.157.0", >=)'
       - *UsingSNB
   - name: 'SnB - Greenhouse - Homemaker.esp'
     msg:
       - type: error
         content: 'Incompatible with Fallout 4 patch 1.5.157 or greater.'
-        condition: 'file("..\Fallout4.exe") and version("..\Fallout4.exe", "1.5.157.0", >=)'
+        condition: 'file("../Fallout4.exe") and version("../Fallout4.exe", "1.5.157.0", >=)'
       - *UsingSNB
   - name: 'SnB- Greenhouse - SK.esp'
     msg:
       - type: error
         content: 'Incompatible with Fallout 4 patch 1.5.157 or greater.'
-        condition: 'file("..\Fallout4.exe") and version("..\Fallout4.exe", "1.5.157.0", >=)'
+        condition: 'file("../Fallout4.exe") and version("../Fallout4.exe", "1.5.157.0", >=)'
       - *UsingSNB
   - name: 'SnB - Greenhouse - SSEx.esp'
     msg:
       - type: error
         content: 'Incompatible with Fallout 4 patch 1.5.157 or greater.'
-        condition: 'file("..\Fallout4.exe") and version("..\Fallout4.exe", "1.5.157.0", >=)'
+        condition: 'file("../Fallout4.exe") and version("../Fallout4.exe", "1.5.157.0", >=)'
       - *UsingSNB
   - name: 'SnB - Greenhouse - Homemaker - SSEx.esp'
     msg:
       - type: error
         content: 'Incompatible with Fallout 4 patch 1.5.157 or greater.'
-        condition: 'file("..\Fallout4.exe") and version("..\Fallout4.exe", "1.5.157.0", >=)'
+        condition: 'file("../Fallout4.exe") and version("../Fallout4.exe", "1.5.157.0", >=)'
       - *UsingSNB
   - name: 'Homemaker.esm'
     msg:
 # Homemaker 1.34 CRC
       - type: error
         content: 'Incompatible with Fallout 4 patch 1.5.157 or greater.'
-        condition: 'checksum("Homemaker.esm",55D44FD5) and version("..\Fallout4.exe", "1.5.157.0", >=)'
+        condition: 'checksum("Homemaker.esm",55D44FD5) and version("../Fallout4.exe", "1.5.157.0", >=)'
       - type: error
         content: 'Homemaker patch for Settlement Keywords Expanded not installed. Reinstall SKE and place a check mark in the first box in the list of Homemaker patches to ensure the Homemaker patch will be properly installed.'
         condition: '(checksum("Homemaker.esm",55D44FD5) or checksum("Homemaker.esm",A28ED2EC) or checksum("Homemaker.esm",DF136FBA) or checksum("Homemaker.esm",284A031C) or checksum("Homemaker.esm",47E7024C)) and version("SettlementKeywords.esm", "1.0", >=)'
 # Homemaker 1.35 CRC
       - type: error
         content: 'Requires Fallout 4 patch 1.5.157 or greater.'
-        condition: 'checksum("Homemaker.esm",A28ED2EC) and version("..\Fallout4.exe", "1.5.157.0", <)'
+        condition: 'checksum("Homemaker.esm",A28ED2EC) and version("../Fallout4.exe", "1.5.157.0", <)'
 # Homemaker 1.36 CRC DF136FBA
 # For 1.37 and Fallout 4 patch 1.6.3 to 1.6.9
 # Homemaker 1.37 CRC Old: 7207BE96, New: E0D47FC0
 # Homemaker 1.39 CRC 284A031C
       - type: error
         content: 'Incompatible with Fallout 4 patch 1.7.9 or greater. Use Homemaker 1.40 instead.'
-        condition: 'checksum("Homemaker.esm",284A031C) and version("..\Fallout4.exe", "1.7.9", >=)'
+        condition: 'checksum("Homemaker.esm",284A031C) and version("../Fallout4.exe", "1.7.9", >=)'
 # For 1.38 and Fallout 4 patch 1.7.9 or greater
 # Homemaker 1.38 CRC Old: F6020126, New: 79CA5BE5
 # Homemaker 1.40 CRC 47E7024C
       - type: error
         content: 'Incompatible with Fallout 4 patch 1.6.3 to 1.6.9. Use Homemaker 1.39 instead.'
-        condition: 'checksum("Homemaker.esm",47E7024C) and (version("..\Fallout4.exe", "1.6.3", >=) and version("..\Fallout4.exe", "1.6.9", <=))'
+        condition: 'checksum("Homemaker.esm",47E7024C) and (version("../Fallout4.exe", "1.6.3", >=) and version("../Fallout4.exe", "1.6.9", <=))'
   - name: 'SettlementKeywords.esm'
     msg:
       - type: error
         content: 'Incompatible with Fallout 4 patch 1.5.157 or greater.'
-        condition: 'checksum("SettlementKeywords.esm",8D550871) and version("..\Fallout4.exe", "1.5.157.0", >=)'
+        condition: 'checksum("SettlementKeywords.esm",8D550871) and version("../Fallout4.exe", "1.5.157.0", >=)'
       - type: error
         content: 'Incompatible with Fallout 4 patch 1.5.157 to 1.5.416. Use SKE 1.36 instead.'
-        condition: 'checksum("SettlementKeywords.esm",6FDE00E4) and (version("..\Fallout4.exe", "1.5.157.0", >=) and version("..\Fallout4.exe", "1.5.416.0", <=))'
+        condition: 'checksum("SettlementKeywords.esm",6FDE00E4) and (version("../Fallout4.exe", "1.5.157.0", >=) and version("../Fallout4.exe", "1.5.416.0", <=))'
       - type: error
         content: 'Incompatible with Fallout 4 patch 1.6.3 or greater. Use SKE 1.40 instead.'
-        condition: 'checksum("SettlementKeywords.esm",CC36D4EF) and version("..\Fallout4.exe", "1.6.3", >=)'
+        condition: 'checksum("SettlementKeywords.esm",CC36D4EF) and version("../Fallout4.exe", "1.6.3", >=)'
       - type: warn
         content: 'This copy of SettlementKeywords.esm may be missing kewords required for certain mods.'
         condition: 'version("SettlementKeywords.esm", "1.40", <)'
@@ -1154,18 +1154,18 @@ plugins:
     msg:
       - type: error
         content: 'Incompatible with Fallout 4 patch 1.5.157 or greater.'
-        condition: 'file("..\Fallout4.exe") and version("..\Fallout4.exe", "1.5.157.0", >=)'
+        condition: 'file("../Fallout4.exe") and version("../Fallout4.exe", "1.5.157.0", >=)'
   - name: 'Minutemenoverhaul.esp'
     msg:
       - type: error
         content: 'Requires Fallout 4 patch 1.5.157 to 1.5.416. Use Minutemen Overhaul 2.0.5 instead.'
-        condition: 'checksum("Minutemenoverhaul.esp",8CD7D3C8) and version("..\Fallout4.exe", "1.6.3", >=)'
+        condition: 'checksum("Minutemenoverhaul.esp",8CD7D3C8) and version("../Fallout4.exe", "1.6.3", >=)'
       - type: error
         content: 'Uninstall and use Minutemen Overhaul 2.0.3 or 2.0.5.'
         condition: 'checksum("Minutemenoverhaul.esp",A66E1F17)'
       - type: error
         content: 'Requires Fallout 4 patch 1.6.3 or greater. Use Minutemen Overhaul 2.0.3 instead.'
-        condition: 'checksum("Minutemenoverhaul.esp",46A18495) and (version("..\Fallout4.exe", "1.5.157.0", >=) and version("..\Fallout4.exe", "1.5.416.0", <=))'
+        condition: 'checksum("Minutemenoverhaul.esp",46A18495) and (version("../Fallout4.exe", "1.5.157.0", >=) and version("../Fallout4.exe", "1.5.416.0", <=))'
       - type: error
         content: 'Minutemen Overhaul patch for Settlement Keywords Expanded not installed. Reinstall SKE.'
         condition: '(checksum("Minutemenoverhaul.esp",8CD7D3C8) or checksum("Minutemenoverhaul.esp",46A18495)) and version("SettlementKeywords.esm", "1.0", >=)'
@@ -1197,21 +1197,21 @@ plugins:
         subs: [ 'ConstructionLight .esp' ]
 
   - name: 'FO4Merged.esp'
-    priority: 1991000
+    global_priority: 115
     tag:
       - NoMerge
   - name: 'Smashed Patch.esp'
-    priority: 1991000
+    global_priority: 115
     after:
       - 'FO4Merged.esp'
     tag:
       - NoMerge
     msg:
       - <<: *SmashedVsBashedPatch
-        condition: 'regex("Bashed Patch.*\.esp")'
+        condition: 'file("Bashed Patch.*\.esp")'
         subs: [ 'Bashed Patch' ]
   - name: 'Bashed Patch.*\.esp'
-    priority: 1991000
+    global_priority: 115
     after:
       - 'FO4Merged.esp'
     msg:
