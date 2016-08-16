@@ -281,10 +281,10 @@ plugins:
     priority: -1999000
     msg:
       - type: error
-        content: 'Requires Fallout 4 patch 1.6.3 or greater.'
-        condition: 'version("Unofficial Fallout 4 Patch.esp", "1.0.4c", >=) and not version("..\Fallout4.exe", "1.6.3.0", >=)'
+        content: 'Requires Fallout 4 patch 1.7.9 or greater.'
+        condition: 'version("Unofficial Fallout 4 Patch.esp", "1.0.5", >=) and not version("..\Fallout4.exe", "1.7.9.0", >=)'
       - <<: *obsolete
-        condition: 'version("Unofficial Fallout 4 Patch.esp", "1.0.4c", <)'
+        condition: 'version("Unofficial Fallout 4 Patch.esp", "1.0.5", <)'
   - name: 'KillshotFix.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/1282' ]
     priority: -1999000
