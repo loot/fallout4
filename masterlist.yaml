@@ -272,6 +272,14 @@ plugins:
       - 'DLCworkshop01.esm'
       - 'DLCCoast.esm'
       - 'DLCworkshop02.esm'
+  - name: 'DLCNukaWorld.esm'
+    priority: -1999000
+    after:
+      - 'DLCRobot.esm'
+      - 'DLCworkshop01.esm'
+      - 'DLCCoast.esm'
+      - 'DLCworkshop02.esm'
+      - 'DLCworkshop03.esm'
 
   ### Patches
   - name: 'Unofficial Fallout 4 Patch.esp'
