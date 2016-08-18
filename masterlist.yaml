@@ -249,31 +249,31 @@ globals:
 plugins:
   ### Official DLC plugins
   - name: 'DLCRobot.esm'
-    global_priority: -120
+    global_priority: -127
   - name: 'DLCworkshop01.esm'
-    global_priority: -120
+    global_priority: -127
     after:
       - 'DLCRobot.esm'
   - name: 'DLCCoast.esm'
-    global_priority: -120
+    global_priority: -127
     after:
       - 'DLCRobot.esm'
       - 'DLCworkshop01.esm'
   - name: 'DLCworkshop02.esm'
-    global_priority: -120
+    global_priority: -127
     after:
       - 'DLCRobot.esm'
       - 'DLCworkshop01.esm'
       - 'DLCCoast.esm'
   - name: 'DLCworkshop03.esm'
-    global_priority: -120
+    global_priority: -127
     after:
       - 'DLCRobot.esm'
       - 'DLCworkshop01.esm'
       - 'DLCCoast.esm'
       - 'DLCworkshop02.esm'
   - name: 'DLCNukaWorld.esm'
-    global_priority: -120
+    global_priority: -127
     after:
       - 'DLCRobot.esm'
       - 'DLCworkshop01.esm'
