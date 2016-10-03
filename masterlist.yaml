@@ -1142,7 +1142,7 @@ plugins:
 # Homemaker 1.41 CRC F8FC29EE
       - type: error
         content: 'Requires Fallout 4 patch 1.7.9 or greater.'
-        condition: 'checksum("Homemaker.esm",F8FC29EE) and (version("..\Fallout4.exe", "1.7.9", <)'
+        condition: 'checksum("Homemaker.esm",F8FC29EE) and version("..\Fallout4.exe", "1.7.9", <)'
   - name: 'SettlementKeywords.esm'
     msg:
       - type: error
