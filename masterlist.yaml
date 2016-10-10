@@ -934,12 +934,13 @@ plugins:
   - name: 'Jzk_WW_Patch.esp'
     msg:
       - *UsingSKE
+# ALL DLC Version 3.x
   - name: 'CW_PATCH.esp'
     msg:
-      - *UsingSKE
+      - *InsteadSKEPatch
   - name: 'DLC_MainMenu.esm'
     msg:
-      - *UsingSKE
+      - *InsteadSKEPatch
   - name: 'DLC_OCD_Patch.esp'
     msg:
       - *UsingSKE
@@ -951,28 +952,31 @@ plugins:
       - *UsingSKE
   - name: 'DLC_PATCH_integrated.esp'
     msg:
-      - *UsingSKE
+      - *InsteadSKEPatch
   - name: 'DLC_SK_Patch.esp'
     msg:
       - *UsingSKE
+      - type: error
+        content: 'The original SK v0.8 is not compatible with Fallout 4 patch 1.5.157 or greater.'
+        condition: '(checksum("SettlementKeywords.esm",8D550871) and active("DLC_SK_Patch.esp")) and version("..\Fallout4.exe", "1.5.157.0", >=)'
   - name: 'DLC_SKE_Patch.esp'
     msg:
       - *UsingSKE
   - name: 'FH_PATCH.esp'
     msg:
-      - *UsingSKE
+      - *InsteadSKEPatch
   - name: 'FH_PATCH_integrated.esp'
     msg:
-      - *UsingSKE
+      - *InsteadSKEPatch
   - name: 'WW_PATCH.esp'
     msg:
-      - *UsingSKE
+      - *InsteadSKEPatch
   - name: 'WW_PATCH_ENG.esp'
     msg:
-      - *UsingSKE
+      - *InsteadSKEPatch
   - name: 'WW_PATCH_integrated.esp'
     msg:
-      - *UsingSKE
+      - *InsteadSKEPatch
   - name: 'HMM-WWorkshop-Compatibility.esp'
     msg:
       - *UsingSKE
