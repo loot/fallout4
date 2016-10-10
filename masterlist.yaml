@@ -131,9 +131,9 @@ common:
     type: warn
     content:
       - lang: en
-        str: 'This can cause compatibility issues.  It is recomended to use compatible SKE files instead.'
+        str: 'This file changes the way the base game categorizes settlement building menus. It is recommended to uninstall this file and use only files and patches compatible with SKE.'
       - lang: es
-        str: 'Este archivo puede causar problemas de compatibilidad. Se recomienda utilizar archivos compatibles proveidos con SKE.'
+        str: 'Este archivo cambia la forma en que el juego base clasifica los menús de la construcción de asentamientos. Se recomienda desinstalar este archivo y utilizar sólo los archivos y parches compatibles con SKE.'
       - lang: da
         str: 'Denne fil ændrer Form-lister i vanilje menuer. Overvej at bruge en kompatibel SKE-lap i stedet.'
     condition: 'active("SettlementKeywords.esm") and version("SettlementKeywords.esm", "1.0", >=)'
