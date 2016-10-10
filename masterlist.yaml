@@ -977,6 +977,46 @@ plugins:
   - name: 'WW_PATCH_integrated.esp'
     msg:
       - *InsteadSKEPatch
+# ALL DLC Version 4.x
+  - name: 'NW_PATCH_Integrated.esp'
+    msg:
+      - *InsteadSKEPatch
+  - name: 'CW_PATCH_integrated.esp'
+    msg:
+      - *InsteadSKEPatch
+  - name: 'VW_PATCH_integrated.esp'
+    msg:
+      - *InsteadSKEPatch
+  - name: 'NW_PATCH.esp'
+    msg:
+      - *InsteadSKEPatch
+  - name: 'FH_PATCH_Full.esp'
+    msg:
+      - *InsteadSKEPatch
+  - name: 'VW_PATCH_Full.esp'
+    msg:
+      - *InsteadSKEPatch
+  - name: 'CW_PATCH_Full.esp'
+    msg:
+      - *InsteadSKEPatch
+  - name: 'WW_PATCH_Full.esp'
+    msg:
+      - *InsteadSKEPatch
+  - name: 'DLC_PATCH_Full.esp'
+    msg:
+      - *InsteadSKEPatch
+  - name: 'AM_PATCH_Full.esp'
+    msg:
+      - *InsteadSKEPatch
+  - name: 'VW_PATCH.esp'
+    msg:
+      - *InsteadSKEPatch
+  - name: 'NW_PATCH_Full.esp'
+    msg:
+      - *InsteadSKEPatch
+  - name: 'DLC_MainMenu_Handplaced.esp'
+    msg:
+      - *UsingSKE
   - name: 'HMM-WWorkshop-Compatibility.esp'
     msg:
       - *UsingSKE
