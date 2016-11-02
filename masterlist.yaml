@@ -131,9 +131,9 @@ common:
     type: warn
     content:
       - lang: en
-        text: 'This can cause compatibility issues.  It is recomended to use compatible SKE files instead.'
+        text: 'This file changes the way the base game categorizes settlement building menus. It is recommended to uninstall this file and use only files and patches compatible with SKE.'
       - lang: es
-        text: 'Este archivo puede causar problemas de compatibilidad. Se recomienda utilizar archivos compatibles proveidos con SKE.'
+        text: 'Este archivo cambia la forma en que el juego base clasifica los menús de la construcción de asentamientos. Se recomienda desinstalar este archivo y utilizar sólo los archivos y parches compatibles con SKE.'
       - lang: da
         text: 'Denne fil ændrer Form-lister i vanilje menuer. Overvej at bruge en kompatibel SKE-lap i stedet.'
     condition: 'active("SettlementKeywords.esm") and version("SettlementKeywords.esm", "1.0", >=)'
@@ -934,12 +934,13 @@ plugins:
   - name: 'Jzk_WW_Patch.esp'
     msg:
       - *UsingSKE
+# ALL DLC Version 3.x
   - name: 'CW_PATCH.esp'
     msg:
-      - *UsingSKE
+      - *InsteadSKEPatch
   - name: 'DLC_MainMenu.esm'
     msg:
-      - *UsingSKE
+      - *InsteadSKEPatch
   - name: 'DLC_OCD_Patch.esp'
     msg:
       - *UsingSKE
@@ -951,26 +952,69 @@ plugins:
       - *UsingSKE
   - name: 'DLC_PATCH_integrated.esp'
     msg:
-      - *UsingSKE
+      - *InsteadSKEPatch
   - name: 'DLC_SK_Patch.esp'
     msg:
       - *UsingSKE
+      - type: error
+        content: 'The original SK v0.8 is not compatible with Fallout 4 patch 1.5.157 or greater.'
+        condition: '(checksum("SettlementKeywords.esm",8D550871) and active("DLC_SK_Patch.esp")) and version("..\Fallout4.exe", "1.5.157.0", >=)'
   - name: 'DLC_SKE_Patch.esp'
     msg:
       - *UsingSKE
   - name: 'FH_PATCH.esp'
     msg:
-      - *UsingSKE
+      - *InsteadSKEPatch
   - name: 'FH_PATCH_integrated.esp'
     msg:
-      - *UsingSKE
+      - *InsteadSKEPatch
   - name: 'WW_PATCH.esp'
     msg:
-      - *UsingSKE
+      - *InsteadSKEPatch
   - name: 'WW_PATCH_ENG.esp'
     msg:
-      - *UsingSKE
+      - *InsteadSKEPatch
   - name: 'WW_PATCH_integrated.esp'
+    msg:
+      - *InsteadSKEPatch
+# ALL DLC Version 4.x
+  - name: 'NW_PATCH_Integrated.esp'
+    msg:
+      - *InsteadSKEPatch
+  - name: 'CW_PATCH_integrated.esp'
+    msg:
+      - *InsteadSKEPatch
+  - name: 'VW_PATCH_integrated.esp'
+    msg:
+      - *InsteadSKEPatch
+  - name: 'NW_PATCH.esp'
+    msg:
+      - *InsteadSKEPatch
+  - name: 'FH_PATCH_Full.esp'
+    msg:
+      - *InsteadSKEPatch
+  - name: 'VW_PATCH_Full.esp'
+    msg:
+      - *InsteadSKEPatch
+  - name: 'CW_PATCH_Full.esp'
+    msg:
+      - *InsteadSKEPatch
+  - name: 'WW_PATCH_Full.esp'
+    msg:
+      - *InsteadSKEPatch
+  - name: 'DLC_PATCH_Full.esp'
+    msg:
+      - *InsteadSKEPatch
+  - name: 'AM_PATCH_Full.esp'
+    msg:
+      - *InsteadSKEPatch
+  - name: 'VW_PATCH.esp'
+    msg:
+      - *InsteadSKEPatch
+  - name: 'NW_PATCH_Full.esp'
+    msg:
+      - *InsteadSKEPatch
+  - name: 'DLC_MainMenu_Handplaced.esp'
     msg:
       - *UsingSKE
   - name: 'HMM-WWorkshop-Compatibility.esp'
@@ -1139,20 +1183,21 @@ plugins:
       - type: error
         content: 'Incompatible with Fallout 4 patch 1.6.3 to 1.6.9. Use Homemaker 1.39 instead.'
         condition: 'checksum("Homemaker.esm",47E7024C) and (version("../Fallout4.exe", "1.6.3", >=) and version("../Fallout4.exe", "1.6.9", <=))'
+# Homemaker 1.41 CRC F8FC29EE
+      - type: error
+        content: 'Requires Fallout 4 patch 1.7.9 or greater.'
+        condition: 'checksum("Homemaker.esm",F8FC29EE) and version("../Fallout4.exe", "1.7.9", <)'
   - name: 'SettlementKeywords.esm'
     msg:
       - type: error
         content: 'Incompatible with Fallout 4 patch 1.5.157 or greater.'
         condition: 'checksum("SettlementKeywords.esm",8D550871) and version("../Fallout4.exe", "1.5.157.0", >=)'
       - type: error
-        content: 'Incompatible with Fallout 4 patch 1.5.157 to 1.5.416. Use SKE 1.36 instead.'
-        condition: 'checksum("SettlementKeywords.esm",6FDE00E4) and (version("../Fallout4.exe", "1.5.157.0", >=) and version("../Fallout4.exe", "1.5.416.0", <=))'
-      - type: error
-        content: 'Incompatible with Fallout 4 patch 1.6.3 or greater. Use SKE 1.40 instead.'
-        condition: 'checksum("SettlementKeywords.esm",CC36D4EF) and version("../Fallout4.exe", "1.6.3", >=)'
+        content: 'Requires Fallout 4 patch 1.6.3 or greater.'
+        condition: 'version("SettlementKeywords.esm", "1.40", >=) and version("../Fallout4.exe", "1.6.3", <)'
       - type: warn
         content: 'This copy of SettlementKeywords.esm may be missing kewords required for certain mods.'
-        condition: 'version("SettlementKeywords.esm", "1.40", <)'
+        condition: 'version("SettlementKeywords.esm", "1.41", <)'
   - name: 'AlternateSettlements.esp'
     msg:
       - type: error
