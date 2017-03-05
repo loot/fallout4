@@ -147,6 +147,14 @@ common:
       - lang: da
         text: 'Denne fil behøves ikke med Snap''n Build.esm v1.9. Overvej at opgradere og fjerne denne fil.'
     condition: 'active("Snap''n Build.esm")'
+  - &UsingHomemaker1_50
+    type: error
+    content:
+      - lang: en
+        text: 'Uninstall this file and upgrade to Homemaker 1.50.'
+      - lang: es
+        text: 'Desinstale este archivo y actualizar a Homemaker 1.50.'
+    condition: 'version("Homemaker.esm", "1.50", <)'
 
 globals:
   - type: say
@@ -685,7 +693,7 @@ plugins:
       - 'ValdacilsItemSorting-ZZ-DLCAutomatron.esp'
       - 'ValdacilsItemSorting-ZZ-DLCAutomatron-Weightless.esp'
       - 'ValdacilsItemSorting-ZZ-DLCFarHarbor.esp'
-      - 'ValdacilsItemSorting-ZZ-DLCFarHarbor-Weightless.esp' 
+      - 'ValdacilsItemSorting-ZZ-DLCFarHarbor-Weightless.esp'
   - name: 'VIS-PatchChemRedux.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/3877' ]
     after:
@@ -1069,22 +1077,22 @@ plugins:
       - *UsingSKE
   - name: 'Homemaker - Bunker Disabler SK.esp'
     msg:
-      - *UsingSKE
+      - *UsingHomemaker1_50
   - name: 'Homemaker - Bunker Disabler.esp'
     msg:
-      - *UsingSKE
+      - *UsingHomemaker1_50
   - name: 'Homemaker - Greenhouse and Bunker Disabler SK.esp'
     msg:
-      - *UsingSKE
+      - *UsingHomemaker1_50
   - name: 'Homemaker - Greenhouse and Bunker Disabler.esp'
     msg:
-      - *UsingSKE
+      - *UsingHomemaker1_50
   - name: 'Homemaker - Greenhouse Disabler SK.esp'
     msg:
-      - *UsingSKE
+      - *UsingHomemaker1_50
   - name: 'Homemaker - Greenhouse Disabler.esp'
     msg:
-      - *UsingSKE
+      - *UsingHomemaker1_50
   - name: 'Homemaker - SK Integration Patch.esp'
     msg:
       - type: error
@@ -1095,19 +1103,19 @@ plugins:
         condition: 'file("../Fallout4.exe") and version("../Fallout4.exe", "1.5.157.0", >=)'
   - name: 'Homemaker - SKE Integration Patch.esp'
     msg:
-      - *UsingSKE
+      - *UsingHomemaker1_50
   - name: 'Homemaker - SSEx Compatibility Patch.esp'
     msg:
-      - *UsingSKE
+      - *UsingHomemaker1_50
   - name: 'Homemaker - Streetlights Use Passive Power.esp'
     msg:
-      - *UsingSKE
+      - *UsingHomemaker1_50
   - name: 'Homemaker - Unlocked Institute Objects SK.esp'
     msg:
-      - *UsingSKE
+      - *UsingHomemaker1_50
   - name: 'Homemaker - Unlocked Institute Objects.esp'
     msg:
-      - *UsingSKE
+      - *UsingHomemaker1_50
   - name: 'Snap''n Build - Bunker.esp'
     msg:
       - *UsingSNB
@@ -1192,6 +1200,10 @@ plugins:
       - type: error
         content: 'Requires Fallout 4 patch 1.7.9 or greater.'
         condition: 'checksum("Homemaker.esm",F8FC29EE) and version("../Fallout4.exe", "1.7.9", <)'
+# Homemaker 1.50
+      - type: error
+        content: 'Requires Fallout 4 patch 1.7.9 or greater.'
+        condition: 'version("Homemaker.esm", "1.50", <)'
   - name: 'SettlementKeywords.esm'
     msg:
       - type: error
