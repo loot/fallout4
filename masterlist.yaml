@@ -1203,6 +1203,9 @@ plugins:
 # Homemaker 1.50
       - type: error
         content: 'Requires Fallout 4 patch 1.7.9 or greater.'
+        condition: 'version("Homemaker.esm", "1.50", ==) and version("../Fallout4.exe", "1.7.9", <)'
+      - type: warn
+        content: 'Outdated. Upgrade to the latest version of Homemaker.'
         condition: 'version("Homemaker.esm", "1.50", <)'
   - name: 'SettlementKeywords.esm'
     msg:
