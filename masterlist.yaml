@@ -1237,6 +1237,15 @@ plugins:
       - type: say
         content: 'Outdated. Upgrade to the latest version of Homemaker.'
         condition: 'version("Homemaker.esm", "1.50", <)'
+  - name: 'SnapBedsHomemakerPatch.esp'
+    msg:
+      - type: error
+        content:
+        - lang: en
+          text: 'Uninstall this file. It it no longer required with Homemaker 1.50 or higher.'
+        - lang: es
+          text: 'Desinstale este archivo. No es requerido con Homemaker 1.50 or higher.'
+        condition: 'version("Homemaker.esm", "1.50", >=)'
   - name: 'SettlementKeywords.esm'
     msg:
       - type: error
