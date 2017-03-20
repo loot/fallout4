@@ -1256,7 +1256,7 @@ plugins:
         condition: 'version("SettlementKeywords.esm", "1.40", >=) and version("../Fallout4.exe", "1.6.3", <)'
       - type: warn
         content: 'This copy of SettlementKeywords.esm may be missing kewords required for certain mods.'
-        condition: 'version("SettlementKeywords.esm", "1.45", <)'
+        condition: 'version("SettlementKeywords.esm", "1.49", <)'
   - name: 'AlternateSettlements.esp'
     msg:
       - type: error
