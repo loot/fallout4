@@ -1281,6 +1281,51 @@ plugins:
       - type: error
         content: 'Minutemen Overhaul patch for Settlement Keywords Expanded not installed. Reinstall SKE.'
         condition: '(checksum("Minutemenoverhaul.esp",8CD7D3C8) or checksum("Minutemenoverhaul.esp",46A18495)) and version("SettlementKeywords.esm", "1.0", >=)'
+  - name: 'BuildingBlocks-Foundations_Homemaker-SnapBuild.esp'
+    msg:
+      - type: error
+        content: 'Uninstall this file. It is not needed with Homemaker 1.50 or greater.'
+        condition: 'version("Homemaker.esm", "1.50", >=)'
+      - type: error
+        content: 'Incompatible with Fallout 4 patch 1.5.157 or greater.'
+        condition: 'file("../Fallout4.exe") and version("../Fallout4.exe", "1.5.157.0", >=)'
+  - name: 'BuildingBlocks-Foundations_Homemaker.esp'
+    msg:
+      - type: error
+        content: 'Uninstall this file. It is not needed with Homemaker 1.50 or greater.'
+        condition: 'version("Homemaker.esm", "1.50", >=)'
+      - type: error
+        content: 'Incompatible with Fallout 4 patch 1.5.157 or greater.'
+        condition: 'file("../Fallout4.exe") and version("../Fallout4.exe", "1.5.157.0", >=)'
+  - name: 'BuildingBlocks-Foundations_Homemaker-SSEx.esp'
+    msg:
+      - type: error
+        content: 'Uninstall this file. It is not needed with Homemaker 1.50 or greater.'
+        condition: 'version("Homemaker.esm", "1.50", >=)'
+      - type: error
+        content: 'Incompatible with Fallout 4 patch 1.5.157 or greater.'
+        condition: 'file("../Fallout4.exe") and version("../Fallout4.exe", "1.5.157.0", >=)'
+  - name: 'BuildingBlocks-Foundations_SettlementKeywordsFull.esp'
+    msg:
+      - type: say
+        content: 'This file is compatible with SKE but not recomended. Use BuildingBlocks-Foundations.esp instead.'
+        condition: 'version("SettlementKeywords.esm", "1.0", >=)'
+  - name: 'BuildingBlocks-Foundations_SettlementKeywordsPartial.esp'
+    msg:
+      - type: error
+        content: 'Uninstall this file. It was not made for Settlement Keywords Expanded.'
+        condition: 'version("SettlementKeywords.esm", "1.0", >=)'
+      - type: error
+        content: 'Incompatible with Fallout 4 patch 1.5.157 or greater.'
+        condition: 'file("../Fallout4.exe") and version("../Fallout4.exe", "1.5.157.0", >=)'
+  - name: 'BuildingBlocks-Foundations_Homemaker-SnapBuild-SSEx.esp'
+    msg:
+      - type: error
+        content: 'Uninstall this file. It is not needed with Homemaker 1.50 or greater.'
+        condition: 'version("Homemaker.esm", "1.50", >=)'
+      - type: error
+        content: 'Incompatible with Fallout 4 patch 1.5.157 or greater.'
+        condition: 'file("../Fallout4.exe") and version("../Fallout4.exe", "1.5.157.0", >=)'
   - name: 'BetterJunkFences.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/9000' ]
     inc: [ 'JunkWalls_More_Snaps.esp' ]
