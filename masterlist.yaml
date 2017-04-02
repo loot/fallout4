@@ -1248,7 +1248,14 @@ plugins:
       - <<: *useOnlyOneX
         condition: 'many("ConstructionLight_\w+\.esp")'
         subs: [ 'ConstructionLight .esp' ]
-
+  - name: 'VIS-PatchChemRedux.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/3877' ]
+    after:
+      - 'chem redux.esp'
+  - name: 'VIS-PatchChemReduxWeightless.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/3877' ]
+    after:
+      - 'chem redux.esp'
   - name: 'FO4Merged.esp'
     priority: 1991000
     tag:
