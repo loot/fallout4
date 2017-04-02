@@ -905,10 +905,13 @@ plugins:
         subs: [ 'ArmorKeywords.esm' ]
   - name: 'WET Clearer.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/244' ]
-    inc: [ 'WET Murkier.esp' ]
+    inc: [ 'WET Murkier.esp' , 'WET.esp' ]
   - name: 'WET Murkier.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/244' ]
-    inc: [ 'WET Clearer.esp' ]
+    inc: [ 'WET Clearer.esp', 'WET.esp' ]
+  - name: 'WET.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/244' ]
+    inc: [ 'WET Clearer.esp', 'WET Murkier.esp' ]
   - name: 'Lasers Have No Recoil.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/9417/' ]
     inc: [ 'Concentrated Splitter.esp' ]
