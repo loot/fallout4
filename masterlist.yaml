@@ -1378,3 +1378,9 @@ plugins:
       - <<: *SmashedVsBashedPatch
         condition: 'file("Smashed Patch.esp")'
         subs: [ 'Smashed Patch.esp' ]
+  - name: 'Vivid Waters.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/16425' ]
+    after:
+      - 'WET.esp'
+      - 'WET Murkier.esp'
+      - 'WET Clearer.esp'
