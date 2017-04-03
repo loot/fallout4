@@ -1342,7 +1342,7 @@ plugins:
   - name: 'Z_Horizon_Patch_Homemaker_SKE.esp'
     msg:
       - type: error
-        content: 'This patch will no longer with SKE 1.43 or greater because as of Homemaker 1.50 or greater there is no Homemaker - SKE patch.'
+        content: 'This patch no longer works with SKE 1.43 or greater because, as of Homemaker 1.50 or greater there is no Homemaker - SKE patch.'
         condition: 'version("SettlementKeywords.esm", "1.43", >=)'
   - name: 'BetterJunkFences.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/9000' ]
