@@ -1334,6 +1334,16 @@ plugins:
       - type: error
         content: 'This mod overwrites many vanilla settlement menus. Detailed instructions to resolve conflicts can be found [here](http://www.creationkit.com/fallout4/index.php?title=Building_Blocks_Foundations).'
         condition: 'checksum("BuildingBlocks-Foundations.esp",2924F338) and version("../Fallout4.exe", "1.5.157.0", >=)'
+  - name: 'Z_Horizon_Patch_Homemaker.esp'
+    msg:
+      - type: warn
+        content: 'This patch will no longer work correctly with Homemaker 1.50 or greater. It will move items out of the Homemaker menu and place them into the vanilla menus unintentionally.'
+        condition: 'version("Homemaker.esm", "1.50", >=)'
+  - name: 'Z_Horizon_Patch_Homemaker_SKE.esp'
+    msg:
+      - type: error
+        content: 'This patch will no longer with SKE 1.43 or greater because as of Homemaker 1.50 or greater there is no Homemaker - SKE patch.'
+        condition: 'version("SettlementKeywords.esm", "1.43", >=)'
   - name: 'BetterJunkFences.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/9000' ]
     inc: [ 'JunkWalls_More_Snaps.esp' ]
