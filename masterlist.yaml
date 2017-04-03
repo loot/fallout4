@@ -1329,6 +1329,11 @@ plugins:
       - type: error
         content: 'Incompatible with Fallout 4 patch 1.5.157 or greater.'
         condition: 'file("../Fallout4.exe") and version("../Fallout4.exe", "1.5.157.0", >=)'
+  - name: 'BuildingBlocks-Foundations.esp'
+    msg:
+      - type: error
+        content: 'This mod overwrites many vanilla settlement menus. Detailed instructions to resolve conflicts can be found [here](http://www.creationkit.com/fallout4/index.php?title=Building_Blocks_Foundations).'
+        condition: 'checksum("BuildingBlocks-Foundations.esp",2924F338) and version("../Fallout4.exe", "1.5.157.0", >=)'
   - name: 'BetterJunkFences.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/9000' ]
     inc: [ 'JunkWalls_More_Snaps.esp' ]
