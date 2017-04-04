@@ -1399,3 +1399,27 @@ plugins:
       - 'WET.esp'
       - 'WET Murkier.esp'
       - 'WET Clearer.esp'
+  - name: 'BetterSettlersFarHarborPatchMortal.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/4772' ]
+    after:
+      - 'BetterSettlersNoLollygagging.esp'
+      - 'BetterSettlersCleanFacePack.esp'
+      - 'BetterSettlersCCAPack1.1b.esp'
+      - 'BetterSettlersAllFemale.esp'
+      - 'BetterSettlersMortalPack.esp'
+      - 'BetterSettlersMortalSoldiersPack.esp'
+      - 'BetterSettlersLightArmorOnly.esp'
+      - 'BetterSettlersHeavyArmorOnly.esp'
+    inc: [ 'BetterSettlersFarHarborPatch.esp' ]
+  - name: 'BetterSettlersFarHarborPatch.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/4772' ]
+    after:
+      - 'BetterSettlersNoLollygagging.esp'
+      - 'BetterSettlersCleanFacePack.esp'
+      - 'BetterSettlersCCAPack1.1b.esp'
+      - 'BetterSettlersAllFemale.esp'
+      - 'BetterSettlersMortalPack.esp'
+      - 'BetterSettlersMortalSoldiersPack.esp'
+      - 'BetterSettlersLightArmorOnly.esp'
+      - 'BetterSettlersHeavyArmorOnly.esp'
+    inc: [ 'BetterSettlersFarHarborPatchMortal.esp' ]
