@@ -282,7 +282,7 @@ plugins:
   ### Patches
   - name: 'Unofficial Fallout 4 Patch.esp'
     url:
-      - 'http://afkmods.iguanadons.net/index.php?/files/file/1765-unofficial-fallout-4-patch/'
+      - 'https://afkmods.iguanadons.net/index.php?/files/file/1765-unofficial-fallout-4-patch/'
       - 'http://www.nexusmods.com/fallout4/mods/4526'
     global_priority: -100
     msg:
