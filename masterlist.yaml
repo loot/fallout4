@@ -1427,3 +1427,9 @@ plugins:
     url: [ 'http://www.nexusmods.com/fallout4/mods/16000/' ]
     after:
       - 'DiverseChildren.esp'
+  - name: 'LegendaryCloth.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/3694/' ]
+    msg:
+      - <<: *AlreadyInX
+        condition: 'active("Armorsmith Extended.esp")'
+        subs: [ 'Armorsmith Extended' ]
