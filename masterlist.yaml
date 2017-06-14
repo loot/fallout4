@@ -156,6 +156,11 @@ common:
         text: 'Desinstale este archivo y actualizar a Homemaker 1.50.'
     condition: 'version("Homemaker.esm", "1.50", <)'
 
+# Cleaning data
+  - &dirtyPlugin
+    util: '[FO4Edit](http://www.nexusmods.com/fallout4/mods/2737)'
+    info: 'A cleaning guide is available [here](http://www.creationkit.com/index.php?title=TES5Edit_Cleaning_Guide_-_TES5Edit).'
+
 globals:
   - type: say
     content:
@@ -248,21 +253,44 @@ plugins:
   ### Official DLC plugins
   - name: 'DLCRobot.esm'
     global_priority: -120
+    dirty:
+      - <<: *dirtyPlugin
+        # FOEdit 3.2
+        crc: 0xd69027ea
+        itm: 45
+        udr: 38
+        nav: 1
   - name: 'DLCworkshop01.esm'
     global_priority: -120
     after:
       - 'DLCRobot.esm'
+    dirty:
+      - <<: *dirtyPlugin
+        # FOEdit 3.2
+        crc: 0x47bae27e
+        itm: 6
   - name: 'DLCCoast.esm'
     global_priority: -120
     after:
       - 'DLCRobot.esm'
       - 'DLCworkshop01.esm'
+    dirty:
+      - <<: *dirtyPlugin
+        # FOEdit 3.2
+        crc: 0xf1f28026
+        itm: 75
+        udr: 86
   - name: 'DLCworkshop02.esm'
     global_priority: -120
     after:
       - 'DLCRobot.esm'
       - 'DLCworkshop01.esm'
       - 'DLCCoast.esm'
+    dirty:
+      - <<: *dirtyPlugin
+        # FOEdit 3.2
+        crc: 0x83abc821
+        itm: 2
   - name: 'DLCworkshop03.esm'
     global_priority: -120
     after:
@@ -270,6 +298,12 @@ plugins:
       - 'DLCworkshop01.esm'
       - 'DLCCoast.esm'
       - 'DLCworkshop02.esm'
+    dirty:
+      - <<: *dirtyPlugin
+        # FOEdit 3.2
+        crc: 0xe0089fbb
+        itm: 18
+        udr: 10
   - name: 'DLCNukaWorld.esm'
     global_priority: -120
     after:
@@ -278,6 +312,13 @@ plugins:
       - 'DLCCoast.esm'
       - 'DLCworkshop02.esm'
       - 'DLCworkshop03.esm'
+    dirty:
+      - <<: *dirtyPlugin
+        # FOEdit 3.2
+        crc: 0x43d25c56
+        itm: 192
+        udr: 418
+        nav: 7
 
   ### Patches
   - name: 'Unofficial Fallout 4 Patch.esp'
