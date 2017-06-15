@@ -93,6 +93,13 @@ common:
         text: 'This plugin conflicts with plugin "%1%", however a patch is available.'
       - lang: da
         text: 'Dette plugin er i konflikt med pluginnet “%1%”, men en lap er tilgængelig.'
+  - &hasPluginPatch
+    type: warn
+    content:
+      - lang: en
+        text: "You seem to be using %1%, but you haven't enabled the %1% patch for this plugin: %2%"
+      - lang: da
+        text: "Du ser ud til at bruge %1%, men du bruger ikke “%1%”-lappen for dette plugin: %2%"
   - &requireF4SE
     type: error
     content:
