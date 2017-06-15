@@ -1489,3 +1489,36 @@ plugins:
           - "Valdacil's Item Sorting"
           - '[SimSettlements_VIS.esp](http://www.nexusmods.com/fallout4/mods/21872)'
         condition: 'active("ValdacilsItemSorting-.+\.esp") and not active("SimSettlements_VIS.esp")'
+  - name: 'llamaCompanionHeather.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/23273' ]
+    msg:
+      - <<: *hasPluginPatch
+        subs:
+          - 'Full Dialogue Interface'
+          - '[Heather Casdin patch](http://www.nexusmods.com/fallout4/mods/24314)'
+        condition: '(checksum("interface/dialoguemenu.swf", FD1941F1) or checksum("interface/multiactivatemenu.swf", 7A51282D)) and checksum("llamaCompanionHeather.esp", 1FD60CC1)'
+      - <<: *hasPluginPatch
+        subs:
+          - "Valdacil's Item Sorting"
+          - '[Heather Casdin patch](http://www.nexusmods.com/fallout4/mods/24314)'
+        condition: 'active("ValdacilsItemSorting-.+\.esp") and not active("llamaCompanionHeather-VIS(-AE)? Patch\.esp")'
+      - <<: *hasPluginPatch
+        subs:
+          - "Bhaal's Better Sorting"
+          - '[Heather Casdin patch](http://www.nexusmods.com/fallout4/mods/24314)'
+        condition: 'active("BBS000-F04-(MANDATORY|Ultimate)(-.*)?\.esp") and not active("llamaCompanionHeather-BBS(-AE)? Patch\.esp")'
+      - <<: *hasPluginPatch
+        subs:
+          - 'Armorsmith Extended'
+          - '[Heather Casdin patch](http://www.nexusmods.com/fallout4/mods/24314)'
+        condition: 'active("Armorsmith Extended.esp") and not active("llamaCompanionHeather-((BBS|VIS)-)?AE Patch\.esp")'
+  - name: 'llamaCompanionHeather-BBS(-AE)? Patch\.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/24314' ]
+    inc:
+      - 'llamaCompanionHeather-VIS Patch.esp'
+      - 'llamaCompanionHeather-VIS-AE Patch.esp'
+  - name: 'llamaCompanionHeather-VIS(-AE)? Patch\.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/24314' ]
+    inc:
+      - 'llamaCompanionHeather-BBS Patch.esp'
+      - 'llamaCompanionHeather-BBS-AE Patch.esp'
