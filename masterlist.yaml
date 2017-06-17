@@ -1522,3 +1522,9 @@ plugins:
     inc:
       - 'llamaCompanionHeather-BBS Patch.esp'
       - 'llamaCompanionHeather-BBS-AE Patch.esp'
+  - name: 'THBrows.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/6186' ]
+    msg:
+      - <<: *AlreadyInX
+        condition: 'active("LooksMenu Customization Compendium.esp")'
+        subs: [ 'LooksMenu Customization Compendium.esp' ]
