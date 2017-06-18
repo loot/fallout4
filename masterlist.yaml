@@ -1534,3 +1534,25 @@ plugins:
       - type: error
         content: 'This mods has a script conflict with the Unofficial Fallout 4 Patch. Be sure to get the UFO4P patched version from [the mod page](http://www.nexusmods.com/fallout4/mods/20137).'
         condition: 'active("Unofficial Fallout 4 Patch.esp") and checksum("Better Settlement Defence.esp", DB37AB92)'
+  - name: 'Give Me That Bottle.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/13193' ]
+    # CRC checksum  Version   Compatibility
+    # ECEBD46B      2.6       -
+    # 939407C9      2.6       VIS
+    # 814AC32F      2.6       DLC
+    # AE38A5A0      2.6       DLC+VIS
+    after:
+      - name: 'ValdacilsItemSorting-00-ValsPicks-DLCVersion.esp'
+        condition: 'checksum("Give Me That Bottle.esp", AE38A5A0) or checksum("Give Me That Bottle.esp", 939407C9)'
+      - name: 'ValdacilsItemSorting-00-ValsPicks-DLCVersion-VanillaWeight.esp'
+        condition: 'checksum("Give Me That Bottle.esp", AE38A5A0) or checksum("Give Me That Bottle.esp", 939407C9)'
+      - name: 'ValdacilsItemSorting-00-ValsPicks-NoDLCVersion.esp'
+        condition: 'checksum("Give Me That Bottle.esp", AE38A5A0) or checksum("Give Me That Bottle.esp", 939407C9)'
+      - name: 'ValdacilsItemSorting-00-ValsPicks-NoDLCVersion-VanillaWeight.esp'
+        condition: 'checksum("Give Me That Bottle.esp", AE38A5A0) or checksum("Give Me That Bottle.esp", 939407C9)'
+    msg:
+      - <<: *hasPluginPatch
+        subs:
+          - "Valdacil's Item Sorting"
+          - '[sorting patch](http://www.nexusmods.com/fallout4/mods/13193)'
+        condition: 'active("ValdacilsItemSorting-.+\.esp") and (checksum("Give Me That Bottle.esp", 814AC32F) or checksum("Give Me That Bottle.esp", ECEBD46B))'
