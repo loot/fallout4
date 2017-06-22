@@ -1561,3 +1561,6 @@ plugins:
           - "Valdacil's Item Sorting"
           - '[sorting patch](http://www.nexusmods.com/fallout4/mods/13193)'
         condition: 'active("ValdacilsItemSorting-.+\.esp") and (checksum("Give Me That Bottle.esp", 814AC32F) or checksum("Give Me That Bottle.esp", ECEBD46B))'
+      - type: warn
+        content: "You seem to be using the Valdacil's Item Sorting version of the mod, but without using any of the Valdacil's Item Sorting plugins. Consider using a version of Give Me That Bottle without sorting patches."
+        condition: 'not active("ValdacilsItemSorting-.+\.esp") and (checksum("Give Me That Bottle.esp", 939407C9) or checksum("Give Me That Bottle.esp", AE38A5A0))'
