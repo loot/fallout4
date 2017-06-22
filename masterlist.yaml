@@ -1564,3 +1564,39 @@ plugins:
       - type: warn
         content: "You seem to be using the Valdacil's Item Sorting version of the mod, but without using any of the Valdacil's Item Sorting plugins. Consider using a version of Give Me That Bottle without sorting patches."
         condition: 'not active("ValdacilsItemSorting-.+\.esp") and (checksum("Give Me That Bottle.esp", 939407C9) or checksum("Give Me That Bottle.esp", AE38A5A0))'
+  - name: 'Scrapper Corpse Highlighting.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/4380' ]
+    priority: -5
+    clean:
+      # Version 8
+      - crc: 0x904389D7
+        util: FO4Edit v3.2
+    msg:
+      - <<: *hasPluginPatch
+        subs:
+          - 'Automatron'
+          - '[DLCRobots Fix](http://www.nexusmods.com/fallout4/mods/11516)'
+        condition: 'active("DLCRobot.esm") and not active("DLCCoast.esm") and not active("Scrapper Corpse Highlighting - DLCRobots Fixes.esp") and checksum("Scrapper Corpse Highlighting.esp", 904389D7)'
+      - <<: *hasPluginPatch
+        subs:
+          - 'Automatron & Far Harbor'
+          - '[DLC Patch](http://www.nexusmods.com/fallout4/mods/4380)'
+        condition: 'active("DLCRobot.esm") and active("DLCCoast.esm") and not active("Scrapper Corpse Highlighting DLC Patch.esp") and checksum("Scrapper Corpse Highlighting.esp", 904389D7)'
+  - name: 'Scrapper Corpse Highlighting DLC Patch.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/4380' ]
+    priority: -5
+    clean:
+      # Version 8
+      - crc: 0xA202C5FD
+        util: FO4Edit v3.2
+  - name: 'Scrapper Corpse Highlighting - DLCRobots Fixes.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/11516' ]
+    priority: -5
+    clean:
+      # Version 1.0
+      - crc: 0x0E726D6A
+        util: FO4Edit v3.2
+    msg:
+      - <<: *AlreadyInX
+        subs: [ 'Scrapper Corpse Highlighting DLC Patch.esp' ]
+        condition: 'active("Scrapper Corpse Highlighting DLC Patch.esp") and active("DLCCoast.esm")'
