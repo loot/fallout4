@@ -1553,6 +1553,11 @@ plugins:
     msg:
       - <<: *hasPluginPatch
         subs:
+          - 'Far Harbor'
+          - '[Far Harbor patch](http://www.nexusmods.com/fallout4/mods/13193)'
+        condition: 'active("DLCCoast.esm") and (checksum("Give Me That Bottle.esp", ECEBD46B) or checksum("Give Me That Bottle.esp", 939407C9))'
+      - <<: *hasPluginPatch
+        subs:
           - "Valdacil's Item Sorting"
           - '[sorting patch](http://www.nexusmods.com/fallout4/mods/13193)'
         condition: 'active("ValdacilsItemSorting-.+\.esp") and (checksum("Give Me That Bottle.esp", 814AC32F) or checksum("Give Me That Bottle.esp", ECEBD46B))'
