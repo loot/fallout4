@@ -1600,3 +1600,25 @@ plugins:
       - <<: *AlreadyInX
         subs: [ 'Scrapper Corpse Highlighting DLC Patch.esp' ]
         condition: 'active("Scrapper Corpse Highlighting DLC Patch.esp") and active("DLCCoast.esm")'
+  - name: 'CC''s Unique Vault Suit Boxes.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/19976' ]
+    dirty:
+      - <<: *dirtyPlugin
+        # FO4Edit 3.2
+        # Version 1.01
+        crc: 0x8a219a39
+        itm: 2
+    msg:
+      - <<: *hasPluginPatch
+        subs:
+          - 'Far Harbor'
+          - '[Far Harbor patch](http://www.nexusmods.com/fallout4/mods/19976)'
+        condition: 'active("DLCCoast.esm") and not active("CC''s Unique Vault Suit Boxes - Far Harbor Patch.esp")'
+  - name: 'CC''s Unique Vault Suit Boxes - Far Harbor Patch.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/19976' ]
+    dirty:
+      - <<: *dirtyPlugin
+        # FO4Edit 3.2
+        # Version 1.01
+        crc: 0xb02466b0
+        udr: 2
