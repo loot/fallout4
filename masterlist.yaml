@@ -262,7 +262,7 @@ plugins:
     global_priority: -120
     dirty:
       - <<: *dirtyPlugin
-        # FOEdit 3.2
+        # FO4Edit 3.2
         crc: 0xd69027ea
         itm: 45
         udr: 38
@@ -273,7 +273,7 @@ plugins:
       - 'DLCRobot.esm'
     dirty:
       - <<: *dirtyPlugin
-        # FOEdit 3.2
+        # FO4Edit 3.2
         crc: 0x47bae27e
         itm: 6
   - name: 'DLCCoast.esm'
@@ -283,7 +283,7 @@ plugins:
       - 'DLCworkshop01.esm'
     dirty:
       - <<: *dirtyPlugin
-        # FOEdit 3.2
+        # FO4Edit 3.2
         crc: 0xf1f28026
         itm: 75
         udr: 86
@@ -295,7 +295,7 @@ plugins:
       - 'DLCCoast.esm'
     dirty:
       - <<: *dirtyPlugin
-        # FOEdit 3.2
+        # FO4Edit 3.2
         crc: 0x83abc821
         itm: 2
   - name: 'DLCworkshop03.esm'
@@ -307,7 +307,7 @@ plugins:
       - 'DLCworkshop02.esm'
     dirty:
       - <<: *dirtyPlugin
-        # FOEdit 3.2
+        # FO4Edit 3.2
         crc: 0xe0089fbb
         itm: 18
         udr: 10
@@ -321,7 +321,7 @@ plugins:
       - 'DLCworkshop03.esm'
     dirty:
       - <<: *dirtyPlugin
-        # FOEdit 3.2
+        # FO4Edit 3.2
         crc: 0x43d25c56
         itm: 192
         udr: 418
