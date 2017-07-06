@@ -1714,3 +1714,11 @@ plugins:
         crc: 0xb02466b0
         # FO4Edit 3.2
         udr: 2
+  - name: 'nvvault1080.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/18172' ]
+    dirty:
+      - <<: *dirtyPlugin
+        # Version 15
+        crc: 0xd6acc264
+        # FO4Edit 3.2
+        nav: 5
