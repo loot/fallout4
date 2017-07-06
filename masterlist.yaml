@@ -326,6 +326,15 @@ plugins:
         itm: 192
         udr: 418
         nav: 7
+  - name: 'DLCUltraHighResolution.esm'
+    global_priority: -120
+    after:
+      - 'DLCRobot.esm'
+      - 'DLCworkshop01.esm'
+      - 'DLCCoast.esm'
+      - 'DLCworkshop02.esm'
+      - 'DLCworkshop03.esm'
+      - 'DLCNukaWorld.esm'
 
   ### Patches
   - name: 'Unofficial Fallout 4 Patch.esp'
