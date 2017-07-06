@@ -262,8 +262,8 @@ plugins:
     global_priority: -120
     dirty:
       - <<: *dirtyPlugin
-        # FO4Edit 3.2
         crc: 0xd69027ea
+        # FO4Edit 3.2
         itm: 45
         udr: 38
         nav: 1
@@ -273,8 +273,8 @@ plugins:
       - 'DLCRobot.esm'
     dirty:
       - <<: *dirtyPlugin
-        # FO4Edit 3.2
         crc: 0x47bae27e
+        # FO4Edit 3.2
         itm: 6
   - name: 'DLCCoast.esm'
     global_priority: -120
@@ -283,8 +283,8 @@ plugins:
       - 'DLCworkshop01.esm'
     dirty:
       - <<: *dirtyPlugin
-        # FO4Edit 3.2
         crc: 0xf1f28026
+        # FO4Edit 3.2
         itm: 75
         udr: 86
   - name: 'DLCworkshop02.esm'
@@ -295,8 +295,8 @@ plugins:
       - 'DLCCoast.esm'
     dirty:
       - <<: *dirtyPlugin
-        # FO4Edit 3.2
         crc: 0x83abc821
+        # FO4Edit 3.2
         itm: 2
   - name: 'DLCworkshop03.esm'
     global_priority: -120
@@ -307,8 +307,8 @@ plugins:
       - 'DLCworkshop02.esm'
     dirty:
       - <<: *dirtyPlugin
-        # FO4Edit 3.2
         crc: 0xe0089fbb
+        # FO4Edit 3.2
         itm: 18
         udr: 10
   - name: 'DLCNukaWorld.esm'
@@ -321,8 +321,8 @@ plugins:
       - 'DLCworkshop03.esm'
     dirty:
       - <<: *dirtyPlugin
-        # FO4Edit 3.2
         crc: 0x43d25c56
+        # FO4Edit 3.2
         itm: 192
         udr: 418
         nav: 7
@@ -1609,9 +1609,9 @@ plugins:
     url: [ 'http://www.nexusmods.com/fallout4/mods/19976' ]
     dirty:
       - <<: *dirtyPlugin
-        # FO4Edit 3.2
         # Version 1.01
         crc: 0x8a219a39
+        # FO4Edit 3.2
         itm: 2
     msg:
       - <<: *hasPluginPatch
@@ -1623,7 +1623,7 @@ plugins:
     url: [ 'http://www.nexusmods.com/fallout4/mods/19976' ]
     dirty:
       - <<: *dirtyPlugin
-        # FO4Edit 3.2
         # Version 1.01
         crc: 0xb02466b0
+        # FO4Edit 3.2
         udr: 2
