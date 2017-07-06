@@ -463,6 +463,11 @@ plugins:
     msg:
       - *AlreadyInUFO4P
 
+  # Texture overhauls
+  - name: 'OVT.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/1204' ]
+    global_priority: -105
+
   # Valdacil's Item Sorting
   - name: 'ValdacilsItemSorting-00-ValsPicks-DLCVersion.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/3877' ]
