@@ -348,56 +348,21 @@ plugins:
         condition: 'version("Unofficial Fallout 4 Patch.esp", "2.0.1a", >=) and not version("../Fallout4.exe", "1.8.7.0", >=)'
       - <<: *obsolete
         condition: 'version("Unofficial Fallout 4 Patch.esp", "2.0.1a", <)'
-  - name: 'KillshotFix.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/1282' ]
+  # Mods obsoleted by official Bethesda patches
+  - name: 'Targeting HUD Berry Mentats Fix.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/8910' ]
     global_priority: -100
     msg:
       - <<: *AlreadyInFO4
-        condition: 'version("../Fallout4.exe", "1.3.47.0", >=)'
-  - name: 'Simple Bug Fixes.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/2142' ]
-    global_priority: -100
-    msg:
-      - *AlreadyInUFO4P
-      - *UsingSKE
-  - name: 'NX Desk Crafting Fix.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/2662' ]
-    global_priority: -100
-    msg:
-      - *AlreadyInUFO4P
-  - name: 'CompanionBugfixExperimental.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/2679' ]
-    global_priority: -100
-    msg:
-      - *AlreadyInUFO4P
-  - name: 'ScroungerFix.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/3624' ]
+        condition: 'version("../Fallout4.exe", "1.5.0.0", >=)'
+  - name: 'Vault 81 Holding Cell Fix(| Alt)\.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/8033' ]
     global_priority: -100
     msg:
       - <<: *AlreadyInFO4
         condition: 'version("../Fallout4.exe", "1.4.132.0", >=)'
-  - name: 'UnofficialFallout4Patch.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/4526' ]
-    global_priority: -100
-    msg:
-      - *AlreadyInUFO4P
-  - name: 'SynthArmorFix.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/5054' ]
-    global_priority: -100
-    msg:
-      - *AlreadyInUFO4P
-  - name: 'Glow Front Sight Ring Fix.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/5205' ]
-    global_priority: -100
-    msg:
-      - *AlreadyInUFO4P
-  - name: 'WeaveFix.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/5847' ]
-    global_priority: -100
-    msg:
-      - *AlreadyInUFO4P
-  - name: 'MakanarPerkBigLeaguesFix.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/5957' ]
+  - name: 'RailroadGloryBugFix.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/6389' ]
     global_priority: -100
     msg:
       - <<: *AlreadyInFO4
@@ -408,56 +373,38 @@ plugins:
     msg:
       - <<: *AlreadyInFO4
         condition: 'version("../Fallout4.exe", "1.3.47.0", >=)'
-  - name: 'RailroadGloryBugFix.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/6389' ]
+  - name: 'MakanarPerkBigLeaguesFix.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/5957' ]
     global_priority: -100
     msg:
       - <<: *AlreadyInFO4
         condition: 'version("../Fallout4.exe", "1.3.47.0", >=)'
-  - name: 'Vault 81 Holding Cell Fix(| Alt)\.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/8033' ]
+  - name: 'ScroungerFix.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/3624' ]
     global_priority: -100
     msg:
       - <<: *AlreadyInFO4
         condition: 'version("../Fallout4.exe", "1.4.132.0", >=)'
-  - name: 'Worsins-T60-Headlamp-Fix.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/8164' ]
-    global_priority: -100
-    msg:
-      - *AlreadyInUFO4P
-  - name: 'Pipe_Revolver_Tuned_Receiver.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/8570' ]
-    global_priority: -100
-    msg:
-      - *AlreadyInUFO4P
-  - name: 'Targeting HUD Berry Mentats Fix.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/8910' ]
+  - name: 'KillshotFix.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/1282' ]
     global_priority: -100
     msg:
       - <<: *AlreadyInFO4
-        condition: 'version("../Fallout4.exe", "1.5.0.0", >=)'
-  - name: 'RFG - Curie Inspirational Sneak L&L Fix.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/10047' ]
+        condition: 'version("../Fallout4.exe", "1.3.47.0", >=)'
+  # Mods included in the Unofficial Fallout 4 Patch
+  - name: 'UnofficialFallout4Patch.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/4526' ]
     global_priority: -100
     msg:
       - *AlreadyInUFO4P
-  - name: 'SoldierToyFix.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/10229' ]
+  - name: 'Simple Bug Fixes.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/2142' ]
     global_priority: -100
     msg:
       - *AlreadyInUFO4P
-  - name: 'FixTeslaScience.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/10319' ]
-    global_priority: -100
-    msg:
-      - *AlreadyInUFO4P
-  - name: 'ItemCapitalizationFixes.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/10416' ]
-    global_priority: -100
-    msg:
-      - *AlreadyInUFO4P
-  - name: 'DependencyQuestFix.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/10892' ]
+      - *UsingSKE
+  - name: 'Combat Armor Weight Fix.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/11541' ]
     global_priority: -100
     msg:
       - *AlreadyInUFO4P
@@ -466,8 +413,63 @@ plugins:
     global_priority: -100
     msg:
       - *AlreadyInUFO4P
-  - name: 'Combat Armor Weight Fix.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/11541' ]
+  - name: 'DependencyQuestFix.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/10892' ]
+    global_priority: -100
+    msg:
+      - *AlreadyInUFO4P
+  - name: 'ItemCapitalizationFixes.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/10416' ]
+    global_priority: -100
+    msg:
+      - *AlreadyInUFO4P
+  - name: 'FixTeslaScience.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/10319' ]
+    global_priority: -100
+    msg:
+      - *AlreadyInUFO4P
+  - name: 'SoldierToyFix.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/10229' ]
+    global_priority: -100
+    msg:
+      - *AlreadyInUFO4P
+  - name: 'RFG - Curie Inspirational Sneak L&L Fix.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/10047' ]
+    global_priority: -100
+    msg:
+      - *AlreadyInUFO4P
+  - name: 'Pipe_Revolver_Tuned_Receiver.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/8570' ]
+    global_priority: -100
+    msg:
+      - *AlreadyInUFO4P
+  - name: 'Worsins-T60-Headlamp-Fix.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/8164' ]
+    global_priority: -100
+    msg:
+      - *AlreadyInUFO4P
+  - name: 'WeaveFix.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/5847' ]
+    global_priority: -100
+    msg:
+      - *AlreadyInUFO4P
+  - name: 'Glow Front Sight Ring Fix.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/5205' ]
+    global_priority: -100
+    msg:
+      - *AlreadyInUFO4P
+  - name: 'SynthArmorFix.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/5054' ]
+    global_priority: -100
+    msg:
+      - *AlreadyInUFO4P
+  - name: 'CompanionBugfixExperimental.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/2679' ]
+    global_priority: -100
+    msg:
+      - *AlreadyInUFO4P
+  - name: 'NX Desk Crafting Fix.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/2662' ]
     global_priority: -100
     msg:
       - *AlreadyInUFO4P
