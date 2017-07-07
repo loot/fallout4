@@ -349,6 +349,18 @@ plugins:
       - <<: *obsolete
         condition: 'version("Unofficial Fallout 4 Patch.esp", "2.0.1a", <)'
   # Mods obsoleted by official Bethesda patches
+  - name: 'KH_DogArmorFix.esp '
+    url: [ 'http://www.nexusmods.com/fallout4/mods/15222' ]
+    global_priority: -100
+    msg:
+      - <<: *AlreadyInFO4
+        condition: 'version("../Fallout4.exe", "1.6.0.0", >=)'
+  - name: 'KH_DChelmetfix.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/15215' ]
+    global_priority: -100
+    msg:
+      - <<: *AlreadyInFO4
+        condition: 'version("../Fallout4.exe", "1.6.0.0", >=)'
   - name: 'Targeting HUD Berry Mentats Fix.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/8910' ]
     global_priority: -100
@@ -403,6 +415,36 @@ plugins:
     msg:
       - *AlreadyInUFO4P
       - *UsingSKE
+  - name: 'Remove Rads in Survival Fix.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/15392' ]
+    global_priority: -100
+    msg:
+      - *AlreadyInUFO4P
+  - name: 'Idiot Savant Math Fix.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/13558' ]
+    global_priority: -100
+    msg:
+      - *AlreadyInUFO4P
+  - name: 'hangmansalleypatch.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/12958' ]
+    global_priority: -100
+    msg:
+      - *AlreadyInUFO4P
+  - name: 'Croup Manor NAVmesh Fix.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/12561' ]
+    global_priority: -100
+    msg:
+      - *AlreadyInUFO4P
+  - name: 'InvisibleBridgeFix.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/12491' ]
+    global_priority: -100
+    msg:
+      - *AlreadyInUFO4P
+  - name: 'DeirdreVendorFix.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/12305' ]
+    global_priority: -100
+    msg:
+      - *AlreadyInUFO4P
   - name: 'Combat Armor Weight Fix.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/11541' ]
     global_priority: -100
@@ -413,8 +455,20 @@ plugins:
     global_priority: -100
     msg:
       - *AlreadyInUFO4P
+  - name: 'Recruitable NPC Dialogue Fixes.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/11083' ]
+    global_priority: -100
+    msg:
+      - type: say
+        content: 'The bug fixes of this mod are already included in the Unofficial Fallout 4 Patch. The mod still contains additional tweaks that you may wish to keep, so keep or remove the mod at your discretion.'
+        condition: 'active("Unofficial Fallout 4 Patch.esp")'
   - name: 'DependencyQuestFix.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/10892' ]
+    global_priority: -100
+    msg:
+      - *AlreadyInUFO4P
+  - name: 'fix_Perk_CombatMedic.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/10651' ]
     global_priority: -100
     msg:
       - *AlreadyInUFO4P
@@ -433,8 +487,23 @@ plugins:
     global_priority: -100
     msg:
       - *AlreadyInUFO4P
+  - name: 'Talk Yourself Sober Fix.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/10173' ]
+    global_priority: -100
+    msg:
+      - *AlreadyInUFO4P
   - name: 'RFG - Curie Inspirational Sneak L&L Fix.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/10047' ]
+    global_priority: -100
+    msg:
+      - *AlreadyInUFO4P
+  - name: 'RFG - Gunslinger Fix.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/10045' ]
+    global_priority: -100
+    msg:
+      - *AlreadyInUFO4P
+  - name: 'Mole Rat Disease Fix.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/8908' ]
     global_priority: -100
     msg:
       - *AlreadyInUFO4P
@@ -453,6 +522,11 @@ plugins:
     global_priority: -100
     msg:
       - *AlreadyInUFO4P
+  - name: 'Merchants stick with store - Unique Settlers.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/5343' ]
+    global_priority: -100
+    msg:
+      - *AlreadyInUFO4P
   - name: 'Glow Front Sight Ring Fix.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/5205' ]
     global_priority: -100
@@ -460,6 +534,11 @@ plugins:
       - *AlreadyInUFO4P
   - name: 'SynthArmorFix.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/5054' ]
+    global_priority: -100
+    msg:
+      - *AlreadyInUFO4P
+  - name: 'BoS Pilot Outfit Fix.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/3098' ]
     global_priority: -100
     msg:
       - *AlreadyInUFO4P
