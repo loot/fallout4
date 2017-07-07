@@ -1576,14 +1576,11 @@ plugins:
       - <<: *AlreadyInX
         condition: 'active("Armorsmith Extended.esp")'
         subs: [ 'Armorsmith Extended' ]
-  - name: 'SimSettlements.esm'
+  - name: 'SimSettlements_VIS.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/21872' ]
     msg:
-      - <<: *hasPluginPatch
-        subs:
-          - "Valdacil's Item Sorting"
-          - '[SimSettlements_VIS.esp](https://drive.google.com/file/d/0B0Ul1EMQefa_TjZXOWtRSXhmXzg/view?usp=sharing)'
-        condition: 'version("SimSettlements.esm", "2.0", <) and active("ValdacilsItemSorting-.+\.esp") and not active("SimSettlements_VIS.esp")'
+      - type: warn
+        content: "Sim Settlements has native support for Valdacil's Item Sorting since version 2.0. If you're using a version of Sim Settlements later than this, consider removing this mod."
   - name: 'llamaCompanionHeather.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/23273' ]
     msg:
