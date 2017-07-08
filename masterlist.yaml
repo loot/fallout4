@@ -1722,3 +1722,69 @@ plugins:
         crc: 0xd6acc264
         # FO4Edit 3.2
         nav: 5
+  - name: 'ArmorKeywords.esm'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/6091' ]
+    dirty:
+      - <<: *dirtyPlugin
+        # Version 3.2, All DLC
+        crc: 0x30156c76
+        # FO4Edit 3.2
+        itm: 1
+  - name: 'Armorsmith Extended.esp'
+    # TODO: Add ´msg´s for DLC compat. patches
+    url: [ 'http://www.nexusmods.com/fallout4/mods/2228' ]
+    dirty:
+      - <<: *dirtyPlugin
+        # Version 3.32
+        crc: 0x232590b7
+        # FO4Edit 3.2
+        itm: 5
+  - name: 'SettlementAttacksBeyondFH.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/12892' ]
+    dirty:
+      - <<: *dirtyPlugin
+        # Version 1.1
+        crc: 0xe0fb33f8
+        # FO4Edit 3.2
+        itm: 1
+  - name: 'Vault-Tec Historical Preservation Initiative.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/12019' ]
+    dirty:
+      - <<: *dirtyPlugin
+        # Version 1.15
+        crc: 0xc8545353
+        # FO4Edit 3.2
+        itm: 3
+        udr: 9
+  - name: 'Some Assembly Required.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/12050' ]
+    dirty:
+      - <<: *dirtyPlugin
+        # Version 1.4
+        crc: 0xae45ec68
+        # FO4Edit 3.2
+        itm: 15
+  - name: 'Some Assembly Required (Legendary Patch).esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/17859' ]
+    dirty:
+      - <<: *dirtyPlugin
+        # Version 1.4
+        crc: 0x1e1ce4d4
+        # FO4Edit 3.2
+        udr: 3
+  - name: 'AllSetsExtended.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/25316' ]
+    dirty:
+      - <<: *dirtyPlugin
+        # Version 1.1
+        crc: 0x30c3276a
+        # FO4Edit 3.2
+        itm: 42
+  - name: 'StarlightLOD.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/23034' ]
+    dirty:
+      - <<: *dirtyPlugin
+        # Version 1.0
+        crc: 0x31827654
+        # FO4Edit 3.2
+        itm: 4
