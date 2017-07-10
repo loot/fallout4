@@ -1076,6 +1076,13 @@ plugins:
   - name: 'Vault-Tec Historical Preservation Initiative.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/12019' ]
     global_priority: -90
+    dirty:
+      - <<: *dirtyPlugin
+        # Version 1.15
+        crc: 0xc8545353
+        # FO4Edit 3.2
+        itm: 3
+        udr: 9
 
   - name: 'OCDWorkshopDLCPatch.esp'
     msg:
@@ -1747,15 +1754,6 @@ plugins:
         crc: 0xe0fb33f8
         # FO4Edit 3.2
         itm: 1
-  - name: 'Vault-Tec Historical Preservation Initiative.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/12019' ]
-    dirty:
-      - <<: *dirtyPlugin
-        # Version 1.15
-        crc: 0xc8545353
-        # FO4Edit 3.2
-        itm: 3
-        udr: 9
   - name: 'Some Assembly Required.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/12050' ]
     dirty:
