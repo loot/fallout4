@@ -1876,3 +1876,10 @@ plugins:
           - "Valdacil's Item Sorting"
           - '[VIS patch](http://www.nexusmods.com/fallout4/mods/13124)'
         condition: 'active("ValdacilsItemSorting-.+\.esp") and not active("CN + RASE - VIS Patch.esp")'
+  - name: 'Sanctuary Terminals.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/11730' ]
+    dirty:
+      - <<: *dirtyPlugin
+        # Version 1.0
+        crc: 0x6cfbe10e
+        itm: 4
