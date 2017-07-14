@@ -1772,6 +1772,16 @@ plugins:
         udr: 3
   - name: 'AllSetsExtended.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/25316' ]
+    inc:
+      # According to mod author
+      - 'SpringCleaning.esm'
+      # Also alters build area
+      - 'Build High.esp'
+      - 'Build High - Expanded Settlements.esp'
+      - 'ExpandedSettlementAll.esp'
+      - 'ExpandedSettlementFWAll.esp'
+      - 'ExpandedSettlementHeight.esp'
+      - 'ExpandedSettlementFWHeight.esp'
     dirty:
       - <<: *dirtyPlugin
         # Version 1.1
