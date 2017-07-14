@@ -1786,9 +1786,29 @@ plugins:
         crc: 0x31827654
         # FO4Edit 3.2
         itm: 4
+  - name: 'SurvivalOptions.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/14650' ]
+    inc:
+      # Conflicts in Scripts/Hardcore/HC_ManagerScript.pex
+      - 'DEF_WIDGETS_SURVIVAL1.esp'
   - name: 'SurvivalOptions_GiveMeThatBottlePatch.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/14650' ]
     msg:
       - type: error
         content: "This patch is for an older version of Give Me That Bottle and is not fully compatible with the newest versions of that mod. You may want to update the patch yourself or replace the patch with an automated one by Wrye Bash, Mator Smash, or FO4Edit."
         condition: 'checksum("SurvivalOptions_GiveMeThatBottlePatch.esp", 42D99A6E)'
+  - name: 'DEF_WIDGETS_SURVIVAL1.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/20818' ]
+    inc:
+      # Conflicts in Scripts/Hardcore/HC_ManagerScript.pex
+      - 'SurvivalOptions.esp'
+    msg:
+      - <<: *hasPluginPatch
+        subs:
+          - 'Give Me That Bottle'
+          - '[Give Me That Bottle patch](http://www.nexusmods.com/fallout4/mods/20818)'
+        condition: 'active("Give Me That Bottle.esp") and not active("gmtb_patch.esp")'
+  - name: 'gmtb_patch.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/20818' ]
+    req:
+      - 'DEF_WIDGETS_SURVIVAL1.esp'
