@@ -1862,8 +1862,3 @@ plugins:
           - "Valdacil's Item Sorting"
           - '[VIS patch](http://www.nexusmods.com/fallout4/mods/13124)'
         condition: 'active("ValdacilsItemSorting-.+\.esp") and not active("CN + RASE - VIS Patch.esp")'
-      - <<: *hasPluginPatch
-        subs:
-          - 'Lore-Friendly Survival Chems'
-          - '[Lore-Friendly Survival Chems patch](http://www.nexusmods.com/fallout4/mods/13124)'
-        condition: 'active("LoreFriendlySurvivalChems(VIS)?\.esp") and not active("CN + RASE - LoreFriendlySurvivalChems(VIS)? Patch\.esp")'
