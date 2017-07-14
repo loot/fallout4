@@ -1883,3 +1883,10 @@ plugins:
         # Version 1.0
         crc: 0x6cfbe10e
         itm: 4
+  - name: 'EnhancedLightsandFX.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/13596' ]
+    priority: 50
+    clean:
+      # Version 0.2.3
+      - crc: 0xA7ADBD40
+        util: 'FO4Edit v3.2'
