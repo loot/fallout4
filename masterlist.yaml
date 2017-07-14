@@ -1790,6 +1790,8 @@ plugins:
     url: [ 'http://www.nexusmods.com/fallout4/mods/14650' ]
     inc:
       # Conflicts in Scripts/Hardcore/HC_ManagerScript.pex
+      - 'CustomizableNeeds.esp'
+      - 'CustomizableNeeds + RealisticAidSideEffects.esp'
       - 'DEF_WIDGETS_SURVIVAL1.esp'
   - name: 'SurvivalOptions_GiveMeThatBottlePatch.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/14650' ]
@@ -1801,6 +1803,7 @@ plugins:
     url: [ 'http://www.nexusmods.com/fallout4/mods/20818' ]
     inc:
       # Conflicts in Scripts/Hardcore/HC_ManagerScript.pex
+      - 'CustomizableNeeds + RealisticAidSideEffects.esp'
       - 'SurvivalOptions.esp'
     msg:
       - <<: *hasPluginPatch
@@ -1808,7 +1811,59 @@ plugins:
           - 'Give Me That Bottle'
           - '[Give Me That Bottle patch](http://www.nexusmods.com/fallout4/mods/20818)'
         condition: 'active("Give Me That Bottle.esp") and not active("gmtb_patch.esp")'
+      - <<: *hasPluginPatch
+        subs:
+          - 'Customizable Needs'
+          - '[Customizable Needs patch](http://www.nexusmods.com/fallout4/mods/20818)'
+        condition: 'active("CustomizableNeeds.esp") and not checksum("CustomizableNeeds.esp", F2860D72)'
   - name: 'gmtb_patch.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/20818' ]
     req:
       - 'DEF_WIDGETS_SURVIVAL1.esp'
+  - name: 'CustomizableNeeds.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/13124' ]
+    inc:
+      # Conflicts in Scripts/Hardcore/HC_ManagerScript.pex
+      - 'SurvivalOptions.esp'
+      - name: 'DEF_WIDGETS_SURVIVAL1.esp'
+        condition: 'not checksum("CustomizableNeeds.esp", F2860D72)'
+    msg:
+      - type: warn
+        condition: 'active("CustomizableNeeds + RealisticAidSideEffects.esp")'
+        content: "Use either Customizable Needs or Customizable Needs plus Realistic Aid Side Effects, not both."
+      - type: warn
+        condition: 'active("CN \+ RASE - .+\.esp")'
+        content: 'You have active "Customizable Needs plus Realistic Aid Side Effects" plugins enabled while using the "Customizable Needs only" version. Only use the plugins and patches for the version you use.'
+      - <<: *hasPluginPatch
+        subs:
+          - "Valdacil's Item Sorting"
+          - '[VIS patch](http://www.nexusmods.com/fallout4/mods/13124)'
+        condition: 'active("ValdacilsItemSorting-.+\.esp") and not active("CN Only - VIS Patch.esp")'
+  - name: 'CustomizableNeeds + RealisticAidSideEffects.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/13124' ]
+    inc:
+      # Conflicts in Scripts/Hardcore/HC_ManagerScript.pex
+      - 'DEF_WIDGETS_SURVIVAL1.esp'
+      - 'SurvivalOptions.esp'
+    msg:
+      - type: warn
+        condition: 'active("CustomizableNeeds.esp") and not checksum("CustomizableNeeds.esp", F2860D72)'
+        content: "Use either Customizable Needs or Customizable Needs plus Realistic Aid Side Effects, not both."
+      - type: warn
+        condition: 'active("CN Only - .+\.esp")'
+        content: 'You have active "Customizable Needs only" plugins enabled while using the "Customizable Needs plus Realistic Aid Side Effects" version. Only use the plugins and patches for the version you use.'
+      - <<: *hasPluginPatch
+        subs:
+          - 'Lore-Friendly Survival Chems'
+          - '[Lore-Friendly Survival Chems patch](http://www.nexusmods.com/fallout4/mods/13124)'
+        condition: 'active("LoreFriendlySurvivalChems(VIS)?\.esp") and not active("CN + RASE - LoreFriendlySurvivalChems(VIS)? Patch\.esp")'
+      - <<: *hasPluginPatch
+        subs:
+          - "Valdacil's Item Sorting"
+          - '[VIS patch](http://www.nexusmods.com/fallout4/mods/13124)'
+        condition: 'active("ValdacilsItemSorting-.+\.esp") and not active("CN + RASE - VIS Patch.esp")'
+      - <<: *hasPluginPatch
+        subs:
+          - 'Lore-Friendly Survival Chems'
+          - '[Lore-Friendly Survival Chems patch](http://www.nexusmods.com/fallout4/mods/13124)'
+        condition: 'active("LoreFriendlySurvivalChems(VIS)?\.esp") and not active("CN + RASE - LoreFriendlySurvivalChems(VIS)? Patch\.esp")'
