@@ -1891,6 +1891,15 @@ plugins:
         crc: 0x98ccfb8b
         # FO4Edit 3.2
         itm: 4
+  - name: 'MAGS.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/12849' ]
+    dirty:
+      - <<: *dirtyPlugin
+        # Version .99
+        crc: 0xa9913693
+        # FO4Edit 3.2
+        itm: 12
+        udr: 9
   - name: 'EnhancedLightsandFX.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/13596' ]
     priority: 50
