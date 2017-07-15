@@ -1034,9 +1034,17 @@ plugins:
       - 'TrueStormsFO4.esm'
       - 'TrueStormsFO4-FarHarbor.esp'
       - 'Vivid Weathers - FO4.esp'
+    inc:
+      - 'True Nights v01.esp'
+      - 'True Nights v02.esp'
+      - 'True Nights v03.esp'
     msg:
       - <<: *obsolete
         condition: 'version("DarkerNights.esp", "1.11", <)'
+  - name: 'True Nights v0(1|2|3)\.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/9253' ]
+    inc:
+      - 'DarkerNights.esp'
   - name: 'Scrap Everything.esp'
     msg: [ *doNotClean ]
     url: [ 'http://www.nexusmods.com/fallout4/mods/5320' ]
