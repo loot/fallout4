@@ -1883,6 +1883,14 @@ plugins:
         # Version 1.0
         crc: 0x6cfbe10e
         itm: 4
+  - name: 'RailroadPerksCut.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/11751' ]
+    dirty:
+      - <<: *dirtyPlugin
+        # Version 1.0
+        crc: 0x98ccfb8b
+        # FO4Edit 3.2
+        itm: 4
   - name: 'EnhancedLightsandFX.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/13596' ]
     priority: 50
