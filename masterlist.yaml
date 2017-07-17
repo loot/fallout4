@@ -1557,6 +1557,13 @@ plugins:
       - 'WET.esp'
       - 'WET Murkier.esp'
       - 'WET Clearer.esp'
+  - name: 'BetterSettlers.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/4772' ]
+    after:
+      - 'MoreSkinColors.esp'
+    clean:
+      - crc: 0x6A5FC68B
+        util: 'FO4Edit v3.2'
   - name: 'BetterSettlersFarHarborPatchMortal.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/4772' ]
     after:
@@ -1919,3 +1926,11 @@ plugins:
     url: [ 'http://www.nexusmods.com/fallout4/mods/10189' ]
     after:
       - 'RadiantBirdsv05.esp'
+  - name: 'MoreSkinColors.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/22668' ]
+    inc:
+      - 'LooksMenu Customization Compendium.esp'
+    clean:
+      # Version 1.0
+      - crc: 0xAFC2BB0C
+        util: 'FO4Edit v3.2'
