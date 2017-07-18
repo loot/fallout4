@@ -839,11 +839,11 @@ plugins:
       - 'ValdacilsItemSorting-ZZ-DLCFarHarbor-Weightless.esp'
   - name: 'VIS-PatchChemRedux.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/3877' ]
-    after:
+    req:
       - 'chem redux.esp'
   - name: 'VIS-PatchChemReduxWeightless.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/3877' ]
-    after:
+    req:
       - 'chem redux.esp'
   # Other plugins
   - name: 'PipBoyShadows.esp'
@@ -995,7 +995,7 @@ plugins:
         subs: [ 'DeadlyRadstorms_Damage .esp' ]
   - name: 'Simple Bug Fixes - Better Item Sorting Patch.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/2142' ]
-    after:
+    req:
       - 'Simple Bug Fixes.esp'
   - name: 'NoGunSneakAttackMultiplier.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/2114' ]
