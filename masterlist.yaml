@@ -2009,6 +2009,28 @@ plugins:
       # Version 1.0
       - crc: 0x0B8DE742
         util: 'FO4Edit v3.2'
+  - name: 'Vault Girl.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/10577' ]
+    inc:
+      # Both use PresetFemale15
+      - 'Hot Sosig.esp'
+    dirty:
+      - <<: *dirtyPlugin
+        # Version 1.5
+        crc: 0xe5ad59a1
+        # FO4Edit 3.2
+        itm: 1
+  - name: 'Hot Sosig.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/17953' ]
+    inc:
+      # Both use PresetFemale15
+      - 'Vault Girl.esp'
+    dirty:
+      - <<: *dirtyPlugin
+        # Version .9
+        crc: 0x967e4d12
+        # FO4Edit 3.2
+        itm: 1
 
   - name: 'FO4Merged.esp'
     global_priority: 80
