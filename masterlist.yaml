@@ -1778,6 +1778,9 @@ plugins:
       # Version 1.2
       - crc: 0x6DC858E6
         util: 'FO4Edit v3.2'
+      # Version 1.3
+      - crc: 0x85D0F67E
+        util: 'FO4Edit v3.2'
     dirty:
       - <<: *dirtyPlugin
         # Version 1.1
