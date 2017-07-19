@@ -1528,29 +1528,6 @@ plugins:
       - <<: *useOnlyOneX
         condition: 'many("ConstructionLight_\w+\.esp")'
         subs: [ 'ConstructionLight .esp' ]
-
-  - name: 'FO4Merged.esp'
-    global_priority: 80
-    tag:
-      - NoMerge
-  - name: 'Smashed Patch.esp'
-    global_priority: 80
-    after:
-      - 'FO4Merged.esp'
-    tag:
-      - NoMerge
-    msg:
-      - <<: *SmashedVsBashedPatch
-        condition: 'file("Bashed Patch.*\.esp")'
-        subs: [ 'Bashed Patch' ]
-  - name: 'Bashed Patch.*\.esp'
-    global_priority: 80
-    after:
-      - 'FO4Merged.esp'
-    msg:
-      - <<: *SmashedVsBashedPatch
-        condition: 'file("Smashed Patch.esp")'
-        subs: [ 'Smashed Patch.esp' ]
   - name: 'Vivid Waters.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/16425' ]
     after:
@@ -2013,3 +1990,26 @@ plugins:
       - 'Radrose Usability - Empty Bottles.esp'
       - 'Radrose Usability - Workbench Perk Requirements + Armorsmith.esp'
       - 'Radrose Usability - Workbench Perk Requirements.esp'
+
+  - name: 'FO4Merged.esp'
+    global_priority: 80
+    tag:
+      - NoMerge
+  - name: 'Smashed Patch.esp'
+    global_priority: 80
+    after:
+      - 'FO4Merged.esp'
+    tag:
+      - NoMerge
+    msg:
+      - <<: *SmashedVsBashedPatch
+        condition: 'file("Bashed Patch.*\.esp")'
+        subs: [ 'Bashed Patch' ]
+  - name: 'Bashed Patch.*\.esp'
+    global_priority: 80
+    after:
+      - 'FO4Merged.esp'
+    msg:
+      - <<: *SmashedVsBashedPatch
+        condition: 'file("Smashed Patch.esp")'
+        subs: [ 'Smashed Patch.esp' ]
