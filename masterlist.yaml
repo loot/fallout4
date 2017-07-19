@@ -1993,6 +1993,22 @@ plugins:
       - 'Radrose Usability - Empty Bottles.esp'
       - 'Radrose Usability - Workbench Perk Requirements + Armorsmith.esp'
       - 'Radrose Usability - Workbench Perk Requirements.esp'
+  - name: 'Enough About the Settlements Preston.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/10339' ]
+    inc:
+      - 'PrestonNoRadiant.esp'
+    clean:
+      # Version 0.5
+      - crc: 0xC6D5A1B5
+        util: 'FO4Edit v3.2'
+  - name: 'PrestonNoRadiant.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/24940' ]
+    inc:
+      - 'Enough About the Settlements Preston.esp'
+    clean:
+      # Version 1.0
+      - crc: 0x0B8DE742
+        util: 'FO4Edit v3.2'
 
   - name: 'FO4Merged.esp'
     global_priority: 80
