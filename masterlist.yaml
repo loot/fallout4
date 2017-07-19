@@ -2031,6 +2031,42 @@ plugins:
         crc: 0x967e4d12
         # FO4Edit 3.2
         itm: 1
+  - name: 'DiamondLighting.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/12432' ]
+    dirty:
+      - <<: *dirtyPlugin
+        # Version 1
+        crc: 0x306fdd54
+        # FO4Edit 3.2
+        itm: 1
+        udr: 4
+  - name: 'slevins_chemVFX-Light.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/12536' ]
+    dirty:
+      - <<: *dirtyPlugin
+        # Version L-1.1
+        crc: 0xf46cb5c0
+        # FO4Edit 3.2
+        itm: 2
+  - name: 'tsuki no hana.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/15267' ]
+    dirty:
+      - <<: *dirtyPlugin
+        # Version 1.5
+        crc: 0x1284f3e5
+        # FO4Edit 3.2
+        itm: 5
+        udr: 2
+  - name: 'CombatZoneRestored.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/21498' ]
+    dirty:
+      - <<: *dirtyPlugin
+        # Version 1.01
+        crc: 0x86419c03
+        # FO4Edit 3.2
+        itm: 20
+        udr: 20
+        nav: 1
 
   - name: 'FO4Merged.esp'
     global_priority: 80
