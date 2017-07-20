@@ -1993,6 +1993,10 @@ plugins:
       - 'Radrose Usability - Empty Bottles.esp'
       - 'Radrose Usability - Workbench Perk Requirements + Armorsmith.esp'
       - 'Radrose Usability - Workbench Perk Requirements.esp'
+  - name: 'FROST VIS Patch.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/24461' ]
+    req:
+      - 'Radrose Usability Enhancements.esp'
   - name: 'Enough About the Settlements Preston.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/10339' ]
     inc:
