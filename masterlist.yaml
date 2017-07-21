@@ -1046,8 +1046,59 @@ plugins:
     inc:
       - 'DarkerNights.esp'
   - name: 'Scrap Everything.esp'
-    msg: [ *doNotClean ]
     url: [ 'http://www.nexusmods.com/fallout4/mods/5320' ]
+    priority: 5
+    msg:
+      - *obsolete
+      - *doNotClean
+  - name: 'Scrap Everything - Ultimate Edition.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/5320' ]
+    priority: 5
+    msg: [ *doNotClean ]
+  - name: 'Scrap Everything - Core.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/5320' ]
+    priority: 5
+    msg:
+      - <<: *AlreadyInX
+        condition: 'active("Scrap Everything - Ultimate Edition.esp")'
+        subs: [ 'Scrap Everything - Ultimate Edition.esp' ]
+      - *doNotClean
+  - name: 'Scrap Everything - Automatron.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/5320' ]
+    priority: 5
+    clean:
+      # Version 2.4
+      - crc: 0x287B971D
+        util: 'FO4Edit v3.2'
+    msg:
+      - <<: *AlreadyInX
+        condition: 'active("Scrap Everything - Ultimate Edition.esp")'
+        subs: [ 'Scrap Everything - Ultimate Edition.esp' ]
+      - *doNotClean
+  - name: 'Scrap Everything - Far Harbor.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/5320' ]
+    priority: 5
+    msg:
+      - <<: *AlreadyInX
+        condition: 'active("Scrap Everything - Ultimate Edition.esp")'
+        subs: [ 'Scrap Everything - Ultimate Edition.esp' ]
+      - *doNotClean
+  - name: 'Scrap Everything - Vault-Tec Workshop.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/5320' ]
+    priority: 5
+    msg:
+      - <<: *AlreadyInX
+        condition: 'active("Scrap Everything - Ultimate Edition.esp")'
+        subs: [ 'Scrap Everything - Ultimate Edition.esp' ]
+      - *doNotClean
+  - name: 'Scrap Everything - Nuka World.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/5320' ]
+    priority: 5
+    msg:
+      - <<: *AlreadyInX
+        condition: 'active("Scrap Everything - Ultimate Edition.esp")'
+        subs: [ 'Scrap Everything - Ultimate Edition.esp' ]
+      - *doNotClean
   - name: 'Synth Armor Fix.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/6424' ]
     msg:
