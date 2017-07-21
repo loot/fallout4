@@ -2125,6 +2125,9 @@ plugins:
       - 'Diverse Dogs.esp'
       - name: 'Diverse Cats.esp'
         condition: 'checksum("Diverse Cats.esp", ea3b193f)'
+  - name: 'NoSharedDogmeatTemplate.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/18547' ]
+    priority: -20
 
   - name: 'FO4Merged.esp'
     global_priority: 80
