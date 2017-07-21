@@ -1062,6 +1062,9 @@ plugins:
       - <<: *AlreadyInX
         condition: 'active("Scrap Everything - Ultimate Edition.esp")'
         subs: [ 'Scrap Everything - Ultimate Edition.esp' ]
+      - type: say
+        content: 'Consider using the "Ultimate Edition" of Scrap Everything, a combined version of all the Scrap Everything plugins you are already using.'
+        condition: 'not active("Scrap Everything - Ultimate Edition.esp") and active("Scrap Everything - Core.esp") and active("Scrap Everything - Automatron.esp") and active("Scrap Everything - Far Harbor.esp") and active("Scrap Everything - Vault-Tec Workshop.esp") and active("Scrap Everything - Nuka World.esp")'
       - *doNotClean
   - name: 'Synth Armor Fix.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/6424' ]
