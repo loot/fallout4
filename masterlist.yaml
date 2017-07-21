@@ -2071,6 +2071,14 @@ plugins:
         itm: 20
         udr: 20
         nav: 1
+  - name: 'UniqueUniques.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/15139' ]
+    dirty:
+      - <<: *dirtyPlugin
+        # Version 1.01
+        crc: 0x1ac3385e
+        # FO4Edit 3.2
+        itm: 8
 
   - name: 'FO4Merged.esp'
     global_priority: 80
