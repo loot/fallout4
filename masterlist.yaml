@@ -2128,6 +2128,19 @@ plugins:
   - name: 'NoSharedDogmeatTemplate.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/18547' ]
     priority: -20
+  - name: 'NukaRadBans.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/8342' ]
+    dirty:
+      - <<: *dirtyPlugin
+        # Version 1.01, Vanilla
+        crc: 0x174f8132
+        # FO4Edit 3.2
+        udr: 1
+      - <<: *dirtyPlugin
+        # Version 1.01, Armorsmith Extended
+        crc: 0x717e7f08
+        # FO4Edit 3.2
+        udr: 1
 
   - name: 'FO4Merged.esp'
     global_priority: 80
