@@ -2079,6 +2079,34 @@ plugins:
         crc: 0x1ac3385e
         # FO4Edit 3.2
         itm: 8
+  - name: 'Diverse Cats.esp'
+    url:
+      - name: 'Diverse Cats'
+        link: 'http://www.nexusmods.com/fallout4/mods/18435'
+      - name: 'Diverse Dogs'
+        link: 'http://www.nexusmods.com/fallout4/mods/25599'
+    dirty:
+      - <<: *dirtyPlugin
+        # Version .9
+        crc: 0xea3b193f
+        # FO4Edit 3.2
+        itm: 6
+  - name: 'Diverse Dogs.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/25599' ]
+    clean:
+      # Version 1.0
+      - crc: 0xAAEB0A0D
+        util: 'FO4Edit v3.2'
+    msg:
+      - <<: *AlreadyInX
+        subs: [ 'Diverse Cats.esp (combined version)' ]
+        condition: 'active("Diverse Cats.esp") and checksum("Diverse Cats.esp", ea3b193f)'
+  - name: 'BeastWhisperer.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/14265' ]
+    after:
+      - 'Diverse Dogs.esp'
+      - name: 'Diverse Cats.esp'
+        condition: 'checksum("Diverse Cats.esp", ea3b193f)'
 
   - name: 'FO4Merged.esp'
     global_priority: 80
