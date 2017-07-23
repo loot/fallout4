@@ -2169,6 +2169,21 @@ plugins:
   - name: 'OSM_AlternateStart_Protocol-InfiniteAnswer.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/13762' ]
     global_priority: 70
+    inc:
+      - 'AnotherLife.esp'
+      - 'StartMeUp.esp'
+  - name: 'AnotherLife.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/14253' ]
+    global_priority: 70
+    inc:
+      - 'OSM_AlternateStart_Protocol-InfiniteAnswer.esp'
+      - 'StartMeUp.esp'
+  - name: 'StartMeUp.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/18946' ]
+    global_priority: 70
+    inc:
+      - 'OSM_AlternateStart_Protocol-InfiniteAnswer.esp'
+      - 'AnotherLife.esp'
 
   - name: 'FO4Merged.esp'
     global_priority: 80
