@@ -2168,7 +2168,7 @@ plugins:
 
   - name: 'OSM_AlternateStart_Protocol-InfiniteAnswer.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/13762' ]
-    global_priority: 100
+    global_priority: 70
 
   - name: 'FO4Merged.esp'
     global_priority: 80
