@@ -552,6 +552,16 @@ plugins:
     global_priority: -100
     msg:
       - *AlreadyInUFO4P
+  - name: 'Vault-Tec Historical Preservation Initiative.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/12019' ]
+    global_priority: -90
+    dirty:
+      - <<: *dirtyPlugin
+        # Version 1.15
+        crc: 0xc8545353
+        # FO4Edit 3.2
+        itm: 3
+        udr: 9
 
   # Texture overhauls
   - name: 'OVT.esp'
@@ -846,6 +856,45 @@ plugins:
     req:
       - 'chem redux.esp'
   # Other plugins
+  - name: 'NoSharedDogmeatTemplate.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/18547' ]
+    priority: -20
+  - name: 'Scrapper Corpse Highlighting.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/4380' ]
+    priority: -5
+    clean:
+      # Version 8
+      - crc: 0x904389D7
+        util: FO4Edit v3.2
+    msg:
+      - <<: *hasPluginPatch
+        subs:
+          - 'Automatron'
+          - '[DLCRobots Fix](http://www.nexusmods.com/fallout4/mods/11516)'
+        condition: 'active("DLCRobot.esm") and not active("DLCCoast.esm") and not active("Scrapper Corpse Highlighting - DLCRobots Fixes.esp") and checksum("Scrapper Corpse Highlighting.esp", 904389D7)'
+      - <<: *hasPluginPatch
+        subs:
+          - 'Automatron & Far Harbor'
+          - '[DLC Patch](http://www.nexusmods.com/fallout4/mods/4380)'
+        condition: 'active("DLCRobot.esm") and active("DLCCoast.esm") and not active("Scrapper Corpse Highlighting DLC Patch.esp") and checksum("Scrapper Corpse Highlighting.esp", 904389D7)'
+  - name: 'Scrapper Corpse Highlighting DLC Patch.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/4380' ]
+    priority: -5
+    clean:
+      # Version 8
+      - crc: 0xA202C5FD
+        util: FO4Edit v3.2
+  - name: 'Scrapper Corpse Highlighting - DLCRobots Fixes.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/11516' ]
+    priority: -5
+    clean:
+      # Version 1.0
+      - crc: 0x0E726D6A
+        util: FO4Edit v3.2
+    msg:
+      - <<: *AlreadyInX
+        subs: [ 'Scrapper Corpse Highlighting DLC Patch.esp' ]
+        condition: 'active("Scrapper Corpse Highlighting DLC Patch.esp") and active("DLCCoast.esm")'
   - name: 'PipBoyShadows.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/281' ]
     inc:
@@ -1045,27 +1094,6 @@ plugins:
     url: [ 'http://www.nexusmods.com/fallout4/mods/9253' ]
     inc:
       - 'DarkerNights.esp'
-  - name: 'Scrap Everything.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/5320' ]
-    priority: 5
-    msg:
-      - *obsolete
-      - *doNotClean
-  - name: 'Scrap Everything - Ultimate Edition.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/5320' ]
-    priority: 5
-    msg: [ *doNotClean ]
-  - name: 'Scrap Everything - (Core|Automatron|Far Harbor|Vault-Tec Workshop|Nuka World)\.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/5320' ]
-    priority: 5
-    msg:
-      - <<: *AlreadyInX
-        condition: 'active("Scrap Everything - Ultimate Edition.esp")'
-        subs: [ 'Scrap Everything - Ultimate Edition.esp' ]
-      - type: say
-        content: 'Consider using the "Ultimate Edition" of Scrap Everything, a combined version of all the Scrap Everything plugins you are already using.'
-        condition: 'not active("Scrap Everything - Ultimate Edition.esp") and active("Scrap Everything - Core.esp") and active("Scrap Everything - Automatron.esp") and active("Scrap Everything - Far Harbor.esp") and active("Scrap Everything - Vault-Tec Workshop.esp") and active("Scrap Everything - Nuka World.esp")'
-      - *doNotClean
   - name: 'Synth Armor Fix.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/6424' ]
     msg:
@@ -1096,20 +1124,6 @@ plugins:
     url: [ 'http://www.nexusmods.com/fallout4/mods/10193' ]
     inc: [ 'Concentrated Splitter.esp' ]
     req: [ 'Lasers Have No Recoil.esp' ]
-  - name: 'OSM_AlternateStart_Protocol-InfiniteAnswer.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/13762' ]
-    global_priority: 100
-  - name: 'Vault-Tec Historical Preservation Initiative.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/12019' ]
-    global_priority: -90
-    dirty:
-      - <<: *dirtyPlugin
-        # Version 1.15
-        crc: 0xc8545353
-        # FO4Edit 3.2
-        itm: 3
-        udr: 9
-
   - name: 'OCDWorkshopDLCPatch.esp'
     msg:
       - type: error
@@ -1673,42 +1687,6 @@ plugins:
       - type: warn
         content: "You seem to be using the Valdacil's Item Sorting version of the mod, but without using any of the Valdacil's Item Sorting plugins. Consider using a version of Give Me That Bottle without sorting patches."
         condition: 'not active("ValdacilsItemSorting-.+\.esp") and (checksum("Give Me That Bottle.esp", 939407C9) or checksum("Give Me That Bottle.esp", AE38A5A0))'
-  - name: 'Scrapper Corpse Highlighting.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/4380' ]
-    priority: -5
-    clean:
-      # Version 8
-      - crc: 0x904389D7
-        util: FO4Edit v3.2
-    msg:
-      - <<: *hasPluginPatch
-        subs:
-          - 'Automatron'
-          - '[DLCRobots Fix](http://www.nexusmods.com/fallout4/mods/11516)'
-        condition: 'active("DLCRobot.esm") and not active("DLCCoast.esm") and not active("Scrapper Corpse Highlighting - DLCRobots Fixes.esp") and checksum("Scrapper Corpse Highlighting.esp", 904389D7)'
-      - <<: *hasPluginPatch
-        subs:
-          - 'Automatron & Far Harbor'
-          - '[DLC Patch](http://www.nexusmods.com/fallout4/mods/4380)'
-        condition: 'active("DLCRobot.esm") and active("DLCCoast.esm") and not active("Scrapper Corpse Highlighting DLC Patch.esp") and checksum("Scrapper Corpse Highlighting.esp", 904389D7)'
-  - name: 'Scrapper Corpse Highlighting DLC Patch.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/4380' ]
-    priority: -5
-    clean:
-      # Version 8
-      - crc: 0xA202C5FD
-        util: FO4Edit v3.2
-  - name: 'Scrapper Corpse Highlighting - DLCRobots Fixes.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/11516' ]
-    priority: -5
-    clean:
-      # Version 1.0
-      - crc: 0x0E726D6A
-        util: FO4Edit v3.2
-    msg:
-      - <<: *AlreadyInX
-        subs: [ 'Scrapper Corpse Highlighting DLC Patch.esp' ]
-        condition: 'active("Scrapper Corpse Highlighting DLC Patch.esp") and active("DLCCoast.esm")'
   - name: 'CC''s Unique Vault Suit Boxes.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/19976' ]
     dirty:
@@ -1941,13 +1919,6 @@ plugins:
         # FO4Edit 3.2
         itm: 12
         udr: 9
-  - name: 'EnhancedLightsandFX.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/13596' ]
-    priority: 50
-    clean:
-      # Version 0.2.3
-      - crc: 0xA7ADBD40
-        util: 'FO4Edit v3.2'
   - name: 'Reverb and Ambiance Overhaul.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/10189' ]
     after:
@@ -2153,9 +2124,6 @@ plugins:
       - 'Diverse Dogs.esp'
       - name: 'Diverse Cats.esp'
         condition: 'checksum("Diverse Cats.esp", ea3b193f)'
-  - name: 'NoSharedDogmeatTemplate.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/18547' ]
-    priority: -20
   - name: 'NukaRadBans.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/8342' ]
     dirty:
@@ -2169,6 +2137,38 @@ plugins:
         crc: 0x717e7f08
         # FO4Edit 3.2
         udr: 1
+  - name: 'Scrap Everything.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/5320' ]
+    priority: 5
+    msg:
+      - *obsolete
+      - *doNotClean
+  - name: 'Scrap Everything - Ultimate Edition.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/5320' ]
+    priority: 5
+    msg: [ *doNotClean ]
+  - name: 'Scrap Everything - (Core|Automatron|Far Harbor|Vault-Tec Workshop|Nuka World)\.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/5320' ]
+    priority: 5
+    msg:
+      - <<: *AlreadyInX
+        condition: 'active("Scrap Everything - Ultimate Edition.esp")'
+        subs: [ 'Scrap Everything - Ultimate Edition.esp' ]
+      - type: say
+        content: 'Consider using the "Ultimate Edition" of Scrap Everything, a combined version of all the Scrap Everything plugins you are already using.'
+        condition: 'not active("Scrap Everything - Ultimate Edition.esp") and active("Scrap Everything - Core.esp") and active("Scrap Everything - Automatron.esp") and active("Scrap Everything - Far Harbor.esp") and active("Scrap Everything - Vault-Tec Workshop.esp") and active("Scrap Everything - Nuka World.esp")'
+      - *doNotClean
+  - name: 'EnhancedLightsandFX.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/13596' ]
+    priority: 50
+    clean:
+      # Version 0.2.3
+      - crc: 0xA7ADBD40
+        util: 'FO4Edit v3.2'
+
+  - name: 'OSM_AlternateStart_Protocol-InfiniteAnswer.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/13762' ]
+    global_priority: 100
 
   - name: 'FO4Merged.esp'
     global_priority: 80
