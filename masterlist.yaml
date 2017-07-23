@@ -1839,6 +1839,11 @@ plugins:
     msg:
       - <<: *hasPluginPatch
         subs:
+          - 'Everyone''s Best Friend'
+          - '[Everyone''s Best Friend patch](http://www.nexusmods.com/fallout4/mods/20818)'
+        condition: 'active("EveryonesBestFriend.esp") and not active("EBF_DEFW_Patch.esp")'
+      - <<: *hasPluginPatch
+        subs:
           - 'Give Me That Bottle'
           - '[Give Me That Bottle patch](http://www.nexusmods.com/fallout4/mods/20818)'
         condition: 'active("Give Me That Bottle.esp") and not active("gmtb_patch.esp")'
@@ -1851,15 +1856,30 @@ plugins:
     url: [ 'http://www.nexusmods.com/fallout4/mods/20818' ]
     req:
       - 'DEF_WIDGETS_SURVIVAL1.esp'
+    inc:
+      - 'EBF_DEFW_Patch.esp'
     clean:
       # Version 9
       - crc: 0x4EFF73BD
+        util: 'FO4Edit v3.2'
+  - name: 'EBF_DEFW_Patch.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/20818' ]
+    req:
+      - 'DEF_WIDGETS_SURVIVAL1.esp'
+    inc:
+      - 'gmtb_patch.esp'
+      # Conflicts in Scripts/Hardcore/HC_ManagerScript.pex
+      - 'SurvivalOptions.esp'
+    clean:
+      # Version 1
+      - crc: 0x7101BFA3
         util: 'FO4Edit v3.2'
   - name: 'CustomizableNeeds.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/13124' ]
     inc:
       # Conflicts in Scripts/Hardcore/HC_ManagerScript.pex
       - 'SurvivalOptions.esp'
+      - 'EBF_DEFW_Patch.esp'
       - name: 'DEF_WIDGETS_SURVIVAL1.esp'
         condition: 'not checksum("CustomizableNeeds.esp", F2860D72)'
     msg:
