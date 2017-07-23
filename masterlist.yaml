@@ -2165,6 +2165,13 @@ plugins:
         crc: 0x717e7f08
         # FO4Edit 3.2
         udr: 1
+  - name: 'SimSettlements.esm'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/21872' ]
+    after:
+      - 'HUDFramework.esm'
+    msg:
+      - <<: *obsolete
+        condition: 'version("SimSettlements.esm", "2.0.3", <)'
   - name: 'Scrap Everything.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/5320' ]
     priority: 5
