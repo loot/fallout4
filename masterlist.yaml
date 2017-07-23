@@ -2172,6 +2172,14 @@ plugins:
     msg:
       - <<: *obsolete
         condition: 'version("SimSettlements.esm", "2.0.3", <)'
+  - name: 'SimSettlements_XPAC_IndustrialRevolution.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/25213' ]
+    msg:
+      - <<: *obsolete
+        condition: 'version("SimSettlements_XPAC_IndustrialRevolution.esp", "2.0.3", <)'
+      - type: error
+        content: 'You should not use mismatched versions of Sim Settlements and the Industrial Revolution expansion.'
+        condition: 'version("SimSettlements_XPAC_IndustrialRevolution.esp", "2.0.3", ==) and not version("SimSettlements.esm", "2.0.3", ==)'
   - name: 'Scrap Everything.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/5320' ]
     priority: 5
