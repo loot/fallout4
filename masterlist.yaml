@@ -855,6 +855,90 @@ plugins:
     url: [ 'http://www.nexusmods.com/fallout4/mods/3877' ]
     req:
       - 'chem redux.esp'
+  # Radrose Usability Enhancements
+  - name: 'Radrose Usability Enhancements.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/18098' ]
+    after:
+      # Valdacil's Item Sorting plugins
+      - 'ValdacilsItemSorting-00-ValsPicks-DLCVersion.esp'
+      - 'ValdacilsItemSorting-00-ValsPicks-NoDLCVersion.esp'
+      - 'ValdacilsItemSorting-00-ValsPicks-DLCVersion-VanillaWeight.esp'
+      - 'ValdacilsItemSorting-00-ValsPicks-NoDLCVersion-VanillaWeight.esp'
+      - 'ValdacilsItemSorting-Aid.esp'
+      - 'ValdacilsItemSorting-AidReducedWeight.esp'
+      - 'ValdacilsItemSorting-AidWeightless.esp'
+      - 'ValdacilsItemSorting-Ammo.esp'
+      - 'ValdacilsItemSorting-AmmoWeightless.esp'
+      - 'ValdacilsItemSorting-ArmorByClass.esp'
+      - 'ValdacilsItemSorting-ArmorBySlot.esp'
+      - 'ValdacilsItemSorting-CosmeticsByClass.esp'
+      - 'ValdacilsItemSorting-CosmeticsByType.esp'
+      - 'ValdacilsItemSorting-ExplosivesSortBottom.esp'
+      - 'ValdacilsItemSorting-ExplosivesSortBottomWeightless.esp'
+      - 'ValdacilsItemSorting-ExplosivesSortTop.esp'
+      - 'ValdacilsItemSorting-ExplosivesSortTopWeightless.esp'
+      - 'ValdacilsItemSorting-Junk+DEF_INV.esp'
+      - 'ValdacilsItemSorting-Junk.esp'
+      - 'ValdacilsItemSorting-JunkBetter+DEF_INV.esp'
+      - 'ValdacilsItemSorting-JunkBetter.esp'
+      - 'ValdacilsItemSorting-JunkWeightless+DEF_INV.esp'
+      - 'ValdacilsItemSorting-JunkWeightless.esp'
+      - 'ValdacilsItemSorting-Misc.esp'
+      - 'ValdacilsItemSorting-MiscWeightless.esp'
+      - 'ValdacilsItemSorting-Mods.esp'
+      - 'ValdacilsItemSorting-ModsWeightless.esp'
+      - 'ValdacilsItemSorting-NotJunk.esp'
+      - 'ValdacilsItemSorting-NotJunkJustMoney.esp'
+      - 'ValdacilsItemSorting-Perks.esp'
+      - 'ValdacilsItemSorting-Weapons.esp'
+      - 'ValdacilsItemSorting-ZY-DLCAutomatron-Weightless.esp'
+      - 'ValdacilsItemSorting-ZY-DLCAutomatron.esp'
+      - 'ValdacilsItemSorting-ZY-DLCContraptions-Weightless.esp'
+      - 'ValdacilsItemSorting-ZY-DLCContraptions.esp'
+      - 'ValdacilsItemSorting-ZY-DLCFarHarbor-Weightless.esp'
+      - 'ValdacilsItemSorting-ZY-DLCFarHarbor.esp'
+      - 'ValdacilsItemSorting-ZY-DLCNukaWorld-Weightless.esp'
+      - 'ValdacilsItemSorting-ZY-DLCNukaWorld.esp'
+      - 'ValdacilsItemSorting-ZY-DLCVaultTec-Weightless.esp'
+      - 'ValdacilsItemSorting-ZY-DLCVaultTec.esp'
+      - 'ValdacilsItemSorting-ZZ-DLCArmorByClassOverride.esp'
+      - 'ValdacilsItemSorting-ZZ-DLCArmorBySlotOverride.esp'
+      - 'ValdacilsItemSorting-ZZ-DLCCosmeticsByClassOverride.esp'
+      - 'ValdacilsItemSorting-ZZ-DLCCosmeticsByTypeOverride.esp'
+      - 'ValdacilsItemSorting-ZZ-DLCWeaponsOverride.esp'
+      - 'VIS-PatchChemRedux.esp'
+      - 'VIS-PatchChemReduxWeightless.esp'
+      # Valdacil's Item Sorting patches
+      - 'CN Only - VIS Patch.esp'
+      - 'CN + RASE - VIS Patch.esp'
+      - 'DIFR - VIS Patch.esp'
+      - 'Eli Armor Compendium AE VIS Patch.esp'
+      - 'llamaCompanionHeather-VIS Patch.esp'
+      - 'llamaCompanionHeather-VIS-AE Patch.esp'
+      - 'SimSettlements_VIS.esp'
+    clean:
+      # Version 2.3, All DLC + AE
+      - crc: 0x7FE05D2C
+        util: 'FO4Edit v3.2'
+  - name: 'Radrose Usability - .+\.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/18098' ]
+    req:
+      - 'Radrose Usability Enhancements.esp'
+  - name: 'Radrose - Valdacil Patch - .+\.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/18098' ]
+    req:
+      - 'Radrose Usability Enhancements.esp'
+    after:
+      - 'Radrose Usability - DLCCoast.esp'
+      - 'Radrose Usability - DLCNukaWorld + AWKCR.esp'
+      - 'Radrose Usability - DLCRobot.esp'
+      - 'Radrose Usability - Empty Bottles.esp'
+      - 'Radrose Usability - Workbench Perk Requirements + Armorsmith.esp'
+      - 'Radrose Usability - Workbench Perk Requirements.esp'
+  - name: 'FROST VIS Patch.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/24461' ]
+    req:
+      - 'Radrose Usability Enhancements.esp'
   # Other plugins
   - name: 'NoSharedDogmeatTemplate.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/18547' ]
@@ -1958,89 +2042,6 @@ plugins:
       # Version 1.0
       - crc: 0xAFC2BB0C
         util: 'FO4Edit v3.2'
-  - name: 'Radrose Usability Enhancements.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/18098' ]
-    after:
-      # Valdacil's Item Sorting plugins
-      - 'ValdacilsItemSorting-00-ValsPicks-DLCVersion.esp'
-      - 'ValdacilsItemSorting-00-ValsPicks-NoDLCVersion.esp'
-      - 'ValdacilsItemSorting-00-ValsPicks-DLCVersion-VanillaWeight.esp'
-      - 'ValdacilsItemSorting-00-ValsPicks-NoDLCVersion-VanillaWeight.esp'
-      - 'ValdacilsItemSorting-Aid.esp'
-      - 'ValdacilsItemSorting-AidReducedWeight.esp'
-      - 'ValdacilsItemSorting-AidWeightless.esp'
-      - 'ValdacilsItemSorting-Ammo.esp'
-      - 'ValdacilsItemSorting-AmmoWeightless.esp'
-      - 'ValdacilsItemSorting-ArmorByClass.esp'
-      - 'ValdacilsItemSorting-ArmorBySlot.esp'
-      - 'ValdacilsItemSorting-CosmeticsByClass.esp'
-      - 'ValdacilsItemSorting-CosmeticsByType.esp'
-      - 'ValdacilsItemSorting-ExplosivesSortBottom.esp'
-      - 'ValdacilsItemSorting-ExplosivesSortBottomWeightless.esp'
-      - 'ValdacilsItemSorting-ExplosivesSortTop.esp'
-      - 'ValdacilsItemSorting-ExplosivesSortTopWeightless.esp'
-      - 'ValdacilsItemSorting-Junk+DEF_INV.esp'
-      - 'ValdacilsItemSorting-Junk.esp'
-      - 'ValdacilsItemSorting-JunkBetter+DEF_INV.esp'
-      - 'ValdacilsItemSorting-JunkBetter.esp'
-      - 'ValdacilsItemSorting-JunkWeightless+DEF_INV.esp'
-      - 'ValdacilsItemSorting-JunkWeightless.esp'
-      - 'ValdacilsItemSorting-Misc.esp'
-      - 'ValdacilsItemSorting-MiscWeightless.esp'
-      - 'ValdacilsItemSorting-Mods.esp'
-      - 'ValdacilsItemSorting-ModsWeightless.esp'
-      - 'ValdacilsItemSorting-NotJunk.esp'
-      - 'ValdacilsItemSorting-NotJunkJustMoney.esp'
-      - 'ValdacilsItemSorting-Perks.esp'
-      - 'ValdacilsItemSorting-Weapons.esp'
-      - 'ValdacilsItemSorting-ZY-DLCAutomatron-Weightless.esp'
-      - 'ValdacilsItemSorting-ZY-DLCAutomatron.esp'
-      - 'ValdacilsItemSorting-ZY-DLCContraptions-Weightless.esp'
-      - 'ValdacilsItemSorting-ZY-DLCContraptions.esp'
-      - 'ValdacilsItemSorting-ZY-DLCFarHarbor-Weightless.esp'
-      - 'ValdacilsItemSorting-ZY-DLCFarHarbor.esp'
-      - 'ValdacilsItemSorting-ZY-DLCNukaWorld-Weightless.esp'
-      - 'ValdacilsItemSorting-ZY-DLCNukaWorld.esp'
-      - 'ValdacilsItemSorting-ZY-DLCVaultTec-Weightless.esp'
-      - 'ValdacilsItemSorting-ZY-DLCVaultTec.esp'
-      - 'ValdacilsItemSorting-ZZ-DLCArmorByClassOverride.esp'
-      - 'ValdacilsItemSorting-ZZ-DLCArmorBySlotOverride.esp'
-      - 'ValdacilsItemSorting-ZZ-DLCCosmeticsByClassOverride.esp'
-      - 'ValdacilsItemSorting-ZZ-DLCCosmeticsByTypeOverride.esp'
-      - 'ValdacilsItemSorting-ZZ-DLCWeaponsOverride.esp'
-      - 'VIS-PatchChemRedux.esp'
-      - 'VIS-PatchChemReduxWeightless.esp'
-      # Valdacil's Item Sorting patches
-      - 'CN Only - VIS Patch.esp'
-      - 'CN + RASE - VIS Patch.esp'
-      - 'DIFR - VIS Patch.esp'
-      - 'Eli Armor Compendium AE VIS Patch.esp'
-      - 'llamaCompanionHeather-VIS Patch.esp'
-      - 'llamaCompanionHeather-VIS-AE Patch.esp'
-      - 'SimSettlements_VIS.esp'
-    clean:
-      # Version 2.3, All DLC + AE
-      - crc: 0x7FE05D2C
-        util: 'FO4Edit v3.2'
-  - name: 'Radrose Usability - .+\.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/18098' ]
-    req:
-      - 'Radrose Usability Enhancements.esp'
-  - name: 'Radrose - Valdacil Patch - .+\.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/18098' ]
-    req:
-      - 'Radrose Usability Enhancements.esp'
-    after:
-      - 'Radrose Usability - DLCCoast.esp'
-      - 'Radrose Usability - DLCNukaWorld + AWKCR.esp'
-      - 'Radrose Usability - DLCRobot.esp'
-      - 'Radrose Usability - Empty Bottles.esp'
-      - 'Radrose Usability - Workbench Perk Requirements + Armorsmith.esp'
-      - 'Radrose Usability - Workbench Perk Requirements.esp'
-  - name: 'FROST VIS Patch.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/24461' ]
-    req:
-      - 'Radrose Usability Enhancements.esp'
   - name: 'Enough About the Settlements Preston.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/10339' ]
     inc:
