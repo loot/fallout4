@@ -1832,6 +1832,10 @@ plugins:
       # Conflicts in Scripts/Hardcore/HC_ManagerScript.pex
       - 'CustomizableNeeds + RealisticAidSideEffects.esp'
       - 'SurvivalOptions.esp'
+    clean:
+      # Version 9
+      - crc: 0x2B12E764
+        util: 'FO4Edit v3.2'
     msg:
       - <<: *hasPluginPatch
         subs:
@@ -1847,6 +1851,10 @@ plugins:
     url: [ 'http://www.nexusmods.com/fallout4/mods/20818' ]
     req:
       - 'DEF_WIDGETS_SURVIVAL1.esp'
+    clean:
+      # Version 9
+      - crc: 0x4EFF73BD
+        util: 'FO4Edit v3.2'
   - name: 'CustomizableNeeds.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/13124' ]
     inc:
