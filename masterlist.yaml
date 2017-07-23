@@ -1817,19 +1817,24 @@ plugins:
     msg:
       - <<: *hasPluginPatch
         subs:
+          - 'Customizable Needs'
+          - '[Customizable Needs patch](http://www.nexusmods.com/fallout4/mods/20818)'
+        condition: 'active("CustomizableNeeds.esp") and not checksum("CustomizableNeeds.esp", F2860D72)'
+      - <<: *hasPluginPatch
+        subs:
           - 'Everyone''s Best Friend'
           - '[Everyone''s Best Friend patch](http://www.nexusmods.com/fallout4/mods/20818)'
-        condition: 'active("EveryonesBestFriend.esp") and not active("EBF_DEFW_Patch.esp")'
+        condition: 'active("EveryonesBestFriend.esp") and not active("EBF_DEFW_Patch.esp") and not active("Give Me That Bottle.esp")'
       - <<: *hasPluginPatch
         subs:
           - 'Give Me That Bottle'
           - '[Give Me That Bottle patch](http://www.nexusmods.com/fallout4/mods/20818)'
-        condition: 'active("Give Me That Bottle.esp") and not active("gmtb_patch.esp")'
+        condition: 'active("Give Me That Bottle.esp") and not active("gmtb_patch.esp") and not active("EveryonesBestFriend.esp")'
       - <<: *hasPluginPatch
         subs:
-          - 'Customizable Needs'
-          - '[Customizable Needs patch](http://www.nexusmods.com/fallout4/mods/20818)'
-        condition: 'active("CustomizableNeeds.esp") and not checksum("CustomizableNeeds.esp", F2860D72)'
+          - 'Everyone''s Best Friend & Give Me That Bottle'
+          - '[Everyone''s Best Friend and Give Me That Bottle patch](http://www.nexusmods.com/fallout4/mods/20818)'
+        condition: 'active("EveryonesBestFriend.esp") and active("Give Me That Bottle.esp") and not active("DEF_WIDGETS_SURVIVAL1 - EBF+GMTB patch.esp")'
   - name: 'gmtb_patch.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/20818' ]
     req:
@@ -1840,6 +1845,10 @@ plugins:
       # Version 9
       - crc: 0x4EFF73BD
         util: 'FO4Edit v3.2'
+    msg:
+      - <<: *AlreadyInX
+        condition: 'active("DEF_WIDGETS_SURVIVAL1 - EBF+GMTB patch.esp")'
+        subs: [ 'DEF_WIDGETS_SURVIVAL1 - EBF+GMTB patch.esp' ]
   - name: 'EBF_DEFW_Patch.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/20818' ]
     req:
@@ -1852,12 +1861,30 @@ plugins:
       # Version 1
       - crc: 0x7101BFA3
         util: 'FO4Edit v3.2'
+    msg:
+      - <<: *AlreadyInX
+        condition: 'active("DEF_WIDGETS_SURVIVAL1 - EBF+GMTB patch.esp")'
+        subs: [ 'DEF_WIDGETS_SURVIVAL1 - EBF+GMTB patch.esp' ]
+  - name: 'DEF_WIDGETS_SURVIVAL1 - EBF+GMTB patch.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/20818' ]
+    inc:
+      # Conflicts in Scripts/Hardcore/HC_ManagerScript.pex
+      - 'SurvivalOptions.esp'
+    clean:
+      # Version 1.0.1
+      - crc: 0x5E0FEBD4
+        util: 'FO4Edit v3.2'
+    msg:
+      - type: warn
+        content: 'Version 1.0.0 of this plugin has known errors. Please update to the newest version.'
+        condition: 'version("DEF_WIDGETS_SURVIVAL1 - EBF+GMTB patch.esp", "1.0.0", ==)'
   - name: 'CustomizableNeeds.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/13124' ]
     inc:
       # Conflicts in Scripts/Hardcore/HC_ManagerScript.pex
       - 'SurvivalOptions.esp'
       - 'EBF_DEFW_Patch.esp'
+      - 'DEF_WIDGETS_SURVIVAL1 - EBF+GMTB patch.esp'
       - name: 'DEF_WIDGETS_SURVIVAL1.esp'
         condition: 'not checksum("CustomizableNeeds.esp", F2860D72)'
     msg:
