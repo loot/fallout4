@@ -1737,6 +1737,9 @@ plugins:
         subs: [ 'LooksMenu Customization Compendium.esp' ]
   - name: 'Better Settlement Defence.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/20137' ]
+    inc:
+      # Conflicts: Scripts/WorkshopAttackScript.pex
+      - 'AGOMBz.esp'
     msg:
       - type: error
         content: 'This mods has a script conflict with the Unofficial Fallout 4 Patch. Be sure to get the UFO4P patched version from [the mod page](http://www.nexusmods.com/fallout4/mods/20137).'
@@ -2194,6 +2197,14 @@ plugins:
       - <<: *useOnlyOneX
         condition: 'many_active("ShotLayDown\d+\.esp")'
         subs: [ 'Shot Lay Down .esp' ]
+  - name: 'AGOMBz.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/25762' ]
+    inc:
+      - 'SettlementAttacksBeyond.esp'
+      - 'SettlementAttacksBeyondFH.esp'
+      - 'SettlementAttacksBeyondNW.esp'
+      # Conflicts: Scripts/WorkshopAttackScript.pex
+      - 'Better Settlement Defence.esp'
   - name: 'Scrap Everything.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/5320' ]
     priority: 5
