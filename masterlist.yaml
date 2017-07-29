@@ -2188,6 +2188,12 @@ plugins:
         crc: 0x498d961c
         # FO4Edit 3.2
         itm: 6
+  - name: 'ShotLayDown\d+\.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/25787' ]
+    msg:
+      - <<: *useOnlyOneX
+        condition: 'many_active("ShotLayDown\d+\.esp")'
+        subs: [ 'Shot Lay Down .esp' ]
   - name: 'Scrap Everything.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/5320' ]
     priority: 5
