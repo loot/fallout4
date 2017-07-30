@@ -1737,9 +1737,6 @@ plugins:
         subs: [ 'LooksMenu Customization Compendium.esp' ]
   - name: 'Better Settlement Defence.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/20137' ]
-    inc:
-      # Conflicts: Scripts/WorkshopAttackScript.pex
-      - 'AGOMBz.esp'
     msg:
       - type: error
         content: 'This mods has a script conflict with the Unofficial Fallout 4 Patch. Be sure to get the UFO4P patched version from [the mod page](http://www.nexusmods.com/fallout4/mods/20137).'
@@ -2199,12 +2196,21 @@ plugins:
         subs: [ 'Shot Lay Down .esp' ]
   - name: 'AGOMBz.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/25762' ]
+    after:
+      - 'Better Settlement Defence.esp'
     inc:
       - 'SettlementAttacksBeyond.esp'
       - 'SettlementAttacksBeyondFH.esp'
       - 'SettlementAttacksBeyondNW.esp'
-      # Conflicts: Scripts/WorkshopAttackScript.pex
-      - 'Better Settlement Defence.esp'
+    msg:
+      - <<: *obsolete
+        condition: 'version("AGOMBz.esp", "1.0.1_DLC", <)'
+      - type: warn
+        content: 'Be sure to use the version of Attackers - Get Off My Buildzone that includes compatibility for Better Settlement Defence.'
+        # FBBDC389: 1.0.1, NoDLC, BSD
+        # 5A4E786E: 1.0.1, DLC, UFO4P, BSD
+        # F1E405A5: 1.0.1, DLC, BSD
+        condition: 'active("Better Settlement Defence.esp") and not (checksum("AGOMBz - Main.ba2", FBBDC389) or checksum("AGOMBz - Main.ba2", 5A4E786E) or checksum("AGOMBz - Main.ba2", F1E405A5))'
   - name: 'Scrap Everything.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/5320' ]
     priority: 5
