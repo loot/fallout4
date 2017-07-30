@@ -1844,6 +1844,8 @@ plugins:
         udr: 3
   - name: 'AllSetsExtended.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/25316' ]
+    after:
+      - 'AGOMBz.esp'
     inc:
       # According to mod author
       - 'SpringCleaning.esm'
@@ -1867,6 +1869,10 @@ plugins:
         crc: 0x30c3276a
         # FO4Edit 3.2
         itm: 42
+  - name: 'ASEFarHarbor.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/25487' ]
+    after:
+      - 'AGOMBz.esp'
   - name: 'StarlightLOD.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/23034' ]
     dirty:
