@@ -2217,6 +2217,16 @@ plugins:
         # 5A4E786E: 1.0.1, DLC, UFO4P, BSD
         # F1E405A5: 1.0.1, DLC, BSD
         condition: 'active("Better Settlement Defence.esp") and not (checksum("AGOMBz - Main.ba2", FBBDC389) or checksum("AGOMBz - Main.ba2", 5A4E786E) or checksum("AGOMBz - Main.ba2", F1E405A5))'
+  - name: 'starlightwingfix_v3.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/22553' ]
+    dirty:
+      - <<: *dirtyPlugin
+        # Version 3.0
+        crc: 0xd8d7f936
+        # FO4Edit 3.2.1
+        itm: 10
+        udr: 1
+        nav: 1
   - name: 'Scrap Everything.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/5320' ]
     priority: 5
