@@ -2227,6 +2227,19 @@ plugins:
         itm: 10
         udr: 1
         nav: 1
+  - name: 'FirstPersonViewableItemsExpanded.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/26062' ]
+    clean:
+      # Version 1.0
+      - crc: 0x9855A3B2
+        util: 'FO4Edit v3.2.1'
+    msg:
+      - <<: *AlreadyInX
+        subs: [ 'LooksMenu1stPersonViewItemsFix.esp' ]
+        condition: 'active("FirstPersonViewableItemsExpanded.esp") and active("LooksMenu1stPersonViewItemsFix.esp")'
+      - type: error
+        content: 'This plugin is incompatible with LooksMenu Customization Compendium. Use the compatible plugin from the [mod page](http://www.nexusmods.com/fallout4/mods/26062).'
+        condition: 'active("LooksMenu Customization Compendium.esp") and active("FirstPersonViewableItemsExpanded.esp")'
   - name: 'Scrap Everything.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/5320' ]
     priority: 5
