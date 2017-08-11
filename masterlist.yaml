@@ -263,7 +263,7 @@ plugins:
     dirty:
       - <<: *dirtyPlugin
         crc: 0xd69027ea
-        # FO4Edit 3.2
+        # FO4Edit 3.2.1
         itm: 45
         udr: 38
         nav: 1
@@ -274,7 +274,7 @@ plugins:
     dirty:
       - <<: *dirtyPlugin
         crc: 0x47bae27e
-        # FO4Edit 3.2
+        # FO4Edit 3.2.1
         itm: 6
   - name: 'DLCCoast.esm'
     global_priority: -120
@@ -284,7 +284,7 @@ plugins:
     dirty:
       - <<: *dirtyPlugin
         crc: 0xf1f28026
-        # FO4Edit 3.2
+        # FO4Edit 3.2.1
         itm: 75
         udr: 86
   - name: 'DLCworkshop02.esm'
@@ -296,7 +296,7 @@ plugins:
     dirty:
       - <<: *dirtyPlugin
         crc: 0x83abc821
-        # FO4Edit 3.2
+        # FO4Edit 3.2.1
         itm: 2
   - name: 'DLCworkshop03.esm'
     global_priority: -120
@@ -308,7 +308,7 @@ plugins:
     dirty:
       - <<: *dirtyPlugin
         crc: 0xe0089fbb
-        # FO4Edit 3.2
+        # FO4Edit 3.2.1
         itm: 18
         udr: 10
   - name: 'DLCNukaWorld.esm'
@@ -322,8 +322,8 @@ plugins:
     dirty:
       - <<: *dirtyPlugin
         crc: 0x43d25c56
-        # FO4Edit 3.2
-        itm: 192
+        # FO4Edit 3.2.1
+        itm: 193
         udr: 418
         nav: 7
   - name: 'DLCUltraHighResolution.esm'
