@@ -2240,6 +2240,18 @@ plugins:
       - type: error
         content: 'This plugin is incompatible with LooksMenu Customization Compendium. Use the compatible plugin from the [mod page](http://www.nexusmods.com/fallout4/mods/26062).'
         condition: 'active("LooksMenu Customization Compendium.esp") and active("FirstPersonViewableItemsExpanded.esp")'
+  - name: 'MinutemenGeneralOutfitF.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/26047' ]
+    inc:
+      - 'ArmorKeywords.esm'
+    clean:
+      # Version 1
+      - crc: 0x5150531D
+        util: 'FO4Edit v3.2.1'
+    msg:
+      - <<: *AlreadyInX
+        subs: [ 'Armorsmith Extended.esp' ]
+        condition: 'active("MinutemenGeneralOutfitF.esp") and active("Armorsmith Extended.esp")'
   - name: 'Scrap Everything.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/5320' ]
     priority: 5
