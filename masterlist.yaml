@@ -2177,15 +2177,15 @@ plugins:
       - 'HUDFramework.esm'
     msg:
       - <<: *obsolete
-        condition: 'version("SimSettlements.esm", "2.0.5", <)'
+        condition: 'version("SimSettlements.esm", "2.0.6", <)'
   - name: 'SimSettlements_XPAC_IndustrialRevolution.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/25213' ]
     msg:
       - <<: *obsolete
-        condition: 'version("SimSettlements_XPAC_IndustrialRevolution.esp", "2.0.5", <)'
+        condition: 'version("SimSettlements_XPAC_IndustrialRevolution.esp", "2.0.6", <)'
       - type: error
         content: 'You should not use mismatched versions of Sim Settlements and the Industrial Revolution expansion.'
-        condition: '(version("SimSettlements_XPAC_IndustrialRevolution.esp", "2.0.5", >=) and version("SimSettlements_XPAC_IndustrialRevolution.esp", "2.0.6", <)) and not (version("SimSettlements.esm", "2.0.5", >=) and version("SimSettlements.esm", "2.0.6", <))'
+        condition: '(version("SimSettlements_XPAC_IndustrialRevolution.esp", "2.0.6", >=) and version("SimSettlements_XPAC_IndustrialRevolution.esp", "2.0.7", <)) and not (version("SimSettlements.esm", "2.0.6", >=) and version("SimSettlements.esm", "2.0.7", <))'
   - name: 'Companion_ShutUp.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/25763' ]
     dirty:
