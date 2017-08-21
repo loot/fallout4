@@ -93,6 +93,13 @@ common:
         text: 'This plugin conflicts with plugin "%1%", however a patch is available.'
       - lang: da
         text: 'Dette plugin er i konflikt med pluginnet “%1%”, men en lap er tilgængelig.'
+  - &hasPluginPatch
+    type: warn
+    content:
+      - lang: en
+        text: "You seem to be using %1%, but you haven't enabled the %1% patch for this plugin: %2%"
+      - lang: da
+        text: "Du ser ud til at bruge %1%, men du bruger ikke “%1%”-lappen for dette plugin: %2%"
   - &requireF4SE
     type: error
     content:
@@ -147,6 +154,19 @@ common:
       - lang: da
         text: 'Denne fil behøves ikke med Snap''n Build.esm v1.9. Overvej at opgradere og fjerne denne fil.'
     condition: 'active("Snap''n Build.esm")'
+  - &UsingHomemaker1_50
+    type: error
+    content:
+      - lang: en
+        text: 'Uninstall this file and upgrade to Homemaker 1.50.'
+      - lang: es
+        text: 'Desinstale este archivo y actualizar a Homemaker 1.50.'
+    condition: 'version("Homemaker.esm", "1.50", <)'
+
+# Cleaning data
+  - &dirtyPlugin
+    util: '[FO4Edit](http://www.nexusmods.com/fallout4/mods/2737)'
+    info: 'A cleaning guide is available [here](http://www.creationkit.com/index.php?title=TES5Edit_Cleaning_Guide_-_TES5Edit).'
 
 globals:
   - type: say
@@ -174,7 +194,7 @@ globals:
         text: 'Det ser ikke ud til at du har den seneste version af Fallout 4.'
 # F4SE Latest
   - type: say
-    condition: 'file("../f4se_loader.exe") and version("../f4se_loader.exe", "0.0.3.0", <)'
+    condition: 'file("../f4se_loader.exe") and version("../f4se_loader.exe", "0.0.4.2", <)'
     content:
       - lang: en
         text: 'It appears you do not have the [latest version of F4SE](http://f4se.silverlock.org). Some mods may require functionality added in the latest version of F4SE to work.'
@@ -189,7 +209,7 @@ globals:
       - lang: da
         text: 'Det ser ud til at du ikke har den [seneste version af F4SE](http://f4se.silverlock.org). Nogle mods kan afhænge af funktionalitet tilføjet i den nyeste version af F4SE for at virke.'
   - type: say
-    condition: 'not version("../f4se_loader.exe", "0.0.3.0", <)'
+    condition: 'not version("../f4se_loader.exe", "0.0.4.2", <)'
     content:
       - lang: en
         text: 'Your F4SE is up-to-date.'
@@ -204,7 +224,7 @@ globals:
       - lang: da
         text: 'Din F4SE er opdateret.'
   - type: error
-    condition: 'version("../f4se_loader.exe", "0.0.3.0", ==) and version("../Fallout4.exe", "1.9.4.0", !=)'
+    condition: 'version("../f4se_loader.exe", "0.0.4.2", ==) and version("../Fallout4.exe", "1.9.4.0", !=)'
     content:
       - lang: en
         text: 'Your version of F4SE is not compatible with your version of Fallout 4.'
@@ -240,8 +260,6 @@ plugins:
   ### Official DLC plugins
   - name: 'DLCRobot.esm'
     global_priority: -120
-<<<<<<< HEAD
-=======
     dirty:
       - <<: *dirtyPlugin
         crc: 0xd69027ea
@@ -249,47 +267,37 @@ plugins:
         itm: 45
         udr: 38
         nav: 1
->>>>>>> refs/remotes/loot/v0.10
   - name: 'DLCworkshop01.esm'
     global_priority: -120
     after:
       - 'DLCRobot.esm'
-<<<<<<< HEAD
-=======
     dirty:
       - <<: *dirtyPlugin
         crc: 0x47bae27e
         # FO4Edit 3.2.1
         itm: 6
->>>>>>> refs/remotes/loot/v0.10
   - name: 'DLCCoast.esm'
     global_priority: -120
     after:
       - 'DLCRobot.esm'
       - 'DLCworkshop01.esm'
-<<<<<<< HEAD
-=======
     dirty:
       - <<: *dirtyPlugin
         crc: 0xf1f28026
         # FO4Edit 3.2.1
         itm: 75
         udr: 86
->>>>>>> refs/remotes/loot/v0.10
   - name: 'DLCworkshop02.esm'
     global_priority: -120
     after:
       - 'DLCRobot.esm'
       - 'DLCworkshop01.esm'
       - 'DLCCoast.esm'
-<<<<<<< HEAD
-=======
     dirty:
       - <<: *dirtyPlugin
         crc: 0x83abc821
         # FO4Edit 3.2.1
         itm: 2
->>>>>>> refs/remotes/loot/v0.10
   - name: 'DLCworkshop03.esm'
     global_priority: -120
     after:
@@ -297,15 +305,12 @@ plugins:
       - 'DLCworkshop01.esm'
       - 'DLCCoast.esm'
       - 'DLCworkshop02.esm'
-<<<<<<< HEAD
-=======
     dirty:
       - <<: *dirtyPlugin
         crc: 0xe0089fbb
         # FO4Edit 3.2.1
         itm: 18
         udr: 10
->>>>>>> refs/remotes/loot/v0.10
   - name: 'DLCNukaWorld.esm'
     global_priority: -120
     after:
@@ -314,8 +319,6 @@ plugins:
       - 'DLCCoast.esm'
       - 'DLCworkshop02.esm'
       - 'DLCworkshop03.esm'
-<<<<<<< HEAD
-=======
     dirty:
       - <<: *dirtyPlugin
         crc: 0x43d25c56
@@ -323,7 +326,6 @@ plugins:
         itm: 193
         udr: 418
         nav: 7
->>>>>>> refs/remotes/loot/v0.10
   - name: 'DLCUltraHighResolution.esm'
     global_priority: -120
     after:
@@ -342,60 +344,37 @@ plugins:
     global_priority: -100
     msg:
       - type: error
-        content: 'Requires Fallout 4 patch 1.7.9 or greater.'
-        condition: 'version("Unofficial Fallout 4 Patch.esp", "1.0.5", >=) and not version("../Fallout4.exe", "1.7.9.0", >=)'
+        content: 'Requires Fallout 4 patch 1.8.7 or greater.'
+        condition: 'version("Unofficial Fallout 4 Patch.esp", "2.0.1a", >=) and not version("../Fallout4.exe", "1.8.7.0", >=)'
       - <<: *obsolete
-        condition: 'version("Unofficial Fallout 4 Patch.esp", "1.0.5", <)'
-  - name: 'KillshotFix.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/1282' ]
+        condition: 'version("Unofficial Fallout 4 Patch.esp", "2.0.1a", <)'
+  # Mods obsoleted by official Bethesda patches
+  - name: 'KH_DogArmorFix.esp '
+    url: [ 'http://www.nexusmods.com/fallout4/mods/15222' ]
     global_priority: -100
     msg:
       - <<: *AlreadyInFO4
-        condition: 'version("../Fallout4.exe", "1.3.47.0", >=)'
-  - name: 'Simple Bug Fixes.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/2142' ]
+        condition: 'version("../Fallout4.exe", "1.6.0.0", >=)'
+  - name: 'KH_DChelmetfix.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/15215' ]
     global_priority: -100
     msg:
-      - *AlreadyInUFO4P
-      - *UsingSKE
-  - name: 'NX Desk Crafting Fix.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/2662' ]
+      - <<: *AlreadyInFO4
+        condition: 'version("../Fallout4.exe", "1.6.0.0", >=)'
+  - name: 'Targeting HUD Berry Mentats Fix.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/8910' ]
     global_priority: -100
     msg:
-      - *AlreadyInUFO4P
-  - name: 'CompanionBugfixExperimental.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/2679' ]
-    global_priority: -100
-    msg:
-      - *AlreadyInUFO4P
-  - name: 'ScroungerFix.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/3624' ]
+      - <<: *AlreadyInFO4
+        condition: 'version("../Fallout4.exe", "1.5.0.0", >=)'
+  - name: 'Vault 81 Holding Cell Fix(| Alt)\.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/8033' ]
     global_priority: -100
     msg:
       - <<: *AlreadyInFO4
         condition: 'version("../Fallout4.exe", "1.4.132.0", >=)'
-  - name: 'UnofficialFallout4Patch.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/4526' ]
-    global_priority: -100
-    msg:
-      - *AlreadyInUFO4P
-  - name: 'SynthArmorFix.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/5054' ]
-    global_priority: -100
-    msg:
-      - *AlreadyInUFO4P
-  - name: 'Glow Front Sight Ring Fix.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/5205' ]
-    global_priority: -100
-    msg:
-      - *AlreadyInUFO4P
-  - name: 'WeaveFix.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/5847' ]
-    global_priority: -100
-    msg:
-      - *AlreadyInUFO4P
-  - name: 'MakanarPerkBigLeaguesFix.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/5957' ]
+  - name: 'RailroadGloryBugFix.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/6389' ]
     global_priority: -100
     msg:
       - <<: *AlreadyInFO4
@@ -406,61 +385,63 @@ plugins:
     msg:
       - <<: *AlreadyInFO4
         condition: 'version("../Fallout4.exe", "1.3.47.0", >=)'
-  - name: 'RailroadGloryBugFix.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/6389' ]
+  - name: 'MakanarPerkBigLeaguesFix.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/5957' ]
     global_priority: -100
     msg:
       - <<: *AlreadyInFO4
         condition: 'version("../Fallout4.exe", "1.3.47.0", >=)'
-  - name: 'Vault 81 Holding Cell Fix(| Alt)\.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/8033' ]
+  - name: 'ScroungerFix.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/3624' ]
     global_priority: -100
     msg:
       - <<: *AlreadyInFO4
         condition: 'version("../Fallout4.exe", "1.4.132.0", >=)'
-  - name: 'Worsins-T60-Headlamp-Fix.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/8164' ]
-    global_priority: -100
-    msg:
-      - *AlreadyInUFO4P
-  - name: 'Pipe_Revolver_Tuned_Receiver.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/8570' ]
-    global_priority: -100
-    msg:
-      - *AlreadyInUFO4P
-  - name: 'Targeting HUD Berry Mentats Fix.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/8910' ]
+  - name: 'KillshotFix.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/1282' ]
     global_priority: -100
     msg:
       - <<: *AlreadyInFO4
-        condition: 'version("../Fallout4.exe", "1.5.0.0", >=)'
-  - name: 'RFG - Curie Inspirational Sneak L&L Fix.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/10047' ]
+        condition: 'version("../Fallout4.exe", "1.3.47.0", >=)'
+  # Mods included in the Unofficial Fallout 4 Patch
+  - name: 'UnofficialFallout4Patch.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/4526' ]
     global_priority: -100
     msg:
       - *AlreadyInUFO4P
-  - name: 'SoldierToyFix.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/10229' ]
+  - name: 'Simple Bug Fixes.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/2142' ]
     global_priority: -100
     msg:
       - *AlreadyInUFO4P
-  - name: 'FixTeslaScience.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/10319' ]
+      - *UsingSKE
+  - name: 'Remove Rads in Survival Fix.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/15392' ]
     global_priority: -100
     msg:
       - *AlreadyInUFO4P
-  - name: 'ItemCapitalizationFixes.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/10416' ]
+  - name: 'Idiot Savant Math Fix.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/13558' ]
     global_priority: -100
     msg:
       - *AlreadyInUFO4P
-  - name: 'DependencyQuestFix.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/10892' ]
+  - name: 'hangmansalleypatch.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/12958' ]
     global_priority: -100
     msg:
       - *AlreadyInUFO4P
-  - name: 'LiveNLoveMagazinePerkPatch.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/11083' ]
+  - name: 'Croup Manor NAVmesh Fix.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/12561' ]
+    global_priority: -100
+    msg:
+      - *AlreadyInUFO4P
+  - name: 'InvisibleBridgeFix.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/12491' ]
+    global_priority: -100
+    msg:
+      - *AlreadyInUFO4P
+  - name: 'DeirdreVendorFix.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/12305' ]
     global_priority: -100
     msg:
       - *AlreadyInUFO4P
@@ -469,6 +450,123 @@ plugins:
     global_priority: -100
     msg:
       - *AlreadyInUFO4P
+  - name: 'LiveNLoveMagazinePerkPatch.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/11083' ]
+    global_priority: -100
+    msg:
+      - *AlreadyInUFO4P
+  - name: 'Recruitable NPC Dialogue Fixes.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/11083' ]
+    global_priority: -100
+    msg:
+      - type: say
+        content: 'The bug fixes of this mod are already included in the Unofficial Fallout 4 Patch. The mod still contains additional tweaks that you may wish to keep, so keep or remove the mod at your discretion.'
+        condition: 'active("Unofficial Fallout 4 Patch.esp")'
+  - name: 'DependencyQuestFix.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/10892' ]
+    global_priority: -100
+    msg:
+      - *AlreadyInUFO4P
+  - name: 'fix_Perk_CombatMedic.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/10651' ]
+    global_priority: -100
+    msg:
+      - *AlreadyInUFO4P
+  - name: 'ItemCapitalizationFixes.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/10416' ]
+    global_priority: -100
+    msg:
+      - *AlreadyInUFO4P
+  - name: 'FixTeslaScience.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/10319' ]
+    global_priority: -100
+    msg:
+      - *AlreadyInUFO4P
+  - name: 'SoldierToyFix.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/10229' ]
+    global_priority: -100
+    msg:
+      - *AlreadyInUFO4P
+  - name: 'Talk Yourself Sober Fix.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/10173' ]
+    global_priority: -100
+    msg:
+      - *AlreadyInUFO4P
+  - name: 'RFG - Curie Inspirational Sneak L&L Fix.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/10047' ]
+    global_priority: -100
+    msg:
+      - *AlreadyInUFO4P
+  - name: 'RFG - Gunslinger Fix.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/10045' ]
+    global_priority: -100
+    msg:
+      - *AlreadyInUFO4P
+  - name: 'Mole Rat Disease Fix.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/8908' ]
+    global_priority: -100
+    msg:
+      - *AlreadyInUFO4P
+  - name: 'Pipe_Revolver_Tuned_Receiver.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/8570' ]
+    global_priority: -100
+    msg:
+      - *AlreadyInUFO4P
+  - name: 'Worsins-T60-Headlamp-Fix.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/8164' ]
+    global_priority: -100
+    msg:
+      - *AlreadyInUFO4P
+  - name: 'WeaveFix.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/5847' ]
+    global_priority: -100
+    msg:
+      - *AlreadyInUFO4P
+  - name: 'Merchants stick with store - Unique Settlers.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/5343' ]
+    global_priority: -100
+    msg:
+      - *AlreadyInUFO4P
+  - name: 'Glow Front Sight Ring Fix.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/5205' ]
+    global_priority: -100
+    msg:
+      - *AlreadyInUFO4P
+  - name: 'SynthArmorFix.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/5054' ]
+    global_priority: -100
+    msg:
+      - *AlreadyInUFO4P
+  - name: 'BoS Pilot Outfit Fix.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/3098' ]
+    global_priority: -100
+    msg:
+      - *AlreadyInUFO4P
+  - name: 'CompanionBugfixExperimental.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/2679' ]
+    global_priority: -100
+    msg:
+      - *AlreadyInUFO4P
+  - name: 'NX Desk Crafting Fix.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/2662' ]
+    global_priority: -100
+    msg:
+      - *AlreadyInUFO4P
+  - name: 'Vault-Tec Historical Preservation Initiative.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/12019' ]
+    global_priority: -90
+    dirty:
+      - <<: *dirtyPlugin
+        # Version 1.15
+        crc: 0xc8545353
+        # FO4Edit 3.2
+        itm: 3
+        udr: 9
+
+  # Texture overhauls
+  - name: 'OVT.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/1204' ]
+    global_priority: -105
 
   # Valdacil's Item Sorting
   - name: 'ValdacilsItemSorting-00-ValsPicks-DLCVersion.esp'
@@ -748,16 +846,139 @@ plugins:
       - 'ValdacilsItemSorting-ZZ-DLCAutomatron.esp'
       - 'ValdacilsItemSorting-ZZ-DLCAutomatron-Weightless.esp'
       - 'ValdacilsItemSorting-ZZ-DLCFarHarbor.esp'
-      - 'ValdacilsItemSorting-ZZ-DLCFarHarbor-Weightless.esp' 
+      - 'ValdacilsItemSorting-ZZ-DLCFarHarbor-Weightless.esp'
   - name: 'VIS-PatchChemRedux.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/3877' ]
-    after:
+    req:
       - 'chem redux.esp'
   - name: 'VIS-PatchChemReduxWeightless.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/3877' ]
-    after:
+    req:
       - 'chem redux.esp'
+  # Radrose Usability Enhancements
+  - name: 'Radrose Usability Enhancements.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/18098' ]
+    after:
+      # Valdacil's Item Sorting plugins
+      - 'ValdacilsItemSorting-00-ValsPicks-DLCVersion.esp'
+      - 'ValdacilsItemSorting-00-ValsPicks-NoDLCVersion.esp'
+      - 'ValdacilsItemSorting-00-ValsPicks-DLCVersion-VanillaWeight.esp'
+      - 'ValdacilsItemSorting-00-ValsPicks-NoDLCVersion-VanillaWeight.esp'
+      - 'ValdacilsItemSorting-Aid.esp'
+      - 'ValdacilsItemSorting-AidReducedWeight.esp'
+      - 'ValdacilsItemSorting-AidWeightless.esp'
+      - 'ValdacilsItemSorting-Ammo.esp'
+      - 'ValdacilsItemSorting-AmmoWeightless.esp'
+      - 'ValdacilsItemSorting-ArmorByClass.esp'
+      - 'ValdacilsItemSorting-ArmorBySlot.esp'
+      - 'ValdacilsItemSorting-CosmeticsByClass.esp'
+      - 'ValdacilsItemSorting-CosmeticsByType.esp'
+      - 'ValdacilsItemSorting-ExplosivesSortBottom.esp'
+      - 'ValdacilsItemSorting-ExplosivesSortBottomWeightless.esp'
+      - 'ValdacilsItemSorting-ExplosivesSortTop.esp'
+      - 'ValdacilsItemSorting-ExplosivesSortTopWeightless.esp'
+      - 'ValdacilsItemSorting-Junk+DEF_INV.esp'
+      - 'ValdacilsItemSorting-Junk.esp'
+      - 'ValdacilsItemSorting-JunkBetter+DEF_INV.esp'
+      - 'ValdacilsItemSorting-JunkBetter.esp'
+      - 'ValdacilsItemSorting-JunkWeightless+DEF_INV.esp'
+      - 'ValdacilsItemSorting-JunkWeightless.esp'
+      - 'ValdacilsItemSorting-Misc.esp'
+      - 'ValdacilsItemSorting-MiscWeightless.esp'
+      - 'ValdacilsItemSorting-Mods.esp'
+      - 'ValdacilsItemSorting-ModsWeightless.esp'
+      - 'ValdacilsItemSorting-NotJunk.esp'
+      - 'ValdacilsItemSorting-NotJunkJustMoney.esp'
+      - 'ValdacilsItemSorting-Perks.esp'
+      - 'ValdacilsItemSorting-Weapons.esp'
+      - 'ValdacilsItemSorting-ZY-DLCAutomatron-Weightless.esp'
+      - 'ValdacilsItemSorting-ZY-DLCAutomatron.esp'
+      - 'ValdacilsItemSorting-ZY-DLCContraptions-Weightless.esp'
+      - 'ValdacilsItemSorting-ZY-DLCContraptions.esp'
+      - 'ValdacilsItemSorting-ZY-DLCFarHarbor-Weightless.esp'
+      - 'ValdacilsItemSorting-ZY-DLCFarHarbor.esp'
+      - 'ValdacilsItemSorting-ZY-DLCNukaWorld-Weightless.esp'
+      - 'ValdacilsItemSorting-ZY-DLCNukaWorld.esp'
+      - 'ValdacilsItemSorting-ZY-DLCVaultTec-Weightless.esp'
+      - 'ValdacilsItemSorting-ZY-DLCVaultTec.esp'
+      - 'ValdacilsItemSorting-ZZ-DLCArmorByClassOverride.esp'
+      - 'ValdacilsItemSorting-ZZ-DLCArmorBySlotOverride.esp'
+      - 'ValdacilsItemSorting-ZZ-DLCCosmeticsByClassOverride.esp'
+      - 'ValdacilsItemSorting-ZZ-DLCCosmeticsByTypeOverride.esp'
+      - 'ValdacilsItemSorting-ZZ-DLCWeaponsOverride.esp'
+      - 'VIS-PatchChemRedux.esp'
+      - 'VIS-PatchChemReduxWeightless.esp'
+      # Valdacil's Item Sorting patches
+      - 'CN Only - VIS Patch.esp'
+      - 'CN + RASE - VIS Patch.esp'
+      - 'DIFR - VIS Patch.esp'
+      - 'Eli Armor Compendium AE VIS Patch.esp'
+      - 'llamaCompanionHeather-VIS Patch.esp'
+      - 'llamaCompanionHeather-VIS-AE Patch.esp'
+      - 'SimSettlements_VIS.esp'
+    clean:
+      # Version 2.3, All DLC + AE
+      - crc: 0x7FE05D2C
+        util: 'FO4Edit v3.2'
+  - name: 'Radrose Usability - .+\.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/18098' ]
+    req:
+      - 'Radrose Usability Enhancements.esp'
+  - name: 'Radrose - Valdacil Patch - .+\.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/18098' ]
+    req:
+      - 'Radrose Usability Enhancements.esp'
+    after:
+      - 'Radrose Usability - DLCCoast.esp'
+      - 'Radrose Usability - DLCNukaWorld + AWKCR.esp'
+      - 'Radrose Usability - DLCRobot.esp'
+      - 'Radrose Usability - Empty Bottles.esp'
+      - 'Radrose Usability - Workbench Perk Requirements + Armorsmith.esp'
+      - 'Radrose Usability - Workbench Perk Requirements.esp'
+  - name: 'FROST VIS Patch.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/24461' ]
+    req:
+      - 'Radrose Usability Enhancements.esp'
   # Other plugins
+  - name: 'NoSharedDogmeatTemplate.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/18547' ]
+    priority: -20
+  - name: 'Scrapper Corpse Highlighting.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/4380' ]
+    priority: -5
+    clean:
+      # Version 8
+      - crc: 0x904389D7
+        util: FO4Edit v3.2
+    msg:
+      - <<: *hasPluginPatch
+        subs:
+          - 'Automatron'
+          - '[DLCRobots Fix](http://www.nexusmods.com/fallout4/mods/11516)'
+        condition: 'active("DLCRobot.esm") and not active("DLCCoast.esm") and not active("Scrapper Corpse Highlighting - DLCRobots Fixes.esp") and checksum("Scrapper Corpse Highlighting.esp", 904389D7)'
+      - <<: *hasPluginPatch
+        subs:
+          - 'Automatron & Far Harbor'
+          - '[DLC Patch](http://www.nexusmods.com/fallout4/mods/4380)'
+        condition: 'active("DLCRobot.esm") and active("DLCCoast.esm") and not active("Scrapper Corpse Highlighting DLC Patch.esp") and checksum("Scrapper Corpse Highlighting.esp", 904389D7)'
+  - name: 'Scrapper Corpse Highlighting DLC Patch.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/4380' ]
+    priority: -5
+    clean:
+      # Version 8
+      - crc: 0xA202C5FD
+        util: FO4Edit v3.2
+  - name: 'Scrapper Corpse Highlighting - DLCRobots Fixes.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/11516' ]
+    priority: -5
+    clean:
+      # Version 1.0
+      - crc: 0x0E726D6A
+        util: FO4Edit v3.2
+    msg:
+      - <<: *AlreadyInX
+        subs: [ 'Scrapper Corpse Highlighting DLC Patch.esp' ]
+        condition: 'active("Scrapper Corpse Highlighting DLC Patch.esp") and active("DLCCoast.esm")'
   - name: 'PipBoyShadows.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/281' ]
     inc:
@@ -907,7 +1128,7 @@ plugins:
         subs: [ 'DeadlyRadstorms_Damage .esp' ]
   - name: 'Simple Bug Fixes - Better Item Sorting Patch.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/2142' ]
-    after:
+    req:
       - 'Simple Bug Fixes.esp'
   - name: 'NoGunSneakAttackMultiplier.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/2114' ]
@@ -946,12 +1167,17 @@ plugins:
       - 'TrueStormsFO4.esm'
       - 'TrueStormsFO4-FarHarbor.esp'
       - 'Vivid Weathers - FO4.esp'
+    inc:
+      - 'True Nights v01.esp'
+      - 'True Nights v02.esp'
+      - 'True Nights v03.esp'
     msg:
       - <<: *obsolete
         condition: 'version("DarkerNights.esp", "1.11", <)'
-  - name: 'Scrap Everything.esp'
-    msg: [ *doNotClean ]
-    url: [ 'http://www.nexusmods.com/fallout4/mods/5320' ]
+  - name: 'True Nights v0(1|2|3)\.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/9253' ]
+    inc:
+      - 'DarkerNights.esp'
   - name: 'Synth Armor Fix.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/6424' ]
     msg:
@@ -960,10 +1186,13 @@ plugins:
         subs: [ 'ArmorKeywords.esm' ]
   - name: 'WET Clearer.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/244' ]
-    inc: [ 'WET Murkier.esp' ]
+    inc: [ 'WET Murkier.esp' , 'WET.esp' ]
   - name: 'WET Murkier.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/244' ]
-    inc: [ 'WET Clearer.esp' ]
+    inc: [ 'WET Clearer.esp', 'WET.esp' ]
+  - name: 'WET.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/244' ]
+    inc: [ 'WET Clearer.esp', 'WET Murkier.esp' ]
   - name: 'Lasers Have No Recoil.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/9417/' ]
     inc: [ 'Concentrated Splitter.esp' ]
@@ -979,13 +1208,6 @@ plugins:
     url: [ 'http://www.nexusmods.com/fallout4/mods/10193' ]
     inc: [ 'Concentrated Splitter.esp' ]
     req: [ 'Lasers Have No Recoil.esp' ]
-  - name: 'OSM_AlternateStart_Protocol-InfiniteAnswer.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/13762' ]
-    global_priority: 100
-  - name: 'Vault-Tec Historical Preservation Initiative.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/12019' ]
-    global_priority: -90
-
   - name: 'OCDWorkshopDLCPatch.esp'
     msg:
       - type: error
@@ -1002,7 +1224,7 @@ plugins:
   - name: 'Jzk_WW_Patch.esp'
     msg:
       - *UsingSKE
-# ALL DLC Version 3.x
+  # ALL DLC Version 3.x
   - name: 'CW_PATCH.esp'
     msg:
       - *InsteadSKEPatch
@@ -1045,7 +1267,7 @@ plugins:
   - name: 'WW_PATCH_integrated.esp'
     msg:
       - *InsteadSKEPatch
-# ALL DLC Version 4.x
+  # ALL DLC Version 4.x
   - name: 'NW_PATCH_Integrated.esp'
     msg:
       - *InsteadSKEPatch
@@ -1132,22 +1354,40 @@ plugins:
       - *UsingSKE
   - name: 'Homemaker - Bunker Disabler SK.esp'
     msg:
-      - *UsingSKE
+      - *UsingHomemaker1_50
   - name: 'Homemaker - Bunker Disabler.esp'
     msg:
-      - *UsingSKE
+      - type: error
+        content:
+        - lang: en
+          text: 'Uninstall this file and upgrade to Homemaker 1.50.'
+        - lang: es
+          text: 'Desinstale este archivo y actualizar a Homemaker 1.50.'
+        condition: 'version("Homemaker.esm", "1.50", >=) and version("Homemaker - Bunker Disabler.esp", "1.50", <)'
   - name: 'Homemaker - Greenhouse and Bunker Disabler SK.esp'
     msg:
-      - *UsingSKE
+      - *UsingHomemaker1_50
   - name: 'Homemaker - Greenhouse and Bunker Disabler.esp'
     msg:
-      - *UsingSKE
+      - type: error
+        content:
+        - lang: en
+          text: 'Uninstall this file and upgrade to Homemaker 1.50.'
+        - lang: es
+          text: 'Desinstale este archivo y actualizar a Homemaker 1.50.'
+        condition: 'version("Homemaker.esm", "1.50", >=) and version("Homemaker - Greenhouse and Bunker Disabler.esp", "1.50", <)'
   - name: 'Homemaker - Greenhouse Disabler SK.esp'
     msg:
-      - *UsingSKE
+      - *UsingHomemaker1_50
   - name: 'Homemaker - Greenhouse Disabler.esp'
     msg:
-      - *UsingSKE
+      - type: error
+        content:
+        - lang: en
+          text: 'Uninstall this file and upgrade to Homemaker 1.50.'
+        - lang: es
+          text: 'Desinstale este archivo y actualizar a Homemaker 1.50.'
+        condition: 'version("Homemaker.esm", "1.50", >=) and version("Homemaker - Greenhouse Disabler.esp", "1.50", <)'
   - name: 'Homemaker - SK Integration Patch.esp'
     msg:
       - type: error
@@ -1158,19 +1398,31 @@ plugins:
         condition: 'file("../Fallout4.exe") and version("../Fallout4.exe", "1.5.157.0", >=)'
   - name: 'Homemaker - SKE Integration Patch.esp'
     msg:
-      - *UsingSKE
+      - *UsingHomemaker1_50
   - name: 'Homemaker - SSEx Compatibility Patch.esp'
     msg:
-      - *UsingSKE
+      - *UsingHomemaker1_50
   - name: 'Homemaker - Streetlights Use Passive Power.esp'
     msg:
-      - *UsingSKE
+      - type: error
+        content:
+        - lang: en
+          text: 'Uninstall this file and upgrade to Homemaker 1.50.'
+        - lang: es
+          text: 'Desinstale este archivo y actualizar a Homemaker 1.50.'
+        condition: 'version("Homemaker.esm", "1.50", >=) and version("Homemaker - Streetlights Use Passive Power.esp", "1.50", <)'
   - name: 'Homemaker - Unlocked Institute Objects SK.esp'
     msg:
-      - *UsingSKE
+      - *UsingHomemaker1_50
   - name: 'Homemaker - Unlocked Institute Objects.esp'
     msg:
-      - *UsingSKE
+      - type: error
+        content:
+        - lang: en
+          text: 'Uninstall this file and upgrade to Homemaker 1.50.'
+        - lang: es
+          text: 'Desinstale este archivo y actualizar a Homemaker 1.50.'
+        condition: 'version("Homemaker.esm", "1.50", >=) and version("Homemaker - Unlocked Institute Objects.esp", "1.50", <)'
   - name: 'Snap''n Build - Bunker.esp'
     msg:
       - *UsingSNB
@@ -1227,34 +1479,50 @@ plugins:
       - *UsingSNB
   - name: 'Homemaker.esm'
     msg:
-# Homemaker 1.34 CRC
+      # Homemaker 1.34 CRC
       - type: error
         content: 'Incompatible with Fallout 4 patch 1.5.157 or greater.'
         condition: 'checksum("Homemaker.esm",55D44FD5) and version("../Fallout4.exe", "1.5.157.0", >=)'
       - type: error
         content: 'Homemaker patch for Settlement Keywords Expanded not installed. Reinstall SKE and place a check mark in the first box in the list of Homemaker patches to ensure the Homemaker patch will be properly installed.'
         condition: '(checksum("Homemaker.esm",55D44FD5) or checksum("Homemaker.esm",A28ED2EC) or checksum("Homemaker.esm",DF136FBA) or checksum("Homemaker.esm",284A031C) or checksum("Homemaker.esm",47E7024C)) and version("SettlementKeywords.esm", "1.0", >=)'
-# Homemaker 1.35 CRC
+      # Homemaker 1.35 CRC
       - type: error
         content: 'Requires Fallout 4 patch 1.5.157 or greater.'
         condition: 'checksum("Homemaker.esm",A28ED2EC) and version("../Fallout4.exe", "1.5.157.0", <)'
-# Homemaker 1.36 CRC DF136FBA
-# For 1.37 and Fallout 4 patch 1.6.3 to 1.6.9
-# Homemaker 1.37 CRC Old: 7207BE96, New: E0D47FC0
-# Homemaker 1.39 CRC 284A031C
+      # Homemaker 1.36 CRC DF136FBA
+      # For 1.37 and Fallout 4 patch 1.6.3 to 1.6.9
+      # Homemaker 1.37 CRC Old: 7207BE96, New: E0D47FC0
+      # Homemaker 1.39 CRC 284A031C
       - type: error
         content: 'Incompatible with Fallout 4 patch 1.7.9 or greater. Use Homemaker 1.40 instead.'
         condition: 'checksum("Homemaker.esm",284A031C) and version("../Fallout4.exe", "1.7.9", >=)'
-# For 1.38 and Fallout 4 patch 1.7.9 or greater
-# Homemaker 1.38 CRC Old: F6020126, New: 79CA5BE5
-# Homemaker 1.40 CRC 47E7024C
+      # For 1.38 and Fallout 4 patch 1.7.9 or greater
+      # Homemaker 1.38 CRC Old: F6020126, New: 79CA5BE5
+      # Homemaker 1.40 CRC 47E7024C
       - type: error
         content: 'Incompatible with Fallout 4 patch 1.6.3 to 1.6.9. Use Homemaker 1.39 instead.'
         condition: 'checksum("Homemaker.esm",47E7024C) and (version("../Fallout4.exe", "1.6.3", >=) and version("../Fallout4.exe", "1.6.9", <=))'
-# Homemaker 1.41 CRC F8FC29EE
+      # Homemaker 1.41 CRC F8FC29EE
       - type: error
         content: 'Requires Fallout 4 patch 1.7.9 or greater.'
         condition: 'checksum("Homemaker.esm",F8FC29EE) and version("../Fallout4.exe", "1.7.9", <)'
+      # Homemaker 1.50
+      - type: error
+        content: 'Requires Fallout 4 patch 1.7.9 or greater.'
+        condition: 'version("Homemaker.esm", "1.50", >=) and version("../Fallout4.exe", "1.7.9", <)'
+      - type: say
+        content: 'Outdated. Upgrade to the latest version of Homemaker.'
+        condition: 'version("Homemaker.esm", "1.50", <)'
+  - name: 'SnapBedsHomemakerPatch.esp'
+    msg:
+      - type: error
+        content:
+        - lang: en
+          text: 'Uninstall this file. It it no longer required with Homemaker 1.50 or higher.'
+        - lang: es
+          text: 'Desinstale este archivo. No es requerido con Homemaker 1.50 or higher.'
+        condition: 'version("Homemaker.esm", "1.50", >=)'
   - name: 'SettlementKeywords.esm'
     msg:
       - type: error
@@ -1265,7 +1533,7 @@ plugins:
         condition: 'version("SettlementKeywords.esm", "1.40", >=) and version("../Fallout4.exe", "1.6.3", <)'
       - type: warn
         content: 'This copy of SettlementKeywords.esm may be missing kewords required for certain mods.'
-        condition: 'version("SettlementKeywords.esm", "1.41", <)'
+        condition: 'version("SettlementKeywords.esm", "1.49", <)'
   - name: 'AlternateSettlements.esp'
     msg:
       - type: error
@@ -1290,6 +1558,66 @@ plugins:
       - type: error
         content: 'Minutemen Overhaul patch for Settlement Keywords Expanded not installed. Reinstall SKE.'
         condition: '(checksum("Minutemenoverhaul.esp",8CD7D3C8) or checksum("Minutemenoverhaul.esp",46A18495)) and version("SettlementKeywords.esm", "1.0", >=)'
+  - name: 'BuildingBlocks-Foundations_Homemaker-SnapBuild.esp'
+    msg:
+      - type: error
+        content: 'Uninstall this file. It is not needed with Homemaker 1.50 or greater.'
+        condition: 'version("Homemaker.esm", "1.50", >=)'
+      - type: error
+        content: 'Incompatible with Fallout 4 patch 1.5.157 or greater.'
+        condition: 'file("../Fallout4.exe") and version("../Fallout4.exe", "1.5.157.0", >=)'
+  - name: 'BuildingBlocks-Foundations_Homemaker.esp'
+    msg:
+      - type: error
+        content: 'Uninstall this file. It is not needed with Homemaker 1.50 or greater.'
+        condition: 'version("Homemaker.esm", "1.50", >=)'
+      - type: error
+        content: 'Incompatible with Fallout 4 patch 1.5.157 or greater.'
+        condition: 'file("../Fallout4.exe") and version("../Fallout4.exe", "1.5.157.0", >=)'
+  - name: 'BuildingBlocks-Foundations_Homemaker-SSEx.esp'
+    msg:
+      - type: error
+        content: 'Uninstall this file. It is not needed with Homemaker 1.50 or greater.'
+        condition: 'version("Homemaker.esm", "1.50", >=)'
+      - type: error
+        content: 'Incompatible with Fallout 4 patch 1.5.157 or greater.'
+        condition: 'file("../Fallout4.exe") and version("../Fallout4.exe", "1.5.157.0", >=)'
+  - name: 'BuildingBlocks-Foundations_SettlementKeywordsFull.esp'
+    msg:
+      - type: say
+        content: 'This file is compatible with SKE but not recomended. Use BuildingBlocks-Foundations.esp instead.'
+        condition: 'version("SettlementKeywords.esm", "1.0", >=)'
+  - name: 'BuildingBlocks-Foundations_SettlementKeywordsPartial.esp'
+    msg:
+      - type: error
+        content: 'Uninstall this file. It was not made for Settlement Keywords Expanded.'
+        condition: 'version("SettlementKeywords.esm", "1.0", >=)'
+      - type: error
+        content: 'Incompatible with Fallout 4 patch 1.5.157 or greater.'
+        condition: 'file("../Fallout4.exe") and version("../Fallout4.exe", "1.5.157.0", >=)'
+  - name: 'BuildingBlocks-Foundations_Homemaker-SnapBuild-SSEx.esp'
+    msg:
+      - type: error
+        content: 'Uninstall this file. It is not needed with Homemaker 1.50 or greater.'
+        condition: 'version("Homemaker.esm", "1.50", >=)'
+      - type: error
+        content: 'Incompatible with Fallout 4 patch 1.5.157 or greater.'
+        condition: 'file("../Fallout4.exe") and version("../Fallout4.exe", "1.5.157.0", >=)'
+  - name: 'BuildingBlocks-Foundations.esp'
+    msg:
+      - type: error
+        content: 'This mod overwrites many vanilla settlement menus. Detailed instructions to resolve conflicts can be found [here](http://www.creationkit.com/fallout4/index.php?title=Building_Blocks_Foundations).'
+        condition: 'checksum("BuildingBlocks-Foundations.esp",2924F338) and version("../Fallout4.exe", "1.5.157.0", >=)'
+  - name: 'Z_Horizon_Patch_Homemaker.esp'
+    msg:
+      - type: warn
+        content: 'This patch will no longer work correctly with Homemaker 1.50 or greater. It will move items out of the Homemaker menu and place them into the vanilla menus unintentionally.'
+        condition: 'version("Homemaker.esm", "1.50", >=)'
+  - name: 'Z_Horizon_Patch_Homemaker_SKE.esp'
+    msg:
+      - type: error
+        content: 'This patch no longer works with SKE 1.43 or greater because, as of Homemaker 1.50 or greater there is no Homemaker - SKE patch.'
+        condition: 'version("SettlementKeywords.esm", "1.43", >=)'
   - name: 'BetterJunkFences.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/9000' ]
     inc: [ 'JunkWalls_More_Snaps.esp' ]
@@ -1316,8 +1644,6 @@ plugins:
       - <<: *useOnlyOneX
         condition: 'many("ConstructionLight_\w+\.esp")'
         subs: [ 'ConstructionLight .esp' ]
-<<<<<<< HEAD
-=======
   - name: 'Vivid Waters.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/16425' ]
     after:
@@ -1973,7 +2299,6 @@ plugins:
     inc:
       - 'OSM_AlternateStart_Protocol-InfiniteAnswer.esp'
       - 'AnotherLife.esp'
->>>>>>> refs/remotes/loot/v0.10
 
   - name: 'FO4Merged.esp'
     global_priority: 80
