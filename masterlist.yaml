@@ -296,10 +296,31 @@ globals:
     # 0x1bf865e4: v1.15.1 for FO4 1.4.32
     condition: '((checksum("F4SE/Plugins/place.dll", 78374099) or checksum("F4SE/Plugins/place.dll", 988580db) or checksum("F4SE/Plugins/place.dll", 6a0dbf55)) and not version("../Fallout4.exe", "1.3.47.0", ==)) or (checksum("F4SE/Plugins/place.dll", 95eab074) and not version("../Fallout4.exe", "1.4.125.0", ==)) or (checksum("F4SE/Plugins/place.dll", c2e4481a) and not version("../Fallout4.exe", "1.4.131.0", ==)) or ((checksum("F4SE/Plugins/place.dll", 89ceec93) or checksum("F4SE/Plugins/place.dll", c202af85) or checksum("F4SE/Plugins/place.dll", 44af914a) or checksum("F4SE/Plugins/place.dll", ace2ed7e) or checksum("F4SE/Plugins/place.dll", 1bf865e4)) and not version("../Fallout4.exe", "1.4.132.0", ==))'
 
+groups:
+  - name: &dlcGroup DLC
+
+  - name: &texturesGroup Texture Overhauls
+    after: [ *dlcGroup ]
+
+  - name: &fixesGroup Fixes
+    after: [ *texturesGroup ]
+
+  - name: &retconGroup Vault-Tec Historical Preservation Initiative
+    after: [ *fixesGroup ]
+
+  - name: default
+    after: [ *retconGroup ]
+
+  - name: &altStartGroup Alternate Start
+    after: [ default ]
+
+  - name: &dynamicPatchesGroup Dynamic Patches
+    after: [ *altStartGroup ]
+
 plugins:
   ### Official DLC plugins
   - name: 'DLCRobot.esm'
-    global_priority: -120
+    group: *dlcGroup
     dirty:
       - <<: *dirtyPlugin
         crc: 0xd69027ea
@@ -308,7 +329,7 @@ plugins:
         udr: 38
         nav: 1
   - name: 'DLCworkshop01.esm'
-    global_priority: -120
+    group: *dlcGroup
     after:
       - 'DLCRobot.esm'
     dirty:
@@ -317,7 +338,7 @@ plugins:
         # FO4Edit 3.2.1
         itm: 6
   - name: 'DLCCoast.esm'
-    global_priority: -120
+    group: *dlcGroup
     after:
       - 'DLCRobot.esm'
       - 'DLCworkshop01.esm'
@@ -328,7 +349,7 @@ plugins:
         itm: 75
         udr: 86
   - name: 'DLCworkshop02.esm'
-    global_priority: -120
+    group: *dlcGroup
     after:
       - 'DLCRobot.esm'
       - 'DLCworkshop01.esm'
@@ -339,7 +360,7 @@ plugins:
         # FO4Edit 3.2.1
         itm: 2
   - name: 'DLCworkshop03.esm'
-    global_priority: -120
+    group: *dlcGroup
     after:
       - 'DLCRobot.esm'
       - 'DLCworkshop01.esm'
@@ -352,7 +373,7 @@ plugins:
         itm: 18
         udr: 10
   - name: 'DLCNukaWorld.esm'
-    global_priority: -120
+    group: *dlcGroup
     after:
       - 'DLCRobot.esm'
       - 'DLCworkshop01.esm'
@@ -367,7 +388,7 @@ plugins:
         udr: 418
         nav: 7
   - name: 'DLCUltraHighResolution.esm'
-    global_priority: -120
+    group: *dlcGroup
     after:
       - 'DLCRobot.esm'
       - 'DLCworkshop01.esm'
@@ -378,7 +399,7 @@ plugins:
 
   ### Creation Club plugins
   - name: 'ccBGSFO4001-PipBoy(Black).esl'
-    global_priority: -120
+    group: *dlcGroup
     after:
       - 'Fallout4.esm'
       - 'DLCRobot.esm'
@@ -388,7 +409,7 @@ plugins:
       - 'DLCworkshop03.esm'
       - 'DLCNukaWorld.esm'
   - name: 'ccBGSFO4002-PipBoy(Blue).esl'
-    global_priority: -120
+    group: *dlcGroup
     after:
       - 'Fallout4.esm'
       - 'DLCRobot.esm'
@@ -399,7 +420,7 @@ plugins:
       - 'DLCNukaWorld.esm'
       - 'ccBGSFO4001-PipBoy(Black).esl'
   - name: 'ccBGSFO4003-PipBoy(Camo01).esl'
-    global_priority: -120
+    group: *dlcGroup
     after:
       - 'Fallout4.esm'
       - 'DLCRobot.esm'
@@ -411,7 +432,7 @@ plugins:
       - 'ccBGSFO4001-PipBoy(Black).esl'
       - 'ccBGSFO4002-PipBoy(Blue).esl'
   - name: 'ccBGSFO4004-PipBoy(Camo02).esl'
-    global_priority: -120
+    group: *dlcGroup
     after:
       - 'Fallout4.esm'
       - 'DLCRobot.esm'
@@ -424,7 +445,7 @@ plugins:
       - 'ccBGSFO4002-PipBoy(Blue).esl'
       - 'ccBGSFO4003-PipBoy(Camo01).esl'
   - name: 'ccBGSFO4006-PipBoy(Chrome).esl'
-    global_priority: -120
+    group: *dlcGroup
     after:
       - 'Fallout4.esm'
       - 'DLCRobot.esm'
@@ -438,7 +459,7 @@ plugins:
       - 'ccBGSFO4003-PipBoy(Camo01).esl'
       - 'ccBGSFO4004-PipBoy(Camo02).esl'
   - name: 'ccBGSFO4012-PipBoy(Red).esl'
-    global_priority: -120
+    group: *dlcGroup
     after:
       - 'Fallout4.esm'
       - 'DLCRobot.esm'
@@ -453,7 +474,7 @@ plugins:
       - 'ccBGSFO4004-PipBoy(Camo02).esl'
       - 'ccBGSFO4006-PipBoy(Chrome).esl'
   - name: 'ccBGSFO4014-PipBoy(White).esl'
-    global_priority: -120
+    group: *dlcGroup
     after:
       - 'Fallout4.esm'
       - 'DLCRobot.esm'
@@ -469,7 +490,7 @@ plugins:
       - 'ccBGSFO4006-PipBoy(Chrome).esl'
       - 'ccBGSFO4012-PipBoy(Red).esl'
   - name: 'ccBGSFO4016-Prey.esl'
-    global_priority: -120
+    group: *dlcGroup
     after:
       - 'Fallout4.esm'
       - 'DLCRobot.esm'
@@ -486,7 +507,7 @@ plugins:
       - 'ccBGSFO4012-PipBoy(Red).esl'
       - 'ccBGSFO4014-PipBoy(White).esl'
   - name: 'ccBGSFO4017-Mauler.esl'
-    global_priority: -120
+    group: *dlcGroup
     after:
       - 'Fallout4.esm'
       - 'DLCRobot.esm'
@@ -504,7 +525,7 @@ plugins:
       - 'ccBGSFO4014-PipBoy(White).esl'
       - 'ccBGSFO4016-Prey.esl'
   - name: 'ccBGSFO4018-GaussRiflePrototype.esl'
-    global_priority: -120
+    group: *dlcGroup
     after:
       - 'Fallout4.esm'
       - 'DLCRobot.esm'
@@ -523,7 +544,7 @@ plugins:
       - 'ccBGSFO4016-Prey.esl'
       - 'ccBGSFO4017-Mauler.esl'
   - name: 'ccBGSFO4019-ChineseStealthArmor.esl'
-    global_priority: -120
+    group: *dlcGroup
     after:
       - 'Fallout4.esm'
       - 'DLCRobot.esm'
@@ -543,7 +564,7 @@ plugins:
       - 'ccBGSFO4017-Mauler.esl'
       - 'ccBGSFO4018-GaussRiflePrototype.esl'
   - name: 'ccBGSFO4020-PowerArmorSkin(Black).esl'
-    global_priority: -120
+    group: *dlcGroup
     after:
       - 'Fallout4.esm'
       - 'DLCRobot.esm'
@@ -564,7 +585,7 @@ plugins:
       - 'ccBGSFO4018-GaussRiflePrototype.esl'
       - 'ccBGSFO4019-ChineseStealthArmor.esl'
   - name: 'ccBGSFO4022-PowerArmorSkin(Camo01).esl'
-    global_priority: -120
+    group: *dlcGroup
     after:
       - 'Fallout4.esm'
       - 'DLCRobot.esm'
@@ -586,7 +607,7 @@ plugins:
       - 'ccBGSFO4019-ChineseStealthArmor.esl'
       - 'ccBGSFO4020-PowerArmorSkin(Black).esl'
   - name: 'ccBGSFO4023-PowerArmorSkin(Camo02).esl'
-    global_priority: -120
+    group: *dlcGroup
     after:
       - 'Fallout4.esm'
       - 'DLCRobot.esm'
@@ -609,7 +630,7 @@ plugins:
       - 'ccBGSFO4020-PowerArmorSkin(Black).esl'
       - 'ccBGSFO4022-PowerArmorSkin(Camo01).esl'
   - name: 'ccBGSFO4025-PowerArmorSkin(Chrome).esl'
-    global_priority: -120
+    group: *dlcGroup
     after:
       - 'Fallout4.esm'
       - 'DLCRobot.esm'
@@ -633,7 +654,7 @@ plugins:
       - 'ccBGSFO4022-PowerArmorSkin(Camo01).esl'
       - 'ccBGSFO4023-PowerArmorSkin(Camo02).esl'
   - name: 'ccBGSFO4038-HorseArmor.esl'
-    global_priority: -120
+    group: *dlcGroup
     after:
       - 'Fallout4.esm'
       - 'DLCRobot.esm'
@@ -658,7 +679,7 @@ plugins:
       - 'ccBGSFO4023-PowerArmorSkin(Camo02).esl'
       - 'ccBGSFO4025-PowerArmorSkin(Chrome).esl'
   - name: 'ccBGSFO4039-TunnelSnakes.esl'
-    global_priority: -120
+    group: *dlcGroup
     after:
       - 'Fallout4.esm'
       - 'DLCRobot.esm'
@@ -684,7 +705,7 @@ plugins:
       - 'ccBGSFO4025-PowerArmorSkin(Chrome).esl'
       - 'ccBGSFO4038-HorseArmor.esl'
   - name: 'ccBGSFO4041-DoomMarineArmor.esl'
-    global_priority: -120
+    group: *dlcGroup
     after:
       - 'Fallout4.esm'
       - 'DLCRobot.esm'
@@ -711,7 +732,7 @@ plugins:
       - 'ccBGSFO4038-HorseArmor.esl'
       - 'ccBGSFO4039-TunnelSnakes.esl'
   - name: 'ccBGSFO4042-BFG.esl'
-    global_priority: -120
+    group: *dlcGroup
     after:
       - 'Fallout4.esm'
       - 'DLCRobot.esm'
@@ -739,7 +760,7 @@ plugins:
       - 'ccBGSFO4039-TunnelSnakes.esl'
       - 'ccBGSFO4041-DoomMarineArmor.esl'
   - name: 'ccBGSFO4043-DoomChainsaw.esl'
-    global_priority: -120
+    group: *dlcGroup
     after:
       - 'Fallout4.esm'
       - 'DLCRobot.esm'
@@ -768,7 +789,7 @@ plugins:
       - 'ccBGSFO4041-DoomMarineArmor.esl'
       - 'ccBGSFO4042-BFG.esl'
   - name: 'ccBGSFO4044-HellfirePowerArmor.esl'
-    global_priority: -120
+    group: *dlcGroup
     after:
       - 'Fallout4.esm'
       - 'DLCRobot.esm'
@@ -798,7 +819,7 @@ plugins:
       - 'ccBGSFO4042-BFG.esl'
       - 'ccBGSFO4043-DoomChainsaw.esl'
   - name: 'ccFSVFO4001-ModularMilitaryBackpack.esl'
-    global_priority: -120
+    group: *dlcGroup
     after:
       - 'Fallout4.esm'
       - 'DLCRobot.esm'
@@ -829,7 +850,7 @@ plugins:
       - 'ccBGSFO4043-DoomChainsaw.esl'
       - 'ccBGSFO4044-HellfirePowerArmor.esl'
   - name: 'ccFSVFO4002-MidCenturyModern.esl'
-    global_priority: -120
+    group: *dlcGroup
     after:
       - 'Fallout4.esm'
       - 'DLCRobot.esm'
@@ -861,7 +882,7 @@ plugins:
       - 'ccBGSFO4044-HellfirePowerArmor.esl'
       - 'ccFSVFO4001-ModularMilitaryBackpack.esl'
   - name: 'ccFRSFO4001-HandmadeShotgun.esl'
-    global_priority: -120
+    group: *dlcGroup
     after:
       - 'Fallout4.esm'
       - 'DLCRobot.esm'
@@ -894,7 +915,7 @@ plugins:
       - 'ccFSVFO4001-ModularMilitaryBackpack.esl'
       - 'ccFSVFO4002-MidCenturyModern.esl'
   - name: 'ccEEJFO4001-DecorationPack.esl'
-    global_priority: -120
+    group: *dlcGroup
     after:
       - 'Fallout4.esm'
       - 'DLCRobot.esm'
@@ -933,7 +954,7 @@ plugins:
     url:
       - 'https://afkmods.iguanadons.net/index.php?/files/file/1765-unofficial-fallout-4-patch/'
       - 'http://www.nexusmods.com/fallout4/mods/4526'
-    global_priority: -100
+    group: *fixesGroup
     msg:
       - type: error
         content: 'Requires Fallout 4 patch 1.8.7 or greater.'
@@ -943,210 +964,210 @@ plugins:
   # Mods obsoleted by official Bethesda patches
   - name: 'KH_DogArmorFix.esp '
     url: [ 'http://www.nexusmods.com/fallout4/mods/15222' ]
-    global_priority: -100
+    group: *fixesGroup
     msg:
       - <<: *AlreadyInFO4
         condition: 'version("../Fallout4.exe", "1.6.0.0", >=)'
   - name: 'KH_DChelmetfix.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/15215' ]
-    global_priority: -100
+    group: *fixesGroup
     msg:
       - <<: *AlreadyInFO4
         condition: 'version("../Fallout4.exe", "1.6.0.0", >=)'
   - name: 'Targeting HUD Berry Mentats Fix.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/8910' ]
-    global_priority: -100
+    group: *fixesGroup
     msg:
       - <<: *AlreadyInFO4
         condition: 'version("../Fallout4.exe", "1.5.0.0", >=)'
   - name: 'Vault 81 Holding Cell Fix(| Alt)\.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/8033' ]
-    global_priority: -100
+    group: *fixesGroup
     msg:
       - <<: *AlreadyInFO4
         condition: 'version("../Fallout4.exe", "1.4.132.0", >=)'
   - name: 'RailroadGloryBugFix.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/6389' ]
-    global_priority: -100
+    group: *fixesGroup
     msg:
       - <<: *AlreadyInFO4
         condition: 'version("../Fallout4.exe", "1.3.47.0", >=)'
   - name: 'MakanarBigLeaguesFix.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/6185' ]
-    global_priority: -100
+    group: *fixesGroup
     msg:
       - <<: *AlreadyInFO4
         condition: 'version("../Fallout4.exe", "1.3.47.0", >=)'
   - name: 'MakanarPerkBigLeaguesFix.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/5957' ]
-    global_priority: -100
+    group: *fixesGroup
     msg:
       - <<: *AlreadyInFO4
         condition: 'version("../Fallout4.exe", "1.3.47.0", >=)'
   - name: 'ScroungerFix.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/3624' ]
-    global_priority: -100
+    group: *fixesGroup
     msg:
       - <<: *AlreadyInFO4
         condition: 'version("../Fallout4.exe", "1.4.132.0", >=)'
   - name: 'KillshotFix.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/1282' ]
-    global_priority: -100
+    group: *fixesGroup
     msg:
       - <<: *AlreadyInFO4
         condition: 'version("../Fallout4.exe", "1.3.47.0", >=)'
   # Mods included in the Unofficial Fallout 4 Patch
   - name: 'UnofficialFallout4Patch.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/4526' ]
-    global_priority: -100
+    group: *fixesGroup
     msg:
       - *AlreadyInUFO4P
   - name: 'Simple Bug Fixes.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/2142' ]
-    global_priority: -100
+    group: *fixesGroup
     msg:
       - *AlreadyInUFO4P
       - *UsingSKE
   - name: 'Remove Rads in Survival Fix.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/15392' ]
-    global_priority: -100
+    group: *fixesGroup
     msg:
       - *AlreadyInUFO4P
   - name: 'Idiot Savant Math Fix.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/13558' ]
-    global_priority: -100
+    group: *fixesGroup
     msg:
       - *AlreadyInUFO4P
   - name: 'hangmansalleypatch.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/12958' ]
-    global_priority: -100
+    group: *fixesGroup
     msg:
       - *AlreadyInUFO4P
   - name: 'Croup Manor NAVmesh Fix.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/12561' ]
-    global_priority: -100
+    group: *fixesGroup
     msg:
       - *AlreadyInUFO4P
   - name: 'InvisibleBridgeFix.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/12491' ]
-    global_priority: -100
+    group: *fixesGroup
     msg:
       - *AlreadyInUFO4P
   - name: 'DeirdreVendorFix.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/12305' ]
-    global_priority: -100
+    group: *fixesGroup
     msg:
       - *AlreadyInUFO4P
   - name: 'Combat Armor Weight Fix.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/11541' ]
-    global_priority: -100
+    group: *fixesGroup
     msg:
       - *AlreadyInUFO4P
   - name: 'LiveNLoveMagazinePerkPatch.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/11083' ]
-    global_priority: -100
+    group: *fixesGroup
     msg:
       - *AlreadyInUFO4P
   - name: 'Recruitable NPC Dialogue Fixes.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/11083' ]
-    global_priority: -100
+    group: *fixesGroup
     msg:
       - type: say
         content: 'The bug fixes of this mod are already included in the Unofficial Fallout 4 Patch. The mod still contains additional tweaks that you may wish to keep, so keep or remove the mod at your discretion.'
         condition: 'active("Unofficial Fallout 4 Patch.esp")'
   - name: 'DependencyQuestFix.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/10892' ]
-    global_priority: -100
+    group: *fixesGroup
     msg:
       - *AlreadyInUFO4P
   - name: 'fix_Perk_CombatMedic.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/10651' ]
-    global_priority: -100
+    group: *fixesGroup
     msg:
       - *AlreadyInUFO4P
   - name: 'ItemCapitalizationFixes.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/10416' ]
-    global_priority: -100
+    group: *fixesGroup
     msg:
       - *AlreadyInUFO4P
   - name: 'FixTeslaScience.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/10319' ]
-    global_priority: -100
+    group: *fixesGroup
     msg:
       - *AlreadyInUFO4P
   - name: 'SoldierToyFix.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/10229' ]
-    global_priority: -100
+    group: *fixesGroup
     msg:
       - *AlreadyInUFO4P
   - name: 'Talk Yourself Sober Fix.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/10173' ]
-    global_priority: -100
+    group: *fixesGroup
     msg:
       - *AlreadyInUFO4P
   - name: 'RFG - Curie Inspirational Sneak L&L Fix.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/10047' ]
-    global_priority: -100
+    group: *fixesGroup
     msg:
       - *AlreadyInUFO4P
   - name: 'RFG - Gunslinger Fix.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/10045' ]
-    global_priority: -100
+    group: *fixesGroup
     msg:
       - *AlreadyInUFO4P
   - name: 'Mole Rat Disease Fix.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/8908' ]
-    global_priority: -100
+    group: *fixesGroup
     msg:
       - *AlreadyInUFO4P
   - name: 'Pipe_Revolver_Tuned_Receiver.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/8570' ]
-    global_priority: -100
+    group: *fixesGroup
     msg:
       - *AlreadyInUFO4P
   - name: 'Worsins-T60-Headlamp-Fix.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/8164' ]
-    global_priority: -100
+    group: *fixesGroup
     msg:
       - *AlreadyInUFO4P
   - name: 'WeaveFix.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/5847' ]
-    global_priority: -100
+    group: *fixesGroup
     msg:
       - *AlreadyInUFO4P
   - name: 'Merchants stick with store - Unique Settlers.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/5343' ]
-    global_priority: -100
+    group: *fixesGroup
     msg:
       - *AlreadyInUFO4P
   - name: 'Glow Front Sight Ring Fix.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/5205' ]
-    global_priority: -100
+    group: *fixesGroup
     msg:
       - *AlreadyInUFO4P
   - name: 'SynthArmorFix.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/5054' ]
-    global_priority: -100
+    group: *fixesGroup
     msg:
       - *AlreadyInUFO4P
   - name: 'BoS Pilot Outfit Fix.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/3098' ]
-    global_priority: -100
+    group: *fixesGroup
     msg:
       - *AlreadyInUFO4P
   - name: 'CompanionBugfixExperimental.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/2679' ]
-    global_priority: -100
+    group: *fixesGroup
     msg:
       - *AlreadyInUFO4P
   - name: 'NX Desk Crafting Fix.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/2662' ]
-    global_priority: -100
+    group: *fixesGroup
     msg:
       - *AlreadyInUFO4P
   - name: 'Vault-Tec Historical Preservation Initiative.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/12019' ]
-    global_priority: -90
+    global_group: *retconGroup
     dirty:
       - <<: *dirtyPlugin
         # Version 1.15
@@ -1158,7 +1179,7 @@ plugins:
   # Texture overhauls
   - name: 'OVT.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/1204' ]
-    global_priority: -105
+    group: *texturesGroup
 
   # Valdacil's Item Sorting
   - name: 'ValdacilsItemSorting-00-ValsPicks-DLCVersion.esp'
@@ -2887,29 +2908,29 @@ plugins:
 
   - name: 'OSM_AlternateStart_Protocol-InfiniteAnswer.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/13762' ]
-    global_priority: 70
+    group: *altStartGroup
     inc:
       - 'AnotherLife.esp'
       - 'StartMeUp.esp'
   - name: 'AnotherLife.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/14253' ]
-    global_priority: 70
+    group: *altStartGroup
     inc:
       - 'OSM_AlternateStart_Protocol-InfiniteAnswer.esp'
       - 'StartMeUp.esp'
   - name: 'StartMeUp.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/18946' ]
-    global_priority: 70
+    group: *altStartGroup
     inc:
       - 'OSM_AlternateStart_Protocol-InfiniteAnswer.esp'
       - 'AnotherLife.esp'
 
   - name: 'FO4Merged.esp'
-    global_priority: 80
+    group: *dynamicPatchesGroup
     tag:
       - NoMerge
   - name: 'Smashed Patch.esp'
-    global_priority: 80
+    group: *dynamicPatchesGroup
     after:
       - 'FO4Merged.esp'
     tag:
@@ -2919,7 +2940,7 @@ plugins:
         condition: 'file("Bashed Patch.*\.esp")'
         subs: [ 'Bashed Patch' ]
   - name: 'Bashed Patch.*\.esp'
-    global_priority: 80
+    group: *dynamicPatchesGroup
     after:
       - 'FO4Merged.esp'
     msg:
