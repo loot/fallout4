@@ -308,11 +308,23 @@ groups:
   - name: &retconGroup Vault-Tec Historical Preservation Initiative
     after: [ *fixesGroup ]
 
-  - name: default
+  - name: &underridesGroup Underrides
     after: [ *retconGroup ]
 
-  - name: &altStartGroup Alternate Start
+  - name: &scrapperGroup Scrap Corpse Highlighting
+    after: [ *underridesGroup ]
+
+  - name: default
+    after: [ *scrapperGroup ]
+
+  - name: &scrapGroup Scrap Everything
     after: [ default ]
+
+  - name: &lightingGroup Lighting
+    after: [ *scrapGroup ]
+
+  - name: &altStartGroup Alternate Start
+    after: [ *lightingGroup ]
 
   - name: &dynamicPatchesGroup Dynamic Patches
     after: [ *altStartGroup ]
@@ -1555,10 +1567,10 @@ plugins:
   # Other plugins
   - name: 'NoSharedDogmeatTemplate.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/18547' ]
-    priority: -20
+    group: *underridesGroup
   - name: 'Scrapper Corpse Highlighting.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/4380' ]
-    priority: -5
+    group: *scrapperGroup
     clean:
       # Version 8
       - crc: 0x904389D7
@@ -1576,14 +1588,14 @@ plugins:
         condition: 'active("DLCRobot.esm") and active("DLCCoast.esm") and not active("Scrapper Corpse Highlighting DLC Patch.esp") and checksum("Scrapper Corpse Highlighting.esp", 904389D7)'
   - name: 'Scrapper Corpse Highlighting DLC Patch.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/4380' ]
-    priority: -5
+    group: *scrapperGroup
     clean:
       # Version 8
       - crc: 0xA202C5FD
         util: FO4Edit v3.2
   - name: 'Scrapper Corpse Highlighting - DLCRobots Fixes.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/11516' ]
-    priority: -5
+    group: *scrapperGroup
     clean:
       # Version 1.0
       - crc: 0x0E726D6A
@@ -2879,17 +2891,17 @@ plugins:
         condition: 'active("MinutemenGeneralOutfitF.esp") and active("Armorsmith Extended.esp")'
   - name: 'Scrap Everything.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/5320' ]
-    priority: 5
+    group: *scrapGroup
     msg:
       - *obsolete
       - *doNotClean
   - name: 'Scrap Everything - Ultimate Edition.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/5320' ]
-    priority: 5
+    group: *scrapGroup
     msg: [ *doNotClean ]
   - name: 'Scrap Everything - (Core|Automatron|Far Harbor|Vault-Tec Workshop|Nuka World)\.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/5320' ]
-    priority: 5
+    group: *scrapGroup
     msg:
       - <<: *AlreadyInX
         condition: 'active("Scrap Everything - Ultimate Edition.esp")'
@@ -2900,7 +2912,7 @@ plugins:
       - *doNotClean
   - name: 'EnhancedLightsandFX.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/13596' ]
-    priority: 50
+    group: *lightingGroup
     clean:
       # Version 0.2.3
       - crc: 0xA7ADBD40
