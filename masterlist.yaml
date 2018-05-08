@@ -3183,6 +3183,86 @@ plugins:
     clean:
       - crc: 0x2e6f79c3
         util: FO4Edit v3.2.1
+  - name: 'BetterSettlersCleanFacePack.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/4772' ]
+    dirty:
+      - <<: *dirtyPlugin
+        # Version 2.0
+        crc: 0x7331d352
+        # FO4Edit 3.2.1
+        itm: 33
+  - name: 'BTInteriors_Project.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/4612' ]
+    dirty:
+      - <<: *dirtyPlugin
+        # Version 9.3.2
+        crc: 0xd66fe314
+        # FO4Edit 3.2.1
+        itm: 6
+  - name: 'BuildYourOwnVault.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/10603' ]
+    dirty:
+      - <<: *dirtyPlugin
+        # Version 1.71
+        crc: 0xea39cbc4
+        # FO4Edit 3.2.1
+        itm: 2
+  - name: 'Conquest.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/12511' ]
+    dirty:
+      - <<: *dirtyPlugin
+        # Version 1.3
+        crc: 0x21243775
+        # FO4Edit 3.2.1
+        itm: 10
+  - name: 'FunctionalDisplays-Collectibles.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/5080' ]
+    dirty:
+      - <<: *dirtyPlugin
+        # Version 0.2.9.2
+        crc: 0xa5ee4658
+        # FO4Edit 3.2.1
+        itm: 4
+  - name: 'MakeYourOwnSynths.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/16354' ]
+    dirty:
+      - <<: *dirtyPlugin
+        # Version 1.11
+        crc: 0xbc97890d
+        # FO4Edit 3.2.1
+        itm: 10
+  - name: 'Northland Diggers New.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/9710' ]
+    dirty:
+      - <<: *dirtyPlugin
+        # Version 1.4
+        crc: 0x3fef8e47
+        # FO4Edit 3.2.1
+        itm: 5
+  - name: 'Rangergearnew.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/9034' ]
+    dirty:
+      - <<: *dirtyPlugin
+        # Version 0.33
+        crc: 0x82272ac3
+        # FO4Edit 3.2.1
+        itm: 2
+  - name: 'th1nkEyeBot-NukaWorld.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/11459' ]
+    dirty:
+      - <<: *dirtyPlugin
+        # Version 1.6a
+        crc: 0x171964ce
+        # FO4Edit 3.2.1
+        itm: 1
+  - name: 'Vault-Tec Workshop Overhaul.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/17174' ]
+    dirty:
+      - <<: *dirtyPlugin
+        # Version 3.1
+        crc: 0x8fef7906
+        # FO4Edit 3.2.1
+        itm: 1
   - name: 'Scrap Everything.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/5320' ]
     priority: 5
