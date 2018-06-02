@@ -961,6 +961,51 @@ plugins:
       - 'ccFSVFO4002-MidCenturyModern.esl'
       - 'ccFRSFO4001-HandmadeShotgun.esl'
 
+  # There are a lot of Creation Club plugins, most are not in the masterlist,
+  # this one has been added because it was reported as causing a problem because
+  # it was sorted out of place.
+  - name: 'ccgcafo4004-factionws04gun.esl'
+    group: *dlcGroup
+    after:
+      - 'Fallout4.esm'
+      - 'DLCRobot.esm'
+      - 'DLCworkshop01.esm'
+      - 'DLCCoast.esm'
+      - 'DLCworkshop02.esm'
+      - 'DLCworkshop03.esm'
+      - 'DLCNukaWorld.esm'
+      - 'ccBGSFO4001-PipBoy(Black).esl'
+      - 'ccBGSFO4002-PipBoy(Blue).esl'
+      - 'ccBGSFO4003-PipBoy(Camo01).esl'
+      - 'ccBGSFO4004-PipBoy(Camo02).esl'
+      - 'ccBGSFO4006-PipBoy(Chrome).esl'
+      - 'ccBGSFO4012-PipBoy(Red).esl'
+      - 'ccBGSFO4014-PipBoy(White).esl'
+      - 'ccBGSFO4016-Prey.esl'
+      - 'ccBGSFO4017-Mauler.esl'
+      - 'ccBGSFO4018-GaussRiflePrototype.esl'
+      - 'ccBGSFO4019-ChineseStealthArmor.esl'
+      - 'ccBGSFO4020-PowerArmorSkin(Black).esl'
+      - 'ccBGSFO4022-PowerArmorSkin(Camo01).esl'
+      - 'ccBGSFO4023-PowerArmorSkin(Camo02).esl'
+      - 'ccBGSFO4025-PowerArmorSkin(Chrome).esl'
+      - 'ccBGSFO4038-HorseArmor.esl'
+      - 'ccBGSFO4039-TunnelSnakes.esl'
+      - 'ccBGSFO4041-DoomMarineArmor.esl'
+      - 'ccBGSFO4042-BFG.esl'
+      - 'ccBGSFO4043-DoomChainsaw.esl'
+      - 'ccBGSFO4044-HellfirePowerArmor.esl'
+      - 'ccFSVFO4001-ModularMilitaryBackpack.esl'
+      - 'ccFSVFO4002-MidCenturyModern.esl'
+      - 'ccFRSFO4001-HandmadeShotgun.esl'
+      - 'ccEEJFO4001-DecorationPack.esl'
+      - 'ccRZRFO4001-TunnelSnakes.esm'
+      - 'ccBGSFO4045-AdvArcCab.esl'
+      - 'ccFSVFO4003-Slocum.esl'
+      - 'ccGCAFO4001-FactionWS01Army.esl'
+      - 'ccGCAFO4002-FactionWS02ACat.esl'
+      - 'ccGCAFO4003-FactionWS03BOS.esl'
+
   ### Patches
   - name: 'Unofficial Fallout 4 Patch.esp'
     url:
