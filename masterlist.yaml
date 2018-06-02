@@ -336,7 +336,7 @@ plugins:
     dirty:
       - <<: *dirtyPlugin
         crc: 0xd69027ea
-        # FO4Edit 3.2.1
+        util: 'FO4Edit v3.2.1'
         itm: 45
         udr: 38
         nav: 1
@@ -347,7 +347,7 @@ plugins:
     dirty:
       - <<: *dirtyPlugin
         crc: 0x47bae27e
-        # FO4Edit 3.2.1
+        util: 'FO4Edit v3.2.1'
         itm: 6
   - name: 'DLCCoast.esm'
     group: *dlcGroup
@@ -357,7 +357,7 @@ plugins:
     dirty:
       - <<: *dirtyPlugin
         crc: 0xf1f28026
-        # FO4Edit 3.2.1
+        util: 'FO4Edit v3.2.1'
         itm: 75
         udr: 86
   - name: 'DLCworkshop02.esm'
@@ -369,7 +369,7 @@ plugins:
     dirty:
       - <<: *dirtyPlugin
         crc: 0x83abc821
-        # FO4Edit 3.2.1
+        util: 'FO4Edit v3.2.1'
         itm: 2
   - name: 'DLCworkshop03.esm'
     group: *dlcGroup
@@ -381,7 +381,7 @@ plugins:
     dirty:
       - <<: *dirtyPlugin
         crc: 0xe0089fbb
-        # FO4Edit 3.2.1
+        util: 'FO4Edit v3.2.1'
         itm: 18
         udr: 10
   - name: 'DLCNukaWorld.esm'
@@ -395,7 +395,7 @@ plugins:
     dirty:
       - <<: *dirtyPlugin
         crc: 0x43d25c56
-        # FO4Edit 3.2.1
+        util: 'FO4Edit v3.2.1'
         itm: 193
         udr: 418
         nav: 7
@@ -1275,7 +1275,7 @@ plugins:
     msg:
       - type: warn
         content: 'You are sorting armor by class and also using DLCs. You may want to use "ValdacilsItemSorting-ZZ-DLCArmorByClassOverride.esp" to enable the class sorting on DLC armor as well.'
-        condition: 'active("DLCRobot.esm") and active("DLCCoast.esm") and not active("ValdacilsItemSorting-ZZ-DLCArmorByClassOverride.esp")'
+        condition: 'active("DLCRobot.esm") and active("DLCCoast.esm") and not active("ValdacilsItemSorting-ZZ-DLCArmorByClassOverride.esp") and version("ValdacilsItemSorting-ArmorByClass.esp", "9.1", <)'
   - name: 'ValdacilsItemSorting-ArmorBySlot.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/3877' ]
     inc:
@@ -2446,6 +2446,10 @@ plugins:
         crc: 0x30156c76
         # FO4Edit 3.2
         itm: 1
+    clean:
+      # Version 4.02
+      - crc: 0x602cfd1a
+        util: FO4Edit v3.2.1
   - name: 'Armorsmith Extended.esp'
     # TODO: Add ´msg´s for DLC compat. patches
     url: [ 'http://www.nexusmods.com/fallout4/mods/2228' ]
@@ -2860,7 +2864,7 @@ plugins:
       - <<: *dirtyPlugin
         # Version 3.0
         crc: 0xd8d7f936
-        # FO4Edit 3.2.1
+        util: 'FO4Edit v3.2.1'
         itm: 10
         udr: 1
         nav: 1
@@ -2889,6 +2893,409 @@ plugins:
       - <<: *AlreadyInX
         subs: [ 'Armorsmith Extended.esp' ]
         condition: 'active("MinutemenGeneralOutfitF.esp") and active("Armorsmith Extended.esp")'
+  - name: 'Advanced Settlement Power.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/11165' ]
+    clean:
+      - crc: 0xa8369509
+        util: FO4Edit v3.2.1
+  - name: 'AkaTicTac.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/13593' ]
+    clean:
+      - crc: 0xdd2ee6ce
+        util: FO4Edit v3.2.1
+  - name: 'AutomatronSecuritron.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/11910' ]
+    clean:
+      - crc: 0xd7fe15d8
+        util: FO4Edit v3.2.1
+  - name: 'BasementLiving.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/10967' ]
+    clean:
+      - crc: 0xf1f6c00d
+        util: FO4Edit v3.2.1
+  - name: 'Better Vendor Stalls.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/9758' ]
+    clean:
+      - crc: 0x9196c900
+        util: FO4Edit v3.2.1
+  - name: 'Campsite.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/11734' ]
+    clean:
+      - crc: 0x24fe0e10
+        util: FO4Edit v3.2.1
+  - name: 'Campsite-AWKCR.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/11734' ]
+    clean:
+      - crc: 0xf6249e24
+        util: FO4Edit v3.2.1
+  - name: 'cartman1975_concrete-glass.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/18360' ]
+    clean:
+      - crc: 0x96311517
+        util: FO4Edit v3.2.1
+  - name: 'CBBE.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/15' ]
+    clean:
+      - crc: 0x5caf6c6d
+        util: FO4Edit v3.2.1
+  - name: 'CompactCrafting.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/18264' ]
+    clean:
+      - crc: 0xdbf4b300
+        util: FO4Edit v3.2.1
+  - name: 'CraftableAnimationMarkers.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/10012' ]
+    clean:
+      - crc: 0x6896ea2f
+        util: FO4Edit v3.2.1
+  - name: 'Crafting Workbench.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/2451' ]
+    clean:
+      - crc: 0x445fbdcc
+        util: FO4Edit v3.2.1
+  - name: 'Crafting Workbenches - Ammo.esp'
+    clean:
+      - crc: 0xf7a6f4dd
+        util: FO4Edit v3.2.1
+  - name: 'Crafting Workbenches - Ammo Expanded.esp'
+    clean:
+      - crc: 0x23c7fa31
+        util: FO4Edit v3.2.1
+  - name: 'Crafting Workbenches - Ammo Special.esp'
+    clean:
+      - crc: 0x1e937201
+        util: FO4Edit v3.2.1
+  - name: 'Crafting Workbenches - Automatron DLC.esp'
+    clean:
+      - crc: 0xc2186c6d
+        util: FO4Edit v3.2.1
+  - name: 'Crafting Workbenches - Junk Items.esp'
+    clean:
+      - crc: 0xf8a20363
+        util: FO4Edit v3.2.1
+  - name: 'Crafting Workbenches - Power Armor.esp'
+    clean:
+      - crc: 0xfc643692
+        util: FO4Edit v3.2.1
+  - name: 'Crafting Workbenches - Pre War and Manufactured.esp'
+    clean:
+      - crc: 0xc567fe75
+        util: FO4Edit v3.2.1
+  - name: 'EFF.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/11829' ]
+    clean:
+      - crc: 0xd2da60ba
+        util: FO4Edit v3.2.1
+  - name: 'FatManRadiation.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/8602' ]
+    clean:
+      - crc: 0x25d6a01d
+        util: FO4Edit v3.2.1
+  - name: 'HUDFramework.esm'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/20309' ]
+    clean:
+      - crc: 0x67dbde61
+        util: FO4Edit v3.2.1
+  - name: 'HushDogmeat.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/3855' ]
+    clean:
+      - crc: 0x114c4b29
+        util: FO4Edit v3.2.1
+  - name: 'Immersive HUD.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/20830' ]
+    clean:
+      - crc: 0xa0fea9d4
+        util: FO4Edit v3.2.1
+  - name: 'ImmersiveVendors.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/10039' ]
+    clean:
+      - crc: 0xe0ef332e
+        util: FO4Edit v3.2.1
+  - name: 'Lacy Underwear.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/15768' ]
+    clean:
+      - crc: 0x33fd1f4a
+        util: FO4Edit v3.2.1
+  - name: 'LongerPowerLines3x.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/2241' ]
+    clean:
+      - crc: 0x3b370dbb
+        util: FO4Edit v3.2.1
+  - name: 'ManufacturingExtended.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/15429' ]
+    clean:
+      - crc: 0x1972c847
+        util: FO4Edit v3.2.1
+  - name: 'ManufacturingExtendedFH.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/15429' ]
+    clean:
+      - crc: 0xfa61736e
+        util: FO4Edit v3.2.1
+  - name: 'MoreVaultRooms.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/16896' ]
+    clean:
+      - crc: 0xa673986e
+        util: FO4Edit v3.2.1
+  - name: 'Mosin.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/23258' ]
+    clean:
+      - crc: 0x82acb598
+        util: FO4Edit v3.2.1
+  - name: 'mso_sms.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/12032' ]
+    clean:
+      - crc: 0xcf19b06d
+        util: FO4Edit v3.2.1
+  - name: 'OctaviusSentibar_Labels.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/10271' ]
+    clean:
+      - crc: 0x6fd50368
+        util: FO4Edit v3.2.1
+  - name: 'PersonalPackAnimals.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/10713' ]
+    clean:
+      - crc: 0x0f25328f
+        util: FO4Edit v3.2.1
+  - name: 'Pictures Of Remembrance.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/16260' ]
+    clean:
+      - crc: 0xff372ce0
+        util: FO4Edit v3.2.1
+  - name: 'PortableRecycler.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/14110' ]
+    clean:
+      - crc: 0xdb2e4161
+        util: FO4Edit v3.2.1
+  - name: 'Quick Save.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/12593' ]
+    clean:
+      - crc: 0x75d50927
+        util: FO4Edit v3.2.1
+  - name: 'QuickTrade.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/16229' ]
+    clean:
+      - crc: 0x00bdcac7
+        util: FO4Edit v3.2.1
+  - name: 'Quieter Settlements - Contraptions.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/2819' ]
+    clean:
+      - crc: 0xaf6f47c9
+        util: FO4Edit v3.2.1
+  - name: 'Quieter Settlements - Vanilla.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/2819' ]
+    clean:
+      - crc: 0xc21d0b69
+        util: FO4Edit v3.2.1
+  - name: 'Quieter Settlements - Wasteland Workshop.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/2819' ]
+    clean:
+      - crc: 0x89108a50
+        util: FO4Edit v3.2.1
+  - name: 'RealTroughs.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/12945' ]
+    clean:
+      - crc: 0x297b45b3
+        util: FO4Edit v3.2.1
+  - name: 'RedWaveReloaded.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/22013' ]
+    clean:
+      - crc: 0xf6a64012
+        util: FO4Edit v3.2.1
+  - name: 'RepairSanctuary.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/8610' ]
+    clean:
+      - crc: 0xf4098a0b
+        util: FO4Edit v3.2.1
+  - name: 'ScrapDeadThings.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/6497' ]
+    clean:
+      - crc: 0xdb702179
+        util: FO4Edit v3.2.1
+  - name: 'SlowTime.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/9325' ]
+    clean:
+      - crc: 0xd4ff499d
+        util: FO4Edit v3.2.1
+  - name: 'SMH.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/15108' ]
+    clean:
+      - crc: 0x9407737e
+        util: FO4Edit v3.2.1
+  - name: 'SOU All-in-one.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/18176' ]
+    clean:
+      - crc: 0x5636b109
+        util: FO4Edit v3.2.1
+  - name: 'SpotlightFix-100-Shadow.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/11090' ]
+    clean:
+      - crc: 0x7ee85a99
+        util: FO4Edit v3.2.1
+  - name: 'SSEX.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/1145' ]
+    clean:
+      - crc: 0x30589a48
+        util: FO4Edit v3.2.1
+  - name: 'Tactical Flashlights.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/16172' ]
+    clean:
+      - crc: 0xfca0a86d
+        util: FO4Edit v3.2.1
+  - name: 'Tactical Flashlights - Settings.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/16172' ]
+    clean:
+      - crc: 0xf4034739
+        util: FO4Edit v3.2.1
+  - name: 'TheMobileMechanic.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/18262' ]
+    clean:
+      - crc: 0x4e79ba40
+        util: FO4Edit v3.2.1
+  - name: 'TimerPowerSwitch.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/10750' ]
+    clean:
+      - crc: 0x7a2a1391
+        util: FO4Edit v3.2.1
+  - name: 'TransferSettlements.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/22442' ]
+    clean:
+      - crc: 0x5fa7e916
+        util: FO4Edit v3.2.1
+  - name: 'TrueStormsFO4.esm'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/4472' ]
+    clean:
+      - crc: 0x55ff3f4c
+        util: FO4Edit v3.2.1
+  - name: 'TrueStormsFO4-FarHarbor.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/4472' ]
+    clean:
+      - crc: 0x3d8d8377
+        util: FO4Edit v3.2.1
+  - name: 'TrueStormsFO4-FarHarborExtraRads.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/4472' ]
+    clean:
+      - crc: 0x3aab7174
+        util: FO4Edit v3.2.1
+  - name: 'TrueStormsFO4-GlowingSeaExtraRads.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/4472' ]
+    clean:
+      - crc: 0x5a642319
+        util: FO4Edit v3.2.1
+  - name: 'Unlocked NW items.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/18088' ]
+    clean:
+      - crc: 0x1445010b
+        util: FO4Edit v3.2.1
+  - name: 'VltElevatorDLC.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/17641' ]
+    clean:
+      - crc: 0x6be58e71
+        util: FO4Edit v3.2.1
+  - name: 'WeatherAndTimeSwitch.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/18463' ]
+    clean:
+      - crc: 0x1d77791c
+        util: FO4Edit v3.2.1
+  - name: 'WestTekTacticalOptics.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/12220' ]
+    clean:
+      - crc: 0xc9710cb0
+        util: FO4Edit v3.2.1
+  - name: 'WestTekTacticalOptics-AWKCR.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/12220' ]
+    clean:
+      - crc: 0xa7e23eeb
+        util: FO4Edit v3.2.1
+  - name: 'WoodenPrefabsExtended.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/10140' ]
+    clean:
+      - crc: 0x50ce686a
+        util: FO4Edit v3.2.1
+  - name: 'zWGirlClothSimply.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/6935' ]
+    clean:
+      - crc: 0x2e6f79c3
+        util: FO4Edit v3.2.1
+  - name: 'BetterSettlersCleanFacePack.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/4772' ]
+    dirty:
+      - <<: *dirtyPlugin
+        # Version 2.0
+        crc: 0x7331d352
+        util: 'FO4Edit v3.2.1'
+        itm: 33
+  - name: 'BTInteriors_Project.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/4612' ]
+    dirty:
+      - <<: *dirtyPlugin
+        # Version 9.3.2
+        crc: 0xd66fe314
+        util: 'FO4Edit v3.2.1'
+        itm: 6
+  - name: 'BuildYourOwnVault.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/10603' ]
+    dirty:
+      - <<: *dirtyPlugin
+        # Version 1.71
+        crc: 0xea39cbc4
+        util: 'FO4Edit v3.2.1'
+        itm: 2
+  - name: 'Conquest.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/12511' ]
+    dirty:
+      - <<: *dirtyPlugin
+        # Version 1.3
+        crc: 0x21243775
+        util: 'FO4Edit v3.2.1'
+        itm: 10
+  - name: 'FunctionalDisplays-Collectibles.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/5080' ]
+    dirty:
+      - <<: *dirtyPlugin
+        # Version 0.2.9.2
+        crc: 0xa5ee4658
+        util: 'FO4Edit v3.2.1'
+        itm: 4
+  - name: 'MakeYourOwnSynths.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/16354' ]
+    dirty:
+      - <<: *dirtyPlugin
+        # Version 1.11
+        crc: 0xbc97890d
+        util: 'FO4Edit v3.2.1'
+        itm: 10
+  - name: 'Northland Diggers New.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/9710' ]
+    dirty:
+      - <<: *dirtyPlugin
+        # Version 1.4
+        crc: 0x3fef8e47
+        util: 'FO4Edit v3.2.1'
+        itm: 5
+  - name: 'Rangergearnew.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/9034' ]
+    dirty:
+      - <<: *dirtyPlugin
+        # Version 0.33
+        crc: 0x82272ac3
+        util: 'FO4Edit v3.2.1'
+        itm: 2
+  - name: 'th1nkEyeBot-NukaWorld.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/11459' ]
+    dirty:
+      - <<: *dirtyPlugin
+        # Version 1.6a
+        crc: 0x171964ce
+        util: 'FO4Edit v3.2.1'
+        itm: 1
+  - name: 'Vault-Tec Workshop Overhaul.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/17174' ]
+    dirty:
+      - <<: *dirtyPlugin
+        # Version 3.1
+        crc: 0x8fef7906
+        util: 'FO4Edit v3.2.1'
+        itm: 1
   - name: 'Scrap Everything.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/5320' ]
     group: *scrapGroup
@@ -2936,6 +3343,9 @@ plugins:
     inc:
       - 'OSM_AlternateStart_Protocol-InfiniteAnswer.esp'
       - 'AnotherLife.esp'
+    clean:
+      - crc: 0x0e2861fa
+        util: FO4Edit v3.2.1
 
   - name: 'FO4Merged.esp'
     group: *dynamicPatchesGroup
