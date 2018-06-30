@@ -2336,15 +2336,22 @@ plugins:
     url: [ 'http://www.nexusmods.com/fallout4/mods/4772' ]
     after:
       - 'MoreSkinColors.esp'
+      - 'AzarPonyHairstyles.esp'
+      - 'Eli_Armour_Compendium.esp'
+      - 'Scrap Everything - Core.esp'
+      - 'Scrap Everything - Ultimate Edition.esp'
     clean:
       - crc: 0x6A5FC68B
         util: 'FO4Edit v3.2'
   - name: 'BetterSettlersFarHarborPatchMortal.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/4772' ]
+    req:
+      - 'BetterSettlers.esp'
     after:
       - 'BetterSettlersNoLollygagging.esp'
       - 'BetterSettlersCleanFacePack.esp'
       - 'BetterSettlersCCAPack1.1b.esp'
+      - 'BetterSettlersCCAPack2.0.esp'
       - 'BetterSettlersAllFemale.esp'
       - 'BetterSettlersMortalPack.esp'
       - 'BetterSettlersMortalSoldiersPack.esp'
@@ -2353,16 +2360,26 @@ plugins:
     inc: [ 'BetterSettlersFarHarborPatch.esp' ]
   - name: 'BetterSettlersFarHarborPatch.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/4772' ]
+    req:
+      - 'BetterSettlers.esp'
     after:
       - 'BetterSettlersNoLollygagging.esp'
       - 'BetterSettlersCleanFacePack.esp'
       - 'BetterSettlersCCAPack1.1b.esp'
+      - 'BetterSettlersCCAPack2.0.esp'
       - 'BetterSettlersAllFemale.esp'
       - 'BetterSettlersMortalPack.esp'
       - 'BetterSettlersMortalSoldiersPack.esp'
       - 'BetterSettlersLightArmorOnly.esp'
       - 'BetterSettlersHeavyArmorOnly.esp'
     inc: [ 'BetterSettlersFarHarborPatchMortal.esp' ]
+  - name: 'BetterSettlersCCAPack2.0.esp'
+    url: [ 'http://www.nexusmods.com/fallout4/mods/4772' ]
+    req:
+      - 'BetterSettlers.esp'
+    after:
+      - 'BetterSettlersNoLollygagging.esp'
+      - 'BetterSettlersCleanFacePack.esp'
   - name: 'Orphans.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/16000/' ]
     after:
