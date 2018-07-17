@@ -1090,7 +1090,7 @@ plugins:
     group: *fixesGroup
     msg:
       - <<: *AlreadyInUFO4P
-        condition: 'version("Unofficial Fallout 4 Patch.esp", "2.0.2", >=)'
+        condition: 'active("Unofficial Fallout 4 Patch.esp") and version("Unofficial Fallout 4 Patch.esp", "2.0.2", >=)'
   - name: 'Remove Rads in Survival Fix.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/15392' ]
     group: *fixesGroup
