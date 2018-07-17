@@ -1085,6 +1085,12 @@ plugins:
     msg:
       - *AlreadyInUFO4P
       - *UsingSKE
+  - name: 'bugfix_maglocks_terminal_delay.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/26353' ]
+    group: *fixesGroup
+    msg:
+      - <<: *AlreadyInUFO4P
+        condition: 'version("Unofficial Fallout 4 Patch.esp", "2.0.2", >=)'
   - name: 'Remove Rads in Survival Fix.esp'
     url: [ 'http://www.nexusmods.com/fallout4/mods/15392' ]
     group: *fixesGroup
