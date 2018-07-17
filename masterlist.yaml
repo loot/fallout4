@@ -193,8 +193,8 @@ common:
 
 # Cleaning data
   - &dirtyPlugin
-    util: '[FO4Edit](http://www.nexusmods.com/fallout4/mods/2737)'
-    info: 'A cleaning guide is available [here](http://www.creationkit.com/index.php?title=TES5Edit_Cleaning_Guide_-_TES5Edit).'
+    util: '[FO4Edit](https://www.nexusmods.com/fallout4/mods/2737)'
+    info: 'A cleaning guide is available [here](https://www.creationkit.com/index.php?title=TES5Edit_Cleaning_Guide_-_TES5Edit).'
 
 globals:
   - type: say
@@ -271,7 +271,7 @@ globals:
 # F4SE plugins
   - <<: *requireF4SE
     subs: [ 'Achievements' ]
-    # url: [ 'http://www.nexusmods.com/fallout4/mods/12465' ]
+    # url: [ 'https://www.nexusmods.com/fallout4/mods/12465' ]
     condition: 'file("F4SE/Plugins/achievements.dll") and not file("../f4se_loader.exe")'
   - <<: *requireF4SE
     subs: [ 'Place Everywhere' ]
@@ -1010,7 +1010,7 @@ plugins:
   - name: 'Unofficial Fallout 4 Patch.esp'
     url:
       - 'https://afkmods.iguanadons.net/index.php?/files/file/1765-unofficial-fallout-4-patch/'
-      - 'http://www.nexusmods.com/fallout4/mods/4528'
+      - 'https://www.nexusmods.com/fallout4/mods/4528'
     group: *fixesGroup
     msg:
       - type: error
@@ -1020,67 +1020,67 @@ plugins:
         condition: 'version("Unofficial Fallout 4 Patch.esp", "2.0.1a", <)'
   # Mods obsoleted by official Bethesda patches
   - name: 'KH_DogArmorFix.esp '
-    url: [ 'http://www.nexusmods.com/fallout4/mods/15222' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/15222' ]
     group: *fixesGroup
     msg:
       - <<: *AlreadyInFO4
         condition: 'version("../Fallout4.exe", "1.6.0.0", >=)'
   - name: 'KH_DChelmetfix.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/15215' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/15215' ]
     group: *fixesGroup
     msg:
       - <<: *AlreadyInFO4
         condition: 'version("../Fallout4.exe", "1.6.0.0", >=)'
   - name: 'Targeting HUD Berry Mentats Fix.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/8910' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/8910' ]
     group: *fixesGroup
     msg:
       - <<: *AlreadyInFO4
         condition: 'version("../Fallout4.exe", "1.5.0.0", >=)'
   - name: 'Vault 81 Holding Cell Fix(| Alt)\.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/8033' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/8033' ]
     group: *fixesGroup
     msg:
       - <<: *AlreadyInFO4
         condition: 'version("../Fallout4.exe", "1.4.132.0", >=)'
   - name: 'RailroadGloryBugFix.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/6389' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/6389' ]
     group: *fixesGroup
     msg:
       - <<: *AlreadyInFO4
         condition: 'version("../Fallout4.exe", "1.3.47.0", >=)'
   - name: 'MakanarBigLeaguesFix.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/6185' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/6185' ]
     group: *fixesGroup
     msg:
       - <<: *AlreadyInFO4
         condition: 'version("../Fallout4.exe", "1.3.47.0", >=)'
   - name: 'MakanarPerkBigLeaguesFix.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/5957' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/5957' ]
     group: *fixesGroup
     msg:
       - <<: *AlreadyInFO4
         condition: 'version("../Fallout4.exe", "1.3.47.0", >=)'
   - name: 'ScroungerFix.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/3624' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/3624' ]
     group: *fixesGroup
     msg:
       - <<: *AlreadyInFO4
         condition: 'version("../Fallout4.exe", "1.4.132.0", >=)'
   - name: 'KillshotFix.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/1282' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/1282' ]
     group: *fixesGroup
     msg:
       - <<: *AlreadyInFO4
         condition: 'version("../Fallout4.exe", "1.3.47.0", >=)'
   # Mods included in the Unofficial Fallout 4 Patch
   - name: 'UnofficialFallout4Patch.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/4526' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/4526' ]
     group: *fixesGroup
     msg:
       - *AlreadyInUFO4P
   - name: 'Simple Bug Fixes.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/2142' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/2142' ]
     group: *fixesGroup
     msg:
       - *AlreadyInUFO4P
@@ -1092,144 +1092,144 @@ plugins:
       - <<: *AlreadyInUFO4P
         condition: 'active("Unofficial Fallout 4 Patch.esp") and version("Unofficial Fallout 4 Patch.esp", "2.0.2", >=)'
   - name: 'Remove Rads in Survival Fix.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/15392' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/15392' ]
     group: *fixesGroup
     msg:
       - *AlreadyInUFO4P
   - name: 'Idiot Savant Math Fix.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/13558' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/13558' ]
     group: *fixesGroup
     msg:
       - *AlreadyInUFO4P
   - name: 'hangmansalleypatch.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/12958' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/12958' ]
     group: *fixesGroup
     msg:
       - *AlreadyInUFO4P
   - name: 'Croup Manor NAVmesh Fix.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/12561' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/12561' ]
     group: *fixesGroup
     msg:
       - *AlreadyInUFO4P
   - name: 'InvisibleBridgeFix.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/12491' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/12491' ]
     group: *fixesGroup
     msg:
       - *AlreadyInUFO4P
   - name: 'DeirdreVendorFix.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/12305' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/12305' ]
     group: *fixesGroup
     msg:
       - *AlreadyInUFO4P
   - name: 'Combat Armor Weight Fix.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/11541' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/11541' ]
     group: *fixesGroup
     msg:
       - *AlreadyInUFO4P
   - name: 'LiveNLoveMagazinePerkPatch.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/11083' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/11083' ]
     group: *fixesGroup
     msg:
       - *AlreadyInUFO4P
   - name: 'Recruitable NPC Dialogue Fixes.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/11083' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/11083' ]
     group: *fixesGroup
     msg:
       - type: say
         content: 'The bug fixes of this mod are already included in the Unofficial Fallout 4 Patch. The mod still contains additional tweaks that you may wish to keep, so keep or remove the mod at your discretion.'
         condition: 'active("Unofficial Fallout 4 Patch.esp")'
   - name: 'DependencyQuestFix.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/10892' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/10892' ]
     group: *fixesGroup
     msg:
       - *AlreadyInUFO4P
   - name: 'fix_Perk_CombatMedic.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/10651' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/10651' ]
     group: *fixesGroup
     msg:
       - *AlreadyInUFO4P
   - name: 'ItemCapitalizationFixes.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/10416' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/10416' ]
     group: *fixesGroup
     msg:
       - *AlreadyInUFO4P
   - name: 'FixTeslaScience.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/10319' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/10319' ]
     group: *fixesGroup
     msg:
       - *AlreadyInUFO4P
   - name: 'SoldierToyFix.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/10229' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/10229' ]
     group: *fixesGroup
     msg:
       - *AlreadyInUFO4P
   - name: 'Talk Yourself Sober Fix.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/10173' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/10173' ]
     group: *fixesGroup
     msg:
       - *AlreadyInUFO4P
   - name: 'RFG - Curie Inspirational Sneak L&L Fix.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/10047' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/10047' ]
     group: *fixesGroup
     msg:
       - *AlreadyInUFO4P
   - name: 'RFG - Gunslinger Fix.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/10045' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/10045' ]
     group: *fixesGroup
     msg:
       - *AlreadyInUFO4P
   - name: 'Mole Rat Disease Fix.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/8908' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/8908' ]
     group: *fixesGroup
     msg:
       - *AlreadyInUFO4P
   - name: 'Pipe_Revolver_Tuned_Receiver.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/8570' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/8570' ]
     group: *fixesGroup
     msg:
       - *AlreadyInUFO4P
   - name: 'Worsins-T60-Headlamp-Fix.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/8164' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/8164' ]
     group: *fixesGroup
     msg:
       - *AlreadyInUFO4P
   - name: 'WeaveFix.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/5847' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/5847' ]
     group: *fixesGroup
     msg:
       - *AlreadyInUFO4P
   - name: 'Merchants stick with store - Unique Settlers.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/5343' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/5343' ]
     group: *fixesGroup
     msg:
       - *AlreadyInUFO4P
   - name: 'Glow Front Sight Ring Fix.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/5205' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/5205' ]
     group: *fixesGroup
     msg:
       - *AlreadyInUFO4P
   - name: 'SynthArmorFix.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/5054' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/5054' ]
     group: *fixesGroup
     msg:
       - *AlreadyInUFO4P
   - name: 'BoS Pilot Outfit Fix.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/3098' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/3098' ]
     group: *fixesGroup
     msg:
       - *AlreadyInUFO4P
   - name: 'CompanionBugfixExperimental.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/2679' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/2679' ]
     group: *fixesGroup
     msg:
       - *AlreadyInUFO4P
   - name: 'NX Desk Crafting Fix.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/2662' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/2662' ]
     group: *fixesGroup
     msg:
       - *AlreadyInUFO4P
   - name: 'Vault-Tec Historical Preservation Initiative.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/12019' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/12019' ]
     global_group: *retconGroup
     dirty:
       - <<: *dirtyPlugin
@@ -1241,18 +1241,18 @@ plugins:
 
   # Texture overhauls
   - name: 'OVT.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/1204' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/1204' ]
     group: *texturesGroup
 
   # Valdacil's Item Sorting
   - name: 'ValdacilsItemSorting-00-ValsPicks-DLCVersion.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/3877' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/3877' ]
     inc:
       - 'ValdacilsItemSorting-00-ValsPicks-NoDLCVersion.esp'
       - 'ValdacilsItemSorting-00-ValsPicks-DLCVersion-VanillaWeight.esp'
       - 'ValdacilsItemSorting-00-ValsPicks-NoDLCVersion-VanillaWeight.esp'
   - name: 'ValdacilsItemSorting-00-ValsPicks-NoDLCVersion.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/3877' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/3877' ]
     inc:
       - 'ValdacilsItemSorting-00-ValsPicks-DLCVersion.esp'
       - 'ValdacilsItemSorting-00-ValsPicks-DLCVersion-VanillaWeight.esp'
@@ -1262,13 +1262,13 @@ plugins:
         content: 'This version does not include modifications for DLC content. Consider getting the DLC version instead.'
         condition: 'active("DLCRobot.esm") and active("DLCworkshop01.esm") and active("DLCCoast.esm")'
   - name: 'ValdacilsItemSorting-00-ValsPicks-DLCVersion-VanillaWeight.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/3877' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/3877' ]
     inc:
       - 'ValdacilsItemSorting-00-ValsPicks-DLCVersion.esp'
       - 'ValdacilsItemSorting-00-ValsPicks-NoDLCVersion.esp'
       - 'ValdacilsItemSorting-00-ValsPicks-NoDLCVersion-VanillaWeight.esp'
   - name: 'ValdacilsItemSorting-00-ValsPicks-NoDLCVersion-VanillaWeight.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/3877' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/3877' ]
     inc:
       - 'ValdacilsItemSorting-00-ValsPicks-DLCVersion.esp'
       - 'ValdacilsItemSorting-00-ValsPicks-NoDLCVersion.esp'
@@ -1278,7 +1278,7 @@ plugins:
         content: 'This version does not include modifications for DLC content. Consider getting the DLC version instead.'
         condition: 'active("DLCRobot.esm") and active("DLCworkshop01.esm") and active("DLCCoast.esm")'
   - name: 'ValdacilsItemSorting-Weapons.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/3877' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/3877' ]
     msg:
       - &includedInValsPicks
         type: say
@@ -1289,38 +1289,38 @@ plugins:
         content: 'This plugin is also included in "Val''s Picks - Vanilla Weight".'
         condition: 'file("ValdacilsItemSorting-00-ValsPicks-(No?)DLCVersion-VanillaWeight\.esp")'
   - name: 'ValdacilsItemSorting-Aid.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/3877' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/3877' ]
     inc:
       - 'ValdacilsItemSorting-AidReducedWeight.esp'
       - 'ValdacilsItemSorting-AidWeightless.esp'
     msg:
       - *includedInValsPicksVanilla
   - name: 'ValdacilsItemSorting-AidReducedWeight.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/3877' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/3877' ]
     inc:
       - 'ValdacilsItemSorting-Aid.esp'
       - 'ValdacilsItemSorting-AidWeightless.esp'
     msg:
       - *includedInValsPicks
   - name: 'ValdacilsItemSorting-AidWeightless.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/3877' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/3877' ]
     inc:
       - 'ValdacilsItemSorting-Aid.esp'
       - 'ValdacilsItemSorting-AidReducedWeight.esp'
   - name: 'ValdacilsItemSorting-Ammo.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/3877' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/3877' ]
     inc:
       - 'ValdacilsItemSorting-AmmoWeightless.esp'
     msg:
       - *includedInValsPicksVanilla
   - name: 'ValdacilsItemSorting-AmmoWeightless.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/3877' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/3877' ]
     inc:
       - 'ValdacilsItemSorting-Ammo.esp'
     msg:
       - *includedInValsPicks
   - name: 'ValdacilsItemSorting-ArmorByClass.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/3877' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/3877' ]
     inc:
       - 'ValdacilsItemSorting-ArmorBySlot.esp'
     msg:
@@ -1328,31 +1328,31 @@ plugins:
         content: 'You are sorting armor by class and also using DLCs. You may want to use "ValdacilsItemSorting-ZZ-DLCArmorByClassOverride.esp" to enable the class sorting on DLC armor as well.'
         condition: 'active("DLCRobot.esm") and active("DLCCoast.esm") and not active("ValdacilsItemSorting-ZZ-DLCArmorByClassOverride.esp") and version("ValdacilsItemSorting-ArmorByClass.esp", "9.1", <)'
   - name: 'ValdacilsItemSorting-ArmorBySlot.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/3877' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/3877' ]
     inc:
       - 'ValdacilsItemSorting-ArmorByClass.esp'
     msg:
       - *includedInValsPicks
       - *includedInValsPicksVanilla
   - name: 'ValdacilsItemSorting-CosmeticsByClass.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/3877' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/3877' ]
     inc:
       - 'ValdacilsItemSorting-CosmeticsByType.esp'
     msg:
       - *includedInValsPicks
       - *includedInValsPicksVanilla
   - name: 'ValdacilsItemSorting-CosmeticsByType.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/3877' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/3877' ]
     inc:
       - 'ValdacilsItemSorting-CosmeticsByClass.esp'
   - name: 'ValdacilsItemSorting-ExplosivesSortBottom.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/3877' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/3877' ]
     inc:
       - 'ValdacilsItemSorting-ExplosivesSortTop.esp'
       - 'ValdacilsItemSorting-ExplosivesSortBottomWeightless.esp'
       - 'ValdacilsItemSorting-ExplosivesSortTopWeightless.esp'
   - name: 'ValdacilsItemSorting-ExplosivesSortTop.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/3877' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/3877' ]
     inc:
       - 'ValdacilsItemSorting-ExplosivesSortBottom.esp'
       - 'ValdacilsItemSorting-ExplosivesSortBottomWeightless.esp'
@@ -1361,19 +1361,19 @@ plugins:
       - *includedInValsPicks
       - *includedInValsPicksVanilla
   - name: 'ValdacilsItemSorting-ExplosivesSortBottomWeightless.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/3877' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/3877' ]
     inc:
       - 'ValdacilsItemSorting-ExplosivesSortBottom.esp'
       - 'ValdacilsItemSorting-ExplosivesSortTop.esp'
       - 'ValdacilsItemSorting-ExplosivesSortTopWeightless.esp'
   - name: 'ValdacilsItemSorting-ExplosivesSortTopWeightless.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/3877' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/3877' ]
     inc:
       - 'ValdacilsItemSorting-ExplosivesSortBottom.esp'
       - 'ValdacilsItemSorting-ExplosivesSortTop.esp'
       - 'ValdacilsItemSorting-ExplosivesSortBottomWeightless.esp'
   - name: 'ValdacilsItemSorting-Junk.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/3877' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/3877' ]
     inc:
       - 'ValdacilsItemSorting-Junk+DEF_INV.esp'
       - 'ValdacilsItemSorting-JunkWeightless.esp'
@@ -1381,7 +1381,7 @@ plugins:
       - 'ValdacilsItemSorting-JunkBetter.esp'
       - 'ValdacilsItemSorting-JunkBetter+DEF_INV.esp'
   - name: 'ValdacilsItemSorting-Junk+DEF_INV.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/3877' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/3877' ]
     inc:
       - 'ValdacilsItemSorting-Junk.esp'
       - 'ValdacilsItemSorting-JunkWeightless.esp'
@@ -1390,7 +1390,7 @@ plugins:
       - 'ValdacilsItemSorting-JunkBetter+DEF_INV.esp'
     # TODO: Figure out a way to detect if DEF_INV is installed.
   - name: 'ValdacilsItemSorting-JunkWeightless.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/3877' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/3877' ]
     inc:
       - 'ValdacilsItemSorting-Junk.esp'
       - 'ValdacilsItemSorting-Junk+DEF_INV.esp'
@@ -1398,7 +1398,7 @@ plugins:
       - 'ValdacilsItemSorting-JunkBetter.esp'
       - 'ValdacilsItemSorting-JunkBetter+DEF_INV.esp'
   - name: 'ValdacilsItemSorting-JunkWeightless+DEF_INV.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/3877' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/3877' ]
     inc:
       - 'ValdacilsItemSorting-Junk.esp'
       - 'ValdacilsItemSorting-Junk+DEF_INV.esp'
@@ -1407,7 +1407,7 @@ plugins:
       - 'ValdacilsItemSorting-JunkBetter+DEF_INV.esp'
     # TODO: Figure out a way to detect if DEF_INV is installed.
   - name: 'ValdacilsItemSorting-JunkBetter.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/3877' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/3877' ]
     inc:
       - 'ValdacilsItemSorting-Junk.esp'
       - 'ValdacilsItemSorting-Junk+DEF_INV.esp'
@@ -1418,7 +1418,7 @@ plugins:
       - *includedInValsPicks
       - *includedInValsPicksVanilla
   - name: 'ValdacilsItemSorting-JunkBetter+DEF_INV.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/3877' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/3877' ]
     inc:
       - 'ValdacilsItemSorting-Junk.esp'
       - 'ValdacilsItemSorting-Junk+DEF_INV.esp'
@@ -1427,31 +1427,31 @@ plugins:
       - 'ValdacilsItemSorting-JunkBetter.esp'
     # TODO: Figure out a way to detect if DEF_INV is installed.
   - name: 'ValdacilsItemSorting-Misc.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/3877' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/3877' ]
     inc:
       - 'ValdacilsItemSorting-MiscWeightless.esp'
     msg:
       - *includedInValsPicksVanilla
   - name: 'ValdacilsItemSorting-MiscWeightless.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/3877' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/3877' ]
     inc:
       - 'ValdacilsItemSorting-Misc.esp'
     msg:
       - *includedInValsPicks
   - name: 'ValdacilsItemSorting-Mods.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/3877' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/3877' ]
     inc:
       - 'ValdacilsItemSorting-ModsWeightless.esp'
     msg:
       - *includedInValsPicksVanilla
   - name: 'ValdacilsItemSorting-ModsWeightless.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/3877' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/3877' ]
     inc:
       - 'ValdacilsItemSorting-Mods.esp'
     msg:
       - *includedInValsPicks
   - name: 'ValdacilsItemSorting-NotJunk.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/3877' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/3877' ]
     inc:
       - 'ValdacilsItemSorting-NotJunkJustMoney.esp'
     after:
@@ -1465,7 +1465,7 @@ plugins:
       - *includedInValsPicks
       - *includedInValsPicksVanilla
   - name: 'ValdacilsItemSorting-NotJunkJustMoney.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/3877' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/3877' ]
     inc:
       - 'ValdacilsItemSorting-NotJunk.esp'
     after:
@@ -1476,47 +1476,47 @@ plugins:
       - 'ValdacilsItemSorting-JunkBetter.esp'
       - 'ValdacilsItemSorting-JunkBetter+DEF_INV.esp'
   - name: 'ValdacilsItemSorting-Perks.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/3877' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/3877' ]
     msg:
       - *includedInValsPicks
       - *includedInValsPicksVanilla
   - name: 'ValdacilsItemSorting-ZZ-DLCAutomatron.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/3877' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/3877' ]
     inc:
       - 'ValdacilsItemSorting-ZZ-DLCAutomatron-Weightless.esp'
     msg:
       - <<: *includedInValsPicksVanilla
         condition: 'file("ValdacilsItemSorting-00-ValsPicks-DLCVersion-VanillaWeight.esp")'
   - name: 'ValdacilsItemSorting-ZZ-DLCAutomatron-Weightless.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/3877' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/3877' ]
     inc:
       - 'ValdacilsItemSorting-ZZ-DLCAutomatron.esp'
     msg:
       - <<: *includedInValsPicks
         condition: 'file("ValdacilsItemSorting-00-ValsPicks-DLCVersion.esp")'
   - name: 'ValdacilsItemSorting-ZZ-DLCFarHarbor.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/3877' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/3877' ]
     inc:
       - 'ValdacilsItemSorting-ZZ-DLCFarHarbor-Weightless.esp'
     msg:
       - <<: *includedInValsPicksVanilla
         condition: 'file("ValdacilsItemSorting-00-ValsPicks-DLCVersion-VanillaWeight.esp")'
   - name: 'ValdacilsItemSorting-ZZ-DLCFarHarbor-Weightless.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/3877' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/3877' ]
     inc:
       - 'ValdacilsItemSorting-ZZ-DLCFarHarbor.esp'
     msg:
       - <<: *includedInValsPicks
         condition: 'file("ValdacilsItemSorting-00-ValsPicks-DLCVersion.esp")'
   - name: 'ValdacilsItemSorting-ZZ-DLCRuleArmorByClassOverride.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/3877' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/3877' ]
     after:
       - 'ValdacilsItemSorting-ZZ-DLCAutomatron.esp'
       - 'ValdacilsItemSorting-ZZ-DLCAutomatron-Weightless.esp'
       - 'ValdacilsItemSorting-ZZ-DLCFarHarbor.esp'
       - 'ValdacilsItemSorting-ZZ-DLCFarHarbor-Weightless.esp'
   - name: 'ValdacilsItemSorting-ZZ-DLCArmorByClassOverride.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/3877' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/3877' ]
     after:
       - 'ValdacilsItemSorting-ArmorByClass.esp'
       - 'ValdacilsItemSorting-ZZ-DLCAutomatron.esp'
@@ -1524,16 +1524,16 @@ plugins:
       - 'ValdacilsItemSorting-ZZ-DLCFarHarbor.esp'
       - 'ValdacilsItemSorting-ZZ-DLCFarHarbor-Weightless.esp'
   - name: 'VIS-PatchChemRedux.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/3877' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/3877' ]
     req:
       - 'chem redux.esp'
   - name: 'VIS-PatchChemReduxWeightless.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/3877' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/3877' ]
     req:
       - 'chem redux.esp'
   # Radrose Usability Enhancements
   - name: 'Radrose Usability Enhancements.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/18098' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/18098' ]
     after:
       # Valdacil's Item Sorting plugins
       - 'ValdacilsItemSorting-00-ValsPicks-DLCVersion.esp'
@@ -1597,11 +1597,11 @@ plugins:
       - crc: 0x7FE05D2C
         util: 'FO4Edit v3.2'
   - name: 'Radrose Usability - .+\.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/18098' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/18098' ]
     req:
       - 'Radrose Usability Enhancements.esp'
   - name: 'Radrose - Valdacil Patch - .+\.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/18098' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/18098' ]
     req:
       - 'Radrose Usability Enhancements.esp'
     after:
@@ -1612,15 +1612,15 @@ plugins:
       - 'Radrose Usability - Workbench Perk Requirements + Armorsmith.esp'
       - 'Radrose Usability - Workbench Perk Requirements.esp'
   - name: 'FROST VIS Patch.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/24461' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/24461' ]
     req:
       - 'Radrose Usability Enhancements.esp'
   # Other plugins
   - name: 'NoSharedDogmeatTemplate.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/18547' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/18547' ]
     group: *underridesGroup
   - name: 'Scrapper Corpse Highlighting.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/4380' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/4380' ]
     group: *scrapperGroup
     clean:
       # Version 8
@@ -1630,22 +1630,22 @@ plugins:
       - <<: *hasPluginPatch
         subs:
           - 'Automatron'
-          - '[DLCRobots Fix](http://www.nexusmods.com/fallout4/mods/11516)'
+          - '[DLCRobots Fix](https://www.nexusmods.com/fallout4/mods/11516)'
         condition: 'active("DLCRobot.esm") and not active("DLCCoast.esm") and not active("Scrapper Corpse Highlighting - DLCRobots Fixes.esp") and checksum("Scrapper Corpse Highlighting.esp", 904389D7)'
       - <<: *hasPluginPatch
         subs:
           - 'Automatron & Far Harbor'
-          - '[DLC Patch](http://www.nexusmods.com/fallout4/mods/4380)'
+          - '[DLC Patch](https://www.nexusmods.com/fallout4/mods/4380)'
         condition: 'active("DLCRobot.esm") and active("DLCCoast.esm") and not active("Scrapper Corpse Highlighting DLC Patch.esp") and checksum("Scrapper Corpse Highlighting.esp", 904389D7)'
   - name: 'Scrapper Corpse Highlighting DLC Patch.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/4380' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/4380' ]
     group: *scrapperGroup
     clean:
       # Version 8
       - crc: 0xA202C5FD
         util: FO4Edit v3.2
   - name: 'Scrapper Corpse Highlighting - DLCRobots Fixes.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/11516' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/11516' ]
     group: *scrapperGroup
     clean:
       # Version 1.0
@@ -1656,7 +1656,7 @@ plugins:
         subs: [ 'Scrapper Corpse Highlighting DLC Patch.esp' ]
         condition: 'active("Scrapper Corpse Highlighting DLC Patch.esp") and active("DLCCoast.esm")'
   - name: 'PipBoyShadows.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/281' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/281' ]
     inc:
       - 'LongerDistanceLightsNoShadows.esp' # Untested - inc target doesn't include the shadows.
       - name: 'LongerDistanceLightsWithPipBoyShadows.esp'
@@ -1664,27 +1664,27 @@ plugins:
       - name: 'LongerDistanceLightsWithPipBoyShadows - No PipShadows.esp'
         display: '"LongerDistanceLightsWithPipBoyShadows - No PipShadows.esp" includes "PipBoyShadows.esp".'
   - name: 'LongerDistanceLightsNoShadows.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/1790' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/1790' ]
     inc:
       - 'PipBoyShadows.esp' # Untested - this plugin doesn't include the shadows
       - 'LongerDistanceLightsWithPipBoyShadows.esp'
       - 'LongerDistanceLightsWithPipBoyShadows - No PipShadows.esp'
   - name: 'LongerDistanceLightsWithPipBoyShadows.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/1790' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/1790' ]
     inc:
       - 'LongerDistanceLightsNoShadows.esp'
       - 'LongerDistanceLightsWithPipBoyShadows - No PipShadows.esp'
       - name: 'PipBoyShadows.esp'
         display: '"PipBoyShadows.esp" is included in "LongerDistanceLightsWithPipBoyShadows.esp".'
   - name: 'LongerDistanceLightsWithPipBoyShadows - No PipShadows.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/1790' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/1790' ]
     inc:
       - 'LongerDistanceLightsNoShadows.esp'
       - 'LongerDistanceLightsWithPipBoyShadows.esp'
       - name: 'PipBoyShadows.esp'
         display: '"PipBoyShadows.esp" is included in "LongerDistanceLightsWithPipBoyShadows - No PipShadows.esp".'
   - name: 'Survival((90|75|65|50|25|10)LESS|Normal|(10|20|30|40|50|60|70|80|90|100|150|200)more)PCDamage\.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/222' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/222' ]
     inc:
       - 'Realistic Survival Damage.esp'
     msg:
@@ -1692,7 +1692,7 @@ plugins:
         condition: 'many("Survival((90|75|65|50|25|10)LESS|Normal|(10|20|30|40|50|60|70|80|90|100|150|200)more)PCDamage\.esp")'
         subs: [ 'Survival X PCDamage.esp' ]
   - name: 'Survival((50|25)LESS|Normal|(50|100|150|200|250|300|350|400|450|500)more)EnemyDamage\.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/222' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/222' ]
     inc:
       - 'Realistic Survival Damage.esp'
     msg:
@@ -1700,139 +1700,139 @@ plugins:
         condition: 'many("Survival((50|25)LESS|Normal|(50|100|150|200|250|300|350|400|450|500)more)EnemyDamage\.esp")'
         subs: [ 'Survival X EnemyDamage.esp' ]
   - name: 'Realistic Survival Damage.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/333' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/333' ]
     msg:
       - type: error
         content: 'Realistic Survival Damage.esp alters the same game variables as the Survival X PC/EnemyDamage.esps. You should use either one or the other.'
         condition: 'file("Survival((90|75|65|50|25|10)LESS|Normal|(10|20|30|40|50|60|70|80|90|100|150|200|250|300|350|400|450|500)more)(PC|Enemy)Damage\.esp")'
   - name: 'Rainy_(25|50|75|100)\.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/1812' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/1812' ]
     msg:
       - <<: *useOnlyOneX
         condition: 'many("Rainy_(25|50|75|100)\.esp")'
         subs: [ 'Rainy_X.esp' ]
   - name: '(Ambient|Strong|Hardcore|Deadly) Radiation Storms\.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/829' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/829' ]
     msg:
       - <<: *useOnlyOneX
         condition: 'many("(Ambient|Strong|Hardcore|Deadly) Radiation Storms\.esp")'
         subs: [ 'Hardcore Radiation Storm .esp' ]
   - name: '(Higher|Deeper) Female Protagonist Voice (\((Japanese|Spanish|French|German)\) )?- Type [A-U]\d?\.esp'
     url:
-      - 'http://www.nexusmods.com/fallout4/mods/288' # Higher
-      - 'http://www.nexusmods.com/fallout4/mods/6305' # Higher, Japanese
-      - 'http://www.nexusmods.com/fallout4/mods/5571' # Higher, Spanish
-      - 'http://www.nexusmods.com/fallout4/mods/4244' # Higher, French
-      - 'http://www.nexusmods.com/fallout4/mods/7299' # Higher, German
-      - 'http://www.nexusmods.com/fallout4/mods/5088' # Deeper
-      - 'http://www.nexusmods.com/fallout4/mods/7650' # Deeper, Japanese
+      - 'https://www.nexusmods.com/fallout4/mods/288' # Higher
+      - 'https://www.nexusmods.com/fallout4/mods/6305' # Higher, Japanese
+      - 'https://www.nexusmods.com/fallout4/mods/5571' # Higher, Spanish
+      - 'https://www.nexusmods.com/fallout4/mods/4244' # Higher, French
+      - 'https://www.nexusmods.com/fallout4/mods/7299' # Higher, German
+      - 'https://www.nexusmods.com/fallout4/mods/5088' # Deeper
+      - 'https://www.nexusmods.com/fallout4/mods/7650' # Deeper, Japanese
     msg:
       - <<: *useOnlyOneX
         condition: 'many("(Higher|Deeper) Female Protagonist Voice (\((Japanese|Spanish|French|German)\) )?- Type [A-U]\d?\.esp")'
         subs: [ 'Higher or Deeper Female Protagonist Voice plugin' ]
   - name: '(Deeper|Higher) Male Protagonist Voice (\((Japanese|Spanish)\) )?- Type [A-U]\d?\.esp'
     url:
-      - 'http://www.nexusmods.com/fallout4/mods/1597' # Deeper
-      - 'http://www.nexusmods.com/fallout4/mods/7443' # Deeper, Japanese
-      - 'http://www.nexusmods.com/fallout4/mods/3249' # Higher
-      - 'http://www.nexusmods.com/fallout4/mods/7535' # Higher, Japanese
-      - 'http://www.nexusmods.com/fallout4/mods/7158' # Higher, Spanish
+      - 'https://www.nexusmods.com/fallout4/mods/1597' # Deeper
+      - 'https://www.nexusmods.com/fallout4/mods/7443' # Deeper, Japanese
+      - 'https://www.nexusmods.com/fallout4/mods/3249' # Higher
+      - 'https://www.nexusmods.com/fallout4/mods/7535' # Higher, Japanese
+      - 'https://www.nexusmods.com/fallout4/mods/7158' # Higher, Spanish
     msg:
       - <<: *useOnlyOneX
         condition: 'many("(Deeper|Higher) Male Protagonist Voice (\((Japanese|Spanish)\) )?- Type [A-U]\d?\.esp")'
         subs: [ 'Deeper or Higher Male Protagonist Voice plugin' ]
   - name: 'Higher Voice For Curie (\((Japanese)\) )?- Type [A-U]\d(-(R|S))?\.esp'
     url:
-      - 'http://www.nexusmods.com/fallout4/mods/5978' # English
-      - 'http://www.nexusmods.com/fallout4/mods/6810' # Japanese
+      - 'https://www.nexusmods.com/fallout4/mods/5978' # English
+      - 'https://www.nexusmods.com/fallout4/mods/6810' # Japanese
     msg:
       - <<: *useOnlyOneX
         condition: 'many("Higher Voice For Curie (\(Japanese\) )?- Type [A-U]\d(-(R|S))?\.esp")'
         subs: [ 'Higher Voice For Curie plugin' ]
   - name: '(Higher|Deeper) Voice For Piper (\(Japanese\) )?- Type [A-U]\d\.esp'
     url:
-      - 'http://www.nexusmods.com/fallout4/mods/6560' # Higher, English
-      - 'http://www.nexusmods.com/fallout4/mods/6492' # Higher, Japanese
-      - 'http://www.nexusmods.com/fallout4/mods/8659' # Deeper, English
+      - 'https://www.nexusmods.com/fallout4/mods/6560' # Higher, English
+      - 'https://www.nexusmods.com/fallout4/mods/6492' # Higher, Japanese
+      - 'https://www.nexusmods.com/fallout4/mods/8659' # Deeper, English
     msg:
       - <<: *useOnlyOneX
         condition: 'many("(Higher|Deeper) Voice For Piper - Type [A-U]\d\.esp")'
         subs: [ 'Higher/Deeper Voice For Piper plugin' ]
   - name: 'Deeper Voice For Strong - Type A\d\.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/3876' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/3876' ]
     msg:
       - <<: *useOnlyOneX
         condition: 'many("Deeper Voice For Strong - Type A\d\.esp")'
         subs: [ 'Deeper Voice For Strong plugin' ]
   - name: 'Deeper Voice For Super Mutants - Type A\d\.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/3884' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/3884' ]
     msg:
       - <<: *useOnlyOneX
         condition: 'many("Deeper Voice For Super Mutants - Type A\d\.esp")'
         subs: [ 'Deeper Voice For Super Mutants plugin' ]
   - name: 'Deeper Voice For Preston - Type A\d\.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/7701' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/7701' ]
     msg:
       - <<: *useOnlyOneX
         condition: 'many("Deeper Voice For Preston - Type A\d\.esp")'
         subs: [ 'Deeper Voice For Preston plugin' ]
   - name: 'Deeper Voice For X6-88 - Type A\d\.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/7712' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/7712' ]
     msg:
       - <<: *useOnlyOneX
         condition: 'many("Deeper Voice For X6-88 - Type A\d\.esp")'
         subs: [ 'Deeper Voice For X6-88 plugin' ]
   - name: '(Higher|Deeper) Voice For Cait - Type A\d\.esp'
     url:
-      - 'http://www.nexusmods.com/fallout4/mods/6743' # Higher
-      - 'http://www.nexusmods.com/fallout4/mods/8634' # Deeper
+      - 'https://www.nexusmods.com/fallout4/mods/6743' # Higher
+      - 'https://www.nexusmods.com/fallout4/mods/8634' # Deeper
     msg:
       - <<: *useOnlyOneX
         condition: 'many("(Higher|Deeper) Voice For Cait - Type A\d\.esp")'
         subs: [ 'Higher/Deeper Voice For Cait plugin' ]
   - name: 'DeadlyRadstorms_Climate_\d+\.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/829' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/829' ]
     msg:
       - <<: *useOnlyOneX
         condition: 'many("DeadlyRadstorms_Climate_\d+\.esp")'
         subs: [ 'DeadlyRadstorms_Climate .esp' ]
   - name: 'DeadlyRadstorms_Damage_\d+\.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/829' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/829' ]
     msg:
       - <<: *useOnlyOneX
         condition: 'many("DeadlyRadstorms_Damage_\d+\.esp")'
         subs: [ 'DeadlyRadstorms_Damage .esp' ]
   - name: 'Simple Bug Fixes - Better Item Sorting Patch.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/2142' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/2142' ]
     req:
       - 'Simple Bug Fixes.esp'
   - name: 'NoGunSneakAttackMultiplier.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/2114' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/2114' ]
     msg:
       - <<: *obsolete
         condition: 'version("NoGunSneakAttackMultiplier.esp", "1.1", <)'
   - name: 'Freso''s TTYM - Think to Yourself Messages for FO4.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/2955' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/2955' ]
     msg:
       - <<: *obsolete
         condition: 'version("Freso''s TTYM - Think to Yourself Messages for FO4.esp", "0.3", <)'
   - name: 'ShaikujinSettlementAttacked.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/4106' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/4106' ]
     inc:
       - 'ShaikujinSettlementAttacked_NoInfo.esp'
       - 'ChimeAttack.esp'
   - name: 'ShaikujinSettlementAttacked_NoInfo.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/4106' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/4106' ]
     inc:
       - 'ShaikujinSettlementAttacked.esp'
       - 'ChimeAttack.esp'
   - name: 'ChimeAttack.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/4106' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/4106' ]
     inc:
       - 'ShaikujinSettlementAttacked.esp'
       - 'ShaikujinSettlementAttacked_NoInfo.esp'
   - name: 'DarkerNights.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/191' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/191' ]
     after:
       # Patches provided for plugins below
       - 'FogOut.esp'
@@ -1851,48 +1851,48 @@ plugins:
       - <<: *obsolete
         condition: 'version("DarkerNights.esp", "1.11", <)'
   - name: 'True Nights v0(1|2|3)\.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/9253' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/9253' ]
     inc:
       - 'DarkerNights.esp'
   - name: 'Synth Armor Fix.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/6424' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/6424' ]
     msg:
       - <<: *AlreadyInX
         condition: 'active("ArmorKeywords.esm")'
         subs: [ 'ArmorKeywords.esm' ]
   - name: 'WET Clearer.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/244' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/244' ]
     inc: [ 'WET Murkier.esp' , 'WET.esp' ]
   - name: 'WET Murkier.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/244' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/244' ]
     inc: [ 'WET Clearer.esp', 'WET.esp' ]
   - name: 'WET.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/244' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/244' ]
     inc: [ 'WET Clearer.esp', 'WET Murkier.esp' ]
   - name: 'Lasers Have No Recoil.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/9417/' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/9417/' ]
     inc: [ 'Concentrated Splitter.esp' ]
   - name: 'LasersNoRecoil - Beam Splitters Patch.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/9417/' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/9417/' ]
     inc: [ 'Concentrated Splitter - No Recoil.esp' ]
   - name: 'Concentrated Splitter.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/10193/' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/10193/' ]
     inc:
       - 'Concentrated Splitter - No Recoil.esp'
       - 'Lasers Have No Recoil.esp'
   - name: 'Concentrated Splitter - No Recoil.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/10193' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/10193' ]
     inc: [ 'Concentrated Splitter.esp' ]
     req: [ 'Lasers Have No Recoil.esp' ]
   - name: 'OCDWorkshopDLCPatch.esp'
     msg:
       - type: error
-        content: 'Use OCDecorator.esp Wasteland Workshop version instead [Download](http://www.nexusmods.com/fallout4/mods/4270)'
+        content: 'Use OCDecorator.esp Wasteland Workshop version instead [Download](https://www.nexusmods.com/fallout4/mods/4270)'
       - *UsingSKE
   - name: 'OCDecorator_FarHarbor.esp'
     msg:
       - type: error
-        content: 'Use ''OCD FarHarborDLC.esp'' instead [Download](http://www.nexusmods.com/fallout4/mods/4270)'
+        content: 'Use ''OCD FarHarborDLC.esp'' instead [Download](https://www.nexusmods.com/fallout4/mods/4270)'
       - *UsingSKE
   - name: 'WW_SK_PATCH.esp'
     msg:
@@ -2294,7 +2294,7 @@ plugins:
   - name: 'BuildingBlocks-Foundations.esp'
     msg:
       - type: error
-        content: 'This mod overwrites many vanilla settlement menus. Detailed instructions to resolve conflicts can be found [here](http://www.creationkit.com/fallout4/index.php?title=Building_Blocks_Foundations).'
+        content: 'This mod overwrites many vanilla settlement menus. Detailed instructions to resolve conflicts can be found [here](https://www.creationkit.com/fallout4/index.php?title=Building_Blocks_Foundations).'
         condition: 'checksum("BuildingBlocks-Foundations.esp",2924F338) and version("../Fallout4.exe", "1.5.157.0", >=)'
   - name: 'Z_Horizon_Patch_Homemaker.esp'
     msg:
@@ -2307,19 +2307,19 @@ plugins:
         content: 'This patch no longer works with SKE 1.43 or greater because, as of Homemaker 1.50 or greater there is no Homemaker - SKE patch.'
         condition: 'version("SettlementKeywords.esm", "1.43", >=)'
   - name: 'BetterJunkFences.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/9000' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/9000' ]
     inc: [ 'JunkWalls_More_Snaps.esp' ]
   - name: 'JunkWalls_More_Snaps.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/13522' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/13522' ]
     inc: [ 'BetterJunkFences.esp' ]
   - name: 'BrighterSettlementLights(_(ExtraBrightv1\.1|LessHarsh|LongAndSoft)| - (Extra Bright( v1\.1)?|Less Harsh))?\.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/2494' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/2494' ]
     msg:
       - <<: *useOnlyOneX
         condition: 'many("BrighterSettlementLights(_(ExtraBrightv1\.1|LessHarsh|LongAndSoft)| - (Extra Bright( v1\.1)?|Less Harsh))?\.esp")'
         subs: [ 'BrighterSettlementLights .esp' ]
   - name: 'ConstructionLight_\w+\.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/2474' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/2474' ]
     after:
       - 'BrighterSettlementLights.esp'
       - 'BrighterSettlementLights - Extra Bright.esp'
@@ -2333,13 +2333,13 @@ plugins:
         condition: 'many("ConstructionLight_\w+\.esp")'
         subs: [ 'ConstructionLight .esp' ]
   - name: 'Vivid Waters.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/16425' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/16425' ]
     after:
       - 'WET.esp'
       - 'WET Murkier.esp'
       - 'WET Clearer.esp'
   - name: 'BetterSettlers.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/4772' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/4772' ]
     after:
       - 'MoreSkinColors.esp'
       - 'AzarPonyHairstyles.esp'
@@ -2350,7 +2350,7 @@ plugins:
       - crc: 0x6A5FC68B
         util: 'FO4Edit v3.2'
   - name: 'BetterSettlersFarHarborPatchMortal.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/4772' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/4772' ]
     req:
       - 'BetterSettlers.esp'
     after:
@@ -2365,7 +2365,7 @@ plugins:
       - 'BetterSettlersHeavyArmorOnly.esp'
     inc: [ 'BetterSettlersFarHarborPatch.esp' ]
   - name: 'BetterSettlersFarHarborPatch.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/4772' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/4772' ]
     req:
       - 'BetterSettlers.esp'
     after:
@@ -2380,74 +2380,74 @@ plugins:
       - 'BetterSettlersHeavyArmorOnly.esp'
     inc: [ 'BetterSettlersFarHarborPatchMortal.esp' ]
   - name: 'BetterSettlersCCAPack2.0.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/4772' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/4772' ]
     req:
       - 'BetterSettlers.esp'
     after:
       - 'BetterSettlersNoLollygagging.esp'
       - 'BetterSettlersCleanFacePack.esp'
   - name: 'Orphans.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/16000/' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/16000/' ]
     after:
       - 'DiverseChildren.esp'
   - name: 'LegendaryCloth.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/3694/' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/3694/' ]
     msg:
       - <<: *AlreadyInX
         condition: 'active("Armorsmith Extended.esp")'
         subs: [ 'Armorsmith Extended' ]
   - name: 'SimSettlements_VIS.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/21872' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/21872' ]
     msg:
       - type: warn
         content: "Sim Settlements has native support for Valdacil's Item Sorting since version 2.0. If you're using a version of Sim Settlements later than this, consider removing this mod."
   - name: 'llamaCompanionHeather.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/23273' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/23273' ]
     msg:
       - <<: *hasPluginPatch
         subs:
           - 'Full Dialogue Interface'
-          - '[Heather Casdin patch](http://www.nexusmods.com/fallout4/mods/24314)'
+          - '[Heather Casdin patch](https://www.nexusmods.com/fallout4/mods/24314)'
         condition: '(checksum("interface/dialoguemenu.swf", FD1941F1) or checksum("interface/multiactivatemenu.swf", 7A51282D)) and checksum("llamaCompanionHeather.esp", 1FD60CC1)'
       - <<: *hasPluginPatch
         subs:
           - "Valdacil's Item Sorting"
-          - '[Heather Casdin patch](http://www.nexusmods.com/fallout4/mods/24314)'
+          - '[Heather Casdin patch](https://www.nexusmods.com/fallout4/mods/24314)'
         condition: 'active("ValdacilsItemSorting-.+\.esp") and not active("llamaCompanionHeather-VIS(-AE)? Patch\.esp")'
       - <<: *hasPluginPatch
         subs:
           - "Bhaal's Better Sorting"
-          - '[Heather Casdin patch](http://www.nexusmods.com/fallout4/mods/24314)'
+          - '[Heather Casdin patch](https://www.nexusmods.com/fallout4/mods/24314)'
         condition: 'active("BBS000-F04-(MANDATORY|Ultimate)(-.*)?\.esp") and not active("llamaCompanionHeather-BBS(-AE)? Patch\.esp")'
       - <<: *hasPluginPatch
         subs:
           - 'Armorsmith Extended'
-          - '[Heather Casdin patch](http://www.nexusmods.com/fallout4/mods/24314)'
+          - '[Heather Casdin patch](https://www.nexusmods.com/fallout4/mods/24314)'
         condition: 'active("Armorsmith Extended.esp") and not active("llamaCompanionHeather-((BBS|VIS)-)?AE Patch\.esp")'
   - name: 'llamaCompanionHeather-BBS(-AE)? Patch\.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/24314' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/24314' ]
     inc:
       - 'llamaCompanionHeather-VIS Patch.esp'
       - 'llamaCompanionHeather-VIS-AE Patch.esp'
   - name: 'llamaCompanionHeather-VIS(-AE)? Patch\.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/24314' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/24314' ]
     inc:
       - 'llamaCompanionHeather-BBS Patch.esp'
       - 'llamaCompanionHeather-BBS-AE Patch.esp'
   - name: 'THBrows.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/6186' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/6186' ]
     msg:
       - <<: *AlreadyInX
         condition: 'active("LooksMenu Customization Compendium.esp")'
         subs: [ 'LooksMenu Customization Compendium.esp' ]
   - name: 'Better Settlement Defence.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/20137' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/20137' ]
     msg:
       - type: error
-        content: 'This mods has a script conflict with the Unofficial Fallout 4 Patch. Be sure to get the UFO4P patched version from [the mod page](http://www.nexusmods.com/fallout4/mods/20137).'
+        content: 'This mods has a script conflict with the Unofficial Fallout 4 Patch. Be sure to get the UFO4P patched version from [the mod page](https://www.nexusmods.com/fallout4/mods/20137).'
         condition: 'active("Unofficial Fallout 4 Patch.esp") and checksum("Better Settlement Defence.esp", DB37AB92)'
   - name: 'Give Me That Bottle.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/13193' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/13193' ]
     # CRC checksum  Version   Compatibility
     # ECEBD46B      2.6       -
     # 939407C9      2.6       VIS
@@ -2466,18 +2466,18 @@ plugins:
       - <<: *hasPluginPatch
         subs:
           - 'Far Harbor'
-          - '[Far Harbor patch](http://www.nexusmods.com/fallout4/mods/13193)'
+          - '[Far Harbor patch](https://www.nexusmods.com/fallout4/mods/13193)'
         condition: 'active("DLCCoast.esm") and (checksum("Give Me That Bottle.esp", ECEBD46B) or checksum("Give Me That Bottle.esp", 939407C9))'
       - <<: *hasPluginPatch
         subs:
           - "Valdacil's Item Sorting"
-          - '[sorting patch](http://www.nexusmods.com/fallout4/mods/13193)'
+          - '[sorting patch](https://www.nexusmods.com/fallout4/mods/13193)'
         condition: 'active("ValdacilsItemSorting-.+\.esp") and (checksum("Give Me That Bottle.esp", 814AC32F) or checksum("Give Me That Bottle.esp", ECEBD46B))'
       - type: warn
         content: "You seem to be using the Valdacil's Item Sorting version of the mod, but without using any of the Valdacil's Item Sorting plugins. Consider using a version of Give Me That Bottle without sorting patches."
         condition: 'not active("ValdacilsItemSorting-.+\.esp") and (checksum("Give Me That Bottle.esp", 939407C9) or checksum("Give Me That Bottle.esp", AE38A5A0))'
   - name: 'CC''s Unique Vault Suit Boxes.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/19976' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/19976' ]
     dirty:
       - <<: *dirtyPlugin
         # Version 1.01
@@ -2488,10 +2488,10 @@ plugins:
       - <<: *hasPluginPatch
         subs:
           - 'Far Harbor'
-          - '[Far Harbor patch](http://www.nexusmods.com/fallout4/mods/19976)'
+          - '[Far Harbor patch](https://www.nexusmods.com/fallout4/mods/19976)'
         condition: 'active("DLCCoast.esm") and not active("CC''s Unique Vault Suit Boxes - Far Harbor Patch.esp")'
   - name: 'CC''s Unique Vault Suit Boxes - Far Harbor Patch.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/19976' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/19976' ]
     dirty:
       - <<: *dirtyPlugin
         # Version 1.01
@@ -2499,7 +2499,7 @@ plugins:
         # FO4Edit 3.2
         udr: 2
   - name: 'nvvault1080.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/18172' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/18172' ]
     dirty:
       - <<: *dirtyPlugin
         # Version 15
@@ -2507,7 +2507,7 @@ plugins:
         # FO4Edit 3.2
         nav: 5
   - name: 'ArmorKeywords.esm'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/6091' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/6091' ]
     dirty:
       - <<: *dirtyPlugin
         # Version 3.2, All DLC
@@ -2520,7 +2520,7 @@ plugins:
         util: FO4Edit v3.2.1
   - name: 'Armorsmith Extended.esp'
     # TODO: Add ´msg´s for DLC compat. patches
-    url: [ 'http://www.nexusmods.com/fallout4/mods/2228' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/2228' ]
     dirty:
       - <<: *dirtyPlugin
         # Version 3.32
@@ -2528,7 +2528,7 @@ plugins:
         # FO4Edit 3.2
         itm: 5
   - name: 'SettlementAttacksBeyondFH.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/12892' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/12892' ]
     dirty:
       - <<: *dirtyPlugin
         # Version 1.1
@@ -2536,7 +2536,7 @@ plugins:
         # FO4Edit 3.2
         itm: 1
   - name: 'Some Assembly Required.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/12050' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/12050' ]
     dirty:
       - <<: *dirtyPlugin
         # Version 1.4
@@ -2544,7 +2544,7 @@ plugins:
         # FO4Edit 3.2
         itm: 15
   - name: 'Some Assembly Required (Legendary Patch).esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/17859' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/17859' ]
     dirty:
       - <<: *dirtyPlugin
         # Version 1.4
@@ -2552,7 +2552,7 @@ plugins:
         # FO4Edit 3.2
         udr: 3
   - name: 'AllSetsExtended.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/25316' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/25316' ]
     after:
       - 'AGOMBz.esp'
     inc:
@@ -2579,11 +2579,11 @@ plugins:
         # FO4Edit 3.2
         itm: 42
   - name: 'ASEFarHarbor.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/25487' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/25487' ]
     after:
       - 'AGOMBz.esp'
   - name: 'StarlightLOD.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/23034' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/23034' ]
     dirty:
       - <<: *dirtyPlugin
         # Version 1.0
@@ -2591,20 +2591,20 @@ plugins:
         # FO4Edit 3.2
         itm: 4
   - name: 'SurvivalOptions.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/14650' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/14650' ]
     inc:
       # Conflicts in Scripts/Hardcore/HC_ManagerScript.pex
       - 'CustomizableNeeds.esp'
       - 'CustomizableNeeds + RealisticAidSideEffects.esp'
       - 'DEF_WIDGETS_SURVIVAL1.esp'
   - name: 'SurvivalOptions_GiveMeThatBottlePatch.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/14650' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/14650' ]
     msg:
       - type: error
         content: "This patch is for an older version of Give Me That Bottle and is not fully compatible with the newest versions of that mod. You may want to update the patch yourself or replace the patch with an automated one by Wrye Bash, Mator Smash, or FO4Edit."
         condition: 'checksum("SurvivalOptions_GiveMeThatBottlePatch.esp", 42D99A6E)'
   - name: 'DEF_WIDGETS_SURVIVAL1.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/20818' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/20818' ]
     inc:
       # Conflicts in Scripts/Hardcore/HC_ManagerScript.pex
       - 'CustomizableNeeds + RealisticAidSideEffects.esp'
@@ -2617,25 +2617,25 @@ plugins:
       - <<: *hasPluginPatch
         subs:
           - 'Customizable Needs'
-          - '[Customizable Needs patch](http://www.nexusmods.com/fallout4/mods/20818)'
+          - '[Customizable Needs patch](https://www.nexusmods.com/fallout4/mods/20818)'
         condition: 'active("CustomizableNeeds.esp") and not checksum("CustomizableNeeds.esp", F2860D72)'
       - <<: *hasPluginPatch
         subs:
           - 'Everyone''s Best Friend'
-          - '[Everyone''s Best Friend patch](http://www.nexusmods.com/fallout4/mods/20818)'
+          - '[Everyone''s Best Friend patch](https://www.nexusmods.com/fallout4/mods/20818)'
         condition: 'active("EveryonesBestFriend.esp") and not active("EBF_DEFW_Patch.esp") and not active("Give Me That Bottle.esp")'
       - <<: *hasPluginPatch
         subs:
           - 'Give Me That Bottle'
-          - '[Give Me That Bottle patch](http://www.nexusmods.com/fallout4/mods/20818)'
+          - '[Give Me That Bottle patch](https://www.nexusmods.com/fallout4/mods/20818)'
         condition: 'active("Give Me That Bottle.esp") and not active("gmtb_patch.esp") and not active("EveryonesBestFriend.esp")'
       - <<: *hasPluginPatch
         subs:
           - 'Everyone''s Best Friend & Give Me That Bottle'
-          - '[Everyone''s Best Friend and Give Me That Bottle patch](http://www.nexusmods.com/fallout4/mods/20818)'
+          - '[Everyone''s Best Friend and Give Me That Bottle patch](https://www.nexusmods.com/fallout4/mods/20818)'
         condition: 'active("EveryonesBestFriend.esp") and active("Give Me That Bottle.esp") and not active("DEF_WIDGETS_SURVIVAL1 - EBF+GMTB patch.esp")'
   - name: 'gmtb_patch.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/20818' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/20818' ]
     req:
       - 'DEF_WIDGETS_SURVIVAL1.esp'
     inc:
@@ -2649,7 +2649,7 @@ plugins:
         condition: 'active("DEF_WIDGETS_SURVIVAL1 - EBF+GMTB patch.esp")'
         subs: [ 'DEF_WIDGETS_SURVIVAL1 - EBF+GMTB patch.esp' ]
   - name: 'EBF_DEFW_Patch.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/20818' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/20818' ]
     req:
       - 'DEF_WIDGETS_SURVIVAL1.esp'
     inc:
@@ -2665,7 +2665,7 @@ plugins:
         condition: 'active("DEF_WIDGETS_SURVIVAL1 - EBF+GMTB patch.esp")'
         subs: [ 'DEF_WIDGETS_SURVIVAL1 - EBF+GMTB patch.esp' ]
   - name: 'DEF_WIDGETS_SURVIVAL1 - EBF+GMTB patch.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/20818' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/20818' ]
     inc:
       # Conflicts in Scripts/Hardcore/HC_ManagerScript.pex
       - 'SurvivalOptions.esp'
@@ -2678,7 +2678,7 @@ plugins:
         content: 'Version 1.0.0 of this plugin has known errors. Please update to the newest version.'
         condition: 'version("DEF_WIDGETS_SURVIVAL1 - EBF+GMTB patch.esp", "1.0.0", ==)'
   - name: 'CustomizableNeeds.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/13124' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/13124' ]
     inc:
       # Conflicts in Scripts/Hardcore/HC_ManagerScript.pex
       - 'SurvivalOptions.esp'
@@ -2696,10 +2696,10 @@ plugins:
       - <<: *hasPluginPatch
         subs:
           - "Valdacil's Item Sorting"
-          - '[VIS patch](http://www.nexusmods.com/fallout4/mods/13124)'
+          - '[VIS patch](https://www.nexusmods.com/fallout4/mods/13124)'
         condition: 'active("ValdacilsItemSorting-.+\.esp") and not active("CN Only - VIS Patch.esp")'
   - name: 'CustomizableNeeds + RealisticAidSideEffects.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/13124' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/13124' ]
     inc:
       # Conflicts in Scripts/Hardcore/HC_ManagerScript.pex
       - 'DEF_WIDGETS_SURVIVAL1.esp'
@@ -2714,22 +2714,22 @@ plugins:
       - <<: *hasPluginPatch
         subs:
           - 'Lore-Friendly Survival Chems'
-          - '[Lore-Friendly Survival Chems patch](http://www.nexusmods.com/fallout4/mods/13124)'
+          - '[Lore-Friendly Survival Chems patch](https://www.nexusmods.com/fallout4/mods/13124)'
         condition: 'active("LoreFriendlySurvivalChems(VIS)?\.esp") and not active("CN + RASE - LoreFriendlySurvivalChems(VIS)? Patch\.esp")'
       - <<: *hasPluginPatch
         subs:
           - "Valdacil's Item Sorting"
-          - '[VIS patch](http://www.nexusmods.com/fallout4/mods/13124)'
+          - '[VIS patch](https://www.nexusmods.com/fallout4/mods/13124)'
         condition: 'active("ValdacilsItemSorting-.+\.esp") and not active("CN + RASE - VIS Patch.esp")'
   - name: 'Sanctuary Terminals.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/11730' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/11730' ]
     dirty:
       - <<: *dirtyPlugin
         # Version 1.0
         crc: 0x6cfbe10e
         itm: 4
   - name: 'RailroadPerksCut.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/11751' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/11751' ]
     dirty:
       - <<: *dirtyPlugin
         # Version 1.0
@@ -2737,7 +2737,7 @@ plugins:
         # FO4Edit 3.2
         itm: 4
   - name: 'MAGS.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/12849' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/12849' ]
     dirty:
       - <<: *dirtyPlugin
         # Version .99
@@ -2746,11 +2746,11 @@ plugins:
         itm: 12
         udr: 9
   - name: 'Reverb and Ambiance Overhaul.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/10189' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/10189' ]
     after:
       - 'RadiantBirdsv05.esp'
   - name: 'MoreSkinColors.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/22668' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/22668' ]
     inc:
       - 'LooksMenu Customization Compendium.esp'
     clean:
@@ -2758,7 +2758,7 @@ plugins:
       - crc: 0xAFC2BB0C
         util: 'FO4Edit v3.2'
   - name: 'Enough About the Settlements Preston.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/10339' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/10339' ]
     inc:
       - 'PrestonNoRadiant.esp'
     clean:
@@ -2766,7 +2766,7 @@ plugins:
       - crc: 0xC6D5A1B5
         util: 'FO4Edit v3.2'
   - name: 'PrestonNoRadiant.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/24940' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/24940' ]
     inc:
       - 'Enough About the Settlements Preston.esp'
     clean:
@@ -2774,7 +2774,7 @@ plugins:
       - crc: 0x0B8DE742
         util: 'FO4Edit v3.2'
   - name: 'Vault Girl.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/10577' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/10577' ]
     inc:
       # Both use PresetFemale15
       - 'Hot Sosig.esp'
@@ -2785,7 +2785,7 @@ plugins:
         # FO4Edit 3.2
         itm: 1
   - name: 'Hot Sosig.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/17953' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/17953' ]
     inc:
       # Both use PresetFemale15
       - 'Vault Girl.esp'
@@ -2796,7 +2796,7 @@ plugins:
         # FO4Edit 3.2
         itm: 1
   - name: 'DiamondLighting.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/12432' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/12432' ]
     dirty:
       - <<: *dirtyPlugin
         # Version 1
@@ -2805,7 +2805,7 @@ plugins:
         itm: 1
         udr: 4
   - name: 'slevins_chemVFX-Light.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/12536' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/12536' ]
     dirty:
       - <<: *dirtyPlugin
         # Version L-1.1
@@ -2813,7 +2813,7 @@ plugins:
         # FO4Edit 3.2
         itm: 2
   - name: 'tsuki no hana.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/15267' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/15267' ]
     dirty:
       - <<: *dirtyPlugin
         # Version 1.5
@@ -2822,7 +2822,7 @@ plugins:
         itm: 5
         udr: 2
   - name: 'CombatZoneRestored.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/21498' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/21498' ]
     dirty:
       - <<: *dirtyPlugin
         # Version 1.01
@@ -2832,7 +2832,7 @@ plugins:
         udr: 20
         nav: 1
   - name: 'UniqueUniques.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/15139' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/15139' ]
     dirty:
       - <<: *dirtyPlugin
         # Version 1.01
@@ -2842,9 +2842,9 @@ plugins:
   - name: 'Diverse Cats.esp'
     url:
       - name: 'Diverse Cats'
-        link: 'http://www.nexusmods.com/fallout4/mods/18435'
+        link: 'https://www.nexusmods.com/fallout4/mods/18435'
       - name: 'Diverse Dogs'
-        link: 'http://www.nexusmods.com/fallout4/mods/25599'
+        link: 'https://www.nexusmods.com/fallout4/mods/25599'
     dirty:
       - <<: *dirtyPlugin
         # Version .9
@@ -2852,7 +2852,7 @@ plugins:
         # FO4Edit 3.2
         itm: 6
   - name: 'Diverse Dogs.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/25599' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/25599' ]
     clean:
       # Version 1.0
       - crc: 0xAAEB0A0D
@@ -2862,13 +2862,13 @@ plugins:
         subs: [ 'Diverse Cats.esp (combined version)' ]
         condition: 'active("Diverse Cats.esp") and checksum("Diverse Cats.esp", ea3b193f)'
   - name: 'BeastWhisperer.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/14265' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/14265' ]
     after:
       - 'Diverse Dogs.esp'
       - name: 'Diverse Cats.esp'
         condition: 'checksum("Diverse Cats.esp", ea3b193f)'
   - name: 'NukaRadBans.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/8342' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/8342' ]
     dirty:
       - <<: *dirtyPlugin
         # Version 1.01, Vanilla
@@ -2881,14 +2881,14 @@ plugins:
         # FO4Edit 3.2
         udr: 1
   - name: 'SimSettlements.esm'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/21872' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/21872' ]
     after:
       - 'HUDFramework.esm'
     msg:
       - <<: *obsolete
         condition: 'version("SimSettlements.esm", "2.0.6", <)'
   - name: 'SimSettlements_XPAC_IndustrialRevolution.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/25213' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/25213' ]
     msg:
       - <<: *obsolete
         condition: 'version("SimSettlements_XPAC_IndustrialRevolution.esp", "2.0.6", <)'
@@ -2896,7 +2896,7 @@ plugins:
         content: 'You should not use mismatched versions of Sim Settlements and the Industrial Revolution expansion.'
         condition: '(version("SimSettlements_XPAC_IndustrialRevolution.esp", "2.0.6", >=) and version("SimSettlements_XPAC_IndustrialRevolution.esp", "2.0.7", <)) and not (version("SimSettlements.esm", "2.0.6", >=) and version("SimSettlements.esm", "2.0.7", <))'
   - name: 'Companion_ShutUp.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/25763' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/25763' ]
     dirty:
       - <<: *dirtyPlugin
         # Version 1.01
@@ -2904,13 +2904,13 @@ plugins:
         # FO4Edit 3.2
         itm: 6
   - name: 'ShotLayDown\d+\.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/25787' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/25787' ]
     msg:
       - <<: *useOnlyOneX
         condition: 'many_active("ShotLayDown\d+\.esp")'
         subs: [ 'Shot Lay Down .esp' ]
   - name: 'AGOMBz.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/25762' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/25762' ]
     after:
       - 'Better Settlement Defence.esp'
     inc:
@@ -2927,7 +2927,7 @@ plugins:
         # F1E405A5: 1.0.1, DLC, BSD
         condition: 'active("Better Settlement Defence.esp") and not (checksum("AGOMBz - Main.ba2", FBBDC389) or checksum("AGOMBz - Main.ba2", 5A4E786E) or checksum("AGOMBz - Main.ba2", F1E405A5))'
   - name: 'starlightwingfix_v3.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/22553' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/22553' ]
     dirty:
       - <<: *dirtyPlugin
         # Version 3.0
@@ -2937,7 +2937,7 @@ plugins:
         udr: 1
         nav: 1
   - name: 'FirstPersonViewableItemsExpanded.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/26062' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/26062' ]
     clean:
       # Version 1.0
       - crc: 0x9855A3B2
@@ -2947,10 +2947,10 @@ plugins:
         subs: [ 'LooksMenu1stPersonViewItemsFix.esp' ]
         condition: 'active("FirstPersonViewableItemsExpanded.esp") and active("LooksMenu1stPersonViewItemsFix.esp")'
       - type: error
-        content: 'This plugin is incompatible with LooksMenu Customization Compendium. Use the compatible plugin from the [mod page](http://www.nexusmods.com/fallout4/mods/26062).'
+        content: 'This plugin is incompatible with LooksMenu Customization Compendium. Use the compatible plugin from the [mod page](https://www.nexusmods.com/fallout4/mods/26062).'
         condition: 'active("LooksMenu Customization Compendium.esp") and active("FirstPersonViewableItemsExpanded.esp")'
   - name: 'MinutemenGeneralOutfitF.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/26047' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/26047' ]
     inc:
       - 'ArmorKeywords.esm'
     clean:
@@ -3365,17 +3365,17 @@ plugins:
         util: 'FO4Edit v3.2.1'
         itm: 1
   - name: 'Scrap Everything.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/5320' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/5320' ]
     group: *scrapGroup
     msg:
       - *obsolete
       - *doNotClean
   - name: 'Scrap Everything - Ultimate Edition.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/5320' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/5320' ]
     group: *scrapGroup
     msg: [ *doNotClean ]
   - name: 'Scrap Everything - (Core|Automatron|Far Harbor|Vault-Tec Workshop|Nuka World)\.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/5320' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/5320' ]
     group: *scrapGroup
     msg:
       - <<: *AlreadyInX
@@ -3386,7 +3386,7 @@ plugins:
         condition: 'not active("Scrap Everything - Ultimate Edition.esp") and active("Scrap Everything - Core.esp") and active("Scrap Everything - Automatron.esp") and active("Scrap Everything - Far Harbor.esp") and active("Scrap Everything - Vault-Tec Workshop.esp") and active("Scrap Everything - Nuka World.esp")'
       - *doNotClean
   - name: 'EnhancedLightsandFX.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/13596' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/13596' ]
     group: *lightingGroup
     clean:
       # Version 0.2.3
@@ -3394,19 +3394,19 @@ plugins:
         util: 'FO4Edit v3.2'
 
   - name: 'OSM_AlternateStart_Protocol-InfiniteAnswer.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/13762' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/13762' ]
     group: *altStartGroup
     inc:
       - 'AnotherLife.esp'
       - 'StartMeUp.esp'
   - name: 'AnotherLife.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/14253' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/14253' ]
     group: *altStartGroup
     inc:
       - 'OSM_AlternateStart_Protocol-InfiniteAnswer.esp'
       - 'StartMeUp.esp'
   - name: 'StartMeUp.esp'
-    url: [ 'http://www.nexusmods.com/fallout4/mods/18946' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/18946' ]
     group: *altStartGroup
     inc:
       - 'OSM_AlternateStart_Protocol-InfiniteAnswer.esp'
