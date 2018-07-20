@@ -299,8 +299,11 @@ globals:
 groups:
   - name: &dlcGroup DLC
 
-  - name: &texturesGroup Texture Overhauls
+  - name: &ccGroup Creation Club
     after: [ *dlcGroup ]
+
+  - name: &texturesGroup Texture Overhauls
+    after: [ *ccGroup ]
 
   - name: &fixesGroup Fixes
     after: [ *texturesGroup ]
@@ -411,90 +414,40 @@ plugins:
 
   ### Creation Club plugins
   - name: 'ccBGSFO4001-PipBoy(Black).esl'
-    group: *dlcGroup
-    after:
-      - 'Fallout4.esm'
-      - 'DLCRobot.esm'
-      - 'DLCworkshop01.esm'
-      - 'DLCCoast.esm'
-      - 'DLCworkshop02.esm'
-      - 'DLCworkshop03.esm'
-      - 'DLCNukaWorld.esm'
+    group: *ccGroup
   - name: 'ccBGSFO4002-PipBoy(Blue).esl'
-    group: *dlcGroup
+    group: *ccGroup
     after:
-      - 'Fallout4.esm'
-      - 'DLCRobot.esm'
-      - 'DLCworkshop01.esm'
-      - 'DLCCoast.esm'
-      - 'DLCworkshop02.esm'
-      - 'DLCworkshop03.esm'
-      - 'DLCNukaWorld.esm'
       - 'ccBGSFO4001-PipBoy(Black).esl'
   - name: 'ccBGSFO4003-PipBoy(Camo01).esl'
-    group: *dlcGroup
+    group: *ccGroup
     after:
-      - 'Fallout4.esm'
-      - 'DLCRobot.esm'
-      - 'DLCworkshop01.esm'
-      - 'DLCCoast.esm'
-      - 'DLCworkshop02.esm'
-      - 'DLCworkshop03.esm'
-      - 'DLCNukaWorld.esm'
       - 'ccBGSFO4001-PipBoy(Black).esl'
       - 'ccBGSFO4002-PipBoy(Blue).esl'
   - name: 'ccBGSFO4004-PipBoy(Camo02).esl'
-    group: *dlcGroup
+    group: *ccGroup
     after:
-      - 'Fallout4.esm'
-      - 'DLCRobot.esm'
-      - 'DLCworkshop01.esm'
-      - 'DLCCoast.esm'
-      - 'DLCworkshop02.esm'
-      - 'DLCworkshop03.esm'
-      - 'DLCNukaWorld.esm'
       - 'ccBGSFO4001-PipBoy(Black).esl'
       - 'ccBGSFO4002-PipBoy(Blue).esl'
       - 'ccBGSFO4003-PipBoy(Camo01).esl'
   - name: 'ccBGSFO4006-PipBoy(Chrome).esl'
-    group: *dlcGroup
+    group: *ccGroup
     after:
-      - 'Fallout4.esm'
-      - 'DLCRobot.esm'
-      - 'DLCworkshop01.esm'
-      - 'DLCCoast.esm'
-      - 'DLCworkshop02.esm'
-      - 'DLCworkshop03.esm'
-      - 'DLCNukaWorld.esm'
       - 'ccBGSFO4001-PipBoy(Black).esl'
       - 'ccBGSFO4002-PipBoy(Blue).esl'
       - 'ccBGSFO4003-PipBoy(Camo01).esl'
       - 'ccBGSFO4004-PipBoy(Camo02).esl'
   - name: 'ccBGSFO4012-PipBoy(Red).esl'
-    group: *dlcGroup
+    group: *ccGroup
     after:
-      - 'Fallout4.esm'
-      - 'DLCRobot.esm'
-      - 'DLCworkshop01.esm'
-      - 'DLCCoast.esm'
-      - 'DLCworkshop02.esm'
-      - 'DLCworkshop03.esm'
-      - 'DLCNukaWorld.esm'
       - 'ccBGSFO4001-PipBoy(Black).esl'
       - 'ccBGSFO4002-PipBoy(Blue).esl'
       - 'ccBGSFO4003-PipBoy(Camo01).esl'
       - 'ccBGSFO4004-PipBoy(Camo02).esl'
       - 'ccBGSFO4006-PipBoy(Chrome).esl'
   - name: 'ccBGSFO4014-PipBoy(White).esl'
-    group: *dlcGroup
+    group: *ccGroup
     after:
-      - 'Fallout4.esm'
-      - 'DLCRobot.esm'
-      - 'DLCworkshop01.esm'
-      - 'DLCCoast.esm'
-      - 'DLCworkshop02.esm'
-      - 'DLCworkshop03.esm'
-      - 'DLCNukaWorld.esm'
       - 'ccBGSFO4001-PipBoy(Black).esl'
       - 'ccBGSFO4002-PipBoy(Blue).esl'
       - 'ccBGSFO4003-PipBoy(Camo01).esl'
@@ -502,15 +455,8 @@ plugins:
       - 'ccBGSFO4006-PipBoy(Chrome).esl'
       - 'ccBGSFO4012-PipBoy(Red).esl'
   - name: 'ccBGSFO4016-Prey.esl'
-    group: *dlcGroup
+    group: *ccGroup
     after:
-      - 'Fallout4.esm'
-      - 'DLCRobot.esm'
-      - 'DLCworkshop01.esm'
-      - 'DLCCoast.esm'
-      - 'DLCworkshop02.esm'
-      - 'DLCworkshop03.esm'
-      - 'DLCNukaWorld.esm'
       - 'ccBGSFO4001-PipBoy(Black).esl'
       - 'ccBGSFO4002-PipBoy(Blue).esl'
       - 'ccBGSFO4003-PipBoy(Camo01).esl'
@@ -519,15 +465,8 @@ plugins:
       - 'ccBGSFO4012-PipBoy(Red).esl'
       - 'ccBGSFO4014-PipBoy(White).esl'
   - name: 'ccBGSFO4017-Mauler.esl'
-    group: *dlcGroup
+    group: *ccGroup
     after:
-      - 'Fallout4.esm'
-      - 'DLCRobot.esm'
-      - 'DLCworkshop01.esm'
-      - 'DLCCoast.esm'
-      - 'DLCworkshop02.esm'
-      - 'DLCworkshop03.esm'
-      - 'DLCNukaWorld.esm'
       - 'ccBGSFO4001-PipBoy(Black).esl'
       - 'ccBGSFO4002-PipBoy(Blue).esl'
       - 'ccBGSFO4003-PipBoy(Camo01).esl'
@@ -537,15 +476,8 @@ plugins:
       - 'ccBGSFO4014-PipBoy(White).esl'
       - 'ccBGSFO4016-Prey.esl'
   - name: 'ccBGSFO4018-GaussRiflePrototype.esl'
-    group: *dlcGroup
+    group: *ccGroup
     after:
-      - 'Fallout4.esm'
-      - 'DLCRobot.esm'
-      - 'DLCworkshop01.esm'
-      - 'DLCCoast.esm'
-      - 'DLCworkshop02.esm'
-      - 'DLCworkshop03.esm'
-      - 'DLCNukaWorld.esm'
       - 'ccBGSFO4001-PipBoy(Black).esl'
       - 'ccBGSFO4002-PipBoy(Blue).esl'
       - 'ccBGSFO4003-PipBoy(Camo01).esl'
@@ -556,15 +488,8 @@ plugins:
       - 'ccBGSFO4016-Prey.esl'
       - 'ccBGSFO4017-Mauler.esl'
   - name: 'ccBGSFO4019-ChineseStealthArmor.esl'
-    group: *dlcGroup
+    group: *ccGroup
     after:
-      - 'Fallout4.esm'
-      - 'DLCRobot.esm'
-      - 'DLCworkshop01.esm'
-      - 'DLCCoast.esm'
-      - 'DLCworkshop02.esm'
-      - 'DLCworkshop03.esm'
-      - 'DLCNukaWorld.esm'
       - 'ccBGSFO4001-PipBoy(Black).esl'
       - 'ccBGSFO4002-PipBoy(Blue).esl'
       - 'ccBGSFO4003-PipBoy(Camo01).esl'
@@ -576,15 +501,8 @@ plugins:
       - 'ccBGSFO4017-Mauler.esl'
       - 'ccBGSFO4018-GaussRiflePrototype.esl'
   - name: 'ccBGSFO4020-PowerArmorSkin(Black).esl'
-    group: *dlcGroup
+    group: *ccGroup
     after:
-      - 'Fallout4.esm'
-      - 'DLCRobot.esm'
-      - 'DLCworkshop01.esm'
-      - 'DLCCoast.esm'
-      - 'DLCworkshop02.esm'
-      - 'DLCworkshop03.esm'
-      - 'DLCNukaWorld.esm'
       - 'ccBGSFO4001-PipBoy(Black).esl'
       - 'ccBGSFO4002-PipBoy(Blue).esl'
       - 'ccBGSFO4003-PipBoy(Camo01).esl'
@@ -597,15 +515,8 @@ plugins:
       - 'ccBGSFO4018-GaussRiflePrototype.esl'
       - 'ccBGSFO4019-ChineseStealthArmor.esl'
   - name: 'ccBGSFO4022-PowerArmorSkin(Camo01).esl'
-    group: *dlcGroup
+    group: *ccGroup
     after:
-      - 'Fallout4.esm'
-      - 'DLCRobot.esm'
-      - 'DLCworkshop01.esm'
-      - 'DLCCoast.esm'
-      - 'DLCworkshop02.esm'
-      - 'DLCworkshop03.esm'
-      - 'DLCNukaWorld.esm'
       - 'ccBGSFO4001-PipBoy(Black).esl'
       - 'ccBGSFO4002-PipBoy(Blue).esl'
       - 'ccBGSFO4003-PipBoy(Camo01).esl'
@@ -619,15 +530,8 @@ plugins:
       - 'ccBGSFO4019-ChineseStealthArmor.esl'
       - 'ccBGSFO4020-PowerArmorSkin(Black).esl'
   - name: 'ccBGSFO4023-PowerArmorSkin(Camo02).esl'
-    group: *dlcGroup
+    group: *ccGroup
     after:
-      - 'Fallout4.esm'
-      - 'DLCRobot.esm'
-      - 'DLCworkshop01.esm'
-      - 'DLCCoast.esm'
-      - 'DLCworkshop02.esm'
-      - 'DLCworkshop03.esm'
-      - 'DLCNukaWorld.esm'
       - 'ccBGSFO4001-PipBoy(Black).esl'
       - 'ccBGSFO4002-PipBoy(Blue).esl'
       - 'ccBGSFO4003-PipBoy(Camo01).esl'
@@ -642,15 +546,8 @@ plugins:
       - 'ccBGSFO4020-PowerArmorSkin(Black).esl'
       - 'ccBGSFO4022-PowerArmorSkin(Camo01).esl'
   - name: 'ccBGSFO4025-PowerArmorSkin(Chrome).esl'
-    group: *dlcGroup
+    group: *ccGroup
     after:
-      - 'Fallout4.esm'
-      - 'DLCRobot.esm'
-      - 'DLCworkshop01.esm'
-      - 'DLCCoast.esm'
-      - 'DLCworkshop02.esm'
-      - 'DLCworkshop03.esm'
-      - 'DLCNukaWorld.esm'
       - 'ccBGSFO4001-PipBoy(Black).esl'
       - 'ccBGSFO4002-PipBoy(Blue).esl'
       - 'ccBGSFO4003-PipBoy(Camo01).esl'
@@ -666,15 +563,8 @@ plugins:
       - 'ccBGSFO4022-PowerArmorSkin(Camo01).esl'
       - 'ccBGSFO4023-PowerArmorSkin(Camo02).esl'
   - name: 'ccBGSFO4038-HorseArmor.esl'
-    group: *dlcGroup
+    group: *ccGroup
     after:
-      - 'Fallout4.esm'
-      - 'DLCRobot.esm'
-      - 'DLCworkshop01.esm'
-      - 'DLCCoast.esm'
-      - 'DLCworkshop02.esm'
-      - 'DLCworkshop03.esm'
-      - 'DLCNukaWorld.esm'
       - 'ccBGSFO4001-PipBoy(Black).esl'
       - 'ccBGSFO4002-PipBoy(Blue).esl'
       - 'ccBGSFO4003-PipBoy(Camo01).esl'
@@ -691,15 +581,8 @@ plugins:
       - 'ccBGSFO4023-PowerArmorSkin(Camo02).esl'
       - 'ccBGSFO4025-PowerArmorSkin(Chrome).esl'
   - name: 'ccBGSFO4039-TunnelSnakes.esl'
-    group: *dlcGroup
+    group: *ccGroup
     after:
-      - 'Fallout4.esm'
-      - 'DLCRobot.esm'
-      - 'DLCworkshop01.esm'
-      - 'DLCCoast.esm'
-      - 'DLCworkshop02.esm'
-      - 'DLCworkshop03.esm'
-      - 'DLCNukaWorld.esm'
       - 'ccBGSFO4001-PipBoy(Black).esl'
       - 'ccBGSFO4002-PipBoy(Blue).esl'
       - 'ccBGSFO4003-PipBoy(Camo01).esl'
@@ -717,15 +600,8 @@ plugins:
       - 'ccBGSFO4025-PowerArmorSkin(Chrome).esl'
       - 'ccBGSFO4038-HorseArmor.esl'
   - name: 'ccBGSFO4041-DoomMarineArmor.esl'
-    group: *dlcGroup
+    group: *ccGroup
     after:
-      - 'Fallout4.esm'
-      - 'DLCRobot.esm'
-      - 'DLCworkshop01.esm'
-      - 'DLCCoast.esm'
-      - 'DLCworkshop02.esm'
-      - 'DLCworkshop03.esm'
-      - 'DLCNukaWorld.esm'
       - 'ccBGSFO4001-PipBoy(Black).esl'
       - 'ccBGSFO4002-PipBoy(Blue).esl'
       - 'ccBGSFO4003-PipBoy(Camo01).esl'
@@ -744,15 +620,8 @@ plugins:
       - 'ccBGSFO4038-HorseArmor.esl'
       - 'ccBGSFO4039-TunnelSnakes.esl'
   - name: 'ccBGSFO4042-BFG.esl'
-    group: *dlcGroup
+    group: *ccGroup
     after:
-      - 'Fallout4.esm'
-      - 'DLCRobot.esm'
-      - 'DLCworkshop01.esm'
-      - 'DLCCoast.esm'
-      - 'DLCworkshop02.esm'
-      - 'DLCworkshop03.esm'
-      - 'DLCNukaWorld.esm'
       - 'ccBGSFO4001-PipBoy(Black).esl'
       - 'ccBGSFO4002-PipBoy(Blue).esl'
       - 'ccBGSFO4003-PipBoy(Camo01).esl'
@@ -772,15 +641,8 @@ plugins:
       - 'ccBGSFO4039-TunnelSnakes.esl'
       - 'ccBGSFO4041-DoomMarineArmor.esl'
   - name: 'ccBGSFO4043-DoomChainsaw.esl'
-    group: *dlcGroup
+    group: *ccGroup
     after:
-      - 'Fallout4.esm'
-      - 'DLCRobot.esm'
-      - 'DLCworkshop01.esm'
-      - 'DLCCoast.esm'
-      - 'DLCworkshop02.esm'
-      - 'DLCworkshop03.esm'
-      - 'DLCNukaWorld.esm'
       - 'ccBGSFO4001-PipBoy(Black).esl'
       - 'ccBGSFO4002-PipBoy(Blue).esl'
       - 'ccBGSFO4003-PipBoy(Camo01).esl'
@@ -801,15 +663,8 @@ plugins:
       - 'ccBGSFO4041-DoomMarineArmor.esl'
       - 'ccBGSFO4042-BFG.esl'
   - name: 'ccBGSFO4044-HellfirePowerArmor.esl'
-    group: *dlcGroup
+    group: *ccGroup
     after:
-      - 'Fallout4.esm'
-      - 'DLCRobot.esm'
-      - 'DLCworkshop01.esm'
-      - 'DLCCoast.esm'
-      - 'DLCworkshop02.esm'
-      - 'DLCworkshop03.esm'
-      - 'DLCNukaWorld.esm'
       - 'ccBGSFO4001-PipBoy(Black).esl'
       - 'ccBGSFO4002-PipBoy(Blue).esl'
       - 'ccBGSFO4003-PipBoy(Camo01).esl'
@@ -831,15 +686,8 @@ plugins:
       - 'ccBGSFO4042-BFG.esl'
       - 'ccBGSFO4043-DoomChainsaw.esl'
   - name: 'ccFSVFO4001-ModularMilitaryBackpack.esl'
-    group: *dlcGroup
+    group: *ccGroup
     after:
-      - 'Fallout4.esm'
-      - 'DLCRobot.esm'
-      - 'DLCworkshop01.esm'
-      - 'DLCCoast.esm'
-      - 'DLCworkshop02.esm'
-      - 'DLCworkshop03.esm'
-      - 'DLCNukaWorld.esm'
       - 'ccBGSFO4001-PipBoy(Black).esl'
       - 'ccBGSFO4002-PipBoy(Blue).esl'
       - 'ccBGSFO4003-PipBoy(Camo01).esl'
@@ -862,15 +710,8 @@ plugins:
       - 'ccBGSFO4043-DoomChainsaw.esl'
       - 'ccBGSFO4044-HellfirePowerArmor.esl'
   - name: 'ccFSVFO4002-MidCenturyModern.esl'
-    group: *dlcGroup
+    group: *ccGroup
     after:
-      - 'Fallout4.esm'
-      - 'DLCRobot.esm'
-      - 'DLCworkshop01.esm'
-      - 'DLCCoast.esm'
-      - 'DLCworkshop02.esm'
-      - 'DLCworkshop03.esm'
-      - 'DLCNukaWorld.esm'
       - 'ccBGSFO4001-PipBoy(Black).esl'
       - 'ccBGSFO4002-PipBoy(Blue).esl'
       - 'ccBGSFO4003-PipBoy(Camo01).esl'
@@ -894,15 +735,8 @@ plugins:
       - 'ccBGSFO4044-HellfirePowerArmor.esl'
       - 'ccFSVFO4001-ModularMilitaryBackpack.esl'
   - name: 'ccFRSFO4001-HandmadeShotgun.esl'
-    group: *dlcGroup
+    group: *ccGroup
     after:
-      - 'Fallout4.esm'
-      - 'DLCRobot.esm'
-      - 'DLCworkshop01.esm'
-      - 'DLCCoast.esm'
-      - 'DLCworkshop02.esm'
-      - 'DLCworkshop03.esm'
-      - 'DLCNukaWorld.esm'
       - 'ccBGSFO4001-PipBoy(Black).esl'
       - 'ccBGSFO4002-PipBoy(Blue).esl'
       - 'ccBGSFO4003-PipBoy(Camo01).esl'
@@ -927,15 +761,8 @@ plugins:
       - 'ccFSVFO4001-ModularMilitaryBackpack.esl'
       - 'ccFSVFO4002-MidCenturyModern.esl'
   - name: 'ccEEJFO4001-DecorationPack.esl'
-    group: *dlcGroup
+    group: *ccGroup
     after:
-      - 'Fallout4.esm'
-      - 'DLCRobot.esm'
-      - 'DLCworkshop01.esm'
-      - 'DLCCoast.esm'
-      - 'DLCworkshop02.esm'
-      - 'DLCworkshop03.esm'
-      - 'DLCNukaWorld.esm'
       - 'ccBGSFO4001-PipBoy(Black).esl'
       - 'ccBGSFO4002-PipBoy(Blue).esl'
       - 'ccBGSFO4003-PipBoy(Camo01).esl'
@@ -965,15 +792,8 @@ plugins:
   # this one has been added because it was reported as causing a problem because
   # it was sorted out of place.
   - name: 'ccgcafo4004-factionws04gun.esl'
-    group: *dlcGroup
+    group: *ccGroup
     after:
-      - 'Fallout4.esm'
-      - 'DLCRobot.esm'
-      - 'DLCworkshop01.esm'
-      - 'DLCCoast.esm'
-      - 'DLCworkshop02.esm'
-      - 'DLCworkshop03.esm'
-      - 'DLCNukaWorld.esm'
       - 'ccBGSFO4001-PipBoy(Black).esl'
       - 'ccBGSFO4002-PipBoy(Blue).esl'
       - 'ccBGSFO4003-PipBoy(Camo01).esl'
