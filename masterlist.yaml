@@ -6417,6 +6417,15 @@ plugins:
     group: *fixesGroup
     msg:
       - *AlreadyInUFO4P
+  - name: 'itswear.esl'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/33497' ]
+    group: *fixesGroup
+    clean:
+      - crc: 0xC6B5B9B9
+        util: FO4Edit v3.2.3h
+    msg:
+      - *AlreadyInUFO4P
+
   - name: 'Vault-Tec Historical Preservation Initiative.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/12019' ]
     global_group: *retconGroup
