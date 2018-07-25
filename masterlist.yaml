@@ -223,7 +223,7 @@ globals:
     subs: [ 'https://loot.github.io/latest-thread/' ]
 # Fallout 4 latest
   - type: say
-    condition: 'file("../Fallout4.exe") and version("../Fallout4.exe", "1.10.98.0", <)'
+    condition: 'file("../Fallout4.exe") and version("../Fallout4.exe", "1.10.106.0", <)'
     content:
       - lang: en
         text: 'It appears you do not have the latest version of Fallout 4.'
