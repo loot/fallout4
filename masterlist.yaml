@@ -8800,6 +8800,40 @@ plugins:
         content: 'Consider using the "Ultimate Edition" of Scrap Everything, a combined version of all the Scrap Everything plugins you are already using.'
         condition: 'not active("Scrap Everything - Ultimate Edition.esp") and active("Scrap Everything - Core.esp") and active("Scrap Everything - Automatron.esp") and active("Scrap Everything - Far Harbor.esp") and active("Scrap Everything - Vault-Tec Workshop.esp") and active("Scrap Everything - Nuka World.esp")'
       - *doNotClean
+  - name: 'Mechanist Lair Overhaul.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/23294' ]
+    dirty:
+      - <<: *dirtyPlugin
+        # Version 1.03
+        crc: 0xB428DE36
+        util: 'FO4Edit v3.2.3r'
+        nav: 1
+    msg:
+      - <<: *useOnlyOneX
+        condition: 'active("Mechanist Lair Overhaul SEC.esp")'
+        subs: [ 'Mechanist Lair Overhaul' ]
+      - <<: *hasPluginPatch
+        subs:
+          - 'Scrap Everything'
+          - '[Scrap Everything compatiple plugin](https://www.nexusmods.com/fallout4/mods/23294)'
+        condition: '(active("Scrap Everything - Automatron.esp") or active("Scrap Everything - Ultimate Edition.esp")) and not active("Mechanist Lair Overhaul SEC.esp")'
+  - name: 'Mechanist Lair Overhaul SEC.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/23294' ]
+    dirty:
+      - <<: *dirtyPlugin
+        # Version 1.03
+        crc: 0x13978275
+        util: 'FO4Edit v3.2.3r'
+        nav: 1
+    req:
+      - name: 'Scrap Everything - Automatron.esp'
+        condition: 'not active("Scrap Everything - Ultimate Edition.esp")'
+      - name: 'Scrap Everything - Ultimate Edition.esp'
+        condition: 'not active("Scrap Everything - Automatron.esp")'
+    msg:
+      - <<: *useOnlyOneX
+        condition: 'active("Mechanist Lair Overhaul.esp")'
+        subs: [ 'Mechanist Lair Overhaul' ]
   - name: 'EnhancedLightsandFX.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/13596' ]
     group: *lightingGroup
