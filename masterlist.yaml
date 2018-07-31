@@ -8846,16 +8846,6 @@ plugins:
         util: 'FO4Edit v3.2.3v'
   - name: 'Deeper Thoughts (\(Curie\)|- (Expressive |)Curie)\.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/25050' ]
-    clean:
-      # Deeper Thoughts (Curie).esp; version 1.1
-      - crc: 0xA93E1500
-        util: 'FO4Edit v3.2.3v'
-      # Deeper Thoughts - Curie.esp; version 1.1a, with Affinity-Sorted Dialogue
-      - crc: 0xB15CFBE9
-        util: 'FO4Edit v3.2.3v'
-      # Deeper Thoughts - Expressive Curie.esp; version 1.1b, with Affinity-Sorted Dialogue - Expressive
-      - crc: 0xF39776A0
-        util: 'FO4Edit v3.2.3v'
     msg:
       - <<: *useOnlyOneX
         condition: 'many("Deeper Thoughts (\(Curie\)|- (Expressive |)Curie)\.esp")'
