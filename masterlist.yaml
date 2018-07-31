@@ -8841,6 +8841,9 @@ plugins:
       # Version 0.2.3
       - crc: 0xA7ADBD40
         util: 'FO4Edit v3.2'
+      # Version 1.0
+      - crc: 0x8FC528DB
+        util: 'FO4Edit v3.2.3v'
 
   - name: 'OSM_AlternateStart_Protocol-InfiniteAnswer.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/13762' ]
