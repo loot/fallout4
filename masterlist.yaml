@@ -116,6 +116,10 @@ common:
         text: "Du ser ud til at bruge %1%, men du bruger ikke “%1%”-lappen for dette plugin: %2%"
       - lang: ja
         text: "%1%が使用されていますが、このプラグイン用の%1%のパッチが有効になっていません: %2%"
+  - &dlcVersion
+    type: say
+    content: 'This version does not include modifications for DLC content. Consider getting the DLC version instead.'
+    condition: 'active("DLCRobot.esm") and active("DLCworkshop01.esm") and active("DLCCoast.esm")'
   - &requireF4SE
     type: error
     content:
@@ -6673,9 +6677,7 @@ plugins:
       - 'ValdacilsItemSorting-00-ValsPicks-DLCVersion-VanillaWeight.esp'
       - 'ValdacilsItemSorting-00-ValsPicks-NoDLCVersion-VanillaWeight.esp'
     msg:
-      - type: say
-        content: 'This version does not include modifications for DLC content. Consider getting the DLC version instead.'
-        condition: 'active("DLCRobot.esm") and active("DLCworkshop01.esm") and active("DLCCoast.esm")'
+      - *dlcVersion
   - name: 'ValdacilsItemSorting-00-ValsPicks-DLCVersion-VanillaWeight.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/3877' ]
     inc:
@@ -6689,9 +6691,7 @@ plugins:
       - 'ValdacilsItemSorting-00-ValsPicks-NoDLCVersion.esp'
       - 'ValdacilsItemSorting-00-ValsPicks-DLCVersion-VanillaWeight.esp'
     msg:
-      - type: say
-        content: 'This version does not include modifications for DLC content. Consider getting the DLC version instead.'
-        condition: 'active("DLCRobot.esm") and active("DLCworkshop01.esm") and active("DLCCoast.esm")'
+      - *dlcVersion
   - name: 'ValdacilsItemSorting-Weapons.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/3877' ]
     msg:
