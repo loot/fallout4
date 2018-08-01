@@ -118,7 +118,11 @@ common:
         text: "%1%が使用されていますが、このプラグイン用の%1%のパッチが有効になっていません: %2%"
   - &dlcVersion
     type: say
-    content: 'This version does not include modifications for DLC content. Consider getting the DLC version instead.'
+    content:
+      - lang: en
+        text: 'This version does not include modifications for DLC content. Consider getting the DLC version instead.'
+      - lang: da
+        text: 'Denne udgave inderholder ikke ændring til DLC-indhold. Overvej at bruge DLC-udgaven i stedet.'
     condition: 'active("DLCRobot.esm") and active("DLCworkshop01.esm") and active("DLCCoast.esm")'
   - &requireF4SE
     type: error
@@ -189,6 +193,8 @@ common:
     content:
       - lang: en
         text: 'Uninstall this file and upgrade to Homemaker 1.50.'
+      - lang: da
+        text: 'Afinstallér denne fil og opgradér til Homemaker 1.50.'
       - lang: es
         text: 'Desinstale este archivo y actualizar a Homemaker 1.50.'
       - lang: ja
@@ -6424,7 +6430,11 @@ plugins:
     group: *fixesGroup
     msg:
       - type: error
-        content: 'Requires Fallout 4 patch 1.10.89 or greater.'
+        content:
+        - lang: en
+          text: 'Requires Fallout 4 patch 1.10.89 or greater.'
+        - lang: da
+          text: 'Kræver Fallout 4-lap 1.10.89 eller nyere.'
         condition: 'version("Unofficial Fallout 4 Patch.esp", "2.0.3", >=) and not version("../Fallout4.exe", "1.10.89.0", >=)'
       - <<: *obsolete
         condition: 'version("Unofficial Fallout 4 Patch.esp", "2.0.3", <)'
@@ -6546,7 +6556,11 @@ plugins:
     group: *fixesGroup
     msg:
       - type: say
-        content: 'The bug fixes of this mod are already included in the Unofficial Fallout 4 Patch. The mod still contains additional tweaks that you may wish to keep, so keep or remove the mod at your discretion.'
+        content:
+          - lang: en
+            text: 'The bug fixes of this mod are already included in the Unofficial Fallout 4 Patch. The mod still contains additional tweaks that you may wish to keep, so keep or remove the mod at your discretion.'
+          - lang: da
+            text: "Fejlrettelserne i denne mod er allerede inkluderet i Unofficial Fallout 4 Patch. Denne mod har dog også yderligere justeringer som du måske vil beholde, så behold eller fjern mod'en efter eget valg."
         condition: 'active("Unofficial Fallout 4 Patch.esp")'
   - name: 'DependencyQuestFix.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/10892' ]
@@ -6697,11 +6711,19 @@ plugins:
     msg:
       - &includedInValsPicks
         type: say
-        content: 'This plugin is also included in "Val''s Picks".'
+        content:
+          - lang: en
+            text: 'This plugin is also included in "Val''s Picks".'
+          - lang: da
+            text: 'Dette plugin er også også inkluderet i "Val''s Picks".'
         condition: 'file("ValdacilsItemSorting-00-ValsPicks-(No)?DLCVersion\.esp")'
       - &includedInValsPicksVanilla
         type: say
-        content: 'This plugin is also included in "Val''s Picks - Vanilla Weight".'
+        content:
+          - lang: en
+            text: 'This plugin is also included in "Val''s Picks - Vanilla Weight".'
+          - lang: da
+            text: 'Dette plugin er også også inkluderet i "Val''s Picks - Vanilla Weight".'
         condition: 'file("ValdacilsItemSorting-00-ValsPicks-(No?)DLCVersion-VanillaWeight\.esp")'
   - name: 'ValdacilsItemSorting-Aid.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/3877' ]
@@ -6740,7 +6762,11 @@ plugins:
       - 'ValdacilsItemSorting-ArmorBySlot.esp'
     msg:
       - type: warn
-        content: 'You are sorting armor by class and also using DLCs. You may want to use "ValdacilsItemSorting-ZZ-DLCArmorByClassOverride.esp" to enable the class sorting on DLC armor as well.'
+        content:
+          - lang: en
+            text: 'You are sorting armor by class and also using DLCs. You may want to use "ValdacilsItemSorting-ZZ-DLCArmorByClassOverride.esp" to enable the class sorting on DLC armor as well.'
+          - lang: da
+            text: 'Du sorterer rustning efter klasse samtidig med du bruger DLC’er. Det kan være en god idé at bruge "ValdacilsItemSorting-ZZ-DLCArmorByClassOverride.esp" for også at slå klassesortering til for DLC-rustninger.'
         condition: 'active("DLCRobot.esm") and active("DLCCoast.esm") and not active("ValdacilsItemSorting-ZZ-DLCArmorByClassOverride.esp") and version("ValdacilsItemSorting-ArmorByClass.esp", "9.1", <)'
   - name: 'ValdacilsItemSorting-ArmorBySlot.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/3877' ]
@@ -7118,7 +7144,11 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout4/mods/333' ]
     msg:
       - type: error
-        content: 'Realistic Survival Damage.esp alters the same game variables as the Survival X PC/EnemyDamage.esps. You should use either one or the other.'
+        content:
+          - lang: en
+            text: 'Realistic Survival Damage.esp alters the same game variables as the Survival X PC/EnemyDamage.esps. You should use either one or the other.'
+          - lang: da
+            text: 'Realistic Survival Damage.esp ændrer de samme spilværdier som Survival X PC/EnemyDamage.esp’erne. Du bør bruge enten den ene eller den anden mod.'
         condition: 'file("Survival((90|75|65|50|25|10)LESS|Normal|(10|20|30|40|50|60|70|80|90|100|150|200|250|300|350|400|450|500)more)(PC|Enemy)Damage\.esp")'
   - name: 'Rainy_(25|50|75|100)\.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/1812' ]
@@ -7453,6 +7483,8 @@ plugins:
         content:
         - lang: en
           text: 'Uninstall this file and upgrade to Homemaker 1.50.'
+        - lang: da
+          text: 'Afinstallér denne fil og opgradér til Homemaker 1.50.'
         - lang: es
           text: 'Desinstale este archivo y actualizar a Homemaker 1.50.'
         - lang: ja
@@ -7594,6 +7626,8 @@ plugins:
         content:
         - lang: en
           text: 'Uninstall this file. It it no longer required with Homemaker 1.50 or higher.'
+        - lang: da
+          text: 'Afinstallér denne fil. Den er ikke længere nødvending med Homemaker 1.50 og opefter.'
         - lang: es
           text: 'Desinstale este archivo. No es requerido con Homemaker 1.50 or higher.'
         - lang: ja
