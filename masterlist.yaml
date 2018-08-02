@@ -6437,7 +6437,7 @@ plugins:
           text: 'Kræver Fallout 4-lap 1.10.89 eller nyere.'
         condition: 'version("Unofficial Fallout 4 Patch.esp", "2.0.3", >=) and not version("../Fallout4.exe", "1.10.89.0", >=)'
       - <<: *obsolete
-        condition: 'version("Unofficial Fallout 4 Patch.esp", "2.0.3", <)'
+        condition: 'version("Unofficial Fallout 4 Patch.esp", "2.0.4", <)'
   # Mods obsoleted by official Bethesda patches
   - name: 'KH_DogArmorFix.esp '
     url: [ 'https://www.nexusmods.com/fallout4/mods/15222' ]
