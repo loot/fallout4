@@ -8898,6 +8898,30 @@ plugins:
             text: 'This mod is deprecated in favour of "Turret Control Panel". Follow the instructions on [the "Turret Control Panel" mod page](https://www.nexusmods.com/fallout4/mods/11960) to update.'
           - lang: da
             text: 'Denne mod er forældet til fordel for "Turret Control Panel". Følg instruktionerne på ["Turrent Control Panel"-mod-siden](https://www.nexusmods.com/fallout4/mods/11960) for at opdatere.'
+  - name: 'BrahminPackMod.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/30436' ]
+    dirty:
+      # Version 1
+      - <<: *dirtyPlugin
+        crc: 0x97C9A7DE
+        util: 'FO4Edit v3.2.23'
+        itm: 372
+        udr: 12
+      # Version 1.1
+      - <<: *dirtyPlugin
+        crc: 0x6B8C7589
+        util: 'FO4Edit v3.2.23'
+        itm: 371
+        udr: 12
+    msg:
+      - <<: *obsolete
+        condition: 'checksum("BrahminPackMod.esp", 97C9A7DE)'
+      - type: warn
+        content:
+          - lang: en
+            text: 'Even with cleaning this plugin with FO4Edit it still has a large number of wild edits and author-preference edits unrelated to the stated purpose of the mod, which may cause issues in your game or prevent other mods from working properly.'
+          - lang: da
+            text: 'Selv efter FO4Edit-rensning af pluginnet vil der stadig være en stor mængde af ukontrollerde og forfatterpræference redigeringer urelateret til moddens angivne formål, hvilket kan forårsage problemer i spillet eller forhindre andre mods i at fungere korrekt.'
 
   - name: 'OSM_AlternateStart_Protocol-InfiniteAnswer.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/13762' ]
