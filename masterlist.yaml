@@ -8898,6 +8898,22 @@ plugins:
             text: 'This mod is deprecated in favour of "Turret Control Panel". Follow the instructions on [the "Turret Control Panel" mod page](https://www.nexusmods.com/fallout4/mods/11960) to update.'
           - lang: da
             text: 'Denne mod er forældet til fordel for "Turret Control Panel". Følg instruktionerne på ["Turrent Control Panel"-mod-siden](https://www.nexusmods.com/fallout4/mods/11960) for at opdatere.'
+  - name: 'Bess.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/2348' ]
+    inc:
+      - 'packbrahmin.esp'
+    clean:
+      # Version 1
+      - crc: 0xB1260E90
+        util: 'FO4Edit v3.2.31'
+  - name: 'packbrahmin.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/2348' ]
+    inc:
+      - 'Bess.esp'
+    clean:
+      # Version 2
+      - crc: 0x9EAC8A5E
+        util: 'FO4Edit v3.2.31'
   - name: 'BrahminPackMod.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/30436' ]
     dirty:
