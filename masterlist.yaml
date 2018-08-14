@@ -200,6 +200,13 @@ common:
       - lang: ja
         text: 'このファイルを削除し、Homemaker 1.50に更新してください。'
     condition: 'version("Homemaker.esm", "1.50", <)'
+  - &wildEdits
+    type: warn
+    content:
+      - lang: en
+        text: 'This plugin contains wild edits beyond ITM and UDR records and deleted navmeshes and may require additional manual cleaning to not interfere with other mods.'
+      - lang: da
+        text: 'Dette plugin indeholder ukontrollerede redigeringer udover ITM- og UDR-poster og slettede navmesher og kan behøve yderligere manuel oprydning for ikke at forstyrre andre mods.'
 
 # Cleaning data
   - &dirtyPlugin
@@ -8914,6 +8921,16 @@ plugins:
       # Version 2
       - crc: 0x9EAC8A5E
         util: 'FO4Edit v3.2.31'
+  - name: 'Ushi.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/15345' ]
+    dirty:
+      # Version 1.42
+      - <<: *dirtyPlugin
+        crc: 0x8240D505
+        util: 'FO4Edit v3.2.31'
+        itm: 11
+    msg:
+      - *wildEdits
   - name: 'BrahminPackMod.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/30436' ]
     dirty:
