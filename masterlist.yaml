@@ -443,6 +443,9 @@ plugins:
     group: *ccGroup
     after:
       - 'ccBGSFO4001-PipBoy(Black).esl'
+    clean:
+      - crc: 0x27E9BDE1
+        util: 'FO4Edit v3.2.33'
   - name: 'ccBGSFO4003-PipBoy(Camo01).esl'
     group: *ccGroup
     after:
@@ -1294,6 +1297,9 @@ plugins:
       - 'ccGCAFO4008-FactionWS08Inst.esl'
       - 'ccGCAFO4009-FactionWS09MM.esl'
       - 'ccGCAFO4010-FactionWS10RR.esl'
+    clean:
+      - crc: 0x1678A533
+        util: 'FO4Edit v3.2.33'
   - name: 'ccGCAFO4012-FactionAS01ACat.esl'
     group: *ccGroup
     after:
@@ -1658,6 +1664,9 @@ plugins:
       - 'ccGCAFO4016-FactionAS05HRShark.esl'
       - 'ccGCAFO4017-FactionAS06Inst.esl'
       - 'ccGCAFO4018-FactionAS07MM.esl'
+    clean:
+      - crc: 0x37D90FD3
+        util: 'FO4Edit v3.2.33'
   - name: 'ccGCAFO4020-FactionAS09RR.esl'
     group: *ccGroup
     after:
@@ -1811,6 +1820,9 @@ plugins:
       - 'ccGCAFO4019-FactionAS08Nuk.esl'
       - 'ccGCAFO4020-FactionAS09RR.esl'
       - 'ccGCAFO4021-FactionAS10HRFlames.esl'
+    clean:
+      - crc: 0x3BFFC8C6
+        util: 'FO4Edit v3.2.33'
   - name: 'ccGCAFO4023-FactionAS12Army.esl'
     group: *ccGroup
     after:
@@ -2029,6 +2041,9 @@ plugins:
       - 'ccGCAFO4023-FactionAS12Army.esl'
       - 'ccAWNFO4001-BrandedAttire.esl'
       - 'ccSWKFO4001-AstronautPowerArmor.esm'
+    clean:
+      - crc: 0xB6A07FA4
+        util: 'FO4Edit v3.2.33'
   - name: 'ccSWKFO4003-PipQuan.esl'
     group: *ccGroup
     after:
@@ -2086,6 +2101,9 @@ plugins:
       - 'ccAWNFO4001-BrandedAttire.esl'
       - 'ccSWKFO4001-AstronautPowerArmor.esm'
       - 'ccSWKFO4002-PipNuka.esl'
+    clean:
+      - crc: 0xA2F66832
+        util: 'FO4Edit v3.2.33'
   - name: 'ccBGSFO4050-DgBColl.esl'
     group: *ccGroup
     after:
@@ -2513,6 +2531,9 @@ plugins:
       - 'ccBGSFO4053-DgGoldR.esl'
       - 'ccBGSFO4054-DgGreatD.esl'
       - 'ccBGSFO4055-DgHusk.esl'
+    clean:
+      - crc: 0x161A794E
+        util: 'FO4Edit v3.2.33'
   - name: 'ccBGSFO4057-DgLabY.esl'
     group: *ccGroup
     after:
@@ -3134,6 +3155,9 @@ plugins:
       - 'ccBGSFO4036-TrnsDg.esl'
       - 'ccRZRFO4004-PipInst.esl'
       - 'ccBGSFO4062-PipPat.esl'
+    clean:
+      - crc: 0xE1A3C2E0
+        util: 'FO4Edit v3.2.33'
   - name: 'ccFRSFO4002-AntimaterielRifle.esl'
     group: *ccGroup
     after:
@@ -4619,6 +4643,9 @@ plugins:
       - 'ccBGSFO4015-PipYell.esl'
       - 'ccBGSFO4009-PipOran.esl'
       - 'ccBGSFO4011-PipPurp.esl'
+    clean:
+      - crc: 0xB287884D
+        util: 'FO4Edit v3.2.33'
   - name: 'ccBGSFO4027-PowerArmorSkinGreen.esl'
     group: *ccGroup
     after:
