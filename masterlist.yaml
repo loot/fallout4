@@ -362,8 +362,8 @@ plugins:
     group: *dlcGroup
     dirty:
       - <<: *dirtyPlugin
-        crc: 0xd69027ea
-        util: 'FO4Edit v3.2.1'
+        crc: 0xD69027EA
+        util: 'FO4Edit v3.2.33'
         itm: 45
         udr: 38
         nav: 1
@@ -373,8 +373,8 @@ plugins:
       - 'DLCRobot.esm'
     dirty:
       - <<: *dirtyPlugin
-        crc: 0x47bae27e
-        util: 'FO4Edit v3.2.1'
+        crc: 0x47BAE27E
+        util: 'FO4Edit v3.2.33'
         itm: 6
   - name: 'DLCCoast.esm'
     group: *dlcGroup
@@ -383,8 +383,8 @@ plugins:
       - 'DLCworkshop01.esm'
     dirty:
       - <<: *dirtyPlugin
-        crc: 0xf1f28026
-        util: 'FO4Edit v3.2.1'
+        crc: 0xF1F28026
+        util: 'FO4Edit v3.2.33'
         itm: 75
         udr: 86
   - name: 'DLCworkshop02.esm'
@@ -395,8 +395,8 @@ plugins:
       - 'DLCCoast.esm'
     dirty:
       - <<: *dirtyPlugin
-        crc: 0x83abc821
-        util: 'FO4Edit v3.2.1'
+        crc: 0x83ABC821
+        util: 'FO4Edit v3.2.33'
         itm: 2
   - name: 'DLCworkshop03.esm'
     group: *dlcGroup
@@ -407,8 +407,8 @@ plugins:
       - 'DLCworkshop02.esm'
     dirty:
       - <<: *dirtyPlugin
-        crc: 0xe0089fbb
-        util: 'FO4Edit v3.2.1'
+        crc: 0xE0089FBB
+        util: 'FO4Edit v3.2.33'
         itm: 18
         udr: 10
   - name: 'DLCNukaWorld.esm'
@@ -421,9 +421,9 @@ plugins:
       - 'DLCworkshop03.esm'
     dirty:
       - <<: *dirtyPlugin
-        crc: 0x43d25c56
-        util: 'FO4Edit v3.2.1'
-        itm: 193
+        crc: 0x43D25C56
+        util: 'FO4Edit v3.2.33'
+        itm: 191
         udr: 418
         nav: 7
   - name: 'DLCUltraHighResolution.esm'
