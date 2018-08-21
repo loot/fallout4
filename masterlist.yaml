@@ -435,17 +435,23 @@ plugins:
       - 'DLCworkshop02.esm'
       - 'DLCworkshop03.esm'
       - 'DLCNukaWorld.esm'
+    clean:
+      - crc: 0x9B2A2AAC
+        util: 'FO4Edit v3.2.41'
 
   ### Creation Club plugins
   - name: 'ccBGSFO4001-PipBoy(Black).esl'
     group: *ccGroup
+    clean:
+      - crc: 0x7CA905AC
+        util: 'FO4Edit v3.2.41'
   - name: 'ccBGSFO4002-PipBoy(Blue).esl'
     group: *ccGroup
     after:
       - 'ccBGSFO4001-PipBoy(Black).esl'
     clean:
       - crc: 0x27E9BDE1
-        util: 'FO4Edit v3.2.33'
+        util: 'FO4Edit v3.2.41'
   - name: 'ccBGSFO4003-PipBoy(Camo01).esl'
     group: *ccGroup
     after:
@@ -457,6 +463,9 @@ plugins:
       - 'ccBGSFO4001-PipBoy(Black).esl'
       - 'ccBGSFO4002-PipBoy(Blue).esl'
       - 'ccBGSFO4003-PipBoy(Camo01).esl'
+    clean:
+      - crc: 0x6DAC3906
+        util: 'FO4Edit v3.2.41'
   - name: 'ccBGSFO4006-PipBoy(Chrome).esl'
     group: *ccGroup
     after:
@@ -464,6 +473,9 @@ plugins:
       - 'ccBGSFO4002-PipBoy(Blue).esl'
       - 'ccBGSFO4003-PipBoy(Camo01).esl'
       - 'ccBGSFO4004-PipBoy(Camo02).esl'
+    clean:
+      - crc: 0xB699105C
+        util: 'FO4Edit v3.2.41'
   - name: 'ccBGSFO4012-PipBoy(Red).esl'
     group: *ccGroup
     after:
@@ -502,6 +514,9 @@ plugins:
       - 'ccBGSFO4012-PipBoy(Red).esl'
       - 'ccBGSFO4014-PipBoy(White).esl'
       - 'ccBGSFO4005-BlueCamo.esl'
+    clean:
+      - crc: 0x80C388EC
+        util: 'FO4Edit v3.2.41'
   - name: 'ccBGSFO4018-GaussRiflePrototype.esl'
     group: *ccGroup
     after:
@@ -787,6 +802,9 @@ plugins:
       - 'ccBGSFO4044-HellfirePowerArmor.esl'
       - 'ccFSVFO4001-ModularMilitaryBackpack.esl'
       - 'ccFSVFO4002-MidCenturyModern.esl'
+    clean:
+      - crc: 0x572E30C2
+        util: 'FO4Edit v3.2.41'
   - name: 'ccEEJFO4001-DecorationPack.esl'
     group: *ccGroup
     after:
@@ -1299,7 +1317,7 @@ plugins:
       - 'ccGCAFO4010-FactionWS10RR.esl'
     clean:
       - crc: 0x1678A533
-        util: 'FO4Edit v3.2.33'
+        util: 'FO4Edit v3.2.41'
   - name: 'ccGCAFO4012-FactionAS01ACat.esl'
     group: *ccGroup
     after:
@@ -1666,7 +1684,7 @@ plugins:
       - 'ccGCAFO4018-FactionAS07MM.esl'
     clean:
       - crc: 0x37D90FD3
-        util: 'FO4Edit v3.2.33'
+        util: 'FO4Edit v3.2.41'
   - name: 'ccGCAFO4020-FactionAS09RR.esl'
     group: *ccGroup
     after:
@@ -1822,7 +1840,7 @@ plugins:
       - 'ccGCAFO4021-FactionAS10HRFlames.esl'
     clean:
       - crc: 0x3BFFC8C6
-        util: 'FO4Edit v3.2.33'
+        util: 'FO4Edit v3.2.41'
   - name: 'ccGCAFO4023-FactionAS12Army.esl'
     group: *ccGroup
     after:
@@ -2043,7 +2061,7 @@ plugins:
       - 'ccSWKFO4001-AstronautPowerArmor.esm'
     clean:
       - crc: 0xB6A07FA4
-        util: 'FO4Edit v3.2.33'
+        util: 'FO4Edit v3.2.41'
   - name: 'ccSWKFO4003-PipQuan.esl'
     group: *ccGroup
     after:
@@ -2103,7 +2121,7 @@ plugins:
       - 'ccSWKFO4002-PipNuka.esl'
     clean:
       - crc: 0xA2F66832
-        util: 'FO4Edit v3.2.33'
+        util: 'FO4Edit v3.2.41'
   - name: 'ccBGSFO4050-DgBColl.esl'
     group: *ccGroup
     after:
@@ -2533,7 +2551,7 @@ plugins:
       - 'ccBGSFO4055-DgHusk.esl'
     clean:
       - crc: 0x161A794E
-        util: 'FO4Edit v3.2.33'
+        util: 'FO4Edit v3.2.41'
   - name: 'ccBGSFO4057-DgLabY.esl'
     group: *ccGroup
     after:
@@ -3157,7 +3175,7 @@ plugins:
       - 'ccBGSFO4062-PipPat.esl'
     clean:
       - crc: 0xE1A3C2E0
-        util: 'FO4Edit v3.2.33'
+        util: 'FO4Edit v3.2.41'
   - name: 'ccFRSFO4002-AntimaterielRifle.esl'
     group: *ccGroup
     after:
@@ -4645,7 +4663,7 @@ plugins:
       - 'ccBGSFO4011-PipPurp.esl'
     clean:
       - crc: 0xB287884D
-        util: 'FO4Edit v3.2.33'
+        util: 'FO4Edit v3.2.41'
   - name: 'ccBGSFO4027-PowerArmorSkinGreen.esl'
     group: *ccGroup
     after:
