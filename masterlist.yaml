@@ -9000,6 +9000,47 @@ plugins:
             text: 'Even with cleaning this plugin with FO4Edit it still has a large number of wild edits and author-preference edits unrelated to the stated purpose of the mod, which may cause issues in your game or prevent other mods from working properly.'
           - lang: da
             text: 'Selv efter FO4Edit-rensning af pluginnet vil der stadig være en stor mængde af ukontrollerde og forfatterpræference redigeringer urelateret til moddens angivne formål, hvilket kan forårsage problemer i spillet eller forhindre andre mods i at fungere korrekt.'
+  - name: 'WhatsYourName.esl'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/25321' ]
+    inc:
+      - 'WhatsYourName.esp'
+    clean:
+      # Version 1.7.0
+      - crc: 0x5E569B73
+        util: 'FO4Edit v3.2.48'
+    msg:
+      - &WYM_FCOM
+        type: say
+        content:
+          - lang: en
+            text: 'Consider using the "What''s Your Name" FCOM plugin to be able to rename NPCs from Fallout Commander (FCOM).'
+          - lang: da
+            text: 'Overvej at bruge "What''s Your Name"-FCOM-pluginnet for at kunne omdøbe NPC’ere fra Fallout Commander (FCOM).'
+        condition: 'active("FCOM.esm") and not active("WhatsYourName-FCOM.esp")'
+  - name: 'WhatsYourName.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/25321' ]
+    inc:
+      - 'WhatsYourName.esl'
+    clean:
+      # Version 1.6.0
+      - crc: 0xCF6862C5
+        util: 'FO4Edit v3.2.48'
+      # Version 1.7.0
+      - crc: 0xF5D9D57B
+        util: 'FO4Edit v3.2.48'
+    msg:
+      - *WYM_FCOM
+  - name: 'WhatsYourName-FCOM.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/25321' ]
+    req:
+      - name: 'WhatsYourName.esl'
+        condition: 'not active("WhatsYourName.esp")'
+      - name: 'WhatsYourName.esp'
+        condition: 'not active("WhatsYourName.esl")'
+    clean:
+      # Version 1.7.0
+      - crc: 0x555C1E4E
+        util: 'FO4Edit v3.2.48'
 
   - name: 'OSM_AlternateStart_Protocol-InfiniteAnswer.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/13762' ]
