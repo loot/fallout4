@@ -8248,11 +8248,27 @@ plugins:
     # TODO: Add ´msg´s for DLC compat. patches
     url: [ 'https://www.nexusmods.com/fallout4/mods/2228' ]
     dirty:
+      # Version 3.32
       - <<: *dirtyPlugin
-        # Version 3.32
         crc: 0x232590b7
-        # FO4Edit 3.2
+        util: 'FO4Edit v3.2'
         itm: 5
+      # Version 4.2
+      - <<: *dirtyPlugin
+        crc: 0xE7694EC1
+        util: 'FO4Edit v3.2.63'
+        itm: 1
+      # Version 4.3
+      - <<: *dirtyPlugin
+        crc: 0x837FE661
+        util: 'FO4Edit v3.2.63'
+        itm: 1
+    msg:
+      - <<: *obsolete
+        condition: 'version("Armorsmith Extended.esp", "4.3", <)'
+      - type: error
+        content: 'Your version of Armorsmith Extended is not compatible with your installed Armor and Weapon Keywords Community Resource (AWKCR).'
+        condition: 'version("Armorsmith Extended.esp", "4.3", >=) and version("ArmorKeywords.esm", "7.1", <)'
   - name: 'SettlementAttacksBeyondFH.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/12892' ]
     dirty:
