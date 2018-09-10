@@ -6933,6 +6933,16 @@ plugins:
         util: FO4Edit v3.2.3h
     msg:
       - *AlreadyInUFO4P
+  - name: 'Brawl Bug Fix.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/16899' ]
+    group: *fixesGroup
+    clean:
+      # Version 1
+      - crc: 0x193547FD
+        util: 'FO4Edit v3.2.65'
+    msg:
+      - <<: *AlreadyInUFO4P
+        condition: 'active("Unofficial Fallout 4 Patch.esp") and version("Unofficial Fallout 4 Patch.esp", "2.0.5", >=)'
 
   - name: 'Vault-Tec Historical Preservation Initiative.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/12019' ]
