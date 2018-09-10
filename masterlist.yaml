@@ -6946,7 +6946,7 @@ plugins:
 
   - name: 'Vault-Tec Historical Preservation Initiative.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/12019' ]
-    global_group: *retconGroup
+    group: *retconGroup
     dirty:
       - <<: *dirtyPlugin
         # Version 1.15
