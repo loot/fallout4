@@ -8627,9 +8627,40 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout4/mods/21872' ]
     after:
       - 'HUDFramework.esm'
+    dirty:
+      # Version 3.4.0
+      - <<: *dirtyPlugin
+        crc: 0x9B2392B0
+        util: 'FO4Edit v3.2.67'
+        itm: 2
+      # Version 3.4.0, Three-In-One
+      - <<: *dirtyPlugin
+        crc: 0xD659F761
+        util: 'FO4Edit v3.2.67'
+        itm: 2
+      # Version 3.4.1
+      - <<: *dirtyPlugin
+        crc: 0xE6DF75E6
+        util: 'FO4Edit v3.2.67'
+        itm: 2
+      # Version 3.4.1, Three-In-One
+      - <<: *dirtyPlugin
+        crc: 0xE2A28496
+        util: 'FO4Edit v3.2.67'
+        itm: 2
+      # Version 3.4.2
+      - <<: *dirtyPlugin
+        crc: 0xF5DFC3E9
+        util: 'FO4Edit v3.2.67'
+        itm: 2
+      # Version 3.4.2, Three-In-One
+      - <<: *dirtyPlugin
+        crc: 0x619ACA1A
+        util: 'FO4Edit v3.2.67'
+        itm: 2
     msg:
       - <<: *obsolete
-        condition: 'version("SimSettlements.esm", "2.0.6", <)'
+        condition: 'version("SimSettlements.esm", "3.4.2", <)'
   - name: 'SimSettlements_XPAC_IndustrialRevolution.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/25213' ]
     msg:
