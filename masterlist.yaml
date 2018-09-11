@@ -8663,12 +8663,19 @@ plugins:
         condition: 'version("SimSettlements.esm", "3.4.2", <)'
   - name: 'SimSettlements_XPAC_IndustrialRevolution.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/25213' ]
+    clean:
+      # Version 3.3.3
+      - crc: 0x523CB0C3
+        util: 'FO4Edit v3.2.67'
     msg:
       - <<: *obsolete
-        condition: 'version("SimSettlements_XPAC_IndustrialRevolution.esp", "2.0.6", <)'
+        condition: 'version("SimSettlements_XPAC_IndustrialRevolution.esp", "3.3.3", <)'
       - type: error
         content: 'You should not use mismatched versions of Sim Settlements and the Industrial Revolution expansion.'
-        condition: '(version("SimSettlements_XPAC_IndustrialRevolution.esp", "2.0.6", >=) and version("SimSettlements_XPAC_IndustrialRevolution.esp", "2.0.7", <)) and not (version("SimSettlements.esm", "2.0.6", >=) and version("SimSettlements.esm", "2.0.7", <))'
+        condition: '(version("SimSettlements_XPAC_IndustrialRevolution.esp", "3.3.3", >=) and version("SimSettlements.esm", "3.3.3", <)) or (version("SimSettlements_XPAC_IndustrialRevolution.esp", "3.3.3", <) and version("SimSettlements.esm", "3.3.3", >=))'
+      - <<: *AlreadyInX
+        subs: [ 'Sim Settlements Three-In-One' ]
+        condition: 'checksum("SimSettlements.esm", 619ACA1A)'
   - name: 'Companion_ShutUp.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/25763' ]
     dirty:
