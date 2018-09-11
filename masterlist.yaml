@@ -8676,6 +8676,21 @@ plugins:
       - <<: *AlreadyInX
         subs: [ 'Sim Settlements Three-In-One' ]
         condition: 'checksum("SimSettlements.esm", 619ACA1A)'
+  - name: 'SimSettlements_XPAC_RiseOfTheCommonwealth.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/28599' ]
+    clean:
+      # Version 3.4.0
+      - crc: 0x6621D83E
+        util: 'FO4Edit v3.2.67'
+    msg:
+      - <<: *obsolete
+        condition: 'version("SimSettlements_XPAC_RiseOfTheCommonwealth.esp", "3.4.0", <)'
+      - type: error
+        content: 'You should not use mismatched versions of Sim Settlements and the Rise of the Commonwealth expansion.'
+        condition: '(version("SimSettlements_XPAC_RiseOfTheCommonwealth.esp", "3.4.0", >=) and version("SimSettlements.esm", "3.4.0", <)) or (version("SimSettlements_XPAC_RiseOfTheCommonwealth.esp", "3.4.0", <) and version("SimSettlements.esm", "3.4.0", >=))'
+      - <<: *AlreadyInX
+        subs: [ 'Sim Settlements Three-In-One' ]
+        condition: 'checksum("SimSettlements.esm", 619ACA1A)'
   - name: 'Companion_ShutUp.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/25763' ]
     dirty:
