@@ -128,7 +128,7 @@ common:
     type: error
     content:
       - lang: en
-        text: 'You have installed %1% but F4SE not found! See F4SE download page: [F4SE](http://f4se.silverlock.org).'
+        text: 'You have installed %1% but F4SE was not found! See F4SE download page: [F4SE](http://f4se.silverlock.org).'
       - lang: ru
         text: 'У вас установлен %1%, но F4SE не найден! Смотрите страницу загрузки [F4SE](http://f4se.silverlock.org).'
       - lang: es
