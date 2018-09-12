@@ -309,7 +309,7 @@ globals:
         text: 'Din installerede version af Place Everywhere er ikke kompatibel med din version af Fallout 4.'
       - lang: ja
         text: 'インストールされているPlace Everywhereは使用中のバージョンのFallout 4との互換性がありません。'
-    condition: '(file("F4SE/Plugins/place.dll") and version("F4SE/Plugins/place.dll", "1.18.0.1111", >=) and not version("../Fallout4.exe", "1.10.111.0", ==)) or (file("F4SE/Plugins/place.dll") and version("F4SE/Plugins/place.dll", "1.18.0.1111", <) and version("../Fallout4.exe", "1.10.111.0", ==))'
+    condition: 'file("F4SE/Plugins/place.dll") and ((version("F4SE/Plugins/place.dll", "1.18.0.1111", >=) and not version("../Fallout4.exe", "1.10.111.0", ==)) or (version("F4SE/Plugins/place.dll", "1.18.0.1111", <) and version("../Fallout4.exe", "1.10.111.0", ==)))'
 
 groups:
   - name: &dlcGroup DLC
