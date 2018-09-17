@@ -8658,9 +8658,18 @@ plugins:
         crc: 0x619ACA1A
         util: 'FO4Edit v3.2.67'
         itm: 2
+      # Version 3.4.3, Three-In-One
+      - <<: *dirtyPlugin
+        crc: 0xE42587B0
+        util: 'FO4Edit v3.2.67'
+        itm: 2
+    clean:
+      # Version 3.4.3
+      - crc: 0x3190674F
+        util: 'FO4Edit v3.2.67'
     msg:
       - <<: *obsolete
-        condition: 'version("SimSettlements.esm", "3.4.2", <)'
+        condition: 'version("SimSettlements.esm", "3.4.3", <)'
   - name: 'SimSettlements_XPAC_IndustrialRevolution.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/25213' ]
     clean:
@@ -8675,22 +8684,25 @@ plugins:
         condition: '(version("SimSettlements_XPAC_IndustrialRevolution.esp", "3.3.3", >=) and version("SimSettlements.esm", "3.3.3", <)) or (version("SimSettlements_XPAC_IndustrialRevolution.esp", "3.3.3", <) and version("SimSettlements.esm", "3.3.3", >=))'
       - <<: *AlreadyInX
         subs: [ 'Sim Settlements Three-In-One' ]
-        condition: 'checksum("SimSettlements.esm", 619ACA1A)'
+        condition: 'checksum("SimSettlements.esm", E42587B0)'
   - name: 'SimSettlements_XPAC_RiseOfTheCommonwealth.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/28599' ]
     clean:
       # Version 3.4.0
       - crc: 0x6621D83E
         util: 'FO4Edit v3.2.67'
+      # Version 3.4.3
+      - crc: 0xF8BA4A88
+        util: 'FO4Edit v3.2.67'
     msg:
       - <<: *obsolete
-        condition: 'version("SimSettlements_XPAC_RiseOfTheCommonwealth.esp", "3.4.0", <)'
+        condition: 'version("SimSettlements_XPAC_RiseOfTheCommonwealth.esp", "3.4.3", <)'
       - type: error
         content: 'You should not use mismatched versions of Sim Settlements and the Rise of the Commonwealth expansion.'
-        condition: '(version("SimSettlements_XPAC_RiseOfTheCommonwealth.esp", "3.4.0", >=) and version("SimSettlements.esm", "3.4.0", <)) or (version("SimSettlements_XPAC_RiseOfTheCommonwealth.esp", "3.4.0", <) and version("SimSettlements.esm", "3.4.0", >=))'
+        condition: '(version("SimSettlements_XPAC_RiseOfTheCommonwealth.esp", "3.4.3", >=) and version("SimSettlements.esm", "3.4.3", <)) or (version("SimSettlements_XPAC_RiseOfTheCommonwealth.esp", "3.4.3", <) and version("SimSettlements.esm", "3.4.3", >=))'
       - <<: *AlreadyInX
         subs: [ 'Sim Settlements Three-In-One' ]
-        condition: 'checksum("SimSettlements.esm", 619ACA1A)'
+        condition: 'checksum("SimSettlements.esm", E42587B0)'
   - name: 'Companion_ShutUp.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/25763' ]
     dirty:
