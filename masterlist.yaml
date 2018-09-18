@@ -8238,13 +8238,28 @@ plugins:
         crc: 0x898D5313
         util: 'FO4Edit v3.2.63'
         itm: 79
+      # Version 7.2
+      - <<: *dirtyPlugin
+        crc: 0xF2EC3F44
+        util: 'FO4Edit v3.2.67'
+        itm: 68
+      # Version 7.3
+      - <<: *dirtyPlugin
+        crc: 0x088B5C88
+        util: 'FO4Edit v3.2.67'
+        itm: 68
+      # Version 7.4
+      - <<: *dirtyPlugin
+        crc: 0x2F5753CE
+        util: 'FO4Edit v3.2.67'
+        itm: 68
     clean:
       # Version 4.02
       - crc: 0x602cfd1a
         util: 'FO4Edit v3.2.1'
     msg:
       - <<: *obsolete
-        condition: 'version("ArmorKeywords.esm", "7.1", <)'
+        condition: 'version("ArmorKeywords.esm", "7.4", <)'
   - name: 'Armorsmith Extended.esp'
     # TODO: Add ´msg´s for DLC compat. patches
     url: [ 'https://www.nexusmods.com/fallout4/mods/2228' ]
