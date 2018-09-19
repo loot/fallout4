@@ -9372,6 +9372,14 @@ plugins:
       # Version 1.7.0
       - crc: 0x555C1E4E
         util: 'FO4Edit v3.2.48'
+  - name: 'RenLightMod.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/11527' ]
+    dirty:
+      # Version 1.82
+      - <<: *dirtyPlugin
+        crc: 0x770B67B6
+        util: 'FO4Edit v3.2.67'
+        itm: 78
 
   - name: 'OSM_AlternateStart_Protocol-InfiniteAnswer.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/13762' ]
