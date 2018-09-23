@@ -6696,12 +6696,12 @@ plugins:
       - type: error
         content:
         - lang: en
-          text: 'Requires Fallout 4 patch 1.10.89 or greater.'
+          text: 'Requires Fallout 4 patch 1.10.111 or greater.'
         - lang: da
-          text: 'Kræver Fallout 4-lap 1.10.89 eller nyere.'
-        condition: 'version("Unofficial Fallout 4 Patch.esp", "2.0.3", >=) and not version("../Fallout4.exe", "1.10.89.0", >=)'
+          text: 'Kræver Fallout 4-lap 1.10.111 eller nyere.'
+        condition: 'version("Unofficial Fallout 4 Patch.esp", "2.0.5", >=) and not version("../Fallout4.exe", "1.10.111.0", >=)'
       - <<: *obsolete
-        condition: 'version("Unofficial Fallout 4 Patch.esp", "2.0.4", <)'
+        condition: 'version("Unofficial Fallout 4 Patch.esp", "2.0.5", <)'
   # Mods obsoleted by official Bethesda patches
   - name: 'KH_DogArmorFix.esp '
     url: [ 'https://www.nexusmods.com/fallout4/mods/15222' ]
