@@ -7621,6 +7621,11 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout4/mods/10193' ]
     inc: [ 'Concentrated Splitter.esp' ]
     req: [ 'Lasers Have No Recoil.esp' ]
+  - name: 'OCDCCPatch.esp'
+    msg:
+      - type: warn
+        content: 'OCDCCPatch.esp is no longer required. Upgrade OCDecorator.esp to 1.1.3.'
+        condition: 'active("OCDecorator.esp") and version("OCDecorator.esp", "1.1.3", <)'
   - name: 'OCD FarHarborDLC.esp'
     msg:
       - type: warn
