@@ -7625,7 +7625,7 @@ plugins:
     msg:
       - type: warn
         content: 'OCDCCPatch.esp is no longer required. Upgrade OCDecorator.esp to 1.1.3.'
-        condition: 'active("OCDecorator.esp") and version("OCDecorator.esp", "1.1.3", <)'
+        condition: 'active("OCDecorator.esp")'
   - name: 'OCD FarHarborDLC.esp'
     msg:
       - type: warn
