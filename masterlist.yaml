@@ -7621,6 +7621,16 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout4/mods/10193' ]
     inc: [ 'Concentrated Splitter.esp' ]
     req: [ 'Lasers Have No Recoil.esp' ]
+  - name: 'OCD FarHarborDLC.esp'
+    msg:
+      - type: warn
+        content: 'OCDecoratorDLC.esp in a merged version OCD NukaWorldDLC.esp and OCD FarHarborDLC.esp'
+        condition: 'file("OCDecoratorDLC.esp")'
+  - name: 'OCD NukaWorldDLC.esp'
+    msg:
+      - type: warn
+        content: 'OCDecoratorDLC.esp in a merged version OCD NukaWorldDLC.esp and OCD FarHarborDLC.esp'
+        condition: 'file("OCDecoratorDLC.esp")'
   - name: 'OCDWorkshopDLCPatch.esp'
     msg:
       - type: error
