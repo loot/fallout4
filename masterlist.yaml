@@ -8142,7 +8142,7 @@ plugins:
         subs:
           - "Valdacil's Item Sorting"
           - '[Heather Casdin patch](https://www.nexusmods.com/fallout4/mods/24314)'
-        condition: 'active("ValdacilsItemSorting-.+\.esp") and not active("llamaCompanionHeather-VIS(-AE)? Patch\.esp")'
+        condition: 'active("ValdacilsItemSorting-.+\.esp") and not active("llamaCompanionHeather-VIS(-G)?( - AE)? Patch\.esp")'
       - <<: *hasPluginPatch
         subs:
           - "Bhaal's Better Sorting"
@@ -8152,7 +8152,7 @@ plugins:
         subs:
           - 'Armorsmith Extended'
           - '[Heather Casdin patch](https://www.nexusmods.com/fallout4/mods/24314)'
-        condition: 'active("Armorsmith Extended.esp") and not active("llamaCompanionHeather-((BBS|VIS)-)?AE Patch\.esp")'
+        condition: 'active("Armorsmith Extended.esp") and not active("llamaCompanionHeather-(BBS-|VIS(-G)? - )?AE Patch\.esp")'
   - name: 'llamaCompanionHeather-BBS(-AE)? Patch\.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/24314' ]
     inc:
