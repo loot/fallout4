@@ -22,6 +22,8 @@ common:
         text: 'Forældet. Opdatér til den nyeste version.'
       - lang: ja
         text: '旧式のプラグインです。最新版に更新してください。'
+      - lang: de
+        text: 'Veraltet. Aktualisere zur letzten Version.'
   - &AlreadyInFO4
     type: error
     content:
@@ -31,6 +33,8 @@ common:
         text: 'Slet. Allerede rettet i Fallout 4 af Bethesda.'
       - lang: ja
         text: '削除してください。既にBethesdaによってFallout 4のパッチが当てられています。'
+      - lang: de
+        text: 'Löschen. Schon in Fallout 4 behoben von Bethesda.'
   - &AlreadyInUFO4P
     type: error
     content:
@@ -48,6 +52,8 @@ common:
         text: 'Slet. Allerede inkluderet i Unofficial Fallout 4 Patch.esp.'
       - lang: ja
         text: '削除してください。既にUnofficial Fallout 4 Patch.espに含まれています。'
+      - lang: de
+        text: 'Löschen. Schon enthalten im Unofficial Fallout 4 Patch.esp.'
     condition: 'active("Unofficial Fallout 4 Patch.esp")'
   - &AlreadyInX
     type: error
@@ -66,6 +72,8 @@ common:
         text: 'Slet. Allerede inkluderet i %1%.'
       - lang: ja
         text: '削除してください。既に%1%に含まれています。'
+      - lang: de
+        text: 'Löschen. Schon enthalten in %1%.'
   - &useOnlyOneX
     type: warn
     content:
@@ -83,6 +91,8 @@ common:
         text: 'Brug kun én %1%.'
       - lang: ja
         text: '%1%は一つだけ使用してください。'
+      - lang: de
+        text: 'Benutze nur einen %1%.'
   - &doNotClean
     type: say
     content:
@@ -98,6 +108,8 @@ common:
         text: 'Rengør ikke ITM-poster: de er forsætlige og krævede for at mod’en fungerer. Det er sikkert at gendanne poster, men gør ikke andet end dét.'
       - lang: ja
         text: 'IMTレコードはクリーンしないでください。これらは意図的に残されたデータであり、Modを機能させるために必要です。削除の取り消しは安全に行えますが、それ以外のことは行わないでください。'
+      - lang: de
+        text: 'Die ITM-Einträge nicht säubern, diese sind absichtlich enthalten und sind vorausgesetzt dass die Mod funktioniert. Es ist ungefährlich Einträge wiederherzustellen, aber unternehme nicht anderes.'
   - &patchAvailable
     type: say
     content:
@@ -107,6 +119,8 @@ common:
         text: 'Dette plugin er i konflikt med pluginnet “%1%”, men en lap er tilgængelig.'
       - lang: ja
         text: 'このプラグインは"%1%"と競合していますが、パッチが利用可能です。'
+      - lang: de
+        text: 'Dieses Plugin steht im Konflikt mit dem Plugin "%1%", ein Patch ist jedoch verfügbar.'
   - &hasPluginPatch
     type: warn
     content:
@@ -116,6 +130,8 @@ common:
         text: "Du ser ud til at bruge %1%, men du bruger ikke “%1%”-lappen for dette plugin: %2%"
       - lang: ja
         text: "%1%が使用されていますが、このプラグイン用の%1%のパッチが有効になっていません: %2%"
+      - lang: de
+        text: "Sie nutzen anscheinend %1%, haben aber nicht den %1% Patch aktiviert für dieses Plugin: %2%"
   - &dlcVersion
     type: say
     content:
@@ -123,6 +139,8 @@ common:
         text: 'This version does not include modifications for DLC content. Consider getting the DLC version instead.'
       - lang: da
         text: 'Denne udgave inderholder ikke ændring til DLC-indhold. Overvej at bruge DLC-udgaven i stedet.'
+      - lang: de
+        text: 'Diese Version enthält keine Anpassungen für DLC Inhalte. Die DLC Version sollte anstatt dessen verwendet werden.'
     condition: 'active("DLCRobot.esm") and active("DLCworkshop01.esm") and active("DLCCoast.esm")'
   - &requireF4SE
     type: error
@@ -141,6 +159,8 @@ common:
         text: 'Du har installeret %1% men F4SE blev ikke fundet! Se F4SE-downloadsiden: [F4SE](http://f4se.silverlock.org).'
       - lang: ja
         text: '%1%はインストールされていますが、F4SEが見つかりません！SKSEのダウンロードページを確認してください。[F4SE](http://f4se.silverlock.org)'
+      - lang: de
+        text: 'Sie haben %1% installiert, aber F4SE wurde nicht gefunden! Siehe F4SE Download-Seite: [F4SE](http://f4se.silverlock.org).'
   - &SmashedVsBashedPatch
     type: say
     content:
@@ -152,6 +172,8 @@ common:
         text: 'Kan bruges sammen med %1% men det vil kræve ekstra arbejde. Smashed Patch og Bash Patch bør bruges uafhængigt af hinanden.'
       - lang: ja
         text: '%1%と同時に使用できますが、追加作業が必要となります。Smashed PatchかBash Patchはそれぞれ単独で使用してください。'
+      - lang: de
+        text: 'Kann benutzt werden mit einem %1%, würde jedoch weitere Arbeit benötigen. Ein Smashed Patch oder Bash Patch sollte unabhängig voneinander verwendet werden.'
   - &UsingSKE
     type: error
     content:
@@ -163,6 +185,8 @@ common:
         text: 'Denne fil er ikke kompatibel med SKE.'
       - lang: ja
         text: 'このファイルはSKEとの互換性がありません。'
+      - lang: de
+        text: 'Diese Datei ist nicht kompatibel mit SKE.'
     condition: 'active("SettlementKeywords.esm") and version("SettlementKeywords.esm", "1.0", >=)'
   - &InsteadSKEPatch
     type: warn
@@ -175,6 +199,8 @@ common:
         text: 'Denne fil ændrer Form-lister i vanilje menuer. Overvej at bruge en kompatibel SKE-lap i stedet.'
       - lang: ja
         text: 'このファイルはゲームにおける集落の建設メニューの分類方法を変更します。このファイルをアンインストールし、SKEと互換性のあるファイルおよびパッチのみ使用することを推奨します。'
+      - lang: de
+        text: 'Diese Datei ändert wie das Basis-Spiel die Bau-Menüs der Siedlungen kategorisiert. Es wird empfohlen diese Datei zu deinstallieren und nur Dateien und Patches zu verwenden die kompatibel sind mit SKE.'
     condition: 'active("SettlementKeywords.esm") and version("SettlementKeywords.esm", "1.0", >=)'
   - &UsingSNB
     type: error
@@ -187,6 +213,8 @@ common:
         text: 'Denne fil behøves ikke med Snap''n Build.esm v1.9. Overvej at opgradere og fjerne denne fil.'
       - lang: ja
         text: 'このファイルはSnap''n Build.esm v1.9では不要です。更新を行い、削除することを検討してください。'
+      - lang: de
+        text: 'Diese Datei ist überflüssig mit Snap''n Build.esm v1.9.  Erwäge das Upgraden oder Löschen dieser Datei.'
     condition: 'active("Snap''n Build.esm")'
   - &UsingHomemaker1_50
     type: error
@@ -199,6 +227,8 @@ common:
         text: 'Desinstale este archivo y actualizar a Homemaker 1.50.'
       - lang: ja
         text: 'このファイルを削除し、Homemaker 1.50に更新してください。'
+      - lang: de
+        text: 'Deinstalliere diese Datei und upgrade zu Homemaker 1.50.'
     condition: 'version("Homemaker.esm", "1.50", <)'
   - &wildEdits
     type: warn
@@ -207,6 +237,8 @@ common:
         text: 'This plugin contains wild edits beyond ITM and UDR records and deleted navmeshes and may require additional manual cleaning to not interfere with other mods.'
       - lang: da
         text: 'Dette plugin indeholder ukontrollerede redigeringer udover ITM- og UDR-poster og slettede navmesher og kan behøve yderligere manuel oprydning for ikke at forstyrre andre mods.'
+      - lang: de
+        text: 'Dieses Plugin enthält wilde Modifikationen weit über ITM-, und UDR Einträge und entfernte Navmeshes hinaus und benötigt vermutlich mehr manuelle Säuberung um andere Mods nicht zu beeinträchtigen.'
 
 # Cleaning data
   - &dirtyPlugin
@@ -220,6 +252,8 @@ globals:
         text: 'This version of LOOT has inferior handling of Creation Club plugins. Support for these are therefore limited in versions prior to LOOT 0.13.1. It is recommended to update as soon as possible.'
       - lang: da
         text: 'Denne version af LOOT har begrænset understøttelse af Creation Club-plugins. Det er derfor anbefalet at opdatere til LOOT 0.13.1 eller senere hurtigst muligt.'
+      - lang: de
+        text: 'Diese Version von LOOT hat eine minderwertige Handhabung von Creation Club-Plugins. Unterstützung für diese ist daher limitiert in Versionen älter als LOOT 0.13.1. Es wird empfohlen so bald wie möglich zu Updaten.'
     condition: 'version("LOOT", "0.13.1.0", <) and file("cc[A-Z]{3}FO4[0-9]{3}-[a-zA-Z0-9()]+\.es(l|m)")'
   - type: say
     content:
@@ -237,6 +271,8 @@ globals:
         text: '[Seneste LOOT-tråd](%1%).'
       - lang: ja
         text: '[LOOTの最新スレッドを開く](%1%)（英語）'
+      - lang: de
+        text: '[Aktuelles LOOT Thema](%1%).'
     subs: [ 'https://loot.github.io/latest-thread/' ]
 # Fallout 4 latest
   - type: say
@@ -248,6 +284,8 @@ globals:
         text: 'Det ser ikke ud til at du har den seneste version af Fallout 4.'
       - lang: ja
         text: 'Fallout 4が最新版ではないようです。'
+      - lang: de
+        text: 'Es erscheint als hätten Sie nicht die aktuellste Version von Fallout 4.'
 # F4SE Latest
   - type: say
     condition: 'file("../f4se_loader.exe") and version("../f4se_loader.exe", "0.0.6.12", <)'
@@ -266,6 +304,8 @@ globals:
         text: 'Det ser ud til at du ikke har den [seneste version af F4SE](http://f4se.silverlock.org). Nogle mods kan afhænge af funktionalitet tilføjet i den nyeste version af F4SE for at virke.'
       - lang: ja
         text: '[F4SE](http://f4se.silverlock.org)が最新版ではないようです。一部のModを動作させるには最新版のSKSEで追加された機能が必要となる場合があります。'
+      - lang: de
+        text: 'Es erscheint als hätten Sie nicht die [aktuellste Version von F4SE](http://f4se.silverlock.org). Einige Mods könnten Funktionalitäten benötigen die nur in der aktuellsten Version von F4SE enthalten sind, um zu funktionieren.'
   - type: say
     condition: 'not version("../f4se_loader.exe", "0.0.6.12", <)'
     content:
@@ -283,6 +323,8 @@ globals:
         text: 'Din F4SE er opdateret.'
       - lang: ja
         text: 'F4SEは最新版です。'
+      - lang: de
+        text: 'Ihr F4SE ist aktuell.'
   - type: error
     condition: 'version("../f4se_loader.exe", "0.0.6.12", ==) and version("../Fallout4.exe", "1.10.111.0", !=)'
     content:
@@ -292,6 +334,8 @@ globals:
         text: 'Din version af F4SE er ikke kompatibel med din version af Fallout 4.'
       - lang: ja
         text: 'このバージョンのF4SEは使用中のFallout 4との互換性がありません。'
+      - lang: de
+        text: 'Ihre Version von F4SE ist nicht kompatibel mit Ihrer Version von Fallout 4.'
 # F4SE plugins
   - <<: *requireF4SE
     subs: [ 'Achievements' ]
@@ -309,6 +353,8 @@ globals:
         text: 'Din installerede version af Place Everywhere er ikke kompatibel med din version af Fallout 4.'
       - lang: ja
         text: 'インストールされているPlace Everywhereは使用中のバージョンのFallout 4との互換性がありません。'
+      - lang: de
+        text: 'Ihre installierte Version von Place Everywhere ist nicht kompatibel mit Ihrer Version von Fallout 4.'
     condition: 'file("F4SE/Plugins/place.dll") and ((version("F4SE/Plugins/place.dll", "1.18.0.1111", >=) and not version("../Fallout4.exe", "1.10.111.0", ==)) or (version("F4SE/Plugins/place.dll", "1.18.0.1111", <) and version("../Fallout4.exe", "1.10.111.0", ==)))'
 
 groups:
@@ -6699,6 +6745,8 @@ plugins:
           text: 'Requires Fallout 4 patch 1.10.111 or greater.'
         - lang: da
           text: 'Kræver Fallout 4-lap 1.10.111 eller nyere.'
+        - lang: de
+          text: 'Benötigt Fallout 4 Patch 1.10.111 oder neuer.'
         condition: 'version("Unofficial Fallout 4 Patch.esp", "2.0.5", >=) and not version("../Fallout4.exe", "1.10.111.0", >=)'
       - <<: *obsolete
         condition: 'version("Unofficial Fallout 4 Patch.esp", "2.0.5", <)'
@@ -6825,6 +6873,8 @@ plugins:
             text: 'The bug fixes of this mod are already included in the Unofficial Fallout 4 Patch. The mod still contains additional tweaks that you may wish to keep, so keep or remove the mod at your discretion.'
           - lang: da
             text: "Fejlrettelserne i denne mod er allerede inkluderet i Unofficial Fallout 4 Patch. Denne mod har dog også yderligere justeringer som du måske vil beholde, så behold eller fjern mod'en efter eget valg."
+          - lang: de
+            text: 'Die Fehlerbehebungen dieser Mod sind bereits enthalten im Unofficial Fallout 4 Patch. Die Mod enthält dennoch weitere Anpassungen die Sie womöglich behalten möchten, also behalten oder löschen Sie die Mod nach Ihrer Diskretion.'
         condition: 'active("Unofficial Fallout 4 Patch.esp")'
   - name: 'DependencyQuestFix.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/10892' ]
@@ -6990,6 +7040,8 @@ plugins:
             text: 'This plugin is also included in "Val''s Picks".'
           - lang: da
             text: 'Dette plugin er også også inkluderet i "Val''s Picks".'
+          - lang: de
+            text: 'Dieses Plugin ist auch enthalten in "Val''s Picks".'
         condition: 'file("ValdacilsItemSorting-00-ValsPicks-(No)?DLCVersion\.esp")'
       - &includedInValsPicksVanilla
         type: say
@@ -6998,6 +7050,8 @@ plugins:
             text: 'This plugin is also included in "Val''s Picks - Vanilla Weight".'
           - lang: da
             text: 'Dette plugin er også også inkluderet i "Val''s Picks - Vanilla Weight".'
+          - lang: de
+            text: 'Dieses Plugin ist auch enthalten in "Val''s Picks - Vanilla Weight".'
         condition: 'file("ValdacilsItemSorting-00-ValsPicks-(No?)DLCVersion-VanillaWeight\.esp")'
   - name: 'ValdacilsItemSorting-Aid.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/3877' ]
@@ -7041,6 +7095,8 @@ plugins:
             text: 'You are sorting armor by class and also using DLCs. You may want to use "ValdacilsItemSorting-ZZ-DLCArmorByClassOverride.esp" to enable the class sorting on DLC armor as well.'
           - lang: da
             text: 'Du sorterer rustning efter klasse samtidig med du bruger DLC’er. Det kan være en god idé at bruge "ValdacilsItemSorting-ZZ-DLCArmorByClassOverride.esp" for også at slå klassesortering til for DLC-rustninger.'
+          - lang: de
+            text: 'Sie sortieren Rüstung nach Klasse und nutzen DLCs. Sie wollen möglicherweise "ValdacilsItemSorting-ZZ-DLCArmorByClassOverride.esp" nutzen um Klassensortierung auch für DLC-Rüstung zu aktivieren.'
         condition: 'active("DLCRobot.esm") and active("DLCCoast.esm") and not active("ValdacilsItemSorting-ZZ-DLCArmorByClassOverride.esp") and version("ValdacilsItemSorting-ArmorByClass.esp", "9.1", <)'
   - name: 'ValdacilsItemSorting-ArmorBySlot.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/3877' ]
@@ -7423,6 +7479,8 @@ plugins:
             text: 'Realistic Survival Damage.esp alters the same game variables as the Survival X PC/EnemyDamage.esps. You should use either one or the other.'
           - lang: da
             text: 'Realistic Survival Damage.esp ændrer de samme spilværdier som Survival X PC/EnemyDamage.esp’erne. Du bør bruge enten den ene eller den anden mod.'
+          - lang: de
+            text: 'Realistic Survival Damage.esp ändert die selben Spiel-Variablen wie die Survival X PC/EnemyDamage.esps. Sie sollten nur eine der beiden verwenden.'
         condition: 'file("Survival((90|75|65|50|25|10)LESS|Normal|(10|20|30|40|50|60|70|80|90|100|150|200|250|300|350|400|450|500)more)(PC|Enemy)Damage\.esp")'
   - name: 'Rainy_(25|50|75|100)\.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/1812' ]
@@ -7534,6 +7592,8 @@ plugins:
           text: 'This plugin has an ESL version available. Consider using that instead of this one.'
         - lang: da
           text: 'Dette plugin er også tilgængelig i en ESL udgave. Overvej at bruge ESL-udgaven i stedet for denne.'
+        - lang: de
+          text: 'Für dieses Plugin ist eine ESL Version verfügbar. Erwäge diese zu nutzen anstatt der jetzigen.'
         condition: 'not active("NoGunSneakAttackMultiplier.esl")'
       - <<: *obsolete
         condition: 'version("NoGunSneakAttackMultiplier.esp", "1.2", <)'
@@ -7796,6 +7856,8 @@ plugins:
           text: 'Desinstale este archivo y actualizar a Homemaker 1.50.'
         - lang: ja
           text: 'このファイルをアンインストールし、Homemaker 1.50に更新してください。'
+        - lang: de
+          text: 'Deinstalliere diese Datei und upgrade zu Homemaker 1.50.'
         condition: 'version("Homemaker.esm", "1.50", >=) and version("Homemaker - Bunker Disabler.esp", "1.50", <)'
   - name: 'Homemaker - Greenhouse and Bunker Disabler SK.esp'
     msg:
@@ -7939,6 +8001,8 @@ plugins:
           text: 'Desinstale este archivo. No es requerido con Homemaker 1.50 or higher.'
         - lang: ja
           text: 'このファイルをアンインストールしてください。Homemaker 1.50以降では不要です。'
+        - lang: de
+          text: 'Deinstalliere diese Datei. Es wird nicht länger benötigt mit Homemaker 1.50 oder neuer.'
         condition: 'version("Homemaker.esm", "1.50", >=)'
   - name: 'SettlementKeywords.esm'
     msg:
@@ -9296,6 +9360,8 @@ plugins:
             text: 'This mod is deprecated in favour of "Turret Control Panel". Follow the instructions on [the "Turret Control Panel" mod page](https://www.nexusmods.com/fallout4/mods/11960) to update.'
           - lang: da
             text: 'Denne mod er forældet til fordel for "Turret Control Panel". Følg instruktionerne på ["Turrent Control Panel"-mod-siden](https://www.nexusmods.com/fallout4/mods/11960) for at opdatere.'
+          - lang: de
+            text: 'Diese Mod ist eingestellt zu Gunsten von "Turret Control Panel". Folge den Anweisungen [der "Turret Control Panel" Mod Seite](https://www.nexusmods.com/fallout4/mods/11960) zum updaten.'
   - name: 'Bess.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/2348' ]
     inc:
@@ -9346,6 +9412,8 @@ plugins:
             text: 'Even with cleaning this plugin with FO4Edit it still has a large number of wild edits and author-preference edits unrelated to the stated purpose of the mod, which may cause issues in your game or prevent other mods from working properly.'
           - lang: da
             text: 'Selv efter FO4Edit-rensning af pluginnet vil der stadig være en stor mængde af ukontrollerde og forfatterpræference redigeringer urelateret til moddens angivne formål, hvilket kan forårsage problemer i spillet eller forhindre andre mods i at fungere korrekt.'
+          - lang: de
+            text: 'Auch mit einer Säuberung des Plugins durch FO4Edit, es wird immernoch eine große Anzahl von wilden Modifikationen und Autor-Präferenz-Modifikationen ohne Bezug auf die eigentlichen Zweck der Mod, was möglicherweise Probleme in Ihrem Spiel auslöst kann oder andere Mods davon abhält richtig zu funktionieren.'
   - name: 'WhatsYourName.esl'
     url: [ 'https://www.nexusmods.com/fallout4/mods/25321' ]
     inc:
@@ -9362,6 +9430,8 @@ plugins:
             text: 'Consider using the "What''s Your Name" FCOM plugin to be able to rename NPCs from Fallout Commander (FCOM).'
           - lang: da
             text: 'Overvej at bruge "What''s Your Name"-FCOM-pluginnet for at kunne omdøbe NPC’ere fra Fallout Commander (FCOM).'
+          - lang: de
+            text: 'Erwäge das "What''s Your Name" FCOM Plugin zu verwenden um NPCs von Fallout Commander (FCOM) umbenennen zu können.'
         condition: 'active("FCOM.esm") and not active("WhatsYourName-FCOM.esp")'
   - name: 'WhatsYourName.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/25321' ]
