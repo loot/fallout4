@@ -132,6 +132,17 @@ common:
         text: "%1%が使用されていますが、このプラグイン用の%1%のパッチが有効になっていません: %2%"
       - lang: de
         text: "Sie nutzen anscheinend %1%, haben aber nicht den %1% Patch aktiviert für dieses Plugin: %2%"
+  - &fo4Version
+    type: error
+    content:
+      - lang: en
+        text: 'Your installed version of %1% is not compatible with your version of Fallout 4.'
+      - lang: da
+        text: 'Din installerede version af %1% er ikke kompatibel med din version af Fallout 4.'
+      - lang: ja
+        text: 'インストールされている%1%は使用中のバージョンのFallout 4との互換性がありません。'
+      - lang: de
+        text: 'Ihre installierte Version von %1% ist nicht kompatibel mit Ihrer Version von Fallout 4.'
   - &dlcVersion
     type: say
     content:
@@ -325,17 +336,13 @@ globals:
         text: 'F4SEは最新版です。'
       - lang: de
         text: 'Ihr F4SE ist aktuell.'
-  - type: error
+# Fallout 4 exe version checks
+  - <<: *fo4Version
+    subs: [ '[F4SE](http://f4se.silverlock.org)' ]
     condition: 'version("../f4se_loader.exe", "0.0.6.12", ==) and version("../Fallout4.exe", "1.10.111.0", !=)'
-    content:
-      - lang: en
-        text: 'Your version of F4SE is not compatible with your version of Fallout 4.'
-      - lang: da
-        text: 'Din version af F4SE er ikke kompatibel med din version af Fallout 4.'
-      - lang: ja
-        text: 'このバージョンのF4SEは使用中のFallout 4との互換性がありません。'
-      - lang: de
-        text: 'Ihre Version von F4SE ist nicht kompatibel mit Ihrer Version von Fallout 4.'
+  - <<: *fo4Version
+    subs: [ '[Place Everywhere](https://www.nexusmods.com/fallout4/mods/9424)' ]
+    condition: 'file("F4SE/Plugins/place.dll") and ((version("F4SE/Plugins/place.dll", "1.18.0.1114", ==) and version("../Fallout4.exe", "1.10.114.0", !=)) or (version("F4SE/Plugins/place.dll", "1.18.0.1114", <) and version("../Fallout4.exe", "1.10.114.0", ==)))'
 # F4SE plugins
   - <<: *requireF4SE
     subs: [ 'Achievements' ]
@@ -345,17 +352,6 @@ globals:
     subs: [ 'Place Everywhere' ]
     # url: [ 'https://www.nexusmods.com/fallout4/mods/9424' ]
     condition: 'file("F4SE/Plugins/place.dll") and not file("../f4se_loader.exe")'
-  - type: error
-    content:
-      - lang: en
-        text: 'Your installed version of Place Everywhere is not compatible with your version of Fallout 4.'
-      - lang: da
-        text: 'Din installerede version af Place Everywhere er ikke kompatibel med din version af Fallout 4.'
-      - lang: ja
-        text: 'インストールされているPlace Everywhereは使用中のバージョンのFallout 4との互換性がありません。'
-      - lang: de
-        text: 'Ihre installierte Version von Place Everywhere ist nicht kompatibel mit Ihrer Version von Fallout 4.'
-    condition: 'file("F4SE/Plugins/place.dll") and ((version("F4SE/Plugins/place.dll", "1.18.0.1111", >=) and not version("../Fallout4.exe", "1.10.111.0", ==)) or (version("F4SE/Plugins/place.dll", "1.18.0.1111", <) and version("../Fallout4.exe", "1.10.111.0", ==)))'
 
 groups:
   - name: &dlcGroup DLC
