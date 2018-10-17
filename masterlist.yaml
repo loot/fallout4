@@ -341,7 +341,7 @@ globals:
     subs: [ '[F4SE](http://f4se.silverlock.org)' ]
     condition: 'version("../f4se_loader.exe", "0.0.6.12", ==) and version("../Fallout4.exe", "1.10.111.0", !=)'
   - <<: *fo4Version
-    subs: [ '[Place Everywhere](https://www.nexusmods.com/fallout4/mods/9424)' ] # v1.18.0.1111
+    subs: [ '[Place Everywhere](https://www.nexusmods.com/fallout4/mods/9424)' ]
     condition: 'file("F4SE/Plugins/place.dll") and ((version("F4SE/Plugins/place.dll", "1.18.0.1114", ==) and version("../Fallout4.exe", "1.10.114.0", !=)) or (version("F4SE/Plugins/place.dll", "1.18.0.1114", <) and version("../Fallout4.exe", "1.10.114.0", ==)))'
 # F4SE plugins
   - <<: *requireF4SE
