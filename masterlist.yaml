@@ -336,6 +336,7 @@ globals:
         text: 'このバージョンのF4SEは使用中のFallout 4との互換性がありません。'
       - lang: de
         text: 'Ihre Version von F4SE ist nicht kompatibel mit Ihrer Version von Fallout 4.'
+    condition: 'file("F4SE/Plugins/place.dll") and ((version("F4SE/Plugins/place.dll", "1.18.0.1114", ==) and version("../Fallout4.exe", "1.10.114.0", !=)) or (version("F4SE/Plugins/place.dll", "1.18.0.1114", <) and version("../Fallout4.exe", "1.10.114.0", ==)))'
 # F4SE plugins
   - <<: *requireF4SE
     subs: [ 'Achievements' ]
@@ -355,7 +356,6 @@ globals:
         text: 'インストールされているPlace Everywhereは使用中のバージョンのFallout 4との互換性がありません。'
       - lang: de
         text: 'Ihre installierte Version von Place Everywhere ist nicht kompatibel mit Ihrer Version von Fallout 4.'
-    condition: 'file("F4SE/Plugins/place.dll") and ((version("F4SE/Plugins/place.dll", "1.18.0.1111", >=) and not version("../Fallout4.exe", "1.10.111.0", ==)) or (version("F4SE/Plugins/place.dll", "1.18.0.1111", <) and version("../Fallout4.exe", "1.10.111.0", ==)))'
 
 groups:
   - name: &dlcGroup DLC
