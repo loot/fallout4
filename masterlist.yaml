@@ -254,7 +254,13 @@ common:
 # Cleaning data
   - &dirtyPlugin
     util: '[FO4Edit](https://www.nexusmods.com/fallout4/mods/2737)'
-    info: 'A cleaning guide is available [here](https://www.creationkit.com/index.php?title=TES5Edit_Cleaning_Guide_-_TES5Edit).'
+    info: 'A cleaning guide is available [here](https://tes5edit.github.io/docs/5-mod-cleaning-and-error-checking.html#Apendix-B).'
+  - &quickClean
+    util: '[FO4Edit](https://www.nexusmods.com/fallout4/mods/2737) **Quick Auto Clean**'
+    info: 'A guide for running **Quick Auto Clean** can be found [here](https://tes5edit.github.io/docs/5-mod-cleaning-and-error-checking.html#quickautoclean).'
+  - &reqManualFix
+    util: '[FO4Edit](https://www.nexusmods.com/fallout4/mods/2737) **Quick Auto Clean**'
+    info: 'A cleaning guide is available [here](https://tes5edit.github.io/docs/5-mod-cleaning-and-error-checking.html#Apendix-B). It is strongly recommended not to use mods that contain **Deleted navmeshes** are they''re known to cause crashes. **Deleted navmeshes** must be corrected manually.'
 
 globals:
   - type: warn
@@ -394,32 +400,47 @@ plugins:
   - name: 'DLCRobot.esm'
     group: *dlcGroup
     dirty:
-      - <<: *dirtyPlugin
-        crc: 0xD69027EA
-        util: 'FO4Edit v3.2.33'
-        itm: 45
+      - <<: *quickClean
+        crc: 0xD69027EA # v1.10.114.0
+        util: 'FO4Edit v3.2.84 EXPERIMENTAL'
+        itm: 49
         udr: 38
+        nav: 1
+      - <<: *quickClean
+        crc: 0x1954F90B # v1.10.114.0
+        util: 'FO4Edit v3.2.84 EXPERIMENTAL'
+        itm: 1
+        nav: 1
+    clean:
+      - crc: 0xBD2A3927 # v1.10.114.0
+        util: 'FO4Edit v3.2.84 EXPERIMENTAL'
         nav: 1
   - name: 'DLCworkshop01.esm'
     group: *dlcGroup
     after:
       - 'DLCRobot.esm'
     dirty:
-      - <<: *dirtyPlugin
-        crc: 0x47BAE27E
-        util: 'FO4Edit v3.2.33'
+      - <<: *quickClean
+        crc: 0x47BAE27E # v1.10.114.0
+        util: 'FO4Edit v3.2.84 EXPERIMENTAL'
         itm: 6
+    clean:
+      - crc: 0x6212B50A # v1.10.114.0
+        util: 'FO4Edit v3.2.84 EXPERIMENTAL'
   - name: 'DLCCoast.esm'
     group: *dlcGroup
     after:
       - 'DLCRobot.esm'
       - 'DLCworkshop01.esm'
     dirty:
-      - <<: *dirtyPlugin
-        crc: 0xF1F28026
-        util: 'FO4Edit v3.2.33'
-        itm: 75
+      - <<: *quickClean
+        crc: 0xF1F28026 # v1.10.114.0
+        util: 'FO4Edit v3.2.84 EXPERIMENTAL'
+        itm: 85
         udr: 86
+    clean:
+      - crc: 0x1794282F # v1.10.114.0
+        util: 'FO4Edit v3.2.84 EXPERIMENTAL'
   - name: 'DLCworkshop02.esm'
     group: *dlcGroup
     after:
@@ -427,10 +448,13 @@ plugins:
       - 'DLCworkshop01.esm'
       - 'DLCCoast.esm'
     dirty:
-      - <<: *dirtyPlugin
-        crc: 0x83ABC821
-        util: 'FO4Edit v3.2.33'
+      - <<: *quickClean
+        crc: 0x83ABC821 # v1.10.114.0
+        util: 'FO4Edit v3.2.84 EXPERIMENTAL'
         itm: 2
+    clean:
+      - crc: 0xCF293C41 # v1.10.114.0
+        util: 'FO4Edit v3.2.84 EXPERIMENTAL'
   - name: 'DLCworkshop03.esm'
     group: *dlcGroup
     after:
@@ -439,11 +463,18 @@ plugins:
       - 'DLCCoast.esm'
       - 'DLCworkshop02.esm'
     dirty:
-      - <<: *dirtyPlugin
-        crc: 0xE0089FBB
-        util: 'FO4Edit v3.2.33'
-        itm: 18
+      - <<: *quickClean
+        crc: 0xE0089FBB # v1.10.114.0
+        util: 'FO4Edit v3.2.84 EXPERIMENTAL'
+        itm: 22
         udr: 10
+      - <<: *quickClean
+        crc: 0x3564BDA3 # v1.10.114.0
+        util: 'FO4Edit v3.2.84 EXPERIMENTAL'
+        itm: 3
+    clean:
+      - crc: 0xC4BACD4C # v1.10.114.0
+        util: 'FO4Edit v3.2.84 EXPERIMENTAL'
   - name: 'DLCNukaWorld.esm'
     group: *dlcGroup
     after:
@@ -453,11 +484,15 @@ plugins:
       - 'DLCworkshop02.esm'
       - 'DLCworkshop03.esm'
     dirty:
-      - <<: *dirtyPlugin
-        crc: 0x43D25C56
-        util: 'FO4Edit v3.2.33'
-        itm: 191
+      - <<: *quickClean
+        crc: 0x43D25C56 # v1.10.114.0
+        util: 'FO4Edit v3.2.84 EXPERIMENTAL'
+        itm: 193
         udr: 418
+        nav: 7
+    clean:
+      - crc: 0x82DB153E # v1.10.114.0
+        util: 'FO4Edit v3.2.84 EXPERIMENTAL'
         nav: 7
   - name: 'DLCUltraHighResolution.esm'
     group: *dlcGroup
@@ -6746,6 +6781,9 @@ plugins:
         condition: 'version("Unofficial Fallout 4 Patch.esp", "2.0.5", >=) and not version("../Fallout4.exe", "1.10.111.0", >=)'
       - <<: *obsolete
         condition: 'version("Unofficial Fallout 4 Patch.esp", "2.0.5", <)'
+    clean:
+      - crc: 0x3B6ACA00 # v2.0.5beta
+        util: 'FO4Edit v3.2.84 EXPERIMENTAL'
   # Mods obsoleted by official Bethesda patches
   - name: 'KH_DogArmorFix.esp '
     url: [ 'https://www.nexusmods.com/fallout4/mods/15222' ]
