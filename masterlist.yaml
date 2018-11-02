@@ -463,7 +463,6 @@ plugins:
       - 'DLCCoast.esm'
       - 'DLCworkshop02.esm'
     dirty:
-    dirty:
       - <<: *quickClean
         crc: 0xE0089FBB # v1.10.114.0
         util: 'FO4Edit v3.2.84 EXPERIMENTAL'
