@@ -9483,6 +9483,11 @@ plugins:
     clean:
       - crc: 0x0e2861fa
         util: FO4Edit v3.2.1
+        
+  - name: 'AAF_RSE.esp'
+    url: [ 'https://www.loverslab.com/files/file/6681-rse-realistic-salacious-encounters-11-02-18/' ]
+    after:
+      - 'StartMeUp.esp'
 
   - name: 'FO4Merged.esp'
     group: *dynamicPatchesGroup
