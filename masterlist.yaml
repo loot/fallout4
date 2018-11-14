@@ -9327,11 +9327,11 @@ plugins:
       # Version 1.0
       - crc: 0x8FC528DB
         util: 'FO4Edit v3.2.3v'
-  - name: 'Deeper Thoughts (\(Curie\)|- (Expressive |)Curie)\.esp'
+  - name: 'Deeper Thoughts (\(Curie\)|- (Expressive )?Curie)\.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/25050' ]
     msg:
       - <<: *useOnlyOneX
-        condition: 'many("Deeper Thoughts (\(Curie\)|- (Expressive |)Curie)\.esp")'
+        condition: 'many("Deeper Thoughts (\(Curie\)|- (Expressive )?Curie)\.esp")'
         subs: [ 'Deeper Thoughts - Curie plugin' ]
   - name: 'TurretControlPanel.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/11960' ]
