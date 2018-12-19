@@ -8425,8 +8425,6 @@ plugins:
         udr: 3
   - name: 'AllSetsExtended.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/25316' ]
-    after:
-      - 'AGOMBz.esp'
     inc:
       # According to mod author
       - 'SpringCleaning.esm'
@@ -8452,8 +8450,6 @@ plugins:
         itm: 42
   - name: 'ASEFarHarbor.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/25487' ]
-    after:
-      - 'AGOMBz.esp'
   - name: 'StarlightLOD.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/23034' ]
     dirty:
@@ -8854,15 +8850,6 @@ plugins:
       - 'SettlementAttacksBeyond.esp'
       - 'SettlementAttacksBeyondFH.esp'
       - 'SettlementAttacksBeyondNW.esp'
-    msg:
-      - <<: *obsolete
-        condition: 'version("AGOMBz.esp", "1.0.1_DLC", <)'
-      - type: warn
-        content: 'Be sure to use the version of Attackers - Get Off My Buildzone that includes compatibility for Better Settlement Defence.'
-        # FBBDC389: 1.0.1, NoDLC, BSD
-        # 5A4E786E: 1.0.1, DLC, UFO4P, BSD
-        # F1E405A5: 1.0.1, DLC, BSD
-        condition: 'active("Better Settlement Defence.esp") and not (checksum("AGOMBz - Main.ba2", FBBDC389) or checksum("AGOMBz - Main.ba2", 5A4E786E) or checksum("AGOMBz - Main.ba2", F1E405A5))'
   - name: 'starlightwingfix_v3.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/22553' ]
     dirty:
@@ -9550,3 +9537,22 @@ plugins:
       - <<: *SmashedVsBashedPatch
         condition: 'file("Smashed Patch.esp")'
         subs: [ 'Smashed Patch.esp' ]
+
+  - name: 'MoreAGOMBz.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/27465' ]
+    after:
+      - 'Better Settlement Defence.esp'
+      - 'SkjAlert_All_DLC.esp'
+
+  - name: 'SkjAlert_All_DLC.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/4106' ]
+
+  - name: 'MoreSpawns_High.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/4253' ]
+    after:
+      - 'MoreAGOMBz.esp'
+
+  - name: 'MoreSpawns_Medium.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/4253' ]
+    after:
+      - 'MoreAGOMBz.esp'
