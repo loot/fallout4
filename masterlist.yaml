@@ -254,13 +254,25 @@ common:
 # Cleaning data
   - &dirtyPlugin
     util: '[FO4Edit](https://www.nexusmods.com/fallout4/mods/2737)'
-    info: 'A cleaning guide is available [here](https://tes5edit.github.io/docs/5-mod-cleaning-and-error-checking.html#s_5-3).'
+    info:
+      - lang: en
+        text: 'A cleaning guide is available [here](https://tes5edit.github.io/docs/5-mod-cleaning-and-error-checking.html#s_5-3).'
+      - lang: de
+        text: 'Eine englische Säuberungsanleitung ist [hier](https://tes5edit.github.io/docs/5-mod-cleaning-and-error-checking.html#s_5-3) verfügbar.'
   - &quickClean
     util: '[FO4Edit](https://www.nexusmods.com/fallout4/mods/2737) **Quick Auto Clean**'
-    info: 'A guide for running **Quick Auto Clean** can be found [here](https://tes5edit.github.io/docs/5-mod-cleaning-and-error-checking.html#s_5-3-2).'
+    info:
+      - lang: en
+        text: 'A guide for running **Quick Auto Clean** can be found [here](https://tes5edit.github.io/docs/5-mod-cleaning-and-error-checking.html#s_5-3-2).'
+      - lang: de
+        text: 'Eine englische Anleitung zum **Schnellen-Automatischen-Säubern** kann [hier](https://tes5edit.github.io/docs/5-mod-cleaning-and-error-checking.html#s_5-3-2) aufgefunden werden.'
   - &reqManualFix
     util: '[FO4Edit](https://www.nexusmods.com/fallout4/mods/2737) **Quick Auto Clean**'
-    info: 'A guide for running **Quick Auto Clean** can be found [here](https://tes5edit.github.io/docs/5-mod-cleaning-and-error-checking.html#s_5-3-2). It is strongly recommended not to use mods that contain **Deleted navmeshes** as they''re known to cause crashes. **Deleted navmeshes** must be corrected manually.'
+    info:
+      - lang: en
+        text: 'A guide for running **Quick Auto Clean** can be found [here](https://tes5edit.github.io/docs/5-mod-cleaning-and-error-checking.html#s_5-3-2). It is strongly recommended not to use mods that contain **Deleted navmeshes** as they''re known to cause crashes. **Deleted navmeshes** must be corrected manually.'
+      - lang: de
+        text: 'Eine englische Anleitung zum **Schnellen-Automatischen-Säubern** kann [hier](https://tes5edit.github.io/docs/5-mod-cleaning-and-error-checking.html#s_5-3-2) aufgefunden werden. Es wird streng empfohlen keine Mods zu verwenden die **Gelöschte Navmeshes** beinhalten da diese dafür bekannt sind Abstürze auszulösen. **Gelöschte Navmeshes** müssen manuell korrigiert werden'
 
 globals:
   - type: warn
@@ -289,7 +301,7 @@ globals:
       - lang: ja
         text: '[LOOTの最新スレッドを開く](%1%)（英語）'
       - lang: de
-        text: '[Aktuelles LOOT Thema](%1%).'
+        text: '[Aktueller LOOT Thread](%1%).'
     subs: [ 'https://loot.github.io/latest-thread/' ]
 # Fallout 4 latest
   - type: say
@@ -7719,27 +7731,47 @@ plugins:
   - name: 'OCDCCPatch.esp'
     msg:
       - type: warn
-        content: 'OCDCCPatch.esp is no longer required. Upgrade OCDecorator.esp to 1.1.3.'
+        content:
+          - lang: en
+            text: 'OCDCCPatch.esp is no longer required. Upgrade OCDecorator.esp to 1.1.3.'
+          - lang: de
+            text: 'OCDCCPatch.esp is nicht länger vorausgesetzt. Upgraden Sie OCDecorator.esp zu 1.1.3.'
         condition: 'active("OCDecorator.esp")'
   - name: 'OCD FarHarborDLC.esp'
     msg:
       - type: warn
-        content: 'OCDecoratorDLC.esp in a merged version OCD NukaWorldDLC.esp and OCD FarHarborDLC.esp'
+        content:
+          - lang: en
+            text: 'OCDecoratorDLC.esp in a merged version of OCD NukaWorldDLC.esp and OCD FarHarborDLC.esp'
+          - lang: de
+            text: 'OCDecoratorDLC.esp ist eine kombinierte Version vonOCD NukaWorldDLC.esp und OCD FarHarborDLC.esp'
         condition: 'file("OCDecoratorDLC.esp")'
   - name: 'OCD NukaWorldDLC.esp'
     msg:
       - type: warn
-        content: 'OCDecoratorDLC.esp in a merged version OCD NukaWorldDLC.esp and OCD FarHarborDLC.esp'
+        content:
+          - lang: en
+            text: 'OCDecoratorDLC.esp in a merged version od OCD NukaWorldDLC.esp and OCD FarHarborDLC.esp'
+          - lang: de
+            text: 'OCDecoratorDLC.esp ist eine kombinierte Version vonOCD NukaWorldDLC.esp und OCD FarHarborDLC.esp'
         condition: 'file("OCDecoratorDLC.esp")'
   - name: 'OCDWorkshopDLCPatch.esp'
     msg:
       - type: error
-        content: 'Use OCDecorator.esp Wasteland Workshop version instead [Download](https://www.nexusmods.com/fallout4/mods/4270)'
+        content:
+          - lang: en
+            text: 'Use OCDecorator.esp Wasteland Workshop version instead: [Download](https://www.nexusmods.com/fallout4/mods/4270)'
+          - lang: de
+            text: 'Nutzen Sie OCDecorator.esp Wasteland Workshop Version stattdessen: [Download](https://www.nexusmods.com/fallout4/mods/4270)'
       - *UsingSKE
   - name: 'OCDecorator_FarHarbor.esp'
     msg:
       - type: error
-        content: 'Use ''OCD FarHarborDLC.esp'' instead [Download](https://www.nexusmods.com/fallout4/mods/4270)'
+        content:
+          - lang: en
+            text: 'Use ''OCD FarHarborDLC.esp'' instead: [Download](https://www.nexusmods.com/fallout4/mods/4270)'
+          - lang: de
+            text: 'Nutzen Sie ''OCD FarHarborDLC.esp'' stattdessen: [Download](https://www.nexusmods.com/fallout4/mods/4270)'
       - *UsingSKE
   - name: 'WW_SK_PATCH.esp'
     msg:
@@ -7770,7 +7802,11 @@ plugins:
     msg:
       - *UsingSKE
       - type: error
-        content: 'The original SK v0.8 is not compatible with Fallout 4 patch 1.5.157 or greater.'
+        content:
+          - lang: en
+            text: 'The original SK v0.8 is not compatible with Fallout 4 patch 1.5.157 or greater.'
+          - lang: de
+            text: 'Das originale SK v0.8 ist nicht kompatibel mit Fallout 4 Patch 1.5.157 oder neuer.'
         condition: '(checksum("SettlementKeywords.esm",8D550871) and active("DLC_SK_Patch.esp")) and version("..\Fallout4.exe", "1.5.157.0", >=)'
   - name: 'DLC_SKE_Patch.esp'
     msg:
@@ -7911,10 +7947,18 @@ plugins:
   - name: 'Homemaker - SK Integration Patch.esp'
     msg:
       - type: error
-        content: 'Requires Settlement Keywords v0.8.'
+        content:
+          - lang: en
+            text: 'Requires Settlement Keywords v0.8.'
+          - lang: de
+            text: 'Setzt Settlement Keywords v0.8 voraus.'
         condition: 'not checksum("SettlementKeywords.esm",8D550871)'
       - type: error
-        content: 'Incompatible with Fallout 4 patch 1.5.157 or greater.'
+        content:
+          - lang: en
+            text: 'Incompatible with Fallout 4 patch 1.5.157 or greater.'
+          - lang: de
+            text: 'Inkompatibel mit Fallout 4 Patch 1.5.157 oder neuer.'
         condition: 'file("../Fallout4.exe") and version("../Fallout4.exe", "1.5.157.0", >=)'
   - name: 'Homemaker - SKE Integration Patch.esp'
     msg:
@@ -7960,69 +8004,121 @@ plugins:
   - name: 'Snap and Build - Greenhouse.esp'
     msg:
       - type: error
-        content: 'Incompatible with Fallout 4 patch 1.5.157 or greater.'
+        content:
+          - lang: en
+            text: 'Incompatible with Fallout 4 patch 1.5.157 or greater.'
+          - lang: de
+            text: 'Inkompatibel mit Fallout 4 Patch 1.5.157 oder neuer.'
         condition: 'file("../Fallout4.exe") and version("../Fallout4.exe", "1.5.157.0", >=)'
       - *UsingSNB
   - name: 'SnB - Greenhouse - Homemaker.esp'
     msg:
       - type: error
-        content: 'Incompatible with Fallout 4 patch 1.5.157 or greater.'
+        content:
+          - lang: en
+            text: 'Incompatible with Fallout 4 patch 1.5.157 or greater.'
+          - lang: de
+            text: 'Inkompatibel mit Fallout 4 Patch 1.5.157 oder neuer.'
         condition: 'file("../Fallout4.exe") and version("../Fallout4.exe", "1.5.157.0", >=)'
       - *UsingSNB
   - name: 'SnB- Greenhouse - SK.esp'
     msg:
       - type: error
-        content: 'Incompatible with Fallout 4 patch 1.5.157 or greater.'
+        content:
+          - lang: en
+            text: 'Incompatible with Fallout 4 patch 1.5.157 or greater.'
+          - lang: de
+            text: 'Inkompatibel mit Fallout 4 Patch 1.5.157 oder neuer.'
         condition: 'file("../Fallout4.exe") and version("../Fallout4.exe", "1.5.157.0", >=)'
       - *UsingSNB
   - name: 'SnB - Greenhouse - SSEx.esp'
     msg:
       - type: error
-        content: 'Incompatible with Fallout 4 patch 1.5.157 or greater.'
+        content:
+          - lang: en
+            text: 'Incompatible with Fallout 4 patch 1.5.157 or greater.'
+          - lang: de
+            text: 'Inkompatibel mit Fallout 4 Patch 1.5.157 oder neuer.'
         condition: 'file("../Fallout4.exe") and version("../Fallout4.exe", "1.5.157.0", >=)'
       - *UsingSNB
   - name: 'SnB - Greenhouse - Homemaker - SSEx.esp'
     msg:
       - type: error
-        content: 'Incompatible with Fallout 4 patch 1.5.157 or greater.'
+        content:
+          - lang: en
+            text: 'Incompatible with Fallout 4 patch 1.5.157 or greater.'
+          - lang: de
+            text: 'Inkompatibel mit Fallout 4 Patch 1.5.157 oder neuer.'
         condition: 'file("../Fallout4.exe") and version("../Fallout4.exe", "1.5.157.0", >=)'
       - *UsingSNB
   - name: 'Homemaker.esm'
     msg:
       # Homemaker 1.34 CRC
       - type: error
-        content: 'Incompatible with Fallout 4 patch 1.5.157 or greater.'
+        content:
+          - lang: en
+            text: 'Incompatible with Fallout 4 patch 1.5.157 or greater.'
+          - lang: de
+            text: 'Inkompatibel mit Fallout 4 Patch 1.5.157 oder neuer.'
         condition: 'checksum("Homemaker.esm",55D44FD5) and version("../Fallout4.exe", "1.5.157.0", >=)'
       - type: error
-        content: 'Homemaker patch for Settlement Keywords Expanded not installed. Reinstall SKE and place a check mark in the first box in the list of Homemaker patches to ensure the Homemaker patch will be properly installed.'
+        content:
+          - lang: en
+            text: 'Homemaker patch for Settlement Keywords Expanded is not installed. Reinstall SKE and place a check mark in the first box in the list of Homemaker patches to ensure the Homemaker patch will be properly installed.'
+          - lang: de
+            text: 'Homemaker Patch für Settlement Keywords Expanded ist nicht installiert. Installieren Sie SKE neu und setzen Sie ein Häkchen im ersten Kontrollkästchen in der Liste von Homemaker Patches um sicherzustellen das der Homemaker Patch korrekt installiert wird.'
         condition: '(checksum("Homemaker.esm",55D44FD5) or checksum("Homemaker.esm",A28ED2EC) or checksum("Homemaker.esm",DF136FBA) or checksum("Homemaker.esm",284A031C) or checksum("Homemaker.esm",47E7024C)) and version("SettlementKeywords.esm", "1.0", >=)'
       # Homemaker 1.35 CRC
       - type: error
-        content: 'Requires Fallout 4 patch 1.5.157 or greater.'
+        content:
+          - lang: en
+            text: 'Requires Fallout 4 patch 1.5.157 or greater.'
+          - lang: de
+            text: 'Inkompatibel mit Fallout 4 Patch 1.5.157 oder neuer.'
         condition: 'checksum("Homemaker.esm",A28ED2EC) and version("../Fallout4.exe", "1.5.157.0", <)'
       # Homemaker 1.36 CRC DF136FBA
       # For 1.37 and Fallout 4 patch 1.6.3 to 1.6.9
       # Homemaker 1.37 CRC Old: 7207BE96, New: E0D47FC0
       # Homemaker 1.39 CRC 284A031C
       - type: error
-        content: 'Incompatible with Fallout 4 patch 1.7.9 or greater. Use Homemaker 1.40 instead.'
+        content:
+          - lang: en
+            text: 'Incompatible with Fallout 4 patch 1.7.9 or greater. Use Homemaker 1.40 instead.'
+          - lang: de
+            text: 'Inkompatibel mit Fallout 4 Patch 1.7.9 oder neuer. Nutzen Sie Homemaker 1.40 stattdessen.'
         condition: 'checksum("Homemaker.esm",284A031C) and version("../Fallout4.exe", "1.7.9", >=)'
       # For 1.38 and Fallout 4 patch 1.7.9 or greater
       # Homemaker 1.38 CRC Old: F6020126, New: 79CA5BE5
       # Homemaker 1.40 CRC 47E7024C
       - type: error
-        content: 'Incompatible with Fallout 4 patch 1.6.3 to 1.6.9. Use Homemaker 1.39 instead.'
+        content:
+          - lang: en
+            text: 'Incompatible with Fallout 4 patch 1.6.3 to 1.6.9. Use Homemaker 1.39 instead.'
+          - lang: de
+            text: 'Inkompatibel mit Fallout 4 Oatch 1.6.3 zu 1.6.9. Nutzen Sie Homemaker 1.39 stattdessen.'
         condition: 'checksum("Homemaker.esm",47E7024C) and (version("../Fallout4.exe", "1.6.3", >=) and version("../Fallout4.exe", "1.6.9", <=))'
       # Homemaker 1.41 CRC F8FC29EE
       - type: error
-        content: 'Requires Fallout 4 patch 1.7.9 or greater.'
+        content:
+          - lang: en
+            text: 'Requires Fallout 4 patch 1.7.9 or greater.'
+          - lang: de
+            text: 'Inkompatibel mit Fallout 4 Patch 1.7.9 oder neuer.'
         condition: 'checksum("Homemaker.esm",F8FC29EE) and version("../Fallout4.exe", "1.7.9", <)'
       # Homemaker 1.50
       - type: error
-        content: 'Requires Fallout 4 patch 1.7.9 or greater.'
+        content:
+          - lang: en
+            text: 'Requires Fallout 4 patch 1.7.9 or greater.'
+          - lang: de
+            text: 'Inkompatibel mit Fallout 4 Patch 1.7.9 oder neuer.'
         condition: 'version("Homemaker.esm", "1.50", >=) and version("../Fallout4.exe", "1.7.9", <)'
       - type: say
-        content: 'Outdated. Upgrade to the latest version of Homemaker.'
+        content:
+          - lang: en
+            text: 'Outdated. Upgrade to the latest version of Homemaker: [Download](https://www.nexusmods.com/fallout4/mods/1478)'
+          - lang: de
+            text: 'Veraltet. Upgraden Sie zu der neuesten Version von Homemaker: [Download](https://www.nexusmods.com/fallout4/mods/1478)'
         condition: 'version("Homemaker.esm", "1.50", <)'
   - name: 'SnapBedsHomemakerPatch.esp'
     msg:
@@ -8042,97 +8138,189 @@ plugins:
   - name: 'SettlementKeywords.esm'
     msg:
       - type: error
-        content: 'Incompatible with Fallout 4 patch 1.5.157 or greater.'
+        content:
+          - lang: en
+            text: 'Incompatible with Fallout 4 patch 1.5.157 or greater.'
+          - lang: de
+            text: 'Inkompatibel mit Fallout 4 Patch 1.5.157 oder neuer.'
         condition: 'checksum("SettlementKeywords.esm",8D550871) and version("../Fallout4.exe", "1.5.157.0", >=)'
       - type: error
-        content: 'Requires Fallout 4 patch 1.6.3 or greater.'
+        content:
+          - lang: en
+            text: 'Requires Fallout 4 patch 1.6.3 or greater.'
+          - lang: de
+            text: 'Setzt Fallout 4 Patch 1.6.3 oder neuer voraus.'
         condition: 'version("SettlementKeywords.esm", "1.40", >=) and version("../Fallout4.exe", "1.6.3", <)'
       - type: warn
-        content: 'This copy of SettlementKeywords.esm may be missing kewords required for certain mods.'
+        content:
+          - lang: en
+            text: 'This copy of SettlementKeywords.esm may be missing kewords required for certain mods.'
+          - lang: de
+            text: 'Bei dieser Kopie von SettlementKeywords.esm können einige Stichwörter fehlen welche von bestimmten Mods vorausgesetzt werden.'
         condition: 'version("SettlementKeywords.esm", "1.49", <)'
   - name: 'AlternateSettlements.esp'
     msg:
       - type: error
-        content: 'Outdated version of Alternate Settlements detected.  Verify the Settlement Keywords Expanded patch is properly installed.'
+        content:
+          - lang: en
+            text: 'Outdated version of Alternate Settlements detected. Verify the Settlement Keywords Expanded patch is properly installed.'
+          - lang: de
+            text: 'Veraltete Version von Alternate Settlements festgestellt. Verifizieren Sie das der Settlement Keywords Expanded Patch ordnungsgemäß installiert ist.'
         condition: '(checksum("AlternateSettlements.esp",D8906B4D) or checksum("AlternateSettlements.esp",5C36EB92)) and version("SettlementKeywords.esm", "1.0", >=)'
   - name: 'Safe SSEx.esp'
     msg:
       - type: error
-        content: 'Incompatible with Fallout 4 patch 1.5.157 or greater.'
+        content:
+          - lang: en
+            text: 'Incompatible with Fallout 4 patch 1.5.157 or greater.'
+          - lang: de
+            text: 'Inkompatibel mit Fallout 4 Patch 1.5.157 oder neuer.'
         condition: 'file("../Fallout4.exe") and version("../Fallout4.exe", "1.5.157.0", >=)'
   - name: 'Minutemenoverhaul.esp'
     msg:
       - type: error
-        content: 'Requires Fallout 4 patch 1.5.157 to 1.5.416. Use Minutemen Overhaul 2.0.5 instead.'
+        content:
+          - lang: en
+            text: 'Requires Fallout 4 patch 1.5.157 to 1.5.416. Use Minutemen Overhaul 2.0.5 instead.'
+          - lang: de
+            text: 'Setzt Fallout 4 Patch 1.5.157 zu 1.5.416 voraus. Nutzen Sie Minutemen Overhaul 2.0.5 stattdessen.'
         condition: 'checksum("Minutemenoverhaul.esp",8CD7D3C8) and version("../Fallout4.exe", "1.6.3", >=)'
       - type: error
-        content: 'Uninstall and use Minutemen Overhaul 2.0.3 or 2.0.5.'
+        content:
+          - lang: en
+            text: 'Uninstall and use Minutemen Overhaul 2.0.3 or 2.0.5.'
+          - lang: de
+            text: 'Deinstallieren und nutzen Sie Minutemen Overhaul 2.0.3 zu 2.0.5.'
         condition: 'checksum("Minutemenoverhaul.esp",A66E1F17)'
       - type: error
-        content: 'Requires Fallout 4 patch 1.6.3 or greater. Use Minutemen Overhaul 2.0.3 instead.'
+        content:
+          - lang: en
+            text: 'Requires Fallout 4 patch 1.6.3 or greater. Use Minutemen Overhaul 2.0.3 instead.'
+          - lang: de
+            text: 'Setzt Fallout 4 Patch 1.6.3 oder neuer voraus. Nutzen Sie Minutemen Overhaul 2.0.3 stattdessen.'
         condition: 'checksum("Minutemenoverhaul.esp",46A18495) and (version("../Fallout4.exe", "1.5.157.0", >=) and version("../Fallout4.exe", "1.5.416.0", <=))'
       - type: error
-        content: 'Minutemen Overhaul patch for Settlement Keywords Expanded not installed. Reinstall SKE.'
+        content:
+          - lang: en
+            text: 'Minutemen Overhaul patch for Settlement Keywords Expanded not installed. Reinstall SKE.'
+          - lang: de
+            text: 'Minutemen Overhaul Patch für Settlement Keywords Expanded ist nicht installiert. Installieren Sie SKE neu.'
         condition: '(checksum("Minutemenoverhaul.esp",8CD7D3C8) or checksum("Minutemenoverhaul.esp",46A18495)) and version("SettlementKeywords.esm", "1.0", >=)'
   - name: 'BuildingBlocks-Foundations_Homemaker-SnapBuild.esp'
     msg:
       - type: error
-        content: 'Uninstall this file. It is not needed with Homemaker 1.50 or greater.'
+        content:
+          - lang: en
+            text: 'Uninstall this file. It is not needed with Homemaker 1.50 or greater.'
+          - lang: de
+            text: 'Deinstallieren Sie diese Datei. Es wird nicht gebraucht mit Homemaker 1.50 oder neuer.'
         condition: 'version("Homemaker.esm", "1.50", >=)'
       - type: error
-        content: 'Incompatible with Fallout 4 patch 1.5.157 or greater.'
+        content:
+          - lang: en
+            text: 'Incompatible with Fallout 4 patch 1.5.157 or greater.'
+          - lang: de
+            text: 'Inkompatibel mit Fallout 4 Patch 1.5.157 oder neuer.'
         condition: 'file("../Fallout4.exe") and version("../Fallout4.exe", "1.5.157.0", >=)'
   - name: 'BuildingBlocks-Foundations_Homemaker.esp'
     msg:
       - type: error
-        content: 'Uninstall this file. It is not needed with Homemaker 1.50 or greater.'
+        content:
+          - lang: en
+            text: 'Uninstall this file. It is not needed with Homemaker 1.50 or greater.'
+          - lang: de
+            text: 'Deinstallieren Sie diese Datei. Es wird nicht gebraucht mit Homemaker 1.50 oder neuer.'
         condition: 'version("Homemaker.esm", "1.50", >=)'
       - type: error
-        content: 'Incompatible with Fallout 4 patch 1.5.157 or greater.'
+        content:
+          - lang: en
+            text: 'Incompatible with Fallout 4 patch 1.5.157 or greater.'
+          - lang: de
+            text: 'Inkompatibel mit Fallout 4 Patch 1.5.157 oder neuer.'
         condition: 'file("../Fallout4.exe") and version("../Fallout4.exe", "1.5.157.0", >=)'
   - name: 'BuildingBlocks-Foundations_Homemaker-SSEx.esp'
     msg:
       - type: error
-        content: 'Uninstall this file. It is not needed with Homemaker 1.50 or greater.'
+        content:
+          - lang: en
+            text: 'Uninstall this file. It is not needed with Homemaker 1.50 or greater.'
+          - lang: de
+            text: 'Deinstallieren Sie diese Datei. Es wird nicht gebraucht mit Homemaker 1.50 oder neuer.'
         condition: 'version("Homemaker.esm", "1.50", >=)'
       - type: error
-        content: 'Incompatible with Fallout 4 patch 1.5.157 or greater.'
+        content:
+          - lang: en
+            text: 'Incompatible with Fallout 4 patch 1.5.157 or greater.'
+          - lang: de
+            text: 'Inkompatibel mit Fallout 4 Patch 1.5.157 oder neuer.'
         condition: 'file("../Fallout4.exe") and version("../Fallout4.exe", "1.5.157.0", >=)'
   - name: 'BuildingBlocks-Foundations_SettlementKeywordsFull.esp'
     msg:
       - type: say
-        content: 'This file is compatible with SKE but not recomended. Use BuildingBlocks-Foundations.esp instead.'
+        content:
+          - lang: en
+            text: 'This file is compatible with SKE but not recomended. Use BuildingBlocks-Foundations.esp instead.'
+          - lang: de
+            text: 'Diese Datei ist kompatibel mit SKE aber nicht empfohlen. Nutzen Sie BuildingBlocks-Foundations.esp stattdessen.'
         condition: 'version("SettlementKeywords.esm", "1.0", >=)'
   - name: 'BuildingBlocks-Foundations_SettlementKeywordsPartial.esp'
     msg:
       - type: error
-        content: 'Uninstall this file. It was not made for Settlement Keywords Expanded.'
+        content:
+          - lang: en
+            text: 'Uninstall this file. It was not made for Settlement Keywords Expanded.'
+          - lang: de
+            text: 'Deinstallieren Sie diese Datei. Diese wurde nicht für Settlement Keywords Expanded erstellt.'
         condition: 'version("SettlementKeywords.esm", "1.0", >=)'
       - type: error
-        content: 'Incompatible with Fallout 4 patch 1.5.157 or greater.'
+        content:
+          - lang: en
+            text: 'Incompatible with Fallout 4 patch 1.5.157 or greater.'
+          - lang: de
+            text: 'Inkompatibel mit Fallout 4 Patch 1.5.157 oder neuer.'
         condition: 'file("../Fallout4.exe") and version("../Fallout4.exe", "1.5.157.0", >=)'
   - name: 'BuildingBlocks-Foundations_Homemaker-SnapBuild-SSEx.esp'
     msg:
       - type: error
-        content: 'Uninstall this file. It is not needed with Homemaker 1.50 or greater.'
+        content:
+          - lang: en
+            text: 'Uninstall this file. It is not needed with Homemaker 1.50 or greater.'
+          - lang: de
+            text: 'Deinstallieren Sie diese Datei. Es wird nicht gebraucht mit Homemaker 1.50 oder neuer.'
         condition: 'version("Homemaker.esm", "1.50", >=)'
       - type: error
-        content: 'Incompatible with Fallout 4 patch 1.5.157 or greater.'
+        content:
+          - lang: en
+            text: 'Incompatible with Fallout 4 patch 1.5.157 or greater.'
+          - lang: de
+            text: 'Inkompatibel mit Fallout 4 Patch 1.5.157 oder neuer.'
         condition: 'file("../Fallout4.exe") and version("../Fallout4.exe", "1.5.157.0", >=)'
   - name: 'BuildingBlocks-Foundations.esp'
     msg:
       - type: error
-        content: 'This mod overwrites many vanilla settlement menus. Detailed instructions to resolve conflicts can be found [here](https://www.creationkit.com/fallout4/index.php?title=Building_Blocks_Foundations).'
+        content:
+          - lang: en
+            text: 'This mod overwrites many vanilla settlement menus. Detailed instructions to resolve conflicts can be found [here](https://www.creationkit.com/fallout4/index.php?title=Building_Blocks_Foundations).'
+          - lang: de
+            text: 'Diese Mod überschreibt viele Standard Siedlungsmenüs. Detaillierte Anleitungen um Konflikte zu beheben können [hier](https://www.creationkit.com/fallout4/index.php?title=Building_Blocks_Foundations) in Englisch gefunden werden.'
         condition: 'checksum("BuildingBlocks-Foundations.esp",2924F338) and version("../Fallout4.exe", "1.5.157.0", >=)'
   - name: 'Z_Horizon_Patch_Homemaker.esp'
     msg:
       - type: warn
-        content: 'This patch will no longer work correctly with Homemaker 1.50 or greater. It will move items out of the Homemaker menu and place them into the vanilla menus unintentionally.'
+        content:
+          - lang: en
+            text: 'This patch will no longer work correctly with Homemaker 1.50 or greater. It will move items out of the Homemaker menu and place them into the vanilla menus unintentionally.'
+          - lang: de
+            text: 'Dieser Patch wird nicht länger korrekt funktionieren mit Homemaker 1.50 oder neuer. Es wird Gegenstände aus den Homemaker-Menü in die Standard Siedlungsmenüs unbeabsichtigt verschieben.'
         condition: 'version("Homemaker.esm", "1.50", >=)'
   - name: 'Z_Horizon_Patch_Homemaker_SKE.esp'
     msg:
       - type: error
-        content: 'This patch no longer works with SKE 1.43 or greater because, as of Homemaker 1.50 or greater there is no Homemaker - SKE patch.'
+        content:
+          - lang: en
+            text: 'This patch no longer works with SKE 1.43 or greater because, as of Homemaker 1.50 or greater there is no Homemaker - SKE patch.'
+          - lang: de
+            text: 'Dieser Patch wird nicht länger funktionieren mit SKE 1.43 oder neuer weil zu dem Zeitpunkt von Homemaker 1.50 (oder neuer) gibt es keinen Homemaker - SKE Patch.'
         condition: 'version("SettlementKeywords.esm", "1.43", >=)'
   - name: 'BetterJunkFences.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/9000' ]
@@ -8228,7 +8416,11 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout4/mods/21872' ]
     msg:
       - type: warn
-        content: "Sim Settlements has native support for Valdacil's Item Sorting since version 2.0. If you're using a version of Sim Settlements later than this, consider removing this mod."
+        content:
+          - lang: en
+            text: "Sim Settlements has native support for Valdacil's Item Sorting since version 2.0. If you're using a version of Sim Settlements later than this, consider removing this mod."
+          - lang: de
+            text: "Sim Settlements hat native Unterstützung von Valdacil's Item Sorting seit Version 2.0. Sollten Sie eine Version von Sim Settlements neuer als diese verwenden, überlegen Sie diese Mod zu entfernen."
   - name: 'llamaCompanionHeather.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/23273' ]
     msg:
@@ -8272,7 +8464,11 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout4/mods/20137' ]
     msg:
       - type: error
-        content: 'This mods has a script conflict with the Unofficial Fallout 4 Patch. Be sure to get the UFO4P patched version from [the mod page](https://www.nexusmods.com/fallout4/mods/20137).'
+        content:
+          - lang: en
+            text: 'This mods has a script conflict with the Unofficial Fallout 4 Patch. Be sure to get the UFO4P patched version from [the mod page](https://www.nexusmods.com/fallout4/mods/20137).'
+          - lang: de
+            text: 'Dieser Mod hat einen Skript Konflikt mit dem Unofficial Fallout 4 Patch. Stellen Sie sicher die UFO4P-gepatchte Version von [dessen Mod Seite](https://www.nexusmods.com/fallout4/mods/20137) zu bekommen.'
         condition: 'active("Unofficial Fallout 4 Patch.esp") and checksum("Better Settlement Defence.esp", DB37AB92)'
   - name: 'Give Me That Bottle.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/13193' ]
@@ -8302,7 +8498,11 @@ plugins:
           - '[sorting patch](https://www.nexusmods.com/fallout4/mods/13193)'
         condition: 'active("ValdacilsItemSorting-.+\.esp") and (checksum("Give Me That Bottle.esp", 814AC32F) or checksum("Give Me That Bottle.esp", ECEBD46B))'
       - type: warn
-        content: "You seem to be using the Valdacil's Item Sorting version of the mod, but without using any of the Valdacil's Item Sorting plugins. Consider using a version of Give Me That Bottle without sorting patches."
+        content:
+          - lang: en
+            text: "You seem to be using the Valdacil's Item Sorting version of the mod, but without using any of the Valdacil's Item Sorting plugins. Consider using a version of Give Me That Bottle without sorting patches."
+          - lang: de
+            text: "Sie scheinen die Valdacil's Item Sorting Variante der Mod zu nutzen, aber ohne Nutzen jeglicher Valdacil's Item Sorting-Plugins. Ziehen Sie in Erwägung eine Version von Give Me That Bottle ohne Sortierungs-Patches zu nutzen."
         condition: 'not active("ValdacilsItemSorting-.+\.esp") and (checksum("Give Me That Bottle.esp", 939407C9) or checksum("Give Me That Bottle.esp", AE38A5A0))'
   - name: 'CC''s Unique Vault Suit Boxes.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/19976' ]
@@ -8397,7 +8597,11 @@ plugins:
       - <<: *obsolete
         condition: 'version("Armorsmith Extended.esp", "4.3", <)'
       - type: error
-        content: 'Your version of Armorsmith Extended is not compatible with your installed Armor and Weapon Keywords Community Resource (AWKCR).'
+        content:
+          - lang: en
+            text: 'Your version of Armorsmith Extended is not compatible with your installed version of Armor and Weapon Keywords Community Resource (AWKCR).'
+          - lang: de
+            text: 'Ihre Version von Armorsmith Extended ist nicht kompatibel mit Ihrer derzeitigen Version von Armor and Weapon Keywords Community Resource (AWKCR).'
         condition: 'version("Armorsmith Extended.esp", "4.3", >=) and version("ArmorKeywords.esm", "7.1", <)'
   - name: 'SettlementAttacksBeyondFH.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/12892' ]
@@ -8469,7 +8673,11 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout4/mods/14650' ]
     msg:
       - type: error
-        content: "This patch is for an older version of Give Me That Bottle and is not fully compatible with the newest versions of that mod. You may want to update the patch yourself or replace the patch with an automated one by Wrye Bash, Mator Smash, or FO4Edit."
+        content:
+          - lang: en
+            text: "This patch is for an older version of Give Me That Bottle and is not fully compatible with the newest versions of that mod. You may want to update the patch yourself or replace the patch with an automated one by Wrye Bash, Mator Smash, or FO4Edit."
+          - lang: de
+            text: "Dieser Patch ist für eine ältere Version von Give Me That Bottle und ist nicht vollständig kompatibel mit den neuesten Versionen dieser Mod. Sie könnten den Patch selbst updaten oder ersetzen durch einen automatischen Patch von Wrye Bash, Mator Smash, oder FO4Edit."
         condition: 'checksum("SurvivalOptions_GiveMeThatBottlePatch.esp", 42D99A6E)'
   - name: 'DEF_WIDGETS_SURVIVAL1.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/20818' ]
@@ -8543,7 +8751,11 @@ plugins:
         util: 'FO4Edit v3.2'
     msg:
       - type: warn
-        content: 'Version 1.0.0 of this plugin has known errors. Please update to the newest version.'
+        content:
+          - lang: en
+            text: 'Version 1.0.0 of this plugin has known errors. Please update to the newest version.'
+          - lang: de
+            text: 'Version 1.0.0 von dieser Mod hat bekannte Fehler. Bitte updaten Sie zur neuesten Version.'
         condition: 'version("DEF_WIDGETS_SURVIVAL1 - EBF+GMTB patch.esp", "1.0.0", ==)'
   - name: 'CustomizableNeeds.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/13124' ]
@@ -8557,10 +8769,18 @@ plugins:
     msg:
       - type: warn
         condition: 'active("CustomizableNeeds + RealisticAidSideEffects.esp")'
-        content: "Use either Customizable Needs or Customizable Needs plus Realistic Aid Side Effects, not both."
+        content:
+          - lang: en
+            text: "Use either Customizable Needs or Customizable Needs plus Realistic Aid Side Effects, not both."
+          - lang: de
+            text: "Nutzen Sie entweder Customizable Needs oder Customizable Needs plus Realistic Aid Side Effects, nicht beides."
       - type: warn
         condition: 'active("CN \+ RASE - .+\.esp")'
-        content: 'You have active "Customizable Needs plus Realistic Aid Side Effects" plugins enabled while using the "Customizable Needs only" version. Only use the plugins and patches for the version you use.'
+        content:
+          - lang: en
+            text: 'You have active "Customizable Needs plus Realistic Aid Side Effects" plugins enabled while using the "Customizable Needs only" version. Only use the plugins and patches for the version you use.'
+          - lang: de
+            text: 'Sie haben aktive "Customizable Needs plus Realistic Aid Side Effects" Plugins aktiviert während Sie die "Customizable Needs only" Variante nutzen. Nutzen Sie nur die Plugins und Patches für die Variante die Sie nutzen.'
       - <<: *hasPluginPatch
         subs:
           - "Valdacil's Item Sorting"
@@ -8575,10 +8795,18 @@ plugins:
     msg:
       - type: warn
         condition: 'active("CustomizableNeeds.esp") and not checksum("CustomizableNeeds.esp", F2860D72)'
-        content: "Use either Customizable Needs or Customizable Needs plus Realistic Aid Side Effects, not both."
+        content:
+          - lang: en
+            text: "Use either Customizable Needs or Customizable Needs plus Realistic Aid Side Effects, not both."
+          - lang: de
+            text: "Nutzen Sie entweder Customizable Needs oder Customizable Needs plus Realistic Aid Side Effects, nicht beides."
       - type: warn
         condition: 'active("CN Only - .+\.esp")'
-        content: 'You have active "Customizable Needs only" plugins enabled while using the "Customizable Needs plus Realistic Aid Side Effects" version. Only use the plugins and patches for the version you use.'
+        content:
+          - lang: en
+            text: 'You have active "Customizable Needs only" plugins enabled while using the "Customizable Needs plus Realistic Aid Side Effects" version. Only use the plugins and patches for the version you use.'
+          - lang: de
+            text: 'Sie haben aktive "Customizable Needs only" Plugins aktiviert während Sie die "Customizable Needs plus Realistic Aid Side Effects" Variante nutzen. Nutzen Sie nur die Plugins und Patches für die Variante die Sie nutzen.'
       - <<: *hasPluginPatch
         subs:
           - 'Lore-Friendly Survival Chems'
@@ -8805,7 +9033,11 @@ plugins:
       - <<: *obsolete
         condition: 'version("SimSettlements_XPAC_IndustrialRevolution.esp", "3.3.3", <)'
       - type: error
-        content: 'You should not use mismatched versions of Sim Settlements and the Industrial Revolution expansion.'
+        content:
+          - lang: en
+            text: 'You should not use mismatched versions of Sim Settlements and the Industrial Revolution expansion.'
+          - lang: de
+            text: 'Sie solltem keine unstimmigen Version von Sim Settlements und Industrial Revolution Erweiterung nutzen.'
         condition: '(version("SimSettlements_XPAC_IndustrialRevolution.esp", "3.3.3", >=) and version("SimSettlements.esm", "3.3.3", <)) or (version("SimSettlements_XPAC_IndustrialRevolution.esp", "3.3.3", <) and version("SimSettlements.esm", "3.3.3", >=))'
       - <<: *AlreadyInX
         subs: [ 'Sim Settlements Three-In-One' ]
@@ -8823,7 +9055,11 @@ plugins:
       - <<: *obsolete
         condition: 'version("SimSettlements_XPAC_RiseOfTheCommonwealth.esp", "3.4.3", <)'
       - type: error
-        content: 'You should not use mismatched versions of Sim Settlements and the Rise of the Commonwealth expansion.'
+        content:
+          - lang: en
+            text: 'You should not use mismatched versions of Sim Settlements and the Rise of the Commonwealth expansion.'
+          - lang: de
+            text: 'Sie solltem keine unstimmigen Version von Sim Settlements und Rise of the Commonwealth Erweiterung nutzen.'
         condition: '(version("SimSettlements_XPAC_RiseOfTheCommonwealth.esp", "3.4.3", >=) and version("SimSettlements.esm", "3.4.3", <)) or (version("SimSettlements_XPAC_RiseOfTheCommonwealth.esp", "3.4.3", <) and version("SimSettlements.esm", "3.4.3", >=))'
       - <<: *AlreadyInX
         subs: [ 'Sim Settlements Three-In-One' ]
@@ -8871,7 +9107,11 @@ plugins:
         subs: [ 'LooksMenu1stPersonViewItemsFix.esp' ]
         condition: 'active("FirstPersonViewableItemsExpanded.esp") and active("LooksMenu1stPersonViewItemsFix.esp")'
       - type: error
-        content: 'This plugin is incompatible with LooksMenu Customization Compendium. Use the compatible plugin from the [mod page](https://www.nexusmods.com/fallout4/mods/26062).'
+        content:
+          - lang: en
+            text: 'This plugin is incompatible with LooksMenu Customization Compendium. Use the compatible plugin from the [mod page](https://www.nexusmods.com/fallout4/mods/26062).'
+          - lang: de
+            text: 'Dieses Plugins ist inkompatibel mit LooksMenu Customization Compendium. Nutzen Sie das kompatible Plugin von der [Mod Seite](https://www.nexusmods.com/fallout4/mods/26062).'
         condition: 'active("LooksMenu Customization Compendium.esp") and active("FirstPersonViewableItemsExpanded.esp")'
   - name: 'MinutemenGeneralOutfitF.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/26047' ]
@@ -9306,7 +9546,11 @@ plugins:
         condition: 'active("Scrap Everything - Ultimate Edition.esp")'
         subs: [ 'Scrap Everything - Ultimate Edition.esp' ]
       - type: say
-        content: 'Consider using the "Ultimate Edition" of Scrap Everything, a combined version of all the Scrap Everything plugins you are already using.'
+        content:
+          - lang: en
+            text: 'Consider using the "Ultimate Edition" of Scrap Everything, a combined version of all the Scrap Everything plugins you are already using.'
+          - lang: de
+            text: 'Ziehen Sie in Erwägung die "Ultimate Edition" von Scrap Everything zu nutzen, eine kombinierte Version von allen Scrap Everything Plugins die Sie bereits nutzen.'
         condition: 'not active("Scrap Everything - Ultimate Edition.esp") and active("Scrap Everything - Core.esp") and active("Scrap Everything - Automatron.esp") and active("Scrap Everything - Far Harbor.esp") and active("Scrap Everything - Vault-Tec Workshop.esp") and active("Scrap Everything - Nuka World.esp")'
       - *doNotClean
   - name: 'Mechanist Lair Overhaul.esp'
