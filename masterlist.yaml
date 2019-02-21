@@ -245,11 +245,12 @@ common:
     type: warn
     content:
       - lang: en
-        text: 'This plugin contains wild edits beyond ITM and UDR records and deleted navmeshes and may require additional manual cleaning to not interfere with other mods.'
+        text: 'This plugin contains wild edits beyond ITM and UDR records and deleted navmeshes and may require additional manual cleaning to not interfere with other mods. %1%'
       - lang: da
-        text: 'Dette plugin indeholder ukontrollerede redigeringer udover ITM- og UDR-poster og slettede navmesher og kan behøve yderligere manuel oprydning for ikke at forstyrre andre mods.'
+        text: 'Dette plugin indeholder ukontrollerede redigeringer udover ITM- og UDR-poster og slettede navmesher og kan behøve yderligere manuel oprydning for ikke at forstyrre andre mods. %1%'
       - lang: de
-        text: 'Dieses Plugin enthält wilde Modifikationen weit über ITM-, und UDR Einträge und entfernte Navmeshes hinaus und benötigt vermutlich mehr manuelle Säuberung um andere Mods nicht zu beeinträchtigen.'
+        text: 'Dieses Plugin enthält wilde Modifikationen weit über ITM-, und UDR Einträge und entfernte Navmeshes hinaus und benötigt vermutlich mehr manuelle Säuberung um andere Mods nicht zu beeinträchtigen. %1%'
+    subs: [ '' ]
 
 # Cleaning data
   - &dirtyPlugin
