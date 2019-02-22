@@ -53,7 +53,7 @@ common:
       - lang: ja
         text: '削除してください。既に%1%に含まれています。'
       - lang: de
-        text: 'Löschen. Schon enthalten in %1%.'
+        text: 'Löschen. Bereits in %1% enthalten.'
   - &AlreadyInUFO4P
     <<: *AlreadyInX
     subs: [ 'Unofficial Fallout 4 Patch' ]
@@ -76,7 +76,7 @@ common:
       - lang: ja
         text: '%1%は一つだけ使用してください。'
       - lang: de
-        text: 'Benutze nur einen %1%.'
+        text: 'Nutzen Sie nur einen %1%.'
   - &doNotClean
     type: say
     content:
@@ -93,7 +93,7 @@ common:
       - lang: ja
         text: 'IMTレコードはクリーンしないでください。これらは意図的に残されたデータであり、Modを機能させるために必要です。削除の取り消しは安全に行えますが、それ以外のことは行わないでください。'
       - lang: de
-        text: 'Die ITM-Einträge nicht säubern, diese sind absichtlich enthalten und sind vorausgesetzt dass die Mod funktioniert. Es ist ungefährlich Einträge wiederherzustellen, aber unternehme nicht anderes.'
+        text: 'ITM-Einträge in diesem Plugin sollten nicht gesäubert werden, sie sind absichtlich enthalten und werden benötigt, damit der Mod richtig funktioniert. Gelöschte Eintrage wiederherzustellen ist in Ordung, alles andere aber nicht.'
   - &patchProvided
     type: warn
     content:
@@ -141,9 +141,9 @@ common:
       - lang: da
         text: 'Du har installeret %1% men F4SE blev ikke fundet! Se F4SE-downloadsiden: [F4SE](http://f4se.silverlock.org).'
       - lang: ja
-        text: '%1%はインストールされていますが、F4SEが見つかりません！SKSEのダウンロードページを確認してください。[F4SE](http://f4se.silverlock.org)'
+        text: '%1%はインストールされていますが、F4SEが見つかりません！F4SEのダウンロードページを確認してください。[F4SE](http://f4se.silverlock.org)'
       - lang: de
-        text: 'Sie haben %1% installiert, aber F4SE wurde nicht gefunden! Siehe F4SE Download-Seite: [F4SE](http://f4se.silverlock.org).'
+        text: 'Sie haben %1% installiert, aber F4SE wurde nicht gefunden! F4SE kann hier heruntergeladen werden: [F4SE](http://f4se.silverlock.org).'
   - &SmashedVsBashedPatch
     type: say
     content:
