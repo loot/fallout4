@@ -260,6 +260,12 @@ common:
         text: 'インストールされている%1%は使用中のバージョンの%2%との互換性がありません。'
       - lang: de
         text: 'Ihre installierte Version von %1% ist nicht kompatibel mit Ihrer Version von %2%.'
+  - &versionF4SEIncFO4
+    <<: *versionXIncY
+    subs:
+      - '**Script Extender ([F4SE](http://f4se.silverlock.org))**'
+      - '**Fallout 4**'
+
   - &wildEdits
     type: warn
     content:
@@ -338,20 +344,11 @@ globals:
     subs: [ '**Script Extender ([F4SE](http://f4se.silverlock.org))**' ]
     condition: 'not version("../f4se_loader.exe", "0.0.6.15", <)'
 # F4SE - Compatibility
-  - <<: *versionXIncY
-    subs:
-      - '**Script Extender ([F4SE](http://f4se.silverlock.org))**'
-      - '**Fallout 4**'
+  - <<: *versionF4SEIncFO4
     condition: 'version("../Fallout4.exe", "1.10.120.0", ==) and version("../f4se_loader.exe", "0.0.6.14", <) and file("../f4se_loader.exe")'
-  - <<: *versionXIncY
-    subs:
-      - '**Script Extender ([F4SE](http://f4se.silverlock.org))**'
-      - '**Fallout 4**'
+  - <<: *versionF4SEIncFO4
     condition: 'version("../Fallout4.exe", "1.10.114.0", ==) and not version("../f4se_loader.exe", "0.0.6.13", ==) and file("../f4se_loader.exe")'
-  - <<: *versionXIncY
-    subs:
-      - '**Script Extender ([F4SE](http://f4se.silverlock.org))**'
-      - '**Fallout 4**'
+  - <<: *versionF4SEIncFO4
     condition: 'version("../Fallout4.exe", "1.10.111.0", ==) and not version("../f4se_loader.exe", "0.0.6.12", ==) and file("../f4se_loader.exe")'
 # F4SE - Required Scripts
   - type: warn
