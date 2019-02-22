@@ -115,17 +115,6 @@ common:
         text: 'You seem to be using %1%, but you have not enabled a compatibility patch for this mod. A third party patch is available here: %2%'
       - lang: de
         text: 'Sie scheinen %1% zu nutzen, aber sie haben keinen Kompatibilitätspatch für diesen Mod aktiviert. Ein Patch von Dritten ist hier verfügbar: %2%'
-  - &fo4Version
-    type: error
-    content:
-      - lang: en
-        text: 'Your installed version of %1% is not compatible with your version of Fallout 4.'
-      - lang: da
-        text: 'Din installerede version af %1% er ikke kompatibel med din version af Fallout 4.'
-      - lang: ja
-        text: 'インストールされている%1%は使用中のバージョンのFallout 4との互換性がありません。'
-      - lang: de
-        text: 'Ihre installierte Version von %1% ist nicht kompatibel mit Ihrer Version von Fallout 4.'
   - &dlcVersion
     type: say
     content:
@@ -260,6 +249,17 @@ common:
         text: '%1%は最新版です。'
       - lang: de
         text: 'Ihr %1% ist aktuell.'
+  - &versionXIncY
+    type: error
+    content:
+      - lang: en
+        text: 'Your installed version of %1% is not compatible with your version of %2%.'
+      - lang: da
+        text: 'Din installerede version af %1% er ikke kompatibel med din version af %2%.'
+      - lang: ja
+        text: 'インストールされている%1%は使用中のバージョンの%2%との互換性がありません。'
+      - lang: de
+        text: 'Ihre installierte Version von %1% ist nicht kompatibel mit Ihrer Version von %2%.'
   - &wildEdits
     type: warn
     content:
