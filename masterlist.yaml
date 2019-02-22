@@ -353,6 +353,14 @@ globals:
       - '**Script Extender ([F4SE](http://f4se.silverlock.org))**'
       - '**Fallout 4**'
     condition: 'version("../Fallout4.exe", "1.10.111.0", ==) and not version("../f4se_loader.exe", "0.0.6.12", ==) and file("../f4se_loader.exe")'
+# F4SE - Required Scripts
+  - type: warn
+    condition: 'not file("scripts/F4SE.pex") and file("../Fallout4.exe") and file("../f4se_loader.exe")'
+    content:
+      - lang: en
+        text: 'It appears you have installed **Fallout 4 Script Extender**, but its required scripts seem to be missing. Please ensure you have correctly installed the scripts bundled with the **[F4SE](http://f4se.silverlock.org)** installation archive.'
+      - lang: de
+        text: 'Es erscheint als hätten Sie **Fallout 4 Script Extender** installiert, aber die vorausgesetzten Skripte scheinen zu fehlen. Bitte stellen Sie sicher das Sie die Skripte korrekt mit installiert haben die mit dem **[F4SE](http://f4se.silverlock.org)** Installationsarchiv enthalten sind.'
 # F4SE Plugins - Compatibility
   - <<: *versionXIncY
     subs:
