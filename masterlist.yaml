@@ -110,28 +110,27 @@ common:
         text: 'IMTレコードはクリーンしないでください。これらは意図的に残されたデータであり、Modを機能させるために必要です。削除の取り消しは安全に行えますが、それ以外のことは行わないでください。'
       - lang: de
         text: 'Die ITM-Einträge nicht säubern, diese sind absichtlich enthalten und sind vorausgesetzt dass die Mod funktioniert. Es ist ungefährlich Einträge wiederherzustellen, aber unternehme nicht anderes.'
-  - &patchAvailable
-    type: say
-    content:
-      - lang: en
-        text: 'This plugin conflicts with plugin "%1%", however a patch is available.'
-      - lang: da
-        text: 'Dette plugin er i konflikt med pluginnet “%1%”, men en lap er tilgængelig.'
-      - lang: ja
-        text: 'このプラグインは"%1%"と競合していますが、パッチが利用可能です。'
-      - lang: de
-        text: 'Dieses Plugin steht im Konflikt mit dem Plugin "%1%", ein Patch ist jedoch verfügbar.'
-  - &hasPluginPatch
+  - &patchProvided
     type: warn
     content:
       - lang: en
-        text: "You seem to be using %1%, but you haven't enabled the %1% patch for this plugin: %2%"
-      - lang: da
-        text: "Du ser ud til at bruge %1%, men du bruger ikke “%1%”-lappen for dette plugin: %2%"
-      - lang: ja
-        text: "%1%が使用されていますが、このプラグイン用の%1%のパッチが有効になっていません: %2%"
+        text: 'You seem to be using %1%, but you have not enabled a compatibility patch for this mod. A compatibility patch is provided on this plugin''s mod page.'
       - lang: de
-        text: "Sie nutzen anscheinend %1%, haben aber nicht den %1% Patch aktiviert für dieses Plugin: %2%"
+        text: 'Sie scheinen %1% zu nutzen, aber sie haben keinen Kompatibilitätspatch für diesen Mod aktiviert. Ein Kompatibilitätspatch wird auf dieser Plugins Mod-Seite zur Verfügung gestellt.'
+  - &patchIncluded
+    type: warn
+    content:
+      - lang: en
+        text: 'You seem to be using %1%, but you have not enabled a compatibility patch for this mod. A compatibility patch is included with this plugin''s installer.'
+      - lang: de
+        text: 'Sie scheinen %1% zu nutzen, aber sie haben keinen Kompatibilitätspatch für diesen Mod aktiviert. Ein Kompatibilitätspatch ist enthalten mit diesen Plugins Installer.'
+  - &patch3rdParty
+    type: warn
+    content:
+      - lang: en
+        text: 'You seem to be using %1%, but you have not enabled a compatibility patch for this mod. A third party patch is available here: %2%'
+      - lang: de
+        text: 'Sie scheinen %1% zu nutzen, aber sie haben keinen Kompatibilitätspatch für diesen Mod aktiviert. Ein Patch von Dritten ist hier verfügbar: %2%'
   - &fo4Version
     type: error
     content:
@@ -7445,12 +7444,12 @@ plugins:
       - crc: 0x904389D7
         util: FO4Edit v3.2
     msg:
-      - <<: *hasPluginPatch
+      - <<: *patch3rdParty
         subs:
           - 'Automatron'
           - '[DLCRobots Fix](https://www.nexusmods.com/fallout4/mods/11516)'
         condition: 'active("DLCRobot.esm") and not active("DLCCoast.esm") and not active("Scrapper Corpse Highlighting - DLCRobots Fixes.esp") and checksum("Scrapper Corpse Highlighting.esp", 904389D7)'
-      - <<: *hasPluginPatch
+      - <<: *patch3rdParty
         subs:
           - 'Automatron & Far Harbor'
           - '[DLC Patch](https://www.nexusmods.com/fallout4/mods/4380)'
@@ -8424,22 +8423,22 @@ plugins:
   - name: 'llamaCompanionHeather.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/23273' ]
     msg:
-      - <<: *hasPluginPatch
+      - <<: *patch3rdParty
         subs:
           - 'Full Dialogue Interface'
           - '[Heather Casdin patch](https://www.nexusmods.com/fallout4/mods/24314)'
         condition: '(checksum("interface/dialoguemenu.swf", FD1941F1) or checksum("interface/multiactivatemenu.swf", 7A51282D)) and checksum("llamaCompanionHeather.esp", 1FD60CC1)'
-      - <<: *hasPluginPatch
+      - <<: *patch3rdParty
         subs:
           - "Valdacil's Item Sorting"
           - '[Heather Casdin patch](https://www.nexusmods.com/fallout4/mods/24314)'
         condition: 'active("ValdacilsItemSorting-.+\.esp") and not active("llamaCompanionHeather-VIS(-G)?( - AE)? Patch\.esp")'
-      - <<: *hasPluginPatch
+      - <<: *patch3rdParty
         subs:
           - "Bhaal's Better Sorting"
           - '[Heather Casdin patch](https://www.nexusmods.com/fallout4/mods/24314)'
         condition: 'active("BBS000-F04-(MANDATORY|Ultimate)(-.*)?\.esp") and not active("llamaCompanionHeather-BBS(-AE)? Patch\.esp")'
-      - <<: *hasPluginPatch
+      - <<: *patch3rdParty
         subs:
           - 'Armorsmith Extended'
           - '[Heather Casdin patch](https://www.nexusmods.com/fallout4/mods/24314)'
@@ -8487,15 +8486,11 @@ plugins:
       - name: 'ValdacilsItemSorting-00-ValsPicks-NoDLCVersion-VanillaWeight.esp'
         condition: 'checksum("Give Me That Bottle.esp", AE38A5A0) or checksum("Give Me That Bottle.esp", 939407C9)'
     msg:
-      - <<: *hasPluginPatch
-        subs:
-          - 'Far Harbor'
-          - '[Far Harbor patch](https://www.nexusmods.com/fallout4/mods/13193)'
+      - <<: *patchProvided
+        subs: [ 'Far Harbor' ]
         condition: 'active("DLCCoast.esm") and (checksum("Give Me That Bottle.esp", ECEBD46B) or checksum("Give Me That Bottle.esp", 939407C9))'
-      - <<: *hasPluginPatch
-        subs:
-          - "Valdacil's Item Sorting"
-          - '[sorting patch](https://www.nexusmods.com/fallout4/mods/13193)'
+      - <<: *patchIncluded
+        subs: [ 'Valdacil''s Item Sorting' ]
         condition: 'active("ValdacilsItemSorting-.+\.esp") and (checksum("Give Me That Bottle.esp", 814AC32F) or checksum("Give Me That Bottle.esp", ECEBD46B))'
       - type: warn
         content:
@@ -8513,10 +8508,8 @@ plugins:
         # FO4Edit 3.2
         itm: 2
     msg:
-      - <<: *hasPluginPatch
-        subs:
-          - 'Far Harbor'
-          - '[Far Harbor patch](https://www.nexusmods.com/fallout4/mods/19976)'
+      - <<: *patchProvided
+        subs: [ 'Far Harbor' ]
         condition: 'active("DLCCoast.esm") and not active("CC''s Unique Vault Suit Boxes - Far Harbor Patch.esp")'
   - name: 'CC''s Unique Vault Suit Boxes - Far Harbor Patch.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/19976' ]
@@ -8690,25 +8683,17 @@ plugins:
       - crc: 0x2B12E764
         util: 'FO4Edit v3.2'
     msg:
-      - <<: *hasPluginPatch
-        subs:
-          - 'Customizable Needs'
-          - '[Customizable Needs patch](https://www.nexusmods.com/fallout4/mods/20818)'
+      - <<: *patchProvided
+        subs: [ 'Customizable Needs' ]
         condition: 'active("CustomizableNeeds.esp") and not checksum("CustomizableNeeds.esp", F2860D72)'
-      - <<: *hasPluginPatch
-        subs:
-          - 'Everyone''s Best Friend'
-          - '[Everyone''s Best Friend patch](https://www.nexusmods.com/fallout4/mods/20818)'
+      - <<: *patchProvided
+        subs: [ 'Everyone''s Best Friend' ]
         condition: 'active("EveryonesBestFriend.esp") and not active("EBF_DEFW_Patch.esp") and not active("Give Me That Bottle.esp")'
-      - <<: *hasPluginPatch
-        subs:
-          - 'Give Me That Bottle'
-          - '[Give Me That Bottle patch](https://www.nexusmods.com/fallout4/mods/20818)'
+      - <<: *patchProvided
+        subs: [ 'Give Me That Bottle' ]
         condition: 'active("Give Me That Bottle.esp") and not active("gmtb_patch.esp") and not active("EveryonesBestFriend.esp")'
-      - <<: *hasPluginPatch
-        subs:
-          - 'Everyone''s Best Friend & Give Me That Bottle'
-          - '[Everyone''s Best Friend and Give Me That Bottle patch](https://www.nexusmods.com/fallout4/mods/20818)'
+      - <<: *patchProvided
+        subs: [ 'Everyone''s Best Friend & Give Me That Bottle' ]
         condition: 'active("EveryonesBestFriend.esp") and active("Give Me That Bottle.esp") and not active("DEF_WIDGETS_SURVIVAL1 - EBF+GMTB patch.esp")'
   - name: 'gmtb_patch.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/20818' ]
@@ -8781,10 +8766,8 @@ plugins:
             text: 'You have active "Customizable Needs plus Realistic Aid Side Effects" plugins enabled while using the "Customizable Needs only" version. Only use the plugins and patches for the version you use.'
           - lang: de
             text: 'Sie haben aktive "Customizable Needs plus Realistic Aid Side Effects" Plugins aktiviert während Sie die "Customizable Needs only" Variante nutzen. Nutzen Sie nur die Plugins und Patches für die Variante die Sie nutzen.'
-      - <<: *hasPluginPatch
-        subs:
-          - "Valdacil's Item Sorting"
-          - '[VIS patch](https://www.nexusmods.com/fallout4/mods/13124)'
+      - <<: *patchIncluded
+        subs: [ 'Valdacil''s Item Sorting' ]
         condition: 'active("ValdacilsItemSorting-.+\.esp") and not active("CN Only - VIS Patch.esp")'
   - name: 'CustomizableNeeds + RealisticAidSideEffects.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/13124' ]
@@ -8807,15 +8790,11 @@ plugins:
             text: 'You have active "Customizable Needs only" plugins enabled while using the "Customizable Needs plus Realistic Aid Side Effects" version. Only use the plugins and patches for the version you use.'
           - lang: de
             text: 'Sie haben aktive "Customizable Needs only" Plugins aktiviert während Sie die "Customizable Needs plus Realistic Aid Side Effects" Variante nutzen. Nutzen Sie nur die Plugins und Patches für die Variante die Sie nutzen.'
-      - <<: *hasPluginPatch
-        subs:
-          - 'Lore-Friendly Survival Chems'
-          - '[Lore-Friendly Survival Chems patch](https://www.nexusmods.com/fallout4/mods/13124)'
+      - <<: *patchIncluded
+        subs: [ 'Lore-Friendly Survival Chems' ]
         condition: 'active("LoreFriendlySurvivalChems(VIS)?\.esp") and not active("CN + RASE - LoreFriendlySurvivalChems(VIS)? Patch\.esp")'
-      - <<: *hasPluginPatch
-        subs:
-          - "Valdacil's Item Sorting"
-          - '[VIS patch](https://www.nexusmods.com/fallout4/mods/13124)'
+      - <<: *patchIncluded
+        subs: [ 'Valdacil''s Item Sorting' ]
         condition: 'active("ValdacilsItemSorting-.+\.esp") and not active("CN + RASE - VIS Patch.esp")'
   - name: 'Sanctuary Terminals.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/11730' ]
@@ -9565,10 +9544,8 @@ plugins:
       - <<: *useOnlyOneX
         condition: 'active("Mechanist Lair Overhaul SEC.esp")'
         subs: [ 'Mechanist Lair Overhaul' ]
-      - <<: *hasPluginPatch
-        subs:
-          - 'Scrap Everything'
-          - '[Scrap Everything compatiple plugin](https://www.nexusmods.com/fallout4/mods/23294)'
+      - <<: *patchProvided
+        subs: [ 'Scrap Everything' ]
         condition: '(active("Scrap Everything - Automatron.esp") or active("Scrap Everything - Ultimate Edition.esp")) and not active("Mechanist Lair Overhaul SEC.esp")'
   - name: 'Mechanist Lair Overhaul SEC.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/23294' ]
