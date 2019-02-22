@@ -125,7 +125,7 @@ common:
       - lang: de
         text: 'Diese Version enthält keine Anpassungen für DLC Inhalte. Die DLC Version sollte anstatt dessen verwendet werden.'
     condition: 'active("DLCRobot.esm") and active("DLCworkshop01.esm") and active("DLCCoast.esm")'
-  - &requireF4SE
+  - &requiresF4SE
     type: error
     content:
       - lang: en
@@ -367,10 +367,16 @@ globals:
       - '**F4SE Plugin ([Place Everywhere](https://www.nexusmods.com/fallout4/mods/9424))**'
       - 'Fallout 4'
     condition: 'file("F4SE/Plugins/place.dll") and file("../f4se_loader.exe") and ((version("F4SE/Plugins/place.dll", "1.18.0.1120", ==) and version("../Fallout4.exe", "1.10.120.0", !=)) or (version("F4SE/Plugins/place.dll", "1.18.0.1120", <) and version("../Fallout4.exe", "1.10.120.0", ==)))'
+# F4SE Plugins - Requirements
+  - <<: *requiresF4SE
+    subs: [ 'a F4SE Plugin' ]
+    condition: 'file("F4SE/Plugins/([^\.]+\.dll)") and not file("../f4se_loader.exe")'
+
+  - <<: *requiresF4SE
+    subs: [ '[Achievements](https://www.nexusmods.com/fallout4/mods/12465)' ]
     condition: 'file("F4SE/Plugins/achievements.dll") and not file("../f4se_loader.exe")'
-  - <<: *requireF4SE
-    subs: [ 'Place Everywhere' ]
-    # url: [ 'https://www.nexusmods.com/fallout4/mods/9424' ]
+  - <<: *requiresF4SE
+    subs: [ '[Place Everywhere](https://www.nexusmods.com/fallout4/mods/9424)' ]
     condition: 'file("F4SE/Plugins/place.dll") and not file("../f4se_loader.exe")'
 
 groups:
