@@ -35,26 +35,6 @@ common:
         text: '削除してください。既にBethesdaによってFallout 4のパッチが当てられています。'
       - lang: de
         text: 'Löschen. Schon in Fallout 4 behoben von Bethesda.'
-  - &AlreadyInUFO4P
-    type: error
-    content:
-      - lang: en
-        text: 'Delete. Already included in Unofficial Fallout 4 Patch.esp.'
-      - lang: ru
-        text: 'Удалите. Уже включено в Unofficial Fallout 4 Patch.esp.'
-      - lang: es
-        text: 'Borrar. Esta incluido en Unofficial Fallout 4 Patch.esp.'
-      - lang: ko
-        text: '삭제하십시오. 이미 Unofficial Fallout 4 Patch.esp에 포함되어 있습니다.'
-      - lang: zh_CN
-        text: '删除。已包含在Unofficial Fallout 4 Patch.esp中。'
-      - lang: da
-        text: 'Slet. Allerede inkluderet i Unofficial Fallout 4 Patch.esp.'
-      - lang: ja
-        text: '削除してください。既にUnofficial Fallout 4 Patch.espに含まれています。'
-      - lang: de
-        text: 'Löschen. Schon enthalten im Unofficial Fallout 4 Patch.esp.'
-    condition: 'active("Unofficial Fallout 4 Patch.esp")'
   - &AlreadyInX
     type: error
     content:
@@ -74,6 +54,10 @@ common:
         text: '削除してください。既に%1%に含まれています。'
       - lang: de
         text: 'Löschen. Schon enthalten in %1%.'
+  - &AlreadyInUFO4P
+    <<: *AlreadyInX
+    subs: [ 'Unofficial Fallout 4 Patch' ]
+    condition: 'active("Unofficial Fallout 4 Patch.esp")'
   - &useOnlyOneX
     type: warn
     content:
