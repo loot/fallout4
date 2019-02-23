@@ -9783,3 +9783,33 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout4/mods/4253' ]
     after:
       - 'MoreAGOMBz.esp'
+
+# Better Series
+  - name: 'CrimeTown.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/16594'
+        name: 'Better Goodneighbor'
+    dirty:
+      # version: 1.00 before quick clean
+      - <<: *reqManualFix
+        crc: 0x12E32660
+        util: '[FO4Edit v4.0.1](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 217
+        udr: 50
+        nav: 2
+      # version: 1.00 before 2nd pass of quick clean
+      - <<: *reqManualFix
+        crc: 0x0D8B6A82
+        util: '[FO4Edit v4.0.1](https://www.nexusmods.com/fallout4/mods/2737)'
+        nav: 2
+      # version: 1.01 before quick clean
+      - <<: *reqManualFix
+        crc: 0x305D7674
+        util: '[FO4Edit v4.0.1](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 217
+        nav: 1
+      # version: 1.01 before 2nd pass of quick clean
+      - <<: *reqManualFix
+        crc: 0xF0CE4E14
+        util: '[FO4Edit v4.0.1](https://www.nexusmods.com/fallout4/mods/2737)'
+        nav: 1
