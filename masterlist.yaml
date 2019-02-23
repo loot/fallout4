@@ -9813,6 +9813,45 @@ plugins:
       # version: 1.01 after quick clean
       - crc: 0x93B14301
         util: 'FO4Edit v4.0.1'
+  - name: 'BetterBostonAirport.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/13958' ]
+    dirty:
+      # version: 1.00 before quick clean
+      - <<: *reqManualFix
+        crc: 0x7D70B245
+        util: '[FO4Edit v4.0.1](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 46
+        udr: 15
+        nav: 7
+      # version: 1.00 before 2nd pass of quick clean
+      - <<: *reqManualFix
+        crc: 0xF57092DE
+        util: '[FO4Edit v4.0.1](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 2
+        nav: 7
+      # version: 1.00 after 2nd pass of quick clean
+      - <<: *reqManualFix
+        crc: 0x655D55A4
+        util: '[FO4Edit v4.0.1](https://www.nexusmods.com/fallout4/mods/2737)'
+        nav: 7
+      # version: 1.01 before quick clean
+      - <<: *reqManualFix
+        crc: 0x55F6C318
+        util: '[FO4Edit v4.0.1](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 47
+        udr: 1
+        nav: 2
+      # version: 1.01 before 2nd pass of quick clean
+      - <<: *reqManualFix
+        crc: 0x7B4CB67A
+        util: '[FO4Edit v4.0.1](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 2
+        nav: 2
+      # version: 1.01 after 2nd pass of quick clean
+      - <<: *reqManualFix
+        crc: 0xA474B024
+        util: '[FO4Edit v4.0.1](https://www.nexusmods.com/fallout4/mods/2737)'
+        nav: 2
   - name: 'CrimeTown.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/16594'
