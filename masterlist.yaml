@@ -9813,3 +9813,43 @@ plugins:
         crc: 0xF0CE4E14
         util: '[FO4Edit v4.0.1](https://www.nexusmods.com/fallout4/mods/2737)'
         nav: 1
+  - name: 'TrainBar.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/15388'
+        name: 'Better The Third Rail'
+    dirty:
+      # version: 1.00 before quick clean
+      - <<: *reqManualFix
+        crc: 0xF22C4856
+        util: '[FO4Edit v4.0.1](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 24
+        udr: 130
+        nav: 1
+      # version: 1.00 before 2nd pass of quick clean
+      - <<: *reqManualFix
+        crc: 0x73B44475
+        util: '[FO4Edit v4.0.1](https://www.nexusmods.com/fallout4/mods/2737)'
+        nav: 1
+      # version: 1.01 before quick clean
+      - <<: *reqManualFix
+        crc: 0x4B435470
+        util: '[FO4Edit v4.0.1](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 24
+        udr: 130
+        nav: 1
+      # version: 1.01 before 2nd pass of quick clean
+      - <<: *reqManualFix
+        crc: 0x1576DEE9
+        util: '[FO4Edit v4.0.1](https://www.nexusmods.com/fallout4/mods/2737)'
+        nav: 1
+      # version: 1.02 before quick clean
+      - <<: *reqManualFix
+        crc: 0x65550C3A
+        util: '[FO4Edit v4.0.1](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 24
+        nav: 1
+      # version: 1.02 before 2nd pass of quick clean
+      - <<: *reqManualFix
+        crc: 0x21A91F2C
+        util: '[FO4Edit v4.0.1](https://www.nexusmods.com/fallout4/mods/2737)'
+        nav: 1
