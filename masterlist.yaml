@@ -9880,6 +9880,34 @@ plugins:
         crc: 0xF0CE4E14
         util: '[FO4Edit v4.0.1](https://www.nexusmods.com/fallout4/mods/2737)'
         nav: 1
+  - name: 'DeadAirplane.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/17038'
+        name: 'Better Skylanes Flight 1665 (Glowing Sea)'
+    dirty:
+      # version: 1.00 before quick clean
+      - <<: *quickClean
+        crc: 0xB7248F22
+        util: '[FO4Edit v4.0.1](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 7
+        udr: 140
+      # version: 1.00 before 2nd pass of quick clean
+      - <<: *quickClean
+        crc: 0x2173A62F
+        util: '[FO4Edit v4.0.1](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 3
+      # version: 1.01 before quick clean
+      - <<: *quickClean
+        crc: 0xA1837827
+        util: '[FO4Edit v4.0.1](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 7
+    clean:
+      # version: 1.00 after quick clean
+      - crc: 0x0AC956AB
+        util: 'FO4Edit v4.0.1'
+      # version: 1.04 after quick clean
+      - crc: 0xCC4B7FA9
+        util: 'FO4Edit v4.0.1'
   - name: 'TrainBar.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/15388'
