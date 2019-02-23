@@ -35,26 +35,6 @@ common:
         text: '削除してください。既にBethesdaによってFallout 4のパッチが当てられています。'
       - lang: de
         text: 'Löschen. Schon in Fallout 4 behoben von Bethesda.'
-  - &AlreadyInUFO4P
-    type: error
-    content:
-      - lang: en
-        text: 'Delete. Already included in Unofficial Fallout 4 Patch.esp.'
-      - lang: ru
-        text: 'Удалите. Уже включено в Unofficial Fallout 4 Patch.esp.'
-      - lang: es
-        text: 'Borrar. Esta incluido en Unofficial Fallout 4 Patch.esp.'
-      - lang: ko
-        text: '삭제하십시오. 이미 Unofficial Fallout 4 Patch.esp에 포함되어 있습니다.'
-      - lang: zh_CN
-        text: '删除。已包含在Unofficial Fallout 4 Patch.esp中。'
-      - lang: da
-        text: 'Slet. Allerede inkluderet i Unofficial Fallout 4 Patch.esp.'
-      - lang: ja
-        text: '削除してください。既にUnofficial Fallout 4 Patch.espに含まれています。'
-      - lang: de
-        text: 'Löschen. Schon enthalten im Unofficial Fallout 4 Patch.esp.'
-    condition: 'active("Unofficial Fallout 4 Patch.esp")'
   - &AlreadyInX
     type: error
     content:
@@ -73,7 +53,11 @@ common:
       - lang: ja
         text: '削除してください。既に%1%に含まれています。'
       - lang: de
-        text: 'Löschen. Schon enthalten in %1%.'
+        text: 'Löschen. Bereits in %1% enthalten.'
+  - &AlreadyInUFO4P
+    <<: *AlreadyInX
+    subs: [ 'Unofficial Fallout 4 Patch' ]
+    condition: 'active("Unofficial Fallout 4 Patch.esp")'
   - &useOnlyOneX
     type: warn
     content:
@@ -92,7 +76,7 @@ common:
       - lang: ja
         text: '%1%は一つだけ使用してください。'
       - lang: de
-        text: 'Benutze nur einen %1%.'
+        text: 'Nutzen Sie nur einen %1%.'
   - &doNotClean
     type: say
     content:
@@ -109,40 +93,28 @@ common:
       - lang: ja
         text: 'IMTレコードはクリーンしないでください。これらは意図的に残されたデータであり、Modを機能させるために必要です。削除の取り消しは安全に行えますが、それ以外のことは行わないでください。'
       - lang: de
-        text: 'Die ITM-Einträge nicht säubern, diese sind absichtlich enthalten und sind vorausgesetzt dass die Mod funktioniert. Es ist ungefährlich Einträge wiederherzustellen, aber unternehme nicht anderes.'
-  - &patchAvailable
-    type: say
-    content:
-      - lang: en
-        text: 'This plugin conflicts with plugin "%1%", however a patch is available.'
-      - lang: da
-        text: 'Dette plugin er i konflikt med pluginnet “%1%”, men en lap er tilgængelig.'
-      - lang: ja
-        text: 'このプラグインは"%1%"と競合していますが、パッチが利用可能です。'
-      - lang: de
-        text: 'Dieses Plugin steht im Konflikt mit dem Plugin "%1%", ein Patch ist jedoch verfügbar.'
-  - &hasPluginPatch
+        text: 'ITM-Einträge in diesem Plugin sollten nicht gesäubert werden, sie sind absichtlich enthalten und werden benötigt, damit der Mod richtig funktioniert. Gelöschte Eintrage wiederherzustellen ist in Ordung, alles andere aber nicht.'
+  - &patchProvided
     type: warn
     content:
       - lang: en
-        text: "You seem to be using %1%, but you haven't enabled the %1% patch for this plugin: %2%"
-      - lang: da
-        text: "Du ser ud til at bruge %1%, men du bruger ikke “%1%”-lappen for dette plugin: %2%"
-      - lang: ja
-        text: "%1%が使用されていますが、このプラグイン用の%1%のパッチが有効になっていません: %2%"
+        text: 'You seem to be using %1%, but you have not enabled a compatibility patch for this mod. A compatibility patch is provided on this plugin''s mod page.'
       - lang: de
-        text: "Sie nutzen anscheinend %1%, haben aber nicht den %1% Patch aktiviert für dieses Plugin: %2%"
-  - &fo4Version
-    type: error
+        text: 'Sie scheinen %1% zu nutzen, aber sie haben keinen Kompatibilitätspatch für diesen Mod aktiviert. Ein Kompatibilitätspatch wird auf dieser Plugins Mod-Seite zur Verfügung gestellt.'
+  - &patchIncluded
+    type: warn
     content:
       - lang: en
-        text: 'Your installed version of %1% is not compatible with your version of Fallout 4.'
-      - lang: da
-        text: 'Din installerede version af %1% er ikke kompatibel med din version af Fallout 4.'
-      - lang: ja
-        text: 'インストールされている%1%は使用中のバージョンのFallout 4との互換性がありません。'
+        text: 'You seem to be using %1%, but you have not enabled a compatibility patch for this mod. A compatibility patch is included with this plugin''s installer.'
       - lang: de
-        text: 'Ihre installierte Version von %1% ist nicht kompatibel mit Ihrer Version von Fallout 4.'
+        text: 'Sie scheinen %1% zu nutzen, aber sie haben keinen Kompatibilitätspatch für diesen Mod aktiviert. Ein Kompatibilitätspatch ist enthalten mit diesen Plugins Installer.'
+  - &patch3rdParty
+    type: warn
+    content:
+      - lang: en
+        text: 'You seem to be using %1%, but you have not enabled a compatibility patch for this mod. A third party patch is available here: %2%'
+      - lang: de
+        text: 'Sie scheinen %1% zu nutzen, aber sie haben keinen Kompatibilitätspatch für diesen Mod aktiviert. Ein Patch von Dritten ist hier verfügbar: %2%'
   - &dlcVersion
     type: say
     content:
@@ -153,7 +125,7 @@ common:
       - lang: de
         text: 'Diese Version enthält keine Anpassungen für DLC Inhalte. Die DLC Version sollte anstatt dessen verwendet werden.'
     condition: 'active("DLCRobot.esm") and active("DLCworkshop01.esm") and active("DLCCoast.esm")'
-  - &requireF4SE
+  - &requiresF4SE
     type: error
     content:
       - lang: en
@@ -169,9 +141,9 @@ common:
       - lang: da
         text: 'Du har installeret %1% men F4SE blev ikke fundet! Se F4SE-downloadsiden: [F4SE](http://f4se.silverlock.org).'
       - lang: ja
-        text: '%1%はインストールされていますが、F4SEが見つかりません！SKSEのダウンロードページを確認してください。[F4SE](http://f4se.silverlock.org)'
+        text: '%1%はインストールされていますが、F4SEが見つかりません！F4SEのダウンロードページを確認してください。[F4SE](http://f4se.silverlock.org)'
       - lang: de
-        text: 'Sie haben %1% installiert, aber F4SE wurde nicht gefunden! Siehe F4SE Download-Seite: [F4SE](http://f4se.silverlock.org).'
+        text: 'Sie haben %1% installiert, aber F4SE wurde nicht gefunden! F4SE kann hier heruntergeladen werden: [F4SE](http://f4se.silverlock.org).'
   - &SmashedVsBashedPatch
     type: say
     content:
@@ -241,6 +213,59 @@ common:
       - lang: de
         text: 'Deinstalliere diese Datei und upgrade zu Homemaker 1.50.'
     condition: 'version("Homemaker.esm", "1.50", <)'
+  - &versionOldX
+    type: say
+    content:
+      - lang: en
+        text: 'It appears you do not have the latest version of %1%. Some mods may require functionality added in the latest version of %1% to work.'
+      - lang: ru
+        text: 'Возможно у вас не установлена новейшая версия %1%. Для работы некоторых модов может требоваться функционал, добавленный в последней версии %1%'
+      - lang: es
+        text: 'Parece que no tienes la última versión de %1%. Algunos mods pueden requerir funcionalidad añadida en la última versión de %1% para funcionar.'
+      - lang: ko
+        text: '%1%의 최신 버전이없는 것 같습니다. 일부 개조자는 작동하기 위해 %1%의 최신 버전에 추가 된 기능이 필요할 수 있습니다.'
+      - lang: zh_CN
+        text: '你的%1%似乎不是最新的。有些插件可能需要最新的%1%才能工作。'
+      - lang: ja
+        text: '%1%が最新版ではないようです。一部のModを動作させるには最新版の%1%で追加された機能が必要となる場合があります。'
+      - lang: de
+        text: 'Sie haben anscheinend nicht die aktuellste Version von %1% installiert. Einige Mods könnten Funktionalitäten benötigen, die nur in der aktuellsten Version von %1% enthalten sind, um zu funktionieren.'
+  - &versionUpToDateX
+    type: say
+    content:
+      - lang: en
+        text: 'Your %1% is up-to-date.'
+      - lang: ru
+        text: 'Ваш %1% обновлен.'
+      - lang: es
+        text: 'Tienes la última versión de %1%'
+      - lang: ko
+        text: '%1%가 최신버전입니다.'
+      - lang: zh_CN
+        text: '你的%1%是最新的。'
+      - lang: da
+        text: 'Din %1% er opdateret.'
+      - lang: ja
+        text: '%1%は最新版です。'
+      - lang: de
+        text: 'Ihr %1% ist aktuell.'
+  - &versionXIncY
+    type: error
+    content:
+      - lang: en
+        text: 'Your installed version of %1% is not compatible with your version of %2%.'
+      - lang: da
+        text: 'Din installerede version af %1% er ikke kompatibel med din version af %2%.'
+      - lang: ja
+        text: 'インストールされている%1%は使用中のバージョンの%2%との互換性がありません。'
+      - lang: de
+        text: 'Ihre installierte Version von %1% ist nicht kompatibel mit Ihrer Version von %2%.'
+  - &versionF4SEIncFO4
+    <<: *versionXIncY
+    subs:
+      - '**Script Extender ([F4SE](http://f4se.silverlock.org))**'
+      - '**Fallout 4**'
+
   - &wildEdits
     type: warn
     content:
@@ -304,72 +329,51 @@ globals:
       - lang: de
         text: '[Aktueller LOOT Thread](%1%).'
     subs: [ 'https://loot.github.io/latest-thread/' ]
-# Fallout 4 latest
-  - type: say
-    condition: 'file("../Fallout4.exe") and version("../Fallout4.exe", "1.10.111.0", <)'
+# Fallout 4 - Latest Version
+  - <<: *versionOldX
+    subs: [ '**Fallout 4**' ]
+    condition: 'version("../Fallout4.exe", "1.10.120.0", <) and file("../Fallout4.exe")'
+  - <<: *versionUpToDateX
+    subs: [ '**Fallout 4**' ]
+    condition: 'version("../Fallout4.exe", "1.10.120.0", >=) and file("../Fallout4.exe")'
+# F4SE - Latest Version
+  - <<: *versionOldX
+    subs: [ '**Script Extender ([F4SE](http://f4se.silverlock.org))**' ]
+    condition: 'version("../f4se_loader.exe", "0.0.6.15", <) and file("../f4se_loader.exe") and file("../Fallout4.exe")'
+  - <<: *versionUpToDateX
+    subs: [ '**Script Extender ([F4SE](http://f4se.silverlock.org))**' ]
+    condition: 'not version("../f4se_loader.exe", "0.0.6.15", <)'
+# F4SE - Compatibility
+  - <<: *versionF4SEIncFO4
+    condition: 'version("../Fallout4.exe", "1.10.120.0", ==) and version("../f4se_loader.exe", "0.0.6.14", <) and file("../f4se_loader.exe")'
+  - <<: *versionF4SEIncFO4
+    condition: 'version("../Fallout4.exe", "1.10.114.0", ==) and not version("../f4se_loader.exe", "0.0.6.13", ==) and file("../f4se_loader.exe")'
+  - <<: *versionF4SEIncFO4
+    condition: 'version("../Fallout4.exe", "1.10.111.0", ==) and not version("../f4se_loader.exe", "0.0.6.12", ==) and file("../f4se_loader.exe")'
+# F4SE - Required Scripts
+  - type: warn
+    condition: 'not file("scripts/F4SE.pex") and file("../Fallout4.exe") and file("../f4se_loader.exe")'
     content:
       - lang: en
-        text: 'It appears you do not have the latest version of Fallout 4.'
-      - lang: da
-        text: 'Det ser ikke ud til at du har den seneste version af Fallout 4.'
-      - lang: ja
-        text: 'Fallout 4が最新版ではないようです。'
+        text: 'It appears you have installed **Fallout 4 Script Extender**, but its required scripts seem to be missing. Please ensure you have correctly installed the scripts bundled with the **[F4SE](http://f4se.silverlock.org)** installation archive.'
       - lang: de
-        text: 'Es erscheint als hätten Sie nicht die aktuellste Version von Fallout 4.'
-# F4SE Latest
-  - type: say
-    condition: 'file("../f4se_loader.exe") and version("../f4se_loader.exe", "0.0.6.12", <)'
-    content:
-      - lang: en
-        text: 'It appears you do not have the [latest version of F4SE](http://f4se.silverlock.org). Some mods may require functionality added in the latest version of F4SE to work.'
-      - lang: ru
-        text: 'Возможно, что вы используете НЕ [самую последнюю версию F4SE](http://f4se.silverlock.org). Для работы некоторых модов может требоваться функционал, добавленный в последнюю версию F4SE'
-      - lang: es
-        text: 'Parece que no tienes la última versión de F4SE. la nueva versión se puede encontrar [aquí](http://f4se.silverlock.org/).'
-      - lang: ko
-        text: '[F4SE의 최신 버전](http://f4se.silverlock.org)이 설치 되지 않은 것같습니다. 일부 모드가 동작하려면 F4SE의 최신 버전에서 추가된 기능을 필요로 할 수도 있습니다.'
-      - lang: zh_CN
-        text: '你的[F4SE](http://f4se.silverlock.org)似乎不是最新的。有些插件可能需要最新的F4SE才能工作。'
-      - lang: da
-        text: 'Det ser ud til at du ikke har den [seneste version af F4SE](http://f4se.silverlock.org). Nogle mods kan afhænge af funktionalitet tilføjet i den nyeste version af F4SE for at virke.'
-      - lang: ja
-        text: '[F4SE](http://f4se.silverlock.org)が最新版ではないようです。一部のModを動作させるには最新版のSKSEで追加された機能が必要となる場合があります。'
-      - lang: de
-        text: 'Es erscheint als hätten Sie nicht die [aktuellste Version von F4SE](http://f4se.silverlock.org). Einige Mods könnten Funktionalitäten benötigen die nur in der aktuellsten Version von F4SE enthalten sind, um zu funktionieren.'
-  - type: say
-    condition: 'not version("../f4se_loader.exe", "0.0.6.12", <)'
-    content:
-      - lang: en
-        text: 'Your F4SE is up-to-date.'
-      - lang: ru
-        text: 'Ваш F4SE имеет последнюю версию.'
-      - lang: es
-        text: 'Tienes la última versión de F4SE'
-      - lang: ko
-        text: 'F4SE가 최신버전입니다.'
-      - lang: zh_CN
-        text: '你的F4SE是最新的。'
-      - lang: da
-        text: 'Din F4SE er opdateret.'
-      - lang: ja
-        text: 'F4SEは最新版です。'
-      - lang: de
-        text: 'Ihr F4SE ist aktuell.'
-# Fallout 4 exe version checks
-  - <<: *fo4Version
-    subs: [ '[F4SE](http://f4se.silverlock.org)' ]
-    condition: 'version("../f4se_loader.exe", "0.0.6.12", ==) and version("../Fallout4.exe", "1.10.111.0", !=)'
-  # - <<: *fo4Version
-  #   subs: [ '[Place Everywhere](https://www.nexusmods.com/fallout4/mods/9424)' ]
-  #   condition: 'file("F4SE/Plugins/place.dll") and ((version("F4SE/Plugins/place.dll", "1.18.0.1114", ==) and version("../Fallout4.exe", "1.10.114.0", !=)) or (version("F4SE/Plugins/place.dll", "1.18.0.1114", <) and version("../Fallout4.exe", "1.10.114.0", ==)))'
-# F4SE plugins
-  - <<: *requireF4SE
-    subs: [ 'Achievements' ]
-    # url: [ 'https://www.nexusmods.com/fallout4/mods/12465' ]
+        text: 'Es erscheint als hätten Sie **Fallout 4 Script Extender** installiert, aber die vorausgesetzten Skripte scheinen zu fehlen. Bitte stellen Sie sicher das Sie die Skripte korrekt mit installiert haben die mit dem **[F4SE](http://f4se.silverlock.org)** Installationsarchiv enthalten sind.'
+# F4SE Plugins - Compatibility
+  - <<: *versionXIncY
+    subs:
+      - '**F4SE Plugin ([Place Everywhere](https://www.nexusmods.com/fallout4/mods/9424))**'
+      - 'Fallout 4'
+    condition: 'file("F4SE/Plugins/place.dll") and file("../f4se_loader.exe") and ((version("F4SE/Plugins/place.dll", "1.18.0.1120", ==) and version("../Fallout4.exe", "1.10.120.0", !=)) or (version("F4SE/Plugins/place.dll", "1.18.0.1120", <) and version("../Fallout4.exe", "1.10.120.0", ==)))'
+# F4SE Plugins - Requirements
+  - <<: *requiresF4SE
+    subs: [ 'a F4SE Plugin' ]
+    condition: 'file("F4SE/Plugins/([^\.]+\.dll)") and not file("../f4se_loader.exe")'
+
+  - <<: *requiresF4SE
+    subs: [ '[Achievements](https://www.nexusmods.com/fallout4/mods/12465)' ]
     condition: 'file("F4SE/Plugins/achievements.dll") and not file("../f4se_loader.exe")'
-  - <<: *requireF4SE
-    subs: [ 'Place Everywhere' ]
-    # url: [ 'https://www.nexusmods.com/fallout4/mods/9424' ]
+  - <<: *requiresF4SE
+    subs: [ '[Place Everywhere](https://www.nexusmods.com/fallout4/mods/9424)' ]
     condition: 'file("F4SE/Plugins/place.dll") and not file("../f4se_loader.exe")'
 
 groups:
@@ -7446,12 +7450,12 @@ plugins:
       - crc: 0x904389D7
         util: FO4Edit v3.2
     msg:
-      - <<: *hasPluginPatch
+      - <<: *patch3rdParty
         subs:
           - 'Automatron'
           - '[DLCRobots Fix](https://www.nexusmods.com/fallout4/mods/11516)'
         condition: 'active("DLCRobot.esm") and not active("DLCCoast.esm") and not active("Scrapper Corpse Highlighting - DLCRobots Fixes.esp") and checksum("Scrapper Corpse Highlighting.esp", 904389D7)'
-      - <<: *hasPluginPatch
+      - <<: *patch3rdParty
         subs:
           - 'Automatron & Far Harbor'
           - '[DLC Patch](https://www.nexusmods.com/fallout4/mods/4380)'
@@ -8425,22 +8429,22 @@ plugins:
   - name: 'llamaCompanionHeather.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/23273' ]
     msg:
-      - <<: *hasPluginPatch
+      - <<: *patch3rdParty
         subs:
           - 'Full Dialogue Interface'
           - '[Heather Casdin patch](https://www.nexusmods.com/fallout4/mods/24314)'
         condition: '(checksum("interface/dialoguemenu.swf", FD1941F1) or checksum("interface/multiactivatemenu.swf", 7A51282D)) and checksum("llamaCompanionHeather.esp", 1FD60CC1)'
-      - <<: *hasPluginPatch
+      - <<: *patch3rdParty
         subs:
           - "Valdacil's Item Sorting"
           - '[Heather Casdin patch](https://www.nexusmods.com/fallout4/mods/24314)'
         condition: 'active("ValdacilsItemSorting-.+\.esp") and not active("llamaCompanionHeather-VIS(-G)?( - AE)? Patch\.esp")'
-      - <<: *hasPluginPatch
+      - <<: *patch3rdParty
         subs:
           - "Bhaal's Better Sorting"
           - '[Heather Casdin patch](https://www.nexusmods.com/fallout4/mods/24314)'
         condition: 'active("BBS000-F04-(MANDATORY|Ultimate)(-.*)?\.esp") and not active("llamaCompanionHeather-BBS(-AE)? Patch\.esp")'
-      - <<: *hasPluginPatch
+      - <<: *patch3rdParty
         subs:
           - 'Armorsmith Extended'
           - '[Heather Casdin patch](https://www.nexusmods.com/fallout4/mods/24314)'
@@ -8488,15 +8492,11 @@ plugins:
       - name: 'ValdacilsItemSorting-00-ValsPicks-NoDLCVersion-VanillaWeight.esp'
         condition: 'checksum("Give Me That Bottle.esp", AE38A5A0) or checksum("Give Me That Bottle.esp", 939407C9)'
     msg:
-      - <<: *hasPluginPatch
-        subs:
-          - 'Far Harbor'
-          - '[Far Harbor patch](https://www.nexusmods.com/fallout4/mods/13193)'
+      - <<: *patchProvided
+        subs: [ 'Far Harbor' ]
         condition: 'active("DLCCoast.esm") and (checksum("Give Me That Bottle.esp", ECEBD46B) or checksum("Give Me That Bottle.esp", 939407C9))'
-      - <<: *hasPluginPatch
-        subs:
-          - "Valdacil's Item Sorting"
-          - '[sorting patch](https://www.nexusmods.com/fallout4/mods/13193)'
+      - <<: *patchIncluded
+        subs: [ 'Valdacil''s Item Sorting' ]
         condition: 'active("ValdacilsItemSorting-.+\.esp") and (checksum("Give Me That Bottle.esp", 814AC32F) or checksum("Give Me That Bottle.esp", ECEBD46B))'
       - type: warn
         content:
@@ -8514,10 +8514,8 @@ plugins:
         # FO4Edit 3.2
         itm: 2
     msg:
-      - <<: *hasPluginPatch
-        subs:
-          - 'Far Harbor'
-          - '[Far Harbor patch](https://www.nexusmods.com/fallout4/mods/19976)'
+      - <<: *patchProvided
+        subs: [ 'Far Harbor' ]
         condition: 'active("DLCCoast.esm") and not active("CC''s Unique Vault Suit Boxes - Far Harbor Patch.esp")'
   - name: 'CC''s Unique Vault Suit Boxes - Far Harbor Patch.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/19976' ]
@@ -8691,25 +8689,17 @@ plugins:
       - crc: 0x2B12E764
         util: 'FO4Edit v3.2'
     msg:
-      - <<: *hasPluginPatch
-        subs:
-          - 'Customizable Needs'
-          - '[Customizable Needs patch](https://www.nexusmods.com/fallout4/mods/20818)'
+      - <<: *patchProvided
+        subs: [ 'Customizable Needs' ]
         condition: 'active("CustomizableNeeds.esp") and not checksum("CustomizableNeeds.esp", F2860D72)'
-      - <<: *hasPluginPatch
-        subs:
-          - 'Everyone''s Best Friend'
-          - '[Everyone''s Best Friend patch](https://www.nexusmods.com/fallout4/mods/20818)'
+      - <<: *patchProvided
+        subs: [ 'Everyone''s Best Friend' ]
         condition: 'active("EveryonesBestFriend.esp") and not active("EBF_DEFW_Patch.esp") and not active("Give Me That Bottle.esp")'
-      - <<: *hasPluginPatch
-        subs:
-          - 'Give Me That Bottle'
-          - '[Give Me That Bottle patch](https://www.nexusmods.com/fallout4/mods/20818)'
+      - <<: *patchProvided
+        subs: [ 'Give Me That Bottle' ]
         condition: 'active("Give Me That Bottle.esp") and not active("gmtb_patch.esp") and not active("EveryonesBestFriend.esp")'
-      - <<: *hasPluginPatch
-        subs:
-          - 'Everyone''s Best Friend & Give Me That Bottle'
-          - '[Everyone''s Best Friend and Give Me That Bottle patch](https://www.nexusmods.com/fallout4/mods/20818)'
+      - <<: *patchProvided
+        subs: [ 'Everyone''s Best Friend & Give Me That Bottle' ]
         condition: 'active("EveryonesBestFriend.esp") and active("Give Me That Bottle.esp") and not active("DEF_WIDGETS_SURVIVAL1 - EBF+GMTB patch.esp")'
   - name: 'gmtb_patch.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/20818' ]
@@ -8782,10 +8772,8 @@ plugins:
             text: 'You have active "Customizable Needs plus Realistic Aid Side Effects" plugins enabled while using the "Customizable Needs only" version. Only use the plugins and patches for the version you use.'
           - lang: de
             text: 'Sie haben aktive "Customizable Needs plus Realistic Aid Side Effects" Plugins aktiviert während Sie die "Customizable Needs only" Variante nutzen. Nutzen Sie nur die Plugins und Patches für die Variante die Sie nutzen.'
-      - <<: *hasPluginPatch
-        subs:
-          - "Valdacil's Item Sorting"
-          - '[VIS patch](https://www.nexusmods.com/fallout4/mods/13124)'
+      - <<: *patchIncluded
+        subs: [ 'Valdacil''s Item Sorting' ]
         condition: 'active("ValdacilsItemSorting-.+\.esp") and not active("CN Only - VIS Patch.esp")'
   - name: 'CustomizableNeeds + RealisticAidSideEffects.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/13124' ]
@@ -8808,15 +8796,11 @@ plugins:
             text: 'You have active "Customizable Needs only" plugins enabled while using the "Customizable Needs plus Realistic Aid Side Effects" version. Only use the plugins and patches for the version you use.'
           - lang: de
             text: 'Sie haben aktive "Customizable Needs only" Plugins aktiviert während Sie die "Customizable Needs plus Realistic Aid Side Effects" Variante nutzen. Nutzen Sie nur die Plugins und Patches für die Variante die Sie nutzen.'
-      - <<: *hasPluginPatch
-        subs:
-          - 'Lore-Friendly Survival Chems'
-          - '[Lore-Friendly Survival Chems patch](https://www.nexusmods.com/fallout4/mods/13124)'
+      - <<: *patchIncluded
+        subs: [ 'Lore-Friendly Survival Chems' ]
         condition: 'active("LoreFriendlySurvivalChems(VIS)?\.esp") and not active("CN + RASE - LoreFriendlySurvivalChems(VIS)? Patch\.esp")'
-      - <<: *hasPluginPatch
-        subs:
-          - "Valdacil's Item Sorting"
-          - '[VIS patch](https://www.nexusmods.com/fallout4/mods/13124)'
+      - <<: *patchIncluded
+        subs: [ 'Valdacil''s Item Sorting' ]
         condition: 'active("ValdacilsItemSorting-.+\.esp") and not active("CN + RASE - VIS Patch.esp")'
   - name: 'Sanctuary Terminals.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/11730' ]
@@ -9566,10 +9550,8 @@ plugins:
       - <<: *useOnlyOneX
         condition: 'active("Mechanist Lair Overhaul SEC.esp")'
         subs: [ 'Mechanist Lair Overhaul' ]
-      - <<: *hasPluginPatch
-        subs:
-          - 'Scrap Everything'
-          - '[Scrap Everything compatiple plugin](https://www.nexusmods.com/fallout4/mods/23294)'
+      - <<: *patchProvided
+        subs: [ 'Scrap Everything' ]
         condition: '(active("Scrap Everything - Automatron.esp") or active("Scrap Everything - Ultimate Edition.esp")) and not active("Mechanist Lair Overhaul SEC.esp")'
   - name: 'Mechanist Lair Overhaul SEC.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/23294' ]
