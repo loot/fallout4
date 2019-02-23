@@ -9783,3 +9783,302 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout4/mods/4253' ]
     after:
       - 'MoreAGOMBz.esp'
+
+# Better Series
+  - name: 'AtomCatGarage.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/14764'
+        name: 'Better Atom Cats Garage'
+    dirty:
+      # version: 1.00 before quick clean
+      - <<: *quickClean
+        crc: 0xDC85F4B1
+        util: '[FO4Edit v4.0.1](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 6
+        udr: 1
+      # version: 1.00 before 2nd pass of quick clean
+      - <<: *quickClean
+        crc: 0x6F330CFF
+        util: '[FO4Edit v4.0.1](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 3
+      # version: 1.01 before quick clean
+      - <<: *quickClean
+        crc: 0x50132A36
+        util: '[FO4Edit v4.0.1](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 6
+    clean:
+      # version: 1.00 after quick clean
+      - crc: 0xEC28F40C
+        util: 'FO4Edit v4.0.1'
+      # version: 1.01 after quick clean
+      - crc: 0x93B14301
+        util: 'FO4Edit v4.0.1'
+  - name: 'BetterBostonAirport.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/13958' ]
+    dirty:
+      # version: 1.00 before quick clean
+      - <<: *reqManualFix
+        crc: 0x7D70B245
+        util: '[FO4Edit v4.0.1](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 46
+        udr: 15
+        nav: 7
+      # version: 1.00 before 2nd pass of quick clean
+      - <<: *reqManualFix
+        crc: 0xF57092DE
+        util: '[FO4Edit v4.0.1](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 2
+        nav: 7
+      # version: 1.00 after 2nd pass of quick clean
+      - <<: *reqManualFix
+        crc: 0x655D55A4
+        util: '[FO4Edit v4.0.1](https://www.nexusmods.com/fallout4/mods/2737)'
+        nav: 7
+      # version: 1.01 before quick clean
+      - <<: *reqManualFix
+        crc: 0x55F6C318
+        util: '[FO4Edit v4.0.1](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 47
+        udr: 1
+        nav: 2
+      # version: 1.01 before 2nd pass of quick clean
+      - <<: *reqManualFix
+        crc: 0x7B4CB67A
+        util: '[FO4Edit v4.0.1](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 2
+        nav: 2
+      # version: 1.01 after 2nd pass of quick clean
+      - <<: *reqManualFix
+        crc: 0xA474B024
+        util: '[FO4Edit v4.0.1](https://www.nexusmods.com/fallout4/mods/2737)'
+        nav: 2
+  - name: 'CrimeTown.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/16594'
+        name: 'Better Goodneighbor'
+    dirty:
+      # version: 1.00 before quick clean
+      - <<: *reqManualFix
+        crc: 0x12E32660
+        util: '[FO4Edit v4.0.1](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 217
+        udr: 50
+        nav: 2
+      # version: 1.00 before 2nd pass of quick clean
+      - <<: *reqManualFix
+        crc: 0x0D8B6A82
+        util: '[FO4Edit v4.0.1](https://www.nexusmods.com/fallout4/mods/2737)'
+        nav: 2
+      # version: 1.01 before quick clean
+      - <<: *reqManualFix
+        crc: 0x305D7674
+        util: '[FO4Edit v4.0.1](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 217
+        nav: 1
+      # version: 1.01 before 2nd pass of quick clean
+      - <<: *reqManualFix
+        crc: 0xF0CE4E14
+        util: '[FO4Edit v4.0.1](https://www.nexusmods.com/fallout4/mods/2737)'
+        nav: 1
+  - name: 'DeadAirplane.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/17038'
+        name: 'Better Skylanes Flight 1665 (Glowing Sea)'
+    dirty:
+      # version: 1.00 before quick clean
+      - <<: *quickClean
+        crc: 0xB7248F22
+        util: '[FO4Edit v4.0.1](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 7
+        udr: 140
+      # version: 1.00 before 2nd pass of quick clean
+      - <<: *quickClean
+        crc: 0x2173A62F
+        util: '[FO4Edit v4.0.1](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 3
+      # version: 1.01 before quick clean
+      - <<: *quickClean
+        crc: 0xA1837827
+        util: '[FO4Edit v4.0.1](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 7
+    clean:
+      # version: 1.00 after quick clean
+      - crc: 0x0AC956AB
+        util: 'FO4Edit v4.0.1'
+      # version: 1.04 after quick clean
+      - crc: 0xCC4B7FA9
+        util: 'FO4Edit v4.0.1'
+  - name: 'PlaneWreck.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/12827'
+        name: 'Better Skylanes Flight 1981 Crash-site'
+    dirty:
+      # version: 1.2 before quick clean
+      - <<: *quickClean
+        crc: 0xC2B782AA
+        util: '[FO4Edit v4.0.1](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 18
+        udr: 4
+      # version: 1.2 before 2nd pass of quick clean
+      - <<: *quickClean
+        crc: 0x2C98E514
+        util: '[FO4Edit v4.0.1](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 3
+      # version: 1.3 before quick clean
+      - <<: *quickClean
+        crc: 0xAF3BAF0C
+        util: '[FO4Edit v4.0.1](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 18
+    clean:
+      # version: 1.2 after quick clean
+      - crc: 0x71DD1775
+        util: 'FO4Edit v4.0.1'
+      # version: 1.3 after quick clean
+      - crc: 0xD8AF0FCB
+        util: 'FO4Edit v4.0.1'
+  - name: 'TrainBar.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/15388'
+        name: 'Better The Third Rail'
+    dirty:
+      # version: 1.00 before quick clean
+      - <<: *reqManualFix
+        crc: 0xF22C4856
+        util: '[FO4Edit v4.0.1](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 24
+        udr: 130
+        nav: 1
+      # version: 1.00 before 2nd pass of quick clean
+      - <<: *reqManualFix
+        crc: 0x73B44475
+        util: '[FO4Edit v4.0.1](https://www.nexusmods.com/fallout4/mods/2737)'
+        nav: 1
+      # version: 1.01 before quick clean
+      - <<: *reqManualFix
+        crc: 0x4B435470
+        util: '[FO4Edit v4.0.1](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 24
+        udr: 130
+        nav: 1
+      # version: 1.01 before 2nd pass of quick clean
+      - <<: *reqManualFix
+        crc: 0x1576DEE9
+        util: '[FO4Edit v4.0.1](https://www.nexusmods.com/fallout4/mods/2737)'
+        nav: 1
+      # version: 1.02 before quick clean
+      - <<: *reqManualFix
+        crc: 0x65550C3A
+        util: '[FO4Edit v4.0.1](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 24
+        nav: 1
+      # version: 1.02 before 2nd pass of quick clean
+      - <<: *reqManualFix
+        crc: 0x21A91F2C
+        util: '[FO4Edit v4.0.1](https://www.nexusmods.com/fallout4/mods/2737)'
+        nav: 1
+  - name: 'UFOCrashSite.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/13521'
+        name: 'Better UFO Crash Site'
+    dirty:
+      # version: 1.02 before quick clean
+      - <<: *quickClean
+        crc: 0x5ABD3880
+        util: '[FO4Edit v4.0.1](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 2
+    clean:
+      # version: 1.02 after quick clean
+      - crc: 0x5E6027A3
+        util: 'FO4Edit v4.0.1'
+# Mika999s Better Series Merged
+  - name: 'BetterMikaMerged.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/13521' ]
+    dirty:
+      # version: 1.0 before quick clean
+      - <<: *reqManualFix
+        crc: 0x7581A517
+        util: '[FO4Edit v4.0.1](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 315
+        udr: 340
+        nav: 10
+      # version: 1.0 before 2nd pass of quick clean
+      - <<: *reqManualFix
+        crc: 0x366B5B2F
+        util: '[FO4Edit v4.0.1](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 2
+        nav: 10
+      # version: 1.0 after quick clean
+      - <<: *reqManualFix
+        crc: 0x7261A48B
+        util: '[FO4Edit v4.0.1](https://www.nexusmods.com/fallout4/mods/2737)'
+        nav: 10
+  - name: 'BetterMikaMerged-1_1main.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/13521' ]
+    dirty:
+      # version: 1.1 before quick clean (Better Goodneighbor and The Third Rail)
+      - <<: *reqManualFix
+        crc: 0xBDCE6FC7
+        util: '[FO4Edit v4.0.1](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 238
+        udr: 180
+        nav: 3
+      # version: 1.1 before 2nd pass of quick clean (Better Goodneighbor and The Third Rail)
+      - <<: *reqManualFix
+        crc: 0xA9B2D7D0
+        util: '[FO4Edit v4.0.1](https://www.nexusmods.com/fallout4/mods/2737)'
+        nav: 3
+      # version: 1.2 before quick clean (Better Goodneighbor and The Third Rail)
+      - <<: *reqManualFix
+        crc: 0x4B387286
+        util: '[FO4Edit v4.0.1](https://www.nexusmods.com/fallout4/mods/2737)'
+        nav: 3
+  - name: 'BetterMikaMerged-1_1UCS-DA-PW-ACG.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/13521' ]
+    dirty:
+      # version: 1.1 before quick clean (Everything but Better Goodneighbor- Boston Airport- and The Third Rail)
+      - <<: *quickClean
+        crc: 0x927DE20A
+        util: '[FO4Edit v4.0.1](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 33
+        udr: 145
+      # version: 1.1 before 2nd pass of quick clean (Everything but Better Goodneighbor- Boston Airport- and The Third Rail)
+      - <<: *quickClean
+        crc: 0x8E6F3127
+        util: '[FO4Edit v4.0.1](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 3
+      # version: 1.2 before quick clean (Everything but Better Goodneighbor- Boston Airport- and The Third Rail)
+      - <<: *quickClean
+        crc: 0x389AE824
+        util: '[FO4Edit v4.0.1](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 9
+    clean:
+      # version: 1.1 + 1.2 after quick clean (Everything but Better Goodneighbor- Boston Airport- and The Third Rail)
+      - crc: 0xD2BDE2B6
+        util: 'FO4Edit v4.0.1'
+  - name: 'BetterMikaMerged-1_1nocttb.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/13521' ]
+    dirty:
+      # version: 1.1 before quick clean (Remaining Series Content)
+      - <<: *reqManualFix
+        crc: 0xC2E4CB5A
+        util: '[FO4Edit v4.0.1](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 79
+        udr: 160
+        nav: 7
+      # version: 1.1 before 2nd pass of quick clean (Remaining Series Content)
+      - <<: *reqManualFix
+        crc: 0xBD2A66C4
+        util: '[FO4Edit v4.0.1](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 2
+        nav: 7
+      # version: 1.2 before quick clean (Remaining Series Content)
+      - <<: *reqManualFix
+        crc: 0xDE226B93
+        util: '[FO4Edit v4.0.1](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 10
+        nav: 7
+      # version: 1.1 + 1.2 after quick clean (Remaining Series Content)
+      - <<: *reqManualFix
+        crc: 0xACAD0C17
+        util: '[FO4Edit v4.0.1](https://www.nexusmods.com/fallout4/mods/2737)'
+        nav: 7
