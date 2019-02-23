@@ -10056,3 +10056,40 @@ plugins:
         crc: 0xACAD0C17
         util: '[FO4Edit v4.0.1](https://www.nexusmods.com/fallout4/mods/2737)'
         nav: 7
+
+  - name: 'Pipsy.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/34304' ]
+    dirty:
+      #  version: 1.0 - Before Quick Clean
+      - <<: *quickClean
+        crc: 0xDF7D6406
+        util: '[FO4Edit v4.0.1](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 121
+        udr: 20
+      #  version: 1.0 - Before 2nd Pass of Quick Clean
+      - <<: *quickClean
+        crc: 0xAFA33BE5
+        util: '[FO4Edit v4.0.1](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 1
+    clean:
+      #  version: 1.0 - After Quick Clean
+      - crc: 0xC4130107
+        util: 'FO4Edit v4.0.1'
+  - name: 'Pipsy.esl'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/34304' ]
+    dirty:
+      #  version: 1.0 - Before Quick Clean
+      - <<: *quickClean
+        crc: 0x72261C69
+        util: '[FO4Edit v4.0.1](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 131
+        udr: 20
+      #  version: 1.0 - Before 2nd Pass of Quick Clean
+      - <<: *quickClean
+        crc: 0x585FC8C4
+        util: '[FO4Edit v4.0.1](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 1
+    clean:
+      #  version: 1.0 - After Quick Clean
+      - crc: 0x3A94C02C
+        util: 'FO4Edit v4.0.1'
