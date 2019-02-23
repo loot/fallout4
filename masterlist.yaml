@@ -9976,3 +9976,17 @@ plugins:
         crc: 0x21A91F2C
         util: '[FO4Edit v4.0.1](https://www.nexusmods.com/fallout4/mods/2737)'
         nav: 1
+  - name: 'UFOCrashSite.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/13521'
+        name: 'Better UFO Crash Site'
+    dirty:
+      # version: 1.02 before quick clean
+      - <<: *quickClean
+        crc: 0x5ABD3880
+        util: '[FO4Edit v4.0.1](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 2
+    clean:
+      # version: 1.02 after quick clean
+      - crc: 0x5E6027A3
+        util: 'FO4Edit v4.0.1'
