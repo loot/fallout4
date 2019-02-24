@@ -6787,7 +6787,7 @@ plugins:
   ### Patches
   - name: 'Unofficial Fallout 4 Patch.esp'
     url:
-      - 'https://afkmods.iguanadons.net/index.php?/files/file/1765-unofficial-fallout-4-patch/'
+      - 'https://www.afkmods.com/index.php?/files/file/1765-unofficial-fallout-4-patch/'
       - 'https://www.nexusmods.com/fallout4/mods/4598'
     group: *fixesGroup
     msg:
@@ -9736,7 +9736,7 @@ plugins:
     clean:
       - crc: 0x0e2861fa
         util: FO4Edit v3.2.1
-        
+
   - name: 'AAF_RSE.esp'
     url: [ 'https://www.loverslab.com/files/file/6681-rse-realistic-salacious-encounters-11-02-18/' ]
     after:
