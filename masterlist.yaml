@@ -8555,21 +8555,15 @@ plugins:
     # TODO: Add ´msg´s for DLC compat. patches
     url: [ 'https://www.nexusmods.com/fallout4/mods/2228' ]
     dirty:
-      # Version 3.32
-      - <<: *dirtyPlugin
-        crc: 0x232590b7
-        util: 'FO4Edit v3.2'
-        itm: 5
-      # Version 4.2
-      - <<: *dirtyPlugin
-        crc: 0xE7694EC1
-        util: 'FO4Edit v3.2.63'
-        itm: 1
-      # Version 4.3
-      - <<: *dirtyPlugin
-        crc: 0x837FE661
-        util: 'FO4Edit v3.2.63'
-        itm: 1
+      # Version 4.6
+      - <<: *quickClean
+        crc: 0x4DE48100
+        util: '[FO4Edit v4.0.1](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 13
+    clean:
+      # Version 4.6, After Quick Clean
+      - crc: 0x52D267F3
+        util: 'FO4Edit v4.0.1'
     msg:
       - <<: *obsolete
         condition: 'version("Armorsmith Extended.esp", "4.3", <)'
