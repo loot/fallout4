@@ -8550,7 +8550,7 @@ plugins:
         util: 'FO4Edit v4.0.1'
     msg:
       - <<: *obsolete
-        condition: 'version("ArmorKeywords.esm", "7.4", <)'
+        condition: 'version("ArmorKeywords.esm", "8.5", <)'
   - name: 'Armorsmith Extended.esp'
     # TODO: Add ´msg´s for DLC compat. patches
     url: [ 'https://www.nexusmods.com/fallout4/mods/2228' ]
