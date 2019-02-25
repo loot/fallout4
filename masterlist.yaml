@@ -6794,14 +6794,18 @@ plugins:
       - type: error
         content:
         - lang: en
-          text: 'Requires Fallout 4 patch 1.10.111 or greater.'
+          text: 'Requires Fallout 4 patch 1.10.120 or greater.'
         - lang: da
-          text: 'Kræver Fallout 4-lap 1.10.111 eller nyere.'
+          text: 'Kræver Fallout 4-lap 1.10.120 eller nyere.'
         - lang: de
-          text: 'Benötigt Fallout 4 Patch 1.10.111 oder neuer.'
-        condition: 'version("Unofficial Fallout 4 Patch.esp", "2.0.5", >=) and not version("../Fallout4.exe", "1.10.111.0", >=)'
+          text: 'Benötigt Fallout 4 Patch 1.10.120 oder neuer.'
+        condition: 'version("Unofficial Fallout 4 Patch.esp", "2.0.6a", >=) and not version("../Fallout4.exe", "1.10.120.0", >=)'
       - <<: *obsolete
-        condition: 'version("Unofficial Fallout 4 Patch.esp", "2.0.5", <)'
+        condition: 'version("Unofficial Fallout 4 Patch.esp", "2.0.6b", <)'
+    clean:
+      # version: 2.0.6b
+      - crc: 0xCB08C922
+        util: 'FO4Edit v4.0.1'
   # Mods obsoleted by official Bethesda patches
   - name: 'KH_DogArmorFix.esp '
     url: [ 'https://www.nexusmods.com/fallout4/mods/15222' ]
@@ -8536,72 +8540,42 @@ plugins:
   - name: 'ArmorKeywords.esm'
     url: [ 'https://www.nexusmods.com/fallout4/mods/6091' ]
     dirty:
-      - <<: *dirtyPlugin
-        # Version 3.2, All DLC
-        crc: 0x30156c76
-        util: 'FO4Edit v3.2'
-        itm: 1
-      # Version 7.0
-      - <<: *dirtyPlugin
-        crc: 0x7415ADA9
-        util: 'FO4Edit v3.2.54'
-        itm: 79
-      # Version 7.1
-      - <<: *dirtyPlugin
-        crc: 0x898D5313
-        util: 'FO4Edit v3.2.63'
-        itm: 79
-      # Version 7.2
-      - <<: *dirtyPlugin
-        crc: 0xF2EC3F44
-        util: 'FO4Edit v3.2.67'
-        itm: 68
-      # Version 7.3
-      - <<: *dirtyPlugin
-        crc: 0x088B5C88
-        util: 'FO4Edit v3.2.67'
-        itm: 68
-      # Version 7.4
-      - <<: *dirtyPlugin
-        crc: 0x2F5753CE
-        util: 'FO4Edit v3.2.67'
-        itm: 68
+      # Version 8.5
+      - <<: *quickClean
+        crc: 0xD21D5CD0
+        util: '[FO4Edit v4.0.1](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 52
     clean:
-      # Version 4.02
-      - crc: 0x602cfd1a
-        util: 'FO4Edit v3.2.1'
+      # Version 4.02a No DLC
+      - crc: 0x8556BB60
+        util: 'FO4Edit v4.0.1'
+      # Version 8.5
+      - crc: 0x6583F7F8
+        util: 'FO4Edit v4.0.1'
     msg:
       - <<: *obsolete
-        condition: 'version("ArmorKeywords.esm", "7.4", <)'
+        condition: 'version("ArmorKeywords.esm", "8.5", <)'
   - name: 'Armorsmith Extended.esp'
     # TODO: Add ´msg´s for DLC compat. patches
     url: [ 'https://www.nexusmods.com/fallout4/mods/2228' ]
     dirty:
-      # Version 3.32
-      - <<: *dirtyPlugin
-        crc: 0x232590b7
-        util: 'FO4Edit v3.2'
-        itm: 5
-      # Version 4.2
-      - <<: *dirtyPlugin
-        crc: 0xE7694EC1
-        util: 'FO4Edit v3.2.63'
-        itm: 1
-      # Version 4.3
-      - <<: *dirtyPlugin
-        crc: 0x837FE661
-        util: 'FO4Edit v3.2.63'
-        itm: 1
+      # Version 4.6
+      - <<: *quickClean
+        crc: 0x4DE48100
+        util: '[FO4Edit v4.0.1](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 13
+    clean:
+      # Version 4.6, After Quick Clean
+      - crc: 0x52D267F3
+        util: 'FO4Edit v4.0.1'
     msg:
       - <<: *obsolete
-        condition: 'version("Armorsmith Extended.esp", "4.3", <)'
-      - type: error
-        content:
-          - lang: en
-            text: 'Your version of Armorsmith Extended is not compatible with your installed version of Armor and Weapon Keywords Community Resource (AWKCR).'
-          - lang: de
-            text: 'Ihre Version von Armorsmith Extended ist nicht kompatibel mit Ihrer derzeitigen Version von Armor and Weapon Keywords Community Resource (AWKCR).'
-        condition: 'version("Armorsmith Extended.esp", "4.3", >=) and version("ArmorKeywords.esm", "7.1", <)'
+        condition: 'version("Armorsmith Extended.esp", "4.6", <)'
+      - <<: *versionXIncY
+        subs:
+          - 'Armorsmith Extended'
+          - 'Armor and Weapon Keywords Community Resource (AWKCR)'
+        condition: 'version("Armorsmith Extended.esp", "4.6", >=) and version("ArmorKeywords.esm", "8.5", <)'
   - name: 'SettlementAttacksBeyondFH.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/12892' ]
     dirty:
