@@ -8536,40 +8536,18 @@ plugins:
   - name: 'ArmorKeywords.esm'
     url: [ 'https://www.nexusmods.com/fallout4/mods/6091' ]
     dirty:
-      - <<: *dirtyPlugin
-        # Version 3.2, All DLC
-        crc: 0x30156c76
-        util: 'FO4Edit v3.2'
-        itm: 1
-      # Version 7.0
-      - <<: *dirtyPlugin
-        crc: 0x7415ADA9
-        util: 'FO4Edit v3.2.54'
-        itm: 79
-      # Version 7.1
-      - <<: *dirtyPlugin
-        crc: 0x898D5313
-        util: 'FO4Edit v3.2.63'
-        itm: 79
-      # Version 7.2
-      - <<: *dirtyPlugin
-        crc: 0xF2EC3F44
-        util: 'FO4Edit v3.2.67'
-        itm: 68
-      # Version 7.3
-      - <<: *dirtyPlugin
-        crc: 0x088B5C88
-        util: 'FO4Edit v3.2.67'
-        itm: 68
-      # Version 7.4
-      - <<: *dirtyPlugin
-        crc: 0x2F5753CE
-        util: 'FO4Edit v3.2.67'
-        itm: 68
+      # Version 8.5
+      - <<: *quickClean
+        crc: 0xD21D5CD0
+        util: '[FO4Edit v4.0.1](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 52
     clean:
-      # Version 4.02
-      - crc: 0x602cfd1a
-        util: 'FO4Edit v3.2.1'
+      # Version 4.02a No DLC
+      - crc: 0x8556BB60
+        util: 'FO4Edit v4.0.1'
+      # Version 8.5
+      - crc: 0x6583F7F8
+        util: 'FO4Edit v4.0.1'
     msg:
       - <<: *obsolete
         condition: 'version("ArmorKeywords.esm", "7.4", <)'
