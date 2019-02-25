@@ -8566,14 +8566,12 @@ plugins:
         util: 'FO4Edit v4.0.1'
     msg:
       - <<: *obsolete
-      - type: error
-        content:
-          - lang: en
-            text: 'Your version of Armorsmith Extended is not compatible with your installed version of Armor and Weapon Keywords Community Resource (AWKCR).'
-          - lang: de
-            text: 'Ihre Version von Armorsmith Extended ist nicht kompatibel mit Ihrer derzeitigen Version von Armor and Weapon Keywords Community Resource (AWKCR).'
-        condition: 'version("Armorsmith Extended.esp", "4.3", >=) and version("ArmorKeywords.esm", "7.1", <)'
         condition: 'version("Armorsmith Extended.esp", "4.6", <)'
+      - <<: *versionXIncY
+        subs:
+          - 'Armorsmith Extended'
+          - 'Armor and Weapon Keywords Community Resource (AWKCR)'
+        condition: 'version("Armorsmith Extended.esp", "4.6", >=) and version("ArmorKeywords.esm", "8.5", <)'
   - name: 'SettlementAttacksBeyondFH.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/12892' ]
     dirty:
