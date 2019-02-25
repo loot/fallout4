@@ -6801,7 +6801,7 @@ plugins:
           text: 'Benötigt Fallout 4 Patch 1.10.111 oder neuer.'
         condition: 'version("Unofficial Fallout 4 Patch.esp", "2.0.5", >=) and not version("../Fallout4.exe", "1.10.111.0", >=)'
       - <<: *obsolete
-        condition: 'version("Unofficial Fallout 4 Patch.esp", "2.0.5", <)'
+        condition: 'version("Unofficial Fallout 4 Patch.esp", "2.0.6b", <)'
   # Mods obsoleted by official Bethesda patches
   - name: 'KH_DogArmorFix.esp '
     url: [ 'https://www.nexusmods.com/fallout4/mods/15222' ]
