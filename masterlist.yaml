@@ -6794,12 +6794,12 @@ plugins:
       - type: error
         content:
         - lang: en
-          text: 'Requires Fallout 4 patch 1.10.111 or greater.'
+          text: 'Requires Fallout 4 patch 1.10.120 or greater.'
         - lang: da
-          text: 'Kræver Fallout 4-lap 1.10.111 eller nyere.'
+          text: 'Kræver Fallout 4-lap 1.10.120 eller nyere.'
         - lang: de
-          text: 'Benötigt Fallout 4 Patch 1.10.111 oder neuer.'
-        condition: 'version("Unofficial Fallout 4 Patch.esp", "2.0.5", >=) and not version("../Fallout4.exe", "1.10.111.0", >=)'
+          text: 'Benötigt Fallout 4 Patch 1.10.120 oder neuer.'
+        condition: 'version("Unofficial Fallout 4 Patch.esp", "2.0.6a", >=) and not version("../Fallout4.exe", "1.10.120.0", >=)'
       - <<: *obsolete
         condition: 'version("Unofficial Fallout 4 Patch.esp", "2.0.6b", <)'
     clean:
