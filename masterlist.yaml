@@ -10137,3 +10137,5 @@ plugins:
   - name: 'Unique NPCs - Creatures and Monsters.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/24357' ]
     group: *npcOverhaulsGroup
+    after:
+      - 'Unique NPCs.esp'
