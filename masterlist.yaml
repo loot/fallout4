@@ -10131,6 +10131,12 @@ plugins:
         util: '[FO4Edit v4.0.1](https://www.nexusmods.com/fallout4/mods/2737)'
         nav: 8
 
+  - name: 'Crossbow.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/10484'
+        name: 'Crossbows of the Commonwealth'
+    group: *weaponsGroup
+
   - name: 'FOFW_ALL_IN_ONE_VANILLA.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/9363' ]
     group: *npcOverhaulsGroup
