@@ -405,6 +405,11 @@ groups:
     after:
       - *interfaceGroup
 
+  - name: &apparelGroup Apparel & Equipment
+    description: 'A group for mods that improve or add new items that can be worn.'
+    after:
+      - *weaponsGroup
+
   - name: default
     after: [ *scrapperGroup ]
 
