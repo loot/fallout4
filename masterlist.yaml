@@ -10131,6 +10131,11 @@ plugins:
         util: '[FO4Edit v4.0.1](https://www.nexusmods.com/fallout4/mods/2737)'
         nav: 8
 
+  - name: 'FOFW_ALL_IN_ONE_VANILLA.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/21248' ]
+    after:
+      - 'Unique NPCs.esp'
+
   - name: 'Unique NPCs.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/21248' ]
     group: *npcOverhaulsGroup
