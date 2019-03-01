@@ -8577,6 +8577,8 @@ plugins:
     # TODO: Add ´msg´s for DLC compat. patches
     url: [ 'https://www.nexusmods.com/fallout4/mods/2228' ]
     group: *apparelGroup
+    after:
+      - 'EAMR.esp'
     dirty:
       # Version 4.6
       - <<: *quickClean
