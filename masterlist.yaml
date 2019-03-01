@@ -10149,6 +10149,7 @@ plugins:
 
   - name: 'SanctuaryNPCsOverhaul.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/28810' ]
+    group: *npcOverhaulsGroup
     after:
       - 'FOFW_ALL_IN_ONE_VANILLA.esp'
       - 'Unique NPCs.esp'
