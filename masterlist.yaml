@@ -400,6 +400,11 @@ groups:
   - name: &interfaceGroup User Interface
     description: 'A group for mods that enhance or alter the user interface.'
 
+  - name: &weaponsGroup Weapons & Gadgets
+    description: 'A group for mods that improve or add new weapons and tools.'
+    after:
+      - *interfaceGroup
+
   - name: default
     after: [ *scrapperGroup ]
 
