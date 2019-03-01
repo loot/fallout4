@@ -10132,6 +10132,10 @@ plugins:
         name: 'Crossbows of the Commonwealth'
     group: *itemsGroup
 
+  - name: 'DeadlierDeathclaws.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/13822' ]
+    group: *npcOverhaulsGroup
+
   - name: 'FOFW_ALL_IN_ONE_VANILLA.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/9363' ]
     group: *npcOverhaulsGroup
