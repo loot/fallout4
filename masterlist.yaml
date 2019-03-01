@@ -10147,6 +10147,11 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout4/mods/9103' ]
     group: *npcOverhaulsGroup
 
+  - name: 'SanctuaryNPCsOverhaul.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/28810' ]
+    after:
+      - 'Unique NPCs.esp'
+
   - name: 'SuperMutantRedux.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/11853' ]
     group: *npcOverhaulsGroup
