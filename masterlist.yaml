@@ -10141,6 +10141,7 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout4/mods/11853' ]
     group: *npcOverhaulsGroup
     after:
+      - 'RaiderOverhaul.esp'
       - 'Unique NPCs - Creatures and Monsters.esp'
 
   - name: 'Unique NPCs.esp'
