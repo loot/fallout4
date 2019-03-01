@@ -10137,6 +10137,10 @@ plugins:
     after:
       - 'Unique NPCs.esp'
 
+  - name: 'RaiderOverhaul.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/9103' ]
+    group: *npcOverhaulsGroup
+
   - name: 'SuperMutantRedux.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/11853' ]
     group: *npcOverhaulsGroup
