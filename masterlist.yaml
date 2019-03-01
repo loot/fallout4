@@ -10152,6 +10152,7 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout4/mods/24357' ]
     group: *npcOverhaulsGroup
     after:
+      - 'RaiderOverhaul.esp'
       - 'Unique NPCs.esp'
 
   - name: 'Mercenary.esp'
