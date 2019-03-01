@@ -10172,6 +10172,10 @@ plugins:
     after:
       - 'Mercenary.esp'
 
+  - name: 'FALLOUT4WT.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/28620' ]
+    group: *apparelGroup
+
   - name: 'Mercenary.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/20088' ]
     group: *apparelGroup
