@@ -10137,6 +10137,11 @@ plugins:
     after:
       - 'Unique NPCs.esp'
 
+  - name: 'SuperMutantRedux.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/11853' ]
+    after:
+      - 'Unique NPCs - Creatures and Monsters.esp'
+
   - name: 'Unique NPCs.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/21248' ]
     group: *npcOverhaulsGroup
