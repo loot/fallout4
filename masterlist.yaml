@@ -10166,6 +10166,11 @@ plugins:
       - 'RaiderOverhaul.esp'
       - 'Unique NPCs.esp'
 
+  - name: 'Enhanced Commonwealth Wardrobe.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/28620' ]
+    after:
+      - 'Mercenary.esp'
+
   - name: 'Mercenary.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/20088' ]
     group: *apparelGroup
