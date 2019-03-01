@@ -10191,3 +10191,10 @@ plugins:
   - name: 'Mercenary.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/20088' ]
     group: *itemsGroup
+
+  - name: 'VIS-G Item Sorting.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/33383' ]
+    group: *interfaceGroup
+  - name: 'VIS-G Item Sorting Vanilla Weight Patch.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/33383' ]
+    group: *interfaceGroup
