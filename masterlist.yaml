@@ -400,20 +400,15 @@ groups:
   - name: &interfaceGroup User Interface
     description: 'A group for mods that enhance or alter the user interface.'
 
-  - name: &weaponsGroup Weapons & Gadgets
-    description: 'A group for mods that improve or add new weapons and tools.'
+  - name: &itemsGroup Items
+    description: 'A group for mods that improve or add new items.'
     after:
       - *interfaceGroup
-
-  - name: &apparelGroup Apparel & Equipment
-    description: 'A group for mods that improve or add new items that can be worn.'
-    after:
-      - *weaponsGroup
 
   - name: &npcOverhaulsGroup NPC & Faction Overhauls
     description: 'A group for mods that overhaul npcs appearance/outfits and character level/stats.'
     after:
-      - *apparelGroup
+      - *itemsGroup
 
   - name: default
     after: [ *scrapperGroup ]
@@ -8576,7 +8571,7 @@ plugins:
   - name: 'Armorsmith Extended.esp'
     # TODO: Add ´msg´s for DLC compat. patches
     url: [ 'https://www.nexusmods.com/fallout4/mods/2228' ]
-    group: *apparelGroup
+    group: *itemsGroup
     after:
       - 'EAMR.esp'
     dirty:
@@ -10135,7 +10130,7 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/10484'
         name: 'Crossbows of the Commonwealth'
-    group: *weaponsGroup
+    group: *itemsGroup
 
   - name: 'FOFW_ALL_IN_ONE_VANILLA.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/9363' ]
@@ -10181,14 +10176,14 @@ plugins:
 
   - name: 'Enhanced Commonwealth Wardrobe.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/28620' ]
-    group: *apparelGroup
+    group: *itemsGroup
     after:
       - 'Mercenary.esp'
 
   - name: 'FALLOUT4WT.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/28620' ]
-    group: *apparelGroup
+    group: *itemsGroup
 
   - name: 'Mercenary.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/20088' ]
-    group: *apparelGroup
+    group: *itemsGroup
