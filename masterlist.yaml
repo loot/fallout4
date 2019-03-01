@@ -410,6 +410,11 @@ groups:
     after:
       - *weaponsGroup
 
+  - name: &npcOverhaulsGroup NPC & Faction Overhauls
+    description: 'A group for mods that overhaul npcs appearance/outfits and character level/stats.'
+    after:
+      - *apparelGroup
+
   - name: default
     after: [ *scrapperGroup ]
 
