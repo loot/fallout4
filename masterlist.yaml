@@ -397,6 +397,9 @@ groups:
   - name: &scrapperGroup Scrap Corpse Highlighting
     after: [ *underridesGroup ]
 
+  - name: &interfaceGroup User Interface
+    description: 'A group for mods that enhance or alter the user interface.'
+
   - name: default
     after: [ *scrapperGroup ]
 
