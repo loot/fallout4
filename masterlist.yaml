@@ -10168,6 +10168,7 @@ plugins:
 
   - name: 'Yagisan_WO_Better_Caravans.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/33787' ]
+    group: *npcOverhaulsGroup
     after:
       - 'Unique NPCs - Creatures and Monsters.esp'
 
