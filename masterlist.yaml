@@ -10166,6 +10166,11 @@ plugins:
       - 'RaiderOverhaul.esp'
       - 'Unique NPCs.esp'
 
+  - name: 'Yagisan_WO_Better_Caravans.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/33787' ]
+    after:
+      - 'Unique NPCs - Creatures and Monsters.esp'
+
   - name: 'Enhanced Commonwealth Wardrobe.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/28620' ]
     group: *apparelGroup
