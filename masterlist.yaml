@@ -10168,6 +10168,7 @@ plugins:
 
   - name: 'Enhanced Commonwealth Wardrobe.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/28620' ]
+    group: *apparelGroup
     after:
       - 'Mercenary.esp'
 
