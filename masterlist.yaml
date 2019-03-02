@@ -10146,6 +10146,10 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout4/mods/13822' ]
     group: *npcOverhaulsGroup
 
+  - name: 'Edit_Hancock.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/12029' ]
+    group: *npcOverhaulsGroup
+
   - name: 'FOFW_ALL_IN_ONE_VANILLA.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/9363' ]
     group: *npcOverhaulsGroup
