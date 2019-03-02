@@ -10138,6 +10138,10 @@ plugins:
     after:
       - 'VIS-G Item Sorting.esp'
 
+  - name: 'D.E.C.A.Y.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/2500' ]
+    group: *npcOverhaulsGroup
+
   - name: 'DeadlierDeathclaws.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/13822' ]
     group: *npcOverhaulsGroup
