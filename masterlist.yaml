@@ -10156,6 +10156,10 @@ plugins:
     after:
       - 'Unique NPCs.esp'
 
+  - name: 'Live Action Handy.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/9571' ]
+    group: *npcOverhaulsGroup
+
   - name: 'RaiderOverhaul.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/9103' ]
     group: *npcOverhaulsGroup
