@@ -10132,6 +10132,11 @@ plugins:
         name: 'Crossbows of the Commonwealth'
     group: *itemsGroup
 
+  - name: 'LoreFriendlySurvivalChems.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/15275' ]
+    after:
+      - 'VIS-G Item Sorting.esp'
+
   - name: 'DeadlierDeathclaws.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/13822' ]
     group: *npcOverhaulsGroup
