@@ -397,6 +397,19 @@ groups:
   - name: &scrapperGroup Scrap Corpse Highlighting
     after: [ *underridesGroup ]
 
+  - name: &interfaceGroup User Interface
+    description: 'A group for mods that enhance or alter the user interface.'
+
+  - name: &itemsGroup Items
+    description: 'A group for mods that improve or add new items.'
+    after:
+      - *interfaceGroup
+
+  - name: &npcOverhaulsGroup NPC & Faction Overhauls
+    description: 'A group for mods that overhaul npcs appearance/outfits and character level/stats.'
+    after:
+      - *itemsGroup
+
   - name: default
     after: [ *scrapperGroup ]
 
@@ -8558,6 +8571,9 @@ plugins:
   - name: 'Armorsmith Extended.esp'
     # TODO: Add ´msg´s for DLC compat. patches
     url: [ 'https://www.nexusmods.com/fallout4/mods/2228' ]
+    group: *itemsGroup
+    after:
+      - 'EAMR.esp'
     dirty:
       # Version 4.6
       - <<: *quickClean
@@ -10109,3 +10125,98 @@ plugins:
         crc: 0x5E45D526
         util: '[FO4Edit v4.0.1](https://www.nexusmods.com/fallout4/mods/2737)'
         nav: 8
+
+  - name: 'Crossbow.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/10484'
+        name: 'Crossbows of the Commonwealth'
+    group: *itemsGroup
+
+  - name: 'LoreFriendlySurvivalChems.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/15275' ]
+    group: *itemsGroup
+    after:
+      - 'VIS-G Item Sorting.esp'
+
+  - name: 'D.E.C.A.Y.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/2500' ]
+    group: *npcOverhaulsGroup
+
+  - name: 'DeadlierDeathclaws.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/13822' ]
+    group: *npcOverhaulsGroup
+
+  - name: 'Edit_Hancock.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/12029' ]
+    group: *npcOverhaulsGroup
+
+  - name: 'FOFW_ALL_IN_ONE_VANILLA.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/9363' ]
+    group: *npcOverhaulsGroup
+    after:
+      - 'Unique NPCs.esp'
+
+  - name: 'Live Action Handy.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/9571' ]
+    group: *npcOverhaulsGroup
+
+  - name: 'RaiderOverhaul.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/9103' ]
+    group: *npcOverhaulsGroup
+
+  - name: 'SanctuaryNPCsOverhaul.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/28810' ]
+    group: *npcOverhaulsGroup
+    after:
+      - 'FOFW_ALL_IN_ONE_VANILLA.esp'
+      - 'Unique NPCs.esp'
+
+  - name: 'SuperMutantRedux.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/11853' ]
+    group: *npcOverhaulsGroup
+    after:
+      - 'RaiderOverhaul.esp'
+      - 'Unique NPCs - Creatures and Monsters.esp'
+
+  - name: 'Synth Overhaul.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/9525' ]
+    group: *npcOverhaulsGroup
+
+  - name: 'Unique NPCs.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/21248' ]
+    group: *npcOverhaulsGroup
+    after:
+      - 'RaiderOverhaul.esp'
+  - name: 'Unique NPCs - Creatures and Monsters.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/24357' ]
+    group: *npcOverhaulsGroup
+    after:
+      - 'RaiderOverhaul.esp'
+      - 'Unique NPCs.esp'
+
+  - name: 'Yagisan_WO_Better_Caravans.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/33787' ]
+    group: *npcOverhaulsGroup
+    after:
+      - 'Unique NPCs - Creatures and Monsters.esp'
+
+  - name: 'Enhanced Commonwealth Wardrobe.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/28620' ]
+    group: *itemsGroup
+    after:
+      - 'Mercenary.esp'
+
+  - name: 'FALLOUT4WT.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/28620' ]
+    group: *itemsGroup
+
+  - name: 'Mercenary.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/20088' ]
+    group: *itemsGroup
+
+  - name: 'VIS-G Item Sorting.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/33383' ]
+    group: *interfaceGroup
+  - name: 'VIS-G Item Sorting Vanilla Weight Patch.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/33383' ]
+    group: *interfaceGroup
