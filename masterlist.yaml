@@ -6798,18 +6798,21 @@ plugins:
       - type: error
         content:
         - lang: en
-          text: 'Requires Fallout 4 patch 1.10.120 or greater.'
+          text: 'Requires Fallout 4 patch 1.10.130 or greater.'
         - lang: da
-          text: 'Kræver Fallout 4-lap 1.10.120 eller nyere.'
+          text: 'Kræver Fallout 4-lap 1.10.130 eller nyere.'
         - lang: de
-          text: 'Benötigt Fallout 4 Patch 1.10.120 oder neuer.'
-        condition: 'version("Unofficial Fallout 4 Patch.esp", "2.0.6a", >=) and not version("../Fallout4.exe", "1.10.120.0", >=)'
+          text: 'Benötigt Fallout 4 Patch 1.10.130 oder neuer.'
+        condition: 'version("Unofficial Fallout 4 Patch.esp", "2.0.7", >=) and not version("../Fallout4.exe", "1.10.130.0", >=)'
       - <<: *obsolete
-        condition: 'version("Unofficial Fallout 4 Patch.esp", "2.0.6b", <)'
+        condition: 'version("Unofficial Fallout 4 Patch.esp", "2.0.7", <)'
     clean:
       # version: 2.0.6b
       - crc: 0xCB08C922
         util: 'FO4Edit v4.0.1'
+      # version: 2.0.7
+      - crc: 0x3458B7A6
+        util: 'FO4Edit v4.0.2'
   # Mods obsoleted by official Bethesda patches
   - name: 'KH_DogArmorFix.esp '
     url: [ 'https://www.nexusmods.com/fallout4/mods/15222' ]
