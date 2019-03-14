@@ -332,10 +332,10 @@ globals:
 # Fallout 4 - Latest Version
   - <<: *versionOldX
     subs: [ '**Fallout 4**' ]
-    condition: 'version("../Fallout4.exe", "1.10.120.0", <) and file("../Fallout4.exe")'
+    condition: 'version("../Fallout4.exe", "1.10.130.0", <) and file("../Fallout4.exe")'
   - <<: *versionUpToDateX
     subs: [ '**Fallout 4**' ]
-    condition: 'version("../Fallout4.exe", "1.10.120.0", >=) and file("../Fallout4.exe")'
+    condition: 'version("../Fallout4.exe", "1.10.130.0", >=) and file("../Fallout4.exe")'
 # F4SE - Latest Version
   - <<: *versionOldX
     subs: [ '**Script Extender ([F4SE](http://f4se.silverlock.org))**' ]
