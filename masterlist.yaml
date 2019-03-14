@@ -432,49 +432,43 @@ plugins:
   - name: 'DLCRobot.esm'
     group: *dlcGroup
     dirty:
-      #  version: 1.10.120.0
+      # version: 1.10.120.0, 1.10.130.0
       - <<: *quickClean
         crc: 0xD69027EA
-        util: '[FO4Edit v4.0.0](https://www.nexusmods.com/fallout4/mods/2737)'
-        itm: 49
+        util: '[FO4Edit v4.0.2](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 50
         udr: 38
-        nav: 1
-      #  version: 1.10.120.0 - Before Second pass of Cleaning
-      - <<: *quickClean
-        crc: 0x950F94C8
-        util: '[FO4Edit v4.0.0](https://www.nexusmods.com/fallout4/mods/2737)'
-        itm: 1
         nav: 1
   - name: 'DLCworkshop01.esm'
     group: *dlcGroup
     after:
       - 'DLCRobot.esm'
     dirty:
-      #  version: 1.10.120.0
+      # version: 1.10.120.0, 1.10.130.0
       - <<: *quickClean
         crc: 0x47BAE27E
-        util: '[FO4Edit v4.0.0](https://www.nexusmods.com/fallout4/mods/2737)'
+        util: '[FO4Edit v4.0.2](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 6
     clean:
-      #  version: 1.10.120.0
+      # version: 1.10.120.0, 1.10.130.0
       - crc: 0x4C67C0E0
-        util: 'FO4Edit v4.0.0'
+        util: 'FO4Edit v4.0.2'
   - name: 'DLCCoast.esm'
     group: *dlcGroup
     after:
       - 'DLCRobot.esm'
       - 'DLCworkshop01.esm'
     dirty:
-      #  version: 1.10.120.0
+      # version: 1.10.120.0, 1.10.130.0
       - <<: *quickClean
         crc: 0xF1F28026
-        util: '[FO4Edit v4.0.0](https://www.nexusmods.com/fallout4/mods/2737)'
+        util: '[FO4Edit v4.0.2](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 85
         udr: 86
     clean:
-      #  version: 1.10.120.0
+      # version: 1.10.120.0, 1.10.130.0
       - crc: 0x4EB1FFA0
-        util: 'FO4Edit v4.0.0'
+        util: 'FO4Edit v4.0.2'
   - name: 'DLCworkshop02.esm'
     group: *dlcGroup
     after:
@@ -482,15 +476,15 @@ plugins:
       - 'DLCworkshop01.esm'
       - 'DLCCoast.esm'
     dirty:
-      #  version: 1.10.120.0
+      # version: 1.10.120.0, 1.10.130.0
       - <<: *quickClean
         crc: 0x83ABC821
-        util: '[FO4Edit v4.0.0](https://www.nexusmods.com/fallout4/mods/2737)'
+        util: '[FO4Edit v4.0.2](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 2
     clean:
-      #  version: 1.10.120.0
+      # version: 1.10.120.0, 1.10.130.0
       - crc: 0x49F4160D
-        util: 'FO4Edit v4.0.0'
+        util: 'FO4Edit v4.0.2'
   - name: 'DLCworkshop03.esm'
     group: *dlcGroup
     after:
@@ -499,21 +493,16 @@ plugins:
       - 'DLCCoast.esm'
       - 'DLCworkshop02.esm'
     dirty:
-      #  version: 1.10.120.0
+      # version: 1.10.120.0, 1.10.130.0
       - <<: *quickClean
         crc: 0xE0089FBB
-        util: '[FO4Edit v4.0.0](https://www.nexusmods.com/fallout4/mods/2737)'
-        itm: 22
+        util: '[FO4Edit v4.0.2](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 25
         udr: 10
-      #  version: 1.10.120.0 - Before Second pass of Cleaning
-      - <<: *quickClean
-        crc: 0x09F6B3C8
-        util: '[FO4Edit v4.0.0](https://www.nexusmods.com/fallout4/mods/2737)'
-        itm: 3
     clean:
-      # version: 1.10.120.0
+      # version: 1.10.120.0, 1.10.130.0
       - crc: 0x41B1E1FE
-        util: 'FO4Edit v4.0.0'
+        util: 'FO4Edit v4.0.2'
   - name: 'DLCNukaWorld.esm'
     group: *dlcGroup
     after:
@@ -523,11 +512,11 @@ plugins:
       - 'DLCworkshop02.esm'
       - 'DLCworkshop03.esm'
     dirty:
-      # version: 1.10.120.0
+      # version: 1.10.120.0, 1.10.130.0
       - <<: *quickClean
         crc: 0x43D25C56
-        util: '[FO4Edit v4.0.0](https://www.nexusmods.com/fallout4/mods/2737)'
-        itm: 193
+        util: '[FO4Edit v4.0.2](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 194
         udr: 418
         nav: 7
   - name: 'DLCUltraHighResolution.esm'
@@ -541,7 +530,7 @@ plugins:
       - 'DLCNukaWorld.esm'
     clean:
       - crc: 0x9B2A2AAC
-        util: 'FO4Edit v3.2.41'
+        util: 'FO4Edit v4.0.2'
 
   ### Creation Club plugins
   - name: 'ccBGSFO4001-PipBoy(Black).esl'
