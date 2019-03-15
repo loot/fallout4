@@ -365,7 +365,7 @@ globals:
     subs:
       - '**F4SE Plugin ([Place Everywhere](https://www.nexusmods.com/fallout4/mods/9424))**'
       - 'Fallout 4'
-    condition: 'file("F4SE/Plugins/place.dll") and file("../f4se_loader.exe") and ((version("F4SE/Plugins/place.dll", "1.18.0.1120", ==) and version("../Fallout4.exe", "1.10.120.0", !=)) or (version("F4SE/Plugins/place.dll", "1.18.0.1120", <) and version("../Fallout4.exe", "1.10.120.0", ==)))'
+    condition: 'file("F4SE/Plugins/place.dll") and file("../f4se_loader.exe") and ((version("F4SE/Plugins/place.dll", "1.18.0.1130", ==) and version("../Fallout4.exe", "1.10.130.0", !=)) or (version("F4SE/Plugins/place.dll", "1.18.0.1130", <) and version("../Fallout4.exe", "1.10.130.0", ==)))'
 # F4SE Plugins - Requirements
   - <<: *requiresF4SE
     subs: [ 'a F4SE Plugin' ]
