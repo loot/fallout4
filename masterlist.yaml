@@ -10239,3 +10239,40 @@ plugins:
       #  version: 0.1 - After Quick Clean
       - crc: 0x815F6E09
         util: 'FO4Edit v4.0.2'
+
+  - name: '(AtomicRadio|3DNPC_FO4)(_DLC|Settler)?.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/8704'
+        name: 'Atomic Radio and Tales from the Commonwealth'
+  - name: 'AtomicRadio.esp'
+    clean:
+      #  version: 2.6
+      - crc: 0x3DED15D9
+        util: 'FO4Edit v4.0.2'
+  - name: '3DNPC_FO4.esp'
+    dirty:
+      #  version: 3.01
+      - <<: *quickClean
+        crc: 0xEC6C547B
+        util: '[FO4Edit v4.0.2](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 31
+    clean:
+      #  version: 3.01
+      - crc: 0x9F8C2A1B
+        util: 'FO4Edit v4.0.2'
+  - name: '3DNPC_FO4_DLC.esp'
+    dirty:
+      #  version: 2.5
+      - <<: *quickClean
+        crc: 0x2289431A
+        util: '[FO4Edit v4.0.2](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 5
+    clean:
+      #  version: 2.5
+      - crc: 0x9C2DC712
+        util: 'FO4Edit v4.0.2'
+  - name: '3DNPC_FO4Settler.esp'
+    clean:
+      #  version: 3.11
+      - crc: 0x92ED5554
+        util: 'FO4Edit v4.0.2'
