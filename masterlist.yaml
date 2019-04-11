@@ -10276,3 +10276,21 @@ plugins:
       #  version: 3.11
       - crc: 0x92ED5554
         util: 'FO4Edit v4.0.2'
+
+  - name: 'SOTS.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/27870'
+        name: 'South of The Sea'
+    dirty:
+      # version: 0.60
+      - <<: *reqManualFix
+        crc: 0x7AED0F0B
+        util: '[FO4Edit v4.0.2](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 12
+        udr: 119
+        nav: 41
+      # version: 0.60, after QAC
+      - <<: *reqManualFix
+        crc: 0x407CEB41
+        util: '[FO4Edit v4.0.2](https://www.nexusmods.com/fallout4/mods/2737)'
+        nav: 41
