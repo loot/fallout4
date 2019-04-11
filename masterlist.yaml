@@ -10226,3 +10226,16 @@ plugins:
   - name: 'VIS-G Item Sorting Vanilla Weight Patch.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/33383' ]
     group: *interfaceGroup
+
+  - name: 'Minuteman Watchtowers.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/30363' ]
+    dirty:
+      #  version: 0.1
+      - <<: *quickClean
+        crc: 0x4EAAA5D7
+        util: '[FO4Edit v4.0.2](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 11
+    clean:
+      #  version: 0.1 - After Quick Clean
+      - crc: 0x815F6E09
+        util: 'FO4Edit v4.0.2'
