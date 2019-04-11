@@ -10294,3 +10294,20 @@ plugins:
         crc: 0x407CEB41
         util: '[FO4Edit v4.0.2](https://www.nexusmods.com/fallout4/mods/2737)'
         nav: 41
+
+  - name: 'JonsMod.esm'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/32911'
+        name: 'Northern Springs DLC'
+    dirty:
+      # version: Beta-1B
+      - <<: *reqManualFix
+        crc: 0x2BEB494C
+        util: '[FO4Edit v4.0.2](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 131
+        nav: 9
+      # version: Beta-1B, after QAC
+      - <<: *reqManualFix
+        crc: 0x4C7A2C75
+        util: '[FO4Edit v4.0.2](https://www.nexusmods.com/fallout4/mods/2737)'
+        nav: 9
