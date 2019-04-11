@@ -10082,51 +10082,51 @@ plugins:
   - name: 'Pipsy.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/34304' ]
     dirty:
-      #  version: 1.0 - Before Quick Clean
+      # version: 1.0 - Before Quick Clean
       - <<: *quickClean
         crc: 0xDF7D6406
         util: '[FO4Edit v4.0.1](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 121
         udr: 20
-      #  version: 1.0 - Before 2nd Pass of Quick Clean
+      # version: 1.0 - Before 2nd Pass of Quick Clean
       - <<: *quickClean
         crc: 0xAFA33BE5
         util: '[FO4Edit v4.0.1](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 1
     clean:
-      #  version: 1.0 - After Quick Clean
+      # version: 1.0 - After Quick Clean
       - crc: 0xC4130107
         util: 'FO4Edit v4.0.1'
   - name: 'Pipsy.esl'
     url: [ 'https://www.nexusmods.com/fallout4/mods/34304' ]
     dirty:
-      #  version: 1.0 - Before Quick Clean
+      # version: 1.0 - Before Quick Clean
       - <<: *quickClean
         crc: 0x72261C69
         util: '[FO4Edit v4.0.1](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 131
         udr: 20
-      #  version: 1.0 - Before 2nd Pass of Quick Clean
+      # version: 1.0 - Before 2nd Pass of Quick Clean
       - <<: *quickClean
         crc: 0x585FC8C4
         util: '[FO4Edit v4.0.1](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 1
     clean:
-      #  version: 1.0 - After Quick Clean
+      # version: 1.0 - After Quick Clean
       - crc: 0x3A94C02C
         util: 'FO4Edit v4.0.1'
 
   - name: 'Stm_DiamondCityExpansion.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/21853' ]
     dirty:
-      #  version: 1.4.2 - Before Quick Clean
+      # version: 1.4.2 - Before Quick Clean
       - <<: *reqManualFix
         crc: 0xB3A2F88B
         util: '[FO4Edit v4.0.1](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 482
         udr: 6
         nav: 8
-      #  version: 1.4.2 - After Quick Clean
+      # version: 1.4.2 - After Quick Clean
       - <<: *reqManualFix
         crc: 0x5E45D526
         util: '[FO4Edit v4.0.1](https://www.nexusmods.com/fallout4/mods/2737)'
@@ -10230,13 +10230,13 @@ plugins:
   - name: 'Minuteman Watchtowers.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/30363' ]
     dirty:
-      #  version: 0.1
+      # version: 0.1
       - <<: *quickClean
         crc: 0x4EAAA5D7
         util: '[FO4Edit v4.0.2](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 11
     clean:
-      #  version: 0.1 - After Quick Clean
+      # version: 0.1 - After Quick Clean
       - crc: 0x815F6E09
         util: 'FO4Edit v4.0.2'
 
@@ -10246,34 +10246,34 @@ plugins:
         name: 'Atomic Radio and Tales from the Commonwealth'
   - name: 'AtomicRadio.esp'
     clean:
-      #  version: 2.6
+      # version: 2.6
       - crc: 0x3DED15D9
         util: 'FO4Edit v4.0.2'
   - name: '3DNPC_FO4.esp'
     dirty:
-      #  version: 3.01
+      # version: 3.01
       - <<: *quickClean
         crc: 0xEC6C547B
         util: '[FO4Edit v4.0.2](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 31
     clean:
-      #  version: 3.01
+      # version: 3.01
       - crc: 0x9F8C2A1B
         util: 'FO4Edit v4.0.2'
   - name: '3DNPC_FO4_DLC.esp'
     dirty:
-      #  version: 2.5
+      # version: 2.5
       - <<: *quickClean
         crc: 0x2289431A
         util: '[FO4Edit v4.0.2](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 5
     clean:
-      #  version: 2.5
+      # version: 2.5
       - crc: 0x9C2DC712
         util: 'FO4Edit v4.0.2'
   - name: '3DNPC_FO4Settler.esp'
     clean:
-      #  version: 3.11
+      # version: 3.11
       - crc: 0x92ED5554
         util: 'FO4Edit v4.0.2'
 
