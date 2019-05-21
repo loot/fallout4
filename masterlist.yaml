@@ -10320,3 +10320,5 @@ plugins:
       - <<: *useOnlyOneX
         subs: [ 'Crimes against Nature' ]
         condition: 'many("CaN.es(m|p)")'
+  - name: 'CaN.esp'
+    msg: [ *obsolete ]
