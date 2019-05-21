@@ -10311,3 +10311,12 @@ plugins:
         crc: 0x4C7A2C75
         util: '[FO4Edit v4.0.2](https://www.nexusmods.com/fallout4/mods/2737)'
         nav: 9
+
+  - name: 'CaN.es(m|p)'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/19040'
+        name: '(CaN) Crimes against Nature'
+    msg:
+      - <<: *useOnlyOneX
+        subs: [ 'Crimes against Nature' ]
+        condition: 'many("CaN.es(m|p)")'
