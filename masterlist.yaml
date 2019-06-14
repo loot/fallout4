@@ -339,10 +339,10 @@ globals:
 # F4SE - Latest Version
   - <<: *versionOldX
     subs: [ '**Script Extender ([F4SE](http://f4se.silverlock.org))**' ]
-    condition: 'version("../f4se_loader.exe", "0.0.6.16", <) and file("../f4se_loader.exe") and file("../Fallout4.exe")'
+    condition: 'version("../f4se_loader.exe", "0.0.6.17", <) and file("../f4se_loader.exe") and file("../Fallout4.exe")'
   - <<: *versionUpToDateX
     subs: [ '**Script Extender ([F4SE](http://f4se.silverlock.org))**' ]
-    condition: 'not version("../f4se_loader.exe", "0.0.6.16", <)'
+    condition: 'not version("../f4se_loader.exe", "0.0.6.17", <)'
 # F4SE - Compatibility
   - <<: *versionF4SEIncFO4
     condition: 'version("../Fallout4.exe", "1.10.138.0", ==) and version("../f4se_loader.exe", "0.0.6.17", <) and file("../f4se_loader.exe")'
