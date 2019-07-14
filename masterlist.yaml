@@ -9170,6 +9170,12 @@ plugins:
   - name: 'Crafting Workbench.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/2451' ]
     msg:
+      - <<: *obsolete
+      - type: say
+        content:
+          - lang: en
+            text: 'Use %1% instead.'
+        subs: [ '[Crafting Mastery (Crafting Workbenches updated)](https://www.nexusmods.com/fallout4/mods/17849)' ]
       - type: warn
         content:
           - lang: en
