@@ -8588,6 +8588,19 @@ plugins:
           - 'Armorsmith Extended'
           - 'Armor and Weapon Keywords Community Resource (AWKCR)'
         condition: 'version("Armorsmith Extended.esp", "4.6", >=) and version("ArmorKeywords.esm", "8.5", <)'
+
+  - name: 'ConcealedArmor.esm'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/6434' ]
+    msg:
+      - type: warn
+        content:
+          - lang: en
+            text: 'An out of date version of %1% is included with this mod. This should be removed and replaced with a newer version from [here](%2%).'
+        subs:
+          - 'ArmorKeywords.esm'
+          - 'https://www.nexusmods.com/fallout4/mods/2228'
+        condition: 'active("ArmorKeywords.esm") and checksum("ArmorKeywords.esm", 25A1BAA8)'
+
   - name: 'SettlementAttacksBeyondFH.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/12892' ]
     dirty:
@@ -9153,6 +9166,15 @@ plugins:
         util: FO4Edit v3.2.1
   - name: 'Crafting Workbench.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/2451' ]
+    msg:
+      - type: warn
+        content:
+          - lang: en
+            text: 'An out of date version of %1% is included with this mod. This should be removed and replaced with a newer version from [here](%2%).'
+        subs:
+          - 'ArmorKeywords.esm'
+          - 'https://www.nexusmods.com/fallout4/mods/2228'
+        condition: 'active("ArmorKeywords.esm") and (checksum("ArmorKeywords.esm", 90D9E687) or checksum("ArmorKeywords.esm", E0F08C1E) or checksum("ArmorKeywords.esm", 991891C7))'
     clean:
       - crc: 0x445fbdcc
         util: FO4Edit v3.2.1
