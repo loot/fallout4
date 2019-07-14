@@ -8592,6 +8592,9 @@ plugins:
   - name: 'ConcealedArmor.esm'
     url: [ 'https://www.nexusmods.com/fallout4/mods/6434' ]
     msg:
+      - <<: *AlreadyInX
+        subs: [ 'Armorsmith Extended v4.0+' ]
+        condition: 'active("Armorsmith Extended.esp") and version("Armorsmith Extended.esp", "4.0", >=)'
       - type: warn
         content:
           - lang: en
