@@ -6817,13 +6817,13 @@ plugins:
         util: 'FO4Edit v4.0.2'
   # Mods obsoleted by official Bethesda patches
   - name: 'KH_DogArmorFix.esp '
-    url: [ 'https://www.nexusmods.com/fallout4/mods/15222' ]
+    url: []
     group: *fixesGroup
     msg:
       - <<: *AlreadyInFO4
         condition: 'version("../Fallout4.exe", "1.6.0.0", >=)'
   - name: 'KH_DChelmetfix.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/15215' ]
+    url: []
     group: *fixesGroup
     msg:
       - <<: *AlreadyInFO4
@@ -6835,7 +6835,7 @@ plugins:
       - <<: *AlreadyInFO4
         condition: 'version("../Fallout4.exe", "1.5.0.0", >=)'
   - name: 'Vault 81 Holding Cell Fix(| Alt)\.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/8033' ]
+    url: []
     group: *fixesGroup
     msg:
       - <<: *AlreadyInFO4
@@ -6877,7 +6877,7 @@ plugins:
     msg:
       - *AlreadyInUFO4P
   - name: 'Simple Bug Fixes.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/2142' ]
+    url: []
     group: *fixesGroup
     msg:
       - *AlreadyInUFO4P
@@ -6914,7 +6914,7 @@ plugins:
     msg:
       - *AlreadyInUFO4P
   - name: 'DeirdreVendorFix.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/12305' ]
+    url: []
     group: *fixesGroup
     msg:
       - *AlreadyInUFO4P
@@ -6972,12 +6972,12 @@ plugins:
     msg:
       - *AlreadyInUFO4P
   - name: 'RFG - Curie Inspirational Sneak L&L Fix.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/10047' ]
+    url: []
     group: *fixesGroup
     msg:
       - *AlreadyInUFO4P
   - name: 'RFG - Gunslinger Fix.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/10045' ]
+    url: []
     group: *fixesGroup
     msg:
       - *AlreadyInUFO4P
@@ -6992,7 +6992,7 @@ plugins:
     msg:
       - *AlreadyInUFO4P
   - name: 'Worsins-T60-Headlamp-Fix.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/8164' ]
+    url: []
     group: *fixesGroup
     msg:
       - *AlreadyInUFO4P
@@ -7027,7 +7027,7 @@ plugins:
     msg:
       - *AlreadyInUFO4P
   - name: 'NX Desk Crafting Fix.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/2662' ]
+    url: []
     group: *fixesGroup
     msg:
       - *AlreadyInUFO4P
@@ -7548,7 +7548,7 @@ plugins:
             text: 'Realistic Survival Damage.esp ändert die selben Spiel-Variablen wie die Survival X PC/EnemyDamage.esps. Sie sollten nur eine der beiden verwenden.'
         condition: 'file("Survival((90|75|65|50|25|10)LESS|Normal|(10|20|30|40|50|60|70|80|90|100|150|200|250|300|350|400|450|500)more)(PC|Enemy)Damage\.esp")'
   - name: 'Rainy_(25|50|75|100)\.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/1812' ]
+    url: []
     msg:
       - <<: *useOnlyOneX
         condition: 'many("Rainy_(25|50|75|100)\.esp")'
@@ -7645,7 +7645,7 @@ plugins:
         condition: 'many("DeadlyRadstorms_Damage_\d+\.esp")'
         subs: [ 'DeadlyRadstorms_Damage .esp' ]
   - name: 'Simple Bug Fixes - Better Item Sorting Patch.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/2142' ]
+    url: []
     req:
       - 'Simple Bug Fixes.esp'
   - name: 'NoGunSneakAttackMultiplier.esp'
@@ -7723,13 +7723,13 @@ plugins:
         condition: 'active("ArmorKeywords.esm")'
         subs: [ 'ArmorKeywords.esm' ]
   - name: 'WET Clearer.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/244' ]
+    url: []
     inc: [ 'WET Murkier.esp' , 'WET.esp' ]
   - name: 'WET Murkier.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/244' ]
+    url: []
     inc: [ 'WET Clearer.esp', 'WET.esp' ]
   - name: 'WET.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/244' ]
+    url: []
     inc: [ 'WET Clearer.esp', 'WET Murkier.esp' ]
   - name: 'Lasers Have No Recoil.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/9417/' ]
@@ -8519,7 +8519,7 @@ plugins:
             text: "Sie scheinen die Valdacil's Item Sorting Variante der Mod zu nutzen, aber ohne Nutzen jeglicher Valdacil's Item Sorting-Plugins. Ziehen Sie in Erwägung eine Version von Give Me That Bottle ohne Sortierungs-Patches zu nutzen."
         condition: 'not active("ValdacilsItemSorting-.+\.esp") and (checksum("Give Me That Bottle.esp", 939407C9) or checksum("Give Me That Bottle.esp", AE38A5A0))'
   - name: 'CC''s Unique Vault Suit Boxes.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/19976' ]
+    url: []
     dirty:
       - <<: *dirtyPlugin
         # Version 1.01
@@ -8531,7 +8531,7 @@ plugins:
         subs: [ 'Far Harbor' ]
         condition: 'active("DLCCoast.esm") and not active("CC''s Unique Vault Suit Boxes - Far Harbor Patch.esp")'
   - name: 'CC''s Unique Vault Suit Boxes - Far Harbor Patch.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/19976' ]
+    url: []
     dirty:
       - <<: *dirtyPlugin
         # Version 1.01
@@ -8868,7 +8868,7 @@ plugins:
         # FO4Edit 3.2
         itm: 1
   - name: 'Hot Sosig.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/17953' ]
+    url: []
     inc:
       # Both use PresetFemale15
       - 'Vault Girl.esp'
@@ -9060,7 +9060,7 @@ plugins:
         # FO4Edit 3.2
         itm: 6
   - name: 'ShotLayDown\d+\.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/25787' ]
+    url: []
     msg:
       - <<: *useOnlyOneX
         condition: 'many_active("ShotLayDown\d+\.esp")'
@@ -9767,7 +9767,7 @@ plugins:
         util: FO4Edit v3.2.1
 
   - name: 'AAF_RSE.esp'
-    url: [ 'https://www.loverslab.com/files/file/6681-rse-realistic-salacious-encounters-11-02-18/' ]
+    url: []
     after:
       - 'StartMeUp.esp'
 
