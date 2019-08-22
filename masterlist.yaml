@@ -23,7 +23,7 @@ common:
       - lang: ja
         text: '旧式のプラグインです。最新版に更新してください。'
       - lang: de
-        text: 'Veraltet. Aktualisere zur letzten Version.'
+        text: 'Veraltet. Aktualisiere zur letzten Version.'
   - &AlreadyInFO4
     type: error
     content:
@@ -93,28 +93,28 @@ common:
       - lang: ja
         text: 'IMTレコードはクリーンしないでください。これらは意図的に残されたデータであり、Modを機能させるために必要です。削除の取り消しは安全に行えますが、それ以外のことは行わないでください。'
       - lang: de
-        text: 'ITM-Einträge in diesem Plugin sollten nicht gesäubert werden, sie sind absichtlich enthalten und werden benötigt, damit der Mod richtig funktioniert. Gelöschte Eintrage wiederherzustellen ist in Ordung, alles andere aber nicht.'
+        text: 'ITM-Einträge in diesem Plugin sollten nicht gesäubert werden, sie sind absichtlich enthalten und werden benötigt, damit die Mod richtig funktioniert. Gelöschte Eintrage wiederherzustellen ist in Ordnung, alles andere aber nicht.'
   - &patchProvided
     type: warn
     content:
       - lang: en
         text: 'You seem to be using %1%, but you have not enabled a compatibility patch for this mod. A compatibility patch is provided on this plugin''s mod page.'
       - lang: de
-        text: 'Sie scheinen %1% zu nutzen, aber sie haben keinen Kompatibilitätspatch für diesen Mod aktiviert. Ein Kompatibilitätspatch wird auf dieser Plugins Mod-Seite zur Verfügung gestellt.'
+        text: 'Sie scheinen %1% zu nutzen, aber Sie haben keinen Kompatibilitätspatch für diese Mod aktiviert. Ein Kompatibilitätspatch wird auf dieser Plugins Mod-Seite zur Verfügung gestellt.'
   - &patchIncluded
     type: warn
     content:
       - lang: en
         text: 'You seem to be using %1%, but you have not enabled a compatibility patch for this mod. A compatibility patch is included with this plugin''s installer.'
       - lang: de
-        text: 'Sie scheinen %1% zu nutzen, aber sie haben keinen Kompatibilitätspatch für diesen Mod aktiviert. Ein Kompatibilitätspatch ist enthalten mit diesen Plugins Installer.'
+        text: 'Sie scheinen %1% zu nutzen, aber Sie haben keinen Kompatibilitätspatch für diese Mod aktiviert. Ein Kompatibilitätspatch ist enthalten mit diesen Plugins Installer.'
   - &patch3rdParty
     type: warn
     content:
       - lang: en
         text: 'You seem to be using %1%, but you have not enabled a compatibility patch for this mod. A third party patch is available here: %2%'
       - lang: de
-        text: 'Sie scheinen %1% zu nutzen, aber sie haben keinen Kompatibilitätspatch für diesen Mod aktiviert. Ein Patch von Dritten ist hier verfügbar: %2%'
+        text: 'Sie scheinen %1% zu nutzen, aber Sie haben keinen Kompatibilitätspatch für diese Mod aktiviert. Ein Patch von Dritten ist hier verfügbar: %2%'
   - &dlcVersion
     type: say
     content:
@@ -183,7 +183,7 @@ common:
       - lang: ja
         text: 'このファイルはゲームにおける集落の建設メニューの分類方法を変更します。このファイルをアンインストールし、SKEと互換性のあるファイルおよびパッチのみ使用することを推奨します。'
       - lang: de
-        text: 'Diese Datei ändert wie das Basis-Spiel die Bau-Menüs der Siedlungen kategorisiert. Es wird empfohlen diese Datei zu deinstallieren und nur Dateien und Patches zu verwenden die kompatibel sind mit SKE.'
+        text: 'Diese Datei ändert, wie das Basis-Spiel die Bau-Menüs der Siedlungen kategorisiert. Es wird empfohlen, diese Datei zu deinstallieren und nur Dateien und Patches zu verwenden die kompatibel sind mit SKE.'
     condition: 'active("SettlementKeywords.esm") and version("SettlementKeywords.esm", "1.0", >=)'
   - &UsingSNB
     type: error
@@ -291,14 +291,14 @@ common:
       - lang: en
         text: 'Due to Improvements made to the cleaning process with the official release of xEdit 4.0.x+, any mods which were verified as clean with older versions of xEdit may now require additional cleaning. A guide for running xEdit 4.0.x+ in **Quick Auto Clean** mode can be found [here](https://tes5edit.github.io/docs/5-mod-cleaning-and-error-checking.html#s_5-3-4).'
       - lang: de
-        text: 'Wegen Verbesserungen die dem Säuberungsprozess zugute gekommen sind mit der offiziellen Veröffentlichung von xEdit 4.0.x+, sämtliche Mods die als sauber verifiziert wurden mithilfe älterer Versionen von xEdit brauchen eventuell zusätzliche Säuberungen. Eine englische Anleitung zum ausführen von xEdit 4.0.x+ im **Schnell-Automatisch-Säubern** Modus kann [hier](https://tes5edit.github.io/docs/5-mod-cleaning-and-error-checking.html#s_5-3-4) aufgefunden werden.'
+        text: 'Wegen Verbesserungen die dem Säuberungsprozess mit der offiziellen Veröffentlichung von xEdit 4.0.x+ zugute gekommen sind, müssen eventuell sämtliche Mods die mithilfe älterer Versionen von xEdit als sauber verifiziert wurden, erneut gesäubert werden. Eine englische Anleitung zum Ausführen von xEdit 4.0.x+ im **Schnell-Automatisch-Säubern** Modus kann [hier](https://tes5edit.github.io/docs/5-mod-cleaning-and-error-checking.html#s_5-3-4) aufgefunden werden.'
   - &reqManualFix
     util: '[FO4Edit](https://www.nexusmods.com/fallout4/mods/2737) **Quick Auto Clean**'
     info:
       - lang: en
         text: 'It is strongly recommended not to use mods that contain **Deleted navmeshes** as they''re known to cause crashes. **Deleted navmeshes** must be corrected manually(A complex process that should be done by the mod author). More information on **Deleted navmeshes** is provided [here](https://www.creationkit.com/index.php?title=Fixing_Navmesh_Deletion_Tutorial).'
       - lang: de
-        text: 'Es wird streng empfohlen keine Mods zu verwenden die **Gelöschte Navmeshes** beinhalten da diese dafür bekannt sind Abstürze auszulösen. **Gelöschte Navmeshes** müssen manuell korrigiert werden(Ein komplexer Prozess der vom Mod-Autor erledigt werden sollte). Mehr Informationen über **Gelöschte Navmeshes** wird [hier](https://www.creationkit.com/index.php?title=Fixing_Navmesh_Deletion_Tutorial) geboten.'
+        text: 'Es wird streng empfohlen, keine Mods zu verwenden die **Gelöschte Navmeshes** beinhalten, da diese dafür bekannt sind Abstürze auszulösen. **Gelöschte Navmeshes** müssen manuell korrigiert werden (ein komplexer Prozess der vom Mod-Autor erledigt werden sollte). Mehr Informationen über **Gelöschte Navmeshes** werden [hier](https://www.creationkit.com/index.php?title=Fixing_Navmesh_Deletion_Tutorial) geboten.'
 
 globals:
   - type: warn
@@ -361,7 +361,7 @@ globals:
       - lang: en
         text: 'It appears you have installed **Fallout 4 Script Extender**, but its required scripts seem to be missing. Please ensure you have correctly installed the scripts bundled with the **[F4SE](http://f4se.silverlock.org)** installation archive.'
       - lang: de
-        text: 'Es erscheint als hätten Sie **Fallout 4 Script Extender** installiert, aber die vorausgesetzten Skripte scheinen zu fehlen. Bitte stellen Sie sicher das Sie die Skripte korrekt mit installiert haben die mit dem **[F4SE](http://f4se.silverlock.org)** Installationsarchiv enthalten sind.'
+        text: 'Es erscheint als hätten Sie **Fallout 4 Script Extender** installiert, aber die vorausgesetzten Skripte scheinen zu fehlen. Bitte stellen Sie sicher, dass Sie die Skripte korrekt mit installiert haben, die mit dem **[F4SE](http://f4se.silverlock.org)** Installationsarchiv enthalten sind.'
 # F4SE Plugins - Compatibility
   - <<: *versionXIncY
     subs:
@@ -7658,7 +7658,7 @@ plugins:
         - lang: da
           text: 'Dette plugin er også tilgængelig i en ESL udgave. Overvej at bruge ESL-udgaven i stedet for denne.'
         - lang: de
-          text: 'Für dieses Plugin ist eine ESL Version verfügbar. Erwäge diese zu nutzen anstatt der jetzigen.'
+          text: 'Für dieses Plugin ist eine ESL Version verfügbar. Erwägen Sie diese zu nutzen anstatt der jetzigen.'
         condition: 'not active("NoGunSneakAttackMultiplier.esl")'
       - <<: *obsolete
         condition: 'version("NoGunSneakAttackMultiplier.esp", "1.2", <)'
