@@ -437,20 +437,6 @@ common:
       - lang: ja
         text: 'このファイルはSKEとの互換性がありません。'
     condition: 'active("SettlementKeywords.esm") and version("SettlementKeywords.esm", "1.0", >=)'
-  - &UsingSNB
-    type: error
-    content:
-      - lang: en
-        text: 'This file is unneeded with Snap''n Build.esm v1.9.  Consider upgrading and removing this file.'
-      - lang: da
-        text: 'Denne fil behøves ikke med Snap''n Build.esm v1.9. Overvej at opgradere og fjerne denne fil.'
-      - lang: de
-        text: 'Diese Datei ist überflüssig mit Snap''n Build.esm v1.9.  Erwäge das Upgraden oder Löschen dieser Datei.'
-      - lang: es
-        text: 'No se requiere este archivo con Snap''n Build.esm version 1.9.  Considere actualizando y desinstalando este archivo.'
-      - lang: ja
-        text: 'このファイルはSnap''n Build.esm v1.9では不要です。更新を行い、削除することを検討してください。'
-    condition: 'active("Snap''n Build.esm")'
 
   - &versionOldX
     type: say
@@ -8261,29 +8247,21 @@ plugins:
       - <<: *uninstallFileUpgradeHomemaker150
         condition: 'version("Homemaker.esm", "1.50", >=) and version("Homemaker - Unlocked Institute Objects.esp", "1.50", <)'
   - name: 'Snap''n Build - Bunker.esp'
-    msg:
-      - *UsingSNB
+    msg: [ *obsolete ]
   - name: 'Snap''n Build - Capsule.esp'
-    msg:
-      - *UsingSNB
+    msg: [ *obsolete ]
   - name: 'Snap''n Build - Greenhouse.esp'
-    msg:
-      - *UsingSNB
+    msg: [ *obsolete ]
   - name: 'Snap''n Build - Industrial.esp'
-    msg:
-      - *UsingSNB
+    msg: [ *obsolete ]
   - name: 'Snap''n Build - Patches_HMM.esp'
-    msg:
-      - *UsingSNB
+    msg: [ *obsolete ]
   - name: 'Snap''n Build - Patches_SK.esp'
-    msg:
-      - *UsingSNB
+    msg: [ *obsolete ]
   - name: 'Snap''n Build - Real Estate.esp'
-    msg:
-      - *UsingSNB
+    msg: [ *obsolete ]
   - name: 'Snap''n Build - Patches.esp'
-    msg:
-      - *UsingSNB
+    msg: [ *obsolete ]
   - name: 'Snap and Build - Greenhouse.esp'
     msg:
       - type: error
@@ -8293,7 +8271,7 @@ plugins:
           - lang: de
             text: 'Inkompatibel mit Fallout 4 Patch 1.5.157 oder neuer.'
         condition: 'file("../Fallout4.exe") and version("../Fallout4.exe", "1.5.157.0", >=)'
-      - *UsingSNB
+      - *obsolete
   - name: 'SnB - Greenhouse - Homemaker.esp'
     msg:
       - type: error
@@ -8303,7 +8281,7 @@ plugins:
           - lang: de
             text: 'Inkompatibel mit Fallout 4 Patch 1.5.157 oder neuer.'
         condition: 'file("../Fallout4.exe") and version("../Fallout4.exe", "1.5.157.0", >=)'
-      - *UsingSNB
+      - *obsolete
   - name: 'SnB- Greenhouse - SK.esp'
     msg:
       - type: error
@@ -8313,7 +8291,7 @@ plugins:
           - lang: de
             text: 'Inkompatibel mit Fallout 4 Patch 1.5.157 oder neuer.'
         condition: 'file("../Fallout4.exe") and version("../Fallout4.exe", "1.5.157.0", >=)'
-      - *UsingSNB
+      - *obsolete
   - name: 'SnB - Greenhouse - SSEx.esp'
     msg:
       - type: error
@@ -8323,7 +8301,7 @@ plugins:
           - lang: de
             text: 'Inkompatibel mit Fallout 4 Patch 1.5.157 oder neuer.'
         condition: 'file("../Fallout4.exe") and version("../Fallout4.exe", "1.5.157.0", >=)'
-      - *UsingSNB
+      - *obsolete
   - name: 'SnB - Greenhouse - Homemaker - SSEx.esp'
     msg:
       - type: error
@@ -8333,7 +8311,7 @@ plugins:
           - lang: de
             text: 'Inkompatibel mit Fallout 4 Patch 1.5.157 oder neuer.'
         condition: 'file("../Fallout4.exe") and version("../Fallout4.exe", "1.5.157.0", >=)'
-      - *UsingSNB
+      - *obsolete
   - name: 'Homemaker.esm'
     url: [ 'https://www.nexusmods.com/fallout4/mods/1478' ]
     msg:
