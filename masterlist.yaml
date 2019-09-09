@@ -104,6 +104,20 @@ common:
       - lang: zh_CN
         text: '已过时。请升级到最新版本。'
 
+  - &onlyUseSmashOrBash
+    type: say
+    content:
+      - lang: en
+        text: 'Can be used with a %1% but would require additional work. A Smashed Patch or Bash Patch should be used independently of one another.'
+      - lang: da
+        text: 'Kan bruges sammen med %1% men det vil kræve ekstra arbejde. Smashed Patch og Bash Patch bør bruges uafhængigt af hinanden.'
+      - lang: de
+        text: 'Kann benutzt werden mit einem %1%, würde jedoch weitere Arbeit benötigen. Ein Smashed Patch oder Bash Patch sollte unabhängig voneinander verwendet werden.'
+      - lang: es
+        text: 'Se puede utilizar con un %1% pero requeriría un trabajo adicional. Deben de estar utilizado un Smashed Patch o un Bash Patch independiente del uno el otro.'
+      - lang: ja
+        text: '%1%と同時に使用できますが、追加作業が必要となります。Smashed PatchかBash Patchはそれぞれ単独で使用してください。'
+
   - &patch3rdParty
     type: warn
     content:
@@ -145,20 +159,6 @@ common:
         text: 'У вас установлен %1%, но F4SE не найден! Смотрите страницу загрузки [F4SE](http://f4se.silverlock.org).'
       - lang: zh_CN
         text: '你已经安装了%1%，但是未发现F4SE！请查看F4SE的下载页面：[F4SE](http://f4se.silverlock.org)。'
-
-  - &SmashedVsBashedPatch
-    type: say
-    content:
-      - lang: en
-        text: 'Can be used with a %1% but would require additional work. A Smashed Patch or Bash Patch should be used independently of one another.'
-      - lang: da
-        text: 'Kan bruges sammen med %1% men det vil kræve ekstra arbejde. Smashed Patch og Bash Patch bør bruges uafhængigt af hinanden.'
-      - lang: de
-        text: 'Kann benutzt werden mit einem %1%, würde jedoch weitere Arbeit benötigen. Ein Smashed Patch oder Bash Patch sollte unabhängig voneinander verwendet werden.'
-      - lang: es
-        text: 'Se puede utilizar con un %1% pero requeriría un trabajo adicional. Deben de estar utilizado un Smashed Patch o un Bash Patch independiente del uno el otro.'
-      - lang: ja
-        text: '%1%と同時に使用できますが、追加作業が必要となります。Smashed PatchかBash Patchはそれぞれ単独で使用してください。'
 
   - &useOnlyOneX
     type: warn
@@ -9793,7 +9793,7 @@ plugins:
     tag:
       - NoMerge
     msg:
-      - <<: *SmashedVsBashedPatch
+      - <<: *onlyUseSmashOrBash
         condition: 'file("Bashed Patch.*\.esp")'
         subs: [ 'Bashed Patch' ]
   - name: 'Bashed Patch.*\.esp'
@@ -9801,7 +9801,7 @@ plugins:
     after:
       - 'FO4Merged.esp'
     msg:
-      - <<: *SmashedVsBashedPatch
+      - <<: *onlyUseSmashOrBash
         condition: 'file("Smashed Patch.esp")'
         subs: [ 'Smashed Patch.esp' ]
 
