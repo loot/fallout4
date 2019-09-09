@@ -8177,37 +8177,16 @@ plugins:
       - *UsingHomemaker1_50
   - name: 'Homemaker - Bunker Disabler.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/1478' ]
-    msg:
-      - &uninstallFileUpgradeHomemaker150
-        type: error
-        content:
-        - lang: en
-          text: 'Uninstall this file and upgrade to Homemaker 1.50.'
-        - lang: da
-          text: 'Afinstallér denne fil og opgradér til Homemaker 1.50.'
-        - lang: de
-          text: 'Deinstalliere diese Datei und upgrade zu Homemaker 1.50.'
-        - lang: es
-          text: 'Desinstale este archivo y actualizar a Homemaker 1.50.'
-        - lang: ja
-          text: 'このファイルをアンインストールし、Homemaker 1.50に更新してください。'
-        condition: 'version("Homemaker.esm", "1.50", >=) and version("Homemaker - Bunker Disabler.esp", "1.50", <)'
   - name: 'Homemaker - Greenhouse and Bunker Disabler SK.esp'
     msg:
       - *UsingHomemaker1_50
   - name: 'Homemaker - Greenhouse and Bunker Disabler.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/1478' ]
-    msg:
-      - <<: *uninstallFileUpgradeHomemaker150
-        condition: 'version("Homemaker.esm", "1.50", >=) and version("Homemaker - Greenhouse and Bunker Disabler.esp", "1.50", <)'
   - name: 'Homemaker - Greenhouse Disabler SK.esp'
     msg:
       - *UsingHomemaker1_50
   - name: 'Homemaker - Greenhouse Disabler.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/1478' ]
-    msg:
-      - <<: *uninstallFileUpgradeHomemaker150
-        condition: 'version("Homemaker.esm", "1.50", >=) and version("Homemaker - Greenhouse Disabler.esp", "1.50", <)'
   - name: 'Homemaker - SK Integration Patch.esp'
     msg:
       - type: error
@@ -8232,17 +8211,11 @@ plugins:
       - *UsingHomemaker1_50
   - name: 'Homemaker - Streetlights Use Passive Power.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/1478' ]
-    msg:
-      - <<: *uninstallFileUpgradeHomemaker150
-        condition: 'version("Homemaker.esm", "1.50", >=) and version("Homemaker - Streetlights Use Passive Power.esp", "1.50", <)'
   - name: 'Homemaker - Unlocked Institute Objects SK.esp'
     msg:
       - *UsingHomemaker1_50
   - name: 'Homemaker - Unlocked Institute Objects.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/1478' ]
-    msg:
-      - <<: *uninstallFileUpgradeHomemaker150
-        condition: 'version("Homemaker.esm", "1.50", >=) and version("Homemaker - Unlocked Institute Objects.esp", "1.50", <)'
   - name: 'Snap''n Build - Bunker.esp'
     msg: [ *obsolete ]
   - name: 'Snap''n Build - Capsule.esp'
