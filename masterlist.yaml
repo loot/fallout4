@@ -423,20 +423,6 @@ common:
       - lang: ja
         text: 'このファイルを削除し、Homemaker 1.50に更新してください。'
     condition: 'version("Homemaker.esm", "1.50", <)'
-  - &UsingSKE
-    type: error
-    content:
-      - lang: en
-        text: 'This file is not compatible with SKE.'
-      - lang: da
-        text: 'Denne fil er ikke kompatibel med SKE.'
-      - lang: de
-        text: 'Diese Datei ist nicht kompatibel mit SKE.'
-      - lang: es
-        text: 'Este archivo no es compatible con SKE.'
-      - lang: ja
-        text: 'このファイルはSKEとの互換性がありません。'
-    condition: 'active("SettlementKeywords.esm") and version("SettlementKeywords.esm", "1.0", >=)'
 
   - &versionOldX
     type: say
@@ -7133,9 +7119,9 @@ plugins:
   - name: 'Simple Bug Fixes.esp'
     url: []
     group: *fixesGroup
-    msg:
-      - *alreadyInUFO4P
-      - *UsingSKE
+    msg: [ *alreadyInUFO4P ]
+    inc:
+      - 'SettlementKeywords.esm'
   - name: 'bugfix_maglocks_terminal_delay.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/26353' ]
     group: *fixesGroup
@@ -8035,7 +8021,8 @@ plugins:
             text: 'Use OCDecorator.esp Wasteland Workshop version instead: [Download](https://www.nexusmods.com/fallout4/mods/4270)'
           - lang: de
             text: 'Nutzen Sie OCDecorator.esp Wasteland Workshop Version stattdessen: [Download](https://www.nexusmods.com/fallout4/mods/4270)'
-      - *UsingSKE
+    inc:
+      - 'SettlementKeywords.esm'
   - name: 'OCDecorator_FarHarbor.esp'
     msg:
       - type: error
@@ -8044,13 +8031,14 @@ plugins:
             text: 'Use ''OCD FarHarborDLC.esp'' instead: [Download](https://www.nexusmods.com/fallout4/mods/4270)'
           - lang: de
             text: 'Nutzen Sie ''OCD FarHarborDLC.esp'' stattdessen: [Download](https://www.nexusmods.com/fallout4/mods/4270)'
-      - *UsingSKE
+    inc:
+      - 'SettlementKeywords.esm'
   - name: 'WW_SK_PATCH.esp'
-    msg:
-      - *UsingSKE
+    inc:
+      - 'SettlementKeywords.esm'
   - name: 'Jzk_WW_Patch.esp'
-    msg:
-      - *UsingSKE
+    inc:
+      - 'SettlementKeywords.esm'
   # ALL DLC Version 3.x
   - name: 'CW_PATCH.esp'
     msg:
@@ -8059,20 +8047,19 @@ plugins:
     msg:
       - *insteadSKEPatch
   - name: 'DLC_OCD_Patch.esp'
-    msg:
-      - *UsingSKE
+    inc:
+      - 'SettlementKeywords.esm'
   - name: 'DLC_PATCH.esp'
-    msg:
-      - *UsingSKE
+    inc:
+      - 'SettlementKeywords.esm'
   - name: 'DLC_PATCH_ENG.esp'
-    msg:
-      - *UsingSKE
+    inc:
+      - 'SettlementKeywords.esm'
   - name: 'DLC_PATCH_integrated.esp'
     msg:
       - *insteadSKEPatch
   - name: 'DLC_SK_Patch.esp'
     msg:
-      - *UsingSKE
       - type: error
         content:
           - lang: en
@@ -8080,9 +8067,11 @@ plugins:
           - lang: de
             text: 'Das originale SK v0.8 ist nicht kompatibel mit Fallout 4 Patch 1.5.157 oder neuer.'
         condition: '(checksum("SettlementKeywords.esm",8D550871) and active("DLC_SK_Patch.esp")) and version("..\Fallout4.exe", "1.5.157.0", >=)'
+    inc:
+      - 'SettlementKeywords.esm'
   - name: 'DLC_SKE_Patch.esp'
-    msg:
-      - *UsingSKE
+    inc:
+      - 'SettlementKeywords.esm'
   - name: 'FH_PATCH.esp'
     msg:
       - *insteadSKEPatch
@@ -8136,53 +8125,53 @@ plugins:
     msg:
       - *insteadSKEPatch
   - name: 'DLC_MainMenu_Handplaced.esp'
-    msg:
-      - *UsingSKE
+    inc:
+      - 'SettlementKeywords.esm'
   - name: 'HMM-WWorkshop-Compatibility.esp'
-    msg:
-      - *UsingSKE
+    inc:
+      - 'SettlementKeywords.esm'
   - name: 'HMMOCD-WWorkshop-Compatibility.esp'
-    msg:
-      - *UsingSKE
+    inc:
+      - 'SettlementKeywords.esm'
   - name: 'OCD-WWorkshop-Compatibility.esp'
-    msg:
-      - *UsingSKE
+    inc:
+      - 'SettlementKeywords.esm'
   - name: 'BS-SKPatch.esp'
-    msg:
-      - *UsingSKE
+    inc:
+      - 'SettlementKeywords.esm'
   - name: 'BS-HomemakerPatch.esp'
-    msg:
-      - *UsingSKE
+    inc:
+      - 'SettlementKeywords.esm'
   - name: 'SettleObjExpandPack-HM-SnB-Patch.esp'
-    msg:
-      - *UsingSKE
+    inc:
+      - 'SettlementKeywords.esm'
   - name: 'PatchyMcPatcherson-SnB.esp'
-    msg:
-      - *UsingSKE
+    inc:
+      - 'SettlementKeywords.esm'
   - name: 'WastelandWorkshopPatch.esp'
-    msg:
-      - *UsingSKE
+    inc:
+      - 'SettlementKeywords.esm'
   - name: 'FarHarborHomemakerFix.esp'
-    msg:
-      - *UsingSKE
+    inc:
+      - 'SettlementKeywords.esm'
   - name: 'Robot Home Defence - Settlement Keywords.esp'
-    msg:
-      - *UsingSKE
+    inc:
+      - 'SettlementKeywords.esm'
   - name: 'OCD_MO_Patch.esp'
-    msg:
-      - *UsingSKE
+    inc:
+      - 'SettlementKeywords.esm'
   - name: 'MO_Propaganda.esp'
-    msg:
-      - *UsingSKE
+    inc:
+      - 'SettlementKeywords.esm'
   - name: 'MO_HM_Patch.esp'
-    msg:
-      - *UsingSKE
+    inc:
+      - 'SettlementKeywords.esm'
   - name: 'MO_HM_OCD_Patch.esp'
-    msg:
-      - *UsingSKE
+    inc:
+      - 'SettlementKeywords.esm'
   - name: 'SKHMWW.esp'
-    msg:
-      - *UsingSKE
+    inc:
+      - 'SettlementKeywords.esm'
   - name: 'Homemaker - Bunker Disabler SK.esp'
     msg:
       - *UsingHomemaker1_50
