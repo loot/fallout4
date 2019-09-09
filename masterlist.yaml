@@ -212,6 +212,76 @@ common:
       - lang: zh_CN
         text: '只使用一个%1%。'
 
+  - &useVersion
+    type: error
+    content:
+      - lang: en
+        text: 'Use %1% version.'
+      - lang: de
+        text: 'Benutzen Sie die %1% Version.'
+      - lang: ja
+        text: '%1%バージョンを使用してください。'
+      - lang: ru
+        text: 'Используйте версию для %1%'
+  - &useVersionAutomatron
+    <<: *useVersion
+    subs: [ 'Automatron' ]
+    condition: 'active("DLCRobot.esm")'
+  - &useVersionWastelandWorkshop
+    <<: *useVersion
+    subs: [ 'Wasteland Workshop' ]
+    condition: 'active("DLCworkshop01.esm")'
+  - &useVersionFarHarbor
+    <<: *useVersion
+    subs: [ 'Far Harbor' ]
+    condition: 'active("DLCCoast.esm")'
+  - &useVersionContraptionsWorkshop
+    <<: *useVersion
+    subs: [ 'Contraptions Workshop' ]
+    condition: 'active("DLCworkshop02.esm")'
+  - &useVersionVaultTecWorkshop
+    <<: *useVersion
+    subs: [ 'Vault-Tec Workshop' ]
+    condition: 'active("DLCworkshop03.esm")'
+  - &useVersionNukaWorld
+    <<: *useVersion
+    subs: [ 'Nuka-World' ]
+    condition: 'active("DLCNukaWorld.esm")'
+
+  - &useVersionNon
+    type: error
+    content:
+      - lang: en
+        text: 'Use non-%1% version.'
+      - lang: de
+        text: 'Benutzen Sie die Nicht-%1% Version.'
+      - lang: ja
+        text: '%1%バージョン以外を使用してください。'
+  - &useVersionNonAutomatron
+    <<: *useVersionNon
+    subs: [ 'Automatron' ]
+    condition: 'not active("DLCRobot.esm")'
+  - &useVersionNonWastelandWorkshop
+    <<: *useVersionNon
+    subs: [ 'Wasteland Workshop' ]
+    condition: 'not active("DLCworkshop01.esm")'
+  - &useVersionNonFarHarbor
+    <<: *useVersionNon
+    subs: [ 'Far Harbor' ]
+    condition: 'not active("DLCCoast.esm")'
+  - &useVersionNonContraptionsWorkshop
+    <<: *useVersionNon
+    subs: [ 'Contraptions Workshop' ]
+    condition: 'not active("DLCworkshop02.esm")'
+  - &useVersionNonVaultTecWorkshop
+    <<: *useVersionNon
+    subs: [ 'Vault-Tec Workshop' ]
+    condition: 'not active("DLCworkshop03.esm")'
+  - &useVersionNonNukaWorld
+    <<: *useVersionNon
+    subs: [ 'Nuka-World' ]
+    condition: 'not active("DLCNukaWorld.esm")'
+
   - &UsingHomemaker1_50
     type: error
     content:
