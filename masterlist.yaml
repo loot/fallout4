@@ -8046,6 +8046,7 @@ plugins:
     msg:
       - *UsingHomemaker1_50
   - name: 'Homemaker - Bunker Disabler.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/1478' ]
     msg:
       - &uninstallFileUpgradeHomemaker150
         type: error
@@ -8065,6 +8066,7 @@ plugins:
     msg:
       - *UsingHomemaker1_50
   - name: 'Homemaker - Greenhouse and Bunker Disabler.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/1478' ]
     msg:
       - <<: *uninstallFileUpgradeHomemaker150
         condition: 'version("Homemaker.esm", "1.50", >=) and version("Homemaker - Greenhouse and Bunker Disabler.esp", "1.50", <)'
@@ -8072,6 +8074,7 @@ plugins:
     msg:
       - *UsingHomemaker1_50
   - name: 'Homemaker - Greenhouse Disabler.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/1478' ]
     msg:
       - <<: *uninstallFileUpgradeHomemaker150
         condition: 'version("Homemaker.esm", "1.50", >=) and version("Homemaker - Greenhouse Disabler.esp", "1.50", <)'
@@ -8098,6 +8101,7 @@ plugins:
     msg:
       - *UsingHomemaker1_50
   - name: 'Homemaker - Streetlights Use Passive Power.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/1478' ]
     msg:
       - <<: *uninstallFileUpgradeHomemaker150
         condition: 'version("Homemaker.esm", "1.50", >=) and version("Homemaker - Streetlights Use Passive Power.esp", "1.50", <)'
@@ -8105,6 +8109,7 @@ plugins:
     msg:
       - *UsingHomemaker1_50
   - name: 'Homemaker - Unlocked Institute Objects.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/1478' ]
     msg:
       - <<: *uninstallFileUpgradeHomemaker150
         condition: 'version("Homemaker.esm", "1.50", >=) and version("Homemaker - Unlocked Institute Objects.esp", "1.50", <)'
@@ -8183,6 +8188,7 @@ plugins:
         condition: 'file("../Fallout4.exe") and version("../Fallout4.exe", "1.5.157.0", >=)'
       - *UsingSNB
   - name: 'Homemaker.esm'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/1478' ]
     msg:
       # Homemaker 1.34 CRC
       - type: error
