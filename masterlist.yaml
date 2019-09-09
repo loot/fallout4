@@ -69,6 +69,18 @@ common:
       - lang: zh_CN
         text: '不干净。"脏"数据是故意的，这是mod需要的功能。'
 
+  - &harmful
+    type: warn
+    content:
+      - lang: en
+        text: 'This plugin is now considered harmful and should not be used.'
+      - lang: de
+        text: 'Diese Datei wird nun als schädlich angesehen und sollte nicht benutzt werden.'
+      - lang: ja
+        text: '現在では悪影響を与えると見なされているプラグインです。使用しないでください。'
+      - lang: ru
+        text: 'Этот плагин теперь считается небезопасным и не должен использоваться.'
+
   - &InsteadSKEPatch
     type: warn
     content:
