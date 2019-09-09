@@ -40,6 +40,14 @@ common:
     subs: [ 'Unofficial Fallout 4 Patch' ]
     condition: 'active("Unofficial Fallout 4 Patch.esp")'
 
+  - &alsoUseX
+    type: say
+    content:
+      - lang: en
+        text: 'It is highly recommended that you also use %1%.'
+      - lang: de
+        text: 'Es wird dringend empfohlen, dass Sie auch %1% benutzen.'
+
   - &corrupt
     type: warn
     content:
