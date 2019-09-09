@@ -223,12 +223,6 @@ common:
         text: 'このファイルはSnap''n Build.esm v1.9では不要です。更新を行い、削除することを検討してください。'
     condition: 'active("Snap''n Build.esm")'
 
-  - &versionF4SEIncFO4
-    <<: *versionXIncY
-    subs:
-      - '**Script Extender ([F4SE](http://f4se.silverlock.org))**'
-      - '**Fallout 4**'
-
   - &versionOldX
     type: say
     content:
@@ -246,6 +240,7 @@ common:
         text: 'Возможно у вас не установлена новейшая версия %1%. Для работы некоторых модов может требоваться функционал, добавленный в последней версии %1%'
       - lang: zh_CN
         text: '你的%1%似乎不是最新的。有些插件可能需要最新的%1%才能工作。'
+
   - &versionUpToDateX
     type: say
     content:
@@ -265,6 +260,7 @@ common:
         text: 'Ваш %1% обновлен.'
       - lang: zh_CN
         text: '你的%1%是最新的。'
+
   - &versionXIncY
     type: error
     content:
@@ -276,6 +272,11 @@ common:
         text: 'Ihre installierte Version von %1% ist nicht kompatibel mit Ihrer Version von %2%.'
       - lang: ja
         text: 'インストールされている%1%は使用中のバージョンの%2%との互換性がありません。'
+  - &versionF4SEIncFO4
+    <<: *versionXIncY
+    subs:
+      - '**Script Extender ([F4SE](http://f4se.silverlock.org))**'
+      - '**Fallout 4**'
 
   - &wildEdits
     type: warn
