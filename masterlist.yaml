@@ -5,6 +5,170 @@ common:
     display: '[F4SE](http://f4se.silverlock.org)'
 
 # Messages
+  - &alreadyInFO4
+    type: error
+    content:
+      - lang: en
+        text: 'Delete. Already patched in Fallout 4 by Bethesda.'
+      - lang: da
+        text: 'Slet. Allerede rettet i Fallout 4 af Bethesda.'
+      - lang: de
+        text: 'Löschen. Schon in Fallout 4 behoben von Bethesda.'
+      - lang: ja
+        text: '削除してください。既にBethesdaによってFallout 4のパッチが当てられています。'
+  - &alreadyInX
+    type: error
+    content:
+      - lang: en
+        text: 'Delete. Already included in %1%.'
+      - lang: da
+        text: 'Slet. Allerede inkluderet i %1%.'
+      - lang: de
+        text: 'Löschen. Bereits in %1% enthalten.'
+      - lang: es
+        text: 'Borrar. Esta incluido en %1%.'
+      - lang: ja
+        text: '削除してください。既に%1%に含まれています。'
+      - lang: ko
+        text: '삭제하십시오. 이미 %1%에 포함되어 있습니다.'
+      - lang: pl
+        text: 'Usuń. Już zawarte w %1%'
+      - lang: pt
+        text: 'Apagar. Já incluído em %1%.'
+      - lang: pt_BR
+        text: 'Delete. Já icluído em %1%'
+      - lang: ru
+        text: 'Удалите. Уже включено в %1%.'
+      - lang: zh_CN
+        text: '删除。已包含在%1%中。'
+  - &alreadyInUFO4P
+    <<: *alreadyInX
+    subs: [ 'Unofficial Fallout 4 Patch' ]
+    condition: 'active("Unofficial Fallout 4 Patch.esp")'
+
+  - &alsoUseX
+    type: say
+    content:
+      - lang: en
+        text: 'It is highly recommended that you also use %1%.'
+      - lang: de
+        text: 'Es wird dringend empfohlen, dass Sie auch %1% benutzen.'
+
+  - &corrupt
+    type: warn
+    content:
+      - lang: en
+        text: 'This file is corrupt and should not be used.'
+      - lang: de
+        text: 'Diese Datei ist korrupt und sollte nicht benutzt werden.'
+      - lang: es
+        text: 'Este archivo puede corromper tu juego y no debería ser utilizado.'
+      - lang: ja
+        text: 'このファイルは壊れています。使用しないでください。'
+      - lang: pl
+        text: 'Ten plik jest zepsuty i nie powinien być używany.'
+      - lang: pt_BR
+        text: 'Este arquivo está corrompido e não deveria ser utilizado.'
+      - lang: ru
+        text: 'Файл испорчен и не должен использоваться.'
+
+  - &deleteOrDeactivateX
+    type: error
+    content:
+      - lang: en
+        text: 'Delete or deactivate. %1%'
+      - lang: de
+        text: 'Lösche oder deaktiviere. %1%'
+      - lang: ja
+        text: '%1%を削除するか非アクティブにしてください。'
+      - lang: ru
+        text: 'Не забудьте отключить или удалить. %1%'
+    subs: [ '' ]
+
+  - &deletePlugin
+    type: warn
+    content:
+      - lang: en
+        text: 'When using **%1%**. It''s recommended that you deactivate or delete this ESP file, but keep the resources (e.g. meshes, textures) installed with this mod. As they''re still required by **%1%**.'
+      - lang: de
+        text: 'Beim Nutzen von **%1%** ist es empfohlen, dass Sie die ESP-Datei deaktivieren oder löschen, aber die mitgelieferten Mittel (z.B Meshes, Texturen) beibehalten die mit dieser Mod mitinstalliert wurden. Diese werden immer noch von **%1%** vorausgesetzt.'
+      - lang: ja
+        text: '**%1%**を使用中の場合。このespファイルは無効化あるいは削除するのはおすすめしますが、このmodによってインストールされたリソース(メッシュ、テクスチャなど)はそのままにしておいてください。これらは**%1%**によって引き続き必要とされてます。'
+      - lang: ko
+        text: '**%1%** 모드를 사용중일 떈, 이 ESP 파일을 삭제하고 함께 설치된 리소스(예: 메쉬, 텍스쳐)만 남겨두는 걸 권장합니다. 리소스는 **%1%** 모드에서 필요로 합니다.'
+      - lang: pl
+        text: 'Używając **%1%**, jest rekomendowane abyś dezaktywował lub usunął ten plik ESP, ale pozostawił zasoby (siatki, tekstury) zainstalowane z tym modem. Ponieważ są wciąż wymagane przez **%1%**.'
+      - lang: pt
+        text: 'Ao utilizar **%1%**, é recomendado que você desative ou apage este ficheiro ESP, mas mantenha os recursos (ex. meshes, texturas) instalados por este mod. Sendo que os mesmos ainda são necessitados por **%1%**. '
+      - lang: pt_BR
+        text: 'Quando se usa **%1%**, é recomendado que você desative ou delete este arquivo ESP, mas que mantenha os recursos (ex. meshes, texturas) que vieram com esse mod.'
+      - lang: ru
+        text: 'Пока используется **%1%**, рекомендуется отключить или удалить esp этого мода, но оставить установленные ресурсы (meshes, textures). Т.к. они все еще требуются для **%1%**.'
+
+  - &dlcVersion
+    type: say
+    content:
+      - lang: en
+        text: 'This version does not include modifications for DLC content. Consider getting the DLC version instead.'
+      - lang: da
+        text: 'Denne udgave inderholder ikke ændring til DLC-indhold. Overvej at bruge DLC-udgaven i stedet.'
+      - lang: de
+        text: 'Diese Version enthält keine Anpassungen für DLC Inhalte. Die DLC Version sollte anstatt dessen verwendet werden.'
+    condition: 'active("DLCRobot.esm") and active("DLCworkshop01.esm") and active("DLCCoast.esm")'
+
+  - &doNotClean
+    type: say
+    content:
+      - lang: en
+        text: 'Do not clean ITM records, they are intentional and required for the mod to function. It is safe to undelete records, but do not do anything other than that.'
+      - lang: da
+        text: 'Rengør ikke ITM-poster: de er forsætlige og krævede for at mod’en fungerer. Det er sikkert at gendanne poster, men gør ikke andet end dét.'
+      - lang: de
+        text: 'ITM-Einträge in diesem Plugin sollten nicht gesäubert werden, sie sind absichtlich enthalten und werden benötigt, damit die Mod richtig funktioniert. Gelöschte Eintrage wiederherzustellen ist in Ordnung, alles andere aber nicht.'
+      - lang: es
+        text: 'No limpiar las referencias ITM (iguales al master), ya que son intencionales y necesarias para que el Mod funcione. Sí es seguro restaurar las UDR (referencias borradas), pero no haga más que eso.'
+      - lang: ja
+        text: 'IMTレコードはクリーンしないでください。これらは意図的に残されたデータであり、Modを機能させるために必要です。削除の取り消しは安全に行えますが、それ以外のことは行わないでください。'
+      - lang: ko
+        text: 'ITM 자료를 삭제하지 마십시오. 모드가 정상 작동하기 위해 의도적으로 남겨진 자료입니다. 삭제를 취소하는 것 이외에는 안전하지 않습니다.'
+      - lang: pl
+        text: 'Nie czyść rekordów ITM, są one zamierzone i potrzebne do działania tego moda. Jest bezpieczne aby cofnąć usunięcie rekordów (UDR), ale nie rób nic innego ponad to. '
+      - lang: pt
+        text: 'Não apagar os registos ITM. São intencionais e necessárias para o funcionamento do mod. É seguro restaurar os registos, mas não faça nada mais que isso.'
+      - lang: pt_BR
+        text: 'Não apague os registros ITM. Eles são intencionais e necessários para que o mod funcione. É seguro restaurar os registros, mas nada mais além disso.'
+      - lang: ru
+        text: 'Не очищать. "Грязные" правки оставлены специально и требуются для функционирования мода.'
+      - lang: zh_CN
+        text: '不干净。"脏"数据是故意的，这是mod需要的功能。'
+
+  - &harmful
+    type: warn
+    content:
+      - lang: en
+        text: 'This plugin is now considered harmful and should not be used.'
+      - lang: de
+        text: 'Diese Datei wird nun als schädlich angesehen und sollte nicht benutzt werden.'
+      - lang: ja
+        text: '現在では悪影響を与えると見なされているプラグインです。使用しないでください。'
+      - lang: ru
+        text: 'Этот плагин теперь считается небезопасным и не должен использоваться.'
+
+  - &insteadSKEPatch
+    type: warn
+    content:
+      - lang: en
+        text: 'This file changes the way the base game categorizes settlement building menus. It is recommended to uninstall this file and use only files and patches compatible with SKE.'
+      - lang: da
+        text: 'Denne fil ændrer Form-lister i vanilje menuer. Overvej at bruge en kompatibel SKE-lap i stedet.'
+      - lang: de
+        text: 'Diese Datei ändert, wie das Basis-Spiel die Bau-Menüs der Siedlungen kategorisiert. Es wird empfohlen, diese Datei zu deinstallieren und nur Dateien und Patches zu verwenden die kompatibel sind mit SKE.'
+      - lang: es
+        text: 'Este archivo cambia la forma en que el juego base clasifica los menús de la construcción de asentamientos. Se recomienda desinstalar este archivo y utilizar sólo los archivos y parches compatibles con SKE.'
+      - lang: ja
+        text: 'このファイルはゲームにおける集落の建設メニューの分類方法を変更します。このファイルをアンインストールし、SKEと互換性のあるファイルおよびパッチのみ使用することを推奨します。'
+    condition: 'active("SettlementKeywords.esm") and version("SettlementKeywords.esm", "1.0", >=)'
+
   - &obsolete
     type: say
     content:
@@ -24,107 +188,79 @@ common:
         text: 'Устарело. Обновите до последней версии.'
       - lang: zh_CN
         text: '已过时。请升级到最新版本。'
-  - &AlreadyInFO4
-    type: error
-    content:
-      - lang: en
-        text: 'Delete. Already patched in Fallout 4 by Bethesda.'
-      - lang: da
-        text: 'Slet. Allerede rettet i Fallout 4 af Bethesda.'
-      - lang: de
-        text: 'Löschen. Schon in Fallout 4 behoben von Bethesda.'
-      - lang: ja
-        text: '削除してください。既にBethesdaによってFallout 4のパッチが当てられています。'
-  - &AlreadyInX
-    type: error
-    content:
-      - lang: en
-        text: 'Delete. Already included in %1%.'
-      - lang: da
-        text: 'Slet. Allerede inkluderet i %1%.'
-      - lang: de
-        text: 'Löschen. Bereits in %1% enthalten.'
-      - lang: es
-        text: 'Borrar. Esta incluido en %1%.'
-      - lang: ja
-        text: '削除してください。既に%1%に含まれています。'
-      - lang: ko
-        text: '삭제하십시오. 이미 %1%에 포함되어 있습니다.'
-      - lang: ru
-        text: 'Удалите. Уже включено в %1%.'
-      - lang: zh_CN
-        text: '删除。已包含在%1%中。'
-  - &AlreadyInUFO4P
-    <<: *AlreadyInX
-    subs: [ 'Unofficial Fallout 4 Patch' ]
-    condition: 'active("Unofficial Fallout 4 Patch.esp")'
-  - &useOnlyOneX
-    type: warn
-    content:
-      - lang: en
-        text: 'Use only one %1%.'
-      - lang: da
-        text: 'Brug kun én %1%.'
-      - lang: de
-        text: 'Nutzen Sie nur einen %1%.'
-      - lang: es
-        text: 'Utilizar solo un %1%.'
-      - lang: ja
-        text: '%1%は一つだけ使用してください。'
-      - lang: ko
-        text: '%1%을 한개만 사용하십시오.'
-      - lang: ru
-        text: 'Используйте только один %1%.'
-      - lang: zh_CN
-        text: '只使用一个%1%。'
-  - &doNotClean
+
+  - &onlyUseSmashOrBash
     type: say
     content:
       - lang: en
-        text: 'Do not clean ITM records, they are intentional and required for the mod to function. It is safe to undelete records, but do not do anything other than that.'
+        text: 'Can be used with a %1% but would require additional work. A Smashed Patch or Bash Patch should be used independently of one another.'
       - lang: da
-        text: 'Rengør ikke ITM-poster: de er forsætlige og krævede for at mod’en fungerer. Det er sikkert at gendanne poster, men gør ikke andet end dét.'
+        text: 'Kan bruges sammen med %1% men det vil kræve ekstra arbejde. Smashed Patch og Bash Patch bør bruges uafhængigt af hinanden.'
       - lang: de
-        text: 'ITM-Einträge in diesem Plugin sollten nicht gesäubert werden, sie sind absichtlich enthalten und werden benötigt, damit die Mod richtig funktioniert. Gelöschte Eintrage wiederherzustellen ist in Ordnung, alles andere aber nicht.'
+        text: 'Kann benutzt werden mit einem %1%, würde jedoch weitere Arbeit benötigen. Ein Smashed Patch oder Bash Patch sollte unabhängig voneinander verwendet werden.'
       - lang: es
-        text: 'No limpiar las referencias ITM (iguales al master), ya que son intencionales y necesarias para que el Mod funcione. Sí es seguro restaurar las UDR (referencias borradas), pero no haga más que eso.'
+        text: 'Se puede utilizar con un %1% pero requeriría un trabajo adicional. Deben de estar utilizado un Smashed Patch o un Bash Patch independiente del uno el otro.'
       - lang: ja
-        text: 'IMTレコードはクリーンしないでください。これらは意図的に残されたデータであり、Modを機能させるために必要です。削除の取り消しは安全に行えますが、それ以外のことは行わないでください。'
-      - lang: ru
-        text: 'Не очищать. "Грязные" правки оставлены специально и требуются для функционирования мода.'
-      - lang: zh_CN
-        text: '不干净。"脏"数据是故意的，这是mod需要的功能。'
-  - &patchProvided
-    type: warn
-    content:
-      - lang: en
-        text: 'You seem to be using %1%, but you have not enabled a compatibility patch for this mod. A compatibility patch is provided on this plugin''s mod page.'
-      - lang: de
-        text: 'Sie scheinen %1% zu nutzen, aber Sie haben keinen Kompatibilitätspatch für diese Mod aktiviert. Ein Kompatibilitätspatch wird auf dieser Plugins Mod-Seite zur Verfügung gestellt.'
-  - &patchIncluded
-    type: warn
-    content:
-      - lang: en
-        text: 'You seem to be using %1%, but you have not enabled a compatibility patch for this mod. A compatibility patch is included with this plugin''s installer.'
-      - lang: de
-        text: 'Sie scheinen %1% zu nutzen, aber Sie haben keinen Kompatibilitätspatch für diese Mod aktiviert. Ein Kompatibilitätspatch ist enthalten mit diesen Plugins Installer.'
+        text: '%1%と同時に使用できますが、追加作業が必要となります。Smashed PatchかBash Patchはそれぞれ単独で使用してください。'
+
   - &patch3rdParty
     type: warn
     content:
       - lang: en
-        text: 'You seem to be using %1%, but you have not enabled a compatibility patch for this mod. A third party patch is available here: %2%'
+        text: 'You seem to be using **%1%**, but you have not enabled a compatibility patch for this mod. A third party patch is available here: %2%'
       - lang: de
-        text: 'Sie scheinen %1% zu nutzen, aber Sie haben keinen Kompatibilitätspatch für diese Mod aktiviert. Ein Patch von Dritten ist hier verfügbar: %2%'
-  - &dlcVersion
-    type: say
+        text: 'Sie scheinen **%1%** zu nutzen, aber Sie haben keinen Kompatibilitätspatch für diese Mod aktiviert. Ein Patch von Dritten ist hier verfügbar: %2%'
+      - lang: ja
+        text: '**%1%**を使用しているようですが、このmodの互換性パッチが有効になっていません。サードパーティのパッチはここで入手できます:%2%'
+      - lang: ko
+        text: '**%1%** 모드와 사용하기 위한 호환성 패치가 작동 중이지 않습니다. 제3자 제공 호환성 패치는 여기에서 다운로드 가능합니다: %2%'
+      - lang: pl
+        text: 'Wygląda na to że używasz **%1%**, ale nie masz aktywnej łatki zgodności dla tego moda. Łatka trzeciej strony jest dostępna tutaj: %2%'
+      - lang: pt
+        text: 'Você aparenta estar a utilizar **%1%**, mas não ativou o patch de compatibilidade para este mod. Um patch feito por terceiros está disponível aqui: %2%'
+      - lang: pt_BR
+        text: 'Você aparenta estar usando **%1%**, mas não habilitou o patch de compatibilidade para este mod. Um patch feito por terceiros está disponível aqui: %2%'
+      - lang: ru
+        text: 'Похоже, что используется **%1%**, но патч совместимости для него не был подключен. Патч совместимости можно найти здесь: %2%'
+  - &patchIncluded
+    type: warn
     content:
       - lang: en
-        text: 'This version does not include modifications for DLC content. Consider getting the DLC version instead.'
-      - lang: da
-        text: 'Denne udgave inderholder ikke ændring til DLC-indhold. Overvej at bruge DLC-udgaven i stedet.'
+        text: 'You seem to be using **%1%**, but you have not enabled a compatibility patch for this mod. A compatibility patch is included with this plugin''s installer.'
       - lang: de
-        text: 'Diese Version enthält keine Anpassungen für DLC Inhalte. Die DLC Version sollte anstatt dessen verwendet werden.'
-    condition: 'active("DLCRobot.esm") and active("DLCworkshop01.esm") and active("DLCCoast.esm")'
+        text: 'Sie scheinen **%1%** zu nutzen, aber Sie haben keinen Kompatibilitätspatch für diese Mod aktiviert. Ein Kompatibilitätspatch ist enthalten mit dem Installer dieses Plugins.'
+      - lang: ja
+        text: '**%1%**を使用しているようですが、このmodの互換性パッチが有効になっていません。互換性パッチは、このプラグインのインストーラーに含まれています。'
+      - lang: ko
+        text: '**%1%** 모드와 사용하기 위한 호환성 패치가 작동 중이지 않습니다. 호환성 패치는 이 플러그인의 인스톨러에 포함되어 있습니다.'
+      - lang: pl
+        text: 'Wygląda na to że używasz **%1%**, ale nie masz aktywnej łatki zgodności dla tego moda. Łatka zgodności jest dostarczona wraz z instalatorem tej wtyczki.'
+      - lang: pt
+        text: 'Você aparenta estar a utilizar **%1%**, mas não ativou o patch de compatibilidade para este mod. Um patch de compatibilidade está incluído com o instalador do plugin'
+      - lang: pt_BR
+        text: 'Você aparenta estar usando **%1%**, mas não habilitou o patch de compatibilidade para este mod. Um patch de compatibilidade está incluso com o instalador desse plugin.'
+      - lang: ru
+        text: 'Похоже, что используется **%1%**, но патч совместимости для него не был подключен. Патч совместимости можно найти в установщике плагина.'
+  - &patchProvided
+    type: warn
+    content:
+      - lang: en
+        text: 'You seem to be using **%1%**, but you have not enabled a compatibility patch for this mod. A compatibility patch is provided on this plugin''s mod page.'
+      - lang: de
+        text: 'Sie scheinen **%1%** zu nutzen, aber Sie haben keinen Kompatibilitätspatch für diese Mod aktiviert. Ein Kompatibilitätspatch wird auf dieser Plugins Mod-Seite zur Verfügung gestellt.'
+      - lang: ja
+        text: '**%1%**を使用しているようですが、このmodの互換性パッチが有効になっていません。互換性パッチは、このプラグインのmodページにあります。.'
+      - lang: ko
+        text: '**%1%** 모드와 사용하기 위한 호환성 패치가 작동 중이지 않습니다. 호환성 패치는 이 플러그인의 모드 페이지에서 제공 중입니다.'
+      - lang: pl
+        text: 'Wygląda na to że używasz **%1%**, ale nie masz aktywnej łatki zgodności dla tego moda. Łatka zgodności jest dostarczona na stronie internetowej tej wtyczki.'
+      - lang: pt
+        text: 'Você aparenta estar a utilizar **%1%**, mas não ativou o patch de compatibilidade para este mod. Um patch de compatibilidade está disponível na página mod deste plugin.'
+      - lang: pt_BR
+        text: 'Você aparenta estar usando **%1%**, mas não habilitou o patch de compatibilidade para este mod. Um patch de compatibilidade é provido na página desse plugin.'
+      - lang: ru
+        text: 'Похоже, что используется **%1%**, но патч совместимости для него не был подключен. Патч совместимости можно найти на странице плагина.'
+
   - &requiresF4SE
     type: error
     content:
@@ -144,75 +280,135 @@ common:
         text: 'У вас установлен %1%, но F4SE не найден! Смотрите страницу загрузки [F4SE](http://f4se.silverlock.org).'
       - lang: zh_CN
         text: '你已经安装了%1%，但是未发现F4SE！请查看F4SE的下载页面：[F4SE](http://f4se.silverlock.org)。'
-  - &SmashedVsBashedPatch
-    type: say
-    content:
-      - lang: en
-        text: 'Can be used with a %1% but would require additional work. A Smashed Patch or Bash Patch should be used independently of one another.'
-      - lang: da
-        text: 'Kan bruges sammen med %1% men det vil kræve ekstra arbejde. Smashed Patch og Bash Patch bør bruges uafhængigt af hinanden.'
-      - lang: de
-        text: 'Kann benutzt werden mit einem %1%, würde jedoch weitere Arbeit benötigen. Ein Smashed Patch oder Bash Patch sollte unabhängig voneinander verwendet werden.'
-      - lang: es
-        text: 'Se puede utilizar con un %1% pero requeriría un trabajo adicional. Deben de estar utilizado un Smashed Patch o un Bash Patch independiente del uno el otro.'
-      - lang: ja
-        text: '%1%と同時に使用できますが、追加作業が必要となります。Smashed PatchかBash Patchはそれぞれ単独で使用してください。'
-  - &UsingSKE
-    type: error
-    content:
-      - lang: en
-        text: 'This file is not compatible with SKE.'
-      - lang: da
-        text: 'Denne fil er ikke kompatibel med SKE.'
-      - lang: de
-        text: 'Diese Datei ist nicht kompatibel mit SKE.'
-      - lang: es
-        text: 'Este archivo no es compatible con SKE.'
-      - lang: ja
-        text: 'このファイルはSKEとの互換性がありません。'
-    condition: 'active("SettlementKeywords.esm") and version("SettlementKeywords.esm", "1.0", >=)'
-  - &InsteadSKEPatch
+
+  - &requiresX
     type: warn
     content:
       - lang: en
-        text: 'This file changes the way the base game categorizes settlement building menus. It is recommended to uninstall this file and use only files and patches compatible with SKE.'
-      - lang: da
-        text: 'Denne fil ændrer Form-lister i vanilje menuer. Overvej at bruge en kompatibel SKE-lap i stedet.'
+        text: 'Requires: %1%'
       - lang: de
-        text: 'Diese Datei ändert, wie das Basis-Spiel die Bau-Menüs der Siedlungen kategorisiert. Es wird empfohlen, diese Datei zu deinstallieren und nur Dateien und Patches zu verwenden die kompatibel sind mit SKE.'
+        text: 'Benötigt: %1%'
       - lang: es
-        text: 'Este archivo cambia la forma en que el juego base clasifica los menús de la construcción de asentamientos. Se recomienda desinstalar este archivo y utilizar sólo los archivos y parches compatibles con SKE.'
+        text: 'Requiere: %1%'
       - lang: ja
-        text: 'このファイルはゲームにおける集落の建設メニューの分類方法を変更します。このファイルをアンインストールし、SKEと互換性のあるファイルおよびパッチのみ使用することを推奨します。'
-    condition: 'active("SettlementKeywords.esm") and version("SettlementKeywords.esm", "1.0", >=)'
-  - &UsingSNB
+        text: '要: %1%'
+      - lang: ru
+        text: 'Требуется: %1%'
+
+  - &semiCompatible
+    type: say
+    content:
+      - lang: en
+        text: '%1% is not fully compatible with this mod. %2%'
+      - lang: de
+        text: '%1% ist nicht voll kompatibel mit dieser Mod. %2%'
+      - lang: ja
+        text: '%1%は%2%と完全な互換性がありません。'
+      - lang: ko
+        text: '%1% 모드는 이 모드와 완벽히 호환되지 않습니다. %2%'
+      - lang: pt
+        text: '%1% não é totalmente compatível com este mod. %2%'
+      - lang: pt_BR
+        text: '%1% não é completamente compatível com este mod. %2%'
+      - lang: ru
+        text: '%1% не полностью совместим с этим модом. %2%'
+
+  - &useOnlyOneX
+    type: warn
+    content:
+      - lang: en
+        text: 'Use only one %1%.'
+      - lang: da
+        text: 'Brug kun én %1%.'
+      - lang: de
+        text: 'Nutzen Sie nur einen %1%.'
+      - lang: es
+        text: 'Utilizar solo un %1%.'
+      - lang: ja
+        text: '%1%は一つだけ使用してください。'
+      - lang: ko
+        text: '%1%을 한개만 사용하십시오.'
+      - lang: pl
+        text: 'Używa tylko jednego %1%'
+      - lang: pt
+        text: 'Utilizar apenas um %1%.'
+      - lang: pt_BR
+        text: 'Utilize apenas um %1%'
+      - lang: ru
+        text: 'Используйте только один %1%.'
+      - lang: zh_CN
+        text: '只使用一个%1%。'
+
+  - &useVersion
     type: error
     content:
       - lang: en
-        text: 'This file is unneeded with Snap''n Build.esm v1.9.  Consider upgrading and removing this file.'
-      - lang: da
-        text: 'Denne fil behøves ikke med Snap''n Build.esm v1.9. Overvej at opgradere og fjerne denne fil.'
+        text: 'Use %1% version.'
       - lang: de
-        text: 'Diese Datei ist überflüssig mit Snap''n Build.esm v1.9.  Erwäge das Upgraden oder Löschen dieser Datei.'
-      - lang: es
-        text: 'No se requiere este archivo con Snap''n Build.esm version 1.9.  Considere actualizando y desinstalando este archivo.'
+        text: 'Benutzen Sie die %1% Version.'
       - lang: ja
-        text: 'このファイルはSnap''n Build.esm v1.9では不要です。更新を行い、削除することを検討してください。'
-    condition: 'active("Snap''n Build.esm")'
-  - &UsingHomemaker1_50
+        text: '%1%バージョンを使用してください。'
+      - lang: ru
+        text: 'Используйте версию для %1%'
+  - &useVersionAutomatron
+    <<: *useVersion
+    subs: [ 'Automatron' ]
+    condition: 'active("DLCRobot.esm")'
+  - &useVersionWastelandWorkshop
+    <<: *useVersion
+    subs: [ 'Wasteland Workshop' ]
+    condition: 'active("DLCworkshop01.esm")'
+  - &useVersionFarHarbor
+    <<: *useVersion
+    subs: [ 'Far Harbor' ]
+    condition: 'active("DLCCoast.esm")'
+  - &useVersionContraptionsWorkshop
+    <<: *useVersion
+    subs: [ 'Contraptions Workshop' ]
+    condition: 'active("DLCworkshop02.esm")'
+  - &useVersionVaultTecWorkshop
+    <<: *useVersion
+    subs: [ 'Vault-Tec Workshop' ]
+    condition: 'active("DLCworkshop03.esm")'
+  - &useVersionNukaWorld
+    <<: *useVersion
+    subs: [ 'Nuka-World' ]
+    condition: 'active("DLCNukaWorld.esm")'
+
+  - &useVersionNon
     type: error
     content:
       - lang: en
-        text: 'Uninstall this file and upgrade to Homemaker 1.50.'
-      - lang: da
-        text: 'Afinstallér denne fil og opgradér til Homemaker 1.50.'
+        text: 'Use non-%1% version.'
       - lang: de
-        text: 'Deinstalliere diese Datei und upgrade zu Homemaker 1.50.'
-      - lang: es
-        text: 'Desinstale este archivo y actualizar a Homemaker 1.50.'
+        text: 'Benutzen Sie die Nicht-%1% Version.'
       - lang: ja
-        text: 'このファイルを削除し、Homemaker 1.50に更新してください。'
-    condition: 'version("Homemaker.esm", "1.50", <)'
+        text: '%1%バージョン以外を使用してください。'
+  - &useVersionNonAutomatron
+    <<: *useVersionNon
+    subs: [ 'Automatron' ]
+    condition: 'not active("DLCRobot.esm")'
+  - &useVersionNonWastelandWorkshop
+    <<: *useVersionNon
+    subs: [ 'Wasteland Workshop' ]
+    condition: 'not active("DLCworkshop01.esm")'
+  - &useVersionNonFarHarbor
+    <<: *useVersionNon
+    subs: [ 'Far Harbor' ]
+    condition: 'not active("DLCCoast.esm")'
+  - &useVersionNonContraptionsWorkshop
+    <<: *useVersionNon
+    subs: [ 'Contraptions Workshop' ]
+    condition: 'not active("DLCworkshop02.esm")'
+  - &useVersionNonVaultTecWorkshop
+    <<: *useVersionNon
+    subs: [ 'Vault-Tec Workshop' ]
+    condition: 'not active("DLCworkshop03.esm")'
+  - &useVersionNonNukaWorld
+    <<: *useVersionNon
+    subs: [ 'Nuka-World' ]
+    condition: 'not active("DLCNukaWorld.esm")'
+
   - &versionOldX
     type: say
     content:
@@ -230,6 +426,7 @@ common:
         text: 'Возможно у вас не установлена новейшая версия %1%. Для работы некоторых модов может требоваться функционал, добавленный в последней версии %1%'
       - lang: zh_CN
         text: '你的%1%似乎不是最新的。有些插件可能需要最新的%1%才能工作。'
+
   - &versionUpToDateX
     type: say
     content:
@@ -249,6 +446,7 @@ common:
         text: 'Ваш %1% обновлен.'
       - lang: zh_CN
         text: '你的%1%是最新的。'
+
   - &versionXIncY
     type: error
     content:
@@ -260,6 +458,16 @@ common:
         text: 'Ihre installierte Version von %1% ist nicht kompatibel mit Ihrer Version von %2%.'
       - lang: ja
         text: 'インストールされている%1%は使用中のバージョンの%2%との互換性がありません。'
+      - lang: ko
+        text: '현재 설치된 %1%의 버전은 %2%의 버전과 호환되지 않습니다.'
+      - lang: pl
+        text: 'Twoja zainstalowana wersja %1% nie jest kompatybilna z twoją wersją %2%.'
+      - lang: pt
+        text: 'A sua versão instalada de %1% não é compatível com a sua versão de %2%.'
+      - lang: pt_BR
+        text: 'A sua versão instalada de %1% não é compatível com a sua versão de %2%.'
+      - lang: ru
+        text: 'Установленная у вас версия %1% несовместима с версией %2%.'
   - &versionF4SEIncFO4
     <<: *versionXIncY
     subs:
@@ -275,6 +483,16 @@ common:
         text: 'Dette plugin indeholder ukontrollerede redigeringer udover ITM- og UDR-poster og slettede navmesher og kan behøve yderligere manuel oprydning for ikke at forstyrre andre mods. %1%'
       - lang: de
         text: 'Dieses Plugin enthält wilde Modifikationen weit über ITM-, und UDR Einträge und entfernte Navmeshes hinaus und benötigt vermutlich mehr manuelle Säuberung um andere Mods nicht zu beeinträchtigen. %1%'
+      - lang: ja
+        text: 'このプラグインにはITMおよびUDRレコード以外の誤った編集(Wild Edit)が含まれており、navmeshが削除されています。他のmodと干渉しないように、追加の手動クリーニングが必要になる場合があります。%1%'
+      - lang: pl
+        text: 'Ta wtyczka zawiera dzikie edycje (Wild Edit) poza rekordami ITM i UDR oraz usunięte siatki nawigacyjne i może wymagać dodatkowego ręcznego czyszczenia aby nie kolidować z innymi modami. %1%'
+      - lang: pt
+        text: 'Este plugin contém edições selvagens (Wild Edits) para além dos registros ITM e UDR, e Navmeshes apagadas. Pode requerer limpeza manual adicional de forma a não interferir com outros mods. %1%'
+      - lang: pt_BR
+        text: 'Este plugin contém edições não-intencionais (Wild Edits) além dos registros ITM e UDR e Navmeshes deletadas e pode requerer limpeza manual adicional de forma que não interfira com outros mods. %1%'
+      - lang: ru
+        text: 'Плагин содержит дикие правки, кроме ITM, UDR записей и удаленных навмешей и может потребовать дополнительной ручной чистки, чтобы не пересекаться с другими модами. %1%'
     subs: [ '' ]
 
 # Cleaning data
@@ -285,6 +503,16 @@ common:
         text: 'An explanation of Dirty Edits is available [here](https://tes5edit.github.io/docs/5-mod-cleaning-and-error-checking.html#Apendix-A).'
       - lang: de
         text: 'Eine englische Säuberungsanleitung ist [hier](https://tes5edit.github.io/docs/5-mod-cleaning-and-error-checking.html#s_5-3) verfügbar.'
+      - lang: ja
+        text: 'Dirty Editsについては[ここ](https://tes5edit.github.io/docs/5-mod-cleaning-and-error-checking.html#Apendix-A)を参照してください。'
+      - lang: pl
+        text: 'Wytłumaczenie o brudnych wtyczkach (Dirty Edits) jest dostępne [tutaj](https://tes5edit.github.io/docs/5-mod-cleaning-and-error-checking.html#Apendix-A).'
+      - lang: pt
+        text: 'Uma explição em inglês de Edição Suja (Dirty Edits) está disponível [aqui](https://tes5edit.github.io/docs/5-mod-cleaning-and-error-checking.html#Apendix-A).'
+      - lang: pt_BR
+        text: 'Uma explicação de Edições Sujas (Dirty Edits) está disponível [aqui](https://tes5edit.github.io/docs/5-mod-cleaning-and-error-checking.html#Apendix-A).'
+      - lang: ru
+        text: 'Объяснение по грязным правкам доступно [здесь](https://tes5edit.github.io/docs/5-mod-cleaning-and-error-checking.html#Apendix-A).'
   - &quickClean
     util: '[FO4Edit](https://www.nexusmods.com/fallout4/mods/2737) **Quick Auto Clean**'
     info:
@@ -292,6 +520,18 @@ common:
         text: 'Due to Improvements made to the cleaning process with the official release of xEdit 4.0.x+, any mods which were verified as clean with older versions of xEdit may now require additional cleaning. A guide for running xEdit 4.0.x+ in **Quick Auto Clean** mode can be found [here](https://tes5edit.github.io/docs/5-mod-cleaning-and-error-checking.html#s_5-3-4).'
       - lang: de
         text: 'Wegen Verbesserungen die dem Säuberungsprozess mit der offiziellen Veröffentlichung von xEdit 4.0.x+ zugute gekommen sind, müssen eventuell sämtliche Mods die mithilfe älterer Versionen von xEdit als sauber verifiziert wurden, erneut gesäubert werden. Eine englische Anleitung zum Ausführen von xEdit 4.0.x+ im **Schnell-Automatisch-Säubern** Modus kann [hier](https://tes5edit.github.io/docs/5-mod-cleaning-and-error-checking.html#s_5-3-4) aufgefunden werden.'
+      - lang: ja
+        text: 'xEdit 4.0.x+の公式リリースでクリーニングプロセスが改善されたため、以前のバージョンのxEditでクリーニングした場合は、追加のクリーニングが必要になることがあります。xEdit 4.0.x+を**Quick Auto Clean**モードで実行するためのガイドがあります[ここ] (https://tes5edit.github.io/docs/5-mod-cleaning-and-error-checking.html#s_5-3-4)。'
+      - lang: ko
+        text: 'xEdit 4.0.x+ 공식 출시와 함께 소개된 향상된 청소 기능으로 인해, 구 버전의 xEdit로 검증되었던 모드는 추가적인 청소가 필요할 수 있습니다. xEdit 4.0.x+ **Quick Auto Clean** 모드 실행 설명서는 [여기](https://tes5edit.github.io/docs/5-mod-cleaning-and-error-checking.html#s_5-3-4)에서 찾을 수 있습니다. '
+      - lang: pl
+        text: 'W związku z ulepszeniami w procesie czyszczenia z oficjalnym wydaniem xEdit 4.0.x+, każdy mod zweryfikowany jako czysty w starszej wersji xEdit może wymagać dodatkowego czyszczenia. Poradnik jak używać xEdit 4.0.x+ w trybie **Szybkie Auto Czyszczenie** można znaleźć [tutaj](https://tes5edit.github.io/docs/5-mod-cleaning-and-error-checking.html#s_5-3-4).'
+      - lang: pt
+        text: 'Devido a melhorias feitas ao processo de limpeza com o lançamento oficial de xEdit 4.0.x+, qualquer mod que seja verificado como limpo por versões anteriores de xEdit podem agora necessitar de limpeza adicional. Um guia em inglês para utilizar xEdit 4.0.x+ no modo **Limpeza Automática Rápida** pode ser encontrado [aqui](https://tes5edit.github.io/docs/5-mod-cleaning-and-error-checking.html#s_5-3-4).'
+      - lang: pt_BR
+        text: 'Devido a melhorias feitas ao processo de limpeza com o lançamento oficial do xEdit 4.0.x+, quaisquer mods que foram verificados como limpos com versões antigas do xEdit podem agora necessitar de limpeza adicional. Uma guia para utilizar o xEdit 4.0.x+ no modo **Limpeza Automática Rápida** (Quick Auto Clean) pode ser encontrado [aqui](https://tes5edit.github.io/docs/5-mod-cleaning-and-error-checking.html#s_5-3-4).'
+      - lang: ru
+        text: 'Из-за изменений в способе очистки в версии xEdit 4.0.x+, моды, что были проверены как чистые с предыдущими версиями xEdit могут вновь потребовать очистки. Руководство по запуску xEdit 4.0.x+ в режиме **Быстрой очистки** может быть найдено [здесь](https://tes5edit.github.io/docs/5-mod-cleaning-and-error-checking.html#s_5-3-4).'
   - &reqManualFix
     util: '[FO4Edit](https://www.nexusmods.com/fallout4/mods/2737) **Quick Auto Clean**'
     info:
@@ -299,17 +539,22 @@ common:
         text: 'It is strongly recommended not to use mods that contain **Deleted navmeshes** as they''re known to cause crashes. **Deleted navmeshes** must be corrected manually(A complex process that should be done by the mod author). More information on **Deleted navmeshes** is provided [here](https://www.creationkit.com/index.php?title=Fixing_Navmesh_Deletion_Tutorial).'
       - lang: de
         text: 'Es wird streng empfohlen, keine Mods zu verwenden die **Gelöschte Navmeshes** beinhalten, da diese dafür bekannt sind Abstürze auszulösen. **Gelöschte Navmeshes** müssen manuell korrigiert werden (ein komplexer Prozess der vom Mod-Autor erledigt werden sollte). Mehr Informationen über **Gelöschte Navmeshes** werden [hier](https://www.creationkit.com/index.php?title=Fixing_Navmesh_Deletion_Tutorial) geboten.'
+      - lang: ja
+        text: '**navmeshの削除**を含むmodは使用しないことを強く推奨します。クラッシュの原因になります。**navmeshの削除**は手動で修正する必要があります(mod作成者が行う必要がある複雑なプロセスです)。**navmeshの削除**の詳細については[ここ](https://www.creationkit.com/index.php?title=Fixing_Navmesh_Deletion_Tutorial)を参照してください。'
+      - lang: pl
+        text: 'Jest silnie zalecane aby nie używać modów zawierających **Usunięte navmeshe** jako że są znane jako powód awarii. **Usunięte navmeshe** muszą zostać poprawione ręcznie(skomplikowany proces który powinien być wykonany przez autora modu). Więcej informacji o **Usuniętych navmeshach** można znaleźć [tutaj](https://www.creationkit.com/index.php?title=Fixing_Navmesh_Deletion_Tutorial).'
+      - lang: pt
+        text: 'É fortemente recomandado não utilizar mods que contenham **Navmeshes apagados** sendo que são conhecidos por causar falhas. **Navmeshes apagados** devem ser corrigidos manualmente(Um processo complexo que deve ser feito pelo autor do mod). Mais informação sobre **Navmeshes apagados** está disponível em inglês [aqui] (https://www.creationkit.com/index.php?title=Fixing_Navmesh_Deletion_Tutorial).'
+      - lang: pt_BR
+        text: 'É fortemente recomendade que você não utilize mods que contenham **Navmeshes deletados** pois eles são conhecidos por causar crashes. **Navmeshes deletados devem ser corrigos manualmente (Um processo complexo que deve ser feito pelo autor do mod). Mais informações em **Navmeshes deletadas** está disponível [aqui](https://www.creationkit.com/index.php?title=Fixing_Navmesh_Deletion_Tutorial).'
+      - lang: ru
+        text: 'Настоятельно не рекомендуется использовать моды с **удаленными навмешами** т.к. известно, что они вызывают вылеты. **удаленные навмеши** должны быть исправлены вручную(Комплексный процесс, который должен быть выполнен автором мода). Больше информации о **удаленных навмешах** можно найти [здесь](https://www.creationkit.com/index.php?title=Fixing_Navmesh_Deletion_Tutorial).'
+
+bash_tags:
+  - 'Delev'
+  - 'Relev'
 
 globals:
-  - type: warn
-    content:
-      - lang: en
-        text: 'This version of LOOT has inferior handling of Creation Club plugins. Support for these are therefore limited in versions prior to LOOT 0.13.1. It is recommended to update as soon as possible.'
-      - lang: da
-        text: 'Denne version af LOOT har begrænset understøttelse af Creation Club-plugins. Det er derfor anbefalet at opdatere til LOOT 0.13.1 eller senere hurtigst muligt.'
-      - lang: de
-        text: 'Diese Version von LOOT hat eine minderwertige Handhabung von Creation Club-Plugins. Unterstützung für diese ist daher limitiert in Versionen älter als LOOT 0.13.1. Es wird empfohlen so bald wie möglich zu Updaten.'
-    condition: 'version("LOOT", "0.13.1.0", <) and file("cc[A-Z]{3}FO4[0-9]{3}-[a-zA-Z0-9()]+\.es(l|m)")'
   - type: say
     content:
       - lang: en
@@ -324,11 +569,24 @@ globals:
         text: '[LOOTの最新スレッドを開く](%1%)（英語）'
       - lang: ko
         text: '[최신 LOOT 스레드](%1%).'
+      - lang: pl
+        text: '[Ostatni wątek LOOT](%1%).'
+      - lang: pt
+        text: '[Postagem mais recente do LOOT](%1%).'
       - lang: ru
         text: '[Обсуждение LOOT "(Eng)"](%1%).'
       - lang: zh_CN
         text: '[最新的LOOT版本](%1%)。'
     subs: [ 'https://loot.github.io/latest-thread/' ]
+  - type: warn
+    content:
+      - lang: en
+        text: 'This version of LOOT has inferior handling of Creation Club plugins. Support for these are therefore limited in versions prior to LOOT 0.13.1. It is recommended to update as soon as possible.'
+      - lang: da
+        text: 'Denne version af LOOT har begrænset understøttelse af Creation Club-plugins. Det er derfor anbefalet at opdatere til LOOT 0.13.1 eller senere hurtigst muligt.'
+      - lang: de
+        text: 'Diese Version von LOOT hat eine minderwertige Handhabung von Creation Club-Plugins. Unterstützung für diese ist daher limitiert in Versionen älter als LOOT 0.13.1. Es wird empfohlen so bald wie möglich zu Updaten.'
+    condition: 'version("LOOT", "0.13.1.0", <) and file("cc[A-Z]{3}FO4[0-9]{3}-[a-zA-Z0-9()]+\.es(l|m)")'
 # Fallout 4 - Latest Version
   - <<: *versionOldX
     subs: [ '**Fallout 4**' ]
@@ -372,7 +630,6 @@ globals:
   - <<: *requiresF4SE
     subs: [ 'a F4SE Plugin' ]
     condition: 'file("F4SE/Plugins/([^\.]+\.dll)") and not file("../f4se_loader.exe")'
-
   - <<: *requiresF4SE
     subs: [ '[Achievements](https://www.nexusmods.com/fallout4/mods/12465)' ]
     condition: 'file("F4SE/Plugins/achievements.dll") and not file("../f4se_loader.exe")'
@@ -6820,114 +7077,114 @@ plugins:
     url: []
     group: *fixesGroup
     msg:
-      - <<: *AlreadyInFO4
+      - <<: *alreadyInFO4
         condition: 'version("../Fallout4.exe", "1.6.0.0", >=)'
   - name: 'KH_DChelmetfix.esp'
     url: []
     group: *fixesGroup
     msg:
-      - <<: *AlreadyInFO4
+      - <<: *alreadyInFO4
         condition: 'version("../Fallout4.exe", "1.6.0.0", >=)'
   - name: 'Targeting HUD Berry Mentats Fix.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/8910' ]
     group: *fixesGroup
     msg:
-      - <<: *AlreadyInFO4
+      - <<: *alreadyInFO4
         condition: 'version("../Fallout4.exe", "1.5.0.0", >=)'
   - name: 'Vault 81 Holding Cell Fix(| Alt)\.esp'
     url: []
     group: *fixesGroup
     msg:
-      - <<: *AlreadyInFO4
+      - <<: *alreadyInFO4
         condition: 'version("../Fallout4.exe", "1.4.132.0", >=)'
   - name: 'RailroadGloryBugFix.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/6389' ]
     group: *fixesGroup
     msg:
-      - <<: *AlreadyInFO4
+      - <<: *alreadyInFO4
         condition: 'version("../Fallout4.exe", "1.3.47.0", >=)'
   - name: 'MakanarBigLeaguesFix.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/6185' ]
     group: *fixesGroup
     msg:
-      - <<: *AlreadyInFO4
+      - <<: *alreadyInFO4
         condition: 'version("../Fallout4.exe", "1.3.47.0", >=)'
   - name: 'MakanarPerkBigLeaguesFix.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/5957' ]
     group: *fixesGroup
     msg:
-      - <<: *AlreadyInFO4
+      - <<: *alreadyInFO4
         condition: 'version("../Fallout4.exe", "1.3.47.0", >=)'
   - name: 'ScroungerFix.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/3624' ]
     group: *fixesGroup
     msg:
-      - <<: *AlreadyInFO4
+      - <<: *alreadyInFO4
         condition: 'version("../Fallout4.exe", "1.4.132.0", >=)'
   - name: 'KillshotFix.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/1282' ]
     group: *fixesGroup
     msg:
-      - <<: *AlreadyInFO4
+      - <<: *alreadyInFO4
         condition: 'version("../Fallout4.exe", "1.3.47.0", >=)'
   # Mods included in the Unofficial Fallout 4 Patch
   - name: 'UnofficialFallout4Patch.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/4526' ]
     group: *fixesGroup
     msg:
-      - *AlreadyInUFO4P
+      - *alreadyInUFO4P
   - name: 'Simple Bug Fixes.esp'
     url: []
     group: *fixesGroup
-    msg:
-      - *AlreadyInUFO4P
-      - *UsingSKE
+    msg: [ *alreadyInUFO4P ]
+    inc:
+      - 'SettlementKeywords.esm'
   - name: 'bugfix_maglocks_terminal_delay.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/26353' ]
     group: *fixesGroup
     msg:
-      - <<: *AlreadyInUFO4P
+      - <<: *alreadyInUFO4P
         condition: 'active("Unofficial Fallout 4 Patch.esp") and version("Unofficial Fallout 4 Patch.esp", "2.0.2", >=)'
   - name: 'Remove Rads in Survival Fix.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/15392' ]
     group: *fixesGroup
     msg:
-      - *AlreadyInUFO4P
+      - *alreadyInUFO4P
   - name: 'Idiot Savant Math Fix.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/13558' ]
     group: *fixesGroup
     msg:
-      - *AlreadyInUFO4P
+      - *alreadyInUFO4P
   - name: 'hangmansalleypatch.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/12958' ]
     group: *fixesGroup
     msg:
-      - *AlreadyInUFO4P
+      - *alreadyInUFO4P
   - name: 'Croup Manor NAVmesh Fix.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/12561' ]
     group: *fixesGroup
     msg:
-      - *AlreadyInUFO4P
+      - *alreadyInUFO4P
   - name: 'InvisibleBridgeFix.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/12491' ]
     group: *fixesGroup
     msg:
-      - *AlreadyInUFO4P
+      - *alreadyInUFO4P
   - name: 'DeirdreVendorFix.esp'
     url: []
     group: *fixesGroup
     msg:
-      - *AlreadyInUFO4P
+      - *alreadyInUFO4P
   - name: 'Combat Armor Weight Fix.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/11541' ]
     group: *fixesGroup
     msg:
-      - *AlreadyInUFO4P
+      - *alreadyInUFO4P
   - name: 'LiveNLoveMagazinePerkPatch.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/11083' ]
     group: *fixesGroup
     msg:
-      - *AlreadyInUFO4P
+      - *alreadyInUFO4P
   - name: 'Recruitable NPC Dialogue Fixes.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/11083' ]
     group: *fixesGroup
@@ -6945,92 +7202,92 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout4/mods/10892' ]
     group: *fixesGroup
     msg:
-      - *AlreadyInUFO4P
+      - *alreadyInUFO4P
   - name: 'fix_Perk_CombatMedic.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/10651' ]
     group: *fixesGroup
     msg:
-      - *AlreadyInUFO4P
+      - *alreadyInUFO4P
   - name: 'ItemCapitalizationFixes.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/10416' ]
     group: *fixesGroup
     msg:
-      - *AlreadyInUFO4P
+      - *alreadyInUFO4P
   - name: 'FixTeslaScience.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/10319' ]
     group: *fixesGroup
     msg:
-      - *AlreadyInUFO4P
+      - *alreadyInUFO4P
   - name: 'SoldierToyFix.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/10229' ]
     group: *fixesGroup
     msg:
-      - *AlreadyInUFO4P
+      - *alreadyInUFO4P
   - name: 'Talk Yourself Sober Fix.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/10173' ]
     group: *fixesGroup
     msg:
-      - *AlreadyInUFO4P
+      - *alreadyInUFO4P
   - name: 'RFG - Curie Inspirational Sneak L&L Fix.esp'
     url: []
     group: *fixesGroup
     msg:
-      - *AlreadyInUFO4P
+      - *alreadyInUFO4P
   - name: 'RFG - Gunslinger Fix.esp'
     url: []
     group: *fixesGroup
     msg:
-      - *AlreadyInUFO4P
+      - *alreadyInUFO4P
   - name: 'Mole Rat Disease Fix.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/8908' ]
     group: *fixesGroup
     msg:
-      - *AlreadyInUFO4P
+      - *alreadyInUFO4P
   - name: 'Pipe_Revolver_Tuned_Receiver.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/8570' ]
     group: *fixesGroup
     msg:
-      - *AlreadyInUFO4P
+      - *alreadyInUFO4P
   - name: 'Worsins-T60-Headlamp-Fix.esp'
     url: []
     group: *fixesGroup
     msg:
-      - *AlreadyInUFO4P
+      - *alreadyInUFO4P
   - name: 'WeaveFix.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/5847' ]
     group: *fixesGroup
     msg:
-      - *AlreadyInUFO4P
+      - *alreadyInUFO4P
   - name: 'Merchants stick with store - Unique Settlers.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/5343' ]
     group: *fixesGroup
     msg:
-      - *AlreadyInUFO4P
+      - *alreadyInUFO4P
   - name: 'Glow Front Sight Ring Fix.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/5205' ]
     group: *fixesGroup
     msg:
-      - *AlreadyInUFO4P
+      - *alreadyInUFO4P
   - name: 'SynthArmorFix.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/5054' ]
     group: *fixesGroup
     msg:
-      - *AlreadyInUFO4P
+      - *alreadyInUFO4P
   - name: 'BoS Pilot Outfit Fix.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/3098' ]
     group: *fixesGroup
     msg:
-      - *AlreadyInUFO4P
+      - *alreadyInUFO4P
   - name: 'CompanionBugfixExperimental.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/2679' ]
     group: *fixesGroup
     msg:
-      - *AlreadyInUFO4P
+      - *alreadyInUFO4P
   - name: 'NX Desk Crafting Fix.esp'
     url: []
     group: *fixesGroup
     msg:
-      - *AlreadyInUFO4P
+      - *alreadyInUFO4P
   - name: 'itswear.esl'
     url: [ 'https://www.nexusmods.com/fallout4/mods/33497' ]
     group: *fixesGroup
@@ -7038,7 +7295,7 @@ plugins:
       - crc: 0xC6B5B9B9
         util: FO4Edit v3.2.3h
     msg:
-      - *AlreadyInUFO4P
+      - *alreadyInUFO4P
   - name: 'Brawl Bug Fix.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/16899' ]
     group: *fixesGroup
@@ -7047,7 +7304,7 @@ plugins:
       - crc: 0x193547FD
         util: 'FO4Edit v3.2.65'
     msg:
-      - <<: *AlreadyInUFO4P
+      - <<: *alreadyInUFO4P
         condition: 'active("Unofficial Fallout 4 Patch.esp") and version("Unofficial Fallout 4 Patch.esp", "2.0.5", >=)'
 
   - name: 'Vault-Tec Historical Preservation Initiative.esp'
@@ -7488,7 +7745,7 @@ plugins:
       - crc: 0x0E726D6A
         util: FO4Edit v3.2
     msg:
-      - <<: *AlreadyInX
+      - <<: *alreadyInX
         subs: [ 'Scrapper Corpse Highlighting DLC Patch.esp' ]
         condition: 'active("Scrapper Corpse Highlighting DLC Patch.esp") and active("DLCCoast.esm")'
   - name: 'PipBoyShadows.esp'
@@ -7719,7 +7976,7 @@ plugins:
   - name: 'Synth Armor Fix.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/6424' ]
     msg:
-      - <<: *AlreadyInX
+      - <<: *alreadyInX
         condition: 'active("ArmorKeywords.esm")'
         subs: [ 'ArmorKeywords.esm' ]
   - name: 'WET Clearer.esp'
@@ -7781,7 +8038,8 @@ plugins:
             text: 'Use OCDecorator.esp Wasteland Workshop version instead: [Download](https://www.nexusmods.com/fallout4/mods/4270)'
           - lang: de
             text: 'Nutzen Sie OCDecorator.esp Wasteland Workshop Version stattdessen: [Download](https://www.nexusmods.com/fallout4/mods/4270)'
-      - *UsingSKE
+    inc:
+      - 'SettlementKeywords.esm'
   - name: 'OCDecorator_FarHarbor.esp'
     msg:
       - type: error
@@ -7790,35 +8048,35 @@ plugins:
             text: 'Use ''OCD FarHarborDLC.esp'' instead: [Download](https://www.nexusmods.com/fallout4/mods/4270)'
           - lang: de
             text: 'Nutzen Sie ''OCD FarHarborDLC.esp'' stattdessen: [Download](https://www.nexusmods.com/fallout4/mods/4270)'
-      - *UsingSKE
+    inc:
+      - 'SettlementKeywords.esm'
   - name: 'WW_SK_PATCH.esp'
-    msg:
-      - *UsingSKE
+    inc:
+      - 'SettlementKeywords.esm'
   - name: 'Jzk_WW_Patch.esp'
-    msg:
-      - *UsingSKE
+    inc:
+      - 'SettlementKeywords.esm'
   # ALL DLC Version 3.x
   - name: 'CW_PATCH.esp'
     msg:
-      - *InsteadSKEPatch
+      - *insteadSKEPatch
   - name: 'DLC_MainMenu.esm'
     msg:
-      - *InsteadSKEPatch
+      - *insteadSKEPatch
   - name: 'DLC_OCD_Patch.esp'
-    msg:
-      - *UsingSKE
+    inc:
+      - 'SettlementKeywords.esm'
   - name: 'DLC_PATCH.esp'
-    msg:
-      - *UsingSKE
+    inc:
+      - 'SettlementKeywords.esm'
   - name: 'DLC_PATCH_ENG.esp'
-    msg:
-      - *UsingSKE
+    inc:
+      - 'SettlementKeywords.esm'
   - name: 'DLC_PATCH_integrated.esp'
     msg:
-      - *InsteadSKEPatch
+      - *insteadSKEPatch
   - name: 'DLC_SK_Patch.esp'
     msg:
-      - *UsingSKE
       - type: error
         content:
           - lang: en
@@ -7826,142 +8084,123 @@ plugins:
           - lang: de
             text: 'Das originale SK v0.8 ist nicht kompatibel mit Fallout 4 Patch 1.5.157 oder neuer.'
         condition: '(checksum("SettlementKeywords.esm",8D550871) and active("DLC_SK_Patch.esp")) and version("..\Fallout4.exe", "1.5.157.0", >=)'
+    inc:
+      - 'SettlementKeywords.esm'
   - name: 'DLC_SKE_Patch.esp'
-    msg:
-      - *UsingSKE
+    inc:
+      - 'SettlementKeywords.esm'
   - name: 'FH_PATCH.esp'
     msg:
-      - *InsteadSKEPatch
+      - *insteadSKEPatch
   - name: 'FH_PATCH_integrated.esp'
     msg:
-      - *InsteadSKEPatch
+      - *insteadSKEPatch
   - name: 'WW_PATCH.esp'
     msg:
-      - *InsteadSKEPatch
+      - *insteadSKEPatch
   - name: 'WW_PATCH_ENG.esp'
     msg:
-      - *InsteadSKEPatch
+      - *insteadSKEPatch
   - name: 'WW_PATCH_integrated.esp'
     msg:
-      - *InsteadSKEPatch
+      - *insteadSKEPatch
   # ALL DLC Version 4.x
   - name: 'NW_PATCH_Integrated.esp'
     msg:
-      - *InsteadSKEPatch
+      - *insteadSKEPatch
   - name: 'CW_PATCH_integrated.esp'
     msg:
-      - *InsteadSKEPatch
+      - *insteadSKEPatch
   - name: 'VW_PATCH_integrated.esp'
     msg:
-      - *InsteadSKEPatch
+      - *insteadSKEPatch
   - name: 'NW_PATCH.esp'
     msg:
-      - *InsteadSKEPatch
+      - *insteadSKEPatch
   - name: 'FH_PATCH_Full.esp'
     msg:
-      - *InsteadSKEPatch
+      - *insteadSKEPatch
   - name: 'VW_PATCH_Full.esp'
     msg:
-      - *InsteadSKEPatch
+      - *insteadSKEPatch
   - name: 'CW_PATCH_Full.esp'
     msg:
-      - *InsteadSKEPatch
+      - *insteadSKEPatch
   - name: 'WW_PATCH_Full.esp'
     msg:
-      - *InsteadSKEPatch
+      - *insteadSKEPatch
   - name: 'DLC_PATCH_Full.esp'
     msg:
-      - *InsteadSKEPatch
+      - *insteadSKEPatch
   - name: 'AM_PATCH_Full.esp'
     msg:
-      - *InsteadSKEPatch
+      - *insteadSKEPatch
   - name: 'VW_PATCH.esp'
     msg:
-      - *InsteadSKEPatch
+      - *insteadSKEPatch
   - name: 'NW_PATCH_Full.esp'
     msg:
-      - *InsteadSKEPatch
+      - *insteadSKEPatch
   - name: 'DLC_MainMenu_Handplaced.esp'
-    msg:
-      - *UsingSKE
+    inc:
+      - 'SettlementKeywords.esm'
   - name: 'HMM-WWorkshop-Compatibility.esp'
-    msg:
-      - *UsingSKE
+    inc:
+      - 'SettlementKeywords.esm'
   - name: 'HMMOCD-WWorkshop-Compatibility.esp'
-    msg:
-      - *UsingSKE
+    inc:
+      - 'SettlementKeywords.esm'
   - name: 'OCD-WWorkshop-Compatibility.esp'
-    msg:
-      - *UsingSKE
+    inc:
+      - 'SettlementKeywords.esm'
   - name: 'BS-SKPatch.esp'
-    msg:
-      - *UsingSKE
+    inc:
+      - 'SettlementKeywords.esm'
   - name: 'BS-HomemakerPatch.esp'
-    msg:
-      - *UsingSKE
+    inc:
+      - 'SettlementKeywords.esm'
   - name: 'SettleObjExpandPack-HM-SnB-Patch.esp'
-    msg:
-      - *UsingSKE
+    inc:
+      - 'SettlementKeywords.esm'
   - name: 'PatchyMcPatcherson-SnB.esp'
-    msg:
-      - *UsingSKE
+    inc:
+      - 'SettlementKeywords.esm'
   - name: 'WastelandWorkshopPatch.esp'
-    msg:
-      - *UsingSKE
+    inc:
+      - 'SettlementKeywords.esm'
   - name: 'FarHarborHomemakerFix.esp'
-    msg:
-      - *UsingSKE
+    inc:
+      - 'SettlementKeywords.esm'
   - name: 'Robot Home Defence - Settlement Keywords.esp'
-    msg:
-      - *UsingSKE
+    inc:
+      - 'SettlementKeywords.esm'
   - name: 'OCD_MO_Patch.esp'
-    msg:
-      - *UsingSKE
+    inc:
+      - 'SettlementKeywords.esm'
   - name: 'MO_Propaganda.esp'
-    msg:
-      - *UsingSKE
+    inc:
+      - 'SettlementKeywords.esm'
   - name: 'MO_HM_Patch.esp'
-    msg:
-      - *UsingSKE
+    inc:
+      - 'SettlementKeywords.esm'
   - name: 'MO_HM_OCD_Patch.esp'
-    msg:
-      - *UsingSKE
+    inc:
+      - 'SettlementKeywords.esm'
   - name: 'SKHMWW.esp'
-    msg:
-      - *UsingSKE
+    inc:
+      - 'SettlementKeywords.esm'
   - name: 'Homemaker - Bunker Disabler SK.esp'
-    msg:
-      - *UsingHomemaker1_50
+    msg: [ *obsolete ]
   - name: 'Homemaker - Bunker Disabler.esp'
-    msg:
-      - &uninstallFileUpgradeHomemaker150
-        type: error
-        content:
-        - lang: en
-          text: 'Uninstall this file and upgrade to Homemaker 1.50.'
-        - lang: da
-          text: 'Afinstallér denne fil og opgradér til Homemaker 1.50.'
-        - lang: de
-          text: 'Deinstalliere diese Datei und upgrade zu Homemaker 1.50.'
-        - lang: es
-          text: 'Desinstale este archivo y actualizar a Homemaker 1.50.'
-        - lang: ja
-          text: 'このファイルをアンインストールし、Homemaker 1.50に更新してください。'
-        condition: 'version("Homemaker.esm", "1.50", >=) and version("Homemaker - Bunker Disabler.esp", "1.50", <)'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/1478' ]
   - name: 'Homemaker - Greenhouse and Bunker Disabler SK.esp'
-    msg:
-      - *UsingHomemaker1_50
+    msg: [ *obsolete ]
   - name: 'Homemaker - Greenhouse and Bunker Disabler.esp'
-    msg:
-      - <<: *uninstallFileUpgradeHomemaker150
-        condition: 'version("Homemaker.esm", "1.50", >=) and version("Homemaker - Greenhouse and Bunker Disabler.esp", "1.50", <)'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/1478' ]
   - name: 'Homemaker - Greenhouse Disabler SK.esp'
-    msg:
-      - *UsingHomemaker1_50
+    msg: [ *obsolete ]
   - name: 'Homemaker - Greenhouse Disabler.esp'
-    msg:
-      - <<: *uninstallFileUpgradeHomemaker150
-        condition: 'version("Homemaker.esm", "1.50", >=) and version("Homemaker - Greenhouse Disabler.esp", "1.50", <)'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/1478' ]
   - name: 'Homemaker - SK Integration Patch.esp'
     msg:
       - type: error
@@ -7979,46 +8218,31 @@ plugins:
             text: 'Inkompatibel mit Fallout 4 Patch 1.5.157 oder neuer.'
         condition: 'file("../Fallout4.exe") and version("../Fallout4.exe", "1.5.157.0", >=)'
   - name: 'Homemaker - SKE Integration Patch.esp'
-    msg:
-      - *UsingHomemaker1_50
+    msg: [ *obsolete ]
   - name: 'Homemaker - SSEx Compatibility Patch.esp'
-    msg:
-      - *UsingHomemaker1_50
+    msg: [ *obsolete ]
   - name: 'Homemaker - Streetlights Use Passive Power.esp'
-    msg:
-      - <<: *uninstallFileUpgradeHomemaker150
-        condition: 'version("Homemaker.esm", "1.50", >=) and version("Homemaker - Streetlights Use Passive Power.esp", "1.50", <)'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/1478' ]
   - name: 'Homemaker - Unlocked Institute Objects SK.esp'
-    msg:
-      - *UsingHomemaker1_50
+    msg: [ *obsolete ]
   - name: 'Homemaker - Unlocked Institute Objects.esp'
-    msg:
-      - <<: *uninstallFileUpgradeHomemaker150
-        condition: 'version("Homemaker.esm", "1.50", >=) and version("Homemaker - Unlocked Institute Objects.esp", "1.50", <)'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/1478' ]
   - name: 'Snap''n Build - Bunker.esp'
-    msg:
-      - *UsingSNB
+    msg: [ *obsolete ]
   - name: 'Snap''n Build - Capsule.esp'
-    msg:
-      - *UsingSNB
+    msg: [ *obsolete ]
   - name: 'Snap''n Build - Greenhouse.esp'
-    msg:
-      - *UsingSNB
+    msg: [ *obsolete ]
   - name: 'Snap''n Build - Industrial.esp'
-    msg:
-      - *UsingSNB
+    msg: [ *obsolete ]
   - name: 'Snap''n Build - Patches_HMM.esp'
-    msg:
-      - *UsingSNB
+    msg: [ *obsolete ]
   - name: 'Snap''n Build - Patches_SK.esp'
-    msg:
-      - *UsingSNB
+    msg: [ *obsolete ]
   - name: 'Snap''n Build - Real Estate.esp'
-    msg:
-      - *UsingSNB
+    msg: [ *obsolete ]
   - name: 'Snap''n Build - Patches.esp'
-    msg:
-      - *UsingSNB
+    msg: [ *obsolete ]
   - name: 'Snap and Build - Greenhouse.esp'
     msg:
       - type: error
@@ -8028,7 +8252,7 @@ plugins:
           - lang: de
             text: 'Inkompatibel mit Fallout 4 Patch 1.5.157 oder neuer.'
         condition: 'file("../Fallout4.exe") and version("../Fallout4.exe", "1.5.157.0", >=)'
-      - *UsingSNB
+      - *obsolete
   - name: 'SnB - Greenhouse - Homemaker.esp'
     msg:
       - type: error
@@ -8038,7 +8262,7 @@ plugins:
           - lang: de
             text: 'Inkompatibel mit Fallout 4 Patch 1.5.157 oder neuer.'
         condition: 'file("../Fallout4.exe") and version("../Fallout4.exe", "1.5.157.0", >=)'
-      - *UsingSNB
+      - *obsolete
   - name: 'SnB- Greenhouse - SK.esp'
     msg:
       - type: error
@@ -8048,7 +8272,7 @@ plugins:
           - lang: de
             text: 'Inkompatibel mit Fallout 4 Patch 1.5.157 oder neuer.'
         condition: 'file("../Fallout4.exe") and version("../Fallout4.exe", "1.5.157.0", >=)'
-      - *UsingSNB
+      - *obsolete
   - name: 'SnB - Greenhouse - SSEx.esp'
     msg:
       - type: error
@@ -8058,7 +8282,7 @@ plugins:
           - lang: de
             text: 'Inkompatibel mit Fallout 4 Patch 1.5.157 oder neuer.'
         condition: 'file("../Fallout4.exe") and version("../Fallout4.exe", "1.5.157.0", >=)'
-      - *UsingSNB
+      - *obsolete
   - name: 'SnB - Greenhouse - Homemaker - SSEx.esp'
     msg:
       - type: error
@@ -8068,8 +8292,9 @@ plugins:
           - lang: de
             text: 'Inkompatibel mit Fallout 4 Patch 1.5.157 oder neuer.'
         condition: 'file("../Fallout4.exe") and version("../Fallout4.exe", "1.5.157.0", >=)'
-      - *UsingSNB
+      - *obsolete
   - name: 'Homemaker.esm'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/1478' ]
     msg:
       # Homemaker 1.34 CRC
       - type: error
@@ -8427,7 +8652,7 @@ plugins:
   - name: 'LegendaryCloth.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/3694/' ]
     msg:
-      - <<: *AlreadyInX
+      - <<: *alreadyInX
         condition: 'active("Armorsmith Extended.esp")'
         subs: [ 'Armorsmith Extended' ]
   - name: 'SimSettlements_VIS.esp'
@@ -8475,7 +8700,7 @@ plugins:
   - name: 'THBrows.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/6186' ]
     msg:
-      - <<: *AlreadyInX
+      - <<: *alreadyInX
         condition: 'active("LooksMenu Customization Compendium.esp")'
         subs: [ 'LooksMenu Customization Compendium.esp' ]
   - name: 'Better Settlement Defence.esp'
@@ -8592,7 +8817,7 @@ plugins:
   - name: 'ConcealedArmor.esm'
     url: [ 'https://www.nexusmods.com/fallout4/mods/6434' ]
     msg:
-      - <<: *AlreadyInX
+      - <<: *alreadyInX
         subs: [ 'Armorsmith Extended v4.0+' ]
         condition: 'active("Armorsmith Extended.esp") and version("Armorsmith Extended.esp", "4.0", >=)'
       - type: warn
@@ -8714,7 +8939,7 @@ plugins:
       - crc: 0x4EFF73BD
         util: 'FO4Edit v3.2'
     msg:
-      - <<: *AlreadyInX
+      - <<: *alreadyInX
         condition: 'active("DEF_WIDGETS_SURVIVAL1 - EBF+GMTB patch.esp")'
         subs: [ 'DEF_WIDGETS_SURVIVAL1 - EBF+GMTB patch.esp' ]
   - name: 'EBF_DEFW_Patch.esp'
@@ -8730,7 +8955,7 @@ plugins:
       - crc: 0x7101BFA3
         util: 'FO4Edit v3.2'
     msg:
-      - <<: *AlreadyInX
+      - <<: *alreadyInX
         condition: 'active("DEF_WIDGETS_SURVIVAL1 - EBF+GMTB patch.esp")'
         subs: [ 'DEF_WIDGETS_SURVIVAL1 - EBF+GMTB patch.esp' ]
   - name: 'DEF_WIDGETS_SURVIVAL1 - EBF+GMTB patch.esp'
@@ -8941,7 +9166,7 @@ plugins:
       - crc: 0xAAEB0A0D
         util: 'FO4Edit v3.2'
     msg:
-      - <<: *AlreadyInX
+      - <<: *alreadyInX
         subs: [ 'Diverse Cats.esp (combined version)' ]
         condition: 'active("Diverse Cats.esp") and checksum("Diverse Cats.esp", ea3b193f)'
   - name: 'BeastWhisperer.esp'
@@ -9026,7 +9251,7 @@ plugins:
           - lang: de
             text: 'Sie solltem keine unstimmigen Version von Sim Settlements und Industrial Revolution Erweiterung nutzen.'
         condition: '(version("SimSettlements_XPAC_IndustrialRevolution.esp", "3.3.3", >=) and version("SimSettlements.esm", "3.3.3", <)) or (version("SimSettlements_XPAC_IndustrialRevolution.esp", "3.3.3", <) and version("SimSettlements.esm", "3.3.3", >=))'
-      - <<: *AlreadyInX
+      - <<: *alreadyInX
         subs: [ 'Sim Settlements Three-In-One' ]
         condition: 'checksum("SimSettlements.esm", E42587B0)'
   - name: 'SimSettlements_XPAC_RiseOfTheCommonwealth.esp'
@@ -9048,7 +9273,7 @@ plugins:
           - lang: de
             text: 'Sie solltem keine unstimmigen Version von Sim Settlements und Rise of the Commonwealth Erweiterung nutzen.'
         condition: '(version("SimSettlements_XPAC_RiseOfTheCommonwealth.esp", "3.4.3", >=) and version("SimSettlements.esm", "3.4.3", <)) or (version("SimSettlements_XPAC_RiseOfTheCommonwealth.esp", "3.4.3", <) and version("SimSettlements.esm", "3.4.3", >=))'
-      - <<: *AlreadyInX
+      - <<: *alreadyInX
         subs: [ 'Sim Settlements Three-In-One' ]
         condition: 'checksum("SimSettlements.esm", E42587B0)'
   - name: 'Companion_ShutUp.esp'
@@ -9090,7 +9315,7 @@ plugins:
       - crc: 0x9855A3B2
         util: 'FO4Edit v3.2.1'
     msg:
-      - <<: *AlreadyInX
+      - <<: *alreadyInX
         subs: [ 'LooksMenu1stPersonViewItemsFix.esp' ]
         condition: 'active("FirstPersonViewableItemsExpanded.esp") and active("LooksMenu1stPersonViewItemsFix.esp")'
       - type: error
@@ -9109,7 +9334,7 @@ plugins:
       - crc: 0x5150531D
         util: 'FO4Edit v3.2.1'
     msg:
-      - <<: *AlreadyInX
+      - <<: *alreadyInX
         subs: [ 'Armorsmith Extended.esp' ]
         condition: 'active("MinutemenGeneralOutfitF.esp") and active("Armorsmith Extended.esp")'
   - name: 'Advanced Settlement Power.esp'
@@ -9556,7 +9781,7 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout4/mods/5320' ]
     group: *scrapGroup
     msg:
-      - <<: *AlreadyInX
+      - <<: *alreadyInX
         condition: 'active("Scrap Everything - Ultimate Edition.esp")'
         subs: [ 'Scrap Everything - Ultimate Edition.esp' ]
       - type: say
@@ -9782,7 +10007,7 @@ plugins:
     tag:
       - NoMerge
     msg:
-      - <<: *SmashedVsBashedPatch
+      - <<: *onlyUseSmashOrBash
         condition: 'file("Bashed Patch.*\.esp")'
         subs: [ 'Bashed Patch' ]
   - name: 'Bashed Patch.*\.esp'
@@ -9790,7 +10015,7 @@ plugins:
     after:
       - 'FO4Merged.esp'
     msg:
-      - <<: *SmashedVsBashedPatch
+      - <<: *onlyUseSmashOrBash
         condition: 'file("Smashed Patch.esp")'
         subs: [ 'Smashed Patch.esp' ]
 
