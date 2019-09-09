@@ -566,6 +566,10 @@ globals:
         text: '[LOOTの最新スレッドを開く](%1%)（英語）'
       - lang: ko
         text: '[최신 LOOT 스레드](%1%).'
+      - lang: pl
+        text: '[Ostatni wątek LOOT](%1%).'
+      - lang: pt
+        text: '[Postagem mais recente do LOOT](%1%).'
       - lang: ru
         text: '[Обсуждение LOOT "(Eng)"](%1%).'
       - lang: zh_CN
