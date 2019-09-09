@@ -374,6 +374,16 @@ common:
         text: 'Ihre installierte Version von %1% ist nicht kompatibel mit Ihrer Version von %2%.'
       - lang: ja
         text: 'インストールされている%1%は使用中のバージョンの%2%との互換性がありません。'
+      - lang: ko
+        text: '현재 설치된 %1%의 버전은 %2%의 버전과 호환되지 않습니다.'
+      - lang: pl
+        text: 'Twoja zainstalowana wersja %1% nie jest kompatybilna z twoją wersją %2%.'
+      - lang: pt
+        text: 'A sua versão instalada de %1% não é compatível com a sua versão de %2%.'
+      - lang: pt_BR
+        text: 'A sua versão instalada de %1% não é compatível com a sua versão de %2%.'
+      - lang: ru
+        text: 'Установленная у вас версия %1% несовместима с версией %2%.'
   - &versionF4SEIncFO4
     <<: *versionXIncY
     subs:
@@ -389,6 +399,16 @@ common:
         text: 'Dette plugin indeholder ukontrollerede redigeringer udover ITM- og UDR-poster og slettede navmesher og kan behøve yderligere manuel oprydning for ikke at forstyrre andre mods. %1%'
       - lang: de
         text: 'Dieses Plugin enthält wilde Modifikationen weit über ITM-, und UDR Einträge und entfernte Navmeshes hinaus und benötigt vermutlich mehr manuelle Säuberung um andere Mods nicht zu beeinträchtigen. %1%'
+      - lang: ja
+        text: 'このプラグインにはITMおよびUDRレコード以外の誤った編集(Wild Edit)が含まれており、navmeshが削除されています。他のmodと干渉しないように、追加の手動クリーニングが必要になる場合があります。%1%'
+      - lang: pl
+        text: 'Ta wtyczka zawiera dzikie edycje (Wild Edit) poza rekordami ITM i UDR oraz usunięte siatki nawigacyjne i może wymagać dodatkowego ręcznego czyszczenia aby nie kolidować z innymi modami. %1%'
+      - lang: pt
+        text: 'Este plugin contém edições selvagens (Wild Edits) para além dos registros ITM e UDR, e Navmeshes apagadas. Pode requerer limpeza manual adicional de forma a não interferir com outros mods. %1%'
+      - lang: pt_BR
+        text: 'Este plugin contém edições não-intencionais (Wild Edits) além dos registros ITM e UDR e Navmeshes deletadas e pode requerer limpeza manual adicional de forma que não interfira com outros mods. %1%'
+      - lang: ru
+        text: 'Плагин содержит дикие правки, кроме ITM, UDR записей и удаленных навмешей и может потребовать дополнительной ручной чистки, чтобы не пересекаться с другими модами. %1%'
     subs: [ '' ]
 
 # Cleaning data
