@@ -35,7 +35,7 @@ common:
         text: 'Удалите. Уже включено в %1%.'
       - lang: zh_CN
         text: '删除。已包含在%1%中。'
-  - &AlreadyInUFO4P
+  - &alreadyInUFO4P
     <<: *alreadyInX
     subs: [ 'Unofficial Fallout 4 Patch' ]
     condition: 'active("Unofficial Fallout 4 Patch.esp")'
@@ -6885,59 +6885,59 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout4/mods/4526' ]
     group: *fixesGroup
     msg:
-      - *AlreadyInUFO4P
+      - *alreadyInUFO4P
   - name: 'Simple Bug Fixes.esp'
     url: []
     group: *fixesGroup
     msg:
-      - *AlreadyInUFO4P
+      - *alreadyInUFO4P
       - *UsingSKE
   - name: 'bugfix_maglocks_terminal_delay.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/26353' ]
     group: *fixesGroup
     msg:
-      - <<: *AlreadyInUFO4P
+      - <<: *alreadyInUFO4P
         condition: 'active("Unofficial Fallout 4 Patch.esp") and version("Unofficial Fallout 4 Patch.esp", "2.0.2", >=)'
   - name: 'Remove Rads in Survival Fix.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/15392' ]
     group: *fixesGroup
     msg:
-      - *AlreadyInUFO4P
+      - *alreadyInUFO4P
   - name: 'Idiot Savant Math Fix.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/13558' ]
     group: *fixesGroup
     msg:
-      - *AlreadyInUFO4P
+      - *alreadyInUFO4P
   - name: 'hangmansalleypatch.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/12958' ]
     group: *fixesGroup
     msg:
-      - *AlreadyInUFO4P
+      - *alreadyInUFO4P
   - name: 'Croup Manor NAVmesh Fix.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/12561' ]
     group: *fixesGroup
     msg:
-      - *AlreadyInUFO4P
+      - *alreadyInUFO4P
   - name: 'InvisibleBridgeFix.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/12491' ]
     group: *fixesGroup
     msg:
-      - *AlreadyInUFO4P
+      - *alreadyInUFO4P
   - name: 'DeirdreVendorFix.esp'
     url: []
     group: *fixesGroup
     msg:
-      - *AlreadyInUFO4P
+      - *alreadyInUFO4P
   - name: 'Combat Armor Weight Fix.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/11541' ]
     group: *fixesGroup
     msg:
-      - *AlreadyInUFO4P
+      - *alreadyInUFO4P
   - name: 'LiveNLoveMagazinePerkPatch.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/11083' ]
     group: *fixesGroup
     msg:
-      - *AlreadyInUFO4P
+      - *alreadyInUFO4P
   - name: 'Recruitable NPC Dialogue Fixes.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/11083' ]
     group: *fixesGroup
@@ -6955,92 +6955,92 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout4/mods/10892' ]
     group: *fixesGroup
     msg:
-      - *AlreadyInUFO4P
+      - *alreadyInUFO4P
   - name: 'fix_Perk_CombatMedic.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/10651' ]
     group: *fixesGroup
     msg:
-      - *AlreadyInUFO4P
+      - *alreadyInUFO4P
   - name: 'ItemCapitalizationFixes.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/10416' ]
     group: *fixesGroup
     msg:
-      - *AlreadyInUFO4P
+      - *alreadyInUFO4P
   - name: 'FixTeslaScience.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/10319' ]
     group: *fixesGroup
     msg:
-      - *AlreadyInUFO4P
+      - *alreadyInUFO4P
   - name: 'SoldierToyFix.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/10229' ]
     group: *fixesGroup
     msg:
-      - *AlreadyInUFO4P
+      - *alreadyInUFO4P
   - name: 'Talk Yourself Sober Fix.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/10173' ]
     group: *fixesGroup
     msg:
-      - *AlreadyInUFO4P
+      - *alreadyInUFO4P
   - name: 'RFG - Curie Inspirational Sneak L&L Fix.esp'
     url: []
     group: *fixesGroup
     msg:
-      - *AlreadyInUFO4P
+      - *alreadyInUFO4P
   - name: 'RFG - Gunslinger Fix.esp'
     url: []
     group: *fixesGroup
     msg:
-      - *AlreadyInUFO4P
+      - *alreadyInUFO4P
   - name: 'Mole Rat Disease Fix.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/8908' ]
     group: *fixesGroup
     msg:
-      - *AlreadyInUFO4P
+      - *alreadyInUFO4P
   - name: 'Pipe_Revolver_Tuned_Receiver.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/8570' ]
     group: *fixesGroup
     msg:
-      - *AlreadyInUFO4P
+      - *alreadyInUFO4P
   - name: 'Worsins-T60-Headlamp-Fix.esp'
     url: []
     group: *fixesGroup
     msg:
-      - *AlreadyInUFO4P
+      - *alreadyInUFO4P
   - name: 'WeaveFix.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/5847' ]
     group: *fixesGroup
     msg:
-      - *AlreadyInUFO4P
+      - *alreadyInUFO4P
   - name: 'Merchants stick with store - Unique Settlers.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/5343' ]
     group: *fixesGroup
     msg:
-      - *AlreadyInUFO4P
+      - *alreadyInUFO4P
   - name: 'Glow Front Sight Ring Fix.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/5205' ]
     group: *fixesGroup
     msg:
-      - *AlreadyInUFO4P
+      - *alreadyInUFO4P
   - name: 'SynthArmorFix.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/5054' ]
     group: *fixesGroup
     msg:
-      - *AlreadyInUFO4P
+      - *alreadyInUFO4P
   - name: 'BoS Pilot Outfit Fix.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/3098' ]
     group: *fixesGroup
     msg:
-      - *AlreadyInUFO4P
+      - *alreadyInUFO4P
   - name: 'CompanionBugfixExperimental.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/2679' ]
     group: *fixesGroup
     msg:
-      - *AlreadyInUFO4P
+      - *alreadyInUFO4P
   - name: 'NX Desk Crafting Fix.esp'
     url: []
     group: *fixesGroup
     msg:
-      - *AlreadyInUFO4P
+      - *alreadyInUFO4P
   - name: 'itswear.esl'
     url: [ 'https://www.nexusmods.com/fallout4/mods/33497' ]
     group: *fixesGroup
@@ -7048,7 +7048,7 @@ plugins:
       - crc: 0xC6B5B9B9
         util: FO4Edit v3.2.3h
     msg:
-      - *AlreadyInUFO4P
+      - *alreadyInUFO4P
   - name: 'Brawl Bug Fix.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/16899' ]
     group: *fixesGroup
@@ -7057,7 +7057,7 @@ plugins:
       - crc: 0x193547FD
         util: 'FO4Edit v3.2.65'
     msg:
-      - <<: *AlreadyInUFO4P
+      - <<: *alreadyInUFO4P
         condition: 'active("Unofficial Fallout 4 Patch.esp") and version("Unofficial Fallout 4 Patch.esp", "2.0.5", >=)'
 
   - name: 'Vault-Tec Historical Preservation Initiative.esp'
