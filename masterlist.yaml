@@ -16,7 +16,7 @@ common:
         text: 'Löschen. Schon in Fallout 4 behoben von Bethesda.'
       - lang: ja
         text: '削除してください。既にBethesdaによってFallout 4のパッチが当てられています。'
-  - &AlreadyInX
+  - &alreadyInX
     type: error
     content:
       - lang: en
@@ -36,7 +36,7 @@ common:
       - lang: zh_CN
         text: '删除。已包含在%1%中。'
   - &AlreadyInUFO4P
-    <<: *AlreadyInX
+    <<: *alreadyInX
     subs: [ 'Unofficial Fallout 4 Patch' ]
     condition: 'active("Unofficial Fallout 4 Patch.esp")'
 
@@ -7498,7 +7498,7 @@ plugins:
       - crc: 0x0E726D6A
         util: FO4Edit v3.2
     msg:
-      - <<: *AlreadyInX
+      - <<: *alreadyInX
         subs: [ 'Scrapper Corpse Highlighting DLC Patch.esp' ]
         condition: 'active("Scrapper Corpse Highlighting DLC Patch.esp") and active("DLCCoast.esm")'
   - name: 'PipBoyShadows.esp'
@@ -7729,7 +7729,7 @@ plugins:
   - name: 'Synth Armor Fix.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/6424' ]
     msg:
-      - <<: *AlreadyInX
+      - <<: *alreadyInX
         condition: 'active("ArmorKeywords.esm")'
         subs: [ 'ArmorKeywords.esm' ]
   - name: 'WET Clearer.esp'
@@ -8437,7 +8437,7 @@ plugins:
   - name: 'LegendaryCloth.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/3694/' ]
     msg:
-      - <<: *AlreadyInX
+      - <<: *alreadyInX
         condition: 'active("Armorsmith Extended.esp")'
         subs: [ 'Armorsmith Extended' ]
   - name: 'SimSettlements_VIS.esp'
@@ -8485,7 +8485,7 @@ plugins:
   - name: 'THBrows.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/6186' ]
     msg:
-      - <<: *AlreadyInX
+      - <<: *alreadyInX
         condition: 'active("LooksMenu Customization Compendium.esp")'
         subs: [ 'LooksMenu Customization Compendium.esp' ]
   - name: 'Better Settlement Defence.esp'
@@ -8602,7 +8602,7 @@ plugins:
   - name: 'ConcealedArmor.esm'
     url: [ 'https://www.nexusmods.com/fallout4/mods/6434' ]
     msg:
-      - <<: *AlreadyInX
+      - <<: *alreadyInX
         subs: [ 'Armorsmith Extended v4.0+' ]
         condition: 'active("Armorsmith Extended.esp") and version("Armorsmith Extended.esp", "4.0", >=)'
       - type: warn
@@ -8724,7 +8724,7 @@ plugins:
       - crc: 0x4EFF73BD
         util: 'FO4Edit v3.2'
     msg:
-      - <<: *AlreadyInX
+      - <<: *alreadyInX
         condition: 'active("DEF_WIDGETS_SURVIVAL1 - EBF+GMTB patch.esp")'
         subs: [ 'DEF_WIDGETS_SURVIVAL1 - EBF+GMTB patch.esp' ]
   - name: 'EBF_DEFW_Patch.esp'
@@ -8740,7 +8740,7 @@ plugins:
       - crc: 0x7101BFA3
         util: 'FO4Edit v3.2'
     msg:
-      - <<: *AlreadyInX
+      - <<: *alreadyInX
         condition: 'active("DEF_WIDGETS_SURVIVAL1 - EBF+GMTB patch.esp")'
         subs: [ 'DEF_WIDGETS_SURVIVAL1 - EBF+GMTB patch.esp' ]
   - name: 'DEF_WIDGETS_SURVIVAL1 - EBF+GMTB patch.esp'
@@ -8951,7 +8951,7 @@ plugins:
       - crc: 0xAAEB0A0D
         util: 'FO4Edit v3.2'
     msg:
-      - <<: *AlreadyInX
+      - <<: *alreadyInX
         subs: [ 'Diverse Cats.esp (combined version)' ]
         condition: 'active("Diverse Cats.esp") and checksum("Diverse Cats.esp", ea3b193f)'
   - name: 'BeastWhisperer.esp'
@@ -9036,7 +9036,7 @@ plugins:
           - lang: de
             text: 'Sie solltem keine unstimmigen Version von Sim Settlements und Industrial Revolution Erweiterung nutzen.'
         condition: '(version("SimSettlements_XPAC_IndustrialRevolution.esp", "3.3.3", >=) and version("SimSettlements.esm", "3.3.3", <)) or (version("SimSettlements_XPAC_IndustrialRevolution.esp", "3.3.3", <) and version("SimSettlements.esm", "3.3.3", >=))'
-      - <<: *AlreadyInX
+      - <<: *alreadyInX
         subs: [ 'Sim Settlements Three-In-One' ]
         condition: 'checksum("SimSettlements.esm", E42587B0)'
   - name: 'SimSettlements_XPAC_RiseOfTheCommonwealth.esp'
@@ -9058,7 +9058,7 @@ plugins:
           - lang: de
             text: 'Sie solltem keine unstimmigen Version von Sim Settlements und Rise of the Commonwealth Erweiterung nutzen.'
         condition: '(version("SimSettlements_XPAC_RiseOfTheCommonwealth.esp", "3.4.3", >=) and version("SimSettlements.esm", "3.4.3", <)) or (version("SimSettlements_XPAC_RiseOfTheCommonwealth.esp", "3.4.3", <) and version("SimSettlements.esm", "3.4.3", >=))'
-      - <<: *AlreadyInX
+      - <<: *alreadyInX
         subs: [ 'Sim Settlements Three-In-One' ]
         condition: 'checksum("SimSettlements.esm", E42587B0)'
   - name: 'Companion_ShutUp.esp'
@@ -9100,7 +9100,7 @@ plugins:
       - crc: 0x9855A3B2
         util: 'FO4Edit v3.2.1'
     msg:
-      - <<: *AlreadyInX
+      - <<: *alreadyInX
         subs: [ 'LooksMenu1stPersonViewItemsFix.esp' ]
         condition: 'active("FirstPersonViewableItemsExpanded.esp") and active("LooksMenu1stPersonViewItemsFix.esp")'
       - type: error
@@ -9119,7 +9119,7 @@ plugins:
       - crc: 0x5150531D
         util: 'FO4Edit v3.2.1'
     msg:
-      - <<: *AlreadyInX
+      - <<: *alreadyInX
         subs: [ 'Armorsmith Extended.esp' ]
         condition: 'active("MinutemenGeneralOutfitF.esp") and active("Armorsmith Extended.esp")'
   - name: 'Advanced Settlement Power.esp'
@@ -9566,7 +9566,7 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout4/mods/5320' ]
     group: *scrapGroup
     msg:
-      - <<: *AlreadyInX
+      - <<: *alreadyInX
         condition: 'active("Scrap Everything - Ultimate Edition.esp")'
         subs: [ 'Scrap Everything - Ultimate Edition.esp' ]
       - type: say
