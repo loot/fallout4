@@ -154,7 +154,7 @@ common:
       - lang: ru
         text: 'Этот плагин теперь считается небезопасным и не должен использоваться.'
 
-  - &InsteadSKEPatch
+  - &insteadSKEPatch
     type: warn
     content:
       - lang: en
@@ -8060,10 +8060,10 @@ plugins:
   # ALL DLC Version 3.x
   - name: 'CW_PATCH.esp'
     msg:
-      - *InsteadSKEPatch
+      - *insteadSKEPatch
   - name: 'DLC_MainMenu.esm'
     msg:
-      - *InsteadSKEPatch
+      - *insteadSKEPatch
   - name: 'DLC_OCD_Patch.esp'
     msg:
       - *UsingSKE
@@ -8075,7 +8075,7 @@ plugins:
       - *UsingSKE
   - name: 'DLC_PATCH_integrated.esp'
     msg:
-      - *InsteadSKEPatch
+      - *insteadSKEPatch
   - name: 'DLC_SK_Patch.esp'
     msg:
       - *UsingSKE
@@ -8091,56 +8091,56 @@ plugins:
       - *UsingSKE
   - name: 'FH_PATCH.esp'
     msg:
-      - *InsteadSKEPatch
+      - *insteadSKEPatch
   - name: 'FH_PATCH_integrated.esp'
     msg:
-      - *InsteadSKEPatch
+      - *insteadSKEPatch
   - name: 'WW_PATCH.esp'
     msg:
-      - *InsteadSKEPatch
+      - *insteadSKEPatch
   - name: 'WW_PATCH_ENG.esp'
     msg:
-      - *InsteadSKEPatch
+      - *insteadSKEPatch
   - name: 'WW_PATCH_integrated.esp'
     msg:
-      - *InsteadSKEPatch
+      - *insteadSKEPatch
   # ALL DLC Version 4.x
   - name: 'NW_PATCH_Integrated.esp'
     msg:
-      - *InsteadSKEPatch
+      - *insteadSKEPatch
   - name: 'CW_PATCH_integrated.esp'
     msg:
-      - *InsteadSKEPatch
+      - *insteadSKEPatch
   - name: 'VW_PATCH_integrated.esp'
     msg:
-      - *InsteadSKEPatch
+      - *insteadSKEPatch
   - name: 'NW_PATCH.esp'
     msg:
-      - *InsteadSKEPatch
+      - *insteadSKEPatch
   - name: 'FH_PATCH_Full.esp'
     msg:
-      - *InsteadSKEPatch
+      - *insteadSKEPatch
   - name: 'VW_PATCH_Full.esp'
     msg:
-      - *InsteadSKEPatch
+      - *insteadSKEPatch
   - name: 'CW_PATCH_Full.esp'
     msg:
-      - *InsteadSKEPatch
+      - *insteadSKEPatch
   - name: 'WW_PATCH_Full.esp'
     msg:
-      - *InsteadSKEPatch
+      - *insteadSKEPatch
   - name: 'DLC_PATCH_Full.esp'
     msg:
-      - *InsteadSKEPatch
+      - *insteadSKEPatch
   - name: 'AM_PATCH_Full.esp'
     msg:
-      - *InsteadSKEPatch
+      - *insteadSKEPatch
   - name: 'VW_PATCH.esp'
     msg:
-      - *InsteadSKEPatch
+      - *insteadSKEPatch
   - name: 'NW_PATCH_Full.esp'
     msg:
-      - *InsteadSKEPatch
+      - *insteadSKEPatch
   - name: 'DLC_MainMenu_Handplaced.esp'
     msg:
       - *UsingSKE
