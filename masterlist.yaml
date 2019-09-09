@@ -31,6 +31,12 @@ common:
         text: '削除してください。既に%1%に含まれています。'
       - lang: ko
         text: '삭제하십시오. 이미 %1%에 포함되어 있습니다.'
+      - lang: pl
+        text: 'Usuń. Już zawarte w %1%'
+      - lang: pt
+        text: 'Apagar. Já incluído em %1%.'
+      - lang: pt_BR
+        text: 'Delete. Já icluído em %1%'
       - lang: ru
         text: 'Удалите. Уже включено в %1%.'
       - lang: zh_CN
