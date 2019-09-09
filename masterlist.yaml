@@ -160,6 +160,20 @@ common:
       - lang: zh_CN
         text: '你已经安装了%1%，但是未发现F4SE！请查看F4SE的下载页面：[F4SE](http://f4se.silverlock.org)。'
 
+  - &requiresX
+    type: warn
+    content:
+      - lang: en
+        text: 'Requires: %1%'
+      - lang: de
+        text: 'Benötigt: %1%'
+      - lang: es
+        text: 'Requiere: %1%'
+      - lang: ja
+        text: '要: %1%'
+      - lang: ru
+        text: 'Требуется: %1%'
+
   - &useOnlyOneX
     type: warn
     content:
