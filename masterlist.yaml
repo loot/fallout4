@@ -5,25 +5,6 @@ common:
     display: '[F4SE](http://f4se.silverlock.org)'
 
 # Messages
-  - &obsolete
-    type: say
-    content:
-      - lang: en
-        text: 'Obsolete. Update to latest version.'
-      - lang: da
-        text: 'Forældet. Opdatér til den nyeste version.'
-      - lang: de
-        text: 'Veraltet. Aktualisiere zur letzten Version.'
-      - lang: es
-        text: 'Obsoleto. Actualizar a la última versión.'
-      - lang: ja
-        text: '旧式のプラグインです。最新版に更新してください。'
-      - lang: ko
-        text: '사용되지 않습니다. 최신 버전으로 업데이트하십시오.'
-      - lang: ru
-        text: 'Устарело. Обновите до последней версии.'
-      - lang: zh_CN
-        text: '已过时。请升级到最新版本。'
   - &AlreadyInFO4
     type: error
     content:
@@ -58,25 +39,18 @@ common:
     <<: *AlreadyInX
     subs: [ 'Unofficial Fallout 4 Patch' ]
     condition: 'active("Unofficial Fallout 4 Patch.esp")'
-  - &useOnlyOneX
-    type: warn
+
+  - &dlcVersion
+    type: say
     content:
       - lang: en
-        text: 'Use only one %1%.'
+        text: 'This version does not include modifications for DLC content. Consider getting the DLC version instead.'
       - lang: da
-        text: 'Brug kun én %1%.'
+        text: 'Denne udgave inderholder ikke ændring til DLC-indhold. Overvej at bruge DLC-udgaven i stedet.'
       - lang: de
-        text: 'Nutzen Sie nur einen %1%.'
-      - lang: es
-        text: 'Utilizar solo un %1%.'
-      - lang: ja
-        text: '%1%は一つだけ使用してください。'
-      - lang: ko
-        text: '%1%을 한개만 사용하십시오.'
-      - lang: ru
-        text: 'Используйте только один %1%.'
-      - lang: zh_CN
-        text: '只使用一个%1%。'
+        text: 'Diese Version enthält keine Anpassungen für DLC Inhalte. Die DLC Version sollte anstatt dessen verwendet werden.'
+    condition: 'active("DLCRobot.esm") and active("DLCworkshop01.esm") and active("DLCCoast.esm")'
+
   - &doNotClean
     type: say
     content:
@@ -94,20 +68,42 @@ common:
         text: 'Не очищать. "Грязные" правки оставлены специально и требуются для функционирования мода.'
       - lang: zh_CN
         text: '不干净。"脏"数据是故意的，这是mod需要的功能。'
-  - &patchProvided
+
+  - &InsteadSKEPatch
     type: warn
     content:
       - lang: en
-        text: 'You seem to be using %1%, but you have not enabled a compatibility patch for this mod. A compatibility patch is provided on this plugin''s mod page.'
+        text: 'This file changes the way the base game categorizes settlement building menus. It is recommended to uninstall this file and use only files and patches compatible with SKE.'
+      - lang: da
+        text: 'Denne fil ændrer Form-lister i vanilje menuer. Overvej at bruge en kompatibel SKE-lap i stedet.'
       - lang: de
-        text: 'Sie scheinen %1% zu nutzen, aber Sie haben keinen Kompatibilitätspatch für diese Mod aktiviert. Ein Kompatibilitätspatch wird auf dieser Plugins Mod-Seite zur Verfügung gestellt.'
-  - &patchIncluded
-    type: warn
+        text: 'Diese Datei ändert, wie das Basis-Spiel die Bau-Menüs der Siedlungen kategorisiert. Es wird empfohlen, diese Datei zu deinstallieren und nur Dateien und Patches zu verwenden die kompatibel sind mit SKE.'
+      - lang: es
+        text: 'Este archivo cambia la forma en que el juego base clasifica los menús de la construcción de asentamientos. Se recomienda desinstalar este archivo y utilizar sólo los archivos y parches compatibles con SKE.'
+      - lang: ja
+        text: 'このファイルはゲームにおける集落の建設メニューの分類方法を変更します。このファイルをアンインストールし、SKEと互換性のあるファイルおよびパッチのみ使用することを推奨します。'
+    condition: 'active("SettlementKeywords.esm") and version("SettlementKeywords.esm", "1.0", >=)'
+
+  - &obsolete
+    type: say
     content:
       - lang: en
-        text: 'You seem to be using %1%, but you have not enabled a compatibility patch for this mod. A compatibility patch is included with this plugin''s installer.'
+        text: 'Obsolete. Update to latest version.'
+      - lang: da
+        text: 'Forældet. Opdatér til den nyeste version.'
       - lang: de
-        text: 'Sie scheinen %1% zu nutzen, aber Sie haben keinen Kompatibilitätspatch für diese Mod aktiviert. Ein Kompatibilitätspatch ist enthalten mit diesen Plugins Installer.'
+        text: 'Veraltet. Aktualisiere zur letzten Version.'
+      - lang: es
+        text: 'Obsoleto. Actualizar a la última versión.'
+      - lang: ja
+        text: '旧式のプラグインです。最新版に更新してください。'
+      - lang: ko
+        text: '사용되지 않습니다. 최신 버전으로 업데이트하십시오.'
+      - lang: ru
+        text: 'Устарело. Обновите до последней версии.'
+      - lang: zh_CN
+        text: '已过时。请升级到最新版本。'
+
   - &patch3rdParty
     type: warn
     content:
@@ -115,16 +111,21 @@ common:
         text: 'You seem to be using %1%, but you have not enabled a compatibility patch for this mod. A third party patch is available here: %2%'
       - lang: de
         text: 'Sie scheinen %1% zu nutzen, aber Sie haben keinen Kompatibilitätspatch für diese Mod aktiviert. Ein Patch von Dritten ist hier verfügbar: %2%'
-  - &dlcVersion
-    type: say
+  - &patchIncluded
+    type: warn
     content:
       - lang: en
-        text: 'This version does not include modifications for DLC content. Consider getting the DLC version instead.'
-      - lang: da
-        text: 'Denne udgave inderholder ikke ændring til DLC-indhold. Overvej at bruge DLC-udgaven i stedet.'
+        text: 'You seem to be using %1%, but you have not enabled a compatibility patch for this mod. A compatibility patch is included with this plugin''s installer.'
       - lang: de
-        text: 'Diese Version enthält keine Anpassungen für DLC Inhalte. Die DLC Version sollte anstatt dessen verwendet werden.'
-    condition: 'active("DLCRobot.esm") and active("DLCworkshop01.esm") and active("DLCCoast.esm")'
+        text: 'Sie scheinen %1% zu nutzen, aber Sie haben keinen Kompatibilitätspatch für diese Mod aktiviert. Ein Kompatibilitätspatch ist enthalten mit diesen Plugins Installer.'
+  - &patchProvided
+    type: warn
+    content:
+      - lang: en
+        text: 'You seem to be using %1%, but you have not enabled a compatibility patch for this mod. A compatibility patch is provided on this plugin''s mod page.'
+      - lang: de
+        text: 'Sie scheinen %1% zu nutzen, aber Sie haben keinen Kompatibilitätspatch für diese Mod aktiviert. Ein Kompatibilitätspatch wird auf dieser Plugins Mod-Seite zur Verfügung gestellt.'
+
   - &requiresF4SE
     type: error
     content:
@@ -144,6 +145,7 @@ common:
         text: 'У вас установлен %1%, но F4SE не найден! Смотрите страницу загрузки [F4SE](http://f4se.silverlock.org).'
       - lang: zh_CN
         text: '你已经安装了%1%，但是未发现F4SE！请查看F4SE的下载页面：[F4SE](http://f4se.silverlock.org)。'
+
   - &SmashedVsBashedPatch
     type: say
     content:
@@ -157,6 +159,41 @@ common:
         text: 'Se puede utilizar con un %1% pero requeriría un trabajo adicional. Deben de estar utilizado un Smashed Patch o un Bash Patch independiente del uno el otro.'
       - lang: ja
         text: '%1%と同時に使用できますが、追加作業が必要となります。Smashed PatchかBash Patchはそれぞれ単独で使用してください。'
+
+  - &useOnlyOneX
+    type: warn
+    content:
+      - lang: en
+        text: 'Use only one %1%.'
+      - lang: da
+        text: 'Brug kun én %1%.'
+      - lang: de
+        text: 'Nutzen Sie nur einen %1%.'
+      - lang: es
+        text: 'Utilizar solo un %1%.'
+      - lang: ja
+        text: '%1%は一つだけ使用してください。'
+      - lang: ko
+        text: '%1%을 한개만 사용하십시오.'
+      - lang: ru
+        text: 'Используйте только один %1%.'
+      - lang: zh_CN
+        text: '只使用一个%1%。'
+
+  - &UsingHomemaker1_50
+    type: error
+    content:
+      - lang: en
+        text: 'Uninstall this file and upgrade to Homemaker 1.50.'
+      - lang: da
+        text: 'Afinstallér denne fil og opgradér til Homemaker 1.50.'
+      - lang: de
+        text: 'Deinstalliere diese Datei und upgrade zu Homemaker 1.50.'
+      - lang: es
+        text: 'Desinstale este archivo y actualizar a Homemaker 1.50.'
+      - lang: ja
+        text: 'このファイルを削除し、Homemaker 1.50に更新してください。'
+    condition: 'version("Homemaker.esm", "1.50", <)'
   - &UsingSKE
     type: error
     content:
@@ -170,20 +207,6 @@ common:
         text: 'Este archivo no es compatible con SKE.'
       - lang: ja
         text: 'このファイルはSKEとの互換性がありません。'
-    condition: 'active("SettlementKeywords.esm") and version("SettlementKeywords.esm", "1.0", >=)'
-  - &InsteadSKEPatch
-    type: warn
-    content:
-      - lang: en
-        text: 'This file changes the way the base game categorizes settlement building menus. It is recommended to uninstall this file and use only files and patches compatible with SKE.'
-      - lang: da
-        text: 'Denne fil ændrer Form-lister i vanilje menuer. Overvej at bruge en kompatibel SKE-lap i stedet.'
-      - lang: de
-        text: 'Diese Datei ändert, wie das Basis-Spiel die Bau-Menüs der Siedlungen kategorisiert. Es wird empfohlen, diese Datei zu deinstallieren und nur Dateien und Patches zu verwenden die kompatibel sind mit SKE.'
-      - lang: es
-        text: 'Este archivo cambia la forma en que el juego base clasifica los menús de la construcción de asentamientos. Se recomienda desinstalar este archivo y utilizar sólo los archivos y parches compatibles con SKE.'
-      - lang: ja
-        text: 'このファイルはゲームにおける集落の建設メニューの分類方法を変更します。このファイルをアンインストールし、SKEと互換性のあるファイルおよびパッチのみ使用することを推奨します。'
     condition: 'active("SettlementKeywords.esm") and version("SettlementKeywords.esm", "1.0", >=)'
   - &UsingSNB
     type: error
@@ -199,20 +222,13 @@ common:
       - lang: ja
         text: 'このファイルはSnap''n Build.esm v1.9では不要です。更新を行い、削除することを検討してください。'
     condition: 'active("Snap''n Build.esm")'
-  - &UsingHomemaker1_50
-    type: error
-    content:
-      - lang: en
-        text: 'Uninstall this file and upgrade to Homemaker 1.50.'
-      - lang: da
-        text: 'Afinstallér denne fil og opgradér til Homemaker 1.50.'
-      - lang: de
-        text: 'Deinstalliere diese Datei und upgrade zu Homemaker 1.50.'
-      - lang: es
-        text: 'Desinstale este archivo y actualizar a Homemaker 1.50.'
-      - lang: ja
-        text: 'このファイルを削除し、Homemaker 1.50に更新してください。'
-    condition: 'version("Homemaker.esm", "1.50", <)'
+
+  - &versionF4SEIncFO4
+    <<: *versionXIncY
+    subs:
+      - '**Script Extender ([F4SE](http://f4se.silverlock.org))**'
+      - '**Fallout 4**'
+
   - &versionOldX
     type: say
     content:
@@ -260,11 +276,6 @@ common:
         text: 'Ihre installierte Version von %1% ist nicht kompatibel mit Ihrer Version von %2%.'
       - lang: ja
         text: 'インストールされている%1%は使用中のバージョンの%2%との互換性がありません。'
-  - &versionF4SEIncFO4
-    <<: *versionXIncY
-    subs:
-      - '**Script Extender ([F4SE](http://f4se.silverlock.org))**'
-      - '**Fallout 4**'
 
   - &wildEdits
     type: warn
@@ -301,15 +312,6 @@ common:
         text: 'Es wird streng empfohlen, keine Mods zu verwenden die **Gelöschte Navmeshes** beinhalten, da diese dafür bekannt sind Abstürze auszulösen. **Gelöschte Navmeshes** müssen manuell korrigiert werden (ein komplexer Prozess der vom Mod-Autor erledigt werden sollte). Mehr Informationen über **Gelöschte Navmeshes** werden [hier](https://www.creationkit.com/index.php?title=Fixing_Navmesh_Deletion_Tutorial) geboten.'
 
 globals:
-  - type: warn
-    content:
-      - lang: en
-        text: 'This version of LOOT has inferior handling of Creation Club plugins. Support for these are therefore limited in versions prior to LOOT 0.13.1. It is recommended to update as soon as possible.'
-      - lang: da
-        text: 'Denne version af LOOT har begrænset understøttelse af Creation Club-plugins. Det er derfor anbefalet at opdatere til LOOT 0.13.1 eller senere hurtigst muligt.'
-      - lang: de
-        text: 'Diese Version von LOOT hat eine minderwertige Handhabung von Creation Club-Plugins. Unterstützung für diese ist daher limitiert in Versionen älter als LOOT 0.13.1. Es wird empfohlen so bald wie möglich zu Updaten.'
-    condition: 'version("LOOT", "0.13.1.0", <) and file("cc[A-Z]{3}FO4[0-9]{3}-[a-zA-Z0-9()]+\.es(l|m)")'
   - type: say
     content:
       - lang: en
@@ -329,6 +331,15 @@ globals:
       - lang: zh_CN
         text: '[最新的LOOT版本](%1%)。'
     subs: [ 'https://loot.github.io/latest-thread/' ]
+  - type: warn
+    content:
+      - lang: en
+        text: 'This version of LOOT has inferior handling of Creation Club plugins. Support for these are therefore limited in versions prior to LOOT 0.13.1. It is recommended to update as soon as possible.'
+      - lang: da
+        text: 'Denne version af LOOT har begrænset understøttelse af Creation Club-plugins. Det er derfor anbefalet at opdatere til LOOT 0.13.1 eller senere hurtigst muligt.'
+      - lang: de
+        text: 'Diese Version von LOOT hat eine minderwertige Handhabung von Creation Club-Plugins. Unterstützung für diese ist daher limitiert in Versionen älter als LOOT 0.13.1. Es wird empfohlen so bald wie möglich zu Updaten.'
+    condition: 'version("LOOT", "0.13.1.0", <) and file("cc[A-Z]{3}FO4[0-9]{3}-[a-zA-Z0-9()]+\.es(l|m)")'
 # Fallout 4 - Latest Version
   - <<: *versionOldX
     subs: [ '**Fallout 4**' ]
@@ -372,7 +383,6 @@ globals:
   - <<: *requiresF4SE
     subs: [ 'a F4SE Plugin' ]
     condition: 'file("F4SE/Plugins/([^\.]+\.dll)") and not file("../f4se_loader.exe")'
-
   - <<: *requiresF4SE
     subs: [ '[Achievements](https://www.nexusmods.com/fallout4/mods/12465)' ]
     condition: 'file("F4SE/Plugins/achievements.dll") and not file("../f4se_loader.exe")'
