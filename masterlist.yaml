@@ -1053,6 +1053,94 @@ plugins:
     group: *ccGroup
   - name: 'ccBGSFO4114-WS_Shi.esl'
     group: *ccGroup
+  - name: 'ccBGSFO4115-X02.esl'
+    group: *ccGroup
+  - name: 'ccRZRFO4002-Disintegrate.esl'
+    group: *ccGroup
+  - name: 'ccBGSFO4116-HeavyFlamer.esl'
+    group: *ccGroup
+  - name: 'ccBGSFO4091-AS_Bats.esl'
+    group: *ccGroup
+  - name: 'ccBGSFO4092-AS_CamoBlue.esl'
+    group: *ccGroup
+  - name: 'ccBGSFO4093-AS_CamoGreen.esl'
+    group: *ccGroup
+  - name: 'ccBGSFO4094-AS_CamoTan.esl'
+    group: *ccGroup
+  - name: 'ccBGSFO4097-AS_Jack-oLantern.esl'
+    group: *ccGroup
+  - name: 'ccBGSFO4104-WS_Bats.esl'
+    group: *ccGroup
+  - name: 'ccBGSFO4105-WS_CamoBlue.esl'
+    group: *ccGroup
+  - name: 'ccBGSFO4106-WS_CamoGreen.esl'
+    group: *ccGroup
+  - name: 'ccBGSFO4107-WS_CamoTan.esl'
+    group: *ccGroup
+  - name: 'ccBGSFO4111-WS_Jack-oLantern.esl'
+    group: *ccGroup
+  - name: 'ccBGSFO4118-WS_TunnelSnakes.esl'
+    group: *ccGroup
+  - name: 'ccBGSFO4113-WS_ReillysRangers.esl'
+    group: *ccGroup
+  - name: 'ccBGSFO4112-WS_Pickman.esl'
+    group: *ccGroup
+  - name: 'ccBGSFO4110-WS_Enclave.esl'
+    group: *ccGroup
+  - name: 'ccBGSFO4108-WS_ChildrenOfAtom.esl'
+    group: *ccGroup
+  - name: 'ccBGSFO4103-AS_TunnelSnakes.esl'
+    group: *ccGroup
+  - name: 'ccBGSFO4099-AS_ReillysRangers.esl'
+    group: *ccGroup
+  - name: 'ccBGSFO4098-AS_Pickman.esl'
+    group: *ccGroup
+  - name: 'ccBGSFO4096-AS_Enclave.esl'
+    group: *ccGroup
+  - name: 'ccBGSFO4095-AS_ChildrenOfAtom.esl'
+    group: *ccGroup
+  - name: 'ccBGSFO4090-PipTribal.esl'
+    group: *ccGroup
+  - name: 'ccBGSFO4089-PipSynthwave.esl'
+    group: *ccGroup
+  - name: 'ccBGSFO4087-PipHaida.esl'
+    group: *ccGroup
+  - name: 'ccBGSFO4085-PipHawaii.esl'
+    group: *ccGroup
+  - name: 'ccBGSFO4084-PipRetro.esl'
+    group: *ccGroup
+  - name: 'ccBGSFO4083-PipArtDeco.esl'
+    group: *ccGroup
+  - name: 'ccBGSFO4082-PipPRC.esl'
+    group: *ccGroup
+  - name: 'ccBGSFO4081-PipPhenolResin.esl'
+    group: *ccGroup
+  - name: 'ccBGSFO4080-PipPop.esl'
+    group: *ccGroup
+  - name: 'ccBGSFO4035-Pint.esl'
+    group: *ccGroup
+  - name: 'ccBGSFO4086-PipAdventure.esl'
+    group: *ccGroup
+  - name: 'ccJVDFO4001-Holiday.esl'
+    group: *ccGroup
+  - name: 'ccBGSFO4047-QThund.esl'
+    group: *ccGroup
+  - name: 'ccFRSFO4003-CR75L.esl'
+    group: *ccGroup
+  - name: 'ccZSEFO4002-SManor.esm'
+    group: *ccGroup
+  - name: 'ccACXFO4001-VSuit.esl'
+    group: *ccGroup
+  - name: 'ccBGSFO4040-VRWorkshop01.esl'
+    group: *ccGroup
+  - name: 'ccFSVFO4005-VRDesertIsland.esl'
+    group: *ccGroup
+  - name: 'ccFSVFO4006-VRWasteland.esl'
+    group: *ccGroup
+  - name: 'ccSBJFO4002_ManwellRifle.esl'
+    group: *ccGroup
+  - name: 'ccTOSFO4002_NeonFlats.esm'
+    group: *ccGroup
 
   ### Patches
   - name: 'Unofficial Fallout 4 Patch.esp'
