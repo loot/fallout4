@@ -792,7 +792,7 @@ plugins:
       - crc: 0x9B2A2AAC
         util: 'FO4Edit v4.0.2'
 
-  ### Creation Club plugins
+###### Creation Club ######
   - name: 'ccBGSFO4001-PipBoy(Black).esl'
     group: *ccGroup
     clean:
