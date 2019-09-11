@@ -1571,10 +1571,9 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout4/mods/12019' ]
     group: *retconGroup
     dirty:
-      - <<: *dirtyPlugin
-        # Version 1.15
-        crc: 0xc8545353
-        # FO4Edit 3.2
+      - <<: *quickClean
+        crc: 0xC8545353
+        util: '[FO4Edit v4.0.2f](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 3
         udr: 9
 
