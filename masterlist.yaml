@@ -2938,21 +2938,18 @@ plugins:
   - name: 'ArmorKeywords.esm'
     url: [ 'https://www.nexusmods.com/fallout4/mods/6091' ]
     dirty:
-      # Version 8.5
+      # 8.51
       - <<: *quickClean
-        crc: 0xD21D5CD0
-        util: '[FO4Edit v4.0.1](https://www.nexusmods.com/fallout4/mods/2737)'
-        itm: 52
+        crc: 0x03DC73D9
+        util: '[FO4Edit v4.0.2f](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 55
     clean:
-      # Version 4.02a No DLC
-      - crc: 0x8556BB60
-        util: 'FO4Edit v4.0.1'
-      # Version 8.5
-      - crc: 0x6583F7F8
-        util: 'FO4Edit v4.0.1'
+      # 8.51
+      - crc: 0xDFC0C7CE
+        util: 'FO4Edit v4.0.2f'
     msg:
       - <<: *obsolete
-        condition: 'version("ArmorKeywords.esm", "8.5", <)'
+        condition: 'version("ArmorKeywords.esm", "8.51", <)'
   - name: 'Armorsmith Extended.esp'
     # TODO: Add ´msg´s for DLC compat. patches
     url: [ 'https://www.nexusmods.com/fallout4/mods/2228' ]
