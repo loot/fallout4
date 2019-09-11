@@ -4050,12 +4050,11 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout4/mods/15345' ]
     dirty:
       # Version 1.42
-      - <<: *dirtyPlugin
+      - <<: *quickClean
         crc: 0x8240D505
-        util: 'FO4Edit v3.2.31'
-        itm: 11
-    msg:
-      - *wildEdits
+        util: '[FO4Edit v4.0.2f](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 8
+    msg: [ *wildEdits ]
   - name: 'BrahminPackMod.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/30436' ]
     dirty:
