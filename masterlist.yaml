@@ -154,6 +154,18 @@ common:
       - lang: ru
         text: 'Этот плагин теперь считается небезопасным и не должен использоваться.'
 
+  - &incWithPatchVersionX
+    type: error
+    content:
+      - lang: en
+        text: 'Incompatible with %1% or greater.'
+      - lang: de
+        text: 'Inkompatibel mit %1% oder höher.'
+  - &incWithPatchVersion1.5.157.0
+    <<: *incWithPatchVersionX
+    subs: [ 'Fallout 4 Patch 1.5.157.0' ]
+    condition: 'file("../Fallout4.exe") and version("../Fallout4.exe", "1.5.157.0", >=)'
+
   - &insteadSKEPatch
     type: warn
     content:
