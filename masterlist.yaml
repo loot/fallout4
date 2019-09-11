@@ -1326,12 +1326,9 @@ plugins:
       - <<: *obsolete
         condition: 'version("Unofficial Fallout 4 Patch.esp", "2.0.7", <)'
     clean:
-      # version: 2.0.6b
-      - crc: 0xCB08C922
-        util: 'FO4Edit v4.0.1'
-      # version: 2.0.7
-      - crc: 0x3458B7A6
-        util: 'FO4Edit v4.0.2'
+      # version: 2.0.8a
+      - crc: 0xC26227AD
+        util: 'FO4Edit v4.0.2f'
   # Mods obsoleted by official Bethesda patches
   - name: 'KH_DogArmorFix.esp '
     url: []
@@ -2938,21 +2935,18 @@ plugins:
   - name: 'ArmorKeywords.esm'
     url: [ 'https://www.nexusmods.com/fallout4/mods/6091' ]
     dirty:
-      # Version 8.5
+      # 8.51
       - <<: *quickClean
-        crc: 0xD21D5CD0
-        util: '[FO4Edit v4.0.1](https://www.nexusmods.com/fallout4/mods/2737)'
-        itm: 52
+        crc: 0x03DC73D9
+        util: '[FO4Edit v4.0.2f](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 55
     clean:
-      # Version 4.02a No DLC
-      - crc: 0x8556BB60
-        util: 'FO4Edit v4.0.1'
-      # Version 8.5
-      - crc: 0x6583F7F8
-        util: 'FO4Edit v4.0.1'
+      # 8.51
+      - crc: 0xDFC0C7CE
+        util: 'FO4Edit v4.0.2f'
     msg:
       - <<: *obsolete
-        condition: 'version("ArmorKeywords.esm", "8.5", <)'
+        condition: 'version("ArmorKeywords.esm", "8.51", <)'
   - name: 'Armorsmith Extended.esp'
     # TODO: Add ´msg´s for DLC compat. patches
     url: [ 'https://www.nexusmods.com/fallout4/mods/2228' ]
@@ -3029,19 +3023,22 @@ plugins:
       - 'ExpandedSettlementFWAll.esp'
       - 'ExpandedSettlementHeight.esp'
       - 'ExpandedSettlementFWHeight.esp'
-    clean:
-      # Version 1.2
-      - crc: 0x6DC858E6
-        util: 'FO4Edit v3.2'
-      # Version 1.3
-      - crc: 0x85D0F67E
-        util: 'FO4Edit v3.2'
     dirty:
-      - <<: *dirtyPlugin
-        # Version 1.1
-        crc: 0x30c3276a
-        # FO4Edit 3.2
-        itm: 42
+      # 2.0.2 Main
+      - <<: *quickClean
+        crc: 0x391C359F
+        util: '[FO4Edit v4.0.2f](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 1
+    clean:
+      # 2.0.2 Main
+      - crc: 0xFDD7FEA5
+        util: 'FO4Edit v4.0.2f'
+      # 2.0.2 No Bunker Hill
+      - crc: 0x3ADEFFCF
+        util: 'FO4Edit v4.0.2f'
+      # 2.0.2 No Bunker Hill or Hangman's Alley
+      - crc: 0xD3B3D904
+        util: 'FO4Edit v4.0.2f'
   - name: 'ASEFarHarbor.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/25487' ]
   - name: 'StarlightLOD.esp'
@@ -3342,16 +3339,14 @@ plugins:
   - name: 'NukaRadBans.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/8342' ]
     dirty:
-      - <<: *dirtyPlugin
-        # Version 1.01, Vanilla
-        crc: 0x174f8132
-        # FO4Edit 3.2
+      # 1.01
+      - <<: *quickClean
+        crc: 0x174F8132
+        util: '[FO4Edit v4.0.2f](https://www.nexusmods.com/fallout4/mods/2737)'
         udr: 1
-      - <<: *dirtyPlugin
-        # Version 1.01, Armorsmith Extended
-        crc: 0x717e7f08
-        # FO4Edit 3.2
-        udr: 1
+    clean:
+      - crc: 0x114C9C6A
+        util: 'FO4Edit v4.0.2f'
   - name: 'SimSettlements.esm'
     url: [ 'https://www.nexusmods.com/fallout4/mods/21872' ]
     after:
@@ -4830,3 +4825,14 @@ plugins:
       # version: 1.1
       - crc: 0x6457CC6D
         util: 'FO4Edit v4.0.2'
+  - name: 'BobbleMagazine.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/12490' ]
+    dirty:
+      - <<: *quickClean
+        crc: 0x0C35F87A
+        util: '[FO4Edit v4.0.2f](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 4
+        udr: 138
+    clean:
+      - crc: 0xBEABFE18
+        util: 'FO4Edit v4.0.2f'
