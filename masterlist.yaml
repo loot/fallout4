@@ -160,7 +160,7 @@ common:
       - lang: en
         text: 'Incompatible with %1% or greater.'
       - lang: de
-        text: 'Inkompatibel mit %1% oder höher.'
+        text: 'Inkompatibel mit %1% oder neuer.'
   - &incWithPatchVersion1.5.157.0
     <<: *incWithPatchVersionX
     subs: [ 'Fallout 4 Patch 1.5.157.0' ]
@@ -2337,12 +2337,7 @@ plugins:
       - *insteadSKEPatch
   - name: 'DLC_SK_Patch.esp'
     msg:
-      - type: error
-        content:
-          - lang: en
-            text: 'The original SK v0.8 is not compatible with Fallout 4 patch 1.5.157 or greater.'
-          - lang: de
-            text: 'Das originale SK v0.8 ist nicht kompatibel mit Fallout 4 Patch 1.5.157 oder neuer.'
+      - <<: *incWithPatchVersion1.5.157.0
         condition: '(checksum("SettlementKeywords.esm",8D550871) and active("DLC_SK_Patch.esp")) and version("..\Fallout4.exe", "1.5.157.0", >=)'
     inc:
       - 'SettlementKeywords.esm'
@@ -2470,13 +2465,7 @@ plugins:
           - lang: de
             text: 'Setzt Settlement Keywords v0.8 voraus.'
         condition: 'not checksum("SettlementKeywords.esm",8D550871)'
-      - type: error
-        content:
-          - lang: en
-            text: 'Incompatible with Fallout 4 patch 1.5.157 or greater.'
-          - lang: de
-            text: 'Inkompatibel mit Fallout 4 Patch 1.5.157 oder neuer.'
-        condition: 'file("../Fallout4.exe") and version("../Fallout4.exe", "1.5.157.0", >=)'
+      - *incWithPatchVersion1.5.157.0
   - name: 'Homemaker - SKE Integration Patch.esp'
     msg: [ *obsolete ]
   - name: 'Homemaker - SSEx Compatibility Patch.esp'
@@ -2505,64 +2494,29 @@ plugins:
     msg: [ *obsolete ]
   - name: 'Snap and Build - Greenhouse.esp'
     msg:
-      - type: error
-        content:
-          - lang: en
-            text: 'Incompatible with Fallout 4 patch 1.5.157 or greater.'
-          - lang: de
-            text: 'Inkompatibel mit Fallout 4 Patch 1.5.157 oder neuer.'
-        condition: 'file("../Fallout4.exe") and version("../Fallout4.exe", "1.5.157.0", >=)'
+      - *incWithPatchVersion1.5.157.0
       - *obsolete
   - name: 'SnB - Greenhouse - Homemaker.esp'
     msg:
-      - type: error
-        content:
-          - lang: en
-            text: 'Incompatible with Fallout 4 patch 1.5.157 or greater.'
-          - lang: de
-            text: 'Inkompatibel mit Fallout 4 Patch 1.5.157 oder neuer.'
-        condition: 'file("../Fallout4.exe") and version("../Fallout4.exe", "1.5.157.0", >=)'
+      - *incWithPatchVersion1.5.157.0
       - *obsolete
   - name: 'SnB- Greenhouse - SK.esp'
     msg:
-      - type: error
-        content:
-          - lang: en
-            text: 'Incompatible with Fallout 4 patch 1.5.157 or greater.'
-          - lang: de
-            text: 'Inkompatibel mit Fallout 4 Patch 1.5.157 oder neuer.'
-        condition: 'file("../Fallout4.exe") and version("../Fallout4.exe", "1.5.157.0", >=)'
+      - *incWithPatchVersion1.5.157.0
       - *obsolete
   - name: 'SnB - Greenhouse - SSEx.esp'
     msg:
-      - type: error
-        content:
-          - lang: en
-            text: 'Incompatible with Fallout 4 patch 1.5.157 or greater.'
-          - lang: de
-            text: 'Inkompatibel mit Fallout 4 Patch 1.5.157 oder neuer.'
-        condition: 'file("../Fallout4.exe") and version("../Fallout4.exe", "1.5.157.0", >=)'
+      - *incWithPatchVersion1.5.157.0
       - *obsolete
   - name: 'SnB - Greenhouse - Homemaker - SSEx.esp'
     msg:
-      - type: error
-        content:
-          - lang: en
-            text: 'Incompatible with Fallout 4 patch 1.5.157 or greater.'
-          - lang: de
-            text: 'Inkompatibel mit Fallout 4 Patch 1.5.157 oder neuer.'
-        condition: 'file("../Fallout4.exe") and version("../Fallout4.exe", "1.5.157.0", >=)'
+      - *incWithPatchVersion1.5.157.0
       - *obsolete
   - name: 'Homemaker.esm'
     url: [ 'https://www.nexusmods.com/fallout4/mods/1478' ]
     msg:
       # Homemaker 1.34 CRC
-      - type: error
-        content:
-          - lang: en
-            text: 'Incompatible with Fallout 4 patch 1.5.157 or greater.'
-          - lang: de
-            text: 'Inkompatibel mit Fallout 4 Patch 1.5.157 oder neuer.'
+      - <<: *incWithPatchVersion1.5.157.0
         condition: 'checksum("Homemaker.esm",55D44FD5) and version("../Fallout4.exe", "1.5.157.0", >=)'
       - type: error
         content:
@@ -2640,12 +2594,7 @@ plugins:
         condition: 'version("Homemaker.esm", "1.50", >=)'
   - name: 'SettlementKeywords.esm'
     msg:
-      - type: error
-        content:
-          - lang: en
-            text: 'Incompatible with Fallout 4 patch 1.5.157 or greater.'
-          - lang: de
-            text: 'Inkompatibel mit Fallout 4 Patch 1.5.157 oder neuer.'
+      - <<: *incWithPatchVersion1.5.157.0
         condition: 'checksum("SettlementKeywords.esm",8D550871) and version("../Fallout4.exe", "1.5.157.0", >=)'
       - type: error
         content:
@@ -2671,14 +2620,7 @@ plugins:
             text: 'Veraltete Version von Alternate Settlements festgestellt. Verifizieren Sie das der Settlement Keywords Expanded Patch ordnungsgemäß installiert ist.'
         condition: '(checksum("AlternateSettlements.esp",D8906B4D) or checksum("AlternateSettlements.esp",5C36EB92)) and version("SettlementKeywords.esm", "1.0", >=)'
   - name: 'Safe SSEx.esp'
-    msg:
-      - type: error
-        content:
-          - lang: en
-            text: 'Incompatible with Fallout 4 patch 1.5.157 or greater.'
-          - lang: de
-            text: 'Inkompatibel mit Fallout 4 Patch 1.5.157 oder neuer.'
-        condition: 'file("../Fallout4.exe") and version("../Fallout4.exe", "1.5.157.0", >=)'
+    msg: [ *incWithPatchVersion1.5.157.0 ]
   - name: 'Minutemenoverhaul.esp'
     msg:
       - type: error
@@ -2718,13 +2660,7 @@ plugins:
           - lang: de
             text: 'Deinstallieren Sie diese Datei. Es wird nicht gebraucht mit Homemaker 1.50 oder neuer.'
         condition: 'version("Homemaker.esm", "1.50", >=)'
-      - type: error
-        content:
-          - lang: en
-            text: 'Incompatible with Fallout 4 patch 1.5.157 or greater.'
-          - lang: de
-            text: 'Inkompatibel mit Fallout 4 Patch 1.5.157 oder neuer.'
-        condition: 'file("../Fallout4.exe") and version("../Fallout4.exe", "1.5.157.0", >=)'
+      - *incWithPatchVersion1.5.157.0
   - name: 'BuildingBlocks-Foundations_Homemaker.esp'
     msg:
       - type: error
@@ -2734,13 +2670,7 @@ plugins:
           - lang: de
             text: 'Deinstallieren Sie diese Datei. Es wird nicht gebraucht mit Homemaker 1.50 oder neuer.'
         condition: 'version("Homemaker.esm", "1.50", >=)'
-      - type: error
-        content:
-          - lang: en
-            text: 'Incompatible with Fallout 4 patch 1.5.157 or greater.'
-          - lang: de
-            text: 'Inkompatibel mit Fallout 4 Patch 1.5.157 oder neuer.'
-        condition: 'file("../Fallout4.exe") and version("../Fallout4.exe", "1.5.157.0", >=)'
+      - *incWithPatchVersion1.5.157.0
   - name: 'BuildingBlocks-Foundations_Homemaker-SSEx.esp'
     msg:
       - type: error
@@ -2750,13 +2680,7 @@ plugins:
           - lang: de
             text: 'Deinstallieren Sie diese Datei. Es wird nicht gebraucht mit Homemaker 1.50 oder neuer.'
         condition: 'version("Homemaker.esm", "1.50", >=)'
-      - type: error
-        content:
-          - lang: en
-            text: 'Incompatible with Fallout 4 patch 1.5.157 or greater.'
-          - lang: de
-            text: 'Inkompatibel mit Fallout 4 Patch 1.5.157 oder neuer.'
-        condition: 'file("../Fallout4.exe") and version("../Fallout4.exe", "1.5.157.0", >=)'
+      - *incWithPatchVersion1.5.157.0
   - name: 'BuildingBlocks-Foundations_SettlementKeywordsFull.esp'
     msg:
       - type: say
@@ -2775,13 +2699,7 @@ plugins:
           - lang: de
             text: 'Deinstallieren Sie diese Datei. Diese wurde nicht für Settlement Keywords Expanded erstellt.'
         condition: 'version("SettlementKeywords.esm", "1.0", >=)'
-      - type: error
-        content:
-          - lang: en
-            text: 'Incompatible with Fallout 4 patch 1.5.157 or greater.'
-          - lang: de
-            text: 'Inkompatibel mit Fallout 4 Patch 1.5.157 oder neuer.'
-        condition: 'file("../Fallout4.exe") and version("../Fallout4.exe", "1.5.157.0", >=)'
+      - *incWithPatchVersion1.5.157.0
   - name: 'BuildingBlocks-Foundations_Homemaker-SnapBuild-SSEx.esp'
     msg:
       - type: error
@@ -2791,22 +2709,9 @@ plugins:
           - lang: de
             text: 'Deinstallieren Sie diese Datei. Es wird nicht gebraucht mit Homemaker 1.50 oder neuer.'
         condition: 'version("Homemaker.esm", "1.50", >=)'
-      - type: error
-        content:
-          - lang: en
-            text: 'Incompatible with Fallout 4 patch 1.5.157 or greater.'
-          - lang: de
-            text: 'Inkompatibel mit Fallout 4 Patch 1.5.157 oder neuer.'
-        condition: 'file("../Fallout4.exe") and version("../Fallout4.exe", "1.5.157.0", >=)'
+      - *incWithPatchVersion1.5.157.0
   - name: 'BuildingBlocks-Foundations.esp'
-    msg:
-      - type: error
-        content:
-          - lang: en
-            text: 'This mod overwrites many vanilla settlement menus. Detailed instructions to resolve conflicts can be found [here](https://www.creationkit.com/fallout4/index.php?title=Building_Blocks_Foundations).'
-          - lang: de
-            text: 'Diese Mod überschreibt viele Standard Siedlungsmenüs. Detaillierte Anleitungen um Konflikte zu beheben können [hier](https://www.creationkit.com/fallout4/index.php?title=Building_Blocks_Foundations) in Englisch gefunden werden.'
-        condition: 'checksum("BuildingBlocks-Foundations.esp",2924F338) and version("../Fallout4.exe", "1.5.157.0", >=)'
+    msg: [ *incWithPatchVersion1.5.157.0 ]
   - name: 'Z_Horizon_Patch_Homemaker.esp'
     msg:
       - type: warn
