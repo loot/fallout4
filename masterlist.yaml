@@ -1326,12 +1326,9 @@ plugins:
       - <<: *obsolete
         condition: 'version("Unofficial Fallout 4 Patch.esp", "2.0.7", <)'
     clean:
-      # version: 2.0.6b
-      - crc: 0xCB08C922
-        util: 'FO4Edit v4.0.1'
-      # version: 2.0.7
-      - crc: 0x3458B7A6
-        util: 'FO4Edit v4.0.2'
+      # version: 2.0.8a
+      - crc: 0xC26227AD
+        util: 'FO4Edit v4.0.2f'
   # Mods obsoleted by official Bethesda patches
   - name: 'KH_DogArmorFix.esp '
     url: []
