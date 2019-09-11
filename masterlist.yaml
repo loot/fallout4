@@ -4058,29 +4058,13 @@ plugins:
   - name: 'BrahminPackMod.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/30436' ]
     dirty:
-      # Version 1
-      - <<: *dirtyPlugin
-        crc: 0x97C9A7DE
-        util: 'FO4Edit v3.2.23'
-        itm: 372
-        udr: 12
       # Version 1.1
-      - <<: *dirtyPlugin
+      - <<: *quickClean
         crc: 0x6B8C7589
-        util: 'FO4Edit v3.2.23'
-        itm: 371
+        util: '[FO4Edit v4.0.2f](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 355
         udr: 12
-    msg:
-      - <<: *obsolete
-        condition: 'checksum("BrahminPackMod.esp", 97C9A7DE)'
-      - type: warn
-        content:
-          - lang: en
-            text: 'Even with cleaning this plugin with FO4Edit it still has a large number of wild edits and author-preference edits unrelated to the stated purpose of the mod, which may cause issues in your game or prevent other mods from working properly.'
-          - lang: da
-            text: 'Selv efter FO4Edit-rensning af pluginnet vil der stadig være en stor mængde af ukontrollerde og forfatterpræference redigeringer urelateret til moddens angivne formål, hvilket kan forårsage problemer i spillet eller forhindre andre mods i at fungere korrekt.'
-          - lang: de
-            text: 'Auch mit einer Säuberung des Plugins durch FO4Edit, es wird immernoch eine große Anzahl von wilden Modifikationen und Autor-Präferenz-Modifikationen ohne Bezug auf die eigentlichen Zweck der Mod, was möglicherweise Probleme in Ihrem Spiel auslöst kann oder andere Mods davon abhält richtig zu funktionieren.'
+    msg: [ *wildEdits ]
   - name: 'WhatsYourName.esl'
     url: [ 'https://www.nexusmods.com/fallout4/mods/25321' ]
     inc:
