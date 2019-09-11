@@ -3026,19 +3026,22 @@ plugins:
       - 'ExpandedSettlementFWAll.esp'
       - 'ExpandedSettlementHeight.esp'
       - 'ExpandedSettlementFWHeight.esp'
-    clean:
-      # Version 1.2
-      - crc: 0x6DC858E6
-        util: 'FO4Edit v3.2'
-      # Version 1.3
-      - crc: 0x85D0F67E
-        util: 'FO4Edit v3.2'
     dirty:
-      - <<: *dirtyPlugin
-        # Version 1.1
-        crc: 0x30c3276a
-        # FO4Edit 3.2
-        itm: 42
+      # 2.0.2 Main
+      - <<: *quickClean
+        crc: 0x391C359F
+        util: '[FO4Edit v4.0.2f](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 1
+    clean:
+      # 2.0.2 Main
+      - crc: 0xFDD7FEA5
+        util: 'FO4Edit v4.0.2f'
+      # 2.0.2 No Bunker Hill
+      - crc: 0x3ADEFFCF
+        util: 'FO4Edit v4.0.2f'
+      # 2.0.2 No Bunker Hill or Hangman's Alley
+      - crc: 0xD3B3D904
+        util: 'FO4Edit v4.0.2f'
   - name: 'ASEFarHarbor.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/25487' ]
   - name: 'StarlightLOD.esp'
