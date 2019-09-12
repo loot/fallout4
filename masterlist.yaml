@@ -4617,6 +4617,14 @@ plugins:
     group: *npcOverhaulsGroup
     after:
       - 'RaiderOverhaul.esp'
+    dirty:
+      - <<: *quickClean
+        crc: 0xF2980C0F
+        util: '[FO4Edit v4.0.2f](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 120
+    clean:
+      - crc: 0x02C3B2D8
+        util: 'FO4Edit v4.0.2f'
   - name: 'Unique NPCs - Creatures and Monsters.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/24357' ]
     group: *npcOverhaulsGroup
