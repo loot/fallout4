@@ -2821,6 +2821,16 @@ plugins:
     after:
       - 'BetterSettlersNoLollygagging.esp'
       - 'BetterSettlersCleanFacePack.esp'
+  - name: 'BetterSettlersRaidersPack.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/4772' ]
+    dirty:
+      - <<: *quickClean
+        crc: 0x08DCF6D7
+        util: '[FO4Edit v4.0.2f](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 2
+    clean:
+      - crc: 0x0D0698E4
+        util: 'FO4Edit v4.0.2f'
   - name: 'Orphans.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/16000/' ]
     after:
