@@ -2775,8 +2775,11 @@ plugins:
         util: '[FO4Edit v4.0.2f](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 2
     clean:
-      # 4772
+      # 4772 DLC
       - crc: 0x6A5FC68B
+        util: 'FO4Edit v4.0.2f'
+      # 4772 No DLC
+      - crc: 0x2BC9377C
         util: 'FO4Edit v4.0.2f'
       # 21248
       - crc: 0x314A7B65
@@ -4658,7 +4661,24 @@ plugins:
     after:
       - 'RaiderOverhaul.esp'
       - 'Unique NPCs.esp'
-
+    dirty:
+      - <<: *quickClean
+        crc: 0x76525074
+        util: '[FO4Edit v4.0.2f](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 202
+    clean:
+      - crc: 0x63ECCC16
+        util: 'FO4Edit v4.0.2f'
+  - name: 'Unique NPCs - Creatures and Monsters - NonLore.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/24357' ]
+    clean:
+      - crc: 0x9E242F95
+        util: 'FO4Edit v4.0.2f'
+  - name: 'Unique NPCs - Creatures and Monsters_SMR.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/24357' ]
+    clean:
+      - crc: 0xDC774291
+        util: 'FO4Edit v4.0.2f'
   - name: 'Yagisan_WO_Better_Caravans.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/33787' ]
     group: *npcOverhaulsGroup
