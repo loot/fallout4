@@ -4590,6 +4590,14 @@ plugins:
     after:
       - 'RaiderOverhaul.esp'
       - 'Unique NPCs - Creatures and Monsters.esp'
+    dirty:
+      - <<: *quickClean
+        crc: 0xAA1B9904
+        util: '[FO4Edit v4.0.2f](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 95
+    clean:
+      - crc: 0xD6276EA3
+        util: 'FO4Edit v4.0.2f'
 
   - name: 'Synth Overhaul.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/9525' ]
