@@ -4598,7 +4598,16 @@ plugins:
     clean:
       - crc: 0xD6276EA3
         util: 'FO4Edit v4.0.2f'
-
+  - name: 'SuperMutantRedux_ArmorSmithExtended.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/11853' ]
+    dirty:
+      - <<: *quickClean
+        crc: 0x58C34592
+        util: '[FO4Edit v4.0.2f](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 104
+    clean:
+      - crc: 0x19D8E10A
+        util: 'FO4Edit v4.0.2f'
   - name: 'Synth Overhaul.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/9525' ]
     group: *npcOverhaulsGroup
