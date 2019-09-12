@@ -4835,3 +4835,8 @@ plugins:
     clean:
       - crc: 0xBEABFE18
         util: 'FO4Edit v4.0.2f'
+  - name: 'AzarPonytailHairstyles.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/8126' ]
+    clean:
+      - crc: 0x13161D0A
+        util: 'FO4Edit v4.0.2f'
