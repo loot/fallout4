@@ -3863,11 +3863,15 @@ plugins:
   - name: 'BetterSettlersCleanFacePack.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/4772' ]
     dirty:
-      - <<: *dirtyPlugin
-        # Version 2.0
-        crc: 0x7331d352
-        util: 'FO4Edit v3.2.1'
-        itm: 33
+      # 2.0
+      - <<: *quickClean
+        crc: 0x8DB7FF05
+        util: '[FO4Edit v4.0.2f](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 29
+    clean:
+      # 2.0
+      - crc: 0x59EB140F
+        util: 'FO4Edit v4.0.2f'
 
   - name: 'BTInteriors_Project.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/4612' ]
