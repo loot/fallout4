@@ -3872,6 +3872,11 @@ plugins:
       # 2.0
       - crc: 0x59EB140F
         util: 'FO4Edit v4.0.2f'
+  - name: 'BetterSettlersNoLollygagging.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/4772' ]
+    clean:
+      - crc: 0xDE1AC4B0
+        util: 'FO4Edit v4.0.2f'
 
   - name: 'BTInteriors_Project.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/4612' ]
