@@ -4568,6 +4568,14 @@ plugins:
   - name: 'RaiderOverhaul.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/9103' ]
     group: *npcOverhaulsGroup
+    dirty:
+      - <<: *quickClean
+        crc: 0x9D6A0A63
+        util: '[FO4Edit v4.0.2f](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 25
+    clean:
+      - crc: 0x7D50E7B2
+        util: 'FO4Edit v4.0.2f'
 
   - name: 'SanctuaryNPCsOverhaul.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/28810' ]
