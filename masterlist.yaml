@@ -4900,3 +4900,8 @@ plugins:
     clean:
       - crc: 0x13161D0A
         util: 'FO4Edit v4.0.2f'
+  - name: 'Marmo1233 - Immersive Settlers.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/23391' ]
+    clean:
+      - crc: 0x5FD8E15C
+        util: 'FO4Edit v4.0.2f'
