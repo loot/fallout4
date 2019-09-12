@@ -4635,6 +4635,11 @@ plugins:
     clean:
       - crc: 0x841B6EB8
         util: 'FO4Edit v4.0.2f'
+  - name: 'Unique NPCs_SuperMutantRedux.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/21248' ]
+    clean:
+      - crc: 0xDB3BDBC4
+        util: 'FO4Edit v4.0.2f'
   - name: 'Unique NPCs - Creatures and Monsters.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/24357' ]
     group: *npcOverhaulsGroup
