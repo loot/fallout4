@@ -2799,6 +2799,7 @@ plugins:
       - 'BetterSettlersLightArmorOnly.esp'
       - 'BetterSettlersHeavyArmorOnly.esp'
     inc: [ 'BetterSettlersFarHarborPatch.esp' ]
+    msg: [ *obsolete ]
   - name: 'BetterSettlersFarHarborPatch.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/4772' ]
     req:
@@ -2814,6 +2815,7 @@ plugins:
       - 'BetterSettlersLightArmorOnly.esp'
       - 'BetterSettlersHeavyArmorOnly.esp'
     inc: [ 'BetterSettlersFarHarborPatchMortal.esp' ]
+    msg: [ *obsolete ]
   - name: 'BetterSettlersCCAPack2.0.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/4772' ]
     req:
