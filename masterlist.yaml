@@ -2948,7 +2948,6 @@ plugins:
       - <<: *obsolete
         condition: 'version("ArmorKeywords.esm", "8.51", <)'
   - name: 'Armorsmith Extended.esp'
-    # TODO: Add ´msg´s for DLC compat. patches
     url: [ 'https://www.nexusmods.com/fallout4/mods/2228' ]
     group: *itemsGroup
     after:
@@ -2957,12 +2956,12 @@ plugins:
       # Version 4.6
       - <<: *quickClean
         crc: 0x4DE48100
-        util: '[FO4Edit v4.0.1](https://www.nexusmods.com/fallout4/mods/2737)'
+        util: '[FO4Edit v4.0.2f](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 13
     clean:
       # Version 4.6, After Quick Clean
       - crc: 0x52D267F3
-        util: 'FO4Edit v4.0.1'
+        util: 'FO4Edit v4.0.2f'
     msg:
       - <<: *obsolete
         condition: 'version("Armorsmith Extended.esp", "4.6", <)'
