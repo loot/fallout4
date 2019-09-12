@@ -4956,6 +4956,7 @@ plugins:
       - crc: 0x8715CF62
         util: 'FO4Edit v4.0.2f'
   - name: 'Eli Armor Compendium AE Patch.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/22431' ]
     dirty:
       - <<: *quickClean
         crc: 0xE40FB60A
