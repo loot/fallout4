@@ -2759,16 +2759,28 @@ plugins:
       - 'WET Murkier.esp'
       - 'WET Clearer.esp'
   - name: 'BetterSettlers.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/4772' ]
+    url:
+      - 'https://www.nexusmods.com/fallout4/mods/4772'
+      - 'https://www.nexusmods.com/fallout4/mods/21248'
     after:
       - 'MoreSkinColors.esp'
       - 'AzarPonyHairstyles.esp'
       - 'Eli_Armour_Compendium.esp'
       - 'Scrap Everything - Core.esp'
       - 'Scrap Everything - Ultimate Edition.esp'
+    dirty:
+      # 21248
+      - <<: *quickClean
+        crc: 0xF1CD0113
+        util: '[FO4Edit v4.0.2f](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 2
     clean:
+      # 4772
       - crc: 0x6A5FC68B
-        util: 'FO4Edit v3.2'
+        util: 'FO4Edit v4.0.2f'
+      # 21248
+      - crc: 0x314A7B65
+        util: 'FO4Edit v4.0.2f'
   - name: 'BetterSettlersFarHarborPatchMortal.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/4772' ]
     req:
