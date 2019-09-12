@@ -2759,16 +2759,31 @@ plugins:
       - 'WET Murkier.esp'
       - 'WET Clearer.esp'
   - name: 'BetterSettlers.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/4772' ]
+    url:
+      - 'https://www.nexusmods.com/fallout4/mods/4772'
+      - 'https://www.nexusmods.com/fallout4/mods/21248'
     after:
       - 'MoreSkinColors.esp'
       - 'AzarPonyHairstyles.esp'
       - 'Eli_Armour_Compendium.esp'
       - 'Scrap Everything - Core.esp'
       - 'Scrap Everything - Ultimate Edition.esp'
+    dirty:
+      # 21248
+      - <<: *quickClean
+        crc: 0xF1CD0113
+        util: '[FO4Edit v4.0.2f](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 2
     clean:
+      # 4772 DLC
       - crc: 0x6A5FC68B
-        util: 'FO4Edit v3.2'
+        util: 'FO4Edit v4.0.2f'
+      # 4772 No DLC
+      - crc: 0x2BC9377C
+        util: 'FO4Edit v4.0.2f'
+      # 21248
+      - crc: 0x314A7B65
+        util: 'FO4Edit v4.0.2f'
   - name: 'BetterSettlersFarHarborPatchMortal.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/4772' ]
     req:
@@ -2784,6 +2799,7 @@ plugins:
       - 'BetterSettlersLightArmorOnly.esp'
       - 'BetterSettlersHeavyArmorOnly.esp'
     inc: [ 'BetterSettlersFarHarborPatch.esp' ]
+    msg: [ *obsolete ]
   - name: 'BetterSettlersFarHarborPatch.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/4772' ]
     req:
@@ -2799,6 +2815,7 @@ plugins:
       - 'BetterSettlersLightArmorOnly.esp'
       - 'BetterSettlersHeavyArmorOnly.esp'
     inc: [ 'BetterSettlersFarHarborPatchMortal.esp' ]
+    msg: [ *obsolete ]
   - name: 'BetterSettlersCCAPack2.0.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/4772' ]
     req:
@@ -2806,6 +2823,33 @@ plugins:
     after:
       - 'BetterSettlersNoLollygagging.esp'
       - 'BetterSettlersCleanFacePack.esp'
+  - name: 'BetterSettlersRaidersPack.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/4772' ]
+    dirty:
+      - <<: *quickClean
+        crc: 0x08DCF6D7
+        util: '[FO4Edit v4.0.2f](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 2
+    clean:
+      - crc: 0x0D0698E4
+        util: 'FO4Edit v4.0.2f'
+  - name: 'BetterSettlersCleanFacePack.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/4772' ]
+    dirty:
+      # 2.0
+      - <<: *quickClean
+        crc: 0x8DB7FF05
+        util: '[FO4Edit v4.0.2f](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 29
+    clean:
+      # 2.0
+      - crc: 0x59EB140F
+        util: 'FO4Edit v4.0.2f'
+  - name: 'BetterSettlersNoLollygagging.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/4772' ]
+    clean:
+      - crc: 0xDE1AC4B0
+        util: 'FO4Edit v4.0.2f'
   - name: 'Orphans.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/16000/' ]
     after:
@@ -2948,7 +2992,6 @@ plugins:
       - <<: *obsolete
         condition: 'version("ArmorKeywords.esm", "8.51", <)'
   - name: 'Armorsmith Extended.esp'
-    # TODO: Add ´msg´s for DLC compat. patches
     url: [ 'https://www.nexusmods.com/fallout4/mods/2228' ]
     group: *itemsGroup
     after:
@@ -2957,12 +3000,12 @@ plugins:
       # Version 4.6
       - <<: *quickClean
         crc: 0x4DE48100
-        util: '[FO4Edit v4.0.1](https://www.nexusmods.com/fallout4/mods/2737)'
+        util: '[FO4Edit v4.0.2f](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 13
     clean:
       # Version 4.6, After Quick Clean
       - crc: 0x52D267F3
-        util: 'FO4Edit v4.0.1'
+        util: 'FO4Edit v4.0.2f'
     msg:
       - <<: *obsolete
         condition: 'version("Armorsmith Extended.esp", "4.6", <)'
@@ -3539,8 +3582,8 @@ plugins:
   - name: 'CBBE.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/15' ]
     clean:
-      - crc: 0x5caf6c6d
-        util: FO4Edit v3.2.1
+      - crc: 0x5CAF6C6D
+        util: 'FO4Edit v4.0.2f'
   - name: 'CompactCrafting.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/18264' ]
     clean:
@@ -3834,15 +3877,6 @@ plugins:
     clean:
       - crc: 0x2e6f79c3
         util: FO4Edit v3.2.1
-  - name: 'BetterSettlersCleanFacePack.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/4772' ]
-    dirty:
-      - <<: *dirtyPlugin
-        # Version 2.0
-        crc: 0x7331d352
-        util: 'FO4Edit v3.2.1'
-        itm: 33
-
   - name: 'BTInteriors_Project.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/4612' ]
     dirty:
@@ -4569,6 +4603,14 @@ plugins:
   - name: 'RaiderOverhaul.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/9103' ]
     group: *npcOverhaulsGroup
+    dirty:
+      - <<: *quickClean
+        crc: 0x9D6A0A63
+        util: '[FO4Edit v4.0.2f](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 25
+    clean:
+      - crc: 0x7D50E7B2
+        util: 'FO4Edit v4.0.2f'
 
   - name: 'SanctuaryNPCsOverhaul.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/28810' ]
@@ -4583,7 +4625,24 @@ plugins:
     after:
       - 'RaiderOverhaul.esp'
       - 'Unique NPCs - Creatures and Monsters.esp'
-
+    dirty:
+      - <<: *quickClean
+        crc: 0xAA1B9904
+        util: '[FO4Edit v4.0.2f](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 95
+    clean:
+      - crc: 0xD6276EA3
+        util: 'FO4Edit v4.0.2f'
+  - name: 'SuperMutantRedux_ArmorSmithExtended.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/11853' ]
+    dirty:
+      - <<: *quickClean
+        crc: 0x58C34592
+        util: '[FO4Edit v4.0.2f](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 104
+    clean:
+      - crc: 0x19D8E10A
+        util: 'FO4Edit v4.0.2f'
   - name: 'Synth Overhaul.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/9525' ]
     group: *npcOverhaulsGroup
@@ -4593,13 +4652,53 @@ plugins:
     group: *npcOverhaulsGroup
     after:
       - 'RaiderOverhaul.esp'
+    dirty:
+      - <<: *quickClean
+        crc: 0xF2980C0F
+        util: '[FO4Edit v4.0.2f](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 120
+    clean:
+      - crc: 0x02C3B2D8
+        util: 'FO4Edit v4.0.2f'
+  - name: 'Unique NPCs FarHarbor.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/21248' ]
+    dirty:
+      - <<: *quickClean
+        crc: 0x21D92256
+        util: '[FO4Edit v4.0.2f](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 26
+    clean:
+      - crc: 0x841B6EB8
+        util: 'FO4Edit v4.0.2f'
+  - name: 'Unique NPCs_SuperMutantRedux.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/21248' ]
+    clean:
+      - crc: 0xDB3BDBC4
+        util: 'FO4Edit v4.0.2f'
   - name: 'Unique NPCs - Creatures and Monsters.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/24357' ]
     group: *npcOverhaulsGroup
     after:
       - 'RaiderOverhaul.esp'
       - 'Unique NPCs.esp'
-
+    dirty:
+      - <<: *quickClean
+        crc: 0x76525074
+        util: '[FO4Edit v4.0.2f](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 202
+    clean:
+      - crc: 0x63ECCC16
+        util: 'FO4Edit v4.0.2f'
+  - name: 'Unique NPCs - Creatures and Monsters - NonLore.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/24357' ]
+    clean:
+      - crc: 0x9E242F95
+        util: 'FO4Edit v4.0.2f'
+  - name: 'Unique NPCs - Creatures and Monsters_SMR.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/24357' ]
+    clean:
+      - crc: 0xDC774291
+        util: 'FO4Edit v4.0.2f'
   - name: 'Yagisan_WO_Better_Caravans.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/33787' ]
     group: *npcOverhaulsGroup
@@ -4835,4 +4934,34 @@ plugins:
         udr: 138
     clean:
       - crc: 0xBEABFE18
+        util: 'FO4Edit v4.0.2f'
+  - name: 'AzarPonytailHairstyles.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/8126' ]
+    clean:
+      - crc: 0x13161D0A
+        util: 'FO4Edit v4.0.2f'
+  - name: 'Marmo1233 - Immersive Settlers.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/23391' ]
+    clean:
+      - crc: 0x5FD8E15C
+        util: 'FO4Edit v4.0.2f'
+  - name: 'Eli_Armour_Compendium.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/22431' ]
+    dirty:
+      - <<: *quickClean
+        crc: 0xDD0BDC85
+        util: '[FO4Edit v4.0.2f](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 2
+    clean:
+      - crc: 0x8715CF62
+        util: 'FO4Edit v4.0.2f'
+  - name: 'Eli Armor Compendium AE Patch.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/22431' ]
+    dirty:
+      - <<: *quickClean
+        crc: 0xE40FB60A
+        util: '[FO4Edit v4.0.2f](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 1
+    clean:
+      - crc: 0x9E3E233E
         util: 'FO4Edit v4.0.2f'
