@@ -4946,6 +4946,7 @@ plugins:
       - crc: 0x5FD8E15C
         util: 'FO4Edit v4.0.2f'
   - name: 'Eli_Armour_Compendium.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/22431' ]
     dirty:
       - <<: *quickClean
         crc: 0xDD0BDC85
