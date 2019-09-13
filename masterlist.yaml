@@ -3086,12 +3086,16 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout4/mods/25487' ]
   - name: 'StarlightLOD.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/23034' ]
-    dirty:
-      - <<: *dirtyPlugin
-        # Version 1.0
-        crc: 0x31827654
-        # FO4Edit 3.2
-        itm: 4
+    msg:
+      - <<: *useOnlyOneX
+        condition: 'active("StarlightLOD.esl")'
+        subs: [ 'StarlightLOD plugin' ]
+  - name: 'StarlightLOD.esl'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/23034' ]
+    msg:
+      - <<: *useOnlyOneX
+        condition: 'active("StarlightLOD.esp")'
+        subs: [ 'StarlightLOD plugin' ]
   - name: 'SurvivalOptions.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/14650' ]
     inc:
