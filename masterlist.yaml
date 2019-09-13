@@ -3029,15 +3029,21 @@ plugins:
           - 'ArmorKeywords.esm'
           - 'https://www.nexusmods.com/fallout4/mods/2228'
         condition: 'active("ArmorKeywords.esm") and checksum("ArmorKeywords.esm", 25A1BAA8)'
-
+  - name: 'SettlementAttacksBeyond.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/12892' ]
+    clean:
+      - crc: 0x220103D5
+        util: 'FO4Edit v4.0.2f'
   - name: 'SettlementAttacksBeyondFH.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/12892' ]
     dirty:
-      - <<: *dirtyPlugin
-        # Version 1.1
-        crc: 0xe0fb33f8
-        # FO4Edit 3.2
+      - <<: *quickClean
+        crc: 0xE0FB33F8
+        util: '[FO4Edit v4.0.2f](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 1
+    clean:
+      - crc: 0x206E7CA1
+        util: 'FO4Edit v4.0.2f'
   - name: 'Some Assembly Required.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/12050' ]
     dirty:
