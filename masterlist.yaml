@@ -3292,12 +3292,6 @@ plugins:
     inc:
       # Both use PresetFemale15
       - 'Vault Girl.esp'
-    dirty:
-      - <<: *dirtyPlugin
-        # Version .9
-        crc: 0x967e4d12
-        # FO4Edit 3.2
-        itm: 1
   - name: 'DiamondLighting.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/12432' ]
     dirty:
