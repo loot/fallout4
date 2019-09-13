@@ -3231,11 +3231,13 @@ plugins:
   - name: 'RailroadPerksCut.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/11751' ]
     dirty:
-      - <<: *dirtyPlugin
-        # Version 1.0
-        crc: 0x98ccfb8b
-        # FO4Edit 3.2
+      - <<: *quickClean
+        crc: 0x98CCFB8B
+        util: '[FO4Edit v4.0.2f](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 4
+    clean:
+      - crc: 0xFA58312D
+        util: 'FO4Edit v4.0.2f'
   - name: 'MAGS.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/12849' ]
     dirty:
