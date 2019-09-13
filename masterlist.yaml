@@ -2971,10 +2971,10 @@ plugins:
   - name: 'nvvault1080.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/18172' ]
     dirty:
-      - <<: *dirtyPlugin
-        # Version 15
-        crc: 0xd6acc264
-        # FO4Edit 3.2
+      # v15
+      - <<: *reqManualFix
+        crc: 0xD6ACC264
+        util: '[FO4Edit v4.0.2f](https://www.nexusmods.com/fallout4/mods/2737)'
         nav: 5
   - name: 'ArmorKeywords.esm'
     url: [ 'https://www.nexusmods.com/fallout4/mods/6091' ]
