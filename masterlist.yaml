@@ -3034,6 +3034,7 @@ plugins:
         itm: 10
   - name: 'Some Assembly Required (Legendary Patch).esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/17859' ]
+    dirty:
       # v1.4
       - <<: *quickClean
         crc: 0x1E1CE4D4
