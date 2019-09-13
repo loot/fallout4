@@ -3225,11 +3225,9 @@ plugins:
         condition: 'active("ValdacilsItemSorting-.+\.esp") and not active("CN + RASE - VIS Patch.esp")'
   - name: 'Sanctuary Terminals.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/11730' ]
-    dirty:
-      - <<: *dirtyPlugin
-        # Version 1.0
-        crc: 0x6cfbe10e
-        itm: 4
+    clean:
+      - crc: 0x6CFBE10E
+        util: 'FO4Edit v4.0.2f'
   - name: 'RailroadPerksCut.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/11751' ]
     dirty:
