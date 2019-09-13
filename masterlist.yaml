@@ -2948,33 +2948,13 @@ plugins:
           - lang: de
             text: "Sie scheinen die Valdacil's Item Sorting Variante der Mod zu nutzen, aber ohne Nutzen jeglicher Valdacil's Item Sorting-Plugins. Ziehen Sie in Erwägung eine Version von Give Me That Bottle ohne Sortierungs-Patches zu nutzen."
         condition: 'not active("ValdacilsItemSorting-.+\.esp") and (checksum("Give Me That Bottle.esp", 939407C9) or checksum("Give Me That Bottle.esp", AE38A5A0))'
-  - name: 'CC''s Unique Vault Suit Boxes.esp'
-    url: []
-    dirty:
-      - <<: *dirtyPlugin
-        # Version 1.01
-        crc: 0x8a219a39
-        # FO4Edit 3.2
-        itm: 2
-    msg:
-      - <<: *patchProvided
-        subs: [ 'Far Harbor' ]
-        condition: 'active("DLCCoast.esm") and not active("CC''s Unique Vault Suit Boxes - Far Harbor Patch.esp")'
-  - name: 'CC''s Unique Vault Suit Boxes - Far Harbor Patch.esp'
-    url: []
-    dirty:
-      - <<: *dirtyPlugin
-        # Version 1.01
-        crc: 0xb02466b0
-        # FO4Edit 3.2
-        udr: 2
   - name: 'nvvault1080.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/18172' ]
     dirty:
-      - <<: *dirtyPlugin
-        # Version 15
-        crc: 0xd6acc264
-        # FO4Edit 3.2
+      # v15
+      - <<: *reqManualFix
+        crc: 0xD6ACC264
+        util: '[FO4Edit v4.0.2f](https://www.nexusmods.com/fallout4/mods/2737)'
         nav: 5
   - name: 'ArmorKeywords.esm'
     url: [ 'https://www.nexusmods.com/fallout4/mods/6091' ]
@@ -3029,30 +3009,36 @@ plugins:
           - 'ArmorKeywords.esm'
           - 'https://www.nexusmods.com/fallout4/mods/2228'
         condition: 'active("ArmorKeywords.esm") and checksum("ArmorKeywords.esm", 25A1BAA8)'
-
+  - name: 'SettlementAttacksBeyond.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/12892' ]
+    clean:
+      - crc: 0x220103D5
+        util: 'FO4Edit v4.0.2f'
   - name: 'SettlementAttacksBeyondFH.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/12892' ]
     dirty:
-      - <<: *dirtyPlugin
-        # Version 1.1
-        crc: 0xe0fb33f8
-        # FO4Edit 3.2
+      - <<: *quickClean
+        crc: 0xE0FB33F8
+        util: '[FO4Edit v4.0.2f](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 1
+    clean:
+      - crc: 0x206E7CA1
+        util: 'FO4Edit v4.0.2f'
   - name: 'Some Assembly Required.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/12050' ]
     dirty:
-      - <<: *dirtyPlugin
-        # Version 1.4
-        crc: 0xae45ec68
-        # FO4Edit 3.2
-        itm: 15
+      # v1.4
+      - <<: *quickClean
+        crc: 0xAE45EC68
+        util: '[FO4Edit v4.0.2f](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 10
   - name: 'Some Assembly Required (Legendary Patch).esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/17859' ]
     dirty:
-      - <<: *dirtyPlugin
-        # Version 1.4
-        crc: 0x1e1ce4d4
-        # FO4Edit 3.2
+      # v1.4
+      - <<: *quickClean
+        crc: 0x1E1CE4D4
+        util: '[FO4Edit v4.0.2f](https://www.nexusmods.com/fallout4/mods/2737)'
         udr: 3
   - name: 'AllSetsExtended.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/25316' ]
@@ -3086,12 +3072,16 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout4/mods/25487' ]
   - name: 'StarlightLOD.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/23034' ]
-    dirty:
-      - <<: *dirtyPlugin
-        # Version 1.0
-        crc: 0x31827654
-        # FO4Edit 3.2
-        itm: 4
+    msg:
+      - <<: *useOnlyOneX
+        condition: 'active("StarlightLOD.esl")'
+        subs: [ 'StarlightLOD plugin' ]
+  - name: 'StarlightLOD.esl'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/23034' ]
+    msg:
+      - <<: *useOnlyOneX
+        condition: 'active("StarlightLOD.esp")'
+        subs: [ 'StarlightLOD plugin' ]
   - name: 'SurvivalOptions.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/14650' ]
     inc:
@@ -3235,26 +3225,25 @@ plugins:
         condition: 'active("ValdacilsItemSorting-.+\.esp") and not active("CN + RASE - VIS Patch.esp")'
   - name: 'Sanctuary Terminals.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/11730' ]
-    dirty:
-      - <<: *dirtyPlugin
-        # Version 1.0
-        crc: 0x6cfbe10e
-        itm: 4
+    clean:
+      - crc: 0x6CFBE10E
+        util: 'FO4Edit v4.0.2f'
   - name: 'RailroadPerksCut.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/11751' ]
     dirty:
-      - <<: *dirtyPlugin
-        # Version 1.0
-        crc: 0x98ccfb8b
-        # FO4Edit 3.2
+      - <<: *quickClean
+        crc: 0x98CCFB8B
+        util: '[FO4Edit v4.0.2f](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 4
+    clean:
+      - crc: 0xFA58312D
+        util: 'FO4Edit v4.0.2f'
   - name: 'MAGS.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/12849' ]
     dirty:
-      - <<: *dirtyPlugin
-        # Version .99
-        crc: 0xa9913693
-        # FO4Edit 3.2
+      - <<: *quickClean
+        crc: 0xA9913693
+        util: '[FO4Edit v4.0.2f](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 12
         udr: 9
   - name: 'Reverb and Ambiance Overhaul.esp'
@@ -3291,39 +3280,59 @@ plugins:
       # Both use PresetFemale15
       - 'Hot Sosig.esp'
     dirty:
-      - <<: *dirtyPlugin
-        # Version 1.5
-        crc: 0xe5ad59a1
-        # FO4Edit 3.2
+      - <<: *quickClean
+        crc: 0xE5AD59A1
+        util: '[FO4Edit v4.0.2f](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 1
+    clean:
+      - crc: 0xD20266D0
+        util: 'FO4Edit v4.0.2f'
   - name: 'Hot Sosig.esp'
     url: []
     inc:
       # Both use PresetFemale15
       - 'Vault Girl.esp'
-    dirty:
-      - <<: *dirtyPlugin
-        # Version .9
-        crc: 0x967e4d12
-        # FO4Edit 3.2
-        itm: 1
   - name: 'DiamondLighting.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/12432' ]
     dirty:
-      - <<: *dirtyPlugin
-        # Version 1
-        crc: 0x306fdd54
-        # FO4Edit 3.2
+      - <<: *quickClean
+        crc: 0x306FDD54
+        util: '[FO4Edit v4.0.2f](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 1
         udr: 4
+    clean:
+      - crc: 0xF945AE3D
+        util: 'FO4Edit v4.0.2f'
+  - name: 'AlternativeLighting.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/12432' ]
+    dirty:
+      - <<: *quickClean
+        crc: 0xBAB94892
+        util: '[FO4Edit v4.0.2f](https://www.nexusmods.com/fallout4/mods/2737)'
+        udr: 6
+    clean:
+      - crc: 0x1CF2353F
+        util: 'FO4Edit v4.0.2f'
   - name: 'slevins_chemVFX-Light.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/12536' ]
     dirty:
-      - <<: *dirtyPlugin
-        # Version L-1.1
-        crc: 0xf46cb5c0
-        # FO4Edit 3.2
+      - <<: *quickClean
+        crc: 0xF46CB5C0
+        util: '[FO4Edit v4.0.2f](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 2
+    clean:
+      - crc: 0xBDE74C38
+        util: 'FO4Edit v4.0.2f'
+  - name: 'slevins_chemVFX.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/12536' ]
+    dirty:
+      - <<: *quickClean
+        crc: 0x8868FCE0
+        util: '[FO4Edit v4.0.2f](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 2
+    clean:
+      - crc: 0x781DED7D
+        util: 'FO4Edit v4.0.2f'
   - name: 'tsuki no hana.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/15267' ]
     dirty:
