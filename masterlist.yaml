@@ -3316,11 +3316,23 @@ plugins:
   - name: 'slevins_chemVFX-Light.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/12536' ]
     dirty:
-      - <<: *dirtyPlugin
-        # Version L-1.1
-        crc: 0xf46cb5c0
-        # FO4Edit 3.2
+      - <<: *quickClean
+        crc: 0xF46CB5C0
+        util: '[FO4Edit v4.0.2f](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 2
+    clean:
+      - crc: 0xBDE74C38
+        util: 'FO4Edit v4.0.2f'
+  - name: 'slevins_chemVFX.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/12536' ]
+    dirty:
+      - <<: *quickClean
+        crc: 0x8868FCE0
+        util: '[FO4Edit v4.0.2f](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 2
+    clean:
+      - crc: 0x781DED7D
+        util: 'FO4Edit v4.0.2f'
   - name: 'tsuki no hana.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/15267' ]
     dirty:
