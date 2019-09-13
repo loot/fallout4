@@ -3295,12 +3295,24 @@ plugins:
   - name: 'DiamondLighting.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/12432' ]
     dirty:
-      - <<: *dirtyPlugin
-        # Version 1
-        crc: 0x306fdd54
-        # FO4Edit 3.2
+      - <<: *quickClean
+        crc: 0x306FDD54
+        util: '[FO4Edit v4.0.2f](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 1
         udr: 4
+    clean:
+      - crc: 0xF945AE3D
+        util: 'FO4Edit v4.0.2f'
+  - name: 'AlternativeLighting.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/12432' ]
+    dirty:
+      - <<: *quickClean
+        crc: 0xBAB94892
+        util: '[FO4Edit v4.0.2f](https://www.nexusmods.com/fallout4/mods/2737)'
+        udr: 6
+    clean:
+      - crc: 0x1CF2353F
+        util: 'FO4Edit v4.0.2f'
   - name: 'slevins_chemVFX-Light.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/12536' ]
     dirty:
