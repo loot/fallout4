@@ -2948,26 +2948,6 @@ plugins:
           - lang: de
             text: "Sie scheinen die Valdacil's Item Sorting Variante der Mod zu nutzen, aber ohne Nutzen jeglicher Valdacil's Item Sorting-Plugins. Ziehen Sie in Erwägung eine Version von Give Me That Bottle ohne Sortierungs-Patches zu nutzen."
         condition: 'not active("ValdacilsItemSorting-.+\.esp") and (checksum("Give Me That Bottle.esp", 939407C9) or checksum("Give Me That Bottle.esp", AE38A5A0))'
-  - name: 'CC''s Unique Vault Suit Boxes.esp'
-    url: []
-    dirty:
-      - <<: *dirtyPlugin
-        # Version 1.01
-        crc: 0x8a219a39
-        # FO4Edit 3.2
-        itm: 2
-    msg:
-      - <<: *patchProvided
-        subs: [ 'Far Harbor' ]
-        condition: 'active("DLCCoast.esm") and not active("CC''s Unique Vault Suit Boxes - Far Harbor Patch.esp")'
-  - name: 'CC''s Unique Vault Suit Boxes - Far Harbor Patch.esp'
-    url: []
-    dirty:
-      - <<: *dirtyPlugin
-        # Version 1.01
-        crc: 0xb02466b0
-        # FO4Edit 3.2
-        udr: 2
   - name: 'nvvault1080.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/18172' ]
     dirty:
