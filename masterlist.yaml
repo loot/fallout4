@@ -3041,18 +3041,17 @@ plugins:
   - name: 'Some Assembly Required.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/12050' ]
     dirty:
-      - <<: *dirtyPlugin
-        # Version 1.4
-        crc: 0xae45ec68
-        # FO4Edit 3.2
-        itm: 15
+      # v1.4
+      - <<: *quickClean
+        crc: 0xAE45EC68
+        util: '[FO4Edit v4.0.2f](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 10
   - name: 'Some Assembly Required (Legendary Patch).esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/17859' ]
-    dirty:
-      - <<: *dirtyPlugin
-        # Version 1.4
-        crc: 0x1e1ce4d4
-        # FO4Edit 3.2
+      # v1.4
+      - <<: *quickClean
+        crc: 0x1E1CE4D4
+        util: '[FO4Edit v4.0.2f](https://www.nexusmods.com/fallout4/mods/2737)'
         udr: 3
   - name: 'AllSetsExtended.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/25316' ]
