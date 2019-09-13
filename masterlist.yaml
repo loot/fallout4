@@ -3241,10 +3241,9 @@ plugins:
   - name: 'MAGS.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/12849' ]
     dirty:
-      - <<: *dirtyPlugin
-        # Version .99
-        crc: 0xa9913693
-        # FO4Edit 3.2
+      - <<: *quickClean
+        crc: 0xA9913693
+        util: '[FO4Edit v4.0.2f](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 12
         udr: 9
   - name: 'Reverb and Ambiance Overhaul.esp'
