@@ -3357,12 +3357,10 @@ plugins:
         nav: 1
   - name: 'UniqueUniques.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/15139' ]
-    dirty:
-      - <<: *dirtyPlugin
-        # Version 1.01
-        crc: 0x1ac3385e
-        # FO4Edit 3.2
-        itm: 8
+    clean:
+      # 1.01
+      - crc: 0x1AC3385E
+        util: 'FO4Edit v4.0.2f'
   - name: 'Diverse Cats.esp'
     url:
       - name: 'Diverse Cats'
