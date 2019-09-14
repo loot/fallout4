@@ -4221,12 +4221,15 @@ plugins:
   - name: 'RenLightMod.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/11527' ]
     dirty:
-      # Version 1.82
-      - <<: *dirtyPlugin
+      # v1.82
+      - <<: *quickClean
         crc: 0x770B67B6
-        util: 'FO4Edit v3.2.67'
-        itm: 78
-
+        util: '[FO4Edit v4.0.2f](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 14
+    clean:
+      # v1.82 after QAC
+      - crc: 0x46D35E9C
+        util: 'FO4Edit v4.0.2f'
   - name: 'OSM_AlternateStart_Protocol-InfiniteAnswer.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/13762' ]
     group: *altStartGroup
