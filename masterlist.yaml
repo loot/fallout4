@@ -3940,14 +3940,46 @@ plugins:
     clean:
       - crc: 0x1A9B6835
         util: 'FO4Edit v4.0.2f'
+  - name: 'FunctionalDisplays.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/5080' ]
+    clean:
+      # v0.2.9.2
+      - crc: 0xB539E666
+        util: 'FO4Edit v4.0.2f'
+  - name: 'FunctionalDisplays-AID-Vanilla.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/5080' ]
+    clean:
+      # v0.2.9.2
+      - crc: 0xAA18318B
+        util: 'FO4Edit v4.0.2f'
   - name: 'FunctionalDisplays-Collectibles.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/5080' ]
     dirty:
-      - <<: *dirtyPlugin
-        # Version 0.2.9.2
-        crc: 0xa5ee4658
-        util: 'FO4Edit v3.2.1'
+      # v0.2.9.2
+      - <<: *quickClean
+        crc: 0xA5EE4658
+        util: '[FO4Edit v4.0.2f](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 4
+    clean:
+      - crc: 0x7FCFBC58
+        util: 'FO4Edit v4.0.2f'
+  - name: 'FunctionalDisplays-MISC-Vanilla.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/5080' ]
+    dirty:
+      # v0.2.9.2
+      - <<: *quickClean
+        crc: 0xF1EDCA41
+        util: '[FO4Edit v4.0.2f](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 1
+    clean:
+      - crc: 0x1C4DC220
+        util: 'FO4Edit v4.0.2f'
+  - name: 'FunctionalDisplays-Patch-DLC-ALL.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/5080' ]
+    clean:
+      # v0.2.9.2
+      - crc: 0xC40A90B9
+        util: 'FO4Edit v4.0.2f'
   - name: 'MakeYourOwnSynths.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/16354' ]
     dirty:
