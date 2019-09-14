@@ -3368,27 +3368,58 @@ plugins:
       - name: 'Diverse Dogs'
         link: 'https://www.nexusmods.com/fallout4/mods/25599'
     dirty:
-      - <<: *dirtyPlugin
-        # Version .9
-        crc: 0xea3b193f
-        # FO4Edit 3.2
+      # Cats - v1.5
+      - <<: *quickClean
+        crc: 0x1F5AE1D7
+        util: '[FO4Edit v4.0.2f](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 6
+      # Cats - v2.0 (Dogs Included)
+      - <<: *quickClean
+        crc: 0xEA3B193F
+        util: '[FO4Edit v4.0.2f](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 6
+      # Dogs - v1.5
+      # (uploaded on the Diverse Dogs page)
+      - <<: *quickClean
+        crc: 0x5B82D75B
+        util: '[FO4Edit v4.0.2f](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 6
+    clean:
+      # Cats - v1.0
+      - crc: 0x90D4F2BA
+        util: 'FO4Edit v4.0.2f'
+      # Cats - v1.5 - After QAC
+      - crc: 0x72D064FA
+        util: 'FO4Edit v4.0.2f'
+      # Cats - v2.0 (Dogs Included) - After QAC
+      - crc: 0xC74A48F1
+        util: 'FO4Edit v4.0.2f'
+      # Dogs - v1.5 - After QAC
+      # (uploaded on the Diverse Dogs page)
+      - crc: 0x29C8BF0E
+        util: 'FO4Edit v4.0.2f'
   - name: 'Diverse Dogs.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/25599' ]
+    dirty:
+      # Just Dogs - v1.5
+      - <<: *quickClean
+        crc: 0x0E06F1F9
+        util: '[FO4Edit v4.0.2f](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 1
     clean:
-      # Version 1.0
-      - crc: 0xAAEB0A0D
-        util: 'FO4Edit v3.2'
+      # Just Dogs - v1.5
+      - crc: 0xDD4502E1
+        util: 'FO4Edit v4.0.2f'
     msg:
       - <<: *alreadyInX
         subs: [ 'Diverse Cats.esp (combined version)' ]
-        condition: 'active("Diverse Cats.esp") and checksum("Diverse Cats.esp", ea3b193f)'
+        condition: 'active("Diverse Cats.esp") and checksum("Diverse Cats.esp", EA3B193F)'
   - name: 'BeastWhisperer.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/14265' ]
     after:
       - 'Diverse Dogs.esp'
       - name: 'Diverse Cats.esp'
-        condition: 'checksum("Diverse Cats.esp", ea3b193f)'
+        condition: 'checksum("Diverse Cats.esp", EA3B193F)'
   - name: 'NukaRadBans.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/8342' ]
     dirty:
