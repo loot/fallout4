@@ -3504,15 +3504,33 @@ plugins:
       - 'SettlementAttacksBeyond.esp'
       - 'SettlementAttacksBeyondFH.esp'
       - 'SettlementAttacksBeyondNW.esp'
-  - name: 'starlightwingfix_v3.esp'
+  - name: 'starlightdoorfix.esl'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/22553' ]
+    clean:
+      # v1.1b
+      - crc: 0x71A7C99E
+        util: 'FO4Edit v4.0.2f'
+  - name: 'starlightwingfix.esl'
     url: [ 'https://www.nexusmods.com/fallout4/mods/22553' ]
     dirty:
-      - <<: *dirtyPlugin
-        # Version 3.0
-        crc: 0xd8d7f936
-        util: 'FO4Edit v3.2.1'
-        itm: 10
-        udr: 1
+      # v3.2b
+      - <<: *reqManualFix
+        crc: 0x8461B8B2
+        util: '[FO4Edit v4.0.2f](https://www.nexusmods.com/fallout4/mods/2737)'
+        nav: 1
+  - name: 'starlightdoorfix.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/22553' ]
+    clean:
+      # v1.1
+      - crc: 0xFC891E53
+        util: 'FO4Edit v4.0.2f'
+  - name: 'starlightwingfix.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/22553' ]
+    dirty:
+      # v3.2
+      - <<: *reqManualFix
+        crc: 0x89851FCC
+        util: '[FO4Edit v4.0.2f](https://www.nexusmods.com/fallout4/mods/2737)'
         nav: 1
   - name: 'FirstPersonViewableItemsExpanded.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/26062' ]
