@@ -4070,10 +4070,10 @@ plugins:
   - name: 'Mechanist Lair Overhaul.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/23294' ]
     dirty:
-      - <<: *dirtyPlugin
-        # Version 1.03
+      # v1.03
+      - <<: *reqManualFix
         crc: 0xB428DE36
-        util: 'FO4Edit v3.2.3r'
+        util: '[FO4Edit v4.0.2f](https://www.nexusmods.com/fallout4/mods/2737)'
         nav: 1
     msg:
       - <<: *useOnlyOneX
@@ -4085,10 +4085,10 @@ plugins:
   - name: 'Mechanist Lair Overhaul SEC.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/23294' ]
     dirty:
-      - <<: *dirtyPlugin
-        # Version 1.03
+      # v1.03
+      - <<: *reqManualFix
         crc: 0x13978275
-        util: 'FO4Edit v3.2.3r'
+        util: '[FO4Edit v4.0.2f](https://www.nexusmods.com/fallout4/mods/2737)'
         nav: 1
     req:
       - name: 'Scrap Everything - Automatron.esp'
