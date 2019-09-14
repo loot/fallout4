@@ -3932,11 +3932,14 @@ plugins:
   - name: 'Conquest.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/12511' ]
     dirty:
-      - <<: *dirtyPlugin
-        # Version 1.3
+      # v1.3
+      - <<: *quickClean
         crc: 0x21243775
-        util: 'FO4Edit v3.2.1'
+        util: '[FO4Edit v4.0.2f](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 10
+    clean:
+      - crc: 0x1A9B6835
+        util: 'FO4Edit v4.0.2f'
   - name: 'FunctionalDisplays-Collectibles.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/5080' ]
     dirty:
