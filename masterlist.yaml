@@ -4008,14 +4008,29 @@ plugins:
     clean:
       - crc: 0xC46B07EE
         util: 'FO4Edit v4.0.2f'
+  - name: 'th1nkEyebot.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/11459' ]
+    clean:
+      # v1.6a
+      - crc: 0x6DB97468
+        util: 'FO4Edit v4.0.2f'
+  - name: 'th1nkEyeBot-FarHarbor.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/11459' ]
+    clean:
+      # v1.6a
+      - crc: 0xFFF26B52
+        util: 'FO4Edit v4.0.2f'
   - name: 'th1nkEyeBot-NukaWorld.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/11459' ]
     dirty:
-      - <<: *dirtyPlugin
-        # Version 1.6a
-        crc: 0x171964ce
-        util: 'FO4Edit v3.2.1'
+      # v1.6a
+      - <<: *quickClean
+        crc: 0x171964CE
+        util: '[FO4Edit v4.0.2f](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 1
+    clean:
+      - crc: 0x4305B700
+        util: 'FO4Edit v4.0.2f'
   - name: 'Vault-Tec Workshop Overhaul.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/17174' ]
     dirty:
