@@ -3350,12 +3350,10 @@ plugins:
   - name: 'CombatZoneRestored.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/21498' ]
     dirty:
-      - <<: *dirtyPlugin
-        # Version 1.01
-        crc: 0x86419c03
-        # FO4Edit 3.2
-        itm: 20
-        udr: 20
+      # 1.02
+      - <<: *reqManualFix
+        crc: 0x74BE02DE
+        util: '[FO4Edit v4.0.2f](https://www.nexusmods.com/fallout4/mods/2737)'
         nav: 1
   - name: 'UniqueUniques.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/15139' ]
