@@ -4034,11 +4034,14 @@ plugins:
   - name: 'Vault-Tec Workshop Overhaul.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/17174' ]
     dirty:
-      - <<: *dirtyPlugin
-        # Version 3.1
-        crc: 0x8fef7906
-        util: 'FO4Edit v3.2.1'
+      # v3.1
+      - <<: *quickClean
+        crc: 0x8FEF7906
+        util: '[FO4Edit v4.0.2f](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 1
+    clean:
+      - crc: 0xA433A46E
+        util: 'FO4Edit v4.0.2f'
   - name: 'Scrap Everything.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/5320' ]
     group: *scrapGroup
