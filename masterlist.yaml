@@ -509,23 +509,6 @@ common:
     subs: [ '' ]
 
 # Cleaning data
-  - &dirtyPlugin
-    util: '[FO4Edit](https://www.nexusmods.com/fallout4/mods/2737)'
-    info:
-      - lang: en
-        text: 'An explanation of Dirty Edits is available [here](https://tes5edit.github.io/docs/5-mod-cleaning-and-error-checking.html#Apendix-A).'
-      - lang: de
-        text: 'Eine englische Säuberungsanleitung ist [hier](https://tes5edit.github.io/docs/5-mod-cleaning-and-error-checking.html#s_5-3) verfügbar.'
-      - lang: ja
-        text: 'Dirty Editsについては[ここ](https://tes5edit.github.io/docs/5-mod-cleaning-and-error-checking.html#Apendix-A)を参照してください。'
-      - lang: pl
-        text: 'Wytłumaczenie o brudnych wtyczkach (Dirty Edits) jest dostępne [tutaj](https://tes5edit.github.io/docs/5-mod-cleaning-and-error-checking.html#Apendix-A).'
-      - lang: pt
-        text: 'Uma explição em inglês de Edição Suja (Dirty Edits) está disponível [aqui](https://tes5edit.github.io/docs/5-mod-cleaning-and-error-checking.html#Apendix-A).'
-      - lang: pt_BR
-        text: 'Uma explicação de Edições Sujas (Dirty Edits) está disponível [aqui](https://tes5edit.github.io/docs/5-mod-cleaning-and-error-checking.html#Apendix-A).'
-      - lang: ru
-        text: 'Объяснение по грязным правкам доступно [здесь](https://tes5edit.github.io/docs/5-mod-cleaning-and-error-checking.html#Apendix-A).'
   - &quickClean
     util: '[FO4Edit](https://www.nexusmods.com/fallout4/mods/2737) **Quick Auto Clean**'
     info:
@@ -3336,30 +3319,31 @@ plugins:
   - name: 'tsuki no hana.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/15267' ]
     dirty:
-      - <<: *dirtyPlugin
-        # Version 1.5
-        crc: 0x1284f3e5
-        # FO4Edit 3.2
+      # 1.1
+      - <<: *quickClean
+        crc: 0x374BB954
+        util: '[FO4Edit v4.0.2f](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 4
+      # 1.5
+      - <<: *quickClean
+        crc: 0x1284F3E5
+        util: '[FO4Edit v4.0.2f](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 5
         udr: 2
   - name: 'CombatZoneRestored.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/21498' ]
     dirty:
-      - <<: *dirtyPlugin
-        # Version 1.01
-        crc: 0x86419c03
-        # FO4Edit 3.2
-        itm: 20
-        udr: 20
+      # 1.02
+      - <<: *reqManualFix
+        crc: 0x74BE02DE
+        util: '[FO4Edit v4.0.2f](https://www.nexusmods.com/fallout4/mods/2737)'
         nav: 1
   - name: 'UniqueUniques.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/15139' ]
-    dirty:
-      - <<: *dirtyPlugin
-        # Version 1.01
-        crc: 0x1ac3385e
-        # FO4Edit 3.2
-        itm: 8
+    clean:
+      # 1.01
+      - crc: 0x1AC3385E
+        util: 'FO4Edit v4.0.2f'
   - name: 'Diverse Cats.esp'
     url:
       - name: 'Diverse Cats'
@@ -3367,27 +3351,58 @@ plugins:
       - name: 'Diverse Dogs'
         link: 'https://www.nexusmods.com/fallout4/mods/25599'
     dirty:
-      - <<: *dirtyPlugin
-        # Version .9
-        crc: 0xea3b193f
-        # FO4Edit 3.2
+      # Cats - v1.5
+      - <<: *quickClean
+        crc: 0x1F5AE1D7
+        util: '[FO4Edit v4.0.2f](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 6
+      # Cats - v2.0 (Dogs Included)
+      - <<: *quickClean
+        crc: 0xEA3B193F
+        util: '[FO4Edit v4.0.2f](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 6
+      # Dogs - v1.5
+      # (uploaded on the Diverse Dogs page)
+      - <<: *quickClean
+        crc: 0x5B82D75B
+        util: '[FO4Edit v4.0.2f](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 6
+    clean:
+      # Cats - v1.0
+      - crc: 0x90D4F2BA
+        util: 'FO4Edit v4.0.2f'
+      # Cats - v1.5 - After QAC
+      - crc: 0x72D064FA
+        util: 'FO4Edit v4.0.2f'
+      # Cats - v2.0 (Dogs Included) - After QAC
+      - crc: 0xC74A48F1
+        util: 'FO4Edit v4.0.2f'
+      # Dogs - v1.5 - After QAC
+      # (uploaded on the Diverse Dogs page)
+      - crc: 0x29C8BF0E
+        util: 'FO4Edit v4.0.2f'
   - name: 'Diverse Dogs.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/25599' ]
+    dirty:
+      # Just Dogs - v1.5
+      - <<: *quickClean
+        crc: 0x0E06F1F9
+        util: '[FO4Edit v4.0.2f](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 1
     clean:
-      # Version 1.0
-      - crc: 0xAAEB0A0D
-        util: 'FO4Edit v3.2'
+      # Just Dogs - v1.5
+      - crc: 0xDD4502E1
+        util: 'FO4Edit v4.0.2f'
     msg:
       - <<: *alreadyInX
         subs: [ 'Diverse Cats.esp (combined version)' ]
-        condition: 'active("Diverse Cats.esp") and checksum("Diverse Cats.esp", ea3b193f)'
+        condition: 'active("Diverse Cats.esp") and checksum("Diverse Cats.esp", EA3B193F)'
   - name: 'BeastWhisperer.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/14265' ]
     after:
       - 'Diverse Dogs.esp'
       - name: 'Diverse Cats.esp'
-        condition: 'checksum("Diverse Cats.esp", ea3b193f)'
+        condition: 'checksum("Diverse Cats.esp", EA3B193F)'
   - name: 'NukaRadBans.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/8342' ]
     dirty:
@@ -3404,97 +3419,60 @@ plugins:
     after:
       - 'HUDFramework.esm'
     dirty:
-      # Version 3.4.0
-      - <<: *dirtyPlugin
-        crc: 0x9B2392B0
-        util: 'FO4Edit v3.2.67'
-        itm: 2
-      # Version 3.4.0, Three-In-One
-      - <<: *dirtyPlugin
-        crc: 0xD659F761
-        util: 'FO4Edit v3.2.67'
-        itm: 2
-      # Version 3.4.1
-      - <<: *dirtyPlugin
-        crc: 0xE6DF75E6
-        util: 'FO4Edit v3.2.67'
-        itm: 2
-      # Version 3.4.1, Three-In-One
-      - <<: *dirtyPlugin
-        crc: 0xE2A28496
-        util: 'FO4Edit v3.2.67'
-        itm: 2
-      # Version 3.4.2
-      - <<: *dirtyPlugin
-        crc: 0xF5DFC3E9
-        util: 'FO4Edit v3.2.67'
-        itm: 2
-      # Version 3.4.2, Three-In-One
-      - <<: *dirtyPlugin
-        crc: 0x619ACA1A
-        util: 'FO4Edit v3.2.67'
-        itm: 2
-      # Version 3.4.3, Three-In-One
-      - <<: *dirtyPlugin
-        crc: 0xE42587B0
-        util: 'FO4Edit v3.2.67'
-        itm: 2
+      # v4.1.3 - Three-in-One
+      - <<: *quickClean
+        crc: 0x79C8654E
+        util: '[FO4Edit v4.0.2f](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 1
+      # v4.1.3 - Main
+      - <<: *quickClean
+        crc: 0x14526CF1
+        util: '[FO4Edit v4.0.2f](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 1
     clean:
-      # Version 3.4.3
-      - crc: 0x3190674F
-        util: 'FO4Edit v3.2.67'
+      # v4.1.3 - Three-in-One
+      - crc: 0x1022E75C
+        util: 'FO4Edit v4.0.2f'
+      # v4.1.3 - Main
+      - crc: 0x0885D554
+        util: 'FO4Edit v4.0.2f'
     msg:
       - <<: *obsolete
-        condition: 'version("SimSettlements.esm", "3.4.3", <)'
+        condition: 'version("SimSettlements.esm", "4.1.3", <)'
   - name: 'SimSettlements_XPAC_IndustrialRevolution.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/25213' ]
     clean:
-      # Version 3.3.3
-      - crc: 0x523CB0C3
-        util: 'FO4Edit v3.2.67'
+      # 4.0.10
+      - crc: 0xA750D554
+        util: 'FO4Edit v4.0.2f'
     msg:
       - <<: *obsolete
-        condition: 'version("SimSettlements_XPAC_IndustrialRevolution.esp", "3.3.3", <)'
-      - type: error
-        content:
-          - lang: en
-            text: 'You should not use mismatched versions of Sim Settlements and the Industrial Revolution expansion.'
-          - lang: de
-            text: 'Sie solltem keine unstimmigen Version von Sim Settlements und Industrial Revolution Erweiterung nutzen.'
-        condition: '(version("SimSettlements_XPAC_IndustrialRevolution.esp", "3.3.3", >=) and version("SimSettlements.esm", "3.3.3", <)) or (version("SimSettlements_XPAC_IndustrialRevolution.esp", "3.3.3", <) and version("SimSettlements.esm", "3.3.3", >=))'
+        condition: 'version("SimSettlements_XPAC_IndustrialRevolution.esp", "4.0.10", <)'
       - <<: *alreadyInX
         subs: [ 'Sim Settlements Three-In-One' ]
-        condition: 'checksum("SimSettlements.esm", E42587B0)'
+        condition: 'checksum("SimSettlements.esm", 79C8654E)'
   - name: 'SimSettlements_XPAC_RiseOfTheCommonwealth.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/28599' ]
     clean:
-      # Version 3.4.0
-      - crc: 0x6621D83E
-        util: 'FO4Edit v3.2.67'
-      # Version 3.4.3
-      - crc: 0xF8BA4A88
-        util: 'FO4Edit v3.2.67'
+      # v4.0.10
+      - crc: 0x1281BDF1
+        util: 'FO4Edit v4.0.2f'
     msg:
       - <<: *obsolete
-        condition: 'version("SimSettlements_XPAC_RiseOfTheCommonwealth.esp", "3.4.3", <)'
-      - type: error
-        content:
-          - lang: en
-            text: 'You should not use mismatched versions of Sim Settlements and the Rise of the Commonwealth expansion.'
-          - lang: de
-            text: 'Sie solltem keine unstimmigen Version von Sim Settlements und Rise of the Commonwealth Erweiterung nutzen.'
-        condition: '(version("SimSettlements_XPAC_RiseOfTheCommonwealth.esp", "3.4.3", >=) and version("SimSettlements.esm", "3.4.3", <)) or (version("SimSettlements_XPAC_RiseOfTheCommonwealth.esp", "3.4.3", <) and version("SimSettlements.esm", "3.4.3", >=))'
+        condition: 'version("SimSettlements_XPAC_RiseOfTheCommonwealth.esp", "4.0.10", <)'
       - <<: *alreadyInX
         subs: [ 'Sim Settlements Three-In-One' ]
-        condition: 'checksum("SimSettlements.esm", E42587B0)'
+        condition: 'checksum("SimSettlements.esm", 79C8654E)'
   - name: 'Companion_ShutUp.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/25763' ]
     dirty:
-      - <<: *dirtyPlugin
-        # Version 1.01
-        crc: 0x498d961c
-        # FO4Edit 3.2
+      - <<: *quickClean
+        crc: 0x498D961C
+        util: '[FO4Edit v4.0.2f](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 6
+    clean:
+      - crc: 0x7855110A
+        util: 'FO4Edit v4.0.2f'
   - name: 'ShotLayDown\d+\.esp'
     url: []
     msg:
@@ -3509,15 +3487,33 @@ plugins:
       - 'SettlementAttacksBeyond.esp'
       - 'SettlementAttacksBeyondFH.esp'
       - 'SettlementAttacksBeyondNW.esp'
-  - name: 'starlightwingfix_v3.esp'
+  - name: 'starlightdoorfix.esl'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/22553' ]
+    clean:
+      # v1.1b
+      - crc: 0x71A7C99E
+        util: 'FO4Edit v4.0.2f'
+  - name: 'starlightwingfix.esl'
     url: [ 'https://www.nexusmods.com/fallout4/mods/22553' ]
     dirty:
-      - <<: *dirtyPlugin
-        # Version 3.0
-        crc: 0xd8d7f936
-        util: 'FO4Edit v3.2.1'
-        itm: 10
-        udr: 1
+      # v3.2b
+      - <<: *reqManualFix
+        crc: 0x8461B8B2
+        util: '[FO4Edit v4.0.2f](https://www.nexusmods.com/fallout4/mods/2737)'
+        nav: 1
+  - name: 'starlightdoorfix.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/22553' ]
+    clean:
+      # v1.1
+      - crc: 0xFC891E53
+        util: 'FO4Edit v4.0.2f'
+  - name: 'starlightwingfix.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/22553' ]
+    dirty:
+      # v3.2
+      - <<: *reqManualFix
+        crc: 0x89851FCC
+        util: '[FO4Edit v4.0.2f](https://www.nexusmods.com/fallout4/mods/2737)'
         nav: 1
   - name: 'FirstPersonViewableItemsExpanded.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/26062' ]
@@ -3908,67 +3904,127 @@ plugins:
   - name: 'BuildYourOwnVault.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/10603' ]
     dirty:
-      - <<: *dirtyPlugin
-        # Version 1.71
-        crc: 0xea39cbc4
-        util: 'FO4Edit v3.2.1'
+      # v1.71
+      - <<: *quickClean
+        crc: 0xEA39CBC4
+        util: '[FO4Edit v4.0.2f](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 2
+    clean:
+      - crc: 0x52A7C047
+        util: 'FO4Edit v4.0.2f'
   - name: 'Conquest.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/12511' ]
     dirty:
-      - <<: *dirtyPlugin
-        # Version 1.3
+      # v1.3
+      - <<: *quickClean
         crc: 0x21243775
-        util: 'FO4Edit v3.2.1'
+        util: '[FO4Edit v4.0.2f](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 10
+    clean:
+      - crc: 0x1A9B6835
+        util: 'FO4Edit v4.0.2f'
+  - name: 'FunctionalDisplays.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/5080' ]
+    clean:
+      # v0.2.9.2
+      - crc: 0xB539E666
+        util: 'FO4Edit v4.0.2f'
+  - name: 'FunctionalDisplays-AID-Vanilla.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/5080' ]
+    clean:
+      # v0.2.9.2
+      - crc: 0xAA18318B
+        util: 'FO4Edit v4.0.2f'
   - name: 'FunctionalDisplays-Collectibles.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/5080' ]
     dirty:
-      - <<: *dirtyPlugin
-        # Version 0.2.9.2
-        crc: 0xa5ee4658
-        util: 'FO4Edit v3.2.1'
+      # v0.2.9.2
+      - <<: *quickClean
+        crc: 0xA5EE4658
+        util: '[FO4Edit v4.0.2f](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 4
+    clean:
+      - crc: 0x7FCFBC58
+        util: 'FO4Edit v4.0.2f'
+  - name: 'FunctionalDisplays-MISC-Vanilla.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/5080' ]
+    dirty:
+      # v0.2.9.2
+      - <<: *quickClean
+        crc: 0xF1EDCA41
+        util: '[FO4Edit v4.0.2f](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 1
+    clean:
+      - crc: 0x1C4DC220
+        util: 'FO4Edit v4.0.2f'
+  - name: 'FunctionalDisplays-Patch-DLC-ALL.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/5080' ]
+    clean:
+      # v0.2.9.2
+      - crc: 0xC40A90B9
+        util: 'FO4Edit v4.0.2f'
   - name: 'MakeYourOwnSynths.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/16354' ]
-    dirty:
-      - <<: *dirtyPlugin
-        # Version 1.11
-        crc: 0xbc97890d
-        util: 'FO4Edit v3.2.1'
-        itm: 10
+    clean:
+      # v1.12
+      - crc: 0xBC97890D
+        util: 'FO4Edit v4.0.2f'
   - name: 'Northland Diggers New.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/9710' ]
     dirty:
-      - <<: *dirtyPlugin
-        # Version 1.4
-        crc: 0x3fef8e47
-        util: 'FO4Edit v3.2.1'
+      # v1.4
+      - <<: *quickClean
+        crc: 0x3FEF8E47
+        util: '[FO4Edit v4.0.2f](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 5
+    clean:
+      - crc: 0xDACA5AF7
+        util: 'FO4Edit v4.0.2f'
   - name: 'Rangergearnew.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/9034' ]
     dirty:
-      - <<: *dirtyPlugin
-        # Version 0.33
-        crc: 0x82272ac3
-        util: 'FO4Edit v3.2.1'
-        itm: 2
+      # v0.41
+      - <<: *quickClean
+        crc: 0x6FE6F36B
+        util: '[FO4Edit v4.0.2f](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 3
+    clean:
+      - crc: 0xC46B07EE
+        util: 'FO4Edit v4.0.2f'
+  - name: 'th1nkEyebot.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/11459' ]
+    clean:
+      # v1.6a
+      - crc: 0x6DB97468
+        util: 'FO4Edit v4.0.2f'
+  - name: 'th1nkEyeBot-FarHarbor.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/11459' ]
+    clean:
+      # v1.6a
+      - crc: 0xFFF26B52
+        util: 'FO4Edit v4.0.2f'
   - name: 'th1nkEyeBot-NukaWorld.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/11459' ]
     dirty:
-      - <<: *dirtyPlugin
-        # Version 1.6a
-        crc: 0x171964ce
-        util: 'FO4Edit v3.2.1'
+      # v1.6a
+      - <<: *quickClean
+        crc: 0x171964CE
+        util: '[FO4Edit v4.0.2f](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 1
+    clean:
+      - crc: 0x4305B700
+        util: 'FO4Edit v4.0.2f'
   - name: 'Vault-Tec Workshop Overhaul.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/17174' ]
     dirty:
-      - <<: *dirtyPlugin
-        # Version 3.1
-        crc: 0x8fef7906
-        util: 'FO4Edit v3.2.1'
+      # v3.1
+      - <<: *quickClean
+        crc: 0x8FEF7906
+        util: '[FO4Edit v4.0.2f](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 1
+    clean:
+      - crc: 0xA433A46E
+        util: 'FO4Edit v4.0.2f'
   - name: 'Scrap Everything.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/5320' ]
     group: *scrapGroup
@@ -3997,10 +4053,10 @@ plugins:
   - name: 'Mechanist Lair Overhaul.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/23294' ]
     dirty:
-      - <<: *dirtyPlugin
-        # Version 1.03
+      # v1.03
+      - <<: *reqManualFix
         crc: 0xB428DE36
-        util: 'FO4Edit v3.2.3r'
+        util: '[FO4Edit v4.0.2f](https://www.nexusmods.com/fallout4/mods/2737)'
         nav: 1
     msg:
       - <<: *useOnlyOneX
@@ -4012,10 +4068,10 @@ plugins:
   - name: 'Mechanist Lair Overhaul SEC.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/23294' ]
     dirty:
-      - <<: *dirtyPlugin
-        # Version 1.03
+      # v1.03
+      - <<: *reqManualFix
         crc: 0x13978275
-        util: 'FO4Edit v3.2.3r'
+        util: '[FO4Edit v4.0.2f](https://www.nexusmods.com/fallout4/mods/2737)'
         nav: 1
     req:
       - name: 'Scrap Everything - Automatron.esp'
@@ -4148,12 +4204,15 @@ plugins:
   - name: 'RenLightMod.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/11527' ]
     dirty:
-      # Version 1.82
-      - <<: *dirtyPlugin
+      # v1.82
+      - <<: *quickClean
         crc: 0x770B67B6
-        util: 'FO4Edit v3.2.67'
-        itm: 78
-
+        util: '[FO4Edit v4.0.2f](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 14
+    clean:
+      # v1.82 after QAC
+      - crc: 0x46D35E9C
+        util: 'FO4Edit v4.0.2f'
   - name: 'OSM_AlternateStart_Protocol-InfiniteAnswer.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/13762' ]
     group: *altStartGroup
