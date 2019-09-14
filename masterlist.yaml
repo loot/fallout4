@@ -3336,10 +3336,15 @@ plugins:
   - name: 'tsuki no hana.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/15267' ]
     dirty:
-      - <<: *dirtyPlugin
-        # Version 1.5
-        crc: 0x1284f3e5
-        # FO4Edit 3.2
+      # 1.1
+      - <<: *quickClean
+        crc: 0x374BB954
+        util: '[FO4Edit v4.0.2f](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 4
+      # 1.5
+      - <<: *quickClean
+        crc: 0x1284F3E5
+        util: '[FO4Edit v4.0.2f](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 5
         udr: 2
   - name: 'CombatZoneRestored.esp'
