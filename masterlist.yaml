@@ -3982,20 +3982,21 @@ plugins:
         util: 'FO4Edit v4.0.2f'
   - name: 'MakeYourOwnSynths.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/16354' ]
-    dirty:
-      - <<: *dirtyPlugin
-        # Version 1.11
-        crc: 0xbc97890d
-        util: 'FO4Edit v3.2.1'
-        itm: 10
+    clean:
+      # v1.12
+      - crc: 0xBC97890D
+        util: 'FO4Edit v4.0.2f'
   - name: 'Northland Diggers New.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/9710' ]
     dirty:
-      - <<: *dirtyPlugin
-        # Version 1.4
-        crc: 0x3fef8e47
-        util: 'FO4Edit v3.2.1'
+      # v1.4
+      - <<: *quickClean
+        crc: 0x3FEF8E47
+        util: '[FO4Edit v4.0.2f](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 5
+    clean:
+      - crc: 0xDACA5AF7
+        util: 'FO4Edit v4.0.2f'
   - name: 'Rangergearnew.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/9034' ]
     dirty:
