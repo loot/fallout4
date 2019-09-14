@@ -3921,11 +3921,14 @@ plugins:
   - name: 'BuildYourOwnVault.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/10603' ]
     dirty:
-      - <<: *dirtyPlugin
-        # Version 1.71
-        crc: 0xea39cbc4
-        util: 'FO4Edit v3.2.1'
+      # v1.71
+      - <<: *quickClean
+        crc: 0xEA39CBC4
+        util: '[FO4Edit v4.0.2f](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 2
+    clean:
+      - crc: 0x52A7C047
+        util: 'FO4Edit v4.0.2f'
   - name: 'Conquest.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/12511' ]
     dirty:
