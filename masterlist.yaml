@@ -4000,11 +4000,14 @@ plugins:
   - name: 'Rangergearnew.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/9034' ]
     dirty:
-      - <<: *dirtyPlugin
-        # Version 0.33
-        crc: 0x82272ac3
-        util: 'FO4Edit v3.2.1'
-        itm: 2
+      # v0.41
+      - <<: *quickClean
+        crc: 0x6FE6F36B
+        util: '[FO4Edit v4.0.2f](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 3
+    clean:
+      - crc: 0xC46B07EE
+        util: 'FO4Edit v4.0.2f'
   - name: 'th1nkEyeBot-NukaWorld.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/11459' ]
     dirty:
