@@ -3459,22 +3459,15 @@ plugins:
   - name: 'SimSettlements_XPAC_IndustrialRevolution.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/25213' ]
     clean:
-      # Version 3.3.3
-      - crc: 0x523CB0C3
-        util: 'FO4Edit v3.2.67'
+      # 4.0.10
+      - crc: 0xA750D554
+        util: 'FO4Edit v4.0.2f'
     msg:
       - <<: *obsolete
-        condition: 'version("SimSettlements_XPAC_IndustrialRevolution.esp", "3.3.3", <)'
-      - type: error
-        content:
-          - lang: en
-            text: 'You should not use mismatched versions of Sim Settlements and the Industrial Revolution expansion.'
-          - lang: de
-            text: 'Sie solltem keine unstimmigen Version von Sim Settlements und Industrial Revolution Erweiterung nutzen.'
-        condition: '(version("SimSettlements_XPAC_IndustrialRevolution.esp", "3.3.3", >=) and version("SimSettlements.esm", "3.3.3", <)) or (version("SimSettlements_XPAC_IndustrialRevolution.esp", "3.3.3", <) and version("SimSettlements.esm", "3.3.3", >=))'
+        condition: 'version("SimSettlements_XPAC_IndustrialRevolution.esp", "4.0.10", <)'
       - <<: *alreadyInX
         subs: [ 'Sim Settlements Three-In-One' ]
-        condition: 'checksum("SimSettlements.esm", E42587B0)'
+        condition: 'checksum("SimSettlements.esm", 79C8654E)'
   - name: 'SimSettlements_XPAC_RiseOfTheCommonwealth.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/28599' ]
     clean:
