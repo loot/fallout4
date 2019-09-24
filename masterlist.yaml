@@ -4828,9 +4828,9 @@ plugins:
         util: 'FO4Edit v4.0.2'
   - name: '3DNPC_FO4Settler.esp'
     clean:
-      # version: 3.11
-      - crc: 0x92ED5554
-        util: 'FO4Edit v4.0.2'
+      # version: 3.12
+      - crc: 0xC2E3863A
+        util: 'FO4Edit v4.0.2f'
 
   - name: 'SOTS.esp'
     url:
