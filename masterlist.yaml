@@ -4478,7 +4478,7 @@ plugins:
         util: 'FO4Edit v4.0.1'
 # Mika999s Better Series Merged
   - name: 'BetterMikaMerged.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/13521' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/18557' ]
     dirty:
       # version: 1.0 before quick clean
       - <<: *reqManualFix
@@ -4499,7 +4499,7 @@ plugins:
         util: '[FO4Edit v4.0.1](https://www.nexusmods.com/fallout4/mods/2737)'
         nav: 10
   - name: 'BetterMikaMerged-1_1main.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/13521' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/18557' ]
     dirty:
       # version: 1.1 before quick clean (Better Goodneighbor and The Third Rail)
       - <<: *reqManualFix
@@ -4519,7 +4519,7 @@ plugins:
         util: '[FO4Edit v4.0.1](https://www.nexusmods.com/fallout4/mods/2737)'
         nav: 3
   - name: 'BetterMikaMerged-1_1UCS-DA-PW-ACG.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/13521' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/18557' ]
     dirty:
       # version: 1.1 before quick clean (Everything but Better Goodneighbor- Boston Airport- and The Third Rail)
       - <<: *quickClean
@@ -4542,7 +4542,7 @@ plugins:
       - crc: 0xD2BDE2B6
         util: 'FO4Edit v4.0.1'
   - name: 'BetterMikaMerged-1_1nocttb.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/13521' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/18557' ]
     dirty:
       # version: 1.1 before quick clean (Remaining Series Content)
       - <<: *reqManualFix
