@@ -4837,18 +4837,18 @@ plugins:
       - link: 'https://www.nexusmods.com/fallout4/mods/27870'
         name: 'South of The Sea'
     dirty:
-      # version: 0.60
+      # version: 1.00-Beta
       - <<: *reqManualFix
-        crc: 0x7AED0F0B
-        util: '[FO4Edit v4.0.2](https://www.nexusmods.com/fallout4/mods/2737)'
-        itm: 12
-        udr: 119
-        nav: 41
-      # version: 0.60, after QAC
+        crc: 0x7DA7D888
+        util: '[FO4Edit v4.0.2f](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 205
+        udr: 831
+        nav: 83
+      # version: 1.00-Beta, after QAC
       - <<: *reqManualFix
-        crc: 0x407CEB41
-        util: '[FO4Edit v4.0.2](https://www.nexusmods.com/fallout4/mods/2737)'
-        nav: 41
+        crc: 0xFC00069D
+        util: '[FO4Edit v4.0.2f](https://www.nexusmods.com/fallout4/mods/2737)'
+        nav: 83
 
   - name: 'JonsMod.esm'
     url:
