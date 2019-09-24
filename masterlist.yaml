@@ -4572,39 +4572,15 @@ plugins:
   - name: 'Pipsy.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/34304' ]
     dirty:
-      # version: 1.0 - Before Quick Clean
+      # version: 2.0
       - <<: *quickClean
-        crc: 0xDF7D6406
-        util: '[FO4Edit v4.0.1](https://www.nexusmods.com/fallout4/mods/2737)'
-        itm: 121
-        udr: 20
-      # version: 1.0 - Before 2nd Pass of Quick Clean
-      - <<: *quickClean
-        crc: 0xAFA33BE5
-        util: '[FO4Edit v4.0.1](https://www.nexusmods.com/fallout4/mods/2737)'
-        itm: 1
+        crc: 0xB852EDE4
+        util: '[FO4Edit v4.0.2f](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 2
     clean:
-      # version: 1.0 - After Quick Clean
-      - crc: 0xC4130107
-        util: 'FO4Edit v4.0.1'
-  - name: 'Pipsy.esl'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/34304' ]
-    dirty:
-      # version: 1.0 - Before Quick Clean
-      - <<: *quickClean
-        crc: 0x72261C69
-        util: '[FO4Edit v4.0.1](https://www.nexusmods.com/fallout4/mods/2737)'
-        itm: 131
-        udr: 20
-      # version: 1.0 - Before 2nd Pass of Quick Clean
-      - <<: *quickClean
-        crc: 0x585FC8C4
-        util: '[FO4Edit v4.0.1](https://www.nexusmods.com/fallout4/mods/2737)'
-        itm: 1
-    clean:
-      # version: 1.0 - After Quick Clean
-      - crc: 0x3A94C02C
-        util: 'FO4Edit v4.0.1'
+      # version: 2.0, after QAC
+      - crc: 0xE9DF79EF
+        util: 'FO4Edit v4.0.2f'
 
   - name: 'Stm_DiamondCityExpansion.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/21853' ]
@@ -4828,27 +4804,27 @@ plugins:
         util: 'FO4Edit v4.0.2'
   - name: '3DNPC_FO4Settler.esp'
     clean:
-      # version: 3.11
-      - crc: 0x92ED5554
-        util: 'FO4Edit v4.0.2'
+      # version: 3.12
+      - crc: 0xC2E3863A
+        util: 'FO4Edit v4.0.2f'
 
   - name: 'SOTS.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/27870'
         name: 'South of The Sea'
     dirty:
-      # version: 0.60
+      # version: 1.00-Beta
       - <<: *reqManualFix
-        crc: 0x7AED0F0B
-        util: '[FO4Edit v4.0.2](https://www.nexusmods.com/fallout4/mods/2737)'
-        itm: 12
-        udr: 119
-        nav: 41
-      # version: 0.60, after QAC
+        crc: 0x7DA7D888
+        util: '[FO4Edit v4.0.2f](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 205
+        udr: 831
+        nav: 83
+      # version: 1.00-Beta, after QAC
       - <<: *reqManualFix
-        crc: 0x407CEB41
-        util: '[FO4Edit v4.0.2](https://www.nexusmods.com/fallout4/mods/2737)'
-        nav: 41
+        crc: 0xFC00069D
+        util: '[FO4Edit v4.0.2f](https://www.nexusmods.com/fallout4/mods/2737)'
+        nav: 83
 
   - name: 'JonsMod.esm'
     url:
