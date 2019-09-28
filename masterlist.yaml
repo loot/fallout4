@@ -3190,7 +3190,7 @@ plugins:
             text: 'Sie haben aktive "Customizable Needs only" Plugins aktiviert während Sie die "Customizable Needs plus Realistic Aid Side Effects" Variante nutzen. Nutzen Sie nur die Plugins und Patches für die Variante die Sie nutzen.'
       - <<: *patchIncluded
         subs: [ 'Lore-Friendly Survival Chems' ]
-        condition: 'active("LoreFriendlySurvivalChems(VIS)?\.esp") and not active("CN + RASE - LoreFriendlySurvivalChems(VIS)? Patch\.esp")'
+        condition: 'active("LoreFriendlySurvivalChems(VIS)?\.esp") and not active("CN \+ RASE - LoreFriendlySurvivalChems(VIS)? Patch\.esp")'
       - <<: *patchIncluded
         subs: [ 'Valdacil''s Item Sorting' ]
         condition: 'active("ValdacilsItemSorting-.+\.esp") and not active("CN + RASE - VIS Patch.esp")'
