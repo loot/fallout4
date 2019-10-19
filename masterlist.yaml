@@ -108,6 +108,8 @@ common:
         text: 'Quando se usa **%1%**, é recomendado que você desative ou delete este arquivo ESP, mas que mantenha os recursos (ex. meshes, texturas) que vieram com esse mod.'
       - lang: ru
         text: 'Пока используется **%1%**, рекомендуется отключить или удалить esp этого мода, но оставить установленные ресурсы (meshes, textures). Т.к. они все еще требуются для **%1%**.'
+      - lang: sv
+        text: 'När du använder **%1%** är det rekommenderat att du avaktiverar eller tar bort denna ESP-fil, men behåll resurserna (meshar och texturer) installerade med denna mod. De krävs fortfarande av **%1%**.'
 
   - &dlcVersion
     type: say
@@ -192,6 +194,8 @@ common:
         text: '사용되지 않습니다. 최신 버전으로 업데이트하십시오. %1%'
       - lang: ru
         text: 'Устарело. Обновите до последней версии. %1%'
+      - lang: sv
+        text: 'Utdaterad. Uppdatera till den senaste versionen. %1%'
       - lang: zh_CN
         text: '已过时。请升级到最新版本。 %1%'
     subs: [ '' ]
@@ -291,6 +295,8 @@ common:
         text: '%1%가 설치되었지만 F4SE를 찾을 수 없습니다! F4SE 다운로드 페이지를 참조하십시오: [F4SE](http://f4se.silverlock.org).'
       - lang: ru
         text: 'У вас установлен %1%, но F4SE не найден! Смотрите страницу загрузки [F4SE](http://f4se.silverlock.org).'
+      - lang: sv
+        text: 'Du har installerat %1% men F4SE kunde inte hittas! Läs mer på F4SE:s nedladdningssisda: [F4SE](http://f4se.silverlock.org).'
       - lang: zh_CN
         text: '你已经安装了%1%，但是未发现F4SE！请查看F4SE的下载页面：[F4SE](http://f4se.silverlock.org)。'
 
@@ -307,6 +313,8 @@ common:
         text: '要: %1%'
       - lang: ru
         text: 'Требуется: %1%'
+      - lang: sv
+        text: 'Kräver: %1%'
 
   - &semiCompatible
     type: say
@@ -439,8 +447,16 @@ common:
         text: '%1%が最新版ではないようです。一部のModを動作させるには最新版の%1%で追加された機能が必要となる場合があります。'
       - lang: ko
         text: '%1%의 최신 버전이없는 것 같습니다. 일부 개조자는 작동하기 위해 %1%의 최신 버전에 추가 된 기능이 필요할 수 있습니다.'
+      - lang: pl
+        text: 'Wygląda na to że nie masz ostatniej aktualnej wersji %1%. Część modów może wymagać funkcjonalności dodanej w ostatniej wersji %1% aby działać poprawnie.'
+      - lang: pt
+        text: 'Aparenta que você não tem a versão mais recente de %1%. Alguns mods podem requerir funcinalidades adicionadas na última versão de %1% para funcionar.'
+      - lang: pt_BR
+        text: 'Você aparenta não ter a versão mais recente de %1%. Alguns mods podem requerer funcionalidade que foi adicionada na versão mais recente de %1%.'
       - lang: ru
         text: 'Возможно у вас не установлена новейшая версия %1%. Для работы некоторых модов может требоваться функционал, добавленный в последней версии %1%'
+      - lang: sv
+        text: 'Det verkar som att du inte har den senaste versionen av %1%. Några mods kan kräva funktionalitet tillagd i den senaste versionen av %1% för att fungera.'
       - lang: zh_CN
         text: '你的%1%似乎不是最新的。有些插件可能需要最新的%1%才能工作。'
 
@@ -459,8 +475,16 @@ common:
         text: '%1%は最新版です。'
       - lang: ko
         text: '%1%가 최신버전입니다.'
+      - lang: pl
+        text: 'Twój %1% jest aktualny.'
+      - lang: pt
+        text: 'O seu %1% está atualizado.'
+      - lang: pt_BR
+        text: 'Seu %1% está atualizado.'
       - lang: ru
         text: 'Ваш %1% обновлен.'
+      - lang: sv
+        text: 'Din %1% är uppdaterad.'
       - lang: zh_CN
         text: '你的%1%是最新的。'
 
@@ -485,6 +509,8 @@ common:
         text: 'A sua versão instalada de %1% não é compatível com a sua versão de %2%.'
       - lang: ru
         text: 'Установленная у вас версия %1% несовместима с версией %2%.'
+      - lang: sv
+        text: 'Din installerade version av %1% är inte kombatibel med din version av %2%.'
   - &versionF4SEIncFO4
     <<: *versionXIncY
     subs:
@@ -534,6 +560,8 @@ common:
         text: 'Devido a melhorias feitas ao processo de limpeza com o lançamento oficial do xEdit 4.0.x+, quaisquer mods que foram verificados como limpos com versões antigas do xEdit podem agora necessitar de limpeza adicional. Uma guia para utilizar o xEdit 4.0.x+ no modo **Limpeza Automática Rápida** (Quick Auto Clean) pode ser encontrado [aqui](https://tes5edit.github.io/docs/5-mod-cleaning-and-error-checking.html#s_5-3-4).'
       - lang: ru
         text: 'Из-за изменений в способе очистки в версии xEdit 4.0.x+, моды, что были проверены как чистые с предыдущими версиями xEdit могут вновь потребовать очистки. Руководство по запуску xEdit 4.0.x+ в режиме **Быстрой очистки** может быть найдено [здесь](https://tes5edit.github.io/docs/5-mod-cleaning-and-error-checking.html#s_5-3-4).'
+      - lang: sv
+        text: 'På grund av förbättringar av rensningsprocessen med den officiella releasen av xEdit 4.0.x+ så kan en mod som verifierades som ren med en äldre version av xEdit behöva extra rensning. En guide för att köra xEdit 4.0.x+ i **Quick Auto Clean**-läge kan hittas [här](https://tes5edit.github.io/docs/5-mod-cleaning-and-error-checking.html#s_5-3-4).'
   - &reqManualFix
     util: '[FO4Edit](https://www.nexusmods.com/fallout4/mods/2737) **Quick Auto Clean**'
     info:
@@ -551,6 +579,8 @@ common:
         text: 'É fortemente recomendade que você não utilize mods que contenham **Navmeshes deletados** pois eles são conhecidos por causar crashes. **Navmeshes deletados devem ser corrigos manualmente (Um processo complexo que deve ser feito pelo autor do mod). Mais informações em **Navmeshes deletadas** está disponível [aqui](https://www.creationkit.com/index.php?title=Fixing_Navmesh_Deletion_Tutorial).'
       - lang: ru
         text: 'Настоятельно не рекомендуется использовать моды с **удаленными навмешами** т.к. известно, что они вызывают вылеты. **удаленные навмеши** должны быть исправлены вручную(Комплексный процесс, который должен быть выполнен автором мода). Больше информации о **удаленных навмешах** можно найти [здесь](https://www.creationkit.com/index.php?title=Fixing_Navmesh_Deletion_Tutorial).'
+      - lang: sv
+        text: 'Det är starkt rekommenderat att inte använda mods som innehåller **Borttagna navmeshes** eftersom de kan orsaka krascher. **Borttagna navmeshes** måste korrigeras manuellt (en komplex process som borde göras av modskaparen). Mer information om **Borttagna navmeshes** hittar du [här](https://www.creationkit.com/index.php?title=Fixing_Navmesh_Deletion_Tutorial).'
 
 bash_tags:
   - 'Delev'
@@ -577,6 +607,8 @@ globals:
         text: '[Postagem mais recente do LOOT](%1%).'
       - lang: ru
         text: '[Обсуждение LOOT "(Eng)"](%1%).'
+      - lang: sv
+        text: '[Senaste LOOT-tråd](%1%).'
       - lang: zh_CN
         text: '[最新的LOOT版本](%1%)。'
     subs: [ 'https://loot.github.io/latest-thread/' ]
@@ -588,6 +620,16 @@ globals:
         text: 'Denne version af LOOT har begrænset understøttelse af Creation Club-plugins. Det er derfor anbefalet at opdatere til LOOT 0.13.1 eller senere hurtigst muligt.'
       - lang: de
         text: 'Diese Version von LOOT hat eine minderwertige Handhabung von Creation Club-Plugins. Unterstützung für diese ist daher limitiert in Versionen älter als LOOT 0.13.1. Es wird empfohlen so bald wie möglich zu Updaten.'
+      - lang: ja
+        text: 'このバージョンのLOOTではCreation Clubプラグインをうまく扱えません。そのため、LOOT 0.13.1より前のバージョンではサポートが制限されます。できるだけ早くアップデートすることをおすすめします。'
+      - lang: pl
+        text: 'Ta wersja LOOT ma gorszą obsługę wtyczek Creation Club. Wsparcie dla nich będzie limitowane w wersjach LOOT niższych niż 0.13.1. Aktualizacja jest rekomendowana jak najszybciej.'
+      - lang: pt
+        text: 'Esta versão do LOOT contém uma manipulação inferior de plugins do Creation Club. Suporte a estes é então limitado nas versões posteriors a LOOT 0.13.1. É recomendado realizar uma atualização assim que possível.'
+      - lang: ru
+        text: 'В этой версии LOOT плагины Creation Club обрабатываются хуже. Поэтому их поддержка ограничена до версии LOOT 0.13.1. Рекомендуется обновить как можно скорее.'
+      - lang: sv
+        text: 'Denna version av LOOT har sämre hantering av Creation Club plugins. Stöd för dessa är därför begränsad i versionen tidigare än LOOT 0.13.1. Du rekommenderas att uppdatera så snart som möjligt.'
     condition: 'version("LOOT", "0.13.1.0", <) and file("cc[A-Z]{3}FO4[0-9]{3}-[a-zA-Z0-9()]+\.es(l|m)")'
 # Fallout 4 - Latest Version
   - <<: *versionOldX
