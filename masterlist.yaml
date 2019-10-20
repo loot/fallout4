@@ -3451,21 +3451,18 @@ plugins:
         nav: 1
   - name: 'FirstPersonViewableItemsExpanded.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/26062' ]
-    clean:
-      # Version 1.0
-      - crc: 0x9855A3B2
-        util: 'FO4Edit v3.2.1'
+    inc: [ 'LooksMenu Customization Compendium.esp' ]
     msg:
       - <<: *alreadyInX
         subs: [ 'LooksMenu1stPersonViewItemsFix.esp' ]
         condition: 'active("FirstPersonViewableItemsExpanded.esp") and active("LooksMenu1stPersonViewItemsFix.esp")'
-      - type: error
-        content:
-          - lang: en
-            text: 'This plugin is incompatible with LooksMenu Customization Compendium. Use the compatible plugin from the [mod page](https://www.nexusmods.com/fallout4/mods/26062).'
-          - lang: de
-            text: 'Dieses Plugins ist inkompatibel mit LooksMenu Customization Compendium. Nutzen Sie das kompatible Plugin von der [Mod Seite](https://www.nexusmods.com/fallout4/mods/26062).'
-        condition: 'active("LooksMenu Customization Compendium.esp") and active("FirstPersonViewableItemsExpanded.esp")'
+      - <<: *useVersion
+        sub: [ '[Looks Menu Customization Compendium](https://www.nexusmods.com/fallout4/mods/26062)' ]
+        condition: 'active("LooksMenu Customization Compendium.esp")'
+    clean:
+      # Version 1.0
+      - crc: 0x9855A3B2
+        util: 'FO4Edit v4.0.2i'
   - name: 'MinutemenGeneralOutfitF.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/26047' ]
     inc:
