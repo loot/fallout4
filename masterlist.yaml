@@ -4089,49 +4089,35 @@ plugins:
         itm: 355
         udr: 12
     msg: [ *wildEdits ]
-  - name: 'WhatsYourName.esl'
+  - name: 'WhatsYourName\.es(l|p)'
     url: [ 'https://www.nexusmods.com/fallout4/mods/25321' ]
-    inc:
-      - 'WhatsYourName.esp'
-    clean:
-      # Version 1.7.0
-      - crc: 0x5E569B73
-        util: 'FO4Edit v3.2.48'
     msg:
-      - &WYM_FCOM
-        type: say
-        content:
-          - lang: en
-            text: 'Consider using the "What''s Your Name" FCOM plugin to be able to rename NPCs from Fallout Commander (FCOM).'
-          - lang: da
-            text: 'Overvej at bruge "What''s Your Name"-FCOM-pluginnet for at kunne omdøbe NPC’ere fra Fallout Commander (FCOM).'
-          - lang: de
-            text: 'Erwäge das "What''s Your Name" FCOM Plugin zu verwenden um NPCs von Fallout Commander (FCOM) umbenennen zu können.'
+      - <<: *patchIncluded
+        subs: [ 'FCOM - Fallout Commander' ]
         condition: 'active("FCOM.esm") and not active("WhatsYourName-FCOM.esp")'
-  - name: 'WhatsYourName.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/25321' ]
-    inc:
-      - 'WhatsYourName.esl'
+      - <<: *useOnlyOneX
+        subs: [ 'What''s Your Name plugin' ]
+        condition: 'many("WhatsYourName\.es(l|p)")'
+  - name: 'WhatsYourName.esl'
     clean:
-      # Version 1.6.0
-      - crc: 0xCF6862C5
-        util: 'FO4Edit v3.2.48'
-      # Version 1.7.0
-      - crc: 0xF5D9D57B
-        util: 'FO4Edit v3.2.48'
-    msg:
-      - *WYM_FCOM
+      # Version 1.8.4
+      - crc: 0x3ADFCEDF
+        util: 'FO4Edit v4.0.2i'
+  - name: 'WhatsYourName.esp'
+    clean:
+      # Version 1.8.4
+      - crc: 0xD09CADCF
+        util: 'FO4Edit v4.0.2i'
   - name: 'WhatsYourName-FCOM.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/25321' ]
     req:
-      - name: 'WhatsYourName.esl'
-        condition: 'not active("WhatsYourName.esp")'
       - name: 'WhatsYourName.esp'
-        condition: 'not active("WhatsYourName.esl")'
+        display: 'WhatsYourName.esp or WhatsYourName.esl'
+        condition: 'not file("WhatsYourName.esl")'
     clean:
-      # Version 1.7.0
+      # Version 1.8.4
       - crc: 0x555C1E4E
-        util: 'FO4Edit v3.2.48'
+        util: 'FO4Edit v4.0.2i'
   - name: 'RenLightMod.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/11527' ]
     dirty:
