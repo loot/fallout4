@@ -85,6 +85,8 @@ common:
         text: 'Lösche oder deaktiviere. %1%'
       - lang: ja
         text: '%1%を削除するか非アクティブにしてください。'
+      - lang: pl
+        text: 'Usuń lub dezaktywuj. %1%'
       - lang: ru
         text: 'Не забудьте отключить или удалить. %1%'
     subs: [ '' ]
@@ -192,6 +194,8 @@ common:
         text: '旧式のプラグインです。最新版に更新してください。 %1%'
       - lang: ko
         text: '사용되지 않습니다. 최신 버전으로 업데이트하십시오. %1%'
+      - lang: pl
+        text: 'Przestarzały. Uaktualnij do ostatniej wersji. %1%'
       - lang: ru
         text: 'Устарело. Обновите до последней версии. %1%'
       - lang: sv
@@ -213,6 +217,10 @@ common:
         text: 'Se puede utilizar con un %1% pero requeriría un trabajo adicional. Deben de estar utilizado un Smashed Patch o un Bash Patch independiente del uno el otro.'
       - lang: ja
         text: '%1%と同時に使用できますが、追加作業が必要となります。Smashed PatchかBash Patchはそれぞれ単独で使用してください。'
+      - lang: pl
+        text: 'Może być używane wraz z %1% ale wymagałoby dodatkowej pracy. Smashed Patch lub Bashed Patch powinien być używany niezależnie jeden od drugiego.'
+      - lang: ru
+        text: 'Может быть использовано совместно с %1% но возможно потребуется дополнительная работа. Smashed Patch или Bash Patch должны быть использованы независимо друг от друга.'
 
   - &patch3rdParty
     type: warn
@@ -293,6 +301,12 @@ common:
         text: '%1%はインストールされていますが、F4SEが見つかりません！F4SEのダウンロードページを確認してください。[F4SE](http://f4se.silverlock.org)'
       - lang: ko
         text: '%1%가 설치되었지만 F4SE를 찾을 수 없습니다! F4SE 다운로드 페이지를 참조하십시오: [F4SE](http://f4se.silverlock.org).'
+      - lang: pl
+        text: 'Zainstalowałeś %1% ale nie odnaleziono F4SE! Odwiedź stronę pobierania F4SE: [F4SE](https://f4se.silverlock.org).'
+      - lang: pt
+        text: 'Você instalou %1% mas o F4SE não foi encontrado! Veja a página de download do F4SE: [F4SE](http://f4se.silverlock.org).'
+      - lang: pt_BR
+        text: 'Você tem %1% instalado mas o F4SE não foi encontrado! Veja a página de download do F4SE: [F4SE](https://f4se.silverlock.org).'
       - lang: ru
         text: 'У вас установлен %1%, но F4SE не найден! Смотрите страницу загрузки [F4SE](http://f4se.silverlock.org).'
       - lang: sv
@@ -311,6 +325,8 @@ common:
         text: 'Requiere: %1%'
       - lang: ja
         text: '要: %1%'
+      - lang: pl
+        text: 'Wymaga: %1%'
       - lang: ru
         text: 'Требуется: %1%'
       - lang: sv
@@ -327,6 +343,8 @@ common:
         text: '%1%は%2%と完全な互換性がありません。'
       - lang: ko
         text: '%1% 모드는 이 모드와 완벽히 호환되지 않습니다. %2%'
+      - lang: pl
+        text: '%1% nie jest w pełni kompatybilny z tym modem. %2%'
       - lang: pt
         text: '%1% não é totalmente compatível com este mod. %2%'
       - lang: pt_BR
@@ -373,6 +391,8 @@ common:
         text: 'Benutzen Sie die %1% Version.'
       - lang: ja
         text: '%1%バージョンを使用してください。'
+      - lang: pl
+        text: 'Użyj wersji %1%'
       - lang: ru
         text: 'Используйте версию для %1%'
   - &useVersionAutomatron
@@ -409,6 +429,8 @@ common:
         text: 'Benutzen Sie die Nicht-%1% Version.'
       - lang: ja
         text: '%1%バージョン以外を使用してください。'
+      - lang: pl
+        text: 'Użyj wersji innej niż %1%.'
   - &useVersionNonAutomatron
     <<: *useVersionNon
     subs: [ 'Automatron' ]
@@ -664,6 +686,16 @@ globals:
         text: 'It appears you have installed **Fallout 4 Script Extender**, but its required scripts seem to be missing. Please ensure you have correctly installed the scripts bundled with the **[F4SE](http://f4se.silverlock.org)** installation archive.'
       - lang: de
         text: 'Es erscheint als hätten Sie **Fallout 4 Script Extender** installiert, aber die vorausgesetzten Skripte scheinen zu fehlen. Bitte stellen Sie sicher, dass Sie die Skripte korrekt mit installiert haben, die mit dem **[F4SE](http://f4se.silverlock.org)** Installationsarchiv enthalten sind.'
+      - lang: ja
+        text: 'Fallout 4 Script Extenderをインストールしてあるようですが、必要なスクリプトが見つかりません。**[F4SE] (http://f4se.silverlock.org)**に付属するスクリプトが正しくインストールされているかを確認してください。'
+      - lang: pl
+        text: 'Wygląda na to że zainstalowałeś **Fallout 4 Script Extender**, ale jego wymagane skrypty są brakujące. Upewnij się że poprawnie zainstalowałeś skrypty w pakiecie z archiwum instalacyjnym **[F4SE](http://f4se.silverlock.org)**'
+      - lang: pt
+        text: 'Você aparenta ter instalado **Fallout 4 Script Extender**, mas os seus scripts necessário estão em falta. Por favor, garanta que tem os devidamente instalados os scripts the acompanham o arquivo de instalação do **[F4SE](http://f4se.silverlock.org)**'
+      - lang: ru
+        text: 'Похоже, у вас установлен **Fallout 4 Script Extender**, но требуемые скрипты отсутствуют. Убедитесь, что правильно установили скрипты из архива **[F4SE](http://f4se.silverlock.org)**.'
+      - lang: sv
+        text: 'Det verkar som att du har installerat **Fallout 4 Script Extender**, men de script som det kräver verkar saknas. Var god att se till att du har installerat de script som bifogas med installationsarkivet **[F4SE](http://f4se.silverlock.org)** på ett korrekt sätt.'
 # F4SE Plugins - Compatibility
   - <<: *versionXIncY
     subs:
