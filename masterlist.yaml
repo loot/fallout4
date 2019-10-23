@@ -1719,11 +1719,14 @@ plugins:
         subs: [ 'VIS - Junk' ]
         condition: 'many("ValdacilsItemSorting-Junk(Better|Weightless)?(\+DEF_INV)?\.esp")'
   - name: 'ValdacilsItemSorting-Misc.esp'
-    inc: [ 'ValdacilsItemSorting-MiscWeightless.esp' ]
     msg: [ *alreadyInValsPicksVanWeight ]
   - name: 'ValdacilsItemSorting-MiscWeightless.esp'
-    inc: [ 'ValdacilsItemSorting-Misc.esp' ]
     msg: [ *alreadyInValsPicks ]
+  - name: 'ValdacilsItemSorting-Misc(Weightless)?\.esp'
+    msg:
+      - <<: *useOnlyOneX
+        subs: [ 'VIS - Misc' ]
+        condition: 'many("ValdacilsItemSorting-Misc(Weightless)?\.esp")'
   - name: 'ValdacilsItemSorting-Mods.esp'
     inc: [ 'ValdacilsItemSorting-ModsWeightless.esp' ]
     msg: [ *alreadyInValsPicksVanWeight ]
