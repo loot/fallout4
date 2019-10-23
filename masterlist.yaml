@@ -570,7 +570,7 @@ common:
         text: 'Denna plugin innehåller vilda föränringar utanför ITM och UDR-records samt borttagna navmeshes och kan kräva ytterligare manuell rensning för att inte störa andra moddar. %1%'
     subs: [ '' ]
 
-# Cleaning data
+# Dirty Aliases
   - &quickClean
     util: '[FO4Edit](https://www.nexusmods.com/fallout4/mods/2737) **Quick Auto Clean**'
     info:
@@ -739,9 +739,6 @@ groups:
   - name: &underridesGroup Underrides
     after: [ *retconGroup ]
 
-  - name: &scrapperGroup Scrap Corpse Highlighting
-    after: [ *underridesGroup ]
-
   - name: &interfaceGroup User Interface
     description: 'A group for mods that enhance or alter the user interface.'
 
@@ -756,7 +753,7 @@ groups:
       - *itemsGroup
 
   - name: default
-    after: [ *scrapperGroup ]
+    after: [ *underridesGroup ]
 
   - name: &scrapGroup Scrap Everything
     after: [ default ]
@@ -771,15 +768,15 @@ groups:
     after: [ *altStartGroup ]
 
 plugins:
-  ### Official DLC plugins
+###### Official DLC plugins ######
   - name: 'DLCRobot.esm'
     group: *dlcGroup
     dirty:
-      # version: 1.10.120.0, 1.10.130.0
+      # version: 1.10.120.0, 1.10.130.0, 1.10.138.0
       - <<: *quickClean
         crc: 0xD69027EA
-        util: '[FO4Edit v4.0.2](https://www.nexusmods.com/fallout4/mods/2737)'
-        itm: 50
+        util: '[FO4Edit v4.0.2i](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 49
         udr: 38
         nav: 1
   - name: 'DLCworkshop01.esm'
@@ -787,31 +784,23 @@ plugins:
     after:
       - 'DLCRobot.esm'
     dirty:
-      # version: 1.10.120.0, 1.10.130.0
+      # version: 1.10.120.0, 1.10.130.0, 1.10.138.0
       - <<: *quickClean
         crc: 0x47BAE27E
-        util: '[FO4Edit v4.0.2](https://www.nexusmods.com/fallout4/mods/2737)'
+        util: '[FO4Edit v4.0.2i](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 6
-    clean:
-      # version: 1.10.120.0, 1.10.130.0
-      - crc: 0x4C67C0E0
-        util: 'FO4Edit v4.0.2'
   - name: 'DLCCoast.esm'
     group: *dlcGroup
     after:
       - 'DLCRobot.esm'
       - 'DLCworkshop01.esm'
     dirty:
-      # version: 1.10.120.0, 1.10.130.0
+      # version: 1.10.120.0, 1.10.130.0, 1.10.138.0
       - <<: *quickClean
         crc: 0xF1F28026
-        util: '[FO4Edit v4.0.2](https://www.nexusmods.com/fallout4/mods/2737)'
-        itm: 85
+        util: '[FO4Edit v4.0.2i](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 84
         udr: 86
-    clean:
-      # version: 1.10.120.0, 1.10.130.0
-      - crc: 0x4EB1FFA0
-        util: 'FO4Edit v4.0.2'
   - name: 'DLCworkshop02.esm'
     group: *dlcGroup
     after:
@@ -819,15 +808,11 @@ plugins:
       - 'DLCworkshop01.esm'
       - 'DLCCoast.esm'
     dirty:
-      # version: 1.10.120.0, 1.10.130.0
+      # version: 1.10.120.0, 1.10.130.0, 1.10.138.0
       - <<: *quickClean
         crc: 0x83ABC821
-        util: '[FO4Edit v4.0.2](https://www.nexusmods.com/fallout4/mods/2737)'
+        util: '[FO4Edit v4.0.2i](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 2
-    clean:
-      # version: 1.10.120.0, 1.10.130.0
-      - crc: 0x49F4160D
-        util: 'FO4Edit v4.0.2'
   - name: 'DLCworkshop03.esm'
     group: *dlcGroup
     after:
@@ -836,16 +821,12 @@ plugins:
       - 'DLCCoast.esm'
       - 'DLCworkshop02.esm'
     dirty:
-      # version: 1.10.120.0, 1.10.130.0
+      # version: 1.10.120.0, 1.10.130.0, 1.10.138.0
       - <<: *quickClean
         crc: 0xE0089FBB
-        util: '[FO4Edit v4.0.2](https://www.nexusmods.com/fallout4/mods/2737)'
-        itm: 25
+        util: '[FO4Edit v4.0.2i](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 22
         udr: 10
-    clean:
-      # version: 1.10.120.0, 1.10.130.0
-      - crc: 0x41B1E1FE
-        util: 'FO4Edit v4.0.2'
   - name: 'DLCNukaWorld.esm'
     group: *dlcGroup
     after:
@@ -855,10 +836,10 @@ plugins:
       - 'DLCworkshop02.esm'
       - 'DLCworkshop03.esm'
     dirty:
-      # version: 1.10.120.0, 1.10.130.0
+      # version: 1.10.120.0, 1.10.130.0, 1.10.138.0
       - <<: *quickClean
         crc: 0x43D25C56
-        util: '[FO4Edit v4.0.2](https://www.nexusmods.com/fallout4/mods/2737)'
+        util: '[FO4Edit v4.0.2i](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 194
         udr: 418
         nav: 7
@@ -1378,7 +1359,7 @@ plugins:
   - name: 'cctosfo4002_neonflats.esm'
     group: *ccGroup
 
-  ### Patches
+###### Unofficial Patches ######
   - name: 'Unofficial Fallout 4 Patch.esp'
     url:
       - 'https://www.afkmods.com/index.php?/files/file/1765-unofficial-fallout-4-patch/'
@@ -1388,18 +1369,23 @@ plugins:
       - type: error
         content:
         - lang: en
-          text: 'Requires Fallout 4 patch 1.10.130 or greater.'
+          text: 'Requires Fallout 4 patch 1.10.138 or greater.'
         - lang: da
-          text: 'Kræver Fallout 4-lap 1.10.130 eller nyere.'
+          text: 'Kræver Fallout 4-lap 1.10.138 eller nyere.'
         - lang: de
-          text: 'Benötigt Fallout 4 Patch 1.10.130 oder neuer.'
-        condition: 'version("Unofficial Fallout 4 Patch.esp", "2.0.7", >=) and not version("../Fallout4.exe", "1.10.130.0", >=)'
+          text: 'Benötigt Fallout 4 Patch 1.10.138 oder neuer.'
+        condition: 'version("Unofficial Fallout 4 Patch.esp", "2.0.9", >=) and not version("../Fallout4.exe", "1.10.138.0", >=)'
       - <<: *obsolete
-        condition: 'version("Unofficial Fallout 4 Patch.esp", "2.0.7", <)'
+        condition: 'version("Unofficial Fallout 4 Patch.esp", "2.0.9", <)'
     clean:
       # version: 2.0.8a
       - crc: 0xC26227AD
         util: 'FO4Edit v4.0.2f'
+      # version: 2.0.9
+      - crc: 0xB58A6D4F
+        util: 'FO4Edit v4.0.2i'
+
+###### Fixes ######
   # Mods obsoleted by official Bethesda patches
   - name: 'KH_DogArmorFix.esp '
     url: []
@@ -1459,14 +1445,12 @@ plugins:
   - name: 'UnofficialFallout4Patch.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/4526' ]
     group: *fixesGroup
-    msg:
-      - *alreadyInUFO4P
+    msg: [ *alreadyInUFO4P ]
   - name: 'Simple Bug Fixes.esp'
     url: []
     group: *fixesGroup
+    inc: [ 'SettlementKeywords.esm' ]
     msg: [ *alreadyInUFO4P ]
-    inc:
-      - 'SettlementKeywords.esm'
   - name: 'bugfix_maglocks_terminal_delay.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/26353' ]
     group: *fixesGroup
@@ -1476,43 +1460,35 @@ plugins:
   - name: 'Remove Rads in Survival Fix.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/15392' ]
     group: *fixesGroup
-    msg:
-      - *alreadyInUFO4P
+    msg: [ *alreadyInUFO4P ]
   - name: 'Idiot Savant Math Fix.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/13558' ]
     group: *fixesGroup
-    msg:
-      - *alreadyInUFO4P
+    msg: [ *alreadyInUFO4P ]
   - name: 'hangmansalleypatch.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/12958' ]
     group: *fixesGroup
-    msg:
-      - *alreadyInUFO4P
+    msg: [ *alreadyInUFO4P ]
   - name: 'Croup Manor NAVmesh Fix.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/12561' ]
     group: *fixesGroup
-    msg:
-      - *alreadyInUFO4P
+    msg: [ *alreadyInUFO4P ]
   - name: 'InvisibleBridgeFix.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/12491' ]
     group: *fixesGroup
-    msg:
-      - *alreadyInUFO4P
+    msg: [ *alreadyInUFO4P ]
   - name: 'DeirdreVendorFix.esp'
     url: []
     group: *fixesGroup
-    msg:
-      - *alreadyInUFO4P
+    msg: [ *alreadyInUFO4P ]
   - name: 'Combat Armor Weight Fix.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/11541' ]
     group: *fixesGroup
-    msg:
-      - *alreadyInUFO4P
+    msg: [ *alreadyInUFO4P ]
   - name: 'LiveNLoveMagazinePerkPatch.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/11083' ]
     group: *fixesGroup
-    msg:
-      - *alreadyInUFO4P
+    msg: [ *alreadyInUFO4P ]
   - name: 'Recruitable NPC Dialogue Fixes.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/11083' ]
     group: *fixesGroup
@@ -1529,111 +1505,92 @@ plugins:
   - name: 'DependencyQuestFix.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/10892' ]
     group: *fixesGroup
-    msg:
-      - *alreadyInUFO4P
+    msg: [ *alreadyInUFO4P ]
   - name: 'fix_Perk_CombatMedic.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/10651' ]
     group: *fixesGroup
-    msg:
-      - *alreadyInUFO4P
+    msg: [ *alreadyInUFO4P ]
   - name: 'ItemCapitalizationFixes.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/10416' ]
     group: *fixesGroup
-    msg:
-      - *alreadyInUFO4P
+    msg: [ *alreadyInUFO4P ]
   - name: 'FixTeslaScience.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/10319' ]
     group: *fixesGroup
-    msg:
-      - *alreadyInUFO4P
+    msg: [ *alreadyInUFO4P ]
   - name: 'SoldierToyFix.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/10229' ]
     group: *fixesGroup
-    msg:
-      - *alreadyInUFO4P
+    msg: [ *alreadyInUFO4P ]
   - name: 'Talk Yourself Sober Fix.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/10173' ]
     group: *fixesGroup
-    msg:
-      - *alreadyInUFO4P
+    msg: [ *alreadyInUFO4P ]
   - name: 'RFG - Curie Inspirational Sneak L&L Fix.esp'
     url: []
     group: *fixesGroup
-    msg:
-      - *alreadyInUFO4P
+    msg: [ *alreadyInUFO4P ]
   - name: 'RFG - Gunslinger Fix.esp'
     url: []
     group: *fixesGroup
-    msg:
-      - *alreadyInUFO4P
+    msg: [ *alreadyInUFO4P ]
   - name: 'Mole Rat Disease Fix.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/8908' ]
     group: *fixesGroup
-    msg:
-      - *alreadyInUFO4P
+    msg: [ *alreadyInUFO4P ]
   - name: 'Pipe_Revolver_Tuned_Receiver.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/8570' ]
     group: *fixesGroup
-    msg:
-      - *alreadyInUFO4P
+    msg: [ *alreadyInUFO4P ]
   - name: 'Worsins-T60-Headlamp-Fix.esp'
     url: []
     group: *fixesGroup
-    msg:
-      - *alreadyInUFO4P
+    msg: [ *alreadyInUFO4P ]
   - name: 'WeaveFix.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/5847' ]
     group: *fixesGroup
-    msg:
-      - *alreadyInUFO4P
+    msg: [ *alreadyInUFO4P ]
   - name: 'Merchants stick with store - Unique Settlers.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/5343' ]
     group: *fixesGroup
-    msg:
-      - *alreadyInUFO4P
+    msg: [ *alreadyInUFO4P ]
   - name: 'Glow Front Sight Ring Fix.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/5205' ]
     group: *fixesGroup
-    msg:
-      - *alreadyInUFO4P
+    msg: [ *alreadyInUFO4P ]
   - name: 'SynthArmorFix.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/5054' ]
     group: *fixesGroup
-    msg:
-      - *alreadyInUFO4P
+    msg: [ *alreadyInUFO4P ]
   - name: 'BoS Pilot Outfit Fix.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/3098' ]
     group: *fixesGroup
-    msg:
-      - *alreadyInUFO4P
+    msg: [ *alreadyInUFO4P ]
   - name: 'CompanionBugfixExperimental.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/2679' ]
     group: *fixesGroup
-    msg:
-      - *alreadyInUFO4P
+    msg: [ *alreadyInUFO4P ]
   - name: 'NX Desk Crafting Fix.esp'
     url: []
     group: *fixesGroup
-    msg:
-      - *alreadyInUFO4P
+    msg: [ *alreadyInUFO4P ]
   - name: 'itswear.esl'
     url: [ 'https://www.nexusmods.com/fallout4/mods/33497' ]
     group: *fixesGroup
+    msg: [ *alreadyInUFO4P ]
     clean:
       - crc: 0xC6B5B9B9
         util: FO4Edit v3.2.3h
-    msg:
-      - *alreadyInUFO4P
   - name: 'Brawl Bug Fix.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/16899' ]
     group: *fixesGroup
+    msg:
+      - <<: *alreadyInUFO4P
+        condition: 'active("Unofficial Fallout 4 Patch.esp") and version("Unofficial Fallout 4 Patch.esp", "2.0.5", >=)'
     clean:
       # Version 1
       - crc: 0x193547FD
         util: 'FO4Edit v3.2.65'
-    msg:
-      - <<: *alreadyInUFO4P
-        condition: 'active("Unofficial Fallout 4 Patch.esp") and version("Unofficial Fallout 4 Patch.esp", "2.0.5", >=)'
 
   - name: 'Vault-Tec Historical Preservation Initiative.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/12019' ]
@@ -1897,42 +1854,15 @@ plugins:
   - name: 'NoSharedDogmeatTemplate.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/18547' ]
     group: *underridesGroup
-  - name: 'Scrapper Corpse Highlighting.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/4380' ]
-    group: *scrapperGroup
-    clean:
-      # Version 8
-      - crc: 0x904389D7
-        util: FO4Edit v3.2
-    msg:
-      - <<: *patch3rdParty
-        subs:
-          - 'Automatron'
-          - '[DLCRobots Fix](https://www.nexusmods.com/fallout4/mods/11516)'
-        condition: 'active("DLCRobot.esm") and not active("DLCCoast.esm") and not active("Scrapper Corpse Highlighting - DLCRobots Fixes.esp") and checksum("Scrapper Corpse Highlighting.esp", 904389D7)'
-      - <<: *patch3rdParty
-        subs:
-          - 'Automatron & Far Harbor'
-          - '[DLC Patch](https://www.nexusmods.com/fallout4/mods/4380)'
-        condition: 'active("DLCRobot.esm") and active("DLCCoast.esm") and not active("Scrapper Corpse Highlighting DLC Patch.esp") and checksum("Scrapper Corpse Highlighting.esp", 904389D7)'
-  - name: 'Scrapper Corpse Highlighting DLC Patch.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/4380' ]
-    group: *scrapperGroup
-    clean:
-      # Version 8
-      - crc: 0xA202C5FD
-        util: FO4Edit v3.2
-  - name: 'Scrapper Corpse Highlighting - DLCRobots Fixes.esp'
+  - name: 'Scrapper Corpse Highlighting( DLC Patch| - DLCRobots Fixes)\.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/11516' ]
-    group: *scrapperGroup
-    clean:
-      # Version 1.0
-      - crc: 0x0E726D6A
-        util: FO4Edit v3.2
+    group: *underridesGroup
     msg:
+      - <<: *obsolete
+        subs: [ '[Loot Detector](https://www.nexusmods.com/fallout4/mods/4380/)' ]
       - <<: *alreadyInX
-        subs: [ 'Scrapper Corpse Highlighting DLC Patch.esp' ]
-        condition: 'active("Scrapper Corpse Highlighting DLC Patch.esp") and active("DLCCoast.esm")'
+        subs: [ 'Loot Detector' ]
+        condition: 'file("Loot Detector\.es(l|p)")'
   - name: 'PipBoyShadows.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/281' ]
     inc:
@@ -3463,21 +3393,18 @@ plugins:
         nav: 1
   - name: 'FirstPersonViewableItemsExpanded.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/26062' ]
-    clean:
-      # Version 1.0
-      - crc: 0x9855A3B2
-        util: 'FO4Edit v3.2.1'
+    inc: [ 'LooksMenu Customization Compendium.esp' ]
     msg:
       - <<: *alreadyInX
         subs: [ 'LooksMenu1stPersonViewItemsFix.esp' ]
         condition: 'active("FirstPersonViewableItemsExpanded.esp") and active("LooksMenu1stPersonViewItemsFix.esp")'
-      - type: error
-        content:
-          - lang: en
-            text: 'This plugin is incompatible with LooksMenu Customization Compendium. Use the compatible plugin from the [mod page](https://www.nexusmods.com/fallout4/mods/26062).'
-          - lang: de
-            text: 'Dieses Plugins ist inkompatibel mit LooksMenu Customization Compendium. Nutzen Sie das kompatible Plugin von der [Mod Seite](https://www.nexusmods.com/fallout4/mods/26062).'
-        condition: 'active("LooksMenu Customization Compendium.esp") and active("FirstPersonViewableItemsExpanded.esp")'
+      - <<: *useVersion
+        sub: [ '[Looks Menu Customization Compendium](https://www.nexusmods.com/fallout4/mods/26062)' ]
+        condition: 'active("LooksMenu Customization Compendium.esp")'
+    clean:
+      # Version 1.0
+      - crc: 0x9855A3B2
+        util: 'FO4Edit v4.0.2i'
   - name: 'MinutemenGeneralOutfitF.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/26047' ]
     inc:
@@ -4104,49 +4031,35 @@ plugins:
         itm: 355
         udr: 12
     msg: [ *wildEdits ]
-  - name: 'WhatsYourName.esl'
+  - name: 'WhatsYourName\.es(l|p)'
     url: [ 'https://www.nexusmods.com/fallout4/mods/25321' ]
-    inc:
-      - 'WhatsYourName.esp'
-    clean:
-      # Version 1.7.0
-      - crc: 0x5E569B73
-        util: 'FO4Edit v3.2.48'
     msg:
-      - &WYM_FCOM
-        type: say
-        content:
-          - lang: en
-            text: 'Consider using the "What''s Your Name" FCOM plugin to be able to rename NPCs from Fallout Commander (FCOM).'
-          - lang: da
-            text: 'Overvej at bruge "What''s Your Name"-FCOM-pluginnet for at kunne omdøbe NPC’ere fra Fallout Commander (FCOM).'
-          - lang: de
-            text: 'Erwäge das "What''s Your Name" FCOM Plugin zu verwenden um NPCs von Fallout Commander (FCOM) umbenennen zu können.'
+      - <<: *patchIncluded
+        subs: [ 'FCOM - Fallout Commander' ]
         condition: 'active("FCOM.esm") and not active("WhatsYourName-FCOM.esp")'
-  - name: 'WhatsYourName.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/25321' ]
-    inc:
-      - 'WhatsYourName.esl'
+      - <<: *useOnlyOneX
+        subs: [ 'What''s Your Name plugin' ]
+        condition: 'many("WhatsYourName\.es(l|p)")'
+  - name: 'WhatsYourName.esl'
     clean:
-      # Version 1.6.0
-      - crc: 0xCF6862C5
-        util: 'FO4Edit v3.2.48'
-      # Version 1.7.0
-      - crc: 0xF5D9D57B
-        util: 'FO4Edit v3.2.48'
-    msg:
-      - *WYM_FCOM
+      # Version 1.8.4
+      - crc: 0x3ADFCEDF
+        util: 'FO4Edit v4.0.2i'
+  - name: 'WhatsYourName.esp'
+    clean:
+      # Version 1.8.4
+      - crc: 0xD09CADCF
+        util: 'FO4Edit v4.0.2i'
   - name: 'WhatsYourName-FCOM.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/25321' ]
     req:
-      - name: 'WhatsYourName.esl'
-        condition: 'not active("WhatsYourName.esp")'
       - name: 'WhatsYourName.esp'
-        condition: 'not active("WhatsYourName.esl")'
+        display: 'WhatsYourName.esp or WhatsYourName.esl'
+        condition: 'not file("WhatsYourName.esl")'
     clean:
-      # Version 1.7.0
+      # Version 1.8.4
       - crc: 0x555C1E4E
-        util: 'FO4Edit v3.2.48'
+        util: 'FO4Edit v4.0.2i'
   - name: 'RenLightMod.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/11527' ]
     dirty:
