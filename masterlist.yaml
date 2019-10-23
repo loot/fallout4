@@ -47,6 +47,14 @@ common:
     <<: *alreadyInX
     subs: [ 'Unofficial Fallout 4 Patch' ]
     condition: 'active("Unofficial Fallout 4 Patch.esp")'
+  - &alreadyInValsPicks
+    <<: *alreadyInX
+    subs: [ 'Val''s Picks' ]
+    condition: 'file("ValdacilsItemSorting-00-ValsPicks-(NoDLCVersion|DLCVersion)(-VanillaWeight)?\.esp")'
+  - &alreadyInValsPicksVanWeight
+    <<: *alreadyInX
+    subs: [ 'Val''s Picks - Vanilla Weight' ]
+    condition: 'file("ValdacilsItemSorting-00-ValsPicks-(NoDLCVersion|DLCVersion)-VanillaWeight\.esp")'
 
   - &alsoUseX
     type: say
@@ -1653,39 +1661,17 @@ plugins:
   - name: 'ValdacilsItemSorting-00-ValsPicks-NoDLCVersion(-VanillaWeight)?\.esp'
     msg: [ *dlcVersion ]
   - name: 'ValdacilsItemSorting-Weapons.esp'
-    msg:
-      - &includedInValsPicks
-        type: say
-        content:
-          - lang: en
-            text: 'This plugin is also included in "Val''s Picks".'
-          - lang: da
-            text: 'Dette plugin er også også inkluderet i "Val''s Picks".'
-          - lang: de
-            text: 'Dieses Plugin ist auch enthalten in "Val''s Picks".'
-        condition: 'file("ValdacilsItemSorting-00-ValsPicks-(No)?DLCVersion\.esp")'
-      - &includedInValsPicksVanilla
-        type: say
-        content:
-          - lang: en
-            text: 'This plugin is also included in "Val''s Picks - Vanilla Weight".'
-          - lang: da
-            text: 'Dette plugin er også også inkluderet i "Val''s Picks - Vanilla Weight".'
-          - lang: de
-            text: 'Dieses Plugin ist auch enthalten in "Val''s Picks - Vanilla Weight".'
-        condition: 'file("ValdacilsItemSorting-00-ValsPicks-(No?)DLCVersion-VanillaWeight\.esp")'
+    msg: [ *alreadyInValsPicks ]
   - name: 'ValdacilsItemSorting-Aid.esp'
     inc:
       - 'ValdacilsItemSorting-AidReducedWeight.esp'
       - 'ValdacilsItemSorting-AidWeightless.esp'
-    msg:
-      - *includedInValsPicksVanilla
+    msg: [ *alreadyInValsPicksVanWeight ]
   - name: 'ValdacilsItemSorting-AidReducedWeight.esp'
     inc:
       - 'ValdacilsItemSorting-Aid.esp'
       - 'ValdacilsItemSorting-AidWeightless.esp'
-    msg:
-      - *includedInValsPicks
+    msg: [ *alreadyInValsPicks ]
   - name: 'ValdacilsItemSorting-AidWeightless.esp'
     inc:
       - 'ValdacilsItemSorting-Aid.esp'
@@ -1693,13 +1679,11 @@ plugins:
   - name: 'ValdacilsItemSorting-Ammo.esp'
     inc:
       - 'ValdacilsItemSorting-AmmoWeightless.esp'
-    msg:
-      - *includedInValsPicksVanilla
+    msg: [ *alreadyInValsPicksVanWeight ]
   - name: 'ValdacilsItemSorting-AmmoWeightless.esp'
     inc:
       - 'ValdacilsItemSorting-Ammo.esp'
-    msg:
-      - *includedInValsPicks
+    msg: [ *alreadyInValsPicks ]
   - name: 'ValdacilsItemSorting-ArmorByClass.esp'
     inc:
       - 'ValdacilsItemSorting-ArmorBySlot.esp'
@@ -1716,15 +1700,11 @@ plugins:
   - name: 'ValdacilsItemSorting-ArmorBySlot.esp'
     inc:
       - 'ValdacilsItemSorting-ArmorByClass.esp'
-    msg:
-      - *includedInValsPicks
-      - *includedInValsPicksVanilla
+    msg: [ *alreadyInValsPicks ]
   - name: 'ValdacilsItemSorting-CosmeticsByClass.esp'
     inc:
       - 'ValdacilsItemSorting-CosmeticsByType.esp'
-    msg:
-      - *includedInValsPicks
-      - *includedInValsPicksVanilla
+    msg: [ *alreadyInValsPicks ]
   - name: 'ValdacilsItemSorting-CosmeticsByType.esp'
     inc:
       - 'ValdacilsItemSorting-CosmeticsByClass.esp'
@@ -1738,9 +1718,7 @@ plugins:
       - 'ValdacilsItemSorting-ExplosivesSortBottom.esp'
       - 'ValdacilsItemSorting-ExplosivesSortBottomWeightless.esp'
       - 'ValdacilsItemSorting-ExplosivesSortTopWeightless.esp'
-    msg:
-      - *includedInValsPicks
-      - *includedInValsPicksVanilla
+    msg: [ *alreadyInValsPicks ]
   - name: 'ValdacilsItemSorting-ExplosivesSortBottomWeightless.esp'
     inc:
       - 'ValdacilsItemSorting-ExplosivesSortBottom.esp'
@@ -1788,9 +1766,7 @@ plugins:
       - 'ValdacilsItemSorting-JunkWeightless.esp'
       - 'ValdacilsItemSorting-JunkWeightless+DEF_INV.esp'
       - 'ValdacilsItemSorting-JunkBetter+DEF_INV.esp'
-    msg:
-      - *includedInValsPicks
-      - *includedInValsPicksVanilla
+    msg: [ *alreadyInValsPicks ]
   - name: 'ValdacilsItemSorting-JunkBetter+DEF_INV.esp'
     inc:
       - 'ValdacilsItemSorting-Junk.esp'
@@ -1802,23 +1778,19 @@ plugins:
   - name: 'ValdacilsItemSorting-Misc.esp'
     inc:
       - 'ValdacilsItemSorting-MiscWeightless.esp'
-    msg:
-      - *includedInValsPicksVanilla
+    msg: [ *alreadyInValsPicksVanWeight ]
   - name: 'ValdacilsItemSorting-MiscWeightless.esp'
     inc:
       - 'ValdacilsItemSorting-Misc.esp'
-    msg:
-      - *includedInValsPicks
+    msg: [ *alreadyInValsPicks ]
   - name: 'ValdacilsItemSorting-Mods.esp'
     inc:
       - 'ValdacilsItemSorting-ModsWeightless.esp'
-    msg:
-      - *includedInValsPicksVanilla
+    msg: [ *alreadyInValsPicksVanWeight ]
   - name: 'ValdacilsItemSorting-ModsWeightless.esp'
     inc:
       - 'ValdacilsItemSorting-Mods.esp'
-    msg:
-      - *includedInValsPicks
+    msg: [ *alreadyInValsPicks ]
   - name: 'ValdacilsItemSorting-NotJunk.esp'
     inc:
       - 'ValdacilsItemSorting-NotJunkJustMoney.esp'
@@ -1829,9 +1801,7 @@ plugins:
       - 'ValdacilsItemSorting-JunkWeightless+DEF_INV.esp'
       - 'ValdacilsItemSorting-JunkBetter.esp'
       - 'ValdacilsItemSorting-JunkBetter+DEF_INV.esp'
-    msg:
-      - *includedInValsPicks
-      - *includedInValsPicksVanilla
+    msg: [ *alreadyInValsPicks ]
   - name: 'ValdacilsItemSorting-NotJunkJustMoney.esp'
     inc:
       - 'ValdacilsItemSorting-NotJunk.esp'
@@ -1843,32 +1813,30 @@ plugins:
       - 'ValdacilsItemSorting-JunkBetter.esp'
       - 'ValdacilsItemSorting-JunkBetter+DEF_INV.esp'
   - name: 'ValdacilsItemSorting-Perks.esp'
-    msg:
-      - *includedInValsPicks
-      - *includedInValsPicksVanilla
+    msg: [ *alreadyInValsPicks ]
   - name: 'ValdacilsItemSorting-ZZ-DLCAutomatron.esp'
     inc:
       - 'ValdacilsItemSorting-ZZ-DLCAutomatron-Weightless.esp'
     msg:
-      - <<: *includedInValsPicksVanilla
+      - <<: *alreadyInValsPicksVanWeight
         condition: 'file("ValdacilsItemSorting-00-ValsPicks-DLCVersion-VanillaWeight.esp")'
   - name: 'ValdacilsItemSorting-ZZ-DLCAutomatron-Weightless.esp'
     inc:
       - 'ValdacilsItemSorting-ZZ-DLCAutomatron.esp'
     msg:
-      - <<: *includedInValsPicks
+      - <<: *alreadyInValsPicks
         condition: 'file("ValdacilsItemSorting-00-ValsPicks-DLCVersion.esp")'
   - name: 'ValdacilsItemSorting-ZZ-DLCFarHarbor.esp'
     inc:
       - 'ValdacilsItemSorting-ZZ-DLCFarHarbor-Weightless.esp'
     msg:
-      - <<: *includedInValsPicksVanilla
+      - <<: *alreadyInValsPicksVanWeight
         condition: 'file("ValdacilsItemSorting-00-ValsPicks-DLCVersion-VanillaWeight.esp")'
   - name: 'ValdacilsItemSorting-ZZ-DLCFarHarbor-Weightless.esp'
     inc:
       - 'ValdacilsItemSorting-ZZ-DLCFarHarbor.esp'
     msg:
-      - <<: *includedInValsPicks
+      - <<: *alreadyInValsPicks
         condition: 'file("ValdacilsItemSorting-00-ValsPicks-DLCVersion.esp")'
   - name: 'ValdacilsItemSorting-ZZ-DLCRuleArmorByClassOverride.esp'
     after:
