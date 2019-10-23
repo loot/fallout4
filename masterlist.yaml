@@ -1672,16 +1672,13 @@ plugins:
         subs: [ 'VIS - Aid' ]
         condition: 'many("ValdacilsItemSorting-Aid(ReducedWeight|Weightless)?\.esp")'
   - name: 'ValdacilsItemSorting-Ammo.esp'
-    inc:
-      - 'ValdacilsItemSorting-AmmoWeightless.esp'
+    inc: [ 'ValdacilsItemSorting-AmmoWeightless.esp' ]
     msg: [ *alreadyInValsPicksVanWeight ]
   - name: 'ValdacilsItemSorting-AmmoWeightless.esp'
-    inc:
-      - 'ValdacilsItemSorting-Ammo.esp'
+    inc: [ 'ValdacilsItemSorting-Ammo.esp' ]
     msg: [ *alreadyInValsPicks ]
   - name: 'ValdacilsItemSorting-ArmorByClass.esp'
-    inc:
-      - 'ValdacilsItemSorting-ArmorBySlot.esp'
+    inc: [ 'ValdacilsItemSorting-ArmorBySlot.esp' ]
     msg:
       - type: warn
         content:
@@ -1693,16 +1690,13 @@ plugins:
             text: 'Sie sortieren Rüstung nach Klasse und nutzen DLCs. Sie wollen möglicherweise "ValdacilsItemSorting-ZZ-DLCArmorByClassOverride.esp" nutzen um Klassensortierung auch für DLC-Rüstung zu aktivieren.'
         condition: 'active("DLCRobot.esm") and active("DLCCoast.esm") and not active("ValdacilsItemSorting-ZZ-DLCArmorByClassOverride.esp") and version("ValdacilsItemSorting-ArmorByClass.esp", "9.1", <)'
   - name: 'ValdacilsItemSorting-ArmorBySlot.esp'
-    inc:
-      - 'ValdacilsItemSorting-ArmorByClass.esp'
+    inc: [ 'ValdacilsItemSorting-ArmorByClass.esp' ]
     msg: [ *alreadyInValsPicks ]
   - name: 'ValdacilsItemSorting-CosmeticsByClass.esp'
-    inc:
-      - 'ValdacilsItemSorting-CosmeticsByType.esp'
+    inc: [ 'ValdacilsItemSorting-CosmeticsByType.esp' ]
     msg: [ *alreadyInValsPicks ]
   - name: 'ValdacilsItemSorting-CosmeticsByType.esp'
-    inc:
-      - 'ValdacilsItemSorting-CosmeticsByClass.esp'
+    inc: [ 'ValdacilsItemSorting-CosmeticsByClass.esp' ]
   - name: 'ValdacilsItemSorting-ExplosivesSortTop.esp'
     msg: [ *alreadyInValsPicks ]
   - name: 'ValdacilsItemSorting-ExplosivesSort(Bottom|BottomWeightless|Top|TopWeightless)\.esp'
@@ -1719,28 +1713,22 @@ plugins:
         subs: [ 'VIS - Junk' ]
         condition: 'many("ValdacilsItemSorting-Junk(Better|Weightless)?(\+DEF_INV)?\.esp")'
   - name: 'ValdacilsItemSorting-Misc.esp'
-    inc:
-      - 'ValdacilsItemSorting-MiscWeightless.esp'
+    inc: [ 'ValdacilsItemSorting-MiscWeightless.esp' ]
     msg: [ *alreadyInValsPicksVanWeight ]
   - name: 'ValdacilsItemSorting-MiscWeightless.esp'
-    inc:
-      - 'ValdacilsItemSorting-Misc.esp'
+    inc: [ 'ValdacilsItemSorting-Misc.esp' ]
     msg: [ *alreadyInValsPicks ]
   - name: 'ValdacilsItemSorting-Mods.esp'
-    inc:
-      - 'ValdacilsItemSorting-ModsWeightless.esp'
+    inc: [ 'ValdacilsItemSorting-ModsWeightless.esp' ]
     msg: [ *alreadyInValsPicksVanWeight ]
   - name: 'ValdacilsItemSorting-ModsWeightless.esp'
-    inc:
-      - 'ValdacilsItemSorting-Mods.esp'
+    inc: [ 'ValdacilsItemSorting-Mods.esp' ]
     msg: [ *alreadyInValsPicks ]
   - name: 'ValdacilsItemSorting-NotJunk.esp'
-    inc:
-      - 'ValdacilsItemSorting-NotJunkJustMoney.esp'
+    inc: [ 'ValdacilsItemSorting-NotJunkJustMoney.esp' ]
     msg: [ *alreadyInValsPicks ]
   - name: 'ValdacilsItemSorting-NotJunkJustMoney.esp'
-    inc:
-      - 'ValdacilsItemSorting-NotJunk.esp'
+    inc: [ 'ValdacilsItemSorting-NotJunk.esp' ]
   - name: 'ValdacilsItemSorting-NotJunk(JustMoney)?\.esp'
     after:
       - 'ValdacilsItemSorting-Junk.esp'
@@ -1752,32 +1740,27 @@ plugins:
   - name: 'ValdacilsItemSorting-Perks.esp'
     msg: [ *alreadyInValsPicks ]
   - name: 'ValdacilsItemSorting-ZZ-DLCAutomatron.esp'
-    inc:
-      - 'ValdacilsItemSorting-ZZ-DLCAutomatron-Weightless.esp'
+    inc: [ 'ValdacilsItemSorting-ZZ-DLCAutomatron-Weightless.esp' ]
     msg:
       - <<: *alreadyInValsPicksVanWeight
         condition: 'file("ValdacilsItemSorting-00-ValsPicks-DLCVersion-VanillaWeight.esp")'
   - name: 'ValdacilsItemSorting-ZZ-DLCAutomatron-Weightless.esp'
-    inc:
-      - 'ValdacilsItemSorting-ZZ-DLCAutomatron.esp'
+    inc: [ 'ValdacilsItemSorting-ZZ-DLCAutomatron.esp' ]
     msg:
       - <<: *alreadyInValsPicks
         condition: 'file("ValdacilsItemSorting-00-ValsPicks-DLCVersion.esp")'
   - name: 'ValdacilsItemSorting-ZZ-DLCFarHarbor.esp'
-    inc:
-      - 'ValdacilsItemSorting-ZZ-DLCFarHarbor-Weightless.esp'
+    inc: [ 'ValdacilsItemSorting-ZZ-DLCFarHarbor-Weightless.esp' ]
     msg:
       - <<: *alreadyInValsPicksVanWeight
         condition: 'file("ValdacilsItemSorting-00-ValsPicks-DLCVersion-VanillaWeight.esp")'
   - name: 'ValdacilsItemSorting-ZZ-DLCFarHarbor-Weightless.esp'
-    inc:
-      - 'ValdacilsItemSorting-ZZ-DLCFarHarbor.esp'
+    inc: [ 'ValdacilsItemSorting-ZZ-DLCFarHarbor.esp' ]
     msg:
       - <<: *alreadyInValsPicks
         condition: 'file("ValdacilsItemSorting-00-ValsPicks-DLCVersion.esp")'
   - name: 'ValdacilsItemSorting-ZZ-DLCArmorByClassOverride.esp'
-    after:
-      - 'ValdacilsItemSorting-ArmorByClass.esp'
+    after: [ 'ValdacilsItemSorting-ArmorByClass.esp' ]
   - name: 'ValdacilsItemSorting-ZZ-DLC(Rule)?ArmorByClassOverride\.esp'
     after:
       - 'ValdacilsItemSorting-ZZ-DLCAutomatron.esp'
