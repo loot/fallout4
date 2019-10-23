@@ -1670,11 +1670,14 @@ plugins:
         subs: [ 'VIS - Aid' ]
         condition: 'many("ValdacilsItemSorting-Aid(ReducedWeight|Weightless)?\.esp")'
   - name: 'ValdacilsItemSorting-Ammo.esp'
-    inc: [ 'ValdacilsItemSorting-AmmoWeightless.esp' ]
     msg: [ *alreadyInValsPicksVanWeight ]
   - name: 'ValdacilsItemSorting-AmmoWeightless.esp'
-    inc: [ 'ValdacilsItemSorting-Ammo.esp' ]
     msg: [ *alreadyInValsPicks ]
+  - name: 'ValdacilsItemSorting-Ammo(Weightless)?\.esp'
+    msg:
+      - <<: *useOnlyOneX
+        subs: [ 'VIS - Ammo' ]
+        condition: 'many("ValdacilsItemSorting-Ammo(Weightless)?\.esp")'
   - name: 'ValdacilsItemSorting-ArmorByClass.esp'
     inc: [ 'ValdacilsItemSorting-ArmorBySlot.esp' ]
     msg:
