@@ -1737,17 +1737,11 @@ plugins:
   - name: 'ValdacilsItemSorting-NotJunk.esp'
     inc:
       - 'ValdacilsItemSorting-NotJunkJustMoney.esp'
-    after:
-      - 'ValdacilsItemSorting-Junk.esp'
-      - 'ValdacilsItemSorting-Junk+DEF_INV.esp'
-      - 'ValdacilsItemSorting-JunkWeightless.esp'
-      - 'ValdacilsItemSorting-JunkWeightless+DEF_INV.esp'
-      - 'ValdacilsItemSorting-JunkBetter.esp'
-      - 'ValdacilsItemSorting-JunkBetter+DEF_INV.esp'
     msg: [ *alreadyInValsPicks ]
   - name: 'ValdacilsItemSorting-NotJunkJustMoney.esp'
     inc:
       - 'ValdacilsItemSorting-NotJunk.esp'
+  - name: 'ValdacilsItemSorting-NotJunk(JustMoney)?\.esp'
     after:
       - 'ValdacilsItemSorting-Junk.esp'
       - 'ValdacilsItemSorting-Junk+DEF_INV.esp'
