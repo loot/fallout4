@@ -3,6 +3,9 @@ common:
   - &F4SE
     name: '../f4se_loader.exe'
     display: '[F4SE](http://f4se.silverlock.org)'
+  - &F4SE_VR
+    name: '../f4sevr_loader.exe'
+    display: '[F4SE VR](http://f4se.silverlock.org)'
 
 # Messages
   - &alreadyInFO4
