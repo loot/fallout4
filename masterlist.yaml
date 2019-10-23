@@ -1703,27 +1703,13 @@ plugins:
   - name: 'ValdacilsItemSorting-CosmeticsByType.esp'
     inc:
       - 'ValdacilsItemSorting-CosmeticsByClass.esp'
-  - name: 'ValdacilsItemSorting-ExplosivesSortBottom.esp'
-    inc:
-      - 'ValdacilsItemSorting-ExplosivesSortTop.esp'
-      - 'ValdacilsItemSorting-ExplosivesSortBottomWeightless.esp'
-      - 'ValdacilsItemSorting-ExplosivesSortTopWeightless.esp'
   - name: 'ValdacilsItemSorting-ExplosivesSortTop.esp'
-    inc:
-      - 'ValdacilsItemSorting-ExplosivesSortBottom.esp'
-      - 'ValdacilsItemSorting-ExplosivesSortBottomWeightless.esp'
-      - 'ValdacilsItemSorting-ExplosivesSortTopWeightless.esp'
     msg: [ *alreadyInValsPicks ]
-  - name: 'ValdacilsItemSorting-ExplosivesSortBottomWeightless.esp'
-    inc:
-      - 'ValdacilsItemSorting-ExplosivesSortBottom.esp'
-      - 'ValdacilsItemSorting-ExplosivesSortTop.esp'
-      - 'ValdacilsItemSorting-ExplosivesSortTopWeightless.esp'
-  - name: 'ValdacilsItemSorting-ExplosivesSortTopWeightless.esp'
-    inc:
-      - 'ValdacilsItemSorting-ExplosivesSortBottom.esp'
-      - 'ValdacilsItemSorting-ExplosivesSortTop.esp'
-      - 'ValdacilsItemSorting-ExplosivesSortBottomWeightless.esp'
+  - name: 'ValdacilsItemSorting-ExplosivesSort(Bottom|BottomWeightless|Top|TopWeightless)\.esp'
+    msg:
+      - <<: *useOnlyOneX
+        subs: [ 'VIS - Explosives Sort' ]
+        condition: 'many("ValdacilsItemSorting-Aid(ReducedWeight|Weightless)?\.esp")'
   - name: 'ValdacilsItemSorting-Junk.esp'
     inc:
       - 'ValdacilsItemSorting-Junk+DEF_INV.esp'
