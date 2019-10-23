@@ -1739,23 +1739,23 @@ plugins:
     msg: [ *alreadyInValsPicks ]
   - name: 'ValdacilsItemSorting-Weapons.esp'
     msg: [ *alreadyInValsPicks ]
-  - name: 'ValdacilsItemSorting-ZZ-DLCAutomatron.esp'
-    inc: [ 'ValdacilsItemSorting-ZZ-DLCAutomatron-Weightless.esp' ]
+  - name: 'ValdacilsItemSorting-ZY-DLCAutomatron.esp'
+    inc: [ 'ValdacilsItemSorting-ZY-DLCAutomatron-Weightless.esp' ]
     msg:
       - <<: *alreadyInValsPicksVanWeight
         condition: 'file("ValdacilsItemSorting-00-ValsPicks-DLCVersion-VanillaWeight.esp")'
-  - name: 'ValdacilsItemSorting-ZZ-DLCAutomatron-Weightless.esp'
-    inc: [ 'ValdacilsItemSorting-ZZ-DLCAutomatron.esp' ]
+  - name: 'ValdacilsItemSorting-ZY-DLCAutomatron-Weightless.esp'
+    inc: [ 'ValdacilsItemSorting-ZY-DLCAutomatron.esp' ]
     msg:
       - <<: *alreadyInValsPicks
         condition: 'file("ValdacilsItemSorting-00-ValsPicks-DLCVersion.esp")'
-  - name: 'ValdacilsItemSorting-ZZ-DLCFarHarbor.esp'
-    inc: [ 'ValdacilsItemSorting-ZZ-DLCFarHarbor-Weightless.esp' ]
+  - name: 'ValdacilsItemSorting-ZY-DLCFarHarbor.esp'
+    inc: [ 'ValdacilsItemSorting-ZY-DLCFarHarbor-Weightless.esp' ]
     msg:
       - <<: *alreadyInValsPicksVanWeight
         condition: 'file("ValdacilsItemSorting-00-ValsPicks-DLCVersion-VanillaWeight.esp")'
-  - name: 'ValdacilsItemSorting-ZZ-DLCFarHarbor-Weightless.esp'
-    inc: [ 'ValdacilsItemSorting-ZZ-DLCFarHarbor.esp' ]
+  - name: 'ValdacilsItemSorting-ZY-DLCFarHarbor-Weightless.esp'
+    inc: [ 'ValdacilsItemSorting-ZY-DLCFarHarbor.esp' ]
     msg:
       - <<: *alreadyInValsPicks
         condition: 'file("ValdacilsItemSorting-00-ValsPicks-DLCVersion.esp")'
@@ -1763,10 +1763,10 @@ plugins:
     after: [ 'ValdacilsItemSorting-ArmorByClass.esp' ]
   - name: 'ValdacilsItemSorting-ZZ-DLC(Rule)?ArmorByClassOverride\.esp'
     after:
-      - 'ValdacilsItemSorting-ZZ-DLCAutomatron.esp'
-      - 'ValdacilsItemSorting-ZZ-DLCAutomatron-Weightless.esp'
-      - 'ValdacilsItemSorting-ZZ-DLCFarHarbor.esp'
-      - 'ValdacilsItemSorting-ZZ-DLCFarHarbor-Weightless.esp'
+      - 'ValdacilsItemSorting-ZY-DLCAutomatron.esp'
+      - 'ValdacilsItemSorting-ZY-DLCAutomatron-Weightless.esp'
+      - 'ValdacilsItemSorting-ZY-DLCFarHarbor.esp'
+      - 'ValdacilsItemSorting-ZY-DLCFarHarbor-Weightless.esp'
   - name: 'VIS-PatchChemRedux(Weightless)?\.esp'
     req: [ 'chem redux.esp' ]
 
