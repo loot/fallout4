@@ -1653,15 +1653,13 @@ plugins:
   # Valdacil's Item Sorting
   - name: 'ValdacilsItemSorting-.*\.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/3877' ]
+  - name: 'ValdacilsItemSorting-00-ValsPicks-NoDLCVersion(-VanillaWeight)?\.esp'
+    msg: [ *dlcVersion ]
   - name: 'ValdacilsItemSorting-00-ValsPicks-(NoDLCVersion|DLCVersion)(-VanillaWeight)?\.esp'
     msg:
       - <<: *useOnlyOneX
         subs: [ 'Val''s Picks' ]
         condition: 'many("ValdacilsItemSorting-00-ValsPicks-(NoDLCVersion|DLCVersion)(-VanillaWeight)?\.esp")'
-  - name: 'ValdacilsItemSorting-00-ValsPicks-NoDLCVersion(-VanillaWeight)?\.esp'
-    msg: [ *dlcVersion ]
-  - name: 'ValdacilsItemSorting-Weapons.esp'
-    msg: [ *alreadyInValsPicks ]
   - name: 'ValdacilsItemSorting-Aid.esp'
     msg: [ *alreadyInValsPicksVanWeight ]
   - name: 'ValdacilsItemSorting-AidReducedWeight.esp'
@@ -1738,6 +1736,8 @@ plugins:
       - 'ValdacilsItemSorting-JunkBetter.esp'
       - 'ValdacilsItemSorting-JunkBetter+DEF_INV.esp'
   - name: 'ValdacilsItemSorting-Perks.esp'
+    msg: [ *alreadyInValsPicks ]
+  - name: 'ValdacilsItemSorting-Weapons.esp'
     msg: [ *alreadyInValsPicks ]
   - name: 'ValdacilsItemSorting-ZZ-DLCAutomatron.esp'
     inc: [ 'ValdacilsItemSorting-ZZ-DLCAutomatron-Weightless.esp' ]
