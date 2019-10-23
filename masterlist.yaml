@@ -1679,7 +1679,6 @@ plugins:
         subs: [ 'VIS - Ammo' ]
         condition: 'many("ValdacilsItemSorting-Ammo(Weightless)?\.esp")'
   - name: 'ValdacilsItemSorting-ArmorByClass.esp'
-    inc: [ 'ValdacilsItemSorting-ArmorBySlot.esp' ]
     msg:
       - type: warn
         content:
@@ -1691,8 +1690,12 @@ plugins:
             text: 'Sie sortieren Rüstung nach Klasse und nutzen DLCs. Sie wollen möglicherweise "ValdacilsItemSorting-ZZ-DLCArmorByClassOverride.esp" nutzen um Klassensortierung auch für DLC-Rüstung zu aktivieren.'
         condition: 'active("DLCRobot.esm") and active("DLCCoast.esm") and not active("ValdacilsItemSorting-ZZ-DLCArmorByClassOverride.esp") and version("ValdacilsItemSorting-ArmorByClass.esp", "9.1", <)'
   - name: 'ValdacilsItemSorting-ArmorBySlot.esp'
-    inc: [ 'ValdacilsItemSorting-ArmorByClass.esp' ]
     msg: [ *alreadyInValsPicks ]
+  - name: 'ValdacilsItemSorting-ArmorBy(Class|Slot)\.esp'
+    msg:
+      - <<: *useOnlyOneX
+        subs: [ 'VIS - Armor By Class or By Slot' ]
+        condition: 'many("ValdacilsItemSorting-ArmorBy(Class|Slot)\.esp")'
   - name: 'ValdacilsItemSorting-CosmeticsByClass.esp'
     inc: [ 'ValdacilsItemSorting-CosmeticsByType.esp' ]
     msg: [ *alreadyInValsPicks ]
