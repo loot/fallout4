@@ -1784,12 +1784,9 @@ plugins:
       - 'ValdacilsItemSorting-ZZ-DLCAutomatron-Weightless.esp'
       - 'ValdacilsItemSorting-ZZ-DLCFarHarbor.esp'
       - 'ValdacilsItemSorting-ZZ-DLCFarHarbor-Weightless.esp'
-  - name: 'VIS-PatchChemRedux.esp'
-    req:
-      - 'chem redux.esp'
-  - name: 'VIS-PatchChemReduxWeightless.esp'
-    req:
-      - 'chem redux.esp'
+  - name: 'VIS-PatchChemRedux(Weightless)?\.esp'
+    req: [ 'chem redux.esp' ]
+
   # Radrose Usability Enhancements
   - name: 'Radrose Usability Enhancements.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/18098' ]
