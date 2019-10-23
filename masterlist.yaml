@@ -1680,6 +1680,9 @@ plugins:
         condition: 'many("ValdacilsItemSorting-Ammo(Weightless)?\.esp")'
   - name: 'ValdacilsItemSorting-ArmorByClass.esp'
     msg:
+      - <<: *alreadyInX
+        subs: [ 'VIS - DLC Armor by Class Override' ]
+        condition: 'file("ValdacilsItemSorting-ZZ-DLCArmorByClassOverride.esp")'
       - type: warn
         content:
           - lang: en
@@ -1690,14 +1693,27 @@ plugins:
             text: 'Sie sortieren Rüstung nach Klasse und nutzen DLCs. Sie wollen möglicherweise "ValdacilsItemSorting-ZZ-DLCArmorByClassOverride.esp" nutzen um Klassensortierung auch für DLC-Rüstung zu aktivieren.'
         condition: 'active("DLCRobot.esm") and active("DLCCoast.esm") and not active("ValdacilsItemSorting-ZZ-DLCArmorByClassOverride.esp") and version("ValdacilsItemSorting-ArmorByClass.esp", "9.1", <)'
   - name: 'ValdacilsItemSorting-ArmorBySlot.esp'
-    msg: [ *alreadyInValsPicks ]
+    msg:
+      - *alreadyInValsPicks
+      - <<: *alreadyInX
+        subs: [ 'VIS - DLC Armor by Slot Override' ]
+        condition: 'file("ValdacilsItemSorting-ZZ-DLCArmorBySlotOverride.esp")'
   - name: 'ValdacilsItemSorting-ArmorBy(Class|Slot)\.esp'
     msg:
       - <<: *useOnlyOneX
         subs: [ 'VIS - Armor By Class or By Slot' ]
         condition: 'many("ValdacilsItemSorting-ArmorBy(Class|Slot)\.esp")'
   - name: 'ValdacilsItemSorting-CosmeticsByClass.esp'
-    msg: [ *alreadyInValsPicks ]
+    msg:
+      - *alreadyInValsPicks
+      - <<: *alreadyInX
+        subs: [ 'VIS - DLC Cosmetics by Class Override' ]
+        condition: 'file("ValdacilsItemSorting-ZZ-DLCCosmeticsByClassOverride.esp")'
+  - name: 'ValdacilsItemSorting-CosmeticsByType.esp'
+    msg:
+      - <<: *alreadyInX
+        subs: [ 'VIS - DLC Cosmetics by Type Override' ]
+        condition: 'file("ValdacilsItemSorting-ZZ-DLCCosmeticsByTypeOverride.esp")'
   - name: 'ValdacilsItemSorting-Cosmetics(Class|Type)\.esp'
     msg:
       - <<: *useOnlyOneX
@@ -1753,7 +1769,11 @@ plugins:
   - name: 'ValdacilsItemSorting-Perks.esp'
     msg: [ *alreadyInValsPicks ]
   - name: 'ValdacilsItemSorting-Weapons.esp'
-    msg: [ *alreadyInValsPicks ]
+    msg:
+      - *alreadyInValsPicks
+      - <<: *alreadyInX
+        subs: [ 'VIS - DLC Weapons Override' ]
+        condition: 'file("ValdacilsItemSorting-ZZ-DLCWeaponsOverride.esp")'
   - name: 'ValdacilsItemSorting-ZY-DLCAutomatron.esp'
     msg:
       - <<: *alreadyInValsPicksVanWeight
@@ -1781,8 +1801,6 @@ plugins:
         subs: [ 'VIS - DLC Far Harbour' ]
         condition: 'many("ValdacilsItemSorting-ZY-DLCFarHarbor(-Weightless)?\.esp")'
   - name: 'ValdacilsItemSorting-ZZ-DLCArmorByClassOverride.esp'
-    after: [ 'ValdacilsItemSorting-ArmorByClass.esp' ]
-  - name: 'ValdacilsItemSorting-ZZ-DLC(Rule)?ArmorByClassOverride\.esp'
     after:
       - 'ValdacilsItemSorting-ZY-DLCAutomatron.esp'
       - 'ValdacilsItemSorting-ZY-DLCAutomatron-Weightless.esp'
