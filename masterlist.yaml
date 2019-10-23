@@ -1650,12 +1650,8 @@ plugins:
       - <<: *useOnlyOneX
         subs: [ 'Val''s Picks' ]
         condition: 'many("ValdacilsItemSorting-00-ValsPicks-(NoDLCVersion|DLCVersion)(-VanillaWeight)?\.esp")'
-  - name: 'ValdacilsItemSorting-00-ValsPicks-NoDLCVersion.esp'
-    msg:
-      - *dlcVersion
-  - name: 'ValdacilsItemSorting-00-ValsPicks-NoDLCVersion-VanillaWeight.esp'
-    msg:
-      - *dlcVersion
+  - name: 'ValdacilsItemSorting-00-ValsPicks-NoDLCVersion(-VanillaWeight)?\.esp'
+    msg: [ *dlcVersion ]
   - name: 'ValdacilsItemSorting-Weapons.esp'
     msg:
       - &includedInValsPicks
