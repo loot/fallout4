@@ -1643,14 +1643,14 @@ plugins:
     group: *texturesGroup
 
   # Valdacil's Item Sorting
-  - name: 'ValdacilsItemSorting-00-ValsPicks-DLCVersion.esp'
+  - name: 'ValdacilsItemSorting-.*\.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/3877' ]
+  - name: 'ValdacilsItemSorting-00-ValsPicks-DLCVersion.esp'
     inc:
       - 'ValdacilsItemSorting-00-ValsPicks-NoDLCVersion.esp'
       - 'ValdacilsItemSorting-00-ValsPicks-DLCVersion-VanillaWeight.esp'
       - 'ValdacilsItemSorting-00-ValsPicks-NoDLCVersion-VanillaWeight.esp'
   - name: 'ValdacilsItemSorting-00-ValsPicks-NoDLCVersion.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/3877' ]
     inc:
       - 'ValdacilsItemSorting-00-ValsPicks-DLCVersion.esp'
       - 'ValdacilsItemSorting-00-ValsPicks-DLCVersion-VanillaWeight.esp'
@@ -1658,13 +1658,11 @@ plugins:
     msg:
       - *dlcVersion
   - name: 'ValdacilsItemSorting-00-ValsPicks-DLCVersion-VanillaWeight.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/3877' ]
     inc:
       - 'ValdacilsItemSorting-00-ValsPicks-DLCVersion.esp'
       - 'ValdacilsItemSorting-00-ValsPicks-NoDLCVersion.esp'
       - 'ValdacilsItemSorting-00-ValsPicks-NoDLCVersion-VanillaWeight.esp'
   - name: 'ValdacilsItemSorting-00-ValsPicks-NoDLCVersion-VanillaWeight.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/3877' ]
     inc:
       - 'ValdacilsItemSorting-00-ValsPicks-DLCVersion.esp'
       - 'ValdacilsItemSorting-00-ValsPicks-NoDLCVersion.esp'
@@ -1672,7 +1670,6 @@ plugins:
     msg:
       - *dlcVersion
   - name: 'ValdacilsItemSorting-Weapons.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/3877' ]
     msg:
       - &includedInValsPicks
         type: say
@@ -1695,38 +1692,32 @@ plugins:
             text: 'Dieses Plugin ist auch enthalten in "Val''s Picks - Vanilla Weight".'
         condition: 'file("ValdacilsItemSorting-00-ValsPicks-(No?)DLCVersion-VanillaWeight\.esp")'
   - name: 'ValdacilsItemSorting-Aid.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/3877' ]
     inc:
       - 'ValdacilsItemSorting-AidReducedWeight.esp'
       - 'ValdacilsItemSorting-AidWeightless.esp'
     msg:
       - *includedInValsPicksVanilla
   - name: 'ValdacilsItemSorting-AidReducedWeight.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/3877' ]
     inc:
       - 'ValdacilsItemSorting-Aid.esp'
       - 'ValdacilsItemSorting-AidWeightless.esp'
     msg:
       - *includedInValsPicks
   - name: 'ValdacilsItemSorting-AidWeightless.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/3877' ]
     inc:
       - 'ValdacilsItemSorting-Aid.esp'
       - 'ValdacilsItemSorting-AidReducedWeight.esp'
   - name: 'ValdacilsItemSorting-Ammo.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/3877' ]
     inc:
       - 'ValdacilsItemSorting-AmmoWeightless.esp'
     msg:
       - *includedInValsPicksVanilla
   - name: 'ValdacilsItemSorting-AmmoWeightless.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/3877' ]
     inc:
       - 'ValdacilsItemSorting-Ammo.esp'
     msg:
       - *includedInValsPicks
   - name: 'ValdacilsItemSorting-ArmorByClass.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/3877' ]
     inc:
       - 'ValdacilsItemSorting-ArmorBySlot.esp'
     msg:
@@ -1740,31 +1731,26 @@ plugins:
             text: 'Sie sortieren Rüstung nach Klasse und nutzen DLCs. Sie wollen möglicherweise "ValdacilsItemSorting-ZZ-DLCArmorByClassOverride.esp" nutzen um Klassensortierung auch für DLC-Rüstung zu aktivieren.'
         condition: 'active("DLCRobot.esm") and active("DLCCoast.esm") and not active("ValdacilsItemSorting-ZZ-DLCArmorByClassOverride.esp") and version("ValdacilsItemSorting-ArmorByClass.esp", "9.1", <)'
   - name: 'ValdacilsItemSorting-ArmorBySlot.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/3877' ]
     inc:
       - 'ValdacilsItemSorting-ArmorByClass.esp'
     msg:
       - *includedInValsPicks
       - *includedInValsPicksVanilla
   - name: 'ValdacilsItemSorting-CosmeticsByClass.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/3877' ]
     inc:
       - 'ValdacilsItemSorting-CosmeticsByType.esp'
     msg:
       - *includedInValsPicks
       - *includedInValsPicksVanilla
   - name: 'ValdacilsItemSorting-CosmeticsByType.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/3877' ]
     inc:
       - 'ValdacilsItemSorting-CosmeticsByClass.esp'
   - name: 'ValdacilsItemSorting-ExplosivesSortBottom.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/3877' ]
     inc:
       - 'ValdacilsItemSorting-ExplosivesSortTop.esp'
       - 'ValdacilsItemSorting-ExplosivesSortBottomWeightless.esp'
       - 'ValdacilsItemSorting-ExplosivesSortTopWeightless.esp'
   - name: 'ValdacilsItemSorting-ExplosivesSortTop.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/3877' ]
     inc:
       - 'ValdacilsItemSorting-ExplosivesSortBottom.esp'
       - 'ValdacilsItemSorting-ExplosivesSortBottomWeightless.esp'
@@ -1773,19 +1759,16 @@ plugins:
       - *includedInValsPicks
       - *includedInValsPicksVanilla
   - name: 'ValdacilsItemSorting-ExplosivesSortBottomWeightless.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/3877' ]
     inc:
       - 'ValdacilsItemSorting-ExplosivesSortBottom.esp'
       - 'ValdacilsItemSorting-ExplosivesSortTop.esp'
       - 'ValdacilsItemSorting-ExplosivesSortTopWeightless.esp'
   - name: 'ValdacilsItemSorting-ExplosivesSortTopWeightless.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/3877' ]
     inc:
       - 'ValdacilsItemSorting-ExplosivesSortBottom.esp'
       - 'ValdacilsItemSorting-ExplosivesSortTop.esp'
       - 'ValdacilsItemSorting-ExplosivesSortBottomWeightless.esp'
   - name: 'ValdacilsItemSorting-Junk.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/3877' ]
     inc:
       - 'ValdacilsItemSorting-Junk+DEF_INV.esp'
       - 'ValdacilsItemSorting-JunkWeightless.esp'
@@ -1793,7 +1776,6 @@ plugins:
       - 'ValdacilsItemSorting-JunkBetter.esp'
       - 'ValdacilsItemSorting-JunkBetter+DEF_INV.esp'
   - name: 'ValdacilsItemSorting-Junk+DEF_INV.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/3877' ]
     inc:
       - 'ValdacilsItemSorting-Junk.esp'
       - 'ValdacilsItemSorting-JunkWeightless.esp'
@@ -1802,7 +1784,6 @@ plugins:
       - 'ValdacilsItemSorting-JunkBetter+DEF_INV.esp'
     # TODO: Figure out a way to detect if DEF_INV is installed.
   - name: 'ValdacilsItemSorting-JunkWeightless.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/3877' ]
     inc:
       - 'ValdacilsItemSorting-Junk.esp'
       - 'ValdacilsItemSorting-Junk+DEF_INV.esp'
@@ -1810,7 +1791,6 @@ plugins:
       - 'ValdacilsItemSorting-JunkBetter.esp'
       - 'ValdacilsItemSorting-JunkBetter+DEF_INV.esp'
   - name: 'ValdacilsItemSorting-JunkWeightless+DEF_INV.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/3877' ]
     inc:
       - 'ValdacilsItemSorting-Junk.esp'
       - 'ValdacilsItemSorting-Junk+DEF_INV.esp'
@@ -1819,7 +1799,6 @@ plugins:
       - 'ValdacilsItemSorting-JunkBetter+DEF_INV.esp'
     # TODO: Figure out a way to detect if DEF_INV is installed.
   - name: 'ValdacilsItemSorting-JunkBetter.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/3877' ]
     inc:
       - 'ValdacilsItemSorting-Junk.esp'
       - 'ValdacilsItemSorting-Junk+DEF_INV.esp'
@@ -1830,7 +1809,6 @@ plugins:
       - *includedInValsPicks
       - *includedInValsPicksVanilla
   - name: 'ValdacilsItemSorting-JunkBetter+DEF_INV.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/3877' ]
     inc:
       - 'ValdacilsItemSorting-Junk.esp'
       - 'ValdacilsItemSorting-Junk+DEF_INV.esp'
@@ -1839,31 +1817,26 @@ plugins:
       - 'ValdacilsItemSorting-JunkBetter.esp'
     # TODO: Figure out a way to detect if DEF_INV is installed.
   - name: 'ValdacilsItemSorting-Misc.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/3877' ]
     inc:
       - 'ValdacilsItemSorting-MiscWeightless.esp'
     msg:
       - *includedInValsPicksVanilla
   - name: 'ValdacilsItemSorting-MiscWeightless.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/3877' ]
     inc:
       - 'ValdacilsItemSorting-Misc.esp'
     msg:
       - *includedInValsPicks
   - name: 'ValdacilsItemSorting-Mods.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/3877' ]
     inc:
       - 'ValdacilsItemSorting-ModsWeightless.esp'
     msg:
       - *includedInValsPicksVanilla
   - name: 'ValdacilsItemSorting-ModsWeightless.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/3877' ]
     inc:
       - 'ValdacilsItemSorting-Mods.esp'
     msg:
       - *includedInValsPicks
   - name: 'ValdacilsItemSorting-NotJunk.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/3877' ]
     inc:
       - 'ValdacilsItemSorting-NotJunkJustMoney.esp'
     after:
@@ -1877,7 +1850,6 @@ plugins:
       - *includedInValsPicks
       - *includedInValsPicksVanilla
   - name: 'ValdacilsItemSorting-NotJunkJustMoney.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/3877' ]
     inc:
       - 'ValdacilsItemSorting-NotJunk.esp'
     after:
@@ -1888,47 +1860,40 @@ plugins:
       - 'ValdacilsItemSorting-JunkBetter.esp'
       - 'ValdacilsItemSorting-JunkBetter+DEF_INV.esp'
   - name: 'ValdacilsItemSorting-Perks.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/3877' ]
     msg:
       - *includedInValsPicks
       - *includedInValsPicksVanilla
   - name: 'ValdacilsItemSorting-ZZ-DLCAutomatron.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/3877' ]
     inc:
       - 'ValdacilsItemSorting-ZZ-DLCAutomatron-Weightless.esp'
     msg:
       - <<: *includedInValsPicksVanilla
         condition: 'file("ValdacilsItemSorting-00-ValsPicks-DLCVersion-VanillaWeight.esp")'
   - name: 'ValdacilsItemSorting-ZZ-DLCAutomatron-Weightless.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/3877' ]
     inc:
       - 'ValdacilsItemSorting-ZZ-DLCAutomatron.esp'
     msg:
       - <<: *includedInValsPicks
         condition: 'file("ValdacilsItemSorting-00-ValsPicks-DLCVersion.esp")'
   - name: 'ValdacilsItemSorting-ZZ-DLCFarHarbor.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/3877' ]
     inc:
       - 'ValdacilsItemSorting-ZZ-DLCFarHarbor-Weightless.esp'
     msg:
       - <<: *includedInValsPicksVanilla
         condition: 'file("ValdacilsItemSorting-00-ValsPicks-DLCVersion-VanillaWeight.esp")'
   - name: 'ValdacilsItemSorting-ZZ-DLCFarHarbor-Weightless.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/3877' ]
     inc:
       - 'ValdacilsItemSorting-ZZ-DLCFarHarbor.esp'
     msg:
       - <<: *includedInValsPicks
         condition: 'file("ValdacilsItemSorting-00-ValsPicks-DLCVersion.esp")'
   - name: 'ValdacilsItemSorting-ZZ-DLCRuleArmorByClassOverride.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/3877' ]
     after:
       - 'ValdacilsItemSorting-ZZ-DLCAutomatron.esp'
       - 'ValdacilsItemSorting-ZZ-DLCAutomatron-Weightless.esp'
       - 'ValdacilsItemSorting-ZZ-DLCFarHarbor.esp'
       - 'ValdacilsItemSorting-ZZ-DLCFarHarbor-Weightless.esp'
   - name: 'ValdacilsItemSorting-ZZ-DLCArmorByClassOverride.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/3877' ]
     after:
       - 'ValdacilsItemSorting-ArmorByClass.esp'
       - 'ValdacilsItemSorting-ZZ-DLCAutomatron.esp'
@@ -1936,11 +1901,9 @@ plugins:
       - 'ValdacilsItemSorting-ZZ-DLCFarHarbor.esp'
       - 'ValdacilsItemSorting-ZZ-DLCFarHarbor-Weightless.esp'
   - name: 'VIS-PatchChemRedux.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/3877' ]
     req:
       - 'chem redux.esp'
   - name: 'VIS-PatchChemReduxWeightless.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/3877' ]
     req:
       - 'chem redux.esp'
   # Radrose Usability Enhancements
