@@ -1737,10 +1737,7 @@ plugins:
         subs: [ 'VIS - Mods' ]
         condition: 'many("ValdacilsItemSorting-Mods(Weightless)?\.esp")'
   - name: 'ValdacilsItemSorting-NotJunk.esp'
-    inc: [ 'ValdacilsItemSorting-NotJunkJustMoney.esp' ]
     msg: [ *alreadyInValsPicks ]
-  - name: 'ValdacilsItemSorting-NotJunkJustMoney.esp'
-    inc: [ 'ValdacilsItemSorting-NotJunk.esp' ]
   - name: 'ValdacilsItemSorting-NotJunk(JustMoney)?\.esp'
     after:
       - 'ValdacilsItemSorting-Junk.esp'
@@ -1749,6 +1746,10 @@ plugins:
       - 'ValdacilsItemSorting-JunkWeightless+DEF_INV.esp'
       - 'ValdacilsItemSorting-JunkBetter.esp'
       - 'ValdacilsItemSorting-JunkBetter+DEF_INV.esp'
+    msg:
+      - <<: *useOnlyOneX
+        subs: [ 'VIS - Not Junk' ]
+        condition: 'many("ValdacilsItemSorting-NotJunk(JustMoney)?\.esp")'
   - name: 'ValdacilsItemSorting-Perks.esp'
     msg: [ *alreadyInValsPicks ]
   - name: 'ValdacilsItemSorting-Weapons.esp'
