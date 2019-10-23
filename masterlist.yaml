@@ -1697,10 +1697,12 @@ plugins:
         subs: [ 'VIS - Armor By Class or By Slot' ]
         condition: 'many("ValdacilsItemSorting-ArmorBy(Class|Slot)\.esp")'
   - name: 'ValdacilsItemSorting-CosmeticsByClass.esp'
-    inc: [ 'ValdacilsItemSorting-CosmeticsByType.esp' ]
     msg: [ *alreadyInValsPicks ]
-  - name: 'ValdacilsItemSorting-CosmeticsByType.esp'
-    inc: [ 'ValdacilsItemSorting-CosmeticsByClass.esp' ]
+  - name: 'ValdacilsItemSorting-Cosmetics(Class|Type)\.esp'
+    msg:
+      - <<: *useOnlyOneX
+        subs: [ 'VIS - Cosmetics By Class or By Type' ]
+        condition: 'many("ValdacilsItemSorting-CosmeticsBy(Class|Type)\.esp")'
   - name: 'ValdacilsItemSorting-ExplosivesSortTop.esp'
     msg: [ *alreadyInValsPicks ]
   - name: 'ValdacilsItemSorting-ExplosivesSort(Bottom|BottomWeightless|Top|TopWeightless)\.esp'
