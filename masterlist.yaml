@@ -1755,25 +1755,31 @@ plugins:
   - name: 'ValdacilsItemSorting-Weapons.esp'
     msg: [ *alreadyInValsPicks ]
   - name: 'ValdacilsItemSorting-ZY-DLCAutomatron.esp'
-    inc: [ 'ValdacilsItemSorting-ZY-DLCAutomatron-Weightless.esp' ]
     msg:
       - <<: *alreadyInValsPicksVanWeight
         condition: 'file("ValdacilsItemSorting-00-ValsPicks-DLCVersion-VanillaWeight.esp")'
   - name: 'ValdacilsItemSorting-ZY-DLCAutomatron-Weightless.esp'
-    inc: [ 'ValdacilsItemSorting-ZY-DLCAutomatron.esp' ]
     msg:
       - <<: *alreadyInValsPicks
         condition: 'file("ValdacilsItemSorting-00-ValsPicks-DLCVersion.esp")'
+  - name: 'ValdacilsItemSorting-ZY-DLCAutomatron(-Weightless)?\.esp'
+    msg:
+      - <<: *useOnlyOneX
+        subs: [ 'VIS - DLC Automatron' ]
+        condition: 'many("ValdacilsItemSorting-ZY-DLCAutomatron(-Weightless)?\.esp")'
   - name: 'ValdacilsItemSorting-ZY-DLCFarHarbor.esp'
-    inc: [ 'ValdacilsItemSorting-ZY-DLCFarHarbor-Weightless.esp' ]
     msg:
       - <<: *alreadyInValsPicksVanWeight
         condition: 'file("ValdacilsItemSorting-00-ValsPicks-DLCVersion-VanillaWeight.esp")'
   - name: 'ValdacilsItemSorting-ZY-DLCFarHarbor-Weightless.esp'
-    inc: [ 'ValdacilsItemSorting-ZY-DLCFarHarbor.esp' ]
     msg:
       - <<: *alreadyInValsPicks
         condition: 'file("ValdacilsItemSorting-00-ValsPicks-DLCVersion.esp")'
+  - name: 'ValdacilsItemSorting-ZY-DLCFarHarbor(-Weightless)?\.esp'
+    msg:
+      - <<: *useOnlyOneX
+        subs: [ 'VIS - DLC Far Harbour' ]
+        condition: 'many("ValdacilsItemSorting-ZY-DLCFarHarbor(-Weightless)?\.esp")'
   - name: 'ValdacilsItemSorting-ZZ-DLCArmorByClassOverride.esp'
     after: [ 'ValdacilsItemSorting-ArmorByClass.esp' ]
   - name: 'ValdacilsItemSorting-ZZ-DLC(Rule)?ArmorByClassOverride\.esp'
