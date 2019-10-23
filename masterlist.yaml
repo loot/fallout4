@@ -669,6 +669,7 @@ globals:
       - lang: sv
         text: 'Denna version av LOOT har sämre hantering av Creation Club plugins. Stöd för dessa är därför begränsad i versionen tidigare än LOOT 0.13.1. Du rekommenderas att uppdatera så snart som möjligt.'
     condition: 'version("LOOT", "0.13.1.0", <) and file("cc[A-Z]{3}FO4[0-9]{3}-[a-zA-Z0-9()]+\.es(l|m)")'
+
 # Fallout 4 - Latest Version
   - <<: *versionOldX
     subs: [ '**Fallout 4**' ]
@@ -676,6 +677,14 @@ globals:
   - <<: *versionUpToDateX
     subs: [ '**Fallout 4**' ]
     condition: 'version("../Fallout4.exe", "1.10.138.0", >=) and file("../Fallout4.exe")'
+# Fallout 4 VR - Latest Version
+  - <<: *versionOldX
+    subs: [ '**Fallout 4 VR**' ]
+    condition: 'version("../Fallout4VR.exe", "1.2.72.0", <) and file("../Fallout4VR.exe")'
+  - <<: *versionUpToDateX
+    subs: [ '**Fallout 4 VR**' ]
+    condition: 'version("../Fallout4VR.exe", "1.2.72.0", >=) and file("../Fallout4VR.exe")'
+
 # F4SE - Latest Version
   - <<: *versionOldX
     subs: [ '**Script Extender ([F4SE](http://f4se.silverlock.org))**' ]
