@@ -1645,28 +1645,15 @@ plugins:
   # Valdacil's Item Sorting
   - name: 'ValdacilsItemSorting-.*\.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/3877' ]
-  - name: 'ValdacilsItemSorting-00-ValsPicks-DLCVersion.esp'
-    inc:
-      - 'ValdacilsItemSorting-00-ValsPicks-NoDLCVersion.esp'
-      - 'ValdacilsItemSorting-00-ValsPicks-DLCVersion-VanillaWeight.esp'
-      - 'ValdacilsItemSorting-00-ValsPicks-NoDLCVersion-VanillaWeight.esp'
+  - name: 'ValdacilsItemSorting-00-ValsPicks-(NoDLCVersion|DLCVersion)(-VanillaWeight)?\.esp'
+    msg:
+      - <<: *useOnlyOneX
+        subs: [ 'Val''s Picks' ]
+        condition: 'many("ValdacilsItemSorting-00-ValsPicks-(NoDLCVersion|DLCVersion)(-VanillaWeight)?\.esp")'
   - name: 'ValdacilsItemSorting-00-ValsPicks-NoDLCVersion.esp'
-    inc:
-      - 'ValdacilsItemSorting-00-ValsPicks-DLCVersion.esp'
-      - 'ValdacilsItemSorting-00-ValsPicks-DLCVersion-VanillaWeight.esp'
-      - 'ValdacilsItemSorting-00-ValsPicks-NoDLCVersion-VanillaWeight.esp'
     msg:
       - *dlcVersion
-  - name: 'ValdacilsItemSorting-00-ValsPicks-DLCVersion-VanillaWeight.esp'
-    inc:
-      - 'ValdacilsItemSorting-00-ValsPicks-DLCVersion.esp'
-      - 'ValdacilsItemSorting-00-ValsPicks-NoDLCVersion.esp'
-      - 'ValdacilsItemSorting-00-ValsPicks-NoDLCVersion-VanillaWeight.esp'
   - name: 'ValdacilsItemSorting-00-ValsPicks-NoDLCVersion-VanillaWeight.esp'
-    inc:
-      - 'ValdacilsItemSorting-00-ValsPicks-DLCVersion.esp'
-      - 'ValdacilsItemSorting-00-ValsPicks-NoDLCVersion.esp'
-      - 'ValdacilsItemSorting-00-ValsPicks-DLCVersion-VanillaWeight.esp'
     msg:
       - *dlcVersion
   - name: 'ValdacilsItemSorting-Weapons.esp'
