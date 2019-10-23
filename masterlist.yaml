@@ -717,7 +717,7 @@ globals:
 
 # F4SE - Required Scripts
   - type: warn
-    condition: 'not file("scripts/F4SE.pex") and file("../Fallout4.exe") and file("../f4se_loader.exe")'
+    condition: 'not file("scripts/F4SE.pex") and ((file("../Fallout4.exe") and file("../f4se_loader.exe")) or (file("../Fallout4VR.exe") and file("../f4sevr_loader.exe")))'
     content:
       - lang: en
         text: 'It appears you have installed **Fallout 4 Script Extender**, but its required scripts seem to be missing. Please ensure you have correctly installed the scripts bundled with the **[F4SE](http://f4se.silverlock.org)** installation archive.'
