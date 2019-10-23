@@ -3,6 +3,9 @@ common:
   - &F4SE
     name: '../f4se_loader.exe'
     display: '[F4SE](http://f4se.silverlock.org)'
+  - &F4SE_VR
+    name: '../f4sevr_loader.exe'
+    display: '[F4SE VR](http://f4se.silverlock.org)'
 
 # Messages
   - &alreadyInFO4
@@ -546,6 +549,11 @@ common:
     subs:
       - '**Script Extender ([F4SE](http://f4se.silverlock.org))**'
       - '**Fallout 4**'
+  - &versionF4SEIncFO4_VR
+    <<: *versionXIncY
+    subs:
+      - '**Script Extender ([F4SE](http://f4se.silverlock.org))**'
+      - '**Fallout 4 VR**'
 
   - &wildEdits
     type: warn
@@ -661,6 +669,7 @@ globals:
       - lang: sv
         text: 'Denna version av LOOT har sämre hantering av Creation Club plugins. Stöd för dessa är därför begränsad i versionen tidigare än LOOT 0.13.1. Du rekommenderas att uppdatera så snart som möjligt.'
     condition: 'version("LOOT", "0.13.1.0", <) and file("cc[A-Z]{3}FO4[0-9]{3}-[a-zA-Z0-9()]+\.es(l|m)")'
+
 # Fallout 4 - Latest Version
   - <<: *versionOldX
     subs: [ '**Fallout 4**' ]
@@ -668,14 +677,30 @@ globals:
   - <<: *versionUpToDateX
     subs: [ '**Fallout 4**' ]
     condition: 'version("../Fallout4.exe", "1.10.138.0", >=) and file("../Fallout4.exe")'
+# Fallout 4 VR - Latest Version
+  - <<: *versionOldX
+    subs: [ '**Fallout 4 VR**' ]
+    condition: 'version("../Fallout4VR.exe", "1.2.72.0", <) and file("../Fallout4VR.exe")'
+  - <<: *versionUpToDateX
+    subs: [ '**Fallout 4 VR**' ]
+    condition: 'version("../Fallout4VR.exe", "1.2.72.0", >=) and file("../Fallout4VR.exe")'
+
 # F4SE - Latest Version
   - <<: *versionOldX
     subs: [ '**Script Extender ([F4SE](http://f4se.silverlock.org))**' ]
-    condition: 'version("../f4se_loader.exe", "0.0.6.17", <) and file("../f4se_loader.exe") and file("../Fallout4.exe")'
+    condition: 'version("../f4se_loader.exe", "0.0.6.17", <) and file("../Fallout4.exe") and file("../f4se_loader.exe")'
   - <<: *versionUpToDateX
     subs: [ '**Script Extender ([F4SE](http://f4se.silverlock.org))**' ]
-    condition: 'not version("../f4se_loader.exe", "0.0.6.17", <)'
-# F4SE - Compatibility
+    condition: 'version("../f4se_loader.exe", "0.0.6.17", >=) and file("../Fallout4.exe") and file("../f4se_loader.exe")'
+# F4SE VR - Latest Version
+  - <<: *versionOldX
+    subs: [ '**Script Extender ([F4SE VR](http://f4se.silverlock.org))**' ]
+    condition: 'version("../f4sevr_loader.exe", "0.0.6.20", <) and file("../Fallout4VR.exe") and file("../f4sevr_loader.exe")'
+  - <<: *versionUpToDateX
+    subs: [ '**Script Extender ([F4SE VR](http://f4se.silverlock.org))**' ]
+    condition: 'version("../f4sevr_loader.exe", "0.0.6.20", >=) and file("../Fallout4VR.exe") and file("../f4sevr_loader.exe")'
+
+# F4SE - Runtime Compatibility
   - <<: *versionF4SEIncFO4
     condition: 'version("../Fallout4.exe", "1.10.138.0", ==) and version("../f4se_loader.exe", "0.0.6.17", <) and file("../f4se_loader.exe")'
   - <<: *versionF4SEIncFO4
@@ -686,9 +711,13 @@ globals:
     condition: 'version("../Fallout4.exe", "1.10.114.0", ==) and not version("../f4se_loader.exe", "0.0.6.13", ==) and file("../f4se_loader.exe")'
   - <<: *versionF4SEIncFO4
     condition: 'version("../Fallout4.exe", "1.10.111.0", ==) and not version("../f4se_loader.exe", "0.0.6.12", ==) and file("../f4se_loader.exe")'
+# F4SE VR - Runtime Compatibility
+  - <<: *versionF4SEIncFO4_VR
+    condition: 'version("../Fallout4VR.exe", "1.2.72.0", ==) and version("../f4sevr_loader.exe", "0.0.6.20", <) and file("../f4sevr_loader.exe")'
+
 # F4SE - Required Scripts
   - type: warn
-    condition: 'not file("scripts/F4SE.pex") and file("../Fallout4.exe") and file("../f4se_loader.exe")'
+    condition: 'not file("scripts/F4SE.pex") and ((file("../Fallout4.exe") and file("../f4se_loader.exe")) or (file("../Fallout4VR.exe") and file("../f4sevr_loader.exe")))'
     content:
       - lang: en
         text: 'It appears you have installed **Fallout 4 Script Extender**, but its required scripts seem to be missing. Please ensure you have correctly installed the scripts bundled with the **[F4SE](http://f4se.silverlock.org)** installation archive.'
@@ -704,22 +733,25 @@ globals:
         text: 'Похоже, у вас установлен **Fallout 4 Script Extender**, но требуемые скрипты отсутствуют. Убедитесь, что правильно установили скрипты из архива **[F4SE](http://f4se.silverlock.org)**.'
       - lang: sv
         text: 'Det verkar som att du har installerat **Fallout 4 Script Extender**, men de script som det kräver verkar saknas. Var god att se till att du har installerat de script som bifogas med installationsarkivet **[F4SE](http://f4se.silverlock.org)** på ett korrekt sätt.'
+
 # F4SE Plugins - Compatibility
   - <<: *versionXIncY
     subs:
       - '**F4SE Plugin ([Place Everywhere](https://www.nexusmods.com/fallout4/mods/9424))**'
       - 'Fallout 4'
     condition: 'file("F4SE/Plugins/place.dll") and file("../f4se_loader.exe") and ((version("F4SE/Plugins/place.dll", "1.18.0.1130", ==) and version("../Fallout4.exe", "1.10.130.0", !=)) or (version("F4SE/Plugins/place.dll", "1.18.0.1130", <) and version("../Fallout4.exe", "1.10.130.0", ==)))'
+
 # F4SE Plugins - Requirements
   - <<: *requiresF4SE
     subs: [ 'a F4SE Plugin' ]
-    condition: 'file("F4SE/Plugins/([^\.]+\.dll)") and not file("../f4se_loader.exe")'
+    condition: 'file("F4SE/Plugins/([^\.]+\.dll)") and not file("../f4se_loader.exe") and not file("../Fallout4VR.exe")'
+
   - <<: *requiresF4SE
     subs: [ '[Achievements](https://www.nexusmods.com/fallout4/mods/12465)' ]
-    condition: 'file("F4SE/Plugins/achievements.dll") and not file("../f4se_loader.exe")'
+    condition: 'file("F4SE/Plugins/achievements.dll") and not file("../f4se_loader.exe") and not file("../Fallout4VR.exe")'
   - <<: *requiresF4SE
     subs: [ '[Place Everywhere](https://www.nexusmods.com/fallout4/mods/9424)' ]
-    condition: 'file("F4SE/Plugins/place.dll") and not file("../f4se_loader.exe")'
+    condition: 'file("F4SE/Plugins/place.dll") and not file("../f4se_loader.exe") and not file("../Fallout4VR.exe")'
 
 groups:
   - name: &dlcGroup DLC
