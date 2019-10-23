@@ -1728,11 +1728,14 @@ plugins:
         subs: [ 'VIS - Misc' ]
         condition: 'many("ValdacilsItemSorting-Misc(Weightless)?\.esp")'
   - name: 'ValdacilsItemSorting-Mods.esp'
-    inc: [ 'ValdacilsItemSorting-ModsWeightless.esp' ]
     msg: [ *alreadyInValsPicksVanWeight ]
   - name: 'ValdacilsItemSorting-ModsWeightless.esp'
-    inc: [ 'ValdacilsItemSorting-Mods.esp' ]
     msg: [ *alreadyInValsPicks ]
+  - name: 'ValdacilsItemSorting-Mods(Weightless)?\.esp'
+    msg:
+      - <<: *useOnlyOneX
+        subs: [ 'VIS - Mods' ]
+        condition: 'many("ValdacilsItemSorting-Mods(Weightless)?\.esp")'
   - name: 'ValdacilsItemSorting-NotJunk.esp'
     inc: [ 'ValdacilsItemSorting-NotJunkJustMoney.esp' ]
     msg: [ *alreadyInValsPicks ]
