@@ -549,6 +549,11 @@ common:
     subs:
       - '**Script Extender ([F4SE](http://f4se.silverlock.org))**'
       - '**Fallout 4**'
+  - &versionF4SEIncFO4_VR
+    <<: *versionXIncY
+    subs:
+      - '**Script Extender ([F4SE](http://f4se.silverlock.org))**'
+      - '**Fallout 4 VR**'
 
   - &wildEdits
     type: warn
@@ -679,6 +684,8 @@ globals:
     subs: [ '**Script Extender ([F4SE](http://f4se.silverlock.org))**' ]
     condition: 'not version("../f4se_loader.exe", "0.0.6.17", <)'
 # F4SE - Compatibility
+
+# F4SE - Runtime Compatibility
   - <<: *versionF4SEIncFO4
     condition: 'version("../Fallout4.exe", "1.10.138.0", ==) and version("../f4se_loader.exe", "0.0.6.17", <) and file("../f4se_loader.exe")'
   - <<: *versionF4SEIncFO4
@@ -689,6 +696,10 @@ globals:
     condition: 'version("../Fallout4.exe", "1.10.114.0", ==) and not version("../f4se_loader.exe", "0.0.6.13", ==) and file("../f4se_loader.exe")'
   - <<: *versionF4SEIncFO4
     condition: 'version("../Fallout4.exe", "1.10.111.0", ==) and not version("../f4se_loader.exe", "0.0.6.12", ==) and file("../f4se_loader.exe")'
+# F4SE VR - Runtime Compatibility
+  - <<: *versionF4SEIncFO4_VR
+    condition: 'version("../Fallout4VR.exe", "1.2.72.0", ==) and version("../f4sevr_loader.exe", "0.0.6.20", <) and file("../f4sevr_loader.exe")'
+
 # F4SE - Required Scripts
   - type: warn
     condition: 'not file("scripts/F4SE.pex") and file("../Fallout4.exe") and file("../f4se_loader.exe")'
