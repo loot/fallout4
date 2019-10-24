@@ -3791,6 +3791,10 @@ plugins:
   - name: 'BostonFPSFix.*\.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/26286' ]
   - name: 'BostonFPSFixAIO.esp'
+    after:
+      # BTInteriors Optimization Replacer (v2, 2E5602A6)
+      - name: 'BTInteriors_Project.esp'
+        condition: 'file("BTInt_Optimization.esp") and checksum("BTInt_Optimization.esp", 2E5602A6)'
     clean:
       # version: 0.32
       - crc: 0xCFB11F37
