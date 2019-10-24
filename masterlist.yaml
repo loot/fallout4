@@ -3788,6 +3788,11 @@ plugins:
       - crc: 0x2e6f79c3
         util: FO4Edit v3.2.1
 
+  - name: 'BostonFPSFix(-Vanilla|VD)\.esp'
+    msg:
+      - <<: *alreadyInX
+        subs: [ 'BostonFPSFix Automatron' ]
+        condition: 'file("BostonFPSFixAutomatron.esp")'
   - name: 'BostonFPSFix(Automatron|FarHarbor|-NukaWorld|-Vanilla|(AIO_)?VD)\.esp'
     msg:
       - <<: *alreadyInX
