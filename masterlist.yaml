@@ -3788,6 +3788,11 @@ plugins:
       - crc: 0x2e6f79c3
         util: FO4Edit v3.2.1
 
+  - name: 'BostonFPSFixAIO.esp'
+    clean:
+      # version: 0.32
+      - crc: 0xCFB11F37
+        util: 'FO4Edit v4.0.2j'
   - name: 'BostonFPSFix(-Vanilla|VD)\.esp'
     msg:
       - <<: *alreadyInX
@@ -3800,6 +3805,10 @@ plugins:
         condition: 'file("BostonFPSFixAIO.esp")'
   - name: 'PaladinBaileyRedRocket.esp'
     inc: [ 'BTInteriors_Project.esp' ]
+    clean:
+      # version: 0.1
+      - crc: 0x0E248104
+        util: 'FO4Edit v4.0.2j'
 
   - name: 'BTInteriors_Project.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/4612' ]
@@ -3819,6 +3828,9 @@ plugins:
       # Version 3.2.1
       - crc: 0x9EADC975
         util: 'FO4Edit v4.0.1'
+      # Version: 2.0 BostonFPSFix Replacer
+      - crc: 0x2E5602A6
+        util: 'FO4Edit v4.0.2j'
 
   - name: 'BuildYourOwnVault.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/10603' ]
