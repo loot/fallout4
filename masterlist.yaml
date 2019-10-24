@@ -3787,6 +3787,13 @@ plugins:
     clean:
       - crc: 0x2e6f79c3
         util: FO4Edit v3.2.1
+
+  - name: 'BostonFPSFix(Automatron|FarHarbor|-NukaWorld|-Vanilla|(AIO_)?VD)\.esp'
+    msg:
+      - <<: *alreadyInX
+        subs: [ 'BostonFPSFix AIO' ]
+        condition: 'file("BostonFPSFixAIO.esp")'
+
   - name: 'BTInteriors_Project.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/4612' ]
     dirty:
