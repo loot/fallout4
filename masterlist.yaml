@@ -3788,6 +3788,8 @@ plugins:
       - crc: 0x2e6f79c3
         util: FO4Edit v3.2.1
 
+  - name: 'BostonFPSFix.*\.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/26286' ]
   - name: 'BostonFPSFixAIO.esp'
     clean:
       # version: 0.32
@@ -3804,6 +3806,7 @@ plugins:
         subs: [ 'BostonFPSFix AIO' ]
         condition: 'file("BostonFPSFixAIO.esp")'
   - name: 'PaladinBaileyRedRocket.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/26286' ]
     inc: [ 'BTInteriors_Project.esp' ]
     clean:
       # version: 0.1
