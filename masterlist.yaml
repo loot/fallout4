@@ -889,40 +889,40 @@ plugins:
         util: 'FO4Edit v4.0.2'
 
 ###### Creation Club ######
-  # Rainbow Pip-Boy Paint Job Bundle - Onyx
+  # Pip-Boy Paint Job - Onyx
   - name: 'ccbgsfo4001-pipboy(black).esl'
     group: *ccGroup
     clean:
       - crc: 0x7CA905AC
         util: 'FO4Edit v3.2.41'
-  # Rainbow Pip-Boy Paint Job Bundle - Blue
+  # Pip-Boy Paint Job - Blue
   - name: 'ccbgsfo4002-pipboy(blue).esl'
     group: *ccGroup
     clean:
       - crc: 0x27E9BDE1
         util: 'FO4Edit v3.2.41'
-  # 
+  # Pip-Boy Paint Job - Desert Camo
   - name: 'ccbgsfo4003-pipboy(camo01).esl'
     group: *ccGroup
-  # 
+  # Pip-Boy Paint Job - Swamp Camo
   - name: 'ccbgsfo4004-pipboy(camo02).esl'
     group: *ccGroup
     clean:
       - crc: 0x6DAC3906
         util: 'FO4Edit v3.2.41'
-  # Rainbow Pip-Boy Paint Job Bundle - Chrome
+  # Pip-Boy Paint Job - Chrome
   - name: 'ccbgsfo4006-pipboy(chrome).esl'
     group: *ccGroup
     clean:
       - crc: 0xB699105C
         util: 'FO4Edit v3.2.41'
-  # Rainbow Pip-Boy Paint Job Bundle - Red
+  # Pip-Boy Paint Job - Red
   - name: 'ccbgsfo4012-pipboy(red).esl'
     group: *ccGroup
-  # Rainbow Pip-Boy Paint Job Bundle - White
+  # Pip-Boy Paint Job - White
   - name: 'ccbgsfo4014-pipboy(white).esl'
     group: *ccGroup
-  # 
+  # Pip-Boy Paint Job - Aquatic Camo
   - name: 'ccbgsfo4005-bluecamo.esl'
     group: *ccGroup
   # Morgan's Space Suit
@@ -937,13 +937,13 @@ plugins:
   # Chinese Stealth Armor
   - name: 'ccbgsfo4019-chinesestealtharmor.esl'
     group: *ccGroup
-  # 
+  # Power Armor Paint Job - Onyx
   - name: 'ccbgsfo4020-powerarmorskin(black).esl'
     group: *ccGroup
-  # 
+  # Power Armor Paint Job - Desert Camo
   - name: 'ccbgsfo4022-powerarmorskin(camo01).esl'
     group: *ccGroup
-  # 
+  # Power Armor Paint Job - Swamp Camo
   - name: 'ccbgsfo4023-powerarmorskin(camo02).esl'
     group: *ccGroup
   # Power Armor Paint Job - Chrome
@@ -952,7 +952,7 @@ plugins:
   # Power Armor Paint Job - White
   - name: 'ccbgsfo4033-powerarmorskinwhite.esl'
     group: *ccGroup
-  # 
+  # Power Armor Paint Job - Aquatic Camo
   - name: 'ccbgsfo4024-pacamo03.esl'
     group: *ccGroup
   # Horse Power Armor
@@ -991,37 +991,37 @@ plugins:
   # Coffee and Donuts Workshop Pack
   - name: 'ccfsvfo4003-slocum.esl'
     group: *ccGroup
-  # Weapon Paint Job Bundle - Army
+  # Weapon Paint Job - Army
   - name: 'ccgcafo4001-factionws01army.esl'
     group: *ccGroup
-  # Weapon Paint Job Bundle - Atom Cats
+  # Weapon Paint Job - Atom Cats
   - name: 'ccgcafo4002-factionws02acat.esl'
     group: *ccGroup
-  # Weapon Paint Job Bundle - Brotherhood of Steel
+  # Weapon Paint Job - Brotherhood of Steel
   - name: 'ccgcafo4003-factionws03bos.esl'
     group: *ccGroup
-  # Weapon Paint Job Bundle - Gunners
+  # Weapon Paint Job - Gunners
   - name: 'ccgcafo4004-factionws04gun.esl'
     group: *ccGroup
-  # Weapon Paint Job Bundle - Hot Rod Pink
+  # Weapon Paint Job - Hot Rod Pink
   - name: 'ccgcafo4005-factionws05hrpink.esl'
     group: *ccGroup
-  # Weapon Paint Job Bundle - Hot Rod Shark
+  # Weapon Paint Job - Hot Rod Shark
   - name: 'ccgcafo4006-factionws06hrshark.esl'
     group: *ccGroup
-  # Weapon Paint Job Bundle - Hot Rod Red Flames
+  # Weapon Paint Job - Hot Rod Red Flames
   - name: 'ccgcafo4007-factionws07hrflames.esl'
     group: *ccGroup
-  # Weapon Paint Job Bundle - Institute
+  # Weapon Paint Job - Institute
   - name: 'ccgcafo4008-factionws08inst.esl'
     group: *ccGroup
-  # Weapon Paint Job Bundle - Minutemen
+  # Weapon Paint Job - Minutemen
   - name: 'ccgcafo4009-factionws09mm.esl'
     group: *ccGroup
-  # Weapon Paint Job Bundle - Railroad
+  # Weapon Paint Job - Railroad
   - name: 'ccgcafo4010-factionws10rr.esl'
     group: *ccGroup
-  # Weapon Paint Job Bundle - Vault-Tec
+  # Weapon Paint Job - Vault-Tec
   - name: 'ccgcafo4011-factionws11vt.esl'
     group: *ccGroup
     clean:
@@ -1180,43 +1180,43 @@ plugins:
   # Pip-Boy Paint Job - Abraxo
   - name: 'ccbgsfo4070-pipabra.esl'
     group: *ccGroup
-  # Rainbow Pip-Boy Paint Job Bundle - Green
+  # Pip-Boy Paint Job - Green
   - name: 'ccbgsfo4008-pipgrn.esl'
     group: *ccGroup
-  # Rainbow Pip-Boy Paint Job Bundle - Yellow
+  # Pip-Boy Paint Job - Yellow
   - name: 'ccbgsfo4015-pipyell.esl'
     group: *ccGroup
-  # Rainbow Pip-Boy Paint Job Bundle - Orange
+  # Pip-Boy Paint Job - Orange
   - name: 'ccbgsfo4009-piporan.esl'
     group: *ccGroup
-  # Rainbow Pip-Boy Paint Job Bundle - Purple
+  # Pip-Boy Paint Job - Purple
   - name: 'ccbgsfo4011-pippurp.esl'
     group: *ccGroup
-  # Rainbow Power Armor Paint Job Bundle - Blue
+  # Power Armor Paint Job - Blue
   - name: 'ccbgsfo4021-powerarmorskinblue.esl'
     group: *ccGroup
     clean:
       - crc: 0xB287884D
         util: 'FO4Edit v3.2.41'
-  # Rainbow Power Armor Paint Job Bundle - Green
+  # Power Armor Paint Job - Green
   - name: 'ccbgsfo4027-powerarmorskingreen.esl'
     group: *ccGroup
-  # Rainbow Power Armor Paint Job Bundle - Yellow
+  # Power Armor Paint Job - Yellow
   - name: 'ccbgsfo4034-powerarmorskinyellow.esl'
     group: *ccGroup
-  # Rainbow Power Armor Paint Job Bundle - Orange
+  # Power Armor Paint Job - Orange
   - name: 'ccbgsfo4028-powerarmorskinorange.esl'
     group: *ccGroup
-  # Rainbow Power Armor Paint Job Bundle - Red
+  # Power Armor Paint Job - Red
   - name: 'ccbgsfo4031-powerarmorskinred.esl'
     group: *ccGroup
-  # Rainbow Power Armor Paint Job Bundle - Purple
+  # Power Armor Paint Job - Purple
   - name: 'ccbgsfo4030-powerarmorskinpurple.esl'
     group: *ccGroup
-  # Rainbow Power Armor Paint Job Bundle - Tan
+  # Power Armor Paint Job - Tan
   - name: 'ccbgsfo4032-powerarmorskintan.esl'
     group: *ccGroup
-  # Rainbow Power Armor Paint Job Bundle - Pink
+  # Power Armor Paint Job - Pink
   - name: 'ccbgsfo4029-powerarmorskinpink.esl'
     group: *ccGroup
   # Pip-Boy Paint Job - Grey Tortoise
@@ -1225,16 +1225,16 @@ plugins:
   # Pip-Boy Paint Job - Vim! Refresh
   - name: 'ccgrcfo4002-pipgreenvim.esl'
     group: *ccGroup
-  # Rainbow Pip-Boy Paint Job Bundle - Tan
+  # Pip-Boy Paint Job - Tan
   - name: 'ccbgsfo4013-piptan.esl'
     group: *ccGroup
-  # 
+  # Pip-Boy Paint Job - Pink
   - name: 'ccbgsfo4010-pippnk.esl'
     group: *ccGroup
   # Solar Cannon
   - name: 'ccsbjfo4001-solarflare.esl'
     group: *ccGroup
-  # Charleston Condo
+  # Charlestown Condo
   - name: 'cczsef04001-bhouse.esm'
     group: *ccGroup
   # Noir Penthouse
@@ -1243,7 +1243,7 @@ plugins:
   # Settlement Ambush Kit
   - name: 'cckgjfo4001-bastion.esl'
     group: *ccGroup
-  # Power Armor Paint Jobs - Patriotic
+  # Power Armor Paint Job - Patriotic
   - name: 'ccbgsfo4063-papat.esl'
     group: *ccGroup
   # Sentinel Control System Companion
@@ -1255,7 +1255,7 @@ plugins:
   # Armor Paint Job - Shi
   - name: 'ccbgsfo4101-as_shi.esl'
     group: *ccGroup
-  # Weapon Paint Jobs - Shi
+  # Weapon Paint Job - Shi
   - name: 'ccbgsfo4114-ws_shi.esl'
     group: *ccGroup
   # X-02 Power Armor
@@ -1267,7 +1267,7 @@ plugins:
   # Heavy Incinerator
   - name: 'ccbgsfo4116-heavyflamer.esl'
     group: *ccGroup
-  # Halloween Skin Bundle - Armor Paint Job - Bats
+  # Armor Paint Job - Bats
   - name: 'ccbgsfo4091-as_bats.esl'
     group: *ccGroup
   # Armor Paint Job - Aquatic Camo
@@ -1279,37 +1279,37 @@ plugins:
   # Armor Paint Job - Desert Camo
   - name: 'ccbgsfo4094-as_camotan.esl'
     group: *ccGroup
-  # Halloween Skin Bundle - Armor Paint Job - Jack 0'Lantern
+  # Armor Paint Job - Jack 0'Lantern
   - name: 'ccbgsfo4097-as_jack-olantern.esl'
     group: *ccGroup
-  # Halloween Skin Bundle - Weapon Paint Job - Bats
+  # Weapon Paint Job - Bats
   - name: 'ccbgsfo4104-ws_bats.esl'
     group: *ccGroup
-  # Weapon Paint Jobs - Aquatic Camo
+  # Weapon Paint Job - Aquatic Camo
   - name: 'ccbgsfo4105-ws_camoblue.esl'
     group: *ccGroup
-  # Weapon Paint Jobs - Swamp Camo
+  # Weapon Paint Job - Swamp Camo
   - name: 'ccbgsfo4106-ws_camogreen.esl'
     group: *ccGroup
-  # Weapon Paint Jobs - Desert Camo
+  # Weapon Paint Job - Desert Camo
   - name: 'ccbgsfo4107-ws_camotan.esl'
     group: *ccGroup
-  # Halloween Skin Bundle - Weapon Paint Job - Jack 0'Lantern
+  # Weapon Paint Job - Jack 0'Lantern
   - name: 'ccbgsfo4111-ws_jack-olantern.esl'
     group: *ccGroup
-  # Faction Fashion Armor Skin Bundle - Tunnel Snakes
+  # Weapon Paint Job - Tunnel Snakes
   - name: 'ccbgsfo4118-ws_tunnelsnakes.esl'
     group: *ccGroup
-  # Faction Fashion Armor Skin Bundle - Reilly's Rangers
+  # Weapon Paint Job - Reilly's Rangers
   - name: 'ccbgsfo4113-ws_reillysrangers.esl'
     group: *ccGroup
-  # Faction Fashion Armor Skin Bundle - Pickman
+  # Weapon Paint Job - Pickman
   - name: 'ccbgsfo4112-ws_pickman.esl'
     group: *ccGroup
-  # Faction Fashion Armor Skin Bundle - Enclave
+  # Weapon Paint Job - Enclave
   - name: 'ccbgsfo4110-ws_enclave.esl'
     group: *ccGroup
-  # Faction Fashion Armor Skin Bundle - Children of Atom
+  # Weapon Paint Job - Children of Atom
   - name: 'ccbgsfo4108-ws_childrenofatom.esl'
     group: *ccGroup
   # Armor Paint Job - Tunnel Snakes
@@ -1327,37 +1327,37 @@ plugins:
   # Armor Paint Job - Children of Atom
   - name: 'ccbgsfo4095-as_childrenofatom.esl'
     group: *ccGroup
-  # Variety Pack Pip-Boy Bundle - Tribal
+  # Pip-Boy Paint Job - Tribal
   - name: 'ccbgsfo4090-piptribal.esl'
     group: *ccGroup
-  # 
+  # Pip-Boy Paint Job - Neon Sunrise
   - name: 'ccbgsfo4089-pipsynthwave.esl'
     group: *ccGroup
-  # Variety Pack Pip-Boy Bundle - Haida
+  # Pip-Boy Paint Job - Haida
   - name: 'ccbgsfo4087-piphaida.esl'
     group: *ccGroup
-  # Variety Pack Pip-Boy Bundle - Hawaii
+  # Pip-Boy Paint Job - Hawaii
   - name: 'ccbgsfo4085-piphawaii.esl'
     group: *ccGroup
-  # 
+  # Pip-Boy Paint Job - Corvega
   - name: 'ccbgsfo4084-pipretro.esl'
     group: *ccGroup
-  # Variety Pack Pip-Boy Bundle - Art Deco
+  # Pip-Boy Paint Job - Art Deco
   - name: 'ccbgsfo4083-pipartdeco.esl'
     group: *ccGroup
-  # 
+  # Pip-Boy Paint Job - Five-Star Red
   - name: 'ccbgsfo4082-pipprc.esl'
     group: *ccGroup
-  # Variety Pack Pip-Boy Bundle - Phenol Resin
+  # Pip-Boy Paint Job - Phenol Resin
   - name: 'ccbgsfo4081-pipphenolresin.esl'
     group: *ccGroup
-  # Variety Pack Pip-Boy Bundle - Pop
+  # Pip-Boy Paint Job - Pop
   - name: 'ccbgsfo4080-pippop.esl'
     group: *ccGroup
   # Pint-Sized Slasher
   - name: 'ccbgsfo4035-pint.esl'
     group: *ccGroup
-  # Pip-Boy Paint Job- Adventure
+  # Pip-Boy Paint Job - Adventure
   - name: 'ccbgsfo4086-pipadventure.esl'
     group: *ccGroup
   # Holiday Workshop Pack
