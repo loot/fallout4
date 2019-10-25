@@ -889,507 +889,822 @@ plugins:
         util: 'FO4Edit v4.0.2'
 
 ###### Creation Club ######
-  # Rainbow Pip-Boy Paint Job Bundle - Onyx
-  - name: 'ccbgsfo4001-pipboy(black).esl'
+  - name: 'cc(rzr|swk|tos|zse)f.*\.esm'
     group: *ccGroup
-    clean:
-      - crc: 0x7CA905AC
-        util: 'FO4Edit v3.2.41'
-  # Rainbow Pip-Boy Paint Job Bundle - Blue
-  - name: 'ccbgsfo4002-pipboy(blue).esl'
-    group: *ccGroup
-    clean:
-      - crc: 0x27E9BDE1
-        util: 'FO4Edit v3.2.41'
-  # 
-  - name: 'ccbgsfo4003-pipboy(camo01).esl'
-    group: *ccGroup
-  # 
-  - name: 'ccbgsfo4004-pipboy(camo02).esl'
-    group: *ccGroup
-    clean:
-      - crc: 0x6DAC3906
-        util: 'FO4Edit v3.2.41'
-  # Rainbow Pip-Boy Paint Job Bundle - Chrome
-  - name: 'ccbgsfo4006-pipboy(chrome).esl'
-    group: *ccGroup
-    clean:
-      - crc: 0xB699105C
-        util: 'FO4Edit v3.2.41'
-  # Rainbow Pip-Boy Paint Job Bundle - Red
-  - name: 'ccbgsfo4012-pipboy(red).esl'
-    group: *ccGroup
-  # Rainbow Pip-Boy Paint Job Bundle - White
-  - name: 'ccbgsfo4014-pipboy(white).esl'
-    group: *ccGroup
-  # 
-  - name: 'ccbgsfo4005-bluecamo.esl'
-    group: *ccGroup
-  # Morgan's Space Suit
-  - name: 'ccbgsfo4016-prey.esl'
-    group: *ccGroup
-    clean:
-      - crc: 0x80C388EC
-        util: 'FO4Edit v3.2.41'
-  # Prototype Gauss Rifle
-  - name: 'ccbgsfo4018-gaussrifleprototype.esl'
-    group: *ccGroup
-  # Chinese Stealth Armor
-  - name: 'ccbgsfo4019-chinesestealtharmor.esl'
-    group: *ccGroup
-  # 
-  - name: 'ccbgsfo4020-powerarmorskin(black).esl'
-    group: *ccGroup
-  # 
-  - name: 'ccbgsfo4022-powerarmorskin(camo01).esl'
-    group: *ccGroup
-  # 
-  - name: 'ccbgsfo4023-powerarmorskin(camo02).esl'
-    group: *ccGroup
-  # Power Armor Paint Job - Chrome
-  - name: 'ccbgsfo4025-powerarmorskin(chrome).esl'
-    group: *ccGroup
-  # Power Armor Paint Job - White
-  - name: 'ccbgsfo4033-powerarmorskinwhite.esl'
-    group: *ccGroup
-  # 
-  - name: 'ccbgsfo4024-pacamo03.esl'
-    group: *ccGroup
-  # Horse Power Armor
-  - name: 'ccbgsfo4038-horsearmor.esl'
-    group: *ccGroup
-  # Doom Classic Marine Armor
-  - name: 'ccbgsfo4041-doommarinearmor.esl'
-    group: *ccGroup
-  # Doom BFG
-  - name: 'ccbgsfo4042-bfg.esl'
-    group: *ccGroup
-  # Hellfire Power Armor
-  - name: 'ccbgsfo4044-hellfirepowerarmor.esl'
-    group: *ccGroup
-  # Modular Military Backpack
-  - name: 'ccfsvfo4001-modularmilitarybackpack.esl'
-    group: *ccGroup
-  # Modern Furniture Workshop Pack
-  - name: 'ccfsvfo4002-midcenturymodern.esl'
-    group: *ccGroup
-  # Handmade Shotgun
-  - name: 'ccfrsfo4001-handmadeshotgun.esl'
-    group: *ccGroup
-    clean:
-      - crc: 0x572E30C2
-        util: 'FO4Edit v3.2.41'
-  # Home Decor Workshop Pack
-  - name: 'cceejfo4001-decorationpack.esl'
-    group: *ccGroup
-  # Tunnel Snakes Rule!
-  - name: 'ccrzrfo4001-tunnelsnakes.esm'
-    group: *ccGroup
-  # Arcade Workshop Pack
-  - name: 'ccbgsfo4045-advarccab.esl'
-    group: *ccGroup
-  # Coffee and Donuts Workshop Pack
-  - name: 'ccfsvfo4003-slocum.esl'
-    group: *ccGroup
-  # Weapon Paint Job Bundle - Army
-  - name: 'ccgcafo4001-factionws01army.esl'
-    group: *ccGroup
-  # Weapon Paint Job Bundle - Atom Cats
-  - name: 'ccgcafo4002-factionws02acat.esl'
-    group: *ccGroup
-  # Weapon Paint Job Bundle - Brotherhood of Steel
-  - name: 'ccgcafo4003-factionws03bos.esl'
-    group: *ccGroup
-  # Weapon Paint Job Bundle - Gunners
-  - name: 'ccgcafo4004-factionws04gun.esl'
-    group: *ccGroup
-  # Weapon Paint Job Bundle - Hot Rod Pink
-  - name: 'ccgcafo4005-factionws05hrpink.esl'
-    group: *ccGroup
-  # Weapon Paint Job Bundle - Hot Rod Shark
-  - name: 'ccgcafo4006-factionws06hrshark.esl'
-    group: *ccGroup
-  # Weapon Paint Job Bundle - Hot Rod Red Flames
-  - name: 'ccgcafo4007-factionws07hrflames.esl'
-    group: *ccGroup
-  # Weapon Paint Job Bundle - Institute
-  - name: 'ccgcafo4008-factionws08inst.esl'
-    group: *ccGroup
-  # Weapon Paint Job Bundle - Minutemen
-  - name: 'ccgcafo4009-factionws09mm.esl'
-    group: *ccGroup
-  # Weapon Paint Job Bundle - Railroad
-  - name: 'ccgcafo4010-factionws10rr.esl'
-    group: *ccGroup
-  # Weapon Paint Job Bundle - Vault-Tec
-  - name: 'ccgcafo4011-factionws11vt.esl'
-    group: *ccGroup
-    clean:
-      - crc: 0x1678A533
-        util: 'FO4Edit v3.2.41'
-  # Armor Paint Job - Atom Cats
-  - name: 'ccgcafo4012-factionas01acat.esl'
-    group: *ccGroup
-  # Armor Paint Job - Brotherhood of Steel
-  - name: 'ccgcafo4013-factionas02bos.esl'
-    group: *ccGroup
-  # Armor Paint Job - Gunners
-  - name: 'ccgcafo4014-factionas03gun.esl'
-    group: *ccGroup
-  # Armor Paint Job - Hot Rod Pink
-  - name: 'ccgcafo4015-factionas04hrpink.esl'
-    group: *ccGroup
-  # Armor Paint Job - Hot Rod Shark
-  - name: 'ccgcafo4016-factionas05hrshark.esl'
-    group: *ccGroup
-  # Armor Paint Job - Institute
-  - name: 'ccgcafo4017-factionas06inst.esl'
-    group: *ccGroup
-  # Armor Paint Job - Minutemen
-  - name: 'ccgcafo4018-factionas07mm.esl'
-    group: *ccGroup
-  # Armor Paint Job - Nuka Cherry
-  - name: 'ccgcafo4019-factionas08nuk.esl'
-    group: *ccGroup
-    clean:
-      - crc: 0x37D90FD3
-        util: 'FO4Edit v3.2.41'
-  # Armor Paint Job - Railroad
-  - name: 'ccgcafo4020-factionas09rr.esl'
-    group: *ccGroup
-  # Armor Paint Job - Hot Rod Flames
-  - name: 'ccgcafo4021-factionas10hrflames.esl'
-    group: *ccGroup
-  # Armor Paint Job - Vault-Tec
-  - name: 'ccgcafo4022-factionas11vt.esl'
-    group: *ccGroup
-    clean:
-      - crc: 0x3BFFC8C6
-        util: 'FO4Edit v3.2.41'
-  # Armor Paint Job - Army
-  - name: 'ccgcafo4023-factionas12army.esl'
-    group: *ccGroup
-  # Graphic T-Shirt Pack
-  - name: 'ccawnfo4001-brandedattire.esl'
-    group: *ccGroup
-  # Captain Cosmos
-  - name: 'ccswkfo4001-astronautpowerarmor.esm'
-    group: *ccGroup
-  # Pip-Boy Paint Job - Nuka-Cola
-  - name: 'ccswkfo4002-pipnuka.esl'
-    group: *ccGroup
-    clean:
-      - crc: 0xB6A07FA4
-        util: 'FO4Edit v3.2.41'
-  # Pip-Boy Paint Job - Nuka-Cola Quantum
-  - name: 'ccswkfo4003-pipquan.esl'
-    group: *ccGroup
-    clean:
-      - crc: 0xA2F66832
-        util: 'FO4Edit v3.2.41'
-  # Border Collie
-  - name: 'ccbgsfo4050-dgbcoll.esl'
-    group: *ccGroup
-  # Boxer
-  - name: 'ccbgsfo4051-dgbox.esl'
-    group: *ccGroup
-  # Dalmatian
-  - name: 'ccbgsfo4052-dgdal.esl'
-    group: *ccGroup
-  # Golden Retriever
-  - name: 'ccbgsfo4053-dggoldr.esl'
-    group: *ccGroup
-  # Great Dane
-  - name: 'ccbgsfo4054-dggreatd.esl'
-    group: *ccGroup
-  # Husky
-  - name: 'ccbgsfo4055-dghusk.esl'
-    group: *ccGroup
-  # Black Labrador
-  - name: 'ccbgsfo4056-dglabb.esl'
-    group: *ccGroup
-    clean:
-      - crc: 0x161A794E
-        util: 'FO4Edit v3.2.41'
-  # Yellow Labrador
-  - name: 'ccbgsfo4057-dglaby.esl'
-    group: *ccGroup
-  # Chocolate Labrador
-  - name: 'ccbgsfo4058-dglabc.esl'
-    group: *ccGroup
-  # Pitbull
-  - name: 'ccbgsfo4059-dgpit.esl'
-    group: *ccGroup
-  # Rottweiler
-  - name: 'ccbgsfo4060-dgrot.esl'
-    group: *ccGroup
-  # Shiba Inu
-  - name: 'ccbgsfo4061-dgshiinu.esl'
-    group: *ccGroup
-  # TransDOGrifier
-  - name: 'ccbgsfo4036-trnsdg.esl'
-    group: *ccGroup
-  # Pip-Boy Paint Job - The Institute
-  - name: 'ccrzrfo4004-pipinst.esl'
-    group: *ccGroup
-  # Pip-Boy Paint Job - Patriotic
-  - name: 'ccbgsfo4062-pippat.esl'
-    group: *ccGroup
-  # Pip-Boy Paint Job - Overseer's Edition
-  - name: 'ccrzrfo4003-pipover.esl'
-    group: *ccGroup
-    clean:
-      - crc: 0xE1A3C2E0
-        util: 'FO4Edit v3.2.41'
-  # Anti-Material Rifle
-  - name: 'ccfrsfo4002-antimaterielrifle.esl'
-    group: *ccGroup
-  # Nuka-Cola Collector Workshop
-  - name: 'cceejfo4002-nuka.esl'
-    group: *ccGroup
-  # Pip-Boy Paint Job - Cruiser
-  - name: 'ccygpfo4001-pipcruiser.esl'
-    group: *ccGroup
-  # Pip-Boy Paint Job - Grognak
-  - name: 'ccbgsfo4072-pipgrog.esl'
-    group: *ccGroup
-  # Pip-Boy Paint Job - Manta Man
-  - name: 'ccbgsfo4073-pipmman.esl'
-    group: *ccGroup
-  # Pip-Boy Paint Job - The Inspector
-  - name: 'ccbgsfo4074-pipinspect.esl'
-    group: *ccGroup
-  # Pip-Boy Paint Job - Silver Shroud
-  - name: 'ccbgsfo4075-pipshroud.esl'
-    group: *ccGroup
-  # Pip-Boy Paint Job - Mistress of Mystery
-  - name: 'ccbgsfo4076-pipmystery.esl'
-    group: *ccGroup
-  # Pip-Boy Paint Job - ArcJet
-  - name: 'ccbgsfo4071-piparc.esl'
-    group: *ccGroup
-  # Pip-Boy Paint Job - Vim!
-  - name: 'ccbgsfo4079-pipvim.esl'
-    group: *ccGroup
-  # Pip-Boy Paint Job - Reilly's Rangers
-  - name: 'ccbgsfo4078-pipreily.esl'
-    group: *ccGroup
-  # Pip-Boy Paint Job - Red Rocket
-  - name: 'ccbgsfo4077-piprocket.esl'
-    group: *ccGroup
-  # Pip-Boy Paint Job - Abraxo
-  - name: 'ccbgsfo4070-pipabra.esl'
-    group: *ccGroup
-  # Rainbow Pip-Boy Paint Job Bundle - Green
-  - name: 'ccbgsfo4008-pipgrn.esl'
-    group: *ccGroup
-  # Rainbow Pip-Boy Paint Job Bundle - Yellow
-  - name: 'ccbgsfo4015-pipyell.esl'
-    group: *ccGroup
-  # Rainbow Pip-Boy Paint Job Bundle - Orange
-  - name: 'ccbgsfo4009-piporan.esl'
-    group: *ccGroup
-  # Rainbow Pip-Boy Paint Job Bundle - Purple
-  - name: 'ccbgsfo4011-pippurp.esl'
-    group: *ccGroup
-  # Rainbow Power Armor Paint Job Bundle - Blue
-  - name: 'ccbgsfo4021-powerarmorskinblue.esl'
-    group: *ccGroup
-    clean:
-      - crc: 0xB287884D
-        util: 'FO4Edit v3.2.41'
-  # Rainbow Power Armor Paint Job Bundle - Green
-  - name: 'ccbgsfo4027-powerarmorskingreen.esl'
-    group: *ccGroup
-  # Rainbow Power Armor Paint Job Bundle - Yellow
-  - name: 'ccbgsfo4034-powerarmorskinyellow.esl'
-    group: *ccGroup
-  # Rainbow Power Armor Paint Job Bundle - Orange
-  - name: 'ccbgsfo4028-powerarmorskinorange.esl'
-    group: *ccGroup
-  # Rainbow Power Armor Paint Job Bundle - Red
-  - name: 'ccbgsfo4031-powerarmorskinred.esl'
-    group: *ccGroup
-  # Rainbow Power Armor Paint Job Bundle - Purple
-  - name: 'ccbgsfo4030-powerarmorskinpurple.esl'
-    group: *ccGroup
-  # Rainbow Power Armor Paint Job Bundle - Tan
-  - name: 'ccbgsfo4032-powerarmorskintan.esl'
-    group: *ccGroup
-  # Rainbow Power Armor Paint Job Bundle - Pink
-  - name: 'ccbgsfo4029-powerarmorskinpink.esl'
-    group: *ccGroup
-  # Pip-Boy Paint Job - Grey Tortoise
-  - name: 'ccgrcfo4001-pipgreytort.esl'
-    group: *ccGroup
-  # Pip-Boy Paint Job - Vim! Refresh
-  - name: 'ccgrcfo4002-pipgreenvim.esl'
-    group: *ccGroup
-  # Rainbow Pip-Boy Paint Job Bundle - Tan
-  - name: 'ccbgsfo4013-piptan.esl'
-    group: *ccGroup
-  # 
-  - name: 'ccbgsfo4010-pippnk.esl'
-    group: *ccGroup
-  # Solar Cannon
-  - name: 'ccsbjfo4001-solarflare.esl'
-    group: *ccGroup
-  # Charleston Condo
-  - name: 'cczsef04001-bhouse.esm'
-    group: *ccGroup
-  # Noir Penthouse
-  - name: 'cctosfo4001-neosky.esm'
-    group: *ccGroup
-  # Settlement Ambush Kit
-  - name: 'cckgjfo4001-bastion.esl'
-    group: *ccGroup
-  # Power Armor Paint Jobs - Patriotic
-  - name: 'ccbgsfo4063-papat.esl'
-    group: *ccGroup
-  # Sentinel Control System Companion
-  - name: 'ccqdrfo4001_powerarmorai.esl'
-    group: *ccGroup
-  # Fantasy Hero Set
-  - name: 'ccbgsfo4048-dovah.esl'
-    group: *ccGroup
-  # Armor Paint Job - Shi
-  - name: 'ccbgsfo4101-as_shi.esl'
-    group: *ccGroup
-  # Weapon Paint Jobs - Shi
-  - name: 'ccbgsfo4114-ws_shi.esl'
-    group: *ccGroup
-  # X-02 Power Armor
-  - name: 'ccbgsfo4115-x02.esl'
-    group: *ccGroup
-  # Zetan Arsenal
-  - name: 'ccrzrfo4002-disintegrate.esl'
-    group: *ccGroup
-  # Heavy Incinerator
-  - name: 'ccbgsfo4116-heavyflamer.esl'
-    group: *ccGroup
-  # Halloween Skin Bundle - Armor Paint Job - Bats
-  - name: 'ccbgsfo4091-as_bats.esl'
+  - name: 'cc(acx|awn|bgs|eej|frs|fsv|gca|grc|jvd|kgj|qdr|rzr|sbj|swk|ygp|zse)f.*\.esl'
     group: *ccGroup
   # Armor Paint Job - Aquatic Camo
   - name: 'ccbgsfo4092-as_camoblue.esl'
-    group: *ccGroup
-  # Armor Paint Job - Swamp Camo
-  - name: 'ccbgsfo4093-as_camogreen.esl'
-    group: *ccGroup
-  # Armor Paint Job - Desert Camo
-  - name: 'ccbgsfo4094-as_camotan.esl'
-    group: *ccGroup
-  # Halloween Skin Bundle - Armor Paint Job - Jack 0'Lantern
-  - name: 'ccbgsfo4097-as_jack-olantern.esl'
-    group: *ccGroup
-  # Halloween Skin Bundle - Weapon Paint Job - Bats
-  - name: 'ccbgsfo4104-ws_bats.esl'
-    group: *ccGroup
-  # Weapon Paint Jobs - Aquatic Camo
-  - name: 'ccbgsfo4105-ws_camoblue.esl'
-    group: *ccGroup
-  # Weapon Paint Jobs - Swamp Camo
-  - name: 'ccbgsfo4106-ws_camogreen.esl'
-    group: *ccGroup
-  # Weapon Paint Jobs - Desert Camo
-  - name: 'ccbgsfo4107-ws_camotan.esl'
-    group: *ccGroup
-  # Halloween Skin Bundle - Weapon Paint Job - Jack 0'Lantern
-  - name: 'ccbgsfo4111-ws_jack-olantern.esl'
-    group: *ccGroup
-  # Faction Fashion Armor Skin Bundle - Tunnel Snakes
-  - name: 'ccbgsfo4118-ws_tunnelsnakes.esl'
-    group: *ccGroup
-  # Faction Fashion Armor Skin Bundle - Reilly's Rangers
-  - name: 'ccbgsfo4113-ws_reillysrangers.esl'
-    group: *ccGroup
-  # Faction Fashion Armor Skin Bundle - Pickman
-  - name: 'ccbgsfo4112-ws_pickman.esl'
-    group: *ccGroup
-  # Faction Fashion Armor Skin Bundle - Enclave
-  - name: 'ccbgsfo4110-ws_enclave.esl'
-    group: *ccGroup
-  # Faction Fashion Armor Skin Bundle - Children of Atom
-  - name: 'ccbgsfo4108-ws_childrenofatom.esl'
-    group: *ccGroup
-  # Armor Paint Job - Tunnel Snakes
-  - name: 'ccbgsfo4103-as_tunnelsnakes.esl'
-    group: *ccGroup
-  # Armor Paint Job - Reilly's Rangers
-  - name: 'ccbgsfo4099-as_reillysrangers.esl'
-    group: *ccGroup
-  # Armor Paint Job - Pickmen
-  - name: 'ccbgsfo4098-as_pickman.esl'
-    group: *ccGroup
-  # Armor Paint Job - Enclave
-  - name: 'ccbgsfo4096-as_enclave.esl'
-    group: *ccGroup
+    clean:
+      - crc: 0x445BAB6B
+        util: 'FO4Edit v4.0.2j'
+  # Armor Paint Job - Army
+  - name: 'ccgcafo4023-factionas12army.esl'
+    clean:
+      - crc: 0x23E23B29
+        util: 'FO4Edit v4.0.2j'
+  # Armor Paint Job - Atom Cats
+  - name: 'ccgcafo4012-factionas01acat.esl'
+    clean:
+      - crc: 0xC501A97C
+        util: 'FO4Edit v4.0.2j'
+  # Armor Paint Job - Bats
+  - name: 'ccbgsfo4091-as_bats.esl'
+    clean:
+      - crc: 0x9457F735
+        util: 'FO4Edit v4.0.2j'
+  # Armor Paint Job - Brotherhood of Steel
+  - name: 'ccgcafo4013-factionas02bos.esl'
+    clean:
+      - crc: 0xA9553100
+        util: 'FO4Edit v4.0.2j'
   # Armor Paint Job - Children of Atom
   - name: 'ccbgsfo4095-as_childrenofatom.esl'
-    group: *ccGroup
-  # Variety Pack Pip-Boy Bundle - Tribal
-  - name: 'ccbgsfo4090-piptribal.esl'
-    group: *ccGroup
-  # 
-  - name: 'ccbgsfo4089-pipsynthwave.esl'
-    group: *ccGroup
-  # Variety Pack Pip-Boy Bundle - Haida
-  - name: 'ccbgsfo4087-piphaida.esl'
-    group: *ccGroup
-  # Variety Pack Pip-Boy Bundle - Hawaii
-  - name: 'ccbgsfo4085-piphawaii.esl'
-    group: *ccGroup
-  # 
-  - name: 'ccbgsfo4084-pipretro.esl'
-    group: *ccGroup
-  # Variety Pack Pip-Boy Bundle - Art Deco
+    clean:
+      - crc: 0x1D131110
+        util: 'FO4Edit v4.0.2j'
+  # Armor Paint Job - Desert Camo
+  - name: 'ccbgsfo4094-as_camotan.esl'
+    clean:
+      - crc: 0xABFEDE4F
+        util: 'FO4Edit v4.0.2j'
+  # Armor Paint Job - Enclave
+  - name: 'ccbgsfo4096-as_enclave.esl'
+    clean:
+      - crc: 0x243D95EC
+        util: 'FO4Edit v4.0.2j'
+  # Armor Paint Job - Gunners
+  - name: 'ccgcafo4014-factionas03gun.esl'
+    clean:
+      - crc: 0x1BD5A572
+        util: 'FO4Edit v4.0.2j'
+  # Armor Paint Job - Hot Rod Flames
+  - name: 'ccgcafo4021-factionas10hrflames.esl'
+    clean:
+      - crc: 0x003EFA40
+        util: 'FO4Edit v4.0.2j'
+  # Armor Paint Job - Hot Rod Pink
+  - name: 'ccgcafo4015-factionas04hrpink.esl'
+    clean:
+      - crc: 0x5A4E5142
+        util: 'FO4Edit v4.0.2j'
+  # Armor Paint Job - Hot Rod Shark
+  - name: 'ccgcafo4016-factionas05hrshark.esl'
+    clean:
+      - crc: 0xA88739AD
+        util: 'FO4Edit v4.0.2j'
+  # Armor Paint Job - Institute
+  - name: 'ccgcafo4017-factionas06inst.esl'
+    clean:
+      - crc: 0x52D787A3
+        util: 'FO4Edit v4.0.2j'
+  # Armor Paint Job - Jack 0'Lantern
+  - name: 'ccbgsfo4097-as_jack-olantern.esl'
+    clean:
+      - crc: 0xDD63622B
+        util: 'FO4Edit v4.0.2j'
+  # Armor Paint Job - Minutemen
+  - name: 'ccgcafo4018-factionas07mm.esl'
+    clean:
+      - crc: 0x62E57AE9
+        util: 'FO4Edit v4.0.2j'
+  # Armor Paint Job - Nuka Cherry
+  - name: 'ccgcafo4019-factionas08nuk.esl'
+    clean:
+      - crc: 0x37D90FD3
+        util: 'FO4Edit v4.0.2j'
+  # Armor Paint Job - Pickmen
+  - name: 'ccbgsfo4098-as_pickman.esl'
+    clean:
+      - crc: 0xB6901016
+        util: 'FO4Edit v4.0.2j'
+  # Armor Paint Job - Railroad
+  - name: 'ccgcafo4020-factionas09rr.esl'
+    clean:
+      - crc: 0x6A83CD0E
+        util: 'FO4Edit v4.0.2j'
+  # Armor Paint Job - Reilly's Rangers
+  - name: 'ccbgsfo4099-as_reillysrangers.esl'
+    clean:
+      - crc: 0x61CDF452
+        util: 'FO4Edit v4.0.2j'
+  # Armor Paint Job - Shi
+  - name: 'ccbgsfo4101-as_shi.esl'
+    clean:
+      - crc: 0xB67B25C2
+        util: 'FO4Edit v4.0.2j'
+  # Armor Paint Job - Swamp Camo
+  - name: 'ccbgsfo4093-as_camogreen.esl'
+    clean:
+      - crc: 0x5AF9653D
+        util: 'FO4Edit v4.0.2j'
+  # Armor Paint Job - Tunnel Snakes
+  - name: 'ccbgsfo4103-as_tunnelsnakes.esl'
+    clean:
+      - crc: 0x99A6C21D
+        util: 'FO4Edit v4.0.2j'
+  # Armor Paint Job - Vault-Tec
+  - name: 'ccgcafo4022-factionas11vt.esl'
+    clean:
+      - crc: 0x3BFFC8C6
+        util: 'FO4Edit v4.0.2j'
+
+  # Pip-Boy Paint Job - Abraxo
+  - name: 'ccbgsfo4070-pipabra.esl'
+    clean:
+      - crc: 0xB133B927
+        util: 'FO4Edit v4.0.2j'
+  # Pip-Boy Paint Job - Adventure
+  - name: 'ccbgsfo4086-pipadventure.esl'
+    clean:
+      - crc: 0xA828C2D2
+        util: 'FO4Edit v4.0.2j'
+  # Pip-Boy Paint Job - Aquatic Camo
+  - name: 'ccbgsfo4005-bluecamo.esl'
+    clean:
+      - crc: 0xED47F966
+        util: 'FO4Edit v4.0.2j'
+  # Pip-Boy Paint Job - ArcJet
+  - name: 'ccbgsfo4071-piparc.esl'
+    clean:
+      - crc: 0x74A7285C
+        util: 'FO4Edit v4.0.2j'
+  # Pip-Boy Paint Job - Art Deco
   - name: 'ccbgsfo4083-pipartdeco.esl'
-    group: *ccGroup
-  # 
+    clean:
+      - crc: 0x2D8540AB
+        util: 'FO4Edit v4.0.2j'
+  # Pip-Boy Paint Job - Blue
+  - name: 'ccbgsfo4002-pipboy(blue).esl'
+    clean:
+      - crc: 0x27E9BDE1
+        util: 'FO4Edit v4.0.2j'
+  # Pip-Boy Paint Job - Chrome
+  - name: 'ccbgsfo4006-pipboy(chrome).esl'
+    clean:
+      - crc: 0xB699105C
+        util: 'FO4Edit v4.0.2j'
+  # Pip-Boy Paint Job - Corvega
+  - name: 'ccbgsfo4084-pipretro.esl'
+    clean:
+      - crc: 0xF43AC41E
+        util: 'FO4Edit v4.0.2j'
+  # Pip-Boy Paint Job - Cruiser
+  - name: 'ccygpfo4001-pipcruiser.esl'
+    clean:
+      - crc: 0x0C03A954
+        util: 'FO4Edit v4.0.2j'
+  # Pip-Boy Paint Job - Desert Camo
+  - name: 'ccbgsfo4003-pipboy(camo01).esl'
+    clean:
+      - crc: 0xA3FBAED9
+        util: 'FO4Edit v4.0.2j'
+  # Pip-Boy Paint Job - Five-Star Red
   - name: 'ccbgsfo4082-pipprc.esl'
-    group: *ccGroup
-  # Variety Pack Pip-Boy Bundle - Phenol Resin
+    clean:
+      - crc: 0x45727D5D
+        util: 'FO4Edit v4.0.2j'
+  # Pip-Boy Paint Job - Green
+  - name: 'ccbgsfo4008-pipgrn.esl'
+    clean:
+      - crc: 0x281C0782
+        util: 'FO4Edit v4.0.2j'
+  # Pip-Boy Paint Job - Grey Tortoise
+  - name: 'ccgrcfo4001-pipgreytort.esl'
+    clean:
+      - crc: 0x69E636C0
+        util: 'FO4Edit v4.0.2j'
+  # Pip-Boy Paint Job - Grognak
+  - name: 'ccbgsfo4072-pipgrog.esl'
+    clean:
+      - crc: 0x3C07D64B
+        util: 'FO4Edit v4.0.2j'
+  # Pip-Boy Paint Job - Haida
+  - name: 'ccbgsfo4087-piphaida.esl'
+    clean:
+      - crc: 0x242795FF
+        util: 'FO4Edit v4.0.2j'
+  # Pip-Boy Paint Job - Hawaii
+  - name: 'ccbgsfo4085-piphawaii.esl'
+    clean:
+      - crc: 0xFECB0185
+        util: 'FO4Edit v4.0.2j'
+  # Pip-Boy Paint Job - Manta Man
+  - name: 'ccbgsfo4073-pipmman.esl'
+    clean:
+      - crc: 0xF6081D60
+        util: 'FO4Edit v4.0.2j'
+  # Pip-Boy Paint Job - Mistress of Mystery
+  - name: 'ccbgsfo4076-pipmystery.esl'
+    clean:
+      - crc: 0x3FAFF472
+        util: 'FO4Edit v4.0.2j'
+  # Pip-Boy Paint Job - Neon Sunrise
+  - name: 'ccbgsfo4089-pipsynthwave.esl'
+    clean:
+      - crc: 0x631C8C06
+        util: 'FO4Edit v4.0.2j'
+  # Pip-Boy Paint Job - Nuka-Cola
+  - name: 'ccswkfo4002-pipnuka.esl'
+    clean:
+      - crc: 0xB6A07FA4
+        util: 'FO4Edit v4.0.2j'
+  # Pip-Boy Paint Job - Nuka-Cola Quantum
+  - name: 'ccswkfo4003-pipquan.esl'
+    clean:
+      - crc: 0xA2F66832
+        util: 'FO4Edit v4.0.2j'
+  # Pip-Boy Paint Job - Onyx
+  - name: 'ccbgsfo4001-pipboy(black).esl'
+    clean:
+      - crc: 0x7CA905AC
+        util: 'FO4Edit v4.0.2j'
+  # Pip-Boy Paint Job - Orange
+  - name: 'ccbgsfo4009-piporan.esl'
+    clean:
+      - crc: 0x876594B1
+        util: 'FO4Edit v4.0.2j'
+  # Pip-Boy Paint Job - Overseer's Edition
+  - name: 'ccrzrfo4003-pipover.esl'
+    clean:
+      - crc: 0xE1A3C2E0
+        util: 'FO4Edit v4.0.2j'
+  # Pip-Boy Paint Job - Patriotic
+  - name: 'ccbgsfo4062-pippat.esl'
+    clean:
+      - crc: 0x4114664F
+        util: 'FO4Edit v4.0.2j'
+  # Pip-Boy Paint Job - Phenol Resin
   - name: 'ccbgsfo4081-pipphenolresin.esl'
-    group: *ccGroup
-  # Variety Pack Pip-Boy Bundle - Pop
+    clean:
+      - crc: 0x1ACF4045
+        util: 'FO4Edit v4.0.2j'
+  # Pip-Boy Paint Job - Pink
+  - name: 'ccbgsfo4010-pippnk.esl'
+    clean:
+      - crc: 0xBB0DB762
+        util: 'FO4Edit v4.0.2j'
+  # Pip-Boy Paint Job - Pop
   - name: 'ccbgsfo4080-pippop.esl'
-    group: *ccGroup
+    clean:
+      - crc: 0x1467A9D6
+        util: 'FO4Edit v4.0.2j'
+  # Pip-Boy Paint Job - Purple
+  - name: 'ccbgsfo4011-pippurp.esl'
+    clean:
+      - crc: 0x7E773AE2
+        util: 'FO4Edit v4.0.2j'
+  # Pip-Boy Paint Job - Red
+  - name: 'ccbgsfo4012-pipboy(red).esl'
+    clean:
+      - crc: 0x44BA1BD2
+        util: 'FO4Edit v4.0.2j'
+  # Pip-Boy Paint Job - Red Rocket
+  - name: 'ccbgsfo4077-piprocket.esl'
+    clean:
+      - crc: 0x7DE778D2
+        util: 'FO4Edit v4.0.2j'
+  # Pip-Boy Paint Job - Reilly's Rangers
+  - name: 'ccbgsfo4078-pipreily.esl'
+    clean:
+      - crc: 0xCD70146B
+        util: 'FO4Edit v4.0.2j'
+  # Pip-Boy Paint Job - Silver Shroud
+  - name: 'ccbgsfo4075-pipshroud.esl'
+    clean:
+      - crc: 0x694493B7
+        util: 'FO4Edit v4.0.2j'
+  # Pip-Boy Paint Job - Swamp Camo
+  - name: 'ccbgsfo4004-pipboy(camo02).esl'
+    clean:
+      - crc: 0x6DAC3906
+        util: 'FO4Edit v4.0.2j'
+  # Pip-Boy Paint Job - Tan
+  - name: 'ccbgsfo4013-piptan.esl'
+    clean:
+      - crc: 0xC42B2B75
+        util: 'FO4Edit v4.0.2j'
+  # Pip-Boy Paint Job - The Inspector
+  - name: 'ccbgsfo4074-pipinspect.esl'
+    clean:
+      - crc: 0x99B27169
+        util: 'FO4Edit v4.0.2j'
+  # Pip-Boy Paint Job - The Institute
+  - name: 'ccrzrfo4004-pipinst.esl'
+    clean:
+      - crc: 0xDA526BBB
+        util: 'FO4Edit v4.0.2j'
+  # Pip-Boy Paint Job - Tribal
+  - name: 'ccbgsfo4090-piptribal.esl'
+    clean:
+      - crc: 0xAB0476D3
+        util: 'FO4Edit v4.0.2j'
+  # Pip-Boy Paint Job - Vim!
+  - name: 'ccbgsfo4079-pipvim.esl'
+    clean:
+      - crc: 0x3D6089CB
+        util: 'FO4Edit v4.0.2j'
+  # Pip-Boy Paint Job - Vim! Refresh
+  - name: 'ccgrcfo4002-pipgreenvim.esl'
+    clean:
+      - crc: 0xC17FAA42
+        util: 'FO4Edit v4.0.2j'
+  # Pip-Boy Paint Job - White
+  - name: 'ccbgsfo4014-pipboy(white).esl'
+    clean:
+      - crc: 0x42441EC6
+        util: 'FO4Edit v4.0.2j'
+  # Pip-Boy Paint Job - Yellow
+  - name: 'ccbgsfo4015-pipyell.esl'
+    clean:
+      - crc: 0x361B350E
+        util: 'FO4Edit v4.0.2j'
+
+  # Power Armor Paint Job - Aquatic Camo
+  - name: 'ccbgsfo4024-pacamo03.esl'
+    clean:
+      - crc: 0xE8B1A14D
+        util: 'FO4Edit v4.0.2j'
+  # Power Armor Paint Job - Blue
+  - name: 'ccbgsfo4021-powerarmorskinblue.esl'
+    clean:
+      - crc: 0xB287884D
+        util: 'FO4Edit v4.0.2j'
+  # Power Armor Paint Job - Chrome
+  - name: 'ccbgsfo4025-powerarmorskin(chrome).esl'
+    clean:
+      - crc: 0xBC33CB13
+        util: 'FO4Edit v4.0.2j'
+  # Power Armor Paint Job - Desert Camo
+  - name: 'ccbgsfo4022-powerarmorskin(camo01).esl'
+    clean:
+      - crc: 0x7791D2AC
+        util: 'FO4Edit v4.0.2j'
+  # Power Armor Paint Job - Green
+  - name: 'ccbgsfo4027-powerarmorskingreen.esl'
+    clean:
+      - crc: 0x15729EE0
+        util: 'FO4Edit v4.0.2j'
+  # Power Armor Paint Job - Onyx
+  - name: 'ccbgsfo4020-powerarmorskin(black).esl'
+    dirty:
+      - <<: *quickClean
+        crc: 0x970F7E4E
+        util: '[FO4Edit v4.0.2j](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 2
+    clean:
+      - crc: 0xEB462321
+        util: 'FO4Edit v4.0.2j'
+  # Power Armor Paint Job - Orange
+  - name: 'ccbgsfo4028-powerarmorskinorange.esl'
+    clean:
+      - crc: 0x12180130
+        util: 'FO4Edit v4.0.2j'
+  # Power Armor Paint Job - Patriotic
+  - name: 'ccbgsfo4063-papat.esl'
+    clean:
+      - crc: 0x1FB819B7
+        util: 'FO4Edit v4.0.2j'
+  # Power Armor Paint Job - Pink
+  - name: 'ccbgsfo4029-powerarmorskinpink.esl'
+    clean:
+      - crc: 0xA5252B78
+        util: 'FO4Edit v4.0.2j'
+  # Power Armor Paint Job - Purple
+  - name: 'ccbgsfo4030-powerarmorskinpurple.esl'
+    clean:
+      - crc: 0x64C01D27
+        util: 'FO4Edit v4.0.2j'
+  # Power Armor Paint Job - Red
+  - name: 'ccbgsfo4031-powerarmorskinred.esl'
+    clean:
+      - crc: 0xAF9A063C
+        util: 'FO4Edit v4.0.2j'
+  # Power Armor Paint Job - Swamp Camo
+  - name: 'ccbgsfo4023-powerarmorskin(camo02).esl'
+    clean:
+      - crc: 0xDBD0B9B3
+        util: 'FO4Edit v4.0.2j'
+  # Power Armor Paint Job - Tan
+  - name: 'ccbgsfo4032-powerarmorskintan.esl'
+    clean:
+      - crc: 0x102ECD95
+        util: 'FO4Edit v4.0.2j'
+  # Power Armor Paint Job - White
+  - name: 'ccbgsfo4033-powerarmorskinwhite.esl'
+    clean:
+      - crc: 0x9A5A6629
+        util: 'FO4Edit v4.0.2j'
+  # Power Armor Paint Job - Yellow
+  - name: 'ccbgsfo4034-powerarmorskinyellow.esl'
+    clean:
+      - crc: 0x42FAD185
+        util: 'FO4Edit v4.0.2j'
+
+  # Weapon Paint Job - Aquatic Camo
+  - name: 'ccbgsfo4105-ws_camoblue.esl'
+    clean:
+      - crc: 0x593C6FB2
+        util: 'FO4Edit v4.0.2j'
+  # Weapon Paint Job - Army
+  - name: 'ccgcafo4001-factionws01army.esl'
+    clean:
+      - crc: 0x9248654F
+        util: 'FO4Edit v4.0.2j'
+  # Weapon Paint Job - Atom Cats
+  - name: 'ccgcafo4002-factionws02acat.esl'
+    clean:
+      - crc: 0x6CD02490
+        util: 'FO4Edit v4.0.2j'
+  # Weapon Paint Job - Bats
+  - name: 'ccbgsfo4104-ws_bats.esl'
+    clean:
+      - crc: 0x14F12302
+        util: 'FO4Edit v4.0.2j'
+  # Weapon Paint Job - Brotherhood of Steel
+  - name: 'ccgcafo4003-factionws03bos.esl'
+    clean:
+      - crc: 0x46CB130B
+        util: 'FO4Edit v4.0.2j'
+  # Weapon Paint Job - Children of Atom
+  - name: 'ccbgsfo4108-ws_childrenofatom.esl'
+    clean:
+      - crc: 0xA62ABFA1
+        util: 'FO4Edit v4.0.2j'
+  # Weapon Paint Job - Desert Camo
+  - name: 'ccbgsfo4107-ws_camotan.esl'
+    clean:
+      - crc: 0x67849193
+        util: 'FO4Edit v4.0.2j'
+  # Weapon Paint Job - Enclave
+  - name: 'ccbgsfo4110-ws_enclave.esl'
+    clean:
+      - crc: 0xC29B0419
+        util: 'FO4Edit v4.0.2j'
+  # Weapon Paint Job - Gunners
+  - name: 'ccgcafo4004-factionws04gun.esl'
+    clean:
+      - crc: 0xDB2ACEC8
+        util: 'FO4Edit v4.0.2j'
+  # Weapon Paint Job - Hot Rod Flames
+  - name: 'ccgcafo4007-factionws07hrflames.esl'
+    clean:
+      - crc: 0xEEADF309
+        util: 'FO4Edit v4.0.2j'
+  # Weapon Paint Job - Hot Rod Pink
+  - name: 'ccgcafo4005-factionws05hrpink.esl'
+    clean:
+      - crc: 0x5C6E5B0F
+        util: 'FO4Edit v4.0.2j'
+  # Weapon Paint Job - Hot Rod Shark
+  - name: 'ccgcafo4006-factionws06hrshark.esl'
+    clean:
+      - crc: 0xF7F1DF0D
+        util: 'FO4Edit v4.0.2j'
+  # Weapon Paint Job - Jack 0'Lantern
+  - name: 'ccbgsfo4111-ws_jack-olantern.esl'
+    clean:
+      - crc: 0x2617DE36
+        util: 'FO4Edit v4.0.2j'
+  # Weapon Paint Job - Minutemen
+  - name: 'ccgcafo4009-factionws09mm.esl'
+    clean:
+      - crc: 0x7343A0F1
+        util: 'FO4Edit v4.0.2j'
+  # Weapon Paint Job - Pickman
+  - name: 'ccbgsfo4112-ws_pickman.esl'
+    clean:
+      - crc: 0xFE61A013
+        util: 'FO4Edit v4.0.2j'
+  # Weapon Paint Job - Railroad
+  - name: 'ccgcafo4010-factionws10rr.esl'
+    clean:
+      - crc: 0x87C34017
+        util: 'FO4Edit v4.0.2j'
+  # Weapon Paint Job - Reilly's Rangers
+  - name: 'ccbgsfo4113-ws_reillysrangers.esl'
+    clean:
+      - crc: 0x4E1C56F6
+        util: 'FO4Edit v4.0.2j'
+  # Weapon Paint Job - Shi
+  - name: 'ccbgsfo4114-ws_shi.esl'
+    clean:
+      - crc: 0x54E818B3
+        util: 'FO4Edit v4.0.2j'
+  # Weapon Paint Job - Swamp Camo
+  - name: 'ccbgsfo4106-ws_camogreen.esl'
+    clean:
+      - crc: 0x41AF4F1F
+        util: 'FO4Edit v4.0.2j'
+  # Weapon Paint Job - The Institute
+  - name: 'ccgcafo4008-factionws08inst.esl'
+    clean:
+      - crc: 0x3D28DAAA
+        util: 'FO4Edit v4.0.2j'
+  # Weapon Paint Job - Tunnel Snakes
+  - name: 'ccbgsfo4118-ws_tunnelsnakes.esl'
+    clean:
+      - crc: 0xA398F027
+        util: 'FO4Edit v4.0.2j'
+  # Weapon Paint Job - Vault-Tec
+  - name: 'ccgcafo4011-factionws11vt.esl'
+    clean:
+      - crc: 0x1678A533
+        util: 'FO4Edit v4.0.2j'
+
+  # Chinese Stealth Armor
+  - name: 'ccbgsfo4019-chinesestealtharmor.esl'
+    clean:
+      - crc: 0xEC5FF59D
+        util: 'FO4Edit v4.0.2j'
+  # Doom Classic Marine Armor
+  - name: 'ccbgsfo4041-doommarinearmor.esl'
+    clean:
+      - crc: 0x4F309006
+        util: 'FO4Edit v4.0.2j'
+  # Fantasy Hero Set
+  - name: 'ccbgsfo4048-dovah.esl'
+    clean:
+      - crc: 0x262774DB
+        util: 'FO4Edit v4.0.2j'
+  # Graphic T-Shirt Pack
+  - name: 'ccawnfo4001-brandedattire.esl'
+    clean:
+      - crc: 0x7D56FD4A
+        util: 'FO4Edit v4.0.2j'
+  # Hellfire Power Armor
+  - name: 'ccbgsfo4044-hellfirepowerarmor.esl'
+    clean:
+      - crc: 0xC69A07D2
+        util: 'FO4Edit v4.0.2j'
+  # Horse Power Armor
+  - name: 'ccbgsfo4038-horsearmor.esl'
+    clean:
+      - crc: 0x46CC10FC
+        util: 'FO4Edit v4.0.2j'
+  # Modular Military Backpack
+  - name: 'ccfsvfo4001-modularmilitarybackpack.esl'
+    clean:
+      - crc: 0x806FA91B
+        util: 'FO4Edit v4.0.2j'
+  # Morgan's Space Suit
+  - name: 'ccbgsfo4016-prey.esl'
+    clean:
+      - crc: 0x5D669096
+        util: 'FO4Edit v4.0.2j'
   # Pint-Sized Slasher
   - name: 'ccbgsfo4035-pint.esl'
-    group: *ccGroup
-  # Pip-Boy Paint Job- Adventure
-  - name: 'ccbgsfo4086-pipadventure.esl'
-    group: *ccGroup
-  # Holiday Workshop Pack
-  - name: 'ccjvdfo4001-holiday.esl'
-    group: *ccGroup
-  # Quake Thunderbolt
-  - name: 'ccbgsfo4047-qthund.esl'
-    group: *ccGroup
-  # 
-  - name: 'ccfrsfo4003-cr75l.esl'
-    group: *ccGroup
-  # Shroud Manor
-  - name: 'cczsefo4002-smanor.esm'
-    group: *ccGroup
-  # 
-  - name: 'ccacxfo4001-vsuit.esl'
-    group: *ccGroup
-  # 
-  - name: 'ccbgsfo4040-vrworkshop01.esl'
-    group: *ccGroup
-  # 
-  - name: 'ccfsvfo4005-vrdesertisland.esl'
-    group: *ccGroup
-  # 
-  - name: 'ccfsvfo4006-vrwasteland.esl'
-    group: *ccGroup
+    clean:
+      - crc: 0x5309846F
+        util: 'FO4Edit v4.0.2j'
+  # X-02 Power Armor
+  - name: 'ccbgsfo4115-x02.esl'
+    dirty:
+      - <<: *quickClean
+        crc: 0xE543C619
+        util: '[FO4Edit v4.0.2j](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 7
+    clean:
+      - crc: 0x7C8D76A7
+        util: 'FO4Edit v4.0.2j'
+
+  # Anti-Material Rifle
+  - name: 'ccfrsfo4002-antimaterielrifle.esl'
+    clean:
+      - crc: 0x3A90625C
+        util: 'FO4Edit v4.0.2j'
+  # Captain Cosmos
+  - name: 'ccswkfo4001-astronautpowerarmor.esm'
+    clean:
+      - crc: 0x5D82B4DD
+        util: 'FO4Edit v4.0.2j'
+  # Doom BFG
+  - name: 'ccbgsfo4042-bfg.esl'
+    clean:
+      - crc: 0xDB940BF2
+        util: 'FO4Edit v4.0.2j'
+  # Handmade Shotgun
+  - name: 'ccfrsfo4001-handmadeshotgun.esl'
+    clean:
+      - crc: 0x572E30C2
+        util: 'FO4Edit v4.0.2j'
+  # Heavy Incinerator
+  - name: 'ccbgsfo4116-heavyflamer.esl'
+    clean:
+      - crc: 0xF1AFE663
+        util: 'FO4Edit v4.0.2j'
   # Manwell Rifle Set
   - name: 'ccsbjfo4002_manwellrifle.esl'
-    group: *ccGroup
+    dirty:
+      - <<: *quickClean
+        crc: 0xF8E4646E
+        util: '[FO4Edit v4.0.2j](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 3
+    clean:
+      - crc: 0x887A67DB
+        util: 'FO4Edit v4.0.2j'
+  # Prototype Gauss Rifle
+  - name: 'ccbgsfo4018-gaussrifleprototype.esl'
+    clean:
+      - crc: 0x162B8695
+        util: 'FO4Edit v4.0.2j'
+  # Quake Thunderbolt
+  - name: 'ccbgsfo4047-qthund.esl'
+    dirty:
+      - <<: *quickClean
+        crc: 0x9D9D2240
+        util: '[FO4Edit v4.0.2j](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 4
+    clean:
+      - crc: 0x708BFE9B
+        util: 'FO4Edit v4.0.2j'
+  # Solar Cannon
+  - name: 'ccsbjfo4001-solarflare.esl'
+    dirty:
+      - <<: *quickClean
+        crc: 0xF1B91783
+        util: '[FO4Edit v4.0.2j](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 2
+    clean:
+      - crc: 0xFD3AA32F
+        util: 'FO4Edit v4.0.2j'
+  # Tunnel Snakes Rule!
+  - name: 'ccrzrfo4001-tunnelsnakes.esm'
+    dirty:
+      - <<: *quickClean
+        crc: 0xC5C9BD73
+        util: '[FO4Edit v4.0.2j](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 1
+    clean:
+      - crc: 0xD516F50E
+        util: 'FO4Edit v4.0.2j'
+  # Zetan Arsenal
+  - name: 'ccrzrfo4002-disintegrate.esl'
+    dirty:
+      - <<: *quickClean
+        crc: 0xED7A6886
+        util: '[FO4Edit v4.0.2j](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 5
+    clean:
+      - crc: 0xFF714843
+        util: 'FO4Edit v4.0.2j'
+
+  # Arcade Workshop Pack
+  - name: 'ccbgsfo4045-advarccab.esl'
+    clean:
+      - crc: 0xD417EBF5
+        util: 'FO4Edit v4.0.2j'
+  # Charlestown Condo
+  - name: 'cczsef04001-bhouse.esm'
+    dirty:
+      - <<: *quickClean
+        crc: 0xCA1EB6B7
+        util: '[FO4Edit v4.0.2j](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 4
+    clean:
+      - crc: 0x25027E1B
+        util: 'FO4Edit v4.0.2j'
+  # Coffee and Donuts Workshop Pack
+  - name: 'ccfsvfo4003-slocum.esl'
+    clean:
+      - crc: 0x11A1B3CA
+        util: 'FO4Edit v4.0.2j'
+  # Holiday Workshop Pack
+  - name: 'ccjvdfo4001-holiday.esl'
+    clean:
+      - crc: 0xCC2C34D5
+        util: 'FO4Edit v4.0.2j'
+  # Home Decor Workshop Pack
+  - name: 'cceejfo4001-decorationpack.esl'
+    clean:
+      - crc: 0x5BBA49F6
+        util: 'FO4Edit v4.0.2j'
+  # Modern Furniture Workshop Pack
+  - name: 'ccfsvfo4002-midcenturymodern.esl'
+    clean:
+      - crc: 0xE25B25A1
+        util: 'FO4Edit v4.0.2j'
   # Neon Flats
   - name: 'cctosfo4002_neonflats.esm'
-    group: *ccGroup
+    dirty:
+      - <<: *quickClean
+        crc: 0xFEABF8DB
+        util: '[FO4Edit v4.0.2j](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 19
+        udr: 2
+    clean:
+      - crc: 0x4857E32B
+        util: 'FO4Edit v4.0.2j'
+  # Noir Penthouse
+  - name: 'cctosfo4001-neosky.esm'
+    dirty:
+      - <<: *quickClean
+        crc: 0x2BB4322A
+        util: '[FO4Edit v4.0.2j](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 3
+        nav: 1
+  # Nuka-Cola Collector Workshop
+  - name: 'cceejfo4002-nuka.esl'
+    clean:
+      - crc: 0x05791A9A
+        util: 'FO4Edit v4.0.2j'
+  # Shroud Manor
+  - name: 'cczsefo4002-smanor.esm'
+    dirty:
+      - <<: *quickClean
+        crc: 0xD4E11019
+        util: '[FO4Edit v4.0.2j](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 2
+    clean:
+      - crc: 0xE4674812
+        util: 'FO4Edit v4.0.2j'
+
+  # Sentinel Control System Companion
+  - name: 'ccqdrfo4001_powerarmorai.esl'
+    clean:
+      - crc: 0x03CABFD4
+        util: 'FO4Edit v4.0.2j'
+  # Settlement Ambush Kit
+  - name: 'cckgjfo4001-bastion.esl'
+    dirty:
+      - <<: *quickClean
+        crc: 0x7AE2EB38
+        util: '[FO4Edit v4.0.2j](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 53
+    clean:
+      - crc: 0xE88D283C
+        util: 'FO4Edit v4.0.2j'
+  # TransDOGrifier
+  - name: 'ccbgsfo4036-trnsdg.esl'
+    clean:
+      - crc: 0x78471202
+        util: 'FO4Edit v4.0.2j'
+
+  # Black Labrador
+  - name: 'ccbgsfo4056-dglabb.esl'
+    clean:
+      - crc: 0x161A794E
+        util: 'FO4Edit v4.0.2j'
+  # Border Collie
+  - name: 'ccbgsfo4050-dgbcoll.esl'
+    clean:
+      - crc: 0x9D008B97
+        util: 'FO4Edit v4.0.2j'
+  # Boxer
+  - name: 'ccbgsfo4051-dgbox.esl'
+    clean:
+      - crc: 0x66D600FC
+        util: 'FO4Edit v4.0.2j'
+  # Chocolate Labrador
+  - name: 'ccbgsfo4058-dglabc.esl'
+    clean:
+      - crc: 0xDDBA96E0
+        util: 'FO4Edit v4.0.2j'
+  # Dalmatian
+  - name: 'ccbgsfo4052-dgdal.esl'
+    clean:
+      - crc: 0xC00CB57C
+        util: 'FO4Edit v4.0.2j'
+  # Golden Retriever
+  - name: 'ccbgsfo4053-dggoldr.esl'
+    dirty:
+      - <<: *quickClean
+        crc: 0x582A48AD
+        util: '[FO4Edit v4.0.2j](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 3
+    clean:
+      - crc: 0xFDD144C6
+        util: 'FO4Edit v4.0.2j'
+  # Great Dane
+  - name: 'ccbgsfo4054-dggreatd.esl'
+    clean:
+      - crc: 0x588955A9
+        util: 'FO4Edit v4.0.2j'
+  # Husky
+  - name: 'ccbgsfo4055-dghusk.esl'
+    clean:
+      - crc: 0xFF8254BF
+        util: 'FO4Edit v4.0.2j'
+  # Pitbull
+  - name: 'ccbgsfo4059-dgpit.esl'
+    clean:
+      - crc: 0xD690E561
+        util: 'FO4Edit v4.0.2j'
+  # Rottweiler
+  - name: 'ccbgsfo4060-dgrot.esl'
+    clean:
+      - crc: 0x7375D89E
+        util: 'FO4Edit v4.0.2j'
+  # Shiba Inu
+  - name: 'ccbgsfo4061-dgshiinu.esl'
+    clean:
+      - crc: 0xA771D2A7
+        util: 'FO4Edit v4.0.2j'
+  # Yellow Labrador
+  - name: 'ccbgsfo4057-dglaby.esl'
+    clean:
+      - crc: 0x66BF75B2
+        util: 'FO4Edit v4.0.2j'
 
 ###### Unofficial Patches ######
   - name: 'Unofficial Fallout 4 Patch.esp'
