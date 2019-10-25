@@ -892,78 +892,141 @@ plugins:
   # Armor Paint Job - Aquatic Camo
   - name: 'ccbgsfo4092-as_camoblue.esl'
     group: *ccGroup
+    clean:
+      - crc: 0x445BAB6B
+        util: 'FO4Edit v4.0.2j'
   # Armor Paint Job - Army
   - name: 'ccgcafo4023-factionas12army.esl'
     group: *ccGroup
+    clean:
+      - crc: 0x23E23B29
+        util: 'FO4Edit v4.0.2j'
   # Armor Paint Job - Atom Cats
   - name: 'ccgcafo4012-factionas01acat.esl'
     group: *ccGroup
+    clean:
+      - crc: 0xC501A97C
+        util: 'FO4Edit v4.0.2j'
   # Armor Paint Job - Bats
   - name: 'ccbgsfo4091-as_bats.esl'
     group: *ccGroup
+    clean:
+      - crc: 0x9457F735
+        util: 'FO4Edit v4.0.2j'
   # Armor Paint Job - Brotherhood of Steel
   - name: 'ccgcafo4013-factionas02bos.esl'
     group: *ccGroup
+    clean:
+      - crc: 0xA9553100
+        util: 'FO4Edit v4.0.2j'
   # Armor Paint Job - Children of Atom
   - name: 'ccbgsfo4095-as_childrenofatom.esl'
     group: *ccGroup
+    clean:
+      - crc: 0x1D131110
+        util: 'FO4Edit v4.0.2j'
   # Armor Paint Job - Desert Camo
   - name: 'ccbgsfo4094-as_camotan.esl'
     group: *ccGroup
+    clean:
+      - crc: 0xABFEDE4F
+        util: 'FO4Edit v4.0.2j'
   # Armor Paint Job - Enclave
   - name: 'ccbgsfo4096-as_enclave.esl'
     group: *ccGroup
+    clean:
+      - crc: 0x243D95EC
+        util: 'FO4Edit v4.0.2j'
   # Armor Paint Job - Gunners
   - name: 'ccgcafo4014-factionas03gun.esl'
     group: *ccGroup
+    clean:
+      - crc: 0x1BD5A572
+        util: 'FO4Edit v4.0.2j'
   # Armor Paint Job - Hot Rod Flames
   - name: 'ccgcafo4021-factionas10hrflames.esl'
     group: *ccGroup
+    clean:
+      - crc: 0x003EFA40
+        util: 'FO4Edit v4.0.2j'
   # Armor Paint Job - Hot Rod Pink
   - name: 'ccgcafo4015-factionas04hrpink.esl'
     group: *ccGroup
+    clean:
+      - crc: 0x5A4E5142
+        util: 'FO4Edit v4.0.2j'
   # Armor Paint Job - Hot Rod Shark
   - name: 'ccgcafo4016-factionas05hrshark.esl'
     group: *ccGroup
+    clean:
+      - crc: 0xA88739AD
+        util: 'FO4Edit v4.0.2j'
   # Armor Paint Job - Institute
   - name: 'ccgcafo4017-factionas06inst.esl'
     group: *ccGroup
+    clean:
+      - crc: 0x52D787A3
+        util: 'FO4Edit v4.0.2j'
   # Armor Paint Job - Jack 0'Lantern
   - name: 'ccbgsfo4097-as_jack-olantern.esl'
     group: *ccGroup
+    clean:
+      - crc: 0xDD63622B
+        util: 'FO4Edit v4.0.2j'
   # Armor Paint Job - Minutemen
   - name: 'ccgcafo4018-factionas07mm.esl'
     group: *ccGroup
+    clean:
+      - crc: 0x62E57AE9
+        util: 'FO4Edit v4.0.2j'
   # Armor Paint Job - Nuka Cherry
   - name: 'ccgcafo4019-factionas08nuk.esl'
     group: *ccGroup
     clean:
       - crc: 0x37D90FD3
-        util: 'FO4Edit v3.2.41'
+        util: 'FO4Edit v4.0.2j'
   # Armor Paint Job - Pickmen
   - name: 'ccbgsfo4098-as_pickman.esl'
     group: *ccGroup
+    clean:
+      - crc: 0xB6901016
+        util: 'FO4Edit v4.0.2j'
   # Armor Paint Job - Railroad
   - name: 'ccgcafo4020-factionas09rr.esl'
     group: *ccGroup
+    clean:
+      - crc: 0x6A83CD0E
+        util: 'FO4Edit v4.0.2j'
   # Armor Paint Job - Reilly's Rangers
   - name: 'ccbgsfo4099-as_reillysrangers.esl'
     group: *ccGroup
+    clean:
+      - crc: 0x61CDF452
+        util: 'FO4Edit v4.0.2j'
   # Armor Paint Job - Shi
   - name: 'ccbgsfo4101-as_shi.esl'
     group: *ccGroup
+    clean:
+      - crc: 0xB67B25C2
+        util: 'FO4Edit v4.0.2j'
   # Armor Paint Job - Swamp Camo
   - name: 'ccbgsfo4093-as_camogreen.esl'
     group: *ccGroup
+    clean:
+      - crc: 0x5AF9653D
+        util: 'FO4Edit v4.0.2j'
   # Armor Paint Job - Tunnel Snakes
   - name: 'ccbgsfo4103-as_tunnelsnakes.esl'
     group: *ccGroup
+    clean:
+      - crc: 0x99A6C21D
+        util: 'FO4Edit v4.0.2j'
   # Armor Paint Job - Vault-Tec
   - name: 'ccgcafo4022-factionas11vt.esl'
     group: *ccGroup
     clean:
       - crc: 0x3BFFC8C6
-        util: 'FO4Edit v3.2.41'
+        util: 'FO4Edit v4.0.2j'
 
   # Pip-Boy Paint Job - Abraxo
   - name: 'ccbgsfo4070-pipabra.esl'
