@@ -1235,154 +1235,342 @@ plugins:
   # Chinese Stealth Armor
   - name: 'ccbgsfo4019-chinesestealtharmor.esl'
     group: *ccGroup
+    clean:
+      - crc: 0xEC5FF59D
+        util: 'FO4Edit v4.0.2j'
   # Doom Classic Marine Armor
   - name: 'ccbgsfo4041-doommarinearmor.esl'
     group: *ccGroup
+    clean:
+      - crc: 0x4F309006
+        util: 'FO4Edit v4.0.2j'
   # Fantasy Hero Set
   - name: 'ccbgsfo4048-dovah.esl'
     group: *ccGroup
+    clean:
+      - crc: 0x262774DB
+        util: 'FO4Edit v4.0.2j'
   # Graphic T-Shirt Pack
   - name: 'ccawnfo4001-brandedattire.esl'
     group: *ccGroup
+    clean:
+      - crc: 0x7D56FD4A
+        util: 'FO4Edit v4.0.2j'
   # Hellfire Power Armor
   - name: 'ccbgsfo4044-hellfirepowerarmor.esl'
     group: *ccGroup
+    clean:
+      - crc: 0xC69A07D2
+        util: 'FO4Edit v4.0.2j'
   # Horse Power Armor
   - name: 'ccbgsfo4038-horsearmor.esl'
     group: *ccGroup
+    clean:
+      - crc: 0x46CC10FC
+        util: 'FO4Edit v4.0.2j'
   # Modular Military Backpack
   - name: 'ccfsvfo4001-modularmilitarybackpack.esl'
     group: *ccGroup
+    clean:
+      - crc: 0x806FA91B
+        util: 'FO4Edit v4.0.2j'
   # Morgan's Space Suit
   - name: 'ccbgsfo4016-prey.esl'
     group: *ccGroup
     clean:
-      - crc: 0x80C388EC
-        util: 'FO4Edit v3.2.41'
+      - crc: 0x5D669096
+        util: 'FO4Edit v4.0.2j'
   # Pint-Sized Slasher
   - name: 'ccbgsfo4035-pint.esl'
     group: *ccGroup
+    clean:
+      - crc: 0x5309846F
+        util: 'FO4Edit v4.0.2j'
   # X-02 Power Armor
   - name: 'ccbgsfo4115-x02.esl'
     group: *ccGroup
+    dirty:
+      - <<: *quickClean
+        crc: 0xE543C619
+        util: '[FO4Edit v4.0.2j](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 7
+    clean:
+      - crc: 0x7C8D76A7
+        util: 'FO4Edit v4.0.2j'
 
   # Anti-Material Rifle
   - name: 'ccfrsfo4002-antimaterielrifle.esl'
     group: *ccGroup
+    clean:
+      - crc: 0x3A90625C
+        util: 'FO4Edit v4.0.2j'
   # Captain Cosmos
   - name: 'ccswkfo4001-astronautpowerarmor.esm'
     group: *ccGroup
+    clean:
+      - crc: 0x5D82B4DD
+        util: 'FO4Edit v4.0.2j'
   # Doom BFG
   - name: 'ccbgsfo4042-bfg.esl'
     group: *ccGroup
+    clean:
+      - crc: 0xDB940BF2
+        util: 'FO4Edit v4.0.2j'
   # Handmade Shotgun
   - name: 'ccfrsfo4001-handmadeshotgun.esl'
     group: *ccGroup
     clean:
       - crc: 0x572E30C2
-        util: 'FO4Edit v3.2.41'
+        util: 'FO4Edit v4.0.2j'
   # Heavy Incinerator
   - name: 'ccbgsfo4116-heavyflamer.esl'
     group: *ccGroup
+    clean:
+      - crc: 0xF1AFE663
+        util: 'FO4Edit v4.0.2j'
   # Manwell Rifle Set
   - name: 'ccsbjfo4002_manwellrifle.esl'
     group: *ccGroup
+    dirty:
+      - <<: *quickClean
+        crc: 0xF8E4646E
+        util: '[FO4Edit v4.0.2j](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 3
+    clean:
+      - crc: 0x887A67DB
+        util: 'FO4Edit v4.0.2j'
   # Prototype Gauss Rifle
   - name: 'ccbgsfo4018-gaussrifleprototype.esl'
     group: *ccGroup
+    clean:
+      - crc: 0x162B8695
+        util: 'FO4Edit v4.0.2j'
   # Quake Thunderbolt
   - name: 'ccbgsfo4047-qthund.esl'
     group: *ccGroup
+    dirty:
+      - <<: *quickClean
+        crc: 0x9D9D2240
+        util: '[FO4Edit v4.0.2j](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 4
+    clean:
+      - crc: 0x708BFE9B
+        util: 'FO4Edit v4.0.2j'
   # Solar Cannon
   - name: 'ccsbjfo4001-solarflare.esl'
     group: *ccGroup
+    dirty:
+      - <<: *quickClean
+        crc: 0xF1B91783
+        util: '[FO4Edit v4.0.2j](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 2
+    clean:
+      - crc: 0xFD3AA32F
+        util: 'FO4Edit v4.0.2j'
   # Tunnel Snakes Rule!
   - name: 'ccrzrfo4001-tunnelsnakes.esm'
     group: *ccGroup
+    dirty:
+      - <<: *quickClean
+        crc: 0xC5C9BD73
+        util: '[FO4Edit v4.0.2j](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 1
+    clean:
+      - crc: 0xD516F50E
+        util: 'FO4Edit v4.0.2j'
   # Zetan Arsenal
   - name: 'ccrzrfo4002-disintegrate.esl'
     group: *ccGroup
+    dirty:
+      - <<: *quickClean
+        crc: 0xED7A6886
+        util: '[FO4Edit v4.0.2j](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 5
+    clean:
+      - crc: 0xFF714843
+        util: 'FO4Edit v4.0.2j'
 
   # Arcade Workshop Pack
   - name: 'ccbgsfo4045-advarccab.esl'
     group: *ccGroup
+    clean:
+      - crc: 0xD417EBF5
+        util: 'FO4Edit v4.0.2j'
   # Charlestown Condo
   - name: 'cczsef04001-bhouse.esm'
     group: *ccGroup
+    dirty:
+      - <<: *quickClean
+        crc: 0xCA1EB6B7
+        util: '[FO4Edit v4.0.2j](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 4
+    clean:
+      - crc: 0x25027E1B
+        util: 'FO4Edit v4.0.2j'
   # Coffee and Donuts Workshop Pack
   - name: 'ccfsvfo4003-slocum.esl'
     group: *ccGroup
+    clean:
+      - crc: 0x11A1B3CA
+        util: 'FO4Edit v4.0.2j'
   # Holiday Workshop Pack
   - name: 'ccjvdfo4001-holiday.esl'
     group: *ccGroup
+    clean:
+      - crc: 0xCC2C34D5
+        util: 'FO4Edit v4.0.2j'
   # Home Decor Workshop Pack
   - name: 'cceejfo4001-decorationpack.esl'
     group: *ccGroup
+    clean:
+      - crc: 0x5BBA49F6
+        util: 'FO4Edit v4.0.2j'
   # Modern Furniture Workshop Pack
   - name: 'ccfsvfo4002-midcenturymodern.esl'
     group: *ccGroup
+    clean:
+      - crc: 0xE25B25A1
+        util: 'FO4Edit v4.0.2j'
   # Neon Flats
   - name: 'cctosfo4002_neonflats.esm'
     group: *ccGroup
+    dirty:
+      - <<: *quickClean
+        crc: 0xFEABF8DB
+        util: '[FO4Edit v4.0.2j](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 19
+        udr: 2
+    clean:
+      - crc: 0x4857E32B
+        util: 'FO4Edit v4.0.2j'
   # Noir Penthouse
   - name: 'cctosfo4001-neosky.esm'
     group: *ccGroup
+    dirty:
+      - <<: *quickClean
+        crc: 0x2BB4322A
+        util: '[FO4Edit v4.0.2j](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 3
+        nav: 1
   # Nuka-Cola Collector Workshop
   - name: 'cceejfo4002-nuka.esl'
     group: *ccGroup
+    clean:
+      - crc: 0x05791A9A
+        util: 'FO4Edit v4.0.2j'
   # Shroud Manor
   - name: 'cczsefo4002-smanor.esm'
     group: *ccGroup
+    dirty:
+      - <<: *quickClean
+        crc: 0xD4E11019
+        util: '[FO4Edit v4.0.2j](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 2
+    clean:
+      - crc: 0xE4674812
+        util: 'FO4Edit v4.0.2j'
 
   # Sentinel Control System Companion
   - name: 'ccqdrfo4001_powerarmorai.esl'
     group: *ccGroup
+    clean:
+      - crc: 0x03CABFD4
+        util: 'FO4Edit v4.0.2j'
   # Settlement Ambush Kit
   - name: 'cckgjfo4001-bastion.esl'
     group: *ccGroup
+    dirty:
+      - <<: *quickClean
+        crc: 0x7AE2EB38
+        util: '[FO4Edit v4.0.2j](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 53
+    clean:
+      - crc: 0xE88D283C
+        util: 'FO4Edit v4.0.2j'
   # TransDOGrifier
   - name: 'ccbgsfo4036-trnsdg.esl'
     group: *ccGroup
+    clean:
+      - crc: 0x78471202
+        util: 'FO4Edit v4.0.2j'
 
   # Black Labrador
   - name: 'ccbgsfo4056-dglabb.esl'
     group: *ccGroup
     clean:
       - crc: 0x161A794E
-        util: 'FO4Edit v3.2.41'
+        util: 'FO4Edit v4.0.2j'
   # Border Collie
   - name: 'ccbgsfo4050-dgbcoll.esl'
     group: *ccGroup
+    clean:
+      - crc: 0x9D008B97
+        util: 'FO4Edit v4.0.2j'
   # Boxer
   - name: 'ccbgsfo4051-dgbox.esl'
     group: *ccGroup
+    clean:
+      - crc: 0x66D600FC
+        util: 'FO4Edit v4.0.2j'
   # Chocolate Labrador
   - name: 'ccbgsfo4058-dglabc.esl'
     group: *ccGroup
+    clean:
+      - crc: 0xDDBA96E0
+        util: 'FO4Edit v4.0.2j'
   # Dalmatian
   - name: 'ccbgsfo4052-dgdal.esl'
     group: *ccGroup
+    clean:
+      - crc: 0xC00CB57C
+        util: 'FO4Edit v4.0.2j'
   # Golden Retriever
   - name: 'ccbgsfo4053-dggoldr.esl'
     group: *ccGroup
+    dirty:
+      - <<: *quickClean
+        crc: 0x582A48AD
+        util: '[FO4Edit v4.0.2j](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 3
+    clean:
+      - crc: 0xFDD144C6
+        util: 'FO4Edit v4.0.2j'
   # Great Dane
   - name: 'ccbgsfo4054-dggreatd.esl'
     group: *ccGroup
+    clean:
+      - crc: 0x588955A9
+        util: 'FO4Edit v4.0.2j'
   # Husky
   - name: 'ccbgsfo4055-dghusk.esl'
     group: *ccGroup
+    clean:
+      - crc: 0xFF8254BF
+        util: 'FO4Edit v4.0.2j'
   # Pitbull
   - name: 'ccbgsfo4059-dgpit.esl'
     group: *ccGroup
+    clean:
+      - crc: 0xD690E561
+        util: 'FO4Edit v4.0.2j'
   # Rottweiler
   - name: 'ccbgsfo4060-dgrot.esl'
     group: *ccGroup
+    clean:
+      - crc: 0x7375D89E
+        util: 'FO4Edit v4.0.2j'
   # Shiba Inu
   - name: 'ccbgsfo4061-dgshiinu.esl'
     group: *ccGroup
+    clean:
+      - crc: 0xA771D2A7
+        util: 'FO4Edit v4.0.2j'
   # Yellow Labrador
   - name: 'ccbgsfo4057-dglaby.esl'
     group: *ccGroup
+    clean:
+      - crc: 0x66BF75B2
+        util: 'FO4Edit v4.0.2j'
 
   - name: 'ccfrsfo4003-cr75l.esl'
     group: *ccGroup
