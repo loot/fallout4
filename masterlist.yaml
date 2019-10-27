@@ -1954,6 +1954,8 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout4/mods/1204' ]
     group: *texturesGroup
 
+  - name: 'SavrenX.*\.esp'
+    after: [ 'OVT.esp' ]
   - name: 'SavrenX HD Vanilla Clothes Optimized.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/40203' ]
     group: *texturesGroup
