@@ -1949,9 +1949,58 @@ plugins:
         itm: 3
         udr: 9
 
-  # Texture overhauls
+###### Texture overhauls ######
   - name: 'OVT.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/1204' ]
+    group: *texturesGroup
+
+  - name: 'SavrenX HD Vanilla Clothes Optimized.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/40203' ]
+    group: *texturesGroup
+  - name: 'SavrenX HD Vanilla Armor.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/40218' ]
+    group: *texturesGroup
+  - name: 'SavrenX HD DLC Armor and Clothes.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/40159' ]
+    group: *texturesGroup
+  - name: 'SavrenXHdDlcPowerArmor.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/40373' ]
+    group: *texturesGroup
+  - name: 'SavrenX SuperMutant Armor HD.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/40253' ]
+    group: *texturesGroup
+  - name: 'SavrenXWeaponHD.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/40341' ]
+    group: *texturesGroup
+  - name: 'SavrenXHDVanillaLandscape.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/40551' ]
+    group: *texturesGroup
+  - name: 'SavrenXHD1KBuildingAndInterior.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/40534' ]
+    group: *texturesGroup
+  - name: 'SavrenXLandscapeInteriorBuildingDLC.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/40592' ]
+    group: *texturesGroup
+  - name: 'SavrenXHDSettlementAndSetDressing.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/40485' ]
+    group: *texturesGroup
+  - name: 'SavrenXHDSettlementAndSetDressingDLC.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/40485' ]
+    group: *texturesGroup
+  - name: 'SavrenXFoodAndFoodware.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/40437' ]
+    group: *texturesGroup
+  - name: 'SavrenXPropsAndJunk.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/40423' ]
+    group: *texturesGroup
+  - name: 'SavrenXCreaturesPackDlcREDONE.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/40280' ]
+    group: *texturesGroup
+  - name: 'SavrenXBetterRobotHDLibertyPrime.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/40305' ]
+    group: *texturesGroup
+  - name: 'SavrenXSynthHD.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/40386' ]
     group: *texturesGroup
 
   # Valdacil's Item Sorting
