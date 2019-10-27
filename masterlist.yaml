@@ -1999,6 +1999,7 @@ plugins:
   - name: 'SavrenXBetterRobotHDLibertyPrime.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/40305' ]
     group: *texturesGroup
+    after: [ 'SavrenXCreaturesPackDlcREDONE.esp' ]
   - name: 'SavrenXSynthHD.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/40386' ]
     group: *texturesGroup
