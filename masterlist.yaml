@@ -1724,6 +1724,47 @@ plugins:
       - crc: 0x66BF75B2
         util: 'FO4Edit v4.0.2j'
 
+  # Virtual Workshops - Atomic Crater
+  - name: 'ccfsvfo4006-vrwasteland.esl'
+    dirty:
+      - <<: *quickClean
+        crc: 0xB30F7A1D
+        util: '[FO4Edit v4.0.3](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 111
+    clean:
+      - crc: 0xDB3401F9
+        util: 'FO4Edit v4.0.3'
+  # Virtual Workshops - Capital Wasteland
+  - name: 'ccfsvfo4004-vrworkshopgnrplaza.esl'
+    dirty:
+      - <<: *quickClean
+        crc: 0xAC9CD310
+        util: '[FO4Edit v4.0.3](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 8
+    clean:
+      - crc: 0xB0263C72
+        util: 'FO4Edit v4.0.3'
+  # Virtual Workshops - Desert Island
+  - name: 'ccfsvfo4005-vrdesertisland.esl'
+    dirty:
+      - <<: *quickClean
+        crc: 0xAA9EBB60
+        util: '[FO4Edit v4.0.3](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 92
+    clean:
+      - crc: 0x9889CA15
+        util: 'FO4Edit v4.0.3'
+  # Virtual Workshops - Grid World
+  - name: 'ccbgsfo4040-vrworkshop01.esl'
+    dirty:
+      - <<: *quickClean
+        crc: 0x64F72538
+        util: '[FO4Edit v4.0.3](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 3
+    clean:
+      - crc: 0xE9C45B08
+        util: 'FO4Edit v4.0.3'
+
 ###### Unofficial Patches ######
   - name: 'Unofficial Fallout 4 Patch.esp'
     url:
