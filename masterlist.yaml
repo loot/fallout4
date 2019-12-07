@@ -1057,6 +1057,11 @@ plugins:
     clean:
       - crc: 0x27E9BDE1
         util: 'FO4Edit v4.0.2j'
+  # Pip-Boy Paint Job - Children of Atom
+  - name: 'cccrsfo4001-pipcoa.esl'
+    clean:
+      - crc: 0xA0A61B6C
+        util: 'FO4Edit v4.0.3'
   # Pip-Boy Paint Job - Chrome
   - name: 'ccbgsfo4006-pipboy(chrome).esl'
     clean:
