@@ -673,10 +673,10 @@ globals:
 # Fallout 4 - Latest Version
   - <<: *versionOldX
     subs: [ '**Fallout 4**' ]
-    condition: 'version("../Fallout4.exe", "1.10.138.0", <) and file("../Fallout4.exe")'
+    condition: 'version("../Fallout4.exe", "1.10.163.0", <) and file("../Fallout4.exe")'
   - <<: *versionUpToDateX
     subs: [ '**Fallout 4**' ]
-    condition: 'version("../Fallout4.exe", "1.10.138.0", >=) and file("../Fallout4.exe")'
+    condition: 'version("../Fallout4.exe", "1.10.163.0", >=) and file("../Fallout4.exe")'
 # Fallout 4 VR - Latest Version
   - <<: *versionOldX
     subs: [ '**Fallout 4 VR**' ]
