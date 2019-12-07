@@ -1734,6 +1734,16 @@ plugins:
     clean:
       - crc: 0x912D89A7
         util: 'FO4Edit v4.0.3'
+  # Gunners vs. Minutemen
+  - name: 'ccgcafo4025-pagunmm.esl'
+    dirty:
+      - <<: *quickClean
+        crc: 0x88799C6D
+        util: '[FO4Edit v4.0.3](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 3
+    clean:
+      - crc: 0x98B17D05
+        util: 'FO4Edit v4.0.3'
 
   # Virtual Workshops - Atomic Crater
   - name: 'ccfsvfo4006-vrwasteland.esl'
