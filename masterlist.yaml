@@ -673,10 +673,10 @@ globals:
 # Fallout 4 - Latest Version
   - <<: *versionOldX
     subs: [ '**Fallout 4**' ]
-    condition: 'version("../Fallout4.exe", "1.10.138.0", <) and file("../Fallout4.exe")'
+    condition: 'version("../Fallout4.exe", "1.10.163.0", <) and file("../Fallout4.exe")'
   - <<: *versionUpToDateX
     subs: [ '**Fallout 4**' ]
-    condition: 'version("../Fallout4.exe", "1.10.138.0", >=) and file("../Fallout4.exe")'
+    condition: 'version("../Fallout4.exe", "1.10.163.0", >=) and file("../Fallout4.exe")'
 # Fallout 4 VR - Latest Version
   - <<: *versionOldX
     subs: [ '**Fallout 4 VR**' ]
@@ -688,10 +688,10 @@ globals:
 # F4SE - Latest Version
   - <<: *versionOldX
     subs: [ '**Script Extender ([F4SE](http://f4se.silverlock.org))**' ]
-    condition: 'version("../f4se_loader.exe", "0.0.6.17", <) and file("../Fallout4.exe") and file("../f4se_loader.exe")'
+    condition: 'version("../f4se_loader.exe", "0.0.6.20", <) and file("../Fallout4.exe") and file("../f4se_loader.exe")'
   - <<: *versionUpToDateX
     subs: [ '**Script Extender ([F4SE](http://f4se.silverlock.org))**' ]
-    condition: 'version("../f4se_loader.exe", "0.0.6.17", >=) and file("../Fallout4.exe") and file("../f4se_loader.exe")'
+    condition: 'version("../f4se_loader.exe", "0.0.6.20", >=) and file("../Fallout4.exe") and file("../f4se_loader.exe")'
 # F4SE VR - Latest Version
   - <<: *versionOldX
     subs: [ '**Script Extender ([F4SE VR](http://f4se.silverlock.org))**' ]
@@ -701,6 +701,10 @@ globals:
     condition: 'version("../f4sevr_loader.exe", "0.0.6.20", >=) and file("../Fallout4VR.exe") and file("../f4sevr_loader.exe")'
 
 # F4SE - Runtime Compatibility
+  - <<: *versionF4SEIncFO4
+    condition: 'version("../Fallout4.exe", "1.10.163.0", ==) and version("../f4se_loader.exe", "0.0.6.20", <) and file("../f4se_loader.exe")'
+  - <<: *versionF4SEIncFO4
+    condition: 'version("../Fallout4.exe", "1.10.162.0", ==) and version("../f4se_loader.exe", "0.0.6.18", <) and file("../f4se_loader.exe")'
   - <<: *versionF4SEIncFO4
     condition: 'version("../Fallout4.exe", "1.10.138.0", ==) and version("../f4se_loader.exe", "0.0.6.17", <) and file("../f4se_loader.exe")'
   - <<: *versionF4SEIncFO4
@@ -739,7 +743,7 @@ globals:
     subs:
       - '**F4SE Plugin ([Place Everywhere](https://www.nexusmods.com/fallout4/mods/9424))**'
       - 'Fallout 4'
-    condition: 'file("F4SE/Plugins/place.dll") and file("../f4se_loader.exe") and ((version("F4SE/Plugins/place.dll", "1.18.0.1130", ==) and version("../Fallout4.exe", "1.10.130.0", !=)) or (version("F4SE/Plugins/place.dll", "1.18.0.1130", <) and version("../Fallout4.exe", "1.10.130.0", ==)))'
+    condition: 'file("F4SE/Plugins/place.dll") and file("../f4se_loader.exe") and ((version("F4SE/Plugins/place.dll", "1.18.0.1163", ==) and version("../Fallout4.exe", "1.10.163.0", !=)) or (version("F4SE/Plugins/place.dll", "1.18.0.1163", <) and version("../Fallout4.exe", "1.10.163.0", ==)))'
 
 # F4SE Plugins - Requirements
   - <<: *requiresF4SE
@@ -804,10 +808,10 @@ plugins:
   - name: 'DLCRobot.esm'
     group: *dlcGroup
     dirty:
-      # version: 1.10.120.0, 1.10.130.0, 1.10.138.0
+      # versions: 1.10.120-163
       - <<: *quickClean
         crc: 0xD69027EA
-        util: '[FO4Edit v4.0.2i](https://www.nexusmods.com/fallout4/mods/2737)'
+        util: '[FO4Edit v4.0.3](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 49
         udr: 38
         nav: 1
@@ -816,23 +820,31 @@ plugins:
     after:
       - 'DLCRobot.esm'
     dirty:
-      # version: 1.10.120.0, 1.10.130.0, 1.10.138.0
+      # versions: 1.10.120-163
       - <<: *quickClean
         crc: 0x47BAE27E
-        util: '[FO4Edit v4.0.2i](https://www.nexusmods.com/fallout4/mods/2737)'
+        util: '[FO4Edit v4.0.3](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 6
+    clean:
+      # versions: 1.10.120-163, after QAC
+      - crc: 0x7ABECB90
+        util: 'FO4Edit v4.0.3'
   - name: 'DLCCoast.esm'
     group: *dlcGroup
     after:
       - 'DLCRobot.esm'
       - 'DLCworkshop01.esm'
     dirty:
-      # version: 1.10.120.0, 1.10.130.0, 1.10.138.0
+      # versions: 1.10.120-163
       - <<: *quickClean
         crc: 0xF1F28026
-        util: '[FO4Edit v4.0.2i](https://www.nexusmods.com/fallout4/mods/2737)'
+        util: '[FO4Edit v4.0.3](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 84
         udr: 86
+    clean:
+      # versions: 1.10.120-163, after QAC
+      - crc: 0xAD083459
+        util: 'FO4Edit v4.0.3'
   - name: 'DLCworkshop02.esm'
     group: *dlcGroup
     after:
@@ -840,11 +852,15 @@ plugins:
       - 'DLCworkshop01.esm'
       - 'DLCCoast.esm'
     dirty:
-      # version: 1.10.120.0, 1.10.130.0, 1.10.138.0
+      # versions: 1.10.120-163
       - <<: *quickClean
         crc: 0x83ABC821
-        util: '[FO4Edit v4.0.2i](https://www.nexusmods.com/fallout4/mods/2737)'
+        util: '[FO4Edit v4.0.3](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 2
+    clean:
+      # versions: 1.10.120-163, after QAC
+      - crc: 0xFD5850D8
+        util: 'FO4Edit v4.0.3'
   - name: 'DLCworkshop03.esm'
     group: *dlcGroup
     after:
@@ -853,12 +869,16 @@ plugins:
       - 'DLCCoast.esm'
       - 'DLCworkshop02.esm'
     dirty:
-      # version: 1.10.120.0, 1.10.130.0, 1.10.138.0
+      # versions: 1.10.120-163.0
       - <<: *quickClean
         crc: 0xE0089FBB
-        util: '[FO4Edit v4.0.2i](https://www.nexusmods.com/fallout4/mods/2737)'
+        util: '[FO4Edit v4.0.3](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 22
         udr: 10
+    clean:
+      # versions: 1.10.120-163, after QAC
+      - crc: 0x39BB8BCC
+        util: 'FO4Edit v4.0.3'
   - name: 'DLCNukaWorld.esm'
     group: *dlcGroup
     after:
@@ -868,10 +888,10 @@ plugins:
       - 'DLCworkshop02.esm'
       - 'DLCworkshop03.esm'
     dirty:
-      # version: 1.10.120.0, 1.10.130.0, 1.10.138.0
+      # versions: 1.10.120-163
       - <<: *quickClean
         crc: 0x43D25C56
-        util: '[FO4Edit v4.0.2i](https://www.nexusmods.com/fallout4/mods/2737)'
+        util: '[FO4Edit v4.0.3](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 194
         udr: 418
         nav: 7
@@ -886,7 +906,7 @@ plugins:
       - 'DLCNukaWorld.esm'
     clean:
       - crc: 0x9B2A2AAC
-        util: 'FO4Edit v4.0.2'
+        util: 'FO4Edit v4.0.3'
 
 ###### Creation Club ######
   - name: 'cc(rzr|swk|tos|zse)f.*\.esm'
