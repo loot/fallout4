@@ -909,9 +909,7 @@ plugins:
         util: 'FO4Edit v4.0.3'
 
 ###### Creation Club ######
-  - name: 'cc(rzr|swk|tos|zse)f.*\.esm'
-    group: *ccGroup
-  - name: 'cc(acx|awn|bgs|eej|frs|fsv|gca|grc|jvd|kgj|qdr|rzr|sbj|swk|ygp|zse)f.*\.esl'
+  - name: 'cc[A-Z]{3}FO4[0-9]{3}-[a-zA-Z0-9()]+\.es(l|m)'
     group: *ccGroup
   # Armor Paint Job - Aquatic Camo
   - name: 'ccbgsfo4092-as_camoblue.esl'
