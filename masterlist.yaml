@@ -1435,6 +1435,16 @@ plugins:
       - crc: 0x1678A533
         util: 'FO4Edit v4.0.2j'
 
+  # Capital Wasteland Mercenaries
+  - name: 'ccbgsfo4117-capmerc.esl'
+    dirty:
+      - <<: *quickClean
+        crc: 0x67206ED6
+        util: '[FO4Edit v4.0.3](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 33
+    clean:
+      - crc: 0x912D89A7
+        util: 'FO4Edit v4.0.3'
   # Chinese Stealth Armor
   - name: 'ccbgsfo4019-chinesestealtharmor.esl'
     clean:
@@ -1455,6 +1465,16 @@ plugins:
     clean:
       - crc: 0x7D56FD4A
         util: 'FO4Edit v4.0.2j'
+  # Gunners vs. Minutemen
+  - name: 'ccgcafo4025-pagunmm.esl'
+    dirty:
+      - <<: *quickClean
+        crc: 0x88799C6D
+        util: '[FO4Edit v4.0.3](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 3
+    clean:
+      - crc: 0x98B17D05
+        util: 'FO4Edit v4.0.3'
   # Hellfire Power Armor
   - name: 'ccbgsfo4044-hellfirepowerarmor.esl'
     clean:
@@ -1480,6 +1500,16 @@ plugins:
     clean:
       - crc: 0x5309846F
         util: 'FO4Edit v4.0.2j'
+  # Vault Suit Customization
+  - name: 'ccacxfo4001-vsuit.esl'
+    dirty:
+      - <<: *quickClean
+        crc: 0xDF8B7949
+        util: '[FO4Edit v4.0.3](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 6
+    clean:
+      - crc: 0xDAAD1A9E
+        util: 'FO4Edit v4.0.3'
   # X-02 Power Armor
   - name: 'ccbgsfo4115-x02.esl'
     dirty:
@@ -1551,6 +1581,16 @@ plugins:
     clean:
       - crc: 0xFD3AA32F
         util: 'FO4Edit v4.0.2j'
+  # Tesla Cannon
+  - name: 'ccbgsfo4046-tescan.esl'
+    dirty:
+      - <<: *quickClean
+        crc: 0xF67EB2BF
+        util: '[FO4Edit v4.0.3](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 10
+    clean:
+      - crc: 0xDF5F6EBD
+        util: 'FO4Edit v4.0.3'
   # Tunnel Snakes Rule!
   - name: 'ccrzrfo4001-tunnelsnakes.esm'
     dirty:
@@ -1641,6 +1681,46 @@ plugins:
     clean:
       - crc: 0xE4674812
         util: 'FO4Edit v4.0.2j'
+  # Virtual Workshops - Atomic Crater
+  - name: 'ccfsvfo4006-vrwasteland.esl'
+    dirty:
+      - <<: *quickClean
+        crc: 0xB30F7A1D
+        util: '[FO4Edit v4.0.3](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 111
+    clean:
+      - crc: 0xDB3401F9
+        util: 'FO4Edit v4.0.3'
+  # Virtual Workshops - Capital Wasteland
+  - name: 'ccfsvfo4004-vrworkshopgnrplaza.esl'
+    dirty:
+      - <<: *quickClean
+        crc: 0xAC9CD310
+        util: '[FO4Edit v4.0.3](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 8
+    clean:
+      - crc: 0xB0263C72
+        util: 'FO4Edit v4.0.3'
+  # Virtual Workshops - Desert Island
+  - name: 'ccfsvfo4005-vrdesertisland.esl'
+    dirty:
+      - <<: *quickClean
+        crc: 0xAA9EBB60
+        util: '[FO4Edit v4.0.3](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 92
+    clean:
+      - crc: 0x9889CA15
+        util: 'FO4Edit v4.0.3'
+  # Virtual Workshops - Grid World
+  - name: 'ccbgsfo4040-vrworkshop01.esl'
+    dirty:
+      - <<: *quickClean
+        crc: 0x64F72538
+        util: '[FO4Edit v4.0.3](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 3
+    clean:
+      - crc: 0xE9C45B08
+        util: 'FO4Edit v4.0.3'
 
   # Sentinel Control System Companion
   - name: 'ccqdrfo4001_powerarmorai.esl'
@@ -1728,90 +1808,6 @@ plugins:
     clean:
       - crc: 0x66BF75B2
         util: 'FO4Edit v4.0.2j'
-
-  # Capital Wasteland Mercenaries
-  - name: 'ccbgsfo4117-capmerc.esl'
-    dirty:
-      - <<: *quickClean
-        crc: 0x67206ED6
-        util: '[FO4Edit v4.0.3](https://www.nexusmods.com/fallout4/mods/2737)'
-        itm: 33
-    clean:
-      - crc: 0x912D89A7
-        util: 'FO4Edit v4.0.3'
-  # Gunners vs. Minutemen
-  - name: 'ccgcafo4025-pagunmm.esl'
-    dirty:
-      - <<: *quickClean
-        crc: 0x88799C6D
-        util: '[FO4Edit v4.0.3](https://www.nexusmods.com/fallout4/mods/2737)'
-        itm: 3
-    clean:
-      - crc: 0x98B17D05
-        util: 'FO4Edit v4.0.3'
-
-  # Tesla Cannon
-  - name: 'ccbgsfo4046-tescan.esl'
-    dirty:
-      - <<: *quickClean
-        crc: 0xF67EB2BF
-        util: '[FO4Edit v4.0.3](https://www.nexusmods.com/fallout4/mods/2737)'
-        itm: 10
-    clean:
-      - crc: 0xDF5F6EBD
-        util: 'FO4Edit v4.0.3'
-
-  # Vault Suit Customization
-  - name: 'ccacxfo4001-vsuit.esl'
-    dirty:
-      - <<: *quickClean
-        crc: 0xDF8B7949
-        util: '[FO4Edit v4.0.3](https://www.nexusmods.com/fallout4/mods/2737)'
-        itm: 6
-    clean:
-      - crc: 0xDAAD1A9E
-        util: 'FO4Edit v4.0.3'
-
-  # Virtual Workshops - Atomic Crater
-  - name: 'ccfsvfo4006-vrwasteland.esl'
-    dirty:
-      - <<: *quickClean
-        crc: 0xB30F7A1D
-        util: '[FO4Edit v4.0.3](https://www.nexusmods.com/fallout4/mods/2737)'
-        itm: 111
-    clean:
-      - crc: 0xDB3401F9
-        util: 'FO4Edit v4.0.3'
-  # Virtual Workshops - Capital Wasteland
-  - name: 'ccfsvfo4004-vrworkshopgnrplaza.esl'
-    dirty:
-      - <<: *quickClean
-        crc: 0xAC9CD310
-        util: '[FO4Edit v4.0.3](https://www.nexusmods.com/fallout4/mods/2737)'
-        itm: 8
-    clean:
-      - crc: 0xB0263C72
-        util: 'FO4Edit v4.0.3'
-  # Virtual Workshops - Desert Island
-  - name: 'ccfsvfo4005-vrdesertisland.esl'
-    dirty:
-      - <<: *quickClean
-        crc: 0xAA9EBB60
-        util: '[FO4Edit v4.0.3](https://www.nexusmods.com/fallout4/mods/2737)'
-        itm: 92
-    clean:
-      - crc: 0x9889CA15
-        util: 'FO4Edit v4.0.3'
-  # Virtual Workshops - Grid World
-  - name: 'ccbgsfo4040-vrworkshop01.esl'
-    dirty:
-      - <<: *quickClean
-        crc: 0x64F72538
-        util: '[FO4Edit v4.0.3](https://www.nexusmods.com/fallout4/mods/2737)'
-        itm: 3
-    clean:
-      - crc: 0xE9C45B08
-        util: 'FO4Edit v4.0.3'
 
 ###### Unofficial Patches ######
   - name: 'Unofficial Fallout 4 Patch.esp'
