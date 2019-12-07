@@ -1756,6 +1756,17 @@ plugins:
       - crc: 0xDF5F6EBD
         util: 'FO4Edit v4.0.3'
 
+  # Vault Suit Customization
+  - name: 'ccacxfo4001-vsuit.esl'
+    dirty:
+      - <<: *quickClean
+        crc: 0xDF8B7949
+        util: '[FO4Edit v4.0.3](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 6
+    clean:
+      - crc: 0xDAAD1A9E
+        util: 'FO4Edit v4.0.3'
+
   # Virtual Workshops - Atomic Crater
   - name: 'ccfsvfo4006-vrwasteland.esl'
     dirty:
