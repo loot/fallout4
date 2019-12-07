@@ -1745,6 +1745,17 @@ plugins:
       - crc: 0x98B17D05
         util: 'FO4Edit v4.0.3'
 
+  # Tesla Cannon
+  - name: 'ccbgsfo4046-tescan.esl'
+    dirty:
+      - <<: *quickClean
+        crc: 0xF67EB2BF
+        util: '[FO4Edit v4.0.3](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 10
+    clean:
+      - crc: 0xDF5F6EBD
+        util: 'FO4Edit v4.0.3'
+
   # Virtual Workshops - Atomic Crater
   - name: 'ccfsvfo4006-vrwasteland.esl'
     dirty:
