@@ -1724,6 +1724,17 @@ plugins:
       - crc: 0x66BF75B2
         util: 'FO4Edit v4.0.2j'
 
+  # Capital Wasteland Mercenaries
+  - name: 'ccbgsfo4117-capmerc.esl'
+    dirty:
+      - <<: *quickClean
+        crc: 0x67206ED6
+        util: '[FO4Edit v4.0.3](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 33
+    clean:
+      - crc: 0x912D89A7
+        util: 'FO4Edit v4.0.3'
+
   # Virtual Workshops - Atomic Crater
   - name: 'ccfsvfo4006-vrwasteland.esl'
     dirty:
