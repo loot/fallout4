@@ -170,7 +170,7 @@ common:
         text: 'Incompatible with %1% or greater.'
       - lang: de
         text: 'Inkompatibel mit %1% oder neuer.'
-  - &incWithPatchVersion1.5.157.0
+  - &incWithPatchVersion1_5_157_0
     <<: *incWithPatchVersionX
     subs: [ 'Fallout 4 Patch 1.5.157.0' ]
     condition: 'file("../Fallout4.exe") and version("../Fallout4.exe", "1.5.157.0", >=)'
@@ -2694,7 +2694,7 @@ plugins:
       - *insteadSKEPatch
   - name: 'DLC_SK_Patch.esp'
     msg:
-      - <<: *incWithPatchVersion1.5.157.0
+      - <<: *incWithPatchVersion1_5_157_0
         condition: '(checksum("SettlementKeywords.esm",8D550871) and active("DLC_SK_Patch.esp")) and version("..\Fallout4.exe", "1.5.157.0", >=)'
     inc:
       - 'SettlementKeywords.esm'
@@ -2822,7 +2822,7 @@ plugins:
           - lang: de
             text: 'Setzt Settlement Keywords v0.8 voraus.'
         condition: 'not checksum("SettlementKeywords.esm",8D550871)'
-      - *incWithPatchVersion1.5.157.0
+      - *incWithPatchVersion1_5_157_0
   - name: 'Homemaker - SKE Integration Patch.esp'
     msg: [ *obsolete ]
   - name: 'Homemaker - SSEx Compatibility Patch.esp'
@@ -2851,29 +2851,29 @@ plugins:
     msg: [ *obsolete ]
   - name: 'Snap and Build - Greenhouse.esp'
     msg:
-      - *incWithPatchVersion1.5.157.0
+      - *incWithPatchVersion1_5_157_0
       - *obsolete
   - name: 'SnB - Greenhouse - Homemaker.esp'
     msg:
-      - *incWithPatchVersion1.5.157.0
+      - *incWithPatchVersion1_5_157_0
       - *obsolete
   - name: 'SnB- Greenhouse - SK.esp'
     msg:
-      - *incWithPatchVersion1.5.157.0
+      - *incWithPatchVersion1_5_157_0
       - *obsolete
   - name: 'SnB - Greenhouse - SSEx.esp'
     msg:
-      - *incWithPatchVersion1.5.157.0
+      - *incWithPatchVersion1_5_157_0
       - *obsolete
   - name: 'SnB - Greenhouse - Homemaker - SSEx.esp'
     msg:
-      - *incWithPatchVersion1.5.157.0
+      - *incWithPatchVersion1_5_157_0
       - *obsolete
   - name: 'Homemaker.esm'
     url: [ 'https://www.nexusmods.com/fallout4/mods/1478' ]
     msg:
       # Homemaker 1.34 CRC
-      - <<: *incWithPatchVersion1.5.157.0
+      - <<: *incWithPatchVersion1_5_157_0
         condition: 'checksum("Homemaker.esm",55D44FD5) and version("../Fallout4.exe", "1.5.157.0", >=)'
       - type: error
         content:
@@ -2951,7 +2951,7 @@ plugins:
         condition: 'version("Homemaker.esm", "1.50", >=)'
   - name: 'SettlementKeywords.esm'
     msg:
-      - <<: *incWithPatchVersion1.5.157.0
+      - <<: *incWithPatchVersion1_5_157_0
         condition: 'checksum("SettlementKeywords.esm",8D550871) and version("../Fallout4.exe", "1.5.157.0", >=)'
       - type: error
         content:
@@ -2977,7 +2977,7 @@ plugins:
             text: 'Veraltete Version von Alternate Settlements festgestellt. Verifizieren Sie das der Settlement Keywords Expanded Patch ordnungsgemäß installiert ist.'
         condition: '(checksum("AlternateSettlements.esp",D8906B4D) or checksum("AlternateSettlements.esp",5C36EB92)) and version("SettlementKeywords.esm", "1.0", >=)'
   - name: 'Safe SSEx.esp'
-    msg: [ *incWithPatchVersion1.5.157.0 ]
+    msg: [ *incWithPatchVersion1_5_157_0 ]
   - name: 'Minutemenoverhaul.esp'
     msg:
       - type: error
@@ -3017,7 +3017,7 @@ plugins:
           - lang: de
             text: 'Deinstallieren Sie diese Datei. Es wird nicht gebraucht mit Homemaker 1.50 oder neuer.'
         condition: 'version("Homemaker.esm", "1.50", >=)'
-      - *incWithPatchVersion1.5.157.0
+      - *incWithPatchVersion1_5_157_0
   - name: 'BuildingBlocks-Foundations_Homemaker.esp'
     msg:
       - type: error
@@ -3027,7 +3027,7 @@ plugins:
           - lang: de
             text: 'Deinstallieren Sie diese Datei. Es wird nicht gebraucht mit Homemaker 1.50 oder neuer.'
         condition: 'version("Homemaker.esm", "1.50", >=)'
-      - *incWithPatchVersion1.5.157.0
+      - *incWithPatchVersion1_5_157_0
   - name: 'BuildingBlocks-Foundations_Homemaker-SSEx.esp'
     msg:
       - type: error
@@ -3037,7 +3037,7 @@ plugins:
           - lang: de
             text: 'Deinstallieren Sie diese Datei. Es wird nicht gebraucht mit Homemaker 1.50 oder neuer.'
         condition: 'version("Homemaker.esm", "1.50", >=)'
-      - *incWithPatchVersion1.5.157.0
+      - *incWithPatchVersion1_5_157_0
   - name: 'BuildingBlocks-Foundations_SettlementKeywordsFull.esp'
     msg:
       - type: say
@@ -3056,7 +3056,7 @@ plugins:
           - lang: de
             text: 'Deinstallieren Sie diese Datei. Diese wurde nicht für Settlement Keywords Expanded erstellt.'
         condition: 'version("SettlementKeywords.esm", "1.0", >=)'
-      - *incWithPatchVersion1.5.157.0
+      - *incWithPatchVersion1_5_157_0
   - name: 'BuildingBlocks-Foundations_Homemaker-SnapBuild-SSEx.esp'
     msg:
       - type: error
@@ -3066,9 +3066,9 @@ plugins:
           - lang: de
             text: 'Deinstallieren Sie diese Datei. Es wird nicht gebraucht mit Homemaker 1.50 oder neuer.'
         condition: 'version("Homemaker.esm", "1.50", >=)'
-      - *incWithPatchVersion1.5.157.0
+      - *incWithPatchVersion1_5_157_0
   - name: 'BuildingBlocks-Foundations.esp'
-    msg: [ *incWithPatchVersion1.5.157.0 ]
+    msg: [ *incWithPatchVersion1_5_157_0 ]
   - name: 'Z_Horizon_Patch_Homemaker.esp'
     msg:
       - type: warn
