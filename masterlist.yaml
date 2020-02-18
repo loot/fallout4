@@ -3356,6 +3356,12 @@ plugins:
 
   - name: 'Weaponsmith Extended 2.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/2228' ]
+    dirty:
+      - <<: *quickClean
+        crc: 0xD5EFD402
+        util: '[FO4Edit v4.0.3](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 465
+        udr: 4
 
   - name: 'ConcealedArmor.esm'
     url: [ 'https://www.nexusmods.com/fallout4/mods/6434' ]
