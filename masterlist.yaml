@@ -4044,6 +4044,12 @@ plugins:
     clean:
       - crc: 0xd2da60ba
         util: FO4Edit v3.2.1
+  - name: 'EveryonesBestFriend.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/13459' ]
+    msg:
+      - <<: *alreadyInOrFixedByX
+        subs: [ '[Unlimited Companion Framework](https://www.nexusmods.com/fallout4/mods/11829/)' ]
+        condition: 'active("EFF.esp")'
   - name: 'FatManRadiation.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/8602' ]
     clean:
