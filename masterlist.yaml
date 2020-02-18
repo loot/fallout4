@@ -59,6 +59,22 @@ common:
     subs: [ 'Val''s Picks - Vanilla Weight' ]
     condition: 'file("ValdacilsItemSorting-00-ValsPicks-(NoDLCVersion|DLCVersion)-VanillaWeight\.esp")'
 
+  - &alreadyInOrFixedByX
+    type: error
+    content:
+    - lang: en
+      text: 'Delete. Already included or otherwise fixed in %1%.'
+    - lang: de
+      text: 'Löschen. Bereits enthalten oder anderweitig korrigiert in %1%.'
+    - lang: es
+      text: 'Borrar. Esta incluido, o de otra modo, arreglado en el %1%.'
+    - lang: pl
+      text: 'Usuń. Już zawarte lub naprawione w %1%'
+    - lang: ru
+      text: 'Удалите. Уже включено в %1% или исправлено иным образом.'
+    - lang: sv
+      text: 'Ta bort. Redan inkluderat i eller fixat i %1%'
+
   - &alsoUseX
     type: say
     content:
@@ -4028,6 +4044,12 @@ plugins:
     clean:
       - crc: 0xd2da60ba
         util: FO4Edit v3.2.1
+  - name: 'EveryonesBestFriend.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/13459' ]
+    msg:
+      - <<: *alreadyInOrFixedByX
+        subs: [ '[Unlimited Companion Framework](https://www.nexusmods.com/fallout4/mods/11829/)' ]
+        condition: 'active("EFF.esp")'
   - name: 'FatManRadiation.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/8602' ]
     clean:
