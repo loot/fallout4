@@ -3354,6 +3354,9 @@ plugins:
           - 'Armor and Weapon Keywords Community Resource (AWKCR)'
         condition: 'version("Armorsmith Extended.esp", "4.6", >=) and version("ArmorKeywords.esm", "8.5", <)'
 
+  - name: 'Weaponsmith Extended 2.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/2228' ]
+
   - name: 'ConcealedArmor.esm'
     url: [ 'https://www.nexusmods.com/fallout4/mods/6434' ]
     inc: [ 'Z_Horizon.esp' ]
