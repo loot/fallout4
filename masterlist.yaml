@@ -3319,19 +3319,14 @@ plugins:
         nav: 5
   - name: 'ArmorKeywords.esm'
     url: [ 'https://www.nexusmods.com/fallout4/mods/6091' ]
-    dirty:
-      # 8.51
-      - <<: *quickClean
-        crc: 0x03DC73D9
-        util: '[FO4Edit v4.0.2f](https://www.nexusmods.com/fallout4/mods/2737)'
-        itm: 55
-    clean:
-      # 8.51
-      - crc: 0xDFC0C7CE
-        util: 'FO4Edit v4.0.2f'
     msg:
       - <<: *obsolete
         condition: 'version("ArmorKeywords.esm", "8.6.0", <) or version("ArmorKeywords.esm", "8.51", ==)'
+    dirty:
+      - <<: *quickClean
+        crc: 0xCE32A0AE
+        util: '[FO4Edit v4.0.3](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 108
   - name: 'Armorsmith Extended.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/2228' ]
     group: *itemsGroup
