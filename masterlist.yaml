@@ -5151,7 +5151,7 @@ plugins:
       - 'Mercenary.esp'
 
   - name: 'FALLOUT4WT.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/28620' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/17103' ]
     group: *itemsGroup
 
   - name: 'Mercenary.esp'
