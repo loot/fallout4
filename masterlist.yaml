@@ -5403,3 +5403,59 @@ plugins:
     clean:
       - crc: 0x9E3E233E
         util: 'FO4Edit v4.0.2f'
+# Mechanist Lair Expanded
+  - name: 'MechanistsLair_fix_only.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/11490' ]
+    dirty:
+      - <<: *quickClean
+        crc: 0xEF7399E0
+        util: '[FO4Edit v4.0.2j](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 13
+    msg:
+      - <<: *useOnlyOneX
+        subs: [ 'Mechanist Lair Expanded plugin' ]
+        condition: 'many("MechanistsLair_\w+\.esp")'
+  - name: 'MechanistsLair_V1.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/11490' ]
+    dirty:
+      - <<: *quickClean
+        crc: 0x1E42B3E3
+        util: '[FO4Edit v4.0.2j](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 11
+    msg:
+      - <<: *useOnlyOneX
+        subs: [ 'Mechanist Lair Expanded plugin' ]
+        condition: 'many("MechanistsLair_\w+\.esp")'
+  - name: 'MechanistsLair_V2.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/11490' ]
+    dirty:
+      - <<: *quickClean
+        crc: 0x7DD23517
+        util: '[FO4Edit v4.0.2j](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 11
+    msg:
+      - <<: *useOnlyOneX
+        subs: [ 'Mechanist Lair Expanded plugin' ]
+        condition: 'many("MechanistsLair_\w+\.esp")'
+  - name: 'MechanistsLair_V3.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/11490' ]
+    dirty:
+      - <<: *quickClean
+        crc: 0x7DBD6DA2
+        util: '[FO4Edit v4.0.2j](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 11
+    msg:
+      - <<: *useOnlyOneX
+        subs: [ 'Mechanist Lair Expanded plugin' ]
+        condition: 'many("MechanistsLair_\w+\.esp")'
+  - name: 'MechanistsLair_V4.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/11490' ]
+    dirty:
+      - <<: *quickClean
+        crc: 0x2DFE73AE
+        util: '[FO4Edit v4.0.2j](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 11
+    msg:
+      - <<: *useOnlyOneX
+        subs: [ 'Mechanist Lair Expanded plugin' ]
+        condition: 'many("MechanistsLair_\w+\.esp")'
