@@ -1832,24 +1832,16 @@ plugins:
       - 'https://www.nexusmods.com/fallout4/mods/4598'
     group: *fixesGroup
     msg:
-      - type: error
-        content:
-        - lang: en
-          text: 'Requires Fallout 4 patch 1.10.138 or greater.'
-        - lang: da
-          text: 'Kræver Fallout 4-lap 1.10.138 eller nyere.'
-        - lang: de
-          text: 'Benötigt Fallout 4 Patch 1.10.138 oder neuer.'
-        condition: 'version("Unofficial Fallout 4 Patch.esp", "2.0.9", >=) and not version("../Fallout4.exe", "1.10.138.0", >=)'
       - <<: *obsolete
-        condition: 'version("Unofficial Fallout 4 Patch.esp", "2.0.9", <)'
+        condition: 'version("Unofficial Fallout 4 Patch.esp", "2.1.0", <)'
+      - <<: *versionXIncY
+        subs:
+          - 'Unofficial Fallout 4 Patch'
+          - 'Fallout 4'
+        condition: 'version("Unofficial Fallout 4 Patch.esp", "2.1.0", >=) and not version("../Fallout4.exe", "1.10.162.0", >=)'
     clean:
-      # version: 2.0.8a
-      - crc: 0xC26227AD
-        util: 'FO4Edit v4.0.2f'
-      # version: 2.0.9
-      - crc: 0xB58A6D4F
-        util: 'FO4Edit v4.0.2i'
+      - crc: 0x2423BB03
+        util: 'FO4Edit v4.0.3'
 
 ###### Fixes ######
   # Mods obsoleted by official Bethesda patches
