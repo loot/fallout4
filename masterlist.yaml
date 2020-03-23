@@ -4059,9 +4059,12 @@ plugins:
         util: FO4Edit v3.2.1
   - name: 'Immersive HUD.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/20830' ]
+    req:
+      - name: 'HUDFramework.esm'
+        display: '[HUDFramework](https://www.nexusmods.com/fallout4/mods/20309)'
     clean:
-      - crc: 0xa0fea9d4
-        util: FO4Edit v3.2.1
+      - crc: 0xA0FEA9D4
+        util: 'FO4Edit v4.0.3'
   - name: 'ImmersiveVendors.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/10039' ]
     clean:
