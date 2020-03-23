@@ -1844,12 +1844,8 @@ plugins:
       - <<: *obsolete
         condition: 'version("Unofficial Fallout 4 Patch.esp", "2.0.9", <)'
     clean:
-      # version: 2.0.8a
-      - crc: 0xC26227AD
-        util: 'FO4Edit v4.0.2f'
-      # version: 2.0.9
-      - crc: 0xB58A6D4F
-        util: 'FO4Edit v4.0.2i'
+      - crc: 0x2423BB03
+        util: 'FO4Edit v4.0.3'
 
 ###### Fixes ######
   # Mods obsoleted by official Bethesda patches
