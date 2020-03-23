@@ -1835,12 +1835,12 @@ plugins:
       - type: error
         content:
         - lang: en
-          text: 'Requires Fallout 4 patch 1.10.138 or greater.'
+          text: 'Requires Fallout 4 patch 1.10.162 or greater.'
         - lang: da
-          text: 'Kræver Fallout 4-lap 1.10.138 eller nyere.'
+          text: 'Kræver Fallout 4-lap 1.10.162 eller nyere.'
         - lang: de
-          text: 'Benötigt Fallout 4 Patch 1.10.138 oder neuer.'
-        condition: 'version("Unofficial Fallout 4 Patch.esp", "2.0.9", >=) and not version("../Fallout4.exe", "1.10.138.0", >=)'
+          text: 'Benötigt Fallout 4 Patch 1.10.162 oder neuer.'
+        condition: 'version("Unofficial Fallout 4 Patch.esp", "2.1.0", >=) and not version("../Fallout4.exe", "1.10.162.0", >=)'
       - <<: *obsolete
         condition: 'version("Unofficial Fallout 4 Patch.esp", "2.1.0", <)'
     clean:
