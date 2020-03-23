@@ -2363,6 +2363,7 @@ plugins:
   # AAF 
   - name: 'AAF.esm'
     url: [ 'https://www.nexusmods.com/fallout4/mods/31304' ]
+    req: [ *F4SE ]
   # Other plugins
   - name: 'NoSharedDogmeatTemplate.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/18547' ]
