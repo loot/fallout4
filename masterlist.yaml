@@ -3854,6 +3854,20 @@ plugins:
       - 'SettlementAttacksBeyond.esp'
       - 'SettlementAttacksBeyondFH.esp'
       - 'SettlementAttacksBeyondNW.esp'
+  - name: 'AGOMBz_CP_BHES.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/25762' ]
+    after:
+      - 'AGOMBz_DLCCoast.esp'
+      - 'AGOMBz_DLCNukaWorld.esp'
+  - name: 'AGOMBz_CP_ASE_ASEFH_ASENW.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/25762' ]
+    after:
+      - 'AGOMBz_DLCCoast.esp'
+      - 'AGOMBz_DLCNukaWorld.esp'
+  - name: 'AGOMBz_CP_ASE_ASEFH.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/25762' ]
+    after:
+      - 'AGOMBz_DLCCoast.esp'
   - name: 'starlightdoorfix.esl'
     url: [ 'https://www.nexusmods.com/fallout4/mods/22553' ]
     clean:
