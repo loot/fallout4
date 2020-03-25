@@ -3868,10 +3868,6 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout4/mods/25762' ]
     after:
       - 'AGOMBz_DLCCoast.esp'
-  - name: 'AGOMBz_DLCCoast.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/25762' ]
-  - name: 'AGOMBz_DLCNukaWorld.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/25762' ]
   - name: 'starlightdoorfix.esl'
     url: [ 'https://www.nexusmods.com/fallout4/mods/22553' ]
     clean:
