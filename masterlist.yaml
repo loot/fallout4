@@ -4460,7 +4460,6 @@ plugins:
   - name: 'Scrap Everything - Ultimate Edition.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/5320' ]
     group: *scrapGroup
-    msg: [ *doNotClean ]
     clean:
       - crc: 0x7296B759
         util: 'FO4Edit v4.0.3'
@@ -4478,7 +4477,6 @@ plugins:
           - lang: de
             text: 'Ziehen Sie in Erwägung die "Ultimate Edition" von Scrap Everything zu nutzen, eine kombinierte Version von allen Scrap Everything Plugins die Sie bereits nutzen.'
         condition: 'not active("Scrap Everything - Ultimate Edition.esp") and active("Scrap Everything - Core.esp") and active("Scrap Everything - Automatron.esp") and active("Scrap Everything - Far Harbor.esp") and active("Scrap Everything - Vault-Tec Workshop.esp") and active("Scrap Everything - Nuka World.esp")'
-      - *doNotClean
   - name: 'Scrap Everything - Core.esp'
     clean:
       - crc: 0x30C87739
