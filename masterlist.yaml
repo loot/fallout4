@@ -4470,13 +4470,6 @@ plugins:
       - <<: *alreadyInX
         condition: 'active("Scrap Everything - Ultimate Edition.esp")'
         subs: [ 'Scrap Everything - Ultimate Edition.esp' ]
-      - type: say
-        content:
-          - lang: en
-            text: 'Consider using the "Ultimate Edition" of Scrap Everything, a combined version of all the Scrap Everything plugins you are already using.'
-          - lang: de
-            text: 'Ziehen Sie in Erwägung die "Ultimate Edition" von Scrap Everything zu nutzen, eine kombinierte Version von allen Scrap Everything Plugins die Sie bereits nutzen.'
-        condition: 'not active("Scrap Everything - Ultimate Edition.esp") and active("Scrap Everything - Core.esp") and active("Scrap Everything - Automatron.esp") and active("Scrap Everything - Far Harbor.esp") and active("Scrap Everything - Vault-Tec Workshop.esp") and active("Scrap Everything - Nuka World.esp")'
   - name: 'Scrap Everything - Core.esp'
     group: *scrapGroup
     clean:
