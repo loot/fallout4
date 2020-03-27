@@ -4457,6 +4457,7 @@ plugins:
     clean:
       - crc: 0xA433A46E
         util: 'FO4Edit v4.0.2f'
+
   - name: 'Scrap Everything - Ultimate Edition.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/5320' ]
     group: *scrapGroup
@@ -4497,6 +4498,7 @@ plugins:
     clean:
       - crc: 0xDDDE682B
         util: 'FO4Edit v4.0.3'
+
   - name: 'Mechanist Lair Overhaul.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/23294' ]
     dirty:
