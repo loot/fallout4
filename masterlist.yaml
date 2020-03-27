@@ -4457,31 +4457,54 @@ plugins:
     clean:
       - crc: 0xA433A46E
         util: 'FO4Edit v4.0.2f'
-  - name: 'Scrap Everything.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/5320' ]
-    group: *scrapGroup
-    msg:
-      - *obsolete
-      - *doNotClean
+
   - name: 'Scrap Everything - Ultimate Edition.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/5320' ]
     group: *scrapGroup
-    msg: [ *doNotClean ]
+    clean:
+      - crc: 0x7296B759
+        util: 'FO4Edit v4.0.3'
   - name: 'Scrap Everything - (Core|Automatron|Far Harbor|Vault-Tec Workshop|Nuka World)\.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/5320' ]
-    group: *scrapGroup
     msg:
       - <<: *alreadyInX
         condition: 'active("Scrap Everything - Ultimate Edition.esp")'
         subs: [ 'Scrap Everything - Ultimate Edition.esp' ]
-      - type: say
-        content:
-          - lang: en
-            text: 'Consider using the "Ultimate Edition" of Scrap Everything, a combined version of all the Scrap Everything plugins you are already using.'
-          - lang: de
-            text: 'Ziehen Sie in Erwägung die "Ultimate Edition" von Scrap Everything zu nutzen, eine kombinierte Version von allen Scrap Everything Plugins die Sie bereits nutzen.'
-        condition: 'not active("Scrap Everything - Ultimate Edition.esp") and active("Scrap Everything - Core.esp") and active("Scrap Everything - Automatron.esp") and active("Scrap Everything - Far Harbor.esp") and active("Scrap Everything - Vault-Tec Workshop.esp") and active("Scrap Everything - Nuka World.esp")'
-      - *doNotClean
+  - name: 'Scrap Everything - Core.esp'
+    group: *scrapGroup
+    msg:
+      - <<: *patchIncluded
+        subs: [ 'Automatron' ]
+        condition: 'active("DLCRobot.esm") and not active("Scrap Everything - Automatron.esp")'
+      - <<: *patchIncluded
+        subs: [ 'Far Harbor' ]
+        condition: 'active("DLCCoast.esm") and not active("Scrap Everything - Far Harbor.esp")'
+      - <<: *patchIncluded
+        subs: [ 'Nuka World' ]
+        condition: 'active("DLCNukaWorld.esm") and not active("Scrap Everything - Nuka World.esp")'
+      - <<: *patchIncluded
+        subs: [ 'Vault-Tec Workshop' ]
+        condition: 'active("DLCworkshop03.esm") and not active("Scrap Everything - Vault-Tec Workshop.esp")'
+    clean:
+      - crc: 0x30C87739
+        util: 'FO4Edit v4.0.3'
+  - name: 'Scrap Everything - Automatron.esp'
+    clean:
+      - crc: 0x43928D5E
+        util: 'FO4Edit v4.0.3'
+  - name: 'Scrap Everything - Far Harbor.esp'
+    clean:
+      - crc: 0xDADEF2E2
+        util: 'FO4Edit v4.0.3'
+  - name: 'Scrap Everything - Nuka World.esp'
+    clean:
+      - crc: 0x4C0E7053
+        util: 'FO4Edit v4.0.3'
+  - name: 'Scrap Everything - Vault-Tec Workshop.esp'
+    clean:
+      - crc: 0xDDDE682B
+        util: 'FO4Edit v4.0.3'
+
   - name: 'Mechanist Lair Overhaul.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/23294' ]
     dirty:
