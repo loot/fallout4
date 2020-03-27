@@ -4472,6 +4472,19 @@ plugins:
         subs: [ 'Scrap Everything - Ultimate Edition.esp' ]
   - name: 'Scrap Everything - Core.esp'
     group: *scrapGroup
+    msg:
+      - <<: *patchIncluded
+        subs: [ 'Automatron' ]
+        condition: 'active("DLCRobot.esm") and not active("Scrap Everything - Automatron.esp")'
+      - <<: *patchIncluded
+        subs: [ 'Far Harbor' ]
+        condition: 'active("DLCCoast.esm") and not active("Scrap Everything - Far Harbor.esp")'
+      - <<: *patchIncluded
+        subs: [ 'Nuka World' ]
+        condition: 'active("DLCNukaWorld.esm") and not active("Scrap Everything - Nuka World.esp")'
+      - <<: *patchIncluded
+        subs: [ 'Vault-Tec Workshop' ]
+        condition: 'active("DLCworkshop03.esm") and not active("Scrap Everything - Vault-Tec Workshop.esp")'
     clean:
       - crc: 0x30C87739
         util: 'FO4Edit v4.0.3'
