@@ -4457,12 +4457,6 @@ plugins:
     clean:
       - crc: 0xA433A46E
         util: 'FO4Edit v4.0.2f'
-  - name: 'Scrap Everything.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/5320' ]
-    group: *scrapGroup
-    msg:
-      - *obsolete
-      - *doNotClean
   - name: 'Scrap Everything - Ultimate Edition.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/5320' ]
     group: *scrapGroup
