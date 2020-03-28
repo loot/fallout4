@@ -3804,7 +3804,7 @@ plugins:
         condition: 'version("SimSettlements_XPAC_IndustrialRevolution.esp", "4.2.3", <)'
       - <<: *alreadyInX
         subs: [ 'Sim Settlements Three-In-One' ]
-        condition: 'checksum("SimSettlements.esm", 79C8654E)'
+        condition: 'checksum("SimSettlements.esm", 098DA392) or checksum("SimSettlements.esm", 6924637A)'
     clean:
       - crc: 0x4A1596E4
         util: 'FO4Edit v4.0.3'
@@ -3819,7 +3819,7 @@ plugins:
         condition: 'version("SimSettlements_XPAC_RiseOfTheCommonwealth.esp", "4.2.0", <)'
       - <<: *alreadyInX
         subs: [ 'Sim Settlements Three-In-One' ]
-        condition: 'checksum("SimSettlements.esm", 79C8654E)'
+        condition: 'checksum("SimSettlements.esm", 098DA392) or checksum("SimSettlements.esm", 6924637A)'
   - name: 'Companion_ShutUp.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/25763' ]
     dirty:
