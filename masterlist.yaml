@@ -3801,7 +3801,7 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout4/mods/25213' ]
     msg:
       - <<: *obsolete
-        condition: 'version("SimSettlements_XPAC_IndustrialRevolution.esp", "4.0.10", <)'
+        condition: 'version("SimSettlements_XPAC_IndustrialRevolution.esp", "4.2.3", <)'
       - <<: *alreadyInX
         subs: [ 'Sim Settlements Three-In-One' ]
         condition: 'checksum("SimSettlements.esm", 79C8654E)'
@@ -3816,7 +3816,7 @@ plugins:
         util: 'FO4Edit v4.0.2f'
     msg:
       - <<: *obsolete
-        condition: 'version("SimSettlements_XPAC_RiseOfTheCommonwealth.esp", "4.0.10", <)'
+        condition: 'version("SimSettlements_XPAC_RiseOfTheCommonwealth.esp", "4.2.0", <)'
       - <<: *alreadyInX
         subs: [ 'Sim Settlements Three-In-One' ]
         condition: 'checksum("SimSettlements.esm", 79C8654E)'
