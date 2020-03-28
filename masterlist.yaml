@@ -2320,7 +2320,6 @@ plugins:
       - 'Eli Armor Compendium AE VIS Patch.esp'
       - 'llamaCompanionHeather-VIS Patch.esp'
       - 'llamaCompanionHeather-VIS-AE Patch.esp'
-      - 'SimSettlements_VIS.esp'
     clean:
       # Version 2.3, All DLC + AE
       - crc: 0x7FE05D2C
@@ -3213,15 +3212,6 @@ plugins:
       - <<: *alreadyInX
         condition: 'active("Armorsmith Extended.esp")'
         subs: [ 'Armorsmith Extended' ]
-  - name: 'SimSettlements_VIS.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/21872' ]
-    msg:
-      - type: warn
-        content:
-          - lang: en
-            text: "Sim Settlements has native support for Valdacil's Item Sorting since version 2.0. If you're using a version of Sim Settlements later than this, consider removing this mod."
-          - lang: de
-            text: "Sim Settlements hat native Unterstützung von Valdacil's Item Sorting seit Version 2.0. Sollten Sie eine Version von Sim Settlements neuer als diese verwenden, überlegen Sie diese Mod zu entfernen."
   - name: 'llamaCompanionHeather.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/23273' ]
     msg:
@@ -3781,55 +3771,71 @@ plugins:
     clean:
       - crc: 0x114C9C6A
         util: 'FO4Edit v4.0.2f'
+
+###### Sim Settlements ######
   - name: 'SimSettlements.esm'
     url: [ 'https://www.nexusmods.com/fallout4/mods/21872' ]
     after:
       - 'HUDFramework.esm'
-    dirty:
-      # v4.1.3 - Three-in-One
-      - <<: *quickClean
-        crc: 0x79C8654E
-        util: '[FO4Edit v4.0.2f](https://www.nexusmods.com/fallout4/mods/2737)'
-        itm: 1
-      # v4.1.3 - Main
-      - <<: *quickClean
-        crc: 0x14526CF1
-        util: '[FO4Edit v4.0.2f](https://www.nexusmods.com/fallout4/mods/2737)'
-        itm: 1
-    clean:
-      # v4.1.3 - Three-in-One
-      - crc: 0x1022E75C
-        util: 'FO4Edit v4.0.2f'
-      # v4.1.3 - Main
-      - crc: 0x0885D554
-        util: 'FO4Edit v4.0.2f'
+      - 'WorkshopFramework.esm'
     msg:
       - <<: *obsolete
-        condition: 'version("SimSettlements.esm", "4.1.3", <)'
+        condition: 'version("SimSettlements.esm", "4.2.4", <)'
+    dirty:
+      - <<: *quickClean
+        crc: 0x672EA719
+        util: '[FO4Edit v4.0.3](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 6
+      - <<: *quickClean
+        crc: 0x098DA392
+        util: '[FO4Edit v4.0.3](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 6
+  - name: 'SimSettlements_XPAC_Conqueror.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/37000' ]
+    dirty:
+      - <<: *quickClean
+        crc: 0xE1807157
+        util: '[FO4Edit v4.0.3](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 3
   - name: 'SimSettlements_XPAC_IndustrialRevolution.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/25213' ]
-    clean:
-      # 4.0.10
-      - crc: 0xA750D554
-        util: 'FO4Edit v4.0.2f'
     msg:
       - <<: *obsolete
-        condition: 'version("SimSettlements_XPAC_IndustrialRevolution.esp", "4.0.10", <)'
+        condition: 'version("SimSettlements_XPAC_IndustrialRevolution.esp", "4.2.3", <)'
       - <<: *alreadyInX
         subs: [ 'Sim Settlements Three-In-One' ]
-        condition: 'checksum("SimSettlements.esm", 79C8654E)'
+        condition: 'checksum("SimSettlements.esm", 098DA392) or checksum("SimSettlements.esm", 6924637A)'
+    clean:
+      - crc: 0x4A1596E4
+        util: 'FO4Edit v4.0.3'
   - name: 'SimSettlements_XPAC_RiseOfTheCommonwealth.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/28599' ]
-    clean:
-      # v4.0.10
-      - crc: 0x1281BDF1
-        util: 'FO4Edit v4.0.2f'
     msg:
       - <<: *obsolete
-        condition: 'version("SimSettlements_XPAC_RiseOfTheCommonwealth.esp", "4.0.10", <)'
+        condition: 'version("SimSettlements_XPAC_RiseOfTheCommonwealth.esp", "4.2.0", <)'
       - <<: *alreadyInX
         subs: [ 'Sim Settlements Three-In-One' ]
-        condition: 'checksum("SimSettlements.esm", 79C8654E)'
+        condition: 'checksum("SimSettlements.esm", 098DA392) or checksum("SimSettlements.esm", 6924637A)'
+    clean:
+      - crc: 0xDC22546C
+        util: 'FO4Edit v4.0.3'
+
+  - name: 'SimSettlements_MegaPack_YearOne.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/30396' ]
+    clean:
+      - crc: 0xE755E55E
+        util: 'FO4Edit v4.0.3'
+  - name: 'SimSettlements_MegaPack_YearTwo.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/37983' ]
+    clean:
+      - crc: 0x13F42B4B
+        util: 'FO4Edit v4.0.3'
+  - name: 'SimSettlements_MegaPack_YearThree.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/43718' ]
+    clean:
+      - crc: 0x6E30DA77
+        util: 'FO4Edit v4.0.3'
+
   - name: 'Companion_ShutUp.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/25763' ]
     dirty:
