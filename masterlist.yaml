@@ -3787,7 +3787,7 @@ plugins:
       - 'HUDFramework.esm'
     msg:
       - <<: *obsolete
-        condition: 'version("SimSettlements.esm", "4.1.3", <)'
+        condition: 'version("SimSettlements.esm", "4.2.4", <)'
     dirty:
       - <<: *quickClean
         crc: 0x672EA719
