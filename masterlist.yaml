@@ -3777,6 +3777,7 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout4/mods/21872' ]
     after:
       - 'HUDFramework.esm'
+      - 'WorkshopFramework.esm'
     msg:
       - <<: *obsolete
         condition: 'version("SimSettlements.esm", "4.2.4", <)'
