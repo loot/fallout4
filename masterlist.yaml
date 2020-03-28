@@ -3789,6 +3789,13 @@ plugins:
         crc: 0x098DA392
         util: '[FO4Edit v4.0.3](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 6
+  - name: 'SimSettlements_XPAC_Conqueror.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/37000' ]
+    dirty:
+      - <<: *quickClean
+        crc: 0xE1807157
+        util: '[FO4Edit v4.0.3](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 3
   - name: 'SimSettlements_XPAC_IndustrialRevolution.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/25213' ]
     msg:
