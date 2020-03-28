@@ -3771,6 +3771,8 @@ plugins:
     clean:
       - crc: 0x114C9C6A
         util: 'FO4Edit v4.0.2f'
+
+###### Sim Settlements ######
   - name: 'SimSettlements.esm'
     url: [ 'https://www.nexusmods.com/fallout4/mods/21872' ]
     after:
@@ -3809,6 +3811,7 @@ plugins:
     clean:
       - crc: 0xDC22546C
         util: 'FO4Edit v4.0.3'
+
   - name: 'Companion_ShutUp.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/25763' ]
     dirty:
