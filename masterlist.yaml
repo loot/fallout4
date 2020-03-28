@@ -3812,6 +3812,12 @@ plugins:
       - crc: 0xDC22546C
         util: 'FO4Edit v4.0.3'
 
+  - name: 'SimSettlements_MegaPack_YearOne.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/30396' ]
+    clean:
+      - crc: 0xE755E55E
+        util: 'FO4Edit v4.0.3'
+
   - name: 'Companion_ShutUp.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/25763' ]
     dirty:
