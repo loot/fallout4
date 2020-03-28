@@ -3799,16 +3799,15 @@ plugins:
         itm: 6
   - name: 'SimSettlements_XPAC_IndustrialRevolution.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/25213' ]
-    clean:
-      # 4.0.10
-      - crc: 0xA750D554
-        util: 'FO4Edit v4.0.2f'
     msg:
       - <<: *obsolete
         condition: 'version("SimSettlements_XPAC_IndustrialRevolution.esp", "4.0.10", <)'
       - <<: *alreadyInX
         subs: [ 'Sim Settlements Three-In-One' ]
         condition: 'checksum("SimSettlements.esm", 79C8654E)'
+    clean:
+      - crc: 0x4A1596E4
+        util: 'FO4Edit v4.0.3'
   - name: 'SimSettlements_XPAC_RiseOfTheCommonwealth.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/28599' ]
     clean:
