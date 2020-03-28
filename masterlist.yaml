@@ -2320,7 +2320,6 @@ plugins:
       - 'Eli Armor Compendium AE VIS Patch.esp'
       - 'llamaCompanionHeather-VIS Patch.esp'
       - 'llamaCompanionHeather-VIS-AE Patch.esp'
-      - 'SimSettlements_VIS.esp'
     clean:
       # Version 2.3, All DLC + AE
       - crc: 0x7FE05D2C
@@ -3213,15 +3212,6 @@ plugins:
       - <<: *alreadyInX
         condition: 'active("Armorsmith Extended.esp")'
         subs: [ 'Armorsmith Extended' ]
-  - name: 'SimSettlements_VIS.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/21872' ]
-    msg:
-      - type: warn
-        content:
-          - lang: en
-            text: "Sim Settlements has native support for Valdacil's Item Sorting since version 2.0. If you're using a version of Sim Settlements later than this, consider removing this mod."
-          - lang: de
-            text: "Sim Settlements hat native Unterstützung von Valdacil's Item Sorting seit Version 2.0. Sollten Sie eine Version von Sim Settlements neuer als diese verwenden, überlegen Sie diese Mod zu entfernen."
   - name: 'llamaCompanionHeather.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/23273' ]
     msg:
