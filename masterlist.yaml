@@ -3791,9 +3791,6 @@ plugins:
         itm: 6
   - name: 'SimSettlements_XPAC_Conqueror.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/37000' ]
-    req:
-      - name: 'WorkshopFramework.esm'
-        display: '[Workshop Framework](https://www.nexusmods.com/fallout4/mods/35004)'
     dirty:
       - <<: *quickClean
         crc: 0xE1807157
