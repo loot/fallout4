@@ -5526,3 +5526,5 @@ plugins:
   - name: 'RAW INPUT.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/27019' ]
     after: [ 'Z_Horizon.esp' ]
+
+###### Horizon ######
