@@ -5529,23 +5529,28 @@ plugins:
 
 ###### Horizon ######
   - name: 'Z_Horizon.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/17374' ]
     after: [ 'EveryonesBestFriend.esp' ]
 
   - name: 'Z_Architect_Extras.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/17374' ]
     req: [ 'Z_Horizon.esp' ]
     after: [ 'Z_Extras.esp' ]
   - name: 'Z_Architect_EnhancedSettlements.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/17374' ]
     req: [ 'Z_Horizon.esp' ]
     after:
       - 'Z_Extras.esp'
       - 'Z_Architect_Extras.esp'
   - name: 'Z_Architect_EnhancedSettlements_DLC.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/17374' ]
     req: [ 'Z_Horizon.esp' ]
     after:
       - 'Z_Extras.esp'
       - 'Z_Architect_Extras.esp'
       - 'Z_Architect_EnhancedSettlements.esp'
   - name: 'Z_Architect_HomePlate.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/17374' ]
     req: [ 'Z_Horizon.esp' ]
     after:
       - 'Z_Extras.esp'
@@ -5553,4 +5558,5 @@ plugins:
       - 'Z_Architect_EnhancedSettlements.esp'
       - 'Z_Architect_EnhancedSettlements_DLC.esp'
   - name: 'Z_Extras.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/17374' ]
     req: [ 'Z_Horizon.esp' ]
