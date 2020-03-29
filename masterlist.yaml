@@ -5528,3 +5528,6 @@ plugins:
     after: [ 'Z_Horizon.esp' ]
 
 ###### Horizon ######
+  - name: 'Z_Horizon.esp'
+    after: [ 'EveryonesBestFriend.esp' ]
+
