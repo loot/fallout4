@@ -5531,3 +5531,13 @@ plugins:
   - name: 'Z_Horizon.esp'
     after: [ 'EveryonesBestFriend.esp' ]
 
+  - name: 'Z_Architect_Extras.esp'
+    req: [ 'Z_Horizon.esp' ]
+  - name: 'Z_Architect_EnhancedSettlements.esp'
+    req: [ 'Z_Horizon.esp' ]
+  - name: 'Z_Architect_EnhancedSettlements_DLC.esp'
+    req: [ 'Z_Horizon.esp' ]
+  - name: 'Z_Architect_HomePlate.esp'
+    req: [ 'Z_Horizon.esp' ]
+  - name: 'Z_Extras.esp'
+    req: [ 'Z_Horizon.esp' ]
