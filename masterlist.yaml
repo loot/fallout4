@@ -810,18 +810,18 @@ groups:
   - name: &scrapGroup Scrap Everything
     after: [ default ]
 
-  - name: &lightingGroup Lighting
+  - name: &horizonGroup Horizon
+    description: 'A group for Horizon modules that need to be sorted late.'
     after: [ *scrapGroup ]
+
+  - name: &lightingGroup Lighting
+    after: [ *horizonGroup ]
 
   - name: &altStartGroup Alternate Start
     after: [ *lightingGroup ]
 
-  - name: &horizonGroup Horizon
-    description: 'A group for Horizon modules that need to be sorted late.'
-    after: [ *altStartGroup ]
-
   - name: &dynamicPatchesGroup Dynamic Patches
-    after: [ *horizonGroup ]
+    after: [ *altStartGroup ]
 
 plugins:
 ###### Official DLC plugins ######
