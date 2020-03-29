@@ -816,8 +816,12 @@ groups:
   - name: &altStartGroup Alternate Start
     after: [ *lightingGroup ]
 
-  - name: &dynamicPatchesGroup Dynamic Patches
+  - name: &horizonGroup Horizon
+    description: 'A group for Horizon modules that need to be sorted late.'
     after: [ *altStartGroup ]
+
+  - name: &dynamicPatchesGroup Dynamic Patches
+    after: [ *horizonGroup ]
 
 plugins:
 ###### Official DLC plugins ######
