@@ -5533,11 +5533,24 @@ plugins:
 
   - name: 'Z_Architect_Extras.esp'
     req: [ 'Z_Horizon.esp' ]
+    after: [ 'Z_Extras.esp' ]
   - name: 'Z_Architect_EnhancedSettlements.esp'
     req: [ 'Z_Horizon.esp' ]
+    after:
+      - 'Z_Extras.esp'
+      - 'Z_Architect_Extras.esp'
   - name: 'Z_Architect_EnhancedSettlements_DLC.esp'
     req: [ 'Z_Horizon.esp' ]
+    after:
+      - 'Z_Extras.esp'
+      - 'Z_Architect_Extras.esp'
+      - 'Z_Architect_EnhancedSettlements.esp'
   - name: 'Z_Architect_HomePlate.esp'
     req: [ 'Z_Horizon.esp' ]
+    after:
+      - 'Z_Extras.esp'
+      - 'Z_Architect_Extras.esp'
+      - 'Z_Architect_EnhancedSettlements.esp'
+      - 'Z_Architect_EnhancedSettlements_DLC.esp'
   - name: 'Z_Extras.esp'
     req: [ 'Z_Horizon.esp' ]
