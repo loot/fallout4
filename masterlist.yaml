@@ -5555,6 +5555,7 @@ plugins:
       - 'ARWCSM - 7 - Modular - Vanilla - Aid-Chem-Food-Drink.esp'
       - 'ARWCSM - 8 - Modular - Vanilla Weights - Misc-Quest-Unique-Rare.esp'
       - 'ARWCSM - 9 - Modular - Vanilla Weights - Scrappable Junk.esp'
+      - 'BBS000-F04-Ultimate-DEF_UI.esp'
       - 'BetterItemSorting.esp'
       - 'BetterItemSorting-AID.esp'
       - 'BetterItemSorting-APPAREL.esp'
