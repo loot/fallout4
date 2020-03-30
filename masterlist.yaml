@@ -5574,6 +5574,10 @@ plugins:
       - 'Z_Architect_EnhancedSettlements_DLC.esp'
   - name: 'Z_Architect_Extras.esp'
     req: [ 'Z_Horizon.esp' ]
+  - name: 'Z_BlurRemoval.esp'
+    req: [ 'Z_Horizon.esp' ]
+  - name: 'Z_CameraAddon.esp'
+    req: [ 'Z_Horizon.esp' ]
   - name: 'Z_Extras.esp'
     req: [ 'Z_Horizon.esp' ]
   - name: 'Z_Horizon_Desolation.esp'
