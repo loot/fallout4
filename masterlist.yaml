@@ -5543,6 +5543,10 @@ plugins:
     inc:
       - 'Arbitration - Molotov.esp'
       - 'Arbitration - Recommended Core.esp'
+      - 'ValdacilsItemSorting-00-ValsPicks-DLCVersion.esp'
+      - 'ValdacilsItemSorting-00-ValsPicks-NoDLCVersion.esp'
+      - 'ValdacilsItemSorting-00-ValsPicks-DLCVersion-VanillaWeight.esp'
+      - 'ValdacilsItemSorting-00-ValsPicks-NoDLCVersion-VanillaWeight.esp'
     msg:
       - <<: *patchIncluded
         subs: [ 'Automatron' ]
