@@ -5543,6 +5543,8 @@ plugins:
     inc:
       - 'Arbitration - Molotov.esp'
       - 'Arbitration - Recommended Core.esp'
+      - name: 'Armorsmith Extended.esp'
+        condition: 'version("Z_Horizon.esp", "1.6.0", >=)'
       - 'ValdacilsItemSorting-00-ValsPicks-DLCVersion.esp'
       - 'ValdacilsItemSorting-00-ValsPicks-NoDLCVersion.esp'
       - 'ValdacilsItemSorting-00-ValsPicks-DLCVersion-VanillaWeight.esp'
