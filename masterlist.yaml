@@ -5552,9 +5552,7 @@ plugins:
 
   - name: 'Z_Architect_Extras.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/17374' ]
-    group: *horizonGroup
     req: [ 'Z_Horizon.esp' ]
-    after: [ 'Z_Extras.esp' ]
   - name: 'Z_Architect_EnhancedSettlements.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/17374' ]
     group: *horizonGroup
@@ -5581,5 +5579,4 @@ plugins:
       - 'Z_Architect_EnhancedSettlements_DLC.esp'
   - name: 'Z_Extras.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/17374' ]
-    group: *horizonGroup
     req: [ 'Z_Horizon.esp' ]
