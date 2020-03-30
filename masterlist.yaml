@@ -5544,6 +5544,7 @@ plugins:
       - 'Arbitration - Molotov.esp'
       - 'Arbitration - Recommended Core.esp'
       # Carry Weight Mods
+      - 'CompanionCarryWeightModifications.esp'
       - 'UnlimitedDogmeatCarryWeight.esp'
       # Crafting Mods
       - 'AmmoCrafting.esp'
