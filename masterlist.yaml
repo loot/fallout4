@@ -5568,6 +5568,8 @@ plugins:
       - 'BetterItemSorting-JUNK.esp'
       - 'BetterItemSorting-MISC.esp'
       - 'BetterItemSorting-WEAPONS.esp'
+      - 'CraftModFullNames.esp'
+      - 'CraftModSort_Alpha.esp'
       - 'Simplified Sorting.esp'
       - 'ValdacilsItemSorting-00-ValsPicks-DLCVersion.esp'
       - 'ValdacilsItemSorting-00-ValsPicks-NoDLCVersion.esp'
