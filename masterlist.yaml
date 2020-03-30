@@ -4037,6 +4037,8 @@ plugins:
         util: FO4Edit v3.2.1
   - name: 'AmazingFollowerTweaks.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/26976' ]
+    after:
+      - 'IcebreakerCDO-Piper.esp'
     inc:
       name: 'EFF.esp'
       display: 'Unlimited Companion Framework **EFF.esp**'
