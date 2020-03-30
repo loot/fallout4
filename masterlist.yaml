@@ -5577,6 +5577,12 @@ plugins:
   - name: 'Z_Architect_Extras.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/17374' ]
     req: [ 'Z_Horizon.esp' ]
+  - name: 'Z_Horizon_Diff_(Cutthroat|Novice|Outcast|Veteran|Wanderer)\.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/17374' ]
+    msg:
+      - <<: *useOnlyOneX
+        subs: [ 'Horizon Difficulty' ]
+        condition: 'many("Z_Horizon_Diff_(Cutthroat|Novice|Outcast|Veteran|Wanderer)\.esp")'
   - name: 'Z_Extras.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/17374' ]
     req: [ 'Z_Horizon.esp' ]
