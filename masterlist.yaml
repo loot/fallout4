@@ -5550,6 +5550,8 @@ plugins:
       - 'ConcealedArmor.esp'
       - 'ConcealedArmor.esm'
       - 'Craftable Armor Size.esp'
+      # Power Armour Overhauls
+      - 'Consistent Power Armor Overhaul.esp'
       # Sorting Mods
       - 'ARWCSM - 1 - Full - Weightless.esp'
       - 'ARWCSM - 2 - Full - Vanilla Weights.esp'
