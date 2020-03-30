@@ -5663,3 +5663,9 @@ plugins:
       - <<: *useOnlyOneX
         subs: [ 'Horizon Difficulty' ]
         condition: 'many("Z_Horizon_Diff_(Cutthroat|Novice|Outcast|Veteran|Wanderer)\.esp")'
+
+  - name: 'Z_SettlementLimits.esp'
+    msg:
+      - <<: *alreadyInX
+        subs: [ 'Z_Architect_EnhancedSettlements.esp' ]
+        condition: 'active("Z_Architect_EnhancedSettlements.esp")'
