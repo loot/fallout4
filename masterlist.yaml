@@ -5551,6 +5551,7 @@ plugins:
       - 'BetterItemSorting-JUNK.esp'
       - 'BetterItemSorting-MISC.esp'
       - 'BetterItemSorting-WEAPONS.esp'
+      - 'Simplified Sorting.esp'
       - 'ValdacilsItemSorting-00-ValsPicks-DLCVersion.esp'
       - 'ValdacilsItemSorting-00-ValsPicks-NoDLCVersion.esp'
       - 'ValdacilsItemSorting-00-ValsPicks-DLCVersion-VanillaWeight.esp'
