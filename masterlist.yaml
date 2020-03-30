@@ -5544,6 +5544,7 @@ plugins:
     inc:
       - 'Arbitration - Molotov.esp'
       - 'Arbitration - Recommended Core.esp'
+      - 'UnbogusFallout.esp'
       # Carry Weight Mods
       - 'Carry Weight Wedding Rings.esp'
       - 'CompanionCarryWeightModifications.esp'
