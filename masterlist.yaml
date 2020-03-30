@@ -5586,3 +5586,7 @@ plugins:
   - name: 'Z_Extras.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/17374' ]
     req: [ 'Z_Horizon.esp' ]
+
+  - name: 'Z_Horizon_Desolation.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/17374' ]
+    after: [ 'Z_Horizon_Mode_Scavenger.esp' ]
