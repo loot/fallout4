@@ -4039,6 +4039,7 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout4/mods/26976' ]
     after:
       - 'IcebreakerCDO-Piper.esp'
+      - 'PlayerComments.esp'
     inc:
       name: 'EFF.esp'
       display: 'Unlimited Companion Framework **EFF.esp**'
