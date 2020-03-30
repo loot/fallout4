@@ -5560,6 +5560,8 @@ plugins:
       - 'Better Armour & Weapon Naming - All DLC.esp'
       - 'Better Armour & Weapon Naming - Automatron.esp'
       - 'Better Armour & Weapon Naming - Far Harbour.esp'
+      - 'Better Inventory Sorting - Armors.esp'
+      - 'Better Inventory Sorting - Misc.esp'
       - 'BetterItemSorting.esp'
       - 'BetterItemSorting-AID.esp'
       - 'BetterItemSorting-APPAREL.esp'
