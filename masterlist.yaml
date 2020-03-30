@@ -5586,6 +5586,7 @@ plugins:
       - 'ValdacilsItemSorting-SurvivalEffects.esp'
       - 'VIS-G Item Sorting.esp'
       # Survival Mode Mods
+      - 'FROST.esp'
       - 'SurvivalOptions.esp'
     msg:
       - <<: *patchIncluded
