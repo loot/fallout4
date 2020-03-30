@@ -5550,9 +5550,6 @@ plugins:
         subs: [ '**Scripts/Hardcore/hc_managerscript.pex**' ]
         condition: 'file("Z_Horizon - Main.ba2") and file("Scripts/Hardcore/hc_managerscript.pex")'
 
-  - name: 'Z_Architect_Extras.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/17374' ]
-    req: [ 'Z_Horizon.esp' ]
   - name: 'Z_Architect_EnhancedSettlements.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/17374' ]
     group: *horizonGroup
@@ -5577,6 +5574,9 @@ plugins:
       - 'Z_Architect_Extras.esp'
       - 'Z_Architect_EnhancedSettlements.esp'
       - 'Z_Architect_EnhancedSettlements_DLC.esp'
+  - name: 'Z_Architect_Extras.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/17374' ]
+    req: [ 'Z_Horizon.esp' ]
   - name: 'Z_Extras.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/17374' ]
     req: [ 'Z_Horizon.esp' ]
