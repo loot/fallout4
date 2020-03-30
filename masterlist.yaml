@@ -2108,6 +2108,7 @@ plugins:
   # Valdacil's Item Sorting
   - name: 'ValdacilsItemSorting-.*\.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/3877' ]
+    inc: [ 'Z_Horizon.esp' ]
   - name: 'ValdacilsItemSorting-00-ValsPicks-NoDLCVersion(-VanillaWeight)?\.esp'
     msg: [ *dlcVersion ]
   - name: 'ValdacilsItemSorting-00-ValsPicks-(NoDLCVersion|DLCVersion)(-VanillaWeight)?\.esp'
@@ -5596,11 +5597,6 @@ plugins:
       - 'Sort My Stuff - Aid.esp'
       - 'Swanndolia''s sorting.esp'
       - 'ValAllInOneByLLX.esp'
-      - 'ValdacilsItemSorting-00-ValsPicks-DLCVersion.esp'
-      - 'ValdacilsItemSorting-00-ValsPicks-NoDLCVersion.esp'
-      - 'ValdacilsItemSorting-00-ValsPicks-DLCVersion-VanillaWeight.esp'
-      - 'ValdacilsItemSorting-00-ValsPicks-NoDLCVersion-VanillaWeight.esp'
-      - 'ValdacilsItemSorting-SurvivalEffects.esp'
       - 'VIS-G Item Sorting.esp'
       # Survival Mode Mods
       - 'FROST.esp'
