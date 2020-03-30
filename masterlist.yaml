@@ -5585,6 +5585,8 @@ plugins:
       - 'ValdacilsItemSorting-00-ValsPicks-NoDLCVersion-VanillaWeight.esp'
       - 'ValdacilsItemSorting-SurvivalEffects.esp'
       - 'VIS-G Item Sorting.esp'
+      # Survival Mode Mods
+      - 'SurvivalOptions.esp'
     msg:
       - <<: *patchIncluded
         subs: [ 'Automatron' ]
