@@ -5637,27 +5637,17 @@ plugins:
         subs: [ 'Z_Horizon_DLC_All.esp' ]
         condition: 'active("Z_Horizon_DLC_All.esp")'
 
-  - name: 'Z_Architect_EnhancedSettlements.esp'
+  - name: 'Z_Architect_(EnhancedSettlements(_DLC)?|HomePlate)\.esp'
     group: *horizonGroup
     req: [ 'Z_Horizon.esp' ]
   - name: 'Z_Architect_EnhancedSettlements_DLC.esp'
-    group: *horizonGroup
-    req: [ 'Z_Horizon.esp' ]
     after: [ 'Z_Architect_EnhancedSettlements.esp' ]
   - name: 'Z_Architect_HomePlate.esp'
-    group: *horizonGroup
-    req: [ 'Z_Horizon.esp' ]
     after:
       - 'Z_Architect_EnhancedSettlements.esp'
       - 'Z_Architect_EnhancedSettlements_DLC.esp'
 
-  - name: 'Z_Architect_Extras.esp'
-    req: [ 'Z_Horizon.esp' ]
-  - name: 'Z_BlurRemoval.esp'
-    req: [ 'Z_Horizon.esp' ]
-  - name: 'Z_CameraAddon.esp'
-    req: [ 'Z_Horizon.esp' ]
-  - name: 'Z_Extras.esp'
+  - name: 'Z_(Architect_Extras|BlurRemoval|CameraAddon|Extras)\.esp'
     req: [ 'Z_Horizon.esp' ]
   - name: 'Z_Horizon_Desolation.esp'
     after: [ 'Z_Horizon_Mode_Scavenger.esp' ]
