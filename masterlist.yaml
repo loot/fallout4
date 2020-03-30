@@ -4035,6 +4035,17 @@ plugins:
     clean:
       - crc: 0xc567fe75
         util: FO4Edit v3.2.1
+  - name: 'AmazingFollowerTweaks.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/26976' ]
+    after:
+      - 'IcebreakerCDO-Piper.esp'
+      - 'PlayerComments.esp'
+    inc:
+      - name: 'EFF.esp'
+        display: 'Unlimited Companion Framework **EFF.esp**'
+    clean:
+      - crc: 0x9DEFF15C
+        util: 'FO4Edit v4.0.3'
   - name: 'EFF.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/11829' ]
     clean:
@@ -4043,6 +4054,9 @@ plugins:
   - name: 'EveryonesBestFriend.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/13459' ]
     msg:
+      - <<: *alreadyInOrFixedByX
+        subs: [ '[Amazing Follower Tweaks](https://www.nexusmods.com/fallout4/mods/26976/)' ]
+        condition: 'active("AmazingFollowerTweaks.esp")'
       - <<: *alreadyInOrFixedByX
         subs: [ '[Unlimited Companion Framework](https://www.nexusmods.com/fallout4/mods/11829/)' ]
         condition: 'active("EFF.esp")'
