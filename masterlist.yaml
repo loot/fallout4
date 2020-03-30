@@ -5574,6 +5574,8 @@ plugins:
       - 'CraftModFullNames.esp'
       - 'CraftModSort_Alpha.esp'
       - 'Simplified Sorting.esp'
+      - 'SimplySortedVanilla.esl'
+      - 'SimplySortedVanilla.esp'
       - 'Sort My Stuff - Aid.esp'
       - 'Swanndolia''s sorting.esp'
       - 'ValAllInOneByLLX.esp'
