@@ -4490,6 +4490,7 @@ plugins:
         util: 'FO4Edit v4.0.3'
   - name: 'Scrap Everything - (Core|Automatron|Far Harbor|Vault-Tec Workshop|Nuka World)\.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/5320' ]
+    inc: [ 'Z_Architect_EnhancedSettlements.esp' ]
     msg:
       - <<: *alreadyInX
         condition: 'active("Scrap Everything - Ultimate Edition.esp")'
