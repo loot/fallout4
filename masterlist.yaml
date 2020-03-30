@@ -5544,6 +5544,24 @@ plugins:
       - 'Arbitration - Molotov.esp'
       - 'Arbitration - Recommended Core.esp'
     msg:
+      - <<: *patchIncluded
+        subs: [ 'Automatron' ]
+        condition: 'active("DLCRobot.esm") and not active("Z_Horizon_DLC_Automatron.esp") and not active("Z_Horizon_DLC_All.esp")'
+      - <<: *patchIncluded
+        subs: [ 'Far Harbor' ]
+        condition: 'active("DLCCoast.esm") and not active("Z_Horizon_DLC_FarHarbor.esp") and not active("Z_Horizon_DLC_All.esp")'
+      - <<: *patchIncluded
+        subs: [ 'Nuka World' ]
+        condition: 'active("DLCNukaWorld.esm") and not active("Z_Horizon_DLC_Nuka.esp") and not active("Z_Horizon_DLC_All.esp")'
+      - <<: *patchIncluded
+        subs: [ 'Wasteland Workshop' ]
+        condition: 'active("DLCworkshop01.esm") and not active("Z_Horizon_DLC_Workshop01.esp") and not active("Z_Horizon_DLC_All.esp")'
+      - <<: *patchIncluded
+        subs: [ 'Contraptions Workshop' ]
+        condition: 'active("DLCworkshop02.esm") and not active("Z_Horizon_DLC_Workshop02.esp") and not active("Z_Horizon_DLC_All.esp")'
+      - <<: *patchIncluded
+        subs: [ 'Vault-Tec Workshop' ]
+        condition: 'active("DLCworkshop03.esm") and not active("Z_Horizon_DLC_Workshop03.esp") and not active("Z_Horizon_DLC_All.esp")'
       - type: error
         content:
           - lang: en
