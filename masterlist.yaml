@@ -5504,3 +5504,11 @@ plugins:
         crc: 0x2DFE73AE
         util: '[FO4Edit v4.0.2j](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 11
+
+  - name: 'Immersive Fallout - (Movement|Real Recoil|Unforgiving Recoil|Vanilla Laser|Vanilla Player).*\.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/30151' ]
+    after: [ 'Z_Horizon.esp' ]
+
+  - name: 'RAW INPUT.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/27019' ]
+    after: [ 'Z_Horizon.esp' ]
