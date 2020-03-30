@@ -5543,6 +5543,8 @@ plugins:
     inc:
       - 'Arbitration - Molotov.esp'
       - 'Arbitration - Recommended Core.esp'
+      # Carry Weight Mods
+      - 'UnlimitedDogmeatCarryWeight.esp'
       # Crafting Mods
       - 'AmmoCrafting.esp'
       - name: 'Armorsmith Extended.esp'
