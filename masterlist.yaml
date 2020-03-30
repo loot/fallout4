@@ -4049,6 +4049,9 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout4/mods/13459' ]
     msg:
       - <<: *alreadyInOrFixedByX
+        subs: [ '[Amazing Follower Tweaks](https://www.nexusmods.com/fallout4/mods/26976/)' ]
+        condition: 'active("AmazingFollowerTweaks.esp")'
+      - <<: *alreadyInOrFixedByX
         subs: [ '[Unlimited Companion Framework](https://www.nexusmods.com/fallout4/mods/11829/)' ]
         condition: 'active("EFF.esp")'
       - <<: *patch3rdParty
