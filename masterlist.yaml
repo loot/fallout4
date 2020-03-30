@@ -5632,22 +5632,14 @@ plugins:
   - name: 'Z_Architect_EnhancedSettlements.esp'
     group: *horizonGroup
     req: [ 'Z_Horizon.esp' ]
-    after:
-      - 'Z_Extras.esp'
-      - 'Z_Architect_Extras.esp'
   - name: 'Z_Architect_EnhancedSettlements_DLC.esp'
     group: *horizonGroup
     req: [ 'Z_Horizon.esp' ]
-    after:
-      - 'Z_Extras.esp'
-      - 'Z_Architect_Extras.esp'
-      - 'Z_Architect_EnhancedSettlements.esp'
+    after: [ 'Z_Architect_EnhancedSettlements.esp' ]
   - name: 'Z_Architect_HomePlate.esp'
     group: *horizonGroup
     req: [ 'Z_Horizon.esp' ]
     after:
-      - 'Z_Extras.esp'
-      - 'Z_Architect_Extras.esp'
       - 'Z_Architect_EnhancedSettlements.esp'
       - 'Z_Architect_EnhancedSettlements_DLC.esp'
   - name: 'Z_Architect_Extras.esp'
