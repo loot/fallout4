@@ -5551,6 +5551,12 @@ plugins:
         subs: [ '**Scripts/Hardcore/hc_managerscript.pex**' ]
         condition: 'file("Scripts/Hardcore/hc_managerscript.pex") and not checksum("Scripts/Hardcore/hc_managerscript.pex", 2FEC9CFC)'
 
+  - name: 'Z_Horizon_DLC_(Automatron|FarHarbor|Nuka|Workshop\d\d)\.esp'
+    msg:
+      - <<: *alreadyInX
+        subs: [ 'Z_Horizon_DLC_All.esp' ]
+        condition: 'active("Z_Horizon_DLC_All.esp")'
+
   - name: 'Z_Architect_EnhancedSettlements.esp'
     group: *horizonGroup
     req: [ 'Z_Horizon.esp' ]
