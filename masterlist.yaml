@@ -5546,6 +5546,8 @@ plugins:
       # Carry Weight Mods
       - 'Carry Weight Wedding Rings.esp'
       - 'CompanionCarryWeightModifications.esp'
+      - 'IncreasedCarryWeight.esp'
+      - 'IncreasedCarryWeightPlus.esp'
       - 'UnlimitedDogmeatCarryWeight.esp'
       # Crafting Mods
       - 'AmmoCrafting.esp'
