@@ -4035,6 +4035,8 @@ plugins:
     clean:
       - crc: 0xc567fe75
         util: FO4Edit v3.2.1
+  - name: 'AmazingFollowerTweaks.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/11829' ]
   - name: 'EFF.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/11829' ]
     clean:
