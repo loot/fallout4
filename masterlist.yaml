@@ -5549,7 +5549,7 @@ plugins:
           - lang: en
             text: 'Delete loose file %1%. This plugins file must take precedence.'
         subs: [ '**Scripts/Hardcore/hc_managerscript.pex**' ]
-        condition: 'file("Z_Horizon - Main.ba2") and file("Scripts/Hardcore/hc_managerscript.pex")'
+        condition: 'file("Scripts/Hardcore/hc_managerscript.pex") and not checksum("Scripts/Hardcore/hc_managerscript.pex", 2FEC9CFC)'
 
   - name: 'Z_Architect_EnhancedSettlements.esp'
     group: *horizonGroup
