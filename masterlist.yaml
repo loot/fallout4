@@ -5539,6 +5539,9 @@ plugins:
       - 'advancedAITweaks.esp'
       - 'Arbitration - Better Combat AI.esp'
       - 'EveryonesBestFriend.esp'
+    inc:
+      - 'Arbitration - Molotov.esp'
+      - 'Arbitration - Recommended Core.esp'
     msg:
       - type: error
         content:
