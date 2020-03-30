@@ -4068,7 +4068,7 @@ plugins:
         subs:
           - 'Unofficial Fallout 4 Patch'
           - '[Everyone''s Best Friend - UFO4P compatibility fix](https://www.nexusmods.com/fallout4/mods/43409)'
-        condition: 'active("Unofficial Fallout 4 Patch.esp") and not checksum("scripts/followersscript.pex", 11074D38)'
+        condition: 'active("Unofficial Fallout 4 Patch.esp") and not active("Z_Horizon.esp") and not checksum("scripts/followersscript.pex", 11074D38)'
     clean:
       - crc: 0x016DB1E5
         util: 'FO4Edit v4.0.3'
@@ -5536,6 +5536,20 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout4/mods/17374' ]
     group: *horizonGroup
     after: [ 'EveryonesBestFriend.esp' ]
+    msg:
+      - type: error
+        content:
+          - lang: en
+            text: 'Delete %1% from %2%. %3%''s script must take precedence.'
+          - lang: de
+            text: 'Löschen Sie %1% von %2%. %3%''s Skript muss Vorrang haben.'
+          - lang: ja
+            text: '%2%の%1%は削除してください。%3%側のスクリプトを優先させる必要があります。'
+        subs:
+          - 'hc_managerscript.pex'
+          - 'Everyone''s Best Friend'
+          - 'Horizon'
+        condition: 'active("EveryonesBestFriend.esp") and file("Scripts/Hardcore/hc_managerscript.pex")'
 
   - name: 'Z_Architect_Extras.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/17374' ]
