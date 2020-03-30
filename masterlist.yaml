@@ -5648,6 +5648,7 @@ plugins:
     after:
       - 'Z_Architect_EnhancedSettlements.esp'
       - 'Z_Architect_EnhancedSettlements_DLC.esp'
+
   - name: 'Z_Architect_Extras.esp'
     req: [ 'Z_Horizon.esp' ]
   - name: 'Z_BlurRemoval.esp'
@@ -5663,7 +5664,6 @@ plugins:
       - <<: *useOnlyOneX
         subs: [ 'Horizon Difficulty' ]
         condition: 'many("Z_Horizon_Diff_(Cutthroat|Novice|Outcast|Veteran|Wanderer)\.esp")'
-
   - name: 'Z_SettlementLimits.esp'
     msg:
       - <<: *alreadyInX
