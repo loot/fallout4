@@ -5574,6 +5574,7 @@ plugins:
       - 'CraftModFullNames.esp'
       - 'CraftModSort_Alpha.esp'
       - 'Simplified Sorting.esp'
+      - 'Swanndolia''s sorting.esp'
       - 'ValAllInOneByLLX.esp'
       - 'ValdacilsItemSorting-00-ValsPicks-DLCVersion.esp'
       - 'ValdacilsItemSorting-00-ValsPicks-NoDLCVersion.esp'
