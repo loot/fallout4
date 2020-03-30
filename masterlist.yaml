@@ -5537,6 +5537,7 @@ plugins:
     group: *horizonGroup
     after:
       - 'advancedAITweaks.esp'
+      - 'Arbitration - Better Combat AI.esp'
       - 'EveryonesBestFriend.esp'
     msg:
       - type: error
