@@ -5535,7 +5535,9 @@ plugins:
   - name: 'Z_Horizon.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/17374' ]
     group: *horizonGroup
-    after: [ 'EveryonesBestFriend.esp' ]
+    after:
+      - 'advancedAITweaks.esp'
+      - 'EveryonesBestFriend.esp'
     msg:
       - type: error
         content:
