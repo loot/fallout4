@@ -5555,6 +5555,7 @@ plugins:
       - 'ValdacilsItemSorting-00-ValsPicks-NoDLCVersion.esp'
       - 'ValdacilsItemSorting-00-ValsPicks-DLCVersion-VanillaWeight.esp'
       - 'ValdacilsItemSorting-00-ValsPicks-NoDLCVersion-VanillaWeight.esp'
+      - 'VIS-G Item Sorting.esp'
     msg:
       - <<: *patchIncluded
         subs: [ 'Automatron' ]
