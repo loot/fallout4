@@ -5261,6 +5261,7 @@ plugins:
   - name: 'VIS-G Item Sorting.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/33383' ]
     group: *interfaceGroup
+    inc: [ 'Z_Horizon.esp' ]
   - name: 'VIS-G Item Sorting Vanilla Weight Patch.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/33383' ]
     group: *interfaceGroup
@@ -5589,7 +5590,6 @@ plugins:
       - 'Sort My Stuff - Aid.esp'
       - 'Swanndolia''s sorting.esp'
       - 'ValAllInOneByLLX.esp'
-      - 'VIS-G Item Sorting.esp'
       # Survival Mode Mods
       - 'FROST.esp'
       - 'SurvivalOptions.esp'
