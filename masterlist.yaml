@@ -2110,6 +2110,10 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout4/mods/11061' ]
     inc: [ 'Z_Horizon.esp' ]
 
+  - name: 'Better Armour & Weapon Naming.*\.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/5605' ]
+    inc: [ 'Z_Horizon.esp' ]
+
   - name: 'BetterItemSorting(-)?.*\.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/897' ]
     inc: [ 'Z_Horizon.esp' ]
@@ -5572,10 +5576,6 @@ plugins:
       - 'LBPAC.esp'
       # Sorting Mods
       - 'BBS000-F04-Ultimate-DEF_UI.esp'
-      - 'Better Armour & Weapon Naming.esp'
-      - 'Better Armour & Weapon Naming - All DLC.esp'
-      - 'Better Armour & Weapon Naming - Automatron.esp'
-      - 'Better Armour & Weapon Naming - Far Harbour.esp'
       - 'Better Holotape Sorting.esp'
       - 'Better Holotape Sorting Automotron.esp'
       - 'Better Holotape Sorting A FH.esp'
