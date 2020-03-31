@@ -3352,6 +3352,7 @@ plugins:
 
   - name: 'ConcealedArmor.esm'
     url: [ 'https://www.nexusmods.com/fallout4/mods/6434' ]
+    inc: [ 'Z_Horizon.esp' ]
     msg:
       - <<: *alreadyInX
         subs: [ 'Armorsmith Extended v4.0+' ]
@@ -5568,8 +5569,6 @@ plugins:
       - 'AmmoCrafting.esp'
       - name: 'Armorsmith Extended.esp'
         condition: 'version("Z_Horizon.esp", "1.6.0", >=)'
-      - 'ConcealedArmor.esp'
-      - 'ConcealedArmor.esm'
       - 'Craftable Armor Size.esp'
       # Power Armour Overhauls
       - 'Consistent Power Armor Overhaul.esp'
