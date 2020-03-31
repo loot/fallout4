@@ -808,7 +808,9 @@ groups:
     after: [ *underridesGroup ]
 
   - name: &scrapGroup Scrap Everything
-    after: [ default ]
+    after:
+      - default
+      - *npcOverhaulsGroup
 
   - name: &horizonGroup Horizon
     description: 'A group for Horizon modules that need to be sorted late.'
