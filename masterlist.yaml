@@ -2114,6 +2114,10 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout4/mods/5605' ]
     inc: [ 'Z_Horizon.esp' ]
 
+  - name: 'Better Holotape Sorting.*\.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/12621' ]
+    inc: [ 'Z_Horizon.esp' ]
+
   - name: 'BetterItemSorting(-)?.*\.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/897' ]
     inc: [ 'Z_Horizon.esp' ]
@@ -5575,9 +5579,6 @@ plugins:
       - 'LBPAC.esp'
       # Sorting Mods
       - 'BBS000-F04-Ultimate-DEF_UI.esp'
-      - 'Better Holotape Sorting.esp'
-      - 'Better Holotape Sorting Automotron.esp'
-      - 'Better Holotape Sorting A FH.esp'
       - 'Better Inventory Sorting - Armors.esp'
       - 'Better Inventory Sorting - Misc.esp'
       - 'CraftModFullNames.esp'
