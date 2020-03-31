@@ -808,10 +808,16 @@ groups:
     after: [ *underridesGroup ]
 
   - name: &scrapGroup Scrap Everything
-    after: [ default ]
+    after:
+      - default
+      - *npcOverhaulsGroup
+
+  - name: &horizonGroup Horizon
+    description: 'A group for Horizon modules that need to be sorted late.'
+    after: [ *scrapGroup ]
 
   - name: &lightingGroup Lighting
-    after: [ *scrapGroup ]
+    after: [ *horizonGroup ]
 
   - name: &altStartGroup Alternate Start
     after: [ *lightingGroup ]
@@ -2101,9 +2107,26 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout4/mods/40386' ]
     group: *texturesGroup
 
-  # Valdacil's Item Sorting
+###### Sorting Mods ######
+  - name: 'ARWCSM - (\d) - (Full|Modular).*\.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/11061' ]
+    inc: [ 'Z_Horizon.esp' ]
+
+  - name: 'Better Armour & Weapon Naming.*\.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/5605' ]
+    inc: [ 'Z_Horizon.esp' ]
+
+  - name: 'Better Holotape Sorting.*\.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/12621' ]
+    inc: [ 'Z_Horizon.esp' ]
+
+  - name: 'BetterItemSorting(-)?.*\.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/897' ]
+    inc: [ 'Z_Horizon.esp' ]
+
   - name: 'ValdacilsItemSorting-.*\.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/3877' ]
+    inc: [ 'Z_Horizon.esp' ]
   - name: 'ValdacilsItemSorting-00-ValsPicks-NoDLCVersion(-VanillaWeight)?\.esp'
     msg: [ *dlcVersion ]
   - name: 'ValdacilsItemSorting-00-ValsPicks-(NoDLCVersion|DLCVersion)(-VanillaWeight)?\.esp'
@@ -3335,6 +3358,7 @@ plugins:
 
   - name: 'ConcealedArmor.esm'
     url: [ 'https://www.nexusmods.com/fallout4/mods/6434' ]
+    inc: [ 'Z_Horizon.esp' ]
     msg:
       - <<: *alreadyInX
         subs: [ 'Armorsmith Extended v4.0+' ]
@@ -4064,7 +4088,7 @@ plugins:
         subs:
           - 'Unofficial Fallout 4 Patch'
           - '[Everyone''s Best Friend - UFO4P compatibility fix](https://www.nexusmods.com/fallout4/mods/43409)'
-        condition: 'active("Unofficial Fallout 4 Patch.esp") and not checksum("scripts/followersscript.pex", 11074D38)'
+        condition: 'active("Unofficial Fallout 4 Patch.esp") and not active("Z_Horizon.esp") and not checksum("scripts/followersscript.pex", 11074D38)'
     clean:
       - crc: 0x016DB1E5
         util: 'FO4Edit v4.0.3'
@@ -4486,6 +4510,7 @@ plugins:
         util: 'FO4Edit v4.0.3'
   - name: 'Scrap Everything - (Core|Automatron|Far Harbor|Vault-Tec Workshop|Nuka World)\.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/5320' ]
+    inc: [ 'Z_Architect_EnhancedSettlements.esp' ]
     msg:
       - <<: *alreadyInX
         condition: 'active("Scrap Everything - Ultimate Edition.esp")'
@@ -5238,6 +5263,7 @@ plugins:
   - name: 'VIS-G Item Sorting.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/33383' ]
     group: *interfaceGroup
+    inc: [ 'Z_Horizon.esp' ]
   - name: 'VIS-G Item Sorting Vanilla Weight Patch.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/33383' ]
     group: *interfaceGroup
@@ -5526,3 +5552,107 @@ plugins:
   - name: 'RAW INPUT.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/27019' ]
     after: [ 'Z_Horizon.esp' ]
+
+###### Horizon ######
+  - name: 'Z_(Architect|Horizon)\.es(m|p)'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/17374' ]
+  - name: 'Z_Horizon.esp'
+    group: *horizonGroup
+    after:
+      - 'advancedAITweaks.esp'
+      - 'Arbitration - Better Combat AI.esp'
+      - 'EveryonesBestFriend.esp'
+    inc:
+      - 'Arbitration - Molotov.esp'
+      - 'Arbitration - Recommended Core.esp'
+      - 'UnbogusFallout.esp'
+      # Carry Weight Mods
+      - 'Carry Weight Wedding Rings.esp'
+      - 'CompanionCarryWeightModifications.esp'
+      - 'IncreasedCarryWeight.esp'
+      - 'IncreasedCarryWeightPlus.esp'
+      - 'UnlimitedDogmeatCarryWeight.esp'
+      # Crafting Mods
+      - 'AmmoCrafting.esp'
+      - name: 'Armorsmith Extended.esp'
+        condition: 'version("Z_Horizon.esp", "1.6.0", >=)'
+      - 'Craftable Armor Size.esp'
+      # Power Armour Overhauls
+      - 'Consistent Power Armor Overhaul.esp'
+      - 'LBPAC.esp'
+      # Sorting Mods
+      - 'BBS000-F04-Ultimate-DEF_UI.esp'
+      - 'Better Inventory Sorting - Armors.esp'
+      - 'Better Inventory Sorting - Misc.esp'
+      - 'CraftModFullNames.esp'
+      - 'CraftModSort_Alpha.esp'
+      - 'Simplified Sorting.esp'
+      - 'SimplySortedVanilla.esl'
+      - 'SimplySortedVanilla.esp'
+      - 'Sort My Stuff - Aid.esp'
+      - 'Swanndolia''s sorting.esp'
+      - 'ValAllInOneByLLX.esp'
+      # Survival Mode Mods
+      - 'FROST.esp'
+      - 'SurvivalOptions.esp'
+    msg:
+      - <<: *patchIncluded
+        subs: [ 'Automatron' ]
+        condition: 'active("DLCRobot.esm") and not active("Z_Horizon_DLC_Automatron.esp") and not active("Z_Horizon_DLC_All.esp")'
+      - <<: *patchIncluded
+        subs: [ 'Far Harbor' ]
+        condition: 'active("DLCCoast.esm") and not active("Z_Horizon_DLC_FarHarbor.esp") and not active("Z_Horizon_DLC_All.esp")'
+      - <<: *patchIncluded
+        subs: [ 'Nuka World' ]
+        condition: 'active("DLCNukaWorld.esm") and not active("Z_Horizon_DLC_Nuka.esp") and not active("Z_Horizon_DLC_All.esp")'
+      - <<: *patchIncluded
+        subs: [ 'Wasteland Workshop' ]
+        condition: 'active("DLCworkshop01.esm") and not active("Z_Horizon_DLC_Workshop01.esp") and not active("Z_Horizon_DLC_All.esp")'
+      - <<: *patchIncluded
+        subs: [ 'Contraptions Workshop' ]
+        condition: 'active("DLCworkshop02.esm") and not active("Z_Horizon_DLC_Workshop02.esp") and not active("Z_Horizon_DLC_All.esp")'
+      - <<: *patchIncluded
+        subs: [ 'Vault-Tec Workshop' ]
+        condition: 'active("DLCworkshop03.esm") and not active("Z_Horizon_DLC_Workshop03.esp") and not active("Z_Horizon_DLC_All.esp")'
+      - type: error
+        content:
+          - lang: en
+            text: 'Delete loose file %1%. This plugins file must take precedence.'
+        subs: [ '**Scripts/Hardcore/hc_managerscript.pex**' ]
+        condition: 'file("Scripts/Hardcore/hc_managerscript.pex") and not checksum("Scripts/Hardcore/hc_managerscript.pex", 2FEC9CFC)'
+
+  - name: 'Z_Horizon_DLC_(Automatron|FarHarbor|Nuka|Workshop\d\d)\.esp'
+    msg:
+      - <<: *alreadyInX
+        subs: [ 'Z_Horizon_DLC_All.esp' ]
+        condition: 'active("Z_Horizon_DLC_All.esp")'
+
+  - name: 'Z_Architect_(EnhancedSettlements(_DLC)?|HomePlate)\.esp'
+    group: *horizonGroup
+    req: [ 'Z_Horizon.esp' ]
+  - name: 'Z_Architect_EnhancedSettlements_DLC.esp'
+    after: [ 'Z_Architect_EnhancedSettlements.esp' ]
+  - name: 'Z_Architect_HomePlate.esp'
+    after:
+      - 'Z_Architect_EnhancedSettlements.esp'
+      - 'Z_Architect_EnhancedSettlements_DLC.esp'
+
+  - name: 'Z_(Architect_Extras|BlurRemoval|CameraAddon|Extras)\.esp'
+    req: [ 'Z_Horizon.esp' ]
+  - name: 'Z_Horizon_Desolation.esp'
+    after: [ 'Z_Horizon_Mode_Scavenger.esp' ]
+  - name: 'Z_Horizon_DEFUI(_MenusOnly)?.esp'
+    msg:
+      - <<: *useOnlyOneX
+        subs: [ 'Horizon DEFUI' ]
+        condition: 'many("Z_Horizon_DEFUI(_MenusOnly)?.esp")'
+  - name: 'Z_Horizon_Diff_(Cutthroat|Novice|Outcast|Veteran|Wanderer)\.esp'
+    msg:
+      - <<: *useOnlyOneX
+        subs: [ 'Horizon Difficulty' ]
+        condition: 'many("Z_Horizon_Diff_(Cutthroat|Novice|Outcast|Veteran|Wanderer)\.esp")'
+  - name: 'Z_SettlementLimits.esp'
+    msg:
+      - <<: *alreadyInX
+        subs: [ 'Z_Architect_EnhancedSettlements.esp' ]
+        condition: 'active("Z_Architect_EnhancedSettlements.esp")'
