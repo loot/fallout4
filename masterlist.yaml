@@ -2105,7 +2105,11 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout4/mods/40386' ]
     group: *texturesGroup
 
-  # Valdacil's Item Sorting
+###### Sorting Mods ######
+  - name: 'BetterItemSorting(-)?.*\.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/897' ]
+    inc: [ 'Z_Horizon.esp' ]
+
   - name: 'ValdacilsItemSorting-.*\.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/3877' ]
     inc: [ 'Z_Horizon.esp' ]
@@ -5583,12 +5587,6 @@ plugins:
       - 'Better Holotape Sorting A FH.esp'
       - 'Better Inventory Sorting - Armors.esp'
       - 'Better Inventory Sorting - Misc.esp'
-      - 'BetterItemSorting.esp'
-      - 'BetterItemSorting-AID.esp'
-      - 'BetterItemSorting-APPAREL.esp'
-      - 'BetterItemSorting-JUNK.esp'
-      - 'BetterItemSorting-MISC.esp'
-      - 'BetterItemSorting-WEAPONS.esp'
       - 'CraftModFullNames.esp'
       - 'CraftModSort_Alpha.esp'
       - 'Simplified Sorting.esp'
