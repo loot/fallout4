@@ -2106,6 +2106,10 @@ plugins:
     group: *texturesGroup
 
 ###### Sorting Mods ######
+  - name: 'ARWCSM - (\d) - (Full|Modular).*\.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/11061' ]
+    inc: [ 'Z_Horizon.esp' ]
+
   - name: 'BetterItemSorting(-)?.*\.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/897' ]
     inc: [ 'Z_Horizon.esp' ]
@@ -5567,16 +5571,6 @@ plugins:
       - 'Consistent Power Armor Overhaul.esp'
       - 'LBPAC.esp'
       # Sorting Mods
-      - 'ARWCSM - 1 - Full - Weightless.esp'
-      - 'ARWCSM - 2 - Full - Vanilla Weights.esp'
-      - 'ARWCSM - 3 - Modular - Common1 - Vanilla Weights- Armor-Weapon-Wearables.esp'
-      - 'ARWCSM - 3 - Modular - Common2 - Vanilla all Weightless items.esp'
-      - 'ARWCSM - 4 - Modular - Weightless - Aid-Chem-Drink-Food.esp'
-      - 'ARWCSM - 5 - Modular - Weightless - Misc-Quest-Unique-Rare.esp'
-      - 'ARWCSM - 6 - Modular - Weightless - Scrappable Junk.esp'
-      - 'ARWCSM - 7 - Modular - Vanilla - Aid-Chem-Food-Drink.esp'
-      - 'ARWCSM - 8 - Modular - Vanilla Weights - Misc-Quest-Unique-Rare.esp'
-      - 'ARWCSM - 9 - Modular - Vanilla Weights - Scrappable Junk.esp'
       - 'BBS000-F04-Ultimate-DEF_UI.esp'
       - 'Better Armour & Weapon Naming.esp'
       - 'Better Armour & Weapon Naming - All DLC.esp'
