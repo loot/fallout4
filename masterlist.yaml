@@ -799,18 +799,17 @@ groups:
     after:
       - *interfaceGroup
 
-  - name: &npcOverhaulsGroup NPC & Faction Overhauls
-    description: 'A group for mods that overhaul npcs appearance/outfits and character level/stats.'
-    after:
-      - *itemsGroup
-
   - name: default
     after: [ *underridesGroup ]
 
-  - name: &scrapGroup Scrap Everything
+  - name: &npcOverhaulsGroup NPC & Faction Overhauls
+    description: 'A group for mods that overhaul npcs appearance/outfits and character level/stats.'
     after:
       - default
-      - *npcOverhaulsGroup
+      - *itemsGroup
+
+  - name: &scrapGroup Scrap Everything
+    after: [ *npcOverhaulsGroup ]
 
   - name: &horizonGroup Horizon
     description: 'A group for Horizon modules that need to be sorted late.'
