@@ -3356,6 +3356,7 @@ plugins:
 
   - name: 'Weaponsmith Extended 2.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/2228' ]
+    group: *itemsGroup
     dirty:
       - <<: *quickClean
         crc: 0xD5EFD402
