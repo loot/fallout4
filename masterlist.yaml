@@ -5662,3 +5662,5 @@ plugins:
     req: [ 'Better Locational Damage.esp' ]
   - name: 'Better Locational Damage - DLC_WWorkshop.esp'
     req: [ 'Better Locational Damage.esp' ]
+  - name: 'Better Locational Damage - Ghoul Edition.esp'
+    req: [ 'Better Locational Damage.esp' ]
