@@ -5650,3 +5650,7 @@ plugins:
       - <<: *alreadyInX
         subs: [ 'Z_Architect_EnhancedSettlements.esp' ]
         condition: 'active("Z_Architect_EnhancedSettlements.esp")'
+
+
+  - name: 'Better Locational Damage.*\.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/3815' ]
