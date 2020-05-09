@@ -5156,9 +5156,17 @@ plugins:
         crc: 0x9D6A0A63
         util: '[FO4Edit v4.0.2f](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 25
+      # Better Locational Damage Replacer plugin
+      - <<: *quickClean
+        crc: 0x7334977F
+        util: '[FO4Edit v4.0.3](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 6
     clean:
       - crc: 0x7D50E7B2
         util: 'FO4Edit v4.0.2f'
+      # Better Locational Damage Replacer plugin, after QAC
+      - crc: 0x175A4D15
+        util: 'FO4Edit v4.0.3'
 
   - name: 'SanctuaryNPCsOverhaul.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/28810' ]
@@ -5658,22 +5666,54 @@ plugins:
 
   - name: 'Better Locational Damage.*\.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/3815' ]
+  - name: 'Better Locational Damage.esp'
+    dirty:
+      - <<: *quickClean
+        crc: 0x0CFB8AC0
+        util: '[FO4Edit v4.0.3](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 2
   - name: 'Better Locational Damage - DLC_Automatron.esp'
     req: [ 'Better Locational Damage.esp' ]
     msg: [ *alreadyIn_WSE_BLD_Patch ]
+    dirty:
+      - <<: *quickClean
+        crc: 0x3CC876EC
+        util: '[FO4Edit v4.0.3](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 4
   - name: 'Better Locational Damage - DLC_Far_Harbor.esp'
     req: [ 'Better Locational Damage.esp' ]
     msg: [ *alreadyIn_WSE_BLD_Patch ]
+    dirty:
+      - <<: *quickClean
+        crc: 0x647CE531
+        util: '[FO4Edit v4.0.3](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 1
   - name: 'Better Locational Damage - DLC_Nuka_World.esp'
     req: [ 'Better Locational Damage.esp' ]
     msg: [ *alreadyIn_WSE_BLD_Patch ]
+    clean:
+      - crc: 0x45B610DA
+        util: 'FO4Edit v4.0.3'
   - name: 'Better Locational Damage - DLC_WWorkshop.esp'
     req: [ 'Better Locational Damage.esp' ]
     msg: [ *alreadyIn_WSE_BLD_Patch ]
+    clean:
+      - crc: 0x41BF8527
+        util: 'FO4Edit v4.0.3'
   - name: 'Better Locational Damage - Ghoul Edition.esp'
     req: [ 'Better Locational Damage.esp' ]
     msg: [ *alreadyIn_WSE_BLD_Patch ]
+    clean:
+      - crc: 0x83E416AF
+        util: 'FO4Edit v4.0.3'
+  - name: 'Better Locational Damage_ Raider Overhaul_Valdacil_Patch.esp'
+    clean:
+      - crc: 0x2C0E3B03
+        util: 'FO4Edit v4.0.3'
   - name: 'Better Locational Damage - Valdacil''s Item Sorting - Patch.esp'
     msg: [ *alreadyIn_WSE_BLD_Patch ]
+    clean:
+      - crc: 0xBAB7FB03
+        util: 'FO4Edit v4.0.3'
   - name: 'Better VATS - 0.75.esp'
     msg: [ *alreadyIn_WSE_BLD_Patch ]
