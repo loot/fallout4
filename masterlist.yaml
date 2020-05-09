@@ -3354,6 +3354,19 @@ plugins:
           - 'Armor and Weapon Keywords Community Resource (AWKCR)'
         condition: 'version("Armorsmith Extended.esp", "4.6", >=) and version("ArmorKeywords.esm", "8.5", <)'
 
+  - name: 'Weaponsmith Extended 2.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/2228' ]
+    group: *itemsGroup
+    after:
+      - 'Armorsmith Extended.esp'
+      - 'Better Locational Damage.esp'
+    dirty:
+      - <<: *quickClean
+        crc: 0xD5EFD402
+        util: '[FO4Edit v4.0.3](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 465
+        udr: 4
+
   - name: 'ConcealedArmor.esm'
     url: [ 'https://www.nexusmods.com/fallout4/mods/6434' ]
     inc: [ 'Z_Horizon.esp' ]
