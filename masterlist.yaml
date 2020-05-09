@@ -794,19 +794,18 @@ groups:
   - name: &interfaceGroup User Interface
     description: 'A group for mods that enhance or alter the user interface.'
 
-  - name: &itemsGroup Items
-    description: 'A group for mods that improve or add new items.'
-    after:
-      - *interfaceGroup
-
   - name: default
     after: [ *underridesGroup ]
 
-  - name: &npcOverhaulsGroup NPC & Faction Overhauls
-    description: 'A group for mods that overhaul npcs appearance/outfits and character level/stats.'
+  - name: &itemsGroup Items
+    description: 'A group for mods that improve or add new items.'
     after:
       - default
-      - *itemsGroup
+      - *interfaceGroup
+
+  - name: &npcOverhaulsGroup NPC & Faction Overhauls
+    description: 'A group for mods that overhaul npcs appearance/outfits and character level/stats.'
+    after: [ *itemsGroup ]
 
   - name: &scrapGroup Scrap Everything
     after: [ *npcOverhaulsGroup ]
@@ -5110,11 +5109,9 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/10484'
         name: 'Crossbows of the Commonwealth'
-    group: *itemsGroup
 
   - name: 'LoreFriendlySurvivalChems.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/15275' ]
-    group: *itemsGroup
     after:
       - 'VIS-G Item Sorting.esp'
 
@@ -5235,17 +5232,14 @@ plugins:
 
   - name: 'Enhanced Commonwealth Wardrobe.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/28620' ]
-    group: *itemsGroup
     after:
       - 'Mercenary.esp'
 
   - name: 'FALLOUT4WT.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/17103' ]
-    group: *itemsGroup
 
   - name: 'Mercenary.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/20088' ]
-    group: *itemsGroup
 
   - name: 'VIS-G Item Sorting.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/33383' ]
