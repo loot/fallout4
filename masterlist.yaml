@@ -799,18 +799,17 @@ groups:
     after:
       - *interfaceGroup
 
-  - name: &npcOverhaulsGroup NPC & Faction Overhauls
-    description: 'A group for mods that overhaul npcs appearance/outfits and character level/stats.'
-    after:
-      - *itemsGroup
-
   - name: default
     after: [ *underridesGroup ]
 
-  - name: &scrapGroup Scrap Everything
+  - name: &npcOverhaulsGroup NPC & Faction Overhauls
+    description: 'A group for mods that overhaul npcs appearance/outfits and character level/stats.'
     after:
       - default
-      - *npcOverhaulsGroup
+      - *itemsGroup
+
+  - name: &scrapGroup Scrap Everything
+    after: [ *npcOverhaulsGroup ]
 
   - name: &horizonGroup Horizon
     description: 'A group for Horizon modules that need to be sorted late.'
@@ -5121,29 +5120,23 @@ plugins:
 
   - name: 'D.E.C.A.Y.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/2500' ]
-    group: *npcOverhaulsGroup
 
   - name: 'DeadlierDeathclaws.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/13822' ]
-    group: *npcOverhaulsGroup
 
   - name: 'Edit_Hancock.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/12029' ]
-    group: *npcOverhaulsGroup
 
   - name: 'FOFW_ALL_IN_ONE_VANILLA.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/9363' ]
-    group: *npcOverhaulsGroup
     after:
       - 'Unique NPCs.esp'
 
   - name: 'Live Action Handy.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/9571' ]
-    group: *npcOverhaulsGroup
 
   - name: 'RaiderOverhaul.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/9103' ]
-    group: *npcOverhaulsGroup
     dirty:
       - <<: *quickClean
         crc: 0x9D6A0A63
@@ -5155,7 +5148,6 @@ plugins:
 
   - name: 'SanctuaryNPCsOverhaul.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/28810' ]
-    group: *npcOverhaulsGroup
     after:
       - 'FOFW_ALL_IN_ONE_VANILLA.esp'
       - 'Unique NPCs.esp'
@@ -5164,8 +5156,9 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout4/mods/11853' ]
     group: *npcOverhaulsGroup
     after:
-      - 'RaiderOverhaul.esp'
       - 'Unique NPCs - Creatures and Monsters.esp'
+      # Group after, to prevent sorting errors.
+      - 'Unique NPCs.esp'
     dirty:
       - <<: *quickClean
         crc: 0xAA1B9904
@@ -5186,13 +5179,10 @@ plugins:
         util: 'FO4Edit v4.0.2f'
   - name: 'Synth Overhaul.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/9525' ]
-    group: *npcOverhaulsGroup
 
   - name: 'Unique NPCs.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/21248' ]
     group: *npcOverhaulsGroup
-    after:
-      - 'RaiderOverhaul.esp'
     dirty:
       - <<: *quickClean
         crc: 0xF2980C0F
@@ -5219,9 +5209,7 @@ plugins:
   - name: 'Unique NPCs - Creatures and Monsters.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/24357' ]
     group: *npcOverhaulsGroup
-    after:
-      - 'RaiderOverhaul.esp'
-      - 'Unique NPCs.esp'
+    after: [ 'Unique NPCs.esp' ]
     dirty:
       - <<: *quickClean
         crc: 0x76525074
@@ -5242,7 +5230,6 @@ plugins:
         util: 'FO4Edit v4.0.2f'
   - name: 'Yagisan_WO_Better_Caravans.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/33787' ]
-    group: *npcOverhaulsGroup
     after:
       - 'Unique NPCs - Creatures and Monsters.esp'
 
