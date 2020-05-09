@@ -794,19 +794,18 @@ groups:
   - name: &interfaceGroup User Interface
     description: 'A group for mods that enhance or alter the user interface.'
 
-  - name: &itemsGroup Items
-    description: 'A group for mods that improve or add new items.'
-    after:
-      - *interfaceGroup
-
   - name: default
     after: [ *underridesGroup ]
 
-  - name: &npcOverhaulsGroup NPC & Faction Overhauls
-    description: 'A group for mods that overhaul npcs appearance/outfits and character level/stats.'
+  - name: &itemsGroup Items
+    description: 'A group for mods that improve or add new items.'
     after:
       - default
-      - *itemsGroup
+      - *interfaceGroup
+
+  - name: &npcOverhaulsGroup NPC & Faction Overhauls
+    description: 'A group for mods that overhaul npcs appearance/outfits and character level/stats.'
+    after: [ *itemsGroup ]
 
   - name: &scrapGroup Scrap Everything
     after: [ *npcOverhaulsGroup ]
