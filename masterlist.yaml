@@ -3359,6 +3359,7 @@ plugins:
     group: *itemsGroup
     after:
       - 'Armorsmith Extended.esp'
+      - 'Better Locational Damage.esp'
     dirty:
       - <<: *quickClean
         crc: 0xD5EFD402
