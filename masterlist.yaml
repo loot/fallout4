@@ -5654,3 +5654,11 @@ plugins:
 
   - name: 'Better Locational Damage.*\.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/3815' ]
+  - name: 'Better Locational Damage - DLC_Automatron.esp'
+    req: [ 'Better Locational Damage.esp' ]
+  - name: 'Better Locational Damage - DLC_Far_Harbor.esp'
+    req: [ 'Better Locational Damage.esp' ]
+  - name: 'Better Locational Damage - DLC_Nuka_World.esp'
+    req: [ 'Better Locational Damage.esp' ]
+  - name: 'Better Locational Damage - DLC_WWorkshop.esp'
+    req: [ 'Better Locational Damage.esp' ]
