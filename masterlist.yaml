@@ -58,6 +58,10 @@ common:
     <<: *alreadyInX
     subs: [ 'Val''s Picks - Vanilla Weight' ]
     condition: 'file("ValdacilsItemSorting-00-ValsPicks-(NoDLCVersion|DLCVersion)-VanillaWeight\.esp")'
+  - &alreadyIn_WSE_BLD_Patch
+    <<: *alreadyInX
+    subs: [ 'WeaponSmith Extended 2 - Better Locational Damage Patch **BLD - Merged - WSE Edition.esp**' ]
+    condition: 'active("BLD - Merged - WSE Edition.esp")'
 
   - &alreadyInOrFixedByX
     type: error
@@ -5656,36 +5660,18 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout4/mods/3815' ]
   - name: 'Better Locational Damage - DLC_Automatron.esp'
     req: [ 'Better Locational Damage.esp' ]
-    msg:
-      - <<: *alreadyInX
-        subs: [ 'BLD - Merged - WSE Edition.esp' ]
-        condition: 'active("BLD - Merged - WSE Edition.esp")'
+    msg: [ *alreadyIn_WSE_BLD_Patch ]
   - name: 'Better Locational Damage - DLC_Far_Harbor.esp'
     req: [ 'Better Locational Damage.esp' ]
-    msg:
-      - <<: *alreadyInX
-        subs: [ 'BLD - Merged - WSE Edition.esp' ]
-        condition: 'active("BLD - Merged - WSE Edition.esp")'
+    msg: [ *alreadyIn_WSE_BLD_Patch ]
   - name: 'Better Locational Damage - DLC_Nuka_World.esp'
     req: [ 'Better Locational Damage.esp' ]
-    msg:
-      - <<: *alreadyInX
-        subs: [ 'BLD - Merged - WSE Edition.esp' ]
-        condition: 'active("BLD - Merged - WSE Edition.esp")'
+    msg: [ *alreadyIn_WSE_BLD_Patch ]
   - name: 'Better Locational Damage - DLC_WWorkshop.esp'
     req: [ 'Better Locational Damage.esp' ]
-    msg:
-      - <<: *alreadyInX
-        subs: [ 'BLD - Merged - WSE Edition.esp' ]
-        condition: 'active("BLD - Merged - WSE Edition.esp")'
+    msg: [ *alreadyIn_WSE_BLD_Patch ]
   - name: 'Better Locational Damage - Ghoul Edition.esp'
     req: [ 'Better Locational Damage.esp' ]
-    msg:
-      - <<: *alreadyInX
-        subs: [ 'BLD - Merged - WSE Edition.esp' ]
-        condition: 'active("BLD - Merged - WSE Edition.esp")'
+    msg: [ *alreadyIn_WSE_BLD_Patch ]
   - name: 'Better VATS - 0.75.esp'
-    msg:
-      - <<: *alreadyInX
-        subs: [ 'BLD - Merged - WSE Edition.esp' ]
-        condition: 'active("BLD - Merged - WSE Edition.esp")'
+    msg: [ *alreadyIn_WSE_BLD_Patch ]
