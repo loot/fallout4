@@ -5673,5 +5673,7 @@ plugins:
   - name: 'Better Locational Damage - Ghoul Edition.esp'
     req: [ 'Better Locational Damage.esp' ]
     msg: [ *alreadyIn_WSE_BLD_Patch ]
+  - name: 'Better Locational Damage - Valdacil''s Item Sorting - Patch.esp'
+    msg: [ *alreadyIn_WSE_BLD_Patch ]
   - name: 'Better VATS - 0.75.esp'
     msg: [ *alreadyIn_WSE_BLD_Patch ]
