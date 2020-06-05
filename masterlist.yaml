@@ -5095,19 +5095,12 @@ plugins:
 
   - name: 'Stm_DiamondCityExpansion.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/21853' ]
+    after: [ 'Depravity.esp' ]
     dirty:
-      # version: 1.4.2 - Before Quick Clean
-      - <<: *reqManualFix
-        crc: 0xB3A2F88B
-        util: '[FO4Edit v4.0.1](https://www.nexusmods.com/fallout4/mods/2737)'
-        itm: 482
-        udr: 6
-        nav: 8
-      # version: 1.4.2 - After Quick Clean
-      - <<: *reqManualFix
-        crc: 0x5E45D526
-        util: '[FO4Edit v4.0.1](https://www.nexusmods.com/fallout4/mods/2737)'
-        nav: 8
+      - <<: *quickClean
+        crc: 0xC7AF89D0
+        util: '[FO4Edit v4.0.3](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 282
 
   - name: 'DCGuard_Overhaul.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/40267' ]
