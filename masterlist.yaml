@@ -5095,6 +5095,7 @@ plugins:
 
   - name: 'Stm_DiamondCityExpansion.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/21853' ]
+    after: [ 'Depravity.esp' ]
     dirty:
       - <<: *quickClean
         crc: 0xC7AF89D0
