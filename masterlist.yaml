@@ -3447,6 +3447,9 @@ plugins:
         util: 'FO4Edit v4.0.2f'
   - name: 'ASEFarHarbor.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/25487' ]
+    after:
+      - 'Farm.esp'
+      - 'Farm_DLCCoast.esp'
   - name: 'StarlightLOD.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/23034' ]
     msg:
@@ -4346,6 +4349,10 @@ plugins:
       # BTInteriors Optimization Replacer (v2, 2E5602A6)
       - name: 'BTInteriors_Project.esp'
         condition: 'file("BTInt_Optimization.esp") and checksum("BTInt_Optimization.esp", 2E5602A6)'
+      - 'Farm.esp'
+      - 'Farm_DLCCoast.esp'
+      - 'Farm_DLCNukaWorld.esp'
+      - 'Farm_DLCworkshop03.esp'
     clean:
       # version: 0.32
       - crc: 0xCFB11F37
@@ -4356,6 +4363,11 @@ plugins:
         subs: [ 'BostonFPSFix Automatron' ]
         condition: 'file("BostonFPSFixAutomatron.esp")'
   - name: 'BostonFPSFix(Automatron|FarHarbor|-NukaWorld|-Vanilla|(AIO_)?VD)\.esp'
+    after:
+      - 'Farm.esp'
+      - 'Farm_DLCCoast.esp'
+      - 'Farm_DLCNukaWorld.esp'
+      - 'Farm_DLCworkshop03.esp'
     msg:
       - <<: *alreadyInX
         subs: [ 'BostonFPSFix AIO' ]
@@ -4370,6 +4382,11 @@ plugins:
 
   - name: 'BTInteriors_Project.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/4612' ]
+    after:
+      - 'Farm.esp'
+      - 'Farm_DLCCoast.esp'
+      - 'Farm_DLCNukaWorld.esp'
+      - 'Farm_DLCworkshop03.esp'
     dirty:
       # Version 9.3.2
       - <<: *quickClean
@@ -4382,6 +4399,11 @@ plugins:
         util: 'FO4Edit v4.0.1'
   - name: 'BTInt_Optimization.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/4612' ]
+    after:
+      - 'Farm.esp'
+      - 'Farm_DLCCoast.esp'
+      - 'Farm_DLCNukaWorld.esp'
+      - 'Farm_DLCworkshop03.esp'
     clean:
       # Version 3.2.1
       - crc: 0x9EADC975
@@ -5724,3 +5746,54 @@ plugins:
         util: 'FO4Edit v4.0.3'
   - name: 'Better VATS - 0.75.esp'
     msg: [ *alreadyIn_WSE_BLD_Patch ]
+
+  - name: 'Farm.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/16810' ]
+    after:
+      - 'Better Cooking Stations.esp'
+
+  - name: 'Farm_WSPOverride_\w+\.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/16810' ]
+    group: *dynamicPatchesGroup
+
+  - name: 'Yagisan_SSSL_Red_Rocket_Settlements_Generic_Patch.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/35405' ]
+    after:
+      - 'Farm.esp'
+
+  - name: 'Build High - Expanded Settlements.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/3528' ]
+    after:
+      - 'Farm.esp'
+      - 'Farm_DLCCoast.esp'
+      - 'Farm_DLCNukaWorld.esp'
+      - 'Farm_DLCworkshop03.esp'
+
+  - name: 'Clean and Simple - All CAS Settlements.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/25350' ]
+    after:
+      - 'Farm.esp'
+      - 'Farm_DLCCoast.esp'
+      - 'Farm_DLCNukaWorld.esp'
+      - 'Farm_DLCworkshop03.esp'
+  - name: 'Clean and Simple - All CAS Settlements - No Castle.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/25350' ]
+    after:
+      - 'Farm.esp'
+      - 'Farm_DLCCoast.esp'
+      - 'Farm_DLCNukaWorld.esp'
+      - 'Farm_DLCworkshop03.esp'
+  - name: 'Clean and Simple - All Settlements with Magnificent Spectacle Island.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/25350' ]
+    after:
+      - 'Farm.esp'
+      - 'Farm_DLCCoast.esp'
+      - 'Farm_DLCNukaWorld.esp'
+      - 'Farm_DLCworkshop03.esp'
+  - name: 'Clean and Simple - All Settlements with Magnificent Spectacle Island - No Castle.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/25350' ]
+    after:
+      - 'Farm.esp'
+      - 'Farm_DLCCoast.esp'
+      - 'Farm_DLCNukaWorld.esp'
+      - 'Farm_DLCworkshop03.esp'
