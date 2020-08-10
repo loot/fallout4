@@ -5752,10 +5752,6 @@ plugins:
     after:
       - 'Better Cooking Stations.esp'
 
-  - name: 'Farm_CP_ScrapEverything_\w+\.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/16810' ]
-    group: *scrapGroup
-
   - name: 'Farm_WSPOverride_\w+\.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/16810' ]
     group: *dynamicPatchesGroup
