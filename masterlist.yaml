@@ -641,8 +641,13 @@ common:
         text: 'Det är starkt rekommenderat att inte använda mods som innehåller **Borttagna navmeshes** eftersom de kan orsaka krascher. **Borttagna navmeshes** måste korrigeras manuellt (en komplex process som borde göras av modskaparen). Mer information om **Borttagna navmeshes** hittar du [här](https://www.creationkit.com/index.php?title=Fixing_Navmesh_Deletion_Tutorial).'
 
 bash_tags:
+  - 'Deactivate'
   - 'Delev'
+  - 'Filter'
+  - 'ObjectBounds'
   - 'Relev'
+  ## Deprecated & Removed Bash Tags ##
+  - 'NoMerge'
 
 globals:
   - type: say
