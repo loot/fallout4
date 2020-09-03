@@ -1842,30 +1842,13 @@ plugins:
 
 ###### Fixes ######
   # Mods obsoleted by official Bethesda patches
-  - name: 'KH_DogArmorFix.esp '
-    url: []
-    group: *fixesGroup
-    msg:
-      - <<: *alreadyInFO4
-        condition: 'version("../Fallout4.exe", "1.6.0.0", >=)'
-  - name: 'KH_DChelmetfix.esp'
-    url: []
-    group: *fixesGroup
-    msg:
-      - <<: *alreadyInFO4
-        condition: 'version("../Fallout4.exe", "1.6.0.0", >=)'
   - name: 'Targeting HUD Berry Mentats Fix.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/8910' ]
     group: *fixesGroup
     msg:
       - <<: *alreadyInFO4
         condition: 'version("../Fallout4.exe", "1.5.0.0", >=)'
-  - name: 'Vault 81 Holding Cell Fix(| Alt)\.esp'
-    url: []
-    group: *fixesGroup
-    msg:
-      - <<: *alreadyInFO4
-        condition: 'version("../Fallout4.exe", "1.4.132.0", >=)'
+
   - name: 'RailroadGloryBugFix.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/6389' ]
     group: *fixesGroup
@@ -1901,11 +1884,7 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout4/mods/4526' ]
     group: *fixesGroup
     msg: [ *alreadyInUFO4P ]
-  - name: 'Simple Bug Fixes.esp'
-    url: []
-    group: *fixesGroup
-    inc: [ 'SettlementKeywords.esm' ]
-    msg: [ *alreadyInUFO4P ]
+
   - name: 'bugfix_maglocks_terminal_delay.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/26353' ]
     group: *fixesGroup
@@ -1932,10 +1911,7 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout4/mods/12491' ]
     group: *fixesGroup
     msg: [ *alreadyInUFO4P ]
-  - name: 'DeirdreVendorFix.esp'
-    url: []
-    group: *fixesGroup
-    msg: [ *alreadyInUFO4P ]
+
   - name: 'Combat Armor Weight Fix.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/11541' ]
     group: *fixesGroup
@@ -1981,14 +1957,7 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout4/mods/10173' ]
     group: *fixesGroup
     msg: [ *alreadyInUFO4P ]
-  - name: 'RFG - Curie Inspirational Sneak L&L Fix.esp'
-    url: []
-    group: *fixesGroup
-    msg: [ *alreadyInUFO4P ]
-  - name: 'RFG - Gunslinger Fix.esp'
-    url: []
-    group: *fixesGroup
-    msg: [ *alreadyInUFO4P ]
+
   - name: 'Mole Rat Disease Fix.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/8908' ]
     group: *fixesGroup
@@ -1997,10 +1966,7 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout4/mods/8570' ]
     group: *fixesGroup
     msg: [ *alreadyInUFO4P ]
-  - name: 'Worsins-T60-Headlamp-Fix.esp'
-    url: []
-    group: *fixesGroup
-    msg: [ *alreadyInUFO4P ]
+
   - name: 'WeaveFix.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/5847' ]
     group: *fixesGroup
@@ -2025,10 +1991,7 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout4/mods/2679' ]
     group: *fixesGroup
     msg: [ *alreadyInUFO4P ]
-  - name: 'NX Desk Crafting Fix.esp'
-    url: []
-    group: *fixesGroup
-    msg: [ *alreadyInUFO4P ]
+
   - name: 'itswear.esl'
     url: [ 'https://www.nexusmods.com/fallout4/mods/33497' ]
     group: *fixesGroup
@@ -2442,12 +2405,7 @@ plugins:
           - lang: de
             text: 'Realistic Survival Damage.esp ändert die selben Spiel-Variablen wie die Survival X PC/EnemyDamage.esps. Sie sollten nur eine der beiden verwenden.'
         condition: 'file("Survival((90|75|65|50|25|10)LESS|Normal|(10|20|30|40|50|60|70|80|90|100|150|200|250|300|350|400|450|500)more)(PC|Enemy)Damage\.esp")'
-  - name: 'Rainy_(25|50|75|100)\.esp'
-    url: []
-    msg:
-      - <<: *useOnlyOneX
-        condition: 'many("Rainy_(25|50|75|100)\.esp")'
-        subs: [ 'Rainy_X.esp' ]
+
   - name: '(Ambient|Strong|Hardcore|Deadly) Radiation Storms\.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/829' ]
     msg:
@@ -2539,10 +2497,7 @@ plugins:
       - <<: *useOnlyOneX
         condition: 'many("DeadlyRadstorms_Damage_\d+\.esp")'
         subs: [ 'DeadlyRadstorms_Damage .esp' ]
-  - name: 'Simple Bug Fixes - Better Item Sorting Patch.esp'
-    url: []
-    req:
-      - 'Simple Bug Fixes.esp'
+
   - name: 'NoGunSneakAttackMultiplier.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/2114' ]
     msg:
@@ -2617,15 +2572,7 @@ plugins:
       - <<: *alreadyInX
         condition: 'active("ArmorKeywords.esm")'
         subs: [ 'ArmorKeywords.esm' ]
-  - name: 'WET Clearer.esp'
-    url: []
-    inc: [ 'WET Murkier.esp' , 'WET.esp' ]
-  - name: 'WET Murkier.esp'
-    url: []
-    inc: [ 'WET Clearer.esp', 'WET.esp' ]
-  - name: 'WET.esp'
-    url: []
-    inc: [ 'WET Clearer.esp', 'WET Murkier.esp' ]
+
   - name: 'Lasers Have No Recoil.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/9417/' ]
     inc: [ 'Concentrated Splitter.esp' ]
@@ -3661,9 +3608,6 @@ plugins:
         util: 'FO4Edit v3.2'
   - name: 'Vault Girl.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/10577' ]
-    inc:
-      # Both use PresetFemale15
-      - 'Hot Sosig.esp'
     dirty:
       - <<: *quickClean
         crc: 0xE5AD59A1
@@ -3672,11 +3616,7 @@ plugins:
     clean:
       - crc: 0xD20266D0
         util: 'FO4Edit v4.0.2f'
-  - name: 'Hot Sosig.esp'
-    url: []
-    inc:
-      # Both use PresetFemale15
-      - 'Vault Girl.esp'
+
   - name: 'DiamondLighting.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/12432' ]
     dirty:
@@ -3891,12 +3831,7 @@ plugins:
     clean:
       - crc: 0x7855110A
         util: 'FO4Edit v4.0.2f'
-  - name: 'ShotLayDown\d+\.esp'
-    url: []
-    msg:
-      - <<: *useOnlyOneX
-        condition: 'many_active("ShotLayDown\d+\.esp")'
-        subs: [ 'Shot Lay Down .esp' ]
+
   - name: 'AGOMBz.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/25762' ]
     after:
@@ -4761,10 +4696,6 @@ plugins:
       - crc: 0x0e2861fa
         util: FO4Edit v3.2.1
 
-  - name: 'AAF_RSE.esp'
-    url: []
-    after:
-      - 'StartMeUp.esp'
 
   - name: 'FO4Merged.esp'
     group: *dynamicPatchesGroup
