@@ -3891,12 +3891,7 @@ plugins:
     clean:
       - crc: 0x7855110A
         util: 'FO4Edit v4.0.2f'
-  - name: 'ShotLayDown\d+\.esp'
-    url: []
-    msg:
-      - <<: *useOnlyOneX
-        condition: 'many_active("ShotLayDown\d+\.esp")'
-        subs: [ 'Shot Lay Down .esp' ]
+
   - name: 'AGOMBz.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/25762' ]
     after:
