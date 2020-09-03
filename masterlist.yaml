@@ -1978,10 +1978,6 @@ plugins:
     group: *fixesGroup
     msg: [ *alreadyInUFO4P ]
 
-  - name: 'RFG - Gunslinger Fix.esp'
-    url: []
-    group: *fixesGroup
-    msg: [ *alreadyInUFO4P ]
   - name: 'Mole Rat Disease Fix.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/8908' ]
     group: *fixesGroup
