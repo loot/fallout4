@@ -2077,6 +2077,7 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout4/mods/40386' ]
     group: *texturesGroup
 
+###### AudioVisual - Lighting ######
   - name: 'Institute Patch for PRC.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/6796/'
