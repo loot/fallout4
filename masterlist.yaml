@@ -4761,10 +4761,6 @@ plugins:
       - crc: 0x0e2861fa
         util: FO4Edit v3.2.1
 
-  - name: 'AAF_RSE.esp'
-    url: []
-    after:
-      - 'StartMeUp.esp'
 
   - name: 'FO4Merged.esp'
     group: *dynamicPatchesGroup
