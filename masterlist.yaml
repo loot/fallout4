@@ -1842,13 +1842,6 @@ plugins:
 
 ###### Fixes ######
   # Mods obsoleted by official Bethesda patches
-  - name: 'KH_DogArmorFix.esp '
-    url: []
-    group: *fixesGroup
-    msg:
-      - <<: *alreadyInFO4
-        condition: 'version("../Fallout4.exe", "1.6.0.0", >=)'
-
   - name: 'Targeting HUD Berry Mentats Fix.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/8910' ]
     group: *fixesGroup
