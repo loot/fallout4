@@ -2078,6 +2078,13 @@ plugins:
     group: *texturesGroup
 
 ###### AudioVisual - Lighting ######
+  - name: 'EnhancedLightsandFX.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/13596' ]
+    group: *lightingGroup
+    clean:
+      - crc: 0x8FC528DB
+        util: 'FO4Edit v4.0.3'
+
   - name: 'Institute Patch for PRC.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/6796/'
@@ -4570,16 +4577,7 @@ plugins:
       - <<: *useOnlyOneX
         condition: 'active("Mechanist Lair Overhaul.esp")'
         subs: [ 'Mechanist Lair Overhaul' ]
-  - name: 'EnhancedLightsandFX.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/13596' ]
-    group: *lightingGroup
-    clean:
-      # Version 0.2.3
-      - crc: 0xA7ADBD40
-        util: 'FO4Edit v3.2'
-      # Version 1.0
-      - crc: 0x8FC528DB
-        util: 'FO4Edit v3.2.3v'
+
   - name: 'Deeper Thoughts (\(Curie\)|- (Expressive )?Curie)\.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/25050' ]
     msg:
