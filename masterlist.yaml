@@ -2082,6 +2082,7 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/6796/'
         name: 'PhotoRealistic Commonwealth'
+    group: *lightingGroup
     dirty:
       - <<: *quickClean
         crc: 0xBA16C65A
