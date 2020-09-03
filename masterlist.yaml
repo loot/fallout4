@@ -2081,6 +2081,12 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/6796/'
         name: 'PhotoRealistic Commonwealth'
+    dirty:
+      - <<: *quickClean
+        crc: 0xBA16C65A
+        util: '[FO4Edit v4.0.3](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 5
+        udr: 40
 
 ###### Sorting Mods ######
   - name: 'ARWCSM - (\d) - (Full|Modular).*\.esp'
