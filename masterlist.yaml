@@ -1860,12 +1860,7 @@ plugins:
     msg:
       - <<: *alreadyInFO4
         condition: 'version("../Fallout4.exe", "1.5.0.0", >=)'
-  - name: 'Vault 81 Holding Cell Fix(| Alt)\.esp'
-    url: []
-    group: *fixesGroup
-    msg:
-      - <<: *alreadyInFO4
-        condition: 'version("../Fallout4.exe", "1.4.132.0", >=)'
+
   - name: 'RailroadGloryBugFix.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/6389' ]
     group: *fixesGroup
