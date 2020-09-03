@@ -1901,11 +1901,7 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout4/mods/4526' ]
     group: *fixesGroup
     msg: [ *alreadyInUFO4P ]
-  - name: 'Simple Bug Fixes.esp'
-    url: []
-    group: *fixesGroup
-    inc: [ 'SettlementKeywords.esm' ]
-    msg: [ *alreadyInUFO4P ]
+
   - name: 'bugfix_maglocks_terminal_delay.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/26353' ]
     group: *fixesGroup
@@ -2539,10 +2535,7 @@ plugins:
       - <<: *useOnlyOneX
         condition: 'many("DeadlyRadstorms_Damage_\d+\.esp")'
         subs: [ 'DeadlyRadstorms_Damage .esp' ]
-  - name: 'Simple Bug Fixes - Better Item Sorting Patch.esp'
-    url: []
-    req:
-      - 'Simple Bug Fixes.esp'
+
   - name: 'NoGunSneakAttackMultiplier.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/2114' ]
     msg:
