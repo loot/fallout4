@@ -1977,10 +1977,7 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout4/mods/10173' ]
     group: *fixesGroup
     msg: [ *alreadyInUFO4P ]
-  - name: 'RFG - Curie Inspirational Sneak L&L Fix.esp'
-    url: []
-    group: *fixesGroup
-    msg: [ *alreadyInUFO4P ]
+
   - name: 'RFG - Gunslinger Fix.esp'
     url: []
     group: *fixesGroup
