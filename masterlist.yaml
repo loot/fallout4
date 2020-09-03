@@ -1993,10 +1993,7 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout4/mods/8570' ]
     group: *fixesGroup
     msg: [ *alreadyInUFO4P ]
-  - name: 'Worsins-T60-Headlamp-Fix.esp'
-    url: []
-    group: *fixesGroup
-    msg: [ *alreadyInUFO4P ]
+
   - name: 'WeaveFix.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/5847' ]
     group: *fixesGroup
