@@ -2077,6 +2077,19 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout4/mods/40386' ]
     group: *texturesGroup
 
+###### AudioVisual - Lighting ######
+  - name: 'Institute Patch for PRC.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/6796/'
+        name: 'PhotoRealistic Commonwealth'
+    group: *lightingGroup
+    dirty:
+      - <<: *quickClean
+        crc: 0xBA16C65A
+        util: '[FO4Edit v4.0.3](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 5
+        udr: 40
+
 ###### Sorting Mods ######
   - name: 'ARWCSM - (\d) - (Full|Modular).*\.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/11061' ]
