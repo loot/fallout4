@@ -2021,10 +2021,7 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout4/mods/2679' ]
     group: *fixesGroup
     msg: [ *alreadyInUFO4P ]
-  - name: 'NX Desk Crafting Fix.esp'
-    url: []
-    group: *fixesGroup
-    msg: [ *alreadyInUFO4P ]
+
   - name: 'itswear.esl'
     url: [ 'https://www.nexusmods.com/fallout4/mods/33497' ]
     group: *fixesGroup
