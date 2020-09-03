@@ -3661,9 +3661,6 @@ plugins:
         util: 'FO4Edit v3.2'
   - name: 'Vault Girl.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/10577' ]
-    inc:
-      # Both use PresetFemale15
-      - 'Hot Sosig.esp'
     dirty:
       - <<: *quickClean
         crc: 0xE5AD59A1
@@ -3672,11 +3669,7 @@ plugins:
     clean:
       - crc: 0xD20266D0
         util: 'FO4Edit v4.0.2f'
-  - name: 'Hot Sosig.esp'
-    url: []
-    inc:
-      # Both use PresetFemale15
-      - 'Vault Girl.esp'
+
   - name: 'DiamondLighting.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/12432' ]
     dirty:
