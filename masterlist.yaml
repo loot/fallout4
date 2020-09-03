@@ -2617,15 +2617,7 @@ plugins:
       - <<: *alreadyInX
         condition: 'active("ArmorKeywords.esm")'
         subs: [ 'ArmorKeywords.esm' ]
-  - name: 'WET Clearer.esp'
-    url: []
-    inc: [ 'WET Murkier.esp' , 'WET.esp' ]
-  - name: 'WET Murkier.esp'
-    url: []
-    inc: [ 'WET Clearer.esp', 'WET.esp' ]
-  - name: 'WET.esp'
-    url: []
-    inc: [ 'WET Clearer.esp', 'WET Murkier.esp' ]
+
   - name: 'Lasers Have No Recoil.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/9417/' ]
     inc: [ 'Concentrated Splitter.esp' ]
