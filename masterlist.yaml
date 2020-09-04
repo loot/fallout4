@@ -2097,6 +2097,60 @@ plugins:
         itm: 5
         udr: 40
 
+  - name: 'InteriorsEnhanced.*\.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/8768/'
+        name: 'Interiors Enhanced: Darker Ambient Light and Fog'
+  - name: 'InteriorsEnhanced-All-In-One.esp'
+    group: *lightingGroup
+    after:
+      - 'EnhancedLightsandFX.esp'
+      - 'UltraInteriorLighting.esp'
+    clean:
+      - crc: 0xFC2415EC
+        util: 'FO4Edit v4.0.3'
+  - name: 'InteriorsEnhanced(-Automatron|-FarHarbor|-NukaWorld|-VaultTec)?\.esp'
+    msg:
+      - <<: *alreadyInX
+        subs: [ 'InteriorsEnhanced-All-In-One.esp' ]
+        condition: 'active("InteriorsEnhanced-All-In-One.esp") and active("DLCRobot.esm") and active("DLCCoast.esm") and active("DLCworkshop03.esm") and active("DLCNukaWorld.esm")'
+  - name: 'InteriorsEnhanced.esp'
+    group: *lightingGroup
+    after:
+      - 'EnhancedLightsandFX.esp'
+      - 'UltraInteriorLighting.esp'
+    clean:
+      - crc: 0x92E9C372
+        util: 'FO4Edit v4.0.3'
+  - name: 'InteriorsEnhanced-Automatron.esp'
+    req: [ 'InteriorsEnhanced.esp' ]
+    clean:
+      - crc: 0xB6854DFD
+        util: 'FO4Edit v4.0.3'
+  - name: 'InteriorsEnhanced-FarHarbor.esp'
+    req: [ 'InteriorsEnhanced.esp' ]
+    after: [ 'InteriorsEnhanced-Automatron.esp' ]
+    clean:
+      - crc: 0x5011B9A8
+        util: 'FO4Edit v4.0.3'
+  - name: 'InteriorsEnhanced-NukaWorld.esp'
+    req: [ 'InteriorsEnhanced.esp' ]
+    after:
+      - 'InteriorsEnhanced-Automatron.esp'
+      - 'InteriorsEnhanced-FarHarbor.esp'
+      - 'InteriorsEnhanced-VaultTec.esp'
+    clean:
+      - crc: 0x09839D87
+        util: 'FO4Edit v4.0.3'
+  - name: 'InteriorsEnhanced-VaultTec.esp'
+    req: [ 'InteriorsEnhanced.esp' ]
+    after:
+      - 'InteriorsEnhanced-Automatron.esp'
+      - 'InteriorsEnhanced-FarHarbor.esp'
+    clean:
+      - crc: 0x1DA07EEF
+        util: 'FO4Edit v4.0.3'
+
 ###### Sorting Mods ######
   - name: 'ARWCSM - (\d) - (Full|Modular).*\.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/11061' ]
