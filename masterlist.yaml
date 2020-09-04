@@ -2097,6 +2097,11 @@ plugins:
         itm: 5
         udr: 40
 
+  - name: 'InteriorsEnhanced.*\.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/8768/'
+        name: 'Interiors Enhanced: Darker Ambient Light and Fog'
+
 ###### Sorting Mods ######
   - name: 'ARWCSM - (\d) - (Full|Modular).*\.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/11061' ]
