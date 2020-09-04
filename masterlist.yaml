@@ -2103,6 +2103,9 @@ plugins:
         name: 'Interiors Enhanced: Darker Ambient Light and Fog'
   - name: 'InteriorsEnhanced-All-In-One.esp'
     group: *lightingGroup
+    after:
+      - 'EnhancedLightsandFX.esp'
+      - 'UltraInteriorLighting.esp'
     clean:
       - crc: 0xFC2415EC
         util: 'FO4Edit v4.0.3'
@@ -2113,6 +2116,9 @@ plugins:
         condition: 'active("InteriorsEnhanced-All-In-One.esp") and active("DLCRobot.esm") and active("DLCCoast.esm") and active("DLCworkshop03.esm") and active("DLCNukaWorld.esm")'
   - name: 'InteriorsEnhanced.esp'
     group: *lightingGroup
+    after:
+      - 'EnhancedLightsandFX.esp'
+      - 'UltraInteriorLighting.esp'
     clean:
       - crc: 0x92E9C372
         util: 'FO4Edit v4.0.3'
