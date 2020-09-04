@@ -2105,6 +2105,11 @@ plugins:
     clean:
       - crc: 0xFC2415EC
         util: 'FO4Edit v4.0.3'
+  - name: 'InteriorsEnhanced(-Automatron|-FarHarbor|-NukaWorld|-VaultTec)?\.esp'
+    msg:
+      - <<: *alreadyInX
+        subs: [ 'InteriorsEnhanced-All-In-One.esp' ]
+        condition: 'active("InteriorsEnhanced-All-In-One.esp") and active("DLCRobot.esm") and active("DLCCoast.esm") and active("DLCworkshop03.esm") and active("DLCNukaWorld.esm")'
   - name: 'InteriorsEnhanced.esp'
     clean:
       - crc: 0x92E9C372
