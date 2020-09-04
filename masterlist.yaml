@@ -2101,6 +2101,30 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/8768/'
         name: 'Interiors Enhanced: Darker Ambient Light and Fog'
+  - name: 'InteriorsEnhanced-All-In-One.esp'
+    clean:
+      - crc: 0xFC2415EC
+        util: 'FO4Edit v4.0.3'
+  - name: 'InteriorsEnhanced.esp'
+    clean:
+      - crc: 0x92E9C372
+        util: 'FO4Edit v4.0.3'
+  - name: 'InteriorsEnhanced-Automatron.esp'
+    clean:
+      - crc: 0xB6854DFD
+        util: 'FO4Edit v4.0.3'
+  - name: 'InteriorsEnhanced-FarHarbor.esp'
+    clean:
+      - crc: 0x5011B9A8
+        util: 'FO4Edit v4.0.3'
+  - name: 'InteriorsEnhanced-NukaWorld.esp'
+    clean:
+      - crc: 0x09839D87
+        util: 'FO4Edit v4.0.3'
+  - name: 'InteriorsEnhanced-VaultTec.esp'
+    clean:
+      - crc: 0x1DA07EEF
+        util: 'FO4Edit v4.0.3'
 
 ###### Sorting Mods ######
   - name: 'ARWCSM - (\d) - (Full|Modular).*\.esp'
