@@ -822,9 +822,12 @@ groups:
   - name: &horizonGroup Horizon
     description: 'A group for Horizon modules that need to be sorted late.'
     after: [ *scrapGroup ]
+  - name: &frostGroup FROST
+    description: 'A group of Horizon modules that need to be sorted late.'
+    after: [ *horizonGroup ]
 
   - name: &lightingGroup Lighting
-    after: [ *horizonGroup ]
+    after: [ *frostGroup ]
 
   - name: &altStartGroup Alternate Start
     after: [ *lightingGroup ]
@@ -5586,6 +5589,17 @@ plugins:
   - name: 'RAW INPUT.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/27019' ]
     after: [ 'Z_Horizon.esp' ]
+
+###### FROST ######
+  - name: 'FROST.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/18898/' ] 
+    dirty:
+      - <<: *reqManualFix
+        crc: 0xE8D519A5
+        util: '[FO4Edit v4.0.3](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 1935
+        udr: 1971
+        nav: 5
 
 ###### Horizon ######
   - name: 'Z_(Architect|Horizon)\.es(m|p)'
