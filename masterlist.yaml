@@ -5600,6 +5600,15 @@ plugins:
         itm: 1935
         udr: 1971
         nav: 5
+  - name: 'aFrostMod.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/48847' ]
+    dirty:
+      - <<: *reqManualFix
+        crc: 0x5284F2AD
+        util: '[FO4Edit v4.0.3](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 255
+        udr: 7
+        nav: 52
 
 ###### Horizon ######
   - name: 'Z_(Architect|Horizon)\.es(m|p)'
