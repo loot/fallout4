@@ -5798,3 +5798,12 @@ plugins:
       - 'Farm_DLCCoast.esp'
       - 'Farm_DLCNukaWorld.esp'
       - 'Farm_DLCworkshop03.esp'
+
+  - name: 'GRIM.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/46711' ]
+    dirty:
+      - <<: *quickClean
+        crc: 0x613CC196
+        util: '[FO4Edit v4.0.3](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 227
+        udr: 2
