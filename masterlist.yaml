@@ -3129,6 +3129,14 @@ plugins:
           - lang: de
             text: 'Dieser Patch wird nicht länger funktionieren mit SKE 1.43 oder neuer weil zu dem Zeitpunkt von Homemaker 1.50 (oder neuer) gibt es keinen Homemaker - SKE Patch.'
         condition: 'version("SettlementKeywords.esm", "1.43", >=)'
+  - name: 'Z_Horizon_Patch_BTInteriors.esp'
+    dirty:
+      - <<: *quickClean
+        crc: 0x2F620D76
+        util: '[FO4Edit v4.0.3](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 2
+        udr: 70
+    after: 'BTInt_Optimization.esp'
   - name: 'BetterJunkFences.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/9000' ]
     inc: [ 'JunkWalls_More_Snaps.esp' ]
