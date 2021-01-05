@@ -4418,6 +4418,9 @@ plugins:
       - 'Farm_DLCCoast.esp'
       - 'Farm_DLCNukaWorld.esp'
       - 'Farm_DLCworkshop03.esp'
+      - 'OutcastsAndRemnants.esp'
+      - 'Depravity.esp'
+      - 'Z_Horizon_Patch_BTInteriors.esp'
     clean:
       # Version 3.2.1
       - crc: 0x9EADC975
