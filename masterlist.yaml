@@ -5136,6 +5136,17 @@ plugins:
       - crc: 0x7EF2EAA5
         util: 'FO4Edit v4.0.3'
 
+  - name: 'TheSewers.esm'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/45663' ]
+    dirty:
+      - <<: *quickClean
+        crc: 0x8E7565B3
+        util: '[FO4Edit v4.0.3](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 24
+    clean:
+      - crc: 0x716E4694
+        util: 'FO4Edit v4.0.3'
+
   - name: 'Crossbow.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/10484'
