@@ -4437,6 +4437,17 @@ plugins:
     clean:
       - crc: 0x52A7C047
         util: 'FO4Edit v4.0.2f'
+  - name: 'Boston_Police_Department.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/1217' ]
+    dirty:
+      - <<: *quickClean
+        crc: 0xD225BE77
+        util: '[FO4Edit v4.0.3](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 1206
+        udr: 30
+    clean:
+      - crc: 0xF89DCD96
+        util: 'FO4Edit v4.0.3'
   - name: 'Conquest.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/12511' ]
     dirty:
