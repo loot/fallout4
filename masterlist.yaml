@@ -5587,6 +5587,19 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout4/mods/27019' ]
     after: [ 'Z_Horizon.esp' ]
 
+###### FROST ######
+  - name: 'FROST.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/18898/' ] 
+    dirty:
+      - <<: *reqManualFix
+        crc: 0xE8D519A5
+        util: '[FO4Edit v4.0.3](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 1935
+        udr: 1971
+        nav: 5
+    inc: 
+      - 'StartMeUp.esp'
+
 ###### Horizon ######
   - name: 'Z_(Architect|Horizon)\.es(m|p)'
     url: [ 'https://www.nexusmods.com/fallout4/mods/17374' ]
