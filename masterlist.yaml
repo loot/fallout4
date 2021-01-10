@@ -5539,6 +5539,7 @@ plugins:
       - crc: 0x9E3E233E
         util: 'FO4Edit v4.0.2f'
 
+# The Machine and Her
   - name: 'AGNISNikaCola01.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/30488' ]
     dirty:
@@ -5552,6 +5553,22 @@ plugins:
         crc: 0x51ED5F6A
         util: '[FO4Edit v4.0.3](https://www.nexusmods.com/fallout4/mods/2737)'
         nav: 10
+    msg:
+      - <<: *patch3rdParty
+        subs:
+          - 'Extended Dialogue Interface'
+          - '[The Machine and Her XDI patch](https://www.nexusmods.com/fallout4/mods/41194)'
+        condition: 'checksum("F4SE/Plugins/XDI.dll", E1542495) and active("AGNISNikaCola01.esp")'
+  - name: 'AGNISNikaCola01-XDI patch.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/41194' ]
+    dirty:
+      - <<: *quickClean
+        crc: 0xD7FA9066
+        util: '[FO4Edit v4.0.3](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 5246
+    clean:
+      - crc: 0xD8715F52
+        util: 'FO4Edit v4.0.3'
 
   - name: 'MechanistsLair_\w+\.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/11490' ]
