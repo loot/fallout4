@@ -3754,6 +3754,29 @@ plugins:
         crc: 0x74BE02DE
         util: '[FO4Edit v4.0.2f](https://www.nexusmods.com/fallout4/mods/2737)'
         nav: 1
+
+# Subway Runner
+  - name: 'subwayrunnnerdynamiclighting.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/18639' ]
+    dirty:
+      - <<: *quickClean
+        crc: 0xEB0209A0
+        util: '[FO4Edit v4.0.3](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 12
+    clean:
+      - crc: 0x99CFDDBD
+        util: 'FO4Edit v4.0.3'
+  - name: 'subwayrunnnernodynamic.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/18639' ]
+    dirty:
+      - <<: *quickClean
+        crc: 0x03783B71
+        util: '[FO4Edit v4.0.3](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 12
+    clean:
+      - crc: 0x56ABDCF3
+        util: 'FO4Edit v4.0.3'
+
   - name: 'UniqueUniques.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/15139' ]
     clean:
