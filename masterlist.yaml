@@ -5833,6 +5833,18 @@ plugins:
       - 'Farm_DLCNukaWorld.esp'
       - 'Farm_DLCworkshop03.esp'
 
+  - name: 'Winter Overhaul.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/28665/' ]
+    dirty:
+      - <<: *quickClean
+        crc: 0xFDDC0A09
+        util: '[FO4Edit v4.0.3](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 104
+        udr: 63
+    clean:
+      - crc: 0xB748A59E
+        util: 'FO4Edit v4.0.3'
+
   - name: 'GRIM.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/46711' ]
     dirty:
