@@ -4539,6 +4539,18 @@ plugins:
     clean:
       - crc: 0xDACA5AF7
         util: 'FO4Edit v4.0.2f'
+
+  - name: 'SKKRESystemManager.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/42081' ]
+    clean:
+      - crc: 0x9C7F2E27
+        util: 'FO4Edit v4.0.3'
+  - name: 'SKKRETrigger.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/42081' ]
+    clean:
+      - crc: 0x4C39E3EA
+        util: 'FO4Edit v4.0.3'
+
   - name: 'Rangergearnew.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/9034' ]
     dirty:
