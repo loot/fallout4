@@ -5418,6 +5418,17 @@ plugins:
         util: '[FO4Edit v4.0.2](https://www.nexusmods.com/fallout4/mods/2737)'
         nav: 9
 
+  - name: 'SKKSettlementAttackSystem.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/37393' ]
+    clean:
+      - crc: 0x240F4C3F
+        util: 'FO4Edit v4.0.3'
+  - name: 'SKKSettlementAttackSystemMarkers.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/37393' ]
+    clean:
+      - crc: 0xB8EADAD7
+        util: 'FO4Edit v4.0.3'
+
   - name: 'CaN.es(m|p)'
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/19040'
