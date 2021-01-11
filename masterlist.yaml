@@ -4762,6 +4762,8 @@ plugins:
       # v1.82 after QAC
       - crc: 0x46D35E9C
         util: 'FO4Edit v4.0.2f'
+
+##### Alternative Starts #####
   - name: 'OSM_AlternateStart_Protocol-InfiniteAnswer.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/13762' ]
     group: *altStartGroup
@@ -4783,7 +4785,21 @@ plugins:
     clean:
       - crc: 0x0e2861fa
         util: FO4Edit v3.2.1
-
+  - name: 'SKKFastStart.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/29227' ]
+    group: *altStartGroup
+    inc: 
+      - 'AnotherLife.esp'
+      - 'OSM_AlternateStart_Protocol-InfiniteAnswer.esp'
+      - 'StartMeUp.esp'
+    dirty:
+      - <<: *quickClean
+        crc: 0xAC686A60
+        util: '[FO4Edit v4.0.3](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 6
+    clean:
+      - crc: 0x238F87A5
+        util: 'FO4Edit v4.0.3'
 
   - name: 'FO4Merged.esp'
     group: *dynamicPatchesGroup
