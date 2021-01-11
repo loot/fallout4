@@ -3918,6 +3918,12 @@ plugins:
       - crc: 0x6E30DA77
         util: 'FO4Edit v4.0.3'
 
+  - name: 'SKKCombatSettlers.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/30308' ]
+    clean:
+      - crc: 0x60BCBD74
+        util: 'FO4Edit v4.0.3'
+
   - name: 'Companion_ShutUp.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/25763' ]
     dirty:
