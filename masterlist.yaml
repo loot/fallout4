@@ -4386,7 +4386,7 @@ plugins:
       - crc: 0x2235329E
         util: 'FO4Edit v4.0.3'
   - name: 'Lexington Interiors Holotape Fix.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/19120' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/29723/' ]
     clean:
       - crc: 0x03A90584
         util: 'FO4Edit v4.0.3'
