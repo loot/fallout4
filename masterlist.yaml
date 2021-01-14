@@ -4379,6 +4379,20 @@ plugins:
       - crc: 0x2e6f79c3
         util: FO4Edit v3.2.1
 
+  - name: 'ConcordEXPANDED.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/27333/' ]
+    dirty:
+      - <<: *reqManualFix
+        crc: 0x7C786018
+        util: '[FO4Edit v4.0.3](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 18
+        udr: 68
+        nav: 52
+      - <<: *reqManualFix
+        crc: 0xB0D9B21A
+        nav: 52
+    inc: [ 'BTInteriors_Project.esp' ]
+
   - name: 'DWUK_LexingtonInteriors.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/19120' ]
     clean:
