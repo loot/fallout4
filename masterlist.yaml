@@ -4380,6 +4380,7 @@ plugins:
         util: FO4Edit v3.2.1
 
   - name: 'ConcordEXPANDED.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/27333/' ]
     dirty:
       - <<: *reqManualFix
         crc: 0x7C786018
