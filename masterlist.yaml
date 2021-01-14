@@ -3754,6 +3754,29 @@ plugins:
         crc: 0x74BE02DE
         util: '[FO4Edit v4.0.2f](https://www.nexusmods.com/fallout4/mods/2737)'
         nav: 1
+
+# Subway Runner
+  - name: 'subwayrunnnerdynamiclighting.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/18639' ]
+    dirty:
+      - <<: *quickClean
+        crc: 0xEB0209A0
+        util: '[FO4Edit v4.0.3](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 12
+    clean:
+      - crc: 0x99CFDDBD
+        util: 'FO4Edit v4.0.3'
+  - name: 'subwayrunnnernodynamic.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/18639' ]
+    dirty:
+      - <<: *quickClean
+        crc: 0x03783B71
+        util: '[FO4Edit v4.0.3](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 12
+    clean:
+      - crc: 0x56ABDCF3
+        util: 'FO4Edit v4.0.3'
+
   - name: 'UniqueUniques.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/15139' ]
     clean:
@@ -4369,6 +4392,41 @@ plugins:
         nav: 52
     inc: [ 'BTInteriors_Project.esp' ]
 
+  - name: 'DWUK_LexingtonInteriors.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/19120' ]
+    clean:
+    # Pre manual cleaning
+      - crc: 0xFD5333DA
+        util: 'FO4Edit v4.0.3'
+    # Post manual cleaning
+      - crc: 0xEFA1570A
+        util: 'FO4Edit v4.0.3'
+    msg:
+      - <<: *patch3rdParty
+        subs:
+          - 'Horizon'
+          - '[Unofficial Lexington Interiors Loot Reduction Patch Plus](https://www.nexusmods.com/fallout4/mods/44487)'
+        condition: 'active("DWUK_LexingtonInteriors.esp") and active("Z_Horizon.esp") and not active("DWUK_LexingtonInteriors_Patch.esp")'
+      - <<: *wildEdits
+        subs: [ "Remove edit 000E081D and 0006496C from LexingtonInteriors.esp. Modify edit xx00266B's X position to -36328.718750 to solve the issue." ]
+        condition: 'file("DWUK_LexingtonInteriors.esp") and checksum("DWUK_LexingtonInteriors.esp", EFA1570A)'
+  - name: 'DWUK_LexingtonInteriors_Patch.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/44487' ]
+    dirty:
+      - <<: *quickClean
+        crc: 0x6CF68492
+        util: '[FO4Edit v4.0.3](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 3
+        udr: 39
+    clean:
+      - crc: 0x2235329E
+        util: 'FO4Edit v4.0.3'
+  - name: 'Lexington Interiors Holotape Fix.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/29723/' ]
+    clean:
+      - crc: 0x03A90584
+        util: 'FO4Edit v4.0.3'
+
   - name: 'BostonFPSFix.*\.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/26286' ]
   - name: 'BostonFPSFixAIO.esp'
@@ -4450,6 +4508,17 @@ plugins:
     clean:
       - crc: 0x52A7C047
         util: 'FO4Edit v4.0.2f'
+  - name: 'Boston_Police_Department.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/1217' ]
+    dirty:
+      - <<: *quickClean
+        crc: 0xD225BE77
+        util: '[FO4Edit v4.0.3](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 1206
+        udr: 30
+    clean:
+      - crc: 0xF89DCD96
+        util: 'FO4Edit v4.0.3'
   - name: 'Conquest.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/12511' ]
     dirty:
@@ -5149,6 +5218,17 @@ plugins:
       - crc: 0x7EF2EAA5
         util: 'FO4Edit v4.0.3'
 
+  - name: 'TheSewers.esm'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/45663' ]
+    dirty:
+      - <<: *quickClean
+        crc: 0x8E7565B3
+        util: '[FO4Edit v4.0.3](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 24
+    clean:
+      - crc: 0x716E4694
+        util: 'FO4Edit v4.0.3'
+
   - name: 'Crossbow.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/10484'
@@ -5811,3 +5891,24 @@ plugins:
       - 'Farm_DLCCoast.esp'
       - 'Farm_DLCNukaWorld.esp'
       - 'Farm_DLCworkshop03.esp'
+
+  - name: 'Winter Overhaul.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/28665/' ]
+    dirty:
+      - <<: *quickClean
+        crc: 0xFDDC0A09
+        util: '[FO4Edit v4.0.3](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 104
+        udr: 63
+    clean:
+      - crc: 0xB748A59E
+        util: 'FO4Edit v4.0.3'
+
+  - name: 'GRIM.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/46711' ]
+    dirty:
+      - <<: *quickClean
+        crc: 0x613CC196
+        util: '[FO4Edit v4.0.3](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 227
+        udr: 2
