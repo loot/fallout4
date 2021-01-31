@@ -5895,6 +5895,12 @@ plugins:
       - 'Farm_DLCNukaWorld.esp'
       - 'Farm_DLCworkshop03.esp'
 
+  - name: 'SKKCombatStalkers.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/30308' ]
+    clean:
+      - crc: 0xAF03EAA6
+        util: 'FO4Edit v4.0.3'
+
   - name: 'Clean and Simple - All CAS Settlements.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/25350' ]
     after:
