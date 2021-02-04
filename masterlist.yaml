@@ -90,6 +90,8 @@ common:
         text: 'Es wird dringend empfohlen, dass Sie auch %1% benutzen.'
       - lang: ja
         text: '%1%の併用を強く推奨します。'
+      - lang: pl
+        text: 'Jest wysoce wskazane abyś używał także %1%.'
 
   - &corrupt
     type: warn
