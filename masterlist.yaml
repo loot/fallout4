@@ -4785,6 +4785,7 @@ plugins:
     clean:
       - crc: 0x0e2861fa
         util: FO4Edit v3.2.1
+
   - name: 'SKKFastStart.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/29227' ]
     group: *altStartGroup
@@ -4800,6 +4801,7 @@ plugins:
     clean:
       - crc: 0x238F87A5
         util: 'FO4Edit v4.0.3'
+
 
   - name: 'FO4Merged.esp'
     group: *dynamicPatchesGroup
