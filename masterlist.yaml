@@ -5971,3 +5971,18 @@ plugins:
         util: '[FO4Edit v4.0.3](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 227
         udr: 2
+
+  - name: 'Compact - CroupManorBasementWorkshop.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/36614'
+        name: 'Compact - Croup Manor Basement - Settlement Workshop'
+    dirty:
+      - <<: *quickClean
+        crc: 0xD9C4B791
+        util: '[FO4Edit v4.0.3](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 13
+        udr: 53
+    clean:
+      - crc: 0xC5DC1B5E
+        util: 'FO4Edit v4.0.3'
+
