@@ -2454,6 +2454,19 @@ plugins:
             text: 'Realistic Survival Damage.esp ändert die selben Spiel-Variablen wie die Survival X PC/EnemyDamage.esps. Sie sollten nur eine der beiden verwenden.'
         condition: 'file("Survival((90|75|65|50|25|10)LESS|Normal|(10|20|30|40|50|60|70|80|90|100|150|200|250|300|350|400|450|500)more)(PC|Enemy)Damage\.esp")'
 
+  - name: 'MK_Agony.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/25600/' ]
+    dirty:
+      - <<: *quickClean
+        crc: 0xD875D4AB
+        util: '[FO4Edit v4.0.3](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 1
+    clean:
+      - crc: 0x41E0336A
+        util: 'FO4Edit v4.0.3'
+      - crc: 0x98EA6346
+        util: 'FO4Edit v4.0.3'
+
   - name: '(Ambient|Strong|Hardcore|Deadly) Radiation Storms\.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/829' ]
     msg:
