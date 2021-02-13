@@ -4883,14 +4883,10 @@ plugins:
 
   - name: 'FO4Merged.esp'
     group: *dynamicPatchesGroup
-    tag:
-      - NoMerge
   - name: 'Smashed Patch.esp'
     group: *dynamicPatchesGroup
     after:
       - 'FO4Merged.esp'
-    tag:
-      - NoMerge
     msg:
       - <<: *onlyUseSmashOrBash
         condition: 'file("Bashed Patch.*\.esp")'
