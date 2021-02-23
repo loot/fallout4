@@ -94,6 +94,8 @@ common:
         text: '%1%の併用を強く推奨します。'
       - lang: pl
         text: 'Jest wysoce wskazane abyś używał także %1%.'
+      - lang: sv
+        text: 'Det är rekommenderat att du också använder %1%.'
 
   - &corrupt
     type: warn
@@ -130,6 +132,8 @@ common:
         text: 'Usuń lub dezaktywuj. %1%'
       - lang: ru
         text: 'Не забудьте отключить или удалить. %1%'
+      - lang: sv
+        text: 'Ta bort eller avaktivera. %1%'
     subs: [ '' ]
 
   - &deletePlugin
@@ -234,6 +238,8 @@ common:
         text: 'Może być używane wraz z %1% ale wymagałoby dodatkowej pracy. Smashed Patch lub Bashed Patch powinien być używany niezależnie jeden od drugiego.'
       - lang: ru
         text: 'Может быть использовано совместно с %1% но возможно потребуется дополнительная работа. Smashed Patch или Bash Patch должны быть использованы независимо друг от друга.'
+      - lang: sv
+        text: 'Kan användas med %1% men skulle kräva extra arbete. En Smashed Patch eller Bash Patch borde användas en ensamstående från varandra.'
 
   - &patch3rdParty
     type: warn
@@ -412,6 +418,8 @@ common:
         text: 'Użyj wersji %1%'
       - lang: ru
         text: 'Используйте версию для %1%'
+      - lang: sv
+        text: 'Använd version %1%.'
   - &useVersionAutomatron
     <<: *useVersion
     subs: [ 'Automatron' ]
@@ -448,6 +456,8 @@ common:
         text: '%1%バージョン以外を使用してください。'
       - lang: pl
         text: 'Użyj wersji innej niż %1%.'
+      - lang: sv
+        text: 'Använd en icke-%1% version.'
   - &useVersionNonAutomatron
     <<: *useVersionNon
     subs: [ 'Automatron' ]
