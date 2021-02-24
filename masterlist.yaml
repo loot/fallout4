@@ -380,7 +380,7 @@ common:
         text: '%1% är inte helt kompatibel med denna mod. %2%'
 
   - &useOnlyOneX
-    type: warn
+    type: error
     content:
       - lang: en
         text: 'Use only one %1%.'
