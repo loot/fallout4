@@ -244,7 +244,7 @@ common:
         text: 'Kan användas med %1% men skulle kräva extra arbete. En Smashed Patch eller Bash Patch borde användas en ensamstående från varandra.'
 
   - &patch3rdParty
-    type: warn
+    type: say
     content:
       - lang: en
         text: 'You seem to be using **%1%**, but you have not enabled a compatibility patch for this mod. A third party patch is available here: %2%'
@@ -265,7 +265,7 @@ common:
       - lang: sv
         text: 'Det verkar som att du använder **%1%**, men du har inte aktiverat en kompabilitetspatch för denna mod. En patch från en tredje part finns här: %2%.'
   - &patchIncluded
-    type: warn
+    type: say
     content:
       - lang: en
         text: 'You seem to be using **%1%**, but you have not enabled a compatibility patch for this mod. A compatibility patch is included with this plugin''s installer.'
@@ -286,7 +286,7 @@ common:
       - lang: sv
         text: 'Det verkar som att du använder **%1%**, men du har inte aktiverat en kompabilitetspatch för denna mod. En kompabilitetspatch är inkluderad i denna plugins installationsprogram.'
   - &patchProvided
-    type: warn
+    type: say
     content:
       - lang: en
         text: 'You seem to be using **%1%**, but you have not enabled a compatibility patch for this mod. A compatibility patch is provided on this plugin''s mod page.'
