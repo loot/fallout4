@@ -5259,7 +5259,10 @@ plugins:
 
   - name: 'Stm_DiamondCityExpansion.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/21853' ]
-    after: [ 'Depravity.esp' ]
+    after:
+      - 'DCGuard_Overhaul.esp'
+      - 'Depravity.esp'
+      - 'Vault4.esp'
     dirty:
       - <<: *quickClean
         crc: 0xC7AF89D0
@@ -6038,4 +6041,3 @@ plugins:
     clean:
       - crc: 0xC5DC1B5E
         util: 'FO4Edit v4.0.3'
-
