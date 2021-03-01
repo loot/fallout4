@@ -2703,7 +2703,6 @@ plugins:
             text: 'Use OCDecorator.esp Wasteland Workshop version instead: [Download](https://www.nexusmods.com/fallout4/mods/4270)'
           - lang: de
             text: 'Nutzen Sie OCDecorator.esp Wasteland Workshop Version stattdessen: [Download](https://www.nexusmods.com/fallout4/mods/4270)'
-    inc: [ 'SettlementKeywords.esm' ]
   - name: 'OCDecorator_FarHarbor.esp'
     msg:
       - type: error
@@ -2712,31 +2711,17 @@ plugins:
             text: 'Use ''OCD FarHarborDLC.esp'' instead: [Download](https://www.nexusmods.com/fallout4/mods/4270)'
           - lang: de
             text: 'Nutzen Sie ''OCD FarHarborDLC.esp'' stattdessen: [Download](https://www.nexusmods.com/fallout4/mods/4270)'
-    inc: [ 'SettlementKeywords.esm' ]
-  - name: 'WW_SK_PATCH.esp'
-    inc: [ 'SettlementKeywords.esm' ]
-  - name: 'Jzk_WW_Patch.esp'
-    inc: [ 'SettlementKeywords.esm' ]
   # ALL DLC Version 3.x
   - name: 'CW_PATCH.esp'
     msg: [ *insteadSKEPatch ]
   - name: 'DLC_MainMenu.esm'
     msg: [ *insteadSKEPatch ]
-  - name: 'DLC_OCD_Patch.esp'
-    inc: [ 'SettlementKeywords.esm' ]
-  - name: 'DLC_PATCH.esp'
-    inc: [ 'SettlementKeywords.esm' ]
-  - name: 'DLC_PATCH_ENG.esp'
-    inc: [ 'SettlementKeywords.esm' ]
   - name: 'DLC_PATCH_integrated.esp'
     msg: [ *insteadSKEPatch ]
   - name: 'DLC_SK_Patch.esp'
     msg:
       - <<: *incWithPatchVersion1.5.157.0
         condition: '(checksum("SettlementKeywords.esm",8D550871) and active("DLC_SK_Patch.esp")) and version("..\Fallout4.exe", "1.5.157.0", >=)'
-    inc: [ 'SettlementKeywords.esm' ]
-  - name: 'DLC_SKE_Patch.esp'
-    inc: [ 'SettlementKeywords.esm' ]
   - name: 'FH_PATCH.esp'
     msg: [ *insteadSKEPatch ]
   - name: 'FH_PATCH_integrated.esp'
@@ -2772,38 +2757,6 @@ plugins:
     msg: [ *insteadSKEPatch ]
   - name: 'NW_PATCH_Full.esp'
     msg: [ *insteadSKEPatch ]
-  - name: 'DLC_MainMenu_Handplaced.esp'
-    inc: [ 'SettlementKeywords.esm' ]
-  - name: 'HMM-WWorkshop-Compatibility.esp'
-    inc: [ 'SettlementKeywords.esm' ]
-  - name: 'HMMOCD-WWorkshop-Compatibility.esp'
-    inc: [ 'SettlementKeywords.esm' ]
-  - name: 'OCD-WWorkshop-Compatibility.esp'
-    inc: [ 'SettlementKeywords.esm' ]
-  - name: 'BS-SKPatch.esp'
-    inc: [ 'SettlementKeywords.esm' ]
-  - name: 'BS-HomemakerPatch.esp'
-    inc: [ 'SettlementKeywords.esm' ]
-  - name: 'SettleObjExpandPack-HM-SnB-Patch.esp'
-    inc: [ 'SettlementKeywords.esm' ]
-  - name: 'PatchyMcPatcherson-SnB.esp'
-    inc: [ 'SettlementKeywords.esm' ]
-  - name: 'WastelandWorkshopPatch.esp'
-    inc: [ 'SettlementKeywords.esm' ]
-  - name: 'FarHarborHomemakerFix.esp'
-    inc: [ 'SettlementKeywords.esm' ]
-  - name: 'Robot Home Defence - Settlement Keywords.esp'
-    inc: [ 'SettlementKeywords.esm' ]
-  - name: 'OCD_MO_Patch.esp'
-    inc: [ 'SettlementKeywords.esm' ]
-  - name: 'MO_Propaganda.esp'
-    inc: [ 'SettlementKeywords.esm' ]
-  - name: 'MO_HM_Patch.esp'
-    inc: [ 'SettlementKeywords.esm' ]
-  - name: 'MO_HM_OCD_Patch.esp'
-    inc: [ 'SettlementKeywords.esm' ]
-  - name: 'SKHMWW.esp'
-    inc: [ 'SettlementKeywords.esm' ]
   - name: 'Homemaker - Bunker Disabler SK.esp'
     msg: [ *obsolete ]
   - name: 'Homemaker - Bunker Disabler.esp'
@@ -2953,6 +2906,33 @@ plugins:
           text: 'このファイルをアンインストールしてください。Homemaker 1.50以降では不要です。'
         condition: 'version("Homemaker.esm", "1.50", >=)'
   - name: 'SettlementKeywords.esm'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/12226/' ]
+    inc:
+      - 'BS-HomemakerPatch.esp'
+      - 'BS-SKPatch.esp'
+      - 'DLC_MainMenu_Handplaced.esp'
+      - 'DLC_OCD_Patch.esp'
+      - 'DLC_PATCH_ENG.esp'
+      - 'DLC_PATCH.esp'
+      - 'DLC_SK_Patch.esp'
+      - 'DLC_SKE_Patch.esp'
+      - 'FarHarborHomemakerFix.esp'
+      - 'HMM-WWorkshop-Compatibility.esp'
+      - 'HMMOCD-WWorkshop-Compatibility.esp'
+      - 'Jzk_WW_Patch.esp'
+      - 'MO_HM_OCD_Patch.esp'
+      - 'MO_HM_Patch.esp'
+      - 'MO_Propaganda.esp'
+      - 'OCD_MO_Patch.esp'
+      - 'OCD-WWorkshop-Compatibility.esp'
+      - 'OCDecorator_FarHarbor.esp'
+      - 'OCDWorkshopDLCPatch.esp'
+      - 'PatchyMcPatcherson-SnB.esp'
+      - 'Robot Home Defence - Settlement Keywords.esp'
+      - 'SettleObjExpandPack-HM-SnB-Patch.esp'
+      - 'SKHMWW.esp'
+      - 'WastelandWorkshopPatch.esp'
+      - 'WW_SK_PATCH.esp'
     msg:
       - <<: *incWithPatchVersion1.5.157.0
         condition: 'checksum("SettlementKeywords.esm",8D550871) and version("../Fallout4.exe", "1.5.157.0", >=)'
