@@ -846,8 +846,7 @@ plugins:
         nav: 1
   - name: 'DLCworkshop01.esm'
     group: *dlcGroup
-    after:
-      - 'DLCRobot.esm'
+    after: [ 'DLCRobot.esm' ]
     dirty:
       # versions: 1.10.120-163
       - <<: *quickClean
@@ -2393,12 +2392,10 @@ plugins:
         util: 'FO4Edit v3.2'
   - name: 'Radrose Usability - .+\.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/18098' ]
-    req:
-      - 'Radrose Usability Enhancements.esp'
+    req: [ 'Radrose Usability Enhancements.esp' ]
   - name: 'Radrose - Valdacil Patch - .+\.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/18098' ]
-    req:
-      - 'Radrose Usability Enhancements.esp'
+    req: [ 'Radrose Usability Enhancements.esp' ]
     after:
       - 'Radrose Usability - DLCCoast.esp'
       - 'Radrose Usability - DLCNukaWorld + AWKCR.esp'
@@ -2408,8 +2405,7 @@ plugins:
       - 'Radrose Usability - Workbench Perk Requirements.esp'
   - name: 'FROST VIS Patch.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/24461' ]
-    req:
-      - 'Radrose Usability Enhancements.esp'
+    req: [ 'Radrose Usability Enhancements.esp' ]
   # Other plugins
   - name: 'NoSharedDogmeatTemplate.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/18547' ]
@@ -2453,16 +2449,14 @@ plugins:
         display: '"PipBoyShadows.esp" is included in "LongerDistanceLightsWithPipBoyShadows - No PipShadows.esp".'
   - name: 'Survival((90|75|65|50|25|10)LESS|Normal|(10|20|30|40|50|60|70|80|90|100|150|200)more)PCDamage\.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/222' ]
-    inc:
-      - 'Realistic Survival Damage.esp'
+    inc: [ 'Realistic Survival Damage.esp' ]
     msg:
       - <<: *useOnlyOneX
         condition: 'many("Survival((90|75|65|50|25|10)LESS|Normal|(10|20|30|40|50|60|70|80|90|100|150|200)more)PCDamage\.esp")'
         subs: [ 'Survival X PCDamage.esp' ]
   - name: 'Survival((50|25)LESS|Normal|(50|100|150|200|250|300|350|400|450|500)more)EnemyDamage\.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/222' ]
-    inc:
-      - 'Realistic Survival Damage.esp'
+    inc: [ 'Realistic Survival Damage.esp' ]
     msg:
       - <<: *useOnlyOneX
         condition: 'many("Survival((50|25)LESS|Normal|(50|100|150|200|250|300|350|400|450|500)more)EnemyDamage\.esp")'
@@ -2651,8 +2645,7 @@ plugins:
         condition: 'version("DarkerNights.esp", "1.11", <)'
   - name: 'True Nights v0(1|2|3)\.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/9253' ]
-    inc:
-      - 'DarkerNights.esp'
+    inc: [ 'DarkerNights.esp' ]
   - name: 'Synth Armor Fix.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/6424' ]
     msg:
@@ -2710,8 +2703,7 @@ plugins:
             text: 'Use OCDecorator.esp Wasteland Workshop version instead: [Download](https://www.nexusmods.com/fallout4/mods/4270)'
           - lang: de
             text: 'Nutzen Sie OCDecorator.esp Wasteland Workshop Version stattdessen: [Download](https://www.nexusmods.com/fallout4/mods/4270)'
-    inc:
-      - 'SettlementKeywords.esm'
+    inc: [ 'SettlementKeywords.esm' ]
   - name: 'OCDecorator_FarHarbor.esp'
     msg:
       - type: error
@@ -2720,142 +2712,98 @@ plugins:
             text: 'Use ''OCD FarHarborDLC.esp'' instead: [Download](https://www.nexusmods.com/fallout4/mods/4270)'
           - lang: de
             text: 'Nutzen Sie ''OCD FarHarborDLC.esp'' stattdessen: [Download](https://www.nexusmods.com/fallout4/mods/4270)'
-    inc:
-      - 'SettlementKeywords.esm'
+    inc: [ 'SettlementKeywords.esm' ]
   - name: 'WW_SK_PATCH.esp'
-    inc:
-      - 'SettlementKeywords.esm'
+    inc: [ 'SettlementKeywords.esm' ]
   - name: 'Jzk_WW_Patch.esp'
-    inc:
-      - 'SettlementKeywords.esm'
+    inc: [ 'SettlementKeywords.esm' ]
   # ALL DLC Version 3.x
   - name: 'CW_PATCH.esp'
-    msg:
-      - *insteadSKEPatch
+    msg: [ *insteadSKEPatch ]
   - name: 'DLC_MainMenu.esm'
-    msg:
-      - *insteadSKEPatch
+    msg: [ *insteadSKEPatch ]
   - name: 'DLC_OCD_Patch.esp'
-    inc:
-      - 'SettlementKeywords.esm'
+    inc: [ 'SettlementKeywords.esm' ]
   - name: 'DLC_PATCH.esp'
-    inc:
-      - 'SettlementKeywords.esm'
+    inc: [ 'SettlementKeywords.esm' ]
   - name: 'DLC_PATCH_ENG.esp'
-    inc:
-      - 'SettlementKeywords.esm'
+    inc: [ 'SettlementKeywords.esm' ]
   - name: 'DLC_PATCH_integrated.esp'
-    msg:
-      - *insteadSKEPatch
+    msg: [ *insteadSKEPatch ]
   - name: 'DLC_SK_Patch.esp'
     msg:
       - <<: *incWithPatchVersion1.5.157.0
         condition: '(checksum("SettlementKeywords.esm",8D550871) and active("DLC_SK_Patch.esp")) and version("..\Fallout4.exe", "1.5.157.0", >=)'
-    inc:
-      - 'SettlementKeywords.esm'
+    inc: [ 'SettlementKeywords.esm' ]
   - name: 'DLC_SKE_Patch.esp'
-    inc:
-      - 'SettlementKeywords.esm'
+    inc: [ 'SettlementKeywords.esm' ]
   - name: 'FH_PATCH.esp'
-    msg:
-      - *insteadSKEPatch
+    msg: [ *insteadSKEPatch ]
   - name: 'FH_PATCH_integrated.esp'
-    msg:
-      - *insteadSKEPatch
+    msg: [ *insteadSKEPatch ]
   - name: 'WW_PATCH.esp'
-    msg:
-      - *insteadSKEPatch
+    msg: [ *insteadSKEPatch ]
   - name: 'WW_PATCH_ENG.esp'
-    msg:
-      - *insteadSKEPatch
+    msg: [ *insteadSKEPatch ]
   - name: 'WW_PATCH_integrated.esp'
-    msg:
-      - *insteadSKEPatch
+    msg: [ *insteadSKEPatch ]
   # ALL DLC Version 4.x
   - name: 'NW_PATCH_Integrated.esp'
-    msg:
-      - *insteadSKEPatch
+    msg: [ *insteadSKEPatch ]
   - name: 'CW_PATCH_integrated.esp'
-    msg:
-      - *insteadSKEPatch
+    msg: [ *insteadSKEPatch ]
   - name: 'VW_PATCH_integrated.esp'
-    msg:
-      - *insteadSKEPatch
+    msg: [ *insteadSKEPatch ]
   - name: 'NW_PATCH.esp'
-    msg:
-      - *insteadSKEPatch
+    msg: [ *insteadSKEPatch ]
   - name: 'FH_PATCH_Full.esp'
-    msg:
-      - *insteadSKEPatch
+    msg: [ *insteadSKEPatch ]
   - name: 'VW_PATCH_Full.esp'
-    msg:
-      - *insteadSKEPatch
+    msg: [ *insteadSKEPatch ]
   - name: 'CW_PATCH_Full.esp'
-    msg:
-      - *insteadSKEPatch
+    msg: [ *insteadSKEPatch ]
   - name: 'WW_PATCH_Full.esp'
-    msg:
-      - *insteadSKEPatch
+    msg: [ *insteadSKEPatch ]
   - name: 'DLC_PATCH_Full.esp'
-    msg:
-      - *insteadSKEPatch
+    msg: [ *insteadSKEPatch ]
   - name: 'AM_PATCH_Full.esp'
-    msg:
-      - *insteadSKEPatch
+    msg: [ *insteadSKEPatch ]
   - name: 'VW_PATCH.esp'
-    msg:
-      - *insteadSKEPatch
+    msg: [ *insteadSKEPatch ]
   - name: 'NW_PATCH_Full.esp'
-    msg:
-      - *insteadSKEPatch
+    msg: [ *insteadSKEPatch ]
   - name: 'DLC_MainMenu_Handplaced.esp'
-    inc:
-      - 'SettlementKeywords.esm'
+    inc: [ 'SettlementKeywords.esm' ]
   - name: 'HMM-WWorkshop-Compatibility.esp'
-    inc:
-      - 'SettlementKeywords.esm'
+    inc: [ 'SettlementKeywords.esm' ]
   - name: 'HMMOCD-WWorkshop-Compatibility.esp'
-    inc:
-      - 'SettlementKeywords.esm'
+    inc: [ 'SettlementKeywords.esm' ]
   - name: 'OCD-WWorkshop-Compatibility.esp'
-    inc:
-      - 'SettlementKeywords.esm'
+    inc: [ 'SettlementKeywords.esm' ]
   - name: 'BS-SKPatch.esp'
-    inc:
-      - 'SettlementKeywords.esm'
+    inc: [ 'SettlementKeywords.esm' ]
   - name: 'BS-HomemakerPatch.esp'
-    inc:
-      - 'SettlementKeywords.esm'
+    inc: [ 'SettlementKeywords.esm' ]
   - name: 'SettleObjExpandPack-HM-SnB-Patch.esp'
-    inc:
-      - 'SettlementKeywords.esm'
+    inc: [ 'SettlementKeywords.esm' ]
   - name: 'PatchyMcPatcherson-SnB.esp'
-    inc:
-      - 'SettlementKeywords.esm'
+    inc: [ 'SettlementKeywords.esm' ]
   - name: 'WastelandWorkshopPatch.esp'
-    inc:
-      - 'SettlementKeywords.esm'
+    inc: [ 'SettlementKeywords.esm' ]
   - name: 'FarHarborHomemakerFix.esp'
-    inc:
-      - 'SettlementKeywords.esm'
+    inc: [ 'SettlementKeywords.esm' ]
   - name: 'Robot Home Defence - Settlement Keywords.esp'
-    inc:
-      - 'SettlementKeywords.esm'
+    inc: [ 'SettlementKeywords.esm' ]
   - name: 'OCD_MO_Patch.esp'
-    inc:
-      - 'SettlementKeywords.esm'
+    inc: [ 'SettlementKeywords.esm' ]
   - name: 'MO_Propaganda.esp'
-    inc:
-      - 'SettlementKeywords.esm'
+    inc: [ 'SettlementKeywords.esm' ]
   - name: 'MO_HM_Patch.esp'
-    inc:
-      - 'SettlementKeywords.esm'
+    inc: [ 'SettlementKeywords.esm' ]
   - name: 'MO_HM_OCD_Patch.esp'
-    inc:
-      - 'SettlementKeywords.esm'
+    inc: [ 'SettlementKeywords.esm' ]
   - name: 'SKHMWW.esp'
-    inc:
-      - 'SettlementKeywords.esm'
+    inc: [ 'SettlementKeywords.esm' ]
   - name: 'Homemaker - Bunker Disabler SK.esp'
     msg: [ *obsolete ]
   - name: 'Homemaker - Bunker Disabler.esp'
@@ -3202,8 +3150,7 @@ plugins:
         util: 'FO4Edit v4.0.2f'
   - name: 'BetterSettlersFarHarborPatchMortal.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/4772' ]
-    req:
-      - 'BetterSettlers.esp'
+    req: [ 'BetterSettlers.esp' ]
     after:
       - 'BetterSettlersNoLollygagging.esp'
       - 'BetterSettlersCleanFacePack.esp'
@@ -3218,8 +3165,7 @@ plugins:
     msg: [ *obsolete ]
   - name: 'BetterSettlersFarHarborPatch.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/4772' ]
-    req:
-      - 'BetterSettlers.esp'
+    req: [ 'BetterSettlers.esp' ]
     after:
       - 'BetterSettlersNoLollygagging.esp'
       - 'BetterSettlersCleanFacePack.esp'
@@ -3234,8 +3180,7 @@ plugins:
     msg: [ *obsolete ]
   - name: 'BetterSettlersCCAPack2.0.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/4772' ]
-    req:
-      - 'BetterSettlers.esp'
+    req: [ 'BetterSettlers.esp' ]
     after:
       - 'BetterSettlersNoLollygagging.esp'
       - 'BetterSettlersCleanFacePack.esp'
@@ -3268,8 +3213,7 @@ plugins:
         util: 'FO4Edit v4.0.2f'
   - name: 'Orphans.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/16000/' ]
-    after:
-      - 'DiverseChildren.esp'
+    after: [ 'DiverseChildren.esp' ]
   - name: 'LegendaryCloth.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/3694/' ]
     msg:
@@ -3376,8 +3320,7 @@ plugins:
   - name: 'Armorsmith Extended.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/2228' ]
     group: *itemsGroup
-    after:
-      - 'EAMR.esp'
+    after: [ 'EAMR.esp' ]
     dirty:
       # Version 4.6
       - <<: *quickClean
@@ -3543,10 +3486,8 @@ plugins:
         condition: 'active("EveryonesBestFriend.esp") and active("Give Me That Bottle.esp") and not active("DEF_WIDGETS_SURVIVAL1 - EBF+GMTB patch.esp")'
   - name: 'gmtb_patch.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/20818' ]
-    req:
-      - 'DEF_WIDGETS_SURVIVAL1.esp'
-    inc:
-      - 'EBF_DEFW_Patch.esp'
+    req: [ 'DEF_WIDGETS_SURVIVAL1.esp' ]
+    inc: [ 'EBF_DEFW_Patch.esp' ]
     clean:
       # Version 9
       - crc: 0x4EFF73BD
@@ -3557,8 +3498,7 @@ plugins:
         subs: [ 'DEF_WIDGETS_SURVIVAL1 - EBF+GMTB patch.esp' ]
   - name: 'EBF_DEFW_Patch.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/20818' ]
-    req:
-      - 'DEF_WIDGETS_SURVIVAL1.esp'
+    req: [ 'DEF_WIDGETS_SURVIVAL1.esp' ]
     inc:
       - 'gmtb_patch.esp'
       # Conflicts in Scripts/Hardcore/HC_ManagerScript.pex
@@ -3667,28 +3607,24 @@ plugins:
         udr: 9
   - name: 'Reverb and Ambiance Overhaul.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/10189' ]
-    after:
-      - 'RadiantBirdsv05.esp'
+    after: [ 'RadiantBirdsv05.esp' ]
   - name: 'MoreSkinColors.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/22668' ]
-    inc:
-      - 'LooksMenu Customization Compendium.esp'
+    inc: [ 'LooksMenu Customization Compendium.esp' ]
     clean:
       # Version 1.0
       - crc: 0xAFC2BB0C
         util: 'FO4Edit v3.2'
   - name: 'Enough About the Settlements Preston.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/10339' ]
-    inc:
-      - 'PrestonNoRadiant.esp'
+    inc: [ 'PrestonNoRadiant.esp' ]
     clean:
       # Version 0.5
       - crc: 0xC6D5A1B5
         util: 'FO4Edit v3.2'
   - name: 'PrestonNoRadiant.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/24940' ]
-    inc:
-      - 'Enough About the Settlements Preston.esp'
+    inc: [ 'Enough About the Settlements Preston.esp' ]
     clean:
       # Version 1.0
       - crc: 0x0B8DE742
@@ -3957,8 +3893,7 @@ plugins:
 
   - name: 'AGOMBz.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/25762' ]
-    after:
-      - 'Better Settlement Defence.esp'
+    after: [ 'Better Settlement Defence.esp' ]
     inc:
       - 'SettlementAttacksBeyond.esp'
       - 'SettlementAttacksBeyondFH.esp'
@@ -3975,8 +3910,7 @@ plugins:
       - 'AGOMBz_DLCNukaWorld.esp'
   - name: 'AGOMBz_CP_ASE_ASEFH.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/25762' ]
-    after:
-      - 'AGOMBz_DLCCoast.esp'
+    after: [ 'AGOMBz_DLCCoast.esp' ]
   - name: 'starlightdoorfix.esl'
     url: [ 'https://www.nexusmods.com/fallout4/mods/22553' ]
     clean:
@@ -4021,8 +3955,7 @@ plugins:
         util: 'FO4Edit v4.0.2i'
   - name: 'MinutemenGeneralOutfitF.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/26047' ]
-    inc:
-      - 'ArmorKeywords.esm'
+    inc: [ 'ArmorKeywords.esm' ]
     clean:
       # Version 1
       - crc: 0x5150531D
@@ -4767,16 +4700,14 @@ plugins:
         subs: [ 'Deeper Thoughts - Curie plugin' ]
   - name: 'TurretControlPanel.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/11960' ]
-    inc:
-      - 'NoMoreRandomTurretMks.esp'
+    inc: [ 'NoMoreRandomTurretMks.esp' ]
     clean:
       # Version 3.0.0
       - crc: 0x08D18DF0
         util: 'FO4Edit v3.2.4'
   - name: 'NoMoreRandomTurretMks.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/11960' ]
-    inc:
-      - 'TurretControlPanel.esp'
+    inc: [ 'TurretControlPanel.esp' ]
     clean:
       # Version 2.3.0
       - crc: 0x9AFF8E08
@@ -4792,16 +4723,14 @@ plugins:
             text: 'Diese Mod ist eingestellt zu Gunsten von "Turret Control Panel". Folge den Anweisungen [der "Turret Control Panel" Mod Seite](https://www.nexusmods.com/fallout4/mods/11960) zum updaten.'
   - name: 'Bess.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/2348' ]
-    inc:
-      - 'packbrahmin.esp'
+    inc: [ 'packbrahmin.esp' ]
     clean:
       # Version 1
       - crc: 0xB1260E90
         util: 'FO4Edit v3.2.31'
   - name: 'packbrahmin.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/2348' ]
-    inc:
-      - 'Bess.esp'
+    inc: [ 'Bess.esp' ]
     clean:
       # Version 2
       - crc: 0x9EAC8A5E
@@ -4911,16 +4840,14 @@ plugins:
     group: *dynamicPatchesGroup
   - name: 'Smashed Patch.esp'
     group: *dynamicPatchesGroup
-    after:
-      - 'FO4Merged.esp'
+    after: [ 'FO4Merged.esp' ]
     msg:
       - <<: *onlyUseSmashOrBash
         condition: 'file("Bashed Patch.*\.esp")'
         subs: [ 'Bashed Patch' ]
   - name: 'Bashed Patch.*\.esp'
     group: *dynamicPatchesGroup
-    after:
-      - 'FO4Merged.esp'
+    after: [ 'FO4Merged.esp' ]
     msg:
       - <<: *onlyUseSmashOrBash
         condition: 'file("Smashed Patch.esp")'
