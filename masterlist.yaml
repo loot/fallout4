@@ -311,29 +311,29 @@ common:
     type: error
     content:
       - lang: en
-        text: 'You have installed %1% but F4SE was not found! See F4SE download page: [F4SE](http://f4se.silverlock.org).'
+        text: 'You have installed %1% but F4SE was not found! See F4SE download page: [F4SE](https://f4se.silverlock.org).'
       - lang: da
-        text: 'Du har installeret %1% men F4SE blev ikke fundet! Se F4SE-downloadsiden: [F4SE](http://f4se.silverlock.org).'
+        text: 'Du har installeret %1% men F4SE blev ikke fundet! Se F4SE-downloadsiden: [F4SE](https://f4se.silverlock.org).'
       - lang: de
-        text: 'Sie haben %1% installiert, aber F4SE wurde nicht gefunden! F4SE kann hier heruntergeladen werden: [F4SE](http://f4se.silverlock.org).'
+        text: 'Sie haben %1% installiert, aber F4SE wurde nicht gefunden! F4SE kann hier heruntergeladen werden: [F4SE](https://f4se.silverlock.org).'
       - lang: es
-        text: 'Tienes %1% instalado pero F4SE no se pudo encontrar! Por favor descarga F4SE: [F4SE](http://f4se.silverlock.org)'
+        text: 'Tienes %1% instalado pero F4SE no se pudo encontrar! Por favor descarga F4SE: [F4SE](https://f4se.silverlock.org)'
       - lang: ja
-        text: '%1%はインストールされていますが、F4SEが見つかりません！F4SEのダウンロードページを確認してください。[F4SE](http://f4se.silverlock.org)'
+        text: '%1%はインストールされていますが、F4SEが見つかりません！F4SEのダウンロードページを確認してください。[F4SE](https://f4se.silverlock.org)'
       - lang: ko
-        text: '%1%가 설치되었지만 F4SE를 찾을 수 없습니다! F4SE 다운로드 페이지를 참조하십시오: [F4SE](http://f4se.silverlock.org).'
+        text: '%1%가 설치되었지만 F4SE를 찾을 수 없습니다! F4SE 다운로드 페이지를 참조하십시오: [F4SE](https://f4se.silverlock.org).'
       - lang: pl
         text: 'Zainstalowałeś %1% ale nie odnaleziono F4SE! Odwiedź stronę pobierania F4SE: [F4SE](https://f4se.silverlock.org).'
       - lang: pt
-        text: 'Você instalou %1% mas o F4SE não foi encontrado! Veja a página de download do F4SE: [F4SE](http://f4se.silverlock.org).'
+        text: 'Você instalou %1% mas o F4SE não foi encontrado! Veja a página de download do F4SE: [F4SE](https://f4se.silverlock.org).'
       - lang: pt_BR
         text: 'Você tem %1% instalado mas o F4SE não foi encontrado! Veja a página de download do F4SE: [F4SE](https://f4se.silverlock.org).'
       - lang: ru
-        text: 'У вас установлен %1%, но F4SE не найден! Смотрите страницу загрузки [F4SE](http://f4se.silverlock.org).'
+        text: 'У вас установлен %1%, но F4SE не найден! Смотрите страницу загрузки [F4SE](https://f4se.silverlock.org).'
       - lang: sv
-        text: 'Du har installerat %1% men F4SE kunde inte hittas! Läs mer på F4SE:s nedladdningssisda: [F4SE](http://f4se.silverlock.org).'
+        text: 'Du har installerat %1% men F4SE kunde inte hittas! Läs mer på F4SE:s nedladdningssisda: [F4SE](https://f4se.silverlock.org).'
       - lang: zh_CN
-        text: '你已经安装了%1%，但是未发现F4SE！请查看F4SE的下载页面：[F4SE](http://f4se.silverlock.org)。'
+        text: '你已经安装了%1%，但是未发现F4SE！请查看F4SE的下载页面：[F4SE](https://f4se.silverlock.org)。'
 
   - &requiresX
     type: warn
