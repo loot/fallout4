@@ -530,7 +530,7 @@ common:
       - lang: ja
         text: '%1%は最新版です。'
       - lang: ko
-        text: '%1%가 최신버전입니다.'
+        text: '%1%가 최신 버전입니다.'
       - lang: pl
         text: 'Twój %1% jest aktualny.'
       - lang: pt
