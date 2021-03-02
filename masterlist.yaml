@@ -19,6 +19,7 @@ common:
         text: 'Löschen. Schon in Fallout 4 behoben von Bethesda.'
       - lang: ja
         text: '削除してください。既にBethesdaによってFallout 4のパッチが当てられています。'
+
   - &alreadyInX
     type: error
     content:
@@ -264,6 +265,7 @@ common:
         text: 'Похоже, что используется **%1%**, но патч совместимости для него не был подключен. Патч совместимости можно найти здесь: %2%'
       - lang: sv
         text: 'Det verkar som att du använder **%1%**, men du har inte aktiverat en kompabilitetspatch för denna mod. En patch från en tredje part finns här: %2%.'
+
   - &patchIncluded
     type: say
     content:
@@ -285,6 +287,7 @@ common:
         text: 'Похоже, что используется **%1%**, но патч совместимости для него не был подключен. Патч совместимости можно найти в установщике плагина.'
       - lang: sv
         text: 'Det verkar som att du använder **%1%**, men du har inte aktiverat en kompabilitetspatch för denna mod. En kompabilitetspatch är inkluderad i denna plugins installationsprogram.'
+
   - &patchProvided
     type: say
     content:
