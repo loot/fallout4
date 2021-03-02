@@ -364,7 +364,7 @@ common:
       - lang: en
         text: '%1% is not fully compatible with this mod. %2%'
       - lang: de
-        text: '%1% ist nicht voll kompatibel mit dieser Mod. %2%'
+        text: '%1% ist nicht vollständig kompatibel mit dieser Mod. %2%'
       - lang: fi
         text: '%1% ei ole täysin yhteensopiva tämän modin kanssa. %2%'
       - lang: ja
@@ -530,7 +530,7 @@ common:
       - lang: ja
         text: '%1%は最新版です。'
       - lang: ko
-        text: '%1%가 최신버전입니다.'
+        text: '%1%가 최신 버전입니다.'
       - lang: pl
         text: 'Twój %1% jest aktualny.'
       - lang: pt
