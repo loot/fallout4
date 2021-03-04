@@ -3236,12 +3236,21 @@ plugins:
     inc:
       - 'llamaCompanionHeather-BBS Patch.esp'
       - 'llamaCompanionHeather-BBS-AE Patch.esp'
+
   - name: 'THBrows.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/6186' ]
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/6186/'
+        name: 'THBrows'
+      - link: 'https://www.nexusmods.com/fallout4/mods/50174/'
+        name: 'THBrows 2.0'
     msg:
-      - <<: *alreadyInX
-        condition: 'active("LooksMenu Customization Compendium.esp")'
-        subs: [ 'LooksMenu Customization Compendium.esp' ]
+      - <<: *obsolete
+        subs: [ '[THBrows 2.0](https://www.nexusmods.com/fallout4/mods/50174/)' ]
+        condition: 'checksum("THBrows.esp", 35484B14)'
+    clean:
+      - crc: 0x73129EB2
+        util: 'FO4Edit v4.0.3f'
+
   - name: 'Better Settlement Defence.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/20137' ]
     msg:
