@@ -4854,13 +4854,11 @@ plugins:
 
   - name: 'MoreSpawns_High.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/4253' ]
-    after:
-      - 'MoreAGOMBz.esp'
+    after: [ 'MoreAGOMBz.esp' ]
 
   - name: 'MoreSpawns_Medium.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/4253' ]
-    after:
-      - 'MoreAGOMBz.esp'
+    after: [ 'MoreAGOMBz.esp' ]
 
 # Better Series
   - name: 'AtomCatGarage.esp'
@@ -5215,8 +5213,7 @@ plugins:
 
   - name: 'LoreFriendlySurvivalChems.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/15275' ]
-    after:
-      - 'VIS-G Item Sorting.esp'
+    after: [ 'VIS-G Item Sorting.esp' ]
 
   - name: 'D.E.C.A.Y.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/2500' ]
@@ -5229,8 +5226,7 @@ plugins:
 
   - name: 'FOFW_ALL_IN_ONE_VANILLA.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/9363' ]
-    after:
-      - 'Unique NPCs.esp'
+    after: [ 'Unique NPCs.esp' ]
 
   - name: 'Live Action Handy.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/9571' ]
@@ -5338,13 +5334,11 @@ plugins:
         util: 'FO4Edit v4.0.2f'
   - name: 'Yagisan_WO_Better_Caravans.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/33787' ]
-    after:
-      - 'Unique NPCs - Creatures and Monsters.esp'
+    after: [ 'Unique NPCs - Creatures and Monsters.esp' ]
 
   - name: 'Enhanced Commonwealth Wardrobe.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/28620' ]
-    after:
-      - 'Mercenary.esp'
+    after: [ 'Mercenary.esp' ]
 
   - name: 'FALLOUT4WT.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/17103' ]
@@ -5697,8 +5691,7 @@ plugins:
         itm: 1935
         udr: 1971
         nav: 5
-    inc: 
-      - 'StartMeUp.esp'
+    inc: [ 'StartMeUp.esp' ]
 
 ###### Horizon ######
   - name: 'Z_(Architect|Horizon)\.es(m|p)'
@@ -5868,8 +5861,7 @@ plugins:
 
   - name: 'Farm.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/16810' ]
-    after:
-      - 'Better Cooking Stations.esp'
+    after: [ 'Better Cooking Stations.esp' ]
 
   - name: 'Farm_WSPOverride_\w+\.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/16810' ]
@@ -5877,8 +5869,7 @@ plugins:
 
   - name: 'Yagisan_SSSL_Red_Rocket_Settlements_Generic_Patch.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/35405' ]
-    after:
-      - 'Farm.esp'
+    after: [ 'Farm.esp' ]
 
   - name: 'Build High - Expanded Settlements.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/3528' ]
