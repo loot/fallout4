@@ -4025,7 +4025,6 @@ plugins:
   - name: 'Crafting Workbench.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/2451' ]
     msg:
-      - <<: *obsolete
       - type: say
         content:
           - lang: en
