@@ -4022,42 +4022,13 @@ plugins:
     clean:
       - crc: 0x6896ea2f
         util: FO4Edit v3.2.1
+
   - name: 'Crafting Workbench.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/2451/' ]
     msg:
       - <<: *useInstead
         subs: [ '[Crafting Mastery (Crafting Workbenches updated)](https://www.nexusmods.com/fallout4/mods/17849/)' ]
-    clean:
-      - crc: 0x445fbdcc
-        util: FO4Edit v3.2.1
-  - name: 'Crafting Workbenches - Ammo.esp'
-    clean:
-      - crc: 0xf7a6f4dd
-        util: FO4Edit v3.2.1
-  - name: 'Crafting Workbenches - Ammo Expanded.esp'
-    clean:
-      - crc: 0x23c7fa31
-        util: FO4Edit v3.2.1
-  - name: 'Crafting Workbenches - Ammo Special.esp'
-    clean:
-      - crc: 0x1e937201
-        util: FO4Edit v3.2.1
-  - name: 'Crafting Workbenches - Automatron DLC.esp'
-    clean:
-      - crc: 0xc2186c6d
-        util: FO4Edit v3.2.1
-  - name: 'Crafting Workbenches - Junk Items.esp'
-    clean:
-      - crc: 0xf8a20363
-        util: FO4Edit v3.2.1
-  - name: 'Crafting Workbenches - Power Armor.esp'
-    clean:
-      - crc: 0xfc643692
-        util: FO4Edit v3.2.1
-  - name: 'Crafting Workbenches - Pre War and Manufactured.esp'
-    clean:
-      - crc: 0xc567fe75
-        util: FO4Edit v3.2.1
+
   - name: 'AmazingFollowerTweaks.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/26976' ]
     after:
