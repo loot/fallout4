@@ -382,6 +382,18 @@ common:
       - lang: sv
         text: '%1% är inte helt kompatibel med denna mod. %2%'
 
+  - &useInstead
+    type: warn
+    content:
+      - lang: en
+        text: 'Use %1% instead.'
+      - lang: de
+        text: 'Nutzen Sie %1% stattdessen.'
+      - lang: ja
+        text: '代わりに%1%を使用してください。'
+      - lang: sv
+        text: 'Använd %1% istället.'
+
   - &useOnlyOneX
     type: error
     content:
@@ -4010,58 +4022,13 @@ plugins:
     clean:
       - crc: 0x6896ea2f
         util: FO4Edit v3.2.1
+
   - name: 'Crafting Workbench.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/2451' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/2451/' ]
     msg:
-      - <<: *obsolete
-      - type: say
-        content:
-          - lang: en
-            text: 'Use %1% instead.'
-          - lang: de
-            text: 'Nutzen Sie %1% stattdessen.'
-        subs: [ '[Crafting Mastery (Crafting Workbenches updated)](https://www.nexusmods.com/fallout4/mods/17849)' ]
-      - type: warn
-        content:
-          - lang: en
-            text: 'An out of date version of %1% is included with this mod. This should be removed and replaced with a newer version from [here](%2%).'
-          - lang: de
-            text: 'Eine veraltete Version von %1% ist in dieser Mod enthalten. Diese sollte entfernt and mit einer neuer Version von [hier](%2%) ersetzt werden.'
-        subs:
-          - 'ArmorKeywords.esm'
-          - 'https://www.nexusmods.com/fallout4/mods/2228'
-        condition: 'active("ArmorKeywords.esm") and (checksum("ArmorKeywords.esm", 90D9E687) or checksum("ArmorKeywords.esm", E0F08C1E) or checksum("ArmorKeywords.esm", 991891C7))'
-    clean:
-      - crc: 0x445fbdcc
-        util: FO4Edit v3.2.1
-  - name: 'Crafting Workbenches - Ammo.esp'
-    clean:
-      - crc: 0xf7a6f4dd
-        util: FO4Edit v3.2.1
-  - name: 'Crafting Workbenches - Ammo Expanded.esp'
-    clean:
-      - crc: 0x23c7fa31
-        util: FO4Edit v3.2.1
-  - name: 'Crafting Workbenches - Ammo Special.esp'
-    clean:
-      - crc: 0x1e937201
-        util: FO4Edit v3.2.1
-  - name: 'Crafting Workbenches - Automatron DLC.esp'
-    clean:
-      - crc: 0xc2186c6d
-        util: FO4Edit v3.2.1
-  - name: 'Crafting Workbenches - Junk Items.esp'
-    clean:
-      - crc: 0xf8a20363
-        util: FO4Edit v3.2.1
-  - name: 'Crafting Workbenches - Power Armor.esp'
-    clean:
-      - crc: 0xfc643692
-        util: FO4Edit v3.2.1
-  - name: 'Crafting Workbenches - Pre War and Manufactured.esp'
-    clean:
-      - crc: 0xc567fe75
-        util: FO4Edit v3.2.1
+      - <<: *useInstead
+        subs: [ '[Crafting Mastery (Crafting Workbenches updated)](https://www.nexusmods.com/fallout4/mods/17849/)' ]
+
   - name: 'AmazingFollowerTweaks.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/26976' ]
     after:
