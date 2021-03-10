@@ -382,6 +382,18 @@ common:
       - lang: sv
         text: '%1% är inte helt kompatibel med denna mod. %2%'
 
+  - &useInstead
+    type: warn
+    content:
+      - lang: en
+        text: 'Use %1% instead.'
+      - lang: de
+        text: 'Nutzen Sie %1% stattdessen.'
+      - lang: ja
+        text: '代わりに%1%を使用してください。'
+      - lang: sv
+        text: 'Använd %1% istället.'
+
   - &useOnlyOneX
     type: error
     content:
