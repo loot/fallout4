@@ -2597,15 +2597,6 @@ plugins:
   - name: 'NoGunSneakAttackMultiplier.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/2114' ]
     msg:
-      - type: say
-        content:
-        - lang: en
-          text: 'This plugin has an ESL version available. Consider using that instead of this one.'
-        - lang: da
-          text: 'Dette plugin er også tilgængelig i en ESL udgave. Overvej at bruge ESL-udgaven i stedet for denne.'
-        - lang: de
-          text: 'Für dieses Plugin ist eine ESL Version verfügbar. Erwägen Sie diese zu nutzen anstatt der jetzigen.'
-        condition: 'not active("NoGunSneakAttackMultiplier.esl")'
       - <<: *obsolete
         condition: 'version("NoGunSneakAttackMultiplier.esp", "1.2", <)'
       - <<: *useOnlyOneX
