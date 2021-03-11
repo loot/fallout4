@@ -2597,15 +2597,6 @@ plugins:
   - name: 'NoGunSneakAttackMultiplier.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/2114' ]
     msg:
-      - type: say
-        content:
-        - lang: en
-          text: 'This plugin has an ESL version available. Consider using that instead of this one.'
-        - lang: da
-          text: 'Dette plugin er også tilgængelig i en ESL udgave. Overvej at bruge ESL-udgaven i stedet for denne.'
-        - lang: de
-          text: 'Für dieses Plugin ist eine ESL Version verfügbar. Erwägen Sie diese zu nutzen anstatt der jetzigen.'
-        condition: 'not active("NoGunSneakAttackMultiplier.esl")'
       - <<: *obsolete
         condition: 'version("NoGunSneakAttackMultiplier.esp", "1.2", <)'
       - <<: *useOnlyOneX
@@ -2685,47 +2676,22 @@ plugins:
     req: [ 'Lasers Have No Recoil.esp' ]
   - name: 'OCDCCPatch.esp'
     msg:
-      - type: warn
-        content:
-          - lang: en
-            text: 'OCDCCPatch.esp is no longer required. Upgrade OCDecorator.esp to 1.1.3.'
-          - lang: de
-            text: 'OCDCCPatch.esp is nicht länger vorausgesetzt. Upgraden Sie OCDecorator.esp zu 1.1.3.'
-        condition: 'active("OCDecorator.esp")'
-  - name: 'OCD FarHarborDLC.esp'
+      - <<: *alreadyInX
+        subs: [ '**OCDecoratorDLC.esp**' ]
+  - name: 'OCD (FarHarbor|NukaWorld)DLC\.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/4270/' ]
     msg:
-      - type: warn
-        content:
-          - lang: en
-            text: 'OCDecoratorDLC.esp in a merged version of OCD NukaWorldDLC.esp and OCD FarHarborDLC.esp'
-          - lang: de
-            text: 'OCDecoratorDLC.esp ist eine kombinierte Version vonOCD NukaWorldDLC.esp und OCD FarHarborDLC.esp'
-        condition: 'file("OCDecoratorDLC.esp")'
-  - name: 'OCD NukaWorldDLC.esp'
-    msg:
-      - type: warn
-        content:
-          - lang: en
-            text: 'OCDecoratorDLC.esp in a merged version od OCD NukaWorldDLC.esp and OCD FarHarborDLC.esp'
-          - lang: de
-            text: 'OCDecoratorDLC.esp ist eine kombinierte Version vonOCD NukaWorldDLC.esp und OCD FarHarborDLC.esp'
-        condition: 'file("OCDecoratorDLC.esp")'
+      - <<: *alreadyInX
+        subs: [ '**OCDecoratorDLC.esp**' ]
+        condition: 'active("OCDecoratorDLC.esp")'
   - name: 'OCDWorkshopDLCPatch.esp'
     msg:
-      - type: error
-        content:
-          - lang: en
-            text: 'Use OCDecorator.esp Wasteland Workshop version instead: [Download](https://www.nexusmods.com/fallout4/mods/4270)'
-          - lang: de
-            text: 'Nutzen Sie OCDecorator.esp Wasteland Workshop Version stattdessen: [Download](https://www.nexusmods.com/fallout4/mods/4270)'
+      - <<: *useInstead
+        subs: [ '[OCDecorator](https://www.nexusmods.com/fallout4/mods/4270/)' ]
   - name: 'OCDecorator_FarHarbor.esp'
     msg:
-      - type: error
-        content:
-          - lang: en
-            text: 'Use ''OCD FarHarborDLC.esp'' instead: [Download](https://www.nexusmods.com/fallout4/mods/4270)'
-          - lang: de
-            text: 'Nutzen Sie ''OCD FarHarborDLC.esp'' stattdessen: [Download](https://www.nexusmods.com/fallout4/mods/4270)'
+      - <<: *useInstead
+        subs: [ '[**OCD FarHarborDLC.esp**](https://www.nexusmods.com/fallout4/mods/4270/)' ]
   # ALL DLC Version 3.x
   - name: 'CW_PATCH.esp'
     msg: [ *insteadSKEPatch ]
@@ -2841,69 +2807,9 @@ plugins:
       - *incWithPatchVersion1.5.157.0
       - *obsolete
   - name: 'Homemaker.esm'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/1478' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/1478/' ]
     msg:
-      # Homemaker 1.34 CRC
-      - <<: *incWithPatchVersion1.5.157.0
-        condition: 'checksum("Homemaker.esm",55D44FD5) and version("../Fallout4.exe", "1.5.157.0", >=)'
-      - type: error
-        content:
-          - lang: en
-            text: 'Homemaker patch for Settlement Keywords Expanded is not installed. Reinstall SKE and place a check mark in the first box in the list of Homemaker patches to ensure the Homemaker patch will be properly installed.'
-          - lang: de
-            text: 'Homemaker Patch für Settlement Keywords Expanded ist nicht installiert. Installieren Sie SKE neu und setzen Sie ein Häkchen im ersten Kontrollkästchen in der Liste von Homemaker Patches um sicherzustellen das der Homemaker Patch korrekt installiert wird.'
-        condition: '(checksum("Homemaker.esm",55D44FD5) or checksum("Homemaker.esm",A28ED2EC) or checksum("Homemaker.esm",DF136FBA) or checksum("Homemaker.esm",284A031C) or checksum("Homemaker.esm",47E7024C)) and version("SettlementKeywords.esm", "1.0", >=)'
-      # Homemaker 1.35 CRC
-      - type: error
-        content:
-          - lang: en
-            text: 'Requires Fallout 4 patch 1.5.157 or greater.'
-          - lang: de
-            text: 'Inkompatibel mit Fallout 4 Patch 1.5.157 oder neuer.'
-        condition: 'checksum("Homemaker.esm",A28ED2EC) and version("../Fallout4.exe", "1.5.157.0", <)'
-      # Homemaker 1.36 CRC DF136FBA
-      # For 1.37 and Fallout 4 patch 1.6.3 to 1.6.9
-      # Homemaker 1.37 CRC Old: 7207BE96, New: E0D47FC0
-      # Homemaker 1.39 CRC 284A031C
-      - type: error
-        content:
-          - lang: en
-            text: 'Incompatible with Fallout 4 patch 1.7.9 or greater. Use Homemaker 1.40 instead.'
-          - lang: de
-            text: 'Inkompatibel mit Fallout 4 Patch 1.7.9 oder neuer. Nutzen Sie Homemaker 1.40 stattdessen.'
-        condition: 'checksum("Homemaker.esm",284A031C) and version("../Fallout4.exe", "1.7.9", >=)'
-      # For 1.38 and Fallout 4 patch 1.7.9 or greater
-      # Homemaker 1.38 CRC Old: F6020126, New: 79CA5BE5
-      # Homemaker 1.40 CRC 47E7024C
-      - type: error
-        content:
-          - lang: en
-            text: 'Incompatible with Fallout 4 patch 1.6.3 to 1.6.9. Use Homemaker 1.39 instead.'
-          - lang: de
-            text: 'Inkompatibel mit Fallout 4 Oatch 1.6.3 zu 1.6.9. Nutzen Sie Homemaker 1.39 stattdessen.'
-        condition: 'checksum("Homemaker.esm",47E7024C) and (version("../Fallout4.exe", "1.6.3", >=) and version("../Fallout4.exe", "1.6.9", <=))'
-      # Homemaker 1.41 CRC F8FC29EE
-      - type: error
-        content:
-          - lang: en
-            text: 'Requires Fallout 4 patch 1.7.9 or greater.'
-          - lang: de
-            text: 'Inkompatibel mit Fallout 4 Patch 1.7.9 oder neuer.'
-        condition: 'checksum("Homemaker.esm",F8FC29EE) and version("../Fallout4.exe", "1.7.9", <)'
-      # Homemaker 1.50
-      - type: error
-        content:
-          - lang: en
-            text: 'Requires Fallout 4 patch 1.7.9 or greater.'
-          - lang: de
-            text: 'Inkompatibel mit Fallout 4 Patch 1.7.9 oder neuer.'
-        condition: 'version("Homemaker.esm", "1.50", >=) and version("../Fallout4.exe", "1.7.9", <)'
-      - type: say
-        content:
-          - lang: en
-            text: 'Outdated. Upgrade to the latest version of Homemaker: [Download](https://www.nexusmods.com/fallout4/mods/1478)'
-          - lang: de
-            text: 'Veraltet. Upgraden Sie zu der neuesten Version von Homemaker: [Download](https://www.nexusmods.com/fallout4/mods/1478)'
+      - <<: *obsolete
         condition: 'version("Homemaker.esm", "1.50", <)'
   - name: 'SnapBedsHomemakerPatch.esp'
     msg:
@@ -2976,97 +2882,30 @@ plugins:
         condition: '(checksum("AlternateSettlements.esp",D8906B4D) or checksum("AlternateSettlements.esp",5C36EB92)) and version("SettlementKeywords.esm", "1.0", >=)'
   - name: 'Safe SSEx.esp'
     msg: [ *incWithPatchVersion1.5.157.0 ]
-  - name: 'Minutemenoverhaul.esp'
+
+  - name: 'BuildingBlocks.*\.es(p|m)'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/8907/' ]
+  - name: 'BuildingBlocks-Foundations.esp'
+    msg: [ *incWithPatchVersion1.5.157.0 ]
+  - name: 'BuildingBlocks-Foundations_Homemaker.*\.esp'
     msg:
-      - type: error
-        content:
-          - lang: en
-            text: 'Requires Fallout 4 patch 1.5.157 to 1.5.416. Use Minutemen Overhaul 2.0.5 instead.'
-          - lang: de
-            text: 'Setzt Fallout 4 Patch 1.5.157 zu 1.5.416 voraus. Nutzen Sie Minutemen Overhaul 2.0.5 stattdessen.'
-        condition: 'checksum("Minutemenoverhaul.esp",8CD7D3C8) and version("../Fallout4.exe", "1.6.3", >=)'
-      - type: error
-        content:
-          - lang: en
-            text: 'Uninstall and use Minutemen Overhaul 2.0.3 or 2.0.5.'
-          - lang: de
-            text: 'Deinstallieren und nutzen Sie Minutemen Overhaul 2.0.3 zu 2.0.5.'
-        condition: 'checksum("Minutemenoverhaul.esp",A66E1F17)'
-      - type: error
-        content:
-          - lang: en
-            text: 'Requires Fallout 4 patch 1.6.3 or greater. Use Minutemen Overhaul 2.0.3 instead.'
-          - lang: de
-            text: 'Setzt Fallout 4 Patch 1.6.3 oder neuer voraus. Nutzen Sie Minutemen Overhaul 2.0.3 stattdessen.'
-        condition: 'checksum("Minutemenoverhaul.esp",46A18495) and (version("../Fallout4.exe", "1.5.157.0", >=) and version("../Fallout4.exe", "1.5.416.0", <=))'
-      - type: error
-        content:
-          - lang: en
-            text: 'Minutemen Overhaul patch for Settlement Keywords Expanded not installed. Reinstall SKE.'
-          - lang: de
-            text: 'Minutemen Overhaul Patch für Settlement Keywords Expanded ist nicht installiert. Installieren Sie SKE neu.'
-        condition: '(checksum("Minutemenoverhaul.esp",8CD7D3C8) or checksum("Minutemenoverhaul.esp",46A18495)) and version("SettlementKeywords.esm", "1.0", >=)'
-  - name: 'BuildingBlocks-Foundations_Homemaker-SnapBuild.esp'
-    msg:
-      - type: error
-        content:
-          - lang: en
-            text: 'Uninstall this file. It is not needed with Homemaker 1.50 or greater.'
-          - lang: de
-            text: 'Deinstallieren Sie diese Datei. Es wird nicht gebraucht mit Homemaker 1.50 oder neuer.'
-        condition: 'version("Homemaker.esm", "1.50", >=)'
-      - *incWithPatchVersion1.5.157.0
-  - name: 'BuildingBlocks-Foundations_Homemaker.esp'
-    msg:
-      - type: error
-        content:
-          - lang: en
-            text: 'Uninstall this file. It is not needed with Homemaker 1.50 or greater.'
-          - lang: de
-            text: 'Deinstallieren Sie diese Datei. Es wird nicht gebraucht mit Homemaker 1.50 oder neuer.'
-        condition: 'version("Homemaker.esm", "1.50", >=)'
-      - *incWithPatchVersion1.5.157.0
-  - name: 'BuildingBlocks-Foundations_Homemaker-SSEx.esp'
-    msg:
-      - type: error
-        content:
-          - lang: en
-            text: 'Uninstall this file. It is not needed with Homemaker 1.50 or greater.'
-          - lang: de
-            text: 'Deinstallieren Sie diese Datei. Es wird nicht gebraucht mit Homemaker 1.50 oder neuer.'
+      - <<: *alreadyInOrFixedByX
+        subs: [ 'Homemaker 1.50 or greater' ]
         condition: 'version("Homemaker.esm", "1.50", >=)'
       - *incWithPatchVersion1.5.157.0
   - name: 'BuildingBlocks-Foundations_SettlementKeywordsFull.esp'
     msg:
-      - type: say
-        content:
-          - lang: en
-            text: 'This file is compatible with SKE but not recomended. Use BuildingBlocks-Foundations.esp instead.'
-          - lang: de
-            text: 'Diese Datei ist kompatibel mit SKE aber nicht empfohlen. Nutzen Sie BuildingBlocks-Foundations.esp stattdessen.'
+      - <<: *useInstead
+        type: say
+        subs: [ '**BuildingBlocks-Foundations.esp**' ]
         condition: 'version("SettlementKeywords.esm", "1.0", >=)'
   - name: 'BuildingBlocks-Foundations_SettlementKeywordsPartial.esp'
-    msg:
-      - type: error
-        content:
-          - lang: en
-            text: 'Uninstall this file. It was not made for Settlement Keywords Expanded.'
-          - lang: de
-            text: 'Deinstallieren Sie diese Datei. Diese wurde nicht für Settlement Keywords Expanded erstellt.'
+    inc:
+      - name: 'SettlementKeywords.esm'
+        display: 'Settlement Keywords Expanded'
         condition: 'version("SettlementKeywords.esm", "1.0", >=)'
-      - *incWithPatchVersion1.5.157.0
-  - name: 'BuildingBlocks-Foundations_Homemaker-SnapBuild-SSEx.esp'
-    msg:
-      - type: error
-        content:
-          - lang: en
-            text: 'Uninstall this file. It is not needed with Homemaker 1.50 or greater.'
-          - lang: de
-            text: 'Deinstallieren Sie diese Datei. Es wird nicht gebraucht mit Homemaker 1.50 oder neuer.'
-        condition: 'version("Homemaker.esm", "1.50", >=)'
-      - *incWithPatchVersion1.5.157.0
-  - name: 'BuildingBlocks-Foundations.esp'
     msg: [ *incWithPatchVersion1.5.157.0 ]
+
   - name: 'Z_Horizon_Patch_Homemaker.esp'
     msg:
       - type: warn
