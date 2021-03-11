@@ -2882,67 +2882,30 @@ plugins:
         condition: '(checksum("AlternateSettlements.esp",D8906B4D) or checksum("AlternateSettlements.esp",5C36EB92)) and version("SettlementKeywords.esm", "1.0", >=)'
   - name: 'Safe SSEx.esp'
     msg: [ *incWithPatchVersion1.5.157.0 ]
-  - name: 'BuildingBlocks-Foundations_Homemaker-SnapBuild.esp'
+
+  - name: 'BuildingBlocks.*\.es(p|m)'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/8907/' ]
+  - name: 'BuildingBlocks-Foundations.esp'
+    msg: [ *incWithPatchVersion1.5.157.0 ]
+  - name: 'BuildingBlocks-Foundations_Homemaker.*\.esp'
     msg:
-      - type: error
-        content:
-          - lang: en
-            text: 'Uninstall this file. It is not needed with Homemaker 1.50 or greater.'
-          - lang: de
-            text: 'Deinstallieren Sie diese Datei. Es wird nicht gebraucht mit Homemaker 1.50 oder neuer.'
-        condition: 'version("Homemaker.esm", "1.50", >=)'
-      - *incWithPatchVersion1.5.157.0
-  - name: 'BuildingBlocks-Foundations_Homemaker.esp'
-    msg:
-      - type: error
-        content:
-          - lang: en
-            text: 'Uninstall this file. It is not needed with Homemaker 1.50 or greater.'
-          - lang: de
-            text: 'Deinstallieren Sie diese Datei. Es wird nicht gebraucht mit Homemaker 1.50 oder neuer.'
-        condition: 'version("Homemaker.esm", "1.50", >=)'
-      - *incWithPatchVersion1.5.157.0
-  - name: 'BuildingBlocks-Foundations_Homemaker-SSEx.esp'
-    msg:
-      - type: error
-        content:
-          - lang: en
-            text: 'Uninstall this file. It is not needed with Homemaker 1.50 or greater.'
-          - lang: de
-            text: 'Deinstallieren Sie diese Datei. Es wird nicht gebraucht mit Homemaker 1.50 oder neuer.'
+      - <<: *alreadyInOrFixedByX
+        subs: [ 'Homemaker 1.50 or greater' ]
         condition: 'version("Homemaker.esm", "1.50", >=)'
       - *incWithPatchVersion1.5.157.0
   - name: 'BuildingBlocks-Foundations_SettlementKeywordsFull.esp'
     msg:
-      - type: say
-        content:
-          - lang: en
-            text: 'This file is compatible with SKE but not recomended. Use BuildingBlocks-Foundations.esp instead.'
-          - lang: de
-            text: 'Diese Datei ist kompatibel mit SKE aber nicht empfohlen. Nutzen Sie BuildingBlocks-Foundations.esp stattdessen.'
+      - <<: *useInstead
+        type: say
+        subs: [ '**BuildingBlocks-Foundations.esp**' ]
         condition: 'version("SettlementKeywords.esm", "1.0", >=)'
   - name: 'BuildingBlocks-Foundations_SettlementKeywordsPartial.esp'
-    msg:
-      - type: error
-        content:
-          - lang: en
-            text: 'Uninstall this file. It was not made for Settlement Keywords Expanded.'
-          - lang: de
-            text: 'Deinstallieren Sie diese Datei. Diese wurde nicht für Settlement Keywords Expanded erstellt.'
+    inc:
+      - name: 'SettlementKeywords.esm'
+        display: 'Settlement Keywords Expanded'
         condition: 'version("SettlementKeywords.esm", "1.0", >=)'
-      - *incWithPatchVersion1.5.157.0
-  - name: 'BuildingBlocks-Foundations_Homemaker-SnapBuild-SSEx.esp'
-    msg:
-      - type: error
-        content:
-          - lang: en
-            text: 'Uninstall this file. It is not needed with Homemaker 1.50 or greater.'
-          - lang: de
-            text: 'Deinstallieren Sie diese Datei. Es wird nicht gebraucht mit Homemaker 1.50 oder neuer.'
-        condition: 'version("Homemaker.esm", "1.50", >=)'
-      - *incWithPatchVersion1.5.157.0
-  - name: 'BuildingBlocks-Foundations.esp'
     msg: [ *incWithPatchVersion1.5.157.0 ]
+
   - name: 'Z_Horizon_Patch_Homemaker.esp'
     msg:
       - type: warn
