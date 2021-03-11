@@ -2690,12 +2690,8 @@ plugins:
         subs: [ '[OCDecorator](https://www.nexusmods.com/fallout4/mods/4270/)' ]
   - name: 'OCDecorator_FarHarbor.esp'
     msg:
-      - type: error
-        content:
-          - lang: en
-            text: 'Use ''OCD FarHarborDLC.esp'' instead: [Download](https://www.nexusmods.com/fallout4/mods/4270)'
-          - lang: de
-            text: 'Nutzen Sie ''OCD FarHarborDLC.esp'' stattdessen: [Download](https://www.nexusmods.com/fallout4/mods/4270)'
+      - <<: *useInstead
+        subs: [ '[**OCD FarHarborDLC.esp**](https://www.nexusmods.com/fallout4/mods/4270/)' ]
   # ALL DLC Version 3.x
   - name: 'CW_PATCH.esp'
     msg: [ *insteadSKEPatch ]
