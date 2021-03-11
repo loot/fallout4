@@ -2882,36 +2882,6 @@ plugins:
         condition: '(checksum("AlternateSettlements.esp",D8906B4D) or checksum("AlternateSettlements.esp",5C36EB92)) and version("SettlementKeywords.esm", "1.0", >=)'
   - name: 'Safe SSEx.esp'
     msg: [ *incWithPatchVersion1.5.157.0 ]
-  - name: 'Minutemenoverhaul.esp'
-    msg:
-      - type: error
-        content:
-          - lang: en
-            text: 'Requires Fallout 4 patch 1.5.157 to 1.5.416. Use Minutemen Overhaul 2.0.5 instead.'
-          - lang: de
-            text: 'Setzt Fallout 4 Patch 1.5.157 zu 1.5.416 voraus. Nutzen Sie Minutemen Overhaul 2.0.5 stattdessen.'
-        condition: 'checksum("Minutemenoverhaul.esp",8CD7D3C8) and version("../Fallout4.exe", "1.6.3", >=)'
-      - type: error
-        content:
-          - lang: en
-            text: 'Uninstall and use Minutemen Overhaul 2.0.3 or 2.0.5.'
-          - lang: de
-            text: 'Deinstallieren und nutzen Sie Minutemen Overhaul 2.0.3 zu 2.0.5.'
-        condition: 'checksum("Minutemenoverhaul.esp",A66E1F17)'
-      - type: error
-        content:
-          - lang: en
-            text: 'Requires Fallout 4 patch 1.6.3 or greater. Use Minutemen Overhaul 2.0.3 instead.'
-          - lang: de
-            text: 'Setzt Fallout 4 Patch 1.6.3 oder neuer voraus. Nutzen Sie Minutemen Overhaul 2.0.3 stattdessen.'
-        condition: 'checksum("Minutemenoverhaul.esp",46A18495) and (version("../Fallout4.exe", "1.5.157.0", >=) and version("../Fallout4.exe", "1.5.416.0", <=))'
-      - type: error
-        content:
-          - lang: en
-            text: 'Minutemen Overhaul patch for Settlement Keywords Expanded not installed. Reinstall SKE.'
-          - lang: de
-            text: 'Minutemen Overhaul Patch für Settlement Keywords Expanded ist nicht installiert. Installieren Sie SKE neu.'
-        condition: '(checksum("Minutemenoverhaul.esp",8CD7D3C8) or checksum("Minutemenoverhaul.esp",46A18495)) and version("SettlementKeywords.esm", "1.0", >=)'
   - name: 'BuildingBlocks-Foundations_Homemaker-SnapBuild.esp'
     msg:
       - type: error
