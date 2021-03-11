@@ -2678,24 +2678,12 @@ plugins:
     msg:
       - <<: *alreadyInX
         subs: [ '**OCDecoratorDLC.esp**' ]
-  - name: 'OCD FarHarborDLC.esp'
+  - name: 'OCD (FarHarbor|NukaWorld)DLC\.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/4270/' ]
     msg:
-      - type: warn
-        content:
-          - lang: en
-            text: 'OCDecoratorDLC.esp in a merged version of OCD NukaWorldDLC.esp and OCD FarHarborDLC.esp'
-          - lang: de
-            text: 'OCDecoratorDLC.esp ist eine kombinierte Version vonOCD NukaWorldDLC.esp und OCD FarHarborDLC.esp'
-        condition: 'file("OCDecoratorDLC.esp")'
-  - name: 'OCD NukaWorldDLC.esp'
-    msg:
-      - type: warn
-        content:
-          - lang: en
-            text: 'OCDecoratorDLC.esp in a merged version od OCD NukaWorldDLC.esp and OCD FarHarborDLC.esp'
-          - lang: de
-            text: 'OCDecoratorDLC.esp ist eine kombinierte Version vonOCD NukaWorldDLC.esp und OCD FarHarborDLC.esp'
-        condition: 'file("OCDecoratorDLC.esp")'
+      - <<: *alreadyInX
+        subs: [ '**OCDecoratorDLC.esp**' ]
+        condition: 'active("OCDecoratorDLC.esp")'
   - name: 'OCDWorkshopDLCPatch.esp'
     msg:
       - type: error
