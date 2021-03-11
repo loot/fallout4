@@ -2686,12 +2686,8 @@ plugins:
         condition: 'active("OCDecoratorDLC.esp")'
   - name: 'OCDWorkshopDLCPatch.esp'
     msg:
-      - type: error
-        content:
-          - lang: en
-            text: 'Use OCDecorator.esp Wasteland Workshop version instead: [Download](https://www.nexusmods.com/fallout4/mods/4270)'
-          - lang: de
-            text: 'Nutzen Sie OCDecorator.esp Wasteland Workshop Version stattdessen: [Download](https://www.nexusmods.com/fallout4/mods/4270)'
+      - <<: *useInstead
+        subs: [ '[OCDecorator](https://www.nexusmods.com/fallout4/mods/4270/)' ]
   - name: 'OCDecorator_FarHarbor.esp'
     msg:
       - type: error
