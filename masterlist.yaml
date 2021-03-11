@@ -2807,14 +2807,9 @@ plugins:
       - *incWithPatchVersion1.5.157.0
       - *obsolete
   - name: 'Homemaker.esm'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/1478' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/1478/' ]
     msg:
-      - type: say
-        content:
-          - lang: en
-            text: 'Outdated. Upgrade to the latest version of Homemaker: [Download](https://www.nexusmods.com/fallout4/mods/1478)'
-          - lang: de
-            text: 'Veraltet. Upgraden Sie zu der neuesten Version von Homemaker: [Download](https://www.nexusmods.com/fallout4/mods/1478)'
+      - <<: *obsolete
         condition: 'version("Homemaker.esm", "1.50", <)'
   - name: 'SnapBedsHomemakerPatch.esp'
     msg:
