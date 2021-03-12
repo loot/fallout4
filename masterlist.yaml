@@ -19,6 +19,8 @@ common:
         text: 'Löschen. Schon in Fallout 4 behoben von Bethesda.'
       - lang: ja
         text: '削除してください。既にBethesdaによってFallout 4のパッチが当てられています。'
+      - lang: sv
+        text: 'Ta bort. Redan fixat i Fallout 4 av Bethesda.'
 
   - &alreadyInX
     type: error
