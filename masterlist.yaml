@@ -791,7 +791,7 @@ globals:
     subs:
       - 'F4SE'
       - '[F4SE](https://f4se.silverlock.org)'
-    condition: 'file("F4SE/Plugins/([^\.]+\.dll)") and not file("../f4se_loader.exe") and not file("../Fallout4VR.exe")'
+    condition: 'file("F4SE/Plugins/([^\.]+\.dll)") and not file("../f4se(vr)?_loader\.exe")'
 
 groups:
   - name: &dlcGroup DLC
