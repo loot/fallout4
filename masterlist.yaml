@@ -794,13 +794,6 @@ globals:
     subs: [ 'a F4SE Plugin' ]
     condition: 'file("F4SE/Plugins/([^\.]+\.dll)") and not file("../f4se_loader.exe") and not file("../Fallout4VR.exe")'
 
-  - <<: *requiresF4SE
-    subs: [ '[Achievements](https://www.nexusmods.com/fallout4/mods/12465)' ]
-    condition: 'file("F4SE/Plugins/achievements.dll") and not file("../f4se_loader.exe") and not file("../Fallout4VR.exe")'
-  - <<: *requiresF4SE
-    subs: [ '[Place Everywhere](https://www.nexusmods.com/fallout4/mods/9424)' ]
-    condition: 'file("F4SE/Plugins/place.dll") and not file("../f4se_loader.exe") and not file("../Fallout4VR.exe")'
-
 groups:
   - name: &dlcGroup DLC
 
