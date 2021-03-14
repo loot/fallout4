@@ -312,34 +312,6 @@ common:
       - lang: sv
         text: 'Det verkar som att du använder **%1%**, men du har inte aktiverat en kompabilitetspatch för denna mod. En kompabilitetspatch finns på denna plugins modsida.'
 
-  - &requiresF4SE
-    type: error
-    content:
-      - lang: en
-        text: 'You have installed %1% but F4SE was not found! See F4SE download page: [F4SE](https://f4se.silverlock.org).'
-      - lang: da
-        text: 'Du har installeret %1% men F4SE blev ikke fundet! Se F4SE-downloadsiden: [F4SE](https://f4se.silverlock.org).'
-      - lang: de
-        text: 'Sie haben %1% installiert, aber F4SE wurde nicht gefunden! F4SE kann hier heruntergeladen werden: [F4SE](https://f4se.silverlock.org).'
-      - lang: es
-        text: 'Tienes %1% instalado pero F4SE no se pudo encontrar! Por favor descarga F4SE: [F4SE](https://f4se.silverlock.org)'
-      - lang: ja
-        text: '%1%はインストールされていますが、F4SEが見つかりません！F4SEのダウンロードページを確認してください。[F4SE](https://f4se.silverlock.org)'
-      - lang: ko
-        text: '%1%가 설치되었지만 F4SE를 찾을 수 없습니다! F4SE 다운로드 페이지를 참조하십시오: [F4SE](https://f4se.silverlock.org).'
-      - lang: pl
-        text: 'Zainstalowałeś %1% ale nie odnaleziono F4SE! Odwiedź stronę pobierania F4SE: [F4SE](https://f4se.silverlock.org).'
-      - lang: pt
-        text: 'Você instalou %1% mas o F4SE não foi encontrado! Veja a página de download do F4SE: [F4SE](https://f4se.silverlock.org).'
-      - lang: pt_BR
-        text: 'Você tem %1% instalado mas o F4SE não foi encontrado! Veja a página de download do F4SE: [F4SE](https://f4se.silverlock.org).'
-      - lang: ru
-        text: 'У вас установлен %1%, но F4SE не найден! Смотрите страницу загрузки [F4SE](https://f4se.silverlock.org).'
-      - lang: sv
-        text: 'Du har installerat %1% men F4SE kunde inte hittas! Läs mer på F4SE:s nedladdningssisda: [F4SE](https://f4se.silverlock.org).'
-      - lang: zh_CN
-        text: '你已经安装了%1%，但是未发现F4SE！请查看F4SE的下载页面：[F4SE](https://f4se.silverlock.org)。'
-
   - &requiresX
     type: warn
     content:
@@ -790,16 +762,36 @@ globals:
     condition: 'file("F4SE/Plugins/place.dll") and file("../f4se_loader.exe") and ((version("F4SE/Plugins/place.dll", "1.18.0.1163", ==) and version("../Fallout4.exe", "1.10.163.0", !=)) or (version("F4SE/Plugins/place.dll", "1.18.0.1163", <) and version("../Fallout4.exe", "1.10.163.0", ==)))'
 
 # F4SE Plugins - Requirements
-  - <<: *requiresF4SE
-    subs: [ 'a F4SE Plugin' ]
-    condition: 'file("F4SE/Plugins/([^\.]+\.dll)") and not file("../f4se_loader.exe") and not file("../Fallout4VR.exe")'
-
-  - <<: *requiresF4SE
-    subs: [ '[Achievements](https://www.nexusmods.com/fallout4/mods/12465)' ]
-    condition: 'file("F4SE/Plugins/achievements.dll") and not file("../f4se_loader.exe") and not file("../Fallout4VR.exe")'
-  - <<: *requiresF4SE
-    subs: [ '[Place Everywhere](https://www.nexusmods.com/fallout4/mods/9424)' ]
-    condition: 'file("F4SE/Plugins/place.dll") and not file("../f4se_loader.exe") and not file("../Fallout4VR.exe")'
+  - type: error
+    content:
+      - lang: en
+        text: 'You have installed an %1% Plugin but %1% was not found! See %1% download page: %2%.'
+      - lang: da
+        text: 'Du har installeret an %1% Plugin men %1% blev ikke fundet! Se %1%-downloadsiden: %2%.'
+      - lang: de
+        text: 'Sie haben an %1% Plugin installiert, aber %1% wurde nicht gefunden! %1% kann hier heruntergeladen werden: %2%.'
+      - lang: es
+        text: 'Tienes an %1% Plugin instalado pero %1% no se pudo encontrar! Por favor descarga %1%: %2%.'
+      - lang: ja
+        text: 'an %1% Pluginはインストールされていますが、%1%が見つかりません！%1%のダウンロードページを確認してください。%2%'
+      - lang: ko
+        text: 'an %1% Plugin가 설치되었지만 %1%를 찾을 수 없습니다! %1% 다운로드 페이지를 참조하십시오: %2%.'
+      - lang: pl
+        text: 'Zainstalowałeś an %1% Plugin ale nie odnaleziono %1%! Odwiedź stronę pobierania %1%: %2%.'
+      - lang: pt
+        text: 'Você instalou an %1% Plugin mas o %1% não foi encontrado! Veja a página de download do %1%: %2%.'
+      - lang: pt_BR
+        text: 'Você tem an %1% Plugin instalado mas o %1% não foi encontrado! Veja a página de download do %1%: %2%.'
+      - lang: ru
+        text: 'У вас установлен an %1% Plugin, но %1% не найден! Смотрите страницу загрузки %2%.'
+      - lang: sv
+        text: 'Du har installerat an %1% Plugin men %1% kunde inte hittas! Läs mer på %1%:s nedladdningssisda: %2%.'
+      - lang: zh_CN
+        text: '你已经安装了an %1% Plugin，但是未发现%1%！请查看%1%的下载页面：%2%。'
+    subs:
+      - 'F4SE'
+      - '[F4SE](https://f4se.silverlock.org)'
+    condition: 'file("F4SE/Plugins/([^\.]+\.dll)") and not file("../f4se(vr)?_loader\.exe")'
 
 groups:
   - name: &dlcGroup DLC
