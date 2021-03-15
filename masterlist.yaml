@@ -172,6 +172,8 @@ common:
         text: 'Denne udgave inderholder ikke ændring til DLC-indhold. Overvej at bruge DLC-udgaven i stedet.'
       - lang: de
         text: 'Diese Version enthält keine Anpassungen für DLC Inhalte. Die DLC Version sollte anstatt dessen verwendet werden.'
+      - lang: sv
+        text: 'Den här versionen inehåller inte anpassningar för DLC innehåll. Överväg att skaffa DLC versionen istället.'
     condition: 'active("DLCRobot.esm") and active("DLCworkshop01.esm") and active("DLCCoast.esm")'
 
   - &incWithPatchVersionX
