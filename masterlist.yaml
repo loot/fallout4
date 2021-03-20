@@ -13,6 +13,8 @@ common:
     content:
       - lang: en
         text: 'Delete. Already patched in Fallout 4 by Bethesda.'
+      - lang: bg
+        text: 'За изтриване. Включена е във Fallout 4 от Bethesda.'
       - lang: da
         text: 'Slet. Allerede rettet i Fallout 4 af Bethesda.'
       - lang: de
@@ -143,6 +145,8 @@ common:
     content:
       - lang: en
         text: 'Delete or deactivate. %1%'
+      - lang: bg
+        text: 'За изтриване или деактивиране. %1%'
       - lang: de
         text: 'Lösche oder deaktiviere. %1%'
       - lang: ja
@@ -186,6 +190,8 @@ common:
     content:
       - lang: en
         text: 'This version does not include modifications for DLC content. Consider getting the DLC version instead.'
+      - lang: bg
+        text: 'Тази версия не включва модовете за DLC съдържанието. Трябва да изтеглите версията за DLC съдържанието.'
       - lang: da
         text: 'Denne udgave inderholder ikke ændring til DLC-indhold. Overvej at bruge DLC-udgaven i stedet.'
       - lang: de
@@ -201,6 +207,8 @@ common:
     content:
       - lang: en
         text: 'Incompatible with %1% or greater.'
+      - lang: bg
+        text: 'За %1% и всяка версия по-голяма от нея.'
       - lang: de
         text: 'Inkompatibel mit %1% oder neuer.'
       - lang: pt_BR
@@ -215,6 +223,8 @@ common:
     content:
       - lang: en
         text: 'This file changes the way the base game categorizes settlement building menus. It is recommended to uninstall this file and use only files and patches compatible with SKE.'
+      - lang: bg
+        text: 'Този файл променя начина, по който играта категоризира менютата за построяване на селищата. Препоръчва се да го премахнете и да използвате само файлове и кръпки, които са съвместими със SKE.'
       - lang: da
         text: 'Denne fil ændrer Form-lister i vanilje menuer. Overvej at bruge en kompatibel SKE-lap i stedet.'
       - lang: de
@@ -261,6 +271,8 @@ common:
     content:
       - lang: en
         text: 'Can be used with a %1% but would require additional work. A Smashed Patch or Bash Patch should be used independently of one another.'
+      - lang: bg
+        text: 'Може да се използва с %1%, но ще трябва да изберете кръпка на Smash или Bash.'
       - lang: da
         text: 'Kan bruges sammen med %1% men det vil kræve ekstra arbejde. Smashed Patch og Bash Patch bør bruges uafhængigt af hinanden.'
       - lang: de
@@ -497,6 +509,8 @@ common:
     content:
       - lang: en
         text: 'Use non-%1% version.'
+      - lang: bg
+        text: 'Използвайте версията, която не е за %1%.'
       - lang: de
         text: 'Benutzen Sie die Nicht-%1% Version.'
       - lang: ja
