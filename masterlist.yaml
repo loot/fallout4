@@ -95,6 +95,17 @@ common:
         text: 'Удалите. Уже включено в %1% или исправлено иным образом.'
       - lang: sv
         text: 'Ta bort. Redan inkluderat eller fixat i %1%.'
+  - &alreadyInOrFixedByFO4
+    <<: *alreadyInOrFixedByX
+    subs: [ 'Fallout 4' ]
+  - &alreadyInOrFixedByFO41.3.47.0
+    <<: *alreadyInOrFixedByX
+    subs: [ 'Fallout 4 1.3.47.0' ]
+    condition: 'version("../Fallout4.exe", "1.3.47.0", >=)'
+  - &alreadyInOrFixedByFO41.4.132.0
+    <<: *alreadyInOrFixedByX
+    subs: [ 'Fallout 4 1.4.132.0' ]
+    condition: 'version("../Fallout4.exe", "1.4.132.0", >=)'
 
   - &alsoUseX
     type: say
