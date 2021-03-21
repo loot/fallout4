@@ -178,23 +178,6 @@ common:
       - lang: sv
         text: 'När du använder **%1%** är det rekommenderat att du avaktiverar eller tar bort denna ESP-fil, men behåll resurserna (meshar och texturer) installerade med denna mod.'
 
-  - &dlcVersion
-    type: say
-    content:
-      - lang: en
-        text: 'This version does not include modifications for DLC content. Consider getting the DLC version instead.'
-      - lang: bg
-        text: 'Тази версия не включва модовете за DLC съдържанието. Трябва да изтеглите версията за DLC съдържанието.'
-      - lang: da
-        text: 'Denne udgave inderholder ikke ændring til DLC-indhold. Overvej at bruge DLC-udgaven i stedet.'
-      - lang: de
-        text: 'Diese Version enthält keine Anpassungen für DLC Inhalte. Die DLC Version sollte anstatt dessen verwendet werden.'
-      - lang: pt_BR
-        text: 'Esta versão não inclui modificações para conteúdo de DLCs. Considere utilizar a versão com suporte a DLCs ao invés dessa.'
-      - lang: sv
-        text: 'Den här versionen inehåller inte anpassningar för DLC innehåll. Överväg att skaffa DLC versionen istället.'
-    condition: 'active("DLCRobot.esm") and active("DLCworkshop01.esm") and active("DLCCoast.esm")'
-
   - &incWithPatchVersionX
     type: error
     content:
