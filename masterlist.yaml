@@ -2264,7 +2264,10 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout4/mods/3877' ]
     inc: [ 'Z_Horizon.esp' ]
   - name: 'ValdacilsItemSorting-00-ValsPicks-NoDLCVersion(-VanillaWeight)?\.esp'
-    msg: [ *dlcVersion ]
+    msg:
+      - <<: *useVersion
+        subs: [ 'DLC' ]
+        condition: 'active("DLCRobot.esm") and active("DLCworkshop01.esm") and active("DLCCoast.esm")'
   - name: 'ValdacilsItemSorting-00-ValsPicks-(NoDLCVersion|DLCVersion)(-VanillaWeight)?\.esp'
     msg:
       - <<: *useOnlyOneX
