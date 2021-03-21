@@ -8,24 +8,6 @@ common:
     display: '[F4SE VR](https://f4se.silverlock.org)'
 
 # Messages
-  - &alreadyInFO4
-    type: error
-    content:
-      - lang: en
-        text: 'Delete. Already patched in Fallout 4 by Bethesda.'
-      - lang: bg
-        text: 'За изтриване. Включена е във Fallout 4 от Bethesda.'
-      - lang: da
-        text: 'Slet. Allerede rettet i Fallout 4 af Bethesda.'
-      - lang: de
-        text: 'Löschen. Schon in Fallout 4 behoben von Bethesda.'
-      - lang: ja
-        text: '削除してください。既にBethesdaによってFallout 4のパッチが当てられています。'
-      - lang: pt_BR
-        text: 'Apague. Já consertado no Fallout 4 pela Bethesda.'
-      - lang: sv
-        text: 'Ta bort. Redan fixat i Fallout 4 av Bethesda.'
-
   - &alreadyInX
     type: error
     content:
@@ -95,6 +77,17 @@ common:
         text: 'Удалите. Уже включено в %1% или исправлено иным образом.'
       - lang: sv
         text: 'Ta bort. Redan inkluderat eller fixat i %1%.'
+  - &alreadyInOrFixedByFO4
+    <<: *alreadyInOrFixedByX
+    subs: [ 'Fallout 4' ]
+  - &alreadyInOrFixedByFO41.3.47.0
+    <<: *alreadyInOrFixedByX
+    subs: [ 'Fallout 4 1.3.47.0' ]
+    condition: 'version("../Fallout4.exe", "1.3.47.0", >=)'
+  - &alreadyInOrFixedByFO41.4.132.0
+    <<: *alreadyInOrFixedByX
+    subs: [ 'Fallout 4 1.4.132.0' ]
+    condition: 'version("../Fallout4.exe", "1.4.132.0", >=)'
 
   - &alsoUseX
     type: say
@@ -184,23 +177,6 @@ common:
         text: 'Пока используется **%1%**, рекомендуется отключить или удалить esp этого мода, но оставить установленные ресурсы (meshes, textures).'
       - lang: sv
         text: 'När du använder **%1%** är det rekommenderat att du avaktiverar eller tar bort denna ESP-fil, men behåll resurserna (meshar och texturer) installerade med denna mod.'
-
-  - &dlcVersion
-    type: say
-    content:
-      - lang: en
-        text: 'This version does not include modifications for DLC content. Consider getting the DLC version instead.'
-      - lang: bg
-        text: 'Тази версия не включва модовете за DLC съдържанието. Трябва да изтеглите версията за DLC съдържанието.'
-      - lang: da
-        text: 'Denne udgave inderholder ikke ændring til DLC-indhold. Overvej at bruge DLC-udgaven i stedet.'
-      - lang: de
-        text: 'Diese Version enthält keine Anpassungen für DLC Inhalte. Die DLC Version sollte anstatt dessen verwendet werden.'
-      - lang: pt_BR
-        text: 'Esta versão não inclui modificações para conteúdo de DLCs. Considere utilizar a versão com suporte a DLCs ao invés dessa.'
-      - lang: sv
-        text: 'Den här versionen inehåller inte anpassningar för DLC innehåll. Överväg att skaffa DLC versionen istället.'
-    condition: 'active("DLCRobot.esm") and active("DLCworkshop01.esm") and active("DLCCoast.esm")'
 
   - &incWithPatchVersionX
     type: error
@@ -1955,39 +1931,29 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout4/mods/8910' ]
     group: *fixesGroup
     msg:
-      - <<: *alreadyInFO4
+      - <<: *alreadyInOrFixedByFO4
         condition: 'version("../Fallout4.exe", "1.5.0.0", >=)'
 
   - name: 'RailroadGloryBugFix.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/6389' ]
     group: *fixesGroup
-    msg:
-      - <<: *alreadyInFO4
-        condition: 'version("../Fallout4.exe", "1.3.47.0", >=)'
+    msg: [ *alreadyInOrFixedByFO41.3.47.0 ]
   - name: 'MakanarBigLeaguesFix.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/6185' ]
     group: *fixesGroup
-    msg:
-      - <<: *alreadyInFO4
-        condition: 'version("../Fallout4.exe", "1.3.47.0", >=)'
+    msg: [ *alreadyInOrFixedByFO41.3.47.0 ]
   - name: 'MakanarPerkBigLeaguesFix.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/5957' ]
     group: *fixesGroup
-    msg:
-      - <<: *alreadyInFO4
-        condition: 'version("../Fallout4.exe", "1.3.47.0", >=)'
+    msg: [ *alreadyInOrFixedByFO41.3.47.0 ]
   - name: 'ScroungerFix.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/3624' ]
     group: *fixesGroup
-    msg:
-      - <<: *alreadyInFO4
-        condition: 'version("../Fallout4.exe", "1.4.132.0", >=)'
+    msg: [ *alreadyInOrFixedByFO41.4.132.0 ]
   - name: 'KillshotFix.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/1282' ]
     group: *fixesGroup
-    msg:
-      - <<: *alreadyInFO4
-        condition: 'version("../Fallout4.exe", "1.3.47.0", >=)'
+    msg: [ *alreadyInOrFixedByFO41.3.47.0 ]
   # Mods included in the Unofficial Fallout 4 Patch
   - name: 'UnofficialFallout4Patch.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/4526' ]
@@ -2281,7 +2247,10 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout4/mods/3877' ]
     inc: [ 'Z_Horizon.esp' ]
   - name: 'ValdacilsItemSorting-00-ValsPicks-NoDLCVersion(-VanillaWeight)?\.esp'
-    msg: [ *dlcVersion ]
+    msg:
+      - <<: *useVersion
+        subs: [ 'DLC' ]
+        condition: 'active("DLCRobot.esm") and active("DLCworkshop01.esm") and active("DLCCoast.esm")'
   - name: 'ValdacilsItemSorting-00-ValsPicks-(NoDLCVersion|DLCVersion)(-VanillaWeight)?\.esp'
     msg:
       - <<: *useOnlyOneX
