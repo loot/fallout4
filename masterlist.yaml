@@ -189,7 +189,7 @@ common:
         text: 'Inkompatibel mit %1% oder neuer.'
       - lang: pt_BR
         text: 'Incompatível com %1% ou maior.'
-  - &incWithPatchVersion1.5.157.0
+  - &incWithPatchv1_5_157
     <<: *incWithPatchVersionX
     subs: [ 'Fallout 4 Patch 1.5.157.0' ]
     condition: 'file("../Fallout4.exe") and version("../Fallout4.exe", "1.5.157.0", >=)'
@@ -2765,7 +2765,7 @@ plugins:
     msg: [ *insteadSKEPatch ]
   - name: 'DLC_SK_Patch.esp'
     msg:
-      - <<: *incWithPatchVersion1.5.157.0
+      - <<: *incWithPatchv1_5_157
         condition: '(checksum("SettlementKeywords.esm",8D550871) and active("DLC_SK_Patch.esp")) and version("..\Fallout4.exe", "1.5.157.0", >=)'
   - name: 'FH_PATCH.esp'
     msg: [ *insteadSKEPatch ]
@@ -2823,7 +2823,7 @@ plugins:
           - lang: de
             text: 'Setzt Settlement Keywords v0.8 voraus.'
         condition: 'not checksum("SettlementKeywords.esm",8D550871)'
-      - *incWithPatchVersion1.5.157.0
+      - *incWithPatchv1_5_157
   - name: 'Homemaker - SKE Integration Patch.esp'
     msg: [ *obsolete ]
   - name: 'Homemaker - SSEx Compatibility Patch.esp'
@@ -2852,23 +2852,23 @@ plugins:
     msg: [ *obsolete ]
   - name: 'Snap and Build - Greenhouse.esp'
     msg:
-      - *incWithPatchVersion1.5.157.0
+      - *incWithPatchv1_5_157
       - *obsolete
   - name: 'SnB - Greenhouse - Homemaker.esp'
     msg:
-      - *incWithPatchVersion1.5.157.0
+      - *incWithPatchv1_5_157
       - *obsolete
   - name: 'SnB- Greenhouse - SK.esp'
     msg:
-      - *incWithPatchVersion1.5.157.0
+      - *incWithPatchv1_5_157
       - *obsolete
   - name: 'SnB - Greenhouse - SSEx.esp'
     msg:
-      - *incWithPatchVersion1.5.157.0
+      - *incWithPatchv1_5_157
       - *obsolete
   - name: 'SnB - Greenhouse - Homemaker - SSEx.esp'
     msg:
-      - *incWithPatchVersion1.5.157.0
+      - *incWithPatchv1_5_157
       - *obsolete
   - name: 'Homemaker.esm'
     url: [ 'https://www.nexusmods.com/fallout4/mods/1478/' ]
@@ -2919,7 +2919,7 @@ plugins:
       - 'WastelandWorkshopPatch.esp'
       - 'WW_SK_PATCH.esp'
     msg:
-      - <<: *incWithPatchVersion1.5.157.0
+      - <<: *incWithPatchv1_5_157
         condition: 'checksum("SettlementKeywords.esm",8D550871) and version("../Fallout4.exe", "1.5.157.0", >=)'
       - type: error
         content:
@@ -2945,18 +2945,18 @@ plugins:
             text: 'Veraltete Version von Alternate Settlements festgestellt. Verifizieren Sie das der Settlement Keywords Expanded Patch ordnungsgemäß installiert ist.'
         condition: '(checksum("AlternateSettlements.esp",D8906B4D) or checksum("AlternateSettlements.esp",5C36EB92)) and version("SettlementKeywords.esm", "1.0", >=)'
   - name: 'Safe SSEx.esp'
-    msg: [ *incWithPatchVersion1.5.157.0 ]
+    msg: [ *incWithPatchv1_5_157 ]
 
   - name: 'BuildingBlocks.*\.es(p|m)'
     url: [ 'https://www.nexusmods.com/fallout4/mods/8907/' ]
   - name: 'BuildingBlocks-Foundations.esp'
-    msg: [ *incWithPatchVersion1.5.157.0 ]
+    msg: [ *incWithPatchv1_5_157 ]
   - name: 'BuildingBlocks-Foundations_Homemaker.*\.esp'
     msg:
       - <<: *alreadyInOrFixedByX
         subs: [ 'Homemaker 1.50 or greater' ]
         condition: 'version("Homemaker.esm", "1.50", >=)'
-      - *incWithPatchVersion1.5.157.0
+      - *incWithPatchv1_5_157
   - name: 'BuildingBlocks-Foundations_SettlementKeywordsFull.esp'
     msg:
       - <<: *useInstead
@@ -2968,7 +2968,7 @@ plugins:
       - name: 'SettlementKeywords.esm'
         display: 'Settlement Keywords Expanded'
         condition: 'version("SettlementKeywords.esm", "1.0", >=)'
-    msg: [ *incWithPatchVersion1.5.157.0 ]
+    msg: [ *incWithPatchv1_5_157 ]
 
   - name: 'Z_Horizon_Patch_Homemaker.esp'
     msg:
