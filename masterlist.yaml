@@ -8,24 +8,6 @@ common:
     display: '[F4SE VR](https://f4se.silverlock.org)'
 
 # Messages
-  - &alreadyInFO4
-    type: error
-    content:
-      - lang: en
-        text: 'Delete. Already patched in Fallout 4 by Bethesda.'
-      - lang: bg
-        text: 'За изтриване. Включена е във Fallout 4 от Bethesda.'
-      - lang: da
-        text: 'Slet. Allerede rettet i Fallout 4 af Bethesda.'
-      - lang: de
-        text: 'Löschen. Schon in Fallout 4 behoben von Bethesda.'
-      - lang: ja
-        text: '削除してください。既にBethesdaによってFallout 4のパッチが当てられています。'
-      - lang: pt_BR
-        text: 'Apague. Já consertado no Fallout 4 pela Bethesda.'
-      - lang: sv
-        text: 'Ta bort. Redan fixat i Fallout 4 av Bethesda.'
-
   - &alreadyInX
     type: error
     content:
