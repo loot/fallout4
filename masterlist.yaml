@@ -80,7 +80,7 @@ common:
   - &alreadyInOrFixedByFO4
     <<: *alreadyInOrFixedByX
     subs: [ 'Fallout 4' ]
-  - &alreadyInOrFixedByFO41.3.47.0
+  - &alreadyInOrFixedByFO4v1_3_47
     <<: *alreadyInOrFixedByX
     subs: [ 'Fallout 4 1.3.47.0' ]
     condition: 'version("../Fallout4.exe", "1.3.47.0", >=)'
@@ -1937,15 +1937,15 @@ plugins:
   - name: 'RailroadGloryBugFix.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/6389' ]
     group: *fixesGroup
-    msg: [ *alreadyInOrFixedByFO41.3.47.0 ]
+    msg: [ *alreadyInOrFixedByFO4v1_3_47 ]
   - name: 'MakanarBigLeaguesFix.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/6185' ]
     group: *fixesGroup
-    msg: [ *alreadyInOrFixedByFO41.3.47.0 ]
+    msg: [ *alreadyInOrFixedByFO4v1_3_47 ]
   - name: 'MakanarPerkBigLeaguesFix.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/5957' ]
     group: *fixesGroup
-    msg: [ *alreadyInOrFixedByFO41.3.47.0 ]
+    msg: [ *alreadyInOrFixedByFO4v1_3_47 ]
   - name: 'ScroungerFix.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/3624' ]
     group: *fixesGroup
@@ -1953,7 +1953,7 @@ plugins:
   - name: 'KillshotFix.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/1282' ]
     group: *fixesGroup
-    msg: [ *alreadyInOrFixedByFO41.3.47.0 ]
+    msg: [ *alreadyInOrFixedByFO4v1_3_47 ]
   # Mods included in the Unofficial Fallout 4 Patch
   - name: 'UnofficialFallout4Patch.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/4526' ]
