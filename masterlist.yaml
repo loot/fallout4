@@ -2791,10 +2791,7 @@ plugins:
     msg: [ *insteadSKEPatch ]
   - name: 'DLC_PATCH_integrated.esp'
     msg: [ *insteadSKEPatch ]
-  - name: 'DLC_SK_Patch.esp'
-    msg:
-      - <<: *incWithPatchv1_5_157
-        condition: '(checksum("SettlementKeywords.esm",8D550871) and active("DLC_SK_Patch.esp")) and version("..\Fallout4.exe", "1.5.157.0", >=)'
+
   - name: 'FH_PATCH.esp'
     msg: [ *insteadSKEPatch ]
   - name: 'FH_PATCH_integrated.esp'
@@ -2927,7 +2924,6 @@ plugins:
       - 'DLC_OCD_Patch.esp'
       - 'DLC_PATCH_ENG.esp'
       - 'DLC_PATCH.esp'
-      - 'DLC_SK_Patch.esp'
       - 'DLC_SKE_Patch.esp'
       - 'FarHarborHomemakerFix.esp'
       - 'HMM-WWorkshop-Compatibility.esp'
