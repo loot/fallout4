@@ -2851,42 +2851,7 @@ plugins:
     msg: [ *obsolete ]
   - name: 'Homemaker - Unlocked Institute Objects.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/1478' ]
-  - name: 'Snap''n Build - Bunker.esp'
-    msg: [ *obsolete ]
-  - name: 'Snap''n Build - Capsule.esp'
-    msg: [ *obsolete ]
-  - name: 'Snap''n Build - Greenhouse.esp'
-    msg: [ *obsolete ]
-  - name: 'Snap''n Build - Industrial.esp'
-    msg: [ *obsolete ]
-  - name: 'Snap''n Build - Patches_HMM.esp'
-    msg: [ *obsolete ]
-  - name: 'Snap''n Build - Patches_SK.esp'
-    msg: [ *obsolete ]
-  - name: 'Snap''n Build - Real Estate.esp'
-    msg: [ *obsolete ]
-  - name: 'Snap''n Build - Patches.esp'
-    msg: [ *obsolete ]
-  - name: 'Snap and Build - Greenhouse.esp'
-    msg:
-      - *incWithPatchv1_5_157
-      - *obsolete
-  - name: 'SnB - Greenhouse - Homemaker.esp'
-    msg:
-      - *incWithPatchv1_5_157
-      - *obsolete
-  - name: 'SnB- Greenhouse - SK.esp'
-    msg:
-      - *incWithPatchv1_5_157
-      - *obsolete
-  - name: 'SnB - Greenhouse - SSEx.esp'
-    msg:
-      - *incWithPatchv1_5_157
-      - *obsolete
-  - name: 'SnB - Greenhouse - Homemaker - SSEx.esp'
-    msg:
-      - *incWithPatchv1_5_157
-      - *obsolete
+
   - name: 'Homemaker.esm'
     url: [ 'https://www.nexusmods.com/fallout4/mods/1478/' ]
     msg:
