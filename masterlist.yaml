@@ -2840,15 +2840,7 @@ plugins:
   - name: 'Homemaker - Greenhouse Disabler.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/1478' ]
   - name: 'Homemaker - SK Integration Patch.esp'
-    msg:
-      - type: error
-        content:
-          - lang: en
-            text: 'Requires Settlement Keywords v0.8.'
-          - lang: de
-            text: 'Setzt Settlement Keywords v0.8 voraus.'
-        condition: 'not checksum("SettlementKeywords.esm",8D550871)'
-      - *incWithPatchv1_5_157
+    msg: [ *obsolete ]
   - name: 'Homemaker - SKE Integration Patch.esp'
     msg: [ *obsolete ]
   - name: 'Homemaker - SSEx Compatibility Patch.esp'
