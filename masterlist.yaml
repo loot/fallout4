@@ -2872,6 +2872,7 @@ plugins:
         - lang: ja
           text: 'このファイルをアンインストールしてください。Homemaker 1.50以降では不要です。'
         condition: 'version("Homemaker.esm", "1.50", >=)'
+
   - name: 'SettlementKeywords.esm'
     url: [ 'https://www.nexusmods.com/fallout4/mods/12226/' ]
     inc:
@@ -2900,22 +2901,12 @@ plugins:
       - 'WastelandWorkshopPatch.esp'
       - 'WW_SK_PATCH.esp'
     msg:
-      - <<: *incWithPatchv1_5_157
-        condition: 'checksum("SettlementKeywords.esm",8D550871) and version("../Fallout4.exe", "1.5.157.0", >=)'
-      - type: error
-        content:
-          - lang: en
-            text: 'Requires Fallout 4 patch 1.6.3 or greater.'
-          - lang: de
-            text: 'Setzt Fallout 4 Patch 1.6.3 oder neuer voraus.'
-        condition: 'version("SettlementKeywords.esm", "1.40", >=) and version("../Fallout4.exe", "1.6.3", <)'
-      - type: warn
-        content:
-          - lang: en
-            text: 'This copy of SettlementKeywords.esm may be missing kewords required for certain mods.'
-          - lang: de
-            text: 'Bei dieser Kopie von SettlementKeywords.esm können einige Stichwörter fehlen welche von bestimmten Mods vorausgesetzt werden.'
-        condition: 'version("SettlementKeywords.esm", "1.49", <)'
+      - <<: *obsolete
+        condition: 'version("SettlementKeywords.esm", "1.60", <)'
+      - <<: *requiresX
+        subs: [ 'Fallout 4 1.6.3+' ]
+        condition: 'version("../Fallout4.exe", "1.6.3", <)'
+
   - name: 'AlternateSettlements.esp'
     msg:
       - type: error
