@@ -197,10 +197,6 @@ common:
         text: '%1% 이상과 호환되지 않습니다.'
       - lang: pt_BR
         text: 'Incompatível com %1% ou maior.'
-  - &incWithPatchv1_5_157
-    <<: *incWithPatchVersionX
-    subs: [ 'Fallout 4 Patch 1.5.157.0' ]
-    condition: 'file("../Fallout4.exe") and version("../Fallout4.exe", "1.5.157.0", >=)'
 
   - &insteadSKEPatch
     type: warn
