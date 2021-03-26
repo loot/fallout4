@@ -184,20 +184,6 @@ common:
       - lang: sv
         text: 'När du använder **%1%** är det rekommenderat att du avaktiverar eller tar bort denna ESP-fil, men behåll resurserna (meshar och texturer) installerade med denna mod.'
 
-  - &incWithPatchVersionX
-    type: error
-    content:
-      - lang: en
-        text: 'Incompatible with %1% or greater.'
-      - lang: bg
-        text: 'За %1% и всяка версия по-голяма от нея.'
-      - lang: de
-        text: 'Inkompatibel mit %1% oder neuer.'
-      - lang: ko
-        text: '%1% 이상과 호환되지 않습니다.'
-      - lang: pt_BR
-        text: 'Incompatível com %1% ou maior.'
-
   - &insteadSKEPatch
     type: warn
     content:
