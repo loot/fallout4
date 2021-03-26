@@ -184,24 +184,6 @@ common:
       - lang: sv
         text: 'När du använder **%1%** är det rekommenderat att du avaktiverar eller tar bort denna ESP-fil, men behåll resurserna (meshar och texturer) installerade med denna mod.'
 
-  - &incWithPatchVersionX
-    type: error
-    content:
-      - lang: en
-        text: 'Incompatible with %1% or greater.'
-      - lang: bg
-        text: 'За %1% и всяка версия по-голяма от нея.'
-      - lang: de
-        text: 'Inkompatibel mit %1% oder neuer.'
-      - lang: ko
-        text: '%1% 이상과 호환되지 않습니다.'
-      - lang: pt_BR
-        text: 'Incompatível com %1% ou maior.'
-  - &incWithPatchv1_5_157
-    <<: *incWithPatchVersionX
-    subs: [ 'Fallout 4 Patch 1.5.157.0' ]
-    condition: 'file("../Fallout4.exe") and version("../Fallout4.exe", "1.5.157.0", >=)'
-
   - &insteadSKEPatch
     type: warn
     content:
@@ -2791,10 +2773,7 @@ plugins:
     msg: [ *insteadSKEPatch ]
   - name: 'DLC_PATCH_integrated.esp'
     msg: [ *insteadSKEPatch ]
-  - name: 'DLC_SK_Patch.esp'
-    msg:
-      - <<: *incWithPatchv1_5_157
-        condition: '(checksum("SettlementKeywords.esm",8D550871) and active("DLC_SK_Patch.esp")) and version("..\Fallout4.exe", "1.5.157.0", >=)'
+
   - name: 'FH_PATCH.esp'
     msg: [ *insteadSKEPatch ]
   - name: 'FH_PATCH_integrated.esp'
@@ -2843,15 +2822,7 @@ plugins:
   - name: 'Homemaker - Greenhouse Disabler.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/1478' ]
   - name: 'Homemaker - SK Integration Patch.esp'
-    msg:
-      - type: error
-        content:
-          - lang: en
-            text: 'Requires Settlement Keywords v0.8.'
-          - lang: de
-            text: 'Setzt Settlement Keywords v0.8 voraus.'
-        condition: 'not checksum("SettlementKeywords.esm",8D550871)'
-      - *incWithPatchv1_5_157
+    msg: [ *obsolete ]
   - name: 'Homemaker - SKE Integration Patch.esp'
     msg: [ *obsolete ]
   - name: 'Homemaker - SSEx Compatibility Patch.esp'
@@ -2862,42 +2833,7 @@ plugins:
     msg: [ *obsolete ]
   - name: 'Homemaker - Unlocked Institute Objects.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/1478' ]
-  - name: 'Snap''n Build - Bunker.esp'
-    msg: [ *obsolete ]
-  - name: 'Snap''n Build - Capsule.esp'
-    msg: [ *obsolete ]
-  - name: 'Snap''n Build - Greenhouse.esp'
-    msg: [ *obsolete ]
-  - name: 'Snap''n Build - Industrial.esp'
-    msg: [ *obsolete ]
-  - name: 'Snap''n Build - Patches_HMM.esp'
-    msg: [ *obsolete ]
-  - name: 'Snap''n Build - Patches_SK.esp'
-    msg: [ *obsolete ]
-  - name: 'Snap''n Build - Real Estate.esp'
-    msg: [ *obsolete ]
-  - name: 'Snap''n Build - Patches.esp'
-    msg: [ *obsolete ]
-  - name: 'Snap and Build - Greenhouse.esp'
-    msg:
-      - *incWithPatchv1_5_157
-      - *obsolete
-  - name: 'SnB - Greenhouse - Homemaker.esp'
-    msg:
-      - *incWithPatchv1_5_157
-      - *obsolete
-  - name: 'SnB- Greenhouse - SK.esp'
-    msg:
-      - *incWithPatchv1_5_157
-      - *obsolete
-  - name: 'SnB - Greenhouse - SSEx.esp'
-    msg:
-      - *incWithPatchv1_5_157
-      - *obsolete
-  - name: 'SnB - Greenhouse - Homemaker - SSEx.esp'
-    msg:
-      - *incWithPatchv1_5_157
-      - *obsolete
+
   - name: 'Homemaker.esm'
     url: [ 'https://www.nexusmods.com/fallout4/mods/1478/' ]
     msg:
@@ -2918,6 +2854,7 @@ plugins:
         - lang: ja
           text: 'このファイルをアンインストールしてください。Homemaker 1.50以降では不要です。'
         condition: 'version("Homemaker.esm", "1.50", >=)'
+
   - name: 'SettlementKeywords.esm'
     url: [ 'https://www.nexusmods.com/fallout4/mods/12226/' ]
     inc:
@@ -2927,7 +2864,6 @@ plugins:
       - 'DLC_OCD_Patch.esp'
       - 'DLC_PATCH_ENG.esp'
       - 'DLC_PATCH.esp'
-      - 'DLC_SK_Patch.esp'
       - 'DLC_SKE_Patch.esp'
       - 'FarHarborHomemakerFix.esp'
       - 'HMM-WWorkshop-Compatibility.esp'
@@ -2947,22 +2883,12 @@ plugins:
       - 'WastelandWorkshopPatch.esp'
       - 'WW_SK_PATCH.esp'
     msg:
-      - <<: *incWithPatchv1_5_157
-        condition: 'checksum("SettlementKeywords.esm",8D550871) and version("../Fallout4.exe", "1.5.157.0", >=)'
-      - type: error
-        content:
-          - lang: en
-            text: 'Requires Fallout 4 patch 1.6.3 or greater.'
-          - lang: de
-            text: 'Setzt Fallout 4 Patch 1.6.3 oder neuer voraus.'
-        condition: 'version("SettlementKeywords.esm", "1.40", >=) and version("../Fallout4.exe", "1.6.3", <)'
-      - type: warn
-        content:
-          - lang: en
-            text: 'This copy of SettlementKeywords.esm may be missing kewords required for certain mods.'
-          - lang: de
-            text: 'Bei dieser Kopie von SettlementKeywords.esm können einige Stichwörter fehlen welche von bestimmten Mods vorausgesetzt werden.'
-        condition: 'version("SettlementKeywords.esm", "1.49", <)'
+      - <<: *obsolete
+        condition: 'version("SettlementKeywords.esm", "1.60", <)'
+      - <<: *requiresX
+        subs: [ 'Fallout 4 1.6.3+' ]
+        condition: 'version("../Fallout4.exe", "1.6.3", <)'
+
   - name: 'AlternateSettlements.esp'
     msg:
       - type: error
@@ -2972,19 +2898,23 @@ plugins:
           - lang: de
             text: 'Veraltete Version von Alternate Settlements festgestellt. Verifizieren Sie das der Settlement Keywords Expanded Patch ordnungsgemäß installiert ist.'
         condition: '(checksum("AlternateSettlements.esp",D8906B4D) or checksum("AlternateSettlements.esp",5C36EB92)) and version("SettlementKeywords.esm", "1.0", >=)'
-  - name: 'Safe SSEx.esp'
-    msg: [ *incWithPatchv1_5_157 ]
 
   - name: 'BuildingBlocks.*\.es(p|m)'
     url: [ 'https://www.nexusmods.com/fallout4/mods/8907/' ]
   - name: 'BuildingBlocks-Foundations.esp'
-    msg: [ *incWithPatchv1_5_157 ]
+    inc:
+      - name: '../Fallout4.exe'
+        display: 'Fallout 4 1.5.157.0+'
+        condition: 'version("../Fallout4.exe", "1.5.157.0", >=)'
   - name: 'BuildingBlocks-Foundations_Homemaker.*\.esp'
+    inc:
+      - name: '../Fallout4.exe'
+        display: 'Fallout 4 1.5.157.0+'
+        condition: 'version("../Fallout4.exe", "1.5.157.0", >=)'
     msg:
       - <<: *alreadyInOrFixedByX
         subs: [ 'Homemaker 1.50 or greater' ]
         condition: 'version("Homemaker.esm", "1.50", >=)'
-      - *incWithPatchv1_5_157
   - name: 'BuildingBlocks-Foundations_SettlementKeywordsFull.esp'
     msg:
       - <<: *useInstead
@@ -2993,10 +2923,12 @@ plugins:
         condition: 'version("SettlementKeywords.esm", "1.0", >=)'
   - name: 'BuildingBlocks-Foundations_SettlementKeywordsPartial.esp'
     inc:
+      - name: '../Fallout4.exe'
+        display: 'Fallout 4 1.5.157.0+'
+        condition: 'version("../Fallout4.exe", "1.5.157.0", >=)'
       - name: 'SettlementKeywords.esm'
         display: 'Settlement Keywords Expanded'
         condition: 'version("SettlementKeywords.esm", "1.0", >=)'
-    msg: [ *incWithPatchv1_5_157 ]
 
   - name: 'Z_Horizon_Patch_Homemaker.esp'
     msg:
@@ -4141,11 +4073,17 @@ plugins:
     clean:
       - crc: 0x7ee85a99
         util: FO4Edit v3.2.1
+
   - name: 'SSEX.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/1145' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/1145/' ]
     clean:
-      - crc: 0x30589a48
-        util: FO4Edit v3.2.1
+      - crc: 0x30589A48
+        util: 'FO4Edit v4.0.3f'
+      - crc: 0xCC51FF20
+        util: 'FO4Edit v4.0.3f'
+  - name: 'Safe SSEx.esp'
+    msg: [ *obsolete ]
+
   - name: 'Tactical Flashlights.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/16172' ]
     clean:
