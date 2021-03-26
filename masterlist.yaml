@@ -2916,8 +2916,6 @@ plugins:
           - lang: de
             text: 'Veraltete Version von Alternate Settlements festgestellt. Verifizieren Sie das der Settlement Keywords Expanded Patch ordnungsgemäß installiert ist.'
         condition: '(checksum("AlternateSettlements.esp",D8906B4D) or checksum("AlternateSettlements.esp",5C36EB92)) and version("SettlementKeywords.esm", "1.0", >=)'
-  - name: 'Safe SSEx.esp'
-    msg: [ *incWithPatchv1_5_157 ]
 
   - name: 'BuildingBlocks.*\.es(p|m)'
     url: [ 'https://www.nexusmods.com/fallout4/mods/8907/' ]
@@ -4085,11 +4083,17 @@ plugins:
     clean:
       - crc: 0x7ee85a99
         util: FO4Edit v3.2.1
+
   - name: 'SSEX.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/1145' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/1145/' ]
     clean:
-      - crc: 0x30589a48
-        util: FO4Edit v3.2.1
+      - crc: 0x30589A48
+        util: 'FO4Edit v4.0.3f'
+      - crc: 0xCC51FF20
+        util: 'FO4Edit v4.0.3f'
+  - name: 'Safe SSEx.esp'
+    msg: [ *obsolete ]
+
   - name: 'Tactical Flashlights.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/16172' ]
     clean:
