@@ -1,13 +1,17 @@
+# LOOT ignores anything that doesn't come under 'bash_tags', 'globals',
+# 'groups', or 'plugins', so a section like 'common' is useful for storing
+# data that gets re-used.
 common:
-# Files
+# File Anchors
   - &F4SE
     name: '../f4se_loader.exe'
     display: '[F4SE](https://f4se.silverlock.org)'
+
   - &F4SE_VR
     name: '../f4sevr_loader.exe'
     display: '[F4SE VR](https://f4se.silverlock.org)'
 
-# Messages
+# Message Anchors
   - &alreadyInX
     type: error
     content:
@@ -88,11 +92,11 @@ common:
     subs: [ 'Fallout 4' ]
   - &alreadyInOrFixedByFO4v1_3_47
     <<: *alreadyInOrFixedByX
-    subs: [ 'Fallout 4 1.3.47.0' ]
+    subs: [ 'Fallout 4 v1.3.47.0' ]
     condition: 'version("../Fallout4.exe", "1.3.47.0", >=)'
   - &alreadyInOrFixedByFO4v1_4_132
     <<: *alreadyInOrFixedByX
-    subs: [ 'Fallout 4 1.4.132.0' ]
+    subs: [ 'Fallout 4 v1.4.132.0' ]
     condition: 'version("../Fallout4.exe", "1.4.132.0", >=)'
 
   - &alsoUseX
@@ -650,12 +654,12 @@ common:
   - &versionF4SEIncFO4
     <<: *versionXIncY
     subs:
-      - '**Script Extender ([F4SE](https://f4se.silverlock.org))**'
+      - '**[Fallout 4 Script Extender](https://f4se.silverlock.org)**'
       - '**Fallout 4**'
   - &versionF4SEIncFO4_VR
     <<: *versionXIncY
     subs:
-      - '**Script Extender ([F4SE](https://f4se.silverlock.org))**'
+      - '**[Fallout 4 VR Script Extender](https://f4se.silverlock.org)**'
       - '**Fallout 4 VR**'
 
   - &wildEdits
@@ -689,7 +693,7 @@ common:
         text: 'Denna plugin innehåller vilda föränringar utanför ITM och UDR-records samt borttagna navmeshes och kan kräva ytterligare manuell rensning för att inte störa andra moddar. %1%'
     subs: [ '' ]
 
-# Dirty Aliases
+# Cleaning Data Anchors
   - &quickClean
     util: '[FO4Edit](https://www.nexusmods.com/fallout4/mods/2737) **Quick Auto Clean**'
     info:
@@ -717,6 +721,7 @@ common:
         text: 'En guide till att rensa plugins med xEdit finns [här](https://tes5edit.github.io/docs/7-mod-cleaning-and-error-checking.html#ThreeEasyStepstocleanMods).'
       - lang: zh_CN
         text: 'xEdit的清洁插件指南可以在[这里](https://tes5edit.github.io/docs/7-mod-cleaning-and-error-checking.html#ThreeEasyStepstocleanMods)找到。'
+
   - &reqManualFix
     util: '[FO4Edit](https://www.nexusmods.com/fallout4/mods/2737) **Quick Auto Clean**'
     info:
@@ -784,6 +789,7 @@ globals:
       - lang: zh_CN
         text: '[最新的LOOT版本](%1%)。'
     subs: [ 'https://loot.github.io/latest-thread/' ]
+
   - type: warn
     content:
       - lang: en
@@ -894,11 +900,11 @@ globals:
 # F4SE Plugins - Compatibility
   - <<: *versionXIncY
     subs:
-      - '**F4SE Plugin ([Place Everywhere](https://www.nexusmods.com/fallout4/mods/9424))**'
+      - '**[Place Everywhere](https://www.nexusmods.com/fallout4/mods/9424)**'
       - 'Fallout 4'
     condition: 'file("F4SE/Plugins/place.dll") and file("../f4se_loader.exe") and ((version("F4SE/Plugins/place.dll", "1.18.0.1163", ==) and version("../Fallout4.exe", "1.10.163.0", !=)) or (version("F4SE/Plugins/place.dll", "1.18.0.1163", <) and version("../Fallout4.exe", "1.10.163.0", ==)))'
 
-# F4SE Plugins - Requirements
+# F4SE Plugin Requirements
   - type: error
     content:
       - lang: en
