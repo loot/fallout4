@@ -2828,49 +2828,7 @@ plugins:
     msg:
       - <<: *useInstead
         subs: [ '[**OCD FarHarborDLC.esp**](https://www.nexusmods.com/fallout4/mods/4270/)' ]
-  # ALL DLC Version 3.x
-  - name: 'CW_PATCH.esp'
-    msg: [ *insteadSKEPatch ]
-  - name: 'DLC_MainMenu.esm'
-    msg: [ *insteadSKEPatch ]
-  - name: 'DLC_PATCH_integrated.esp'
-    msg: [ *insteadSKEPatch ]
 
-  - name: 'FH_PATCH.esp'
-    msg: [ *insteadSKEPatch ]
-  - name: 'FH_PATCH_integrated.esp'
-    msg: [ *insteadSKEPatch ]
-  - name: 'WW_PATCH.esp'
-    msg: [ *insteadSKEPatch ]
-  - name: 'WW_PATCH_ENG.esp'
-    msg: [ *insteadSKEPatch ]
-  - name: 'WW_PATCH_integrated.esp'
-    msg: [ *insteadSKEPatch ]
-  # ALL DLC Version 4.x
-  - name: 'NW_PATCH_Integrated.esp'
-    msg: [ *insteadSKEPatch ]
-  - name: 'CW_PATCH_integrated.esp'
-    msg: [ *insteadSKEPatch ]
-  - name: 'VW_PATCH_integrated.esp'
-    msg: [ *insteadSKEPatch ]
-  - name: 'NW_PATCH.esp'
-    msg: [ *insteadSKEPatch ]
-  - name: 'FH_PATCH_Full.esp'
-    msg: [ *insteadSKEPatch ]
-  - name: 'VW_PATCH_Full.esp'
-    msg: [ *insteadSKEPatch ]
-  - name: 'CW_PATCH_Full.esp'
-    msg: [ *insteadSKEPatch ]
-  - name: 'WW_PATCH_Full.esp'
-    msg: [ *insteadSKEPatch ]
-  - name: 'DLC_PATCH_Full.esp'
-    msg: [ *insteadSKEPatch ]
-  - name: 'AM_PATCH_Full.esp'
-    msg: [ *insteadSKEPatch ]
-  - name: 'VW_PATCH.esp'
-    msg: [ *insteadSKEPatch ]
-  - name: 'NW_PATCH_Full.esp'
-    msg: [ *insteadSKEPatch ]
   - name: 'Homemaker - Bunker Disabler SK.esp'
     msg: [ *obsolete ]
   - name: 'Homemaker - Bunker Disabler.esp'
