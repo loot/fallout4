@@ -200,29 +200,6 @@ common:
       - lang: sv
         text: 'När du använder **%1%** är det rekommenderat att du avaktiverar eller tar bort denna ESP-fil, men behåll resurserna (meshar och texturer) installerade med denna mod.'
 
-  - &insteadSKEPatch
-    type: warn
-    content:
-      - lang: en
-        text: 'This file changes the way the base game categorizes settlement building menus. It is recommended to uninstall this file and use only files and patches compatible with SKE.'
-      - lang: bg
-        text: 'Този файл променя начина, по който играта категоризира менютата за построяване на селищата. Препоръчва се да го премахнете и да използвате само файлове и кръпки, които са съвместими със SKE.'
-      - lang: da
-        text: 'Denne fil ændrer Form-lister i vanilje menuer. Overvej at bruge en kompatibel SKE-lap i stedet.'
-      - lang: de
-        text: 'Diese Datei ändert, wie das Basis-Spiel die Bau-Menüs der Siedlungen kategorisiert. Es wird empfohlen, diese Datei zu deinstallieren und nur Dateien und Patches zu verwenden die kompatibel sind mit SKE.'
-      - lang: es
-        text: 'Este archivo cambia la forma en que el juego base clasifica los menús de la construcción de asentamientos. Se recomienda desinstalar este archivo y utilizar sólo los archivos y parches compatibles con SKE.'
-      - lang: it
-        text: 'Questo file modifica il modo in cui il gioco base categorizza i menu di costruzione degli insediamenti. Si consiglia di disinstallare questo file e utilizzare solo file e patch compatibili con SKE.'
-      - lang: ja
-        text: 'このファイルはゲームにおける集落の建設メニューの分類方法を変更します。このファイルをアンインストールし、SKEと互換性のあるファイルおよびパッチのみ使用することを推奨します。'
-      - lang: ko
-        text: '이 파일은 기본 게임이 정착지 건물 메뉴를 분류하는 방식을 변경합니다. 이 파일을 제거하고 SKE와 호환되는 파일 및 패치 만 사용하는 것이 좋습니다.'
-      - lang: pt_BR
-        text: 'Este arquivo muda a maneira que o jogo categoriza menus de construção de cidades. É recomendado desinstalar este arquivo e usar somente arquivos e patches compatíveis com o SKE.'
-    condition: 'active("SettlementKeywords.esm") and version("SettlementKeywords.esm", "1.0", >=)'
-
   - &obsolete
     type: warn
     content:
