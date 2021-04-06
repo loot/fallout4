@@ -2492,11 +2492,11 @@ plugins:
         util: 'FO4Edit v3.2'
   - name: 'Radrose Usability - .+\.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/18098' ]
-    req: [ 'Radrose Usability Enhancements.esp' ]
+    after: [ 'Radrose Usability Enhancements.esp' ]
   - name: 'Radrose - Valdacil Patch - .+\.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/18098' ]
-    req: [ 'Radrose Usability Enhancements.esp' ]
     after:
+      - 'Radrose Usability Enhancements.esp'
       - 'Radrose Usability - DLCCoast.esp'
       - 'Radrose Usability - DLCNukaWorld + AWKCR.esp'
       - 'Radrose Usability - DLCRobot.esp'
@@ -2505,7 +2505,7 @@ plugins:
       - 'Radrose Usability - Workbench Perk Requirements.esp'
   - name: 'FROST VIS Patch.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/24461' ]
-    req: [ 'Radrose Usability Enhancements.esp' ]
+    after: [ 'Radrose Usability Enhancements.esp' ]
   # Other plugins
   - name: 'NoSharedDogmeatTemplate.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/18547' ]
