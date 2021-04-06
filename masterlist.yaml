@@ -2495,8 +2495,8 @@ plugins:
     after: [ 'Radrose Usability Enhancements.esp' ]
   - name: 'Radrose - Valdacil Patch - .+\.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/18098' ]
-    after: [ 'Radrose Usability Enhancements.esp' ]
     after:
+      - 'Radrose Usability Enhancements.esp'
       - 'Radrose Usability - DLCCoast.esp'
       - 'Radrose Usability - DLCNukaWorld + AWKCR.esp'
       - 'Radrose Usability - DLCRobot.esp'
