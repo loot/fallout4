@@ -83,6 +83,8 @@ common:
         text: 'Usuń. Już zawarte lub naprawione w %1%.'
       - lang: pt_BR
         text: 'Apague. Já incluído ou consertado em %1%.'
+      - lang: pt_PT
+        text: 'Apagar. Já incluído ou reparado em %1%.'
       - lang: ru
         text: 'Удалите. Уже включено в %1% или исправлено иным образом.'
       - lang: sv
@@ -118,6 +120,8 @@ common:
         text: 'Jest wysoce wskazane abyś używał także %1%.'
       - lang: pt_BR
         text: 'É altamente recomendado que você também use %1%.'
+      - lang: pt_PT
+        text: 'É altamente recomendado que você também use %1%.'
       - lang: sv
         text: 'Det är rekommenderat att du också använder %1%.'
 
@@ -144,6 +148,8 @@ common:
         text: 'Ten plik jest zepsuty i nie powinien być używany.'
       - lang: pt_BR
         text: 'Este arquivo está corrompido e não deveria ser utilizado.'
+      - lang: pt_PT
+        text: 'Este ficheiro está corrompido e não deve ser utilizado.'
       - lang: ru
         text: 'Файл испорчен и не должен использоваться.'
       - lang: sv
@@ -167,6 +173,8 @@ common:
       - lang: pl
         text: 'Usuń lub dezaktywuj. %1%'
       - lang: pt_BR
+        text: 'Apague ou desative. %1%'
+      - lang: pt_PT
         text: 'Apague ou desative. %1%'
       - lang: ru
         text: 'Не забудьте отключить или удалить. %1%'
@@ -223,6 +231,8 @@ common:
         text: 'Przestarzały. Uaktualnij do ostatniej wersji. %1%'
       - lang: pt_BR
         text: 'Obsoleto. Atualize para a última versão %1%.'
+      - lang: pt_PT
+        text: 'Obsoleto. Atualize para a versão mais recente. %1%'
       - lang: ru
         text: 'Устарело. Обновите до последней версии. %1%'
       - lang: sv
@@ -254,6 +264,8 @@ common:
         text: 'Może być używane wraz z %1% ale wymagałoby dodatkowej pracy. Smashed Patch lub Bashed Patch powinien być używany niezależnie jeden od drugiego.'
       - lang: pt_BR
         text: 'Pode ser utilizado com um %1% mas necessita de trabalho adicional. Um Smashed Patch ou um Bashed Patch devem ser utilizados independentemente um do outro.'
+      - lang: pt_PT
+        text: 'Pode ser utilizado com um %1% mas necessitaria de trabalho adicional. Um Smashed Patch ou um Bashed Patch devem ser utilizados independentemente um do outro.'
       - lang: ru
         text: 'Может быть использовано совместно с %1% но возможно потребуется дополнительная работа. Smashed Patch или Bash Patch должны быть использованы независимо друг от друга.'
       - lang: sv
@@ -358,6 +370,8 @@ common:
         text: 'Wymaga: %1%'
       - lang: pt_BR
         text: 'Requer: %1%'
+      - lang: pt_PT
+        text: 'Requer: %1%'
       - lang: ru
         text: 'Требуется: %1%'
       - lang: sv
@@ -380,6 +394,8 @@ common:
         text: '대신 %1%를 사용하십시오.'
       - lang: pt_BR
         text: 'Use %1% ao invés disso.'
+      - lang: pt_PT
+        text: 'Use %1% ao invés disto.'
       - lang: sv
         text: 'Använd %1% istället.'
 
@@ -436,6 +452,8 @@ common:
         text: 'Użyj wersji %1%.'
       - lang: pt_BR
         text: 'Use a versão %1%.'
+      - lang: pt_PT
+        text: 'Use a versão %1%.'
       - lang: ru
         text: 'Используйте версию для %1%.'
       - lang: sv
@@ -483,6 +501,8 @@ common:
       - lang: pl
         text: 'Użyj wersji innej niż %1%.'
       - lang: pt_BR
+        text: 'Use a versão não-%1%.'
+      - lang: pt_PT
         text: 'Use a versão não-%1%.'
       - lang: sv
         text: 'Använd en icke-%1% version.'
