@@ -1,4 +1,4 @@
-### About
+# About
 
 This repository holds the LOOT masterlist for Fallout 4.
 
