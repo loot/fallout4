@@ -5829,3 +5829,16 @@ plugins:
     clean:
       - crc: 0xC5DC1B5E
         util: 'FO4Edit v4.0.3'
+        
+  - name: 'Be Exceptional.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/28222'
+        name: 'Be Exceptional - Skills and Perk Overhaul'
+    dirty:
+      - <<: *quickClean
+        crc: 0x649BC85D
+        util: '[FO4Edit v4.0.3](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 1
+    clean:
+      - crc: 0x918A8732
+        util: 'FO4Edit v4.0.3'
