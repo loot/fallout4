@@ -5839,6 +5839,3 @@ plugins:
         crc: 0x649BC85D
         util: '[FO4Edit v4.0.3](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 1
-    clean:
-      - crc: 0x918A8732
-        util: 'FO4Edit v4.0.3'
