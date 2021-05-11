@@ -3721,6 +3721,16 @@ plugins:
       - crc: 0x114C9C6A
         util: 'FO4Edit v4.0.2f'
 
+###### Sim Settlements 2 ######
+  - name: 'SS2.esm'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/47976' ]
+    msg:
+      - <<: *patch3rdParty
+        subs:
+          - '[Extended Dialogue Interface](https://www.nexusmods.com/fallout4/mods/27216)'
+          - '[SS2 - XDI Compatibility Patch](https://www.nexusmods.com/fallout4/mods/48254)'
+        condition: 'active("XDI.esm") and not active("SS2_XDI Patch.esp") and not active("SS2_XDI Patch-Basic.esp") and not active("SS2_XDI Patch-Basic_esl.esp")'
+
 ###### Sim Settlements ######
   - name: 'SimSettlements.esm'
     url: [ 'https://www.nexusmods.com/fallout4/mods/21872' ]
