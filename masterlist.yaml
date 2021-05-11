@@ -3724,9 +3724,6 @@ plugins:
 ###### Sim Settlements 2 ######
   - name: 'SS2.esm'
     url: [ 'https://www.nexusmods.com/fallout4/mods/47976' ]
-    after:
-      - 'HUDFramework.esm'
-      - 'WorkshopFramework.esm'
     msg:
       - <<: *patch3rdParty
         subs:
