@@ -2171,6 +2171,13 @@ plugins:
         util: '[FO4Edit v4.0.2f](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 3
         udr: 9
+        
+  - name: 'Perk Magazine Material Fix.esp;
+    url: [ 'https://www.nexusmods.com/fallout4/mods/6906' ]
+    group: *fixesGroup
+    msg:
+      - <<: *alreadyInUFO4P
+      condition: 'active("Unofficial Fallout 4 Patch.esp) and version(Unofficial Fallout 4 Patch.esp", "1.0.5", >=)'
 
 ###### Texture overhauls ######
   - name: 'OVT.esp'
