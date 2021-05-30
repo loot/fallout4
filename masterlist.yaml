@@ -2172,7 +2172,7 @@ plugins:
         itm: 3
         udr: 9
         
-  - name: 'Perk Magazine Material Fix.esp;
+  - name: 'Perk Magazine Material Fix.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/6906' ]
     group: *fixesGroup
     msg:
