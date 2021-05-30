@@ -2177,7 +2177,7 @@ plugins:
     group: *fixesGroup
     msg:
       - <<: *alreadyInUFO4P
-      condition: 'active("Unofficial Fallout 4 Patch.esp) and version(Unofficial Fallout 4 Patch.esp", "1.0.5", >=)'
+        condition: 'active("Unofficial Fallout 4 Patch.esp") and version("Unofficial Fallout 4 Patch.esp", "1.0.5", >=)'
 
 ###### Texture overhauls ######
   - name: 'OVT.esp'
