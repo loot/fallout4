@@ -3957,7 +3957,6 @@ plugins:
         nav: 1
   - name: 'FirstPersonViewableItemsExpanded.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/26062' ]
-    inc: [ 'LooksMenu Customization Compendium.esp' ]
     msg:
       - <<: *alreadyInX
         subs: [ 'LooksMenu1stPersonViewItemsFix.esp' ]
