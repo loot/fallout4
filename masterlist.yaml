@@ -3965,9 +3965,8 @@ plugins:
         subs: [ '[Looks Menu Customization Compendium](https://www.nexusmods.com/fallout4/mods/26062)' ]
         condition: 'active("LooksMenu Customization Compendium.esp")'
     clean:
-      # Version 1.0
       - crc: 0x9855A3B2
-        util: 'FO4Edit v4.0.2i'
+        util: 'FO4Edit v4.0.3g'
   - name: 'MinutemenGeneralOutfitF.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/26047' ]
     inc: [ 'ArmorKeywords.esm' ]
