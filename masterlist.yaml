@@ -3084,24 +3084,6 @@ plugins:
         display: 'Settlement Keywords Expanded'
         condition: 'version("SettlementKeywords.esm", "1.0", >=)'
 
-  - name: 'Z_Horizon_Patch_Homemaker.esp'
-    msg:
-      - type: warn
-        content:
-          - lang: en
-            text: 'This patch will no longer work correctly with Homemaker 1.50 or greater. It will move items out of the Homemaker menu and place them into the vanilla menus unintentionally.'
-          - lang: de
-            text: 'Dieser Patch wird nicht länger korrekt funktionieren mit Homemaker 1.50 oder neuer. Es wird Gegenstände aus den Homemaker-Menü in die Standard Siedlungsmenüs unbeabsichtigt verschieben.'
-        condition: 'version("Homemaker.esm", "1.50", >=)'
-  - name: 'Z_Horizon_Patch_Homemaker_SKE.esp'
-    msg:
-      - type: error
-        content:
-          - lang: en
-            text: 'This patch no longer works with SKE 1.43 or greater because, as of Homemaker 1.50 or greater there is no Homemaker - SKE patch.'
-          - lang: de
-            text: 'Dieser Patch wird nicht länger funktionieren mit SKE 1.43 oder neuer weil zu dem Zeitpunkt von Homemaker 1.50 (oder neuer) gibt es keinen Homemaker - SKE Patch.'
-        condition: 'version("SettlementKeywords.esm", "1.43", >=)'
   - name: 'BetterJunkFences.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/9000' ]
     inc: [ 'JunkWalls_More_Snaps.esp' ]
