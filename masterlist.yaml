@@ -5745,8 +5745,8 @@ plugins:
         content:
           - lang: en
             text: 'Another mod seems to be overwriting one of this module''s essential files. Please ensure you''re using this module''s version of %1%.'
-        subs: [ '**Scripts/Hardcore/hc_managerscript.pex**' ]
-        condition: 'not checksum("Scripts/Hardcore/hc_managerscript.pex", 2FEC9CFC)'
+        subs: [ '**scripts/hardcore/hc_managerscript.pex**' ]
+        condition: 'file("scripts/hardcore/hc_managerscript.pex") and not checksum("scripts/hardcore/hc_managerscript.pex", 2FEC9CFC)'
 
   - name: 'Z_Horizon_DLC_(Automatron|FarHarbor|Nuka|Workshop\d\d)\.esp'
     msg:
@@ -5768,11 +5768,11 @@ plugins:
     req: [ 'Z_Horizon.esp' ]
   - name: 'Z_Horizon_Desolation.esp'
     after: [ 'Z_Horizon_Mode_Scavenger.esp' ]
-  - name: 'Z_Horizon_DEFUI(_MenusOnly)?.esp'
+  - name: 'Z_Horizon_DEFUI(_MenusOnly)?\.esp'
     msg:
       - <<: *useOnlyOneX
         subs: [ 'Horizon DEFUI' ]
-        condition: 'many("Z_Horizon_DEFUI(_MenusOnly)?.esp")'
+        condition: 'many("Z_Horizon_DEFUI(_MenusOnly)?\.esp")'
   - name: 'Z_Horizon_Diff_(Cutthroat|Novice|Outcast|Veteran|Wanderer)\.esp'
     msg:
       - <<: *useOnlyOneX
