@@ -5746,7 +5746,7 @@ plugins:
           - lang: en
             text: 'Another mod seems to be overwriting one of this module''s essential files. Please ensure you''re using this module''s version of %1%.'
         subs: [ '**scripts/hardcore/hc_managerscript.pex**' ]
-        condition: 'file("scripts/hardcore/hc_managerscript.pex") and not checksum("scripts/hardcore/hc_managerscript.pex", 2FEC9CFC)'
+        condition: 'file("scripts/hardcore/hc_managerscript.pex") and version("Z_Horizon.esp", "1.8.0", ==) and not checksum("scripts/hardcore/hc_managerscript.pex", 2FEC9CFC)'
 
   - name: 'Z_Horizon_DLC_(Automatron|FarHarbor|Nuka|Workshop\d\d)\.esp'
     msg:
