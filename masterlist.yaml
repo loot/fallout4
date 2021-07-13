@@ -5744,11 +5744,9 @@ plugins:
       - type: error
         content:
           - lang: en
-            text: 'Delete loose file %1%. This plugins file must take precedence.'
-          - lang: de
-            text: 'Löschen Sie ungebundene Datei %1%. Dieses Plugins Datei muss Vorrang haben.'
+            text: 'Another mod seems to be overwriting one of this module''s essential files. Please ensure you''re using this module''s version of %1%.'
         subs: [ '**Scripts/Hardcore/hc_managerscript.pex**' ]
-        condition: 'file("Scripts/Hardcore/hc_managerscript.pex") and not checksum("Scripts/Hardcore/hc_managerscript.pex", 2FEC9CFC)'
+        condition: 'not checksum("Scripts/Hardcore/hc_managerscript.pex", 2FEC9CFC)'
 
   - name: 'Z_Horizon_DLC_(Automatron|FarHarbor|Nuka|Workshop\d\d)\.esp'
     msg:
