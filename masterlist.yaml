@@ -279,7 +279,7 @@ common:
       - lang: en
         text: 'Can be used with a %1% but would require additional work. A Smashed Patch or Bash Patch should be used independently of one another.'
       - lang: bg
-        text: 'Може да се използва с %1%, но ще трябва да изберете кръпка на Smash или Bash.'
+        text: 'Може да се използва с %1%, но ще трябва да изберете кръпка на "Smash" или "Bash".'
       - lang: da
         text: 'Kan bruges sammen med %1% men det vil kræve ekstra arbejde. Smashed Patch og Bash Patch bør bruges uafhængigt af hinanden.'
       - lang: de
@@ -767,7 +767,7 @@ common:
       - lang: en
         text: 'A guide to cleaning plugins using xEdit can be found [here](https://tes5edit.github.io/docs/7-mod-cleaning-and-error-checking.html#ThreeEasyStepstocleanMods).'
       - lang: bg
-        text: 'Информация за почистване на приставките в xEdit може да намерите [тук](https://tes5edit.github.io/docs/7-mod-cleaning-and-error-checking.html#ThreeEasyStepstocleanMods).'
+        text: 'Информация за почистване на приставките в "xEdit" може да намерите [тук](https://tes5edit.github.io/docs/7-mod-cleaning-and-error-checking.html#ThreeEasyStepstocleanMods).'
       - lang: de
         text: 'Eine Anleitung zum Säubern von Plugins mit xEdit finden Sie [hier](https://tes5edit.github.io/docs/7-mod-cleaning-and-error-checking.html#ThreeEasyStepstocleanMods).'
       - lang: es
@@ -799,7 +799,7 @@ common:
       - lang: en
         text: 'It is strongly recommended not to use mods that contain **deleted navmeshes** as they''re known to cause crashes. **Deleted navmeshes** must be corrected manually (a complex process that should be done by the mod author). More information on **deleted navmeshes** is provided [here](https://www.creationkit.com/index.php?title=Fixing_Navmesh_Deletion_Tutorial).'
       - lang: bg
-        text: 'Препоръчва се да избягвате модове, които съдържат **изтрити navmesh-ове**, защото те могат да причинят проблеми. **Изтритите navmesh-ове** трябва да бъдат коригирани ръчно (това е сложен процес и не се препоръчва за начинаещи). Повече информация за **изтритите navmesh-ове** може да намерите [тук](https://www.creationkit.com/index.php?title=Fixing_Navmesh_Deletion_Tutorial).'
+        text: 'Препоръчва се да избягвате модове, които съдържат **изтрити навигационни обекти**, защото те могат да причинят проблеми. **Изтритите навигационни обекти** трябва да бъдат коригирани ръчно (това е сложен процес и не се препоръчва за начинаещи). Повече информация за **тях** може да намерите [тук](https://www.creationkit.com/index.php?title=Fixing_Navmesh_Deletion_Tutorial).'
       - lang: de
         text: 'Es wird streng empfohlen, keine Mods zu verwenden die **Gelöschte Navmeshes** beinhalten, da diese dafür bekannt sind Abstürze auszulösen. **Gelöschte Navmeshes** müssen manuell korrigiert werden (ein komplexer Prozess der vom Mod-Autor erledigt werden sollte). Mehr Informationen über **Gelöschte Navmeshes** werden [hier](https://www.creationkit.com/index.php?title=Fixing_Navmesh_Deletion_Tutorial) geboten.'
       - lang: es
@@ -840,7 +840,7 @@ globals:
       - lang: en
         text: '[Latest LOOT thread](%1%).'
       - lang: bg
-        text: '[Форумът на LOOT](%1%).'
+        text: '[Форумът на "LOOT"](%1%).'
       - lang: da
         text: '[Seneste LOOT-tråd](%1%).'
       - lang: de
@@ -874,7 +874,7 @@ globals:
       - lang: en
         text: 'This version of LOOT has inferior handling of Creation Club plugins. Support for these are therefore limited in versions prior to LOOT 0.13.1. It is recommended to update as soon as possible.'
       - lang: bg
-        text: 'Тази версия на LOOT не работи добре с приставките от Creation Club. Поддръжката за тях е ограничена във версиите преди LOOT 0.13.1. Препоръчва се да обновите Вашата програма.'
+        text: 'Тази версия на "LOOT" не работи добре с приставките от "Creation Club". Поддръжката за тях е ограничена във версиите преди "LOOT" 0.13.1. Препоръчва се да обновите Вашата програма.'
       - lang: da
         text: 'Denne version af LOOT har begrænset understøttelse af Creation Club-plugins. Det er derfor anbefalet at opdatere til LOOT 0.13.1 eller senere hurtigst muligt.'
       - lang: de
