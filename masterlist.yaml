@@ -2433,6 +2433,11 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/49656/'
         name: 'FallUI - Item Sorter Mod'
+  - name: 'M8r_Item_Tags_(Vanilla_|UFO4P_)?(AWKCR_)?(Weightless_|(VR_)?NoDLCs_(ShortComp_)?)?(EN|DE|ES(MX)?|FR|IT|PL|PTBR|RU)\.esp'
+    msg:
+      - <<: *useOnlyOneX
+        subs: [ 'FallUI - Item Sorter ESP' ]
+        condition: 'many("M8r_Item_Tags_(Vanilla_|UFO4P_)?(AWKCR_)?(Weightless_|(VR_)?NoDLCs_(ShortComp_)?)?(EN|DE|ES(MX)?|FR|IT|PL|PTBR|RU)\.esp")'
 
   - name: 'ValdacilsItemSorting-.*\.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/3877' ]
