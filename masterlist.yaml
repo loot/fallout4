@@ -2429,6 +2429,11 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout4/mods/897' ]
     inc: [ 'Z_Horizon.esp' ]
 
+  - name: 'M8r_(Item|Radio)_Tags_(Vanilla_|UFO4P_)?(AWKCR_)?(Weightless_|(VR_)?NoDLCs_(ShortComp_)?)?(EN|DE|ES(MX)?|FR|IT|PL|PTBR|RU)\.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/49656/'
+        name: 'FallUI - Item Sorter Mod'
+
   - name: 'ValdacilsItemSorting-.*\.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/3877' ]
     inc: [ 'Z_Horizon.esp' ]
