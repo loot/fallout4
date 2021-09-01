@@ -6036,3 +6036,9 @@ plugins:
     clean:
       - crc: 0x9F524D0C
         util: 'FO4Edit v4.0.3h (Hotfix 1)'
+
+  - name: 'Omni-Lower-Loot-Delay.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/52855/' ]
+    clean:
+      - crc: 0xBCABF6D6
+        util: 'FO4Edit v4.0.3h (Hotfix 1)'
