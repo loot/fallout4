@@ -5997,5 +5997,12 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout4/mods/54135/' ]  
     inc: [ 'Unofficial Fallout 4 Patch.esp' ]
     clean:
-    - crc: 0x281C593A
-      util: 'FO4Edit v4.0.3h (Hotfix 1)'
+      - crc: 0x281C593A
+        util: 'FO4Edit v4.0.3h (Hotfix 1)'
+
+  - name: 'Magazinemod_OMNI.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/54136' ]
+    inc: [ 'Unofficial Fallout 4 Patch.esp' ]
+    clean:
+      - crc: 0x489330C5
+        util: 'FO4Edit v4.0.3h (Hotfix 1)'
