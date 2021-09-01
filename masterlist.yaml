@@ -6012,3 +6012,9 @@ plugins:
     clean:
       - crc: 0x83AA9FB1
         util: 'FO4Edit v4.0.3h (Hotfix 1)'
+
+  - name: 'OMNI_BallisticWeaveMod.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/54178/' ]
+    clean:
+      - crc: 0x75A8D954
+        util: 'FO4Edit v4.0.3h (Hotfix 1)'
