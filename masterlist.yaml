@@ -6020,7 +6020,7 @@ plugins:
         util: 'FO4Edit v4.0.3h (Hotfix 1)'
 
   - name: 'ClearWeather.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/51360' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/51360/' ]
     clean:
       - crc: 0x8FE01CAD
         util: 'FO4Edit v4.0.3h (Hotfix 1)'
