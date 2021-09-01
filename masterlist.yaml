@@ -2311,7 +2311,7 @@ plugins:
         util: '[FO4Edit v4.0.2f](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 3
         udr: 9
-        
+
   - name: 'Perk Magazine Material Fix.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/6906' ]
     group: *fixesGroup
@@ -4849,7 +4849,7 @@ plugins:
   - name: 'SKKFastStart.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/29227' ]
     group: *altStartGroup
-    inc: 
+    inc:
       - 'AnotherLife.esp'
       - 'OSM_AlternateStart_Protocol-InfiniteAnswer.esp'
       - 'StartMeUp.esp'
@@ -5719,7 +5719,7 @@ plugins:
 
 ###### FROST ######
   - name: 'FROST.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/18898/' ] 
+    url: [ 'https://www.nexusmods.com/fallout4/mods/18898/' ]
     dirty:
       - <<: *reqManualFix
         crc: 0xE8D519A5
@@ -5982,7 +5982,7 @@ plugins:
     clean:
       - crc: 0xC5DC1B5E
         util: 'FO4Edit v4.0.3'
-        
+
   - name: 'Be Exceptional.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/28222'
@@ -5994,7 +5994,7 @@ plugins:
         itm: 1
 
   - name: 'Bobbleheadmod_OMNI.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/54135/' ]  
+    url: [ 'https://www.nexusmods.com/fallout4/mods/54135/' ]
     req: [ 'Unofficial Fallout 4 Patch.esp' ]
     clean:
       - crc: 0x281C593A
