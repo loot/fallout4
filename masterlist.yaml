@@ -5992,3 +5992,10 @@ plugins:
         crc: 0x649BC85D
         util: '[FO4Edit v4.0.3](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 1
+
+  - name: 'Bobbleheadmod_OMNI.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/54135/' ]  
+    inc: [ 'Unofficial Fallout 4 Patch.esp' ]
+    clean:
+    - crc: 0x281C593A
+      util: 'FO4Edit v4.0.3h (Hotfix 1)'
