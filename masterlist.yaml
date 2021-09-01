@@ -6008,7 +6008,7 @@ plugins:
         util: 'FO4Edit v4.0.3h (Hotfix 1)'
 
   - name: 'CleanerWorkshopMenu.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/53117' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/53117/' ]
     clean:
       - crc: 0x83AA9FB1
         util: 'FO4Edit v4.0.3h (Hotfix 1)'
