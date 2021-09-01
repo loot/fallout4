@@ -6030,3 +6030,9 @@ plugins:
     clean:
       - crc: 0x925428E0
         util: 'FO4Edit v4.0.3h (Hotfix 1)'
+
+  - name: 'Omniguous-no-useless-papers.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/52722/' ]
+    clean:
+      - crc: 0x9F524D0C
+        util: 'FO4Edit v4.0.3h (Hotfix 1)'
