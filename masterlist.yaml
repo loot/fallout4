@@ -6032,8 +6032,9 @@ plugins:
         util: 'FO4Edit v4.0.3h (Hotfix 1)'
   - name: 'ARMOR-WEIGHT-OMNITOBW-PATCH.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/54173/' ]
-    req: [ 'Unofficial Fallout 4 Patch.esp' ]
-    req: [ 'ArmorWeight.esp' ]
+    req:
+      - 'ArmorWeight.esp'
+      - 'Unofficial Fallout 4 Patch.esp'
     clean:
       - crc: 0xD6BFAB97
         util: 'FO4Edit v4.0.3h (Hotfix 1)'
