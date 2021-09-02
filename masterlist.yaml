@@ -6048,9 +6048,3 @@ plugins:
     clean:
       - crc: 0xBCABF6D6
         util: 'FO4Edit v4.0.3h (Hotfix 1)'
-
-  - name: 'Omni-Better-Beds.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/54188/' ]
-    clean:
-      - crc: 0x96BCEE7B
-        util: 'FO4Edit v4.0.3h (Hotfix 1)'
