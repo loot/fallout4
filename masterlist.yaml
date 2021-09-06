@@ -4425,6 +4425,9 @@ plugins:
       - 'Farm_DLCCoast.esp'
       - 'Farm_DLCNukaWorld.esp'
       - 'Farm_DLCworkshop03.esp'
+      - 'Nuka-World Collectable Markers.esp'
+      - 'Omni-Better-Beds.esp'
+      - 'Magazinemod_OMNI.esp'
     clean:
       # version: 0.32
       - crc: 0xCFB11F37
