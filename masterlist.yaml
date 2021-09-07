@@ -6057,3 +6057,14 @@ plugins:
     clean:
       - crc: 0x96BCEE7B
         util: 'FO4Edit v4.0.3h (Hotfix 1)'
+
+  - name: 'Take It In - A Silent Radio Mod.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/54162' ]
+    dirty:
+      - <<: *quickClean
+        crc: 0x9A660617
+        util: '[FO4Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 5
+    clean:
+      - crc: 0xB0CE38E4
+        util: 'FO4Edit v4.0.3h (Hotfix 1)'
