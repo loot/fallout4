@@ -2168,6 +2168,11 @@ plugins:
         util: 'FO4Edit v4.0.2j'
 
 ###### Unofficial Patches ######
+  - name: 'UnofficialFallout4Patch.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/4526/' ]
+    group: *fixesGroup
+    msg: [ *alreadyInUFO4P ]
+
   - name: 'Unofficial Fallout 4 Patch.esp'
     url:
       - 'https://www.afkmods.com/index.php?/files/file/1765-unofficial-fallout-4-patch/'
@@ -2362,11 +2367,6 @@ plugins:
     msg:
       - <<: *alreadyInOrFixedByFO4
         condition: 'version("../Fallout4.exe", "1.5.0.0", >=)'
-
-  - name: 'UnofficialFallout4Patch.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/4526/' ]
-    group: *fixesGroup
-    msg: [ *alreadyInUFO4P ]
 
   - name: 'Vault-Tec Historical Preservation Initiative.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/12019/' ]
