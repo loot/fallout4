@@ -2519,6 +2519,10 @@ plugins:
         util: 'FO4Edit v4.0.3'
 
 ###### Gameplay ######
+  - name: 'NoSharedDogmeatTemplate.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/18547' ]
+    group: *underridesGroup
+
   - name: 'Vault-Tec Historical Preservation Initiative.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/12019/' ]
     group: *retconGroup
@@ -2804,9 +2808,6 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout4/mods/24461' ]
     after: [ 'Radrose Usability Enhancements.esp' ]
   # Other plugins
-  - name: 'NoSharedDogmeatTemplate.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/18547' ]
-    group: *underridesGroup
   - name: 'Scrapper Corpse Highlighting( DLC Patch| - DLCRobots Fixes)\.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/11516' ]
     group: *underridesGroup
