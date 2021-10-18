@@ -2519,6 +2519,8 @@ plugins:
         util: 'FO4Edit v4.0.3'
 
 ###### Gameplay ######
+  - name: 'BetterCompanions.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/18547/' ]
   - name: 'NoSharedDogmeatTemplate.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/18547' ]
     group: *underridesGroup
