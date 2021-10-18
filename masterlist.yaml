@@ -2368,16 +2368,6 @@ plugins:
       - <<: *alreadyInOrFixedByFO4
         condition: 'version("../Fallout4.exe", "1.5.0.0", >=)'
 
-  - name: 'Vault-Tec Historical Preservation Initiative.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/12019/' ]
-    group: *retconGroup
-    dirty:
-      - <<: *quickClean
-        crc: 0xC8545353
-        util: '[FO4Edit v4.0.2f](https://www.nexusmods.com/fallout4/mods/2737)'
-        itm: 3
-        udr: 9
-
   - name: 'WeaveFix.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/5847/' ]
     group: *fixesGroup
@@ -2527,6 +2517,17 @@ plugins:
     clean:
       - crc: 0x1DA07EEF
         util: 'FO4Edit v4.0.3'
+
+###### Gameplay ######
+  - name: 'Vault-Tec Historical Preservation Initiative.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/12019/' ]
+    group: *retconGroup
+    dirty:
+      - <<: *quickClean
+        crc: 0xC8545353
+        util: '[FO4Edit v4.0.2f](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 3
+        udr: 9
 
 ###### Sorting Mods ######
   - name: 'ARWCSM - (\d) - (Full|Modular).*\.esp'
