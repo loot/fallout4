@@ -2199,7 +2199,7 @@ plugins:
     dirty:
       - <<: *quickClean
         crc: 0xCE32A0AE
-        util: '[FO4Edit v4.0.3](https://www.nexusmods.com/fallout4/mods/2737)'
+        util: '[FO4Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 108
 
 ###### Fixes ######
