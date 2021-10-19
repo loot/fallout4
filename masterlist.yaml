@@ -1183,7 +1183,7 @@ plugins:
   - name: 'DLCRobot.esm'
     group: *dlcGroup
     dirty:
-      - <<: *reqManualFix
+      - <<: *quickClean
         crc: 0xD69027EA
         util: '[FO4Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 49
@@ -1242,7 +1242,7 @@ plugins:
       - 'DLCworkshop03.esm'
     tag: [ Relev ]
     dirty:
-      - <<: *reqManualFix
+      - <<: *quickClean
         crc: 0x43D25C56
         util: '[FO4Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 194
