@@ -2196,6 +2196,9 @@ plugins:
     msg:
       - <<: *obsolete
         condition: 'version("ArmorKeywords.esm", "8.6.0", <) or version("ArmorKeywords.esm", "8.51", ==)'
+    tag:
+      - Delev
+      - Relev
     dirty:
       - <<: *quickClean
         crc: 0xCE32A0AE
