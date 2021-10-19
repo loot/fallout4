@@ -2191,6 +2191,16 @@ plugins:
         util: 'FO4Edit v4.0.3h (Hotfix 1)'
 
 ###### Resources & Frameworks ######
+  - name: 'ArmorKeywords.esm'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/6091/' ]
+    msg:
+      - <<: *obsolete
+        condition: 'version("ArmorKeywords.esm", "8.6.0", <) or version("ArmorKeywords.esm", "8.51", ==)'
+    dirty:
+      - <<: *quickClean
+        crc: 0xCE32A0AE
+        util: '[FO4Edit v4.0.3](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 108
 
 ###### Fixes ######
   - name: 'BoS Pilot Outfit Fix.esp'
@@ -3450,16 +3460,6 @@ plugins:
         crc: 0xD6ACC264
         util: '[FO4Edit v4.0.2f](https://www.nexusmods.com/fallout4/mods/2737)'
         nav: 5
-  - name: 'ArmorKeywords.esm'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/6091' ]
-    msg:
-      - <<: *obsolete
-        condition: 'version("ArmorKeywords.esm", "8.6.0", <) or version("ArmorKeywords.esm", "8.51", ==)'
-    dirty:
-      - <<: *quickClean
-        crc: 0xCE32A0AE
-        util: '[FO4Edit v4.0.3](https://www.nexusmods.com/fallout4/mods/2737)'
-        itm: 108
   - name: 'Armorsmith Extended.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/2228' ]
     group: *itemsGroup
