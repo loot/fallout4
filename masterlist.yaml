@@ -2218,6 +2218,9 @@ plugins:
       - crc: 0x67DBDE61
         util: 'FO4Edit v4.0.3h (Hotfix 1)'
 
+  - name: 'WorkshopFramework.esm'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/35004/' ]
+
 ###### Fixes ######
   - name: 'BoS Pilot Outfit Fix.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/3098/' ]
