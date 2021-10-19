@@ -2191,8 +2191,11 @@ plugins:
         util: 'FO4Edit v4.0.3h (Hotfix 1)'
 
 ###### Resources & Frameworks ######
+  - name: '(ArmorKeywords|AWKCR - ).*\.es(m|p)'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/6091/'
+        name: 'Armor and Weapon Keywords Community Resource (AWKCR)'
   - name: 'ArmorKeywords.esm'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/6091/' ]
     group: *frameworksGroup
     msg:
       - <<: *obsolete
@@ -2206,7 +2209,6 @@ plugins:
         util: '[FO4Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 108
   - name: 'AWKCR - (Automatron|Contraptions|Far Harbor|Nuka World|Vault-Tec)\.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/6091/' ]
     group: *frameworksGroup
 
 ###### Fixes ######
