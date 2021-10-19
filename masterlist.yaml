@@ -2211,6 +2211,12 @@ plugins:
   - name: 'AWKCR - (Automatron|Contraptions|Far Harbor|Nuka World|Vault-Tec)\.esp'
     group: *frameworksGroup
 
+  - name: 'HUDFramework.esm'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/20309/' ]
+    clean:
+      - crc: 0x67dbde61
+        util: FO4Edit v3.2.1
+
 ###### Fixes ######
   - name: 'BoS Pilot Outfit Fix.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/3098/' ]
@@ -4211,11 +4217,6 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout4/mods/8602' ]
     clean:
       - crc: 0x25d6a01d
-        util: FO4Edit v3.2.1
-  - name: 'HUDFramework.esm'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/20309' ]
-    clean:
-      - crc: 0x67dbde61
         util: FO4Edit v3.2.1
   - name: 'HushDogmeat.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/3855' ]
