@@ -2221,6 +2221,7 @@ plugins:
   - name: 'WorkshopFramework.esm'
     url: [ 'https://www.nexusmods.com/fallout4/mods/35004/' ]
     group: *frameworksGroup
+    after: [ 'Unofficial Fallout 4 Patch.esp' ]
 
 ###### Fixes ######
   - name: 'BoS Pilot Outfit Fix.esp'
