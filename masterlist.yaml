@@ -2193,6 +2193,7 @@ plugins:
 ###### Resources & Frameworks ######
   - name: 'ArmorKeywords.esm'
     url: [ 'https://www.nexusmods.com/fallout4/mods/6091/' ]
+    group: *frameworksGroup
     msg:
       - <<: *obsolete
         condition: '(version("ArmorKeywords.esm", "8.6.0", <) or version("ArmorKeywords.esm", "8.51", ==)) and file("DLCCoast.esm") and file("DLCNukaWorld.esm") and file("DLCRobot.esm") and file("DLCworkshop02.esm") and file("DLCworkshop03.esm")'
@@ -2204,6 +2205,9 @@ plugins:
         crc: 0xCE32A0AE
         util: '[FO4Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 108
+  - name: 'AWKCR - (Automatron|Contraptions|Far Harbor|Nuka World|Vault-Tec)\.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/6091/' ]
+    group: *frameworksGroup
 
 ###### Fixes ######
   - name: 'BoS Pilot Outfit Fix.esp'
