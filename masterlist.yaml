@@ -1240,6 +1240,7 @@ plugins:
       - 'DLCCoast.esm'
       - 'DLCworkshop02.esm'
       - 'DLCworkshop03.esm'
+    tag: [ Relev ]
     dirty:
       - <<: *reqManualFix
         crc: 0x43D25C56
