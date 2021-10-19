@@ -1183,10 +1183,9 @@ plugins:
   - name: 'DLCRobot.esm'
     group: *dlcGroup
     dirty:
-      # versions: 1.10.120-163
-      - <<: *quickClean
+      - <<: *reqManualFix
         crc: 0xD69027EA
-        util: '[FO4Edit v4.0.3](https://www.nexusmods.com/fallout4/mods/2737)'
+        util: '[FO4Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 49
         udr: 38
         nav: 1
@@ -1194,10 +1193,9 @@ plugins:
     group: *dlcGroup
     after: [ 'DLCRobot.esm' ]
     dirty:
-      # versions: 1.10.120-163
       - <<: *quickClean
         crc: 0x47BAE27E
-        util: '[FO4Edit v4.0.3](https://www.nexusmods.com/fallout4/mods/2737)'
+        util: '[FO4Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 6
   - name: 'DLCCoast.esm'
     group: *dlcGroup
@@ -1205,10 +1203,9 @@ plugins:
       - 'DLCRobot.esm'
       - 'DLCworkshop01.esm'
     dirty:
-      # versions: 1.10.120-163
       - <<: *quickClean
         crc: 0xF1F28026
-        util: '[FO4Edit v4.0.3](https://www.nexusmods.com/fallout4/mods/2737)'
+        util: '[FO4Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 84
         udr: 86
   - name: 'DLCworkshop02.esm'
@@ -1218,10 +1215,9 @@ plugins:
       - 'DLCworkshop01.esm'
       - 'DLCCoast.esm'
     dirty:
-      # versions: 1.10.120-163
       - <<: *quickClean
         crc: 0x83ABC821
-        util: '[FO4Edit v4.0.3](https://www.nexusmods.com/fallout4/mods/2737)'
+        util: '[FO4Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 2
   - name: 'DLCworkshop03.esm'
     group: *dlcGroup
@@ -1231,10 +1227,9 @@ plugins:
       - 'DLCCoast.esm'
       - 'DLCworkshop02.esm'
     dirty:
-      # versions: 1.10.120-163.0
       - <<: *quickClean
         crc: 0xE0089FBB
-        util: '[FO4Edit v4.0.3](https://www.nexusmods.com/fallout4/mods/2737)'
+        util: '[FO4Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 22
         udr: 10
   - name: 'DLCNukaWorld.esm'
@@ -1246,10 +1241,9 @@ plugins:
       - 'DLCworkshop02.esm'
       - 'DLCworkshop03.esm'
     dirty:
-      # versions: 1.10.120-163
-      - <<: *quickClean
+      - <<: *reqManualFix
         crc: 0x43D25C56
-        util: '[FO4Edit v4.0.3](https://www.nexusmods.com/fallout4/mods/2737)'
+        util: '[FO4Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 194
         udr: 418
         nav: 7
