@@ -2190,6 +2190,29 @@ plugins:
       - crc: 0xFA6E14DD
         util: 'FO4Edit v4.0.3h (Hotfix 1)'
 
+###### Modding Tools - Generated Files ######
+  - name: 'Bashed Patch.*\.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/20032/' ]
+    group: *dynamicPatchesGroup
+    after: [ 'FO4Merged.esp' ]
+    msg:
+      - <<: *onlyUseSmashOrBash
+        condition: 'file("Smashed Patch.esp")'
+        subs: [ 'Smashed Patch.esp' ]
+
+  - name: 'FO4Merged.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/2737/' ]
+    group: *dynamicPatchesGroup
+
+  - name: 'Smashed Patch.esp'
+    url: [ 'https://github.com/matortheeternal/smash/releases/' ]
+    group: *dynamicPatchesGroup
+    after: [ 'FO4Merged.esp' ]
+    msg:
+      - <<: *onlyUseSmashOrBash
+        condition: 'file("Bashed Patch.*\.esp")'
+        subs: [ 'Bashed Patch' ]
+
 ###### Resources & Frameworks ######
   - name: '(ArmorKeywords|AWKCR - ).*\.es(m|p)'
     url:
@@ -4958,23 +4981,6 @@ plugins:
     clean:
       - crc: 0x238F87A5
         util: 'FO4Edit v4.0.3'
-
-  - name: 'FO4Merged.esp'
-    group: *dynamicPatchesGroup
-  - name: 'Smashed Patch.esp'
-    group: *dynamicPatchesGroup
-    after: [ 'FO4Merged.esp' ]
-    msg:
-      - <<: *onlyUseSmashOrBash
-        condition: 'file("Bashed Patch.*\.esp")'
-        subs: [ 'Bashed Patch' ]
-  - name: 'Bashed Patch.*\.esp'
-    group: *dynamicPatchesGroup
-    after: [ 'FO4Merged.esp' ]
-    msg:
-      - <<: *onlyUseSmashOrBash
-        condition: 'file("Smashed Patch.esp")'
-        subs: [ 'Smashed Patch.esp' ]
 
   - name: 'MoreAGOMBz.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/27465' ]
