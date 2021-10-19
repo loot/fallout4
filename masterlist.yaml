@@ -1140,8 +1140,12 @@ groups:
   - name: &fixesGroup Fixes
     after: [ *texturesGroup ]
 
-  - name: &retconGroup Vault-Tec Historical Preservation Initiative
+  - name: &frameworksGroup Resources & Frameworks
+    description: 'A group for mods that provide resources and/or a framework for other mods to use.'
     after: [ *fixesGroup ]
+
+  - name: &retconGroup Vault-Tec Historical Preservation Initiative
+    after: [ *frameworksGroup ]
 
   - name: &underridesGroup Underrides
     after: [ *retconGroup ]
