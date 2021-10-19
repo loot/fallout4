@@ -2190,6 +2190,8 @@ plugins:
       - crc: 0xFA6E14DD
         util: 'FO4Edit v4.0.3h (Hotfix 1)'
 
+###### Modding Tools - Generated Files ######
+
 ###### Resources & Frameworks ######
   - name: '(ArmorKeywords|AWKCR - ).*\.es(m|p)'
     url:
