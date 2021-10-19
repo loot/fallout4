@@ -2192,6 +2192,7 @@ plugins:
 
 ###### Modding Tools - Generated Files ######
   - name: 'Bashed Patch.*\.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/20032/' ]
     group: *dynamicPatchesGroup
     after: [ 'FO4Merged.esp' ]
     msg:
@@ -2200,9 +2201,11 @@ plugins:
         subs: [ 'Smashed Patch.esp' ]
 
   - name: 'FO4Merged.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/2737/' ]
     group: *dynamicPatchesGroup
 
   - name: 'Smashed Patch.esp'
+    url: [ 'https://github.com/matortheeternal/smash/releases/' ]
     group: *dynamicPatchesGroup
     after: [ 'FO4Merged.esp' ]
     msg:
