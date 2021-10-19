@@ -2171,7 +2171,7 @@ plugins:
   - name: 'Unofficial Fallout 4 Patch.esp'
     url:
       - 'https://www.afkmods.com/index.php?/files/file/1765-unofficial-fallout-4-patch/'
-      - 'https://www.nexusmods.com/fallout4/mods/4598'
+      - 'https://www.nexusmods.com/fallout4/mods/4598/'
     group: *fixesGroup
     msg:
       - <<: *obsolete
