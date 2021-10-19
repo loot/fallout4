@@ -2171,19 +2171,20 @@ plugins:
   - name: 'Unofficial Fallout 4 Patch.esp'
     url:
       - 'https://www.afkmods.com/index.php?/files/file/1765-unofficial-fallout-4-patch/'
-      - 'https://www.nexusmods.com/fallout4/mods/4598'
+      - 'https://www.nexusmods.com/fallout4/mods/4598/'
     group: *fixesGroup
     msg:
       - <<: *obsolete
-        condition: 'version("Unofficial Fallout 4 Patch.esp", "2.1.0", <)'
+        condition: 'version("Unofficial Fallout 4 Patch.esp", "2.1.3", <)'
       - <<: *versionXIncY
         subs:
           - 'Unofficial Fallout 4 Patch'
           - 'Fallout 4'
         condition: 'version("Unofficial Fallout 4 Patch.esp", "2.1.0", >=) and not version("../Fallout4.exe", "1.10.162.0", >=)'
+    tag: [ Relev ]
     clean:
-      - crc: 0x2423BB03
-        util: 'FO4Edit v4.0.3'
+      - crc: 0xFA6E14DD
+        util: 'FO4Edit v4.0.3h (Hotfix 1)'
 
 ###### Fixes ######
   - name: 'BoS Pilot Outfit Fix.esp'
