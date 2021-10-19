@@ -2182,8 +2182,8 @@ plugins:
           - 'Fallout 4'
         condition: 'version("Unofficial Fallout 4 Patch.esp", "2.1.0", >=) and not version("../Fallout4.exe", "1.10.162.0", >=)'
     clean:
-      - crc: 0x2423BB03
-        util: 'FO4Edit v4.0.3'
+      - crc: 0xFA6E14DD
+        util: 'FO4Edit v4.0.3h (Hotfix 1)'
 
 ###### Fixes ######
   - name: 'BoS Pilot Outfit Fix.esp'
