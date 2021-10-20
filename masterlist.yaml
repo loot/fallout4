@@ -2628,6 +2628,9 @@ plugins:
       - crc: 0xDEF7E886
         util: 'FO4Edit v4.0.3h (Hotfix 1)'
 
+  - name: 'NickValentineRomance.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/13717/' ]
+
   - name: 'PiperCaitCurieDialogueOverhaul.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/41785/'
