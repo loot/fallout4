@@ -2604,6 +2604,12 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/41785/'
         name: 'Settler and Companion Dialogue Overhaul'
+    after:
+      - 'FlirtyCommonwealth.esp'
+      - 'FlirtyCommonwealthFemale.esp'
+      - 'FlirtyCommonwealthMale.esp'
+      - 'FlirtyCommonwealthMM.esp'
+      - 'ImmersiveGenericDialogues.esp'
     clean:
       - crc: 0xDB545497
         util: 'FO4Edit v4.0.3h (Hotfix 1)'
