@@ -2630,6 +2630,11 @@ plugins:
 
   - name: 'NickValentineRomance.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/13717/' ]
+    dirty:
+      - <<: *quickClean
+        crc: 0xFCA79EAA
+        util: '[FO4Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 2
 
   - name: 'PiperCaitCurieDialogueOverhaul.esp'
     url:
