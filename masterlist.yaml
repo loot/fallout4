@@ -2645,7 +2645,7 @@ plugins:
 ###### Gameplay - Quests ######
   - name: 'AnotherLife.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/14253/' ]
-    group: *altStartGroup
+    group: *lowPriorityGroup
     inc:
       - 'OSM_AlternateStart_Protocol-InfiniteAnswer.esp'
       - 'StartMeUp.esp'
