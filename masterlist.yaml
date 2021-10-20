@@ -2644,7 +2644,9 @@ plugins:
 
 ###### Gameplay - Quests ######
   - name: 'OSM_AlternateStart_Protocol-InfiniteAnswer.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/13762' ]
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/13762/'
+        name: 'Alternate Start - Infinite Answer'
     group: *altStartGroup
     inc:
       - 'AnotherLife.esp'
