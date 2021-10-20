@@ -1156,10 +1156,14 @@ groups:
   - name: default
     after: [ *underridesGroup ]
 
+  - name: &lowPriorityGroup Low Priority Overrides
+    description: 'A group for modules that must load after most other mods.'
+    after: [ default ]
+
   - name: &itemsGroup Items
     description: 'A group for mods that improve or add new items.'
     after:
-      - default
+      - *lowPriorityGroup
       - *interfaceGroup
 
   - name: &npcOverhaulsGroup NPC & Faction Overhauls
