@@ -2670,7 +2670,7 @@ plugins:
         itm: 40
         udr: 14
 
-  - name: 'SKKFastStart.esp'
+  - name: 'SKKFastStartNewGame.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/29227/' ]
     group: *altStartGroup
     inc:
