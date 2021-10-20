@@ -2642,6 +2642,8 @@ plugins:
       - crc: 0xDB545497
         util: 'FO4Edit v4.0.3h (Hotfix 1)'
 
+###### Gameplay - Quests ######
+
 ###### Sorting Mods ######
   - name: 'ARWCSM - (\d) - (Full|Modular).*\.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/11061' ]
