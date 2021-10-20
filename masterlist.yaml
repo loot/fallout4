@@ -2630,6 +2630,11 @@ plugins:
 
   - name: 'NickValentineRomance.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/13717/' ]
+    after:
+      - 'No Junk Comments.esp'
+      - 'PiperCaitCurieDialogueOverhaul.esp'
+      - 'PlayerComments.esp'
+      - 'StartMeUp.esp'
     dirty:
       - <<: *quickClean
         crc: 0xFCA79EAA
