@@ -2683,7 +2683,7 @@ plugins:
 
   - name: 'StartMeUp.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/18946/' ]
-    group: *altStartGroup
+    group: *lowPriorityGroup
     inc:
       - 'AnotherLife.esp'
       - 'OSM_AlternateStart_Protocol-InfiniteAnswer.esp'
