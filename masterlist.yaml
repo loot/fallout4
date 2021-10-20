@@ -2602,6 +2602,7 @@ plugins:
 ###### Gameplay - NPC Behaviour & Dialogue ######
   - name: 'FlirtyCommonwealth(Female|Male|MM)?\.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/26638/' ]
+    group: *underridesGroup
   - name: 'FlirtyCommonwealth.esp'
     clean:
       - crc: 0x4A8FD5E0
