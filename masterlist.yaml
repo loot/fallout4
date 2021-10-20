@@ -2600,6 +2600,9 @@ plugins:
         udr: 9
 
 ###### Gameplay - NPC Behaviour & Dialogue ######
+  - name: 'FlirtyCommonwealth(Female|Male|MM)?\.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/26638/' ]
+
   - name: 'PiperCaitCurieDialogueOverhaul.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/41785/'
