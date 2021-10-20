@@ -2670,6 +2670,17 @@ plugins:
         itm: 40
         udr: 14
 
+  - name: 'SKKFastStartNewGame.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/29227/' ]
+    group: *lowPriorityGroup
+    inc:
+      - 'AnotherLife.esp'
+      - 'OSM_AlternateStart_Protocol-InfiniteAnswer.esp'
+      - 'StartMeUp.esp'
+    clean:
+      - crc: 0x7C5856B7
+        util: 'FO4Edit v4.0.3h (Hotfix 1)'
+
 ###### Sorting Mods ######
   - name: 'ARWCSM - (\d) - (Full|Modular).*\.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/11061' ]
@@ -5024,22 +5035,6 @@ plugins:
     clean:
       - crc: 0x0e2861fa
         util: FO4Edit v3.2.1
-
-  - name: 'SKKFastStart.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/29227' ]
-    group: *altStartGroup
-    inc:
-      - 'AnotherLife.esp'
-      - 'OSM_AlternateStart_Protocol-InfiniteAnswer.esp'
-      - 'StartMeUp.esp'
-    dirty:
-      - <<: *quickClean
-        crc: 0xAC686A60
-        util: '[FO4Edit v4.0.3](https://www.nexusmods.com/fallout4/mods/2737)'
-        itm: 6
-    clean:
-      - crc: 0x238F87A5
-        util: 'FO4Edit v4.0.3'
 
   - name: 'MoreAGOMBz.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/27465' ]
