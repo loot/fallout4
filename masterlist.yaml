@@ -2647,7 +2647,7 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/13762/'
         name: 'Alternate Start - Infinite Answer'
-    group: *altStartGroup
+    group: *lowPriorityGroup
     inc:
       - 'AnotherLife.esp'
       - 'StartMeUp.esp'
