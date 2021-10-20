@@ -2688,8 +2688,12 @@ plugins:
       - 'AnotherLife.esp'
       - 'OSM_AlternateStart_Protocol-InfiniteAnswer.esp'
     clean:
-      - crc: 0x0e2861fa
-        util: FO4Edit v3.2.1
+      - crc: 0x2A8C9385
+        util: 'FO4Edit v4.0.3h (Hotfix 1)'
+      - crc: 0x0EB1FB7E
+        util: 'FO4Edit v4.0.3h (Hotfix 1)'
+      - crc: 0x0E2861FA
+        util: 'FO4Edit v4.0.3h (Hotfix 1)'
 
 ###### Sorting Mods ######
   - name: 'ARWCSM - (\d) - (Full|Modular).*\.esp'
