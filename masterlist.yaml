@@ -1156,18 +1156,26 @@ groups:
   - name: default
     after: [ *underridesGroup ]
 
+  - name: &lowPriorityGroup Low Priority Overrides
+    description: 'A group for modules that must load after most other mods.'
+    after: [ default ]
+
   - name: &itemsGroup Items
     description: 'A group for mods that improve or add new items.'
     after:
-      - default
+      - *lowPriorityGroup
       - *interfaceGroup
 
   - name: &npcOverhaulsGroup NPC & Faction Overhauls
     description: 'A group for mods that overhaul npcs appearance/outfits and character level/stats.'
     after: [ *itemsGroup ]
 
-  - name: &scrapGroup Scrap Everything
+  - name: &interiorLightingGroup Interior Lighting
+    description: 'A group for modules that only modify interior lighting.'
     after: [ *npcOverhaulsGroup ]
+
+  - name: &scrapGroup Scrap Everything
+    after: [ *interiorLightingGroup ]
 
   - name: &horizonGroup Horizon
     description: 'A group for Horizon modules that need to be sorted late.'
