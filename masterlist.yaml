@@ -2599,6 +2599,8 @@ plugins:
         itm: 3
         udr: 9
 
+###### Gameplay - NPC Behaviour & Dialogue ######
+
 ###### Sorting Mods ######
   - name: 'ARWCSM - (\d) - (Full|Modular).*\.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/11061' ]
