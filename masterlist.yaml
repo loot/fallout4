@@ -2662,6 +2662,16 @@ plugins:
 
   - name: '(No Companion Junk Comments|No Junk Comments)\.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/10365/' ]
+  - name: 'No Companion Junk Comments.esp'
+    clean:
+      - crc: 0xD70808BC
+        util: 'FO4Edit v4.0.3h (Hotfix 1)'
+  - name: 'No Junk Comments.esp'
+    clean:
+      - crc: 0x2195E0C6
+        util: 'FO4Edit v4.0.3h (Hotfix 1)'
+      - crc: 0x6FCB8C15
+        util: 'FO4Edit v4.0.3h (Hotfix 1)'
 
   - name: 'PiperCaitCurieDialogueOverhaul.esp'
     url:
