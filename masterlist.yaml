@@ -2608,6 +2608,16 @@ plugins:
         udr: 9
 
 ###### Gameplay - NPC Behaviour & Dialogue ######
+  - name: 'DeaconClothingCK.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/9772/'
+        name: 'Deacon Outfit Change Change'
+    after: [ 'No Junk Comments.esp' ]
+    inc: [ 'DeaconRom.esp' ]
+    clean:
+      - crc: 0x68ADC97E
+        util: 'FO4Edit v4.0.3h (Hotfix 1)'
+
   - name: 'FlirtyCommonwealth(Female|Male|MM)?\.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/26638/' ]
     group: *underridesGroup
