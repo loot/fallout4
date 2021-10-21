@@ -2660,6 +2660,9 @@ plugins:
         util: '[FO4Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 2
 
+  - name: '(No Companion Junk Comments|No Junk Comments)\.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/10365/' ]
+
   - name: 'PiperCaitCurieDialogueOverhaul.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/41785/'
