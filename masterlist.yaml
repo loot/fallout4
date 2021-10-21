@@ -2620,6 +2620,7 @@ plugins:
 
   - name: 'DeaconRom.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/19160/' ]
+    after: [ 'No Junk Comments.esp' ]
     dirty:
       - <<: *quickClean
         crc: 0x02DE79C0
