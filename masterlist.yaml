@@ -2618,6 +2618,15 @@ plugins:
       - crc: 0x68ADC97E
         util: 'FO4Edit v4.0.3h (Hotfix 1)'
 
+  - name: 'DeaconRom.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/19160/' ]
+    after: [ 'No Junk Comments.esp' ]
+    dirty:
+      - <<: *quickClean
+        crc: 0x02DE79C0
+        util: '[FO4Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 1
+
   - name: 'FlirtyCommonwealth(Female|Male|MM)?\.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/26638/' ]
     group: *underridesGroup
