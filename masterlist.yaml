@@ -2564,19 +2564,18 @@ plugins:
     clean:
       - crc: 0x92E9C372
         util: 'FO4Edit v4.0.3'
-  - name: 'InteriorsEnhanced-Automatron.esp'
+  - name: 'InteriorsEnhanced-(Automatron|FarHarbor|NukaWorld|VaultTec)\.esp'
     req: [ 'InteriorsEnhanced.esp' ]
+  - name: 'InteriorsEnhanced-Automatron.esp'
     clean:
       - crc: 0xB6854DFD
         util: 'FO4Edit v4.0.3'
   - name: 'InteriorsEnhanced-FarHarbor.esp'
-    req: [ 'InteriorsEnhanced.esp' ]
     after: [ 'InteriorsEnhanced-Automatron.esp' ]
     clean:
       - crc: 0x5011B9A8
         util: 'FO4Edit v4.0.3'
   - name: 'InteriorsEnhanced-NukaWorld.esp'
-    req: [ 'InteriorsEnhanced.esp' ]
     after:
       - 'InteriorsEnhanced-Automatron.esp'
       - 'InteriorsEnhanced-FarHarbor.esp'
@@ -2585,7 +2584,6 @@ plugins:
       - crc: 0x09839D87
         util: 'FO4Edit v4.0.3'
   - name: 'InteriorsEnhanced-VaultTec.esp'
-    req: [ 'InteriorsEnhanced.esp' ]
     after:
       - 'InteriorsEnhanced-Automatron.esp'
       - 'InteriorsEnhanced-FarHarbor.esp'
