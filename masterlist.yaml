@@ -2544,10 +2544,16 @@ plugins:
       - link: 'https://www.nexusmods.com/fallout4/mods/8768/'
         name: 'Interiors Enhanced: Darker Ambient Light and Fog'
   - name: 'InteriorsEnhanced-All-In-One.esp'
-    group: *lightingGroup
+    group: *interiorLightingGroup
     after:
       - 'EnhancedLightsandFX.esp'
       - 'UltraInteriorLighting.esp'
+    msg:
+      - <<: *patch3rdParty
+        subs:
+          - 'Scrap Everything Ultimate Edition'
+          - '[Scrap Everything - Interiors Enhanced Patch](https://www.nexusmods.com/fallout4/mods/47376/)'
+        condition: 'active("Scrap Everything - Ultimate Edition.esp") and not active("ScrapEverythingInteriorEnhencedPatch.esp")'
     clean:
       - crc: 0xFC2415EC
         util: 'FO4Edit v4.0.3'
@@ -2557,26 +2563,25 @@ plugins:
         subs: [ 'InteriorsEnhanced-All-In-One.esp' ]
         condition: 'active("InteriorsEnhanced-All-In-One.esp") and active("DLCRobot.esm") and active("DLCCoast.esm") and active("DLCworkshop03.esm") and active("DLCNukaWorld.esm")'
   - name: 'InteriorsEnhanced.esp'
-    group: *lightingGroup
+    group: *interiorLightingGroup
     after:
       - 'EnhancedLightsandFX.esp'
       - 'UltraInteriorLighting.esp'
     clean:
       - crc: 0x92E9C372
         util: 'FO4Edit v4.0.3'
-  - name: 'InteriorsEnhanced-Automatron.esp'
+  - name: 'InteriorsEnhanced-(Automatron|FarHarbor|NukaWorld|VaultTec)\.esp'
     req: [ 'InteriorsEnhanced.esp' ]
+  - name: 'InteriorsEnhanced-Automatron.esp'
     clean:
       - crc: 0xB6854DFD
         util: 'FO4Edit v4.0.3'
   - name: 'InteriorsEnhanced-FarHarbor.esp'
-    req: [ 'InteriorsEnhanced.esp' ]
     after: [ 'InteriorsEnhanced-Automatron.esp' ]
     clean:
       - crc: 0x5011B9A8
         util: 'FO4Edit v4.0.3'
   - name: 'InteriorsEnhanced-NukaWorld.esp'
-    req: [ 'InteriorsEnhanced.esp' ]
     after:
       - 'InteriorsEnhanced-Automatron.esp'
       - 'InteriorsEnhanced-FarHarbor.esp'
@@ -2585,7 +2590,6 @@ plugins:
       - crc: 0x09839D87
         util: 'FO4Edit v4.0.3'
   - name: 'InteriorsEnhanced-VaultTec.esp'
-    req: [ 'InteriorsEnhanced.esp' ]
     after:
       - 'InteriorsEnhanced-Automatron.esp'
       - 'InteriorsEnhanced-FarHarbor.esp'
