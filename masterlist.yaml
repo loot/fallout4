@@ -1181,11 +1181,8 @@ groups:
     description: 'A group for Horizon modules that need to be sorted late.'
     after: [ *scrapGroup ]
 
-  - name: &lightingGroup Lighting
-    after: [ *horizonGroup ]
-
   - name: &dynamicPatchesGroup Dynamic Patches
-    after: [ *lightingGroup ]
+    after: [ *horizonGroup ]
 
 plugins:
 ###### Official DLC plugins ######
