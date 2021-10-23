@@ -1144,14 +1144,8 @@ groups:
     description: 'A group for mods that provide resources and/or a framework for other mods to use.'
     after: [ *fixesGroup ]
 
-  - name: &retconGroup Vault-Tec Historical Preservation Initiative
-    after: [ *frameworksGroup ]
-
   - name: &underridesGroup Underrides
-    after: [ *retconGroup ]
-
-  - name: &interfaceGroup User Interface
-    description: 'A group for mods that enhance or alter the user interface.'
+    after: [ *frameworksGroup ]
 
   - name: default
     after: [ *underridesGroup ]
@@ -1162,9 +1156,7 @@ groups:
 
   - name: &itemsGroup Items
     description: 'A group for mods that improve or add new items.'
-    after:
-      - *lowPriorityGroup
-      - *interfaceGroup
+    after: [ *lowPriorityGroup ]
 
   - name: &npcOverhaulsGroup NPC & Faction Overhauls
     description: 'A group for mods that overhaul npcs appearance/outfits and character level/stats.'
@@ -1181,14 +1173,8 @@ groups:
     description: 'A group for Horizon modules that need to be sorted late.'
     after: [ *scrapGroup ]
 
-  - name: &lightingGroup Lighting
-    after: [ *horizonGroup ]
-
-  - name: &altStartGroup Alternate Start
-    after: [ *lightingGroup ]
-
   - name: &dynamicPatchesGroup Dynamic Patches
-    after: [ *altStartGroup ]
+    after: [ *horizonGroup ]
 
 plugins:
 ###### Official DLC plugins ######
