@@ -2548,6 +2548,12 @@ plugins:
     after:
       - 'EnhancedLightsandFX.esp'
       - 'UltraInteriorLighting.esp'
+    msg:
+      - <<: *patch3rdParty
+        subs:
+          - 'Scrap Everything Ultimate Edition'
+          - '[Scrap Everything - Interiors Enhanced Patch](https://www.nexusmods.com/fallout4/mods/47376/)'
+        condition: 'active("Scrap Everything - Ultimate Edition.esp") and not active("ScrapEverythingInteriorEnhencedPatch.esp")'
     clean:
       - crc: 0xFC2415EC
         util: 'FO4Edit v4.0.3'
