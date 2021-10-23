@@ -2523,7 +2523,9 @@ plugins:
     group: *interiorLightingGroup
     clean:
       - crc: 0x8FC528DB
-        util: 'FO4Edit v4.0.3'
+        util: 'FO4Edit v4.0.3h (Hotfix 1)'
+      - crc: 0xE01EF69A
+        util: 'FO4Edit v4.0.3h (Hotfix 1)'
 
   - name: 'Institute Patch for PRC.esp'
     url:
