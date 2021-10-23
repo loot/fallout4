@@ -2601,80 +2601,57 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout4/mods/10840/' ]
     after: [ 'EnhancedLightsandFX.esp' ]
     msg:
-      # Recommended by mod author
       - <<: *patch3rdParty
         subs:
           - 'Enclave X-02 Power Armor'
           - '[X-02 PipBoy Flashlight Patch](https://www.nexusmods.com/fallout4/mods/16232)'
         condition: 'active("EnclaveX02.esp") and not active("X-02 PipboyLight Patch.esp")'
     clean:
-      # version: 5.0.2 (50% range option)
       - crc: 0x28F1FC5A
         util: 'FO4Edit v4.0.2'
-      # version: 5.0.2 (100% range option)
       - crc: 0x963BE7EE
         util: 'FO4Edit v4.0.2'
-      # version: 5.0.2 (150% range option)
       - crc: 0xC2B081EC
         util: 'FO4Edit v4.0.2'
-      # version: 5.0.2 (200% range option)
       - crc: 0x0191AC26
         util: 'FO4Edit v4.0.2'
-      # version: 5.0.2 (250% range option)
       - crc: 0xB0294754
         util: 'FO4Edit v4.0.2'
-      # version: 5.0.2 (300% range option)
       - crc: 0xA8876022
         util: 'FO4Edit v4.0.2'
-      # version: 5.0.2 (350% range option)
       - crc: 0x3D82F79A
         util: 'FO4Edit v4.0.2'
-      # version: 5.0.2 (400% range option)
       - crc: 0xF5B43DF7
         util: 'FO4Edit v4.0.2'
-      # version: 5.0.2 (450% range option)
       - crc: 0x8E95C098
         util: 'FO4Edit v4.0.2'
-      # version: 5.0.2 (500% range option)
       - crc: 0xEED727DA
         util: 'FO4Edit v4.0.2'
-      # version: 5.0.2 (50% shadows range option)
       - crc: 0x054EE4B1
         util: 'FO4Edit v4.0.2'
-      # version: 5.0.2 (100% shadows range option)
       - crc: 0xAB88E8CC
         util: 'FO4Edit v4.0.2'
-      # version: 5.0.2 (150% shadows range option)
       - crc: 0x951DA474
         util: 'FO4Edit v4.0.2'
-      # version: 5.0.2 (200% shadows range option)
       - crc: 0x563C89BE
         util: 'FO4Edit v4.0.2'
-      # version: 5.0.2 (250% shadows range option)
       - crc: 0x8D9A4876
         util: 'FO4Edit v4.0.2'
-      # version: 5.0.2 (300% shadows range option)
       - crc: 0x95346F00
         util: 'FO4Edit v4.0.2'
-      # version: 5.0.2 (350% shadows range option)
       - crc: 0xCAFC4873
         util: 'FO4Edit v4.0.2'
-      # version: 5.0.2 (400% shadows range option)
       - crc: 0xC80732D5
         util: 'FO4Edit v4.0.2'
-      # version: 5.0.2 (450% shadows range option)
       - crc: 0xB326CFBA
         util: 'FO4Edit v4.0.2'
-      # version: 5.0.2 (500% shadows range option)
       - crc: 0x7007E270
         util: 'FO4Edit v4.0.2'
-      # version: v6b3.02
       - crc: 0x3ABBACD4
         util: 'FO4Edit v4.0.2'
   - name: 'Pip-Boy Flashlight - Hide Pipboy.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/10840' ]
     clean:
-      # version: 5.0.2 & 'Hide Pipboy path by MaxShadow09' (Same file in both packages)
       - crc: 0xBA0A331E
         util: 'FO4Edit v4.0.2'
 
