@@ -2650,7 +2650,7 @@ plugins:
       - crc: 0x3ABBACD4
         util: 'FO4Edit v4.0.2'
   - name: 'Pip-Boy Flashlight - Hide Pipboy.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/10840' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/10840/' ]
     clean:
       - crc: 0xBA0A331E
         util: 'FO4Edit v4.0.2'
