@@ -1150,9 +1150,6 @@ groups:
   - name: &underridesGroup Underrides
     after: [ *retconGroup ]
 
-  - name: &interfaceGroup User Interface
-    description: 'A group for mods that enhance or alter the user interface.'
-
   - name: default
     after: [ *underridesGroup ]
 
@@ -1162,9 +1159,7 @@ groups:
 
   - name: &itemsGroup Items
     description: 'A group for mods that improve or add new items.'
-    after:
-      - *lowPriorityGroup
-      - *interfaceGroup
+    after: [ *lowPriorityGroup ]
 
   - name: &npcOverhaulsGroup NPC & Faction Overhauls
     description: 'A group for mods that overhaul npcs appearance/outfits and character level/stats.'
