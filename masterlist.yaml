@@ -1184,11 +1184,8 @@ groups:
   - name: &lightingGroup Lighting
     after: [ *horizonGroup ]
 
-  - name: &altStartGroup Alternate Start
-    after: [ *lightingGroup ]
-
   - name: &dynamicPatchesGroup Dynamic Patches
-    after: [ *altStartGroup ]
+    after: [ *lightingGroup ]
 
 plugins:
 ###### Official DLC plugins ######
