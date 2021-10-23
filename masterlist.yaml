@@ -2516,7 +2516,7 @@ plugins:
 ###### AudioVisual - Weather & Lighting ######
   - name: 'EnhancedLightsandFX.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/13596/' ]
-    group: *lightingGroup
+    group: *interiorLightingGroup
     clean:
       - crc: 0x8FC528DB
         util: 'FO4Edit v4.0.3'
