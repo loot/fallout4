@@ -2599,9 +2599,7 @@ plugins:
 
   - name: 'Pip-Boy Flashlight.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/10840/' ]
-    after:
-      # Breaks pip-boy light entirely if loaded before ELFX
-      - 'EnhancedLightsandFX.esp'
+    after: [ 'EnhancedLightsandFX.esp' ]
     msg:
       # Recommended by mod author
       - <<: *patch3rdParty
