@@ -3006,11 +3006,9 @@ plugins:
 
   - name: 'VIS-G Item Sorting.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/33383/' ]
-    group: *interfaceGroup
     inc: [ 'Z_Horizon.esp' ]
   - name: 'VIS-G Item Sorting Vanilla Weight Patch.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/33383/' ]
-    group: *interfaceGroup
 
   # Radrose Usability Enhancements
   - name: 'Radrose Usability Enhancements.esp'
