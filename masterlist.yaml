@@ -3007,8 +3007,16 @@ plugins:
   - name: 'VIS-G Item Sorting.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/33383/' ]
     inc: [ 'Z_Horizon.esp' ]
+    dirty:
+      - <<: *quickClean
+        crc: 0x22C4D3EE
+        util: '[FO4Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 34
   - name: 'VIS-G Item Sorting Vanilla Weight Patch.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/33383/' ]
+    clean:
+      - crc: 0xBE77BCCA
+        util: 'FO4Edit v4.0.3h (Hotfix 1)'
 
   # Radrose Usability Enhancements
   - name: 'Radrose Usability Enhancements.esp'
