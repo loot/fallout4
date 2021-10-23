@@ -1144,11 +1144,8 @@ groups:
     description: 'A group for mods that provide resources and/or a framework for other mods to use.'
     after: [ *fixesGroup ]
 
-  - name: &retconGroup Vault-Tec Historical Preservation Initiative
-    after: [ *frameworksGroup ]
-
   - name: &underridesGroup Underrides
-    after: [ *retconGroup ]
+    after: [ *frameworksGroup ]
 
   - name: default
     after: [ *underridesGroup ]
