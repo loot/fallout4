@@ -2518,6 +2518,8 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/13596/'
         name: 'Enhanced Lights and FX'
+      - link: 'https://www.nexusmods.com/fallout4/mods/54872/'
+        name: 'Optimization Patches Collection'
     group: *interiorLightingGroup
     clean:
       - crc: 0x8FC528DB
