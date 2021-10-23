@@ -2667,11 +2667,11 @@ plugins:
 
   - name: 'Vault-Tec Historical Preservation Initiative.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/12019/' ]
-    group: *retconGroup
+    group: *underridesGroup
     dirty:
       - <<: *quickClean
         crc: 0xC8545353
-        util: '[FO4Edit v4.0.2f](https://www.nexusmods.com/fallout4/mods/2737)'
+        util: '[FO4Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 3
         udr: 9
 
