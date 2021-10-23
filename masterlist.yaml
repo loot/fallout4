@@ -3004,6 +3004,14 @@ plugins:
   - name: 'VIS-PatchChemRedux(Weightless)?\.esp'
     req: [ 'chem redux.esp' ]
 
+  - name: 'VIS-G Item Sorting.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/33383/' ]
+    group: *interfaceGroup
+    inc: [ 'Z_Horizon.esp' ]
+  - name: 'VIS-G Item Sorting Vanilla Weight Patch.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/33383/' ]
+    group: *interfaceGroup
+
   # Radrose Usability Enhancements
   - name: 'Radrose Usability Enhancements.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/18098' ]
@@ -5656,14 +5664,6 @@ plugins:
 
   - name: 'Mercenary.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/20088' ]
-
-  - name: 'VIS-G Item Sorting.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/33383' ]
-    group: *interfaceGroup
-    inc: [ 'Z_Horizon.esp' ]
-  - name: 'VIS-G Item Sorting Vanilla Weight Patch.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/33383' ]
-    group: *interfaceGroup
 
   - name: 'Minuteman Watchtowers.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/30363' ]
