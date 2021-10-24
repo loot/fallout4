@@ -422,6 +422,38 @@ prelude:
         - lang: zh_CN
           text: '需要一个补丁来使这个mod与%1%完全兼容。目前没有可供下载的。'
 
+    - &requiresResources
+      type: warn
+      content:
+        - lang: en
+          text: 'Requires resources (e.g. meshes, textures; not plugins) from %1%.'
+        - lang: bg
+          text: 'Изисква ресурси (триизмерни модели и текстури, без приставки) от %1%.'
+        - lang: de
+          text: 'Braucht Ressourcen (z.B. Meshes, Texturen; keine Plugins) von %1%.'
+        - lang: es
+          text: 'Requiere de recursos (ej. mallas, texturas; no plugins) de %1%.'
+        - lang: fr
+          text: 'Requiert des ressources (ex : meshes, textures ; pas de plugins) de %1%.'
+        - lang: it
+          text: 'Richiede risorse (ad es. mesh, texture; non plugin) da %1%.'
+        - lang: ja
+          text: '%1%のリソース(プラグインではなくメッシュやテクスチャなど)が必要です。'
+        - lang: ko
+          text: '%1%의 리소스(플러그인이 아닌, 메쉬 및 질감 등)가 필요합니다.'
+        - lang: pt_BR
+          text: 'Requer recursos (ex: meshes, texturas; não plugins) vindos de %1%.'
+        - lang: pt_PT
+          text: 'Requer recursos (ex: meshes, texturas; não plugins) vindos de %1%.'
+        - lang: ru
+          text: 'Требуются ресурсы (например, меши, текстуры; не плагины) от %1%.'
+        - lang: sv
+          text: 'Behöver resurser (t.ex. meshar, texturer; inte plugin) från %1%.'
+        - lang: uk_UA
+          text: 'Потрібні ресурси (наприклад: меші, текстури; не плагіни) від %1%.'
+        - lang: zh_CN
+          text: '需要%1%的资源(如网格，纹理;非插件)。'
+
     - &requiresX
       type: warn
       content:
