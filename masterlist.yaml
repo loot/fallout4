@@ -288,6 +288,38 @@ prelude:
         - lang: zh_CN
           text: '可以与%1%同时使用，但将需要额外的操作。Smashed Patch或Bash Patch应该彼此独立使用。'
 
+    - &optional
+      type: say
+      content:
+        - lang: en
+          text: 'This plugin is optional.'
+        - lang: bg
+          text: 'Тази приставка не е задължителна.'
+        - lang: de
+          text: 'Dieses Plugin ist optional.'
+        - lang: es
+          text: 'Este plugin es opcional.'
+        - lang: fr
+          text: 'Ce plugin est optionnel.'
+        - lang: it
+          text: 'Questo plugin è opzionale.'
+        - lang: ja
+          text: 'このプラグインはオプションです。'
+        - lang: ko
+          text: '이 플러그인은 선택 사항입니다.'
+        - lang: pt_BR
+          text: 'Este plugin é opcional.'
+        - lang: pt_PT
+          text: 'Este plugin é opcional.'
+        - lang: ru
+          text: 'Этот плагин не обязателен.'
+        - lang: sv
+          text: 'Det här pluginet är valfritt.'
+        - lang: uk_UA
+          text: 'Цей плагін не обов’язковий.'
+        - lang: zh_CN
+          text: '这个插件是可选的。'
+
     - &patch3rdParty
       type: say
       content:
