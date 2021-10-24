@@ -700,6 +700,34 @@ prelude:
         - lang: zh_CN
           text: '您安装的%1%版本与%2%版本不兼容。'
 
+    - &versionXofYorGreaterRequired
+      type: error
+      content:
+        - lang: en
+          text: 'Requires version **%1%** or greater of **%2%**.'
+        - lang: bg
+          text: 'Изисква версия **%1%** или всяка следваща на **%2%**.'
+        - lang: de
+          text: 'Benötigt Version **%1%** oder höher von **%2%**.'
+        - lang: es
+          text: 'Requiere como mínimo la versión **%1%** de **%2%**.'
+        - lang: fr
+          text: 'Requiert la version **%1%** ou plus de **%2%**.'
+        - lang: it
+          text: 'Richiede la versione **%1%** o superiore di **%2%**.'
+        - lang: ja
+          text: 'バージョン**%1%**以上の**%2%**が必要です。'
+        - lang: ko
+          text: '**%1%** 혹은 **%2%** 이상의 버전이 필요합니다.'
+        - lang: pt_PT
+          text: 'Necessita a versão **%1%** ou maior de **%2%**.'
+        - lang: ru
+          text: 'Нужна версия **%1%** или выше **%2%**.'
+        - lang: uk_UA
+          text: 'Потрібна версія **%1%** або вище **%2%**.'
+        - lang: zh_CN
+          text: '需要 **%2%** 的 **%1%** 或更高版本。'
+
     - &wildEdits
       type: warn
       content:
