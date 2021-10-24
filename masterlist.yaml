@@ -110,6 +110,74 @@ prelude:
         - lang: zh_CN
           text: '强烈建议您使用%1%。'
 
+    - &compatIssuesWithX
+      type: say
+      content:
+        - lang: en
+          text: 'This plugin has compatibility issues with %1%. For more information, read this mod''s compatibility notes.'
+        - lang: bg
+          text: 'Тази приставка не е съвместима с %1%. За повече информация, прочетете бележките за съвместимост.'
+        - lang: de
+          text: 'Dieses Plugin hat Kompatibilitätsprobleme mit %1%. Mehr Information dazu sind in den Kompatibilitäts-Notizen der Mod nachzulesen.'
+        - lang: es
+          text: 'Este plugin tiene problemas de compatibilidad con %1%. Para más información, lea las notas de compatibilidad de este mod.'
+        - lang: fr
+          text: 'Ce plugin a des problèmes de compatibilités avec %1%. Pour plus d''informations, lisez la liste de compabilité de ce mod.'
+        - lang: it
+          text: 'Questo plugin ha problemi di compatibilità con %1%. Per maggiori informazioni, leggi le note sulla compatibilità di questa mod.'
+        - lang: ja
+          text: 'このプラグインには%1%との互換性の問題があります。詳細についてはこのmodの互換性に関する注意事項をお読みください。'
+        - lang: ko
+          text: '이 플러그인은 %1%와의 호환성 문제가 있습니다. 자세한 내용은 이 모드의 호환성 정보를 확인해주세요.'
+        - lang: pt_BR
+          text: 'Este plugin tem problemas de compatibilidade com %1%. Para mais informações, leia as notas de compatibilidade deste mod.'
+        - lang: pt_PT
+          text: 'Este plugin tem problemas de compatibilidade com %1%. Para mais informações, leia as notas de compatibilidade deste mod.'
+        - lang: ru
+          text: 'У этого плагина есть проблемы совместимости с %1%. Для получения дополнительной информации прочтите заметки о совместимости этого мода.'
+        - lang: sv
+          text: 'Det här pluginet är inte helt kompatibelt med %1%. För mer information, läs det här moddets kompabilitetsanteckningar.'
+        - lang: uk_UA
+          text: 'У цього плагіна наявні проблеми сумісності з %1%. Для отримання додаткової інформації дивіться примітки щодо сумісності цього моду.'
+        - lang: zh_CN
+          text: '这个插件与%1%有兼容性问题。欲了解更多信息，请阅读这个mod的兼容性说明。'
+
+    - &compatNotes
+      type: say
+      content:
+        - lang: en
+          text: 'It is recommended that you read this mod''s [Compatibility Notes](%1%).'
+        - lang: bg
+          text: 'Препоръчва се да прочетете [бележките за съвместимост](%1%).'
+        - lang: de
+          text: 'Es wird empfohlen, dass Sie die [Kompatibilitäts-Notizen](%1%) dieses Mods lesen.'
+        - lang: es
+          text: 'Se recomienda que lea las [Notas de compatibilidad](%1%) de este mod.'
+        - lang: fi
+          text: 'On suotavaa lukea modin tiedot [yhteensopivuudesta](%1%).'
+        - lang: fr
+          text: 'Il est recommandé que vous lisiez les [Notes de compabilités](%1%) de ce mod.'
+        - lang: it
+          text: 'Si raccomanda la lettura delle [Note sulla compatibilità](%1%) di questa mod.'
+        - lang: ja
+          text: '[互換性に関する注意事項](%1%)を読みましょう。'
+        - lang: ko
+          text: '이 모드의 [호환성 정보](%1%)를 읽어 보는 걸 권장합니다.'
+        - lang: pl
+          text: 'Jest rekomendowane abyś przeczytał [Notki Kompatybilności](%1%) tego moda.'
+        - lang: pt_BR
+          text: 'É recomendada a leitura das [Notas de Compatibilidade](%1%) deste mod.'
+        - lang: pt_PT
+          text: 'É recomendada leitura das [Notas de Compatibilidade](%1%) deste mod.'
+        - lang: ru
+          text: 'Рекомендуется прочесть [заметки о совместимости](%1%) мода.'
+        - lang: sv
+          text: 'Det är rekommenderat att du läser det här moddets [kompabilitetsanteckningar](%1%).'
+        - lang: uk_UA
+          text: 'Рекомендується прочитати [примітки щодо сумісності](%1%) моду.'
+        - lang: zh_CN
+          text: '建议您阅读这个mod的[兼容性说明](%1%)。'
+
     - &corrupt
       type: warn
       content:
@@ -215,6 +283,142 @@ prelude:
         - lang: zh_CN
           text: '当使用**%1%**时，建议您禁用或删除这个ESP文件，但保留与此mod一起安装的资源(如网格，纹理等)。'
 
+    - &includesX
+      type: say
+      content:
+        - lang: en
+          text: '%1% is included with this mod.'
+        - lang: bg
+          text: 'Приставката %1% е включена в този мод.'
+        - lang: de
+          text: '%1% ist in dieser Mod enthalten.'
+        - lang: es
+          text: '%1% viene incluido ya con este mod.'
+        - lang: fi
+          text: '%1% on tässä modissa'
+        - lang: fr
+          text: '%1% est inclut avec ce mod.'
+        - lang: it
+          text: '%1% è incluso in questa mod.'
+        - lang: ja
+          text: '%1%はこのmodに含まれています。'
+        - lang: ko
+          text: '%1% 모드가 포함되어 있습니다.'
+        - lang: pl
+          text: '%1% jest już zawarte z tym modem.'
+        - lang: pt_BR
+          text: '%1% está incluído neste mod.'
+        - lang: pt_PT
+          text: '%1% vem incluído com este mod.'
+        - lang: ru
+          text: '%1% уже добавлен с этим модом.'
+        - lang: sv
+          text: '%1% är inluderat med denna mod.'
+        - lang: uk_UA
+          text: '%1% вже додано з цим модом.'
+        - lang: zh_CN
+          text: '%1%已包含在这个mod中。'
+
+    - &missingRequirementXforY
+      type: warn
+      content:
+        - lang: en
+          text: 'It appears you have installed **%2%**, but some of its requirements seem to be missing. Please ensure you have correctly installed **%1%**.'
+        - lang: bg
+          text: 'Инсталирали сте **%2%**, но някои от нейните изисквания не са изпълнени. Моля, инсталирайте **%1%** отново.'
+        - lang: de
+          text: 'Es erscheint so als hätten Sie **%2%** installiert, aber einige der Voraussetzungen scheinen zu fehlen. Bitte stellen Sie sicher, dass Sie **%1%** korrekt installiert haben.'
+        - lang: es
+          text: 'Parece que tiene instalado **%2%**, pero algunos de sus requerimientos no están presentes. Por favor, asegúrese de que haya instalado **%1%** correctamente.'
+        - lang: fr
+          text: 'Il semblerait que vous ayez installés **%2%**, mais certains de ses prérequis semblent manquer. Veuillez vous assurer que vous ayez correctement installés **%1%**.'
+        - lang: it
+          text: 'Sembra che tu abbia installato **%2%**, ma mancano alcuni dei suoi requisiti. Assicurati di aver installato correttamente **%1%**.'
+        - lang: ja
+          text: '**%2%**がインストールされましたが、必要なものの一部が不足しているようです。**%1%**が正しくインストールされていることを確認してください。'
+        - lang: ko
+          text: '**%2%** 모드를 실행하기 위한 필요 모드가 빠져 있습니다. **%1%** 모드를 제대로 설치하십시오.'
+        - lang: pl
+          text: 'Wygląda na to że zainstalowałeś **%2%**, ale wydaje się, że brakuje niektórych z jego wymagań. Upewnij się że poprawnie zainstalowałeś **%1%**.'
+        - lang: pt_BR
+          text: 'Aparentemente você tem instalado **%2%**, mas alguns de seus requerimentos estão faltando. Por favor tenha certeza de que você instalou **%1%** corretamente.'
+        - lang: pt_PT
+          text: 'Aparentemente você tem instalado **%2%**, mas alguns de seus requerimentos estão em falta Por favor confirme que você instalou **%1%** corretamente.'
+        - lang: ru
+          text: 'Похоже у вас установлен **%2%**, но некоторые его требования отсутствуют. Убедитесь, что вы правильно установили **%1%**.'
+        - lang: sv
+          text: 'Det verkar som om du har installerat **%2%**, men några av dess krav är inte uppfyllda. Var vänlig och se till att du har installerat **%1%**.'
+        - lang: uk_UA
+          text: 'Схоже, що у вас уже встановлено **%2%**, але деякі його вимоги відсутні. Переконайтесь, що ви правильно встановили **%1%**.'
+        - lang: zh_CN
+          text: '看起来您安装了**%2%**，但它的一些需求似乎缺失了。请确保您已正确安装**%1%**。'
+
+    - &missingRequirementXforPlugin
+      type: warn
+      content:
+        - lang: en
+          text: 'Some of this plugins requirements seem to be missing. Please ensure you have correctly installed **%1%**.'
+        - lang: bg
+          text: 'Някои от изискванията на приставката не са изпълнени. Моля, инсталирайте **%1%** отново.'
+        - lang: de
+          text: 'Einige der Voraussetzungen dieses Plugins scheinen zu fehlen. Bitte stellen Sie sicher, dass Sie **%1%** korrekt installiert haben.'
+        - lang: es
+          text: 'Algunos de los requerimientos de este plugin parecen faltar. Por favor, asegúrese de que haya instalado correctamente **%1%**.'
+        - lang: fr
+          text: 'Certains prérequis de ce plugin semblent manquer. Veuillez vous assurer que vous ayez correctement installés **%1%**.'
+        - lang: it
+          text: 'Sembra che manchino alcuni requisiti di questi plugin. Assicurati di avere installato correttamente **%1%**.'
+        - lang: ja
+          text: 'このプラグインに必要なものの一部が不足しているようです。**%1%**が正しくインストールされていることを確認してください。'
+        - lang: ko
+          text: '이 플러그인의 일부 요구사항이 빠져 있습니다. **%1%** 모드를 제대로 설치하십시오.'
+        - lang: pl
+          text: 'Część wymagań dla tej wtyczki wydaje się być brakująca. Upewnij się że poprawnie zainstalowałeś **%1%**.'
+        - lang: pt_BR
+          text: 'Alguns dos requerimentos deste plugin estão faltando. Por favor tenha certeza de que você instalou **%1%** corretamente.'
+        - lang: pt_PT
+          text: 'Alguns dos requerimentos deste plugin estão em falta. Por favor confirme que você instalou **%1%** corretamente.'
+        - lang: ru
+          text: 'Некоторые требования этого плагина отсутствуют. Убедитесь, что правильно установили **%1%**.'
+        - lang: sv
+          text: 'Några av denna plugins behov/krav verkar saknas. Var god och se till att du har installerat **%1%** korrekt.'
+        - lang: uk_UA
+          text: 'Деякі вимоги цього плагіна відсутні. Переконайтеся, що правильно встановили **%1%**.'
+        - lang: zh_CN
+          text: '这些插件的一些需求似乎缺失了。请确保您已正确安装**%1%**。'
+
+    - &moddingPlugin
+      type: error
+      content:
+        - lang: en
+          text: 'This plugin is a modding resource and should not be used in-game.'
+        - lang: bg
+          text: 'Тази приставка е ресурс за модифициране и не трябва да се използва по време на игра.'
+        - lang: de
+          text: 'Dieses Plugin ist eine Modding Ressource und sollte nicht im Spiel verwendet werden.'
+        - lang: es
+          text: 'Este plugin es un recurso para la creación de mods y no debería ser usado en el juego.'
+        - lang: fr
+          text: 'Ce plugin est une ressource pour moddeur et ne devrait pas être utilisé en jeu.'
+        - lang: it
+          text: 'Questo Plugin è una risorsa di modding e non dovrebbe essere usato in gioco.'
+        - lang: ja
+          text: 'このプラグインはモッド用のリソースであり、ゲーム内で使用できません。'
+        - lang: ko
+          text: '이 플러그인은 모딩 리소스이며 게임 내에서 사용해서는 안 됩니다.'
+        - lang: pt_BR
+          text: 'Este plugin é um recurso para a criação de mods e não deve ser usado no jogo.'
+        - lang: pt_PT
+          text: 'Este plugin é um recurso para a criação de mods e não deve ser usado no jogo.'
+        - lang: ru
+          text: 'Этот плагин является мод-ресурсом и не должен использоваться во время игры.'
+        - lang: sv
+          text: 'Det här pluginet används som en modding resurs och borde inte användas i spelet.'
+        - lang: uk_UA
+          text: 'Цей плагін є мод-ресурсом та не має використовуватися під час гри.'
+        - lang: zh_CN
+          text: '这个插件是一个mod开发资源，不应该在游戏中使用。'
+
     - &obsolete
       type: warn
       content:
@@ -288,6 +492,38 @@ prelude:
         - lang: zh_CN
           text: '可以与%1%同时使用，但将需要额外的操作。Smashed Patch或Bash Patch应该彼此独立使用。'
 
+    - &optional
+      type: say
+      content:
+        - lang: en
+          text: 'This plugin is optional.'
+        - lang: bg
+          text: 'Тази приставка не е задължителна.'
+        - lang: de
+          text: 'Dieses Plugin ist optional.'
+        - lang: es
+          text: 'Este plugin es opcional.'
+        - lang: fr
+          text: 'Ce plugin est optionnel.'
+        - lang: it
+          text: 'Questo plugin è opzionale.'
+        - lang: ja
+          text: 'このプラグインはオプションです。'
+        - lang: ko
+          text: '이 플러그인은 선택 사항입니다.'
+        - lang: pt_BR
+          text: 'Este plugin é opcional.'
+        - lang: pt_PT
+          text: 'Este plugin é opcional.'
+        - lang: ru
+          text: 'Этот плагин не обязателен.'
+        - lang: sv
+          text: 'Det här pluginet är valfritt.'
+        - lang: uk_UA
+          text: 'Цей плагін не обов’язковий.'
+        - lang: zh_CN
+          text: '这个插件是可选的。'
+
     - &patch3rdParty
       type: say
       content:
@@ -321,6 +557,34 @@ prelude:
           text: 'Схоже, що ви використовуєте **%1%**, але його патч сумісності не було ввімкнено. Сторонній патч можна знайти тут: %2%'
         - lang: zh_CN
           text: '您似乎使用了**%1%**，但没有启用这个mod的兼容性补丁。第三方补丁可以在这里找到:%2%'
+
+    - &patcherScriptAvailable
+      type: say
+      content:
+        - lang: en
+          text: '%1% patcher script available here: %2%'
+        - lang: bg
+          text: 'Скриптът за кръпки %1% е наличен от: %2%'
+        - lang: de
+          text: '%1% Patch-Skript hier verfügbar: %2%'
+        - lang: es
+          text: '%1% un script parcheador se encuentra disponible aquí: %2%'
+        - lang: fr
+          text: 'Le script patcher de %1% est disponible ici : %2%'
+        - lang: it
+          text: '%1% patcher script disponibile qui: %2%'
+        - lang: ja
+          text: '%1%のパッチスクリプトは%2%を利用できます。'
+        - lang: ko
+          text: '%1%의 패쳐 스크립트는 %2%에서 사용이 가능합니다.'
+        - lang: pt_PT
+          text: 'O script de atualização para %1% está disponível aqui: %2%'
+        - lang: ru
+          text: '%1% скрипт-патчер доступен здесь: %2%'
+        - lang: uk_UA
+          text: '%1% патч-скрипт доступний тут: %2%'
+        - lang: zh_CN
+          text: '%1%的补丁在这里: %2%'
 
     - &patchIncluded
       type: say
@@ -390,6 +654,172 @@ prelude:
         - lang: zh_CN
           text: '您似乎使用了**%1%**，但没有启用这个mod的兼容性补丁。这个插件的mod页面提供了该补丁。'
 
+    - &patchUnavailable
+      type: warn
+      content:
+        - lang: en
+          text: 'A patch is required to make this mod fully compatible with %1%. None is currently available for download.'
+        - lang: bg
+          text: 'Този мод изисква кръпка за съвместимост с приставката %1%. Няма налична кръпка за съвместимост.'
+        - lang: de
+          text: 'Ein Patch ist nötig um diese Mod vollständig kompatibel mit %1% zu machen. Keiner ist derzeit zum Download verfügbar.'
+        - lang: es
+          text: 'Se requiere un parche para hacer este mod completamente compatible con %1%. No existe por el momento ninguno disponible para ser descargado.'
+        - lang: fr
+          text: 'Ce mod requiert un patch pour rendre ce mod complètement compatible avec %1%. Aucun patch n''est disponible pour l''instant.'
+        - lang: it
+          text: 'E'' necessaria una patch che renda questa mod totalmente compatibile con %1%. Al momento non ne è disponibile nessuna che possa essere scaricata.'
+        - lang: ja
+          text: 'このMODを%1%と完全に互換性のあるものにするにはパッチが必要です。現在ダウンロード可能なものはありません。'
+        - lang: ko
+          text: '이 모드가 %1%와 완전히 호환되도록하려면 패치가 필요합니다. 현재 다운로드 할 수있는 항목이 없습니다.'
+        - lang: pt_BR
+          text: 'Um patch é necessário para fazer esse mod ser totalmente compatível com %1%. No entanto, não há nenhum patch atualmente disponível para download.'
+        - lang: pt_PT
+          text: 'Um patch é necessário para fazer este mod ser totalmente compatível com %1%. Atualmente, nenhum está disponível para download.'
+        - lang: ru
+          text: 'Требуется патч для полной совместимости с %1%. В настоящее время ничего не доступно для загрузки.'
+        - lang: sv
+          text: 'En kompabilitetspatch krävs för att för att göra det moddet fullständigt kompatibelt med %1%. Ingen kompabilitetspatch finns tillgänglig för nedladdning.'
+        - lang: uk_UA
+          text: 'Потрібний патч для повної сумісності з %1%. На даний момент жодного не доступно для завантаження.'
+        - lang: zh_CN
+          text: '需要一个补丁来使这个mod与%1%完全兼容。目前没有可供下载的。'
+
+    - &patchUpdateAvailable
+      type: say
+      content:
+        - lang: en
+          text: 'Update Patch available: %1%'
+        - lang: bg
+          text: 'Налична е обновена кръпка: %1%'
+        - lang: de
+          text: 'Update Patch verfügbar: %1%'
+        - lang: es
+          text: 'Parche actualizado disponible aquí %1%.'
+        - lang: fi
+          text: 'Päivitys saatavilla: %1%'
+        - lang: fr
+          text: 'Mise à jour du patch disponible : %1%'
+        - lang: it
+          text: 'Aggiornamento della Patch disponibile: %1%'
+        - lang: ja
+          text: 'パッチの更新ができます: %1%'
+        - lang: ko
+          text: '패치 업데이트 가능: %1%'
+        - lang: pl
+          text: 'Dostępna Łatka Aktualizująca: %1%'
+        - lang: pt_BR
+          text: 'Patch de Atualização disponível: %1%'
+        - lang: pt_PT
+          text: 'Patch de atualização disponível: %1%'
+        - lang: ru
+          text: 'Доступно обновление патча: %1%'
+        - lang: sv
+          text: 'Uppdateringspatch tillgänglig: %1%'
+        - lang: uk_UA
+          text: 'Наявне оновлення патчу: %1%'
+        - lang: zh_CN
+          text: '可用的更新补丁:%1%'
+
+    - &renameXtoY
+      type: warn
+      content:
+        - lang: en
+          text: 'You need to rename %1% to %2% or this mod won''t work.'
+        - lang: bg
+          text: 'Трябва да преименувате %1% на %2%, в противен случай този мод няма да работи.'
+        - lang: de
+          text: 'Sie müssen %1% zu %2% umbenennen, ansonsten funktioniert diese Mod nicht.'
+        - lang: es
+          text: 'Necesita renombrar %1% como %2% o de lo contrario este mod no funcionará.'
+        - lang: fr
+          text: 'Vous devez renommer %1% en %2% ou ce mod ne fonctionnera pas.'
+        - lang: it
+          text: 'Devi rinominare %1% in %2% o questa mod non funzionerà.'
+        - lang: ja
+          text: '%1%を%2%にリネームしないと機能しません。'
+        - lang: ko
+          text: '%1%의 이름을 %2%로 변경하지 않으면 이 모드가 작동하지 않습니다.'
+        - lang: pt_BR
+          text: 'Você precisa renomear %1% para %2%, caso contrário esse mod não irá funcionar.'
+        - lang: pt_PT
+          text: 'Você necessita renomear %1% para %2% ou este mod não irá funcionar.'
+        - lang: ru
+          text: 'Вам нужно переименовать %1% в %2%, или мод не будет работать.'
+        - lang: sv
+          text: 'Du behöver byta namn på %1% till %2% för att det här moddet ska fungera.'
+        - lang: uk_UA
+          text: 'Вам потрібно перейменувати %1% у %2%, або мод не працюватиме.'
+        - lang: zh_CN
+          text: '你需要把%1%重命名为%2%，否则这个mod将不起作用。'
+
+    - &requiresMCM_X
+      type: warn
+      content:
+        - lang: en
+          text: 'A **Mod Configuration Menu** is required for this mod to be fully functional. An **MCM** can be added by installing %1%.'
+        - lang: bg
+          text: 'Този мод изисква **меню за конфигуриране на модовете** за някои от неговите функции. Може да добавите **МКМ** с инсталиране на %1%.'
+        - lang: de
+          text: 'Ein **Mod-Konfigurationsmenü** ist vorausgesetzt, damit diese Mod voll funktionstüchtig ist. Ein **MCM** kann hinzugefügt werden, indem man %1% installiert.'
+        - lang: es
+          text: 'Un **Menú de configuración de mod** se requiere para que este mod sea completamente funcional. Un **MCM** puede ser agregado si se instala %1%.'
+        - lang: fr
+          text: 'Un **Mod Configuration Menu** est requis pour que ce mod fonctionne complètement. Un **MCM** peut-être ajouté en installant %1%.'
+        - lang: it
+          text: 'È necessario un **Menu di configurazione Mod** per rendere questa mod completamente funzionante. È possibile aggiungere un **MCM** installando %1%.'
+        - lang: ja
+          text: 'このmodを完全に機能させるには、**Mod Configuration Menu**が必要です。**MCM**を追加するには%1%を導入してください。'
+        - lang: ko
+          text: '모드가 정상 작동하기 위해서는 **모드 설정 메뉴**가필요합니다. %1%를 설치하면 **MCM** 메뉴를 추가할 수 있습니다.'
+        - lang: pl
+          text: '**Menu Konfiguracji Modów** jest wymagane aby ten mod funkcjonował w pełni poprawnie. **MCM** może zostać dodane poprzez instalację %1%.'
+        - lang: pt_BR
+          text: 'Um **Menu de Configuração de Mod** (Mod Configuration Menu) é necessário para que este mod funcione totalmente. Um **MCM** pode ser adicionado ao instalar %1%.'
+        - lang: pt_PT
+          text: 'Um **Menu de Configuração de Mod** (Mod Configuration Menu) é necessário para este mod funcionar na totalidade. Um **MCM** pode ser adicionado ao instalar %1%.'
+        - lang: ru
+          text: '**Mod Configuration Menu** (Меню Настройки Модов) требуется для полного функционирования мода. **MCM** может быть добавлено вместе с %1%.'
+        - lang: sv
+          text: 'En **Mod-konfigurationsmeny** krävs för att denna mod ska fungera korrekt. En **MCM** kan fås genom att installera %1%.'
+        - lang: uk_UA
+          text: '**Mod Configuration Menu** (Меню Налаштування Модів) потрібне для повного функціонування мода. **MCM** може бути додано разом з %1%.'
+        - lang: zh_CN
+          text: '这个Mod需要一个**Mod配置菜单**来实现完整功能。**MCM**可以通过安装%1%来添加。'
+
+    - &requiresResources
+      type: warn
+      content:
+        - lang: en
+          text: 'Requires resources (e.g. meshes, textures; not plugins) from %1%.'
+        - lang: bg
+          text: 'Изисква ресурси (триизмерни модели и текстури, без приставки) от %1%.'
+        - lang: de
+          text: 'Braucht Ressourcen (z.B. Meshes, Texturen; keine Plugins) von %1%.'
+        - lang: es
+          text: 'Requiere de recursos (ej. mallas, texturas; no plugins) de %1%.'
+        - lang: fr
+          text: 'Requiert des ressources (ex : meshes, textures ; pas de plugins) de %1%.'
+        - lang: it
+          text: 'Richiede risorse (ad es. mesh, texture; non plugin) da %1%.'
+        - lang: ja
+          text: '%1%のリソース(プラグインではなくメッシュやテクスチャなど)が必要です。'
+        - lang: ko
+          text: '%1%의 리소스(플러그인이 아닌, 메쉬 및 질감 등)가 필요합니다.'
+        - lang: pt_BR
+          text: 'Requer recursos (ex: meshes, texturas; não plugins) vindos de %1%.'
+        - lang: pt_PT
+          text: 'Requer recursos (ex: meshes, texturas; não plugins) vindos de %1%.'
+        - lang: ru
+          text: 'Требуются ресурсы (например, меши, текстуры; не плагины) от %1%.'
+        - lang: sv
+          text: 'Behöver resurser (t.ex. meshar, texturer; inte plugin) från %1%.'
+        - lang: uk_UA
+          text: 'Потрібні ресурси (наприклад: меші, текстури; не плагіни) від %1%.'
+        - lang: zh_CN
+          text: '需要%1%的资源(如网格，纹理;非插件)。'
+
     - &requiresX
       type: warn
       content:
@@ -423,6 +853,43 @@ prelude:
           text: 'Потрібно: %1%'
         - lang: zh_CN
           text: '需要:%1%'
+
+    - &sortMasters
+      type: say
+      content:
+        - lang: en
+          text: 'Plugin''s Masters require sorting. %1%'
+        - lang: bg
+          text: 'Трябва да сортирате основния списък с приставките. %1%'
+        - lang: de
+          text: 'Die Plugin Master müssen sortiert werden. %1%'
+        - lang: es
+          text: 'Los masters de este plugin necesitan ser ordenados. %1%'
+        - lang: fi
+          text: 'Liitännäisen isännät vaativat uudelleenjärjestämistä. %1%'
+        - lang: fr
+          text: 'Les Masters des plugins requièrent un tri. %1%'
+        - lang: it
+          text: 'I Master dei plugin richiedono un ordinamento. %1%'
+        - lang: ja
+          text: 'このプラグインのマスターはソートが必要です。 %1%'
+        - lang: ko
+          text: '플러그인 마스터의 정렬이 필요합니다. %1%'
+        - lang: pl
+          text: 'Wtyczki Główne tej wtyczki wymagają sortowania. %1%'
+        - lang: pt_BR
+          text: 'Os Masters desse plugin necessitam de ordenação. %1%'
+        - lang: pt_PT
+          text: 'A Master deste Plugin necessita ordenação. %1%'
+        - lang: ru
+          text: 'Мастерфайлы плагина требуют сортировки. %1%'
+        - lang: sv
+          text: 'Denna plugins master behöver sorteras. %1%'
+        - lang: uk_UA
+          text: 'Майстерфайли плагіну потребують сортування. %1%'
+        - lang: zh_CN
+          text: '插件的主依赖需要排序。 %1%'
+      subs: [ '[xEdit - Sort Masters](https://tes5edit.github.io/docs/7-mod-cleaning-and-error-checking.html#SortingMasterFileLoadOrders)' ]
 
     - &useInstead
       type: warn
@@ -667,6 +1134,34 @@ prelude:
           text: 'Встановлена ​​у вас версія %1% несумісна з вашою версією %2%.'
         - lang: zh_CN
           text: '您安装的%1%版本与%2%版本不兼容。'
+
+    - &versionXofYorGreaterRequired
+      type: error
+      content:
+        - lang: en
+          text: 'Requires version **%1%** or greater of **%2%**.'
+        - lang: bg
+          text: 'Изисква версия **%1%** или всяка следваща на **%2%**.'
+        - lang: de
+          text: 'Benötigt Version **%1%** oder höher von **%2%**.'
+        - lang: es
+          text: 'Requiere como mínimo la versión **%1%** de **%2%**.'
+        - lang: fr
+          text: 'Requiert la version **%1%** ou plus de **%2%**.'
+        - lang: it
+          text: 'Richiede la versione **%1%** o superiore di **%2%**.'
+        - lang: ja
+          text: 'バージョン**%1%**以上の**%2%**が必要です。'
+        - lang: ko
+          text: '**%1%** 혹은 **%2%** 이상의 버전이 필요합니다.'
+        - lang: pt_PT
+          text: 'Necessita a versão **%1%** ou maior de **%2%**.'
+        - lang: ru
+          text: 'Нужна версия **%1%** или выше **%2%**.'
+        - lang: uk_UA
+          text: 'Потрібна версія **%1%** або вище **%2%**.'
+        - lang: zh_CN
+          text: '需要 **%2%** 的 **%1%** 或更高版本。'
 
     - &wildEdits
       type: warn
