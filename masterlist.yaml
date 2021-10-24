@@ -110,6 +110,38 @@ prelude:
         - lang: zh_CN
           text: '强烈建议您使用%1%。'
 
+    - &compatIssuesWithX
+      type: say
+      content:
+        - lang: en
+          text: 'This plugin has compatibility issues with %1%. For more information, read this mod''s compatibility notes.'
+        - lang: bg
+          text: 'Тази приставка не е съвместима с %1%. За повече информация, прочетете бележките за съвместимост.'
+        - lang: de
+          text: 'Dieses Plugin hat Kompatibilitätsprobleme mit %1%. Mehr Information dazu sind in den Kompatibilitäts-Notizen der Mod nachzulesen.'
+        - lang: es
+          text: 'Este plugin tiene problemas de compatibilidad con %1%. Para más información, lea las notas de compatibilidad de este mod.'
+        - lang: fr
+          text: 'Ce plugin a des problèmes de compatibilités avec %1%. Pour plus d''informations, lisez la liste de compabilité de ce mod.'
+        - lang: it
+          text: 'Questo plugin ha problemi di compatibilità con %1%. Per maggiori informazioni, leggi le note sulla compatibilità di questa mod.'
+        - lang: ja
+          text: 'このプラグインには%1%との互換性の問題があります。詳細についてはこのmodの互換性に関する注意事項をお読みください。'
+        - lang: ko
+          text: '이 플러그인은 %1%와의 호환성 문제가 있습니다. 자세한 내용은 이 모드의 호환성 정보를 확인해주세요.'
+        - lang: pt_BR
+          text: 'Este plugin tem problemas de compatibilidade com %1%. Para mais informações, leia as notas de compatibilidade deste mod.'
+        - lang: pt_PT
+          text: 'Este plugin tem problemas de compatibilidade com %1%. Para mais informações, leia as notas de compatibilidade deste mod.'
+        - lang: ru
+          text: 'У этого плагина есть проблемы совместимости с %1%. Для получения дополнительной информации прочтите заметки о совместимости этого мода.'
+        - lang: sv
+          text: 'Det här pluginet är inte helt kompatibelt med %1%. För mer information, läs det här moddets kompabilitetsanteckningar.'
+        - lang: uk_UA
+          text: 'У цього плагіна наявні проблеми сумісності з %1%. Для отримання додаткової інформації дивіться примітки щодо сумісності цього моду.'
+        - lang: zh_CN
+          text: '这个插件与%1%有兼容性问题。欲了解更多信息，请阅读这个mod的兼容性说明。'
+
     - &compatNotes
       type: say
       content:
