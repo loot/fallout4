@@ -322,6 +322,34 @@ prelude:
         - lang: zh_CN
           text: '您似乎使用了**%1%**，但没有启用这个mod的兼容性补丁。第三方补丁可以在这里找到:%2%'
 
+    - &patcherScriptAvailable
+      type: say
+      content:
+        - lang: en
+          text: '%1% patcher script available here: %2%'
+        - lang: bg
+          text: 'Скриптът за кръпки %1% е наличен от: %2%'
+        - lang: de
+          text: '%1% Patch-Skript hier verfügbar: %2%'
+        - lang: es
+          text: '%1% un script parcheador se encuentra disponible aquí: %2%'
+        - lang: fr
+          text: 'Le script patcher de %1% est disponible ici : %2%'
+        - lang: it
+          text: '%1% patcher script disponibile qui: %2%'
+        - lang: ja
+          text: '%1%のパッチスクリプトは%2%を利用できます。'
+        - lang: ko
+          text: '%1%의 패쳐 스크립트는 %2%에서 사용이 가능합니다.'
+        - lang: pt_PT
+          text: 'O script de atualização para %1% está disponível aqui: %2%'
+        - lang: ru
+          text: '%1% скрипт-патчер доступен здесь: %2%'
+        - lang: uk_UA
+          text: '%1% патч-скрипт доступний тут: %2%'
+        - lang: zh_CN
+          text: '%1%的补丁在这里: %2%'
+
     - &patchIncluded
       type: say
       content:
