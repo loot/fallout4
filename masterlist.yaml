@@ -422,6 +422,42 @@ prelude:
         - lang: zh_CN
           text: '需要一个补丁来使这个mod与%1%完全兼容。目前没有可供下载的。'
 
+    - &patchUpdateAvailable
+      type: say
+      content:
+        - lang: en
+          text: 'Update Patch available: %1%'
+        - lang: bg
+          text: 'Налична е обновена кръпка: %1%'
+        - lang: de
+          text: 'Update Patch verfügbar: %1%'
+        - lang: es
+          text: 'Parche actualizado disponible aquí %1%.'
+        - lang: fi
+          text: 'Päivitys saatavilla: %1%'
+        - lang: fr
+          text: 'Mise à jour du patch disponible : %1%'
+        - lang: it
+          text: 'Aggiornamento della Patch disponibile: %1%'
+        - lang: ja
+          text: 'パッチの更新ができます: %1%'
+        - lang: ko
+          text: '패치 업데이트 가능: %1%'
+        - lang: pl
+          text: 'Dostępna Łatka Aktualizująca: %1%'
+        - lang: pt_BR
+          text: 'Patch de Atualização disponível: %1%'
+        - lang: pt_PT
+          text: 'Patch de atualização disponível: %1%'
+        - lang: ru
+          text: 'Доступно обновление патча: %1%'
+        - lang: sv
+          text: 'Uppdateringspatch tillgänglig: %1%'
+        - lang: uk_UA
+          text: 'Наявне оновлення патчу: %1%'
+        - lang: zh_CN
+          text: '可用的更新补丁:%1%'
+
     - &renameXtoY
       type: warn
       content:
