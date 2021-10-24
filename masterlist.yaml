@@ -422,6 +422,40 @@ prelude:
         - lang: zh_CN
           text: '需要一个补丁来使这个mod与%1%完全兼容。目前没有可供下载的。'
 
+    - &requiresMCM_X
+      type: warn
+      content:
+        - lang: en
+          text: 'A **Mod Configuration Menu** is required for this mod to be fully functional. An **MCM** can be added by installing %1%.'
+        - lang: bg
+          text: 'Този мод изисква **меню за конфигуриране на модовете** за някои от неговите функции. Може да добавите **МКМ** с инсталиране на %1%.'
+        - lang: de
+          text: 'Ein **Mod-Konfigurationsmenü** ist vorausgesetzt, damit diese Mod voll funktionstüchtig ist. Ein **MCM** kann hinzugefügt werden, indem man %1% installiert.'
+        - lang: es
+          text: 'Un **Menú de configuración de mod** se requiere para que este mod sea completamente funcional. Un **MCM** puede ser agregado si se instala %1%.'
+        - lang: fr
+          text: 'Un **Mod Configuration Menu** est requis pour que ce mod fonctionne complètement. Un **MCM** peut-être ajouté en installant %1%.'
+        - lang: it
+          text: 'È necessario un **Menu di configurazione Mod** per rendere questa mod completamente funzionante. È possibile aggiungere un **MCM** installando %1%.'
+        - lang: ja
+          text: 'このmodを完全に機能させるには、**Mod Configuration Menu**が必要です。**MCM**を追加するには%1%を導入してください。'
+        - lang: ko
+          text: '모드가 정상 작동하기 위해서는 **모드 설정 메뉴**가필요합니다. %1%를 설치하면 **MCM** 메뉴를 추가할 수 있습니다.'
+        - lang: pl
+          text: '**Menu Konfiguracji Modów** jest wymagane aby ten mod funkcjonował w pełni poprawnie. **MCM** może zostać dodane poprzez instalację %1%.'
+        - lang: pt_BR
+          text: 'Um **Menu de Configuração de Mod** (Mod Configuration Menu) é necessário para que este mod funcione totalmente. Um **MCM** pode ser adicionado ao instalar %1%.'
+        - lang: pt_PT
+          text: 'Um **Menu de Configuração de Mod** (Mod Configuration Menu) é necessário para este mod funcionar na totalidade. Um **MCM** pode ser adicionado ao instalar %1%.'
+        - lang: ru
+          text: '**Mod Configuration Menu** (Меню Настройки Модов) требуется для полного функционирования мода. **MCM** может быть добавлено вместе с %1%.'
+        - lang: sv
+          text: 'En **Mod-konfigurationsmeny** krävs för att denna mod ska fungera korrekt. En **MCM** kan fås genom att installera %1%.'
+        - lang: uk_UA
+          text: '**Mod Configuration Menu** (Меню Налаштування Модів) потрібне для повного функціонування мода. **MCM** може бути додано разом з %1%.'
+        - lang: zh_CN
+          text: '这个Mod需要一个**Mod配置菜单**来实现完整功能。**MCM**可以通过安装%1%来添加。'
+
     - &requiresResources
       type: warn
       content:
