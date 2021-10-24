@@ -215,6 +215,42 @@ prelude:
         - lang: zh_CN
           text: '当使用**%1%**时，建议您禁用或删除这个ESP文件，但保留与此mod一起安装的资源(如网格，纹理等)。'
 
+    - &includesX
+      type: say
+      content:
+        - lang: en
+          text: '%1% is included with this mod.'
+        - lang: bg
+          text: 'Приставката %1% е включена в този мод.'
+        - lang: de
+          text: '%1% ist in dieser Mod enthalten.'
+        - lang: es
+          text: '%1% viene incluido ya con este mod.'
+        - lang: fi
+          text: '%1% on tässä modissa'
+        - lang: fr
+          text: '%1% est inclut avec ce mod.'
+        - lang: it
+          text: '%1% è incluso in questa mod.'
+        - lang: ja
+          text: '%1%はこのmodに含まれています。'
+        - lang: ko
+          text: '%1% 모드가 포함되어 있습니다.'
+        - lang: pl
+          text: '%1% jest już zawarte z tym modem.'
+        - lang: pt_BR
+          text: '%1% está incluído neste mod.'
+        - lang: pt_PT
+          text: '%1% vem incluído com este mod.'
+        - lang: ru
+          text: '%1% уже добавлен с этим модом.'
+        - lang: sv
+          text: '%1% är inluderat med denna mod.'
+        - lang: uk_UA
+          text: '%1% вже додано з цим модом.'
+        - lang: zh_CN
+          text: '%1%已包含在这个mod中。'
+
     - &moddingPlugin
       type: error
       content:
