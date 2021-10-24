@@ -110,6 +110,42 @@ prelude:
         - lang: zh_CN
           text: '强烈建议您使用%1%。'
 
+    - &compatNotes
+      type: say
+      content:
+        - lang: en
+          text: 'It is recommended that you read this mod''s [Compatibility Notes](%1%).'
+        - lang: bg
+          text: 'Препоръчва се да прочетете [бележките за съвместимост](%1%).'
+        - lang: de
+          text: 'Es wird empfohlen, dass Sie die [Kompatibilitäts-Notizen](%1%) dieses Mods lesen.'
+        - lang: es
+          text: 'Se recomienda que lea las [Notas de compatibilidad](%1%) de este mod.'
+        - lang: fi
+          text: 'On suotavaa lukea modin tiedot [yhteensopivuudesta](%1%).'
+        - lang: fr
+          text: 'Il est recommandé que vous lisiez les [Notes de compabilités](%1%) de ce mod.'
+        - lang: it
+          text: 'Si raccomanda la lettura delle [Note sulla compatibilità](%1%) di questa mod.'
+        - lang: ja
+          text: '[互換性に関する注意事項](%1%)を読みましょう。'
+        - lang: ko
+          text: '이 모드의 [호환성 정보](%1%)를 읽어 보는 걸 권장합니다.'
+        - lang: pl
+          text: 'Jest rekomendowane abyś przeczytał [Notki Kompatybilności](%1%) tego moda.'
+        - lang: pt_BR
+          text: 'É recomendada a leitura das [Notas de Compatibilidade](%1%) deste mod.'
+        - lang: pt_PT
+          text: 'É recomendada leitura das [Notas de Compatibilidade](%1%) deste mod.'
+        - lang: ru
+          text: 'Рекомендуется прочесть [заметки о совместимости](%1%) мода.'
+        - lang: sv
+          text: 'Det är rekommenderat att du läser det här moddets [kompabilitetsanteckningar](%1%).'
+        - lang: uk_UA
+          text: 'Рекомендується прочитати [примітки щодо сумісності](%1%) моду.'
+        - lang: zh_CN
+          text: '建议您阅读这个mod的[兼容性说明](%1%)。'
+
     - &corrupt
       type: warn
       content:
