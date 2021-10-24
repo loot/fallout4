@@ -390,6 +390,38 @@ prelude:
         - lang: zh_CN
           text: '您似乎使用了**%1%**，但没有启用这个mod的兼容性补丁。这个插件的mod页面提供了该补丁。'
 
+    - &patchUnavailable
+      type: warn
+      content:
+        - lang: en
+          text: 'A patch is required to make this mod fully compatible with %1%. None is currently available for download.'
+        - lang: bg
+          text: 'Този мод изисква кръпка за съвместимост с приставката %1%. Няма налична кръпка за съвместимост.'
+        - lang: de
+          text: 'Ein Patch ist nötig um diese Mod vollständig kompatibel mit %1% zu machen. Keiner ist derzeit zum Download verfügbar.'
+        - lang: es
+          text: 'Se requiere un parche para hacer este mod completamente compatible con %1%. No existe por el momento ninguno disponible para ser descargado.'
+        - lang: fr
+          text: 'Ce mod requiert un patch pour rendre ce mod complètement compatible avec %1%. Aucun patch n''est disponible pour l''instant.'
+        - lang: it
+          text: 'E'' necessaria una patch che renda questa mod totalmente compatibile con %1%. Al momento non ne è disponibile nessuna che possa essere scaricata.'
+        - lang: ja
+          text: 'このMODを%1%と完全に互換性のあるものにするにはパッチが必要です。現在ダウンロード可能なものはありません。'
+        - lang: ko
+          text: '이 모드가 %1%와 완전히 호환되도록하려면 패치가 필요합니다. 현재 다운로드 할 수있는 항목이 없습니다.'
+        - lang: pt_BR
+          text: 'Um patch é necessário para fazer esse mod ser totalmente compatível com %1%. No entanto, não há nenhum patch atualmente disponível para download.'
+        - lang: pt_PT
+          text: 'Um patch é necessário para fazer este mod ser totalmente compatível com %1%. Atualmente, nenhum está disponível para download.'
+        - lang: ru
+          text: 'Требуется патч для полной совместимости с %1%. В настоящее время ничего не доступно для загрузки.'
+        - lang: sv
+          text: 'En kompabilitetspatch krävs för att för att göra det moddet fullständigt kompatibelt med %1%. Ingen kompabilitetspatch finns tillgänglig för nedladdning.'
+        - lang: uk_UA
+          text: 'Потрібний патч для повної сумісності з %1%. На даний момент жодного не доступно для завантаження.'
+        - lang: zh_CN
+          text: '需要一个补丁来使这个mod与%1%完全兼容。目前没有可供下载的。'
+
     - &requiresX
       type: warn
       content:
