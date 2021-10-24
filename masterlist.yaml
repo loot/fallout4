@@ -422,6 +422,38 @@ prelude:
         - lang: zh_CN
           text: '需要一个补丁来使这个mod与%1%完全兼容。目前没有可供下载的。'
 
+    - &renameXtoY
+      type: warn
+      content:
+        - lang: en
+          text: 'You need to rename %1% to %2% or this mod won''t work.'
+        - lang: bg
+          text: 'Трябва да преименувате %1% на %2%, в противен случай този мод няма да работи.'
+        - lang: de
+          text: 'Sie müssen %1% zu %2% umbenennen, ansonsten funktioniert diese Mod nicht.'
+        - lang: es
+          text: 'Necesita renombrar %1% como %2% o de lo contrario este mod no funcionará.'
+        - lang: fr
+          text: 'Vous devez renommer %1% en %2% ou ce mod ne fonctionnera pas.'
+        - lang: it
+          text: 'Devi rinominare %1% in %2% o questa mod non funzionerà.'
+        - lang: ja
+          text: '%1%を%2%にリネームしないと機能しません。'
+        - lang: ko
+          text: '%1%의 이름을 %2%로 변경하지 않으면 이 모드가 작동하지 않습니다.'
+        - lang: pt_BR
+          text: 'Você precisa renomear %1% para %2%, caso contrário esse mod não irá funcionar.'
+        - lang: pt_PT
+          text: 'Você necessita renomear %1% para %2% ou este mod não irá funcionar.'
+        - lang: ru
+          text: 'Вам нужно переименовать %1% в %2%, или мод не будет работать.'
+        - lang: sv
+          text: 'Du behöver byta namn på %1% till %2% för att det här moddet ska fungera.'
+        - lang: uk_UA
+          text: 'Вам потрібно перейменувати %1% у %2%, або мод не працюватиме.'
+        - lang: zh_CN
+          text: '你需要把%1%重命名为%2%，否则这个mod将不起作用。'
+
     - &requiresMCM_X
       type: warn
       content:
