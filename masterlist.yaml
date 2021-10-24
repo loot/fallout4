@@ -251,6 +251,41 @@ prelude:
         - lang: zh_CN
           text: '%1%已包含在这个mod中。'
 
+
+    - &missingRequirementXforPlugin
+      type: warn
+      content:
+        - lang: en
+          text: 'Some of this plugins requirements seem to be missing. Please ensure you have correctly installed **%1%**.'
+        - lang: bg
+          text: 'Някои от изискванията на приставката не са изпълнени. Моля, инсталирайте **%1%** отново.'
+        - lang: de
+          text: 'Einige der Voraussetzungen dieses Plugins scheinen zu fehlen. Bitte stellen Sie sicher, dass Sie **%1%** korrekt installiert haben.'
+        - lang: es
+          text: 'Algunos de los requerimientos de este plugin parecen faltar. Por favor, asegúrese de que haya instalado correctamente **%1%**.'
+        - lang: fr
+          text: 'Certains prérequis de ce plugin semblent manquer. Veuillez vous assurer que vous ayez correctement installés **%1%**.'
+        - lang: it
+          text: 'Sembra che manchino alcuni requisiti di questi plugin. Assicurati di avere installato correttamente **%1%**.'
+        - lang: ja
+          text: 'このプラグインに必要なものの一部が不足しているようです。**%1%**が正しくインストールされていることを確認してください。'
+        - lang: ko
+          text: '이 플러그인의 일부 요구사항이 빠져 있습니다. **%1%** 모드를 제대로 설치하십시오.'
+        - lang: pl
+          text: 'Część wymagań dla tej wtyczki wydaje się być brakująca. Upewnij się że poprawnie zainstalowałeś **%1%**.'
+        - lang: pt_BR
+          text: 'Alguns dos requerimentos deste plugin estão faltando. Por favor tenha certeza de que você instalou **%1%** corretamente.'
+        - lang: pt_PT
+          text: 'Alguns dos requerimentos deste plugin estão em falta. Por favor confirme que você instalou **%1%** corretamente.'
+        - lang: ru
+          text: 'Некоторые требования этого плагина отсутствуют. Убедитесь, что правильно установили **%1%**.'
+        - lang: sv
+          text: 'Några av denna plugins behov/krav verkar saknas. Var god och se till att du har installerat **%1%** korrekt.'
+        - lang: uk_UA
+          text: 'Деякі вимоги цього плагіна відсутні. Переконайтеся, що правильно встановили **%1%**.'
+        - lang: zh_CN
+          text: '这些插件的一些需求似乎缺失了。请确保您已正确安装**%1%**。'
+
     - &moddingPlugin
       type: error
       content:
