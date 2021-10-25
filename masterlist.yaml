@@ -3020,6 +3020,8 @@ plugins:
     clean:
       - crc: 0xF1D4A3C9
         util: 'FO4Edit v4.0.3h (Hotfix 1)'
+      - crc: 0xCFC9D148
+        util: 'FO4Edit v4.0.3h (Hotfix 1)'
   - name: 'ColterFix.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/46403/' ]
     group: *fixesGroup
