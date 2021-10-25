@@ -2927,6 +2927,8 @@ plugins:
     group: *fixesGroup
     msg: [ *alreadyInUFO4P ]
 
+###### Fixes - Stability & Performance ######
+
 ###### Texture overhauls ######
   - name: 'OVT.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/1204' ]
