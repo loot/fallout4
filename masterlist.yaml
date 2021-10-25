@@ -1657,9 +1657,13 @@ groups:
     description: 'A group for mods that overhaul npcs appearance/outfits and character level/stats.'
     after: [ *itemsGroup ]
 
+  - name: &preVisCombinedGroup PreVis & PreCombined Fixes
+    description: 'A group for modules that fix issues with PreVis and PreCombined files.'
+    after: [ *npcOverhaulsGroup ]
+
   - name: &interiorLightingGroup Interior Lighting
     description: 'A group for modules that only modify interior lighting.'
-    after: [ *npcOverhaulsGroup ]
+    after: [ *preVisCombinedGroup ]
 
   - name: &scrapGroup Scrap Everything
     after: [ *interiorLightingGroup ]
