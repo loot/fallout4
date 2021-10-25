@@ -2943,9 +2943,8 @@ plugins:
       - 'Nuka-World Collectable Markers.esp'
       - 'Omni-Better-Beds.esp'
     clean:
-      # version: 0.32
       - crc: 0xCFB11F37
-        util: 'FO4Edit v4.0.2j'
+        util: 'FO4Edit v4.0.3h (Hotfix 1)'
   - name: 'BostonFPSFix(-Vanilla|VD)\.esp'
     msg:
       - <<: *alreadyInX
@@ -2961,13 +2960,42 @@ plugins:
       - <<: *alreadyInX
         subs: [ 'BostonFPSFix AIO' ]
         condition: 'file("BostonFPSFixAIO.esp")'
+  - name: 'BostonFPSFix-Vanilla.esp'
+    dirty:
+      - <<: *quickClean
+        crc: 0x0DA102BE
+        util: '[FO4Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 1
+        udr: 6
+  - name: 'BostonFPSFixAutomatron.esp'
+    dirty:
+      - <<: *quickClean
+        crc: 0xD991C9F2
+        util: '[FO4Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 1
+        udr: 6
+  - name: 'BostonFPSFixFarHarbor.esp'
+    clean:
+      - crc: 0x98B6CE34
+        util: 'FO4Edit v4.0.3h (Hotfix 1)'
+  - name: 'BostonFPSFix-NukaWorld.esp'
+    clean:
+      - crc: 0x2A940662
+        util: 'FO4Edit v4.0.3h (Hotfix 1)'
+  - name: 'BostonFPSFixVD.esp'
+    clean:
+      - crc: 0x970AEFEA
+        util: 'FO4Edit v4.0.3h (Hotfix 1)'
+  - name: 'BostonFPSFixAIO_VD.esp'
+    clean:
+      - crc: 0x06909110
+        util: 'FO4Edit v4.0.3h (Hotfix 1)'
   - name: 'PaladinBaileyRedRocket.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/26286' ]
     inc: [ 'BTInteriors_Project.esp' ]
     clean:
-      # version: 0.1
       - crc: 0x0E248104
-        util: 'FO4Edit v4.0.2j'
+        util: 'FO4Edit v4.0.3h (Hotfix 1)'
 
 ###### Texture overhauls ######
   - name: 'OVT.esp'
