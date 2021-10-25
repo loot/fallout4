@@ -3004,6 +3004,30 @@ plugins:
       - crc: 0x0E248104
         util: 'FO4Edit v4.0.3h (Hotfix 1)'
 
+  - name: 'PRP.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/46403/'
+        name: 'Previs Repair Pack'
+    group: *preVisCombinedGroup
+    inc: [ 'FROST.esp' ]
+    msg:
+      - <<: *useInstead
+        subs: [ '[FROST - Exterior Cell Fixes and FPS Boost](https://www.nexusmods.com/fallout4/mods/54950/)' ]
+        condition: 'active("FROST.esp") and active("RedsFrostFixes.esp") and active("aFrostMod.esp") and not active("FROSTExtPR.esp")'
+      - <<: *useInstead
+        subs: [ '[FROST - Interior Cell Fixes](https://www.nexusmods.com/fallout4/mods/48425/)' ]
+        condition: 'active("FROST.esp") and active("RedsFrostFixes.esp") and active("aFrostMod.esp") and not active("FROSTIntPR.esp")'
+    clean:
+      - crc: 0xF1D4A3C9
+        util: 'FO4Edit v4.0.3h (Hotfix 1)'
+  - name: 'ColterFix.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/46403/' ]
+    group: *fixesGroup
+    msg:
+      - <<: *alreadyInX
+        subs: [ 'Unofficial Fallout 4 Patch' ]
+        condition: 'active("Unofficial Fallout 4 Patch.esp") and version("Unofficial Fallout 4 Patch.esp", "2.1.4", >=)'
+
 ###### Texture overhauls ######
   - name: 'OVT.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/1204' ]
