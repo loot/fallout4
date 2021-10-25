@@ -2933,6 +2933,9 @@ plugins:
       - link: 'https://www.nexusmods.com/fallout4/mods/26286/'
         name: 'Boston FPS Fix'
     group: *preVisCombinedGroup
+    inc:
+      - 'FROST.esp'
+      - 'PRP.esp'
   - name: 'BostonFPSFixAIO.esp'
     clean:
       - crc: 0xCFB11F37
