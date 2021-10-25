@@ -2976,6 +2976,10 @@ plugins:
       - crc: 0x2A940662
         util: 'FO4Edit v4.0.3h (Hotfix 1)'
   - name: 'BostonFPSFixVD.esp'
+    msg:
+      - <<: *alreadyInX
+        subs: [ 'BostonFPSFixAIO_VD.esp' ]
+        condition: 'file("BostonFPSFixAIO_VD.esp")'
     clean:
       - crc: 0x970AEFEA
         util: 'FO4Edit v4.0.3h (Hotfix 1)'
