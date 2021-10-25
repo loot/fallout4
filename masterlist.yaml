@@ -2928,8 +2928,10 @@ plugins:
     msg: [ *alreadyInUFO4P ]
 
 ###### Fixes - Stability & Performance ######
-  - name: 'BostonFPSFix.*\.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/26286' ]
+  - name: '(BostonFPSFix(AIO|-Vanilla|Automatron|FarHarbor|-NukaWorld|VD|AIO_VD)|PaladinBaileyRedRocket)\.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/26286/'
+        name: 'Boston FPS Fix'
   - name: 'BostonFPSFixAIO.esp'
     after:
       # BTInteriors Optimization Replacer (v2, 2E5602A6)
@@ -2991,7 +2993,6 @@ plugins:
       - crc: 0x06909110
         util: 'FO4Edit v4.0.3h (Hotfix 1)'
   - name: 'PaladinBaileyRedRocket.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/26286' ]
     inc: [ 'BTInteriors_Project.esp' ]
     clean:
       - crc: 0x0E248104
