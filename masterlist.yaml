@@ -3020,6 +3020,13 @@ plugins:
     clean:
       - crc: 0xF1D4A3C9
         util: 'FO4Edit v4.0.3h (Hotfix 1)'
+  - name: 'ColterFix.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/46403/' ]
+    group: *fixesGroup
+    msg:
+      - <<: *alreadyInX
+        subs: [ 'Unofficial Fallout 4 Patch' ]
+        condition: 'active("Unofficial Fallout 4 Patch.esp") and version("Unofficial Fallout 4 Patch.esp", "2.1.4", >=)'
 
 ###### Texture overhauls ######
   - name: 'OVT.esp'
