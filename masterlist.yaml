@@ -2942,7 +2942,7 @@ plugins:
       - <<: *alreadyInX
         subs: [ 'BostonFPSFix AIO' ]
         condition: 'file("BostonFPSFixAIO.esp")'
-  # Group load after rules - To avoid sorting errors.
+  # Group load after rules - To avoid sorting errors. #
   - name: '(BostonFPSFix(Automatron|FarHarbor|-NukaWorld|-Vanilla)|PaladinBaileyRedRocket)\.esp'
     after:
       - 'BostonFPSFixAIO_VD.esp'
@@ -2953,6 +2953,7 @@ plugins:
     after: [ 'BostonFPSFixAutomatron.esp' ]
   - name: '(BostonFPSFix-NukaWorld|PaladinBaileyRedRocket)\.esp'
     after: [ 'BostonFPSFixFarHarbor.esp' ]
+  # Boston FPS Fix - Standalone Modules & Optional Files #
   - name: 'BostonFPSFix-Vanilla.esp'
     dirty:
       - <<: *quickClean
