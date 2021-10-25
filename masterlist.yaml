@@ -2943,6 +2943,9 @@ plugins:
         subs: [ 'BostonFPSFix AIO' ]
         condition: 'file("BostonFPSFixAIO.esp")'
   - name: 'BostonFPSFix-Vanilla.esp'
+    after:
+      - 'BostonFPSFixAIO_VD.esp'
+      - 'BostonFPSFixVD.esp'
     dirty:
       - <<: *quickClean
         crc: 0x0DA102BE
@@ -2950,6 +2953,10 @@ plugins:
         itm: 1
         udr: 6
   - name: 'BostonFPSFixAutomatron.esp'
+    after:
+      - 'BostonFPSFixAIO_VD.esp'
+      - 'BostonFPSFix-Vanilla.esp'
+      - 'BostonFPSFixVD.esp'
     dirty:
       - <<: *quickClean
         crc: 0xD991C9F2
@@ -2957,10 +2964,21 @@ plugins:
         itm: 1
         udr: 6
   - name: 'BostonFPSFixFarHarbor.esp'
+    after:
+      - 'BostonFPSFixAIO_VD.esp'
+      - 'BostonFPSFixAutomatron.esp'
+      - 'BostonFPSFix-Vanilla.esp'
+      - 'BostonFPSFixVD.esp'
     clean:
       - crc: 0x98B6CE34
         util: 'FO4Edit v4.0.3h (Hotfix 1)'
   - name: 'BostonFPSFix-NukaWorld.esp'
+    after:
+      - 'BostonFPSFixAIO_VD.esp'
+      - 'BostonFPSFixAutomatron.esp'
+      - 'BostonFPSFixFarHarbor.esp'
+      - 'BostonFPSFix-Vanilla.esp'
+      - 'BostonFPSFixVD.esp'
     clean:
       - crc: 0x2A940662
         util: 'FO4Edit v4.0.3h (Hotfix 1)'
@@ -2973,6 +2991,14 @@ plugins:
       - crc: 0x06909110
         util: 'FO4Edit v4.0.3h (Hotfix 1)'
   - name: 'PaladinBaileyRedRocket.esp'
+    after:
+      - 'BostonFPSFixAIO.esp'
+      - 'BostonFPSFixAIO_VD.esp'
+      - 'BostonFPSFixAutomatron.esp'
+      - 'BostonFPSFixFarHarbor.esp'
+      - 'BostonFPSFix-NukaWorld.esp'
+      - 'BostonFPSFix-Vanilla.esp'
+      - 'BostonFPSFixVD.esp'
     inc: [ 'BTInteriors_Project.esp' ]
     clean:
       - crc: 0x0E248104
