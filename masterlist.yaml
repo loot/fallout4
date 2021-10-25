@@ -2939,7 +2939,7 @@ plugins:
     msg:
       - <<: *useInstead
         subs: [ '[FROST - Exterior Cell Fixes and FPS Boost](https://www.nexusmods.com/fallout4/mods/54950/)' ]
-        condition: 'active("FROST.esp") and active("RedsFrostFixes.esp") and active("aFrostMod.esp")'
+        condition: 'active("FROST.esp") and active("RedsFrostFixes.esp") and active("aFrostMod.esp") and not active("FROSTExtPR.esp")'
   - name: 'BostonFPSFixAIO.esp'
     clean:
       - crc: 0xCFB11F37
