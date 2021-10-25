@@ -2928,6 +2928,46 @@ plugins:
     msg: [ *alreadyInUFO4P ]
 
 ###### Fixes - Stability & Performance ######
+  - name: 'BostonFPSFix.*\.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/26286' ]
+  - name: 'BostonFPSFixAIO.esp'
+    after:
+      # BTInteriors Optimization Replacer (v2, 2E5602A6)
+      - name: 'BTInteriors_Project.esp'
+        condition: 'file("BTInt_Optimization.esp") and checksum("BTInt_Optimization.esp", 2E5602A6)'
+      - 'Farm.esp'
+      - 'Farm_DLCCoast.esp'
+      - 'Farm_DLCNukaWorld.esp'
+      - 'Farm_DLCworkshop03.esp'
+      - 'Magazinemod_OMNI.esp'
+      - 'Nuka-World Collectable Markers.esp'
+      - 'Omni-Better-Beds.esp'
+    clean:
+      # version: 0.32
+      - crc: 0xCFB11F37
+        util: 'FO4Edit v4.0.2j'
+  - name: 'BostonFPSFix(-Vanilla|VD)\.esp'
+    msg:
+      - <<: *alreadyInX
+        subs: [ 'BostonFPSFix Automatron' ]
+        condition: 'file("BostonFPSFixAutomatron.esp")'
+  - name: 'BostonFPSFix(Automatron|FarHarbor|-NukaWorld|-Vanilla|(AIO_)?VD)\.esp'
+    after:
+      - 'Farm.esp'
+      - 'Farm_DLCCoast.esp'
+      - 'Farm_DLCNukaWorld.esp'
+      - 'Farm_DLCworkshop03.esp'
+    msg:
+      - <<: *alreadyInX
+        subs: [ 'BostonFPSFix AIO' ]
+        condition: 'file("BostonFPSFixAIO.esp")'
+  - name: 'PaladinBaileyRedRocket.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/26286' ]
+    inc: [ 'BTInteriors_Project.esp' ]
+    clean:
+      # version: 0.1
+      - crc: 0x0E248104
+        util: 'FO4Edit v4.0.2j'
 
 ###### Texture overhauls ######
   - name: 'OVT.esp'
@@ -5242,47 +5282,6 @@ plugins:
     clean:
       - crc: 0x03A90584
         util: 'FO4Edit v4.0.3'
-
-  - name: 'BostonFPSFix.*\.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/26286' ]
-  - name: 'BostonFPSFixAIO.esp'
-    after:
-      # BTInteriors Optimization Replacer (v2, 2E5602A6)
-      - name: 'BTInteriors_Project.esp'
-        condition: 'file("BTInt_Optimization.esp") and checksum("BTInt_Optimization.esp", 2E5602A6)'
-      - 'Farm.esp'
-      - 'Farm_DLCCoast.esp'
-      - 'Farm_DLCNukaWorld.esp'
-      - 'Farm_DLCworkshop03.esp'
-      - 'Magazinemod_OMNI.esp'
-      - 'Nuka-World Collectable Markers.esp'
-      - 'Omni-Better-Beds.esp'
-    clean:
-      # version: 0.32
-      - crc: 0xCFB11F37
-        util: 'FO4Edit v4.0.2j'
-  - name: 'BostonFPSFix(-Vanilla|VD)\.esp'
-    msg:
-      - <<: *alreadyInX
-        subs: [ 'BostonFPSFix Automatron' ]
-        condition: 'file("BostonFPSFixAutomatron.esp")'
-  - name: 'BostonFPSFix(Automatron|FarHarbor|-NukaWorld|-Vanilla|(AIO_)?VD)\.esp'
-    after:
-      - 'Farm.esp'
-      - 'Farm_DLCCoast.esp'
-      - 'Farm_DLCNukaWorld.esp'
-      - 'Farm_DLCworkshop03.esp'
-    msg:
-      - <<: *alreadyInX
-        subs: [ 'BostonFPSFix AIO' ]
-        condition: 'file("BostonFPSFixAIO.esp")'
-  - name: 'PaladinBaileyRedRocket.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/26286' ]
-    inc: [ 'BTInteriors_Project.esp' ]
-    clean:
-      # version: 0.1
-      - crc: 0x0E248104
-        util: 'FO4Edit v4.0.2j'
 
   - name: 'BTInteriors_Project.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/4612' ]
