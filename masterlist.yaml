@@ -2933,17 +2933,6 @@ plugins:
       - link: 'https://www.nexusmods.com/fallout4/mods/26286/'
         name: 'Boston FPS Fix'
   - name: 'BostonFPSFixAIO.esp'
-    after:
-      # BTInteriors Optimization Replacer (v2, 2E5602A6)
-      - name: 'BTInteriors_Project.esp'
-        condition: 'file("BTInt_Optimization.esp") and checksum("BTInt_Optimization.esp", 2E5602A6)'
-      - 'Farm.esp'
-      - 'Farm_DLCCoast.esp'
-      - 'Farm_DLCNukaWorld.esp'
-      - 'Farm_DLCworkshop03.esp'
-      - 'Magazinemod_OMNI.esp'
-      - 'Nuka-World Collectable Markers.esp'
-      - 'Omni-Better-Beds.esp'
     clean:
       - crc: 0xCFB11F37
         util: 'FO4Edit v4.0.3h (Hotfix 1)'
@@ -2953,11 +2942,6 @@ plugins:
         subs: [ 'BostonFPSFix Automatron' ]
         condition: 'file("BostonFPSFixAutomatron.esp")'
   - name: 'BostonFPSFix(Automatron|FarHarbor|-NukaWorld|-Vanilla|(AIO_)?VD)\.esp'
-    after:
-      - 'Farm.esp'
-      - 'Farm_DLCCoast.esp'
-      - 'Farm_DLCNukaWorld.esp'
-      - 'Farm_DLCworkshop03.esp'
     msg:
       - <<: *alreadyInX
         subs: [ 'BostonFPSFix AIO' ]
