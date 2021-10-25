@@ -3058,7 +3058,7 @@ plugins:
     req: [ 'UltraInteriorLighting.esp' ]
   - name: 'PRP-Compat-UIL-Darker.esp'
     after: [ 'PRP.esp' ]
-    req: [ 'UltraInteriorLighting.esp' ]
+    req: [ 'UltraInteriorLighting_DarkerAmbience.esp' ]
 
 ###### Texture overhauls ######
   - name: 'OVT.esp'
