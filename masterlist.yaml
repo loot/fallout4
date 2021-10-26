@@ -3655,6 +3655,13 @@ plugins:
         name: 'Aloot''s Home Plate'
       - link: 'https://www.nexusmods.com/fallout4/mods/46403/'
         name: 'Previs Repair Pack'
+    after:
+      - 'EnhancedLightsandFX.esp'
+      - 'PRP.esp'
+      - 'PRP-Compat-Clarity-42.esp'
+      - 'PRP-Compat-Clarity-43.esp'
+      - 'PRP-Compat-IntEnh.esp'
+      - 'PRP-Compat-UIL.esp'
     msg:
       - <<: *requiresResources
         subs: [ '[Aloot''s Home Plate](https://www.nexusmods.com/fallout4/mods/44101/)' ]
