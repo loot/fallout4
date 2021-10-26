@@ -3655,6 +3655,14 @@ plugins:
         name: 'Aloot''s Home Plate'
       - link: 'https://www.nexusmods.com/fallout4/mods/46403/'
         name: 'Previs Repair Pack'
+    dirty:
+      - <<: *reqManualFix
+        crc: 0xA8B4559B
+        util: '[FO4Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout4/mods/2737)'
+        nav: 1
+    clean:
+      - crc: 0xB383AAB4
+        util: 'FO4Edit v4.0.3h (Hotfix 1)'
 
 
   # Radrose Usability Enhancements
