@@ -3665,7 +3665,7 @@ plugins:
     msg:
       - <<: *requiresResources
         subs: [ '[Aloot''s Home Plate](https://www.nexusmods.com/fallout4/mods/44101/)' ]
-        condition: 'not file("AlootHomePlate - Main.BA2") and not file("AlootHomePlate - Textures.BA2") and not file("textures/aloot/homeplate/aloot_homeplate_desktoppicture01_d.dds")'
+        condition: 'not file("AlootHomePlate - Textures.BA2") and not file("textures/aloot/homeplate/aloot_homeplate_desktoppicture01_d.dds")'
     dirty:
       - <<: *reqManualFix
         crc: 0xA8B4559B
