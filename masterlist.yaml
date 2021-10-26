@@ -3648,6 +3648,34 @@ plugins:
       - crc: 0xBE77BCCA
         util: 'FO4Edit v4.0.3h (Hotfix 1)'
 
+###### Locations - Player Homes ######
+  - name: 'AlootHomePlate.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/44101/'
+        name: 'Aloot''s Home Plate'
+      - link: 'https://www.nexusmods.com/fallout4/mods/46403/'
+        name: 'Previs Repair Pack'
+    after:
+      - 'EnhancedLightsandFX.esp'
+      - 'PRP.esp'
+      - 'PRP-Compat-Clarity-42.esp'
+      - 'PRP-Compat-Clarity-43.esp'
+      - 'PRP-Compat-IntEnh.esp'
+      - 'PRP-Compat-UIL.esp'
+    msg:
+      - <<: *requiresResources
+        subs: [ '[Aloot''s Home Plate](https://www.nexusmods.com/fallout4/mods/44101/)' ]
+        condition: 'not file("AlootHomePlate - Textures.BA2") and not file("textures/aloot/homeplate/aloot_homeplate_desktoppicture01_d.dds")'
+    dirty:
+      - <<: *reqManualFix
+        crc: 0xA8B4559B
+        util: '[FO4Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout4/mods/2737)'
+        nav: 1
+    clean:
+      - crc: 0xB383AAB4
+        util: 'FO4Edit v4.0.3h (Hotfix 1)'
+
+
   # Radrose Usability Enhancements
   - name: 'Radrose Usability Enhancements.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/18098' ]
