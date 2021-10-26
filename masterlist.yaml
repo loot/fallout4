@@ -3648,6 +3648,9 @@ plugins:
       - crc: 0xBE77BCCA
         util: 'FO4Edit v4.0.3h (Hotfix 1)'
 
+###### Locations - Player Homes ######
+
+
   # Radrose Usability Enhancements
   - name: 'Radrose Usability Enhancements.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/18098' ]
