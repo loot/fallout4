@@ -3029,6 +3029,12 @@ plugins:
       - <<: *alreadyInX
         subs: [ 'Unofficial Fallout 4 Patch' ]
         condition: 'active("Unofficial Fallout 4 Patch.esp") and version("Unofficial Fallout 4 Patch.esp", "2.1.4", >=)'
+  - name: 'PRP-Hotfix-(ColaCars|Mechanist)\.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/46403/' ]
+    msg:
+      - <<: *alreadyInOrFixedByX
+        subs: [ 'Previs Repair Pack v0.53' ]
+        condition: 'version("PRP.esp", "0.53", >=)'
   # Previs Repair Pack - Patches #
   - name: 'Clean_and_Simple_and_Prevised_All_CAS.esp'
     after:
