@@ -3031,18 +3031,30 @@ plugins:
         condition: 'active("Unofficial Fallout 4 Patch.esp") and version("Unofficial Fallout 4 Patch.esp", "2.1.4", >=)'
   # Previs Repair Pack - Patches #
   - name: 'Clean_and_Simple_and_Prevised_All_CAS.esp'
-    after: [ 'PRP.esp' ]
+    after:
+      - 'PRP.esp'
+      - 'PRP-Compat-UEL.esp'
   - name: 'Eli_FactionHousingOverhaul_FarHarbor_Previs.esp'
-    after: [ 'PRP.esp' ]
+    after:
+      - 'PRP.esp'
+      - 'PRP-Compat-Clarity-42.esp'
+      - 'PRP-Compat-Clarity-43.esp'
+      - 'PRP-Compat-IntEnh.esp'
+      - 'PRP-Compat-UIL.esp'
+      - 'PRP-Compat-UIL-Darker.esp'
   - name: 'PRP-Compat-Clarity-42.esp'
-    after: [ 'PRP.esp' ]
+    after:
+      - 'PRP.esp'
+      - 'PRP-Compat-DCA.esp'
     req: [ 'Clarity.esp' ]
     msg:
       - <<: *requiresX
         subs: [ 'Clarity v4.2' ]
         condition: 'not version("Clarity.esp", "4.2", ==)'
   - name: 'PRP-Compat-Clarity-43.esp'
-    after: [ 'PRP.esp' ]
+    after:
+      - 'PRP.esp'
+      - 'PRP-Compat-DCA.esp'
     req: [ 'Clarity.esp' ]
     msg:
       - <<: *requiresX
@@ -3053,6 +3065,8 @@ plugins:
   - name: 'PRP-Compat-IntEnh.esp'
     after: [ 'PRP.esp' ]
     req: [ 'InteriorsEnhanced-All-In-One.esp' ]
+  - name: 'PRP-Compat-RegionNames.esp'
+    after: [ 'PRP-Compat-UEL.esp' ]
   - name: 'PRP-Compat-UIL.esp'
     after: [ 'PRP.esp' ]
     req: [ 'UltraInteriorLighting.esp' ]
