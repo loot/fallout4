@@ -3020,6 +3020,8 @@ plugins:
     clean:
       - crc: 0xF1D4A3C9
         util: 'FO4Edit v4.0.3h (Hotfix 1)'
+      - crc: 0xCFC9D148
+        util: 'FO4Edit v4.0.3h (Hotfix 1)'
   - name: 'ColterFix.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/46403/' ]
     group: *fixesGroup
@@ -3027,6 +3029,48 @@ plugins:
       - <<: *alreadyInX
         subs: [ 'Unofficial Fallout 4 Patch' ]
         condition: 'active("Unofficial Fallout 4 Patch.esp") and version("Unofficial Fallout 4 Patch.esp", "2.1.4", >=)'
+  - name: 'PRP-Hotfix-(ColaCars|Mechanist)\.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/46403/' ]
+    msg:
+      - <<: *alreadyInOrFixedByX
+        subs: [ 'Previs Repair Pack v0.53' ]
+        condition: 'version("PRP.esp", "0.53", >=)'
+  # Previs Repair Pack - Patches #
+  - name: 'Clean_and_Simple_and_Prevised_All_CAS.esp'
+    after:
+      - 'PRP.esp'
+      - 'PRP-Compat-UEL.esp'
+  - name: 'Eli_FactionHousingOverhaul_FarHarbor_Previs.esp'
+    after:
+      - 'PRP.esp'
+      - 'PRP-Compat-Clarity-42.esp'
+      - 'PRP-Compat-Clarity-43.esp'
+      - 'PRP-Compat-IntEnh.esp'
+      - 'PRP-Compat-UIL.esp'
+      - 'PRP-Compat-UIL-Darker.esp'
+  - name: 'PRP-Compat-(Clarity-42|Clarity-43|DCA|IntEnh|RegionNames|UIL|UIL-Darker)\.esp'
+    after: [ 'PRP.esp' ]
+  - name: 'PRP-Compat-Clarity-(42|43)\.esp'
+    after: [ 'PRP-Compat-DCA.esp' ]
+    req: [ 'Clarity.esp' ]
+  - name: 'PRP-Compat-Clarity-42.esp'
+    msg:
+      - <<: *requiresX
+        subs: [ 'Clarity v4.2' ]
+        condition: 'not version("Clarity.esp", "4.2", ==)'
+  - name: 'PRP-Compat-Clarity-43.esp'
+    msg:
+      - <<: *requiresX
+        subs: [ 'Clarity v4.3' ]
+        condition: 'not version("Clarity.esp", "4.3", ==)'
+  - name: 'PRP-Compat-IntEnh.esp'
+    req: [ 'InteriorsEnhanced-All-In-One.esp' ]
+  - name: 'PRP-Compat-RegionNames.esp'
+    after: [ 'PRP-Compat-UEL.esp' ]
+  - name: 'PRP-Compat-UIL.esp'
+    req: [ 'UltraInteriorLighting.esp' ]
+  - name: 'PRP-Compat-UIL-Darker.esp'
+    req: [ 'UltraInteriorLighting_DarkerAmbience.esp' ]
 
 ###### Texture overhauls ######
   - name: 'OVT.esp'
