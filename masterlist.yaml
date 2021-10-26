@@ -3042,36 +3042,28 @@ plugins:
       - 'PRP-Compat-IntEnh.esp'
       - 'PRP-Compat-UIL.esp'
       - 'PRP-Compat-UIL-Darker.esp'
-  - name: 'PRP-Compat-Clarity-42.esp'
-    after:
-      - 'PRP.esp'
-      - 'PRP-Compat-DCA.esp'
+  - name: 'PRP-Compat-(Clarity-42|Clarity-43|DCA|IntEnh|RegionNames|UIL|UIL-Darker)\.esp'
+    after: [ 'PRP.esp' ]
+  - name: 'PRP-Compat-Clarity-(42|43)\.esp'
+    after: [ 'PRP-Compat-DCA.esp' ]
     req: [ 'Clarity.esp' ]
+  - name: 'PRP-Compat-Clarity-42.esp'
     msg:
       - <<: *requiresX
         subs: [ 'Clarity v4.2' ]
         condition: 'not version("Clarity.esp", "4.2", ==)'
   - name: 'PRP-Compat-Clarity-43.esp'
-    after:
-      - 'PRP.esp'
-      - 'PRP-Compat-DCA.esp'
-    req: [ 'Clarity.esp' ]
     msg:
       - <<: *requiresX
         subs: [ 'Clarity v4.3' ]
         condition: 'not version("Clarity.esp", "4.3", ==)'
-  - name: 'PRP-Compat-DCA.esp'
-    after: [ 'PRP.esp' ]
   - name: 'PRP-Compat-IntEnh.esp'
-    after: [ 'PRP.esp' ]
     req: [ 'InteriorsEnhanced-All-In-One.esp' ]
   - name: 'PRP-Compat-RegionNames.esp'
     after: [ 'PRP-Compat-UEL.esp' ]
   - name: 'PRP-Compat-UIL.esp'
-    after: [ 'PRP.esp' ]
     req: [ 'UltraInteriorLighting.esp' ]
   - name: 'PRP-Compat-UIL-Darker.esp'
-    after: [ 'PRP.esp' ]
     req: [ 'UltraInteriorLighting_DarkerAmbience.esp' ]
 
 ###### Texture overhauls ######
