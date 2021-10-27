@@ -3145,6 +3145,7 @@ plugins:
 
   - name: 'Flicker Fixer.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/35720/' ]
+    group: *fixesGroup
 
 ###### AudioVisual - Weather & Lighting ######
   - name: 'EnhancedLightsandFX.esp'
