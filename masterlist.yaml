@@ -3143,6 +3143,10 @@ plugins:
       - crc: 0x9855A3B2
         util: 'FO4Edit v4.0.3g'
 
+  - name: 'Flicker Fixer.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/35720/' ]
+    group: *fixesGroup
+
 ###### AudioVisual - Weather & Lighting ######
   - name: 'EnhancedLightsandFX.esp'
     url:
