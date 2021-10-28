@@ -3721,6 +3721,9 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/54950/'
         name: 'FROST - Exterior Cell Fixes and FPS Boost'
+    clean:
+      - crc: 0x08C0A86B
+        util: 'FO4Edit v4.0.3h (Hotfix 1)'
 
   - name: 'FrostNukaWorld.esp'
     url:
