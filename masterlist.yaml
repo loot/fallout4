@@ -3760,16 +3760,11 @@ plugins:
         name: 'FROST - Unofficial Boston FPS Fix'
     group: *frostGroup
     req: [ 'FROST.esp' ]
-    inc:
-      - 'FROSTExtPR.esp'
-      - 'FROSTIntPR.esp'
+    inc: [ 'FROSTExtPR.esp' ]
     msg:
       - <<: *useInstead
         subs: [ '[FROST - Exterior Cell Fixes and FPS Boost](https://www.nexusmods.com/fallout4/mods/54950/)' ]
         condition: 'active("FROST.esp") and active("RedsFrostFixes.esp") and active("aFrostMod.esp") and not active("FROSTExtPR.esp")'
-      - <<: *useInstead
-        subs: [ '[FROST - Interior Cell Fixes](https://www.nexusmods.com/fallout4/mods/48425/)' ]
-        condition: 'active("FROST.esp") and active("RedsFrostFixes.esp") and active("aFrostMod.esp") and not active("FROSTIntPR.esp")'
     dirty:
       - <<: *quickClean
         crc: 0xE55FEBDC
@@ -3782,7 +3777,9 @@ plugins:
         name: 'FROST Interior Cell Fixes'
   - name: 'FROSTIntPR.esp'
     group: *frostGroup
-    after: [ 'FROSTExtPR.esp' ]
+    after:
+      - 'FROSTExtPR.esp'
+      - 'FROSTfix.esp'
     msg:
       - <<: *patchProvided
         subs: [ 'FROST More Starting Locations' ]
