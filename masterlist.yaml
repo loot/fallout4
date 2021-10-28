@@ -3237,7 +3237,10 @@ plugins:
 
   - name: 'Pip-Boy Flashlight.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/10840/' ]
-    after: [ 'EnhancedLightsandFX.esp' ]
+    after:
+      - 'Clarity.esp'
+      - 'EnhancedLightsandFX.esp'
+      - 'FROST.esp'
     msg:
       - <<: *patch3rdParty
         subs:
