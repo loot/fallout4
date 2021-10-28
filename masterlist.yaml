@@ -1672,8 +1672,12 @@ groups:
     description: 'A group for Horizon modules that need to be sorted late.'
     after: [ *scrapGroup ]
 
-  - name: &dynamicPatchesGroup Dynamic Patches
+  - name: &frostGroup FROST Survival Simulator
+    description: 'A group for FROST modules that need to be sorted late.'
     after: [ *horizonGroup ]
+
+  - name: &dynamicPatchesGroup Dynamic Patches
+    after: [ *frostGroup ]
 
 plugins:
 ###### Official DLC plugins ######
