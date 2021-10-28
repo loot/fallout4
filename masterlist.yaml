@@ -3707,6 +3707,9 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/39985/'
         name: 'FROST - Nuka World AddOn'
+    tag:
+      - Delev
+      - Relev
     dirty:
       - <<: *quickClean
         crc: 0xAEB89A3A
