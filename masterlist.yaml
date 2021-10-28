@@ -3721,6 +3721,19 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/54950/'
         name: 'FROST - Exterior Cell Fixes and FPS Boost'
+    msg:
+      - <<: *patchProvided
+        subs: [ 'FROST Nuka World AddOn' ]
+        condition: 'active("FrostNukaWorld.esp") and not active("FROSTExtPR_NW.esp")'
+      - <<: *patchProvided
+        subs: [ 'FROST The Forest Patch' ]
+        condition: 'active("FROST The Forest Patch.esp") and not active("FROSTExtPR_Forest.esp")'
+      - <<: *patchProvided
+        subs: [ 'FROST The Marshland DLC Patch' ]
+        condition: 'active("Frost_Marshlands_Patch.esp") and not active("FROSTExtPR_Marshland.esp")'
+      - <<: *patchProvided
+        subs: [ 'Ultra Exterior Lighting' ]
+        condition: 'active("UltraExteriorLighting.esp") and not active("FROSTExtPR_UEL.esp")'
     clean:
       - crc: 0x08C0A86B
         util: 'FO4Edit v4.0.3h (Hotfix 1)'
