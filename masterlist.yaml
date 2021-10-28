@@ -1672,8 +1672,12 @@ groups:
     description: 'A group for Horizon modules that need to be sorted late.'
     after: [ *scrapGroup ]
 
-  - name: &dynamicPatchesGroup Dynamic Patches
+  - name: &frostGroup FROST Survival Simulator
+    description: 'A group for FROST modules that need to be sorted late.'
     after: [ *horizonGroup ]
+
+  - name: &dynamicPatchesGroup Dynamic Patches
+    after: [ *frostGroup ]
 
 plugins:
 ###### Official DLC plugins ######
@@ -3678,6 +3682,26 @@ plugins:
     clean:
       - crc: 0xB383AAB4
         util: 'FO4Edit v4.0.3h (Hotfix 1)'
+
+###### FROST Survival Simulator ######
+  - name: 'FROST.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/18898/' ]
+    group: *frostGroup
+    inc: [ 'StartMeUp.esp' ]
+    tag:
+      - Delev
+      - Relev
+    dirty:
+      - <<: *reqManualFix
+        crc: 0xE8D519A5
+        util: '[FO4Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 1935
+        udr: 1971
+        nav: 5
+      - <<: *reqManualFix
+        crc: 0x6CC238FB
+        util: '[FO4Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout4/mods/2737)'
+        nav: 5
 
 
   # Radrose Usability Enhancements
@@ -6534,18 +6558,6 @@ plugins:
   - name: 'RAW INPUT.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/27019' ]
     after: [ 'Z_Horizon.esp' ]
-
-###### FROST ######
-  - name: 'FROST.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/18898/' ]
-    dirty:
-      - <<: *reqManualFix
-        crc: 0xE8D519A5
-        util: '[FO4Edit v4.0.3](https://www.nexusmods.com/fallout4/mods/2737)'
-        itm: 1935
-        udr: 1971
-        nav: 5
-    inc: [ 'StartMeUp.esp' ]
 
 ###### Horizon ######
   - name: 'Z_(Architect|Horizon)\.es(m|p)'
