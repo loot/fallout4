@@ -3768,6 +3768,11 @@ plugins:
       - <<: *useInstead
         subs: [ '[FROST - Interior Cell Fixes](https://www.nexusmods.com/fallout4/mods/48425/)' ]
         condition: 'active("FROST.esp") and active("RedsFrostFixes.esp") and active("aFrostMod.esp") and not active("FROSTIntPR.esp")'
+    dirty:
+      - <<: *quickClean
+        crc: 0xE55FEBDC
+        util: '[FO4Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 6
 
   - name: 'FROSTIntPR.*\.esp'
     url:
