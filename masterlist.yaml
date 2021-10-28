@@ -3754,6 +3754,11 @@ plugins:
   - name: 'FROSTExtPR_UEL.esp'
     req: [ 'UltraExteriorLighting.esp' ]
 
+  - name: 'FROSTfix.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/26182/'
+        name: 'FROST - Unofficial Boston FPS Fix'
+
   - name: 'FROSTIntPR.*\.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/48425/'
