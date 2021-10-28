@@ -3844,6 +3844,10 @@ plugins:
 
   - name: 'FROST Vanilla Signs Removal.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/53867/' ]
+    msg:
+      - <<: *alreadyInX
+        subs: [ 'FROST - Exterior Cell Fixes' ]
+        condition: 'active("FROSTExtPR.esp")'
     clean:
       - crc: 0xF699C893
         util: 'FO4Edit v4.0.3h (Hotfix 1)'
