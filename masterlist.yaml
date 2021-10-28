@@ -3683,6 +3683,9 @@ plugins:
   - name: 'FROST.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/18898/' ]
     inc: [ 'StartMeUp.esp' ]
+    tag:
+      - Delev
+      - Relev
     dirty:
       - <<: *reqManualFix
         crc: 0xE8D519A5
