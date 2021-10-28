@@ -3465,6 +3465,7 @@ plugins:
         itm: 6
   - name: 'Freeze - Vanilla Patch.esp'
     req: [ 'Freeze.esp' ]
+    inc: [ 'FROST.esp' ]
     clean:
       - crc: 0x68487C22
         util: 'FO4Edit v4.0.3h (Hotfix 1)'
