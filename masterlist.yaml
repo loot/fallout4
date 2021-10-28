@@ -3780,6 +3780,11 @@ plugins:
   - name: 'FROSTIntPR_UIL.esp'
     req: [ 'UltraInteriorLighting.esp' ]
 
+  - name: 'FROSTmoreDoors(ConcealLocations)?\.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/46320/'
+        name: 'FROST - More Starting Locations'
+
   - name: 'FrostNukaWorld.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/39985/'
