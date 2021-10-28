@@ -3451,6 +3451,8 @@ plugins:
       - crc: 0x0E2861FA
         util: 'FO4Edit v4.0.3h (Hotfix 1)'
 
+###### Gameplay - Skills, Perks & Leveling ######
+
 ###### Gameplay - User Interface ######
   - name: 'ARWCSM - (\d) - (Full|Modular).*\.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/11061' ]
