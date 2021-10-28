@@ -3703,6 +3703,20 @@ plugins:
         util: '[FO4Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout4/mods/2737)'
         nav: 5
 
+  - name: 'aFrostMod.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/48847/'
+        name: 'FROST Plus'
+    after:
+      - 'FrostNukaWorld.esp'
+      - 'RedsFrostFixes.esp'
+    tag:
+      - Delev
+      - Relev
+    clean:
+      - crc: 0x0CB5B33F
+        util: 'FO4Edit v4.0.3h (Hotfix 1)'
+
   - name: 'FrostNukaWorld.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/39985/'
@@ -3739,20 +3753,6 @@ plugins:
         crc: 0x06337741
         util: '[FO4Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 40
-
-  - name: 'aFrostMod.esp'
-    url:
-      - link: 'https://www.nexusmods.com/fallout4/mods/48847/'
-        name: 'FROST Plus'
-    after:
-      - 'FrostNukaWorld.esp'
-      - 'RedsFrostFixes.esp'
-    tag:
-      - Delev
-      - Relev
-    clean:
-      - crc: 0x0CB5B33F
-        util: 'FO4Edit v4.0.3h (Hotfix 1)'
 
 
   # Radrose Usability Enhancements
