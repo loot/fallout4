@@ -3686,6 +3686,7 @@ plugins:
 ###### FROST Survival Simulator ######
   - name: 'FROST.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/18898/' ]
+    group: *frostGroup
     inc: [ 'StartMeUp.esp' ]
     tag:
       - Delev
