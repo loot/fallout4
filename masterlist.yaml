@@ -3754,6 +3754,28 @@ plugins:
   - name: 'FROSTExtPR_UEL.esp'
     req: [ 'UltraExteriorLighting.esp' ]
 
+  - name: 'FROSTfix.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/26182/'
+        name: 'FROST - Unofficial Boston FPS Fix'
+    group: *frostGroup
+    req: [ 'FROST.esp' ]
+    inc:
+      - 'FROSTExtPR.esp'
+      - 'FROSTIntPR.esp'
+    msg:
+      - <<: *useInstead
+        subs: [ '[FROST - Exterior Cell Fixes and FPS Boost](https://www.nexusmods.com/fallout4/mods/54950/)' ]
+        condition: 'active("FROST.esp") and active("RedsFrostFixes.esp") and active("aFrostMod.esp") and not active("FROSTExtPR.esp")'
+      - <<: *useInstead
+        subs: [ '[FROST - Interior Cell Fixes](https://www.nexusmods.com/fallout4/mods/48425/)' ]
+        condition: 'active("FROST.esp") and active("RedsFrostFixes.esp") and active("aFrostMod.esp") and not active("FROSTIntPR.esp")'
+    dirty:
+      - <<: *quickClean
+        crc: 0xE55FEBDC
+        util: '[FO4Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 6
+
   - name: 'FROSTIntPR.*\.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/48425/'
