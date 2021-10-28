@@ -3842,6 +3842,9 @@ plugins:
         util: '[FO4Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 33
 
+  - name: 'FROST Vanilla Signs Removal.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/53867/' ]
+
   - name: 'FROST_WorkshopPatch.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/48699/'
