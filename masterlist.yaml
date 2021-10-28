@@ -3724,6 +3724,14 @@ plugins:
     clean:
       - crc: 0x08C0A86B
         util: 'FO4Edit v4.0.3h (Hotfix 1)'
+  - name: 'FROSTExtPR_Forest.esp'
+    req:
+      - name: 'FROST The Forest Patch.esp'
+        display: '[FROST The Forest Patch](https://www.nexusmods.com/fallout4/mods/52003/)'
+  - name: 'FROSTExtPR_Marshland.esp'
+    req: [ 'FROSTExtPR.esp' ]
+  - name: 'FROSTExtPR_UEL.esp'
+    req: [ 'UltraExteriorLighting.esp' ]
 
   - name: 'FrostNukaWorld.esp'
     url:
