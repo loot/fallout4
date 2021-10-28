@@ -3707,6 +3707,9 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/48839/'
         name: 'FROST Unofficial Updates'
+    tag:
+      - Delev
+      - Relev
     dirty:
       - <<: *quickClean
         crc: 0x06337741
