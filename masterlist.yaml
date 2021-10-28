@@ -3966,6 +3966,11 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/39619/'
         name: 'FROST Downtown Linked Workbenches'
+    clean:
+      - crc: 0xCF1D9083
+        util: 'FO4Edit v4.0.3h (Hotfix 1)'
+      - crc: 0xE52E3662
+        util: 'FO4Edit v4.0.3h (Hotfix 1)'
 
 
   # Radrose Usability Enhancements
