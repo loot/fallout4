@@ -3703,6 +3703,19 @@ plugins:
         util: '[FO4Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout4/mods/2737)'
         nav: 5
 
+  - name: 'FrostNukaWorld.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/39985/'
+        name: 'FROST - Nuka World AddOn'
+    tag:
+      - Delev
+      - Relev
+    dirty:
+      - <<: *quickClean
+        crc: 0xAEB89A3A
+        util: '[FO4Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 12
+
   - name: 'RedsFrostFixes.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/48839/'
