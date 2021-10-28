@@ -3457,6 +3457,7 @@ plugins:
       - link: 'https://www.nexusmods.com/fallout4/mods/27636/'
         name: 'Freeze Intimidation Overhaul'
   - name: 'Freeze.esp'
+    after: [ 'FROST.esp' ]
     dirty:
       - <<: *quickClean
         crc: 0x968051D1
