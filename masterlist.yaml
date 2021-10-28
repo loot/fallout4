@@ -3844,6 +3844,7 @@ plugins:
 
   - name: 'FROST Vanilla Signs Removal.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/53867/' ]
+    after: [ 'FROSTfix.esp' ]
     msg:
       - <<: *alreadyInX
         subs: [ 'FROST - Exterior Cell Fixes' ]
