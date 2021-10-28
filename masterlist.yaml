@@ -3782,7 +3782,9 @@ plugins:
         name: 'FROST Interior Cell Fixes'
   - name: 'FROSTIntPR.esp'
     group: *frostGroup
-    after: [ 'FROSTExtPR.esp' ]
+    after:
+      - 'FROSTExtPR.esp'
+      - 'FROSTfix.esp'
     msg:
       - <<: *patchProvided
         subs: [ 'FROST More Starting Locations' ]
