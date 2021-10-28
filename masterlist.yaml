@@ -3758,6 +3758,7 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/26182/'
         name: 'FROST - Unofficial Boston FPS Fix'
+    group: *frostGroup
     req: [ 'FROST.esp' ]
     inc:
       - 'FROSTExtPR.esp'
