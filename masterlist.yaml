@@ -3744,6 +3744,9 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/48847/'
         name: 'FROST Plus'
+    after:
+      - 'FrostNukaWorld.esp'
+      - 'RedsFrostFixes.esp'
     tag:
       - Delev
       - Relev
