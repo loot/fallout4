@@ -3722,6 +3722,9 @@ plugins:
       - link: 'https://www.nexusmods.com/fallout4/mods/54950/'
         name: 'FROST - Exterior Cell Fixes and FPS Boost'
   - name: 'FROSTExtPR.esp'
+    inc:
+      - 'FROSTfix.esp'
+      - 'FROST Vanilla Signs Removal.esp'
     msg:
       - <<: *patchProvided
         subs: [ 'FROST Nuka World AddOn' ]
