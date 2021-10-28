@@ -3707,6 +3707,11 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/48839/'
         name: 'FROST Unofficial Updates'
+    dirty:
+      - <<: *quickClean
+        crc: 0x06337741
+        util: '[FO4Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 40
 
 
   # Radrose Usability Enhancements
