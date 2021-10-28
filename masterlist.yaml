@@ -3760,9 +3760,7 @@ plugins:
         name: 'FROST - Unofficial Boston FPS Fix'
     group: *frostGroup
     req: [ 'FROST.esp' ]
-    inc:
-      - 'FROSTExtPR.esp'
-      - 'FROSTIntPR.esp'
+    inc: [ 'FROSTExtPR.esp' ]
     msg:
       - <<: *useInstead
         subs: [ '[FROST - Exterior Cell Fixes and FPS Boost](https://www.nexusmods.com/fallout4/mods/54950/)' ]
