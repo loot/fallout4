@@ -3716,6 +3716,17 @@ plugins:
         util: '[FO4Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 12
 
+  - name: 'FROST_WorkshopPatch.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/48699/'
+        name: 'FROST - Workshop DLC Patch'
+    tag:
+      - Delev
+      - Relev
+    clean:
+      - crc: 0x90F57865
+        util: 'FO4Edit v4.0.3h (Hotfix 1)'
+
   - name: 'RedsFrostFixes.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/48839/'
