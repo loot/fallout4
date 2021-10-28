@@ -3783,6 +3783,11 @@ plugins:
 
   - name: 'FROST - AccessibleMedTekResearch.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/54564/' ]
+    dirty:
+      - <<: *quickClean
+        crc: 0xC1842D79
+        util: '[FO4Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 3
 
   - name: 'FROSTExtPR.*\.esp'
     url:
