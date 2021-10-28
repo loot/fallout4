@@ -3751,10 +3751,11 @@ plugins:
   - name: 'FROSTExtPR_UEL.esp'
     req: [ 'UltraExteriorLighting.esp' ]
 
-  - name: 'FROSTIntPR.esp'
+  - name: 'FROSTIntPR.*\.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/48425/'
         name: 'FROST Interior Cell Fixes'
+  - name: 'FROSTIntPR.esp'
     msg:
       - <<: *patchProvided
         subs: [ 'FROST More Starting Locations' ]
