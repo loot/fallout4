@@ -3858,6 +3858,17 @@ plugins:
         util: '[FO4Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 33
 
+  - name: 'Frost PipTab.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/47585/'
+        name: 'FROST Sanity Tab'
+    req:
+      - name: 'F4SE/Plugins/PipboyTabs.dll'
+        display: '[PipboyTabs](https://www.nexusmods.com/fallout4/mods/29568/)'
+    clean:
+      - crc: 0x56E01A11
+        util: 'FO4Edit v4.0.3h (Hotfix 1)'
+
   - name: 'FROST Portable Instant Workbench.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/53252/'
