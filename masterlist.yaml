@@ -3744,6 +3744,9 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/48847/'
         name: 'FROST Plus'
+    tag:
+      - Delev
+      - Relev
     clean:
       - crc: 0x0CB5B33F
         util: 'FO4Edit v4.0.3h (Hotfix 1)'
