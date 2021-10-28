@@ -3797,10 +3797,11 @@ plugins:
       - crc: 0x5B2E2BEC
         util: 'FO4Edit v4.0.3h (Hotfix 1)'
 
-  - name: 'FrostNukaWorld.esp'
+  - name: 'Frost(NukaWorld| NW Previs Patch)\.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/39985/'
         name: 'FROST - Nuka World AddOn'
+  - name: 'FrostNukaWorld.esp'
     tag:
       - Delev
       - Relev
@@ -3809,6 +3810,15 @@ plugins:
         crc: 0xAEB89A3A
         util: '[FO4Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 12
+  - name: 'FROST NW Previs Patch.esp'
+    inc:
+      - 'FROSTExtPR.esp'
+      - 'FROSTIntPR.esp'
+    dirty:
+      - <<: *quickClean
+        crc: 0xD3664FC8
+        util: '[FO4Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 33
 
   - name: 'FROST_WorkshopPatch.esp'
     url:
