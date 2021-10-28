@@ -3703,6 +3703,11 @@ plugins:
         util: '[FO4Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout4/mods/2737)'
         nav: 5
 
+  - name: 'RedsFrostFixes.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/48839/'
+        name: 'FROST Unofficial Updates'
+
 
   # Radrose Usability Enhancements
   - name: 'Radrose Usability Enhancements.esp'
