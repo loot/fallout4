@@ -3755,6 +3755,9 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/48425/'
         name: 'FROST Interior Cell Fixes'
+    clean:
+      - crc: 0x00AD32AB
+        util: 'FO4Edit v4.0.3h (Hotfix 1)'
 
   - name: 'FrostNukaWorld.esp'
     url:
