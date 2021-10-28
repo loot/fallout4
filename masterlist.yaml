@@ -3717,6 +3717,40 @@ plugins:
       - crc: 0x0CB5B33F
         util: 'FO4Edit v4.0.3h (Hotfix 1)'
 
+  - name: 'FROSTExtPR.*\.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/54950/'
+        name: 'FROST - Exterior Cell Fixes and FPS Boost'
+  - name: 'FROSTExtPR.esp'
+    group: *frostGroup
+    inc:
+      - 'FROSTfix.esp'
+      - 'FROST Vanilla Signs Removal.esp'
+    msg:
+      - <<: *patchProvided
+        subs: [ 'FROST Nuka World AddOn' ]
+        condition: 'active("FrostNukaWorld.esp") and not active("FROSTExtPR_NW.esp")'
+      - <<: *patchProvided
+        subs: [ 'FROST The Forest Patch' ]
+        condition: 'active("FROST The Forest Patch.esp") and not active("FROSTExtPR_Forest.esp")'
+      - <<: *patchProvided
+        subs: [ 'FROST The Marshland DLC Patch' ]
+        condition: 'active("Frost_Marshlands_Patch.esp") and not active("FROSTExtPR_Marshland.esp")'
+      - <<: *patchProvided
+        subs: [ 'Ultra Exterior Lighting' ]
+        condition: 'active("UltraExteriorLighting.esp") and not active("FROSTExtPR_UEL.esp")'
+    clean:
+      - crc: 0x08C0A86B
+        util: 'FO4Edit v4.0.3h (Hotfix 1)'
+  - name: 'FROSTExtPR_Forest.esp'
+    req:
+      - name: 'FROST The Forest Patch.esp'
+        display: '[FROST The Forest Patch](https://www.nexusmods.com/fallout4/mods/52003/)'
+  - name: 'FROSTExtPR_Marshland.esp'
+    req: [ 'FROSTExtPR.esp' ]
+  - name: 'FROSTExtPR_UEL.esp'
+    req: [ 'UltraExteriorLighting.esp' ]
+
   - name: 'FrostNukaWorld.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/39985/'
