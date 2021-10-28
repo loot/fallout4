@@ -3464,6 +3464,7 @@ plugins:
         util: '[FO4Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 6
   - name: 'Freeze - Vanilla Patch.esp'
+    req: [ 'Freeze.esp' ]
     clean:
       - crc: 0x68487C22
         util: 'FO4Edit v4.0.3h (Hotfix 1)'
