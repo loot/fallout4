@@ -3862,6 +3862,9 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/53252/'
         name: 'FROST Survival Kit'
+    clean:
+      - crc: 0x9DC16282
+        util: 'FO4Edit v4.0.3h (Hotfix 1)'
 
   - name: 'FROST Vanilla Signs Removal.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/53867/' ]
