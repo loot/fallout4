@@ -3784,6 +3784,17 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/46320/'
         name: 'FROST - More Starting Locations'
+  - name: 'FROSTmoreDoors.esp'
+    dirty:
+      - <<: *quickClean
+        crc: 0xC6E5CD81
+        util: '[FO4Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 8
+        udr: 1
+  - name: 'FROSTMoreDoorConcealLocations.esp'
+    clean:
+      - crc: 0x5B2E2BEC
+        util: 'FO4Edit v4.0.3h (Hotfix 1)'
 
   - name: 'FrostNukaWorld.esp'
     url:
