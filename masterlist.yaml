@@ -3781,6 +3781,9 @@ plugins:
       - crc: 0xBB53B6B5
         util: 'FO4Edit v4.0.3h (Hotfix 1)'
 
+  - name: 'FROST - AccessibleMedTekResearch.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/54564/' ]
+
   - name: 'FROSTExtPR.*\.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/54950/'
