@@ -3755,6 +3755,11 @@ plugins:
           - 'Automatron, Contraptions Workshop & Wasteland Workshop'
           - '[FROST - Workshop DLC Patch](https://www.nexusmods.com/fallout4/mods/48699/)'
         condition: 'active("DLCCoast.esm") and active("DLCNukaWorld.esm") and active("DLCRobot.esm") and active("DLCworkshop01.esm") and active("DLCworkshop02.esm") and active("DLCworkshop03.esm") and not active("FROST_WorkshopPatch.esp")'
+      - <<: *patch3rdParty
+        subs:
+          - 'Crossbows of the Commonwealth'
+          - '[FROST Better Crossbow Weapon Patch](https://www.nexusmods.com/fallout4/mods/53168/)'
+        condition: 'active("Crossbow.esp") and not active("Frost PatchCrossbow.esp")'
     tag:
       - Delev
       - Relev
