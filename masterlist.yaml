@@ -3912,6 +3912,9 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/53168/'
         name: 'FROST Better Crossbow Weapon Patch'
+    clean:
+      - crc: 0xB993C252
+        util: 'FO4Edit v4.0.3h (Hotfix 1)'
 
   - name: 'Frost PipTab.esp'
     url:
