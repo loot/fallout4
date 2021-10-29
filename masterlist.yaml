@@ -3953,6 +3953,9 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/28833/'
         name: 'FROST - Crossbows of the Commonwealth Patch'
+    msg:
+      - <<: *useInstead
+        subs: [ '[FROST Better Crossbow Weapon Patch](https://www.nexusmods.com/fallout4/mods/53168/)' ]
 
   - name: 'RedsFrostFixes.esp'
     url:
