@@ -3740,6 +3740,10 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout4/mods/18898/' ]
     group: *frostGroup
     inc: [ 'StartMeUp.esp' ]
+    msg:
+      - <<: *alsoUseX
+        subs: [ '[FROST Unofficial Updates](https://www.nexusmods.com/fallout4/mods/48839/)' ]
+        condition: 'active("DLCRobot.esm") and active("DLCCoast.esm") and active("DLCNukaWorld.esm") and not active("RedsFrostFixes.esp")'
     tag:
       - Delev
       - Relev
