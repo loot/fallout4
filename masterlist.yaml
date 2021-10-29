@@ -3743,13 +3743,13 @@ plugins:
     msg:
       - <<: *alsoUseX
         subs: [ '[FROST - Nuka World AddOn](https://www.nexusmods.com/fallout4/mods/39985/)' ]
-        condition: 'active("DLCRobot.esm") and active("DLCCoast.esm") and active("DLCNukaWorld.esm") and not active("FrostNukaWorld.esp")'
+        condition: 'active("DLCCoast.esm") and active("DLCNukaWorld.esm") and active("DLCRobot.esm") and not active("FrostNukaWorld.esp")'
       - <<: *alsoUseX
         subs: [ '[FROST Plus](https://www.nexusmods.com/fallout4/mods/48847/)' ]
-        condition: 'active("DLCRobot.esm") and active("DLCCoast.esm") and active("DLCNukaWorld.esm") and not active("aFrostMod.esp")'
+        condition: 'active("DLCCoast.esm") and active("DLCNukaWorld.esm") and active("DLCRobot.esm") and not active("aFrostMod.esp")'
       - <<: *alsoUseX
         subs: [ '[FROST Unofficial Updates](https://www.nexusmods.com/fallout4/mods/48839/)' ]
-        condition: 'active("DLCRobot.esm") and active("DLCCoast.esm") and active("DLCNukaWorld.esm") and not active("RedsFrostFixes.esp")'
+        condition: 'active("DLCCoast.esm") and active("DLCNukaWorld.esm") and active("DLCRobot.esm") and not active("RedsFrostFixes.esp")'
       - <<: *patch3rdParty
         subs:
           - 'Automatron, Contraptions Workshop & Wasteland Workshop'
