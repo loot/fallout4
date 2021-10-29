@@ -3347,6 +3347,8 @@ plugins:
         udr: 9
 
 ###### Gameplay - Crafting, Harvesting & Scrapping ######
+  - name: 'ScrapThatMisc.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/5673/' ]
 
 ###### Gameplay - NPC Behaviour & Dialogue ######
   - name: 'DeaconClothingCK.esp'
