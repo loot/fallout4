@@ -3760,6 +3760,11 @@ plugins:
           - 'Crossbows of the Commonwealth'
           - '[FROST Better Crossbow Weapon Patch](https://www.nexusmods.com/fallout4/mods/53168/)'
         condition: 'active("Crossbow.esp") and not active("Frost PatchCrossbow.esp")'
+      - <<: *patch3rdParty
+        subs:
+          - 'Human Cooking'
+          - '[Updated FROST - Human Cooking Patch](https://www.nexusmods.com/fallout4/mods/54017/)'
+        condition: 'active("HumanMeat.esp") and not active("Patch - FROST & Human Cooking.esp")'
     tag:
       - Delev
       - Relev
