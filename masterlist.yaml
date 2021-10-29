@@ -3740,19 +3740,40 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout4/mods/18898/' ]
     group: *frostGroup
     inc: [ 'StartMeUp.esp' ]
+    msg:
+      - <<: *alsoUseX
+        subs: [ '[FROST - Nuka World AddOn](https://www.nexusmods.com/fallout4/mods/39985/)' ]
+        condition: 'active("DLCCoast.esm") and active("DLCNukaWorld.esm") and active("DLCRobot.esm") and not active("FrostNukaWorld.esp")'
+      - <<: *alsoUseX
+        subs: [ '[FROST Plus](https://www.nexusmods.com/fallout4/mods/48847/)' ]
+        condition: 'active("DLCCoast.esm") and active("DLCNukaWorld.esm") and active("DLCRobot.esm") and not active("aFrostMod.esp")'
+      - <<: *alsoUseX
+        subs: [ '[FROST Unofficial Updates](https://www.nexusmods.com/fallout4/mods/48839/)' ]
+        condition: 'active("DLCCoast.esm") and active("DLCNukaWorld.esm") and active("DLCRobot.esm") and not active("RedsFrostFixes.esp")'
+      - <<: *patch3rdParty
+        subs:
+          - 'Automatron, Contraptions Workshop & Wasteland Workshop'
+          - '[FROST - Workshop DLC Patch](https://www.nexusmods.com/fallout4/mods/48699/)'
+        condition: 'active("DLCCoast.esm") and active("DLCNukaWorld.esm") and active("DLCRobot.esm") and active("DLCworkshop01.esm") and active("DLCworkshop02.esm") and active("DLCworkshop03.esm") and not active("FROST_WorkshopPatch.esp")'
+      - <<: *patch3rdParty
+        subs:
+          - 'Crossbows of the Commonwealth'
+          - '[FROST Better Crossbow Weapon Patch](https://www.nexusmods.com/fallout4/mods/53168/)'
+        condition: 'active("Crossbow.esp") and not active("Frost PatchCrossbow.esp")'
+      - <<: *patch3rdParty
+        subs:
+          - 'Human Cooking'
+          - '[Updated FROST - Human Cooking Patch](https://www.nexusmods.com/fallout4/mods/54017/)'
+        condition: 'active("HumanMeat.esp") and not active("Patch - FROST & Human Cooking.esp")'
     tag:
       - Delev
       - Relev
     dirty:
-      - <<: *reqManualFix
+      - <<: *quickClean
         crc: 0xE8D519A5
         util: '[FO4Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 1935
         udr: 1971
-        nav: 5
-      - <<: *reqManualFix
-        crc: 0x6CC238FB
-        util: '[FO4Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout4/mods/2737)'
         nav: 5
 
   - name: 'aFrostMod.esp'
