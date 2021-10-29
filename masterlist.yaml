@@ -3349,6 +3349,9 @@ plugins:
 ###### Gameplay - Crafting, Harvesting & Scrapping ######
   - name: 'ScrapThatMisc.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/5673/' ]
+    clean:
+      - crc: 0x2ADD86AE
+        util: 'FO4Edit v4.0.3h (Hotfix 1)'
 
 ###### Gameplay - NPC Behaviour & Dialogue ######
   - name: 'DeaconClothingCK.esp'
