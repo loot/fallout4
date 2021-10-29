@@ -3759,15 +3759,11 @@ plugins:
       - Delev
       - Relev
     dirty:
-      - <<: *reqManualFix
+      - <<: *quickClean
         crc: 0xE8D519A5
         util: '[FO4Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 1935
         udr: 1971
-        nav: 5
-      - <<: *reqManualFix
-        crc: 0x6CC238FB
-        util: '[FO4Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout4/mods/2737)'
         nav: 5
 
   - name: 'aFrostMod.esp'
