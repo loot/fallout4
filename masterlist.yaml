@@ -3750,6 +3750,11 @@ plugins:
       - <<: *alsoUseX
         subs: [ '[FROST Unofficial Updates](https://www.nexusmods.com/fallout4/mods/48839/)' ]
         condition: 'active("DLCRobot.esm") and active("DLCCoast.esm") and active("DLCNukaWorld.esm") and not active("RedsFrostFixes.esp")'
+      - <<: *patch3rdParty
+        subs:
+          - 'Automatron, Contraptions Workshop & Wasteland Workshop'
+          - '[FROST - Workshop DLC Patch](https://www.nexusmods.com/fallout4/mods/48699/)'
+        condition: 'active("DLCCoast.esm") and active("DLCNukaWorld.esm") and active("DLCRobot.esm") and active("DLCworkshop01.esm") and active("DLCworkshop02.esm") and active("DLCworkshop03.esm") and not active("FROST_WorkshopPatch.esp")'
     tag:
       - Delev
       - Relev
