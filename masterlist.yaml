@@ -3954,6 +3954,8 @@ plugins:
       - link: 'https://www.nexusmods.com/fallout4/mods/28833/'
         name: 'FROST - Crossbows of the Commonwealth Patch'
     msg:
+      - <<: *deleteOrDeactivateX
+        condition: 'active("Frost PatchCrossbow.esp")'
       - <<: *useInstead
         subs: [ '[FROST Better Crossbow Weapon Patch](https://www.nexusmods.com/fallout4/mods/53168/)' ]
 
