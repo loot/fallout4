@@ -3949,6 +3949,11 @@ plugins:
       - crc: 0x90F57865
         util: 'FO4Edit v4.0.3h (Hotfix 1)'
 
+  - name: 'Grhk_FROST_(VIS-G_)?Crossbow_Patch\.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/28833/'
+        name: 'FROST - Crossbows of the Commonwealth Patch'
+
   - name: 'RedsFrostFixes.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/48839/'
