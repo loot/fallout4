@@ -1677,6 +1677,7 @@ groups:
     after: [ *horizonGroup ]
 
   - name: &worldSettingsGroup Worldspace Settings
+    description: 'A group for modules that need to be loaded late to preserve worldspace settings.'
     after: [ *frostGroup ]
 
   - name: &dynamicPatchesGroup Dynamic Patches
