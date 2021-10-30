@@ -3519,6 +3519,14 @@ plugins:
         util: 'FO4Edit v4.0.3h (Hotfix 1)'
 
 ###### Gameplay - User Interface ######
+  - name: 'SatelliteWorldMap.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/8989/' ]
+    group: *worldSettingsGroup
+    clean:
+      - crc: 0xCB23BF1E
+        util: 'FO4Edit v4.0.3h (Hotfix 1)'
+
+###### Gameplay - User Interface - Sorting & Tagging ######
   - name: 'ARWCSM - (\d) - (Full|Modular).*\.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/11061' ]
     inc: [ 'Z_Horizon.esp' ]
