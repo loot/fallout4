@@ -3897,6 +3897,7 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/28822/'
         name: 'LevelUpMenuEx'
+    req: [ 'FROST.esp' ]
 
   - name: 'FROSTIntPR.*\.esp'
     url:
