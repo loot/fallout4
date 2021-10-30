@@ -1676,8 +1676,12 @@ groups:
     description: 'A group for FROST modules that need to be sorted late.'
     after: [ *horizonGroup ]
 
-  - name: &dynamicPatchesGroup Dynamic Patches
+  - name: &worldSettingsGroup Worldspace Settings
+    description: 'A group for modules that need to be loaded late to preserve worldspace settings.'
     after: [ *frostGroup ]
+
+  - name: &dynamicPatchesGroup Dynamic Patches
+    after: [ *worldSettingsGroup ]
 
 plugins:
 ###### Official DLC plugins ######
