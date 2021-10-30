@@ -3898,6 +3898,10 @@ plugins:
       - link: 'https://www.nexusmods.com/fallout4/mods/28822/'
         name: 'LevelUpMenuEx'
     req: [ 'FROST.esp' ]
+    msg:
+      - <<: *alreadyInOrFixedByX
+        subs: [ 'FROST Unofficial Updates' ]
+        condition: 'active("RedsFrostFixes.esp")'
 
   - name: 'FROSTIntPR.*\.esp'
     url:
