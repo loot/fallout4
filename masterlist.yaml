@@ -3035,6 +3035,9 @@ plugins:
         subs: [ 'Faction Housing Overhaul AIO - Far Harbour' ]
         condition: 'active("DLCCoast.esm") and active("Eli_Faction Housing Overhaul - AiO.esp") and not active("Eli_FactionHousingOverhaul_FarHarbor_Previs.esp")'
       - <<: *patchProvided
+        subs: [ 'FogOut Interiors All DLC' ]
+        condition: 'active("FogOut - Interiors - All DLC.esp") and not active("PRP-Compat-Fogout-Int.esp")'
+      - <<: *patchProvided
         subs: [ 'Interiors Enhanced AIO' ]
         condition: 'active("InteriorsEnhanced-All-In-One.esp") and not active("PRP-Compat-IntEnh.esp")'
       - <<: *patchProvided
@@ -3069,6 +3072,7 @@ plugins:
         condition: 'active("Unofficial Fallout 4 Patch.esp") and version("Unofficial Fallout 4 Patch.esp", "2.1.4", >=)'
   - name: 'PRP-Hotfix-(ColaCars|Mechanist)\.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/46403/' ]
+    after: [ 'PRP.esp' ]
     msg:
       - <<: *alreadyInOrFixedByX
         subs: [ 'Previs Repair Pack v0.53' ]
@@ -3086,7 +3090,7 @@ plugins:
       - 'PRP-Compat-IntEnh.esp'
       - 'PRP-Compat-UIL.esp'
       - 'PRP-Compat-UIL-Darker.esp'
-  - name: 'PRP-Compat-(Clarity-42|Clarity-43|DCA|IntEnh|RegionNames|UIL|UIL-Darker)\.esp'
+  - name: 'PRP-Compat-(Clarity-42|Clarity-43|DCA|Fogout-Int|IntEnh|RegionNames|UIL|UIL-Darker)\.esp'
     after: [ 'PRP.esp' ]
   - name: 'PRP-Compat-Clarity-(42|43)\.esp'
     after: [ 'PRP-Compat-DCA.esp' ]
@@ -3101,6 +3105,8 @@ plugins:
       - <<: *requiresX
         subs: [ 'Clarity v4.3' ]
         condition: 'not version("Clarity.esp", "4.3", ==)'
+  - name: 'PRP-Compat-Fogout-Int.esp'
+    req: [ 'FogOut - Interiors - All DLC.esp' ]
   - name: 'PRP-Compat-IntEnh.esp'
     req: [ 'InteriorsEnhanced-All-In-One.esp' ]
   - name: 'PRP-Compat-RegionNames.esp'
