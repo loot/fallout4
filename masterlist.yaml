@@ -3939,6 +3939,11 @@ plugins:
   - name: 'FROSTIntPR_UIL.esp'
     req: [ 'UltraInteriorLighting.esp' ]
 
+  - name: 'FROST - It Snowed.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/49094/'
+        name: 'FROST It Snowed Winter Textures'
+
   - name: 'FROSTmoreDoors(ConcealLocations)?\.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/46320/'
