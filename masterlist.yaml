@@ -3858,6 +3858,9 @@ plugins:
 
   - name: 'FROST - AccessibleFortHagen.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/55398/' ]
+    clean:
+      - crc: 0xEEC07FD4
+        util: 'FO4Edit v4.0.3h (Hotfix 1)'
 
   - name: 'FROST - AccessibleFortStrong.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/54873/' ]
