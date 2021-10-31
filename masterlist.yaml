@@ -3845,6 +3845,7 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/35979/'
         name: 'FROST - Human Cooking Patch'
+    inc: [ 'Patch - FROST & Human Cooking.esp' ]
     msg:
       - <<: *useInstead
         subs: [ '[Updated FROST - Human Cooking Patch](https://www.nexusmods.com/fallout4/mods/54017/)' ]
