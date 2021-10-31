@@ -3832,6 +3832,9 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/38223/'
         name: 'More Ghouls For Frost'
+    tag:
+      - Delev
+      - Relev
 
   - name: 'FROST - AccessibleArcJet.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/53923/' ]
