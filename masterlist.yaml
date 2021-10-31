@@ -4055,6 +4055,14 @@ plugins:
       - crc: 0xE52E3662
         util: 'FO4Edit v4.0.3h (Hotfix 1)'
 
+  - name: 'shep frost downtown rooms.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/25491/'
+        name: 'Frost Downtown Monohome'
+    clean:
+      - crc: 0x1EB90950
+        util: 'FO4Edit v4.0.3h (Hotfix 1)'
+
 
   # Radrose Usability Enhancements
   - name: 'Radrose Usability Enhancements.esp'
