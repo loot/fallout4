@@ -3057,7 +3057,7 @@ plugins:
         condition: 'active("FROST.esp") and active("RedsFrostFixes.esp") and active("aFrostMod.esp") and not active("FROSTExtPR.esp")'
       - <<: *useInstead
         subs: [ '[FROST - Interior Cell Fixes](https://www.nexusmods.com/fallout4/mods/48425/)' ]
-        condition: 'active("FROST.esp") and active("RedsFrostFixes.esp") and active("aFrostMod.esp") and not active("FROSTIntPR.esp")'
+        condition: 'active("FROST.esp") and not active("FROSTIntPR.esp")'
     clean:
       - crc: 0xF1D4A3C9
         util: 'FO4Edit v4.0.3h (Hotfix 1)'
