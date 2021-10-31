@@ -3035,6 +3035,9 @@ plugins:
         subs: [ 'Faction Housing Overhaul AIO - Far Harbour' ]
         condition: 'active("DLCCoast.esm") and active("Eli_Faction Housing Overhaul - AiO.esp") and not active("Eli_FactionHousingOverhaul_FarHarbor_Previs.esp")'
       - <<: *patchProvided
+        subs: [ 'FogOut Interiors All DLC' ]
+        condition: 'active("FogOut - Interiors - All DLC.esp") and not active("PRP-Compat-Fogout-Int.esp")'
+      - <<: *patchProvided
         subs: [ 'Interiors Enhanced AIO' ]
         condition: 'active("InteriorsEnhanced-All-In-One.esp") and not active("PRP-Compat-IntEnh.esp")'
       - <<: *patchProvided
