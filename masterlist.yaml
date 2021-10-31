@@ -3835,6 +3835,11 @@ plugins:
     tag:
       - Delev
       - Relev
+    dirty:
+      - <<: *quickClean
+        crc: 0x4DF259D1
+        util: '[FO4Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 5
 
   - name: 'FROST - AccessibleArcJet.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/53923/' ]
