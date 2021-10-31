@@ -3057,7 +3057,7 @@ plugins:
         condition: 'active("FROST.esp") and active("RedsFrostFixes.esp") and active("aFrostMod.esp") and not active("FROSTExtPR.esp")'
       - <<: *useInstead
         subs: [ '[FROST - Interior Cell Fixes](https://www.nexusmods.com/fallout4/mods/48425/)' ]
-        condition: 'active("FROST.esp") and active("RedsFrostFixes.esp") and active("aFrostMod.esp") and not active("FROSTIntPR.esp")'
+        condition: 'active("FROST.esp") and not active("FROSTIntPR.esp")'
     clean:
       - crc: 0xF1D4A3C9
         util: 'FO4Edit v4.0.3h (Hotfix 1)'
@@ -3774,6 +3774,12 @@ plugins:
     inc: [ 'StartMeUp.esp' ]
     msg:
       - <<: *alsoUseX
+        subs: [ '[FROST - Exterior Cell Fixes and FPS Boost](https://www.nexusmods.com/fallout4/mods/54950/)' ]
+        condition: 'active("DLCworkshop03.esm") and active("RedsFrostFixes.esp") and active("aFrostMod.esp") and not active("FROSTExtPR.esp")'
+      - <<: *alsoUseX
+        subs: [ '[FROST - Interior Cell Fixes](https://www.nexusmods.com/fallout4/mods/48425/)' ]
+        condition: 'active("DLCCoast.esm") and active("DLCNukaWorld.esm") and active("DLCRobot.esm") and not active("FROSTIntPR.esp")'
+      - <<: *alsoUseX
         subs: [ '[FROST - Nuka World AddOn](https://www.nexusmods.com/fallout4/mods/39985/)' ]
         condition: 'active("DLCCoast.esm") and active("DLCNukaWorld.esm") and active("DLCRobot.esm") and not active("FrostNukaWorld.esp")'
       - <<: *alsoUseX
@@ -3915,18 +3921,20 @@ plugins:
     msg:
       - <<: *patchProvided
         subs: [ 'FROST More Starting Locations' ]
-        condition: 'active("FROSTmoreDoors.esp") and not active("FROSTIntPR_MoreDoors.esp")'
+        condition: 'version("FROSTIntPR.esp", "2.2", >=) and active("FROSTmoreDoors.esp") and not active("FROSTIntPR_MoreDoors.esp")'
       - <<: *patchProvided
         subs: [ 'FROST Nuka World AddOn' ]
-        condition: 'active("FrostNukaWorld.esp") and not active("FROSTIntPR_NW.esp")'
+        condition: 'version("FROSTIntPR.esp", "2.2", >=) and active("FrostNukaWorld.esp") and not active("FROSTIntPR_NW.esp")'
       - <<: *patchProvided
         subs: [ 'Ultra Interior Lighting' ]
-        condition: 'active("UltraInteriorLighting.esp") and not active("FROSTIntPR_UIL.esp")'
+        condition: 'version("FROSTIntPR.esp", "2.2", >=) and active("UltraInteriorLighting.esp") and not active("FROSTIntPR_UIL.esp")'
       - <<: *patchProvided
         subs: [ 'Ultra Interior Lighting & FROST Nuka World AddOn' ]
-        condition: 'active("FROSTIntPR_NW.esp") and active("FROSTIntPR_UIL.esp") and not active("FROSTIntPR_NW_UIL.esp")'
+        condition: 'version("FROSTIntPR.esp", "2.2", >=) and active("FROSTIntPR_NW.esp") and active("FROSTIntPR_UIL.esp") and not active("FROSTIntPR_NW_UIL.esp")'
     clean:
-      - crc: 0x00AD32AB
+      - crc: 0xFC27D866
+        util: 'FO4Edit v4.0.3h (Hotfix 1)'
+      - crc: 0xBFFEA3DE
         util: 'FO4Edit v4.0.3h (Hotfix 1)'
   - name: 'FROSTIntPR_UIL.esp'
     req: [ 'UltraInteriorLighting.esp' ]
