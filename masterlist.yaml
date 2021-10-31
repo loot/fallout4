@@ -3087,7 +3087,7 @@ plugins:
       - 'PRP-Compat-IntEnh.esp'
       - 'PRP-Compat-UIL.esp'
       - 'PRP-Compat-UIL-Darker.esp'
-  - name: 'PRP-Compat-(Clarity-42|Clarity-43|DCA|IntEnh|RegionNames|UIL|UIL-Darker)\.esp'
+  - name: 'PRP-Compat-(Clarity-42|Clarity-43|DCA|Fogout-Int|IntEnh|RegionNames|UIL|UIL-Darker)\.esp'
     after: [ 'PRP.esp' ]
   - name: 'PRP-Compat-Clarity-(42|43)\.esp'
     after: [ 'PRP-Compat-DCA.esp' ]
