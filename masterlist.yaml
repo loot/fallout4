@@ -3943,6 +3943,11 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/49094/'
         name: 'FROST It Snowed Winter Textures'
+    dirty:
+      - <<: *quickClean
+        crc: 0x8FB5CE1C
+        util: '[FO4Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 5
 
   - name: 'FROSTmoreDoors(ConcealLocations)?\.esp'
     url:
