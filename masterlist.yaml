@@ -3845,6 +3845,9 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/35979/'
         name: 'FROST - Human Cooking Patch'
+    msg:
+      - <<: *useInstead
+        subs: [ '[Updated FROST - Human Cooking Patch](https://www.nexusmods.com/fallout4/mods/54017/)' ]
 
   - name: 'FROST - AccessibleArcJet.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/53923/' ]
