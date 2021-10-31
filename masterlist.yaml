@@ -3893,6 +3893,16 @@ plugins:
         util: '[FO4Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 6
 
+  - name: 'FROST_FIX.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/28822/'
+        name: 'LevelUpMenuEx'
+    req: [ 'FROST.esp' ]
+    msg:
+      - <<: *alreadyInOrFixedByX
+        subs: [ 'FROST Unofficial Updates' ]
+        condition: 'active("RedsFrostFixes.esp")'
+
   - name: 'FROSTIntPR.*\.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/48425/'
