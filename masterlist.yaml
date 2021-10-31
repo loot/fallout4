@@ -3102,6 +3102,8 @@ plugins:
       - <<: *requiresX
         subs: [ 'Clarity v4.3' ]
         condition: 'not version("Clarity.esp", "4.3", ==)'
+  - name: 'PRP-Compat-Fogout-Int.esp'
+    req: [ 'FogOut - Interiors - All DLC.esp' ]
   - name: 'PRP-Compat-IntEnh.esp'
     req: [ 'InteriorsEnhanced-All-In-One.esp' ]
   - name: 'PRP-Compat-RegionNames.esp'
