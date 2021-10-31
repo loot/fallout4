@@ -3915,16 +3915,16 @@ plugins:
     msg:
       - <<: *patchProvided
         subs: [ 'FROST More Starting Locations' ]
-        condition: 'active("FROSTmoreDoors.esp") and not active("FROSTIntPR_MoreDoors.esp")'
+        condition: 'version("FROSTIntPR.esp", "2.2", >=) and active("FROSTmoreDoors.esp") and not active("FROSTIntPR_MoreDoors.esp")'
       - <<: *patchProvided
         subs: [ 'FROST Nuka World AddOn' ]
-        condition: 'active("FrostNukaWorld.esp") and not active("FROSTIntPR_NW.esp")'
+        condition: 'version("FROSTIntPR.esp", "2.2", >=) and active("FrostNukaWorld.esp") and not active("FROSTIntPR_NW.esp")'
       - <<: *patchProvided
         subs: [ 'Ultra Interior Lighting' ]
-        condition: 'active("UltraInteriorLighting.esp") and not active("FROSTIntPR_UIL.esp")'
+        condition: 'version("FROSTIntPR.esp", "2.2", >=) and active("UltraInteriorLighting.esp") and not active("FROSTIntPR_UIL.esp")'
       - <<: *patchProvided
         subs: [ 'Ultra Interior Lighting & FROST Nuka World AddOn' ]
-        condition: 'active("FROSTIntPR_NW.esp") and active("FROSTIntPR_UIL.esp") and not active("FROSTIntPR_NW_UIL.esp")'
+        condition: 'version("FROSTIntPR.esp", "2.2", >=) and active("FROSTIntPR_NW.esp") and active("FROSTIntPR_UIL.esp") and not active("FROSTIntPR_NW_UIL.esp")'
     clean:
       - crc: 0xFC27D866
         util: 'FO4Edit v4.0.3h (Hotfix 1)'
