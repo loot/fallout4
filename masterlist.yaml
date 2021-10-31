@@ -3828,6 +3828,19 @@ plugins:
       - crc: 0x0CB5B33F
         util: 'FO4Edit v4.0.3h (Hotfix 1)'
 
+  - name: 'ChillGhouls.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/38223/'
+        name: 'More Ghouls For Frost'
+    tag:
+      - Delev
+      - Relev
+    dirty:
+      - <<: *quickClean
+        crc: 0x4DF259D1
+        util: '[FO4Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 5
+
   - name: 'FROST - AccessibleArcJet.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/53923/' ]
     clean:
