@@ -4075,6 +4075,9 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/50618/'
         name: 'FROST Dark Calling - Supermutant Locations Overhaul'
+    after:
+      - 'FROST - It Snowed.esp'
+      - 'FrostNukaWorld.esp'
     dirty:
       - <<: *quickClean
         crc: 0xA670E8B0
