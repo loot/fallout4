@@ -3821,6 +3821,7 @@ plugins:
     after:
       - 'FrostNukaWorld.esp'
       - 'RedsFrostFixes.esp'
+    inc: [ 'Frost - NewGame.esp' ]
     tag:
       - Delev
       - Relev
