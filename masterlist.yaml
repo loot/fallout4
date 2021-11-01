@@ -3941,6 +3941,16 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/50008/'
         name: 'FROST Hunkered Down - Commonwealth Overhaul'
+  - name: 'FROST - Hunkered Down.esp'
+    dirty:
+      - <<: *quickClean
+        crc: 0x36F6C4F1
+        util: '[FO4Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 2
+  - name: 'FROST - Hunkered Down-Settlements.esp'
+    clean:
+      - crc: 0x28A74F67
+        util: 'FO4Edit v4.0.3h (Hotfix 1)'
 
   - name: 'FROSTIntPR.*\.esp'
     url:
