@@ -3831,6 +3831,13 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/48847/'
         name: 'FROST Plus'
+  - name: 'IV_LootableCars_Misc_Stable.esp'
+    after:
+      - 'aFrostMod.esp'
+      - 'FrostNukaWorld.esp'
+      - 'RedsFrostFixes.esp'
+  - name: 'IV_Misc_BoiledWaterBottles.esp'
+    after: [ 'aFrostMod.esp' ]
 
   - name: 'ChillGhouls.esp'
     url:
