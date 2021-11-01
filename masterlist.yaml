@@ -4078,6 +4078,7 @@ plugins:
     after:
       - 'FROST - It Snowed.esp'
       - 'FrostNukaWorld.esp'
+    tag: [ Relev ]
     dirty:
       - <<: *quickClean
         crc: 0xA670E8B0
