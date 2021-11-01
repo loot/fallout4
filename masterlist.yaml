@@ -3942,6 +3942,9 @@ plugins:
       - link: 'https://www.nexusmods.com/fallout4/mods/50008/'
         name: 'FROST Hunkered Down - Commonwealth Overhaul'
   - name: 'FROST - Hunkered Down.esp'
+    after:
+      - 'FROST - It Snowed.esp'
+      - 'FrostNukaWorld.esp'
     dirty:
       - <<: *quickClean
         crc: 0x36F6C4F1
