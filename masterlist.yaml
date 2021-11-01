@@ -3937,6 +3937,11 @@ plugins:
         subs: [ 'FROST Unofficial Updates' ]
         condition: 'active("RedsFrostFixes.esp")'
 
+  - name: 'FROST - Hunkered Down(-Settlements)?\.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/50008/'
+        name: 'FROST Hunkered Down - Commonwealth Overhaul'
+
   - name: 'FROSTIntPR.*\.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/48425/'
