@@ -4071,6 +4071,20 @@ plugins:
       - crc: 0x4B533F1B
         util: 'FO4Edit v4.0.3h (Hotfix 1)'
 
+  - name: 'FROST - SuperMutantLocations.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/50618/'
+        name: 'FROST Dark Calling - Supermutant Locations Overhaul'
+    after:
+      - 'FROST - It Snowed.esp'
+      - 'FrostNukaWorld.esp'
+    tag: [ Relev ]
+    dirty:
+      - <<: *quickClean
+        crc: 0xA670E8B0
+        util: '[FO4Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 21
+
   - name: 'FROST Vanilla Signs Removal.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/53867/' ]
     after: [ 'FROSTfix.esp' ]
