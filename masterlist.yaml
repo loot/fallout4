@@ -4024,6 +4024,11 @@ plugins:
       - crc: 0x5B2E2BEC
         util: 'FO4Edit v4.0.3h (Hotfix 1)'
 
+  - name: 'Frost - NewGame.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/50344/'
+        name: 'Frost - Functional New Game'
+
   - name: 'Frost(NukaWorld| NW Previs Patch)\.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/39985/'
