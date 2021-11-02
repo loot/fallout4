@@ -4175,6 +4175,11 @@ plugins:
       - crc: 0x1EB90950
         util: 'FO4Edit v4.0.3h (Hotfix 1)'
 
+  - name: 'xxFrost_Dogmeat.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/44674/'
+        name: 'Frost - Dogmeat Resurrected'
+
 
   # Radrose Usability Enhancements
   - name: 'Radrose Usability Enhancements.esp'
