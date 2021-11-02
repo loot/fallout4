@@ -4001,6 +4001,7 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/49094/'
         name: 'FROST It Snowed Winter Textures'
+    after: [ 'Frost - NewGame.esp' ]
     dirty:
       - <<: *quickClean
         crc: 0x8FB5CE1C
@@ -4023,6 +4024,21 @@ plugins:
     clean:
       - crc: 0x5B2E2BEC
         util: 'FO4Edit v4.0.3h (Hotfix 1)'
+
+  - name: 'Frost - NewGame.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/50344/'
+        name: 'Frost - Functional New Game'
+    dirty:
+      - <<: *reqManualFix
+        crc: 0x40E81E66
+        util: '[FO4Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 31
+        nav: 31
+      - <<: *reqManualFix
+        crc: 0xAB657406
+        util: '[FO4Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout4/mods/2737)'
+        nav: 31
 
   - name: 'Frost(NukaWorld| NW Previs Patch)\.esp'
     url:
