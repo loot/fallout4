@@ -3746,6 +3746,12 @@ plugins:
       - link: 'https://www.nexusmods.com/fallout4/mods/12220/'
         name: 'West Tek Tactical Optics - Night Vision Thermal Vision Goggles and More'
   - name: 'WestTekTacticalOptics.esp'
+    msg:
+      - <<: *patch3rdParty
+        subs:
+          - 'FROST Survival Simulator'
+          - '[Frost Tek](https://www.nexusmods.com/fallout4/mods/32843/)'
+        condition: 'active("FROST.esp") and not active("Frost Tek.esp")'
     clean:
       - crc: 0xC9710CB0
         util: 'FO4Edit v4.0.3h (Hotfix 1)'
