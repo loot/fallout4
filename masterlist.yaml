@@ -3744,13 +3744,15 @@ plugins:
   - name: 'WestTekTacticalOptics.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/12220/' ]
     clean:
-      - crc: 0xc9710cb0
-        util: FO4Edit v3.2.1
+      - crc: 0xC9710CB0
+        util: 'FO4Edit v4.0.3h (Hotfix 1)'
+      - crc: 0x39037068
+        util: 'FO4Edit v4.0.3h (Hotfix 1)'
   - name: 'WestTekTacticalOptics-AWKCR.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/12220/' ]
     clean:
-      - crc: 0xa7e23eeb
-        util: FO4Edit v3.2.1
+      - crc: 0xA7E23EEB
+        util: 'FO4Edit v4.0.3h (Hotfix 1)'
 
 ###### Locations - Player Homes ######
   - name: 'AlootHomePlate.esp'
