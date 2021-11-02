@@ -3741,15 +3741,17 @@ plugins:
         util: 'FO4Edit v4.0.3h (Hotfix 1)'
 
 ###### Items ######
+  - name: 'WestTekTacticalOptics(-AWKCR)?\.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/12220/'
+        name: 'West Tek Tactical Optics - Night Vision Thermal Vision Goggles and More'
   - name: 'WestTekTacticalOptics.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/12220/' ]
     clean:
       - crc: 0xC9710CB0
         util: 'FO4Edit v4.0.3h (Hotfix 1)'
       - crc: 0x39037068
         util: 'FO4Edit v4.0.3h (Hotfix 1)'
   - name: 'WestTekTacticalOptics-AWKCR.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/12220/' ]
     clean:
       - crc: 0xA7E23EEB
         util: 'FO4Edit v4.0.3h (Hotfix 1)'
