@@ -4179,6 +4179,7 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/44674/'
         name: 'Frost - Dogmeat Resurrected'
+    inc: [ 'AmazingFollowerTweaks.esp' ]
     dirty:
       - <<: *quickClean
         crc: 0x6E9FB64D
