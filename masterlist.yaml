@@ -3821,12 +3821,24 @@ plugins:
     after:
       - 'FrostNukaWorld.esp'
       - 'RedsFrostFixes.esp'
+    inc: [ 'Frost - NewGame.esp' ]
     tag:
       - Delev
       - Relev
     clean:
       - crc: 0x0CB5B33F
         util: 'FO4Edit v4.0.3h (Hotfix 1)'
+  - name: '(IV|FP)_(LootableCars_Misc_Stable|Misc_BoiledWaterBottles|HC_Perk_Updated|Patch_Mauser)\.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/48847/'
+        name: 'FROST Plus'
+  - name: 'IV_LootableCars_Misc_Stable.esp'
+    after:
+      - 'aFrostMod.esp'
+      - 'FrostNukaWorld.esp'
+      - 'RedsFrostFixes.esp'
+  - name: 'IV_Misc_BoiledWaterBottles.esp'
+    after: [ 'aFrostMod.esp' ]
 
   - name: 'ChillGhouls.esp'
     url:
