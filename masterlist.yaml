@@ -4179,6 +4179,11 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/44674/'
         name: 'Frost - Dogmeat Resurrected'
+    dirty:
+      - <<: *quickClean
+        crc: 0x6E9FB64D
+        util: '[FO4Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 4
 
 
   # Radrose Usability Enhancements
