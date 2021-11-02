@@ -3740,6 +3740,8 @@ plugins:
       - crc: 0xBE77BCCA
         util: 'FO4Edit v4.0.3h (Hotfix 1)'
 
+###### Items ######
+
 ###### Locations - Player Homes ######
   - name: 'AlootHomePlate.esp'
     url:
