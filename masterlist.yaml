@@ -3810,6 +3810,7 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/15814/'
         name: 'Faction Housing Overhaul - All In One'
+    group: *factionHomesGroup
     tag: [ Delev ]
     dirty:
       - <<: *quickClean
