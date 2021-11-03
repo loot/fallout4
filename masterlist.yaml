@@ -1665,8 +1665,12 @@ groups:
     description: 'A group for modules that only modify interior lighting.'
     after: [ *preVisCombinedGroup ]
 
-  - name: &scrapGroup Scrap Everything
+  - name: &fhoGroup Faction Housing Overhaul
+    description: 'A group for the mod Faction Housing Overhaul.'
     after: [ *interiorLightingGroup ]
+
+  - name: &scrapGroup Scrap Everything
+    after: [ *fhoGroup ]
 
   - name: &horizonGroup Horizon
     description: 'A group for Horizon modules that need to be sorted late.'
@@ -3801,6 +3805,26 @@ plugins:
     clean:
       - crc: 0xB383AAB4
         util: 'FO4Edit v4.0.3h (Hotfix 1)'
+
+  - name: 'Eli_Faction Housing Overhaul - AiO.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/15814/'
+        name: 'Faction Housing Overhaul - All In One'
+    group: *fhoGroup
+    msg:
+      - <<: *useVersionFarHarbor
+        type: warn
+        condition: 'active("DLCCoast.esm") and (checksum("Eli_Faction Housing Overhaul - AiO.esp", 842B406B) or checksum("Eli_Faction Housing Overhaul - AiO.esp", 2E1C382E))'
+    tag: [ Delev ]
+    dirty:
+      - <<: *quickClean
+        crc: 0x842B406B
+        util: '[FO4Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 122
+      - <<: *quickClean
+        crc: 0x9F6AA351
+        util: '[FO4Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 127
 
 ###### FROST Survival Simulator ######
   - name: 'FROST.esp'
