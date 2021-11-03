@@ -1665,8 +1665,12 @@ groups:
     description: 'A group for modules that only modify interior lighting.'
     after: [ *preVisCombinedGroup ]
 
-  - name: &scrapGroup Scrap Everything
+  - name: &factionHomesGroup Faction Player Homes
+    description: 'A group for modules that overhaul faction player homes.'
     after: [ *interiorLightingGroup ]
+
+  - name: &scrapGroup Scrap Everything
+    after: [ *factionHomesGroup ]
 
   - name: &horizonGroup Horizon
     description: 'A group for Horizon modules that need to be sorted late.'
