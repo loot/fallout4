@@ -3806,6 +3806,15 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/15814/'
         name: 'Faction Housing Overhaul - All In One'
+    dirty:
+      - <<: *quickClean
+        crc: 0x842B406B
+        util: '[FO4Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 122
+      - <<: *quickClean
+        crc: 0x9F6AA351
+        util: '[FO4Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 127
 
 ###### FROST Survival Simulator ######
   - name: 'FROST.esp'
