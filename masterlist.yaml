@@ -3346,6 +3346,11 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout4/mods/18547' ]
     group: *underridesGroup
 
+  - name: 'MojaveImports.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/3793/'
+        name: 'Wasteland Imports'
+
   - name: 'Vault-Tec Historical Preservation Initiative.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/12019/' ]
     group: *underridesGroup
