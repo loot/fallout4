@@ -1665,8 +1665,8 @@ groups:
     description: 'A group for modules that only modify interior lighting.'
     after: [ *preVisCombinedGroup ]
 
-  - name: &fhoGroup Faction Housing Overhaul AIO
-    description: 'A group for the mod Faction Housing Overhaul AIO.'
+  - name: &fhoGroup Faction Housing Overhaul
+    description: 'A group for the mod Faction Housing Overhaul.'
     after: [ *interiorLightingGroup ]
 
   - name: &scrapGroup Scrap Everything
