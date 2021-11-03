@@ -3811,6 +3811,10 @@ plugins:
       - link: 'https://www.nexusmods.com/fallout4/mods/15814/'
         name: 'Faction Housing Overhaul - All In One'
     group: *factionHomesGroup
+    msg:
+      - <<: *useVersionFarHarbor
+        type: warn
+        condition: 'active("DLCCoast.esm") and (checksum("Eli_Faction Housing Overhaul - AiO.esp", 842B406B) or checksum("Eli_Faction Housing Overhaul - AiO.esp", 2E1C382E))'
     tag: [ Delev ]
     dirty:
       - <<: *quickClean
