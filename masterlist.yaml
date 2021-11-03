@@ -2709,6 +2709,9 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout4/mods/2737/' ]
     group: *dynamicPatchesGroup
 
+  - name: 'M8r Complex Sorter.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/48826/' ]
+
   - name: 'Smashed Patch.esp'
     url: [ 'https://github.com/matortheeternal/smash/releases/' ]
     group: *dynamicPatchesGroup
