@@ -3350,6 +3350,9 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/3793/'
         name: 'Wasteland Imports'
+    tag:
+      - Delev
+      - Relev
 
   - name: 'Vault-Tec Historical Preservation Initiative.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/12019/' ]
