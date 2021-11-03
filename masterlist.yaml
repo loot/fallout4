@@ -1670,7 +1670,7 @@ groups:
     after: [ *interiorLightingGroup ]
 
   - name: &scrapGroup Scrap Everything
-    after: [ *factionHomesGroup ]
+    after: [ *fhoGroup ]
 
   - name: &horizonGroup Horizon
     description: 'A group for Horizon modules that need to be sorted late.'
