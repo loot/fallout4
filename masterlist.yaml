@@ -3740,6 +3740,28 @@ plugins:
       - crc: 0xBE77BCCA
         util: 'FO4Edit v4.0.3h (Hotfix 1)'
 
+###### Items ######
+  - name: 'WestTekTacticalOptics(-AWKCR)?\.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/12220/'
+        name: 'West Tek Tactical Optics - Night Vision Thermal Vision Goggles and More'
+  - name: 'WestTekTacticalOptics.esp'
+    msg:
+      - <<: *patch3rdParty
+        subs:
+          - 'FROST Survival Simulator'
+          - '[Frost Tek](https://www.nexusmods.com/fallout4/mods/32843/)'
+        condition: 'active("FROST.esp") and not active("Frost Tek.esp")'
+    clean:
+      - crc: 0xC9710CB0
+        util: 'FO4Edit v4.0.3h (Hotfix 1)'
+      - crc: 0x39037068
+        util: 'FO4Edit v4.0.3h (Hotfix 1)'
+  - name: 'WestTekTacticalOptics-AWKCR.esp'
+    clean:
+      - crc: 0xA7E23EEB
+        util: 'FO4Edit v4.0.3h (Hotfix 1)'
+
 ###### Locations - Player Homes ######
   - name: 'AlootHomePlate.esp'
     url:
@@ -5854,16 +5876,6 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout4/mods/18463' ]
     clean:
       - crc: 0x1d77791c
-        util: FO4Edit v3.2.1
-  - name: 'WestTekTacticalOptics.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/12220' ]
-    clean:
-      - crc: 0xc9710cb0
-        util: FO4Edit v3.2.1
-  - name: 'WestTekTacticalOptics-AWKCR.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/12220' ]
-    clean:
-      - crc: 0xa7e23eeb
         util: FO4Edit v3.2.1
   - name: 'WoodenPrefabsExtended.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/10140' ]
