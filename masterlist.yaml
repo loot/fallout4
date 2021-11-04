@@ -2743,6 +2743,9 @@ plugins:
   - name: 'AWKCR - (Automatron|Contraptions|Far Harbor|Nuka World|Vault-Tec)\.esp'
     group: *frameworksGroup
 
+  - name: 'BakaFramework.esm'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/43627/' ]
+
   - name: 'HUDFramework.esm'
     url: [ 'https://www.nexusmods.com/fallout4/mods/20309/' ]
     group: *frameworksGroup
