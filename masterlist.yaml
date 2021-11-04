@@ -2745,6 +2745,9 @@ plugins:
 
   - name: 'BakaFramework.esm'
     url: [ 'https://www.nexusmods.com/fallout4/mods/43627/' ]
+    clean:
+      - crc: 0xE0F570D6
+        util: 'FO4Edit v4.0.3h (Hotfix 1)'
 
   - name: 'HUDFramework.esm'
     url: [ 'https://www.nexusmods.com/fallout4/mods/20309/' ]
