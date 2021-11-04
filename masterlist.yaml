@@ -2745,6 +2745,10 @@ plugins:
 
   - name: 'BakaFramework.esm'
     url: [ 'https://www.nexusmods.com/fallout4/mods/43627/' ]
+    msg:
+      - <<: *missingRequirementXforPlugin
+        subs: [ '[Address Library for F4SE Plugins](https://www.nexusmods.com/fallout4/mods/47327/)' ]
+        condition: '(not file("F4SE/Plugins/version-1-10-130-0.bin") and version("../Fallout4.exe", "1.10.130.0", ==)) or (not file("F4SE/Plugins/version-1-10-138-0.bin") and version("../Fallout4.exe", "1.10.138.0", ==)) or (not file("F4SE/Plugins/version-1-10-162-0.bin") and version("../Fallout4.exe", "1.10.162.0", ==)) or (not file("F4SE/Plugins/version-1-10-163-0.bin") and version("../Fallout4.exe", "1.10.163.0", ==))'
     clean:
       - crc: 0xE0F570D6
         util: 'FO4Edit v4.0.3h (Hotfix 1)'
