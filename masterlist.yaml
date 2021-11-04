@@ -2745,6 +2745,7 @@ plugins:
 
   - name: 'BakaFramework.esm'
     url: [ 'https://www.nexusmods.com/fallout4/mods/43627/' ]
+    group: *frameworksGroup
     msg:
       - <<: *missingRequirementXforPlugin
         subs: [ '[Address Library for F4SE Plugins](https://www.nexusmods.com/fallout4/mods/47327/)' ]
