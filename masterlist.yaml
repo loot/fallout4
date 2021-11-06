@@ -3109,6 +3109,18 @@ plugins:
       - 'PRP-Compat-IntEnh.esp'
       - 'PRP-Compat-UIL.esp'
       - 'PRP-Compat-UIL-Darker.esp'
+  - name: 'ScrapEverythingUltimatePrevis.esp'
+    msg:
+      - type: error
+        content:
+          - lang: en
+            text: 'Incompatible with PRP.esp v0.53 or lower.'
+        condition: 'active("PRP.esp") and version("PRP.esp", "0.54", <)'
+    dirty:
+      - <<: *quickClean
+        crc: 0xA6F531E9
+        util: '[FO4Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 808
   - name: 'PRP-Compat-(Clarity-42|Clarity-43|DCA|Fogout-Int|IntEnh|RegionNames|UIL|UIL-Darker)\.esp'
     after: [ 'PRP.esp' ]
   - name: 'PRP-Compat-Clarity-(42|43)\.esp'
