@@ -3795,6 +3795,9 @@ plugins:
         util: 'FO4Edit v4.0.3h (Hotfix 1)'
 
 ###### Items - New Weapons ######
+  - name: 'CROSS_PlasRail.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/13850/' ]
+
   - name: 'WattzLaserGun.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/26386/' ]
     dirty:
