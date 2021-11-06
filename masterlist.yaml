@@ -3794,6 +3794,16 @@ plugins:
       - crc: 0xA7E23EEB
         util: 'FO4Edit v4.0.3h (Hotfix 1)'
 
+###### Items - New Weapons ######
+  - name: 'WattzLaserGun.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/26386/' ]
+    dirty:
+      - <<: *quickClean
+        crc: 0x8F15D201
+        util: '[FO4Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 1
+        udr: 1
+
 ###### Locations - Player Homes ######
   - name: 'AlootHomePlate.esp'
     url:
