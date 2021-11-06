@@ -3794,6 +3794,8 @@ plugins:
       - crc: 0xA7E23EEB
         util: 'FO4Edit v4.0.3h (Hotfix 1)'
 
+###### Items - New Weapons ######
+
 ###### Locations - Player Homes ######
   - name: 'AlootHomePlate.esp'
     url:
