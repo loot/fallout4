@@ -3370,7 +3370,6 @@ plugins:
 ###### Gameplay ######
   - name: 'Armorsmith Extended.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/2228/' ]
-    group: *itemsGroup
     after: [ 'EAMR.esp' ]
     msg:
       - <<: *obsolete
