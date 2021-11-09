@@ -3380,16 +3380,7 @@ plugins:
           - 'Armorsmith Extended'
           - 'Armor and Weapon Keywords Community Resource (AWKCR)'
         condition: 'version("Armorsmith Extended.esp", "4.6", >=) and version("ArmorKeywords.esm", "8.5", <)'
-    dirty:
-      # Version 4.6
-      - <<: *quickClean
-        crc: 0x4DE48100
-        util: '[FO4Edit v4.0.2f](https://www.nexusmods.com/fallout4/mods/2737)'
-        itm: 13
-    clean:
-      # Version 4.6, After Quick Clean
-      - crc: 0x52D267F3
-        util: 'FO4Edit v4.0.2f'
+    # Do Not Clean - ITMs included to prevent other mods from breaking slot usage on those outfits.
 
   - name: 'BetterCompanions.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/18547/' ]
