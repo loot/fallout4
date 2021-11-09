@@ -3375,11 +3375,11 @@ plugins:
     msg:
       - <<: *obsolete
         condition: 'version("Armorsmith Extended.esp", "4.6", <)'
-      - <<: *versionXIncY
+      - <<: *versionXofYorGreaterRequired
         subs:
-          - 'Armorsmith Extended'
-          - 'Armor and Weapon Keywords Community Resource (AWKCR)'
-        condition: 'version("Armorsmith Extended.esp", "4.6", >=) and version("ArmorKeywords.esm", "8.5", <)'
+          - '8.5'
+          - '[Armor and Weapon Keywords Community Resource (AWKCR)](https://www.nexusmods.com/fallout4/mods/6091/)'
+        condition: 'version("Armorsmith Extended.esp", "4.6", ==) and version("ArmorKeywords.esm", "8.5", <) and file("ArmorKeywords.esm")'
     # Do Not Clean - ITMs included to prevent other mods from breaking slot usage on those outfits.
 
   - name: 'BetterCompanions.esp'
