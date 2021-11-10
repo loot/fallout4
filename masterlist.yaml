@@ -3222,6 +3222,8 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout4/mods/35720/' ]
     group: *fixesGroup
 
+###### Audiovisual - Sound & Music ######
+
 ###### AudioVisual - Weather & Lighting ######
   - name: 'EnhancedLightsandFX.esp'
     url:
