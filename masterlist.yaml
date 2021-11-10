@@ -3225,7 +3225,6 @@ plugins:
 ###### Audiovisual - Sound & Music ######
   - name: 'Reverb and Ambiance Overhaul.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/10189/' ]
-    after: [ 'RadiantBirdsv05.esp' ]
 
 ###### AudioVisual - Weather & Lighting ######
   - name: 'EnhancedLightsandFX.esp'
