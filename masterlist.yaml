@@ -3223,6 +3223,9 @@ plugins:
     group: *fixesGroup
 
 ###### Audiovisual - Sound & Music ######
+  - name: 'Reverb and Ambiance Overhaul.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/10189/' ]
+    after: [ 'RadiantBirdsv05.esp' ]
 
 ###### AudioVisual - Weather & Lighting ######
   - name: 'EnhancedLightsandFX.esp'
@@ -5288,9 +5291,6 @@ plugins:
         util: '[FO4Edit v4.0.2f](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 12
         udr: 9
-  - name: 'Reverb and Ambiance Overhaul.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/10189' ]
-    after: [ 'RadiantBirdsv05.esp' ]
   - name: 'MoreSkinColors.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/22668' ]
     inc: [ 'LooksMenu Customization Compendium.esp' ]
