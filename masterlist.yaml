@@ -3232,6 +3232,10 @@ plugins:
         util: 'FO4Edit v4.0.3j (RC2 for 4.0.4)'
   - name: 'Reverb and Ambiance Overhaul - (Automatron|Contraptions|Far Harbor|Nuka World|Vault-Tec)\.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/10189/' ]
+    msg:
+      - <<: *alreadyInX
+        subs: [ 'Reverb and Ambiance Overhaul All DLC' ]
+        condition: 'checksum("Reverb and Ambiance Overhaul.esp", 6FFE25B7)'
   - name: 'Reverb and Ambiance Overhaul - Automatron.esp'
     clean:
       - crc: 0xCB736A81
