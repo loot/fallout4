@@ -3222,6 +3222,41 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout4/mods/35720/' ]
     group: *fixesGroup
 
+###### Audiovisual - Sound & Music ######
+  - name: 'Reverb and Ambiance Overhaul.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/10189/' ]
+    clean:
+      - crc: 0x715C4599
+        util: 'FO4Edit v4.0.3j (RC2 for 4.0.4)'
+      - crc: 0x6FFE25B7
+        util: 'FO4Edit v4.0.3j (RC2 for 4.0.4)'
+  - name: 'Reverb and Ambiance Overhaul - (Automatron|Contraptions|Far Harbor|Nuka World|Vault-Tec)\.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/10189/' ]
+    msg:
+      - <<: *alreadyInX
+        subs: [ 'Reverb and Ambiance Overhaul All DLC' ]
+        condition: 'checksum("Reverb and Ambiance Overhaul.esp", 6FFE25B7)'
+  - name: 'Reverb and Ambiance Overhaul - Automatron.esp'
+    clean:
+      - crc: 0xCB736A81
+        util: 'FO4Edit v4.0.3j (RC2 for 4.0.4)'
+  - name: 'Reverb and Ambiance Overhaul - Contraptions.esp'
+    clean:
+      - crc: 0x600836A0
+        util: 'FO4Edit v4.0.3j (RC2 for 4.0.4)'
+  - name: 'Reverb and Ambiance Overhaul - Far Harbor.esp'
+    clean:
+      - crc: 0x9DA5CE49
+        util: 'FO4Edit v4.0.3j (RC2 for 4.0.4)'
+  - name: 'Reverb and Ambiance Overhaul - Nuka World.esp'
+    clean:
+      - crc: 0xB78A2D04
+        util: 'FO4Edit v4.0.3j (RC2 for 4.0.4)'
+  - name: 'Reverb and Ambiance Overhaul - Vault-Tec.esp'
+    clean:
+      - crc: 0xE86A8F90
+        util: 'FO4Edit v4.0.3j (RC2 for 4.0.4)'
+
 ###### AudioVisual - Weather & Lighting ######
   - name: 'EnhancedLightsandFX.esp'
     url:
@@ -5286,9 +5321,6 @@ plugins:
         util: '[FO4Edit v4.0.2f](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 12
         udr: 9
-  - name: 'Reverb and Ambiance Overhaul.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/10189' ]
-    after: [ 'RadiantBirdsv05.esp' ]
   - name: 'MoreSkinColors.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/22668' ]
     inc: [ 'LooksMenu Customization Compendium.esp' ]
