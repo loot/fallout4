@@ -3468,7 +3468,7 @@ plugins:
         udr: 9
 
   - name: 'Weaponsmith Extended 2.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/2228/' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/10737/' ]
     group: *itemsGroup
     after: [ 'Armorsmith Extended.esp' ]
     dirty:
