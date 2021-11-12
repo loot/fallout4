@@ -2775,6 +2775,9 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/27216/'
         name: 'Extended Dialogue Interface'
+    clean:
+      - crc: 0x55530D14
+        util: 'FO4Edit v4.0.4'
 
 ###### Fixes ######
   - name: 'BoS Pilot Outfit Fix.esp'
