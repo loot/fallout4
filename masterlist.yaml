@@ -2771,6 +2771,11 @@ plugins:
         util: '[FO4Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 3
 
+  - name: 'XDI.esm'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/27216/'
+        name: 'Extended Dialogue Interface'
+
 ###### Fixes ######
   - name: 'BoS Pilot Outfit Fix.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/3098/' ]
