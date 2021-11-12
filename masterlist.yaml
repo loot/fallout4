@@ -2776,6 +2776,16 @@ plugins:
       - link: 'https://www.nexusmods.com/fallout4/mods/27216/'
         name: 'Extended Dialogue Interface'
     group: *frameworksGroup
+    msg:
+      - type: warn
+        content:
+          - lang: en
+            text: 'Another mod seems to be overwriting one of this module''s essential files. Please ensure you''re using a compatible version of %1%.'
+        subs: [ '**Interface/DialogueMenu.swf**' ]
+        # CRCs XDI (v1.3.0+ 0xA0515C5F), XDI No Speech Bubble (v1 0xCDF0E1B6), Vault Girl Mod XDI Fix (v1 Alt 0x2B7DD8DF)
+        # Vault Girl Mod XDI Fix v1 (Default 0xA3BEB14D, Classic 0xC2622A00, Alternative 0x88DF4ABC)
+        # Vault Girl Interface v1.0.3 XDI Patches (A 0x88DF4ABC, B 0xA3BEB14D,C 0xC2622A00)
+        condition: 'file("Interface/DialogueMenu.swf") and not checksum("Interface/DialogueMenu.swf", A0515C5F) and not checksum("Interface/DialogueMenu.swf", CDF0E1B6) and not checksum("Interface/DialogueMenu.swf", 2B7DD8DF) and not checksum("Interface/DialogueMenu.swf", 88DF4ABC) and not checksum("Interface/DialogueMenu.swf", A3BEB14D) and not checksum("Interface/DialogueMenu.swf", C2622A00)'
     clean:
       - crc: 0x55530D14
         util: 'FO4Edit v4.0.4'
