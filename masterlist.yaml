@@ -3474,8 +3474,8 @@ plugins:
     dirty:
       - <<: *quickClean
         crc: 0xD5EFD402
-        util: '[FO4Edit v4.0.3](https://www.nexusmods.com/fallout4/mods/2737)'
-        itm: 465
+        util: '[FO4Edit v4.0.4](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 466
         udr: 4
 
 ###### Gameplay - Crafting, Harvesting & Scrapping ######
