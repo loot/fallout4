@@ -3467,6 +3467,19 @@ plugins:
         itm: 3
         udr: 9
 
+  - name: 'Weaponsmith Extended 2.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/10737/' ]
+    after: [ 'Armorsmith Extended.esp' ]
+    tag:
+      - Delev
+      - Relev
+    dirty:
+      - <<: *quickClean
+        crc: 0xD5EFD402
+        util: '[FO4Edit v4.0.4](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 466
+        udr: 4
+
 ###### Gameplay - Crafting, Harvesting & Scrapping ######
   - name: 'ScrapThatMisc.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/5673/' ]
@@ -5074,17 +5087,6 @@ plugins:
         crc: 0xD6ACC264
         util: '[FO4Edit v4.0.2f](https://www.nexusmods.com/fallout4/mods/2737)'
         nav: 5
-
-  - name: 'Weaponsmith Extended 2.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/2228' ]
-    group: *itemsGroup
-    after: [ 'Armorsmith Extended.esp' ]
-    dirty:
-      - <<: *quickClean
-        crc: 0xD5EFD402
-        util: '[FO4Edit v4.0.3](https://www.nexusmods.com/fallout4/mods/2737)'
-        itm: 465
-        udr: 4
 
   - name: 'ConcealedArmor.esm'
     url: [ 'https://www.nexusmods.com/fallout4/mods/6434' ]
