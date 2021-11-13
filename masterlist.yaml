@@ -3504,6 +3504,32 @@ plugins:
         util: 'FO4Edit v4.0.3h (Hotfix 1)'
 
 ###### Gameplay - NPC Balance & Distribution ######
+  - name: 'SuperMutantRedux.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/11853/' ]
+    group: *npcOverhaulsGroup
+    after:
+      - 'Unique NPCs - Creatures and Monsters.esp'
+      # Group after, to prevent sorting errors.
+      - 'Unique NPCs.esp'
+    dirty:
+      - <<: *quickClean
+        crc: 0xAA1B9904
+        util: '[FO4Edit v4.0.2f](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 95
+    clean:
+      - crc: 0xD6276EA3
+        util: 'FO4Edit v4.0.2f'
+  - name: 'SuperMutantRedux_ArmorSmithExtended.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/11853/' ]
+    dirty:
+      - <<: *quickClean
+        crc: 0x58C34592
+        util: '[FO4Edit v4.0.2f](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 104
+    clean:
+      - crc: 0x19D8E10A
+        util: 'FO4Edit v4.0.2f'
+
   - name: 'Unique NPCs - Creatures and Monsters.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/24357/' ]
     after: [ 'Unique NPCs.esp' ]
@@ -6866,31 +6892,6 @@ plugins:
       - 'FOFW_ALL_IN_ONE_VANILLA.esp'
       - 'Unique NPCs.esp'
 
-  - name: 'SuperMutantRedux.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/11853' ]
-    group: *npcOverhaulsGroup
-    after:
-      - 'Unique NPCs - Creatures and Monsters.esp'
-      # Group after, to prevent sorting errors.
-      - 'Unique NPCs.esp'
-    dirty:
-      - <<: *quickClean
-        crc: 0xAA1B9904
-        util: '[FO4Edit v4.0.2f](https://www.nexusmods.com/fallout4/mods/2737)'
-        itm: 95
-    clean:
-      - crc: 0xD6276EA3
-        util: 'FO4Edit v4.0.2f'
-  - name: 'SuperMutantRedux_ArmorSmithExtended.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/11853' ]
-    dirty:
-      - <<: *quickClean
-        crc: 0x58C34592
-        util: '[FO4Edit v4.0.2f](https://www.nexusmods.com/fallout4/mods/2737)'
-        itm: 104
-    clean:
-      - crc: 0x19D8E10A
-        util: 'FO4Edit v4.0.2f'
   - name: 'Synth Overhaul.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/9525' ]
 
