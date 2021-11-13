@@ -3424,7 +3424,6 @@ plugins:
 ###### Character Appearance - NPC Overhauls ######
   - name: 'Unique NPCs.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/21248/' ]
-    group: *npcOverhaulsGroup
     dirty:
       - <<: *quickClean
         crc: 0xA3B23742
