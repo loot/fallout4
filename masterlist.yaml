@@ -3509,7 +3509,6 @@ plugins:
       - link: 'https://www.nexusmods.com/fallout4/mods/11853/'
         name: 'Super Mutant Redux'
   - name: 'SuperMutantRedux.esp'
-    group: *npcOverhaulsGroup
     after:
       - 'Unique NPCs - Creatures and Monsters.esp'
       # Group after, to prevent sorting errors.
