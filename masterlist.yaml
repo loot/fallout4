@@ -3504,8 +3504,11 @@ plugins:
         util: 'FO4Edit v4.0.3h (Hotfix 1)'
 
 ###### Gameplay - NPC Balance & Distribution ######
+  - name: 'SuperMutantRedux.*\.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/11853/'
+        name: 'Super Mutant Redux'
   - name: 'SuperMutantRedux.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/11853/' ]
     group: *npcOverhaulsGroup
     after:
       - 'Unique NPCs - Creatures and Monsters.esp'
@@ -3523,7 +3526,6 @@ plugins:
         util: '[FO4Edit v4.0.4](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 103
   - name: 'SuperMutantRedux_ArmorSmithExtended.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/11853/' ]
     dirty:
       - <<: *quickClean
         crc: 0x58C34592
