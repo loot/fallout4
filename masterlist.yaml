@@ -3504,6 +3504,28 @@ plugins:
         util: 'FO4Edit v4.0.3h (Hotfix 1)'
 
 ###### Gameplay - NPC Balance & Distribution ######
+  - name: 'Unique NPCs - Creatures and Monsters.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/24357/' ]
+    group: *npcOverhaulsGroup
+    after: [ 'Unique NPCs.esp' ]
+    dirty:
+      - <<: *quickClean
+        crc: 0x76525074
+        util: '[FO4Edit v4.0.2f](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 202
+    clean:
+      - crc: 0x63ECCC16
+        util: 'FO4Edit v4.0.2f'
+  - name: 'Unique NPCs - Creatures and Monsters - NonLore.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/24357/' ]
+    clean:
+      - crc: 0x9E242F95
+        util: 'FO4Edit v4.0.2f'
+  - name: 'Unique NPCs - Creatures and Monsters_SMR.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/24357/' ]
+    clean:
+      - crc: 0xDC774291
+        util: 'FO4Edit v4.0.2f'
 
 ###### Gameplay - NPC Behaviour & Dialogue ######
   - name: 'DeaconClothingCK.esp'
@@ -6886,28 +6908,6 @@ plugins:
   - name: 'Synth Overhaul.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/9525' ]
 
-  - name: 'Unique NPCs - Creatures and Monsters.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/24357' ]
-    group: *npcOverhaulsGroup
-    after: [ 'Unique NPCs.esp' ]
-    dirty:
-      - <<: *quickClean
-        crc: 0x76525074
-        util: '[FO4Edit v4.0.2f](https://www.nexusmods.com/fallout4/mods/2737)'
-        itm: 202
-    clean:
-      - crc: 0x63ECCC16
-        util: 'FO4Edit v4.0.2f'
-  - name: 'Unique NPCs - Creatures and Monsters - NonLore.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/24357' ]
-    clean:
-      - crc: 0x9E242F95
-        util: 'FO4Edit v4.0.2f'
-  - name: 'Unique NPCs - Creatures and Monsters_SMR.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/24357' ]
-    clean:
-      - crc: 0xDC774291
-        util: 'FO4Edit v4.0.2f'
   - name: 'Yagisan_WO_Better_Caravans.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/33787' ]
     after: [ 'Unique NPCs - Creatures and Monsters.esp' ]
