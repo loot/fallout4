@@ -3422,6 +3422,32 @@ plugins:
         util: 'FO4Edit v4.0.2'
 
 ###### Character Appearance - NPC Overhauls ######
+  - name: 'Unique NPCs.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/21248/' ]
+    group: *npcOverhaulsGroup
+    dirty:
+      - <<: *quickClean
+        crc: 0xF2980C0F
+        util: '[FO4Edit v4.0.2f](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 120
+    clean:
+      - crc: 0x02C3B2D8
+        util: 'FO4Edit v4.0.2f'
+  - name: 'Unique NPCs FarHarbor.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/21248/' ]
+    dirty:
+      - <<: *quickClean
+        crc: 0x21D92256
+        util: '[FO4Edit v4.0.2f](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 26
+    clean:
+      - crc: 0x841B6EB8
+        util: 'FO4Edit v4.0.2f'
+  - name: 'Unique NPCs_SuperMutantRedux.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/21248/' ]
+    clean:
+      - crc: 0xDB3BDBC4
+        util: 'FO4Edit v4.0.2f'
 
 ###### Gameplay ######
   - name: 'Armorsmith Extended.esp'
@@ -6877,32 +6903,6 @@ plugins:
   - name: 'Synth Overhaul.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/9525' ]
 
-  - name: 'Unique NPCs.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/21248' ]
-    group: *npcOverhaulsGroup
-    dirty:
-      - <<: *quickClean
-        crc: 0xF2980C0F
-        util: '[FO4Edit v4.0.2f](https://www.nexusmods.com/fallout4/mods/2737)'
-        itm: 120
-    clean:
-      - crc: 0x02C3B2D8
-        util: 'FO4Edit v4.0.2f'
-  - name: 'Unique NPCs FarHarbor.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/21248' ]
-    dirty:
-      - <<: *quickClean
-        crc: 0x21D92256
-        util: '[FO4Edit v4.0.2f](https://www.nexusmods.com/fallout4/mods/2737)'
-        itm: 26
-    clean:
-      - crc: 0x841B6EB8
-        util: 'FO4Edit v4.0.2f'
-  - name: 'Unique NPCs_SuperMutantRedux.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/21248' ]
-    clean:
-      - crc: 0xDB3BDBC4
-        util: 'FO4Edit v4.0.2f'
   - name: 'Unique NPCs - Creatures and Monsters.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/24357' ]
     group: *npcOverhaulsGroup
