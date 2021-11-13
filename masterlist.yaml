@@ -1649,13 +1649,9 @@ groups:
     description: 'A group for modules that must load after most other mods.'
     after: [ default ]
 
-  - name: &itemsGroup Items
-    description: 'A group for mods that improve or add new items.'
-    after: [ *lowPriorityGroup ]
-
   - name: &preVisCombinedGroup PreVis & PreCombined Fixes
     description: 'A group for modules that fix issues with PreVis and PreCombined files.'
-    after: [ *itemsGroup ]
+    after: [ *lowPriorityGroup ]
 
   - name: &interiorLightingGroup Interior Lighting
     description: 'A group for modules that only modify interior lighting.'
