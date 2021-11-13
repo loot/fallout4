@@ -3503,6 +3503,8 @@ plugins:
       - crc: 0x2ADD86AE
         util: 'FO4Edit v4.0.3h (Hotfix 1)'
 
+###### Gameplay - NPC Balance & Distribution ######
+
 ###### Gameplay - NPC Behaviour & Dialogue ######
   - name: 'DeaconClothingCK.esp'
     url:
