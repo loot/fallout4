@@ -3510,21 +3510,8 @@ plugins:
     dirty:
       - <<: *quickClean
         crc: 0x76525074
-        util: '[FO4Edit v4.0.2f](https://www.nexusmods.com/fallout4/mods/2737)'
-        itm: 202
-    clean:
-      - crc: 0x63ECCC16
-        util: 'FO4Edit v4.0.2f'
-  - name: 'Unique NPCs - Creatures and Monsters - NonLore.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/24357/' ]
-    clean:
-      - crc: 0x9E242F95
-        util: 'FO4Edit v4.0.2f'
-  - name: 'Unique NPCs - Creatures and Monsters_SMR.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/24357/' ]
-    clean:
-      - crc: 0xDC774291
-        util: 'FO4Edit v4.0.2f'
+        util: '[FO4Edit v4.0.4](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 219
 
 ###### Gameplay - NPC Behaviour & Dialogue ######
   - name: 'DeaconClothingCK.esp'
