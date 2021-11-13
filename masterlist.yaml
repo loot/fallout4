@@ -3504,6 +3504,49 @@ plugins:
         util: 'FO4Edit v4.0.3h (Hotfix 1)'
 
 ###### Gameplay - NPC Balance & Distribution ######
+  - name: 'SuperMutantRedux.*\.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/11853/'
+        name: 'Super Mutant Redux'
+  - name: 'SuperMutantRedux.esp'
+    dirty:
+      - <<: *quickClean
+        crc: 0xAA1B9904
+        util: '[FO4Edit v4.0.4](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 94
+  - name: 'SuperMutantRedux_AE-WSE-VIS-G-Insanity_AIO_Patch.esp'
+    dirty:
+      - <<: *quickClean
+        crc: 0xE4DE734C
+        util: '[FO4Edit v4.0.4](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 103
+  - name: 'SuperMutantRedux_ArmorSmithExtended.esp'
+    dirty:
+      - <<: *quickClean
+        crc: 0x58C34592
+        util: '[FO4Edit v4.0.4](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 104
+  - name: 'SuperMutantRedux_Insanity.esp'
+    dirty:
+      - <<: *quickClean
+        crc: 0xFD8EC94E
+        util: '[FO4Edit v4.0.4](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 17
+  - name: 'SuperMutantRedux VIS Patch.esp'
+    clean:
+      - crc: 0xDC656499
+        util: 'FO4Edit v4.0.4'
+  - name: 'SuperMutantRedux_VIS-G_Patch.esp'
+    clean:
+      - crc: 0xC66F9D47
+        util: 'FO4Edit v4.0.4'
+  - name: 'SuperMutantRedux_WeaponsmithExtended_Patch.esp'
+    dirty:
+      - <<: *quickClean
+        crc: 0x35ABDB5A
+        util: '[FO4Edit v4.0.4](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 4
+
   - name: 'Unique NPCs - Creatures and Monsters.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/24357/' ]
     after: [ 'Unique NPCs.esp' ]
@@ -6866,31 +6909,6 @@ plugins:
       - 'FOFW_ALL_IN_ONE_VANILLA.esp'
       - 'Unique NPCs.esp'
 
-  - name: 'SuperMutantRedux.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/11853' ]
-    group: *npcOverhaulsGroup
-    after:
-      - 'Unique NPCs - Creatures and Monsters.esp'
-      # Group after, to prevent sorting errors.
-      - 'Unique NPCs.esp'
-    dirty:
-      - <<: *quickClean
-        crc: 0xAA1B9904
-        util: '[FO4Edit v4.0.2f](https://www.nexusmods.com/fallout4/mods/2737)'
-        itm: 95
-    clean:
-      - crc: 0xD6276EA3
-        util: 'FO4Edit v4.0.2f'
-  - name: 'SuperMutantRedux_ArmorSmithExtended.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/11853' ]
-    dirty:
-      - <<: *quickClean
-        crc: 0x58C34592
-        util: '[FO4Edit v4.0.2f](https://www.nexusmods.com/fallout4/mods/2737)'
-        itm: 104
-    clean:
-      - crc: 0x19D8E10A
-        util: 'FO4Edit v4.0.2f'
   - name: 'Synth Overhaul.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/9525' ]
 
