@@ -3421,6 +3421,8 @@ plugins:
       - crc: 0xBA0A331E
         util: 'FO4Edit v4.0.2'
 
+###### Character Appearance - NPC Overhauls ######
+
 ###### Gameplay ######
   - name: 'Armorsmith Extended.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/2228/' ]
