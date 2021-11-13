@@ -3470,6 +3470,9 @@ plugins:
   - name: 'Weaponsmith Extended 2.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/10737/' ]
     after: [ 'Armorsmith Extended.esp' ]
+    tag:
+      - Delev
+      - Relev
     dirty:
       - <<: *quickClean
         crc: 0xD5EFD402
