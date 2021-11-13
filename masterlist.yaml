@@ -5218,11 +5218,6 @@ plugins:
       # 2.0.2 No Bunker Hill or Hangman's Alley
       - crc: 0xD3B3D904
         util: 'FO4Edit v4.0.2f'
-  - name: 'ASEFarHarbor.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/25487' ]
-    after:
-      - 'Farm.esp'
-      - 'Farm_DLCCoast.esp'
   - name: 'StarlightLOD.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/23034' ]
     msg:
@@ -6119,11 +6114,6 @@ plugins:
 
   - name: 'BTInteriors_Project.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/4612' ]
-    after:
-      - 'Farm.esp'
-      - 'Farm_DLCCoast.esp'
-      - 'Farm_DLCNukaWorld.esp'
-      - 'Farm_DLCworkshop03.esp'
     dirty:
       # Version 9.3.2
       - <<: *quickClean
@@ -6136,11 +6126,6 @@ plugins:
         util: 'FO4Edit v4.0.1'
   - name: 'BTInt_Optimization.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/4612' ]
-    after:
-      - 'Farm.esp'
-      - 'Farm_DLCCoast.esp'
-      - 'Farm_DLCNukaWorld.esp'
-      - 'Farm_DLCworkshop03.esp'
     clean:
       # Version 3.2.1
       - crc: 0x9EADC975
@@ -7325,60 +7310,11 @@ plugins:
         util: '[FO4Edit v4.0.3f](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 4
 
-  - name: 'Farm.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/16810' ]
-    after: [ 'Better Cooking Stations.esp' ]
-
-  - name: 'Farm_WSPOverride_\w+\.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/16810' ]
-    group: *dynamicPatchesGroup
-
-  - name: 'Yagisan_SSSL_Red_Rocket_Settlements_Generic_Patch.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/35405' ]
-    after: [ 'Farm.esp' ]
-
-  - name: 'Build High - Expanded Settlements.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/3528' ]
-    after:
-      - 'Farm.esp'
-      - 'Farm_DLCCoast.esp'
-      - 'Farm_DLCNukaWorld.esp'
-      - 'Farm_DLCworkshop03.esp'
-
   - name: 'SKKCombatStalkers.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/30308' ]
     clean:
       - crc: 0xAF03EAA6
         util: 'FO4Edit v4.0.3'
-
-  - name: 'Clean and Simple - All CAS Settlements.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/25350' ]
-    after:
-      - 'Farm.esp'
-      - 'Farm_DLCCoast.esp'
-      - 'Farm_DLCNukaWorld.esp'
-      - 'Farm_DLCworkshop03.esp'
-  - name: 'Clean and Simple - All CAS Settlements - No Castle.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/25350' ]
-    after:
-      - 'Farm.esp'
-      - 'Farm_DLCCoast.esp'
-      - 'Farm_DLCNukaWorld.esp'
-      - 'Farm_DLCworkshop03.esp'
-  - name: 'Clean and Simple - All Settlements with Magnificent Spectacle Island.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/25350' ]
-    after:
-      - 'Farm.esp'
-      - 'Farm_DLCCoast.esp'
-      - 'Farm_DLCNukaWorld.esp'
-      - 'Farm_DLCworkshop03.esp'
-  - name: 'Clean and Simple - All Settlements with Magnificent Spectacle Island - No Castle.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/25350' ]
-    after:
-      - 'Farm.esp'
-      - 'Farm_DLCCoast.esp'
-      - 'Farm_DLCNukaWorld.esp'
-      - 'Farm_DLCworkshop03.esp'
 
   - name: 'Winter Overhaul.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/28665/' ]
