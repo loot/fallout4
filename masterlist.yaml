@@ -3481,6 +3481,21 @@ plugins:
         itm: 466
         udr: 4
 
+###### Gameplay - Combat ######
+  - name: 'SKKSettlementAttackSystem(Markers)?\.esp'
+    url:
+      - 'https://bethesda.net/en/mods/fallout4/mod-detail/4096084/'
+      - 'https://skkmods.com/mod/skk-settlement-attack-system/'
+      - 'https://www.nexusmods.com/fallout4/mods/37393/'
+  - name: 'SKKSettlementAttackSystem.esp'
+    clean:
+      - crc: 0x240F4C3F
+        util: 'FO4Edit v4.0.4'
+  - name: 'SKKSettlementAttackSystemMarkers.esp'
+    clean:
+      - crc: 0xB8EADAD7
+        util: 'FO4Edit v4.0.4'
+
 ###### Gameplay - Crafting, Harvesting & Scrapping ######
   - name: 'ScrapThatMisc.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/5673/' ]
@@ -7018,17 +7033,6 @@ plugins:
         crc: 0x4C7A2C75
         util: '[FO4Edit v4.0.2](https://www.nexusmods.com/fallout4/mods/2737)'
         nav: 9
-
-  - name: 'SKKSettlementAttackSystem.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/37393' ]
-    clean:
-      - crc: 0x240F4C3F
-        util: 'FO4Edit v4.0.3'
-  - name: 'SKKSettlementAttackSystemMarkers.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/37393' ]
-    clean:
-      - crc: 0xB8EADAD7
-        util: 'FO4Edit v4.0.3'
 
   - name: 'CaN.es(m|p)'
     url:
