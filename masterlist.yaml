@@ -3458,6 +3458,23 @@ plugins:
       - crc: 0x58BF06AA
         util: 'FO4Edit v4.0.3h (Hotfix 1)'
 
+  - name: 'SKKCombatSettlers.esp'
+    url:
+      - 'https://bethesda.net/en/mods/fallout4/mod-detail/4080062/'
+      - 'https://skkmods.com/mod/skk-combat-settlers/'
+    clean:
+      - crc: 0x3DCE8E04
+        util: 'FO4Edit v4.0.4'
+
+  - name: 'SKKHostileWorkshops.esp'
+    url:
+      - 'https://bethesda.net/en/mods/fallout4/mod-detail/4179319/'
+      - 'https://skkmods.com/mod/skk-hostile-workshops/'
+      - 'https://www.nexusmods.com/fallout4/mods/47317/'
+    clean:
+      - crc: 0x3F9E589A
+        util: 'FO4Edit v4.0.4'
+
   - name: 'Vault-Tec Historical Preservation Initiative.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/12019/' ]
     group: *underridesGroup
@@ -3480,6 +3497,21 @@ plugins:
         util: '[FO4Edit v4.0.4](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 466
         udr: 4
+
+###### Gameplay - Combat ######
+  - name: 'SKKSettlementAttackSystem(Markers)?\.esp'
+    url:
+      - 'https://bethesda.net/en/mods/fallout4/mod-detail/4096084/'
+      - 'https://skkmods.com/mod/skk-settlement-attack-system/'
+      - 'https://www.nexusmods.com/fallout4/mods/37393/'
+  - name: 'SKKSettlementAttackSystem.esp'
+    clean:
+      - crc: 0x240F4C3F
+        util: 'FO4Edit v4.0.4'
+  - name: 'SKKSettlementAttackSystemMarkers.esp'
+    clean:
+      - crc: 0xB8EADAD7
+        util: 'FO4Edit v4.0.4'
 
 ###### Gameplay - Crafting, Harvesting & Scrapping ######
   - name: 'ScrapThatMisc.esp'
@@ -3528,6 +3560,15 @@ plugins:
         util: 'FO4Edit v4.0.4'
 
 ###### Gameplay - NPC Balance & Distribution ######
+  - name: 'SKKRESystemManager.esp'
+    url:
+      - 'https://bethesda.net/en/mods/fallout4/mod-detail/4135081/'
+      - 'https://skkmods.com/mod/skk-random-encounter-manager/'
+      - 'https://www.nexusmods.com/fallout4/mods/42081/'
+    clean:
+      - crc: 0x978255EE
+        util: 'FO4Edit v4.0.4'
+
   - name: 'SuperMutantRedux.*\.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/11853/'
@@ -3690,8 +3731,20 @@ plugins:
         itm: 40
         udr: 14
 
+  - name: 'SKKFastBOS.esp'
+    url:
+      - 'https://bethesda.net/en/mods/fallout4/mod-detail/4055555/'
+      - 'https://skkmods.com/mod/skk-fast-bos/'
+      - 'https://www.nexusmods.com/fallout4/mods/30147/'
+    clean:
+      - crc: 0xC3C40C8E
+        util: 'FO4Edit v4.0.4'
+
   - name: 'SKKFastStartNewGame.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/29227/' ]
+    url:
+      - 'https://bethesda.net/en/mods/fallout4/mod-detail/4051239/'
+      - 'https://skkmods.com/mod/skk-fast-start-new-game/'
+      - 'https://www.nexusmods.com/fallout4/mods/29227/'
     group: *lowPriorityGroup
     inc:
       - 'AnotherLife.esp'
@@ -3699,7 +3752,7 @@ plugins:
       - 'StartMeUp.esp'
     clean:
       - crc: 0x7C5856B7
-        util: 'FO4Edit v4.0.3h (Hotfix 1)'
+        util: 'FO4Edit v4.0.4'
 
   - name: 'StartMeUp.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/18946/' ]
@@ -4059,6 +4112,15 @@ plugins:
         crc: 0xDF624487
         util: '[FO4Edit v4.0.4](https://www.nexusmods.com/fallout4/mods/2737)'
         nav: 10
+
+###### New Characters - Enemies ######
+  - name: 'SKKCombatStalkers.esp'
+    url:
+      - 'https://bethesda.net/en/mods/fallout4/mod-detail/4056604/'
+      - 'https://skkmods.com/mod/skk-combat-stalkers/'
+    clean:
+      - crc: 0x05AE4ECE
+        util: 'FO4Edit v4.0.4'
 
 ###### FROST Survival Simulator ######
   - name: 'FROST.esp'
@@ -5542,12 +5604,6 @@ plugins:
         util: '[FO4Edit v4.0.2f](https://www.nexusmods.com/fallout4/mods/2737)'
         nav: 1
 
-  - name: 'SKKFastBOS.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/30147' ]
-    clean:
-      - crc: 0xC3C40C8E
-        util: 'FO4Edit v4.0.3'
-
 # Subway Runner
   - name: 'subwayrunnnerdynamiclighting.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/18639' ]
@@ -5719,12 +5775,6 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout4/mods/43718' ]
     clean:
       - crc: 0x6E30DA77
-        util: 'FO4Edit v4.0.3'
-
-  - name: 'SKKCombatSettlers.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/30308' ]
-    clean:
-      - crc: 0x60BCBD74
         util: 'FO4Edit v4.0.3'
 
   - name: 'Companion_ShutUp.esp'
@@ -6247,17 +6297,6 @@ plugins:
       - crc: 0xDACA5AF7
         util: 'FO4Edit v4.0.2f'
 
-  - name: 'SKKRESystemManager.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/42081' ]
-    clean:
-      - crc: 0x9C7F2E27
-        util: 'FO4Edit v4.0.3'
-  - name: 'SKKRETrigger.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/42081' ]
-    clean:
-      - crc: 0x4C39E3EA
-        util: 'FO4Edit v4.0.3'
-
   - name: 'Rangergearnew.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/9034' ]
     dirty:
@@ -6303,12 +6342,6 @@ plugins:
     clean:
       - crc: 0xA433A46E
         util: 'FO4Edit v4.0.2f'
-
-  - name: 'SKKHostileWorkshops.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/47317' ]
-    clean:
-      - crc: 0x3F9E589A
-        util: 'FO4Edit v4.0.3'
 
   - name: 'Scrap Everything - Ultimate Edition.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/5320' ]
@@ -7010,17 +7043,6 @@ plugins:
         util: '[FO4Edit v4.0.2](https://www.nexusmods.com/fallout4/mods/2737)'
         nav: 9
 
-  - name: 'SKKSettlementAttackSystem.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/37393' ]
-    clean:
-      - crc: 0x240F4C3F
-        util: 'FO4Edit v4.0.3'
-  - name: 'SKKSettlementAttackSystemMarkers.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/37393' ]
-    clean:
-      - crc: 0xB8EADAD7
-        util: 'FO4Edit v4.0.3'
-
   - name: 'CaN.es(m|p)'
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/19040'
@@ -7311,12 +7333,6 @@ plugins:
         crc: 0xB228B5D7
         util: '[FO4Edit v4.0.3f](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 4
-
-  - name: 'SKKCombatStalkers.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/30308' ]
-    clean:
-      - crc: 0xAF03EAA6
-        util: 'FO4Edit v4.0.3'
 
   - name: 'Winter Overhaul.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/28665/' ]
