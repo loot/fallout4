@@ -3495,6 +3495,8 @@ plugins:
       - crc: 0x2ADD86AE
         util: 'FO4Edit v4.0.3h (Hotfix 1)'
 
+###### Gameplay - Companion & Creature Managers ######
+
 ###### Gameplay - NPC Balance & Distribution ######
   - name: 'SuperMutantRedux.*\.esp'
     url:
