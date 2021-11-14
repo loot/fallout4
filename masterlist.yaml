@@ -4007,7 +4007,13 @@ plugins:
 
 ###### New Characters - Allies ######
   - name: 'AGNISNikaCola01.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/30488' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/30488/' ]
+    msg:
+      - <<: *patch3rdParty
+        subs:
+          - 'Extended Dialogue Interface'
+          - '[The Machine and Her XDI patch](https://www.nexusmods.com/fallout4/mods/41194/)'
+        condition: 'checksum("F4SE/Plugins/XDI.dll", E1542495) and active("AGNISNikaCola01.esp")'
     dirty:
       - <<: *reqManualFix
         crc: 0x2884FFB4
@@ -4019,12 +4025,6 @@ plugins:
         crc: 0x51ED5F6A
         util: '[FO4Edit v4.0.3](https://www.nexusmods.com/fallout4/mods/2737)'
         nav: 10
-    msg:
-      - <<: *patch3rdParty
-        subs:
-          - 'Extended Dialogue Interface'
-          - '[The Machine and Her XDI patch](https://www.nexusmods.com/fallout4/mods/41194)'
-        condition: 'checksum("F4SE/Plugins/XDI.dll", E1542495) and active("AGNISNikaCola01.esp")'
 
 ###### FROST Survival Simulator ######
   - name: 'FROST.esp'
