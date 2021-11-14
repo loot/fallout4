@@ -3495,6 +3495,17 @@ plugins:
       - crc: 0x2ADD86AE
         util: 'FO4Edit v4.0.3h (Hotfix 1)'
 
+###### Gameplay - Companion & Creature Managers ######
+  - name: 'AmazingFollowerTweaks.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/26976/' ]
+    after:
+      - 'IcebreakerCDO-Piper.esp'
+      - 'PlayerComments.esp'
+    inc: [ 'EFF.esp' ]
+    clean:
+      - crc: 0x9DEFF15C
+        util: 'FO4Edit v4.0.4'
+
 ###### Gameplay - NPC Balance & Distribution ######
   - name: 'SuperMutantRedux.*\.esp'
     url:
@@ -5828,17 +5839,6 @@ plugins:
       - <<: *useInstead
         subs: [ '[Crafting Mastery (Crafting Workbenches updated)](https://www.nexusmods.com/fallout4/mods/17849/)' ]
 
-  - name: 'AmazingFollowerTweaks.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/26976' ]
-    after:
-      - 'IcebreakerCDO-Piper.esp'
-      - 'PlayerComments.esp'
-    inc:
-      - name: 'EFF.esp'
-        display: 'Unlimited Companion Framework **EFF.esp**'
-    clean:
-      - crc: 0x9DEFF15C
-        util: 'FO4Edit v4.0.3'
   - name: 'EFF.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/11829' ]
     clean:
