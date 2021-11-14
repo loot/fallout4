@@ -3511,8 +3511,8 @@ plugins:
       - link: 'https://www.nexusmods.com/fallout4/mods/11829/'
         name: 'Unlimited Companion Framework'
     clean:
-      - crc: 0xd2da60ba
-        util: FO4Edit v3.2.1
+      - crc: 0xD2DA60BA
+        util: 'FO4Edit v4.0.4'
 
 ###### Gameplay - NPC Balance & Distribution ######
   - name: 'SuperMutantRedux.*\.esp'
