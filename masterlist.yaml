@@ -4060,6 +4060,15 @@ plugins:
         util: '[FO4Edit v4.0.4](https://www.nexusmods.com/fallout4/mods/2737)'
         nav: 10
 
+###### New Characters - Enemies ######
+  - name: 'SKKCombatStalkers.esp'
+    url:
+      - 'https://bethesda.net/en/mods/fallout4/mod-detail/4056604/'
+      - 'https://skkmods.com/mod/skk-combat-stalkers/'
+    clean:
+      - crc: 0x05AE4ECE
+        util: 'FO4Edit v4.0.4'
+
 ###### FROST Survival Simulator ######
   - name: 'FROST.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/18898/' ]
@@ -7311,12 +7320,6 @@ plugins:
         crc: 0xB228B5D7
         util: '[FO4Edit v4.0.3f](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 4
-
-  - name: 'SKKCombatStalkers.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/30308' ]
-    clean:
-      - crc: 0xAF03EAA6
-        util: 'FO4Edit v4.0.3'
 
   - name: 'Winter Overhaul.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/28665/' ]
