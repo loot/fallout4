@@ -3731,6 +3731,15 @@ plugins:
         itm: 40
         udr: 14
 
+  - name: 'SKKFastBOS.esp'
+    url:
+      - 'https://bethesda.net/en/mods/fallout4/mod-detail/4055555/'
+      - 'https://skkmods.com/mod/skk-fast-bos/'
+      - 'https://www.nexusmods.com/fallout4/mods/30147/'
+    clean:
+      - crc: 0xC3C40C8E
+        util: 'FO4Edit v4.0.4'
+
   - name: 'SKKFastStartNewGame.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/29227/' ]
     group: *lowPriorityGroup
@@ -5591,12 +5600,6 @@ plugins:
         crc: 0x74BE02DE
         util: '[FO4Edit v4.0.2f](https://www.nexusmods.com/fallout4/mods/2737)'
         nav: 1
-
-  - name: 'SKKFastBOS.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/30147' ]
-    clean:
-      - crc: 0xC3C40C8E
-        util: 'FO4Edit v4.0.3'
 
 # Subway Runner
   - name: 'subwayrunnnerdynamiclighting.esp'
