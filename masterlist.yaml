@@ -3504,7 +3504,7 @@ plugins:
     inc: [ 'EFF.esp' ]
     clean:
       - crc: 0x9DEFF15C
-        util: 'FO4Edit v4.0.3'
+        util: 'FO4Edit v4.0.4'
 
 ###### Gameplay - NPC Balance & Distribution ######
   - name: 'SuperMutantRedux.*\.esp'
