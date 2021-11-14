@@ -4007,7 +4007,9 @@ plugins:
 
 ###### New Characters - Allies ######
   - name: 'AGNISNikaCola01.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/30488/' ]
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/30488/'
+        name: 'The Machine And Her'
     msg:
       - <<: *patch3rdParty
         subs:
