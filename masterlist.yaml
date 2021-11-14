@@ -3458,6 +3458,14 @@ plugins:
       - crc: 0x58BF06AA
         util: 'FO4Edit v4.0.3h (Hotfix 1)'
 
+  - name: 'SKKCombatSettlers.esp'
+    url:
+      - 'https://bethesda.net/en/mods/fallout4/mod-detail/4080062/'
+      - 'https://skkmods.com/mod/skk-combat-settlers/'
+    clean:
+      - crc: 0x3DCE8E04
+        util: 'FO4Edit v4.0.4'
+
   - name: 'SKKHostileWorkshops.esp'
     url:
       - 'https://bethesda.net/en/mods/fallout4/mod-detail/4179319/'
@@ -5761,12 +5769,6 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout4/mods/43718' ]
     clean:
       - crc: 0x6E30DA77
-        util: 'FO4Edit v4.0.3'
-
-  - name: 'SKKCombatSettlers.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/30308' ]
-    clean:
-      - crc: 0x60BCBD74
         util: 'FO4Edit v4.0.3'
 
   - name: 'Companion_ShutUp.esp'
