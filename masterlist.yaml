@@ -3530,7 +3530,7 @@ plugins:
         condition: 'active("Unofficial Fallout 4 Patch.esp") and not active("Z_Horizon.esp") and not checksum("scripts/followersscript.pex", 11074D38)'
     clean:
       - crc: 0x016DB1E5
-        util: 'FO4Edit v4.0.3'
+        util: 'FO4Edit v4.0.4'
 
 ###### Gameplay - NPC Balance & Distribution ######
   - name: 'SuperMutantRedux.*\.esp'
