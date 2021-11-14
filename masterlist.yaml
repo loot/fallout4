@@ -4005,6 +4005,29 @@ plugins:
         util: '[FO4Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 127
 
+###### New Characters - Allies ######
+  - name: 'AGNISNikaCola01.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/30488/'
+        name: 'The Machine And Her'
+    msg:
+      - <<: *patch3rdParty
+        subs:
+          - 'Extended Dialogue Interface'
+          - '[The Machine and Her XDI patch](https://www.nexusmods.com/fallout4/mods/41194/)'
+        condition: 'checksum("F4SE/Plugins/XDI.dll", E1542495) and active("AGNISNikaCola01.esp")'
+    dirty:
+      - <<: *reqManualFix
+        crc: 0x0C379897
+        util: '[FO4Edit v4.0.4](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 129
+        udr: 2
+        nav: 10
+      - <<: *reqManualFix
+        crc: 0xDF624487
+        util: '[FO4Edit v4.0.4](https://www.nexusmods.com/fallout4/mods/2737)'
+        nav: 10
+
 ###### FROST Survival Simulator ######
   - name: 'FROST.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/18898/' ]
@@ -7070,26 +7093,6 @@ plugins:
       - crc: 0x9E3E233E
         util: 'FO4Edit v4.0.2f'
 
-# The Machine and Her
-  - name: 'AGNISNikaCola01.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/30488' ]
-    dirty:
-      - <<: *reqManualFix
-        crc: 0x2884FFB4
-        util: '[FO4Edit v4.0.3](https://www.nexusmods.com/fallout4/mods/2737)'
-        itm: 129
-        udr: 2
-        nav: 10
-      - <<: *reqManualFix
-        crc: 0x51ED5F6A
-        util: '[FO4Edit v4.0.3](https://www.nexusmods.com/fallout4/mods/2737)'
-        nav: 10
-    msg:
-      - <<: *patch3rdParty
-        subs:
-          - 'Extended Dialogue Interface'
-          - '[The Machine and Her XDI patch](https://www.nexusmods.com/fallout4/mods/41194)'
-        condition: 'checksum("F4SE/Plugins/XDI.dll", E1542495) and active("AGNISNikaCola01.esp")'
   - name: 'AGNISNikaCola01-XDI patch.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/41194' ]
     dirty:
