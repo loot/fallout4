@@ -3741,7 +3741,10 @@ plugins:
         util: 'FO4Edit v4.0.4'
 
   - name: 'SKKFastStartNewGame.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/29227/' ]
+    url:
+      - 'https://bethesda.net/en/mods/fallout4/mod-detail/4051239/'
+      - 'https://skkmods.com/mod/skk-fast-start-new-game/'
+      - 'https://www.nexusmods.com/fallout4/mods/29227/'
     group: *lowPriorityGroup
     inc:
       - 'AnotherLife.esp'
@@ -3749,7 +3752,7 @@ plugins:
       - 'StartMeUp.esp'
     clean:
       - crc: 0x7C5856B7
-        util: 'FO4Edit v4.0.3h (Hotfix 1)'
+        util: 'FO4Edit v4.0.4'
 
   - name: 'StartMeUp.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/18946/' ]
