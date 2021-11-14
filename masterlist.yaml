@@ -3458,6 +3458,15 @@ plugins:
       - crc: 0x58BF06AA
         util: 'FO4Edit v4.0.3h (Hotfix 1)'
 
+  - name: 'SKKHostileWorkshops.esp'
+    url:
+      - 'https://bethesda.net/en/mods/fallout4/mod-detail/4179319/'
+      - 'https://skkmods.com/mod/skk-hostile-workshops/'
+      - 'https://www.nexusmods.com/fallout4/mods/47317/'
+    clean:
+      - crc: 0x3F9E589A
+        util: 'FO4Edit v4.0.4'
+
   - name: 'Vault-Tec Historical Preservation Initiative.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/12019/' ]
     group: *underridesGroup
@@ -6327,12 +6336,6 @@ plugins:
     clean:
       - crc: 0xA433A46E
         util: 'FO4Edit v4.0.2f'
-
-  - name: 'SKKHostileWorkshops.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/47317' ]
-    clean:
-      - crc: 0x3F9E589A
-        util: 'FO4Edit v4.0.3'
 
   - name: 'Scrap Everything - Ultimate Edition.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/5320' ]
