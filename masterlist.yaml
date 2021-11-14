@@ -3514,6 +3514,24 @@ plugins:
       - crc: 0xD2DA60BA
         util: 'FO4Edit v4.0.4'
 
+  - name: 'EveryonesBestFriend.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/13459/' ]
+    msg:
+      - <<: *alreadyInOrFixedByX
+        subs: [ '[Amazing Follower Tweaks](https://www.nexusmods.com/fallout4/mods/26976/)' ]
+        condition: 'active("AmazingFollowerTweaks.esp")'
+      - <<: *alreadyInOrFixedByX
+        subs: [ '[Unlimited Companion Framework](https://www.nexusmods.com/fallout4/mods/11829/)' ]
+        condition: 'active("EFF.esp")'
+      - <<: *patch3rdParty
+        subs:
+          - 'Unofficial Fallout 4 Patch'
+          - '[Everyone''s Best Friend - UFO4P compatibility fix](https://www.nexusmods.com/fallout4/mods/43409)'
+        condition: 'active("Unofficial Fallout 4 Patch.esp") and not active("Z_Horizon.esp") and not checksum("scripts/followersscript.pex", 11074D38)'
+    clean:
+      - crc: 0x016DB1E5
+        util: 'FO4Edit v4.0.3'
+
 ###### Gameplay - NPC Balance & Distribution ######
   - name: 'SuperMutantRedux.*\.esp'
     url:
@@ -5847,23 +5865,6 @@ plugins:
       - <<: *useInstead
         subs: [ '[Crafting Mastery (Crafting Workbenches updated)](https://www.nexusmods.com/fallout4/mods/17849/)' ]
 
-  - name: 'EveryonesBestFriend.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/13459' ]
-    msg:
-      - <<: *alreadyInOrFixedByX
-        subs: [ '[Amazing Follower Tweaks](https://www.nexusmods.com/fallout4/mods/26976/)' ]
-        condition: 'active("AmazingFollowerTweaks.esp")'
-      - <<: *alreadyInOrFixedByX
-        subs: [ '[Unlimited Companion Framework](https://www.nexusmods.com/fallout4/mods/11829/)' ]
-        condition: 'active("EFF.esp")'
-      - <<: *patch3rdParty
-        subs:
-          - 'Unofficial Fallout 4 Patch'
-          - '[Everyone''s Best Friend - UFO4P compatibility fix](https://www.nexusmods.com/fallout4/mods/43409)'
-        condition: 'active("Unofficial Fallout 4 Patch.esp") and not active("Z_Horizon.esp") and not checksum("scripts/followersscript.pex", 11074D38)'
-    clean:
-      - crc: 0x016DB1E5
-        util: 'FO4Edit v4.0.3'
   - name: 'FatManRadiation.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/8602' ]
     clean:
