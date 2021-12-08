@@ -41,6 +41,18 @@ prelude:
       type: say
       content: '%1% is included with this mod.'
 
+    - &languageX
+      type: say
+      content: 'Language: %1%'
+
+    - &mainQuestCompleted
+      type: say
+      content: 'Only use this plugin once the main quest of the game has been completed.'
+
+    - &masterReassign
+      type: say
+      content: 'The **%1%** master must be reassigned to **%2%**.'
+
     - &missingRequirementXforY
       type: warn
       content: 'It appears you have installed **%2%**, but some of its requirements seem to be missing. Please ensure you have correctly installed **%1%**.'
@@ -52,6 +64,10 @@ prelude:
     - &moddingPlugin
       type: error
       content: 'This plugin is a modding resource and should not be used in-game.'
+
+    - &moveXFromYToZ
+      type: say
+      content: 'Move %1% from %2% to %3%.'
 
     - &obsolete
       type: warn
@@ -78,6 +94,10 @@ prelude:
       type: say
       content: 'You seem to be using **%1%**, but you have not enabled a compatibility patch for this mod. A compatibility patch is included with this plugin''s installer.'
 
+    - &patchOutdated
+      type: warn
+      content: 'This patch is outdated and may not be compatible with the latest version of the patched mod.'
+
     - &patchProvided
       type: say
       content: 'You seem to be using **%1%**, but you have not enabled a compatibility patch for this mod. A compatibility patch is provided on this plugin''s mod page.'
@@ -89,6 +109,10 @@ prelude:
     - &patchUpdateAvailable
       type: say
       content: 'Update Patch available: %1%'
+
+    - &renameFile
+      type: say
+      content: 'Rename this file to %1%.'
 
     - &renameXtoY
       type: warn
@@ -106,10 +130,29 @@ prelude:
       type: warn
       content: 'Requires: %1%'
 
+    - &runAnimFramework
+      type: say
+      content: 'It appears you have **%1%** installed. Remember to run **%2%** every time you have installed or uninstalled %3%, or a %3%-based mod.'
+
+    - &runxLODGen
+      type: say
+      content: 'If you add, remove, or update plugins that alter WRLD/CELL records, remember to update this module with **xLODGen**.'
+
     - &sortMasters
       type: say
       content: 'Plugin''s Masters require sorting. %1%'
       subs: [ '[xEdit - Sort Masters](https://tes5edit.github.io/docs/7-mod-cleaning-and-error-checking.html#SortingMasterFileLoadOrders)' ]
+
+    - &useBashTweakInstead
+      type: say
+      content: 'A Bashed Patch tweak can be used instead of this plugin. %1%'
+      subs: [ '' ]
+      condition: 'file("Bashed Patch.*\.esp")'
+
+    - &useINITweakInstead
+      type: say
+      content: 'An INI tweak can be used instead of this plugin. %1%'
+      subs: [ '' ]
 
     - &useInstead
       type: warn
