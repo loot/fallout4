@@ -6192,3 +6192,14 @@ plugins:
     clean:
       - crc: 0xB0CE38E4
         util: 'FO4Edit v4.0.3h (Hotfix 1)'
+
+  - name: 'ModdableGoodfeels.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/11500' ]
+    dirty:
+      - <<: *quickClean
+        crc: 0x24BDA937
+        util: '[FO4Edit v4.0.4](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 3
+    clean:
+      - crc: 0x0FFB910B
+        util: 'FO4Edit v4.0.4'
