@@ -2846,6 +2846,19 @@ plugins:
         itm: 1
         udr: 1
 
+###### Locations - Overhauls ######
+  - name: 'atlanticofficesf23.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/25401' ]
+    dirty:
+      - <<: *quickClean
+        crc: 0x0E1BEC01
+        util: '[FO4Edit v4.0.4](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 64
+        udr: 11
+    clean:
+      - crc: 0x13771793
+        util: 'FO4Edit v4.0.4'
+
 ###### Locations - Player Homes ######
   - name: 'AlootHomePlate.esp'
     url:
