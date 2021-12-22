@@ -1710,7 +1710,7 @@ plugins:
     msg: [ *alreadyInUFO4P ]
 
   - name: 'ModdableGoodfeels.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/11500' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/11500/' ]
     dirty:
       - <<: *quickClean
         crc: 0x24BDA937
