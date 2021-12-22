@@ -2310,6 +2310,25 @@ plugins:
         udr: 4
 
 ###### Gameplay - Combat ######
+  - name: 'Forever Radiation (Lite|Hardcore|Even HarderCore)\.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/48231/' ]
+  - name: 'Forever Radiation Lite.esp'
+    dirty:
+      - <<: *quickClean
+        crc: 0x4A9C4968
+        util: '[FO4Edit v4.0.4](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 7
+  - name: 'Forever Radiation Hardcore.esp'
+    dirty:
+      - <<: *quickClean
+        crc: 0x97334E15
+        util: '[FO4Edit v4.0.4](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 6
+  - name: 'Forever Radiation Even HarderCore.esp'
+    clean:
+      - crc: 0x3E825AE2
+        util: 'FO4Edit v4.0.4'
+
   - name: 'SKKSettlementAttackSystem(Markers)?\.esp'
     url:
       - 'https://bethesda.net/en/mods/fallout4/mod-detail/4096084/'
