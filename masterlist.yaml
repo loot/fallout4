@@ -1716,9 +1716,6 @@ plugins:
         crc: 0x24BDA937
         util: '[FO4Edit v4.0.4](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 3
-    clean:
-      - crc: 0x0FFB910B
-        util: 'FO4Edit v4.0.4'
 
   - name: 'Mole Rat Disease Fix.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/8908/' ]
