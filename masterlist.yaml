@@ -2316,9 +2316,6 @@ plugins:
         crc: 0x97334E15
         util: '[FO4Edit v4.0.4](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 6
-    clean:
-      - crc: 0x0B19F4E4
-        util: 'FO4Edit v4.0.4'
   - name: 'Forever Radiation Even HarderCore.esp'
     clean:
       - crc: 0x3E825AE2
