@@ -2309,9 +2309,6 @@ plugins:
         crc: 0x4A9C4968
         util: '[FO4Edit v4.0.4](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 7
-    clean:
-      - crc: 0x004D1427
-        util: 'FO4Edit v4.0.4'
   - name: 'Forever Radiation Hardcore.esp'
     dirty:
       - <<: *quickClean
