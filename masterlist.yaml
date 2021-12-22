@@ -2855,9 +2855,6 @@ plugins:
         util: '[FO4Edit v4.0.4](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 64
         udr: 11
-    clean:
-      - crc: 0x13771793
-        util: 'FO4Edit v4.0.4'
 
 ###### Locations - Player Homes ######
   - name: 'AlootHomePlate.esp'
