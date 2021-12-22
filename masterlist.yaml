@@ -2845,6 +2845,14 @@ plugins:
         util: '[FO4Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 429
 
+  - name: 'MarksmansMistress.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/56090/' ]
+    dirty:
+      - <<: *quickClean
+        crc: 0xD05A81AD
+        util: '[FO4Edit v4.0.4](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 19
+
   - name: 'WattzLaserGun.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/26386/' ]
     dirty:
