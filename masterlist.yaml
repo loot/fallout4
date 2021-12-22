@@ -2848,7 +2848,7 @@ plugins:
 
 ###### Locations - Overhauls ######
   - name: 'atlanticofficesf23.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/25401' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/25401/' ]
     dirty:
       - <<: *quickClean
         crc: 0x0E1BEC01
