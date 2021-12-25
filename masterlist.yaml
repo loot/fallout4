@@ -6239,7 +6239,7 @@ plugins:
         util: 'FO4Edit v4.0.3h (Hotfix 1)'
         
   - name: 'Skip New Game Intro.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/28562' ]
+    url: [ 'https://www.nexusmods.com/fallout4/mods/28562/' ]
     dirty:
       - <<: *quickClean
         crc: 0xA99E0D9B
