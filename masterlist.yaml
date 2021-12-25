@@ -6253,3 +6253,11 @@ plugins:
         crc: 0x57DD6553
         util: '[FO4Edit v4.0.4b](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 1
+        
+  - name: 'CheatTerminal.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/13285/' ]
+    dirty:
+      - <<: *quickClean
+        crc: 0x6E9E192A
+        util: '[FO4Edit v4.0.4b](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 4
