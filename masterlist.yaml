@@ -2050,6 +2050,19 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout4/mods/35720/' ]
     group: *fixesGroup
 
+###### AudioVisual - Models & Textures ######
+  - name: 'TacticalTablet.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/55346/' ]
+    inc:
+      - 'AutoUnequipPipboy.esm'
+      - 'HidePipboy.esp'
+      - 'PipboyRemover.esp'
+      - 'Pipboy Zero.esp'
+    msg: [ *requiresMCM ]
+    clean:
+      - crc: 0x54C08EA5
+        util: 'FO4Edit v4.0.4b'
+
 ###### Audiovisual - Sound & Music ######
   - name: 'Reverb and Ambiance Overhaul.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/10189/' ]
