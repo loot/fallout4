@@ -2053,6 +2053,11 @@ plugins:
 ###### AudioVisual - Models & Textures ######
   - name: 'TacticalTablet.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/55346/' ]
+    inc:
+      - 'AutoUnequipPipboy.esm'
+      - 'HidePipboy.esp'
+      - 'PipboyRemover.esp'
+      - 'Pipboy Zero.esp'
 
 ###### Audiovisual - Sound & Music ######
   - name: 'Reverb and Ambiance Overhaul.esp'
