@@ -2051,6 +2051,8 @@ plugins:
     group: *fixesGroup
 
 ###### AudioVisual - Models & Textures ######
+  - name: 'TacticalTablet.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/55346/' ]
 
 ###### Audiovisual - Sound & Music ######
   - name: 'Reverb and Ambiance Overhaul.esp'
