@@ -2050,6 +2050,8 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout4/mods/35720/' ]
     group: *fixesGroup
 
+###### AudioVisual - Models & Textures ######
+
 ###### Audiovisual - Sound & Music ######
   - name: 'Reverb and Ambiance Overhaul.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/10189/' ]
