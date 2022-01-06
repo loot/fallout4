@@ -269,6 +269,12 @@ common:
     subs: [ 'Fallout 4 v1.4.132.0' ]
     condition: 'version("../Fallout4.exe", "1.4.132.0", >=)'
 
+  # &requiresMCM_X
+  - &requiresMCM
+    <<: *requiresMCM_X
+    subs: [ '[Mod Configuration Menu](https://www.nexusmods.com/fallout4/mods/21497/)' ]
+    condition: 'not file("F4SE/Plugins/mcm.dll")'
+
   # &useVersion
   - &useVersionAutomatron
     <<: *useVersion
