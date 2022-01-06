@@ -2058,6 +2058,7 @@ plugins:
       - 'HidePipboy.esp'
       - 'PipboyRemover.esp'
       - 'Pipboy Zero.esp'
+    msg: [ *requiresMCM ]
 
 ###### Audiovisual - Sound & Music ######
   - name: 'Reverb and Ambiance Overhaul.esp'
