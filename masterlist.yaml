@@ -6256,7 +6256,7 @@ plugins:
     clean:
       - crc: 0xB0CE38E4
         util: 'FO4Edit v4.0.3h (Hotfix 1)'
-        
+
   - name: 'Skip New Game Intro.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/28562/' ]
     dirty:
@@ -6264,7 +6264,7 @@ plugins:
         crc: 0xA99E0D9B
         util: '[FO4Edit v4.0.4b](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 3
-        
+
   - name: 'ArmorWeight.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/51002/' ]
     dirty:
@@ -6272,7 +6272,7 @@ plugins:
         crc: 0x57DD6553
         util: '[FO4Edit v4.0.4b](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 1
-        
+
   - name: 'CheatTerminal.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/13285/' ]
     dirty:
