@@ -1862,7 +1862,7 @@ plugins:
   - name: 'PRP.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/46403/'
-        name: 'Previs Repair Pack'
+        name: 'Previsibines Repair Pack'
     group: *preVisCombinedGroup
     inc: [ 'FROST.esp' ]
     msg:
@@ -1905,11 +1905,16 @@ plugins:
       - <<: *useInstead
         subs: [ '[FROST - Interior Cell Fixes](https://www.nexusmods.com/fallout4/mods/48425/)' ]
         condition: 'active("FROST.esp") and not active("FROSTIntPR.esp")'
+    dirty:
+      - <<: *quickClean
+        crc: 0x1B6DABF3
+        util: '[FO4Edit v4.0.4](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 13
     clean:
-      - crc: 0xF1D4A3C9
-        util: 'FO4Edit v4.0.3h (Hotfix 1)'
-      - crc: 0x883C60FA
-        util: 'FO4Edit v4.0.3h (Hotfix 1)'
+      - crc: 0xC74C2994
+        util: 'FO4Edit v4.0.4'
+      - crc: 0xA89A24FA
+        util: 'FO4Edit v4.0.4'
   - name: 'ColterFix.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/46403/' ]
     group: *fixesGroup
@@ -1974,6 +1979,11 @@ plugins:
     req: [ 'UltraInteriorLighting.esp' ]
   - name: 'PRP-Compat-UIL-Darker.esp'
     req: [ 'UltraInteriorLighting_DarkerAmbience.esp' ]
+  - name: 'PRP-SS2.esp'
+    after: [ 'PRP.esp' ]
+    clean:
+      - crc: 0x4B9C892E
+        util: 'FO4Edit v4.0.4'
 
 ###### Texture overhauls ######
   - name: 'OVT.esp'
