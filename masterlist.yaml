@@ -1862,7 +1862,7 @@ plugins:
   - name: 'PRP.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/46403/'
-        name: 'Previs Repair Pack'
+        name: 'Previsibines Repair Pack'
     group: *preVisCombinedGroup
     inc: [ 'FROST.esp' ]
     msg:
