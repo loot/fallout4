@@ -350,27 +350,22 @@ bash_tags:
 
 globals:
 # Latest LOOT Thread
-  - &lootThread
-    <<: *latestLOOTThread
-    subs: [ 'https://loot.github.io/latest-thread/' ]
+  - *latestLOOTThread
 
 # Creation Club Plugins
-  - &creationClubFO4
-    <<: *creationClubPlugins
+  - <<: *creationClubPlugins
     condition: 'file("LOOT") and version("LOOT", "0.13.1.0", <) and file("cc[A-Z]{3}F(O|0)4[0-9]{3}.*\.es(l|m)")'
 
 # F4SE
   # Missing
-  - &f4seMissing
-    <<: *scriptExtenderMissing
+  - <<: *scriptExtenderMissing
     subs:
       - 'F4SE'
       - '[F4SE](https://f4se.silverlock.org)'
     condition: 'file("F4SE/Plugins/([^\.]+\.dll)") and not file("../f4se(vr)?_loader\.exe")'
 
   # Required Scripts
-  - &f4seRequiredScripts
-    <<: *scriptExtenderRequiredScripts
+  - <<: *scriptExtenderRequiredScripts
     subs:
       - 'Fallout 4 Script Extender'
       - '[F4SE](https://f4se.silverlock.org)'
