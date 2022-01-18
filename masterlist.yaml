@@ -2071,6 +2071,11 @@ plugins:
 ###### Audiovisual - Sound & Music ######
   - name: 'LostOldiesRadio.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/57110/' ]
+    dirty:
+      - <<: *quickClean
+        crc: 0x4117D51E
+        util: '[FO4Edit v4.0.4b](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 1
 
   - name: 'Reverb and Ambiance Overhaul.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/10189/' ]
