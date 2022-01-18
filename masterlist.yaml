@@ -2070,6 +2070,7 @@ plugins:
 
 ###### Audiovisual - Sound & Music ######
   - name: 'LostOldiesRadio.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/57110/' ]
 
   - name: 'Reverb and Ambiance Overhaul.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/10189/' ]
