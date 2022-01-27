@@ -2301,6 +2301,12 @@ plugins:
       - crc: 0x58BF06AA
         util: 'FO4Edit v4.0.3h (Hotfix 1)'
 
+  - name: 'Redistribute Weapon Lists.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/44724' ]
+    tag:
+      - Delev
+      - Relev
+
   - name: 'SKKCombatSettlers.esp'
     url:
       - 'https://bethesda.net/en/mods/fallout4/mod-detail/4080062/'
