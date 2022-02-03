@@ -3958,8 +3958,6 @@ plugins:
       - 'MoreSkinColors.esp'
       - 'AzarPonyHairstyles.esp'
       - 'Eli_Armour_Compendium.esp'
-      - 'Scrap Everything - Core.esp'
-      - 'Scrap Everything - Ultimate Edition.esp'
     dirty:
       # 21248
       - <<: *quickClean
