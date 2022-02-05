@@ -1858,6 +1858,10 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/46403/'
         name: 'Previsibines Repair Pack'
+  - name: 'PPF.esm'
+    clean:
+      - crc: 0xAC560B59
+        util: 'FO4Edit v4.0.4b'
   - name: 'PRP.esp'
     group: *preVisCombinedGroup
     inc: [ 'FROST.esp' ]
@@ -1901,16 +1905,11 @@ plugins:
       - <<: *useInstead
         subs: [ '[FROST - Interior Cell Fixes](https://www.nexusmods.com/fallout4/mods/48425/)' ]
         condition: 'active("FROST.esp") and not active("FROSTIntPR.esp")'
-    dirty:
-      - <<: *quickClean
-        crc: 0x1B6DABF3
-        util: '[FO4Edit v4.0.4](https://www.nexusmods.com/fallout4/mods/2737)'
-        itm: 13
     clean:
       - crc: 0xC74C2994
-        util: 'FO4Edit v4.0.4'
-      - crc: 0xA89A24FA
-        util: 'FO4Edit v4.0.4'
+        util: 'FO4Edit v4.0.4b'
+      - crc: 0x71362203
+        util: 'FO4Edit v4.0.4b'
   - name: 'ColterFix.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/46403/' ]
     group: *fixesGroup
@@ -1960,26 +1959,53 @@ plugins:
       - <<: *requiresX
         subs: [ 'Clarity v4.2' ]
         condition: 'not version("Clarity.esp", "4.2", ==)'
+    clean:
+      - crc: 0x0E13C44E
+        util: 'FO4Edit v4.0.4b'
   - name: 'PRP-Compat-Clarity-43.esp'
     msg:
       - <<: *requiresX
         subs: [ 'Clarity v4.3' ]
         condition: 'not version("Clarity.esp", "4.3", ==)'
+    clean:
+      - crc: 0x0E13C44E
+        util: 'FO4Edit v4.0.4b'
+  - name: 'PRP-Compat-DCA.esp'
+    clean:
+      - crc: 0x6CFCCB9D
+        util: 'FO4Edit v4.0.4b'
   - name: 'PRP-Compat-Fogout-Int.esp'
     req: [ 'FogOut - Interiors - All DLC.esp' ]
+    clean:
+      - crc: 0x444F032D
+        util: 'FO4Edit v4.0.4b'
   - name: 'PRP-Compat-IntEnh.esp'
     req: [ 'InteriorsEnhanced-All-In-One.esp' ]
+    clean:
+      - crc: 0x3242EBDB
+        util: 'FO4Edit v4.0.4b'
   - name: 'PRP-Compat-RegionNames.esp'
     after: [ 'PRP-Compat-UEL.esp' ]
+    clean:
+      - crc: 0x37BC2B72
+        util: 'FO4Edit v4.0.4b'
   - name: 'PRP-Compat-UIL.esp'
     req: [ 'UltraInteriorLighting.esp' ]
+    clean:
+      - crc: 0xF7BEF984
+        util: 'FO4Edit v4.0.4b'
   - name: 'PRP-Compat-UIL-Darker.esp'
     req: [ 'UltraInteriorLighting_DarkerAmbience.esp' ]
+    clean:
+      - crc: 0x55F76C29
+        util: 'FO4Edit v4.0.4b'
   - name: 'PRP-SS2.esp'
     after: [ 'PRP.esp' ]
     clean:
       - crc: 0x4B9C892E
         util: 'FO4Edit v4.0.4'
+      - crc: 0xE2FF957B
+        util: 'FO4Edit v4.0.4b'
 
 ###### Texture overhauls ######
   - name: 'OVT.esp'
