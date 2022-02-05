@@ -1917,31 +1917,7 @@ plugins:
       - <<: *alreadyInX
         subs: [ 'Unofficial Fallout 4 Patch' ]
         condition: 'active("Unofficial Fallout 4 Patch.esp") and version("Unofficial Fallout 4 Patch.esp", "2.1.4", >=)'
-  # Previs Repair Pack - Patches #
-  - name: 'Clean_and_Simple_and_Prevised_All_CAS.esp'
-    after:
-      - 'PRP.esp'
-      - 'PRP-Compat-UEL.esp'
-  - name: 'Eli_FactionHousingOverhaul_FarHarbor_Previs.esp'
-    after:
-      - 'PRP.esp'
-      - 'PRP-Compat-Clarity-42.esp'
-      - 'PRP-Compat-Clarity-43.esp'
-      - 'PRP-Compat-IntEnh.esp'
-      - 'PRP-Compat-UIL.esp'
-      - 'PRP-Compat-UIL-Darker.esp'
-  - name: 'ScrapEverythingUltimatePrevis.esp'
-    msg:
-      - type: error
-        content:
-          - lang: en
-            text: 'Incompatible with PRP.esp v0.53 or lower.'
-        condition: 'active("PRP.esp") and version("PRP.esp", "0.54", <)'
-    dirty:
-      - <<: *quickClean
-        crc: 0xA6F531E9
-        util: '[FO4Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout4/mods/2737)'
-        itm: 808
+  # PRP - Compat Grabbag #
   - name: 'PRP-Compat-(Clarity-42|Clarity-43|DCA|Fogout-Int|IntEnh|RegionNames|UIL|UIL-Darker)\.esp'
     after: [ 'PRP.esp' ]
   - name: 'PRP-Compat-Clarity-(42|43)\.esp'
@@ -1992,6 +1968,19 @@ plugins:
     clean:
       - crc: 0x55F76C29
         util: 'FO4Edit v4.0.4b'
+  # PRP - Other Patches #
+  - name: 'Clean_and_Simple_and_Prevised_All_CAS.esp'
+    after:
+      - 'PRP.esp'
+      - 'PRP-Compat-UEL.esp'
+  - name: 'Eli_FactionHousingOverhaul_FarHarbor_Previs.esp'
+    after:
+      - 'PRP.esp'
+      - 'PRP-Compat-Clarity-42.esp'
+      - 'PRP-Compat-Clarity-43.esp'
+      - 'PRP-Compat-IntEnh.esp'
+      - 'PRP-Compat-UIL.esp'
+      - 'PRP-Compat-UIL-Darker.esp'
   - name: 'PRP-SS2.esp'
     after: [ 'PRP.esp' ]
     clean:
@@ -1999,6 +1988,18 @@ plugins:
         util: 'FO4Edit v4.0.4'
       - crc: 0xE2FF957B
         util: 'FO4Edit v4.0.4b'
+  - name: 'ScrapEverythingUltimatePrevis.esp'
+    msg:
+      - type: error
+        content:
+          - lang: en
+            text: 'Incompatible with PRP.esp v0.53 or lower.'
+        condition: 'active("PRP.esp") and version("PRP.esp", "0.54", <)'
+    dirty:
+      - <<: *quickClean
+        crc: 0xA6F531E9
+        util: '[FO4Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 808
 
 ###### Texture overhauls ######
   - name: 'OVT.esp'
