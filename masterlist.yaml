@@ -2054,6 +2054,10 @@ plugins:
   - name: 'Flicker Fixer.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/35720/' ]
     group: *fixesGroup
+    msg:
+      - <<: *alreadyInOrFixedByX
+        subs: [ 'Previsibines Repair Pack v0.57+' ]
+        condition: 'version("PRP.esp", "0.57", >=)'
 
 ###### AudioVisual - Models & Textures ######
   - name: 'TacticalTablet.esp'
