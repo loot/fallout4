@@ -1854,10 +1854,11 @@ plugins:
       - crc: 0x0E248104
         util: 'FO4Edit v4.0.3h (Hotfix 1)'
 
-  - name: 'PRP.esp'
+  - name: 'P(PF|RP.*)\.es[mp]'
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/46403/'
         name: 'Previsibines Repair Pack'
+  - name: 'PRP.esp'
     group: *preVisCombinedGroup
     inc: [ 'FROST.esp' ]
     msg:
