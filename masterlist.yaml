@@ -1860,7 +1860,7 @@ plugins:
         name: 'Previsibines Repair Pack'
   - name: 'PPF.esm'
     clean:
-      - crc: 0xAC560B59
+      - crc: 0x92CA557D
         util: 'FO4Edit v4.0.4b'
   - name: 'PRP.esp'
     group: *preVisCombinedGroup
@@ -1868,19 +1868,19 @@ plugins:
     msg:
       - <<: *patchProvided
         subs: [ 'Aloot''s Home Plate' ]
-        condition: 'active("AlootHomePlate.esp") and not version("AlootHomePlate.esp", "2.2", >=) and version("PRP.esp", "0.57.1", !=)'
+        condition: 'active("AlootHomePlate.esp") and not version("AlootHomePlate.esp", "2.2", >=) and version("PRP.esp", "0.57", <) and version("PRP.esp", "0.58", >=)'
       - <<: *patchProvided
         subs: [ 'Clarity - A Visual Overhaul' ]
         condition: 'active("Clarity.esp") and not active("PRP-Compat-Clarity-(42|43)\.esp")'
       - <<: *patchProvided
         subs: [ 'Clean and Simple - All CAS Settlements' ]
-        condition: 'active("Clean and Simple -  All CAS Settlements.esp") and not active("Clean_and_Simple_and_Prevised_All_CAS.esp") and version("PRP.esp", "0.57.1", !=)'
+        condition: 'active("Clean and Simple -  All CAS Settlements.esp") and not active("Clean_and_Simple_and_Prevised_All_CAS.esp") and version("PRP.esp", "0.57", <) and version("PRP.esp", "0.58", >=)'
       - <<: *patchProvided
         subs: [ 'Diamond City Ambience' ]
         condition: 'active("DiamondCityAmbience.esp") and not active("PRP-Compat-DCA.esp")'
       - <<: *patchProvided
         subs: [ 'Faction Housing Overhaul AIO - Far Harbour' ]
-        condition: 'active("DLCCoast.esm") and active("Eli_Faction Housing Overhaul - AiO.esp") and not active("Eli_FactionHousingOverhaul_FarHarbor_Previs.esp") and version("PRP.esp", "0.57.1", !=)'
+        condition: 'active("DLCCoast.esm") and active("Eli_Faction Housing Overhaul - AiO.esp") and not active("Eli_FactionHousingOverhaul_FarHarbor_Previs.esp") and version("PRP.esp", "0.57", <) and version("PRP.esp", "0.58", >=)'
       - <<: *patchProvided
         subs: [ 'FogOut Interiors All DLC' ]
         condition: 'active("FogOut - Interiors - All DLC.esp") and not active("PRP-Compat-Fogout-Int.esp")'
@@ -1908,7 +1908,7 @@ plugins:
     clean:
       - crc: 0xC74C2994
         util: 'FO4Edit v4.0.4b'
-      - crc: 0x71362203
+      - crc: 0x5436F338
         util: 'FO4Edit v4.0.4b'
   - name: 'ColterFix.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/46403/' ]
@@ -1975,8 +1975,8 @@ plugins:
       - 'PRP-Compat-UEL.esp'
     inc:
       - name: 'PRP.esp'
-        display: '**PRP.esp** v0.57.1'
-        condition: 'version("PRP.esp", "0.57.1", ==)'
+        display: '**PRP.esp** v0.57.x'
+        condition: 'version("PRP.esp", "0.57", >=) and version("PRP.esp", "0.58", <)'
   - name: 'Eli_FactionHousingOverhaul_FarHarbor_Previs.esp'
     after:
       - 'PRP.esp'
@@ -1987,8 +1987,8 @@ plugins:
       - 'PRP-Compat-UIL-Darker.esp'
     inc:
       - name: 'PRP.esp'
-        display: '**PRP.esp** v0.57.1'
-        condition: 'version("PRP.esp", "0.57.1", ==)'
+        display: '**PRP.esp** v0.57.x'
+        condition: 'version("PRP.esp", "0.57", >=) and version("PRP.esp", "0.58", <)'
   - name: 'PRP-SS2.esp'
     after: [ 'PRP.esp' ]
     clean:
@@ -1999,11 +1999,8 @@ plugins:
   - name: 'ScrapEverythingUltimatePrevis.esp'
     inc:
       - name: 'PRP.esp'
-        display: '**PRP.esp** v0.53 or lower'
-        condition: 'version("PRP.esp", "0.54", <)'
-      - name: 'PRP.esp'
-        display: '**PRP.esp** v0.57.1'
-        condition: 'version("PRP.esp", "0.57.1", ==)'
+        display: '**PRP.esp** v0.57.x or lower'
+        condition: 'version("PRP.esp", "0.58", <)'
     dirty:
       - <<: *quickClean
         crc: 0xA6F531E9
