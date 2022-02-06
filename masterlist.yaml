@@ -1860,7 +1860,7 @@ plugins:
         name: 'Previsibines Repair Pack'
   - name: 'PPF.esm'
     clean:
-      - crc: 0xAC560B59
+      - crc: 0x92CA557D
         util: 'FO4Edit v4.0.4b'
   - name: 'PRP.esp'
     group: *preVisCombinedGroup
@@ -1908,7 +1908,7 @@ plugins:
     clean:
       - crc: 0xC74C2994
         util: 'FO4Edit v4.0.4b'
-      - crc: 0x71362203
+      - crc: 0x5436F338
         util: 'FO4Edit v4.0.4b'
   - name: 'ColterFix.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/46403/' ]
