@@ -1975,8 +1975,8 @@ plugins:
       - 'PRP-Compat-UEL.esp'
     inc:
       - name: 'PRP.esp'
-        display: '**PRP.esp** v0.57.1'
-        condition: 'version("PRP.esp", "0.57.1", ==)'
+        display: '**PRP.esp** v0.57.x'
+        condition: 'version("PRP.esp", "0.57", >=) and version("PRP.esp", "0.58", <)'
   - name: 'Eli_FactionHousingOverhaul_FarHarbor_Previs.esp'
     after:
       - 'PRP.esp'
@@ -1987,8 +1987,8 @@ plugins:
       - 'PRP-Compat-UIL-Darker.esp'
     inc:
       - name: 'PRP.esp'
-        display: '**PRP.esp** v0.57.1'
-        condition: 'version("PRP.esp", "0.57.1", ==)'
+        display: '**PRP.esp** v0.57.x'
+        condition: 'version("PRP.esp", "0.57", >=) and version("PRP.esp", "0.58", <)'
   - name: 'PRP-SS2.esp'
     after: [ 'PRP.esp' ]
     clean:
@@ -1999,11 +1999,8 @@ plugins:
   - name: 'ScrapEverythingUltimatePrevis.esp'
     inc:
       - name: 'PRP.esp'
-        display: '**PRP.esp** v0.53 or lower'
-        condition: 'version("PRP.esp", "0.54", <)'
-      - name: 'PRP.esp'
-        display: '**PRP.esp** v0.57.1'
-        condition: 'version("PRP.esp", "0.57.1", ==)'
+        display: '**PRP.esp** v0.57.x or lower'
+        condition: 'version("PRP.esp", "0.58", <)'
     dirty:
       - <<: *quickClean
         crc: 0xA6F531E9
