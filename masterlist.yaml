@@ -2065,6 +2065,7 @@ plugins:
     group: *texturesGroup
 
 ###### AudioVisual ######
+  - name: 'VotW.*\.es[lmp]'
 
 ###### AudioVisual - Fixes ######
   - name: 'FirstPersonViewableItemsExpanded.esp'
