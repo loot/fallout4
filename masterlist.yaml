@@ -2069,6 +2069,20 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/24435/'
         name: 'Videos of the Wasteland'
+  - name: 'VotWMaster.esm'
+    clean:
+      - crc: 0x314BB136
+        util: 'FO4Edit v4.0.4b'
+  - name: 'VotWSpecialVideos.esl'
+    clean:
+      - crc: 0x93D8041D
+        util: 'FO4Edit v4.0.4b'
+  - name: 'VotWStarlightDriveIn.esp'
+    dirty:
+      - <<: *quickClean
+        crc: 0x31FB0B86
+        util: '[FO4Edit v4.0.4b](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 2
 
 ###### AudioVisual - Fixes ######
   - name: 'FirstPersonViewableItemsExpanded.esp'
