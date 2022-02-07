@@ -2078,6 +2078,9 @@ plugins:
       - crc: 0x93D8041D
         util: 'FO4Edit v4.0.4b'
   - name: 'VotWStarlightDriveIn.esp'
+    after:
+      - name: 'PRP.esp'
+        condition: 'version("PRP.esp", "0.57", >=)'
     dirty:
       - <<: *quickClean
         crc: 0x31FB0B86
