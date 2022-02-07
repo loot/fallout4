@@ -2066,6 +2066,9 @@ plugins:
 
 ###### AudioVisual ######
   - name: 'VotW.*\.es[lmp]'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/24435/'
+        name: 'Videos of the Wasteland'
 
 ###### AudioVisual - Fixes ######
   - name: 'FirstPersonViewableItemsExpanded.esp'
