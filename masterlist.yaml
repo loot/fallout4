@@ -2064,6 +2064,8 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout4/mods/40386' ]
     group: *texturesGroup
 
+###### AudioVisual ######
+
 ###### AudioVisual - Fixes ######
   - name: 'FirstPersonViewableItemsExpanded.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/26062/' ]
