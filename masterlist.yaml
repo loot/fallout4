@@ -1866,6 +1866,11 @@ plugins:
     group: *preVisCombinedGroup
     inc: [ 'FROST.esp' ]
     msg:
+      - <<: *patch3rdParty
+        subs:
+          - 'Sim Settlements 2 - Chapter 2'
+          - '[Previsibines Repair Pack (PRP) - Sim Settlements 2 Upgrade Kit](https://www.nexusmods.com/fallout4/mods/57947/)'
+        condition: 'active("SS2_XPAC_Chapter2.esm") and not active("PRP-SS2.esp")'
       - <<: *patchProvided
         subs: [ 'Aloot''s Home Plate' ]
         condition: 'active("AlootHomePlate.esp") and not version("AlootHomePlate.esp", "2.2", >=) and version("PRP.esp", "0.57", <) and version("PRP.esp", "0.58", >=)'
