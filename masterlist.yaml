@@ -1989,13 +1989,6 @@ plugins:
       - name: 'PRP.esp'
         display: '**PRP.esp** v0.57.x'
         condition: 'version("PRP.esp", "0.57", >=) and version("PRP.esp", "0.58", <)'
-  - name: 'PRP-SS2.esp'
-    after: [ 'PRP.esp' ]
-    clean:
-      - crc: 0x4B9C892E
-        util: 'FO4Edit v4.0.4'
-      - crc: 0xE2FF957B
-        util: 'FO4Edit v4.0.4b'
   - name: 'ScrapEverythingUltimatePrevis.esp'
     inc:
       - name: 'PRP.esp'
@@ -3067,6 +3060,13 @@ plugins:
         util: 'FO4Edit v4.0.4'
 
 ###### 3rd Party Patches ######
+  - name: 'PRP-SS2.esp'
+    after: [ 'PRP.esp' ]
+    clean:
+      - crc: 0x4B9C892E
+        util: 'FO4Edit v4.0.4'
+      - crc: 0xE2FF957B
+        util: 'FO4Edit v4.0.4b'
 
 ###### FROST Survival Simulator ######
   - name: 'FROST.esp'
