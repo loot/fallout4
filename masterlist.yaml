@@ -3066,6 +3066,8 @@ plugins:
       - crc: 0x05AE4ECE
         util: 'FO4Edit v4.0.4'
 
+###### 3rd Party Patches ######
+
 ###### FROST Survival Simulator ######
   - name: 'FROST.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/18898/' ]
