@@ -1866,6 +1866,11 @@ plugins:
     group: *preVisCombinedGroup
     inc: [ 'FROST.esp' ]
     msg:
+      - <<: *patch3rdParty
+        subs:
+          - 'Sim Settlements 2 - Chapter 2'
+          - '[Previsibines Repair Pack (PRP) - Sim Settlements 2 Upgrade Kit](https://www.nexusmods.com/fallout4/mods/57947/)'
+        condition: 'active("SS2_XPAC_Chapter2.esm") and not active("PRP-SS2.esp")'
       - <<: *patchProvided
         subs: [ 'Aloot''s Home Plate' ]
         condition: 'active("AlootHomePlate.esp") and not version("AlootHomePlate.esp", "2.2", >=) and version("PRP.esp", "0.57", <) and version("PRP.esp", "0.58", >=)'
@@ -1989,13 +1994,6 @@ plugins:
       - name: 'PRP.esp'
         display: '**PRP.esp** v0.57.x'
         condition: 'version("PRP.esp", "0.57", >=) and version("PRP.esp", "0.58", <)'
-  - name: 'PRP-SS2.esp'
-    after: [ 'PRP.esp' ]
-    clean:
-      - crc: 0x4B9C892E
-        util: 'FO4Edit v4.0.4'
-      - crc: 0xE2FF957B
-        util: 'FO4Edit v4.0.4b'
   - name: 'ScrapEverythingUltimatePrevis.esp'
     inc:
       - name: 'PRP.esp'
@@ -3065,6 +3063,16 @@ plugins:
     clean:
       - crc: 0x05AE4ECE
         util: 'FO4Edit v4.0.4'
+
+###### 3rd Party Patches ######
+  - name: 'PRP-SS2.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/57947/'
+        name: 'Previsibines Repair Pack (PRP) - Sim Settlements 2 Upgrade Kit'
+    after: [ 'PRP.esp' ]
+    clean:
+      - crc: 0xDC4A55BC
+        util: 'FO4Edit v4.0.4b'
 
 ###### FROST Survival Simulator ######
   - name: 'FROST.esp'
