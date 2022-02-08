@@ -3066,9 +3066,7 @@ plugins:
         name: 'Previsibines Repair Pack (PRP) - Sim Settlements 2 Upgrade Kit'
     after: [ 'PRP.esp' ]
     clean:
-      - crc: 0x4B9C892E
-        util: 'FO4Edit v4.0.4'
-      - crc: 0xE2FF957B
+      - crc: 0xDC4A55BC
         util: 'FO4Edit v4.0.4b'
 
 ###### FROST Survival Simulator ######
