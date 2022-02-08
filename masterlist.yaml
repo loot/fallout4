@@ -3061,6 +3061,9 @@ plugins:
 
 ###### 3rd Party Patches ######
   - name: 'PRP-SS2.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/57947/'
+        name: 'Previsibines Repair Pack (PRP) - Sim Settlements 2 Upgrade Kit'
     after: [ 'PRP.esp' ]
     clean:
       - crc: 0x4B9C892E
