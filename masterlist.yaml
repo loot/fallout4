@@ -3493,6 +3493,110 @@ plugins:
         util: '[FO4Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 4
 
+###### Horizon ######
+  - name: 'Z_(Architect|Horizon)\.es(m|p)'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/17374' ]
+  - name: 'Z_Horizon.esp'
+    group: *horizonGroup
+    after:
+      - 'advancedAITweaks.esp'
+      - 'Arbitration - Better Combat AI.esp'
+      - 'EveryonesBestFriend.esp'
+    inc:
+      - 'Arbitration - Molotov.esp'
+      - 'Arbitration - Recommended Core.esp'
+      - 'UnbogusFallout.esp'
+      # Carry Weight Mods
+      - 'Carry Weight Wedding Rings.esp'
+      - 'CompanionCarryWeightModifications.esp'
+      - 'IncreasedCarryWeight.esp'
+      - 'IncreasedCarryWeightPlus.esp'
+      - 'UnlimitedDogmeatCarryWeight.esp'
+      # Crafting Mods
+      - 'AmmoCrafting.esp'
+      - name: 'Armorsmith Extended.esp'
+        condition: 'version("Z_Horizon.esp", "1.6.0", >=)'
+      - 'Craftable Armor Size.esp'
+      # Power Armour Overhauls
+      - 'Consistent Power Armor Overhaul.esp'
+      - 'LBPAC.esp'
+      # Sorting Mods
+      - 'BBS000-F04-Ultimate-DEF_UI.esp'
+      - 'Better Inventory Sorting - Armors.esp'
+      - 'Better Inventory Sorting - Misc.esp'
+      - 'CraftModFullNames.esp'
+      - 'CraftModSort_Alpha.esp'
+      - 'Simplified Sorting.esp'
+      - 'SimplySortedVanilla.esl'
+      - 'SimplySortedVanilla.esp'
+      - 'Sort My Stuff - Aid.esp'
+      - 'Swanndolia''s sorting.esp'
+      - 'ValAllInOneByLLX.esp'
+      # Survival Mode Mods
+      - 'FROST.esp'
+      - 'SurvivalOptions.esp'
+    msg:
+      - <<: *patchIncluded
+        subs: [ 'Automatron' ]
+        condition: 'active("DLCRobot.esm") and not active("Z_Horizon_DLC_Automatron.esp") and not active("Z_Horizon_DLC_All.esp")'
+      - <<: *patchIncluded
+        subs: [ 'Far Harbor' ]
+        condition: 'active("DLCCoast.esm") and not active("Z_Horizon_DLC_FarHarbor.esp") and not active("Z_Horizon_DLC_All.esp")'
+      - <<: *patchIncluded
+        subs: [ 'Nuka World' ]
+        condition: 'active("DLCNukaWorld.esm") and not active("Z_Horizon_DLC_Nuka.esp") and not active("Z_Horizon_DLC_All.esp")'
+      - <<: *patchIncluded
+        subs: [ 'Wasteland Workshop' ]
+        condition: 'active("DLCworkshop01.esm") and not active("Z_Horizon_DLC_Workshop01.esp") and not active("Z_Horizon_DLC_All.esp")'
+      - <<: *patchIncluded
+        subs: [ 'Contraptions Workshop' ]
+        condition: 'active("DLCworkshop02.esm") and not active("Z_Horizon_DLC_Workshop02.esp") and not active("Z_Horizon_DLC_All.esp")'
+      - <<: *patchIncluded
+        subs: [ 'Vault-Tec Workshop' ]
+        condition: 'active("DLCworkshop03.esm") and not active("Z_Horizon_DLC_Workshop03.esp") and not active("Z_Horizon_DLC_All.esp")'
+      - type: error
+        content:
+          - lang: en
+            text: 'Another mod seems to be overwriting one of this module''s essential files. Please ensure you''re using this module''s version of %1%.'
+        subs: [ '**scripts/hardcore/hc_managerscript.pex**' ]
+        condition: 'file("scripts/hardcore/hc_managerscript.pex") and version("Z_Horizon.esp", "1.8.0", ==) and not checksum("scripts/hardcore/hc_managerscript.pex", 2FEC9CFC)'
+
+  - name: 'Z_Horizon_DLC_(Automatron|FarHarbor|Nuka|Workshop\d\d)\.esp'
+    msg:
+      - <<: *alreadyInX
+        subs: [ 'Z_Horizon_DLC_All.esp' ]
+        condition: 'active("Z_Horizon_DLC_All.esp")'
+
+  - name: 'Z_Architect_(EnhancedSettlements(_DLC)?|HomePlate)\.esp'
+    group: *horizonGroup
+    after: [ 'Z_Horizon.esp' ]
+  - name: 'Z_Architect_EnhancedSettlements_DLC.esp'
+    after: [ 'Z_Architect_EnhancedSettlements.esp' ]
+  - name: 'Z_Architect_HomePlate.esp'
+    after:
+      - 'Z_Architect_EnhancedSettlements.esp'
+      - 'Z_Architect_EnhancedSettlements_DLC.esp'
+
+  - name: 'Z_(Architect_Extras|BlurRemoval|CameraAddon|Extras)\.esp'
+    after: [ 'Z_Horizon.esp' ]
+  - name: 'Z_Horizon_Desolation.esp'
+    after: [ 'Z_Horizon_Mode_Scavenger.esp' ]
+  - name: 'Z_Horizon_DEFUI(_MenusOnly)?\.esp'
+    msg:
+      - <<: *useOnlyOneX
+        subs: [ 'Horizon DEFUI' ]
+        condition: 'many("Z_Horizon_DEFUI(_MenusOnly)?\.esp")'
+  - name: 'Z_Horizon_Diff_(Cutthroat|Novice|Outcast|Veteran|Wanderer)\.esp'
+    msg:
+      - <<: *useOnlyOneX
+        subs: [ 'Horizon Difficulty' ]
+        condition: 'many("Z_Horizon_Diff_(Cutthroat|Novice|Outcast|Veteran|Wanderer)\.esp")'
+  - name: 'Z_SettlementLimits.esp'
+    msg:
+      - <<: *alreadyInX
+        subs: [ 'Z_Architect_EnhancedSettlements.esp' ]
+        condition: 'active("Z_Architect_EnhancedSettlements.esp")'
+
 
   # Radrose Usability Enhancements
   - name: 'Radrose Usability Enhancements.esp'
@@ -6119,110 +6223,6 @@ plugins:
   - name: 'RAW INPUT.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/27019' ]
     after: [ 'Z_Horizon.esp' ]
-
-###### Horizon ######
-  - name: 'Z_(Architect|Horizon)\.es(m|p)'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/17374' ]
-  - name: 'Z_Horizon.esp'
-    group: *horizonGroup
-    after:
-      - 'advancedAITweaks.esp'
-      - 'Arbitration - Better Combat AI.esp'
-      - 'EveryonesBestFriend.esp'
-    inc:
-      - 'Arbitration - Molotov.esp'
-      - 'Arbitration - Recommended Core.esp'
-      - 'UnbogusFallout.esp'
-      # Carry Weight Mods
-      - 'Carry Weight Wedding Rings.esp'
-      - 'CompanionCarryWeightModifications.esp'
-      - 'IncreasedCarryWeight.esp'
-      - 'IncreasedCarryWeightPlus.esp'
-      - 'UnlimitedDogmeatCarryWeight.esp'
-      # Crafting Mods
-      - 'AmmoCrafting.esp'
-      - name: 'Armorsmith Extended.esp'
-        condition: 'version("Z_Horizon.esp", "1.6.0", >=)'
-      - 'Craftable Armor Size.esp'
-      # Power Armour Overhauls
-      - 'Consistent Power Armor Overhaul.esp'
-      - 'LBPAC.esp'
-      # Sorting Mods
-      - 'BBS000-F04-Ultimate-DEF_UI.esp'
-      - 'Better Inventory Sorting - Armors.esp'
-      - 'Better Inventory Sorting - Misc.esp'
-      - 'CraftModFullNames.esp'
-      - 'CraftModSort_Alpha.esp'
-      - 'Simplified Sorting.esp'
-      - 'SimplySortedVanilla.esl'
-      - 'SimplySortedVanilla.esp'
-      - 'Sort My Stuff - Aid.esp'
-      - 'Swanndolia''s sorting.esp'
-      - 'ValAllInOneByLLX.esp'
-      # Survival Mode Mods
-      - 'FROST.esp'
-      - 'SurvivalOptions.esp'
-    msg:
-      - <<: *patchIncluded
-        subs: [ 'Automatron' ]
-        condition: 'active("DLCRobot.esm") and not active("Z_Horizon_DLC_Automatron.esp") and not active("Z_Horizon_DLC_All.esp")'
-      - <<: *patchIncluded
-        subs: [ 'Far Harbor' ]
-        condition: 'active("DLCCoast.esm") and not active("Z_Horizon_DLC_FarHarbor.esp") and not active("Z_Horizon_DLC_All.esp")'
-      - <<: *patchIncluded
-        subs: [ 'Nuka World' ]
-        condition: 'active("DLCNukaWorld.esm") and not active("Z_Horizon_DLC_Nuka.esp") and not active("Z_Horizon_DLC_All.esp")'
-      - <<: *patchIncluded
-        subs: [ 'Wasteland Workshop' ]
-        condition: 'active("DLCworkshop01.esm") and not active("Z_Horizon_DLC_Workshop01.esp") and not active("Z_Horizon_DLC_All.esp")'
-      - <<: *patchIncluded
-        subs: [ 'Contraptions Workshop' ]
-        condition: 'active("DLCworkshop02.esm") and not active("Z_Horizon_DLC_Workshop02.esp") and not active("Z_Horizon_DLC_All.esp")'
-      - <<: *patchIncluded
-        subs: [ 'Vault-Tec Workshop' ]
-        condition: 'active("DLCworkshop03.esm") and not active("Z_Horizon_DLC_Workshop03.esp") and not active("Z_Horizon_DLC_All.esp")'
-      - type: error
-        content:
-          - lang: en
-            text: 'Another mod seems to be overwriting one of this module''s essential files. Please ensure you''re using this module''s version of %1%.'
-        subs: [ '**scripts/hardcore/hc_managerscript.pex**' ]
-        condition: 'file("scripts/hardcore/hc_managerscript.pex") and version("Z_Horizon.esp", "1.8.0", ==) and not checksum("scripts/hardcore/hc_managerscript.pex", 2FEC9CFC)'
-
-  - name: 'Z_Horizon_DLC_(Automatron|FarHarbor|Nuka|Workshop\d\d)\.esp'
-    msg:
-      - <<: *alreadyInX
-        subs: [ 'Z_Horizon_DLC_All.esp' ]
-        condition: 'active("Z_Horizon_DLC_All.esp")'
-
-  - name: 'Z_Architect_(EnhancedSettlements(_DLC)?|HomePlate)\.esp'
-    group: *horizonGroup
-    after: [ 'Z_Horizon.esp' ]
-  - name: 'Z_Architect_EnhancedSettlements_DLC.esp'
-    after: [ 'Z_Architect_EnhancedSettlements.esp' ]
-  - name: 'Z_Architect_HomePlate.esp'
-    after:
-      - 'Z_Architect_EnhancedSettlements.esp'
-      - 'Z_Architect_EnhancedSettlements_DLC.esp'
-
-  - name: 'Z_(Architect_Extras|BlurRemoval|CameraAddon|Extras)\.esp'
-    after: [ 'Z_Horizon.esp' ]
-  - name: 'Z_Horizon_Desolation.esp'
-    after: [ 'Z_Horizon_Mode_Scavenger.esp' ]
-  - name: 'Z_Horizon_DEFUI(_MenusOnly)?\.esp'
-    msg:
-      - <<: *useOnlyOneX
-        subs: [ 'Horizon DEFUI' ]
-        condition: 'many("Z_Horizon_DEFUI(_MenusOnly)?\.esp")'
-  - name: 'Z_Horizon_Diff_(Cutthroat|Novice|Outcast|Veteran|Wanderer)\.esp'
-    msg:
-      - <<: *useOnlyOneX
-        subs: [ 'Horizon Difficulty' ]
-        condition: 'many("Z_Horizon_Diff_(Cutthroat|Novice|Outcast|Veteran|Wanderer)\.esp")'
-  - name: 'Z_SettlementLimits.esp'
-    msg:
-      - <<: *alreadyInX
-        subs: [ 'Z_Architect_EnhancedSettlements.esp' ]
-        condition: 'active("Z_Architect_EnhancedSettlements.esp")'
 
 ###### Anything new can go after this (if you're not sure where to put it) ######
   - name: 'Better Locational Damage.*\.esp'
