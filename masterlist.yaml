@@ -6224,6 +6224,7 @@ plugins:
         subs: [ 'Z_Architect_EnhancedSettlements.esp' ]
         condition: 'active("Z_Architect_EnhancedSettlements.esp")'
 
+###### Anything new can go after this (if you're not sure where to put it) ######
   - name: 'Better Locational Damage.*\.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/3815' ]
   - name: 'Better Locational Damage.esp'
