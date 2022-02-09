@@ -3597,6 +3597,70 @@ plugins:
         subs: [ 'Z_Architect_EnhancedSettlements.esp' ]
         condition: 'active("Z_Architect_EnhancedSettlements.esp")'
 
+###### Sim Settlements ######
+  - name: 'SimSettlements.esm'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/21872' ]
+    after:
+      - 'HUDFramework.esm'
+      - 'WorkshopFramework.esm'
+    msg:
+      - <<: *obsolete
+        condition: 'version("SimSettlements.esm", "4.2.4", <)'
+    dirty:
+      - <<: *quickClean
+        crc: 0x672EA719
+        util: '[FO4Edit v4.0.3](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 6
+      - <<: *quickClean
+        crc: 0x098DA392
+        util: '[FO4Edit v4.0.3](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 6
+  - name: 'SimSettlements_XPAC_Conqueror.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/37000' ]
+    dirty:
+      - <<: *quickClean
+        crc: 0xE1807157
+        util: '[FO4Edit v4.0.3](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 3
+  - name: 'SimSettlements_XPAC_IndustrialRevolution.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/25213' ]
+    msg:
+      - <<: *obsolete
+        condition: 'version("SimSettlements_XPAC_IndustrialRevolution.esp", "4.2.3", <)'
+      - <<: *alreadyInX
+        subs: [ 'Sim Settlements Three-In-One' ]
+        condition: 'checksum("SimSettlements.esm", 098DA392) or checksum("SimSettlements.esm", 6924637A)'
+    clean:
+      - crc: 0x4A1596E4
+        util: 'FO4Edit v4.0.3'
+  - name: 'SimSettlements_XPAC_RiseOfTheCommonwealth.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/28599' ]
+    msg:
+      - <<: *obsolete
+        condition: 'version("SimSettlements_XPAC_RiseOfTheCommonwealth.esp", "4.2.0", <)'
+      - <<: *alreadyInX
+        subs: [ 'Sim Settlements Three-In-One' ]
+        condition: 'checksum("SimSettlements.esm", 098DA392) or checksum("SimSettlements.esm", 6924637A)'
+    clean:
+      - crc: 0xDC22546C
+        util: 'FO4Edit v4.0.3'
+
+  - name: 'SimSettlements_MegaPack_YearOne.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/30396' ]
+    clean:
+      - crc: 0xE755E55E
+        util: 'FO4Edit v4.0.3'
+  - name: 'SimSettlements_MegaPack_YearTwo.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/37983' ]
+    clean:
+      - crc: 0x13F42B4B
+        util: 'FO4Edit v4.0.3'
+  - name: 'SimSettlements_MegaPack_YearThree.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/43718' ]
+    clean:
+      - crc: 0x6E30DA77
+        util: 'FO4Edit v4.0.3'
+
 
   # Radrose Usability Enhancements
   - name: 'Radrose Usability Enhancements.esp'
@@ -4766,70 +4830,6 @@ plugins:
           - '[Extended Dialogue Interface](https://www.nexusmods.com/fallout4/mods/27216)'
           - '[SS2 - XDI Compatibility Patch](https://www.nexusmods.com/fallout4/mods/48254)'
         condition: 'active("XDI.esm") and not active("SS2_XDI Patch.esp") and not active("SS2_XDI Patch-Basic.esp") and not active("SS2_XDI Patch-Basic_esl.esp")'
-
-###### Sim Settlements ######
-  - name: 'SimSettlements.esm'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/21872' ]
-    after:
-      - 'HUDFramework.esm'
-      - 'WorkshopFramework.esm'
-    msg:
-      - <<: *obsolete
-        condition: 'version("SimSettlements.esm", "4.2.4", <)'
-    dirty:
-      - <<: *quickClean
-        crc: 0x672EA719
-        util: '[FO4Edit v4.0.3](https://www.nexusmods.com/fallout4/mods/2737)'
-        itm: 6
-      - <<: *quickClean
-        crc: 0x098DA392
-        util: '[FO4Edit v4.0.3](https://www.nexusmods.com/fallout4/mods/2737)'
-        itm: 6
-  - name: 'SimSettlements_XPAC_Conqueror.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/37000' ]
-    dirty:
-      - <<: *quickClean
-        crc: 0xE1807157
-        util: '[FO4Edit v4.0.3](https://www.nexusmods.com/fallout4/mods/2737)'
-        itm: 3
-  - name: 'SimSettlements_XPAC_IndustrialRevolution.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/25213' ]
-    msg:
-      - <<: *obsolete
-        condition: 'version("SimSettlements_XPAC_IndustrialRevolution.esp", "4.2.3", <)'
-      - <<: *alreadyInX
-        subs: [ 'Sim Settlements Three-In-One' ]
-        condition: 'checksum("SimSettlements.esm", 098DA392) or checksum("SimSettlements.esm", 6924637A)'
-    clean:
-      - crc: 0x4A1596E4
-        util: 'FO4Edit v4.0.3'
-  - name: 'SimSettlements_XPAC_RiseOfTheCommonwealth.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/28599' ]
-    msg:
-      - <<: *obsolete
-        condition: 'version("SimSettlements_XPAC_RiseOfTheCommonwealth.esp", "4.2.0", <)'
-      - <<: *alreadyInX
-        subs: [ 'Sim Settlements Three-In-One' ]
-        condition: 'checksum("SimSettlements.esm", 098DA392) or checksum("SimSettlements.esm", 6924637A)'
-    clean:
-      - crc: 0xDC22546C
-        util: 'FO4Edit v4.0.3'
-
-  - name: 'SimSettlements_MegaPack_YearOne.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/30396' ]
-    clean:
-      - crc: 0xE755E55E
-        util: 'FO4Edit v4.0.3'
-  - name: 'SimSettlements_MegaPack_YearTwo.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/37983' ]
-    clean:
-      - crc: 0x13F42B4B
-        util: 'FO4Edit v4.0.3'
-  - name: 'SimSettlements_MegaPack_YearThree.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/43718' ]
-    clean:
-      - crc: 0x6E30DA77
-        util: 'FO4Edit v4.0.3'
 
   - name: 'Companion_ShutUp.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/25763' ]
