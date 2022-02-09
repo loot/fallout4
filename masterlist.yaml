@@ -2005,7 +2005,52 @@ plugins:
         util: '[FO4Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 808
 
-###### Texture overhauls ######
+###### AudioVisual ######
+  - name: 'VotW.*\.es[lmp]'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/24435/'
+        name: 'Videos of the Wasteland'
+  - name: 'VotWMaster.esm'
+    clean:
+      - crc: 0x314BB136
+        util: 'FO4Edit v4.0.4b'
+  - name: 'VotWSpecialVideos.esl'
+    clean:
+      - crc: 0x93D8041D
+        util: 'FO4Edit v4.0.4b'
+  - name: 'VotWStarlightDriveIn.esp'
+    after:
+      - name: 'PRP.esp'
+        condition: 'version("PRP.esp", "0.57", >=)'
+    dirty:
+      - <<: *quickClean
+        crc: 0x31FB0B86
+        util: '[FO4Edit v4.0.4b](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 2
+
+###### AudioVisual - Fixes ######
+  - name: 'FirstPersonViewableItemsExpanded.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/26062/' ]
+    msg:
+      - <<: *alreadyInX
+        subs: [ 'LooksMenu1stPersonViewItemsFix.esp' ]
+        condition: 'active("FirstPersonViewableItemsExpanded.esp") and active("LooksMenu1stPersonViewItemsFix.esp")'
+      - <<: *useVersion
+        subs: [ '[Looks Menu Customization Compendium](https://www.nexusmods.com/fallout4/mods/26062/)' ]
+        condition: 'active("LooksMenu Customization Compendium.esp")'
+    clean:
+      - crc: 0x9855A3B2
+        util: 'FO4Edit v4.0.3g'
+
+  - name: 'Flicker Fixer.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/35720/' ]
+    group: *fixesGroup
+    msg:
+      - <<: *alreadyInOrFixedByX
+        subs: [ 'Previsibines Repair Pack v0.57+' ]
+        condition: 'version("PRP.esp", "0.57", >=)'
+
+###### AudioVisual - Models & Textures ######
   - name: 'OVT.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/1204' ]
     group: *texturesGroup
@@ -2062,52 +2107,6 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout4/mods/40386' ]
     group: *texturesGroup
 
-###### AudioVisual ######
-  - name: 'VotW.*\.es[lmp]'
-    url:
-      - link: 'https://www.nexusmods.com/fallout4/mods/24435/'
-        name: 'Videos of the Wasteland'
-  - name: 'VotWMaster.esm'
-    clean:
-      - crc: 0x314BB136
-        util: 'FO4Edit v4.0.4b'
-  - name: 'VotWSpecialVideos.esl'
-    clean:
-      - crc: 0x93D8041D
-        util: 'FO4Edit v4.0.4b'
-  - name: 'VotWStarlightDriveIn.esp'
-    after:
-      - name: 'PRP.esp'
-        condition: 'version("PRP.esp", "0.57", >=)'
-    dirty:
-      - <<: *quickClean
-        crc: 0x31FB0B86
-        util: '[FO4Edit v4.0.4b](https://www.nexusmods.com/fallout4/mods/2737)'
-        itm: 2
-
-###### AudioVisual - Fixes ######
-  - name: 'FirstPersonViewableItemsExpanded.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/26062/' ]
-    msg:
-      - <<: *alreadyInX
-        subs: [ 'LooksMenu1stPersonViewItemsFix.esp' ]
-        condition: 'active("FirstPersonViewableItemsExpanded.esp") and active("LooksMenu1stPersonViewItemsFix.esp")'
-      - <<: *useVersion
-        subs: [ '[Looks Menu Customization Compendium](https://www.nexusmods.com/fallout4/mods/26062/)' ]
-        condition: 'active("LooksMenu Customization Compendium.esp")'
-    clean:
-      - crc: 0x9855A3B2
-        util: 'FO4Edit v4.0.3g'
-
-  - name: 'Flicker Fixer.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/35720/' ]
-    group: *fixesGroup
-    msg:
-      - <<: *alreadyInOrFixedByX
-        subs: [ 'Previsibines Repair Pack v0.57+' ]
-        condition: 'version("PRP.esp", "0.57", >=)'
-
-###### AudioVisual - Models & Textures ######
   - name: 'TacticalTablet.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/55346/' ]
     inc:
