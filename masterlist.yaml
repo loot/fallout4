@@ -2005,7 +2005,52 @@ plugins:
         util: '[FO4Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 808
 
-###### Texture overhauls ######
+###### AudioVisual ######
+  - name: 'VotW.*\.es[lmp]'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/24435/'
+        name: 'Videos of the Wasteland'
+  - name: 'VotWMaster.esm'
+    clean:
+      - crc: 0x314BB136
+        util: 'FO4Edit v4.0.4b'
+  - name: 'VotWSpecialVideos.esl'
+    clean:
+      - crc: 0x93D8041D
+        util: 'FO4Edit v4.0.4b'
+  - name: 'VotWStarlightDriveIn.esp'
+    after:
+      - name: 'PRP.esp'
+        condition: 'version("PRP.esp", "0.57", >=)'
+    dirty:
+      - <<: *quickClean
+        crc: 0x31FB0B86
+        util: '[FO4Edit v4.0.4b](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 2
+
+###### AudioVisual - Fixes ######
+  - name: 'FirstPersonViewableItemsExpanded.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/26062/' ]
+    msg:
+      - <<: *alreadyInX
+        subs: [ 'LooksMenu1stPersonViewItemsFix.esp' ]
+        condition: 'active("FirstPersonViewableItemsExpanded.esp") and active("LooksMenu1stPersonViewItemsFix.esp")'
+      - <<: *useVersion
+        subs: [ '[Looks Menu Customization Compendium](https://www.nexusmods.com/fallout4/mods/26062/)' ]
+        condition: 'active("LooksMenu Customization Compendium.esp")'
+    clean:
+      - crc: 0x9855A3B2
+        util: 'FO4Edit v4.0.3g'
+
+  - name: 'Flicker Fixer.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/35720/' ]
+    group: *fixesGroup
+    msg:
+      - <<: *alreadyInOrFixedByX
+        subs: [ 'Previsibines Repair Pack v0.57+' ]
+        condition: 'version("PRP.esp", "0.57", >=)'
+
+###### AudioVisual - Models & Textures ######
   - name: 'OVT.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/1204' ]
     group: *texturesGroup
@@ -2062,52 +2107,6 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout4/mods/40386' ]
     group: *texturesGroup
 
-###### AudioVisual ######
-  - name: 'VotW.*\.es[lmp]'
-    url:
-      - link: 'https://www.nexusmods.com/fallout4/mods/24435/'
-        name: 'Videos of the Wasteland'
-  - name: 'VotWMaster.esm'
-    clean:
-      - crc: 0x314BB136
-        util: 'FO4Edit v4.0.4b'
-  - name: 'VotWSpecialVideos.esl'
-    clean:
-      - crc: 0x93D8041D
-        util: 'FO4Edit v4.0.4b'
-  - name: 'VotWStarlightDriveIn.esp'
-    after:
-      - name: 'PRP.esp'
-        condition: 'version("PRP.esp", "0.57", >=)'
-    dirty:
-      - <<: *quickClean
-        crc: 0x31FB0B86
-        util: '[FO4Edit v4.0.4b](https://www.nexusmods.com/fallout4/mods/2737)'
-        itm: 2
-
-###### AudioVisual - Fixes ######
-  - name: 'FirstPersonViewableItemsExpanded.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/26062/' ]
-    msg:
-      - <<: *alreadyInX
-        subs: [ 'LooksMenu1stPersonViewItemsFix.esp' ]
-        condition: 'active("FirstPersonViewableItemsExpanded.esp") and active("LooksMenu1stPersonViewItemsFix.esp")'
-      - <<: *useVersion
-        subs: [ '[Looks Menu Customization Compendium](https://www.nexusmods.com/fallout4/mods/26062/)' ]
-        condition: 'active("LooksMenu Customization Compendium.esp")'
-    clean:
-      - crc: 0x9855A3B2
-        util: 'FO4Edit v4.0.3g'
-
-  - name: 'Flicker Fixer.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/35720/' ]
-    group: *fixesGroup
-    msg:
-      - <<: *alreadyInOrFixedByX
-        subs: [ 'Previsibines Repair Pack v0.57+' ]
-        condition: 'version("PRP.esp", "0.57", >=)'
-
-###### AudioVisual - Models & Textures ######
   - name: 'TacticalTablet.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/55346/' ]
     inc:
@@ -3493,7 +3492,185 @@ plugins:
         util: '[FO4Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 4
 
+###### Horizon ######
+  - name: 'Z_(Architect|Horizon)\.es(m|p)'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/17374' ]
+  - name: 'Z_Horizon.esp'
+    group: *horizonGroup
+    after:
+      - 'advancedAITweaks.esp'
+      - 'Arbitration - Better Combat AI.esp'
+      - 'EveryonesBestFriend.esp'
+    inc:
+      - 'Arbitration - Molotov.esp'
+      - 'Arbitration - Recommended Core.esp'
+      - 'UnbogusFallout.esp'
+      # Carry Weight Mods
+      - 'Carry Weight Wedding Rings.esp'
+      - 'CompanionCarryWeightModifications.esp'
+      - 'IncreasedCarryWeight.esp'
+      - 'IncreasedCarryWeightPlus.esp'
+      - 'UnlimitedDogmeatCarryWeight.esp'
+      # Crafting Mods
+      - 'AmmoCrafting.esp'
+      - name: 'Armorsmith Extended.esp'
+        condition: 'version("Z_Horizon.esp", "1.6.0", >=)'
+      - 'Craftable Armor Size.esp'
+      # Power Armour Overhauls
+      - 'Consistent Power Armor Overhaul.esp'
+      - 'LBPAC.esp'
+      # Sorting Mods
+      - 'BBS000-F04-Ultimate-DEF_UI.esp'
+      - 'Better Inventory Sorting - Armors.esp'
+      - 'Better Inventory Sorting - Misc.esp'
+      - 'CraftModFullNames.esp'
+      - 'CraftModSort_Alpha.esp'
+      - 'Simplified Sorting.esp'
+      - 'SimplySortedVanilla.esl'
+      - 'SimplySortedVanilla.esp'
+      - 'Sort My Stuff - Aid.esp'
+      - 'Swanndolia''s sorting.esp'
+      - 'ValAllInOneByLLX.esp'
+      # Survival Mode Mods
+      - 'FROST.esp'
+      - 'SurvivalOptions.esp'
+    msg:
+      - <<: *patchIncluded
+        subs: [ 'Automatron' ]
+        condition: 'active("DLCRobot.esm") and not active("Z_Horizon_DLC_Automatron.esp") and not active("Z_Horizon_DLC_All.esp")'
+      - <<: *patchIncluded
+        subs: [ 'Far Harbor' ]
+        condition: 'active("DLCCoast.esm") and not active("Z_Horizon_DLC_FarHarbor.esp") and not active("Z_Horizon_DLC_All.esp")'
+      - <<: *patchIncluded
+        subs: [ 'Nuka World' ]
+        condition: 'active("DLCNukaWorld.esm") and not active("Z_Horizon_DLC_Nuka.esp") and not active("Z_Horizon_DLC_All.esp")'
+      - <<: *patchIncluded
+        subs: [ 'Wasteland Workshop' ]
+        condition: 'active("DLCworkshop01.esm") and not active("Z_Horizon_DLC_Workshop01.esp") and not active("Z_Horizon_DLC_All.esp")'
+      - <<: *patchIncluded
+        subs: [ 'Contraptions Workshop' ]
+        condition: 'active("DLCworkshop02.esm") and not active("Z_Horizon_DLC_Workshop02.esp") and not active("Z_Horizon_DLC_All.esp")'
+      - <<: *patchIncluded
+        subs: [ 'Vault-Tec Workshop' ]
+        condition: 'active("DLCworkshop03.esm") and not active("Z_Horizon_DLC_Workshop03.esp") and not active("Z_Horizon_DLC_All.esp")'
+      - type: error
+        content:
+          - lang: en
+            text: 'Another mod seems to be overwriting one of this module''s essential files. Please ensure you''re using this module''s version of %1%.'
+        subs: [ '**scripts/hardcore/hc_managerscript.pex**' ]
+        condition: 'file("scripts/hardcore/hc_managerscript.pex") and version("Z_Horizon.esp", "1.8.0", ==) and not checksum("scripts/hardcore/hc_managerscript.pex", 2FEC9CFC)'
 
+  - name: 'Z_Horizon_DLC_(Automatron|FarHarbor|Nuka|Workshop\d\d)\.esp'
+    msg:
+      - <<: *alreadyInX
+        subs: [ 'Z_Horizon_DLC_All.esp' ]
+        condition: 'active("Z_Horizon_DLC_All.esp")'
+
+  - name: 'Z_Architect_(EnhancedSettlements(_DLC)?|HomePlate)\.esp'
+    group: *horizonGroup
+    after: [ 'Z_Horizon.esp' ]
+  - name: 'Z_Architect_EnhancedSettlements_DLC.esp'
+    after: [ 'Z_Architect_EnhancedSettlements.esp' ]
+  - name: 'Z_Architect_HomePlate.esp'
+    after:
+      - 'Z_Architect_EnhancedSettlements.esp'
+      - 'Z_Architect_EnhancedSettlements_DLC.esp'
+
+  - name: 'Z_(Architect_Extras|BlurRemoval|CameraAddon|Extras)\.esp'
+    after: [ 'Z_Horizon.esp' ]
+  - name: 'Z_Horizon_Desolation.esp'
+    after: [ 'Z_Horizon_Mode_Scavenger.esp' ]
+  - name: 'Z_Horizon_DEFUI(_MenusOnly)?\.esp'
+    msg:
+      - <<: *useOnlyOneX
+        subs: [ 'Horizon DEFUI' ]
+        condition: 'many("Z_Horizon_DEFUI(_MenusOnly)?\.esp")'
+  - name: 'Z_Horizon_Diff_(Cutthroat|Novice|Outcast|Veteran|Wanderer)\.esp'
+    msg:
+      - <<: *useOnlyOneX
+        subs: [ 'Horizon Difficulty' ]
+        condition: 'many("Z_Horizon_Diff_(Cutthroat|Novice|Outcast|Veteran|Wanderer)\.esp")'
+  - name: 'Z_SettlementLimits.esp'
+    msg:
+      - <<: *alreadyInX
+        subs: [ 'Z_Architect_EnhancedSettlements.esp' ]
+        condition: 'active("Z_Architect_EnhancedSettlements.esp")'
+
+###### Sim Settlements ######
+  - name: 'SimSettlements.esm'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/21872' ]
+    after:
+      - 'HUDFramework.esm'
+      - 'WorkshopFramework.esm'
+    msg:
+      - <<: *obsolete
+        condition: 'version("SimSettlements.esm", "4.2.4", <)'
+    dirty:
+      - <<: *quickClean
+        crc: 0x672EA719
+        util: '[FO4Edit v4.0.3](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 6
+      - <<: *quickClean
+        crc: 0x098DA392
+        util: '[FO4Edit v4.0.3](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 6
+  - name: 'SimSettlements_XPAC_Conqueror.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/37000' ]
+    dirty:
+      - <<: *quickClean
+        crc: 0xE1807157
+        util: '[FO4Edit v4.0.3](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 3
+  - name: 'SimSettlements_XPAC_IndustrialRevolution.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/25213' ]
+    msg:
+      - <<: *obsolete
+        condition: 'version("SimSettlements_XPAC_IndustrialRevolution.esp", "4.2.3", <)'
+      - <<: *alreadyInX
+        subs: [ 'Sim Settlements Three-In-One' ]
+        condition: 'checksum("SimSettlements.esm", 098DA392) or checksum("SimSettlements.esm", 6924637A)'
+    clean:
+      - crc: 0x4A1596E4
+        util: 'FO4Edit v4.0.3'
+  - name: 'SimSettlements_XPAC_RiseOfTheCommonwealth.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/28599' ]
+    msg:
+      - <<: *obsolete
+        condition: 'version("SimSettlements_XPAC_RiseOfTheCommonwealth.esp", "4.2.0", <)'
+      - <<: *alreadyInX
+        subs: [ 'Sim Settlements Three-In-One' ]
+        condition: 'checksum("SimSettlements.esm", 098DA392) or checksum("SimSettlements.esm", 6924637A)'
+    clean:
+      - crc: 0xDC22546C
+        util: 'FO4Edit v4.0.3'
+
+  - name: 'SimSettlements_MegaPack_YearOne.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/30396' ]
+    clean:
+      - crc: 0xE755E55E
+        util: 'FO4Edit v4.0.3'
+  - name: 'SimSettlements_MegaPack_YearTwo.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/37983' ]
+    clean:
+      - crc: 0x13F42B4B
+        util: 'FO4Edit v4.0.3'
+  - name: 'SimSettlements_MegaPack_YearThree.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/43718' ]
+    clean:
+      - crc: 0x6E30DA77
+        util: 'FO4Edit v4.0.3'
+
+###### Sim Settlements 2 ######
+  - name: 'SS2.esm'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/47976' ]
+    msg:
+      - <<: *patch3rdParty
+        subs:
+          - '[Extended Dialogue Interface](https://www.nexusmods.com/fallout4/mods/27216)'
+          - '[SS2 - XDI Compatibility Patch](https://www.nexusmods.com/fallout4/mods/48254)'
+        condition: 'active("XDI.esm") and not active("SS2_XDI Patch.esp") and not active("SS2_XDI Patch-Basic.esp") and not active("SS2_XDI Patch-Basic_esl.esp")'
+
+###### Anything new can go after this (if you're not sure where to put it) ######
   # Radrose Usability Enhancements
   - name: 'Radrose Usability Enhancements.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/18098' ]
@@ -4652,80 +4829,6 @@ plugins:
     clean:
       - crc: 0x114C9C6A
         util: 'FO4Edit v4.0.2f'
-
-###### Sim Settlements 2 ######
-  - name: 'SS2.esm'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/47976' ]
-    msg:
-      - <<: *patch3rdParty
-        subs:
-          - '[Extended Dialogue Interface](https://www.nexusmods.com/fallout4/mods/27216)'
-          - '[SS2 - XDI Compatibility Patch](https://www.nexusmods.com/fallout4/mods/48254)'
-        condition: 'active("XDI.esm") and not active("SS2_XDI Patch.esp") and not active("SS2_XDI Patch-Basic.esp") and not active("SS2_XDI Patch-Basic_esl.esp")'
-
-###### Sim Settlements ######
-  - name: 'SimSettlements.esm'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/21872' ]
-    after:
-      - 'HUDFramework.esm'
-      - 'WorkshopFramework.esm'
-    msg:
-      - <<: *obsolete
-        condition: 'version("SimSettlements.esm", "4.2.4", <)'
-    dirty:
-      - <<: *quickClean
-        crc: 0x672EA719
-        util: '[FO4Edit v4.0.3](https://www.nexusmods.com/fallout4/mods/2737)'
-        itm: 6
-      - <<: *quickClean
-        crc: 0x098DA392
-        util: '[FO4Edit v4.0.3](https://www.nexusmods.com/fallout4/mods/2737)'
-        itm: 6
-  - name: 'SimSettlements_XPAC_Conqueror.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/37000' ]
-    dirty:
-      - <<: *quickClean
-        crc: 0xE1807157
-        util: '[FO4Edit v4.0.3](https://www.nexusmods.com/fallout4/mods/2737)'
-        itm: 3
-  - name: 'SimSettlements_XPAC_IndustrialRevolution.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/25213' ]
-    msg:
-      - <<: *obsolete
-        condition: 'version("SimSettlements_XPAC_IndustrialRevolution.esp", "4.2.3", <)'
-      - <<: *alreadyInX
-        subs: [ 'Sim Settlements Three-In-One' ]
-        condition: 'checksum("SimSettlements.esm", 098DA392) or checksum("SimSettlements.esm", 6924637A)'
-    clean:
-      - crc: 0x4A1596E4
-        util: 'FO4Edit v4.0.3'
-  - name: 'SimSettlements_XPAC_RiseOfTheCommonwealth.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/28599' ]
-    msg:
-      - <<: *obsolete
-        condition: 'version("SimSettlements_XPAC_RiseOfTheCommonwealth.esp", "4.2.0", <)'
-      - <<: *alreadyInX
-        subs: [ 'Sim Settlements Three-In-One' ]
-        condition: 'checksum("SimSettlements.esm", 098DA392) or checksum("SimSettlements.esm", 6924637A)'
-    clean:
-      - crc: 0xDC22546C
-        util: 'FO4Edit v4.0.3'
-
-  - name: 'SimSettlements_MegaPack_YearOne.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/30396' ]
-    clean:
-      - crc: 0xE755E55E
-        util: 'FO4Edit v4.0.3'
-  - name: 'SimSettlements_MegaPack_YearTwo.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/37983' ]
-    clean:
-      - crc: 0x13F42B4B
-        util: 'FO4Edit v4.0.3'
-  - name: 'SimSettlements_MegaPack_YearThree.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/43718' ]
-    clean:
-      - crc: 0x6E30DA77
-        util: 'FO4Edit v4.0.3'
 
   - name: 'Companion_ShutUp.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/25763' ]
@@ -6120,111 +6223,6 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout4/mods/27019' ]
     after: [ 'Z_Horizon.esp' ]
 
-###### Horizon ######
-  - name: 'Z_(Architect|Horizon)\.es(m|p)'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/17374' ]
-  - name: 'Z_Horizon.esp'
-    group: *horizonGroup
-    after:
-      - 'advancedAITweaks.esp'
-      - 'Arbitration - Better Combat AI.esp'
-      - 'EveryonesBestFriend.esp'
-    inc:
-      - 'Arbitration - Molotov.esp'
-      - 'Arbitration - Recommended Core.esp'
-      - 'UnbogusFallout.esp'
-      # Carry Weight Mods
-      - 'Carry Weight Wedding Rings.esp'
-      - 'CompanionCarryWeightModifications.esp'
-      - 'IncreasedCarryWeight.esp'
-      - 'IncreasedCarryWeightPlus.esp'
-      - 'UnlimitedDogmeatCarryWeight.esp'
-      # Crafting Mods
-      - 'AmmoCrafting.esp'
-      - name: 'Armorsmith Extended.esp'
-        condition: 'version("Z_Horizon.esp", "1.6.0", >=)'
-      - 'Craftable Armor Size.esp'
-      # Power Armour Overhauls
-      - 'Consistent Power Armor Overhaul.esp'
-      - 'LBPAC.esp'
-      # Sorting Mods
-      - 'BBS000-F04-Ultimate-DEF_UI.esp'
-      - 'Better Inventory Sorting - Armors.esp'
-      - 'Better Inventory Sorting - Misc.esp'
-      - 'CraftModFullNames.esp'
-      - 'CraftModSort_Alpha.esp'
-      - 'Simplified Sorting.esp'
-      - 'SimplySortedVanilla.esl'
-      - 'SimplySortedVanilla.esp'
-      - 'Sort My Stuff - Aid.esp'
-      - 'Swanndolia''s sorting.esp'
-      - 'ValAllInOneByLLX.esp'
-      # Survival Mode Mods
-      - 'FROST.esp'
-      - 'SurvivalOptions.esp'
-    msg:
-      - <<: *patchIncluded
-        subs: [ 'Automatron' ]
-        condition: 'active("DLCRobot.esm") and not active("Z_Horizon_DLC_Automatron.esp") and not active("Z_Horizon_DLC_All.esp")'
-      - <<: *patchIncluded
-        subs: [ 'Far Harbor' ]
-        condition: 'active("DLCCoast.esm") and not active("Z_Horizon_DLC_FarHarbor.esp") and not active("Z_Horizon_DLC_All.esp")'
-      - <<: *patchIncluded
-        subs: [ 'Nuka World' ]
-        condition: 'active("DLCNukaWorld.esm") and not active("Z_Horizon_DLC_Nuka.esp") and not active("Z_Horizon_DLC_All.esp")'
-      - <<: *patchIncluded
-        subs: [ 'Wasteland Workshop' ]
-        condition: 'active("DLCworkshop01.esm") and not active("Z_Horizon_DLC_Workshop01.esp") and not active("Z_Horizon_DLC_All.esp")'
-      - <<: *patchIncluded
-        subs: [ 'Contraptions Workshop' ]
-        condition: 'active("DLCworkshop02.esm") and not active("Z_Horizon_DLC_Workshop02.esp") and not active("Z_Horizon_DLC_All.esp")'
-      - <<: *patchIncluded
-        subs: [ 'Vault-Tec Workshop' ]
-        condition: 'active("DLCworkshop03.esm") and not active("Z_Horizon_DLC_Workshop03.esp") and not active("Z_Horizon_DLC_All.esp")'
-      - type: error
-        content:
-          - lang: en
-            text: 'Another mod seems to be overwriting one of this module''s essential files. Please ensure you''re using this module''s version of %1%.'
-        subs: [ '**scripts/hardcore/hc_managerscript.pex**' ]
-        condition: 'file("scripts/hardcore/hc_managerscript.pex") and version("Z_Horizon.esp", "1.8.0", ==) and not checksum("scripts/hardcore/hc_managerscript.pex", 2FEC9CFC)'
-
-  - name: 'Z_Horizon_DLC_(Automatron|FarHarbor|Nuka|Workshop\d\d)\.esp'
-    msg:
-      - <<: *alreadyInX
-        subs: [ 'Z_Horizon_DLC_All.esp' ]
-        condition: 'active("Z_Horizon_DLC_All.esp")'
-
-  - name: 'Z_Architect_(EnhancedSettlements(_DLC)?|HomePlate)\.esp'
-    group: *horizonGroup
-    after: [ 'Z_Horizon.esp' ]
-  - name: 'Z_Architect_EnhancedSettlements_DLC.esp'
-    after: [ 'Z_Architect_EnhancedSettlements.esp' ]
-  - name: 'Z_Architect_HomePlate.esp'
-    after:
-      - 'Z_Architect_EnhancedSettlements.esp'
-      - 'Z_Architect_EnhancedSettlements_DLC.esp'
-
-  - name: 'Z_(Architect_Extras|BlurRemoval|CameraAddon|Extras)\.esp'
-    after: [ 'Z_Horizon.esp' ]
-  - name: 'Z_Horizon_Desolation.esp'
-    after: [ 'Z_Horizon_Mode_Scavenger.esp' ]
-  - name: 'Z_Horizon_DEFUI(_MenusOnly)?\.esp'
-    msg:
-      - <<: *useOnlyOneX
-        subs: [ 'Horizon DEFUI' ]
-        condition: 'many("Z_Horizon_DEFUI(_MenusOnly)?\.esp")'
-  - name: 'Z_Horizon_Diff_(Cutthroat|Novice|Outcast|Veteran|Wanderer)\.esp'
-    msg:
-      - <<: *useOnlyOneX
-        subs: [ 'Horizon Difficulty' ]
-        condition: 'many("Z_Horizon_Diff_(Cutthroat|Novice|Outcast|Veteran|Wanderer)\.esp")'
-  - name: 'Z_SettlementLimits.esp'
-    msg:
-      - <<: *alreadyInX
-        subs: [ 'Z_Architect_EnhancedSettlements.esp' ]
-        condition: 'active("Z_Architect_EnhancedSettlements.esp")'
-
-###### Anything new can go after this (if you're not sure where to put it) ######
   - name: 'Better Locational Damage.*\.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/3815' ]
   - name: 'Better Locational Damage.esp'
