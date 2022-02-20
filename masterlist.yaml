@@ -3001,6 +3001,8 @@ plugins:
         util: '[FO4Edit v4.0.4b](https://www.nexusmods.com/fallout4/mods/2737)'
         nav: 1
 
+  - name: 'FallonsBasementOverhaul.esp'
+
 ###### Locations - Player Homes ######
   - name: 'AlootHomePlate.esp'
     url:
