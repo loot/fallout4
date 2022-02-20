@@ -2985,6 +2985,10 @@ plugins:
       - link: 'https://www.nexusmods.com/fallout4/mods/25629/'
         name: 'Welcome to Fallon''s'
     inc: [ 'FallonsBasementOverhaul.esp' ]
+    msg:
+      - <<: *patchUpdateAvailable
+        subs: [ '[Welcome to Fallon''s - Revisited](https://www.nexusmods.com/fallout4/mods/57729/)' ]
+        condition: 'not file("FallonsBasementOverhaul.esp")'
 
 ###### Locations - Player Homes ######
   - name: 'AlootHomePlate.esp'
