@@ -2989,6 +2989,17 @@ plugins:
       - <<: *patchUpdateAvailable
         subs: [ '[Welcome to Fallon''s - Revisited](https://www.nexusmods.com/fallout4/mods/57729/)' ]
         condition: 'not file("FallonsBasementOverhaul.esp")'
+    dirty:
+      - <<: *reqManualFix
+        crc: 0x01D57BB8
+        util: '[FO4Edit v4.0.4b](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 12
+        udr: 313
+        nav: 1
+      - <<: *reqManualFix
+        crc: 0x2AAF2555
+        util: '[FO4Edit v4.0.4b](https://www.nexusmods.com/fallout4/mods/2737)'
+        nav: 1
 
 ###### Locations - Player Homes ######
   - name: 'AlootHomePlate.esp'
