@@ -2981,6 +2981,9 @@ plugins:
         udr: 11
 
   - name: 'Fallon''s Basement Overhaul.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/25629/'
+        name: 'Welcome to Fallon''s'
 
 ###### Locations - Player Homes ######
   - name: 'AlootHomePlate.esp'
