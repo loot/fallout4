@@ -2980,6 +2980,8 @@ plugins:
         itm: 64
         udr: 11
 
+  - name: 'Fallon''s Basement Overhaul.esp'
+
 ###### Locations - Player Homes ######
   - name: 'AlootHomePlate.esp'
     url:
