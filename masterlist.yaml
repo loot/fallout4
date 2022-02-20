@@ -3005,6 +3005,7 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/57729/'
         name: 'Welcome to Fallon''s - Revisited'
+    after: [ 'PRP.esp' ]
 
 ###### Locations - Player Homes ######
   - name: 'AlootHomePlate.esp'
