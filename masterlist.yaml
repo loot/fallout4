@@ -3006,6 +3006,9 @@ plugins:
       - link: 'https://www.nexusmods.com/fallout4/mods/57729/'
         name: 'Welcome to Fallon''s - Revisited'
     after: [ 'PRP.esp' ]
+    clean:
+      - crc: 0xDC6139D4
+        util: 'FO4Edit v4.0.4b'
 
 ###### Locations - Player Homes ######
   - name: 'AlootHomePlate.esp'
