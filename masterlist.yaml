@@ -3002,6 +3002,9 @@ plugins:
         nav: 1
 
   - name: 'FallonsBasementOverhaul.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/57729/'
+        name: 'Welcome to Fallon''s - Revisited'
 
 ###### Locations - Player Homes ######
   - name: 'AlootHomePlate.esp'
