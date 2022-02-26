@@ -263,11 +263,11 @@ common:
   - &alreadyInOrFixedByFO4v1_3_47
     <<: *alreadyInOrFixedByX
     subs: [ 'Fallout 4 v1.3.47.0' ]
-    condition: 'version("../Fallout4.exe", "1.3.47.0", >=)'
+    condition: 'readable("../Fallout4.exe") and version("../Fallout4.exe", "1.3.47.0", >=)'
   - &alreadyInOrFixedByFO4v1_4_132
     <<: *alreadyInOrFixedByX
     subs: [ 'Fallout 4 v1.4.132.0' ]
-    condition: 'version("../Fallout4.exe", "1.4.132.0", >=)'
+    condition: 'readable("../Fallout4.exe") and version("../Fallout4.exe", "1.4.132.0", >=)'
 
   # &requiresMCM_X
   - &requiresMCM
@@ -374,17 +374,17 @@ globals:
 # Fallout 4 - Latest Version
   - <<: *versionOldX
     subs: [ '**Fallout 4**' ]
-    condition: 'version("../Fallout4.exe", "1.10.163.0", <) and file("../Fallout4.exe")'
+    condition: 'readable("../Fallout4.exe") and version("../Fallout4.exe", "1.10.163.0", <) and file("../Fallout4.exe")'
   - <<: *versionUpToDateX
     subs: [ '**Fallout 4**' ]
-    condition: 'version("../Fallout4.exe", "1.10.163.0", >=) and file("../Fallout4.exe")'
+    condition: 'readable("../Fallout4.exe") and version("../Fallout4.exe", "1.10.163.0", >=) and file("../Fallout4.exe")'
 # Fallout 4 VR - Latest Version
   - <<: *versionOldX
     subs: [ '**Fallout 4 VR**' ]
-    condition: 'version("../Fallout4VR.exe", "1.2.72.0", <) and file("../Fallout4VR.exe")'
+    condition: 'readable("../Fallout4VR.exe") and version("../Fallout4VR.exe", "1.2.72.0", <) and file("../Fallout4VR.exe")'
   - <<: *versionUpToDateX
     subs: [ '**Fallout 4 VR**' ]
-    condition: 'version("../Fallout4VR.exe", "1.2.72.0", >=) and file("../Fallout4VR.exe")'
+    condition: 'readable("../Fallout4VR.exe") and version("../Fallout4VR.exe", "1.2.72.0", >=) and file("../Fallout4VR.exe")'
 
 # F4SE - Latest Version
   - <<: *versionOldX
@@ -403,29 +403,29 @@ globals:
 
 # F4SE - Runtime Compatibility
   - <<: *versionF4SEIncFO4
-    condition: 'version("../Fallout4.exe", "1.10.163.0", ==) and version("../f4se_loader.exe", "0.0.6.20", <) and file("../f4se_loader.exe")'
+    condition: 'readable("../Fallout4.exe") and version("../Fallout4.exe", "1.10.163.0", ==) and version("../f4se_loader.exe", "0.0.6.20", <) and file("../f4se_loader.exe")'
   - <<: *versionF4SEIncFO4
-    condition: 'version("../Fallout4.exe", "1.10.162.0", ==) and version("../f4se_loader.exe", "0.0.6.18", <) and file("../f4se_loader.exe")'
+    condition: 'readable("../Fallout4.exe") and version("../Fallout4.exe", "1.10.162.0", ==) and version("../f4se_loader.exe", "0.0.6.18", <) and file("../f4se_loader.exe")'
   - <<: *versionF4SEIncFO4
-    condition: 'version("../Fallout4.exe", "1.10.138.0", ==) and version("../f4se_loader.exe", "0.0.6.17", <) and file("../f4se_loader.exe")'
+    condition: 'readable("../Fallout4.exe") and version("../Fallout4.exe", "1.10.138.0", ==) and version("../f4se_loader.exe", "0.0.6.17", <) and file("../f4se_loader.exe")'
   - <<: *versionF4SEIncFO4
-    condition: 'version("../Fallout4.exe", "1.10.130.0", ==) and version("../f4se_loader.exe", "0.0.6.16", <) and file("../f4se_loader.exe")'
+    condition: 'readable("../Fallout4.exe") and version("../Fallout4.exe", "1.10.130.0", ==) and version("../f4se_loader.exe", "0.0.6.16", <) and file("../f4se_loader.exe")'
   - <<: *versionF4SEIncFO4
-    condition: 'version("../Fallout4.exe", "1.10.120.0", ==) and version("../f4se_loader.exe", "0.0.6.14", <) and file("../f4se_loader.exe")'
+    condition: 'readable("../Fallout4.exe") and version("../Fallout4.exe", "1.10.120.0", ==) and version("../f4se_loader.exe", "0.0.6.14", <) and file("../f4se_loader.exe")'
   - <<: *versionF4SEIncFO4
-    condition: 'version("../Fallout4.exe", "1.10.114.0", ==) and not version("../f4se_loader.exe", "0.0.6.13", ==) and file("../f4se_loader.exe")'
+    condition: 'readable("../Fallout4.exe") and version("../Fallout4.exe", "1.10.114.0", ==) and not version("../f4se_loader.exe", "0.0.6.13", ==) and file("../f4se_loader.exe")'
   - <<: *versionF4SEIncFO4
-    condition: 'version("../Fallout4.exe", "1.10.111.0", ==) and not version("../f4se_loader.exe", "0.0.6.12", ==) and file("../f4se_loader.exe")'
+    condition: 'readable("../Fallout4.exe") and version("../Fallout4.exe", "1.10.111.0", ==) and not version("../f4se_loader.exe", "0.0.6.12", ==) and file("../f4se_loader.exe")'
 # F4SE VR - Runtime Compatibility
   - <<: *versionF4SEIncFO4_VR
-    condition: 'version("../Fallout4VR.exe", "1.2.72.0", ==) and version("../f4sevr_loader.exe", "0.0.6.20", <) and file("../f4sevr_loader.exe")'
+    condition: 'readable("../Fallout4VR.exe") and version("../Fallout4VR.exe", "1.2.72.0", ==) and version("../f4sevr_loader.exe", "0.0.6.20", <) and file("../f4sevr_loader.exe")'
 
 # F4SE Plugins - Compatibility
   - <<: *versionXIncY
     subs:
       - '**[Place Everywhere](https://www.nexusmods.com/fallout4/mods/9424)**'
       - 'Fallout 4'
-    condition: 'file("F4SE/Plugins/place.dll") and file("../f4se_loader.exe") and ((version("F4SE/Plugins/place.dll", "1.18.0.1163", ==) and version("../Fallout4.exe", "1.10.163.0", !=)) or (version("F4SE/Plugins/place.dll", "1.18.0.1163", <) and version("../Fallout4.exe", "1.10.163.0", ==)))'
+    condition: 'file("F4SE/Plugins/place.dll") and file("../f4se_loader.exe") and readable("../Fallout4.exe") and ((version("F4SE/Plugins/place.dll", "1.18.0.1163", ==) and version("../Fallout4.exe", "1.10.163.0", !=)) or (version("F4SE/Plugins/place.dll", "1.18.0.1163", <) and version("../Fallout4.exe", "1.10.163.0", ==)))'
 
 groups:
   - name: &dlcGroup DLC
@@ -1485,7 +1485,7 @@ plugins:
         subs:
           - 'Unofficial Fallout 4 Patch'
           - 'Fallout 4'
-        condition: 'version("Unofficial Fallout 4 Patch.esp", "2.1.0", >=) and not version("../Fallout4.exe", "1.10.162.0", >=)'
+        condition: 'version("Unofficial Fallout 4 Patch.esp", "2.1.0", >=) and readable("../Fallout4.exe") and not version("../Fallout4.exe", "1.10.162.0", >=)'
     tag: [ Relev ]
     clean:
       - crc: 0xFA6E14DD
@@ -1545,7 +1545,7 @@ plugins:
     msg:
       - <<: *missingRequirementXforPlugin
         subs: [ '[Address Library for F4SE Plugins](https://www.nexusmods.com/fallout4/mods/47327/)' ]
-        condition: '(not file("F4SE/Plugins/version-1-10-130-0.bin") and version("../Fallout4.exe", "1.10.130.0", ==)) or (not file("F4SE/Plugins/version-1-10-138-0.bin") and version("../Fallout4.exe", "1.10.138.0", ==)) or (not file("F4SE/Plugins/version-1-10-162-0.bin") and version("../Fallout4.exe", "1.10.162.0", ==)) or (not file("F4SE/Plugins/version-1-10-163-0.bin") and version("../Fallout4.exe", "1.10.163.0", ==))'
+        condition: '(readable("../Fallout4.exe") and (not file("F4SE/Plugins/version-1-10-130-0.bin") and version("../Fallout4.exe", "1.10.130.0", ==)) or (not file("F4SE/Plugins/version-1-10-138-0.bin") and version("../Fallout4.exe", "1.10.138.0", ==)) or (not file("F4SE/Plugins/version-1-10-162-0.bin") and version("../Fallout4.exe", "1.10.162.0", ==)) or (not file("F4SE/Plugins/version-1-10-163-0.bin") and version("../Fallout4.exe", "1.10.163.0", ==)))'
     clean:
       - crc: 0xE0F570D6
         util: 'FO4Edit v4.0.3h (Hotfix 1)'
@@ -1770,7 +1770,7 @@ plugins:
     group: *fixesGroup
     msg:
       - <<: *alreadyInOrFixedByFO4
-        condition: 'version("../Fallout4.exe", "1.5.0.0", >=)'
+        condition: 'readable("../Fallout4.exe") and version("../Fallout4.exe", "1.5.0.0", >=)'
 
   - name: 'WeaveFix.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/5847/' ]
@@ -4148,7 +4148,7 @@ plugins:
         condition: 'version("SettlementKeywords.esm", "1.60", <)'
       - <<: *requiresX
         subs: [ 'Fallout 4 1.6.3+' ]
-        condition: 'version("../Fallout4.exe", "1.6.3", <)'
+        condition: 'readable("../Fallout4.exe") and version("../Fallout4.exe", "1.6.3", <)'
 
   - name: 'AlternateSettlements.esp'
     msg:
@@ -4166,12 +4166,12 @@ plugins:
     inc:
       - name: '../Fallout4.exe'
         display: 'Fallout 4 1.5.157.0+'
-        condition: 'version("../Fallout4.exe", "1.5.157.0", >=)'
+        condition: 'readable("../Fallout4.exe") and version("../Fallout4.exe", "1.5.157.0", >=)'
   - name: 'BuildingBlocks-Foundations_Homemaker.*\.esp'
     inc:
       - name: '../Fallout4.exe'
         display: 'Fallout 4 1.5.157.0+'
-        condition: 'version("../Fallout4.exe", "1.5.157.0", >=)'
+        condition: 'readable("../Fallout4.exe") and version("../Fallout4.exe", "1.5.157.0", >=)'
     msg:
       - <<: *alreadyInOrFixedByX
         subs: [ 'Homemaker 1.50 or greater' ]
@@ -4186,7 +4186,7 @@ plugins:
     inc:
       - name: '../Fallout4.exe'
         display: 'Fallout 4 1.5.157.0+'
-        condition: 'version("../Fallout4.exe", "1.5.157.0", >=)'
+        condition: 'readable("../Fallout4.exe") and version("../Fallout4.exe", "1.5.157.0", >=)'
       - name: 'SettlementKeywords.esm'
         display: 'Settlement Keywords Expanded'
         condition: 'version("SettlementKeywords.esm", "1.0", >=)'
