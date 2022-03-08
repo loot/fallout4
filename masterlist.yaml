@@ -3104,6 +3104,9 @@ plugins:
         util: 'FO4Edit v4.0.4b'
 
   - name: 'PRP-Vault120.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/58584/'
+        name: 'PRP - More than 20 Previsibines Under the Sea'
 
 ###### FROST Survival Simulator ######
   - name: 'FROST.esp'
