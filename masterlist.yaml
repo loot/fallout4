@@ -3107,6 +3107,7 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/58584/'
         name: 'PRP - More than 20 Previsibines Under the Sea'
+    after: [ 'PRP.esp' ]
 
 ###### FROST Survival Simulator ######
   - name: 'FROST.esp'
