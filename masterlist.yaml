@@ -6410,3 +6410,44 @@ plugins:
         crc: 0x6E9E192A
         util: '[FO4Edit v4.0.4b](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 4
+
+  - name: '__Fortune_Finder_Leveling.esp'
+    clean:
+      - crc: 0x3336af55
+        util: '[FO4Edit v4.0.4](https://www.nexusmods.com/fallout4/mods/2737)'
+    url:
+      - 'https://www.afkmods.com/index.php?/files/file/2410-fortune-finder-leveling/'
+      - 'https://bethesda.net/en/mods/fallout4/mod-detail/4241028'
+    
+  - name: '__Wheres_the_rum.esp'
+    clean:
+      - crc: 0xd05eea03
+        util: '[FO4Edit v4.0.4](https://www.nexusmods.com/fallout4/mods/2737)'
+    url:
+      - 'https://www.afkmods.com/index.php?/files/file/2420-wheres-the-rum/'
+      - 'https://bethesda.net/en/mods/fallout4/mod-detail/4242093'
+      
+  - name: '__Working_Kitchen_Appliances.esp'
+    clean:
+      - crc: 0x693933c3
+        util: '[FO4Edit v4.0.4](https://www.nexusmods.com/fallout4/mods/2737)'
+    url:
+      - 'https://www.afkmods.com/index.php?/files/file/2414-working-kitchen-appliances/'
+      - 'https://bethesda.net/en/mods/fallout4/mod-detail/4241177'
+      
+  - name: '_Complete_Raider_Power_Armor.esp'
+    clean:
+      - crc: 0x17ed1071
+        util: '[FO4Edit v4.0.4](https://www.nexusmods.com/fallout4/mods/2737)'
+    url:
+      - 'https://www.afkmods.com/index.php?/files/file/2415-re-spawning-raiders-in-full-power-armor/'
+      - 'https://bethesda.net/en/mods/fallout4/mod-detail/4241257'
+    
+  - name: '_Vault 88 Atruim Light.esp'
+    clean:
+      - crc: 0x311e798e
+        util: '[FO4Edit v4.0.4](https://www.nexusmods.com/fallout4/mods/2737)'
+    url:
+      - 'https://www.afkmods.com/index.php?/files/file/2415-re-spawning-raiders-in-full-power-armor/'
+      - 'https://bethesda.net/en/mods/fallout4/mod-detail/4241257'
+
