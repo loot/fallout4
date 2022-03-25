@@ -6430,12 +6430,14 @@ plugins:
       - 'https://bethesda.net/en/mods/fallout4/mod-detail/4242093'
       
   - name: '__Working_Kitchen_Appliances.esp'
-    clean:
-      - crc: 0x693933c3
-        util: '[FO4Edit v4.0.4](https://www.nexusmods.com/fallout4/mods/2737)'
     url:
-      - 'https://www.afkmods.com/index.php?/files/file/2414-working-kitchen-appliances/'
-      - 'https://bethesda.net/en/mods/fallout4/mod-detail/4241177'
+      - link: 'https://www.afkmods.com/index.php?/files/file/2414-working-kitchen-appliances/'
+        name: 'Working Kitchen Appliances (AFK Mods)'
+      - link: 'https://bethesda.net/en/mods/fallout4/mod-detail/4241177/'
+        name: 'Working Kitchen Appliances (Bethesda.net Mods)'
+    clean:
+      - crc: 0x693933C3
+        util: '[FO4Edit v4.0.4](https://www.nexusmods.com/fallout4/mods/2737)'
       
   - name: '_Complete_Raider_Power_Armor.esp'
     clean:
