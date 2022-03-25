@@ -6412,12 +6412,14 @@ plugins:
         itm: 4
 
   - name: '__Fortune_Finder_Leveling.esp'
-    clean:
-      - crc: 0x3336af55
-        util: '[FO4Edit v4.0.4](https://www.nexusmods.com/fallout4/mods/2737)'
     url:
-      - 'https://www.afkmods.com/index.php?/files/file/2410-fortune-finder-leveling/'
-      - 'https://bethesda.net/en/mods/fallout4/mod-detail/4241028'
+      - link: 'https://www.afkmods.com/index.php?/files/file/2410-fortune-finder-leveling/'
+        name: 'Fortune Finder Leveling (AFK Mods)'
+      - link: 'https://bethesda.net/en/mods/fallout4/mod-detail/4241028/'
+        name: 'Fortune Finder Leveling (Bethesda.net Mods)'
+    clean:
+      - crc: 0x3336AF55
+        util: '[FO4Edit v4.0.4](https://www.nexusmods.com/fallout4/mods/2737)'
     
   - name: '__Wheres_the_rum.esp'
     clean:
