@@ -6442,12 +6442,14 @@ plugins:
         util: '[FO4Edit v4.0.4](https://www.nexusmods.com/fallout4/mods/2737)'
       
   - name: '_Complete_Raider_Power_Armor.esp'
-    clean:
-      - crc: 0x17ed1071
-        util: '[FO4Edit v4.0.4](https://www.nexusmods.com/fallout4/mods/2737)'
     url:
-      - 'https://www.afkmods.com/index.php?/files/file/2415-re-spawning-raiders-in-full-power-armor/'
-      - 'https://bethesda.net/en/mods/fallout4/mod-detail/4241257'
+      - link: 'https://www.afkmods.com/index.php?/files/file/2415-re-spawning-raiders-in-full-power-armor/'
+        name: 'Re-Spawning Raiders in Full Power Armor (AFK Mods)'
+      - link: 'https://bethesda.net/en/mods/fallout4/mod-detail/4241257/'
+        name: 'Re-Spawning Raiders in Full Power Armor (Bethesda.net Mods)'
+    clean:
+      - crc: 0x17ED1071
+        util: '[FO4Edit v4.0.4](https://www.nexusmods.com/fallout4/mods/2737)'
     
   - name: '_Vault 88 Atruim Light.esp'
     clean:
