@@ -6451,11 +6451,3 @@ plugins:
       - crc: 0x17ED1071
         util: '[FO4Edit v4.0.4](https://www.nexusmods.com/fallout4/mods/2737)'
     
-  - name: '_Vault 88 Atruim Light.esp'
-    clean:
-      - crc: 0x311e798e
-        util: '[FO4Edit v4.0.4](https://www.nexusmods.com/fallout4/mods/2737)'
-    url:
-      - 'https://www.afkmods.com/index.php?/files/file/2415-re-spawning-raiders-in-full-power-armor/'
-      - 'https://bethesda.net/en/mods/fallout4/mod-detail/4241257'
-
