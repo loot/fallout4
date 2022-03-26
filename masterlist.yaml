@@ -6420,7 +6420,7 @@ plugins:
     clean:
       - crc: 0x3336AF55
         util: '[FO4Edit v4.0.4](https://www.nexusmods.com/fallout4/mods/2737)'
-    
+
   - name: '__Wheres_the_rum.esp'
     url:
       - link: 'https://www.afkmods.com/index.php?/files/file/2420-wheres-the-rum/'
@@ -6430,7 +6430,7 @@ plugins:
     clean:
       - crc: 0xD05EEA03
         util: '[FO4Edit v4.0.4](https://www.nexusmods.com/fallout4/mods/2737)'
-      
+
   - name: '__Working_Kitchen_Appliances.esp'
     url:
       - link: 'https://www.afkmods.com/index.php?/files/file/2414-working-kitchen-appliances/'
@@ -6440,7 +6440,7 @@ plugins:
     clean:
       - crc: 0x693933C3
         util: '[FO4Edit v4.0.4](https://www.nexusmods.com/fallout4/mods/2737)'
-      
+
   - name: '_Complete_Raider_Power_Armor.esp'
     url:
       - link: 'https://www.afkmods.com/index.php?/files/file/2415-re-spawning-raiders-in-full-power-armor/'
@@ -6450,4 +6450,3 @@ plugins:
     clean:
       - crc: 0x17ED1071
         util: '[FO4Edit v4.0.4](https://www.nexusmods.com/fallout4/mods/2737)'
-    
