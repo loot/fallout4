@@ -1809,6 +1809,8 @@ plugins:
     clean:
       - crc: 0xCFB11F37
         util: 'FO4Edit v4.0.3h (Hotfix 1)'
+      - crc: 0x139CED38
+        util: 'FO4Edit v4.0.4b'
   - name: 'BostonFPSFix(Automatron|FarHarbor|-NukaWorld|-Vanilla|VD|AIO_VD)\.esp'
     msg:
       - <<: *alreadyInX
