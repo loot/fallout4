@@ -1795,9 +1795,22 @@ plugins:
         subs: [ '[FROST - Exterior Cell Fixes and FPS Boost](https://www.nexusmods.com/fallout4/mods/54950/)' ]
         condition: 'active("FROST.esp") and active("RedsFrostFixes.esp") and active("aFrostMod.esp") and not active("FROSTExtPR.esp")'
   - name: 'BostonFPSFixAIO.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/59021/'
+        name: 'Boston FPS Fix - PRP Edition'
+    msg:
+      - <<: *patchUpdateAvailable
+        subs: [ '[Boston FPS Fix - PRP Edition](https://www.nexusmods.com/fallout4/mods/59021/)' ]
+        condition: 'version("BostonFPSFixAIO.esp", "0.33", <)'
+      - <<: *requiresResources
+        type: error
+        subs: [ '[Boston FPS Fix](https://www.nexusmods.com/fallout4/mods/26286/)' ]
+        condition: 'not file("BostonFPSFixAIO - Main.BA2")'
     clean:
       - crc: 0xCFB11F37
         util: 'FO4Edit v4.0.3h (Hotfix 1)'
+      - crc: 0x139CED38
+        util: 'FO4Edit v4.0.4b'
   - name: 'BostonFPSFix(Automatron|FarHarbor|-NukaWorld|-Vanilla|VD|AIO_VD)\.esp'
     msg:
       - <<: *alreadyInX
