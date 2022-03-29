@@ -1802,6 +1802,10 @@ plugins:
       - <<: *patchUpdateAvailable
         subs: [ '[Boston FPS Fix - PRP Edition](https://www.nexusmods.com/fallout4/mods/59021/)' ]
         condition: 'version("BostonFPSFixAIO.esp", "0.33", <)'
+      - <<: *requiresResources
+        type: error
+        subs: [ '[Boston FPS Fix](https://www.nexusmods.com/fallout4/mods/26286/)' ]
+        condition: 'not file("BostonFPSFixAIO - Main.BA2")'
     clean:
       - crc: 0xCFB11F37
         util: 'FO4Edit v4.0.3h (Hotfix 1)'
