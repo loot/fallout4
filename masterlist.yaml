@@ -1614,7 +1614,9 @@ plugins:
         condition: 'active("Unofficial Fallout 4 Patch.esp") and version("Unofficial Fallout 4 Patch.esp", "2.0.2", >=)'
 
   - name: 'ColterFix.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/46403/' ]
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/59323/'
+        name: 'Overboss Colter Fix'
     group: *fixesGroup
     msg:
       - <<: *alreadyInX
