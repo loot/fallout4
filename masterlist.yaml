@@ -1613,6 +1613,14 @@ plugins:
       - <<: *alreadyInUFO4P
         condition: 'active("Unofficial Fallout 4 Patch.esp") and version("Unofficial Fallout 4 Patch.esp", "2.0.2", >=)'
 
+  - name: 'ColterFix.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/46403/' ]
+    group: *fixesGroup
+    msg:
+      - <<: *alreadyInX
+        subs: [ 'Unofficial Fallout 4 Patch' ]
+        condition: 'active("Unofficial Fallout 4 Patch.esp") and version("Unofficial Fallout 4 Patch.esp", "2.1.4", >=)'
+
   - name: 'Combat Armor Weight Fix.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/11541/' ]
     group: *fixesGroup
@@ -1937,13 +1945,6 @@ plugins:
         util: 'FO4Edit v4.0.4b'
       - crc: 0x5436F338
         util: 'FO4Edit v4.0.4b'
-  - name: 'ColterFix.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/46403/' ]
-    group: *fixesGroup
-    msg:
-      - <<: *alreadyInX
-        subs: [ 'Unofficial Fallout 4 Patch' ]
-        condition: 'active("Unofficial Fallout 4 Patch.esp") and version("Unofficial Fallout 4 Patch.esp", "2.1.4", >=)'
   # PRP - Compat Grabbag #
   - name: 'PRP-Compat-(Clarity-42|Clarity-43|DCA|Fogout-Int|IntEnh|RegionNames|UIL|UIL-Darker)\.esp'
     after: [ 'PRP.esp' ]
