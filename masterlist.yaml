@@ -1881,7 +1881,7 @@ plugins:
       - crc: 0x0E248104
         util: 'FO4Edit v4.0.3h (Hotfix 1)'
 
-  - name: 'P(PF|RP.*)\.es[mp]'
+  - name: 'P(PF|RP.*|Clean_and_Simple_and_Prevised_All_CAS|Eli_FactionHousingOverhaul_FarHarbor_Previs|ScrapEverythingUltimatePrevis)\.es[mp]'
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/46403/'
         name: 'Previsibines Repair Pack'
@@ -1903,39 +1903,39 @@ plugins:
           - 'Sim Settlements 2 - Chapter 2'
           - '[Previsibines Repair Pack (PRP) - Sim Settlements 2 Upgrade Kit](https://www.nexusmods.com/fallout4/mods/57947/)'
         condition: 'active("SS2_XPAC_Chapter2.esm") and not active("PRP-SS2.esp")'
-      - <<: *patchProvided
+      - <<: *patchIncluded
         subs: [ 'Aloot''s Home Plate' ]
         condition: 'active("AlootHomePlate.esp") and not version("AlootHomePlate.esp", "2.2", >=) and version("PRP.esp", "0.57", <) and version("PRP.esp", "0.58", >=)'
-      - <<: *patchProvided
+      - <<: *patchIncluded
         subs: [ 'Clarity - A Visual Overhaul' ]
-        condition: 'active("Clarity.esp") and not active("PRP-Compat-Clarity-(42|43)\.esp")'
+        condition: 'active("Clarity.esp") and not active("PRP-Compat-Clarity-4[23]\.esp")'
+      - <<: *patchIncluded
+        subs: [ 'Diamond City Ambience' ]
+        condition: 'active("DiamondCityAmbience.esp") and not active("PRP-Compat-DCA.esp")'
+      - <<: *patchIncluded
+        subs: [ 'FogOut Interiors All DLC' ]
+        condition: 'active("FogOut - Interiors - All DLC.esp") and not active("PRP-Compat-Fogout-Int.esp")'
+      - <<: *patchIncluded
+        subs: [ 'Interiors Enhanced AIO' ]
+        condition: 'active("InteriorsEnhanced-All-In-One.esp") and not active("PRP-Compat-IntEnh.esp")'
+      - <<: *patchIncluded
+        subs: [ 'Region Names on Save Files' ]
+        condition: 'active("Region Names on Save Files.esp") and not active("PRP-Compat-RegionNames.esp")'
+      - <<: *patchIncluded
+        subs: [ 'Ultra Exterior Lighting' ]
+        condition: 'active("UltraExteriorLighting.esp") and not active("PRP-Compat-UEL.esp")'
+      - <<: *patchIncluded
+        subs: [ 'Ultra Interior Lighting' ]
+        condition: 'active("UltraInteriorLighting.esp") and not active("PRP-Compat-UIL.esp")'
+      - <<: *patchIncluded
+        subs: [ 'Ultra Interior Lighting - Darker Ambience' ]
+        condition: 'active("UltraInteriorLighting_DarkerAmbience.esp") and not active("PRP-Compat-UIL-Darker.esp")'
       - <<: *patchProvided
         subs: [ 'Clean and Simple - All CAS Settlements' ]
         condition: 'active("Clean and Simple -  All CAS Settlements.esp") and not active("Clean_and_Simple_and_Prevised_All_CAS.esp") and version("PRP.esp", "0.57", <) and version("PRP.esp", "0.58", >=)'
       - <<: *patchProvided
-        subs: [ 'Diamond City Ambience' ]
-        condition: 'active("DiamondCityAmbience.esp") and not active("PRP-Compat-DCA.esp")'
-      - <<: *patchProvided
         subs: [ 'Faction Housing Overhaul AIO - Far Harbour' ]
         condition: 'active("DLCCoast.esm") and active("Eli_Faction Housing Overhaul - AiO.esp") and not active("Eli_FactionHousingOverhaul_FarHarbor_Previs.esp") and version("PRP.esp", "0.57", <) and version("PRP.esp", "0.58", >=)'
-      - <<: *patchProvided
-        subs: [ 'FogOut Interiors All DLC' ]
-        condition: 'active("FogOut - Interiors - All DLC.esp") and not active("PRP-Compat-Fogout-Int.esp")'
-      - <<: *patchProvided
-        subs: [ 'Interiors Enhanced AIO' ]
-        condition: 'active("InteriorsEnhanced-All-In-One.esp") and not active("PRP-Compat-IntEnh.esp")'
-      - <<: *patchProvided
-        subs: [ 'Region Names on Save Files' ]
-        condition: 'active("Region Names on Save Files.esp") and not active("PRP-Compat-RegionNames.esp")'
-      - <<: *patchProvided
-        subs: [ 'Ultra Exterior Lighting' ]
-        condition: 'active("UltraExteriorLighting.esp") and not active("PRP-Compat-UEL.esp")'
-      - <<: *patchProvided
-        subs: [ 'Ultra Interior Lighting' ]
-        condition: 'active("UltraInteriorLighting.esp") and not active("PRP-Compat-UIL.esp")'
-      - <<: *patchProvided
-        subs: [ 'Ultra Interior Lighting - Darker Ambience' ]
-        condition: 'active("UltraInteriorLighting_DarkerAmbience.esp") and not active("PRP-Compat-UIL-Darker.esp")'
       - <<: *useInstead
         subs: [ '[FROST - Exterior Cell Fixes and FPS Boost](https://www.nexusmods.com/fallout4/mods/54950/)' ]
         condition: 'active("FROST.esp") and active("RedsFrostFixes.esp") and active("aFrostMod.esp") and not active("FROSTExtPR.esp")'
@@ -1948,16 +1948,16 @@ plugins:
       - crc: 0x5436F338
         util: 'FO4Edit v4.0.4b'
   # PRP - Compat Grabbag #
-  - name: 'PRP-Compat-(Clarity-42|Clarity-43|DCA|Fogout-Int|IntEnh|RegionNames|UIL|UIL-Darker)\.esp'
+  - name: 'PRP-Compat-(Clarity-4[23]|DCA|Fogout-Int|IntEnh|RegionNames|UIL|UIL-Darker)\.esp'
     after: [ 'PRP.esp' ]
-  - name: 'PRP-Compat-Clarity-(42|43)\.esp'
+  - name: 'PRP-Compat-Clarity-4[23]\.esp'
     after: [ 'PRP-Compat-DCA.esp' ]
     req: [ 'Clarity.esp' ]
   - name: 'PRP-Compat-Clarity-42.esp'
     msg:
       - <<: *requiresX
         subs: [ 'Clarity v4.2' ]
-        condition: 'not version("Clarity.esp", "4.2", ==)'
+        condition: 'version("Clarity.esp", "4.2", !=)'
     clean:
       - crc: 0x0E13C44E
         util: 'FO4Edit v4.0.4b'
@@ -1965,7 +1965,7 @@ plugins:
     msg:
       - <<: *requiresX
         subs: [ 'Clarity v4.3' ]
-        condition: 'not version("Clarity.esp", "4.3", ==)'
+        condition: 'version("Clarity.esp", "4.3", !=)'
     clean:
       - crc: 0x0E13C44E
         util: 'FO4Edit v4.0.4b'
@@ -2003,10 +2003,12 @@ plugins:
     after:
       - 'PRP.esp'
       - 'PRP-Compat-UEL.esp'
-    inc:
-      - name: 'PRP.esp'
-        display: '**PRP.esp** v0.57.x'
-        condition: 'version("PRP.esp", "0.57", >=) and version("PRP.esp", "0.58", <)'
+    msg:
+      - <<: *versionXIncY
+        subs:
+          - 'Previsibines Repair Pack'
+          - 'PRP Compat for Clean and Simple Merged'
+        condition: 'active("PRP.esp") and version("PRP.esp", "0.57", >=) and version("PRP.esp", "0.58", <)'
   - name: 'Eli_FactionHousingOverhaul_FarHarbor_Previs.esp'
     after:
       - 'PRP.esp'
@@ -2015,15 +2017,19 @@ plugins:
       - 'PRP-Compat-IntEnh.esp'
       - 'PRP-Compat-UIL.esp'
       - 'PRP-Compat-UIL-Darker.esp'
-    inc:
-      - name: 'PRP.esp'
-        display: '**PRP.esp** v0.57.x'
-        condition: 'version("PRP.esp", "0.57", >=) and version("PRP.esp", "0.58", <)'
+    msg:
+      - <<: *versionXIncY
+        subs:
+          - 'Previsibines Repair Pack'
+          - 'PRP Compat for Faction Housing Overhaul'
+        condition: 'active("PRP.esp") and version("PRP.esp", "0.57", >=) and version("PRP.esp", "0.58", <)'
   - name: 'ScrapEverythingUltimatePrevis.esp'
-    inc:
-      - name: 'PRP.esp'
-        display: '**PRP.esp** v0.57.x or lower'
-        condition: 'version("PRP.esp", "0.58", <)'
+    msg:
+      - <<: *versionXIncY
+        subs:
+          - 'Previsibines Repair Pack'
+          - 'PRP Compat Scrap Everything'
+        condition: 'active("PRP.esp") and version("PRP.esp", "0.58", <)'
     dirty:
       - <<: *quickClean
         crc: 0xA6F531E9
