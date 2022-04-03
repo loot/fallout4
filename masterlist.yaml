@@ -2003,10 +2003,12 @@ plugins:
     after:
       - 'PRP.esp'
       - 'PRP-Compat-UEL.esp'
-    inc:
-      - name: 'PRP.esp'
-        display: '**PRP.esp** v0.57.x'
-        condition: 'version("PRP.esp", "0.57", >=) and version("PRP.esp", "0.58", <)'
+    msg:
+      - <<: *versionXIncY
+        subs:
+          - 'Previsibines Repair Pack'
+          - 'PRP Compat for Clean and Simple Merged'
+        condition: 'active("PRP.esp") and version("PRP.esp", "0.57", >=) and version("PRP.esp", "0.58", <)'
   - name: 'Eli_FactionHousingOverhaul_FarHarbor_Previs.esp'
     after:
       - 'PRP.esp'
@@ -2015,15 +2017,19 @@ plugins:
       - 'PRP-Compat-IntEnh.esp'
       - 'PRP-Compat-UIL.esp'
       - 'PRP-Compat-UIL-Darker.esp'
-    inc:
-      - name: 'PRP.esp'
-        display: '**PRP.esp** v0.57.x'
-        condition: 'version("PRP.esp", "0.57", >=) and version("PRP.esp", "0.58", <)'
+    msg:
+      - <<: *versionXIncY
+        subs:
+          - 'Previsibines Repair Pack'
+          - 'PRP Compat for Faction Housing Overhaul'
+        condition: 'active("PRP.esp") and version("PRP.esp", "0.57", >=) and version("PRP.esp", "0.58", <)'
   - name: 'ScrapEverythingUltimatePrevis.esp'
-    inc:
-      - name: 'PRP.esp'
-        display: '**PRP.esp** v0.57.x or lower'
-        condition: 'version("PRP.esp", "0.58", <)'
+    msg:
+      - <<: *versionXIncY
+        subs:
+          - 'Previsibines Repair Pack'
+          - 'PRP Compat Scrap Everything'
+        condition: 'active("PRP.esp") and version("PRP.esp", "0.58", <)'
     dirty:
       - <<: *quickClean
         crc: 0xA6F531E9
