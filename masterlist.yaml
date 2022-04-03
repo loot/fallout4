@@ -1908,7 +1908,7 @@ plugins:
         condition: 'active("AlootHomePlate.esp") and not version("AlootHomePlate.esp", "2.2", >=) and version("PRP.esp", "0.57", <) and version("PRP.esp", "0.58", >=)'
       - <<: *patchIncluded
         subs: [ 'Clarity - A Visual Overhaul' ]
-        condition: 'active("Clarity.esp") and not active("PRP-Compat-Clarity-(42|43)\.esp")'
+        condition: 'active("Clarity.esp") and not active("PRP-Compat-Clarity-4[23]\.esp")'
       - <<: *patchIncluded
         subs: [ 'Diamond City Ambience' ]
         condition: 'active("DiamondCityAmbience.esp") and not active("PRP-Compat-DCA.esp")'
@@ -1948,16 +1948,16 @@ plugins:
       - crc: 0x5436F338
         util: 'FO4Edit v4.0.4b'
   # PRP - Compat Grabbag #
-  - name: 'PRP-Compat-(Clarity-42|Clarity-43|DCA|Fogout-Int|IntEnh|RegionNames|UIL|UIL-Darker)\.esp'
+  - name: 'PRP-Compat-(Clarity-4[23]|DCA|Fogout-Int|IntEnh|RegionNames|UIL|UIL-Darker)\.esp'
     after: [ 'PRP.esp' ]
-  - name: 'PRP-Compat-Clarity-(42|43)\.esp'
+  - name: 'PRP-Compat-Clarity-4[23]\.esp'
     after: [ 'PRP-Compat-DCA.esp' ]
     req: [ 'Clarity.esp' ]
   - name: 'PRP-Compat-Clarity-42.esp'
     msg:
       - <<: *requiresX
         subs: [ 'Clarity v4.2' ]
-        condition: 'not version("Clarity.esp", "4.2", ==)'
+        condition: 'version("Clarity.esp", "4.2", !=)'
     clean:
       - crc: 0x0E13C44E
         util: 'FO4Edit v4.0.4b'
@@ -1965,7 +1965,7 @@ plugins:
     msg:
       - <<: *requiresX
         subs: [ 'Clarity v4.3' ]
-        condition: 'not version("Clarity.esp", "4.3", ==)'
+        condition: 'version("Clarity.esp", "4.3", !=)'
     clean:
       - crc: 0x0E13C44E
         util: 'FO4Edit v4.0.4b'
