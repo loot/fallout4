@@ -3672,6 +3672,9 @@ plugins:
     after:
       - 'HUDFramework.esm'
       - 'WorkshopFramework.esm'
+    inc:
+      - name: 'SS2.esm'
+        display: 'Sim Settlements 2'
     msg:
       - <<: *obsolete
         condition: 'version("SimSettlements.esm", "4.2.4", <)'
@@ -3732,13 +3735,36 @@ plugins:
 
 ###### Sim Settlements 2 ######
   - name: 'SS2.esm'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/47976' ]
+    url:
+      - 'https://www.nexusmods.com/fallout4/mods/47976'
+      - 'https://bethesda.net/en/mods/fallout4/mod-detail/4183663'
+    after:
+      - 'Unofficial Fallout 4 Patch.esp'
+    req:
+      - 'HUDFramework.esm'
+      - 'WorkshopFramework.esm'
+    inc:
+      - 'SimSettlements.esm'
+      - 'SimSettlements_XPAC_RiseOfTheCommonwealth.esp'
+      - 'SimSettlements_XPAC_IndustrialRevolution.esp'
+      - 'SimSettlements_XPAC_Conqueror.esp'
     msg:
       - <<: *patch3rdParty
         subs:
           - '[Extended Dialogue Interface](https://www.nexusmods.com/fallout4/mods/27216)'
           - '[SS2 - XDI Compatibility Patch](https://www.nexusmods.com/fallout4/mods/48254)'
         condition: 'active("XDI.esm") and not active("SS2_XDI Patch.esp") and not active("SS2_XDI Patch-Basic.esp") and not active("SS2_XDI Patch-Basic_esl.esp")'
+  - name: 'SS2_XPAC_Chapter2.esm'
+    req:
+      - 'SS2.esm'
+      - 'DLCRobot.esm'
+      - 'WorkshopFramework.esm'
+    inc:
+      - 'SimSettlements.esm'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/55817'
+        name: 'Sim Settlements 2 - Chapter 2'
+      - 'https://bethesda.net/en/mods/fallout4/mod-detail/4247081'
 
 ###### Anything new can go after this (if you're not sure where to put it) ######
   # Radrose Usability Enhancements
