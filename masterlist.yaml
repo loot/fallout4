@@ -3733,8 +3733,10 @@ plugins:
 ###### Sim Settlements 2 ######
   - name: 'SS2.esm'
     url:
-      - 'https://www.nexusmods.com/fallout4/mods/47976'
-      - 'https://bethesda.net/en/mods/fallout4/mod-detail/4183663'
+      - link: 'https://www.nexusmods.com/fallout4/mods/47976/'
+        name: 'Sim Settlements 2 (Nexus Mods)'
+      - link: 'https://bethesda.net/en/mods/fallout4/mod-detail/4183663/'
+        name: 'Sim Settlements 2 (Bethesda.net Mods)'
     after:
       - 'Unofficial Fallout 4 Patch.esp'
     req:
