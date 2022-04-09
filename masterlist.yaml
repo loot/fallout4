@@ -3672,9 +3672,6 @@ plugins:
     after:
       - 'HUDFramework.esm'
       - 'WorkshopFramework.esm'
-    inc:
-      - name: 'SS2.esm'
-        display: 'Sim Settlements 2'
     msg:
       - <<: *obsolete
         condition: 'version("SimSettlements.esm", "4.2.4", <)'
