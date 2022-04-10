@@ -3739,9 +3739,6 @@ plugins:
         name: 'Sim Settlements 2 (Bethesda.net Mods)'
     after:
       - 'Unofficial Fallout 4 Patch.esp'
-    req:
-      - 'HUDFramework.esm'
-      - 'WorkshopFramework.esm'
     inc: [ 'SimSettlements.esm' ]
     msg:
       - <<: *patch3rdParty
