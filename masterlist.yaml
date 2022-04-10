@@ -3742,11 +3742,7 @@ plugins:
     req:
       - 'HUDFramework.esm'
       - 'WorkshopFramework.esm'
-    inc:
-      - 'SimSettlements.esm'
-      - 'SimSettlements_XPAC_RiseOfTheCommonwealth.esp'
-      - 'SimSettlements_XPAC_IndustrialRevolution.esp'
-      - 'SimSettlements_XPAC_Conqueror.esp'
+    inc: [ 'SimSettlements.esm' ]
     msg:
       - <<: *patch3rdParty
         subs:
