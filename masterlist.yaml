@@ -3737,8 +3737,6 @@ plugins:
         name: 'Sim Settlements 2 (Nexus Mods)'
       - link: 'https://bethesda.net/en/mods/fallout4/mod-detail/4183663/'
         name: 'Sim Settlements 2 (Bethesda.net Mods)'
-    after:
-      - 'Unofficial Fallout 4 Patch.esp'
     inc: [ 'SimSettlements.esm' ]
     msg:
       - <<: *patch3rdParty
