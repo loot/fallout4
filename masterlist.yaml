@@ -1565,7 +1565,7 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/35004/'
         name: 'Workshop Framework (Nexus Mods)'
-      - link: 'https://bethesda.net/en/mods/fallout4/mod-detail/4081586'
+      - link: 'https://bethesda.net/en/mods/fallout4/mod-detail/4081586/'
         name: 'Workshop Framework (Bethesda.net Mods)'
     group: *frameworksGroup
     after: [ 'Unofficial Fallout 4 Patch.esp' ]
