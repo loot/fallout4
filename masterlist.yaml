@@ -1571,7 +1571,7 @@ plugins:
     after: [ 'Unofficial Fallout 4 Patch.esp' ]
     inc:
       - name: 'Moddable Plasma Caster.esp'
-        detail: 'See https://wiki.simsettlements2.com/getting-started/known-issues'
+        detail: 'See Sim Settlements 2's [compatibility notes](https://wiki.simsettlements2.com/getting-started/known-issues#the-p-113-a-highly-moddable-heavy-plasma-caster) on Workshop Framework'
       - name: 'NeutralVertibirdsEN.esp'
         detail: 'See https://wiki.simsettlements2.com/getting-started/known-issues'
       - name: 'NeutralVertibirdsDE.esp'
