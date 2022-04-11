@@ -1575,7 +1575,7 @@ plugins:
       - name: 'NeutralVertibirdsEN.esp'
         detail: 'See https://wiki.simsettlements2.com/getting-started/known-issues'
       - name: 'NeutralVertibirdsDE.esp'
-        detail: 'See https://wiki.simsettlements2.com/getting-started/known-issues'
+        detail: 'See Sim Settlements 2's [compatibility notes](https://wiki.simsettlements2.com/getting-started/known-issues#neutral-vertibirds) on Workshop Framework'
     dirty:
       - <<: *quickClean
         crc: 0x068E3CB7
