@@ -1562,9 +1562,20 @@ plugins:
         util: 'FO4Edit v4.0.3h (Hotfix 1)'
 
   - name: 'WorkshopFramework.esm'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/35004/' ]
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/35004/'
+        name: 'Workshop Framework (Nexus Mods)'
+      - link: 'https://bethesda.net/en/mods/fallout4/mod-detail/4081586/'
+        name: 'Workshop Framework (Bethesda.net Mods)'
     group: *frameworksGroup
     after: [ 'Unofficial Fallout 4 Patch.esp' ]
+    inc:
+      - name: 'Moddable Plasma Caster.esp'
+        detail: 'See Sim Settlements 2''s [compatibility notes](https://wiki.simsettlements2.com/getting-started/known-issues#the-p-113-a-highly-moddable-heavy-plasma-caster) on Workshop Framework'
+      - name: 'NeutralVertibirdsEN.esp'
+        detail: 'See Sim Settlements 2''s [compatibility notes](https://wiki.simsettlements2.com/getting-started/known-issues#neutral-vertibirds) on Workshop Framework'
+      - name: 'NeutralVertibirdsDE.esp'
+        detail: 'See Sim Settlements 2''s [compatibility notes](https://wiki.simsettlements2.com/getting-started/known-issues#neutral-vertibirds) on Workshop Framework'
     dirty:
       - <<: *quickClean
         crc: 0x068E3CB7
