@@ -3779,7 +3779,7 @@ plugins:
   - name: 'SS2_FDK_TinyLiving.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/49424/'
-        name: 'im Settlements 2 - Tiny Living'
+        name: 'Sim Settlements 2 - Tiny Living'
     msg:
       - <<: *patch3rdParty
         subs:
