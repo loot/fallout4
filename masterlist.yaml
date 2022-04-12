@@ -3759,6 +3759,66 @@ plugins:
           - '[Extended Dialogue Interface](https://www.nexusmods.com/fallout4/mods/27216)'
           - '[SS2 - XDI Compatibility Patch](https://www.nexusmods.com/fallout4/mods/48254)'
         condition: 'active("XDI.esm") and not active("SS2_XDI Patch.esp") and not active("SS2_XDI Patch-Basic.esp") and not active("SS2_XDI Patch-Basic_esl.esp")'
+      - <<: *patch3rdParty
+        subs:
+          - '[Horizon](https://www.nexusmods.com/fallout4/mods/17374/)'
+          - '[Sim Settlements 2 - Horizon Patch](https://www.nexusmods.com/fallout4/mods/54186/)'
+        condition: 'active("Z_Horizon.esp") and not active("SS_Addon_Horizon.esp")'
+
+  - name: 'ohSIM_Sim2_Settlements_Scrappers_Addon.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/48846/'
+        name: 'Sim Settlements 2 Scrappers'
+    msg:
+      - <<: *patch3rdParty
+        subs:
+          - '[Horizon](https://www.nexusmods.com/fallout4/mods/17374/)'
+          - '[Sim Settlements 2 - Horizon Patch](https://www.nexusmods.com/fallout4/mods/54186/)'
+        condition: 'active("Z_Horizon.esp") and not active("Z_Horizon_SS2_Scrappers.esp")'
+
+  - name: 'SS2AOP_VaultTecTools.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/48700/'
+        name: 'Vault-Tec Tools - Sim Settlements 2 Addon Pack'
+    msg:
+      - <<: *patch3rdParty
+        subs:
+          - '[Horizon](https://www.nexusmods.com/fallout4/mods/17374/)'
+          - '[Sim Settlements 2 - Horizon Patch](https://www.nexusmods.com/fallout4/mods/54186/)'
+        condition: 'active("Z_Horizon.esp") and not active("Z_Horizon_SS2_VaultTechTools.esp")'
+
+  - name: 'SS2_FDK_TinyLiving.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/49424/'
+        name: 'Sim Settlements 2 - Tiny Living'
+    msg:
+      - <<: *patch3rdParty
+        subs:
+          - '[Horizon](https://www.nexusmods.com/fallout4/mods/17374/)'
+          - '[Sim Settlements 2 - Horizon Patch](https://www.nexusmods.com/fallout4/mods/54186/)'
+        condition: 'active("Z_Horizon.esp") and not active("Z_Horizon_SS2_TinyLiving.esp")'
+
+  - name: 'SS2-Jampads2.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/48618/'
+        name: 'Jampads 2 - a Sim Settlements 2 Add-on'
+    msg:
+      - <<: *patch3rdParty
+        subs:
+          - '[Horizon](https://www.nexusmods.com/fallout4/mods/17374/)'
+          - '[Sim Settlements 2 - Horizon Patch](https://www.nexusmods.com/fallout4/mods/54186/)'
+        condition: 'active("Z_Horizon.esp") and not active("Z_Horizon_SS2_Jampads2.esp")'
+
+  - name: 'SS2WastelandVenturers.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/48060/'
+        name: 'Wasteland Venturers Sim Settlements 2 Addon Pack'
+    msg:
+      - <<: *patch3rdParty
+        subs:
+          - '[Horizon](https://www.nexusmods.com/fallout4/mods/17374/)'
+          - '[Sim Settlements 2 - Horizon Patch](https://www.nexusmods.com/fallout4/mods/54186/)'
+        condition: 'active("Z_Horizon.esp") and not active("Z_Horizon_SS2_WastelandVenturers.esp")'
 
 ###### Anything new can go after this (if you're not sure where to put it) ######
   # Radrose Usability Enhancements
