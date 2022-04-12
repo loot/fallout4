@@ -3776,17 +3776,6 @@ plugins:
           - '[Sim Settlements 2 - Horizon Patch](https://www.nexusmods.com/fallout4/mods/54186/)'
         condition: 'active("Z_Horizon.esp") and not active("Z_Horizon_SS2_Scrappers.esp")'
 
-  - name: 'SS2_FDK_TinyLiving.esp'
-    url:
-      - link: 'https://www.nexusmods.com/fallout4/mods/49424/'
-        name: 'Sim Settlements 2 - Tiny Living'
-    msg:
-      - <<: *patch3rdParty
-        subs:
-          - '[Horizon](https://www.nexusmods.com/fallout4/mods/17374/)'
-          - '[Sim Settlements 2 - Horizon Patch](https://www.nexusmods.com/fallout4/mods/54186/)'
-        condition: 'active("Z_Horizon.esp") and not active("Z_Horizon_SS2_TinyLiving.esp")'
-
   - name: 'SS2AOP_VaultTecTools.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/48700/'
@@ -3797,6 +3786,17 @@ plugins:
           - '[Horizon](https://www.nexusmods.com/fallout4/mods/17374/)'
           - '[Sim Settlements 2 - Horizon Patch](https://www.nexusmods.com/fallout4/mods/54186/)'
         condition: 'active("Z_Horizon.esp") and not active("Z_Horizon_SS2_VaultTechTools.esp")'
+
+  - name: 'SS2_FDK_TinyLiving.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/49424/'
+        name: 'Sim Settlements 2 - Tiny Living'
+    msg:
+      - <<: *patch3rdParty
+        subs:
+          - '[Horizon](https://www.nexusmods.com/fallout4/mods/17374/)'
+          - '[Sim Settlements 2 - Horizon Patch](https://www.nexusmods.com/fallout4/mods/54186/)'
+        condition: 'active("Z_Horizon.esp") and not active("Z_Horizon_SS2_TinyLiving.esp")'
 
   - name: 'SS2-Jampads2.esp'
     url:
