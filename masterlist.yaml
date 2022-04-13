@@ -3824,6 +3824,19 @@ plugins:
           - '[Sim Settlements 2 - Horizon Patch](https://www.nexusmods.com/fallout4/mods/54186/)'
         condition: 'active("Z_Horizon.esp") and not active("Z_Horizon_SS2_WastelandVenturers.esp")'
 
+  - name: 'SS2_XPAC_Chapter2.esm'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/55817/'
+        name: 'Sim Settlements 2 - Chapter 2 (Nexus Mods)'
+      - link: 'https://bethesda.net/en/mods/fallout4/mod-detail/4247081/'
+        name: 'Sim Settlements 2 - Chapter 2 (Bethesda.net Mods)'
+    msg:
+      - <<: *patch3rdParty
+        subs:
+          - '[Flashy(JoeR) - Gun For Hire - Commonwealth Mercenary Jobs](https://www.nexusmods.com/fallout4/mods/58431/)'
+          - '[Sim Settlements 2 Chapter 2 - Gun For Hire - Door Patch](https://www.nexusmods.com/fallout4/mods/56550/)'
+        condition: 'active("Flashy_CrimeAndPunishment_GunForHire_Addon.esp") and not active("SS2_GunForHire_Patch.esp")'
+
 ###### Anything new can go after this (if you're not sure where to put it) ######
   # Radrose Usability Enhancements
   - name: 'Radrose Usability Enhancements.esp'
