@@ -3752,7 +3752,11 @@ plugins:
         name: 'Sim Settlements 2 (Nexus Mods)'
       - link: 'https://bethesda.net/en/mods/fallout4/mod-detail/4183663/'
         name: 'Sim Settlements 2 (Bethesda.net Mods)'
-    inc: [ 'SimSettlements.esm' ]
+    inc:
+      - name: 'Conquest.esp'
+        display: 'Conquest - Build New Settlements and Camping'
+      - name: 'SimSettlements.esm'
+        display: 'Sim Settlements'
     msg:
       - <<: *patch3rdParty
         subs:
