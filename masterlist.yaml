@@ -6587,7 +6587,7 @@ plugins:
   - name: 'VtawWardrobe6.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/46628/'
-        name: 'Vtaw Wardrobe 6 - CBBE - BodySlide (Nexus Mods)'
+        name: 'Vtaw Wardrobe 6 - CBBE - BodySlide'
     msg:
       - <<: *patch3rdParty
         subs:
