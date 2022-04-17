@@ -3755,6 +3755,9 @@ plugins:
     inc:
       - name: 'Conquest.esp'
         display: 'Conquest - Build New Settlements and Camping'
+      - name: 'D.E.C.A.Y.esp'
+        detail: 'See [this guide](https://forums.nexusmods.com/index.php?/topic/3445720-decay/page-88#entry102651758) to make them compatible.'
+        condition: 'checksum("D.E.C.A.Y.esp", 369D7560) or checksum("D.E.C.A.Y.esp", 1BA826DE) or checksum("D.E.C.A.Y.esp", 98A7E896)'
       - name: 'SimSettlements.esm'
         display: 'Sim Settlements'
     msg:
