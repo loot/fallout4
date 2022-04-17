@@ -3145,6 +3145,8 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/59719/'
         name: 'Nuka World Rebalance - Conflict Resolution'
+  - name: 'NWRebal-ECO.esp'
+    after: [ 'NWRebal-UFO4P.esp' ]
 
   - name: 'PRP-SS2.esp'
     url:
