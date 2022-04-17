@@ -3140,6 +3140,9 @@ plugins:
         util: 'FO4Edit v4.0.4'
 
 ###### 3rd Party Patches ######
+  ### Nuka World Rebalance - Conflict Resolution ###
+  - name: 'NWRebal-(ECO|UFO4P)\.esp'
+
   - name: 'PRP-SS2.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/57947/'
