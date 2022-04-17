@@ -6580,7 +6580,7 @@ plugins:
     msg:
       - <<: *patch3rdParty
         subs:
-          - '[Fusion Girl](https://www.loverslab.com/files/file/18238-zex-fusion-girl/)'
+          - 'Fusion Girl'
           - '[Vtaw Wardrobe 5 - Fusion Girl Bodyslide Files](https://www.nexusmods.com/fallout4/mods/50198/)'
         condition: 'active("FusionGirl.esp") and not checksum("Meshes/vtaw/wardrobe5/bodysuit/Gloves.nif", 54285FB0)'
 
