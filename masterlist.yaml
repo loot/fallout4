@@ -6572,3 +6572,24 @@ plugins:
     clean:
       - crc: 0x17ED1071
         util: '[FO4Edit v4.0.4](https://www.nexusmods.com/fallout4/mods/2737)'
+
+  - name: 'VtawWardrobe5.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/43844/'
+        name: 'Vtaw Wardrobe 5 - CBBE - BodySlide (Nexus Mods)'
+    msg:
+      - <<: *patch3rdParty
+        subs:
+          - '[Fusion Girl](https://www.loverslab.com/files/file/18238-zex-fusion-girl/)'
+          - '[Vtaw Wardrobe 5 - Fusion Girl Bodyslide Files](https://www.nexusmods.com/fallout4/mods/50198/)'
+        condition: 'active("FusionGirl.esp") and not checksum("Meshes/vtaw/wardrobe5/bodysuit/Gloves.nif", 54285FB0)'
+  - name: 'VtawWardrobe6.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/46628/'
+        name: 'Vtaw Wardrobe 6 - CBBE - BodySlide (Nexus Mods)'
+    msg:
+      - <<: *patch3rdParty
+        subs:
+          - '[Fusion Girl](https://www.loverslab.com/files/file/18238-zex-fusion-girl/)'
+          - '[Vtaw Wardrobe 6 - Fusion Girl Bodyslide Files](https://www.nexusmods.com/fallout4/mods/50868/)'
+        condition: 'active("FusionGirl.esp") and not checksum("Meshes/vtaw/wardrobe6/gloves/Gloves.nif", A8227093)'
