@@ -3259,15 +3259,6 @@ plugins:
         util: '[FO4Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 5
 
-  - name: 'Human Cooking [Frost].esp'
-    url:
-      - link: 'https://www.nexusmods.com/fallout4/mods/35979/'
-        name: 'FROST - Human Cooking Patch'
-    inc: [ 'Patch - FROST & Human Cooking.esp' ]
-    msg:
-      - <<: *useInstead
-        subs: [ '[Updated FROST - Human Cooking Patch](https://www.nexusmods.com/fallout4/mods/54017/)' ]
-
   - name: 'FROST - AccessibleArcJet.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/53923/' ]
     clean:
@@ -3549,6 +3540,15 @@ plugins:
     msg:
       - <<: *useInstead
         subs: [ '[FROST Better Crossbow Weapon Patch](https://www.nexusmods.com/fallout4/mods/53168/)' ]
+
+  - name: 'Human Cooking [Frost].esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/35979/'
+        name: 'FROST - Human Cooking Patch'
+    inc: [ 'Patch - FROST & Human Cooking.esp' ]
+    msg:
+      - <<: *useInstead
+        subs: [ '[Updated FROST - Human Cooking Patch](https://www.nexusmods.com/fallout4/mods/54017/)' ]
 
   - name: 'RedsFrostFixes.esp'
     url:
