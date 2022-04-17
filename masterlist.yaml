@@ -6583,6 +6583,7 @@ plugins:
           - '[Fusion Girl](https://www.loverslab.com/files/file/18238-zex-fusion-girl/)'
           - '[Vtaw Wardrobe 5 - Fusion Girl Bodyslide Files](https://www.nexusmods.com/fallout4/mods/50198/)'
         condition: 'active("FusionGirl.esp") and not checksum("Meshes/vtaw/wardrobe5/bodysuit/Gloves.nif", 54285FB0)'
+
   - name: 'VtawWardrobe6.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/46628/'
