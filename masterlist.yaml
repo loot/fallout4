@@ -3268,7 +3268,13 @@ plugins:
     inc:
       - 'Jacq-FROST.esp'
       - 'Winter Redone.esp'
+    clean:
+      - crc: 0x5717C83D
+        util: 'FO4Edit v4.0.4b'
   - name: 'FCF_Previsibines.esp'
+    clean:
+      - crc: 0x4DAD9E10
+        util: 'FO4Edit v4.0.4b'
 
   - name: 'FROST - AccessibleArcJet.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/53923/' ]
