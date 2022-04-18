@@ -1674,6 +1674,12 @@ plugins:
     group: *fixesGroup
     msg: [ *alreadyInUFO4P ]
 
+  - name: 'GlitchsFixes1.esl'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/42112/'
+        name: 'Glitch''s Fixes'
+    msg: [ *alreadyInOrFixedByFCF ]
+
   - name: 'Glow Front Sight Ring Fix.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/5205/' ]
     group: *fixesGroup
@@ -1758,6 +1764,12 @@ plugins:
     group: *fixesGroup
     msg: [ *alreadyInUFO4P ]
 
+  - name: 'MTM-CliffsEdgeHotelWallFix\.es[lp]'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/40230/'
+        name: 'Far Harbor - Cliffs Edge Hotel Wall Rest Ring Lower Fixed'
+    msg: [ *alreadyInOrFixedByFCF ]
+
   - name: 'Perk Magazine Material Fix.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/6906/' ]
     group: *fixesGroup
@@ -1822,6 +1834,7 @@ plugins:
       - 'FROST.esp'
       - 'PRP.esp'
     msg:
+      - *alreadyInOrFixedByFCF
       - <<: *useInstead
         subs: [ '[FROST - Exterior Cell Fixes and FPS Boost](https://www.nexusmods.com/fallout4/mods/54950/)' ]
         condition: 'active("FROST.esp") and active("RedsFrostFixes.esp") and active("aFrostMod.esp") and not active("FROSTExtPR.esp")'
@@ -1916,6 +1929,7 @@ plugins:
     group: *preVisCombinedGroup
     inc: [ 'FROST.esp' ]
     msg:
+      - *alreadyInOrFixedByFCF
       - <<: *patch3rdParty
         subs:
           - '20 Leagues Under the Sea - Vault 120'
@@ -2085,6 +2099,18 @@ plugins:
         itm: 2
 
 ###### AudioVisual - Fixes ######
+  - name: 'Airport_Glass_Transparency_Fix\.es[lp]'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/48429/'
+        name: 'Boston Airport Windows Transparency Fix'
+    msg: [ *alreadyInOrFixedByFCF ]
+
+  - name: 'CliffsEdgeHotelWindowFix.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/48887/'
+        name: 'Cliff''s Edge Hotel Window Fix'
+    msg: [ *alreadyInOrFixedByFCF ]
+
   - name: 'FirstPersonViewableItemsExpanded.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/26062/' ]
     msg:
@@ -2102,6 +2128,7 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout4/mods/35720/' ]
     group: *fixesGroup
     msg:
+      - *alreadyInOrFixedByFCF
       - <<: *alreadyInOrFixedByX
         subs: [ 'Previsibines Repair Pack v0.57+' ]
         condition: 'version("PRP.esp", "0.57", >=)'
@@ -3322,6 +3349,7 @@ plugins:
       - 'FROSTfix.esp'
       - 'FROST Vanilla Signs Removal.esp'
     msg:
+      - *alreadyInOrFixedByFCF
       - <<: *patchProvided
         subs: [ 'FROST Nuka World AddOn' ]
         condition: 'active("FrostNukaWorld.esp") and not active("FROSTExtPR_NW.esp")'
@@ -3354,6 +3382,7 @@ plugins:
     req: [ 'FROST.esp' ]
     inc: [ 'FROSTExtPR.esp' ]
     msg:
+      - *alreadyInOrFixedByFCF
       - <<: *useInstead
         subs: [ '[FROST - Exterior Cell Fixes and FPS Boost](https://www.nexusmods.com/fallout4/mods/54950/)' ]
         condition: 'active("FROST.esp") and active("RedsFrostFixes.esp") and active("aFrostMod.esp") and not active("FROSTExtPR.esp")'
@@ -3401,6 +3430,7 @@ plugins:
       - 'FROSTExtPR.esp'
       - 'FROSTfix.esp'
     msg:
+      - *alreadyInOrFixedByFCF
       - <<: *patchProvided
         subs: [ 'FROST More Starting Locations' ]
         condition: 'version("FROSTIntPR.esp", "2.2", >=) and active("FROSTmoreDoors.esp") and not active("FROSTIntPR_MoreDoors.esp")'
@@ -3541,6 +3571,7 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout4/mods/53867/' ]
     after: [ 'FROSTfix.esp' ]
     msg:
+      - *alreadyInOrFixedByFCF
       - <<: *alreadyInX
         subs: [ 'FROST - Exterior Cell Fixes' ]
         condition: 'active("FROSTExtPR.esp")'
