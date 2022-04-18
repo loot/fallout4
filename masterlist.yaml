@@ -3264,6 +3264,7 @@ plugins:
       - link: 'https://www.nexusmods.com/fallout4/mods/59652/'
         name: 'FROST Cell Fixes (FCF)'
   - name: 'FCF_Main.esp'
+    group: *frostGroup
   - name: 'FCF_Previsibines.esp'
 
   - name: 'FROST - AccessibleArcJet.esp'
