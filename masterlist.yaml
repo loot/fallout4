@@ -3265,6 +3265,9 @@ plugins:
         name: 'FROST Cell Fixes (FCF)'
   - name: 'FCF_Main.esp'
     group: *frostGroup
+    inc:
+      - 'Jacq-FROST.esp'
+      - 'Winter Redone.esp'
   - name: 'FCF_Previsibines.esp'
 
   - name: 'FROST - AccessibleArcJet.esp'
