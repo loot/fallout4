@@ -3260,6 +3260,9 @@ plugins:
         itm: 5
 
   - name: 'FCF_.*\.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/59652/'
+        name: 'FROST Cell Fixes (FCF)'
   - name: 'FCF_Main.esp'
   - name: 'FCF_Previsibines.esp'
 
