@@ -283,6 +283,12 @@ common:
     subs: [ '[Mod Configuration Menu](https://www.nexusmods.com/fallout4/mods/21497/)' ]
     condition: 'not file("F4SE/Plugins/mcm.dll")'
 
+  # &useInstead
+  - &useInsteadFCF
+    <<: *useInstead
+    subs: [ '[FROST Cell Fixes](https://www.nexusmods.com/fallout4/mods/59652/)' ]
+    condition: 'active("Unofficial Fallout 4 Patch.esp") and active("RedsFrostFixes.esp") and active("aFrostMod.esp") and not active("FCF_Main.esp")'
+
   # &useVersion
   - &useVersionAutomatron
     <<: *useVersion
