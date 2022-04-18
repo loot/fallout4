@@ -3259,6 +3259,10 @@ plugins:
         util: '[FO4Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 5
 
+  - name: 'FCF_.*\.esp'
+  - name: 'FCF_Main.esp'
+  - name: 'FCF_Previsibines.esp'
+
   - name: 'FROST - AccessibleArcJet.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/53923/' ]
     clean:
