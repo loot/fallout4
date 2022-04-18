@@ -272,6 +272,10 @@ common:
     <<: *alreadyInOrFixedByX
     subs: [ 'Fallout 4 v1.4.132.0' ]
     condition: 'readable("../Fallout4.exe") and version("../Fallout4.exe", "1.4.132.0", >=)'
+  - &alreadyInOrFixedByFCF
+    <<: *alreadyInOrFixedByX
+    subs: [ 'FROST Cell Fixes' ]
+    condition: 'active("FCF_Main.esp")'
 
   # &requiresMCM_X
   - &requiresMCM
