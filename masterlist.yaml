@@ -1835,9 +1835,7 @@ plugins:
       - 'PRP.esp'
     msg:
       - *alreadyInOrFixedByFCF
-      - <<: *useInstead
-        subs: [ '[FROST - Exterior Cell Fixes and FPS Boost](https://www.nexusmods.com/fallout4/mods/54950/)' ]
-        condition: 'active("FROST.esp") and active("RedsFrostFixes.esp") and active("aFrostMod.esp") and not active("FROSTExtPR.esp")'
+      - *useInsteadFCF
   - name: 'BostonFPSFixAIO.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/59021/'
@@ -1973,12 +1971,7 @@ plugins:
       - <<: *patchProvided
         subs: [ 'Faction Housing Overhaul AIO - Far Harbour' ]
         condition: 'active("DLCCoast.esm") and active("Eli_Faction Housing Overhaul - AiO.esp") and not active("Eli_FactionHousingOverhaul_FarHarbor_Previs.esp") and version("PRP.esp", "0.57", <) and version("PRP.esp", "0.58", >=)'
-      - <<: *useInstead
-        subs: [ '[FROST - Exterior Cell Fixes and FPS Boost](https://www.nexusmods.com/fallout4/mods/54950/)' ]
-        condition: 'active("FROST.esp") and active("RedsFrostFixes.esp") and active("aFrostMod.esp") and not active("FROSTExtPR.esp")'
-      - <<: *useInstead
-        subs: [ '[FROST - Interior Cell Fixes](https://www.nexusmods.com/fallout4/mods/48425/)' ]
-        condition: 'active("FROST.esp") and not active("FROSTIntPR.esp")'
+      - *useInsteadFCF
     clean:
       - crc: 0xC74C2994
         util: 'FO4Edit v4.0.4b'
@@ -3359,6 +3352,7 @@ plugins:
       - <<: *patchProvided
         subs: [ 'Ultra Exterior Lighting' ]
         condition: 'active("UltraExteriorLighting.esp") and not active("FROSTExtPR_UEL.esp")'
+      - *useInsteadFCF
     clean:
       - crc: 0x08C0A86B
         util: 'FO4Edit v4.0.3h (Hotfix 1)'
@@ -3380,9 +3374,7 @@ plugins:
     inc: [ 'FROSTExtPR.esp' ]
     msg:
       - *alreadyInOrFixedByFCF
-      - <<: *useInstead
-        subs: [ '[FROST - Exterior Cell Fixes and FPS Boost](https://www.nexusmods.com/fallout4/mods/54950/)' ]
-        condition: 'active("FROST.esp") and active("RedsFrostFixes.esp") and active("aFrostMod.esp") and not active("FROSTExtPR.esp")'
+      - *useInsteadFCF
     dirty:
       - <<: *quickClean
         crc: 0xE55FEBDC
@@ -3440,6 +3432,7 @@ plugins:
       - <<: *patchProvided
         subs: [ 'Ultra Interior Lighting & FROST Nuka World AddOn' ]
         condition: 'version("FROSTIntPR.esp", "2.2", >=) and active("FROSTIntPR_NW.esp") and active("FROSTIntPR_UIL.esp") and not active("FROSTIntPR_NW_UIL.esp")'
+      - *useInsteadFCF
     clean:
       - crc: 0xFC27D866
         util: 'FO4Edit v4.0.3h (Hotfix 1)'
