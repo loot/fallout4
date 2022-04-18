@@ -3217,11 +3217,8 @@ plugins:
     inc: [ 'StartMeUp.esp' ]
     msg:
       - <<: *alsoUseX
-        subs: [ '[FROST - Exterior Cell Fixes and FPS Boost](https://www.nexusmods.com/fallout4/mods/54950/)' ]
-        condition: 'active("DLCworkshop03.esm") and active("RedsFrostFixes.esp") and active("aFrostMod.esp") and not active("FROSTExtPR.esp")'
-      - <<: *alsoUseX
-        subs: [ '[FROST - Interior Cell Fixes](https://www.nexusmods.com/fallout4/mods/48425/)' ]
-        condition: 'active("DLCCoast.esm") and active("DLCNukaWorld.esm") and active("DLCRobot.esm") and not active("FROSTIntPR.esp")'
+        subs: [ '[FROST Cell Fixes](https://www.nexusmods.com/fallout4/mods/59652/)' ]
+        condition: 'active("Unofficial Fallout 4 Patch.esp") and active("RedsFrostFixes.esp") and active("aFrostMod.esp") and not active("FCF_Main.esp")'
       - <<: *alsoUseX
         subs: [ '[FROST - Nuka World AddOn](https://www.nexusmods.com/fallout4/mods/39985/)' ]
         condition: 'active("DLCCoast.esm") and active("DLCNukaWorld.esm") and active("DLCRobot.esm") and not active("FrostNukaWorld.esp")'
