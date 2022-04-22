@@ -1853,10 +1853,11 @@ plugins:
       - link: 'https://www.nexusmods.com/fallout4/mods/26286/'
         name: 'Boston FPS Fix'
     group: *preVisCombinedGroup
-    inc: [ 'FROST.esp' ]
+    inc:
+      - 'FROST.esp'
+      - 'PRP.esp'
     msg:
       - *alreadyInOrFixedByFCF
-      - *alreadyInOrFixedByPRP
       - *useInsteadFCF
   - name: 'BostonFPSFixAIO.esp'
     url:
