@@ -276,6 +276,14 @@ common:
     <<: *alreadyInOrFixedByX
     subs: [ 'FROST Cell Fixes' ]
     condition: 'active("FCF_Main.esp")'
+  - &alreadyInOrFixedByPRP
+    <<: *alreadyInOrFixedByX
+    subs: [ 'Previsibines Repair Pack' ]
+    condition: 'active("PPF.esm")'
+  - &alreadyInOrFixedByPRPv0_59
+    <<: *alreadyInOrFixedByX
+    subs: [ 'Previsibines Repair Pack v0.59+' ]
+    condition: 'active("PPF.esm") and version("PPF.esm", "0.59", >=)'
 
   # &requiresMCM_X
   - &requiresMCM
@@ -1678,7 +1686,9 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/42112/'
         name: 'Glitch''s Fixes'
-    msg: [ *alreadyInOrFixedByFCF ]
+    msg:
+      - *alreadyInOrFixedByFCF
+      - *alreadyInOrFixedByPRPv0_59
 
   - name: 'Glow Front Sight Ring Fix.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/5205/' ]
@@ -1768,7 +1778,9 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/40230/'
         name: 'Far Harbor - Cliffs Edge Hotel Wall Rest Ring Lower Fixed'
-    msg: [ *alreadyInOrFixedByFCF ]
+    msg:
+      - *alreadyInOrFixedByFCF
+      - *alreadyInOrFixedByPRPv0_59
 
   - name: 'Perk Magazine Material Fix.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/6906/' ]
@@ -1819,6 +1831,12 @@ plugins:
       - <<: *alreadyInOrFixedByFO4
         condition: 'readable("../Fallout4.exe") and version("../Fallout4.exe", "1.5.0.0", >=)'
 
+  - name: 'Vault 111 Floor Guide Fix.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/28167/'
+        name: 'Vault 111 Floor Guide Fix'
+    msg: [ *alreadyInOrFixedByPRPv0_59 ]
+
   - name: 'WeaveFix.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/5847/' ]
     group: *fixesGroup
@@ -1830,11 +1848,10 @@ plugins:
       - link: 'https://www.nexusmods.com/fallout4/mods/26286/'
         name: 'Boston FPS Fix'
     group: *preVisCombinedGroup
-    inc:
-      - 'FROST.esp'
-      - 'PRP.esp'
+    inc: [ 'FROST.esp' ]
     msg:
       - *alreadyInOrFixedByFCF
+      - *alreadyInOrFixedByPRP
       - *useInsteadFCF
   - name: 'BostonFPSFixAIO.esp'
     url:
@@ -2096,13 +2113,17 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/48429/'
         name: 'Boston Airport Windows Transparency Fix'
-    msg: [ *alreadyInOrFixedByFCF ]
+    msg:
+      - *alreadyInOrFixedByFCF
+      - *alreadyInOrFixedByPRPv0_59
 
   - name: 'CliffsEdgeHotelWindowFix.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/48887/'
         name: 'Cliff''s Edge Hotel Window Fix'
-    msg: [ *alreadyInOrFixedByFCF ]
+    msg:
+      - *alreadyInOrFixedByFCF
+      - *alreadyInOrFixedByPRPv0_59
 
   - name: 'FirstPersonViewableItemsExpanded.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/26062/' ]
