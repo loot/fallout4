@@ -3347,6 +3347,49 @@ plugins:
     inc:
       - 'Jacq-FROST.esp'
       - 'Winter Redone.esp'
+    msg:
+      - <<: *patchProvided
+        subs: [ 'Clarity' ]
+        condition: 'active("Clarity.esp") and not active("FCF_PrevisibinesClarity.esp")'
+      - <<: *patchProvided
+        subs: [ 'Enhanced Lighting for ENB' ]
+        condition: 'active("ELE_FO4.esp") and not active("FCF_PrevisibinesELE.esp")'
+      - <<: *patchProvided
+        subs: [ 'FROST - More Starting Locations' ]
+        condition: 'active("FROSTmoreDoors.esp") and not active("FCF_PrevisibinesDoors.esp")'
+      - <<: *patchProvided
+        subs: [ 'FROST - Nuka World AddOn' ]
+        condition: 'active("FrostNukaWorld.esp") and not active("FCF_PrevisibinesNW.esp")'
+      - <<: *patchProvided
+        subs: [ 'Interiors Enhanced' ]
+        condition: 'active("InteriorsEnhanced-All-In-One.esp") and not active("FCF_PrevisibinesIEAIO.esp")'
+      - <<: *patchProvided
+        subs: [ 'The Forest' ]
+        condition: 'active("FROST The Forest Patch.esp") and not active("FCF_PrevisibinesForest.esp")'
+      - <<: *patchProvided
+        subs: [ 'The Marshland' ]
+        condition: 'active("Frost_Marshlands_Patch.esp") and not active("FCF_PrevisibinesMarshland.esp")'
+      - <<: *patchProvided
+        subs: [ 'Ultra Exterior Lighting' ]
+        condition: 'active("UltraExteriorLighting.esp") and not active("FCF_PrevisibinesUEL.esp")'
+      - <<: *patchProvided
+        subs: [ 'Ultra Interior Lighting' ]
+        condition: 'active("UltraInteriorLighting.esp") and not active("FCF_PrevisibinesUIL.esp")'
+      - <<: *patchProvided
+        subs: [ 'FROST - Nuka World AddOn & Clarity' ]
+        condition: 'active("FrostNukaWorld.esp") and active("Clarity.esp") and not active("FCF_PrevisibinesNW_Clarity.esp")'
+      - <<: *patchProvided
+        subs: [ 'FROST - Nuka World AddOn & Enhanced Lighting for ENB' ]
+        condition: 'active("FrostNukaWorld.esp") and active("ELE_FO4.esp") and not active("FCF_PrevisibinesNW_ELE.esp")'
+      - <<: *patchProvided
+        subs: [ 'FROST - Nuka World AddOn & Interiors Enhanced' ]
+        condition: 'active("FrostNukaWorld.esp") and active("InteriorsEnhanced-All-In-One.esp") and not active("FCF_PrevisibinesNW_IEAIO.esp")'
+      - <<: *patchProvided
+        subs: [ 'FROST - Nuka World AddOn & Ultra Exterior Lighting' ]
+        condition: 'active("FrostNukaWorld.esp") and active("UltraExteriorLighting.esp") and not active("FCF_PrevisibinesNW_UEL.esp")'
+      - <<: *patchProvided
+        subs: [ 'FROST - Nuka World AddOn & Ultra Interior Lighting' ]
+        condition: 'active("FrostNukaWorld.esp") and active("UltraInteriorLighting.esp") and not active("FCF_PrevisibinesNW_UIL.esp")'
     clean:
       - crc: 0x5717C83D
         util: 'FO4Edit v4.0.4b'
