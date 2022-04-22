@@ -1997,7 +1997,7 @@ plugins:
     clean:
       - crc: 0xC74C2994
         util: 'FO4Edit v4.0.4b'
-      - crc: 0x5436F338
+      - crc: 0x17BFB346
         util: 'FO4Edit v4.0.4b'
       - crc: 0xA63F91A6
         util: 'FO4Edit v4.0.4b'
