@@ -3656,11 +3656,9 @@ plugins:
     tag:
       - Delev
       - Relev
-    dirty:
-      - <<: *quickClean
-        crc: 0x06337741
-        util: '[FO4Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout4/mods/2737)'
-        itm: 40
+    clean:
+      - crc: 0xAA5298C3
+        util: 'FO4Edit v4.0.4b'
 
   - name: 'RRTV_FROST_DT_Workbenches.esp'
     url:
