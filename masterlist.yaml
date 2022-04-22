@@ -2410,6 +2410,18 @@ plugins:
         util: 'FO4Edit v4.0.2'
 
 ###### Character Appearance - NPC Overhauls ######
+  - name: 'D.E.C.A.Y.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/2500/'
+        name: 'D.E.C.A.Y - Better Ghouls'
+    clean:
+      - crc: 0x369D7560
+        util: 'FO4Edit v4.0.4b'
+      - crc: 0x1BA826DE
+        util: 'FO4Edit v4.0.4b'
+      - crc: 0x98A7E896
+        util: 'FO4Edit v4.0.4b'
+
   - name: 'Unique NPCs.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/21248/' ]
     dirty:
@@ -6211,9 +6223,6 @@ plugins:
   - name: 'LoreFriendlySurvivalChems.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/15275' ]
     after: [ 'VIS-G Item Sorting.esp' ]
-
-  - name: 'D.E.C.A.Y.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/2500' ]
 
   - name: 'DeadlierDeathclaws.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/13822' ]
