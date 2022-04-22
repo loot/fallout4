@@ -280,6 +280,10 @@ common:
     <<: *alreadyInOrFixedByX
     subs: [ 'Previsibines Repair Pack' ]
     condition: 'active("PPF.esm")'
+  - &alreadyInOrFixedByPRPv0_59
+    <<: *alreadyInOrFixedByX
+    subs: [ 'Previsibines Repair Pack v0.59+' ]
+    condition: 'active("PPF.esm") and version("PPF.esm", "0.59", >=)'
 
   # &requiresMCM_X
   - &requiresMCM
