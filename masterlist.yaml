@@ -1497,8 +1497,10 @@ plugins:
 
   - name: 'Unofficial Fallout 4 Patch.esp'
     url:
-      - 'https://www.afkmods.com/index.php?/files/file/1765-unofficial-fallout-4-patch/'
-      - 'https://www.nexusmods.com/fallout4/mods/4598/'
+      - link: 'https://www.afkmods.com/index.php?/files/file/1765-unofficial-fallout-4-patch/'
+        name: 'Unofficial Fallout 4 Patch (AFK Mods)'
+      - link: 'https://www.nexusmods.com/fallout4/mods/4598/'
+        name: 'Unofficial Fallout 4 Patch (Nexus Mods)'
     group: *fixesGroup
     msg:
       - <<: *obsolete
@@ -1511,7 +1513,7 @@ plugins:
     tag: [ Relev ]
     clean:
       - crc: 0xFA6E14DD
-        util: 'FO4Edit v4.0.3h (Hotfix 1)'
+        util: 'FO4Edit v4.0.4b'
 
 ###### Modding Tools - Generated Files ######
   - name: 'Bashed Patch.*\.esp'
