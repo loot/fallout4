@@ -1497,8 +1497,10 @@ plugins:
 
   - name: 'Unofficial Fallout 4 Patch.esp'
     url:
-      - 'https://www.afkmods.com/index.php?/files/file/1765-unofficial-fallout-4-patch/'
-      - 'https://www.nexusmods.com/fallout4/mods/4598/'
+      - link: 'https://www.afkmods.com/index.php?/files/file/1765-unofficial-fallout-4-patch/'
+        name: 'Unofficial Fallout 4 Patch (AFK Mods)'
+      - link: 'https://www.nexusmods.com/fallout4/mods/4598/'
+        name: 'Unofficial Fallout 4 Patch (Nexus Mods)'
     group: *fixesGroup
     msg:
       - <<: *obsolete
@@ -1511,7 +1513,7 @@ plugins:
     tag: [ Relev ]
     clean:
       - crc: 0xFA6E14DD
-        util: 'FO4Edit v4.0.3h (Hotfix 1)'
+        util: 'FO4Edit v4.0.4b'
 
 ###### Modding Tools - Generated Files ######
   - name: 'Bashed Patch.*\.esp'
@@ -1596,8 +1598,8 @@ plugins:
         detail: 'See Sim Settlements 2''s [compatibility notes](https://wiki.simsettlements2.com/getting-started/known-issues#neutral-vertibirds) on Workshop Framework'
     dirty:
       - <<: *quickClean
-        crc: 0x068E3CB7
-        util: '[FO4Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout4/mods/2737)'
+        crc: 0xDF644884
+        util: '[FO4Edit v4.0.4b](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 3
 
   - name: 'XDI.esm'
@@ -1651,6 +1653,9 @@ plugins:
       - <<: *alreadyInX
         subs: [ 'Unofficial Fallout 4 Patch' ]
         condition: 'active("Unofficial Fallout 4 Patch.esp") and version("Unofficial Fallout 4 Patch.esp", "2.1.4", >=)'
+    clean:
+      - crc: 0x1B79499A
+        util: 'FO4Edit v4.0.4b'
 
   - name: 'Combat Armor Weight Fix.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/11541/' ]
@@ -1992,7 +1997,7 @@ plugins:
     clean:
       - crc: 0xC74C2994
         util: 'FO4Edit v4.0.4b'
-      - crc: 0x5436F338
+      - crc: 0x17BFB346
         util: 'FO4Edit v4.0.4b'
       - crc: 0xA63F91A6
         util: 'FO4Edit v4.0.4b'
@@ -2405,6 +2410,18 @@ plugins:
         util: 'FO4Edit v4.0.2'
 
 ###### Character Appearance - NPC Overhauls ######
+  - name: 'D.E.C.A.Y.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/2500/'
+        name: 'D.E.C.A.Y - Better Ghouls'
+    clean:
+      - crc: 0x369D7560
+        util: 'FO4Edit v4.0.4b'
+      - crc: 0x1BA826DE
+        util: 'FO4Edit v4.0.4b'
+      - crc: 0x98A7E896
+        util: 'FO4Edit v4.0.4b'
+
   - name: 'Unique NPCs.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/21248/' ]
     dirty:
@@ -2448,6 +2465,16 @@ plugins:
         util: 'FO4Edit v4.0.3h (Hotfix 1)'
       - crc: 0x58BF06AA
         util: 'FO4Edit v4.0.3h (Hotfix 1)'
+
+  - name: 'NukaWorldRebalanced.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/59002/'
+        name: 'Nuka-World Rebalanced'
+    dirty:
+      - <<: *quickClean
+        crc: 0x799AA002
+        util: '[FO4Edit v4.0.4b](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 7
 
   - name: 'Redistribute Weapon Lists.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/44724/' ]
@@ -2530,6 +2557,14 @@ plugins:
         util: 'FO4Edit v4.0.4'
 
 ###### Gameplay - Crafting, Harvesting & Scrapping ######
+  - name: 'ECO.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/55503/'
+        name: 'Equipment and Crafting Overhaul (ECO)'
+    clean:
+      - crc: 0x5598FDFE
+        util: 'FO4Edit v4.0.4b'
+
   - name: 'ScrapThatMisc.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/5673/' ]
     msg:
@@ -3226,7 +3261,9 @@ plugins:
 
 ###### FROST Survival Simulator ######
   - name: 'FROST.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/18898/' ]
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/18898/'
+        name: 'FROST Survival Simulator'
     group: *frostGroup
     inc: [ 'StartMeUp.esp' ]
     msg:
@@ -3260,13 +3297,6 @@ plugins:
     tag:
       - Delev
       - Relev
-    dirty:
-      - <<: *quickClean
-        crc: 0xE8D519A5
-        util: '[FO4Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout4/mods/2737)'
-        itm: 1935
-        udr: 1971
-        nav: 5
 
   - name: 'aFrostMod.esp'
     url:
@@ -3280,8 +3310,8 @@ plugins:
       - Delev
       - Relev
     clean:
-      - crc: 0x0CB5B33F
-        util: 'FO4Edit v4.0.3h (Hotfix 1)'
+      - crc: 0xA16FBAF9
+        util: 'FO4Edit v4.0.4b'
   - name: '(IV|FP)_(LootableCars_Misc_Stable|Misc_BoiledWaterBottles|HC_Perk_Updated|Patch_Mauser)\.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/48847/'
@@ -3626,11 +3656,9 @@ plugins:
     tag:
       - Delev
       - Relev
-    dirty:
-      - <<: *quickClean
-        crc: 0x06337741
-        util: '[FO4Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout4/mods/2737)'
-        itm: 40
+    clean:
+      - crc: 0xAA5298C3
+        util: 'FO4Edit v4.0.4b'
 
   - name: 'RRTV_FROST_DT_Workbenches.esp'
     url:
@@ -6206,9 +6234,6 @@ plugins:
   - name: 'LoreFriendlySurvivalChems.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/15275' ]
     after: [ 'VIS-G Item Sorting.esp' ]
-
-  - name: 'D.E.C.A.Y.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/2500' ]
 
   - name: 'DeadlierDeathclaws.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/13822' ]
