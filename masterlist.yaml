@@ -2228,7 +2228,7 @@ plugins:
       - *alreadyInOrFixedByFCF
       - <<: *alreadyInOrFixedByX
         subs: [ 'Previsibines Repair Pack v0.57+' ]
-        condition: 'version("PRP.esp", "0.57", >=)'
+        condition: 'active("PPF.esm")'
 
 ###### AudioVisual - Models & Textures ######
   - name: 'OVT.esp'
