@@ -276,10 +276,6 @@ common:
     <<: *alreadyInOrFixedByX
     subs: [ 'FROST Cell Fixes' ]
     condition: 'active("FCF_Main.esp")'
-  - &alreadyInOrFixedByPRP
-    <<: *alreadyInOrFixedByX
-    subs: [ 'Previsibines Repair Pack' ]
-    condition: 'active("PPF.esm")'
   - &alreadyInOrFixedByPRPv0_59
     <<: *alreadyInOrFixedByX
     subs: [ 'Previsibines Repair Pack v0.59+' ]
