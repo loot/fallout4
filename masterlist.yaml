@@ -3228,6 +3228,10 @@ plugins:
     after:
       - 'EnhancedLightsandFX.esp'
       - 'PRP.esp'
+    msg:
+      - <<: *patchProvided
+        subs: [ 'Enhanced Lights and FX' ]
+        condition: 'active("EnhancedLightsandFX.esp") and not active("PLI_USAFSSO - ELFX Patch.esp")'
 
 ###### Locations - Player Homes ######
   - name: 'AlootHomePlate.esp'
