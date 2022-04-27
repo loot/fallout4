@@ -3220,6 +3220,22 @@ plugins:
       - crc: 0xDC6139D4
         util: 'FO4Edit v4.0.4b'
 
+  - name: 'PLI_USAF(_Satellite_Station_Olivia|SSO - ELFX Patch)\.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/59993/'
+        name: 'People Live In - USAF Satellite Station Olivia'
+  - name: 'PLI_USAF_Satellite_Station_Olivia.esp'
+    after:
+      - 'EnhancedLightsandFX.esp'
+      - 'PRP.esp'
+    msg:
+      - <<: *patchProvided
+        subs: [ 'Enhanced Lights and FX' ]
+        condition: 'active("EnhancedLightsandFX.esp") and not active("PLI_USAFSSO - ELFX Patch.esp")'
+    clean:
+      - crc: 0x5F63BA2D
+        util: 'FO4Edit v4.0.4b'
+
 ###### Locations - Player Homes ######
   - name: 'AlootHomePlate.esp'
     url:
