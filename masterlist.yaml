@@ -3225,6 +3225,9 @@ plugins:
       - link: 'https://www.nexusmods.com/fallout4/mods/59993/'
         name: 'People Live In - USAF Satellite Station Olivia'
   - name: 'PLI_USAF_Satellite_Station_Olivia.esp'
+    after:
+      - 'EnhancedLightsandFX.esp'
+      - 'PRP.esp'
 
 ###### Locations - Player Homes ######
   - name: 'AlootHomePlate.esp'
