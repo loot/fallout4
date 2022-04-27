@@ -3220,6 +3220,9 @@ plugins:
       - crc: 0xDC6139D4
         util: 'FO4Edit v4.0.4b'
 
+  - name: 'PLI_USAF(_Satellite_Station_Olivia|SSO - ELFX Patch)\.esp'
+  - name: 'PLI_USAF_Satellite_Station_Olivia.esp'
+
 ###### Locations - Player Homes ######
   - name: 'AlootHomePlate.esp'
     url:
