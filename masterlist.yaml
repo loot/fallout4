@@ -1958,7 +1958,7 @@ plugins:
         subs:
           - '20 Leagues Under the Sea - Vault 120'
           - '[PRP - More than 20 Previsibines Under the Sea](https://www.nexusmods.com/fallout4/mods/58584/)'
-        condition: 'active("0_Vault120.esp") and not active("PRP-Vault120.esp")'
+        condition: 'active("0_Vault120.esp") and not active("PRP-(SE-)?Vault120\.esp")'
       - <<: *patch3rdParty
         subs:
           - 'Sim Settlements 2 - Chapter 2'
