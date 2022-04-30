@@ -3354,6 +3354,11 @@ plugins:
         subs: [ 'PRP - More than 20 Previsibines Under the Sea ESP' ]
         condition: 'many("PRP-(SE-)?Vault120\.esp")'
   - name: 'PRP-Vault120.esp'
+    msg:
+      - <<: *useVersion
+        type: say
+        subs: [ 'Scrap Everything' ]
+        condition: 'active("Scrap Everything - Core.esp") and not active("PRP-SE-Vault120.esp")'
     clean:
       - crc: 0x8B17BCCB
         util: 'FO4Edit v4.0.4b'
