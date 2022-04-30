@@ -3342,7 +3342,7 @@ plugins:
     after: [ 'PRP.esp' ]
   - name: 'PRP-SS2.esp'
     clean:
-      - crc: 0xDC4A55BC
+      - crc: 0xA10039EC
         util: 'FO4Edit v4.0.4b'
   - name: 'PRP-SS2-Fixes.esp'
 
