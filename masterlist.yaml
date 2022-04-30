@@ -3353,6 +3353,7 @@ plugins:
     clean:
       - crc: 0x8B17BCCB
         util: 'FO4Edit v4.0.4b'
+  - name: 'PRP-SE-Vault120.esp'
 
 ###### FROST Survival Simulator ######
   - name: 'FROST.esp'
