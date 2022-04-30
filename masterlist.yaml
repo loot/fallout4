@@ -3335,11 +3335,12 @@ plugins:
       - crc: 0xCC23660F
         util: 'FO4Edit v4.0.4b'
 
-  - name: 'PRP-SS2.esp'
+  - name: 'PRP-SS2(-Fixes)?\.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/57947/'
         name: 'Previsibines Repair Pack (PRP) - Sim Settlements 2 Upgrade Kit'
     after: [ 'PRP.esp' ]
+  - name: 'PRP-SS2.esp'
     clean:
       - crc: 0xDC4A55BC
         util: 'FO4Edit v4.0.4b'
