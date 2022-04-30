@@ -3345,6 +3345,9 @@ plugins:
       - crc: 0xA10039EC
         util: 'FO4Edit v4.0.4b'
   - name: 'PRP-SS2-Fixes.esp'
+    clean:
+      - crc: 0x8419BC27
+        util: 'FO4Edit v4.0.4b'
 
   - name: 'PRP-(SE-)?Vault120\.esp'
     url:
