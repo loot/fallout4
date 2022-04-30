@@ -3349,6 +3349,10 @@ plugins:
       - link: 'https://www.nexusmods.com/fallout4/mods/58584/'
         name: 'PRP - More than 20 Previsibines Under the Sea'
     after: [ 'PRP.esp' ]
+    msg:
+      - <<: *useOnlyOneX
+        subs: [ 'PRP - More than 20 Previsibines Under the Sea ESP' ]
+        condition: 'many("PRP-(SE-)?Vault120\.esp")'
   - name: 'PRP-Vault120.esp'
     clean:
       - crc: 0x8B17BCCB
