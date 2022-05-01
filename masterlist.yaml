@@ -2131,6 +2131,7 @@ plugins:
       - crc: 0xE1EC93E4
         util: 'FO4Edit v4.0.4b'
   # PRP - Other Patches #
+  - name: 'PRP-Compat-MaxwellsWorl.esp'
   - name: 'ScrapEverythingUltimatePrevis.esp'
     msg:
       - <<: *versionXIncY
