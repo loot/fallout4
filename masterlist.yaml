@@ -2138,7 +2138,7 @@ plugins:
         subs:
           - 'Previsibines Repair Pack'
           - 'PRP Compat Scrap Everything'
-        condition: 'active("PRP.esp") and version("PRP.esp", "0.58", <)'
+        condition: 'active("PRP.esp") and version("PRP.esp", "0.59", <)'
     dirty:
       - <<: *quickClean
         crc: 0xA6F531E9
@@ -2154,7 +2154,7 @@ plugins:
         subs:
           - 'Previsibines Repair Pack'
           - 'PRP Compat for Clean and Simple Merged'
-        condition: 'active("PRP.esp") and version("PRP.esp", "0.57", >=) and version("PRP.esp", "0.58", <)'
+        condition: 'active("PRP.esp") and version("PRP.esp", "0.57", >=)'
   - name: 'Eli_FactionHousingOverhaul_FarHarbor_Previs.esp'
     after:
       - 'PRP.esp'
@@ -2168,7 +2168,7 @@ plugins:
         subs:
           - 'Previsibines Repair Pack'
           - 'PRP Compat for Faction Housing Overhaul'
-        condition: 'active("PRP.esp") and version("PRP.esp", "0.57", >=) and version("PRP.esp", "0.58", <)'
+        condition: 'active("PRP.esp") and version("PRP.esp", "0.57", >=)'
 
 ###### AudioVisual ######
   - name: 'VotW.*\.es[lmp]'
