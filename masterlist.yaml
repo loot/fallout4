@@ -3225,7 +3225,7 @@ plugins:
       - crc: 0xDC6139D4
         util: 'FO4Edit v4.0.4b'
 
-  - name: 'PLI_USAF(_Satellite_Station_Olivia|SSO - ELFX Patch)\.esp'
+  - name: 'PLI_?USAF(_Satellite_Station_Olivia|SSO - (ELFX|MDB) Patch)\.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/59993/'
         name: 'People Live In - USAF Satellite Station Olivia'
