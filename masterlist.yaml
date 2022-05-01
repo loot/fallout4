@@ -3232,6 +3232,8 @@ plugins:
   - name: 'PLI_USAF_Satellite_Station_Olivia.esp'
     after:
       - 'EnhancedLightsandFX.esp'
+      - 'Raider Children.esp'
+      - 'ProjectValkyrie.esp'
       - 'PRP.esp'
     msg:
       - <<: *patchProvided
