@@ -1999,18 +1999,18 @@ plugins:
         condition: 'active("DLCCoast.esm") and active("Eli_Faction Housing Overhaul - AiO.esp") and not active("Eli_FactionHousingOverhaul_FarHarbor_Previs.esp") and version("PRP.esp", "0.57", <) and version("PRP.esp", "0.58", >=)'
       - *useInsteadFCF
     clean:
-      # EN
+      # English
       - crc: 0xC74C2994
         util: 'FO4Edit v4.0.4b'
       - crc: 0x17BFB346
         util: 'FO4Edit v4.0.4b'
       - crc: 0x0FD12B68
         util: 'FO4Edit v4.0.4b'
-      # ES
-      - crc: 0x21A97BD2
-        util: 'FO4Edit v4.0.4b'
-      # IT
+      # Italian
       - crc: 0xE0490212
+        util: 'FO4Edit v4.0.4b'
+      # Spanish
+      - crc: 0x21A97BD2
         util: 'FO4Edit v4.0.4b'
   # PRP - Compat Grabbag #
   - name: 'PRP-Compat-(Clarity-4[23]|DCA|Fogout-Int|IntEnh|RegionNames|UIL|UIL-Darker)\.esp'
@@ -2024,14 +2024,14 @@ plugins:
         subs: [ 'Clarity v4.2' ]
         condition: 'version("Clarity.esp", "4.2", !=)'
     clean:
-      # EN
+      # English
       - crc: 0x94691987
         util: 'FO4Edit v4.0.4b'
-      # ES
-      - crc: 0x90482194
-        util: 'FO4Edit v4.0.4b'
-      # IT
+      # Italian
       - crc: 0xE51D9C25
+        util: 'FO4Edit v4.0.4b'
+      # Spanish
+      - crc: 0x90482194
         util: 'FO4Edit v4.0.4b'
   - name: 'PRP-Compat-Clarity-43.esp'
     msg:
@@ -2039,96 +2039,96 @@ plugins:
         subs: [ 'Clarity v4.3' ]
         condition: 'version("Clarity.esp", "4.3", !=)'
     clean:
-      # EN
+      # English
       - crc: 0x94691987
         util: 'FO4Edit v4.0.4b'
-      # ES
-      - crc: 0x90482194
-        util: 'FO4Edit v4.0.4b'
-      # IT
+      # Italian
       - crc: 0xE51D9C25
+        util: 'FO4Edit v4.0.4b'
+      # Spanish
+      - crc: 0x90482194
         util: 'FO4Edit v4.0.4b'
   - name: 'PRP-Compat-DCA.esp'
     clean:
-      # EN
+      # English
       - crc: 0xF9AD0032
         util: 'FO4Edit v4.0.4b'
-      # ES
-      - crc: 0xDFE299C5
-        util: 'FO4Edit v4.0.4b'
-      # IT
+      # Italian
       - crc: 0x27625A9E
+        util: 'FO4Edit v4.0.4b'
+      # Spanish
+      - crc: 0xDFE299C5
         util: 'FO4Edit v4.0.4b'
   - name: 'PRP-Compat-Fogout-Int.esp'
     req: [ 'FogOut - Interiors - All DLC.esp' ]
     clean:
-      # EN
+      # English
       - crc: 0x284EEEA1
         util: 'FO4Edit v4.0.4b'
-      # ES
-      - crc: 0x3D258C9C
-        util: 'FO4Edit v4.0.4b'
-      # IT
+      # Italian
       - crc: 0xF63F0472
+        util: 'FO4Edit v4.0.4b'
+      # Spanish
+      - crc: 0x3D258C9C
         util: 'FO4Edit v4.0.4b'
   - name: 'PRP-Compat-IntEnh.esp'
     req: [ 'InteriorsEnhanced-All-In-One.esp' ]
     clean:
-      # EN
+      # English
       - crc: 0x382403E5
         util: 'FO4Edit v4.0.4b'
-      # ES
-      - crc: 0x45666327
-        util: 'FO4Edit v4.0.4b'
-      # IT
+      # Italian
       - crc: 0xA9B68F2C
+        util: 'FO4Edit v4.0.4b'
+      # Spanish
+      - crc: 0x45666327
         util: 'FO4Edit v4.0.4b'
   - name: 'PRP-Compat-RegionNames.esp'
     after: [ 'PRP-Compat-UEL.esp' ]
     clean:
-      # EN
+      # English
       - crc: 0xE46BCAC5
         util: 'FO4Edit v4.0.4b'
-      # ES
-      - crc: 0x8DC45E56
-        util: 'FO4Edit v4.0.4b'
-      # IT
+      # Italian
       - crc: 0xC82D5E8A
+        util: 'FO4Edit v4.0.4b'
+      # Spanish
+      - crc: 0x8DC45E56
         util: 'FO4Edit v4.0.4b'
   - name: 'PRP-Compat-UEL.esp'
     clean:
-      # EN
+      # English
       - crc: 0x4167AC1D
         util: 'FO4Edit v4.0.4b'
-      # ES
-      - crc: 0xCAC93BC6
-        util: 'FO4Edit v4.0.4b'
-      # IT
+      # Italian
       - crc: 0x88EFD7AD
+        util: 'FO4Edit v4.0.4b'
+      # Spanish
+      - crc: 0xCAC93BC6
         util: 'FO4Edit v4.0.4b'
   - name: 'PRP-Compat-UIL.esp'
     req: [ 'UltraInteriorLighting.esp' ]
     clean:
-      # EN
+      # English
       - crc: 0xE19391A7
         util: 'FO4Edit v4.0.4b'
-      # ES
-      - crc: 0x3D8703F1
-        util: 'FO4Edit v4.0.4b'
-      # IT
+      # Italian
       - crc: 0x9C3664C5
+        util: 'FO4Edit v4.0.4b'
+      # Spanish
+      - crc: 0x3D8703F1
         util: 'FO4Edit v4.0.4b'
   - name: 'PRP-Compat-UIL-Darker.esp'
     req: [ 'UltraInteriorLighting_DarkerAmbience.esp' ]
     clean:
-      # EN
+      # English
       - crc: 0xE0D9E2D8
         util: 'FO4Edit v4.0.4b'
-      # ES
-      - crc: 0x50A9B2CE
-        util: 'FO4Edit v4.0.4b'
-      # IT
+      # Italian
       - crc: 0xE1EC93E4
+        util: 'FO4Edit v4.0.4b'
+      # Spanish
+      - crc: 0x50A9B2CE
         util: 'FO4Edit v4.0.4b'
   # PRP - Other Patches #
   - name: 'PRP-Compat-MaxwellsWorl.esp'
