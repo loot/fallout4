@@ -2851,6 +2851,9 @@ plugins:
         itm: 133
 
   - name: 'CWPointLookoutFO4(Patch)?\.es[lm]'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/60330/'
+        name: 'Fallout 4 - Point Lookout'
   - name: 'CWPointLookoutFO4.esm'
   - name: 'CWPointLookoutFO4Patch.esl'
 
