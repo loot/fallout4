@@ -2855,6 +2855,9 @@ plugins:
       - link: 'https://www.nexusmods.com/fallout4/mods/60330/'
         name: 'Fallout 4 - Point Lookout'
   - name: 'CWPointLookoutFO4.esm'
+    req:
+      - name: 'XDI.esm'
+        display: '[Extended Dialogue Interface](https://www.nexusmods.com/fallout4/mods/27216/)'
   - name: 'CWPointLookoutFO4Patch.esl'
 
   - name: 'OSM_AlternateStart_Protocol-InfiniteAnswer.esp'
