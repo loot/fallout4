@@ -1997,6 +1997,12 @@ plugins:
       - <<: *patchProvided
         subs: [ 'Faction Housing Overhaul AIO - Far Harbour' ]
         condition: 'active("DLCCoast.esm") and active("Eli_Faction Housing Overhaul - AiO.esp") and not active("Eli_FactionHousingOverhaul_FarHarbor_Previs.esp") and version("PRP.esp", "0.57", <) and version("PRP.esp", "0.58", >=)'
+      - <<: *patchProvided
+        subs: [ 'Fallout 4 - Point Lookout' ]
+        condition: 'active("CWPointLookoutFO4.esm") and not active("PRP-Compat-PointLookout.esp")'
+      - <<: *patchProvided
+        subs: [ 'Maxwell''s World' ]
+        condition: 'active("MaxwellsWorl.esp") and not active("PRP-Compat-MaxwellsWorl.esp")'
       - *useInsteadFCF
     clean:
       # English
