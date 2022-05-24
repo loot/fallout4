@@ -1594,9 +1594,9 @@ plugins:
         detail: 'See Sim Settlements 2''s [compatibility notes](https://wiki.simsettlements2.com/getting-started/known-issues#neutral-vertibirds) on Workshop Framework'
     dirty:
       - <<: *quickClean
-        crc: 0xDF644884
+        crc: 0x1D044C39
         util: '[FO4Edit v4.0.4b](https://www.nexusmods.com/fallout4/mods/2737)'
-        itm: 3
+        itm: 8
 
   - name: 'XDI.esm'
     url:
