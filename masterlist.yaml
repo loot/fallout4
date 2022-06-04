@@ -3288,10 +3288,6 @@ plugins:
       - 'PRP-Compat-Clarity-43.esp'
       - 'PRP-Compat-IntEnh.esp'
       - 'PRP-Compat-UIL.esp'
-    inc:
-      - name: 'PRP.esp'
-        display: '**PRP.esp** v0.57.1'
-        condition: 'version("AlootHomePlate.esp", "2.2", >=) and version("PRP.esp", "0.57.1", ==)'
     msg:
       - <<: *requiresResources
         subs: [ '[Aloot''s Home Plate](https://www.nexusmods.com/fallout4/mods/44101/)' ]
