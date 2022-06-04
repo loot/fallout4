@@ -1965,9 +1965,6 @@ plugins:
           - '[Previsibines Repair Pack (PRP) - Sim Settlements 2 Upgrade Kit](https://www.nexusmods.com/fallout4/mods/57947/)'
         condition: 'active("SS2_XPAC_Chapter2.esm") and not active("PRP-SS2.esp")'
       - <<: *patchIncluded
-        subs: [ 'Aloot''s Home Plate' ]
-        condition: 'active("AlootHomePlate.esp") and not version("AlootHomePlate.esp", "2.2", >=) and version("PRP.esp", "0.57", <) and version("PRP.esp", "0.58", >=)'
-      - <<: *patchIncluded
         subs: [ 'Clarity - A Visual Overhaul' ]
         condition: 'active("Clarity.esp") and not active("PRP-Compat-Clarity-4[23]\.esp")'
       - <<: *patchIncluded
@@ -1991,6 +1988,9 @@ plugins:
       - <<: *patchIncluded
         subs: [ 'Ultra Interior Lighting - Darker Ambience' ]
         condition: 'active("UltraInteriorLighting_DarkerAmbience.esp") and not active("PRP-Compat-UIL-Darker.esp")'
+      - <<: *patchProvided
+        subs: [ 'Aloot''s Home Plate' ]
+        condition: 'active("AlootHomePlate.esp") and version("AlootHomePlate.esp", "2.2", <)'
       - <<: *patchProvided
         subs: [ 'Clean and Simple - All CAS Settlements' ]
         condition: 'active("Clean and Simple -  All CAS Settlements.esp") and not active("Clean_and_Simple_and_Prevised_All_CAS.esp") and version("PRP.esp", "0.57", <) and version("PRP.esp", "0.58", >=)'
@@ -3280,7 +3280,7 @@ plugins:
       - link: 'https://www.nexusmods.com/fallout4/mods/44101/'
         name: 'Aloot''s Home Plate'
       - link: 'https://www.nexusmods.com/fallout4/mods/46403/'
-        name: 'Previs Repair Pack'
+        name: 'Previsibines Repair Pack'
     after:
       - 'EnhancedLightsandFX.esp'
       - 'PRP.esp'
@@ -3288,10 +3288,6 @@ plugins:
       - 'PRP-Compat-Clarity-43.esp'
       - 'PRP-Compat-IntEnh.esp'
       - 'PRP-Compat-UIL.esp'
-    inc:
-      - name: 'PRP.esp'
-        display: '**PRP.esp** v0.57.1'
-        condition: 'version("AlootHomePlate.esp", "2.2", >=) and version("PRP.esp", "0.57.1", ==)'
     msg:
       - <<: *requiresResources
         subs: [ '[Aloot''s Home Plate](https://www.nexusmods.com/fallout4/mods/44101/)' ]
@@ -3299,11 +3295,18 @@ plugins:
     dirty:
       - <<: *reqManualFix
         crc: 0xA8B4559B
-        util: '[FO4Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout4/mods/2737)'
+        util: '[FO4Edit v4.0.4b](https://www.nexusmods.com/fallout4/mods/2737)'
         nav: 1
     clean:
-      - crc: 0xB383AAB4
-        util: 'FO4Edit v4.0.3h (Hotfix 1)'
+      # English
+      - crc: 0x0E11C3C1
+        util: 'FO4Edit v4.0.4b'
+      # Italian
+      - crc: 0x62025A38
+        util: 'FO4Edit v4.0.4b'
+      # Spanish
+      - crc: 0x7CC799D2
+        util: 'FO4Edit v4.0.4b'
 
   - name: 'Eli_Faction Housing Overhaul - AiO.esp'
     url:
