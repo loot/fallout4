@@ -1965,9 +1965,6 @@ plugins:
           - '[Previsibines Repair Pack (PRP) - Sim Settlements 2 Upgrade Kit](https://www.nexusmods.com/fallout4/mods/57947/)'
         condition: 'active("SS2_XPAC_Chapter2.esm") and not active("PRP-SS2.esp")'
       - <<: *patchIncluded
-        subs: [ 'Aloot''s Home Plate' ]
-        condition: 'active("AlootHomePlate.esp") and not version("AlootHomePlate.esp", "2.2", >=) and version("PRP.esp", "0.57", <) and version("PRP.esp", "0.58", >=)'
-      - <<: *patchIncluded
         subs: [ 'Clarity - A Visual Overhaul' ]
         condition: 'active("Clarity.esp") and not active("PRP-Compat-Clarity-4[23]\.esp")'
       - <<: *patchIncluded
@@ -1991,6 +1988,9 @@ plugins:
       - <<: *patchIncluded
         subs: [ 'Ultra Interior Lighting - Darker Ambience' ]
         condition: 'active("UltraInteriorLighting_DarkerAmbience.esp") and not active("PRP-Compat-UIL-Darker.esp")'
+      - <<: *patchProvided
+        subs: [ 'Aloot''s Home Plate' ]
+        condition: 'active("AlootHomePlate.esp") and version("AlootHomePlate.esp", "2.2", <)'
       - <<: *patchProvided
         subs: [ 'Clean and Simple - All CAS Settlements' ]
         condition: 'active("Clean and Simple -  All CAS Settlements.esp") and not active("Clean_and_Simple_and_Prevised_All_CAS.esp") and version("PRP.esp", "0.57", <) and version("PRP.esp", "0.58", >=)'
