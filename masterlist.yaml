@@ -351,11 +351,6 @@ common:
     subs:
       - '**[Fallout 4 Script Extender](https://f4se.silverlock.org)**'
       - '**Fallout 4**'
-  - &versionF4SEIncFO4_VR
-    <<: *versionXIncY
-    subs:
-      - '**[Fallout 4 VR Script Extender](https://f4se.silverlock.org)**'
-      - '**Fallout 4 VR**'
 
 bash_tags:
   - 'Deactivate'
@@ -396,28 +391,14 @@ globals:
   - <<: *versionUpToDateX
     subs: [ '**Fallout 4**' ]
     condition: 'readable("../Fallout4.exe") and version("../Fallout4.exe", "1.10.163.0", >=) and file("../Fallout4.exe")'
-# Fallout 4 VR - Latest Version
-  - <<: *versionOldX
-    subs: [ '**Fallout 4 VR**' ]
-    condition: 'readable("../Fallout4VR.exe") and version("../Fallout4VR.exe", "1.2.72.0", <) and file("../Fallout4VR.exe")'
-  - <<: *versionUpToDateX
-    subs: [ '**Fallout 4 VR**' ]
-    condition: 'readable("../Fallout4VR.exe") and version("../Fallout4VR.exe", "1.2.72.0", >=) and file("../Fallout4VR.exe")'
 
 # F4SE - Latest Version
   - <<: *versionOldX
     subs: [ '**Script Extender ([F4SE](https://f4se.silverlock.org))**' ]
-    condition: 'version("../f4se_loader.exe", "0.0.6.21", <) and file("../Fallout4.exe") and file("../f4se_loader.exe")'
+    condition: 'version("../f4se_loader.exe", "0.0.6.23", <) and file("../Fallout4.exe") and file("../f4se_loader.exe")'
   - <<: *versionUpToDateX
     subs: [ '**Script Extender ([F4SE](https://f4se.silverlock.org))**' ]
-    condition: 'version("../f4se_loader.exe", "0.0.6.21", >=) and file("../Fallout4.exe") and file("../f4se_loader.exe")'
-# F4SE VR - Latest Version
-  - <<: *versionOldX
-    subs: [ '**Script Extender ([F4SE VR](https://f4se.silverlock.org))**' ]
-    condition: 'version("../f4sevr_loader.exe", "0.0.6.20", <) and file("../Fallout4VR.exe") and file("../f4sevr_loader.exe")'
-  - <<: *versionUpToDateX
-    subs: [ '**Script Extender ([F4SE VR](https://f4se.silverlock.org))**' ]
-    condition: 'version("../f4sevr_loader.exe", "0.0.6.20", >=) and file("../Fallout4VR.exe") and file("../f4sevr_loader.exe")'
+    condition: 'version("../f4se_loader.exe", "0.0.6.23", >=) and file("../Fallout4.exe") and file("../f4se_loader.exe")'
 
 # F4SE - Runtime Compatibility
   - <<: *versionF4SEIncFO4
@@ -434,9 +415,6 @@ globals:
     condition: 'readable("../Fallout4.exe") and version("../Fallout4.exe", "1.10.114.0", ==) and not version("../f4se_loader.exe", "0.0.6.13", ==) and file("../f4se_loader.exe")'
   - <<: *versionF4SEIncFO4
     condition: 'readable("../Fallout4.exe") and version("../Fallout4.exe", "1.10.111.0", ==) and not version("../f4se_loader.exe", "0.0.6.12", ==) and file("../f4se_loader.exe")'
-# F4SE VR - Runtime Compatibility
-  - <<: *versionF4SEIncFO4_VR
-    condition: 'readable("../Fallout4VR.exe") and version("../Fallout4VR.exe", "1.2.72.0", ==) and version("../f4sevr_loader.exe", "0.0.6.20", <) and file("../f4sevr_loader.exe")'
 
 # F4SE Plugins - Compatibility
   - <<: *versionXIncY
