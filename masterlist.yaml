@@ -1559,12 +1559,12 @@ plugins:
         util: 'FO4Edit v4.0.3h (Hotfix 1)'
 
   - name: 'WorkshopFramework(_ScriptOverride)?\.es[mp]'
-  - name: 'WorkshopFramework.esm'
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/35004/'
         name: 'Workshop Framework (Nexus Mods)'
       - link: 'https://bethesda.net/en/mods/fallout4/mod-detail/4081586/'
         name: 'Workshop Framework (Bethesda.net Mods)'
+  - name: 'WorkshopFramework.esm'
     group: *frameworksGroup
     after: [ 'Unofficial Fallout 4 Patch.esp' ]
     inc:
