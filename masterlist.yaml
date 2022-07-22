@@ -476,8 +476,11 @@ groups:
     description: 'A group for modules that need to be loaded late to preserve worldspace settings.'
     after: [ *frostGroup ]
 
-  - name: &dynamicPatchesGroup Dynamic Patches
+  - name: &lateChangesGroup Late Fixes & Changes
     after: [ *worldSettingsGroup ]
+
+  - name: &dynamicPatchesGroup Dynamic Patches
+    after: [ *lateChangesGroup ]
 
 plugins:
 ###### Official DLC plugins ######
