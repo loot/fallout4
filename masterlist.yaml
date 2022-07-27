@@ -356,10 +356,9 @@ bash_tags:
   - 'Deactivate'
   - 'Delev'
   - 'Filter'
+  - 'MustBeActiveIfImported'
   - 'ObjectBounds'
   - 'Relev'
-  ## Deprecated & Removed Bash Tags ##
-  - 'NoMerge'
 
 globals:
 # Latest LOOT Thread
