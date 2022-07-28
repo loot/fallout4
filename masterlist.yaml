@@ -1480,7 +1480,7 @@ plugins:
     group: *fixesGroup
     msg:
       - <<: *obsolete
-        condition: 'version("Unofficial Fallout 4 Patch.esp", "2.1.3", <)'
+        condition: 'version("Unofficial Fallout 4 Patch.esp", "2.1.4", <)'
       - <<: *versionXIncY
         subs:
           - 'Unofficial Fallout 4 Patch'
