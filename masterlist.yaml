@@ -1627,6 +1627,10 @@ plugins:
         name: 'Overboss Colter Fix'
     group: *fixesGroup
     msg:
+      - type: warn
+        content:
+          - lang: en
+            text: 'This file is deprecated and should no longer be used.'
       - <<: *alreadyInX
         subs: [ 'Unofficial Fallout 4 Patch' ]
         condition: 'active("Unofficial Fallout 4 Patch.esp") and version("Unofficial Fallout 4 Patch.esp", "2.1.4", >=)'
