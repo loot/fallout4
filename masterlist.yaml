@@ -1631,6 +1631,8 @@ plugins:
         content:
           - lang: en
             text: 'This file is deprecated and should no longer be used.'
+      - <<: *useInstead
+        subs: [ '[Unofficial Fallout 4 Patch](https://www.nexusmods.com/fallout4/mods/4598/) v2.1.4+' ]
       - <<: *alreadyInX
         subs: [ 'Unofficial Fallout 4 Patch' ]
         condition: 'active("Unofficial Fallout 4 Patch.esp") and version("Unofficial Fallout 4 Patch.esp", "2.1.4", >=)'
