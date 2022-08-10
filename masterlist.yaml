@@ -2914,6 +2914,7 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/59019/'
         name: 'Who''s The General - Minutemen Quest Cleanup'
+    after: [ 'PiperCaitCurieDialogueOverhaul.esp' ]
 
 ###### Gameplay - Skills, Perks & Leveling ######
   - name: 'Freeze( - Vanilla Patch)?\.esp'
