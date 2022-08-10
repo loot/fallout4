@@ -2911,6 +2911,9 @@ plugins:
         util: 'FO4Edit v4.0.3h (Hotfix 1)'
 
   - name: 'WhoIsTheGeneral.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/59019/'
+        name: 'Who''s The General - Minutemen Quest Cleanup'
 
 ###### Gameplay - Skills, Perks & Leveling ######
   - name: 'Freeze( - Vanilla Patch)?\.esp'
