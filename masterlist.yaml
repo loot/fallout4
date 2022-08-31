@@ -1790,6 +1790,17 @@ plugins:
     group: *fixesGroup
     msg: [ *alreadyInOrFixedByFO4v1_4_132 ]
 
+  - name: 'Search&DestroyFixed.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/33127/'
+        name: 'Search and Destroy - Fixed'
+    group: *fixesGroup
+    dirty:
+      - <<: *quickClean
+        crc: 0xFFABD02C
+        util: '[FO4Edit v4.0.4](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 3
+
   - name: 'SoldierToyFix.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/10229/' ]
     group: *fixesGroup
