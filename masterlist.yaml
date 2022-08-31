@@ -6891,13 +6891,3 @@ plugins:
         crc: 0x5864E5A8
         util: '[FO4Edit v4.0.4](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 13
-    clean:
-      # Main v0.3
-      - crc: 0xC7F86E94
-        util: 'FO4Edit v4.0.4'
-      # Trees Only v0.3a
-      - crc: 0xB8F4FFF8
-        util: 'FO4Edit v4.0.4'
-      # Winter v0.3b
-      - crc: 0x10DA99C4
-        util: 'FO4Edit v4.0.4'
