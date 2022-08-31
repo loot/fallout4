@@ -2746,6 +2746,16 @@ plugins:
         itm: 219
 
 ###### Gameplay - NPC Behaviour & Dialogue ######
+  - name: 'Crimsomrider''s Obedient Concord Group.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/22829/'
+        name: 'Obedient Concord Group'
+    dirty:
+      - <<: *quickClean
+        crc: 0x34722A5F
+        util: '[FO4Edit v4.0.4](https://www.nexusmods.com/fallout4/mods/2737)'
+        udr: 7
+
   - name: 'DeaconClothingCK.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/9772/'
