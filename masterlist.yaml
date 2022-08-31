@@ -6905,3 +6905,13 @@ plugins:
         crc: 0x5864E5A8
         util: '[FO4Edit v4.0.4](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 13
+
+  - name: '0_Vault120.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/58514/'
+        name: '20 Leagues Under the Sea - Vault 120'
+    dirty:
+      - <<: *quickClean
+        crc: 0x82C7B038
+        util: '[FO4Edit v4.0.4](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 1
