@@ -2626,6 +2626,16 @@ plugins:
       - crc: 0x3E825AE2
         util: 'FO4Edit v4.0.4'
 
+  - name: 'LeverActionBCR.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/41178/'
+        name: 'Bullet Counted Reload System (BCR)'
+    dirty:
+      - <<: *quickClean
+        crc: 0x0D074E92
+        util: '[FO4Edit v4.0.4](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 2
+
   - name: 'SKKSettlementAttackSystem(Markers)?\.esp'
     url:
       - 'https://bethesda.net/en/mods/fallout4/mod-detail/4096084/'
