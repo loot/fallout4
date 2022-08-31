@@ -2827,6 +2827,16 @@ plugins:
       - crc: 0xDB545497
         util: 'FO4Edit v4.0.3h (Hotfix 1)'
 
+  - name: 'Crimsomrider''s Obedient Concord Group.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/22829/'
+        name: 'Obedient Concord Group'
+    dirty:
+      - <<: *quickClean
+        crc: 0x34722A5F
+        util: '[FO4Edit v4.0.4](https://www.nexusmods.com/fallout4/mods/2737)'
+        udr: 7
+
 ###### Gameplay - Quests ######
   - name: 'AnotherLife.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/14253/' ]
