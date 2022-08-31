@@ -6867,3 +6867,37 @@ plugins:
     clean:
       - crc: 0x17ED1071
         util: '[FO4Edit v4.0.4](https://www.nexusmods.com/fallout4/mods/2737)'
+
+  - name: 'Another Pine Forest (Mod|Trees Only|Winter)\.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/54027/' ]
+    inc: [ 'Boston Natural Surroundings.esp' ]
+    msg:
+      - <<: *useOnlyOneX
+        subs: [ 'Another Pine Forest plugin' ]
+        condition: 'many("Another Pine Forest (Mod|Trees Only|Winter)\.esp")'
+    dirty:
+      # Main v0.3
+      - <<: *quickClean
+        crc: 0x6ABC1475
+        util: '[FO4Edit v4.0.4](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 2
+      # Trees Only v0.3a
+      - <<: *quickClean
+        crc: 0xC90068E2
+        util: '[FO4Edit v4.0.4](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 2
+      # Winter v0.3b
+      - <<: *quickClean
+        crc: 0x5864E5A8
+        util: '[FO4Edit v4.0.4](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 13
+    clean:
+      # Main v0.3
+      - crc: 0xC7F86E94
+        util: 'FO4Edit v4.0.4'
+      # Trees Only v0.3a
+      - crc: 0xB8F4FFF8
+        util: 'FO4Edit v4.0.4'
+      # Winter v0.3b
+      - crc: 0x10DA99C4
+        util: 'FO4Edit v4.0.4'
