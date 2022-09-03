@@ -2585,6 +2585,11 @@ plugins:
     req: [ 'SameSexFemale.esp' ]
   # LGBT Family #
   - name: 'LGBT Family( \(2\))?\.esp'
+    inc:
+      - 'AnotherLife.esp'
+      - 'OSM_AlternateStart_Protocol-InfiniteAnswer.esp'
+      - 'SKKFastStartNewGame.esp'
+      - 'StartMeUp.esp'
   - name: 'LGBT Family.esp'
   - name: 'LGBT Family (2).esp'
 
