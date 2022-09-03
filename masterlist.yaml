@@ -2913,6 +2913,9 @@ plugins:
         util: 'FO4Edit v4.0.3h (Hotfix 1)'
 
   - name: 'PlayerComments.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/22166/'
+        name: 'Player Comments and Head Tracking'
 
 ###### Gameplay - Quests ######
   - name: 'AnotherLife.esp'
