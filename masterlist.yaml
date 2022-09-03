@@ -2971,6 +2971,8 @@ plugins:
       - crc: 0x7C5856B7
         util: 'FO4Edit v4.0.4'
 
+  - name: 'Spare Railroad as Institute.esp'
+
   - name: 'StartMeUp.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/18946/' ]
     group: *lowPriorityGroup
