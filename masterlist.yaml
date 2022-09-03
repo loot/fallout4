@@ -6567,7 +6567,25 @@ plugins:
       - 'Unique NPCs.esp'
 
   - name: 'Synth Overhaul.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/9525/' ]
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/9525/'
+        name: 'Synth Overhaul - C.A.S.T'
+    dirty:
+      # Complete (AWKCR)
+      - <<: *quickClean
+        crc: 0x615A440B
+        util: '[FO4Edit v4.0.4](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 1
+      # Complete (AWKCR + AE)
+      - <<: *quickClean
+        crc: 0x0882A1A0
+        util: '[FO4Edit v4.0.4](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 1
+      # Complete (No AWKCR)
+      - <<: *quickClean
+        crc: 0x739BD604
+        util: '[FO4Edit v4.0.4](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 1
 
   - name: 'Yagisan_WO_Better_Caravans.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/33787/' ]
