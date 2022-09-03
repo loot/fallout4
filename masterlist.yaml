@@ -2912,6 +2912,8 @@ plugins:
       - crc: 0xDB545497
         util: 'FO4Edit v4.0.3h (Hotfix 1)'
 
+  - name: 'PlayerComments.esp'
+
 ###### Gameplay - Quests ######
   - name: 'AnotherLife.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/14253/' ]
