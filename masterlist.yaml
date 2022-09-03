@@ -3022,9 +3022,6 @@ plugins:
         name: 'Start Me Up Redux'
   - name: 'StartMeUp.esp'
     group: *lowPriorityGroup
-    inc:
-      - 'AnotherLife.esp'
-      - 'OSM_AlternateStart_Protocol-InfiniteAnswer.esp'
     clean:
       - crc: 0x2A8C9385
         util: 'FO4Edit v4.0.3h (Hotfix 1)'
