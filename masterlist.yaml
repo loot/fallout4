@@ -3014,6 +3014,7 @@ plugins:
         util: '[FO4Edit v4.0.4c](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 2
 
+  - name: '.*StartMeUp.*\.esp'
   - name: 'StartMeUp.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/18946/' ]
     group: *lowPriorityGroup
@@ -3027,6 +3028,8 @@ plugins:
         util: 'FO4Edit v4.0.3h (Hotfix 1)'
       - crc: 0x0E2861FA
         util: 'FO4Edit v4.0.3h (Hotfix 1)'
+  - name: 'StartMeUpNukaWorldPatch.esp'
+  - name: 'StartMeUpShaunDefaultAppearance.esp'
 
   - name: 'WhoIsTheGeneral.esp'
     url:
