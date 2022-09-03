@@ -2916,6 +2916,7 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/22166/'
         name: 'Player Comments and Head Tracking'
+    after: [ 'StartMeUp.esp' ]
 
 ###### Gameplay - Quests ######
   - name: 'AnotherLife.esp'
