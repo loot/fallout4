@@ -6287,6 +6287,8 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/16594/'
         name: 'Better Goodneighbor'
+      - link: 'https://www.nexusmods.com/fallout4/mods/59575/'
+        name: 'Better Goodneighbor Fixed ESP'
     msg:
       - <<: *patchUpdateAvailable
         subs: [ '[Better Goodneighbor Fixed ESP](https://www.nexusmods.com/fallout4/mods/59575/)' ]
