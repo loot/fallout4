@@ -3029,6 +3029,9 @@ plugins:
       - 'Killable Children.esp'
       - 'NoraSpouse.esm'
       - 'WastelandOperator.esp'
+    msg:
+      - <<: *compatNotes
+        subs: [ 'https://forums.nexusmods.com/index.php?/topic/10899803-start-me-up-unofficial-fallout-4-patch-fixes-and-tweaks/page-7#entry104054868' ]
     clean:
       - crc: 0x2A8C9385
         util: 'FO4Edit v4.0.3h (Hotfix 1)'
