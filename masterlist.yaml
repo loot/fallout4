@@ -6315,6 +6315,9 @@ plugins:
         crc: 0x9429AA85
         util: '[FO4Edit v4.0.4](https://www.nexusmods.com/fallout4/mods/2737)'
         nav: 1
+    clean:
+      - crc: 0xD72E81DD
+        util: 'FO4Edit v4.0.4'
   - name: 'DeadAirplane.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/17038/'
