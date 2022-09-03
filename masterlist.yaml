@@ -3014,19 +3014,50 @@ plugins:
         util: '[FO4Edit v4.0.4c](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 2
 
+  - name: '.*StartMeUp.*\.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/18946/'
+        name: 'Start Me Up'
+      - link: 'https://www.nexusmods.com/fallout4/mods/56984/'
+        name: 'Start Me Up Redux'
   - name: 'StartMeUp.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/18946/' ]
     group: *lowPriorityGroup
     inc:
-      - 'AnotherLife.esp'
-      - 'OSM_AlternateStart_Protocol-InfiniteAnswer.esp'
+      - 'AmazingFollowerTweaks.esp'
+      - 'DualSurvivors.esp'
+      - 'Interview.esp'
+      - 'Killable Children.esp'
+      - 'NoraSpouse.esm'
+      - 'WastelandOperator.esp'
+    msg:
+      - <<: *compatNotes
+        subs: [ 'https://forums.nexusmods.com/index.php?/topic/10899803-start-me-up-unofficial-fallout-4-patch-fixes-and-tweaks/page-7#entry104054868' ]
+      - <<: *obsolete
+        subs: [ '[Start Me Up Redux](https://www.nexusmods.com/fallout4/mods/56984/)' ]
+        condition: 'version("StartMeUp.esp", "6.7", <)'
+      - <<: *patchIncluded
+        subs: [ 'DLC Nuka-World' ]
+        condition: 'active("DLCNukaWorld.esm") and not active("StartMeUpNukaWorldPatch.esp")'
+      - <<: *patchProvided
+        subs: [ 'Horizon' ]
+        condition: 'active("Z_Horizon.esp") and not active("StartMeUpRedux_Horizon.esp")'
     clean:
-      - crc: 0x2A8C9385
-        util: 'FO4Edit v4.0.3h (Hotfix 1)'
-      - crc: 0x0EB1FB7E
-        util: 'FO4Edit v4.0.3h (Hotfix 1)'
-      - crc: 0x0E2861FA
-        util: 'FO4Edit v4.0.3h (Hotfix 1)'
+      # FDI
+      - crc: 0x29DC9048
+        util: 'FO4Edit v4.0.4c'
+      # Normal-XDI
+      - crc: 0xC1DA3B8B
+        util: 'FO4Edit v4.0.4c'
+  - name: 'StartMeUpNukaWorldPatch.esp'
+    clean:
+      # FDI
+      - crc: 0x6A96C646
+        util: 'FO4Edit v4.0.4c'
+      # Normal-XDI
+      - crc: 0x6E0B1BE9
+        util: 'FO4Edit v4.0.4c'
+  - name: 'StartMeUpShaunDefaultAppearance.esp'
+    msg: [ *optional ]
 
   - name: 'WhoIsTheGeneral.esp'
     url:
