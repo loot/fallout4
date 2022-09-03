@@ -3022,6 +3022,13 @@ plugins:
         name: 'Start Me Up Redux'
   - name: 'StartMeUp.esp'
     group: *lowPriorityGroup
+    inc:
+      - 'AmazingFollowerTweaks.esp'
+      - 'DualSurvivors.esp'
+      - 'Interview.esp'
+      - 'Killable Children.esp'
+      - 'NoraSpouse.esm'
+      - 'WastelandOperator.esp'
     clean:
       - crc: 0x2A8C9385
         util: 'FO4Edit v4.0.3h (Hotfix 1)'
