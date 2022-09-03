@@ -2578,8 +2578,11 @@ plugins:
   - name: 'SameSexMale.esp'
   # Same Sex Couples - Patches #
   - name: 'AFTforSSC.esp'
+    req: [ 'SameSexMale.esp' ]
   - name: 'AFTOSforSSC.esp'
+    req: [ 'SameSexFemale.esp' ]
   - name: 'SSFforLupine.esp'
+    req: [ 'SameSexFemale.esp' ]
   # LGBT Family #
   - name: 'LGBT Family( \(2\))?\.esp'
   - name: 'LGBT Family.esp'
