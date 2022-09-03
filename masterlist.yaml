@@ -2573,6 +2573,7 @@ plugins:
   - name: '(SameSex(Fe)?Male|LGBT Family( \(2\))?)\.esp'
   # Same Sex Couples #
   - name: 'SameSex(Fe)?Male\.esp'
+    after: [ 'StartMeUp.esp' ]
   - name: 'SameSexFemale.esp'
   - name: 'SameSexMale.esp'
   # Same Sex Couples - Patches #
