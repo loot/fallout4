@@ -3035,6 +3035,9 @@ plugins:
       - <<: *obsolete
         subs: [ '[Start Me Up Redux](https://www.nexusmods.com/fallout4/mods/56984/)' ]
         condition: 'version("StartMeUp.esp", "6.7", <)'
+      - <<: *patchIncluded
+        subs: [ 'DLC Nuka-World' ]
+        condition: 'active("DLCNukaWorld.esm") and not active("StartMeUpNukaWorldPatch.esp")'
     clean:
       - crc: 0x2A8C9385
         util: 'FO4Edit v4.0.3h (Hotfix 1)'
