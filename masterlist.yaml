@@ -2566,6 +2566,60 @@ plugins:
       - Delev
       - Relev
 
+  - name: '(SameSex(Fe)?Male.*|AFT(OS)?forSSC|SSFforLupine|LGBT Family( \(2\))?)\.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/25254/'
+        name: 'Same Sex Couples and LGBT Families'
+  - name: '(SameSex(Fe)?Male|LGBT Family( \(2\))?)\.esp'
+    msg:
+      - <<: *useOnlyOneX
+        subs: [ 'Same Sex Couples and LGBT Families ESP' ]
+        condition: 'many("(SameSex(Fe)?Male|LGBT Family( \(2\))?)\.esp")'
+  # Same Sex Couples #
+  - name: 'SameSex(Fe)?Male\.esp'
+    after: [ 'StartMeUp.esp' ]
+  - name: 'SameSexFemale.esp'
+    dirty:
+      - <<: *quickClean
+        crc: 0x03EFA582
+        util: '[FO4Edit v4.0.4c](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 3
+  - name: 'SameSexMale.esp'
+    dirty:
+      - <<: *quickClean
+        crc: 0x843AB969
+        util: '[FO4Edit v4.0.4c](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 1
+  # Same Sex Couples - Patches #
+  - name: 'AFTforSSC.esp'
+    req: [ 'SameSexMale.esp' ]
+  - name: 'AFTOSforSSC.esp'
+    req: [ 'SameSexFemale.esp' ]
+  - name: 'SSFforLupine.esp'
+    req: [ 'SameSexFemale.esp' ]
+  # LGBT Family #
+  - name: 'LGBT Family( \(2\))?\.esp'
+    inc:
+      - 'AnotherLife.esp'
+      - 'OSM_AlternateStart_Protocol-InfiniteAnswer.esp'
+      - 'SKKFastStartNewGame.esp'
+      - 'StartMeUp.esp'
+  - name: 'LGBT Family.esp'
+    dirty:
+      - <<: *quickClean
+        crc: 0xF3E36F23
+        util: '[FO4Edit v4.0.4c](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 867
+        udr: 65
+  - name: 'LGBT Family (2).esp'
+    msg: [ *useVersionFarHarbor ]
+    dirty:
+      - <<: *quickClean
+        crc: 0x25BFAA3B
+        util: '[FO4Edit v4.0.4c](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 865
+        udr: 65
+
   - name: 'SKKCombatSettlers.esp'
     url:
       - 'https://bethesda.net/en/mods/fallout4/mod-detail/4080062/'
