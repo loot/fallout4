@@ -2972,6 +2972,9 @@ plugins:
         util: 'FO4Edit v4.0.4'
 
   - name: 'Spare Railroad as Institute.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/19835/'
+        name: 'Main Quest Choices Extended'
 
   - name: 'StartMeUp.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/18946/' ]
