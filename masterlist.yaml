@@ -2912,6 +2912,17 @@ plugins:
       - crc: 0xDB545497
         util: 'FO4Edit v4.0.3h (Hotfix 1)'
 
+  - name: 'PlayerComments.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/22166/'
+        name: 'Player Comments and Head Tracking'
+    after: [ 'StartMeUp.esp' ]
+    dirty:
+      - <<: *quickClean
+        crc: 0xCA93C583
+        util: '[FO4Edit v4.0.4c](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 4
+
 ###### Gameplay - Quests ######
   - name: 'AnotherLife.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/14253/' ]
