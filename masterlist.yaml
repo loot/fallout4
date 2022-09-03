@@ -6300,6 +6300,11 @@ plugins:
         crc: 0x0D8B6A82
         util: '[FO4Edit v4.0.1](https://www.nexusmods.com/fallout4/mods/2737)'
         nav: 2
+      # version: 1.00 after 2nd pass of quick clean
+      - <<: *reqManualFix
+        crc: 0x9DCA07FF
+        util: '[FO4Edit v4.0.4](https://www.nexusmods.com/fallout4/mods/2737)'
+        nav: 2
       # version: 1.01 before quick clean
       - <<: *reqManualFix
         crc: 0x305D7674
@@ -6310,6 +6315,11 @@ plugins:
       - <<: *reqManualFix
         crc: 0xF0CE4E14
         util: '[FO4Edit v4.0.1](https://www.nexusmods.com/fallout4/mods/2737)'
+        nav: 1
+      # version: 1.01 after 2nd pass of quick clean
+      - <<: *reqManualFix
+        crc: 0x9429AA85
+        util: '[FO4Edit v4.0.4](https://www.nexusmods.com/fallout4/mods/2737)'
         nav: 1
   - name: 'DeadAirplane.esp'
     url:
