@@ -6287,6 +6287,12 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/16594/'
         name: 'Better Goodneighbor'
+      - link: 'https://www.nexusmods.com/fallout4/mods/59575/'
+        name: 'Better Goodneighbor Fixed ESP'
+    msg:
+      - <<: *patchUpdateAvailable
+        subs: [ '[Better Goodneighbor Fixed ESP](https://www.nexusmods.com/fallout4/mods/59575/)' ]
+        condition: 'not checksum("CrimeTown.esp", D72E81DD)'
     dirty:
       # version: 1.00 before quick clean
       - <<: *reqManualFix
@@ -6297,8 +6303,8 @@ plugins:
         nav: 2
       # version: 1.00 before 2nd pass of quick clean
       - <<: *reqManualFix
-        crc: 0x0D8B6A82
-        util: '[FO4Edit v4.0.1](https://www.nexusmods.com/fallout4/mods/2737)'
+        crc: 0x9DCA07FF
+        util: '[FO4Edit v4.0.4](https://www.nexusmods.com/fallout4/mods/2737)'
         nav: 2
       # version: 1.01 before quick clean
       - <<: *reqManualFix
@@ -6308,9 +6314,12 @@ plugins:
         nav: 1
       # version: 1.01 before 2nd pass of quick clean
       - <<: *reqManualFix
-        crc: 0xF0CE4E14
-        util: '[FO4Edit v4.0.1](https://www.nexusmods.com/fallout4/mods/2737)'
+        crc: 0x9429AA85
+        util: '[FO4Edit v4.0.4](https://www.nexusmods.com/fallout4/mods/2737)'
         nav: 1
+    clean:
+      - crc: 0xD72E81DD
+        util: 'FO4Edit v4.0.4'
   - name: 'DeadAirplane.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/17038/'
