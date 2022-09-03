@@ -3049,6 +3049,13 @@ plugins:
       - crc: 0xC1DA3B8B
         util: 'FO4Edit v4.0.4c'
   - name: 'StartMeUpNukaWorldPatch.esp'
+    clean:
+      # FDI
+      - crc: 0x6A96C646
+        util: 'FO4Edit v4.0.4c'
+      # Normal-XDI
+      - crc: 0x6E0B1BE9
+        util: 'FO4Edit v4.0.4c'
   - name: 'StartMeUpShaunDefaultAppearance.esp'
     msg: [ *optional ]
 
