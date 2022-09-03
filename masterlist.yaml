@@ -2937,6 +2937,7 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/32857/'
         name: 'Nuka-World Reborn'
+    after: [ 'StartMeUp.esp' ]
 
   - name: 'OSM_AlternateStart_Protocol-InfiniteAnswer.esp'
     url:
