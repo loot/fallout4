@@ -2975,6 +2975,7 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/19835/'
         name: 'Main Quest Choices Extended'
+    after: [ 'StartMeUp.esp' ]
 
   - name: 'StartMeUp.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/18946/' ]
