@@ -2571,6 +2571,10 @@ plugins:
       - link: 'https://www.nexusmods.com/fallout4/mods/25254/'
         name: 'Same Sex Couples and LGBT Families'
   - name: '(SameSex(Fe)?Male|LGBT Family( \(2\))?)\.esp'
+    msg:
+      - <<: *useOnlyOneX
+        subs: [ 'Same Sex Couples and LGBT Families ESP' ]
+        condition: 'many("(SameSex(Fe)?Male|LGBT Family( \(2\))?)\.esp")'
   # Same Sex Couples #
   - name: 'SameSex(Fe)?Male\.esp'
     after: [ 'StartMeUp.esp' ]
