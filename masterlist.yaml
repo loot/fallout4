@@ -2976,6 +2976,11 @@ plugins:
       - link: 'https://www.nexusmods.com/fallout4/mods/19835/'
         name: 'Main Quest Choices Extended'
     after: [ 'StartMeUp.esp' ]
+    dirty:
+      - <<: *quickClean
+        crc: 0x1BF52A8C
+        util: '[FO4Edit v4.0.4c](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 2
 
   - name: 'StartMeUp.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/18946/' ]
