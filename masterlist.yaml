@@ -2938,6 +2938,11 @@ plugins:
       - link: 'https://www.nexusmods.com/fallout4/mods/32857/'
         name: 'Nuka-World Reborn'
     after: [ 'StartMeUp.esp' ]
+    dirty:
+      - <<: *quickClean
+        crc: 0xF347A209
+        util: '[FO4Edit v4.0.4c](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 2767
 
   - name: 'OSM_AlternateStart_Protocol-InfiniteAnswer.esp'
     url:
