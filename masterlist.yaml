@@ -3015,8 +3015,10 @@ plugins:
         itm: 2
 
   - name: '.*StartMeUp.*\.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/18946/'
+        name: 'Start Me Up'
   - name: 'StartMeUp.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/18946/' ]
     group: *lowPriorityGroup
     inc:
       - 'AnotherLife.esp'
