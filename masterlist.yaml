@@ -3018,6 +3018,8 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/18946/'
         name: 'Start Me Up'
+      - link: 'https://www.nexusmods.com/fallout4/mods/56984/'
+        name: 'Start Me Up Redux'
   - name: 'StartMeUp.esp'
     group: *lowPriorityGroup
     inc:
