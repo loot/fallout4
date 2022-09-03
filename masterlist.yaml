@@ -2579,7 +2579,17 @@ plugins:
   - name: 'SameSex(Fe)?Male\.esp'
     after: [ 'StartMeUp.esp' ]
   - name: 'SameSexFemale.esp'
+    dirty:
+      - <<: *quickClean
+        crc: 0x03EFA582
+        util: '[FO4Edit v4.0.4c](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 3
   - name: 'SameSexMale.esp'
+    dirty:
+      - <<: *quickClean
+        crc: 0x843AB969
+        util: '[FO4Edit v4.0.4c](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 1
   # Same Sex Couples - Patches #
   - name: 'AFTforSSC.esp'
     req: [ 'SameSexMale.esp' ]
@@ -2595,8 +2605,20 @@ plugins:
       - 'SKKFastStartNewGame.esp'
       - 'StartMeUp.esp'
   - name: 'LGBT Family.esp'
+    dirty:
+      - <<: *quickClean
+        crc: 0xF3E36F23
+        util: '[FO4Edit v4.0.4c](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 867
+        udr: 65
   - name: 'LGBT Family (2).esp'
     msg: [ *useVersionFarHarbor ]
+    dirty:
+      - <<: *quickClean
+        crc: 0x25BFAA3B
+        util: '[FO4Edit v4.0.4c](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 865
+        udr: 65
 
   - name: 'SKKCombatSettlers.esp'
     url:
