@@ -2596,6 +2596,7 @@ plugins:
       - 'StartMeUp.esp'
   - name: 'LGBT Family.esp'
   - name: 'LGBT Family (2).esp'
+    msg: [ *useVersionFarHarbor ]
 
   - name: 'SKKCombatSettlers.esp'
     url:
