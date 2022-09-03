@@ -2566,6 +2566,21 @@ plugins:
       - Delev
       - Relev
 
+  - name: '(SameSex(Fe)?Male.*|AFT(OS)?forSSC|SSFforLupine|LGBT Family( \(2\))?)\.esp'
+  - name: '(SameSex(Fe)?Male|LGBT Family( \(2\))?)\.esp'
+  # Same Sex Couples #
+  - name: 'SameSex(Fe)?Male\.esp'
+  - name: 'SameSexFemale.esp'
+  - name: 'SameSexMale.esp'
+  # Same Sex Couples - Patches #
+  - name: 'AFTforSSC.esp'
+  - name: 'AFTOSforSSC.esp'
+  - name: 'SSFforLupine.esp'
+  # LGBT Family #
+  - name: 'LGBT Family( \(2\))?\.esp'
+  - name: 'LGBT Family.esp'
+  - name: 'LGBT Family (2).esp'
+
   - name: 'SKKCombatSettlers.esp'
     url:
       - 'https://bethesda.net/en/mods/fallout4/mod-detail/4080062/'
