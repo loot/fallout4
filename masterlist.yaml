@@ -7111,3 +7111,30 @@ plugins:
         crc: 0x1C414628
         util: '[FO4Edit v4.0.4](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 1
+
+  - name: 'BetterCoastalWaves.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/58035/'
+        name: 'Flowing Rivers - Better Coastal Waves got an update'
+      - link: 'https://www.nexusmods.com/fallout4/mods/47153/'
+        name: 'Better Coastal Waves - Wilder Water'
+    dirty:
+      # Flowing Rivers
+      - <<: *quickClean
+        crc: 0x4706BF27
+        util: '[FO4Edit v4.0.4](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 21
+      # Better Coastal Waves
+      - <<: *quickClean
+        crc: 0xDDA9F5D3
+        util: '[FO4Edit v4.0.4](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 18
+  - name: 'BetterCoastalWaves.esl'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/47153/'
+        name: 'Better Coastal Waves - Wilder Water'
+    dirty:
+      - <<: *quickClean
+        crc: 0x41510FF3
+        util: '[FO4Edit v4.0.4](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 18
