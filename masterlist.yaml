@@ -7141,3 +7141,5 @@ plugins:
     clean:
       - crc: 0x684FAE60
         util: 'FO4Edit v4.0.4'
+  - name: 'A Forest - Scrap Everything Patch.esp'
+    after: [ 'Scrap Everything - Ultimate Edition.esp' ]
