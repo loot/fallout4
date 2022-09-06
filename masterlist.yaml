@@ -7102,6 +7102,16 @@ plugins:
         util: '[FO4Edit v4.0.4](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 2
 
+  - name: 'Vault-Tec Workshop Overhaul Redux.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/43643/'
+        name: 'Vault-Tec Workshop Overhaul Redux (VTWOR)'
+    dirty:
+      - <<: *quickClean
+        crc: 0x1C414628
+        util: '[FO4Edit v4.0.4](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 1
+
   - name: 'BetterCoastalWaves.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/58035/'
