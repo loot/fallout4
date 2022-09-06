@@ -6552,6 +6552,8 @@ plugins:
         util: '[FO4Edit v4.0.1](https://www.nexusmods.com/fallout4/mods/2737)'
         nav: 7
 
+# -
+
   - name: 'Pipsy.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/34304/' ]
     dirty:
@@ -7111,8 +7113,14 @@ plugins:
         util: '[FO4Edit v4.0.4](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 1
 
+
+
+  - name: 'IcebreakerCDO-Piper.esp'
+    after:
+      - 'PiperCaitCurieDialogueOverhaul.esp'
+
 #Dawnie's Mods
-  - name: 'Dawnie''s Dynamic Patch-1.esp'
+  - name: 'Dawnies Dynamic Patch-1.esp'
     group: 'Late Fixes & Changes'
     dirty:
       - <<: *quickClean
@@ -7122,7 +7130,7 @@ plugins:
     clean:
       - crc: 0x22888226
         util: 'FO4Edit v4.0.4'
-  - name: 'Dawnie''s Weapon Patches-1.esp'
+  - name: 'Dawnies Weapon Patches-1.esp'
     dirty:
       - <<: *quickClean
         crc: 0x233D0A95
@@ -7135,7 +7143,3 @@ plugins:
     clean:
       - crc: 0x684FAE60
         util: 'FO4Edit v4.0.4'
-
-  - name: 'IcebreakerCDO-Piper.esp'
-    after:
-      - 'PiperCaitCurieDialogueOverhaul.esp'
