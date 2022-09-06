@@ -3373,7 +3373,9 @@ plugins:
         udr: 1
 
   - name: 'G36Complex.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/28443' ]
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/28443'
+        name: 'Heckler und Koch - G36 Complex'
     clean:
       - crc: 0x25DC1A8F
         util: 'FO4Edit v4.0.4'
