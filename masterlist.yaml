@@ -7091,3 +7091,13 @@ plugins:
         crc: 0x70647AA7
         util: '[FO4Edit v4.0.4](https://www.nexusmods.com/fallout4/mods/2737)'
         udr: 1
+
+  - name: 'Grasslands - Healthy.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/11267/'
+        name: 'GRASSLANDS - A Fallout 4 Grass Overhaul'
+    dirty:
+      - <<: *quickClean
+        crc: 0x4F0BB9FE
+        util: '[FO4Edit v4.0.4](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 2
