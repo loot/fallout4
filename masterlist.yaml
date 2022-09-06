@@ -6552,8 +6552,6 @@ plugins:
         util: '[FO4Edit v4.0.1](https://www.nexusmods.com/fallout4/mods/2737)'
         nav: 7
 
-# -
-
   - name: 'Pipsy.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/34304/' ]
     dirty:
