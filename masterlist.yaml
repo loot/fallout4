@@ -3372,6 +3372,12 @@ plugins:
         itm: 1
         udr: 1
 
+  - name: 'G36Complex.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/28443' ]
+    clean:
+      - crc: 0x25DC1A8F
+        util: 'FO4Edit v4.0.4'
+
 ###### Locations - Overhauls ######
   - name: 'atlanticofficesf23.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/25401/' ]
