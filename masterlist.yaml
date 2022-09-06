@@ -7082,6 +7082,16 @@ plugins:
         util: '[FO4Edit v4.0.4](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 1
 
+  - name: 'Swinging Meat Bags.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/users/3463396/'
+        name: 'Swinging Animated Meat Bags'
+    dirty:
+      - <<: *quickClean
+        crc: 0x70647AA7
+        util: '[FO4Edit v4.0.4](https://www.nexusmods.com/fallout4/mods/2737)'
+        udr: 1
+
   - name: 'Grasslands - Healthy.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/11267/'
