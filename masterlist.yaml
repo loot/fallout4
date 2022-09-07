@@ -20,6 +20,10 @@ prelude:
       type: say
       content: 'This plugin has compatibility issues with %1%. For more information, read this mod''s compatibility notes.'
 
+    - &compatIssuesWithXReadY
+      type: say
+      content: 'This plugin has compatibility issues with %1%. For more information, read the following [Compatibility Notes](%2%)'
+
     - &compatNotes
       type: say
       content: 'It is recommended that you read this mod''s [Compatibility Notes](%1%).'
@@ -245,9 +249,12 @@ common:
     name: '../d3d11.dll'
     display: '[ENBSeries FO4](http://enbdev.com/download_mod_fallout4.htm)'
 
-  - &CassicHolster
+  - &CHW
     name: 'F4SE/Plugins/ClassicHolsteredWeapons.dll'
-    display: '[Classic Holstered Weapons](https://www.nexusmods.com/fallout4/mods/46101)'
+    display: 'Classic Holstered Weapons'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/46101'
+        name: 'Classic Holstered Weapons'
 
 # Sub-Anchors
   # &alreadyInX
@@ -359,6 +366,13 @@ common:
     subs:
       - '**[Fallout 4 Script Extender](https://f4se.silverlock.org)**'
       - '**Fallout 4**'
+
+  # &compatIssuesWithXReadY
+  - &compatIssuesWithCHWReadCHW
+    <<: *compatIssuesWithXReadY
+    subs:
+      - *&CHW
+      - 'https://www.nexusmods.com/fallout4/articles/2891'
 
 bash_tags:
   - 'Deactivate'
@@ -2589,7 +2603,7 @@ plugins:
       - link: 'https://www.nexusmods.com/fallout4/mods/56115'
         name: 'Discrete Female Skeleton'
     msg:
-      - <<: 
+      - <<:
     inc:
       - 'skeletonfemaleplayer.esp'
       - 'skeletonfemaleplayerLMCC.esp'
