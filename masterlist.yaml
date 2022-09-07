@@ -20,10 +20,6 @@ prelude:
       type: say
       content: 'This plugin has compatibility issues with %1%. For more information, read this mod''s compatibility notes.'
 
-    - &compatIssuesWithXReadY
-      type: say
-      content: 'This plugin has compatibility issues with %1%. For more information, read the following [Compatibility Notes](%2%)'
-
     - &compatNotes
       type: say
       content: 'It is recommended that you read this mod''s [Compatibility Notes](%1%).'
@@ -363,13 +359,6 @@ common:
     subs:
       - '**[Fallout 4 Script Extender](https://f4se.silverlock.org)**'
       - '**Fallout 4**'
-
-  # &compatIssuesWithXReadY
-  - &compatIssuesWithCHW
-    <<: *compatIssuesWithXReadY
-    subs:
-      - '[Classic Holstered Weapons](https://www.nexusmods.com/fallout4/mods/46101)'
-      - 'https://www.nexusmods.com/fallout4/articles/2891'
 
 bash_tags:
   - 'Deactivate'
@@ -2262,7 +2251,9 @@ plugins:
       - crc: 0x9855A3B2
         util: 'FO4Edit v4.0.3g'
   - name: 'LooksMenu1stPersonViewItemsFix.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/26062' ]
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/26062/'
+        name: 'First Person Items Fix-Realistic-Immersive-Awesome'
     msg:
       - <<: *alreadyInX
         subs: [ '[Discrete Female Skeleton](https://www.nexusmods.com/fallout4/mods/56115)' ]
@@ -2595,17 +2586,19 @@ plugins:
         subs: [ '[Discrete Female Skeleton](https://www.nexusmods.com/fallout4/mods/56115/']
 
   - name: 'DiscreteFemaleSkeleton.esp'
-    url:
-      - link: 'https://www.nexusmods.com/fallout4/mods/56115'
-        name: 'Discrete Female Skeleton'
-    msg:
-      - <<: *compatIssuesWithCHW
-        condition: 'file("F4SE/Plugins/ClassicHolsteredWeapons.dll")'
     inc:
       - 'skeletonfemaleplayer.esp'
       - 'skeletonfemaleplayerLMCC.esp'
       - 'skeletonmaleplayer.esp'
       - 'skeletonmaleplayerLMCC.esp'
+    msg:
+      - type: say
+        lang: en
+        content: 'This plugin has compatibility issues with Classic Holstered Weapons. For more information, read the following [Compatibility Notes](https://www.nexusmods.com/fallout4/articles/2891)'
+        condition: 'file("F4SE/Plugins/ClassicHolsteredWeapons.dll")'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/56115'
+        name: 'Discrete Female Skeleton'
 
 ###### Gameplay ######
   - name: 'Armorsmith Extended.esp'
