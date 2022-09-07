@@ -2218,7 +2218,9 @@ plugins:
       - *alreadyInOrFixedByPRPv0_59
 
   - name: 'FirstPersonViewableItemsExpanded.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/26062/' ]
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/26062/'
+        name: 'First Person Items Fix-Realistic-Immersive-Awesome'
     msg:
       - <<: *alreadyInX
         subs: [ 'LooksMenu1stPersonViewItemsFix.esp' ]
@@ -2226,13 +2228,17 @@ plugins:
       - <<: *useVersion
         subs: [ '[Looks Menu Customization Compendium](https://www.nexusmods.com/fallout4/mods/26062/)' ]
         condition: 'active("LooksMenu Customization Compendium.esp")'
+      - <<: *alreadyInOrFixedByX
+        subs: [ 'DiscreteFemaleSkeleton.esp' ]
+        condition: 'active("DiscreteFemaleSkeleton.esp") and active("FirstPersonViewableItemsExpanded.esp")'
     clean:
       - crc: 0x9855A3B2
         util: 'FO4Edit v4.0.3g'
   - name: 'LooksMenu1stPersonViewItemsFix.esp'
+    req: 'LooksMenu Customization Compendium.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/26062' ]
     msg:
-      - <<: *alreadyInX
+      - <<: *alreadyInOrFixedByX
         subs: [ 'DiscreteFemaleSkeleton.esp' ]
         condition: 'active("DiscreteFemaleSkeleton.esp") and active("LooksMenu1stPersonViewItemsFix.esp")'
 
@@ -2942,8 +2948,7 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/25525'
         name: 'Icebreaker - Piper - Companion Dialogue Overhaul'
-    after:
-      - 'PiperCaitCurieDialogueOverhaul.esp'
+    after: [ 'PiperCaitCurieDialogueOverhaul.esp' ]
 
 ###### Gameplay - Quests ######
   - name: 'AnotherLife.esp'
