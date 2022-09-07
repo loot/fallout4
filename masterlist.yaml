@@ -5967,7 +5967,9 @@ plugins:
         util: 'FO4Edit v4.0.3'
 
   - name: 'BTInteriors_Project.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/4612/' ]
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/4612/'
+        name: 'The Beantown Interiors Project'
     dirty:
       # Version 9.3.2
       - <<: *quickClean
