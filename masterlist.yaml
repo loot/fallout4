@@ -1509,15 +1509,6 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout4/mods/48826/' ]
     group: *dynamicPatchesGroup
 
-  - name: 'DawnUI Item Sorter.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/48826/']
-    group: *dynamicPatchesGroup
-    msg:
-      - type: warn
-        content:
-          - lang: en
-            text: 'Don''t forget to run the Complex Sorter after making any changes to your load order~~!'
-
   - name: 'Smashed Patch.esp'
     url: [ 'https://github.com/matortheeternal/smash/releases/' ]
     group: *dynamicPatchesGroup
@@ -7110,36 +7101,3 @@ plugins:
         crc: 0x82C7B038
         util: '[FO4Edit v4.0.4](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 1
-
-
-
-  - name: 'IcebreakerCDO-Piper.esp'
-    after:
-      - 'PiperCaitCurieDialogueOverhaul.esp'
-
-#Dawnie's Mods
-  - name: 'Dawnies Dynamic Patch-1.esp'
-    group: 'Late Fixes & Changes'
-    dirty:
-      - <<: *quickClean
-        crc: 0xFF9879C3
-        util: '[FO4Edit v4.0.4](https://www.nexusmods.com/fallout4/mods/2737)'
-        itm: 1
-    clean:
-      - crc: 0x22888226
-        util: 'FO4Edit v4.0.4'
-  - name: 'Dawnies Weapon Patches-1.esp'
-    dirty:
-      - <<: *quickClean
-        crc: 0x233D0A95
-        util: '[FO4Edit v4.0.4](https://www.nexusmods.com/fallout4/mods/2737)'
-        itm: 18
-    clean:
-      - crc: 0xA6EDDD2E
-        util: 'FO4Edit v4.0.4'
-  - name: 'DawnUI Item Weight Patches-1.esp'
-    clean:
-      - crc: 0x684FAE60
-        util: 'FO4Edit v4.0.4'
-  - name: 'A Forest - Scrap Everything Patch.esp'
-    after: [ 'Scrap Everything - Ultimate Edition.esp' ]
