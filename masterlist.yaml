@@ -3012,8 +3012,11 @@ plugins:
     dirty:
       - <<: *quickClean
         crc: 0xCA93C583
-        util: '[FO4Edit v4.0.4c](https://www.nexusmods.com/fallout4/mods/2737)'
+        util: '[FO4Edit v4.0.4](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 4
+    clean:
+      - crc: 0xD0961F07
+        util: 'FO4Edit v4.0.4'
 
   - name: 'IcebreakerCDO-Piper.esp'
     url:
