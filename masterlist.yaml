@@ -426,10 +426,10 @@ globals:
 # ENBSeries - Latest Version
   - <<: *versionOldX
     subs: *&ENBSeries
-    condition: 'file("../d3d11.dll") and version("../d3d11.dll", "1.0.0.1", <)'
+    condition: 'version("../d3d11.dll", "1.0.0.1", <)'
   - <<: *versionUpToDateX
     subs: *&ENBSeries
-    condition: 'file("../d3d11.dll") and version("../d3d11.dll", 1.0.0.1", ==)'
+    condition: 'version("../d3d11.dll", 1.0.0.1", ==)'
 
 # F4SE Plugins - Compatibility
   - <<: *versionXIncY
