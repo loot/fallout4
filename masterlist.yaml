@@ -2229,6 +2229,12 @@ plugins:
     clean:
       - crc: 0x9855A3B2
         util: 'FO4Edit v4.0.3g'
+  - name: 'LooksMenu1stPersonViewItemsFix.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/26062' ]
+    msg:
+      - <<: *alreadyInX
+        subs: [ 'DiscreteFemaleSkeleton.esp' ]
+        condition: 'active("DiscreteFemaleSkeleton.esp") and active("LooksMenu1stPersonViewItemsFix.esp")'
 
   - name: 'Flicker Fixer.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/35720/' ]
@@ -2931,6 +2937,13 @@ plugins:
         crc: 0xCA93C583
         util: '[FO4Edit v4.0.4c](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 4
+
+  - name: 'IcebreakerCDO-Piper.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/25525'
+        name: 'Icebreaker - Piper - Companion Dialogue Overhaul'
+    after:
+      - 'PiperCaitCurieDialogueOverhaul.esp'
 
 ###### Gameplay - Quests ######
   - name: 'AnotherLife.esp'
