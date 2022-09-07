@@ -241,6 +241,14 @@ common:
     name: '../f4sevr_loader.exe'
     display: '[F4SE VR](https://f4se.silverlock.org)'
 
+  - &ENBSeries
+    name: '../d3d11.dll'
+    display: '[ENBSeries FO4](http://enbdev.com/download_mod_fallout4.htm)'
+
+  - &CHW
+    name: 'F4SE/Plugins/ClassicHolsteredWeapons.dll'
+    display: '[Classic Holstered Weapons](https://www.nexusmods.com/fallout4/mods/46101)'
+
 # Sub-Anchors
   # &alreadyInX
   - &alreadyInUFO4P
@@ -414,6 +422,9 @@ globals:
     condition: 'readable("../Fallout4.exe") and version("../Fallout4.exe", "1.10.114.0", ==) and not version("../f4se_loader.exe", "0.0.6.13", ==) and file("../f4se_loader.exe")'
   - <<: *versionF4SEIncFO4
     condition: 'readable("../Fallout4.exe") and version("../Fallout4.exe", "1.10.111.0", ==) and not version("../f4se_loader.exe", "0.0.6.12", ==) and file("../f4se_loader.exe")'
+
+# ENB - Latest Version
+  - <<: *versionOldX
 
 # F4SE Plugins - Compatibility
   - <<: *versionXIncY
@@ -2229,7 +2240,7 @@ plugins:
         subs: [ '[Looks Menu Customization Compendium](https://www.nexusmods.com/fallout4/mods/26062/)' ]
         condition: 'active("LooksMenu Customization Compendium.esp")'
       - <<: *alreadyInOrFixedByX
-        subs: [ 'DiscreteFemaleSkeleton.esp' ]
+        subs: [ '[Discrete Female Skeleton](https://www.nexusmods.com/fallout4/mods/56115)' ]
         condition: 'active("DiscreteFemaleSkeleton.esp") and active("FirstPersonViewableItemsExpanded.esp")'
     clean:
       - crc: 0x9855A3B2
@@ -2239,7 +2250,7 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout4/mods/26062' ]
     msg:
       - <<: *alreadyInOrFixedByX
-        subs: [ 'DiscreteFemaleSkeleton.esp' ]
+        subs: [ '[Discrete Female Skeleton](https://www.nexusmods.com/fallout4/mods/56115)' ]
         condition: 'active("DiscreteFemaleSkeleton.esp") and active("LooksMenu1stPersonViewItemsFix.esp")'
 
   - name: 'Flicker Fixer.esp'
@@ -2309,16 +2320,26 @@ plugins:
     group: *texturesGroup
 
   - name: 'TacticalTablet.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/55346/' ]
+    url:
+      - link: 'http://www.modsfallout4.com/tactical-tablet/'
+        name: 'Tactical Tablet (modsfallout4.com)'
     inc:
       - 'AutoUnequipPipboy.esm'
       - 'HidePipboy.esp'
       - 'PipboyRemover.esp'
       - 'Pipboy Zero.esp'
+      - 'PIP-Pad.esp'
     msg: [ *requiresMCM ]
     clean:
       - crc: 0x54C08EA5
         util: 'FO4Edit v4.0.4b'
+
+  - name: 'PIP-Pad.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/21953/'
+        name: 'PIP-Pad'
+    inc:
+      - 'TacticalTablet.esp'
 
 ###### Audiovisual - Sound & Music ######
   - name: 'LostOldiesRadio.esp'
@@ -2528,6 +2549,47 @@ plugins:
         crc: 0xA3B23742
         util: '[FO4Edit v4.0.4](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 118
+
+  - name: 'skeletonfemaleplayer.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/40866'
+        name: 'Gender Specific Skeletons'
+    msg:
+      - <<: *useInstead
+        subs: [ '[Discrete Female Skeleton](https://www.nexusmods.com/fallout4/mods/56115/']
+  - name: 'skeletonfemaleplayerLMCC.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/40866'
+    msg:
+      - <<: *useInstead
+        subs: [ '[Discrete Female Skeleton](https://www.nexusmods.com/fallout4/mods/56115/']
+        name: 'Gender Specific Skeletons'
+  - name: 'skeletonmaleplayer.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/40866'
+        name: 'Gender Specific Skeletons'
+    msg:
+      - <<: *useInstead
+        subs: [ '[Discrete Female Skeleton](https://www.nexusmods.com/fallout4/mods/56115/']
+  - name: 'skeletonmaleplayerLMCC.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/40866'
+        name: 'Gender Specific Skeletons'
+    msg:
+      - <<: *useInstead
+        subs: [ '[Discrete Female Skeleton](https://www.nexusmods.com/fallout4/mods/56115/']
+
+  - name: 'DiscreteFemaleSkeleton.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/56115'
+        name: 'Discrete Female Skeleton'
+    msg:
+      - <<: 
+    inc:
+      - 'skeletonfemaleplayer.esp'
+      - 'skeletonfemaleplayerLMCC.esp'
+      - 'skeletonmaleplayer.esp'
+      - 'skeletonmaleplayerLMCC.esp'
 
 ###### Gameplay ######
   - name: 'Armorsmith Extended.esp'
