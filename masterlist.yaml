@@ -245,9 +245,9 @@ common:
     name: '../d3d11.dll'
     display: 'ENBSeries ([FO4](http://enbdev.com/download_mod_fallout4.htm))'
 
-  - &CHW
-    name: 'F4SE/Plugins/ClassicHolsteredWeapons.dll'
-    display: '[Classic Holstered Weapons](https://www.nexusmods.com/fallout4/mods/46101)'
+#  - &CHW
+#    name: 'F4SE/Plugins/ClassicHolsteredWeapons.dll'
+#    display: '[Classic Holstered Weapons](https://www.nexusmods.com/fallout4/mods/46101)'
 
 # Sub-Anchors
   # &alreadyInX
@@ -425,10 +425,10 @@ globals:
 
 # ENB - Latest Version
   - <<: *versionOldX
-    subs: [ '**ENBSeries ([FO4](http://enbdev.com/download_mod_fallout4.htm))**' ]
+    subs: [ '&ENBSeries' ]
     condition: 'file("../d3d11.dll") and version("../d3d11.dll", "1.0.0.1", <)'
   - <<: *versionUpToDateX
-    subs: [ 'ENBSeries **([FO4](http://enbdev.com/download_mod_fallout4.htm))**' ]
+    subs: [ '&ENBSeries' ]
     condition: 'file("../d3d11.dll") and version("../d3d11.dll", 1.0.0.1", ==)'
 
 # F4SE Plugins - Compatibility
