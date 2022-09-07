@@ -368,7 +368,7 @@ common:
   - &compatIssuesWithCHW
     <<: *compatIssuesWithXReadY
     subs:
-      - *&CHW
+      - *CHW
       - 'https://www.nexusmods.com/fallout4/articles/2891'
 
 bash_tags:
@@ -2600,7 +2600,7 @@ plugins:
       - link: 'https://www.nexusmods.com/fallout4/mods/56115'
         name: 'Discrete Female Skeleton'
     msg:
-      - <<: *&compatIssuesWithCHW
+      - <<: *compatIssuesWithCHW
         condition: 'readable("F4SE/Plugins/ClassicHolsteredWeapons.dll") and file("F4SE/Plugins/ClassicHolsteredWeapons.dll"'
     inc:
       - 'skeletonfemaleplayer.esp'
