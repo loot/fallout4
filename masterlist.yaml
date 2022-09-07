@@ -436,11 +436,11 @@ globals:
 
 # ENBSeries - Latest Version
   - <<: *versionOldX
-    subs: *&ENBSeries
-    condition: 'version("../d3d11.dll", "1.0.0.1", <)'
+    subs: [ '[ENBSeries FO4](http://enbdev.com/download_mod_fallout4.htm)' ]
+    condition: 'file("../d3d11.dll") and version("../d3d11.dll", "1.0.0.1", <)'
   - <<: *versionUpToDateX
-    subs: *&ENBSeries
-    condition: 'version("../d3d11.dll", 1.0.0.1", ==)'
+    subs: [ '[ENBSeries FO4](http://enbdev.com/download_mod_fallout4.htm)']
+    condition: 'file("../d3d11.dll") and version("../d3d11.dll", "1.0.0.1", ==)'
 
 # F4SE Plugins - Compatibility
   - <<: *versionXIncY
@@ -2255,17 +2255,16 @@ plugins:
       - <<: *useVersion
         subs: [ '[Looks Menu Customization Compendium](https://www.nexusmods.com/fallout4/mods/26062/)' ]
         condition: 'active("LooksMenu Customization Compendium.esp")'
-      - <<: *alreadyInOrFixedByX
+      - <<: *alreadyInX
         subs: [ '[Discrete Female Skeleton](https://www.nexusmods.com/fallout4/mods/56115)' ]
         condition: 'active("DiscreteFemaleSkeleton.esp") and active("FirstPersonViewableItemsExpanded.esp")'
     clean:
       - crc: 0x9855A3B2
         util: 'FO4Edit v4.0.3g'
   - name: 'LooksMenu1stPersonViewItemsFix.esp'
-    req: 'LooksMenu Customization Compendium.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/26062' ]
     msg:
-      - <<: *alreadyInOrFixedByX
+      - <<: *alreadyInX
         subs: [ '[Discrete Female Skeleton](https://www.nexusmods.com/fallout4/mods/56115)' ]
         condition: 'active("DiscreteFemaleSkeleton.esp") and active("LooksMenu1stPersonViewItemsFix.esp")'
 
@@ -2601,7 +2600,7 @@ plugins:
         name: 'Discrete Female Skeleton'
     msg:
       - <<: *compatIssuesWithCHW
-        condition: 'file("F4SE/Plugins/ClassicHolsteredWeapons.dll"'
+        condition: 'file("F4SE/Plugins/ClassicHolsteredWeapons.dll")'
     inc:
       - 'skeletonfemaleplayer.esp'
       - 'skeletonfemaleplayerLMCC.esp'
