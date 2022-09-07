@@ -243,7 +243,7 @@ common:
 
   - &ENBSeries
     name: '../d3d11.dll'
-    display: '[ENBSeries FO4](http://enbdev.com/download_mod_fallout4.htm)'
+    display: 'ENBSeries ([FO4](http://enbdev.com/download_mod_fallout4.htm))'
 
   - &CHW
     name: 'F4SE/Plugins/ClassicHolsteredWeapons.dll'
@@ -425,6 +425,11 @@ globals:
 
 # ENB - Latest Version
   - <<: *versionOldX
+    subs: [ '**ENBSeries ([FO4](http://enbdev.com/download_mod_fallout4.htm))**' ]
+    condition: 'version("../d3d11.dll", "1.0.0.1", <) and file("../Fallout4.exe")'
+  - <<: *versionUpToDateX
+    subs: [ 'ENBSeries **([FO4](http://enbdev.com/download_mod_fallout4.htm))**' ]
+    condition: 'version("../d3d11.dll", 1.0.0.1", ==) and file("../Fallout4.exe")'
 
 # F4SE Plugins - Compatibility
   - <<: *versionXIncY
