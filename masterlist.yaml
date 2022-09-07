@@ -439,7 +439,7 @@ globals:
     subs: [ '[ENBSeries FO4](http://enbdev.com/download_mod_fallout4.htm)' ]
     condition: 'file("../d3d11.dll") and version("../d3d11.dll", "1.0.0.1", <)'
   - <<: *versionUpToDateX
-    subs: [ '[ENBSeries FO4](http://enbdev.com/download_mod_fallout4.htm)']
+    subs: [ '[ENBSeries FO4](http://enbdev.com/download_mod_fallout4.htm)' ]
     condition: 'file("../d3d11.dll") and version("../d3d11.dll", "1.0.0.1", ==)'
 
 # F4SE Plugins - Compatibility
