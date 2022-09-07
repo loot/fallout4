@@ -251,10 +251,7 @@ common:
 
   - &CHW
     name: 'F4SE/Plugins/ClassicHolsteredWeapons.dll'
-    display: 'Classic Holstered Weapons'
-    url:
-      - link: 'https://www.nexusmods.com/fallout4/mods/46101'
-        name: 'Classic Holstered Weapons'
+    display: '[Classic Holstered Weapons](https://www.nexusmods.com/fallout4/mods/46101)'
 
 # Sub-Anchors
   # &alreadyInX
@@ -368,7 +365,7 @@ common:
       - '**Fallout 4**'
 
   # &compatIssuesWithXReadY
-  - &compatIssuesWithCHWReadCHW
+  - &compatIssuesWithCHW
     <<: *compatIssuesWithXReadY
     subs:
       - *&CHW
@@ -2603,7 +2600,8 @@ plugins:
       - link: 'https://www.nexusmods.com/fallout4/mods/56115'
         name: 'Discrete Female Skeleton'
     msg:
-      - <<:
+      - <<: *&compatIssuesWithCHW
+        condition: 'readable("F4SE/Plugins/ClassicHolsteredWeapons.dll") and file("F4SE/Plugins/ClassicHolsteredWeapons.dll"'
     inc:
       - 'skeletonfemaleplayer.esp'
       - 'skeletonfemaleplayerLMCC.esp'
