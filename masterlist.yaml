@@ -2584,6 +2584,9 @@ plugins:
         crc: 0x03EFA582
         util: '[FO4Edit v4.0.4c](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 3
+    clean:
+      - crc: 0x1EB25320
+        util: 'FO4Edit v4.0.4'
   - name: 'SameSexMale.esp'
     dirty:
       - <<: *quickClean
