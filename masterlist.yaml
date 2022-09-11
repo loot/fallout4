@@ -7138,3 +7138,12 @@ plugins:
         crc: 0x41510FF3
         util: '[FO4Edit v4.0.4](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 18
+
+  - name: 'DLC items to manufacturing.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/18345/'
+        name: 'Manufacturing Extended Expanded'
+    after: [ 'ManufacturingExtended.esp' ]
+    clean:
+      - crc: 0xB1359D8F
+        util: 'FO4Edit v4.0.4'
