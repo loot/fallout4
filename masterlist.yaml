@@ -2529,6 +2529,7 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/63998/'
         name: 'This Settlement Does Not Need Your Help - BS Defence Redone'
+    req: [ *F4SE ]
 
   - name: 'MojaveImports.esp'
     url:
