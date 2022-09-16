@@ -2526,6 +2526,9 @@ plugins:
     group: *underridesGroup
 
   - name: 'Better_Settlement_Defence.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/63998/'
+        name: 'This Settlement Does Not Need Your Help - BS Defence Redone'
 
   - name: 'MojaveImports.esp'
     url:
