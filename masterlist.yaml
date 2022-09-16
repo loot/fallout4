@@ -1760,6 +1760,9 @@ plugins:
       - link: 'https://www.nexusmods.com/fallout4/mods/10960/'
         name: 'Recruitable NPC Dialogue Fixes and Tweaks'
     group: *fixesGroup
+    clean:
+      - crc: 0xD151F754
+        util: 'FO4Edit v4.0.4c'
 
   - name: 'Remove Rads in Survival Fix.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/15392/' ]
