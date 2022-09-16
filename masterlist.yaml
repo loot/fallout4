@@ -2685,7 +2685,9 @@ plugins:
         itm: 2
 
   - name: 'Realistic Survival Damage.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/333/' ]
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/333/'
+        name: 'Realistic Survival Damage'
     msg:
       - type: error
         content:
