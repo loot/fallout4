@@ -1621,18 +1621,6 @@ plugins:
       - <<: *alreadyInUFO4P
         condition: 'active("Unofficial Fallout 4 Patch.esp") and version("Unofficial Fallout 4 Patch.esp", "2.0.2", >=)'
 
-  - name: 'ColterFix.esp'
-    url:
-      - link: 'https://www.nexusmods.com/fallout4/mods/59323/'
-        name: 'Overboss Colter Fix'
-    msg:
-      - type: warn
-        content:
-          - lang: en
-            text: 'This file is deprecated and should no longer be used.'
-      - <<: *useInstead
-        subs: [ '[Unofficial Fallout 4 Patch](https://www.nexusmods.com/fallout4/mods/4598/) v2.1.4+' ]
-
   - name: 'Combat Armor Weight Fix.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/11541/' ]
     group: *fixesGroup
