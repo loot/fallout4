@@ -2698,14 +2698,14 @@ plugins:
       - crc: 0xB8EADAD7
         util: 'FO4Edit v4.0.4'
 
-  - name: 'Survival((50|25)LESS|Normal|(50|100|150|200|250|300|350|400|450|500)more)EnemyDamage\.esp'
+  - name: 'Survival\d{0,3}(LESS|more|Normal)EnemyDamage\.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/222/' ]
     inc: [ 'Realistic Survival Damage.esp' ]
     msg:
       - <<: *useOnlyOneX
         condition: 'many("Survival((50|25)LESS|Normal|(50|100|150|200|250|300|350|400|450|500)more)EnemyDamage\.esp")'
         subs: [ 'Survival X EnemyDamage.esp' ]
-  - name: 'Survival((90|75|65|50|25|10)LESS|Normal|(10|20|30|40|50|60|70|80|90|100|150|200)more)PCDamage\.esp'
+  - name: 'Survival\d{0,3}(LESS|more|Normal)PCDamage\.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/222/' ]
     inc: [ 'Realistic Survival Damage.esp' ]
     msg:
