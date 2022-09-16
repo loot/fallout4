@@ -2525,6 +2525,8 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout4/mods/18547/' ]
     group: *underridesGroup
 
+  - name: 'Better_Settlement_Defence.esp'
+
   - name: 'MojaveImports.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/3793/'
