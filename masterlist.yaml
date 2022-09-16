@@ -1756,7 +1756,9 @@ plugins:
     msg: [ *alreadyInOrFixedByFO4v1_3_47 ]
 
   - name: 'Recruitable NPC Dialogue Fixes.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/11083/' ]
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/10960/'
+        name: 'Recruitable NPC Dialogue Fixes and Tweaks'
     group: *fixesGroup
     msg:
       - type: say
