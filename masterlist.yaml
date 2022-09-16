@@ -2698,6 +2698,34 @@ plugins:
       - crc: 0xB8EADAD7
         util: 'FO4Edit v4.0.4'
 
+  - name: '(\d(\.\d{1,2})?x?|Survival\d{0,3}(LESS|more|Normal))(Enemy|PC|Player)Damage\.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/222/'
+        name: 'Create Your Own Difficulty Rebalance'
+    inc: [ 'Realistic Survival Damage.esp' ]
+  - name: '\d(\.\d{1,2})?xEnemyDamage\.esp'
+    msg:
+      - <<: *useOnlyOneX
+        subs: [ 'Create Your Own Difficulty Rebalance Enemy ESP' ]
+        condition: 'many("\d(\.\d{1,2})?xEnemyDamage\.esp")'
+  - name: '\d(\.\d{1,2})?x?PlayerDamage\.esp'
+    msg:
+      - <<: *useOnlyOneX
+        subs: [ 'Create Your Own Difficulty Rebalance Player ESP' ]
+        condition: 'many("\d(\.\d{1,2})?x?PlayerDamage\.esp")'
+  - name: 'Survival\d{0,3}(LESS|more|Normal)(Enemy|PC)Damage\.esp'
+    msg: [ *obsolete ]
+  - name: 'Survival\d{0,3}(LESS|more|Normal)EnemyDamage\.esp'
+    msg:
+      - <<: *useOnlyOneX
+        subs: [ 'Create Your Own Survival Rebalance Enemy ESP' ]
+        condition: 'many("Survival\d{0,3}(LESS|more|Normal)EnemyDamage\.esp")'
+  - name: 'Survival\d{0,3}(LESS|more|Normal)PCDamage\.esp'
+    msg:
+      - <<: *useOnlyOneX
+        subs: [ 'Create Your Own Survival Rebalance PC ESP' ]
+        condition: 'many("Survival\d{0,3}(LESS|more|Normal)PCDamage\.esp")'
+
 ###### Gameplay - Crafting, Harvesting & Scrapping ######
   - name: 'ECO.esp'
     url:
@@ -4400,20 +4428,7 @@ plugins:
       - 'LongerDistanceLightsWithPipBoyShadows.esp'
       - name: 'PipBoyShadows.esp'
         display: '"PipBoyShadows.esp" is included in "LongerDistanceLightsWithPipBoyShadows - No PipShadows.esp".'
-  - name: 'Survival((90|75|65|50|25|10)LESS|Normal|(10|20|30|40|50|60|70|80|90|100|150|200)more)PCDamage\.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/222/' ]
-    inc: [ 'Realistic Survival Damage.esp' ]
-    msg:
-      - <<: *useOnlyOneX
-        condition: 'many("Survival((90|75|65|50|25|10)LESS|Normal|(10|20|30|40|50|60|70|80|90|100|150|200)more)PCDamage\.esp")'
-        subs: [ 'Survival X PCDamage.esp' ]
-  - name: 'Survival((50|25)LESS|Normal|(50|100|150|200|250|300|350|400|450|500)more)EnemyDamage\.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/222/' ]
-    inc: [ 'Realistic Survival Damage.esp' ]
-    msg:
-      - <<: *useOnlyOneX
-        condition: 'many("Survival((50|25)LESS|Normal|(50|100|150|200|250|300|350|400|450|500)more)EnemyDamage\.esp")'
-        subs: [ 'Survival X EnemyDamage.esp' ]
+
   - name: 'Realistic Survival Damage.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/333/' ]
     msg:
