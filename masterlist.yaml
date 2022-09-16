@@ -2688,6 +2688,15 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/333/'
         name: 'Realistic Survival Damage'
+    dirty:
+      - <<: *quickClean
+        crc: 0xD48D7292
+        util: '[FO4Edit v4.0.4c](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 1
+    clean:
+      # Legendary Survival
+      - crc: 0x79A60AF4
+        util: 'FO4Edit v4.0.4c'
 
   - name: 'SKKSettlementAttackSystem(Markers)?\.esp'
     url:
