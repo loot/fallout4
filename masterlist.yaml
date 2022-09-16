@@ -2698,6 +2698,10 @@ plugins:
       - crc: 0xB8EADAD7
         util: 'FO4Edit v4.0.4'
 
+  - name: '(\d(\.\d{1,2})?x?|Survival\d{0,3}(LESS|more|Normal))(Enemy|PC|Player)Damage\.esp'
+  - name: '\d(\.\d{1,2})?xEnemyDamage\.esp'
+  - name: '\d(\.\d{1,2})?x?PlayerDamage\.esp'
+  - name: 'Survival\d{0,3}(LESS|more|Normal)(Enemy|PC)Damage\.esp'
   - name: 'Survival\d{0,3}(LESS|more|Normal)EnemyDamage\.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/222/' ]
     inc: [ 'Realistic Survival Damage.esp' ]
