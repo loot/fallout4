@@ -2525,6 +2525,16 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout4/mods/18547/' ]
     group: *underridesGroup
 
+  - name: 'Better_Settlement_Defence.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/63998/'
+        name: 'This Settlement Does Not Need Your Help - BS Defence Redone'
+    req: [ *F4SE ]
+    msg: [ *requiresMCM ]
+    clean:
+      - crc: 0xDE92E151
+        util: 'FO4Edit v4.0.4c'
+
   - name: 'MojaveImports.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/3793/'
