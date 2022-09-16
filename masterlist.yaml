@@ -2704,6 +2704,10 @@ plugins:
         name: 'Create Your Own Difficulty Rebalance'
     inc: [ 'Realistic Survival Damage.esp' ]
   - name: '\d(\.\d{1,2})?xEnemyDamage\.esp'
+    msg:
+      - <<: *useOnlyOneX
+        subs: [ 'Create Your Own Difficulty Rebalance Enemy ESP' ]
+        condition: 'many("\d(\.\d{1,2})?xEnemyDamage\.esp")'
   - name: '\d(\.\d{1,2})?x?PlayerDamage\.esp'
   - name: 'Survival\d{0,3}(LESS|more|Normal)(Enemy|PC)Damage\.esp'
     msg: [ *obsolete ]
