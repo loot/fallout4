@@ -2706,6 +2706,7 @@ plugins:
   - name: '\d(\.\d{1,2})?xEnemyDamage\.esp'
   - name: '\d(\.\d{1,2})?x?PlayerDamage\.esp'
   - name: 'Survival\d{0,3}(LESS|more|Normal)(Enemy|PC)Damage\.esp'
+    msg: [ *obsolete ]
   - name: 'Survival\d{0,3}(LESS|more|Normal)EnemyDamage\.esp'
     msg:
       - <<: *useOnlyOneX
