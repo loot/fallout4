@@ -2531,6 +2531,9 @@ plugins:
         name: 'This Settlement Does Not Need Your Help - BS Defence Redone'
     req: [ *F4SE ]
     msg: [ *requiresMCM ]
+    clean:
+      - crc: 0xDE92E151
+        util: 'FO4Edit v4.0.4c'
 
   - name: 'MojaveImports.esp'
     url:
