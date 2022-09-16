@@ -2709,13 +2709,13 @@ plugins:
   - name: 'Survival\d{0,3}(LESS|more|Normal)EnemyDamage\.esp'
     msg:
       - <<: *useOnlyOneX
-        condition: 'many("Survival((50|25)LESS|Normal|(50|100|150|200|250|300|350|400|450|500)more)EnemyDamage\.esp")'
-        subs: [ 'Survival X EnemyDamage.esp' ]
+        subs: [ 'Create Your Own Survival Rebalance Enemy ESP' ]
+        condition: 'many("Survival\d{0,3}(LESS|more|Normal)EnemyDamage\.esp")'
   - name: 'Survival\d{0,3}(LESS|more|Normal)PCDamage\.esp'
     msg:
       - <<: *useOnlyOneX
-        condition: 'many("Survival((90|75|65|50|25|10)LESS|Normal|(10|20|30|40|50|60|70|80|90|100|150|200)more)PCDamage\.esp")'
-        subs: [ 'Survival X PCDamage.esp' ]
+        subs: [ 'Create Your Own Survival Rebalance PC ESP' ]
+        condition: 'many("Survival\d{0,3}(LESS|more|Normal)PCDamage\.esp")'
 
 ###### Gameplay - Crafting, Harvesting & Scrapping ######
   - name: 'ECO.esp'
