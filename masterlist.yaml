@@ -1701,19 +1701,6 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout4/mods/11083/' ]
     group: *fixesGroup
     msg: [ *alreadyInUFO4P ]
-  - name: 'Recruitable NPC Dialogue Fixes.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/11083/' ]
-    group: *fixesGroup
-    msg:
-      - type: say
-        content:
-          - lang: en
-            text: 'The bug fixes of this mod are already included in the Unofficial Fallout 4 Patch. The mod still contains additional tweaks that you may wish to keep, so keep or remove the mod at your discretion.'
-          - lang: da
-            text: "Fejlrettelserne i denne mod er allerede inkluderet i Unofficial Fallout 4 Patch. Denne mod har dog også yderligere justeringer som du måske vil beholde, så behold eller fjern mod'en efter eget valg."
-          - lang: de
-            text: 'Die Fehlerbehebungen dieser Mod sind bereits enthalten im Unofficial Fallout 4 Patch. Die Mod enthält dennoch weitere Anpassungen die Sie womöglich behalten möchten, also behalten oder löschen Sie die Mod nach Ihrer Diskretion.'
-        condition: 'active("Unofficial Fallout 4 Patch.esp")'
 
   - name: 'MakanarBigLeaguesFix.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/6185/' ]
@@ -1767,6 +1754,15 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout4/mods/6389/' ]
     group: *fixesGroup
     msg: [ *alreadyInOrFixedByFO4v1_3_47 ]
+
+  - name: 'Recruitable NPC Dialogue Fixes.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/10960/'
+        name: 'Recruitable NPC Dialogue Fixes and Tweaks'
+    group: *fixesGroup
+    clean:
+      - crc: 0xD151F754
+        util: 'FO4Edit v4.0.4c'
 
   - name: 'Remove Rads in Survival Fix.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/15392/' ]
