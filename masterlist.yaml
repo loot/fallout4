@@ -4942,16 +4942,6 @@ plugins:
       - crc: 0x73129EB2
         util: 'FO4Edit v4.0.3f'
 
-  - name: 'Better Settlement Defence.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/20137/' ]
-    msg:
-      - type: error
-        content:
-          - lang: en
-            text: 'This mods has a script conflict with the Unofficial Fallout 4 Patch. Be sure to get the UFO4P patched version from [the mod page](https://www.nexusmods.com/fallout4/mods/20137).'
-          - lang: de
-            text: 'Dieser Mod hat einen Skript Konflikt mit dem Unofficial Fallout 4 Patch. Stellen Sie sicher die UFO4P-gepatchte Version von [dessen Mod Seite](https://www.nexusmods.com/fallout4/mods/20137) zu bekommen.'
-        condition: 'active("Unofficial Fallout 4 Patch.esp") and checksum("Better Settlement Defence.esp", DB37AB92)'
   - name: 'Give Me That Bottle.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/13193/' ]
     # CRC checksum  Version   Compatibility
