@@ -2684,6 +2684,20 @@ plugins:
         util: '[FO4Edit v4.0.4](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 2
 
+  - name: 'Realistic Survival Damage.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/333/'
+        name: 'Realistic Survival Damage'
+    dirty:
+      - <<: *quickClean
+        crc: 0xD48D7292
+        util: '[FO4Edit v4.0.4c](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 1
+    clean:
+      # Legendary Survival
+      - crc: 0x79A60AF4
+        util: 'FO4Edit v4.0.4c'
+
   - name: 'SKKSettlementAttackSystem(Markers)?\.esp'
     url:
       - 'https://bethesda.net/en/mods/fallout4/mod-detail/4096084/'
@@ -4428,19 +4442,6 @@ plugins:
       - 'LongerDistanceLightsWithPipBoyShadows.esp'
       - name: 'PipBoyShadows.esp'
         display: '"PipBoyShadows.esp" is included in "LongerDistanceLightsWithPipBoyShadows - No PipShadows.esp".'
-
-  - name: 'Realistic Survival Damage.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/333/' ]
-    msg:
-      - type: error
-        content:
-          - lang: en
-            text: 'Realistic Survival Damage.esp alters the same game variables as the Survival X PC/EnemyDamage.esps. You should use either one or the other.'
-          - lang: da
-            text: 'Realistic Survival Damage.esp ændrer de samme spilværdier som Survival X PC/EnemyDamage.esp’erne. Du bør bruge enten den ene eller den anden mod.'
-          - lang: de
-            text: 'Realistic Survival Damage.esp ändert die selben Spiel-Variablen wie die Survival X PC/EnemyDamage.esps. Sie sollten nur eine der beiden verwenden.'
-        condition: 'file("Survival((90|75|65|50|25|10)LESS|Normal|(10|20|30|40|50|60|70|80|90|100|150|200|250|300|350|400|450|500)more)(PC|Enemy)Damage\.esp")'
 
   - name: 'MK_Agony.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/25600/' ]
