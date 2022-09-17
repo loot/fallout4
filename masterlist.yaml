@@ -2159,6 +2159,7 @@ plugins:
         condition: 'active("PRP.esp") and version("PRP.esp", "0.57", >=)'
 
 ###### AudioVisual ######
+  - name: 'ConcealedArmor\.es[mp]'
   - name: 'ConcealedArmor.esm'
     url: [ 'https://www.nexusmods.com/fallout4/mods/6434/' ]
     inc: [ 'Z_Horizon.esp' ]
@@ -2176,6 +2177,7 @@ plugins:
           - 'ArmorKeywords.esm'
           - 'https://www.nexusmods.com/fallout4/mods/2228/'
         condition: 'active("ArmorKeywords.esm") and checksum("ArmorKeywords.esm", 25A1BAA8)'
+  - name: 'ConcealedArmor.esp'
 
   - name: 'VotW.*\.es[lmp]'
     url:
