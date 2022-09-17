@@ -2160,8 +2160,10 @@ plugins:
 
 ###### AudioVisual ######
   - name: 'ConcealedArmor\.es[mp]'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/6434/'
+        name: 'Concealed Armors'
   - name: 'ConcealedArmor.esm'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/6434/' ]
     inc: [ 'Z_Horizon.esp' ]
     msg:
       - <<: *alreadyInX
