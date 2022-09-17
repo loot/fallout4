@@ -2169,7 +2169,13 @@ plugins:
       - <<: *alreadyInX
         subs: [ 'Armorsmith Extended v4.0+' ]
         condition: 'active("Armorsmith Extended.esp") and version("Armorsmith Extended.esp", "4.0", >=)'
+    clean:
+      - crc: 0x51FA24EA
+        util: 'FO4Edit v4.0.4c'
   - name: 'ConcealedArmor.esp'
+    clean:
+      - crc: 0x5BB8787F
+        util: 'FO4Edit v4.0.4c'
 
   - name: 'VotW.*\.es[lmp]'
     url:
