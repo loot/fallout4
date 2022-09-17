@@ -1527,6 +1527,8 @@ plugins:
     group: *frameworksGroup
     msg:
       - <<: *obsolete
+        type: error
+        subs: [ '[Armor and Weapon Keywords Community Resource (AWKCR)](https://www.nexusmods.com/fallout4/mods/6091/)' ]
         condition: '(version("ArmorKeywords.esm", "8.6.0", <) or version("ArmorKeywords.esm", "8.51", ==)) and file("DLCCoast.esm") and file("DLCNukaWorld.esm") and file("DLCRobot.esm") and file("DLCworkshop02.esm") and file("DLCworkshop03.esm")'
     tag:
       - Delev
