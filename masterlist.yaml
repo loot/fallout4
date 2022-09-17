@@ -2159,6 +2159,24 @@ plugins:
         condition: 'active("PRP.esp") and version("PRP.esp", "0.57", >=)'
 
 ###### AudioVisual ######
+  - name: 'ConcealedArmor.esm'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/6434/' ]
+    inc: [ 'Z_Horizon.esp' ]
+    msg:
+      - <<: *alreadyInX
+        subs: [ 'Armorsmith Extended v4.0+' ]
+        condition: 'active("Armorsmith Extended.esp") and version("Armorsmith Extended.esp", "4.0", >=)'
+      - type: warn
+        content:
+          - lang: en
+            text: 'An out of date version of %1% is included with this mod. This should be removed and replaced with a newer version from [here](%2%).'
+          - lang: de
+            text: 'Eine veraltete Version von %1% ist in dieser Mod enthalten. Diese sollte entfernt and mit einer neuer Version von [hier](%2%) ersetzt werden.'
+        subs:
+          - 'ArmorKeywords.esm'
+          - 'https://www.nexusmods.com/fallout4/mods/2228/'
+        condition: 'active("ArmorKeywords.esm") and checksum("ArmorKeywords.esm", 25A1BAA8)'
+
   - name: 'VotW.*\.es[lmp]'
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/24435/'
@@ -5003,23 +5021,6 @@ plugins:
         util: '[FO4Edit v4.0.2f](https://www.nexusmods.com/fallout4/mods/2737)'
         nav: 5
 
-  - name: 'ConcealedArmor.esm'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/6434/' ]
-    inc: [ 'Z_Horizon.esp' ]
-    msg:
-      - <<: *alreadyInX
-        subs: [ 'Armorsmith Extended v4.0+' ]
-        condition: 'active("Armorsmith Extended.esp") and version("Armorsmith Extended.esp", "4.0", >=)'
-      - type: warn
-        content:
-          - lang: en
-            text: 'An out of date version of %1% is included with this mod. This should be removed and replaced with a newer version from [here](%2%).'
-          - lang: de
-            text: 'Eine veraltete Version von %1% ist in dieser Mod enthalten. Diese sollte entfernt and mit einer neuer Version von [hier](%2%) ersetzt werden.'
-        subs:
-          - 'ArmorKeywords.esm'
-          - 'https://www.nexusmods.com/fallout4/mods/2228/'
-        condition: 'active("ArmorKeywords.esm") and checksum("ArmorKeywords.esm", 25A1BAA8)'
   - name: 'SettlementAttacksBeyond.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/12892/' ]
     clean:
