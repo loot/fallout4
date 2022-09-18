@@ -2657,13 +2657,11 @@ plugins:
         name: 'Turret Control Panel - TCP'
   - name: 'TurretControlPanel.esp'
     req: [ *F4SE ]
-    inc: [ 'NoMoreRandomTurretMks.esp' ]
     clean:
       # Version 3.0.0
       - crc: 0x08D18DF0
         util: 'FO4Edit v3.2.4'
   - name: 'NoMoreRandomTurretMks.esp'
-    inc: [ 'TurretControlPanel.esp' ]
     clean:
       # Version 2.3.0
       - crc: 0x9AFF8E08
