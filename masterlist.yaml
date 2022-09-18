@@ -2659,9 +2659,8 @@ plugins:
     req: [ *F4SE ]
     msg: [ *requiresMCM ]
     clean:
-      # Version 3.0.0
-      - crc: 0x08D18DF0
-        util: 'FO4Edit v3.2.4'
+      - crc: 0xD85B2D6F
+        util: 'FO4Edit v4.0.4c'
   - name: 'NoMoreRandomTurretMks.esp'
     msg: [ *obsolete ]
 
