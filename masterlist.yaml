@@ -2800,6 +2800,9 @@ plugins:
       - link: 'https://www.nexusmods.com/fallout4/mods/20697/'
         name: 'SnapBeds - Usable Bunk Beds - Mix and Match Beds'
   - name: 'SnapBeds.esp'
+    clean:
+      - crc: 0x88C7DA3D
+        util: 'FO4Edit v4.0.4c'
   - name: 'SnapBedsHomemakerPatch.esp'
     msg:
       - <<: *alreadyInOrFixedByX
