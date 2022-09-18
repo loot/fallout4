@@ -2721,7 +2721,6 @@ plugins:
       # None
       - crc: 0x9D42B121
         util: 'FO4Edit v4.0.4c'
-  - name: 'SurvivalOptions_GiveMeThatBottlePatch.esp'
   - name: 'SurvivalOptions_SurvivalStatsWidget.esp'
     req: [ 'DEF_WIDGETS_SURVIVAL1.esp' ]
 
