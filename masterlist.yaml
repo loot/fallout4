@@ -2789,6 +2789,7 @@ plugins:
         subs: [ '[Settlement Keywords Expanded](https://www.nexusmods.com/fallout4/mods/12226/) replacer' ]
         condition: 'active("SettlementKeywords.esm") and not checksum("AlternateSettlements.esp", 53C593CD)'
   - name: 'AlternateSettlements - (Build Toggle|Set [A-C] Blocker)\.esp'
+    msg: [ *obsolete ]
 
   - name: 'ECO.esp'
     url:
