@@ -2576,6 +2576,12 @@ plugins:
       - <<: *patchIncluded
         subs: [ 'Valdacil''s Item Sorting' ]
         condition: 'active("ValdacilsItemSorting-.+\.esp") and not active("CN Only - VIS Patch.esp")'
+    clean:
+      - crc: 0x8169272E
+        util: 'FO4Edit v4.0.4c'
+      # SSW replacer
+      - crc: 0xF2860D72
+        util: 'FO4Edit v4.0.4c'
   - name: 'CustomizableNeeds + RealisticAidSideEffects.esp'
     inc: [ 'DEF_WIDGETS_SURVIVAL1.esp' ]
     msg:
@@ -2585,6 +2591,9 @@ plugins:
       - <<: *patchIncluded
         subs: [ 'Valdacil''s Item Sorting' ]
         condition: 'active("ValdacilsItemSorting-.+\.esp") and not active("CN + RASE - VIS Patch.esp")'
+    clean:
+      - crc: 0xFD9AD1B9
+        util: 'FO4Edit v4.0.4c'
 
   - name: 'MojaveImports.esp'
     url:
