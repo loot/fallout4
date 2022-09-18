@@ -2551,6 +2551,61 @@ plugins:
       - crc: 0xDE92E151
         util: 'FO4Edit v4.0.4c'
 
+  - name: 'CustomizableNeeds.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/13124/' ]
+    inc:
+      # Conflicts in Scripts/Hardcore/HC_ManagerScript.pex
+      - 'SurvivalOptions.esp'
+      - 'EBF_DEFW_Patch.esp'
+      - 'DEF_WIDGETS_SURVIVAL1 - EBF+GMTB patch.esp'
+      - name: 'DEF_WIDGETS_SURVIVAL1.esp'
+        condition: 'not checksum("CustomizableNeeds.esp", F2860D72)'
+    msg:
+      - type: warn
+        condition: 'active("CustomizableNeeds + RealisticAidSideEffects.esp")'
+        content:
+          - lang: en
+            text: "Use either Customizable Needs or Customizable Needs plus Realistic Aid Side Effects, not both."
+          - lang: de
+            text: "Nutzen Sie entweder Customizable Needs oder Customizable Needs plus Realistic Aid Side Effects, nicht beides."
+      - type: warn
+        condition: 'active("CN \+ RASE - .+\.esp")'
+        content:
+          - lang: en
+            text: 'You have active "Customizable Needs plus Realistic Aid Side Effects" plugins enabled while using the "Customizable Needs only" version. Only use the plugins and patches for the version you use.'
+          - lang: de
+            text: 'Sie haben aktive "Customizable Needs plus Realistic Aid Side Effects" Plugins aktiviert während Sie die "Customizable Needs only" Variante nutzen. Nutzen Sie nur die Plugins und Patches für die Variante die Sie nutzen.'
+      - <<: *patchIncluded
+        subs: [ 'Valdacil''s Item Sorting' ]
+        condition: 'active("ValdacilsItemSorting-.+\.esp") and not active("CN Only - VIS Patch.esp")'
+  - name: 'CustomizableNeeds + RealisticAidSideEffects.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/13124/' ]
+    inc:
+      # Conflicts in Scripts/Hardcore/HC_ManagerScript.pex
+      - 'DEF_WIDGETS_SURVIVAL1.esp'
+      - 'SurvivalOptions.esp'
+    msg:
+      - type: warn
+        condition: 'active("CustomizableNeeds.esp") and not checksum("CustomizableNeeds.esp", F2860D72)'
+        content:
+          - lang: en
+            text: "Use either Customizable Needs or Customizable Needs plus Realistic Aid Side Effects, not both."
+          - lang: de
+            text: "Nutzen Sie entweder Customizable Needs oder Customizable Needs plus Realistic Aid Side Effects, nicht beides."
+      - type: warn
+        condition: 'active("CN Only - .+\.esp")'
+        content:
+          - lang: en
+            text: 'You have active "Customizable Needs only" plugins enabled while using the "Customizable Needs plus Realistic Aid Side Effects" version. Only use the plugins and patches for the version you use.'
+          - lang: de
+            text: 'Sie haben aktive "Customizable Needs only" Plugins aktiviert während Sie die "Customizable Needs plus Realistic Aid Side Effects" Variante nutzen. Nutzen Sie nur die Plugins und Patches für die Variante die Sie nutzen.'
+      - <<: *patchIncluded
+        subs: [ 'Lore-Friendly Survival Chems' ]
+        condition: 'active("LoreFriendlySurvivalChems(VIS)?\.esp") and not active("CN \+ RASE - LoreFriendlySurvivalChems(VIS)? Patch\.esp")'
+      - <<: *patchIncluded
+        subs: [ 'Valdacil''s Item Sorting' ]
+        condition: 'active("ValdacilsItemSorting-.+\.esp") and not active("CN + RASE - VIS Patch.esp")'
+
   - name: 'MojaveImports.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/3793/'
@@ -5206,60 +5261,7 @@ plugins:
           - lang: de
             text: 'Version 1.0.0 von dieser Mod hat bekannte Fehler. Bitte updaten Sie zur neuesten Version.'
         condition: 'version("DEF_WIDGETS_SURVIVAL1 - EBF+GMTB patch.esp", "1.0.0", ==)'
-  - name: 'CustomizableNeeds.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/13124/' ]
-    inc:
-      # Conflicts in Scripts/Hardcore/HC_ManagerScript.pex
-      - 'SurvivalOptions.esp'
-      - 'EBF_DEFW_Patch.esp'
-      - 'DEF_WIDGETS_SURVIVAL1 - EBF+GMTB patch.esp'
-      - name: 'DEF_WIDGETS_SURVIVAL1.esp'
-        condition: 'not checksum("CustomizableNeeds.esp", F2860D72)'
-    msg:
-      - type: warn
-        condition: 'active("CustomizableNeeds + RealisticAidSideEffects.esp")'
-        content:
-          - lang: en
-            text: "Use either Customizable Needs or Customizable Needs plus Realistic Aid Side Effects, not both."
-          - lang: de
-            text: "Nutzen Sie entweder Customizable Needs oder Customizable Needs plus Realistic Aid Side Effects, nicht beides."
-      - type: warn
-        condition: 'active("CN \+ RASE - .+\.esp")'
-        content:
-          - lang: en
-            text: 'You have active "Customizable Needs plus Realistic Aid Side Effects" plugins enabled while using the "Customizable Needs only" version. Only use the plugins and patches for the version you use.'
-          - lang: de
-            text: 'Sie haben aktive "Customizable Needs plus Realistic Aid Side Effects" Plugins aktiviert während Sie die "Customizable Needs only" Variante nutzen. Nutzen Sie nur die Plugins und Patches für die Variante die Sie nutzen.'
-      - <<: *patchIncluded
-        subs: [ 'Valdacil''s Item Sorting' ]
-        condition: 'active("ValdacilsItemSorting-.+\.esp") and not active("CN Only - VIS Patch.esp")'
-  - name: 'CustomizableNeeds + RealisticAidSideEffects.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/13124/' ]
-    inc:
-      # Conflicts in Scripts/Hardcore/HC_ManagerScript.pex
-      - 'DEF_WIDGETS_SURVIVAL1.esp'
-      - 'SurvivalOptions.esp'
-    msg:
-      - type: warn
-        condition: 'active("CustomizableNeeds.esp") and not checksum("CustomizableNeeds.esp", F2860D72)'
-        content:
-          - lang: en
-            text: "Use either Customizable Needs or Customizable Needs plus Realistic Aid Side Effects, not both."
-          - lang: de
-            text: "Nutzen Sie entweder Customizable Needs oder Customizable Needs plus Realistic Aid Side Effects, nicht beides."
-      - type: warn
-        condition: 'active("CN Only - .+\.esp")'
-        content:
-          - lang: en
-            text: 'You have active "Customizable Needs only" plugins enabled while using the "Customizable Needs plus Realistic Aid Side Effects" version. Only use the plugins and patches for the version you use.'
-          - lang: de
-            text: 'Sie haben aktive "Customizable Needs only" Plugins aktiviert während Sie die "Customizable Needs plus Realistic Aid Side Effects" Variante nutzen. Nutzen Sie nur die Plugins und Patches für die Variante die Sie nutzen.'
-      - <<: *patchIncluded
-        subs: [ 'Lore-Friendly Survival Chems' ]
-        condition: 'active("LoreFriendlySurvivalChems(VIS)?\.esp") and not active("CN \+ RASE - LoreFriendlySurvivalChems(VIS)? Patch\.esp")'
-      - <<: *patchIncluded
-        subs: [ 'Valdacil''s Item Sorting' ]
-        condition: 'active("ValdacilsItemSorting-.+\.esp") and not active("CN + RASE - VIS Patch.esp")'
+
   - name: 'Sanctuary Terminals.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/11730/' ]
     clean:
