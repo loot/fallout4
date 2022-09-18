@@ -2552,9 +2552,11 @@ plugins:
         util: 'FO4Edit v4.0.4c'
 
   - name: '(CustomizableNeeds( \+ RealisticAidSideEffects)?|CN (Only|\+ RASE) - .*)\.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/13124/'
+        name: 'Customizable Needs plus Realistic Aid Side Effects'
   - name: 'CustomizableNeeds( \+ RealisticAidSideEffects)?\.esp'
   - name: 'CustomizableNeeds.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/13124/' ]
     inc:
       # Conflicts in Scripts/Hardcore/HC_ManagerScript.pex
       - 'SurvivalOptions.esp'
@@ -2581,7 +2583,6 @@ plugins:
         subs: [ 'Valdacil''s Item Sorting' ]
         condition: 'active("ValdacilsItemSorting-.+\.esp") and not active("CN Only - VIS Patch.esp")'
   - name: 'CustomizableNeeds + RealisticAidSideEffects.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/13124/' ]
     inc:
       # Conflicts in Scripts/Hardcore/HC_ManagerScript.pex
       - 'DEF_WIDGETS_SURVIVAL1.esp'
