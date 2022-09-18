@@ -2557,6 +2557,9 @@ plugins:
         name: 'Customizable Needs plus Realistic Aid Side Effects'
   - name: 'CustomizableNeeds( \+ RealisticAidSideEffects)?\.esp'
   - name: 'CustomizableNeeds.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/20818/'
+        name: 'Survival stats widget'
     inc:
       # Conflicts in Scripts/Hardcore/HC_ManagerScript.pex
       - 'SurvivalOptions.esp'
