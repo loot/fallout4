@@ -2559,6 +2559,10 @@ plugins:
     inc:
       - 'SurvivalOptions.esp'
       - 'Z_Horizon.esp'
+    msg:
+      - <<: *useOnlyOneX
+        subs: [ 'Customizable Needs ESP' ]
+        condition: 'many("CustomizableNeeds( \+ RealisticAidSideEffects)?\.esp")'
   - name: 'CustomizableNeeds.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/20818/'
@@ -2569,26 +2573,12 @@ plugins:
       - 'DEF_WIDGETS_SURVIVAL1 - EBF+GMTB patch.esp'
       - 'EBF_DEFW_Patch.esp'
     msg:
-      - type: warn
-        condition: 'active("CustomizableNeeds + RealisticAidSideEffects.esp")'
-        content:
-          - lang: en
-            text: "Use either Customizable Needs or Customizable Needs plus Realistic Aid Side Effects, not both."
-          - lang: de
-            text: "Nutzen Sie entweder Customizable Needs oder Customizable Needs plus Realistic Aid Side Effects, nicht beides."
       - <<: *patchIncluded
         subs: [ 'Valdacil''s Item Sorting' ]
         condition: 'active("ValdacilsItemSorting-.+\.esp") and not active("CN Only - VIS Patch.esp")'
   - name: 'CustomizableNeeds + RealisticAidSideEffects.esp'
     inc: [ 'DEF_WIDGETS_SURVIVAL1.esp' ]
     msg:
-      - type: warn
-        condition: 'active("CustomizableNeeds.esp") and not checksum("CustomizableNeeds.esp", F2860D72)'
-        content:
-          - lang: en
-            text: "Use either Customizable Needs or Customizable Needs plus Realistic Aid Side Effects, not both."
-          - lang: de
-            text: "Nutzen Sie entweder Customizable Needs oder Customizable Needs plus Realistic Aid Side Effects, nicht beides."
       - <<: *patchIncluded
         subs: [ 'Lore-Friendly Survival Chems' ]
         condition: 'active("LoreFriendlySurvivalChems(VIS)?\.esp") and not active("CN \+ RASE - LoreFriendlySurvivalChems(VIS)? Patch\.esp")'
