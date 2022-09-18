@@ -2696,15 +2696,16 @@ plugins:
         util: 'FO4Edit v4.0.4'
 
   - name: 'SurvivalOptions(_GiveMeThatBottlePatch|_SurvivalStatsWidget)?\.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/14650/'
+        name: 'Survival Options'
   - name: 'SurvivalOptions.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/14650/' ]
     inc:
       # Conflicts in Scripts/Hardcore/HC_ManagerScript.pex
       - 'CustomizableNeeds.esp'
       - 'CustomizableNeeds + RealisticAidSideEffects.esp'
       - 'DEF_WIDGETS_SURVIVAL1.esp'
   - name: 'SurvivalOptions_GiveMeThatBottlePatch.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/14650/' ]
     msg:
       - type: error
         content:
