@@ -2657,6 +2657,7 @@ plugins:
         name: 'Turret Control Panel - TCP'
   - name: 'TurretControlPanel.esp'
     req: [ *F4SE ]
+    msg: [ *requiresMCM ]
     clean:
       # Version 3.0.0
       - crc: 0x08D18DF0
