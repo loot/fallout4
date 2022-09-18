@@ -2708,6 +2708,19 @@ plugins:
         subs: [ 'Survival stats widget' ]
         condition: 'active("DEF_WIDGETS_SURVIVAL1.esp") and not active("SurvivalOptions_SurvivalStatsWidget.esp")'
       - *requiresMCM
+    clean:
+      # Everything
+      - crc: 0xEB409702
+        util: 'FO4Edit v4.0.4c'
+      # Console Only
+      - crc: 0x237766B5
+        util: 'FO4Edit v4.0.4c'
+      # Compass Non Survival
+      - crc: 0x1822751E
+        util: 'FO4Edit v4.0.4c'
+      # None
+      - crc: 0x9D42B121
+        util: 'FO4Edit v4.0.4c'
   - name: 'SurvivalOptions_GiveMeThatBottlePatch.esp'
   - name: 'SurvivalOptions_SurvivalStatsWidget.esp'
     req: [ 'DEF_WIDGETS_SURVIVAL1.esp' ]
