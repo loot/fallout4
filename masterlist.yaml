@@ -2785,13 +2785,9 @@ plugins:
       - link: 'https://www.nexusmods.com/fallout4/mods/14848/'
         name: 'Alternate Settlement - non SK'
     msg:
-      - type: error
-        content:
-          - lang: en
-            text: 'Outdated version of Alternate Settlements detected. Verify the Settlement Keywords Expanded patch is properly installed.'
-          - lang: de
-            text: 'Veraltete Version von Alternate Settlements festgestellt. Verifizieren Sie das der Settlement Keywords Expanded Patch ordnungsgemäß installiert ist.'
-        condition: '(checksum("AlternateSettlements.esp",D8906B4D) or checksum("AlternateSettlements.esp",5C36EB92)) and version("SettlementKeywords.esm", "1.0", >=)'
+      - <<: *obsolete
+        subs: [ '[Settlement Keywords Expanded](https://www.nexusmods.com/fallout4/mods/12226/) replacer' ]
+        condition: 'active("SettlementKeywords.esm") and not checksum("AlternateSettlements.esp", 53C593CD)'
   - name: 'AlternateSettlements - (Build Toggle|Set [A-C] Blocker)\.esp'
 
   - name: 'ECO.esp'
