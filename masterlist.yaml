@@ -2707,6 +2707,7 @@ plugins:
       - <<: *patchProvided
         subs: [ 'Survival stats widget' ]
         condition: 'active("DEF_WIDGETS_SURVIVAL1.esp") and not active("SurvivalOptions_SurvivalStatsWidget.esp")'
+      - *requiresMCM
   - name: 'SurvivalOptions_GiveMeThatBottlePatch.esp'
   - name: 'SurvivalOptions_SurvivalStatsWidget.esp'
     req: [ 'DEF_WIDGETS_SURVIVAL1.esp' ]
