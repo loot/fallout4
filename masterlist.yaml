@@ -2774,6 +2774,7 @@ plugins:
         condition: 'many("Survival\d{0,3}(LESS|more|Normal)PCDamage\.esp")'
 
 ###### Gameplay - Crafting, Harvesting & Scrapping ######
+  - name: 'AlternateSettlements( - (Build Toggle|Set [A-C] Blocker))?\.esp'
   - name: 'AlternateSettlements.esp'
     msg:
       - type: error
@@ -2783,6 +2784,7 @@ plugins:
           - lang: de
             text: 'Veraltete Version von Alternate Settlements festgestellt. Verifizieren Sie das der Settlement Keywords Expanded Patch ordnungsgemäß installiert ist.'
         condition: '(checksum("AlternateSettlements.esp",D8906B4D) or checksum("AlternateSettlements.esp",5C36EB92)) and version("SettlementKeywords.esm", "1.0", >=)'
+  - name: 'AlternateSettlements - (Build Toggle|Set [A-C] Blocker)\.esp'
 
   - name: 'ECO.esp'
     url:
