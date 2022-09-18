@@ -2774,6 +2774,16 @@ plugins:
         condition: 'many("Survival\d{0,3}(LESS|more|Normal)PCDamage\.esp")'
 
 ###### Gameplay - Crafting, Harvesting & Scrapping ######
+  - name: 'AlternateSettlements.esp'
+    msg:
+      - type: error
+        content:
+          - lang: en
+            text: 'Outdated version of Alternate Settlements detected. Verify the Settlement Keywords Expanded patch is properly installed.'
+          - lang: de
+            text: 'Veraltete Version von Alternate Settlements festgestellt. Verifizieren Sie das der Settlement Keywords Expanded Patch ordnungsgemäß installiert ist.'
+        condition: '(checksum("AlternateSettlements.esp",D8906B4D) or checksum("AlternateSettlements.esp",5C36EB92)) and version("SettlementKeywords.esm", "1.0", >=)'
+
   - name: 'ECO.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/55503/'
@@ -4778,16 +4788,6 @@ plugins:
       - <<: *requiresX
         subs: [ 'Fallout 4 1.6.3+' ]
         condition: 'readable("../Fallout4.exe") and version("../Fallout4.exe", "1.6.3", <)'
-
-  - name: 'AlternateSettlements.esp'
-    msg:
-      - type: error
-        content:
-          - lang: en
-            text: 'Outdated version of Alternate Settlements detected. Verify the Settlement Keywords Expanded patch is properly installed.'
-          - lang: de
-            text: 'Veraltete Version von Alternate Settlements festgestellt. Verifizieren Sie das der Settlement Keywords Expanded Patch ordnungsgemäß installiert ist.'
-        condition: '(checksum("AlternateSettlements.esp",D8906B4D) or checksum("AlternateSettlements.esp",5C36EB92)) and version("SettlementKeywords.esm", "1.0", >=)'
 
   - name: 'BuildingBlocks.*\.es(p|m)'
     url: [ 'https://www.nexusmods.com/fallout4/mods/8907/' ]
