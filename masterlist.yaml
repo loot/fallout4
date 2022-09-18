@@ -2791,6 +2791,12 @@ plugins:
       - <<: *requiresResources
         subs: [ '[Alternate Settlements](https://www.nexusmods.com/fallout4/mods/5118/)' ]
         condition: 'not file("Meshes/AlternateExteriorDecor")'
+    clean:
+      - crc: 0x53C593CD
+        util: 'FO4Edit v4.0.4c'
+      # Non-SK
+      - crc: 0x2B09C450
+        util: 'FO4Edit v4.0.4c'
   - name: 'AlternateSettlements - (Build Toggle|Set [A-C] Blocker)\.esp'
     msg: [ *obsolete ]
 
