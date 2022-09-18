@@ -2651,6 +2651,7 @@ plugins:
       - crc: 0x3F9E589A
         util: 'FO4Edit v4.0.4'
 
+  - name: '(TurretControlPanel|NoMoreRandomTurretMks)\.esp'
   - name: 'TurretControlPanel.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/11960/' ]
     inc: [ 'NoMoreRandomTurretMks.esp' ]
