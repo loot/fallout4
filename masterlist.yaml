@@ -2695,6 +2695,7 @@ plugins:
       - crc: 0x3F9E589A
         util: 'FO4Edit v4.0.4'
 
+  - name: 'SurvivalOptions(_GiveMeThatBottlePatch|_SurvivalStatsWidget)?\.esp'
   - name: 'SurvivalOptions.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/14650/' ]
     inc:
@@ -2712,6 +2713,7 @@ plugins:
           - lang: de
             text: "Dieser Patch ist für eine ältere Version von Give Me That Bottle und ist nicht vollständig kompatibel mit den neuesten Versionen dieser Mod. Sie könnten den Patch selbst updaten oder ersetzen durch einen automatischen Patch von Wrye Bash, Mator Smash, oder FO4Edit."
         condition: 'checksum("SurvivalOptions_GiveMeThatBottlePatch.esp", 42D99A6E)'
+  - name: 'SurvivalOptions_SurvivalStatsWidget.esp'
 
   - name: '(TurretControlPanel|NoMoreRandomTurretMks)\.esp'
     url:
