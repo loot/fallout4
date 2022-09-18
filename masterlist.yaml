@@ -2796,6 +2796,9 @@ plugins:
         util: 'FO4Edit v4.0.3h (Hotfix 1)'
 
   - name: 'SnapBeds((Homemaker|SORT|WorkshopRearranged)Patch)?\.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/20697/'
+        name: 'SnapBeds - Usable Bunk Beds - Mix and Match Beds'
   - name: 'SnapBeds.esp'
   - name: 'SnapBedsHomemakerPatch.esp'
     msg:
