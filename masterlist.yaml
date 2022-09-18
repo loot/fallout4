@@ -2700,6 +2700,13 @@ plugins:
       - link: 'https://www.nexusmods.com/fallout4/mods/14650/'
         name: 'Survival Options'
   - name: 'SurvivalOptions.esp'
+    msg:
+      - <<: *patchProvided
+        subs: [ 'Give Me That Bottle' ]
+        condition: 'active("Give Me That Bottle.esp") and not active("SurvivalOptions_GiveMeThatBottlePatch.esp")'
+      - <<: *patchProvided
+        subs: [ 'Survival stats widget' ]
+        condition: 'active("DEF_WIDGETS_SURVIVAL1.esp") and not active("SurvivalOptions_SurvivalStatsWidget.esp")'
   - name: 'SurvivalOptions_GiveMeThatBottlePatch.esp'
   - name: 'SurvivalOptions_SurvivalStatsWidget.esp'
     req: [ 'DEF_WIDGETS_SURVIVAL1.esp' ]
