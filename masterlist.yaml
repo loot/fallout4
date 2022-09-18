@@ -2652,15 +2652,16 @@ plugins:
         util: 'FO4Edit v4.0.4'
 
   - name: '(TurretControlPanel|NoMoreRandomTurretMks)\.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/11960/'
+        name: 'Turret Control Panel - TCP'
   - name: 'TurretControlPanel.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/11960/' ]
     inc: [ 'NoMoreRandomTurretMks.esp' ]
     clean:
       # Version 3.0.0
       - crc: 0x08D18DF0
         util: 'FO4Edit v3.2.4'
   - name: 'NoMoreRandomTurretMks.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/11960/' ]
     inc: [ 'TurretControlPanel.esp' ]
     clean:
       # Version 2.3.0
