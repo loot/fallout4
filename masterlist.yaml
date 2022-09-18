@@ -2656,6 +2656,7 @@ plugins:
       - link: 'https://www.nexusmods.com/fallout4/mods/11960/'
         name: 'Turret Control Panel - TCP'
   - name: 'TurretControlPanel.esp'
+    req: [ *F4SE ]
     inc: [ 'NoMoreRandomTurretMks.esp' ]
     clean:
       # Version 3.0.0
