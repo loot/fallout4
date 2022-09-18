@@ -2715,6 +2715,7 @@ plugins:
             text: "Dieser Patch ist für eine ältere Version von Give Me That Bottle und ist nicht vollständig kompatibel mit den neuesten Versionen dieser Mod. Sie könnten den Patch selbst updaten oder ersetzen durch einen automatischen Patch von Wrye Bash, Mator Smash, oder FO4Edit."
         condition: 'checksum("SurvivalOptions_GiveMeThatBottlePatch.esp", 42D99A6E)'
   - name: 'SurvivalOptions_SurvivalStatsWidget.esp'
+    req: [ 'DEF_WIDGETS_SURVIVAL1.esp' ]
 
   - name: '(TurretControlPanel|NoMoreRandomTurretMks)\.esp'
     url:
