@@ -2775,7 +2775,15 @@ plugins:
 
 ###### Gameplay - Crafting, Harvesting & Scrapping ######
   - name: 'AlternateSettlements( - (Build Toggle|Set [A-C] Blocker))?\.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/5118/'
+        name: 'Alternate Settlements'
   - name: 'AlternateSettlements.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/12226/'
+        name: 'Settlement Keywords Expanded'
+      - link: 'https://www.nexusmods.com/fallout4/mods/14848/'
+        name: 'Alternate Settlement - non SK'
     msg:
       - type: error
         content:
