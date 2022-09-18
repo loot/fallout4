@@ -2551,6 +2551,8 @@ plugins:
       - crc: 0xDE92E151
         util: 'FO4Edit v4.0.4c'
 
+  - name: '(CustomizableNeeds( \+ RealisticAidSideEffects)?|CN (Only|\+ RASE) - .*)\.esp'
+  - name: 'CustomizableNeeds( \+ RealisticAidSideEffects)?\.esp'
   - name: 'CustomizableNeeds.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/13124/' ]
     inc:
