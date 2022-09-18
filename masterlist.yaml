@@ -2802,18 +2802,8 @@ plugins:
   - name: 'SnapBeds.esp'
   - name: 'SnapBedsHomemakerPatch.esp'
     msg:
-      - type: error
-        content:
-        - lang: en
-          text: 'Uninstall this file. It it no longer required with Homemaker 1.50 or higher.'
-        - lang: da
-          text: 'Afinstallér denne fil. Den er ikke længere nødvending med Homemaker 1.50 og opefter.'
-        - lang: de
-          text: 'Deinstalliere diese Datei. Es wird nicht länger benötigt mit Homemaker 1.50 oder neuer.'
-        - lang: es
-          text: 'Desinstale este archivo. No es requerido con Homemaker 1.50 or higher.'
-        - lang: ja
-          text: 'このファイルをアンインストールしてください。Homemaker 1.50以降では不要です。'
+      - <<: *alreadyInOrFixedByX
+        subs: [ 'Homemaker v1.50+' ]
         condition: 'version("Homemaker.esm", "1.50", >=)'
 
 ###### Gameplay - Companion & Creature Managers ######
