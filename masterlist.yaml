@@ -2664,10 +2664,6 @@ plugins:
         util: 'FO4Edit v3.2.4'
   - name: 'NoMoreRandomTurretMks.esp'
     msg: [ *obsolete ]
-    clean:
-      # Version 2.3.0
-      - crc: 0x9AFF8E08
-        util: 'FO4Edit v3.2.4'
 
   - name: 'Vault-Tec Historical Preservation Initiative.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/12019/' ]
