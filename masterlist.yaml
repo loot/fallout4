@@ -2651,6 +2651,19 @@ plugins:
       - crc: 0x3F9E589A
         util: 'FO4Edit v4.0.4'
 
+  - name: '(TurretControlPanel|NoMoreRandomTurretMks)\.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/11960/'
+        name: 'Turret Control Panel - TCP'
+  - name: 'TurretControlPanel.esp'
+    req: [ *F4SE ]
+    msg: [ *requiresMCM ]
+    clean:
+      - crc: 0xD85B2D6F
+        util: 'FO4Edit v4.0.4c'
+  - name: 'NoMoreRandomTurretMks.esp'
+    msg: [ *obsolete ]
+
   - name: 'Vault-Tec Historical Preservation Initiative.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/12019/' ]
     group: *underridesGroup
@@ -6103,29 +6116,7 @@ plugins:
       - <<: *useOnlyOneX
         condition: 'many("Deeper Thoughts (\(Curie\)|- (Expressive )?Curie)\.esp")'
         subs: [ 'Deeper Thoughts - Curie plugin' ]
-  - name: 'TurretControlPanel.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/11960/' ]
-    inc: [ 'NoMoreRandomTurretMks.esp' ]
-    clean:
-      # Version 3.0.0
-      - crc: 0x08D18DF0
-        util: 'FO4Edit v3.2.4'
-  - name: 'NoMoreRandomTurretMks.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/11960/' ]
-    inc: [ 'TurretControlPanel.esp' ]
-    clean:
-      # Version 2.3.0
-      - crc: 0x9AFF8E08
-        util: 'FO4Edit v3.2.4'
-    msg:
-      - type: warn
-        content:
-          - lang: en
-            text: 'This mod is deprecated in favour of "Turret Control Panel". Follow the instructions on [the "Turret Control Panel" mod page](https://www.nexusmods.com/fallout4/mods/11960) to update.'
-          - lang: da
-            text: 'Denne mod er forældet til fordel for "Turret Control Panel". Følg instruktionerne på ["Turrent Control Panel"-mod-siden](https://www.nexusmods.com/fallout4/mods/11960) for at opdatere.'
-          - lang: de
-            text: 'Diese Mod ist eingestellt zu Gunsten von "Turret Control Panel". Folge den Anweisungen [der "Turret Control Panel" Mod Seite](https://www.nexusmods.com/fallout4/mods/11960) zum updaten.'
+
   - name: 'Bess.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/2348/' ]
     inc: [ 'packbrahmin.esp' ]
