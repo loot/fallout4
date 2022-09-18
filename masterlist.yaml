@@ -2576,13 +2576,6 @@ plugins:
             text: "Use either Customizable Needs or Customizable Needs plus Realistic Aid Side Effects, not both."
           - lang: de
             text: "Nutzen Sie entweder Customizable Needs oder Customizable Needs plus Realistic Aid Side Effects, nicht beides."
-      - type: warn
-        condition: 'active("CN \+ RASE - .+\.esp")'
-        content:
-          - lang: en
-            text: 'You have active "Customizable Needs plus Realistic Aid Side Effects" plugins enabled while using the "Customizable Needs only" version. Only use the plugins and patches for the version you use.'
-          - lang: de
-            text: 'Sie haben aktive "Customizable Needs plus Realistic Aid Side Effects" Plugins aktiviert während Sie die "Customizable Needs only" Variante nutzen. Nutzen Sie nur die Plugins und Patches für die Variante die Sie nutzen.'
       - <<: *patchIncluded
         subs: [ 'Valdacil''s Item Sorting' ]
         condition: 'active("ValdacilsItemSorting-.+\.esp") and not active("CN Only - VIS Patch.esp")'
@@ -2596,13 +2589,6 @@ plugins:
             text: "Use either Customizable Needs or Customizable Needs plus Realistic Aid Side Effects, not both."
           - lang: de
             text: "Nutzen Sie entweder Customizable Needs oder Customizable Needs plus Realistic Aid Side Effects, nicht beides."
-      - type: warn
-        condition: 'active("CN Only - .+\.esp")'
-        content:
-          - lang: en
-            text: 'You have active "Customizable Needs only" plugins enabled while using the "Customizable Needs plus Realistic Aid Side Effects" version. Only use the plugins and patches for the version you use.'
-          - lang: de
-            text: 'Sie haben aktive "Customizable Needs only" Plugins aktiviert während Sie die "Customizable Needs plus Realistic Aid Side Effects" Variante nutzen. Nutzen Sie nur die Plugins und Patches für die Variante die Sie nutzen.'
       - <<: *patchIncluded
         subs: [ 'Lore-Friendly Survival Chems' ]
         condition: 'active("LoreFriendlySurvivalChems(VIS)?\.esp") and not active("CN \+ RASE - LoreFriendlySurvivalChems(VIS)? Patch\.esp")'
