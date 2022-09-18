@@ -2695,6 +2695,35 @@ plugins:
       - crc: 0x3F9E589A
         util: 'FO4Edit v4.0.4'
 
+  - name: 'SurvivalOptions(_GiveMeThatBottlePatch|_SurvivalStatsWidget)?\.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/14650/'
+        name: 'Survival Options'
+  - name: 'SurvivalOptions.esp'
+    msg:
+      - <<: *patchProvided
+        subs: [ 'Give Me That Bottle' ]
+        condition: 'active("Give Me That Bottle.esp") and not active("SurvivalOptions_GiveMeThatBottlePatch.esp")'
+      - <<: *patchProvided
+        subs: [ 'Survival stats widget' ]
+        condition: 'active("DEF_WIDGETS_SURVIVAL1.esp") and not active("SurvivalOptions_SurvivalStatsWidget.esp")'
+      - *requiresMCM
+    clean:
+      # Everything
+      - crc: 0xEB409702
+        util: 'FO4Edit v4.0.4c'
+      # Console Only
+      - crc: 0x237766B5
+        util: 'FO4Edit v4.0.4c'
+      # Compass Non Survival
+      - crc: 0x1822751E
+        util: 'FO4Edit v4.0.4c'
+      # None
+      - crc: 0x9D42B121
+        util: 'FO4Edit v4.0.4c'
+  - name: 'SurvivalOptions_SurvivalStatsWidget.esp'
+    req: [ 'DEF_WIDGETS_SURVIVAL1.esp' ]
+
   - name: '(TurretControlPanel|NoMoreRandomTurretMks)\.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/11960/'
@@ -5166,23 +5195,7 @@ plugins:
       - <<: *useOnlyOneX
         condition: 'active("StarlightLOD.esp")'
         subs: [ 'StarlightLOD plugin' ]
-  - name: 'SurvivalOptions.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/14650/' ]
-    inc:
-      # Conflicts in Scripts/Hardcore/HC_ManagerScript.pex
-      - 'CustomizableNeeds.esp'
-      - 'CustomizableNeeds + RealisticAidSideEffects.esp'
-      - 'DEF_WIDGETS_SURVIVAL1.esp'
-  - name: 'SurvivalOptions_GiveMeThatBottlePatch.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/14650/' ]
-    msg:
-      - type: error
-        content:
-          - lang: en
-            text: "This patch is for an older version of Give Me That Bottle and is not fully compatible with the newest versions of that mod. You may want to update the patch yourself or replace the patch with an automated one by Wrye Bash, Mator Smash, or FO4Edit."
-          - lang: de
-            text: "Dieser Patch ist für eine ältere Version von Give Me That Bottle und ist nicht vollständig kompatibel mit den neuesten Versionen dieser Mod. Sie könnten den Patch selbst updaten oder ersetzen durch einen automatischen Patch von Wrye Bash, Mator Smash, oder FO4Edit."
-        condition: 'checksum("SurvivalOptions_GiveMeThatBottlePatch.esp", 42D99A6E)'
+
   - name: 'DEF_WIDGETS_SURVIVAL1.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/20818/' ]
     inc:
