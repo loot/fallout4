@@ -2556,7 +2556,9 @@ plugins:
       - link: 'https://www.nexusmods.com/fallout4/mods/13124/'
         name: 'Customizable Needs plus Realistic Aid Side Effects'
   - name: 'CustomizableNeeds( \+ RealisticAidSideEffects)?\.esp'
-    inc: [ 'SurvivalOptions.esp' ]
+    inc:
+      - 'SurvivalOptions.esp'
+      - 'Z_Horizon.esp'
   - name: 'CustomizableNeeds.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/20818/'
