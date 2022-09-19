@@ -2882,7 +2882,9 @@ plugins:
         util: 'FO4Edit v4.0.4b'
 
   - name: 'Give Me That Bottle.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/13193/' ]
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/13193/'
+        name: 'Give Me That Bottle'
     # CRC checksum  Version   Compatibility
     # ECEBD46B      2.6       -
     # 939407C9      2.6       VIS
