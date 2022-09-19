@@ -3313,8 +3313,8 @@ plugins:
             text: 'Version 1.0.0 von dieser Mod hat bekannte Fehler. Bitte updaten Sie zur neuesten Version.'
         condition: 'version("DEF_WIDGETS_SURVIVAL1 - EBF+GMTB patch.esp", "1.0.0", ==)'
   - name: '(EBF_DEFW|gmtb)_Patch\.esp'
-  - name: 'EBF_DEFW_Patch.esp'
     req: [ 'DEF_WIDGETS_SURVIVAL1.esp' ]
+  - name: 'EBF_DEFW_Patch.esp'
     inc:
       - 'gmtb_patch.esp'
       # Conflicts in Scripts/Hardcore/HC_ManagerScript.pex
@@ -3328,7 +3328,6 @@ plugins:
         condition: 'active("DEF_WIDGETS_SURVIVAL1 - EBF+GMTB patch.esp")'
         subs: [ 'DEF_WIDGETS_SURVIVAL1 - EBF+GMTB patch.esp' ]
   - name: 'gmtb_patch.esp'
-    req: [ 'DEF_WIDGETS_SURVIVAL1.esp' ]
     inc: [ 'EBF_DEFW_Patch.esp' ]
     clean:
       # Version 9
