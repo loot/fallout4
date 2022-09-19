@@ -3310,7 +3310,6 @@ plugins:
     inc:
       - 'gmtb_patch.esp'
       - 'SurvivalOptions.esp'
-  - name: 'gmtb_patch.esp'
 
   - name: 'SatelliteWorldMap.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/8989/' ]
