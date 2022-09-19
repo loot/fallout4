@@ -3270,6 +3270,7 @@ plugins:
         util: 'FO4Edit v4.0.3h (Hotfix 1)'
 
 ###### Gameplay - User Interface ######
+  - name: '(DEF_WIDGETS_SURVIVAL1( - EBF\+GMTB patch)?|(EBF_DEFW|gmtb)_Patch)\.esp'
   - name: 'DEF_WIDGETS_SURVIVAL1.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/20818/' ]
     inc:
@@ -3310,6 +3311,7 @@ plugins:
           - lang: de
             text: 'Version 1.0.0 von dieser Mod hat bekannte Fehler. Bitte updaten Sie zur neuesten Version.'
         condition: 'version("DEF_WIDGETS_SURVIVAL1 - EBF+GMTB patch.esp", "1.0.0", ==)'
+  - name: '(EBF_DEFW|gmtb)_Patch\.esp'
   - name: 'EBF_DEFW_Patch.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/20818/' ]
     req: [ 'DEF_WIDGETS_SURVIVAL1.esp' ]
