@@ -2892,13 +2892,13 @@ plugins:
     # AE38A5A0      2.6       DLC+VIS
     after:
       - name: 'ValdacilsItemSorting-00-ValsPicks-DLCVersion.esp'
-        condition: 'checksum("Give Me That Bottle.esp", AE38A5A0) or checksum("Give Me That Bottle.esp", 939407C9)'
+        condition: 'checksum("Give Me That Bottle.esp", 77879F09) or checksum("Give Me That Bottle.esp", 939407C9)'
       - name: 'ValdacilsItemSorting-00-ValsPicks-DLCVersion-VanillaWeight.esp'
-        condition: 'checksum("Give Me That Bottle.esp", AE38A5A0) or checksum("Give Me That Bottle.esp", 939407C9)'
+        condition: 'checksum("Give Me That Bottle.esp", 77879F09) or checksum("Give Me That Bottle.esp", 939407C9)'
       - name: 'ValdacilsItemSorting-00-ValsPicks-NoDLCVersion.esp'
-        condition: 'checksum("Give Me That Bottle.esp", AE38A5A0) or checksum("Give Me That Bottle.esp", 939407C9)'
+        condition: 'checksum("Give Me That Bottle.esp", 77879F09) or checksum("Give Me That Bottle.esp", 939407C9)'
       - name: 'ValdacilsItemSorting-00-ValsPicks-NoDLCVersion-VanillaWeight.esp'
-        condition: 'checksum("Give Me That Bottle.esp", AE38A5A0) or checksum("Give Me That Bottle.esp", 939407C9)'
+        condition: 'checksum("Give Me That Bottle.esp", 77879F09) or checksum("Give Me That Bottle.esp", 939407C9)'
     msg:
       - <<: *patchProvided
         subs: [ 'Far Harbor' ]
