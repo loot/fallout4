@@ -3300,6 +3300,10 @@ plugins:
         util: 'FO4Edit v3.2'
   - name: '(EBF_DEFW|gmtb)_Patch\.esp'
     req: [ 'DEF_WIDGETS_SURVIVAL1.esp' ]
+    msg:
+      - <<: *alreadyInX
+        subs: [ '**DEF_WIDGETS_SURVIVAL1 - EBF+GMTB patch.esp**' ]
+        condition: 'active("DEF_WIDGETS_SURVIVAL1 - EBF+GMTB patch.esp")'
   - name: 'EBF_DEFW_Patch.esp'
     req: [ 'EveryonesBestFriend.esp' ]
     inc:
@@ -3309,19 +3313,11 @@ plugins:
       # Version 1
       - crc: 0x7101BFA3
         util: 'FO4Edit v3.2'
-    msg:
-      - <<: *alreadyInX
-        condition: 'active("DEF_WIDGETS_SURVIVAL1 - EBF+GMTB patch.esp")'
-        subs: [ 'DEF_WIDGETS_SURVIVAL1 - EBF+GMTB patch.esp' ]
   - name: 'gmtb_patch.esp'
     clean:
       # Version 9
       - crc: 0x4EFF73BD
         util: 'FO4Edit v3.2'
-    msg:
-      - <<: *alreadyInX
-        condition: 'active("DEF_WIDGETS_SURVIVAL1 - EBF+GMTB patch.esp")'
-        subs: [ 'DEF_WIDGETS_SURVIVAL1 - EBF+GMTB patch.esp' ]
 
   - name: 'SatelliteWorldMap.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/8989/' ]
