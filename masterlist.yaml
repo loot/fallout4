@@ -3280,6 +3280,9 @@ plugins:
       - crc: 0x2B12E764
         util: 'FO4Edit v3.2'
     msg:
+      - <<: *alreadyInX
+        subs: [ 'DEF_SSW Survival Stats widget redone' ]
+        condition: 'file("F4SE/Plugins/SSW.dll")'
       - <<: *patchProvided
         subs: [ 'Customizable Needs' ]
         condition: 'active("CustomizableNeeds.esp") and not checksum("CustomizableNeeds.esp", F2860D72)'
