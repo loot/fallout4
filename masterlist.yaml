@@ -3498,11 +3498,11 @@ plugins:
   - name: 'ValdacilsItemSorting-NotJunk(JustMoney)?\.esp'
     after:
       - 'ValdacilsItemSorting-Junk.esp'
+      - 'ValdacilsItemSorting-JunkBetter.esp'
+      - 'ValdacilsItemSorting-JunkBetter+DEF_INV.esp'
       - 'ValdacilsItemSorting-Junk+DEF_INV.esp'
       - 'ValdacilsItemSorting-JunkWeightless.esp'
       - 'ValdacilsItemSorting-JunkWeightless+DEF_INV.esp'
-      - 'ValdacilsItemSorting-JunkBetter.esp'
-      - 'ValdacilsItemSorting-JunkBetter+DEF_INV.esp'
     msg:
       - <<: *useOnlyOneX
         subs: [ 'VIS - Not Junk' ]
