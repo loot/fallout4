@@ -2885,11 +2885,6 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/13193/'
         name: 'Give Me That Bottle'
-    # CRC checksum  Version   Compatibility
-    # ECEBD46B      2.6       -
-    # 939407C9      2.6       VIS
-    # 814AC32F      2.6       DLC
-    # AE38A5A0      2.6       DLC+VIS
     after:
       - name: 'ValdacilsItemSorting-00-ValsPicks-DLCVersion.esp'
         condition: 'checksum("Give Me That Bottle.esp", 77879F09) or checksum("Give Me That Bottle.esp", 939407C9)'
@@ -2910,6 +2905,18 @@ plugins:
         type: say
         subs: [ 'Valdacil''s Item Sorting' ]
         condition: 'not active("ValdacilsItemSorting-.+\.esp") and (checksum("Give Me That Bottle.esp", 77879F09) or checksum("Give Me That Bottle.esp", 939407C9))'
+    clean:
+      - crc: 0xF330F7B5
+        util: 'FO4Edit v4.0.4c'
+      # VIS
+      - crc: 0x77879F09
+        util: 'FO4Edit v4.0.4c'
+      # No DLC
+      - crc: 0xECEBD46B
+        util: 'FO4Edit v4.0.4c'
+      # No DLC - VIS
+      - crc: 0x939407C9
+        util: 'FO4Edit v4.0.4c'
 
   - name: 'ScrapThatMisc.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/5673/' ]
