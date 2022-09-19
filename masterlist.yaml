@@ -3390,34 +3390,39 @@ plugins:
   - name: 'ValdacilsItemSorting-.*\.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/3877/' ]
     inc: [ 'Z_Horizon.esp' ]
-  - name: 'ValdacilsItemSorting-00-ValsPicks-NoDLCVersion(-VanillaWeight)?\.esp'
-    msg:
-      - <<: *useVersion
-        subs: [ 'DLC' ]
-        condition: 'active("DLCRobot.esm") and active("DLCworkshop01.esm") and active("DLCCoast.esm")'
   - name: 'ValdacilsItemSorting-00-ValsPicks-(NoDLCVersion|DLCVersion)(-VanillaWeight)?\.esp'
     msg:
       - <<: *useOnlyOneX
         subs: [ 'Val''s Picks' ]
         condition: 'many("ValdacilsItemSorting-00-ValsPicks-(NoDLCVersion|DLCVersion)(-VanillaWeight)?\.esp")'
-  - name: 'ValdacilsItemSorting-Aid.esp'
-    msg: [ *alreadyInValsPicksVanWeight ]
-  - name: 'ValdacilsItemSorting-AidReducedWeight.esp'
-    msg: [ *alreadyInValsPicks ]
+  - name: 'ValdacilsItemSorting-00-ValsPicks-NoDLCVersion(-VanillaWeight)?\.esp'
+    msg:
+      - <<: *useVersion
+        subs: [ 'DLC' ]
+        condition: 'active("DLCRobot.esm") and active("DLCworkshop01.esm") and active("DLCCoast.esm")'
   - name: 'ValdacilsItemSorting-Aid(ReducedWeight|Weightless)?\.esp'
     msg:
       - <<: *useOnlyOneX
         subs: [ 'VIS - Aid' ]
         condition: 'many("ValdacilsItemSorting-Aid(ReducedWeight|Weightless)?\.esp")'
-  - name: 'ValdacilsItemSorting-Ammo.esp'
+  - name: 'ValdacilsItemSorting-Aid.esp'
     msg: [ *alreadyInValsPicksVanWeight ]
-  - name: 'ValdacilsItemSorting-AmmoWeightless.esp'
+  - name: 'ValdacilsItemSorting-AidReducedWeight.esp'
     msg: [ *alreadyInValsPicks ]
   - name: 'ValdacilsItemSorting-Ammo(Weightless)?\.esp'
     msg:
       - <<: *useOnlyOneX
         subs: [ 'VIS - Ammo' ]
         condition: 'many("ValdacilsItemSorting-Ammo(Weightless)?\.esp")'
+  - name: 'ValdacilsItemSorting-Ammo.esp'
+    msg: [ *alreadyInValsPicksVanWeight ]
+  - name: 'ValdacilsItemSorting-AmmoWeightless.esp'
+    msg: [ *alreadyInValsPicks ]
+  - name: 'ValdacilsItemSorting-ArmorBy(Class|Slot)\.esp'
+    msg:
+      - <<: *useOnlyOneX
+        subs: [ 'VIS - Armor By Class or By Slot' ]
+        condition: 'many("ValdacilsItemSorting-ArmorBy(Class|Slot)\.esp")'
   - name: 'ValdacilsItemSorting-ArmorByClass.esp'
     msg:
       - <<: *alreadyInX
@@ -3438,11 +3443,11 @@ plugins:
       - <<: *alreadyInX
         subs: [ 'VIS - DLC Armor by Slot Override' ]
         condition: 'file("ValdacilsItemSorting-ZZ-DLCArmorBySlotOverride.esp")'
-  - name: 'ValdacilsItemSorting-ArmorBy(Class|Slot)\.esp'
+  - name: 'ValdacilsItemSorting-Cosmetics(Class|Type)\.esp'
     msg:
       - <<: *useOnlyOneX
-        subs: [ 'VIS - Armor By Class or By Slot' ]
-        condition: 'many("ValdacilsItemSorting-ArmorBy(Class|Slot)\.esp")'
+        subs: [ 'VIS - Cosmetics By Class or By Type' ]
+        condition: 'many("ValdacilsItemSorting-CosmeticsBy(Class|Type)\.esp")'
   - name: 'ValdacilsItemSorting-CosmeticsByClass.esp'
     msg:
       - *alreadyInValsPicks
@@ -3454,45 +3459,38 @@ plugins:
       - <<: *alreadyInX
         subs: [ 'VIS - DLC Cosmetics by Type Override' ]
         condition: 'file("ValdacilsItemSorting-ZZ-DLCCosmeticsByTypeOverride.esp")'
-  - name: 'ValdacilsItemSorting-Cosmetics(Class|Type)\.esp'
-    msg:
-      - <<: *useOnlyOneX
-        subs: [ 'VIS - Cosmetics By Class or By Type' ]
-        condition: 'many("ValdacilsItemSorting-CosmeticsBy(Class|Type)\.esp")'
-  - name: 'ValdacilsItemSorting-ExplosivesSortTop.esp'
-    msg: [ *alreadyInValsPicks ]
   - name: 'ValdacilsItemSorting-ExplosivesSort(Bottom|BottomWeightless|Top|TopWeightless)\.esp'
     msg:
       - <<: *useOnlyOneX
         subs: [ 'VIS - Explosives Sort' ]
         condition: 'many("ValdacilsItemSorting-Aid(ReducedWeight|Weightless)?\.esp")'
-  - name: 'ValdacilsItemSorting-JunkBetter.esp'
+  - name: 'ValdacilsItemSorting-ExplosivesSortTop.esp'
     msg: [ *alreadyInValsPicks ]
-    # TODO: Figure out a way to detect if DEF_INV is installed.
+  # TODO: Figure out a way to detect if DEF_INV is installed.
   - name: 'ValdacilsItemSorting-Junk(Better|Weightless)?(\+DEF_INV)?\.esp'
     msg:
       - <<: *useOnlyOneX
         subs: [ 'VIS - Junk' ]
         condition: 'many("ValdacilsItemSorting-Junk(Better|Weightless)?(\+DEF_INV)?\.esp")'
-  - name: 'ValdacilsItemSorting-Misc.esp'
-    msg: [ *alreadyInValsPicksVanWeight ]
-  - name: 'ValdacilsItemSorting-MiscWeightless.esp'
+  - name: 'ValdacilsItemSorting-JunkBetter.esp'
     msg: [ *alreadyInValsPicks ]
   - name: 'ValdacilsItemSorting-Misc(Weightless)?\.esp'
     msg:
       - <<: *useOnlyOneX
         subs: [ 'VIS - Misc' ]
         condition: 'many("ValdacilsItemSorting-Misc(Weightless)?\.esp")'
-  - name: 'ValdacilsItemSorting-Mods.esp'
+  - name: 'ValdacilsItemSorting-Misc.esp'
     msg: [ *alreadyInValsPicksVanWeight ]
-  - name: 'ValdacilsItemSorting-ModsWeightless.esp'
+  - name: 'ValdacilsItemSorting-MiscWeightless.esp'
     msg: [ *alreadyInValsPicks ]
   - name: 'ValdacilsItemSorting-Mods(Weightless)?\.esp'
     msg:
       - <<: *useOnlyOneX
         subs: [ 'VIS - Mods' ]
         condition: 'many("ValdacilsItemSorting-Mods(Weightless)?\.esp")'
-  - name: 'ValdacilsItemSorting-NotJunk.esp'
+  - name: 'ValdacilsItemSorting-Mods.esp'
+    msg: [ *alreadyInValsPicksVanWeight ]
+  - name: 'ValdacilsItemSorting-ModsWeightless.esp'
     msg: [ *alreadyInValsPicks ]
   - name: 'ValdacilsItemSorting-NotJunk(JustMoney)?\.esp'
     after:
@@ -3506,6 +3504,8 @@ plugins:
       - <<: *useOnlyOneX
         subs: [ 'VIS - Not Junk' ]
         condition: 'many("ValdacilsItemSorting-NotJunk(JustMoney)?\.esp")'
+  - name: 'ValdacilsItemSorting-NotJunk.esp'
+    msg: [ *alreadyInValsPicks ]
   - name: 'ValdacilsItemSorting-Perks.esp'
     msg: [ *alreadyInValsPicks ]
   - name: 'ValdacilsItemSorting-Weapons.esp'
@@ -3514,6 +3514,11 @@ plugins:
       - <<: *alreadyInX
         subs: [ 'VIS - DLC Weapons Override' ]
         condition: 'file("ValdacilsItemSorting-ZZ-DLCWeaponsOverride.esp")'
+  - name: 'ValdacilsItemSorting-ZY-DLCAutomatron(-Weightless)?\.esp'
+    msg:
+      - <<: *useOnlyOneX
+        subs: [ 'VIS - DLC Automatron' ]
+        condition: 'many("ValdacilsItemSorting-ZY-DLCAutomatron(-Weightless)?\.esp")'
   - name: 'ValdacilsItemSorting-ZY-DLCAutomatron.esp'
     msg:
       - <<: *alreadyInValsPicksVanWeight
@@ -3522,11 +3527,11 @@ plugins:
     msg:
       - <<: *alreadyInValsPicks
         condition: 'file("ValdacilsItemSorting-00-ValsPicks-DLCVersion.esp")'
-  - name: 'ValdacilsItemSorting-ZY-DLCAutomatron(-Weightless)?\.esp'
+  - name: 'ValdacilsItemSorting-ZY-DLCFarHarbor(-Weightless)?\.esp'
     msg:
       - <<: *useOnlyOneX
-        subs: [ 'VIS - DLC Automatron' ]
-        condition: 'many("ValdacilsItemSorting-ZY-DLCAutomatron(-Weightless)?\.esp")'
+        subs: [ 'VIS - DLC Far Harbour' ]
+        condition: 'many("ValdacilsItemSorting-ZY-DLCFarHarbor(-Weightless)?\.esp")'
   - name: 'ValdacilsItemSorting-ZY-DLCFarHarbor.esp'
     msg:
       - <<: *alreadyInValsPicksVanWeight
@@ -3535,11 +3540,6 @@ plugins:
     msg:
       - <<: *alreadyInValsPicks
         condition: 'file("ValdacilsItemSorting-00-ValsPicks-DLCVersion.esp")'
-  - name: 'ValdacilsItemSorting-ZY-DLCFarHarbor(-Weightless)?\.esp'
-    msg:
-      - <<: *useOnlyOneX
-        subs: [ 'VIS - DLC Far Harbour' ]
-        condition: 'many("ValdacilsItemSorting-ZY-DLCFarHarbor(-Weightless)?\.esp")'
   - name: 'ValdacilsItemSorting-ZZ-DLCArmorByClassOverride.esp'
     after:
       - 'ValdacilsItemSorting-ZY-DLCAutomatron.esp'
