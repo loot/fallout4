@@ -2902,9 +2902,10 @@ plugins:
     msg:
       - <<: *useVersionFarHarbor
         condition: 'active("DLCCoast.esm") and (checksum("Give Me That Bottle.esp", ECEBD46B) or checksum("Give Me That Bottle.esp", 939407C9))'
-      - <<: *patchIncluded
+      - <<: *useVersion
+        type: say
         subs: [ 'Valdacil''s Item Sorting' ]
-        condition: 'active("ValdacilsItemSorting-.+\.esp") and (checksum("Give Me That Bottle.esp", 814AC32F) or checksum("Give Me That Bottle.esp", ECEBD46B))'
+        condition: 'active("ValdacilsItemSorting-.+\.esp") and (checksum("Give Me That Bottle.esp", F330F7B5) or checksum("Give Me That Bottle.esp", ECEBD46B))'
       - type: warn
         content:
           - lang: en
