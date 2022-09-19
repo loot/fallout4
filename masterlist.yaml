@@ -3390,7 +3390,7 @@ plugins:
   - name: 'ValdacilsItemSorting-.*\.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/3877/' ]
     inc: [ 'Z_Horizon.esp' ]
-  - name: 'ValdacilsItemSorting-00-ValsPicks-(NoDLCVersion|DLCVersion)(-VanillaWeight)?\.esp'
+  - name: 'ValdacilsItemSorting-00-ValsPicks-(No)?DLCVersion(-VanillaWeight)?\.esp'
     msg:
       - <<: *useOnlyOneX
         subs: [ 'Val''s Picks' ]
