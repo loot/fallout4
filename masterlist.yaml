@@ -3300,10 +3300,6 @@ plugins:
         condition: 'active("EveryonesBestFriend.esp") and active("Give Me That Bottle.esp") and not active("DEF_WIDGETS_SURVIVAL1 - EBF+GMTB patch.esp")'
   - name: 'DEF_WIDGETS_SURVIVAL1 - EBF+GMTB patch.esp'
     inc: [ 'SurvivalOptions.esp' ]
-    clean:
-      # Version 1.0.1
-      - crc: 0x5E0FEBD4
-        util: 'FO4Edit v3.2'
   - name: '(EBF_DEFW|gmtb)_Patch\.esp'
     req: [ 'DEF_WIDGETS_SURVIVAL1.esp' ]
     msg:
@@ -3315,15 +3311,7 @@ plugins:
     inc:
       - 'gmtb_patch.esp'
       - 'SurvivalOptions.esp'
-    clean:
-      # Version 1
-      - crc: 0x7101BFA3
-        util: 'FO4Edit v3.2'
   - name: 'gmtb_patch.esp'
-    clean:
-      # Version 9
-      - crc: 0x4EFF73BD
-        util: 'FO4Edit v3.2'
 
   - name: 'SatelliteWorldMap.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/8989/' ]
