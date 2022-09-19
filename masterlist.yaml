@@ -2900,8 +2900,7 @@ plugins:
       - name: 'ValdacilsItemSorting-00-ValsPicks-NoDLCVersion-VanillaWeight.esp'
         condition: 'checksum("Give Me That Bottle.esp", 77879F09) or checksum("Give Me That Bottle.esp", 939407C9)'
     msg:
-      - <<: *patchProvided
-        subs: [ 'Far Harbor' ]
+      - <<: *useVersionFarHarbor
         condition: 'active("DLCCoast.esm") and (checksum("Give Me That Bottle.esp", ECEBD46B) or checksum("Give Me That Bottle.esp", 939407C9))'
       - <<: *patchIncluded
         subs: [ 'Valdacil''s Item Sorting' ]
