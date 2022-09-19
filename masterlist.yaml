@@ -3283,6 +3283,9 @@ plugins:
       - <<: *alreadyInX
         subs: [ 'DEF_SSW Survival Stats widget redone' ]
         condition: 'file("F4SE/Plugins/SSW.dll")'
+      - <<: *obsolete
+        subs: [ '[DEF_SSW Survival Stats widget redone](https://www.nexusmods.com/fallout4/mods/38067/)' ]
+        condition: 'not file("F4SE/Plugins/SSW.dll") and file("F4SE/Plugins/mcm.dll")'
       - <<: *patchProvided
         subs: [ 'Customizable Needs' ]
         condition: 'active("CustomizableNeeds.esp") and not checksum("CustomizableNeeds.esp", F2860D72)'
