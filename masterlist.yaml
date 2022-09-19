@@ -3275,10 +3275,6 @@ plugins:
       - link: 'https://www.nexusmods.com/fallout4/mods/20818/'
         name: 'Survival stats widget'
   - name: 'DEF_WIDGETS_SURVIVAL1.esp'
-    clean:
-      # Version 9
-      - crc: 0x2B12E764
-        util: 'FO4Edit v3.2'
     msg:
       - <<: *alreadyInX
         subs: [ 'DEF_SSW Survival Stats widget redone' ]
@@ -3298,6 +3294,9 @@ plugins:
       - <<: *patchProvided
         subs: [ 'Everyone''s Best Friend & Give Me That Bottle' ]
         condition: 'active("EveryonesBestFriend.esp") and active("Give Me That Bottle.esp") and not active("DEF_WIDGETS_SURVIVAL1 - EBF+GMTB patch.esp")'
+    clean:
+      - crc: 0x2B12E764
+        util: 'FO4Edit v4.0.4c'
   - name: 'DEF_WIDGETS_SURVIVAL1 - EBF+GMTB patch.esp'
     inc: [ 'SurvivalOptions.esp' ]
   - name: '(EBF_DEFW|gmtb)_Patch\.esp'
