@@ -3270,6 +3270,74 @@ plugins:
         util: 'FO4Edit v4.0.3h (Hotfix 1)'
 
 ###### Gameplay - User Interface ######
+  - name: 'DEF_WIDGETS_SURVIVAL1.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/20818/' ]
+    inc:
+      # Conflicts in Scripts/Hardcore/HC_ManagerScript.pex
+      - 'CustomizableNeeds + RealisticAidSideEffects.esp'
+      - 'SurvivalOptions.esp'
+    clean:
+      # Version 9
+      - crc: 0x2B12E764
+        util: 'FO4Edit v3.2'
+    msg:
+      - <<: *patchProvided
+        subs: [ 'Customizable Needs' ]
+        condition: 'active("CustomizableNeeds.esp") and not checksum("CustomizableNeeds.esp", F2860D72)'
+      - <<: *patchProvided
+        subs: [ 'Everyone''s Best Friend' ]
+        condition: 'active("EveryonesBestFriend.esp") and not active("EBF_DEFW_Patch.esp") and not active("Give Me That Bottle.esp")'
+      - <<: *patchProvided
+        subs: [ 'Give Me That Bottle' ]
+        condition: 'active("Give Me That Bottle.esp") and not active("gmtb_patch.esp") and not active("EveryonesBestFriend.esp")'
+      - <<: *patchProvided
+        subs: [ 'Everyone''s Best Friend & Give Me That Bottle' ]
+        condition: 'active("EveryonesBestFriend.esp") and active("Give Me That Bottle.esp") and not active("DEF_WIDGETS_SURVIVAL1 - EBF+GMTB patch.esp")'
+  - name: 'DEF_WIDGETS_SURVIVAL1 - EBF+GMTB patch.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/20818/' ]
+    inc:
+      # Conflicts in Scripts/Hardcore/HC_ManagerScript.pex
+      - 'SurvivalOptions.esp'
+    clean:
+      # Version 1.0.1
+      - crc: 0x5E0FEBD4
+        util: 'FO4Edit v3.2'
+    msg:
+      - type: warn
+        content:
+          - lang: en
+            text: 'Version 1.0.0 of this plugin has known errors. Please update to the newest version.'
+          - lang: de
+            text: 'Version 1.0.0 von dieser Mod hat bekannte Fehler. Bitte updaten Sie zur neuesten Version.'
+        condition: 'version("DEF_WIDGETS_SURVIVAL1 - EBF+GMTB patch.esp", "1.0.0", ==)'
+  - name: 'EBF_DEFW_Patch.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/20818/' ]
+    req: [ 'DEF_WIDGETS_SURVIVAL1.esp' ]
+    inc:
+      - 'gmtb_patch.esp'
+      # Conflicts in Scripts/Hardcore/HC_ManagerScript.pex
+      - 'SurvivalOptions.esp'
+    clean:
+      # Version 1
+      - crc: 0x7101BFA3
+        util: 'FO4Edit v3.2'
+    msg:
+      - <<: *alreadyInX
+        condition: 'active("DEF_WIDGETS_SURVIVAL1 - EBF+GMTB patch.esp")'
+        subs: [ 'DEF_WIDGETS_SURVIVAL1 - EBF+GMTB patch.esp' ]
+  - name: 'gmtb_patch.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/20818/' ]
+    req: [ 'DEF_WIDGETS_SURVIVAL1.esp' ]
+    inc: [ 'EBF_DEFW_Patch.esp' ]
+    clean:
+      # Version 9
+      - crc: 0x4EFF73BD
+        util: 'FO4Edit v3.2'
+    msg:
+      - <<: *alreadyInX
+        condition: 'active("DEF_WIDGETS_SURVIVAL1 - EBF+GMTB patch.esp")'
+        subs: [ 'DEF_WIDGETS_SURVIVAL1 - EBF+GMTB patch.esp' ]
+
   - name: 'SatelliteWorldMap.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/8989/' ]
     group: *worldSettingsGroup
@@ -5195,74 +5263,6 @@ plugins:
       - <<: *useOnlyOneX
         condition: 'active("StarlightLOD.esp")'
         subs: [ 'StarlightLOD plugin' ]
-
-  - name: 'DEF_WIDGETS_SURVIVAL1.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/20818/' ]
-    inc:
-      # Conflicts in Scripts/Hardcore/HC_ManagerScript.pex
-      - 'CustomizableNeeds + RealisticAidSideEffects.esp'
-      - 'SurvivalOptions.esp'
-    clean:
-      # Version 9
-      - crc: 0x2B12E764
-        util: 'FO4Edit v3.2'
-    msg:
-      - <<: *patchProvided
-        subs: [ 'Customizable Needs' ]
-        condition: 'active("CustomizableNeeds.esp") and not checksum("CustomizableNeeds.esp", F2860D72)'
-      - <<: *patchProvided
-        subs: [ 'Everyone''s Best Friend' ]
-        condition: 'active("EveryonesBestFriend.esp") and not active("EBF_DEFW_Patch.esp") and not active("Give Me That Bottle.esp")'
-      - <<: *patchProvided
-        subs: [ 'Give Me That Bottle' ]
-        condition: 'active("Give Me That Bottle.esp") and not active("gmtb_patch.esp") and not active("EveryonesBestFriend.esp")'
-      - <<: *patchProvided
-        subs: [ 'Everyone''s Best Friend & Give Me That Bottle' ]
-        condition: 'active("EveryonesBestFriend.esp") and active("Give Me That Bottle.esp") and not active("DEF_WIDGETS_SURVIVAL1 - EBF+GMTB patch.esp")'
-  - name: 'gmtb_patch.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/20818/' ]
-    req: [ 'DEF_WIDGETS_SURVIVAL1.esp' ]
-    inc: [ 'EBF_DEFW_Patch.esp' ]
-    clean:
-      # Version 9
-      - crc: 0x4EFF73BD
-        util: 'FO4Edit v3.2'
-    msg:
-      - <<: *alreadyInX
-        condition: 'active("DEF_WIDGETS_SURVIVAL1 - EBF+GMTB patch.esp")'
-        subs: [ 'DEF_WIDGETS_SURVIVAL1 - EBF+GMTB patch.esp' ]
-  - name: 'EBF_DEFW_Patch.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/20818/' ]
-    req: [ 'DEF_WIDGETS_SURVIVAL1.esp' ]
-    inc:
-      - 'gmtb_patch.esp'
-      # Conflicts in Scripts/Hardcore/HC_ManagerScript.pex
-      - 'SurvivalOptions.esp'
-    clean:
-      # Version 1
-      - crc: 0x7101BFA3
-        util: 'FO4Edit v3.2'
-    msg:
-      - <<: *alreadyInX
-        condition: 'active("DEF_WIDGETS_SURVIVAL1 - EBF+GMTB patch.esp")'
-        subs: [ 'DEF_WIDGETS_SURVIVAL1 - EBF+GMTB patch.esp' ]
-  - name: 'DEF_WIDGETS_SURVIVAL1 - EBF+GMTB patch.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/20818/' ]
-    inc:
-      # Conflicts in Scripts/Hardcore/HC_ManagerScript.pex
-      - 'SurvivalOptions.esp'
-    clean:
-      # Version 1.0.1
-      - crc: 0x5E0FEBD4
-        util: 'FO4Edit v3.2'
-    msg:
-      - type: warn
-        content:
-          - lang: en
-            text: 'Version 1.0.0 of this plugin has known errors. Please update to the newest version.'
-          - lang: de
-            text: 'Version 1.0.0 von dieser Mod hat bekannte Fehler. Bitte updaten Sie zur neuesten Version.'
-        condition: 'version("DEF_WIDGETS_SURVIVAL1 - EBF+GMTB patch.esp", "1.0.0", ==)'
 
   - name: 'Sanctuary Terminals.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/11730/' ]
