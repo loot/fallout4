@@ -2906,13 +2906,10 @@ plugins:
         type: say
         subs: [ 'Valdacil''s Item Sorting' ]
         condition: 'active("ValdacilsItemSorting-.+\.esp") and (checksum("Give Me That Bottle.esp", F330F7B5) or checksum("Give Me That Bottle.esp", ECEBD46B))'
-      - type: warn
-        content:
-          - lang: en
-            text: "You seem to be using the Valdacil's Item Sorting version of the mod, but without using any of the Valdacil's Item Sorting plugins. Consider using a version of Give Me That Bottle without sorting patches."
-          - lang: de
-            text: "Sie scheinen die Valdacil's Item Sorting Variante der Mod zu nutzen, aber ohne Nutzen jeglicher Valdacil's Item Sorting-Plugins. Ziehen Sie in Erwägung eine Version von Give Me That Bottle ohne Sortierungs-Patches zu nutzen."
-        condition: 'not active("ValdacilsItemSorting-.+\.esp") and (checksum("Give Me That Bottle.esp", 939407C9) or checksum("Give Me That Bottle.esp", AE38A5A0))'
+      - <<: *useVersionNon
+        type: say
+        subs: [ 'Valdacil''s Item Sorting' ]
+        condition: 'not active("ValdacilsItemSorting-.+\.esp") and (checksum("Give Me That Bottle.esp", 77879F09) or checksum("Give Me That Bottle.esp", 939407C9))'
 
   - name: 'ScrapThatMisc.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/5673/' ]
