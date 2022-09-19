@@ -3315,6 +3315,7 @@ plugins:
   - name: '(EBF_DEFW|gmtb)_Patch\.esp'
     req: [ 'DEF_WIDGETS_SURVIVAL1.esp' ]
   - name: 'EBF_DEFW_Patch.esp'
+    req: [ 'EveryonesBestFriend.esp' ]
     inc:
       - 'gmtb_patch.esp'
       # Conflicts in Scripts/Hardcore/HC_ManagerScript.pex
