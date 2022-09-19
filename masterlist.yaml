@@ -3271,8 +3271,10 @@ plugins:
 
 ###### Gameplay - User Interface ######
   - name: '(DEF_WIDGETS_SURVIVAL1( - EBF\+GMTB patch)?|(EBF_DEFW|gmtb)_Patch)\.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/20818/'
+        name: 'Survival stats widget'
   - name: 'DEF_WIDGETS_SURVIVAL1.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/20818/' ]
     inc:
       # Conflicts in Scripts/Hardcore/HC_ManagerScript.pex
       - 'CustomizableNeeds + RealisticAidSideEffects.esp'
@@ -3295,7 +3297,6 @@ plugins:
         subs: [ 'Everyone''s Best Friend & Give Me That Bottle' ]
         condition: 'active("EveryonesBestFriend.esp") and active("Give Me That Bottle.esp") and not active("DEF_WIDGETS_SURVIVAL1 - EBF+GMTB patch.esp")'
   - name: 'DEF_WIDGETS_SURVIVAL1 - EBF+GMTB patch.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/20818/' ]
     inc:
       # Conflicts in Scripts/Hardcore/HC_ManagerScript.pex
       - 'SurvivalOptions.esp'
@@ -3313,7 +3314,6 @@ plugins:
         condition: 'version("DEF_WIDGETS_SURVIVAL1 - EBF+GMTB patch.esp", "1.0.0", ==)'
   - name: '(EBF_DEFW|gmtb)_Patch\.esp'
   - name: 'EBF_DEFW_Patch.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/20818/' ]
     req: [ 'DEF_WIDGETS_SURVIVAL1.esp' ]
     inc:
       - 'gmtb_patch.esp'
@@ -3328,7 +3328,6 @@ plugins:
         condition: 'active("DEF_WIDGETS_SURVIVAL1 - EBF+GMTB patch.esp")'
         subs: [ 'DEF_WIDGETS_SURVIVAL1 - EBF+GMTB patch.esp' ]
   - name: 'gmtb_patch.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/20818/' ]
     req: [ 'DEF_WIDGETS_SURVIVAL1.esp' ]
     inc: [ 'EBF_DEFW_Patch.esp' ]
     clean:
