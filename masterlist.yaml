@@ -3387,6 +3387,7 @@ plugins:
         subs: [ 'FallUI - Item Sorter Radio Tags ESP' ]
         condition: 'many("M8r_Radio_Tags_(EN|DE|ES(MX)?|FR|IT|PL|PTBR|RU)\.esp")'
 
+  - name: '(ValdacilsItemSorting-|VIS-Patch).*\.esp'
   - name: 'ValdacilsItemSorting-.*\.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/3877/' ]
     inc: [ 'Z_Horizon.esp' ]
