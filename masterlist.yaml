@@ -1591,10 +1591,7 @@ plugins:
         name: 'Extended Dialogue Interface'
     group: *frameworksGroup
     msg:
-      - type: warn
-        content:
-          - lang: en
-            text: 'Another mod seems to be overwriting one of this module''s essential files. Please ensure you''re using a compatible version of %1%.'
+      - <<: *essentialFiles
         subs: [ '**Interface/DialogueMenu.swf**' ]
         # CRCs of XDI compatible "Interface/DialogueMenu.swf".
         # XDI (v1.3.0+ 0xA0515C5F), XDI No Speech Bubble v1 (0xCDF0E1B6), Vault Girl Mod XDI Fix v1 (0x2B7DD8DF)
@@ -4347,10 +4344,8 @@ plugins:
       - <<: *patchIncluded
         subs: [ 'Vault-Tec Workshop' ]
         condition: 'active("DLCworkshop03.esm") and not active("Z_Horizon_DLC_Workshop03.esp") and not active("Z_Horizon_DLC_All.esp")'
-      - type: error
-        content:
-          - lang: en
-            text: 'Another mod seems to be overwriting one of this module''s essential files. Please ensure you''re using this module''s version of %1%.'
+      - <<: *essentialFiles
+        type: error
         subs: [ '**scripts/hardcore/hc_managerscript.pex**' ]
         condition: 'file("scripts/hardcore/hc_managerscript.pex") and version("Z_Horizon.esp", "1.8.0", ==) and not checksum("scripts/hardcore/hc_managerscript.pex", 2FEC9CFC)'
 
