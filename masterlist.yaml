@@ -3671,6 +3671,8 @@ plugins:
       - crc: 0xB3EC0D5B
         util: 'FO4Edit v4.0.4b'
 
+  - name: 'Vault 88 - Redefined Layout V1.3.1.esp'
+
 ###### Locations - Player Homes ######
   - name: 'AlootHomePlate.esp'
     url:
