@@ -3671,6 +3671,22 @@ plugins:
       - crc: 0xB3EC0D5B
         util: 'FO4Edit v4.0.4b'
 
+  - name: 'Vault 88 - Redefined Layout V1.3.1.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/17031/'
+        name: 'Vault 88''s - Redefined Layout'
+    dirty:
+      - <<: *reqManualFix
+        crc: 0xF7ED8FA3
+        util: '[FO4Edit v4.0.4c](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 19
+        udr: 767
+        nav: 1
+      - <<: *reqManualFix
+        crc: 0xA689908D
+        util: '[FO4Edit v4.0.4c](https://www.nexusmods.com/fallout4/mods/2737)'
+        nav: 1
+
 ###### Locations - Player Homes ######
   - name: 'AlootHomePlate.esp'
     url:
