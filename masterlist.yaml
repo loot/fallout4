@@ -3672,6 +3672,9 @@ plugins:
         util: 'FO4Edit v4.0.4b'
 
   - name: 'Vault 88 - Redefined Layout V1.3.1.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/17031/'
+        name: 'Vault 88''s - Redefined Layout'
 
 ###### Locations - Player Homes ######
   - name: 'AlootHomePlate.esp'
