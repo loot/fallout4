@@ -359,7 +359,6 @@ common:
 bash_tags:
   - 'Deactivate'
   - 'Delev'
-  - 'Filter'
   - 'MustBeActiveIfImported'
   - 'ObjectBounds'
   - 'Relev'
