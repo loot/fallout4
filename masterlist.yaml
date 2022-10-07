@@ -3619,6 +3619,24 @@ plugins:
         itm: 64
         udr: 11
 
+  - name: 'Coastal Cottage DCnR.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/64864/'
+        name: 'Coastal Cottage Deep Clean and Remodel'
+    after: [ 'PRP.esp' ]
+
+  - name: 'Cov-TBH-DCnR.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/64569/'
+        name: 'Covenant Deep Clean with Optional Room Clearing'
+    after: [ 'PRP.esp' ]
+
+  - name: 'Croup Manor Deep Clean and Remodel.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/64614/'
+        name: 'Croup Manor Deep Clean and Remodel'
+    after: [ 'PRP.esp' ]
+
   - name: 'Fallon''s Basement Overhaul.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/25629/'
@@ -3649,6 +3667,36 @@ plugins:
       - crc: 0xDC6139D4
         util: 'FO4Edit v4.0.4b'
 
+  - name: 'Finch Farm Deep Clean.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/64869/'
+        name: 'Finch Farm Deep Clean'
+    after: [ 'PRP.esp' ]
+
+  - name: 'Graygarden Deep Clean and Remodel.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/64677/'
+        name: 'Graygarden Deep Clean and Remodel'
+    after: [ 'PRP.esp' ]
+
+  - name: 'Greentop Deep Clean and Remodel.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/64605/'
+        name: 'Greentop Nursery Deep Clean and Remodel'
+    after: [ 'PRP.esp' ]
+
+  - name: 'Hangmans Alley Deep Clean.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/64885/'
+        name: 'Hangman''s Alley Deep Clean and Removable Shack'
+    after: [ 'PRP.esp' ]
+
+  - name: 'Kingsport Lighthouse DCnR.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/64896/'
+        name: 'Kingsport Lighthouse Deep Clean and Remodel'
+    after: [ 'PRP.esp' ]
+
   - name: 'PLI_?USAF(_Satellite_Station_Olivia|SSO - (ELFX|MDB) Patch)\.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/59993/'
@@ -3669,6 +3717,36 @@ plugins:
     clean:
       - crc: 0xB3EC0D5B
         util: 'FO4Edit v4.0.4b'
+
+  - name: 'Starlight Deep Clean.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/64818/'
+        name: 'Starlight Deep Clean'
+    after: [ 'PRP.esp' ]
+
+  - name: 'Sunshide Tidings DCnR.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/64837/'
+        name: 'Sunshine Tidings Deep Clean and Remodel'
+    after: [ 'PRP.esp' ]
+
+  - name: 'TaffingtonBH DCnR No Cov.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/64546/'
+        name: 'Taffington Boathouse Deep Clean and Remodel'
+    after: [ 'PRP.esp' ]
+
+  - name: 'Tenpines Bluff Deep Clean.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/64700/'
+        name: 'Tenpines and Outpost Zimonja Deep Clean and Rebuild'
+    after: [ 'PRP.esp' ]
+
+  - name: 'TheSlog Deep Clean.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/64630/'
+        name: 'The Slog Deep Clean and Remodel'
+    after: [ 'PRP.esp' ]
 
   - name: 'Vault 88 - Redefined Layout V1.3.1.esp'
     url:
