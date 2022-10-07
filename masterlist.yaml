@@ -3619,6 +3619,12 @@ plugins:
         itm: 64
         udr: 11
 
+  - name: 'Coastal Cottage DCnR.esp'
+
+  - name: 'Cov-TBH-DCnR.esp'
+
+  - name: 'Croup Manor Deep Clean and Remodel.esp'
+
   - name: 'Fallon''s Basement Overhaul.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/25629/'
@@ -3649,6 +3655,16 @@ plugins:
       - crc: 0xDC6139D4
         util: 'FO4Edit v4.0.4b'
 
+  - name: 'Finch Farm Deep Clean.esp'
+
+  - name: 'Graygarden Deep Clean and Remodel.esp'
+
+  - name: 'Greentop Deep Clean and Remodel.esp'
+
+  - name: 'Hangmans Alley Deep Clean.esp'
+
+  - name: 'Kingsport Lighthouse DCnR.esp'
+
   - name: 'PLI_?USAF(_Satellite_Station_Olivia|SSO - (ELFX|MDB) Patch)\.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/59993/'
@@ -3669,6 +3685,16 @@ plugins:
     clean:
       - crc: 0xB3EC0D5B
         util: 'FO4Edit v4.0.4b'
+
+  - name: 'Starlight Deep Clean.esp'
+
+  - name: 'Sunshide Tidings DCnR.esp'
+
+  - name: 'TaffingtonBH DCnR No Cov.esp'
+
+  - name: 'Tenpines Bluff Deep Clean.esp'
+
+  - name: 'TheSlog Deep Clean.esp'
 
   - name: 'Vault 88 - Redefined Layout V1.3.1.esp'
     url:
