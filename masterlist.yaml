@@ -3632,7 +3632,7 @@ plugins:
   - name: 'Cov-TBH-DCnR(_F-ESL)?\.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/64569/'
-        name: 'Covenant Deep Clean with Optional Room Clearing'
+        name: 'Covenant and Taffington BH Deep Clean and Remodel'
     after: [ 'PRP.esp' ]
 
   - name: 'Croup ?Manor(_DCnR_F-ESL| Deep Clean and Remodel)\.esp'
