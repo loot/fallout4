@@ -3619,11 +3619,15 @@ plugins:
         itm: 64
         udr: 11
 
+  - name: 'Bunker Hill D(CnR_F-ESL|eep Clean ESL-F)\.esp'
+
   - name: 'Coastal ?Cottage[_ ]DCnR(_F-ESL)?\.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/64864/'
         name: 'Coastal Cottage Deep Clean and Remodel'
     after: [ 'PRP.esp' ]
+
+  - name: 'CountyCrossing_DCnR_F-ESL.esp'
 
   - name: 'Cov-TBH-DCnR(_F-ESL)?\.esp'
     url:
@@ -3636,6 +3640,8 @@ plugins:
       - link: 'https://www.nexusmods.com/fallout4/mods/64614/'
         name: 'Croup Manor Deep Clean and Remodel'
     after: [ 'PRP.esp' ]
+
+  - name: 'EgretTours_DCnR_F-ESL.esp'
 
   - name: 'Fallon''s Basement Overhaul.esp'
     url:
@@ -3691,11 +3697,15 @@ plugins:
         name: 'Hangman''s Alley Deep Clean and Removable Shack'
     after: [ 'PRP.esp' ]
 
+  - name: 'JamaicaPlains_DCnR_F-ESL.esp'
+
   - name: 'Kingsport Lighthouse DCnR(_F-ESL)?\.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/64896/'
         name: 'Kingsport Lighthouse Deep Clean and Remodel'
     after: [ 'PRP.esp' ]
+
+  - name: 'NordhagenBeach_DC_F-ESL.esp'
 
   - name: 'PLI_?USAF(_Satellite_Station_Olivia|SSO - (ELFX|MDB) Patch)\.esp'
     url:
@@ -3741,6 +3751,8 @@ plugins:
       - link: 'https://www.nexusmods.com/fallout4/mods/64700/'
         name: 'Tenpines and Outpost Zimonja Deep Clean and Rebuild'
     after: [ 'PRP.esp' ]
+
+  - name: 'TheCastle_DC_F-ESL.esp'
 
   - name: 'TheSlog(_DC_F-ESL| Deep Clean)\.esp'
     url:
