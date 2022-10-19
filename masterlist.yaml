@@ -3620,6 +3620,9 @@ plugins:
         udr: 11
 
   - name: 'Bunker Hill D(CnR_F-ESL|eep Clean ESL-F)\.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/65014/'
+        name: 'Bunker Hill Deep Clean and Remodel'
 
   - name: 'Coastal ?Cottage[_ ]DCnR(_F-ESL)?\.esp'
     url:
@@ -3628,6 +3631,9 @@ plugins:
     after: [ 'PRP.esp' ]
 
   - name: 'CountyCrossing_DCnR_F-ESL.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/65048/'
+        name: 'County Crossing Deep Clean and Remodel'
 
   - name: 'Cov-TBH-DCnR(_F-ESL)?\.esp'
     url:
@@ -3642,6 +3648,9 @@ plugins:
     after: [ 'PRP.esp' ]
 
   - name: 'EgretTours_DCnR_F-ESL.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/65085/'
+        name: 'Egret Tours Marina Deep Clean and Remodel'
 
   - name: 'Fallon''s Basement Overhaul.esp'
     url:
@@ -3698,6 +3707,9 @@ plugins:
     after: [ 'PRP.esp' ]
 
   - name: 'JamaicaPlains_DCnR_F-ESL.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/65175/'
+        name: 'Jamaica Plains Deep Clean and Remodel'
 
   - name: 'Kingsport Lighthouse DCnR(_F-ESL)?\.esp'
     url:
@@ -3706,6 +3718,9 @@ plugins:
     after: [ 'PRP.esp' ]
 
   - name: 'NordhagenBeach_DC_F-ESL.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/65071/'
+        name: 'Nordhagen Beach Deep Clean'
 
   - name: 'PLI_?USAF(_Satellite_Station_Olivia|SSO - (ELFX|MDB) Patch)\.esp'
     url:
@@ -3753,6 +3768,9 @@ plugins:
     after: [ 'PRP.esp' ]
 
   - name: 'TheCastle_DC_F-ESL.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/65178/'
+        name: 'The Castle Deep Clean'
 
   - name: 'TheSlog(_DC_F-ESL| Deep Clean)\.esp'
     url:
