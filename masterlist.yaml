@@ -3623,23 +3623,33 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/65014/'
         name: 'Bunker Hill Deep Clean and Remodel'
+    after:
+      - 'BostonFPSFixAIO.esp'
+      - 'PRP.esp'
 
   - name: 'Coastal ?Cottage[_ ]DCnR(_F-ESL)?\.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/64864/'
         name: 'Coastal Cottage Deep Clean and Remodel'
-    after: [ 'PRP.esp' ]
+    after:
+      - 'BostonFPSFixAutomatron.esp'
+      - 'PRP.esp'
 
   - name: 'CountyCrossing_DCnR_F-ESL.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/65048/'
         name: 'County Crossing Deep Clean and Remodel'
+    after:
+      - 'BostonFPSFixAIO.esp'
+      - 'PRP.esp'
 
   - name: 'Cov-TBH-DCnR(_F-ESL)?\.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/64569/'
         name: 'Covenant and Taffington BH Deep Clean and Remodel'
-    after: [ 'PRP.esp' ]
+    after:
+      - 'BostonFPSFixAIO.esp'
+      - 'PRP.esp'
 
   - name: 'Croup ?Manor(_DCnR_F-ESL| Deep Clean and Remodel)\.esp'
     url:
@@ -3651,6 +3661,9 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/65085/'
         name: 'Egret Tours Marina Deep Clean and Remodel'
+    after:
+      - 'BostonFPSFixAIO.esp'
+      - 'PRP.esp'
 
   - name: 'Fallon''s Basement Overhaul.esp'
     url:
@@ -3704,12 +3717,17 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/64885/'
         name: 'Hangman''s Alley Deep Clean and Removable Shack'
-    after: [ 'PRP.esp' ]
+    after:
+      - 'BostonFPSFixAIO.esp'
+      - 'PRP.esp'
 
   - name: 'JamaicaPlains_DCnR_F-ESL.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/65175/'
         name: 'Jamaica Plains Deep Clean and Remodel'
+    after:
+      - 'BostonFPSFixAIO.esp'
+      - 'PRP.esp'
 
   - name: 'Kingsport Lighthouse DCnR(_F-ESL)?\.esp'
     url:
@@ -3721,6 +3739,9 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/65071/'
         name: 'Nordhagen Beach Deep Clean'
+    after:
+      - 'BostonFPSFixAIO.esp'
+      - 'PRP.esp'
 
   - name: 'PLI_?USAF(_Satellite_Station_Olivia|SSO - (ELFX|MDB) Patch)\.esp'
     url:
@@ -3747,7 +3768,9 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/64818/'
         name: 'Starlight Deep Clean'
-    after: [ 'PRP.esp' ]
+    after:
+      - 'BostonFPSFixAIO.esp'
+      - 'PRP.esp'
 
   - name: 'Sunshide ?Tidings[_ ]DCnR(_F-ESL)?\.esp' # sic
     url:
@@ -3771,6 +3794,9 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/65178/'
         name: 'The Castle Deep Clean'
+    after:
+      - 'BostonFPSFixAIO.esp'
+      - 'PRP.esp'
 
   - name: 'TheSlog(_DC_F-ESL| Deep Clean)\.esp'
     url:
