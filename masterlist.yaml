@@ -3610,6 +3610,8 @@ plugins:
         udr: 1
 
 ###### Locations - Overhauls ######
+  - name: 'AbernathyFarm_DC_F-ESL.esp'
+
   - name: 'atlanticofficesf23.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/25401/' ]
     dirty:
@@ -3735,6 +3737,8 @@ plugins:
         name: 'Kingsport Lighthouse Deep Clean and Remodel'
     after: [ 'PRP.esp' ]
 
+  - name: 'MurkwaterConstruction_DCnR_F-ESL.esp'
+
   - name: 'NordhagenBeach_DC_F-ESL.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/65071/'
@@ -3763,6 +3767,14 @@ plugins:
     clean:
       - crc: 0xB3EC0D5B
         util: 'FO4Edit v4.0.4b'
+
+  - name: 'RedRocket_DC_F-ESL.esp'
+
+  - name: 'Sanctuary_DCnR_F-ESL.esp'
+
+  - name: 'SomervillePlace_DCnR_F-ESL.esp'
+
+  - name: 'SpectacleIsland_DCnR_F-ESL.esp'
 
   - name: 'Starlight(Drivein_DCnR_F-ESL| Deep Clean)\.esp'
     url:
@@ -3819,6 +3831,8 @@ plugins:
         crc: 0xA689908D
         util: '[FO4Edit v4.0.4c](https://www.nexusmods.com/fallout4/mods/2737)'
         nav: 1
+
+  - name: 'WarwickHomestead_DC_F-ESL.esp'
 
 ###### Locations - Player Homes ######
   - name: 'AlootHomePlate.esp'
