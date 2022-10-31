@@ -3611,6 +3611,9 @@ plugins:
 
 ###### Locations - Overhauls ######
   - name: 'AbernathyFarm_DC_F-ESL.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/65539/'
+        name: 'Abernathy Farm Deep Clean'
 
   - name: 'atlanticofficesf23.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/25401/' ]
@@ -3738,6 +3741,9 @@ plugins:
     after: [ 'PRP.esp' ]
 
   - name: 'MurkwaterConstruction_DCnR_F-ESL.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/65295/'
+        name: 'Murkwater Construction Deep Clean and Rebuild'
 
   - name: 'NordhagenBeach_DC_F-ESL.esp'
     url:
@@ -3769,12 +3775,24 @@ plugins:
         util: 'FO4Edit v4.0.4b'
 
   - name: 'RedRocket_DC_F-ESL.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/65543/'
+        name: 'Red Rocket Deep Clean'
 
   - name: 'Sanctuary_DCnR_F-ESL.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/65561/'
+        name: 'Sanctuary Deep Clean and Remodel'
 
   - name: 'SomervillePlace_DCnR_F-ESL.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/65226/'
+        name: 'Somerville Place Deep Clean and Remodel'
 
   - name: 'SpectacleIsland_DCnR_F-ESL.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/65484/'
+        name: 'Spectacle Island Deep Clean and Remodel'
 
   - name: 'Starlight(Drivein_DCnR_F-ESL| Deep Clean)\.esp'
     url:
@@ -3833,6 +3851,9 @@ plugins:
         nav: 1
 
   - name: 'WarwickHomestead_DC_F-ESL.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/65361/'
+        name: 'Warwick Homestead Deep Clean'
 
 ###### Locations - Player Homes ######
   - name: 'AlootHomePlate.esp'
