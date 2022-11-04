@@ -3242,7 +3242,6 @@ plugins:
   - name: 'StartMeUp.esp'
     group: *lowPriorityGroup
     inc:
-      - 'AmazingFollowerTweaks.esp'
       - 'DualSurvivors.esp'
       - 'Interview.esp'
       - 'Killable Children.esp'
@@ -3254,6 +3253,11 @@ plugins:
       - <<: *obsolete
         subs: [ '[Start Me Up Redux](https://www.nexusmods.com/fallout4/mods/56984/)' ]
         condition: 'version("StartMeUp.esp", "6.7", <)'
+      - <<: *patch3rdParty
+        subs:
+          - 'Amazing FollowerTweaks'
+          - '[AFT Collection of Patches (No Spouse and More)](https://www.nexusmods.com/fallout4/mods/59699/) (No Spouse Companion)'
+        condition: 'active("AmazingFollowerTweaks.esp") and not checksum("AmazingFollowerTweaks.esp", B353FED0)'
       - <<: *patchIncluded
         subs: [ 'DLC Nuka-World' ]
         condition: 'active("DLCNukaWorld.esm") and not active("StartMeUpNukaWorldPatch.esp")'
