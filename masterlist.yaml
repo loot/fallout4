@@ -3668,8 +3668,14 @@ plugins:
     after: [ 'PRP.esp' ]
 
   - name: 'DaltonFarm_DCnR_F-ESL.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/65680/'
+        name: 'Dalton Farm Deep Clean'
 
   - name: 'EchoLakeLumber_DCnR_F-ESL.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/65719/'
+        name: 'Echo Lake Lumber Deep Clean and Remodel'
 
   - name: 'EgretTours_DCnR_F-ESL.esp'
     url:
@@ -3750,6 +3756,9 @@ plugins:
     after: [ 'PRP.esp' ]
 
   - name: 'LongfellowsCabin_DCnR_F-ESL.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/65633/'
+        name: 'Longfellow''s Cabin Deep Clean and Remodel'
 
   - name: 'MurkwaterConstruction_DCnR_F-ESL.esp'
     url:
@@ -3758,6 +3767,9 @@ plugins:
     after: [ 'PRP.esp' ]
 
   - name: 'NationalParkVC_DCnR_F-ESL.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/65771/'
+        name: 'National Park Visitor Center Deep Clean and Remodel'
 
   - name: 'NordhagenBeach_DC_F-ESL.esp'
     url:
@@ -3768,6 +3780,9 @@ plugins:
       - 'PRP.esp'
 
   - name: 'NukaWorldRedRocket_DC_F-ESL.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/65818/'
+        name: 'Nuka World Red Rocket Deep Clean'
 
   - name: 'PLI_?USAF(_Satellite_Station_Olivia|SSO - (ELFX|MDB) Patch)\.esp'
     url:
@@ -3857,6 +3872,9 @@ plugins:
     after: [ 'PRP.esp' ]
 
   - name: 'Vault88_DC_F-ESL.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/65943/'
+        name: 'Vault 88 Deep Clean and Remodel'
 
   - name: 'Vault 88 - Redefined Layout V1.3.1.esp'
     url:
