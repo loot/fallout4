@@ -3667,6 +3667,10 @@ plugins:
         name: 'Croup Manor Deep Clean and Remodel'
     after: [ 'PRP.esp' ]
 
+  - name: 'DaltonFarm_DCnR_F-ESL.esp'
+
+  - name: 'EchoLakeLumber_DCnR_F-ESL.esp'
+
   - name: 'EgretTours_DCnR_F-ESL.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/65085/'
@@ -3745,11 +3749,15 @@ plugins:
         name: 'Kingsport Lighthouse Deep Clean and Remodel'
     after: [ 'PRP.esp' ]
 
+  - name: 'LongfellowsCabin_DCnR_F-ESL.esp'
+
   - name: 'MurkwaterConstruction_DCnR_F-ESL.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/65295/'
         name: 'Murkwater Construction Deep Clean and Rebuild'
     after: [ 'PRP.esp' ]
+
+  - name: 'NationalParkVC_DCnR_F-ESL.esp'
 
   - name: 'NordhagenBeach_DC_F-ESL.esp'
     url:
@@ -3758,6 +3766,8 @@ plugins:
     after:
       - 'BostonFPSFixAIO.esp'
       - 'PRP.esp'
+
+  - name: 'NukaWorldRedRocket_DC_F-ESL.esp'
 
   - name: 'PLI_?USAF(_Satellite_Station_Olivia|SSO - (ELFX|MDB) Patch)\.esp'
     url:
@@ -3845,6 +3855,8 @@ plugins:
       - link: 'https://www.nexusmods.com/fallout4/mods/64630/'
         name: 'The Slog Deep Clean and Remodel'
     after: [ 'PRP.esp' ]
+
+  - name: 'Vault88_DC_F-ESL.esp'
 
   - name: 'Vault 88 - Redefined Layout V1.3.1.esp'
     url:
