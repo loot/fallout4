@@ -3667,6 +3667,18 @@ plugins:
         name: 'Croup Manor Deep Clean and Remodel'
     after: [ 'PRP.esp' ]
 
+  - name: 'DaltonFarm_DCnR_F-ESL.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/65680/'
+        name: 'Dalton Farm Deep Clean'
+    after: [ 'PRP.esp' ]
+
+  - name: 'EchoLakeLumber_DCnR_F-ESL.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/65719/'
+        name: 'Echo Lake Lumber Deep Clean and Remodel'
+    after: [ 'PRP.esp' ]
+
   - name: 'EgretTours_DCnR_F-ESL.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/65085/'
@@ -3745,16 +3757,40 @@ plugins:
         name: 'Kingsport Lighthouse Deep Clean and Remodel'
     after: [ 'PRP.esp' ]
 
+  - name: 'LongfellowsCabin_DCnR_F-ESL.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/65633/'
+        name: 'Longfellow''s Cabin Deep Clean and Remodel'
+    after:
+      - 'BostonFPSFixAIO.esp'
+      - 'PRP.esp'
+
   - name: 'MurkwaterConstruction_DCnR_F-ESL.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/65295/'
         name: 'Murkwater Construction Deep Clean and Rebuild'
     after: [ 'PRP.esp' ]
 
+  - name: 'NationalParkVC_DCnR_F-ESL.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/65771/'
+        name: 'National Park Visitor Center Deep Clean and Remodel'
+    after:
+      - 'BostonFPSFixAIO.esp'
+      - 'PRP.esp'
+
   - name: 'NordhagenBeach_DC_F-ESL.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/65071/'
         name: 'Nordhagen Beach Deep Clean'
+    after:
+      - 'BostonFPSFixAIO.esp'
+      - 'PRP.esp'
+
+  - name: 'NukaWorldRedRocket_DC_F-ESL.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/65818/'
+        name: 'Nuka World Red Rocket Deep Clean'
     after:
       - 'BostonFPSFixAIO.esp'
       - 'PRP.esp'
@@ -3844,6 +3880,12 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/64630/'
         name: 'The Slog Deep Clean and Remodel'
+    after: [ 'PRP.esp' ]
+
+  - name: 'Vault88_DC_F-ESL.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/65943/'
+        name: 'Vault 88 Deep Clean and Remodel'
     after: [ 'PRP.esp' ]
 
   - name: 'Vault 88 - Redefined Layout V1.3.1.esp'
