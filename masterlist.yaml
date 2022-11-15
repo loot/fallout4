@@ -3769,6 +3769,7 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/66010/'
         name: 'Mechanist Lair Deep Clean'
+    after: [ 'PRP.esp' ]
 
   - name: 'MurkwaterConstruction_DCnR_F-ESL.esp'
     url:
