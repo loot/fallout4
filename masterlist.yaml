@@ -3765,6 +3765,8 @@ plugins:
       - 'BostonFPSFixAIO.esp'
       - 'PRP.esp'
 
+  - name: 'MechanistLair_DC_F-ESL.esp'
+
   - name: 'MurkwaterConstruction_DCnR_F-ESL.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/65295/'
