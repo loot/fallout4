@@ -3982,17 +3982,17 @@ plugins:
         subs:
           - 'Extended Dialogue Interface'
           - '[The Machine and Her XDI patch](https://www.nexusmods.com/fallout4/mods/41194/)'
-        condition: 'checksum("F4SE/Plugins/XDI.dll", E1542495) and active("AGNISNikaCola01.esp")'
+        condition: 'active("XDI.esm") and not active("AGNISNikaCola01-XDI patch.esp")'
     dirty:
       - <<: *reqManualFix
         crc: 0x0C379897
-        util: '[FO4Edit v4.0.4](https://www.nexusmods.com/fallout4/mods/2737)'
+        util: '[FO4Edit v4.0.4c](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 129
         udr: 2
         nav: 10
       - <<: *reqManualFix
         crc: 0xDF624487
-        util: '[FO4Edit v4.0.4](https://www.nexusmods.com/fallout4/mods/2737)'
+        util: '[FO4Edit v4.0.4c](https://www.nexusmods.com/fallout4/mods/2737)'
         nav: 10
 
 ###### New Characters - Enemies ######
@@ -7046,15 +7046,14 @@ plugins:
         util: 'FO4Edit v4.0.2f'
 
   - name: 'AGNISNikaCola01-XDI patch.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/41194/' ]
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/41194/'
+        name: 'The Machine and Her XDI patch'
     dirty:
       - <<: *quickClean
         crc: 0xD7FA9066
-        util: '[FO4Edit v4.0.3](https://www.nexusmods.com/fallout4/mods/2737)'
+        util: '[FO4Edit v4.0.4c](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 5246
-    clean:
-      - crc: 0xD8715F52
-        util: 'FO4Edit v4.0.3'
 
   - name: 'MechanistsLair_\w+\.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/11490/' ]
