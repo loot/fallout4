@@ -3986,13 +3986,13 @@ plugins:
     dirty:
       - <<: *reqManualFix
         crc: 0x0C379897
-        util: '[FO4Edit v4.0.4](https://www.nexusmods.com/fallout4/mods/2737)'
+        util: '[FO4Edit v4.0.4c](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 129
         udr: 2
         nav: 10
       - <<: *reqManualFix
         crc: 0xDF624487
-        util: '[FO4Edit v4.0.4](https://www.nexusmods.com/fallout4/mods/2737)'
+        util: '[FO4Edit v4.0.4c](https://www.nexusmods.com/fallout4/mods/2737)'
         nav: 10
 
 ###### New Characters - Enemies ######
