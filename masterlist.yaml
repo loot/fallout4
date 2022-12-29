@@ -7046,7 +7046,9 @@ plugins:
         util: 'FO4Edit v4.0.2f'
 
   - name: 'AGNISNikaCola01-XDI patch.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/41194/' ]
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/41194/'
+        name: 'The Machine and Her XDI patch'
     dirty:
       - <<: *quickClean
         crc: 0xD7FA9066
