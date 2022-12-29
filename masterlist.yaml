@@ -7054,9 +7054,6 @@ plugins:
         crc: 0xD7FA9066
         util: '[FO4Edit v4.0.4c](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 5246
-    clean:
-      - crc: 0xD8715F52
-        util: 'FO4Edit v4.0.3'
 
   - name: 'MechanistsLair_\w+\.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/11490/' ]
