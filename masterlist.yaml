@@ -2530,23 +2530,13 @@ plugins:
         crc: 0x8DB7FF05
         util: '[FO4Edit v4.0.2f](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 29
-    clean:
-      # 2.0
-      - crc: 0x59EB140F
-        util: 'FO4Edit v4.0.2f'
   - name: 'BetterSettlersNoLollygagging.esp'
-    clean:
-      - crc: 0xDE1AC4B0
-        util: 'FO4Edit v4.0.2f'
   - name: 'BetterSettlersRaidersPack.esp'
     dirty:
       - <<: *quickClean
         crc: 0x08DCF6D7
         util: '[FO4Edit v4.0.2f](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 2
-    clean:
-      - crc: 0x0D0698E4
-        util: 'FO4Edit v4.0.2f'
   # Better Settlers - Obsolete plugins #
   - name: 'BetterSettlersFarHarborPatchMortal.esp'
     req: [ 'BetterSettlers.esp' ]
