@@ -2505,10 +2505,6 @@ plugins:
       - link: 'https://www.nexusmods.com/fallout4/mods/21248/'
         name: 'Unique NPCs - An Overhaul of the Commonwealth'
   - name: 'BetterSettlers.esp'
-    after:
-      - 'MoreSkinColors.esp'
-      - 'AzarPonyHairstyles.esp'
-      - 'Eli_Armour_Compendium.esp'
     dirty:
       # 21248
       - <<: *quickClean
@@ -2527,9 +2523,7 @@ plugins:
         util: 'FO4Edit v4.0.2f'
   - name: 'BetterSettlersCCAPack2.0.esp'
     req: [ 'BetterSettlers.esp' ]
-    after:
-      - 'BetterSettlersNoLollygagging.esp'
-      - 'BetterSettlersCleanFacePack.esp'
+    after: [ 'BetterSettlersCleanFacePack.esp' ]
   - name: 'BetterSettlersCleanFacePack.esp'
     dirty:
       # 2.0
