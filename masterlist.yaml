@@ -2522,7 +2522,6 @@ plugins:
       - crc: 0x314A7B65
         util: 'FO4Edit v4.0.2f'
   - name: 'BetterSettlersCCAPack2.0.esp'
-    req: [ 'BetterSettlers.esp' ]
     after: [ 'BetterSettlersCleanFacePack.esp' ]
   - name: 'BetterSettlersCleanFacePack.esp'
     dirty:
