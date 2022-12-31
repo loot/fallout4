@@ -2533,9 +2533,7 @@ plugins:
         util: '[FO4Edit v4.0.4c](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 2
   # Better Settlers - Obsolete plugins #
-  - name: 'BetterSettlersFarHarborPatchMortal.esp'
-    msg: [ *obsolete ]
-  - name: 'BetterSettlersFarHarborPatch.esp'
+  - name: 'BetterSettlersFarHarborPatch(Mortal)?\.esp'
     msg: [ *obsolete ]
 
   - name: 'D.E.C.A.Y.esp'
