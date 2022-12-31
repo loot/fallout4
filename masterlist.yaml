@@ -2498,6 +2498,7 @@ plugins:
         util: 'FO4Edit v4.0.2'
 
 ###### Character Appearance - NPC Overhauls ######
+  - name: 'BetterSettlers.*\.esp'
   - name: 'BetterSettlers.esp'
     url:
       - 'https://www.nexusmods.com/fallout4/mods/4772/'
