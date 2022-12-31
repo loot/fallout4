@@ -2526,7 +2526,6 @@ plugins:
         crc: 0x7331D352
         util: '[FO4Edit v4.0.4c](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 33
-  - name: 'BetterSettlersNoLollygagging.esp'
   - name: 'BetterSettlersRaidersPack.esp'
     dirty:
       - <<: *quickClean
