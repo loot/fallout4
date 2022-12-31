@@ -2535,32 +2535,8 @@ plugins:
         itm: 2
   # Better Settlers - Obsolete plugins #
   - name: 'BetterSettlersFarHarborPatchMortal.esp'
-    req: [ 'BetterSettlers.esp' ]
-    after:
-      - 'BetterSettlersNoLollygagging.esp'
-      - 'BetterSettlersCleanFacePack.esp'
-      - 'BetterSettlersCCAPack1.1b.esp'
-      - 'BetterSettlersCCAPack2.0.esp'
-      - 'BetterSettlersAllFemale.esp'
-      - 'BetterSettlersMortalPack.esp'
-      - 'BetterSettlersMortalSoldiersPack.esp'
-      - 'BetterSettlersLightArmorOnly.esp'
-      - 'BetterSettlersHeavyArmorOnly.esp'
-    inc: [ 'BetterSettlersFarHarborPatch.esp' ]
     msg: [ *obsolete ]
   - name: 'BetterSettlersFarHarborPatch.esp'
-    req: [ 'BetterSettlers.esp' ]
-    after:
-      - 'BetterSettlersNoLollygagging.esp'
-      - 'BetterSettlersCleanFacePack.esp'
-      - 'BetterSettlersCCAPack1.1b.esp'
-      - 'BetterSettlersCCAPack2.0.esp'
-      - 'BetterSettlersAllFemale.esp'
-      - 'BetterSettlersMortalPack.esp'
-      - 'BetterSettlersMortalSoldiersPack.esp'
-      - 'BetterSettlersLightArmorOnly.esp'
-      - 'BetterSettlersHeavyArmorOnly.esp'
-    inc: [ 'BetterSettlersFarHarborPatchMortal.esp' ]
     msg: [ *obsolete ]
 
   - name: 'D.E.C.A.Y.esp'
