@@ -2499,10 +2499,12 @@ plugins:
 
 ###### Character Appearance - NPC Overhauls ######
   - name: 'BetterSettlers.*\.esp'
-  - name: 'BetterSettlers.esp'
     url:
-      - 'https://www.nexusmods.com/fallout4/mods/4772/'
-      - 'https://www.nexusmods.com/fallout4/mods/21248/'
+      - link: 'https://www.nexusmods.com/fallout4/mods/4772/'
+        name: 'Better Settlers'
+      - link: 'https://www.nexusmods.com/fallout4/mods/21248/'
+        name: 'Unique NPCs - An Overhaul of the Commonwealth'
+  - name: 'BetterSettlers.esp'
     after:
       - 'MoreSkinColors.esp'
       - 'AzarPonyHairstyles.esp'
@@ -2524,13 +2526,11 @@ plugins:
       - crc: 0x314A7B65
         util: 'FO4Edit v4.0.2f'
   - name: 'BetterSettlersCCAPack2.0.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/4772/' ]
     req: [ 'BetterSettlers.esp' ]
     after:
       - 'BetterSettlersNoLollygagging.esp'
       - 'BetterSettlersCleanFacePack.esp'
   - name: 'BetterSettlersCleanFacePack.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/4772/' ]
     dirty:
       # 2.0
       - <<: *quickClean
@@ -2542,12 +2542,10 @@ plugins:
       - crc: 0x59EB140F
         util: 'FO4Edit v4.0.2f'
   - name: 'BetterSettlersNoLollygagging.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/4772/' ]
     clean:
       - crc: 0xDE1AC4B0
         util: 'FO4Edit v4.0.2f'
   - name: 'BetterSettlersRaidersPack.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/4772/' ]
     dirty:
       - <<: *quickClean
         crc: 0x08DCF6D7
@@ -2558,7 +2556,6 @@ plugins:
         util: 'FO4Edit v4.0.2f'
   # Better Settlers - Obsolete plugins #
   - name: 'BetterSettlersFarHarborPatchMortal.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/4772/' ]
     req: [ 'BetterSettlers.esp' ]
     after:
       - 'BetterSettlersNoLollygagging.esp'
@@ -2573,7 +2570,6 @@ plugins:
     inc: [ 'BetterSettlersFarHarborPatch.esp' ]
     msg: [ *obsolete ]
   - name: 'BetterSettlersFarHarborPatch.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/4772/' ]
     req: [ 'BetterSettlers.esp' ]
     after:
       - 'BetterSettlersNoLollygagging.esp'
