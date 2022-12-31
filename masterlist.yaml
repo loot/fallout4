@@ -2505,37 +2505,33 @@ plugins:
       - link: 'https://www.nexusmods.com/fallout4/mods/21248/'
         name: 'Unique NPCs - An Overhaul of the Commonwealth'
   - name: 'BetterSettlers.esp'
-    dirty:
-      # 21248
-      - <<: *quickClean
-        crc: 0xF1CD0113
-        util: '[FO4Edit v4.0.2f](https://www.nexusmods.com/fallout4/mods/2737)'
-        itm: 2
     clean:
-      # 4772 DLC
+      # Original
       - crc: 0x6A5FC68B
-        util: 'FO4Edit v4.0.2f'
-      # 4772 No DLC
+        util: 'FO4Edit v4.0.4c'
+      # Original - No DLC
       - crc: 0x2BC9377C
-        util: 'FO4Edit v4.0.2f'
-      # 21248
-      - crc: 0x314A7B65
-        util: 'FO4Edit v4.0.2f'
+        util: 'FO4Edit v4.0.4c'
+      # Unique NPCs
+      - crc: 0xE44C6E1F
+        util: 'FO4Edit v4.0.4c'
+      # Unique NPCs - No LollyGagging
+      - crc: 0x64EB91A3
+        util: 'FO4Edit v4.0.4c'
   - name: 'BetterSettlersCCAPack2.0.esp'
     after: [ 'BetterSettlersCleanFacePack.esp' ]
   - name: 'BetterSettlersCleanFacePack.esp'
     dirty:
-      # 2.0
       - <<: *quickClean
-        crc: 0x8DB7FF05
-        util: '[FO4Edit v4.0.2f](https://www.nexusmods.com/fallout4/mods/2737)'
-        itm: 29
+        crc: 0x7331D352
+        util: '[FO4Edit v4.0.4c](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 33
   - name: 'BetterSettlersNoLollygagging.esp'
   - name: 'BetterSettlersRaidersPack.esp'
     dirty:
       - <<: *quickClean
         crc: 0x08DCF6D7
-        util: '[FO4Edit v4.0.2f](https://www.nexusmods.com/fallout4/mods/2737)'
+        util: '[FO4Edit v4.0.4c](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 2
   # Better Settlers - Obsolete plugins #
   - name: 'BetterSettlersFarHarborPatchMortal.esp'
