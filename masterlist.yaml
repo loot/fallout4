@@ -3935,10 +3935,6 @@ plugins:
       - 'PRP-Compat-Clarity-43.esp'
       - 'PRP-Compat-IntEnh.esp'
       - 'PRP-Compat-UIL.esp'
-    msg:
-      - <<: *requiresResources
-        subs: [ '[Aloot''s Home Plate](https://www.nexusmods.com/fallout4/mods/44101/)' ]
-        condition: 'not file("AlootHomePlate - Textures.BA2") and not file("textures/aloot/homeplate/aloot_homeplate_desktoppicture01_d.dds")'
     dirty:
       - <<: *reqManualFix
         crc: 0xA8B4559B
