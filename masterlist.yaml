@@ -1970,7 +1970,7 @@ plugins:
         condition: 'active("CWPointLookoutFO4.esm") and not active("PRP-Compat-PointLookout.esp")'
       - <<: *patchProvided
         subs: [ 'Maxwell''s World' ]
-        condition: 'active("MaxwellsWorl.esp") and not active("PRP-Compat-MaxwellsWorl.esp")'
+        condition: 'version("PRP.esp", "0.60", <) and active("MaxwellsWorl.esp") and not active("PRP-Compat-MaxwellsWorl.esp")'
       - *useInsteadFCF
     clean:
       # English
