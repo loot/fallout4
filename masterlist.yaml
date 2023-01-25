@@ -2120,7 +2120,7 @@ plugins:
         subs:
           - 'Previsibines Repair Pack'
           - 'PRP Compat Scrap Everything'
-        condition: 'active("PRP.esp") and version("PRP.esp", "0.59", <)'
+        condition: 'active("PRP.esp") and version("PRP.esp", "0.59", >=)'
     dirty:
       - <<: *quickClean
         crc: 0xA6F531E9
