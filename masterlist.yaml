@@ -1909,7 +1909,7 @@ plugins:
       - crc: 0x0E248104
         util: 'FO4Edit v4.0.3h (Hotfix 1)'
 
-  - name: '(PPF|PRP.*|Clean_and_Simple_and_Prevised_All_CAS|Eli_FactionHousingOverhaul_FarHarbor_Previs|ScrapEverythingUltimatePrevis)\.es[mp]'
+  - name: '(PPF|PRP.*|CAF-Fixups|ScrapEverythingUltimatePrevis)\.es[mp]'
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/46403/'
         name: 'Previsibines Repair Pack'
@@ -1966,20 +1966,11 @@ plugins:
         subs: [ 'Ultra Interior Lighting - Darker Ambience' ]
         condition: 'active("UltraInteriorLighting_DarkerAmbience.esp") and not active("PRP-Compat-UIL-Darker.esp")'
       - <<: *patchProvided
-        subs: [ 'Aloot''s Home Plate' ]
-        condition: 'active("AlootHomePlate.esp") and version("AlootHomePlate.esp", "2.2", <)'
-      - <<: *patchProvided
-        subs: [ 'Clean and Simple - All CAS Settlements' ]
-        condition: 'active("Clean and Simple -  All CAS Settlements.esp") and not active("Clean_and_Simple_and_Prevised_All_CAS.esp") and version("PRP.esp", "0.57", <) and version("PRP.esp", "0.58", >=)'
-      - <<: *patchProvided
-        subs: [ 'Faction Housing Overhaul AIO - Far Harbour' ]
-        condition: 'active("DLCCoast.esm") and active("Eli_Faction Housing Overhaul - AiO.esp") and not active("Eli_FactionHousingOverhaul_FarHarbor_Previs.esp") and version("PRP.esp", "0.57", <) and version("PRP.esp", "0.58", >=)'
-      - <<: *patchProvided
         subs: [ 'Fallout 4 - Point Lookout' ]
         condition: 'active("CWPointLookoutFO4.esm") and not active("PRP-Compat-PointLookout.esp")'
       - <<: *patchProvided
         subs: [ 'Maxwell''s World' ]
-        condition: 'active("MaxwellsWorl.esp") and not active("PRP-Compat-MaxwellsWorl.esp")'
+        condition: 'version("PRP.esp", "0.60", <) and active("MaxwellsWorl.esp") and not active("PRP-Compat-MaxwellsWorl.esp")'
       - *useInsteadFCF
     clean:
       # English
@@ -1995,8 +1986,8 @@ plugins:
       # Spanish
       - crc: 0x21A97BD2
         util: 'FO4Edit v4.0.4b'
-  # PRP - Compat Grabbag #
-  - name: 'PRP-Compat-(Clarity-4[23]|DCA|Fogout-Int|IntEnh|RegionNames|UIL|UIL-Darker)\.esp'
+  # PRP - FOMOD Patches #
+  - name: 'PRP-Compat-.*\.esp'
     after: [ 'PRP.esp' ]
   - name: 'PRP-Compat-Clarity-4[23]\.esp'
     after: [ 'PRP-Compat-DCA.esp' ]
@@ -2114,13 +2105,14 @@ plugins:
       - crc: 0x50A9B2CE
         util: 'FO4Edit v4.0.4b'
   # PRP - Other Patches #
-  - name: 'PRP-Compat-MaxwellsWorl.esp'
-    clean:
-      - crc: 0x3DCF4D51
-        util: 'FO4Edit v4.0.4b'
   - name: 'PRP-Compat-PointLookout.esp'
     clean:
       - crc: 0x8963D59A
+        util: 'FO4Edit v4.0.4b'
+  # PRP - Unsupported Patches #
+  - name: 'PRP-Compat-MaxwellsWorl.esp'
+    clean:
+      - crc: 0x3DCF4D51
         util: 'FO4Edit v4.0.4b'
   - name: 'ScrapEverythingUltimatePrevis.esp'
     msg:
@@ -2128,37 +2120,12 @@ plugins:
         subs:
           - 'Previsibines Repair Pack'
           - 'PRP Compat Scrap Everything'
-        condition: 'active("PRP.esp") and version("PRP.esp", "0.59", <)'
+        condition: 'active("PRP.esp") and version("PRP.esp", "0.59", >=)'
     dirty:
       - <<: *quickClean
         crc: 0xA6F531E9
         util: '[FO4Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 808
-  # PRP - Unsupported Patches #
-  - name: 'Clean_and_Simple_and_Prevised_All_CAS.esp'
-    after:
-      - 'PRP.esp'
-      - 'PRP-Compat-UEL.esp'
-    msg:
-      - <<: *versionXIncY
-        subs:
-          - 'Previsibines Repair Pack'
-          - 'PRP Compat for Clean and Simple Merged'
-        condition: 'active("PRP.esp") and version("PRP.esp", "0.57", >=)'
-  - name: 'Eli_FactionHousingOverhaul_FarHarbor_Previs.esp'
-    after:
-      - 'PRP.esp'
-      - 'PRP-Compat-Clarity-42.esp'
-      - 'PRP-Compat-Clarity-43.esp'
-      - 'PRP-Compat-IntEnh.esp'
-      - 'PRP-Compat-UIL.esp'
-      - 'PRP-Compat-UIL-Darker.esp'
-    msg:
-      - <<: *versionXIncY
-        subs:
-          - 'Previsibines Repair Pack'
-          - 'PRP Compat for Faction Housing Overhaul'
-        condition: 'active("PRP.esp") and version("PRP.esp", "0.57", >=)'
 
 ###### AudioVisual ######
   - name: 'ConcealedArmor\.es[mp]'
@@ -3961,8 +3928,6 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/44101/'
         name: 'Aloot''s Home Plate'
-      - link: 'https://www.nexusmods.com/fallout4/mods/46403/'
-        name: 'Previsibines Repair Pack'
     after:
       - 'EnhancedLightsandFX.esp'
       - 'PRP.esp'
@@ -3970,25 +3935,11 @@ plugins:
       - 'PRP-Compat-Clarity-43.esp'
       - 'PRP-Compat-IntEnh.esp'
       - 'PRP-Compat-UIL.esp'
-    msg:
-      - <<: *requiresResources
-        subs: [ '[Aloot''s Home Plate](https://www.nexusmods.com/fallout4/mods/44101/)' ]
-        condition: 'not file("AlootHomePlate - Textures.BA2") and not file("textures/aloot/homeplate/aloot_homeplate_desktoppicture01_d.dds")'
     dirty:
       - <<: *reqManualFix
         crc: 0xA8B4559B
         util: '[FO4Edit v4.0.4b](https://www.nexusmods.com/fallout4/mods/2737)'
         nav: 1
-    clean:
-      # English
-      - crc: 0x0E11C3C1
-        util: 'FO4Edit v4.0.4b'
-      # Italian
-      - crc: 0x62025A38
-        util: 'FO4Edit v4.0.4b'
-      # Spanish
-      - crc: 0x7CC799D2
-        util: 'FO4Edit v4.0.4b'
 
   - name: 'Eli_Faction Housing Overhaul - AiO.esp'
     url:
