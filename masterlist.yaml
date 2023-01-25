@@ -1996,7 +1996,7 @@ plugins:
       - crc: 0x21A97BD2
         util: 'FO4Edit v4.0.4b'
   # PRP - FOMOD Patches #
-  - name: 'PRP-Compat-(Clarity-4[23]|DCA|Fogout-Int|IntEnh|RegionNames|UIL|UIL-Darker)\.esp'
+  - name: 'PRP-Compat-.*\.esp'
     after: [ 'PRP.esp' ]
   - name: 'PRP-Compat-Clarity-4[23]\.esp'
     after: [ 'PRP-Compat-DCA.esp' ]
