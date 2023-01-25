@@ -2135,30 +2135,6 @@ plugins:
         crc: 0xA6F531E9
         util: '[FO4Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 808
-  - name: 'Clean_and_Simple_and_Prevised_All_CAS.esp'
-    after:
-      - 'PRP.esp'
-      - 'PRP-Compat-UEL.esp'
-    msg:
-      - <<: *versionXIncY
-        subs:
-          - 'Previsibines Repair Pack'
-          - 'PRP Compat for Clean and Simple Merged'
-        condition: 'active("PRP.esp") and version("PRP.esp", "0.57", >=)'
-  - name: 'Eli_FactionHousingOverhaul_FarHarbor_Previs.esp'
-    after:
-      - 'PRP.esp'
-      - 'PRP-Compat-Clarity-42.esp'
-      - 'PRP-Compat-Clarity-43.esp'
-      - 'PRP-Compat-IntEnh.esp'
-      - 'PRP-Compat-UIL.esp'
-      - 'PRP-Compat-UIL-Darker.esp'
-    msg:
-      - <<: *versionXIncY
-        subs:
-          - 'Previsibines Repair Pack'
-          - 'PRP Compat for Faction Housing Overhaul'
-        condition: 'active("PRP.esp") and version("PRP.esp", "0.57", >=)'
 
 ###### AudioVisual ######
   - name: 'ConcealedArmor\.es[mp]'
