@@ -3928,8 +3928,6 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/44101/'
         name: 'Aloot''s Home Plate'
-      - link: 'https://www.nexusmods.com/fallout4/mods/46403/'
-        name: 'Previsibines Repair Pack'
     after:
       - 'EnhancedLightsandFX.esp'
       - 'PRP.esp'
