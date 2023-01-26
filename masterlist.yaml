@@ -2118,6 +2118,7 @@ plugins:
     clean:
       - crc: 0x3DCF4D51
         util: 'FO4Edit v4.0.4b'
+  - name: 'PRP-UDR.esp'
   - name: 'ScrapEverythingUltimatePrevis.esp'
     msg:
       - <<: *versionXIncY
