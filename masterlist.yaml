@@ -1917,7 +1917,6 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/46403/'
         name: 'Previsibines Repair Pack'
-  - name: 'PPF.esm'
   - name: 'PRP.esp'
     group: *preVisCombinedGroup
     inc: [ 'FROST.esp' ]
@@ -1982,22 +1981,17 @@ plugins:
       - <<: *requiresX
         subs: [ 'Clarity v4.3' ]
         condition: 'version("Clarity.esp", "4.3", !=)'
-  - name: 'PRP-Compat-DCA.esp'
   - name: 'PRP-Compat-Fogout-Int.esp'
     req: [ 'FogOut - Interiors - All DLC.esp' ]
   - name: 'PRP-Compat-IntEnh.esp'
     req: [ 'InteriorsEnhanced-All-In-One.esp' ]
   - name: 'PRP-Compat-RegionNames.esp'
     after: [ 'PRP-Compat-UEL.esp' ]
-  - name: 'PRP-Compat-UEL.esp'
   - name: 'PRP-Compat-UIL.esp'
     req: [ 'UltraInteriorLighting.esp' ]
   - name: 'PRP-Compat-UIL-Darker.esp'
     req: [ 'UltraInteriorLighting_DarkerAmbience.esp' ]
-  # PRP - Other Patches #
-  - name: 'PRP-Compat-PointLookout.esp'
   # PRP - Unsupported Patches #
-  - name: 'PRP-Compat-MaxwellsWorl.esp'
   - name: 'PRP-UDR.esp'
     msg:
       - <<: *deprecated
