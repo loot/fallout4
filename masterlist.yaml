@@ -2121,6 +2121,9 @@ plugins:
       - crc: 0x3DCF4D51
         util: 'FO4Edit v4.0.4b'
   - name: 'PRP-UDR.esp'
+    msg:
+      - <<: *deprecated
+        type: error
   - name: 'ScrapEverythingUltimatePrevis.esp'
     msg:
       - <<: *versionXIncY
