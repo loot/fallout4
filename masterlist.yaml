@@ -1942,6 +1942,11 @@ plugins:
         condition: 'active("0_Vault120.esp") and not active("PRP-(SE-)?Vault120\.esp")'
       - <<: *patch3rdParty
         subs:
+          - 'Maxwell''s World'
+          - '[Cannibal Toast''s Performance Compendium](https://www.nexusmods.com/fallout4/mods/63516/)'
+        condition: 'version("PRP.esp", "0.65", >=) and active("MaxwellsWorl.esp") and not active("PRP-MaxwellsWorld.esp")'
+      - <<: *patch3rdParty
+        subs:
           - 'Sim Settlements 2 - Chapter 2'
           - '[Previsibines Repair Pack (PRP) - Sim Settlements 2 Upgrade Kit](https://www.nexusmods.com/fallout4/mods/57947/)'
         condition: 'active("SS2_XPAC_Chapter2.esm") and not active("PRP-SS2.esp")'
@@ -1972,9 +1977,6 @@ plugins:
       - <<: *patchProvided
         subs: [ 'Fallout 4 - Point Lookout' ]
         condition: 'active("CWPointLookoutFO4.esm") and not active("PRP-Compat-PointLookout.esp")'
-      - <<: *patchProvided
-        subs: [ 'Maxwell''s World' ]
-        condition: 'version("PRP.esp", "0.60", <) and active("MaxwellsWorl.esp") and not active("PRP-Compat-MaxwellsWorl.esp")'
       - *useInsteadFCF
     clean:
       # English
