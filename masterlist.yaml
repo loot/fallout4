@@ -3696,6 +3696,9 @@ plugins:
       - 'BostonFPSFixAutomatron.esp'
       - 'BostonFPSFix-Vanilla.esp'
       - 'PRP.esp'
+    clean:
+      - crc: 0x0A0B8EA2
+        util: 'FO4Edit v4.0.4c'
 
   - name: 'PLI_?USAF(_Satellite_Station_Olivia|SSO - (ELFX|MDB) Patch)\.esp'
     url:
