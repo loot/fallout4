@@ -3692,6 +3692,10 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/67902/'
         name: 'Oberland Station Deep Clean and Remodel'
+    after:
+      - 'BostonFPSFixAutomatron.esp'
+      - 'BostonFPSFix-Vanilla.esp'
+      - 'PRP.esp'
 
   - name: 'PLI_?USAF(_Satellite_Station_Olivia|SSO - (ELFX|MDB) Patch)\.esp'
     url:
