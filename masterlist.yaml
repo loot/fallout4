@@ -3688,6 +3688,8 @@ plugins:
       - 'BostonFPSFixAIO.esp'
       - 'PRP.esp'
 
+  - name: 'OberlandStation_DCnR_F-ESL.esp'
+
   - name: 'PLI_?USAF(_Satellite_Station_Olivia|SSO - (ELFX|MDB) Patch)\.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/59993/'
