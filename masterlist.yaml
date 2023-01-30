@@ -7180,3 +7180,7 @@ plugins:
     clean:
       - crc: 0xB1359D8F
         util: 'FO4Edit v4.0.4'
+
+  - name: 'DiamondCity-PreVis.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/66724' ]
+    after: [ 'PRP.esp' ]
