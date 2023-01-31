@@ -7182,5 +7182,7 @@ plugins:
         util: 'FO4Edit v4.0.4'
 
   - name: 'DiamondCity-PreVis.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/66724' ]
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/66724/'
+        name: 'Diamond City Expansion - eXoPatch'
     after: [ 'PRP.esp' ]
