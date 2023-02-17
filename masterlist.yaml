@@ -2477,6 +2477,15 @@ plugins:
       - crc: 0xFD9AD1B9
         util: 'FO4Edit v4.0.4c'
 
+  - name: 'DamnApocalypse_.*\.es[mp]'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/33812/'
+        name: 'Damn Apocalypse'
+  - name: 'DamnApocalypse_Loot.esp'
+    tag:
+      - Delev
+      - Relev
+
   - name: 'MojaveImports.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/3793/'
