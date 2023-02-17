@@ -2478,6 +2478,9 @@ plugins:
         util: 'FO4Edit v4.0.4c'
 
   - name: 'DamnApocalypse_.*\.es[mp]'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/33812/'
+        name: 'Damn Apocalypse'
   - name: 'DamnApocalypse_Loot.esp'
 
   - name: 'MojaveImports.esp'
