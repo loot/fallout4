@@ -1507,7 +1507,7 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout4/mods/2737/' ]
     group: *dynamicPatchesGroup
 
-  - name: 'M8r Complex Sorter.esp'
+  - name: 'M8r Complex Sorter(-part\d{1,3})?\.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/48826/' ]
     group: *dynamicPatchesGroup
 
