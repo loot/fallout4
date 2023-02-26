@@ -2091,6 +2091,7 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/68599/'
         name: 'Fallout 4 Particle Patch'
+    group: *underridesGroup
 
   - name: 'OVT.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/1204/' ]
