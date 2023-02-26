@@ -2087,6 +2087,17 @@ plugins:
         condition: 'active("PPF.esm")'
 
 ###### AudioVisual - Models & Textures ######
+  - name: 'FO4ParticlePatch.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/68599/'
+        name: 'Fallout 4 Particle Patch'
+    group: *underridesGroup
+    dirty:
+      - <<: *quickClean
+        crc: 0x53F48DC0
+        util: '[FO4Edit v4.0.4c](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 24
+
   - name: 'OVT.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/1204/' ]
     group: *texturesGroup
