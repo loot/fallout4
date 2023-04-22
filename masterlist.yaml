@@ -3519,7 +3519,9 @@ plugins:
 
 ###### Locations - New Dungeons ######
   - name: 'DWUK_LexingtonInteriors.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/19120/' ]
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/19120/'
+        name: 'Lexington Interiors'
     clean:
     # Pre manual cleaning
       - crc: 0xFD5333DA
