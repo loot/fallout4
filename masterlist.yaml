@@ -3530,11 +3530,6 @@ plugins:
       - crc: 0xEFA1570A
         util: 'FO4Edit v4.0.3'
     msg:
-      - <<: *patch3rdParty
-        subs:
-          - 'Horizon'
-          - '[Unofficial Lexington Interiors Loot Reduction Patch Plus](https://www.nexusmods.com/fallout4/mods/44487)'
-        condition: 'active("DWUK_LexingtonInteriors.esp") and active("Z_Horizon.esp") and not active("DWUK_LexingtonInteriors_Patch.esp")'
       - <<: *wildEdits
         subs: [ "Remove edit 000E081D and 0006496C from LexingtonInteriors.esp. Modify edit xx00266B's X position to -36328.718750 to solve the issue." ]
         condition: 'file("DWUK_LexingtonInteriors.esp") and checksum("DWUK_LexingtonInteriors.esp", EFA1570A)'
