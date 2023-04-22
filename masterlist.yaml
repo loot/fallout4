@@ -3522,13 +3522,6 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/19120/'
         name: 'Lexington Interiors'
-    clean:
-    # Pre manual cleaning
-      - crc: 0xFD5333DA
-        util: 'FO4Edit v4.0.3'
-    # Post manual cleaning
-      - crc: 0xEFA1570A
-        util: 'FO4Edit v4.0.3'
     msg:
       - <<: *wildEdits
         subs: [ 'In **DWUK_LexingtonInteriors.esp**, remove **000E081D** and **0006496C** & change the X position of **xx00266B** (**xx** is the plugin''s load order index) to **-36328.71875**.' ]
