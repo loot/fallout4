@@ -3531,8 +3531,8 @@ plugins:
         util: 'FO4Edit v4.0.3'
     msg:
       - <<: *wildEdits
-        subs: [ "Remove edit 000E081D and 0006496C from LexingtonInteriors.esp. Modify edit xx00266B's X position to -36328.718750 to solve the issue." ]
-        condition: 'file("DWUK_LexingtonInteriors.esp") and checksum("DWUK_LexingtonInteriors.esp", EFA1570A)'
+        subs: [ 'In **DWUK_LexingtonInteriors.esp**, remove **000E081D** and **0006496C** & change the X position of **xx00266B** (**xx** is the plugin''s load order index) to **-36328.71875**.' ]
+        condition: 'checksum("DWUK_LexingtonInteriors.esp", EFA1570A)'
 
 ###### Locations - Overhauls ######
   - name: 'AbernathyFarm_DC_F-ESL.esp'
