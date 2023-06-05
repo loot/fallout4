@@ -1575,6 +1575,9 @@ plugins:
       - <<: *patchUpdateAvailable
         subs: [ '[Overlay Framework Save Bug Fix](https://www.nexusmods.com/fallout4/mods/70251/)' ]
         condition: 'not file("Scripts/Fallout/Overlays/Menu.pex") or checksum("Scripts/Fallout/Overlays/Menu.pex", 6F754DEE)'
+    clean:
+      - crc: 0x18C8411F
+        util: 'FO4Edit v4.0.4c'
 
   - name: 'WorkshopFramework(_ScriptOverride)?\.es[mp]'
     url:
