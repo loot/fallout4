@@ -1571,6 +1571,10 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/33347/'
         name: 'Overlay Framework'
+    msg:
+      - <<: *patchUpdateAvailable
+        subs: [ '[Overlay Framework Save Bug Fix](https://www.nexusmods.com/fallout4/mods/70251/)' ]
+        condition: 'not file("Scripts/Fallout/Overlays/Menu.pex") or checksum("Scripts/Fallout/Overlays/Menu.pex", 6F754DEE)'
 
   - name: 'WorkshopFramework(_ScriptOverride)?\.es[mp]'
     url:
