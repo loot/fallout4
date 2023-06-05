@@ -1567,6 +1567,8 @@ plugins:
       - crc: 0x67DBDE61
         util: 'FO4Edit v4.0.3h (Hotfix 1)'
 
+  - name: 'Overlays.esm'
+
   - name: 'WorkshopFramework(_ScriptOverride)?\.es[mp]'
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/35004/'
