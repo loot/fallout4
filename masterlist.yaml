@@ -2315,6 +2315,7 @@ plugins:
       - 'Clarity.esp'
       - 'EnhancedLightsandFX.esp'
       - 'FROST.esp'
+      - 'GT_pipboy.esp'
     msg:
       - <<: *patch3rdParty
         subs:
