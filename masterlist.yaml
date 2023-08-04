@@ -2094,7 +2094,7 @@ plugins:
         crc: 0x7E2E53AF
         util: '[FO4Edit v4.0.4](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 191
-        
+
   - name: 'CliffsEdgeHotelWindowFix.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/48887/'
