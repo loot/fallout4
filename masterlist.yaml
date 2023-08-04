@@ -1769,6 +1769,14 @@ plugins:
       - *alreadyInOrFixedByFCF
       - *alreadyInOrFixedByPRPv0_59
 
+  - name: '(MTM-NukaTownEastArchwayFix|MTM-GardenTerraceCeilingFixedByMonorail)\.es[lp]'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/40513/' ]
+    group: *fixesGroup
+
+  - name: '(MTM-SlocumJoeCorporateHQReceptionCeilingFixed|MTM-FensParkviewApartmentWallFixed)\.es[lp]'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/40553/' ]
+    group: *fixesGroup
+
   - name: 'Perk Magazine Material Fix.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/6906/' ]
     group: *fixesGroup
