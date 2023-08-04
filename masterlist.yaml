@@ -1534,6 +1534,10 @@ plugins:
         condition: 'file("Bashed Patch.*\.esp")'
         subs: [ 'Bashed Patch' ]
 
+  - name: 'Synthesis.esp'
+    url: [ 'https://github.com/Mutagen-Modding/Synthesis/releases/' ]
+    group: *dynamicPatchesGroup
+
 ###### Resources & Frameworks ######
   - name: '(ArmorKeywords|AWKCR - ).*\.es(m|p)'
     url:
