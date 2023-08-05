@@ -1654,7 +1654,7 @@ plugins:
 
   - name: 'CarPhysicsDeathBugfix.esp'
     url:
-      - link: 'https://www.nexusmods.com/fallout4/mods/46566'
+      - link: 'https://www.nexusmods.com/fallout4/mods/46566/'
         name: 'Car Physics Death Bug Fix'
     dirty:
       - <<: *quickClean
