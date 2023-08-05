@@ -2204,7 +2204,16 @@ plugins:
         itm: 1
 
   - name: 'Reverb and Ambiance Overhaul.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/10189/' ]
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/10189/'
+        name: 'Reverb and Ambiance Overhaul'
+      - link: 'https://www.nexusmods.com/fallout4/mods/63555/'
+        name: 'Reverb and Ambiance Overhaul - Tweaked'
+    dirty:
+      - <<: *quickClean
+        crc: 0x2F47435E
+        util: '[FO4Edit v4.0.4](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 11
     clean:
       - crc: 0x715C4599
         util: 'FO4Edit v4.0.3j (RC2 for 4.0.4)'
