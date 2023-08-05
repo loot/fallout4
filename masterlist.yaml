@@ -3077,7 +3077,7 @@ plugins:
 
   - name: 'Vault81Etiquette.esp'
     url:
-      - link: 'https://www.nexusmods.com/fallout4/mods/12723'
+      - link: 'https://www.nexusmods.com/fallout4/mods/12723/'
         name: 'Vault 81 Close Door'
     group: *fixesGroup
     dirty:
