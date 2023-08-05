@@ -1662,6 +1662,24 @@ plugins:
     group: *fixesGroup
     msg: [ *alreadyInUFO4P ]
 
+  - name: 'Corpse Collision\.es[lp]'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/37133/'
+        name: 'Corpse Collision'
+    group: *fixesGroup
+  - name: 'Corpse Collision.esl'
+    dirty:
+      - <<: *quickClean
+        crc: 0xE5E8BE89
+        util: '[FO4Edit v4.0.4](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 31
+  - name: 'Corpse Collision.esp'
+    dirty:
+      - <<: *quickClean
+        crc: 0x409BB1A8
+        util: '[FO4Edit v4.0.4](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 31
+
   - name: 'Croup Manor NAVmesh Fix.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/12561/' ]
     group: *fixesGroup
