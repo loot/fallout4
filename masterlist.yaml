@@ -2693,6 +2693,17 @@ plugins:
         itm: 466
         udr: 4
 
+  - name: 'Vault81Etiquette.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/12723/'
+        name: 'Vault 81 Close Door'
+    group: *fixesGroup
+    dirty:
+      - <<: *quickClean
+        crc: 0x5A2E1875
+        util: '[FO4Edit v4.0.4](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 1
+
 ###### Gameplay - Combat ######
   - name: 'Forever Radiation (Lite|Hardcore|Even HarderCore)\.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/48231/' ]
@@ -3074,17 +3085,6 @@ plugins:
         crc: 0xCA93C583
         util: '[FO4Edit v4.0.4c](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 4
-
-  - name: 'Vault81Etiquette.esp'
-    url:
-      - link: 'https://www.nexusmods.com/fallout4/mods/12723/'
-        name: 'Vault 81 Close Door'
-    group: *fixesGroup
-    dirty:
-      - <<: *quickClean
-        crc: 0x5A2E1875
-        util: '[FO4Edit v4.0.4](https://www.nexusmods.com/fallout4/mods/2737)'
-        itm: 1
 
 ###### Gameplay - Quests ######
   - name: 'AnotherLife.esp'
