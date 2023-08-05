@@ -1672,6 +1672,17 @@ plugins:
     group: *fixesGroup
     msg: [ *alreadyInUFO4P ]
 
+  - name: 'DisabletheCaravan.esl'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/43961'
+        name: 'Covenant - Disable the dead caravan from Stockton'
+    group: *fixesGroup
+    dirty:
+      - <<: *quickClean
+        crc: 0x54304F8C
+        util: '[FO4Edit v4.0.4](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 6
+
   - name: 'fix_Perk_CombatMedic.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/10651/' ]
     group: *fixesGroup
