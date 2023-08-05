@@ -1652,6 +1652,24 @@ plugins:
       - <<: *alreadyInUFO4P
         condition: 'active("Unofficial Fallout 4 Patch.esp") and version("Unofficial Fallout 4 Patch.esp", "2.0.2", >=)'
 
+  - name: 'CarPhysicsDeathBugfix.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/46566'
+        name: 'Car Physics Death Bug Fix'
+    dirty:
+      - <<: *quickClean
+        crc: 0x3E061722
+        util: '[FO4Edit v4.0.4](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 1
+      - <<: *quickClean
+        crc: 0x5DD022DA
+        util: '[FO4Edit v4.0.4](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 1
+      - <<: *quickClean
+        crc: 0x245F236D
+        util: '[FO4Edit v4.0.4](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 1
+
   - name: 'Combat Armor Weight Fix.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/11541/' ]
     group: *fixesGroup
