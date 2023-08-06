@@ -1780,7 +1780,7 @@ plugins:
         subs: [ 'Previsibines Repair Pack' ]
         condition: 'active("PPF.esm")'
 
-  - name: '(MTM-SlocumJoeCorporateHQReceptionCeilingFixed|MTM-FensParkviewApartmentWallFixed)\.es[lp]'
+  - name: 'MTM-(SlocumJoeCorporateHQReceptionCeiling|FensParkviewApartmentWall)Fixed\.es[lp]'
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/40553/'
         name: 'Slocum Joe Corporate HQ Reception Ceiling Fixed'
