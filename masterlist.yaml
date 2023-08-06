@@ -2679,7 +2679,7 @@ plugins:
         util: '[FO4Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 3
         udr: 9
-  
+
   - name: 'Vault81Etiquette.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/12723/'
