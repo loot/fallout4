@@ -1769,6 +1769,30 @@ plugins:
       - *alreadyInOrFixedByFCF
       - *alreadyInOrFixedByPRPv0_59
 
+  - name: 'MTM-(NukaTownEastArchwayFix|GardenTerraceCeilingFixedByMonorail)\.es[lp]'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/40513/'
+        name: 'Nuka-World - Fixes the East Entrance to Nuka-Town USA near Fizztop Mountain'
+    group: *fixesGroup
+  - name: 'MTM-GardenTerraceCeilingFixedByMonorail\.es[lp]'
+    msg:
+      - <<: *alreadyInOrFixedByX
+        subs: [ 'Previsibines Repair Pack' ]
+        condition: 'active("PPF.esm")'
+
+  - name: 'MTM-(SlocumJoeCorporateHQReceptionCeiling|FensParkviewApartmentWall)Fixed\.es[lp]'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/40553/'
+        name: 'Slocum Joe Corporate HQ Reception Ceiling Fixed'
+    group: *fixesGroup
+  - name: 'MTM-SlocumJoeCorporateHQReceptionCeilingFixed\.es[lp]'
+    msg: [ *alreadyInUFO4P ]
+  - name: 'MTM-FensParkviewApartmentWallFixed\.es[lp]'
+    msg:
+      - <<: *alreadyInOrFixedByX
+        subs: [ 'Previsibines Repair Pack' ]
+        condition: 'active("PPF.esm")'
+
   - name: 'Perk Magazine Material Fix.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/6906/' ]
     group: *fixesGroup
