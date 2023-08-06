@@ -2581,6 +2581,16 @@ plugins:
       - Delev
       - Relev
 
+  - name: 'GKX Worthwhile Caps Stashes.esl'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/23464/'
+        name: 'Worthwhile Caps Stashes'
+    dirty:
+      - <<: *quickClean
+        crc: 0x02DECB7D
+        util: '[FO4Edit v4.0.4](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 1
+  
   - name: 'MojaveImports.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/3793/'
