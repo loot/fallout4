@@ -1769,7 +1769,7 @@ plugins:
       - *alreadyInOrFixedByFCF
       - *alreadyInOrFixedByPRPv0_59
 
-  - name: '(MTM-NukaTownEastArchwayFix|MTM-GardenTerraceCeilingFixedByMonorail)\.es[lp]'
+  - name: 'MTM-(NukaTownEastArchwayFix|GardenTerraceCeilingFixedByMonorail)\.es[lp]'
     url: 
       - link: 'https://www.nexusmods.com/fallout4/mods/40513/'
         name: 'Nuka-World - Fixes the East Entrance to Nuka-Town USA near Fizztop Mountain'
