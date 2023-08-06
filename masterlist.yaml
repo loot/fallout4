@@ -1674,7 +1674,7 @@ plugins:
 
   - name: 'DisabletheCaravan\.es[lp]'
     url:
-      - link: 'https://www.nexusmods.com/fallout4/mods/43961'
+      - link: 'https://www.nexusmods.com/fallout4/mods/43961/'
         name: 'Covenant - Disable the dead caravan from Stockton'
     group: *fixesGroup
     dirty:
