@@ -1677,6 +1677,7 @@ plugins:
       - link: 'https://www.nexusmods.com/fallout4/mods/43961/'
         name: 'Covenant - Disable the dead caravan from Stockton'
     group: *fixesGroup
+  - name: 'DisabletheCaravan.esl'
     dirty:
       - <<: *quickClean
         crc: 0x54304F8C
