@@ -1672,7 +1672,7 @@ plugins:
     group: *fixesGroup
     msg: [ *alreadyInUFO4P ]
 
-  - name: 'DisabletheCaravan.esl'
+  - name: 'DisabletheCaravan\.es[lp]'
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/43961'
         name: 'Covenant - Disable the dead caravan from Stockton'
