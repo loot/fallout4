@@ -4021,6 +4021,9 @@ plugins:
       - <<: *patchProvided
         subs: [ 'Waushakum Pond Settlement' ]
         condition: 'active("PondSettlement.esp") and not active("WCLINS_(WPS|SNWS_WPS)_Patch.esp")'
+      - <<: *compatIssuesWithX
+        subs: [ 'Natick Power Substation Player Settlement' ]
+        condition: 'active("123_settlement.esp")'
 
 ###### Locations - Player Homes ######
   - name: 'AlootHomePlate.esp'
