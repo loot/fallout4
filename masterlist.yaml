@@ -2205,7 +2205,7 @@ plugins:
 
   - name: 'Wetness Shader Fix.esp'
     url:
-      - link: 'https://www.nexusmods.com/fallout4/mods/23389'
+      - link: 'https://www.nexusmods.com/fallout4/mods/23389/'
         name: 'Wetness Shader Fix'
     group: *fixesGroup
 
