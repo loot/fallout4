@@ -3680,6 +3680,29 @@ plugins:
         itm: 64
         udr: 11
 
+  - name: 'BostonLibrarySettlement(PRP|Robots|SS2)?\.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/68293/'
+        name: 'Boston Public Library Settlement'
+    group: *preVisCombinedGroup
+    after:
+      - 'PRP.esp'
+  - name: 'BostonLibrarySettlement.esp'
+    msg:
+      - <<: *patchProvided
+        subs: [ 'Previsibines Repair Pack' ]
+        condition: 'active("PRP.esp") and not active("BostonLibrarySettlementPRP.esp")'
+      - <<: *patchProvided
+        subs: [ 'Automatron' ]
+        condition: 'active("DLCRobot.esm") and not active("BostonLibrarySettlementRobots.esp")'
+      - <<: *patchProvided
+        subs: [ 'Sim Settlements 2 - Chapter 2' ]
+        condition: 'active("SS2_XPAC_Chapter2.esm") and not active("BostonLibrarySettlementSS2.esp")'
+  - name: 'LibraryExtras.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/68293/'
+        name: 'Boston Public Library Settlement'
+
   - name: 'Bunker Hill D(CnR_F-ESL|eep Clean ESL-F)\.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/65014/'
