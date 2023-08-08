@@ -2292,6 +2292,9 @@ plugins:
       - <<: *requiresX
         subs: [ '[RobCo Patcher](https://www.nexusmods.com/fallout4/mods/69798/)' ]
         condition: 'not file("F4SE/Plugins/RobCo_Patcher.dll")'
+      - <<: *alreadyInX
+        subs: [ 'Enhanced Vanilla Armor and Clothing' ]
+        condition: 'active("Enhanced Vanilla Armor and Clothing.esp")'
 
 ###### Audiovisual - Sound & Music ######
   - name: 'LostOldiesRadio.esp'
