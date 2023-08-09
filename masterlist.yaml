@@ -3194,6 +3194,21 @@ plugins:
         util: '[FO4Edit v4.0.4c](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 4
 
+  - name: 'VisibleCompanionAffinity.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/10660/'
+        name: 'Visible Companion Affinity'
+    group: *underridesGroup
+    dirty:
+      - <<: *quickClean
+        crc: 0xE47BD98A
+        util: '[FO4Edit v4.0.4](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 6
+      - <<: *quickClean
+        crc: 0x5BADA386
+        util: '[FO4Edit v4.0.4](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 6
+
 ###### Gameplay - Quests ######
   - name: 'AnotherLife.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/14253/' ]
