@@ -3689,11 +3689,11 @@ plugins:
   - name: 'BostonLibrarySettlement.esp'
     msg:
       - <<: *patchProvided
-        subs: [ 'Previsibines Repair Pack' ]
-        condition: 'active("PRP.esp") and not active("BostonLibrarySettlementPRP.esp")'
-      - <<: *patchProvided
         subs: [ 'Automatron' ]
         condition: 'active("DLCRobot.esm") and not active("BostonLibrarySettlementRobots.esp")'
+      - <<: *patchProvided
+        subs: [ 'Previsibines Repair Pack' ]
+        condition: 'active("PRP.esp") and not active("BostonLibrarySettlementPRP.esp")'
       - <<: *patchProvided
         subs: [ 'Sim Settlements 2 - Chapter 2' ]
         condition: 'active("SS2_XPAC_Chapter2.esm") and not active("BostonLibrarySettlementSS2.esp")'
