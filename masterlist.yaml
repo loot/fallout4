@@ -3121,6 +3121,17 @@ plugins:
         util: '[FO4Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 1
 
+  - name: 'Fallout 4 AI Overhaul( - )?(Better Goodneighbor|NAC X Legacy|Welcome to Fallon''s Revisited)?( Patch)?\.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/57741/'
+        name: 'Fallout 4 AI Overhaul'
+  - name: 'Fallout 4 AI Overhaul.esp'
+    dirty:
+      - <<: *quickClean
+        crc: 0xA6403BC0
+        util: '[FO4Edit v4.0.4](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 1
+
   - name: 'FlirtyCommonwealth(Female|Male|MM)?\.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/26638/' ]
     group: *underridesGroup
