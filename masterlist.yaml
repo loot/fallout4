@@ -2788,6 +2788,17 @@ plugins:
         itm: 3
         udr: 9
 
+  - name: 'Vault81Etiquette.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/12723/'
+        name: 'Vault 81 Close Door'
+    group: *fixesGroup
+    dirty:
+      - <<: *quickClean
+        crc: 0x5A2E1875
+        util: '[FO4Edit v4.0.4](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 1
+
   - name: 'Weaponsmith Extended 2.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/10737/' ]
     after: [ 'Armorsmith Extended.esp' ]
