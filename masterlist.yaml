@@ -4066,6 +4066,50 @@ plugins:
       - 'BostonFPSFixAIO.esp'
       - 'PRP.esp'
 
+  - name: 'WCLI(_NatickSubstation|NS_.*)\.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/64755/'
+        name: 'We Can Live In - Natick Substation'
+    group: *frostGroup
+  - name: 'WCLI_NatickSubstation.esp'
+    msg:
+      - <<: *compatIssuesWithX
+        subs: [ 'Natick Power Substation Player Settlement' ]
+        condition: 'active("123_settlement.esp")'
+      - <<: *patchProvided
+        subs: [ 'A Forest' ]
+        condition: 'active("A Forest.esp") and not active("WCLINS_AF_Patch.esp")'
+      - <<: *patchProvided
+        subs: [ 'Commonwealth Reclamation Project: Overgrowth' ]
+        condition: 'active("CRP1.esp") and not active("WCLINS_CRPO_Patch.esp")'
+      - <<: *patchProvided
+        subs: [ 'David Hunter - A Brotherhood Story' ]
+        condition: 'active("BoSStory.esp") and not active("WCLINS_DHBOSS_Patch.esp")'
+      - <<: *patchProvided
+        subs: [ 'Desperados Overhaul' ]
+        condition: 'active("Desperados Overhaul.esp") and not active("WCLINS_DO_Patch.esp")'
+      - <<: *patchProvided
+        subs: [ 'Forsythia Replacer - Fungal Commonwealth LITE' ]
+        condition: 'active("Forsythia Replacer.esp") and not active("WCLINS_FR(NR)?_Patch.esp")'
+      - <<: *patchProvided
+        subs: [ 'FROST Cell Fixes' ]
+        condition: 'active("FCF_Previsibines.esp") and not active("WCLINS_FROST_Patch.esp")'
+      - <<: *patchProvided
+        subs: [ 'Galac Tac Retribution' ]
+        condition: 'active("Galac-TactREDUX.esp") and not active("WCLINS_GTR_Patch.esp")'
+      - <<: *patchProvided
+        subs: [ 'Maxwell''s World' ]
+        condition: 'active("MaxwellsWorl.esp") and not active("WCLINS_MW_Patch.esp")'
+      - <<: *patchProvided
+        subs: [ 'Natick Warehouse Settlement' ]
+        condition: 'active("SKKNatickWarehouseSettlement.esp") and file("SKKNatickWarehouseSettlement - Main.BA2") and not active("WCLINS_(MW|SNWS_WPS)_Patch.esp")'
+      - <<: *patchProvided
+        subs: [ 'Previsibines Repair Pack' ]
+        condition: 'active("PRP.esp") and not active("WCLINS_PRP_Patch.esp")'
+      - <<: *patchProvided
+        subs: [ 'Waushakum Pond Settlement' ]
+        condition: 'active("PondSettlement.esp") and not active("WCLINS_(WPS|SNWS_WPS)_Patch.esp")'
+
 ###### Locations - Player Homes ######
   - name: 'AlootHomePlate.esp'
     url:
