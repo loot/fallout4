@@ -2203,6 +2203,12 @@ plugins:
         subs: [ 'Previsibines Repair Pack v0.57+' ]
         condition: 'active("PPF.esm")'
 
+  - name: 'Wetness Shader Fix.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/23389/'
+        name: 'Wetness Shader Fix'
+    group: *fixesGroup
+
 ###### AudioVisual - Models & Textures ######
   - name: 'FO4ParticlePatch.esp'
     url:
