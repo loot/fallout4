@@ -3988,6 +3988,9 @@ plugins:
     group: *frostGroup
   - name: 'WCLI_NatickSubstation.esp'
     msg:
+      - <<: *compatIssuesWithX
+        subs: [ 'Natick Power Substation Player Settlement' ]
+        condition: 'active("123_settlement.esp")'
       - <<: *patchProvided
         subs: [ 'A Forest' ]
         condition: 'active("A Forest.esp") and not active("WCLINS_AF_Patch.esp")'
@@ -4021,9 +4024,6 @@ plugins:
       - <<: *patchProvided
         subs: [ 'Waushakum Pond Settlement' ]
         condition: 'active("PondSettlement.esp") and not active("WCLINS_(WPS|SNWS_WPS)_Patch.esp")'
-      - <<: *compatIssuesWithX
-        subs: [ 'Natick Power Substation Player Settlement' ]
-        condition: 'active("123_settlement.esp")'
 
 ###### Locations - Player Homes ######
   - name: 'AlootHomePlate.esp'
