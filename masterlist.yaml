@@ -2210,6 +2210,16 @@ plugins:
     group: *fixesGroup
 
 ###### AudioVisual - Models & Textures ######
+  - name: 'Enhanced Vanilla Armor and Clothing.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/72546/'
+        name: 'Enhanced Vanilla Armor and Clothing'
+    group: *texturesGroup
+    msg:
+      - <<: *requiresX
+        subs: [ '[RobCo Patcher](https://www.nexusmods.com/fallout4/mods/69798/)' ]
+        condition: 'not file("F4SE/Plugins/RobCo_Patcher.dll")'
+
   - name: 'FO4ParticlePatch.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/68599/'
