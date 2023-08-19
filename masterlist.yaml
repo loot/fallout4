@@ -2201,6 +2201,12 @@ plugins:
     group: *fixesGroup
 
 ###### AudioVisual - Models & Textures ######
+  - name: 'AWHD(2|4)K(Full|Automatron|Energy|Explosives|FarHarbour|Heavy|Melee|NoDLC|NukaWorld|Pipe|Pistols|Rifles|Shotgun)\.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/8556/'
+        name: 'All Weapons HD'
+    group: *texturesGroup
+
   - name: 'Enhanced Vanilla Armor and Clothing.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/72546/'
