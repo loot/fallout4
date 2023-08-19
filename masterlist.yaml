@@ -3216,6 +3216,7 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/41785/'
         name: 'Settler and Companion Dialogue Overhaul'
+    group: *underridesGroup
     after:
       - 'FlirtyCommonwealth.esp'
       - 'FlirtyCommonwealthFemale.esp'
