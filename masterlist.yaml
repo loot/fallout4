@@ -2205,6 +2205,26 @@ plugins:
         subs: [ 'Previsibines Repair Pack v0.57+' ]
         condition: 'active("PPF.esm")'
 
+  - name: 'FO4LODGen(-|-DLC)?(Coast-WindTurbines|Coast|FullModelLOD|HighTrees|NukaWorld|Workshop03)?\.esp'
+    url:
+      - link: 'https://stepmodifications.org/forum/topic/17508-fo4lodgen/'
+        name: 'FO4LODGen Resources'
+    group: *fixesGroup
+  - name: 'FO4LODGen(-|-DLC)?(Coast|FullModelLOD|HighTrees|NukaWorld|Workshop03)?\.esp'
+    msg:
+      - type: say
+        content: 'This plugin may be disabled after generating LOD with xLODGen.'
+  - name: 'FO4LODGen(-|-DLC)?(Coast|FullModelLOD|NukaWorld|Workshop03)\.esp'
+    msg:
+      - <<: *deletePlugin
+        subs: [ 'Far Object LOD Improvement Project' ]
+        condition: 'active("FOLIP - New LODs.esp")'
+  - name: 'FO4LODGen-HighTrees.esp'
+    msg:
+      - <<: *deletePlugin
+        subs: [ 'Optimized Vanilla Tree LODs' ]
+        condition: 'active("Optimized Vanilla Tree LODs.esp")'
+
   - name: 'Wetness Shader Fix.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/23389/'
