@@ -3184,6 +3184,17 @@ plugins:
       - crc: 0xDEF7E886
         util: 'FO4Edit v4.0.3h (Hotfix 1)'
 
+  - name: 'ImmersiveGenericDialogues.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/14108/'
+        name: 'Immersive Generic Dialogues'
+    group: *underridesGroup
+    dirty:
+      - <<: *quickClean
+        crc: 0x84725D54
+        util: '[FO4Edit v4.0.4](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 3
+
   - name: 'NickValentineRomance.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/13717/' ]
     after:
