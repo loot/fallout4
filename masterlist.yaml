@@ -2211,6 +2211,12 @@ plugins:
         subs: [ '[RobCo Patcher](https://www.nexusmods.com/fallout4/mods/69798/)' ]
         condition: 'not file("F4SE/Plugins/RobCo_Patcher.dll")'
 
+  - name: 'Far Harbor Pine branches 4K.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/38147/'
+        name: 'Far Harbor Pine Branches 4K'
+    group: *texturesGroup
+
   - name: 'FO4ParticlePatch.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/68599/'
