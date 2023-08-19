@@ -2315,6 +2315,12 @@ plugins:
         subs: [ '[RobCo Patcher](https://www.nexusmods.com/fallout4/mods/69798/)' ]
         condition: 'not file("F4SE/Plugins/RobCo_Patcher.dll")'
 
+  - name: 'WeaponsHD.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/23566/'
+        name: 'High Poly Vanilla Weapons'
+    group: *underridesGroup
+
 ###### Audiovisual - Sound & Music ######
   - name: 'LostOldiesRadio.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/57110/' ]
