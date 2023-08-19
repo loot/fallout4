@@ -2223,6 +2223,12 @@ plugins:
         name: 'Far Harbor Pine Branches 4K'
     group: *texturesGroup
 
+  - name: 'Fixed Gobo Effects.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/27445/'
+        name: 'Fixed Gobo Effects'
+    group: *texturesGroup
+
   - name: 'FO4ParticlePatch.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/68599/'
