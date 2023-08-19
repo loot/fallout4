@@ -3029,6 +3029,16 @@ plugins:
         subs: [ 'Homemaker v1.50+' ]
         condition: 'version("Homemaker.esm", "1.50", >=)'
 
+  - name: 'WorkshopRearranged(Addon_DefaultLocalLeader|_Addon_VanillaResources|Addon_WeightlessJunk|.*Patch)?\.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/16181/'
+        name: 'Workshop Rearranged'
+    group: *lowPriorityGroup
+  - name: 'WorkshopRearranged.esp'
+    msg:
+      - <<: *compatNotes
+        subs: [ 'https://www.nexusmods.com/fallout4/articles/545/' ]
+
 ###### Gameplay - Companion & Creature Managers ######
   - name: 'AmazingFollowerTweaks.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/26976/' ]
