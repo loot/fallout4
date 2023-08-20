@@ -295,6 +295,13 @@ common:
     subs: [ 'Previsibines Repair Pack v0.59+' ]
     condition: 'active("PPF.esm") and version("PPF.esm", "0.59", >=)'
 
+  # &disableAfterGeneratingXwithY
+  - &disableAfterGeneratingLODwithxLODGen
+    <<: *disableAfterGeneratingXwithY
+    subs:
+      - 'LOD'
+      - 'xLODGen'
+
   # &requiresMCM_X
   - &requiresMCM
     <<: *requiresMCM_X
