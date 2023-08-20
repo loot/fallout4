@@ -2492,6 +2492,13 @@ plugins:
       - crc: 0x1DA07EEF
         util: 'FO4Edit v4.0.3'
 
+  - name: 'Lightweight Lighting( - Interiors Only)?\.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/57680/'
+        name: 'Lightweight Lighting - A Weather and Interior Lighting Overhaul'
+    group: *lowPriorityGroup
+    after: [ 'Clarity.esp' ]
+
   - name: 'Pip-Boy Flashlight.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/10840/' ]
     after:
