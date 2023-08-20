@@ -2408,6 +2408,14 @@ plugins:
       - crc: 0xE86A8F90
         util: 'FO4Edit v4.0.3j (RC2 for 4.0.4)'
 
+###### AudioVisual - Water ######
+  - name: 'WET.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/20775/'
+        name: 'WET - Water Enhancement Textures'
+    group: *lowPriorityGroup
+    after: [ 'Clarity.esp' ]
+
 ###### AudioVisual - Weather & Lighting ######
   - name: 'EnhancedLightsandFX.esp'
     url:
