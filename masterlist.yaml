@@ -1849,6 +1849,12 @@ plugins:
         subs: [ 'Previsibines Repair Pack' ]
         condition: 'active("PPF.esm")'
 
+  - name: 'MTM-VaultAnnounceWarning.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/40266/'
+        name: 'Vault Door Announce Warning for Vaults 81, 88, 114, and 118'
+    group: *fixesGroup
+
   - name: 'Perk Magazine Material Fix.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/6906/' ]
     group: *fixesGroup
