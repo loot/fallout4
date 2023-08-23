@@ -7380,6 +7380,4 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/68889/'
         name: 'Extra Icons for FIS'
-    after:
-      - 'FIS-Naming-Weap-Armo-EN.esp'
-      - 'M8r Complex Sorter.esp'
+    after: [ 'FIS-Naming-Weap-Armo-EN.esp' ]
