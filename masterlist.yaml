@@ -255,6 +255,10 @@ common:
     name: '../f4sevr_loader.exe'
     display: '[F4SE VR](https://f4se.silverlock.org)'
 
+  - &RobCoPatcher
+    name: 'F4SE/Plugins/RobCo_Patcher.dll'
+    display: '[RobCo Patcher](https://www.nexusmods.com/fallout4/mods/69798/)'
+
 # Sub-Anchors
   # &alreadyInX
   - &alreadyInUFO4P
@@ -2241,10 +2245,7 @@ plugins:
       - link: 'https://www.nexusmods.com/fallout4/mods/72546/'
         name: 'Enhanced Vanilla Armor and Clothing'
     group: *texturesGroup
-    msg:
-      - <<: *requiresX
-        subs: [ '[RobCo Patcher](https://www.nexusmods.com/fallout4/mods/69798/)' ]
-        condition: 'not file("F4SE/Plugins/RobCo_Patcher.dll")'
+    req: [ *RobCoPatcher ]
 
   - name: 'Far Harbor Pine branches 4K.esp'
     url:
@@ -2342,13 +2343,11 @@ plugins:
       - link: 'https://www.nexusmods.com/fallout4/mods/72962/'
         name: 'Transparent Glasses and Helmets'
     group: *texturesGroup
+    req: [ *RobCoPatcher ]
     msg:
       - <<: *alreadyInX
         subs: [ 'Enhanced Vanilla Armor and Clothing' ]
         condition: 'active("Enhanced Vanilla Armor and Clothing.esp")'
-      - <<: *requiresX
-        subs: [ '[RobCo Patcher](https://www.nexusmods.com/fallout4/mods/69798/)' ]
-        condition: 'not file("F4SE/Plugins/RobCo_Patcher.dll")'
 
   - name: 'WeaponsHD.esp'
     url:
