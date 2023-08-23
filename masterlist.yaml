@@ -2232,7 +2232,7 @@ plugins:
     after: [ 'FO4LODGen.esp' ]
   - name: 'FOLIP - Before Generation.esp'
     group: *lowPriorityGroup
-    after: [ 'Workshop Rearranged.esp' ]
+    after: [ 'WorkshopRearranged.esp' ]
     msg: [ *disableAfterGeneratingLODwithxLODGen ]
 
   - name: 'Wetness Shader Fix.esp'
