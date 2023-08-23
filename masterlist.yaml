@@ -2233,6 +2233,18 @@ plugins:
         subs: [ 'Optimized Vanilla Tree LODs' ]
         condition: 'active("Optimized Vanilla Tree LODs.esp")'
 
+  - name: 'FOLIP - (New LODs|Before|After)( Generation)?\.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/61884/'
+        name: 'Far Object LOD Improvement Project'
+  - name: 'FOLIP - (New LODs|After Generation)\.esp'
+    group: *fixesGroup
+    after: [ 'FO4LODGen.esp' ]
+  - name: 'FOLIP - Before Generation.esp'
+    group: *lowPriorityGroup
+    after: [ 'WorkshopRearranged.esp' ]
+    msg: [ *disableAfterGeneratingLODwithxLODGen ]
+
   - name: 'Wetness Shader Fix.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/23389/'
