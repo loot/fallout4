@@ -2530,6 +2530,7 @@ plugins:
 
   - name: 'Pip-Boy Flashlight.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/10840/' ]
+    group: *frostGroup
     after:
       - 'Clarity.esp'
       - 'EnhancedLightsandFX.esp'
