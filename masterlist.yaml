@@ -2409,6 +2409,28 @@ plugins:
         util: 'FO4Edit v4.0.3j (RC2 for 4.0.4)'
 
 ###### AudioVisual - Weather & Lighting ######
+  - name: 'Clarity( Decreased Saturation Addon| Far Harbor Fog Clouds Removed| Stronger Godrays Addon)?\.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/31991/'
+        name: 'Clarity - A Visual Overhaul'
+    group: *lowPriorityGroup
+  - name: 'Clarity.esp'
+    after: [ 'WorkshopRearranged.esp' ]
+    msg:
+      - <<: *patch3rdParty
+        subs:
+          - 'True Storms'
+          - '[Clarity - True Storms](https://www.nexusmods.com/fallout4/mods/65462/)'
+        condition: 'active("TrueStormsFO4.esm") and not active("TrueStorms_Clarity.esp")'
+      - <<: *patcherScriptAvailable
+        subs:
+          - '[FO4Edit](https://www.nexusmods.com/fallout4/mods/2737/)'
+          - '[Clarity Patching Script for Mod Added Interiors](https://www.nexusmods.com/fallout4/mods/62241/)'
+      - <<: *patcherScriptAvailable
+        subs:
+          - '[Synthesis](https://github.com/Mutagen-Modding/Synthesis/)'
+          - '[Various Synthesis Patchers](https://www.nexusmods.com/fallout4/mods/66836/)'
+
   - name: 'EnhancedLightsandFX.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/13596/'
