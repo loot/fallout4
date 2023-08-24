@@ -3125,6 +3125,15 @@ plugins:
         subs: [ 'Homemaker v1.50+' ]
         condition: 'version("Homemaker.esm", "1.50", >=)'
 
+  - name: 'Vault88 - Essentials.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/52121/'
+        name: 'Vault 88 Essentials'
+    group: *lowPriorityGroup
+    after:
+      - 'Clarity.esp'
+      - 'WorkshopRearranged.esp'
+
   - name: 'Vault-Tec Workshop Overhaul Redux.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/43643/'
