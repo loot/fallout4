@@ -7611,3 +7611,9 @@ plugins:
       - link: 'https://www.nexusmods.com/fallout4/mods/66724/'
         name: 'Diamond City Expansion - eXoPatch'
     after: [ 'PRP.esp' ]
+
+  - name: 'Diello_ExtraIconsForFIS.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/68889/'
+        name: 'Extra Icons for FIS'
+    after: [ 'FIS-Naming-Weap-Armo-EN.esp' ]
