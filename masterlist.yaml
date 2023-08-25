@@ -2426,6 +2426,14 @@ plugins:
         util: 'FO4Edit v4.0.3j (RC2 for 4.0.4)'
 
 ###### AudioVisual - Water ######
+  - name: 'Vivid Waters.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/16425/' ]
+    group: *worldSettingsGroup
+    after:
+      - 'WET.esp'
+      - 'WET Murkier.esp'
+      - 'WET Clearer.esp'
+
   - name: 'WET.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/20775/'
@@ -5593,12 +5601,6 @@ plugins:
       - <<: *useOnlyOneX
         condition: 'many("ConstructionLight_\w+\.esp")'
         subs: [ 'ConstructionLight .esp' ]
-  - name: 'Vivid Waters.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/16425/' ]
-    after:
-      - 'WET.esp'
-      - 'WET Murkier.esp'
-      - 'WET Clearer.esp'
 
   - name: 'Orphans.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/16000/' ]
