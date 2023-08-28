@@ -279,6 +279,14 @@ common:
     condition: 'active("BLD - Merged - WSE Edition.esp")'
 
   # &alreadyInOrFixedByX
+  - &alreadyInOrFixedByFATEFixes
+    <<: *alreadyInOrFixedByX
+    subs: [ 'FATE Core - Fixes' ]
+    condition: 'active("FATE Core - Fixes.esl")'
+  - &alreadyInOrFixedByFATETweaks
+    <<: *alreadyInOrFixedByX
+    subs: [ 'FATE Core - Tweaks' ]
+    condition: 'active("FATE Core - Tweaks.esp")'
   - &alreadyInOrFixedByFO4
     <<: *alreadyInOrFixedByX
     subs: [ 'Fallout 4' ]
@@ -1713,6 +1721,13 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout4/mods/10892/' ]
     group: *fixesGroup
     msg: [ *alreadyInUFO4P ]
+
+  - name: 'DiamondCityBillboards.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/71990/'
+        name: 'Diamond City Billboards'
+    group: *fixesGroup
+    msg: [ *alreadyInOrFixedByFATETweaks ]
 
   - name: 'DisabletheCaravan\.es[lp]'
     url:
