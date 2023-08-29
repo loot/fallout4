@@ -4395,6 +4395,10 @@ plugins:
       - crc: 0xF4214BB4
         util: 'FO4Edit v4.0.4b'
 
+  - name: 'Step Patch - (Conflict Resolution|Lighting and Weather)\.esp'
+    url: ['https://www.nexusmods.com/fallout4/mods/74193/']
+    group: *lateChangesGroup
+
 ###### FROST Survival Simulator ######
   - name: 'FROST.esp'
     url:
