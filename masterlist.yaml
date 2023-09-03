@@ -2780,7 +2780,6 @@ plugins:
 
   - name: 'Extended weapon mods.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/8276/' ]
-  - name: 'DamnApocalypse_Loot.esp'
     msg:
       - <<: *alsoUseX
         subs: [ '[Extended Weapon Mods Fixed](https://www.nexusmods.com/fallout4/mods/74459/)' ]
