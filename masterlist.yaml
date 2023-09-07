@@ -2826,6 +2826,7 @@ plugins:
         util: 'FO4Edit v4.0.4'
       # Fixed
       - crc: 0x459E1CA5
+        util: 'FO4Edit v4.0.4'
 
   - name: 'GKX Worthwhile Caps Stashes.esl'
     url:
