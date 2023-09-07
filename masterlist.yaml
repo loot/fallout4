@@ -2778,6 +2778,25 @@ plugins:
       - Delev
       - Relev
 
+  - name: 'Extended weapon mods.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/8276/' ]
+    msg:
+      - <<: *alsoUseX
+        subs: [ '[Extended Weapon Mods Fixed](https://www.nexusmods.com/fallout4/mods/74459/)' ]
+        condition: 'checksum("Extended weapon mods.esp", 58404B06) or checksum("Extended weapon mods.esp", 772DE9B7)'
+    dirty:
+      - <<: *quickClean
+        crc: 0x58404B06
+        util: '[FO4Edit v4.0.4](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 2
+    clean:
+      # Original
+      - crc: 0x772DE9B7
+        util: 'FO4Edit v4.0.4'
+      # Fixed
+      - crc: 0x459E1CA5
+        util: 'FO4Edit v4.0.4'
+
   - name: 'GKX Worthwhile Caps Stashes.esl'
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/23464/'
