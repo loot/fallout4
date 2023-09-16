@@ -2878,7 +2878,6 @@ plugins:
       - crc: 0x50AC05D1
         util: 'FO4Edit v4.0.4'
       # Fixed
-    clean:
       - crc: 0xCFD5B0B2
         util: 'FO4Edit v4.0.4'
   - name: 'Extended weapon mods.esp'
