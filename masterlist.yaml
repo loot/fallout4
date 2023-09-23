@@ -2787,7 +2787,7 @@ plugins:
     msg:
       - <<: *alsoUseX
         subs: [ '[Even Better Mod Descriptions Fixed](https://www.nexusmods.com/fallout4/mods/74459/)' ]
-        condition: 'not version("(EBMD(_AllInOne|-UF04P Patch)|Even(BetterMDesc|BMD_(Automatron|FarHarbor|NukaWorld)DLC))\.esp", 4.1)'
+        condition: 'not version("(EBMD(_AllInOne|-UF04P Patch)|Even(BetterMDesc|BMD_(Automatron|FarHarbor|NukaWorld)DLC))\.esp", "4.1")'
     clean:
       # GOTY(Main Version 4.1)
       - crc: 0x4B1243AE
@@ -2837,7 +2837,7 @@ plugins:
     msg:
       - <<: *alreadyInOrFixedByX
         subs: [ 'Even Better Mod Descriptions GOTY Fixed](https://www.nexusmods.com/fallout4/mods/74459/)' ]
-        condition: 'version("EBMD_AllInOne.esp", 4.1)'
+        condition: 'version("EBMD_AllInOne.esp", "4.1", >=)'
     clean:
       # Original
       - crc: 0x50AC05D1
