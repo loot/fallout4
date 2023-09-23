@@ -2784,6 +2784,7 @@ plugins:
         name: 'Even Better Mod Descriptions'
       - link: 'https://www.nexusmods.com/fallout4/mods/74459/'
         name: 'Illusive Fixes and Merges'
+  - name: 'EBMD_AllInOne.esp'
     msg:
       - <<: *alsoUseX
         subs: [ '[Even Better Mod Descriptions Fixed](https://www.nexusmods.com/fallout4/mods/74459/)' ]
