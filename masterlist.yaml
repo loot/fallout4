@@ -2782,6 +2782,8 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/36105/'
         name: 'Even Better Mod Descriptions'
+      - link: 'https://www.nexusmods.com/fallout4/mods/74459/'
+        name: 'Illusive Fixes and Merges'
     msg:
       - <<: *alsoUseX
         subs: [ '[Even Better Mod Descriptions Fixed](https://www.nexusmods.com/fallout4/mods/74459/)' ]
