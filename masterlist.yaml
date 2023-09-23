@@ -2880,6 +2880,7 @@ plugins:
       # Fixed
       - crc: 0xCFD5B0B2
         util: 'FO4Edit v4.0.4'
+
   - name: 'Extended weapon mods.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/8276/' ]
     msg:
