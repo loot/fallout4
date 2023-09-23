@@ -2778,16 +2778,16 @@ plugins:
       - Delev
       - Relev
 
-  - name: 'EBMD_AllInOne.esp'
+  - name: '(EBMD(_AllInOne|-UF04P Patch)|Even(BetterMDesc|BMD_(Automatron|FarHarbor|NukaWorld)DLC))\.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/36105/'
         name: 'Even Better Mod Descriptions'
       - link: 'https://www.nexusmods.com/fallout4/mods/74459/'
-        name: 'Illusive Fixes and Merges'
+        name: 'Illusive Fixes and Merges
     msg:
       - <<: *alsoUseX
         subs: [ '[Even Better Mod Descriptions Fixed](https://www.nexusmods.com/fallout4/mods/74459/)' ]
-        condition: 'checksum("EBMD_AllInOne.esp", 4B1243AE) or checksum("EBMD_AllInOne.esp", 94EE726D)'
+        condition: 'not version("(EBMD(_AllInOne|-UF04P Patch)|Even(BetterMDesc|BMD_(Automatron|FarHarbor|NukaWorld)DLC))\.esp", 4.1)'
     clean:
       # GOTY(Main Version 4.1)
       - crc: 0x4B1243AE
@@ -2807,66 +2807,29 @@ plugins:
       # GOTY (No Perks 4.1) Fixed UFO4P
       - crc: 0x08B0A737
         util: 'FO4Edit v4.0.4'
-  - name: 'EvenBetterMDesc.esp'
-    url:
-      - link: 'https://www.nexusmods.com/fallout4/mods/36105/'
-        name: 'Even Better Mod Descriptions'
-    msg:
-      - <<: *alsoUseX
-        subs: [ '[Even Better Mod Descriptions Fixed](https://www.nexusmods.com/fallout4/mods/74459/)' ]
-        condition: 'checksum("EvenBetterMDesc.esp", 31185F01)'
-    clean:
-      # Original
+      # Original separate vanilla
       - crc: 0x31185F01
         util: 'FO4Edit v4.0.4'
-      # Fixed
+      # Fixed separate vanilla
       - crc: 0x31BE007A
         util: 'FO4Edit v4.0.4'
-  - name: 'EvenBMD_AutomatronDLC.esp'
-    url:
-      - link: 'https://www.nexusmods.com/fallout4/mods/36105/'
-        name: 'Even Better Mod Descriptions'
-    msg:
-      - <<: *alsoUseX
-        subs: [ '[Even Better Mod Descriptions Fixed](https://www.nexusmods.com/fallout4/mods/74459/)' ]
-        condition: 'checksum("EvenBMD_AutomatronDLC.esp", 51338E69)'
-    clean:
-      # Original
+      # Original separate Automatron
       - crc: 0x51338E69
         util: 'FO4Edit v4.0.4'
-      # Fixed
+      # Fixed separate Automatron
       - crc: 0x384AF106
         util: 'FO4Edit v4.0.4'
-  - name: 'EvenBMD_FarHarborDLC.esp'
-    url:
-      - link: 'https://www.nexusmods.com/fallout4/mods/36105/'
-        name: 'Even Better Mod Descriptions'
-    msg:
-      - <<: *alsoUseX
-        subs: [ '[Even Better Mod Descriptions Fixed](https://www.nexusmods.com/fallout4/mods/74459/)' ]
-        condition: 'checksum("EvenBMD_FarHarborDLC.esp", 38F38215)'
-    clean:
-      # Original
+      # Original separate FarHarbor
       - crc: 0x38F38215
         util: 'FO4Edit v4.0.4'
-      # Fixed
+      # Fixed separate FarHarbor
       - crc: 0xA1D256BB
         util: 'FO4Edit v4.0.4'
-  - name: 'EvenBMD_NukaWorldDLC.esp'
-    url:
-      - link: 'https://www.nexusmods.com/fallout4/mods/36105/'
-        name: 'Even Better Mod Descriptions'
-    msg:
-      - <<: *alsoUseX
-        subs: [ '[Even Better Mod Descriptions Fixed](https://www.nexusmods.com/fallout4/mods/74459/)' ]
-        condition: 'checksum("EvenBMD_NukaWorldDLC.esp", 38F38215)'
-    clean:
-      # Original
+      # Original separate NukaWorld
       - crc: 0x48971FBB
         util: 'FO4Edit v4.0.4'
-      # Fixed
+      # Fixed separate NukaWorld
       - crc: 0xBEB20B31
-        util: 'FO4Edit v4.0.4'
   - name: 'EBMD-UF04P Patch.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/36105/'
@@ -2874,7 +2837,7 @@ plugins:
     msg:
       - <<: *alreadyInOrFixedByX
         subs: [ 'Even Better Mod Descriptions GOTY Fixed](https://www.nexusmods.com/fallout4/mods/74459/)' ]
-        condition: 'checksum("EBMD_AllInOne.esp", F0DDE373) or checksum("EBMD_AllInOne.esp", 08B0A737)'
+        condition: 'version("EBMD_AllInOne.esp", 4.1)'
     clean:
       # Original
       - crc: 0x50AC05D1
