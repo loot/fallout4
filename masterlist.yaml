@@ -2788,7 +2788,7 @@ plugins:
     msg:
       - <<: *alsoUseX
         subs: [ '[Even Better Mod Descriptions Fixed](https://www.nexusmods.com/fallout4/mods/74459/)' ]
-        condition: 'not version("EBMD_AllInOne.esp", "4.1", =)'
+        condition: 'not version("EBMD_AllInOne.esp", "4.1", >=)'
     clean:
       # GOTY(Main Version 4.1)
       - crc: 0x4B1243AE
@@ -2815,7 +2815,7 @@ plugins:
     msg:
       - <<: *alsoUseX
         subs: [ '[Even Better Mod Descriptions Fixed](https://www.nexusmods.com/fallout4/mods/74459/)' ]
-        condition: 'not version("EvenBetterMDesc.esp", "4.1", =)'
+        condition: 'not version("EvenBetterMDesc.esp", "4.1", >=)'
     clean:
       # Original
       - crc: 0x31185F01
@@ -2830,7 +2830,7 @@ plugins:
     msg:
       - <<: *alsoUseX
         subs: [ '[Even Better Mod Descriptions Fixed](https://www.nexusmods.com/fallout4/mods/74459/)' ]
-        condition: 'not version("EvenBMD_AutomatronDLC.esp", "4.1", =)'
+        condition: 'not version("EvenBMD_AutomatronDLC.esp", "4.1", >=)'
     clean:
       # Original
       - crc: 0x51338E69
@@ -2845,7 +2845,7 @@ plugins:
     msg:
       - <<: *alsoUseX
         subs: [ '[Even Better Mod Descriptions Fixed](https://www.nexusmods.com/fallout4/mods/74459/)' ]
-        condition: 'not version("EvenBMD_FarHarborDLC.esp", "4.1", =)'
+        condition: 'not version("EvenBMD_FarHarborDLC.esp", "4.1", >=)'
     clean:
       # Original
       - crc: 0x38F38215
@@ -2860,7 +2860,7 @@ plugins:
     msg:
       - <<: *alsoUseX
         subs: [ '[Even Better Mod Descriptions Fixed](https://www.nexusmods.com/fallout4/mods/74459/)' ]
-        condition: 'not version("EvenBMD_NukaWorldDLC.esp", "4.1", =)'
+        condition: 'not version("EvenBMD_NukaWorldDLC.esp", "4.1", >=)'
     clean:
       # Original
       - crc: 0x48971FBB
