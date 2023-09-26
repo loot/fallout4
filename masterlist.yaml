@@ -2854,9 +2854,6 @@ plugins:
       - crc: 0xA1D256BB
         util: 'FO4Edit v4.0.4'
   - name: 'EvenBMD_NukaWorldDLC.esp'
-    url:
-      - link: 'https://www.nexusmods.com/fallout4/mods/36105/'
-        name: 'Even Better Mod Descriptions'
     msg:
       - <<: *alsoUseX
         subs: [ '[Even Better Mod Descriptions Fixed](https://www.nexusmods.com/fallout4/mods/74459/)' ]
