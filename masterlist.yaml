@@ -2869,9 +2869,6 @@ plugins:
       - crc: 0xBEB20B31
         util: 'FO4Edit v4.0.4'
   - name: 'EBMD-UF04P Patch.esp'
-    url:
-      - link: 'https://www.nexusmods.com/fallout4/mods/36105/'
-        name: 'Even Better Mod Descriptions'
     msg:
       - <<: *alreadyInOrFixedByX
         subs: [ 'Even Better Mod Descriptions GOTY Fixed](https://www.nexusmods.com/fallout4/mods/74459/)' ]
