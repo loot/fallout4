@@ -2863,7 +2863,7 @@ plugins:
     msg:
       - <<: *alreadyInOrFixedByX
         subs: [ 'Even Better Mod Descriptions GOTY Fixed](https://www.nexusmods.com/fallout4/mods/74459/)' ]
-        condition: 'version("EBMD_AllInOne.esp", "4.1", >=)'
+        condition: 'not version("EBMD-UF04P Patch.esp", "4.1", >=)'
     clean:
       # Original
       - crc: 0x50AC05D1
