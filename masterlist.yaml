@@ -4420,7 +4420,8 @@ plugins:
     after:
       - 'WCLINS_AF_Patch.esp'
       - 'WCLINS_DHBOSS_Patch.esp'
-      - 'WCLINS_FR(NR)?_Patch.esp'
+      - 'WCLINS_FR_Patch.esp'
+      - 'WCLINS_FRNR_Patch.esp'
       - 'WCLINS_MW_Patch.esp'
 
 ###### Locations - Player Homes ######
