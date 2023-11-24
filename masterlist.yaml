@@ -4373,6 +4373,8 @@ plugins:
         name: 'We Can Live In - Natick Substation'
     group: *frostGroup
   - name: 'WCLI_NatickSubstation.esp'
+    after:
+      - 'Another Pine Forest Mod.esp'
     msg:
       - <<: *compatIssuesWithX
         subs: [ 'Natick Power Substation Player Settlement' ]
@@ -4382,34 +4384,45 @@ plugins:
         condition: 'active("A Forest.esp") and not active("WCLINS_AF_Patch.esp")'
       - <<: *patchProvided
         subs: [ 'Commonwealth Reclamation Project: Overgrowth' ]
-        condition: 'active("CRP1.esp") and not active("WCLINS_CRPO_Patch.esp")'
+        condition: 'active("CRP1.esp") and (not active("WCLINS_Previs.esp") or not checksum("WCLINS_Previs.esp", 84574EDC))'
       - <<: *patchProvided
         subs: [ 'David Hunter - A Brotherhood Story' ]
         condition: 'active("BoSStory.esp") and not active("WCLINS_DHBOSS_Patch.esp")'
       - <<: *patchProvided
         subs: [ 'Desperados Overhaul' ]
-        condition: 'active("Desperados Overhaul.esp") and not active("WCLINS_DO_Patch.esp")'
+        condition: 'active("Desperados Overhaul.esp") and (not active("WCLINS_Previs.esp") or not checksum("WCLINS_Previs.esp", 0B9DF796))'
       - <<: *patchProvided
         subs: [ 'Forsythia Replacer - Fungal Commonwealth LITE' ]
         condition: 'active("Forsythia Replacer.esp") and not active("WCLINS_FR(NR)?_Patch.esp")'
       - <<: *patchProvided
         subs: [ 'FROST Cell Fixes' ]
-        condition: 'active("FCF_Previsibines.esp") and not active("WCLINS_FROST_Patch.esp")'
+        condition: 'active("FCF_Previsibines.esp") and (not active("WCLINS_Previs.esp") or not checksum("WCLINS_Previs.esp", 06CADDFA))'
       - <<: *patchProvided
         subs: [ 'Galac Tac Retribution' ]
-        condition: 'active("Galac-TactREDUX.esp") and not active("WCLINS_GTR_Patch.esp")'
+        condition: 'active("Galac-TactREDUX.esp") and (not active("WCLINS_Previs.esp") or not checksum("WCLINS_Previs.esp", 399C334B))'
       - <<: *patchProvided
         subs: [ 'Maxwell''s World' ]
         condition: 'active("MaxwellsWorl.esp") and not active("WCLINS_MW_Patch.esp")'
       - <<: *patchProvided
         subs: [ 'Natick Warehouse Settlement' ]
-        condition: 'active("SKKNatickWarehouseSettlement.esp") and file("SKKNatickWarehouseSettlement - Main.BA2") and not active("WCLINS_(MW|SNWS_WPS)_Patch.esp")'
+        condition: 'active("SKKNatickWarehouseSettlement.esp") and file("SKKNatickWarehouseSettlement - Main.BA2") and (not active("WCLINS_Previs.esp") or (not checksum("WCLINS_Previs.esp", 0BEADEC1) and not checksum("WCLINS_Previs.esp", A2F43B37)))'
+      - <<: *patchProvided
+        subs: [ 'Optimization and Compatibility for 3DNPC and BTInteriors (Tales from Commonwealth - Beantown Interiors)' ]
+        condition: 'active("3DNPC_BTI_Optimization.esp") and (not active("WCLINS_Previs.esp") or not checksum("WCLINS_Previs.esp", 6F16B54F))'
       - <<: *patchProvided
         subs: [ 'Previsibines Repair Pack' ]
-        condition: 'active("PRP.esp") and not active("WCLINS_PRP_Patch.esp")'
+        condition: 'active("PRP.esp") and (not active("WCLINS_Previs.esp") or (not checksum("WCLINS_Previs.esp", 6F16B54F) and not checksum("WCLINS_Previs.esp", 0B9DF796) and not checksum("WCLINS_Previs.esp", 149112A1) and not checksum("WCLINS_Previs.esp", 26F48A9B)))'
       - <<: *patchProvided
         subs: [ 'Waushakum Pond Settlement' ]
-        condition: 'active("PondSettlement.esp") and not active("WCLINS_(WPS|SNWS_WPS)_Patch.esp")'
+        condition: 'active("PondSettlement.esp") and (not active("WCLINS_Previs.esp") or (not checksum("WCLINS_Previs.esp", 0BEADEC1) and not checksum("WCLINS_Previs.esp", 26F48A9B) and not checksum("WCLINS_Previs.esp", 8004C20D)))'
+
+  - name: 'WCLINS_Previs.esp'
+    after:
+      - 'WCLINS_AF_Patch.esp'
+      - 'WCLINS_DHBOSS_Patch.esp'
+      - 'WCLINS_FR_Patch.esp'
+      - 'WCLINS_FRNR_Patch.esp'
+      - 'WCLINS_MW_Patch.esp'
 
 ###### Locations - Player Homes ######
   - name: 'AlootHomePlate.esp'
