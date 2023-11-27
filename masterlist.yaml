@@ -2059,11 +2059,6 @@ plugins:
       - *alreadyInOrFixedByFCF
       - <<: *patch3rdParty
         subs:
-          - '20 Leagues Under the Sea - Vault 120'
-          - '[PRP - More than 20 Previsibines Under the Sea](https://www.nexusmods.com/fallout4/mods/58584/)'
-        condition: 'active("0_Vault120.esp") and not active("PRP-(SE-)?Vault120\.esp")'
-      - <<: *patch3rdParty
-        subs:
           - 'Maxwell''s World'
           - '[Cannibal Toast''s Performance Compendium](https://www.nexusmods.com/fallout4/mods/63516/)'
         condition: 'version("PRP.esp", "0.65", >=) and active("MaxwellsWorl.esp") and not active("PRP-MaxwellsWorld.esp")'
