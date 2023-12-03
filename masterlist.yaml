@@ -520,8 +520,8 @@ plugins:
     dirty:
       - <<: *quickClean
         crc: 0xD69027EA
-        util: '[FO4Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout4/mods/2737)'
-        itm: 49
+        util: '[FO4Edit v4.1.5 EXPERIMENTAL](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 50
         udr: 38
         nav: 1
   - name: 'DLCworkshop01.esm'
@@ -530,8 +530,8 @@ plugins:
     dirty:
       - <<: *quickClean
         crc: 0x47BAE27E
-        util: '[FO4Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout4/mods/2737)'
-        itm: 6
+        util: '[FO4Edit v4.1.5 EXPERIMENTAL](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 3
   - name: 'DLCCoast.esm'
     group: *dlcGroup
     after:
@@ -540,7 +540,7 @@ plugins:
     dirty:
       - <<: *quickClean
         crc: 0xF1F28026
-        util: '[FO4Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout4/mods/2737)'
+        util: '[FO4Edit v4.1.5 EXPERIMENTAL](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 84
         udr: 86
   - name: 'DLCworkshop02.esm'
@@ -549,11 +549,9 @@ plugins:
       - 'DLCRobot.esm'
       - 'DLCworkshop01.esm'
       - 'DLCCoast.esm'
-    dirty:
-      - <<: *quickClean
-        crc: 0x83ABC821
-        util: '[FO4Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout4/mods/2737)'
-        itm: 2
+    clean:
+      - crc: 0x83ABC821
+        util: 'FO4Edit v4.1.5 EXPERIMENTAL'
   - name: 'DLCworkshop03.esm'
     group: *dlcGroup
     after:
@@ -564,8 +562,8 @@ plugins:
     dirty:
       - <<: *quickClean
         crc: 0xE0089FBB
-        util: '[FO4Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout4/mods/2737)'
-        itm: 22
+        util: '[FO4Edit v4.1.5 EXPERIMENTAL](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 20
         udr: 10
   - name: 'DLCNukaWorld.esm'
     group: *dlcGroup
@@ -579,8 +577,8 @@ plugins:
     dirty:
       - <<: *quickClean
         crc: 0x43D25C56
-        util: '[FO4Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout4/mods/2737)'
-        itm: 194
+        util: '[FO4Edit v4.1.5 EXPERIMENTAL](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 193
         udr: 418
         nav: 7
   - name: 'DLCUltraHighResolution.esm'
