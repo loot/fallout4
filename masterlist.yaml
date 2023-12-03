@@ -549,9 +549,6 @@ plugins:
       - 'DLCRobot.esm'
       - 'DLCworkshop01.esm'
       - 'DLCCoast.esm'
-    clean:
-      - crc: 0x83ABC821
-        util: 'FO4Edit v4.1.5 EXPERIMENTAL'
   - name: 'DLCworkshop03.esm'
     group: *dlcGroup
     after:
