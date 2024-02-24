@@ -7751,4 +7751,22 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/68889/'
         name: 'Extra Icons for FIS'
-    after: [ 'FIS-Naming-Weap-Armo-EN.esp' ]
+    after: [ 'FIS-Naming-Weap-Armo-EN.esp' ]
+
+  - name: 'sakhalinwasteland.esp'
+url:
+  - link: 'https://www.nexusmods.com/fallout4/mods/34945'
+    name: 'Fallout Sakhalin'
+  - link: 'https://mods.bethesda.net/en/fallout4/mod-detail/4081112'
+    name: 'Fallout Sakhalin'
+msg:
+  - type: say
+    content: 'Removes terrain in Far Harbor DLC'
+dirty:
+  - crc: 0x01D5642C
+    util: '[FO4Edit v4.0.4](https://www.nexusmods.com/fallout4/mods/2737)'
+    itm: 17294
+    udr: 223
+clean:
+  - crc: 0x0D915E40
+    util: 'FO4Edit v4.0.4'
