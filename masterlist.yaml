@@ -7751,8 +7751,8 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/68889/'
         name: 'Extra Icons for FIS'
-    after: [ 'FIS-Naming-Weap-Armo-EN.esp' ]
-
+    after: [ 'FIS-Naming-Weap-Armo-EN.esp' ]
+
   - name: 'sakhalinwasteland.esp'
 url:
   - link: 'https://www.nexusmods.com/fallout4/mods/34945'
