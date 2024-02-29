@@ -7754,11 +7754,11 @@ plugins:
     after: [ 'FIS-Naming-Weap-Armo-EN.esp' ]
 
   - name: 'sakhalinwasteland.esp'
-url:
-  - link: 'https://www.nexusmods.com/fallout4/mods/34945'
-    name: 'Fallout Sakhalin'
-  - link: 'https://mods.bethesda.net/en/fallout4/mod-detail/4081112'
-    name: 'Fallout Sakhalin'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/34945/'
+        name: 'Fallout Sakhalin (Nexus Mods)'
+      - link: 'https://mods.bethesda.net/en/fallout4/mod-detail/4081112/'
+        name: 'Fallout Sakhalin (Bethesda.net Mods)'
 msg:
   - type: say
     content: 'Removes terrain in Far Harbor DLC'
