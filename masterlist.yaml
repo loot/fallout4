@@ -1511,7 +1511,7 @@ plugins:
     group: *fixesGroup
     msg:
       - <<: *obsolete
-        condition: 'version("Unofficial Fallout 4 Patch.esp", "2.1.5", <)'
+        condition: 'readable("../Fallout4.exe") and version("../Fallout4.exe", "1.10.980.0", >=) and version("Unofficial Fallout 4 Patch.esp", "2.1.6a", <)'
       - <<: *versionXIncY
         subs:
           - 'Unofficial Fallout 4 Patch'
