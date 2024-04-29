@@ -598,6 +598,48 @@ plugins:
 ###### Creation Club ######
   - name: 'cc[A-Z]{3}F(O|0)4[0-9]{3}.*\.es(l|m)'
     group: *ccGroup
+  ## Base Game ##
+  # Armor Paint Job - Enclave
+  - name: 'ccbgsfo4096-as_enclave.esl'
+    clean:
+      - crc: 0x243D95EC
+        util: 'FO4Edit v4.0.2j'
+  # Heavy Incinerator
+  - name: 'ccbgsfo4116-heavyflamer.esl'
+    clean:
+      - crc: 0xF1AFE663
+        util: 'FO4Edit v4.0.2j'
+  # Hellfire Power Armor
+  - name: 'ccbgsfo4044-hellfirepowerarmor.esl'
+    clean:
+      - crc: 0xC69A07D2
+        util: 'FO4Edit v4.0.2j'
+  # Tesla Cannon
+  - name: 'ccbgsfo4046-tescan.esl'
+    dirty:
+      - <<: *quickClean
+        crc: 0xF67EB2BF
+        util: '[FO4Edit v4.0.3](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 10
+    clean:
+      - crc: 0xDF5F6EBD
+        util: 'FO4Edit v4.0.3'
+  # Weapon Paint Job - Enclave
+  - name: 'ccbgsfo4110-ws_enclave.esl'
+    clean:
+      - crc: 0xC29B0419
+        util: 'FO4Edit v4.0.2j'
+  # X-02 Power Armor
+  - name: 'ccbgsfo4115-x02.esl'
+    dirty:
+      - <<: *quickClean
+        crc: 0xE543C619
+        util: '[FO4Edit v4.0.2j](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 7
+    clean:
+      - crc: 0x7C8D76A7
+        util: 'FO4Edit v4.0.2j'
+  ## Creation Club ##
   # Armor Paint Job - Aquatic Camo
   - name: 'ccbgsfo4092-as_camoblue.esl'
     clean:
@@ -632,11 +674,6 @@ plugins:
   - name: 'ccbgsfo4094-as_camotan.esl'
     clean:
       - crc: 0xABFEDE4F
-        util: 'FO4Edit v4.0.2j'
-  # Armor Paint Job - Enclave
-  - name: 'ccbgsfo4096-as_enclave.esl'
-    clean:
-      - crc: 0x243D95EC
         util: 'FO4Edit v4.0.2j'
   # Armor Paint Job - Gunners
   - name: 'ccgcafo4014-factionas03gun.esl'
@@ -1046,11 +1083,6 @@ plugins:
     clean:
       - crc: 0x67849193
         util: 'FO4Edit v4.0.2j'
-  # Weapon Paint Job - Enclave
-  - name: 'ccbgsfo4110-ws_enclave.esl'
-    clean:
-      - crc: 0xC29B0419
-        util: 'FO4Edit v4.0.2j'
   # Weapon Paint Job - Gunners
   - name: 'ccgcafo4004-factionws04gun.esl'
     clean:
@@ -1162,11 +1194,6 @@ plugins:
     clean:
       - crc: 0x98B17D05
         util: 'FO4Edit v4.0.3'
-  # Hellfire Power Armor
-  - name: 'ccbgsfo4044-hellfirepowerarmor.esl'
-    clean:
-      - crc: 0xC69A07D2
-        util: 'FO4Edit v4.0.2j'
   # Horse Power Armor
   - name: 'ccbgsfo4038-horsearmor.esl'
     clean:
@@ -1197,16 +1224,6 @@ plugins:
     clean:
       - crc: 0xDAAD1A9E
         util: 'FO4Edit v4.0.3'
-  # X-02 Power Armor
-  - name: 'ccbgsfo4115-x02.esl'
-    dirty:
-      - <<: *quickClean
-        crc: 0xE543C619
-        util: '[FO4Edit v4.0.2j](https://www.nexusmods.com/fallout4/mods/2737)'
-        itm: 7
-    clean:
-      - crc: 0x7C8D76A7
-        util: 'FO4Edit v4.0.2j'
 
   # Anti-Material Rifle
   - name: 'ccfrsfo4002-antimaterielrifle.esl'
@@ -1227,11 +1244,6 @@ plugins:
   - name: 'ccfrsfo4001-handmadeshotgun.esl'
     clean:
       - crc: 0x572E30C2
-        util: 'FO4Edit v4.0.2j'
-  # Heavy Incinerator
-  - name: 'ccbgsfo4116-heavyflamer.esl'
-    clean:
-      - crc: 0xF1AFE663
         util: 'FO4Edit v4.0.2j'
   # Manwell Rifle Set
   - name: 'ccsbjfo4002_manwellrifle.esl'
@@ -1268,16 +1280,6 @@ plugins:
     clean:
       - crc: 0xFD3AA32F
         util: 'FO4Edit v4.0.2j'
-  # Tesla Cannon
-  - name: 'ccbgsfo4046-tescan.esl'
-    dirty:
-      - <<: *quickClean
-        crc: 0xF67EB2BF
-        util: '[FO4Edit v4.0.3](https://www.nexusmods.com/fallout4/mods/2737)'
-        itm: 10
-    clean:
-      - crc: 0xDF5F6EBD
-        util: 'FO4Edit v4.0.3'
   # Tunnel Snakes Rule!
   - name: 'ccrzrfo4001-tunnelsnakes.esm'
     dirty:
