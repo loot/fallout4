@@ -522,19 +522,33 @@ plugins:
   - name: 'DLCRobot.esm'
     group: *dlcGroup
     dirty:
+      # v1.10.163
       - <<: *quickClean
         crc: 0xD69027EA
         util: '[FO4Edit v4.1.5 EXPERIMENTAL](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 50
         udr: 38
         nav: 1
+      # v1.10.980
+      - <<: *quickClean
+        crc: 0x8287509F
+        util: '[FO4Edit v4.1.5f](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 51
+        udr: 38
+        nav: 1
   - name: 'DLCworkshop01.esm'
     group: *dlcGroup
     after: [ 'DLCRobot.esm' ]
     dirty:
+      # v1.10.163
       - <<: *quickClean
         crc: 0x47BAE27E
         util: '[FO4Edit v4.1.5 EXPERIMENTAL](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 3
+      # v1.10.980
+      - <<: *quickClean
+        crc: 0x7EECAA24
+        util: '[FO4Edit v4.1.5f](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 3
   - name: 'DLCCoast.esm'
     group: *dlcGroup
@@ -544,8 +558,8 @@ plugins:
     dirty:
       - <<: *quickClean
         crc: 0xF1F28026
-        util: '[FO4Edit v4.1.5 EXPERIMENTAL](https://www.nexusmods.com/fallout4/mods/2737)'
-        itm: 84
+        util: '[FO4Edit v4.1.5f](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 83
         udr: 86
   - name: 'DLCworkshop02.esm'
     group: *dlcGroup
@@ -553,6 +567,9 @@ plugins:
       - 'DLCRobot.esm'
       - 'DLCworkshop01.esm'
       - 'DLCCoast.esm'
+    clean:
+      - crc: 0x83ABC821
+        util: 'FO4Edit v4.1.5f'
   - name: 'DLCworkshop03.esm'
     group: *dlcGroup
     after:
@@ -563,7 +580,7 @@ plugins:
     dirty:
       - <<: *quickClean
         crc: 0xE0089FBB
-        util: '[FO4Edit v4.1.5 EXPERIMENTAL](https://www.nexusmods.com/fallout4/mods/2737)'
+        util: '[FO4Edit v4.1.5f](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 20
         udr: 10
   - name: 'DLCNukaWorld.esm'
@@ -578,7 +595,7 @@ plugins:
     dirty:
       - <<: *quickClean
         crc: 0x43D25C56
-        util: '[FO4Edit v4.1.5 EXPERIMENTAL](https://www.nexusmods.com/fallout4/mods/2737)'
+        util: '[FO4Edit v4.1.5f](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 193
         udr: 418
         nav: 7
@@ -593,7 +610,7 @@ plugins:
       - 'DLCNukaWorld.esm'
     clean:
       - crc: 0x9B2A2AAC
-        util: 'FO4Edit v4.0.3'
+        util: 'FO4Edit v4.1.5f'
 
 ###### Creation Club ######
   - name: 'cc[A-Z]{3}F(O|0)4[0-9]{3}.*\.es(l|m)'
@@ -602,43 +619,54 @@ plugins:
   # Armor Paint Job - Enclave
   - name: 'ccbgsfo4096-as_enclave.esl'
     clean:
-      - crc: 0x243D95EC
-        util: 'FO4Edit v4.0.2j'
+      - crc: 0x9FEEDC55
+        util: 'FO4Edit v4.1.5f'
+  # Enclave Remnants
+  - name: 'ccOTMFO4001-Remnants.esl'
+    dirty:
+      - <<: *quickClean
+        crc: 0x7F5B1357
+        util: '[FO4Edit v4.1.5f](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 1
+  # Halloween Workshop
+  - name: 'ccFSVFO4007-Halloween.esl'
+    clean:
+      - crc: 0x794E415B
+        util: 'FO4Edit v4.1.5f'
   # Heavy Incinerator
   - name: 'ccbgsfo4116-heavyflamer.esl'
     clean:
-      - crc: 0xF1AFE663
-        util: 'FO4Edit v4.0.2j'
+      - crc: 0x46D8EE37
+        util: 'FO4Edit v4.1.5f'
   # Hellfire Power Armor
   - name: 'ccbgsfo4044-hellfirepowerarmor.esl'
     clean:
-      - crc: 0xC69A07D2
-        util: 'FO4Edit v4.0.2j'
+      - crc: 0xE1873D15
+        util: 'FO4Edit v4.1.5f'
+  # Makeshift Weapon Pack
+  - name: 'ccSBJFO4003-Grenade.esl'
+    clean:
+      - crc: 0xACD2EE1A
+        util: 'FO4Edit v4.1.5f'
   # Tesla Cannon
   - name: 'ccbgsfo4046-tescan.esl'
     dirty:
       - <<: *quickClean
-        crc: 0xF67EB2BF
-        util: '[FO4Edit v4.0.3](https://www.nexusmods.com/fallout4/mods/2737)'
+        crc: 0x6A178F10
+        util: '[FO4Edit v4.1.5f](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 10
-    clean:
-      - crc: 0xDF5F6EBD
-        util: 'FO4Edit v4.0.3'
   # Weapon Paint Job - Enclave
   - name: 'ccbgsfo4110-ws_enclave.esl'
     clean:
-      - crc: 0xC29B0419
-        util: 'FO4Edit v4.0.2j'
+      - crc: 0x6F3E5A0A
+        util: 'FO4Edit v4.1.5f'
   # X-02 Power Armor
   - name: 'ccbgsfo4115-x02.esl'
     dirty:
       - <<: *quickClean
-        crc: 0xE543C619
-        util: '[FO4Edit v4.0.2j](https://www.nexusmods.com/fallout4/mods/2737)'
+        crc: 0x0B9FC240
+        util: '[FO4Edit v4.1.5f](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 7
-    clean:
-      - crc: 0x7C8D76A7
-        util: 'FO4Edit v4.0.2j'
   ## Creation Club ##
   # Armor Paint Job - Aquatic Camo
   - name: 'ccbgsfo4092-as_camoblue.esl'
