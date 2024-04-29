@@ -1516,7 +1516,7 @@ plugins:
         subs:
           - 'Unofficial Fallout 4 Patch'
           - 'Fallout 4'
-        condition: 'readable("../Fallout4.exe") and version("../Fallout4.exe", "1.10.163.0", <) and version("Unofficial Fallout 4 Patch.esp", "2.1.0", >=)'
+        condition: 'readable("../Fallout4.exe") and version("../Fallout4.exe", "1.10.980.0", <) and version("Unofficial Fallout 4 Patch.esp", "2.1.6a", >=)'
     tag: [ Relev ]
     clean:
       - crc: 0x5A28725A
