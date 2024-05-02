@@ -1037,9 +1037,6 @@ plugins:
         crc: 0x970F7E4E
         util: '[FO4Edit v4.0.2j](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 2
-    clean:
-      - crc: 0xEB462321
-        util: 'FO4Edit v4.0.2j'
   # Power Armor Paint Job - Orange
   - name: 'ccbgsfo4028-powerarmorskinorange.esl'
     clean:
@@ -1196,12 +1193,9 @@ plugins:
   - name: 'ccbgsfo4117-capmerc.esl'
     dirty:
       - <<: *quickClean
-        crc: 0x67206ED6
-        util: '[FO4Edit v4.0.3](https://www.nexusmods.com/fallout4/mods/2737)'
+        crc: 0x2D11E1E9
+        util: '[FO4Edit v4.1.5f](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 33
-    clean:
-      - crc: 0x912D89A7
-        util: 'FO4Edit v4.0.3'
   # Chinese Stealth Armor
   - name: 'ccbgsfo4019-chinesestealtharmor.esl'
     clean:
@@ -1227,11 +1221,8 @@ plugins:
     dirty:
       - <<: *quickClean
         crc: 0x88799C6D
-        util: '[FO4Edit v4.0.3](https://www.nexusmods.com/fallout4/mods/2737)'
+        util: '[FO4Edit v4.1.5f](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 3
-    clean:
-      - crc: 0x98B17D05
-        util: 'FO4Edit v4.0.3'
   # Horse Power Armor
   - name: 'ccbgsfo4038-horsearmor.esl'
     clean:
@@ -1256,12 +1247,9 @@ plugins:
   - name: 'ccacxfo4001-vsuit.esl'
     dirty:
       - <<: *quickClean
-        crc: 0xDF8B7949
-        util: '[FO4Edit v4.0.3](https://www.nexusmods.com/fallout4/mods/2737)'
-        itm: 6
-    clean:
-      - crc: 0xDAAD1A9E
-        util: 'FO4Edit v4.0.3'
+        crc: 0xE662D882
+        util: '[FO4Edit v4.1.5f](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 1
 
   # Anti-Material Rifle
   - name: 'ccfrsfo4002-antimaterielrifle.esl'
@@ -1273,6 +1261,13 @@ plugins:
     clean:
       - crc: 0x5D82B4DD
         util: 'FO4Edit v4.0.2j'
+  # CR-74L Combat Rifle
+  - name: 'ccfrsfo4003-cr75l.esl'
+    dirty:
+      - <<: *quickClean
+        crc: 0x4F657AFF
+        util: '[FO4Edit v4.1.5f](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 10
   # Doom BFG
   - name: 'ccbgsfo4042-bfg.esl'
     clean:
@@ -1287,12 +1282,9 @@ plugins:
   - name: 'ccsbjfo4002_manwellrifle.esl'
     dirty:
       - <<: *quickClean
-        crc: 0xF8E4646E
-        util: '[FO4Edit v4.0.2j](https://www.nexusmods.com/fallout4/mods/2737)'
+        crc: 0x761F6B59
+        util: '[FO4Edit v4.1.5f](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 3
-    clean:
-      - crc: 0x887A67DB
-        util: 'FO4Edit v4.0.2j'
   # Prototype Gauss Rifle
   - name: 'ccbgsfo4018-gaussrifleprototype.esl'
     clean:
@@ -1302,32 +1294,23 @@ plugins:
   - name: 'ccbgsfo4047-qthund.esl'
     dirty:
       - <<: *quickClean
-        crc: 0x9D9D2240
-        util: '[FO4Edit v4.0.2j](https://www.nexusmods.com/fallout4/mods/2737)'
+        crc: 0x41BF1C96
+        util: '[FO4Edit v4.1.5f](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 4
-    clean:
-      - crc: 0x708BFE9B
-        util: 'FO4Edit v4.0.2j'
   # Solar Cannon
   - name: 'ccsbjfo4001-solarflare.esl'
     dirty:
       - <<: *quickClean
-        crc: 0xF1B91783
-        util: '[FO4Edit v4.0.2j](https://www.nexusmods.com/fallout4/mods/2737)'
+        crc: 0x2C2E4825
+        util: '[FO4Edit v4.1.5f](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 2
-    clean:
-      - crc: 0xFD3AA32F
-        util: 'FO4Edit v4.0.2j'
   # Tunnel Snakes Rule!
   - name: 'ccrzrfo4001-tunnelsnakes.esm'
     dirty:
       - <<: *quickClean
-        crc: 0xC5C9BD73
-        util: '[FO4Edit v4.0.2j](https://www.nexusmods.com/fallout4/mods/2737)'
+        crc: 0x9D60C5E4
+        util: '[FO4Edit v4.1.5f](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 1
-    clean:
-      - crc: 0xD516F50E
-        util: 'FO4Edit v4.0.2j'
   # Zetan Arsenal
   - name: 'ccrzrfo4002-disintegrate.esl'
     dirty:
@@ -1335,9 +1318,6 @@ plugins:
         crc: 0xED7A6886
         util: '[FO4Edit v4.0.2j](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 5
-    clean:
-      - crc: 0xFF714843
-        util: 'FO4Edit v4.0.2j'
 
   # Arcade Workshop Pack
   - name: 'ccbgsfo4045-advarccab.esl'
@@ -1349,11 +1329,8 @@ plugins:
     dirty:
       - <<: *quickClean
         crc: 0xCA1EB6B7
-        util: '[FO4Edit v4.0.2j](https://www.nexusmods.com/fallout4/mods/2737)'
+        util: '[FO4Edit v4.1.5f](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 4
-    clean:
-      - crc: 0x25027E1B
-        util: 'FO4Edit v4.0.2j'
   # Coffee and Donuts Workshop Pack
   - name: 'ccfsvfo4003-slocum.esl'
     clean:
@@ -1378,19 +1355,16 @@ plugins:
   - name: 'cctosfo4002_neonflats.esm'
     dirty:
       - <<: *quickClean
-        crc: 0xFEABF8DB
-        util: '[FO4Edit v4.0.2j](https://www.nexusmods.com/fallout4/mods/2737)'
+        crc: 0x1BA8A3EB
+        util: '[FO4Edit v4.1.5f](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 19
         udr: 2
-    clean:
-      - crc: 0x4857E32B
-        util: 'FO4Edit v4.0.2j'
   # Noir Penthouse
   - name: 'cctosfo4001-neosky.esm'
     dirty:
       - <<: *quickClean
-        crc: 0x2BB4322A
-        util: '[FO4Edit v4.0.2j](https://www.nexusmods.com/fallout4/mods/2737)'
+        crc: 0x08459655
+        util: '[FO4Edit v4.1.5f](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 3
         nav: 1
   # Nuka-Cola Collector Workshop
@@ -1402,52 +1376,37 @@ plugins:
   - name: 'cczsefo4002-smanor.esm'
     dirty:
       - <<: *quickClean
-        crc: 0xD4E11019
-        util: '[FO4Edit v4.0.2j](https://www.nexusmods.com/fallout4/mods/2737)'
+        crc: 0xD7FA2567
+        util: '[FO4Edit v4.1.5f](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 2
-    clean:
-      - crc: 0xE4674812
-        util: 'FO4Edit v4.0.2j'
   # Virtual Workshops - Atomic Crater
   - name: 'ccfsvfo4006-vrwasteland.esl'
     dirty:
       - <<: *quickClean
-        crc: 0xB30F7A1D
-        util: '[FO4Edit v4.0.3](https://www.nexusmods.com/fallout4/mods/2737)'
+        crc: 0xF55C587A
+        util: '[FO4Edit v4.1.5f](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 111
-    clean:
-      - crc: 0xDB3401F9
-        util: 'FO4Edit v4.0.3'
   # Virtual Workshops - Capital Wasteland
   - name: 'ccfsvfo4004-vrworkshopgnrplaza.esl'
     dirty:
       - <<: *quickClean
-        crc: 0xAC9CD310
-        util: '[FO4Edit v4.0.3](https://www.nexusmods.com/fallout4/mods/2737)'
+        crc: 0xA4D995C4
+        util: '[FO4Edit v4.1.5f](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 8
-    clean:
-      - crc: 0xB0263C72
-        util: 'FO4Edit v4.0.3'
   # Virtual Workshops - Desert Island
   - name: 'ccfsvfo4005-vrdesertisland.esl'
     dirty:
       - <<: *quickClean
-        crc: 0xAA9EBB60
-        util: '[FO4Edit v4.0.3](https://www.nexusmods.com/fallout4/mods/2737)'
+        crc: 0x8A73B138
+        util: '[FO4Edit v4.1.5f](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 92
-    clean:
-      - crc: 0x9889CA15
-        util: 'FO4Edit v4.0.3'
   # Virtual Workshops - Grid World
   - name: 'ccbgsfo4040-vrworkshop01.esl'
     dirty:
       - <<: *quickClean
-        crc: 0x64F72538
-        util: '[FO4Edit v4.0.3](https://www.nexusmods.com/fallout4/mods/2737)'
+        crc: 0x48B2B217
+        util: '[FO4Edit v4.1.5f](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 3
-    clean:
-      - crc: 0xE9C45B08
-        util: 'FO4Edit v4.0.3'
 
   # Sentinel Control System Companion
   - name: 'ccqdrfo4001_powerarmorai.esl'
@@ -1458,12 +1417,9 @@ plugins:
   - name: 'cckgjfo4001-bastion.esl'
     dirty:
       - <<: *quickClean
-        crc: 0x7AE2EB38
-        util: '[FO4Edit v4.0.2j](https://www.nexusmods.com/fallout4/mods/2737)'
+        crc: 0x86481C0F
+        util: '[FO4Edit v4.1.5f](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 53
-    clean:
-      - crc: 0xE88D283C
-        util: 'FO4Edit v4.0.2j'
   # TransDOGrifier
   - name: 'ccbgsfo4036-trnsdg.esl'
     clean:
@@ -1500,11 +1456,8 @@ plugins:
     dirty:
       - <<: *quickClean
         crc: 0x582A48AD
-        util: '[FO4Edit v4.0.2j](https://www.nexusmods.com/fallout4/mods/2737)'
+        util: '[FO4Edit v4.1.5f](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 3
-    clean:
-      - crc: 0xFDD144C6
-        util: 'FO4Edit v4.0.2j'
   # Great Dane
   - name: 'ccbgsfo4054-dggreatd.esl'
     clean:
