@@ -7758,11 +7758,7 @@ plugins:
         name: 'Fallout Sakhalin (Nexus Mods)'
       - link: 'https://mods.bethesda.net/en/fallout4/mod-detail/4081112/'
         name: 'Fallout Sakhalin (Bethesda.net Mods)'
-    msg:
-      - type: say
-        content:
-          - lang: en
-            text: 'This plugin removes terrain in the Far Harbor DLC.'
+    msg: [ *corrupt ]
     dirty:
       - <<: *quickClean
         crc: 0x1D5642C1
