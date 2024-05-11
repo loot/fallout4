@@ -4266,6 +4266,20 @@ plugins:
         name: 'Red Rocket Deep Clean'
     after: [ 'PRP.esp' ]
 
+  - name: 'sakhalinwasteland.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/34945/'
+        name: 'Fallout Sakhalin (Nexus Mods)'
+      - link: 'https://mods.bethesda.net/en/fallout4/mod-detail/4081112/'
+        name: 'Fallout Sakhalin (Bethesda.net Mods)'
+    msg: [ *corrupt ]
+    dirty:
+      - <<: *quickClean
+        crc: 0x1D5642C1
+        util: '[FO4Edit v4.1.5f](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 17293
+        udr: 223
+
   - name: 'Sanctuary_DCnR_F-ESL.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/65561/'
@@ -7751,17 +7765,3 @@ plugins:
       - link: 'https://www.nexusmods.com/fallout4/mods/68889/'
         name: 'Extra Icons for FIS'
     after: [ 'FIS-Naming-Weap-Armo-EN.esp' ]
-
-  - name: 'sakhalinwasteland.esp'
-    url:
-      - link: 'https://www.nexusmods.com/fallout4/mods/34945/'
-        name: 'Fallout Sakhalin (Nexus Mods)'
-      - link: 'https://mods.bethesda.net/en/fallout4/mod-detail/4081112/'
-        name: 'Fallout Sakhalin (Bethesda.net Mods)'
-    msg: [ *corrupt ]
-    dirty:
-      - <<: *quickClean
-        crc: 0x1D5642C1
-        util: '[FO4Edit v4.1.5f](https://www.nexusmods.com/fallout4/mods/2737)'
-        itm: 17293
-        udr: 223
