@@ -7764,7 +7764,8 @@ plugins:
           - lang: en
             text: 'This plugin removes terrain in the Far Harbor DLC.'
     dirty:
-      - crc: 0x1D5642C1
-        util: '[FO4Edit v4.0.4](https://www.nexusmods.com/fallout4/mods/2737)'
-        itm: 17294
+      - <<: *quickClean
+        crc: 0x1D5642C1
+        util: '[FO4Edit v4.1.5f](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 17293
         udr: 223
