@@ -447,6 +447,8 @@ globals:
 
 # F4SE - Runtime Compatibility
   - <<: *versionF4SEIncFO4
+    condition: 'readable("../Fallout4.exe") and version("../Fallout4.exe", "1.10.984.0", ==) and version("../f4se_loader.exe", "0.0.7.2", <) and file("../f4se_loader.exe")'
+  - <<: *versionF4SEIncFO4
     condition: 'readable("../Fallout4.exe") and version("../Fallout4.exe", "1.10.980.0", ==) and version("../f4se_loader.exe", "0.0.7.1", <) and file("../f4se_loader.exe")'
   - <<: *versionF4SEIncFO4
     condition: 'readable("../Fallout4.exe") and version("../Fallout4.exe", "1.10.163.0", ==) and version("../f4se_loader.exe", "0.0.6.20", <) and file("../f4se_loader.exe")'
