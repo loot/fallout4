@@ -472,6 +472,13 @@ globals:
       - 'Fallout 4'
     condition: 'file("F4SE/Plugins/place.dll") and file("../f4se_loader.exe") and readable("../Fallout4.exe") and ((version("F4SE/Plugins/place.dll", "1.18.0.1163", ==) and version("../Fallout4.exe", "1.10.163.0", !=)) or (version("F4SE/Plugins/place.dll", "1.18.0.1163", <) and version("../Fallout4.exe", "1.10.163.0", ==)))'
 
+# Temporary warning: Performance Issues in FO4 Next Gen
+  - type: warn
+    content:
+      - lang: en
+        text: 'Fallout 4 Next Gen (version 1.10.984.0) has been found to experience performance issues such as stuttering and freezing in the presence of any mods overriding **NPC_** records. An official patch from Bethesda will need to address this issue.'
+    condition: 'file("../Fallout4.exe") and readable("../Fallout4.exe") and version("../Fallout4.exe", "1.10.984.0", ==)'
+
 groups:
   - name: &dlcGroup DLC
 
