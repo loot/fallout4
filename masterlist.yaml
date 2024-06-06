@@ -2779,10 +2779,12 @@ plugins:
       - Delev
       - Relev
 
-  - name: '(EBMD(_AllInOne|-UF04P Patch)|Even(BetterMDesc|BMD_(Automatron|FarHarbor|NukaWorld)DLC))\.esp'
+  - name: '(EBMD(_AllInOne|-UF04P Patch)|EvenBetterMDesc)\.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/36105/'
         name: 'Even Better Mod Descriptions'
+  - name: '(EBMD(_AllInOne|-UF04P Patch)|Even(BetterMDesc|BMD_(Automatron|FarHarbor|NukaWorld)DLC))\.esp'
+    url:
       - link: 'https://www.nexusmods.com/fallout4/mods/74459/'
         name: 'Illusive Fixes and Merges'
   - name: 'EBMD_AllInOne.esp'
@@ -2810,9 +2812,6 @@ plugins:
       - crc: 0x08B0A737
         util: 'FO4Edit v4.0.4'
   - name: 'EvenBetterMDesc.esp'
-    url:
-      - link: 'https://www.nexusmods.com/fallout4/mods/36105/'
-        name: 'Even Better Mod Descriptions'
     msg:
       - <<: *alsoUseX
         subs: [ '[Even Better Mod Descriptions Fixed](https://www.nexusmods.com/fallout4/mods/74459/)' ]
