@@ -2824,10 +2824,6 @@ plugins:
       - crc: 0x31BE007A
         util: 'FO4Edit v4.0.4'
   - name: 'EvenBMD_AutomatronDLC.esp'
-    msg:
-      - <<: *alsoUseX
-        subs: [ '[Even Better Mod Descriptions Fixed](https://www.nexusmods.com/fallout4/mods/74459/)' ]
-        condition: 'not version("EvenBMD_AutomatronDLC.esp", "4.1", >=)'
     clean:
       # Original
       - crc: 0x51338E69
@@ -2836,10 +2832,6 @@ plugins:
       - crc: 0x384AF106
         util: 'FO4Edit v4.0.4'
   - name: 'EvenBMD_FarHarborDLC.esp'
-    msg:
-      - <<: *alsoUseX
-        subs: [ '[Even Better Mod Descriptions Fixed](https://www.nexusmods.com/fallout4/mods/74459/)' ]
-        condition: 'not version("EvenBMD_FarHarborDLC.esp", "4.1", >=)'
     clean:
       # Original
       - crc: 0x38F38215
@@ -2848,10 +2840,6 @@ plugins:
       - crc: 0xA1D256BB
         util: 'FO4Edit v4.0.4'
   - name: 'EvenBMD_NukaWorldDLC.esp'
-    msg:
-      - <<: *alsoUseX
-        subs: [ '[Even Better Mod Descriptions Fixed](https://www.nexusmods.com/fallout4/mods/74459/)' ]
-        condition: 'not version("EvenBMD_NukaWorldDLC.esp", "4.1", >=)'
     clean:
       # Original
       - crc: 0x48971FBB
