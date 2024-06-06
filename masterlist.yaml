@@ -2798,22 +2798,22 @@ plugins:
           - 'Fallout 4'
         condition: 'readable("../Fallout4.exe") and version("../Fallout4.exe", "1.10.163.0", <=) and version("EBMD_AllInOne.esp", "4.1", !=)'
     clean:
-      # GOTY(Main Version 4.1)
-      - crc: 0x4B1243AE
-        util: 'FO4Edit v4.0.4'
-      # GOTY (No Perks 4.1)
-      - crc: 0x94EE726D
-        util: 'FO4Edit v4.0.4'
-      # GOTY(Main Version 4.1) Fixed
+      # GOTY (Main Version)
+      - crc: 0xA2DD949C
+        util: 'FO4Edit v4.1.5f'
+      # GOTY (No Perks)
+      - crc: 0xCA66630B
+        util: 'FO4Edit v4.1.5f'
+      # GOTY (Main Version) Fixed
       - crc: 0x14704334
         util: 'FO4Edit v4.0.4'
-      # GOTY(Main Version 4.1) Fixed UFO4P
+      # GOTY (Main Version) Fixed UFO4P
       - crc: 0xF0DDE373
         util: 'FO4Edit v4.0.4'
-      # GOTY (No Perks 4.1) Fixed
+      # GOTY (No Perks) Fixed
       - crc: 0xBDD21B9E
         util: 'FO4Edit v4.0.4'
-      # GOTY (No Perks 4.1) Fixed UFO4P
+      # GOTY (No Perks) Fixed UFO4P
       - crc: 0x08B0A737
         util: 'FO4Edit v4.0.4'
   - name: 'EvenBetterMDesc.esp'
@@ -2828,32 +2828,23 @@ plugins:
         condition: 'readable("../Fallout4.exe") and version("../Fallout4.exe", "1.10.163.0", <=) and version("EvenBetterMDesc.esp", "4.1", !=)'
     clean:
       # Original
-      - crc: 0x31185F01
-        util: 'FO4Edit v4.0.4'
+      - crc: 0x1E071C83
+        util: 'FO4Edit v4.1.5f'
       # Fixed
       - crc: 0x31BE007A
         util: 'FO4Edit v4.0.4'
   - name: 'EvenBMD_AutomatronDLC.esp'
     clean:
-      # Original
-      - crc: 0x51338E69
-        util: 'FO4Edit v4.0.4'
       # Fixed
       - crc: 0x384AF106
         util: 'FO4Edit v4.0.4'
   - name: 'EvenBMD_FarHarborDLC.esp'
     clean:
-      # Original
-      - crc: 0x38F38215
-        util: 'FO4Edit v4.0.4'
       # Fixed
       - crc: 0xA1D256BB
         util: 'FO4Edit v4.0.4'
   - name: 'EvenBMD_NukaWorldDLC.esp'
     clean:
-      # Original
-      - crc: 0x48971FBB
-        util: 'FO4Edit v4.0.4'
       # Fixed
       - crc: 0xBEB20B31
         util: 'FO4Edit v4.0.4'
@@ -2864,8 +2855,8 @@ plugins:
         condition: 'version("EBMD_AllInOne.esp", "4.1", >=)'
     clean:
       # Original
-      - crc: 0x50AC05D1
-        util: 'FO4Edit v4.0.4'
+      - crc: 0x6755ACE6
+        util: 'FO4Edit v4.1.5f'
       # Fixed
       - crc: 0xCFD5B0B2
         util: 'FO4Edit v4.0.4'
