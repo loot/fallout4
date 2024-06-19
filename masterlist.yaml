@@ -3329,6 +3329,10 @@ plugins:
       - <<: *obsolete
         subs: [ '[Illusive Fixes and Merges - Mortal Settlers Fixed](https://www.nexusmods.com/fallout4/mods/74459/)' ]
         condition: 'checksum("MortalSettlers.esp", 1812C586)'
+    tag:
+      - Actors.ACBS
+      - Deactivate
+      - NPC.Perks.Add
 
   - name: 'SKKRESystemManager.esp'
     url:
