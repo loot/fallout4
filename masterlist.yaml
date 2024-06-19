@@ -3323,6 +3323,12 @@ plugins:
         name: 'Mortal Settlers'
       - link: 'https://www.nexusmods.com/fallout4/mods/74459/'
         name: 'Illusive Fixes and Merges'
+    msg:
+      - <<: *corrupt
+        condition: 'checksum("MortalSettlers.esp", 1812C586)'
+      - <<: *obsolete
+        subs: [ '[Illusive Fixes and Merges - Mortal Settlers Fixed](https://www.nexusmods.com/fallout4/mods/74459/)' ]
+        condition: 'checksum("MortalSettlers.esp", 1812C586)'
 
   - name: 'SKKRESystemManager.esp'
     url:
