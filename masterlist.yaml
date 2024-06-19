@@ -3317,6 +3317,13 @@ plugins:
         util: 'FO4Edit v4.0.4'
 
 ###### Gameplay - NPC Balance & Distribution ######
+  - name: 'MortalSettlers.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/3483/'
+        name: 'Mortal Settlers'
+      - link: 'https://www.nexusmods.com/fallout4/mods/74459/'
+        name: 'Illusive Fixes and Merges'
+
   - name: 'SKKRESystemManager.esp'
     url:
       - 'https://bethesda.net/en/mods/fallout4/mod-detail/4135081/'
