@@ -3333,6 +3333,9 @@ plugins:
       - Actors.ACBS
       - Deactivate
       - NPC.Perks.Add
+    clean:
+      - crc: 0x8D496581
+        util: 'FO4Edit v4.1.5g'
 
   - name: 'SKKRESystemManager.esp'
     url:
