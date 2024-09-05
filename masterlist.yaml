@@ -3652,8 +3652,6 @@ plugins:
       - 'NoraSpouse.esm'
       - 'WastelandOperator.esp'
     msg:
-      - <<: *compatNotes
-        subs: [ 'https://forums.nexusmods.com/index.php?/topic/10899803-start-me-up-unofficial-fallout-4-patch-fixes-and-tweaks/page-7#entry104054868' ]
       - <<: *obsolete
         subs: [ '[Start Me Up Redux](https://www.nexusmods.com/fallout4/mods/56984/)' ]
         condition: 'version("StartMeUp.esp", "6.7", <)'
@@ -5213,7 +5211,7 @@ plugins:
       - name: 'Conquest.esp'
         display: 'Conquest - Build New Settlements and Camping'
       - name: 'D.E.C.A.Y.esp'
-        detail: 'See [this guide](https://forums.nexusmods.com/index.php?/topic/3445720-decay/page-88#entry102651758) to make them compatible.'
+        detail: 'See [this guide](https://www.nexusmods.com/fallout4/mods/2500?tab=posts&jump_to_comment=102651758) to make them compatible.'
         condition: 'checksum("D.E.C.A.Y.esp", 369D7560) or checksum("D.E.C.A.Y.esp", 1BA826DE) or checksum("D.E.C.A.Y.esp", 98A7E896)'
       - name: 'SimSettlements.esm'
         display: 'Sim Settlements'
