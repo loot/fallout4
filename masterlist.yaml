@@ -7779,3 +7779,15 @@ plugins:
       - link: 'https://www.nexusmods.com/fallout4/mods/68889/'
         name: 'Extra Icons for FIS'
     after: [ 'FIS-Naming-Weap-Armo-EN.esp' ]
+
+  - name: 'AltChameleonVisuals.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/1886'
+        name: 'Alternative Chameleon Visuals'
+    after: [ 'Chameleon No Sound.esp' ]
+
+  - name: 'NoChameleonFlash.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/1886'
+        name: 'Alternative Chameleon Visuals'
+    after: [ 'Chameleon No Sound.esp' ]
