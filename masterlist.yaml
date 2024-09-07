@@ -7786,15 +7786,7 @@ plugins:
     msg:
       - <<: *alreadyInOrFixedByX
         subs: [ 'Alternative Chameleon Visuals' ]
-        condition: 'active("AltChameleonVisuals.esp")'
-        
-  - name: 'Chameleon No Sound.esp'
-    url:
-      - link: 'hhttps://www.nexusmods.com/fallout4/mods/1886'
-    msg:
-      - <<: *alreadyInOrFixedByX
-        subs: [ 'Alternative Chameleon Visuals' ]
-        condition: 'active("NoChameleonFlash.esp")'
+        condition: 'active("AltChameleonVisuals.esp") or active("NoChameleonFlash.esp")'
         
   - name: 'NoChameleonFlash.esp'
     url:
