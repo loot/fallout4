@@ -7783,7 +7783,7 @@ plugins:
   - name: 'Chameleon No Sound.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/1886'
-        msg:
+    msg:
       - <<: *alreadyInOrFixedByX
         subs: [ 'Alternative Chameleon Visuals' ]
         condition: 'active("AltChameleonVisuals.esp")'
@@ -7791,7 +7791,7 @@ plugins:
   - name: 'Chameleon No Sound.esp'
     url:
       - link: 'hhttps://www.nexusmods.com/fallout4/mods/1886'
-        msg:
+    msg:
       - <<: *alreadyInOrFixedByX
         subs: [ 'Alternative Chameleon Visuals' ]
         condition: 'active("NoChameleonFlash.esp")'
@@ -7799,7 +7799,7 @@ plugins:
   - name: 'NoChameleonFlash.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/1886'
-        msg:
+    msg:
       - <<: *alreadyInX
         subs: [ 'Alternative Chameleon Visuals' ]
         condition: 'active("AltChameleonVisuals.esp")'
