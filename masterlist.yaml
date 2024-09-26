@@ -7791,7 +7791,8 @@ plugins:
         
   - name: 'NoChameleonFlash.esp'
     url:
-      - link: 'https://www.nexusmods.com/fallout4/mods/1886'
+      - link: 'https://www.nexusmods.com/fallout4/mods/1886/'
+        name: 'Alternative Chameleon Visuals'
     msg:
       - <<: *alreadyInX
         subs: [ 'Alternative Chameleon Visuals' ]
