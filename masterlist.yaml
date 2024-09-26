@@ -7782,7 +7782,8 @@ plugins:
 
   - name: 'Chameleon No Sound.esp'
     url:
-      - link: 'https://www.nexusmods.com/fallout4/mods/1886'
+      - link: 'https://www.nexusmods.com/fallout4/mods/26648/'
+        name: 'No Sound Chameleon cloak'
     msg:
       - <<: *alreadyInOrFixedByX
         subs: [ 'Alternative Chameleon Visuals' ]
