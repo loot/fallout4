@@ -7789,7 +7789,7 @@ plugins:
         subs: [ 'Alternative Chameleon Visuals' ]
         condition: 'active("AltChameleonVisuals.esp") or active("NoChameleonFlash.esp")'
         
-  - name: 'NoChameleonFlash.esp'
+  - name: '(Alt|No)Chameleon(Flash|Visuals)\.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/1886/'
         name: 'Alternative Chameleon Visuals'
