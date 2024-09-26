@@ -7794,6 +7794,6 @@ plugins:
       - link: 'https://www.nexusmods.com/fallout4/mods/1886/'
         name: 'Alternative Chameleon Visuals'
     msg:
-      - <<: *alreadyInX
-        subs: [ 'Alternative Chameleon Visuals' ]
-        condition: 'active("AltChameleonVisuals.esp")'
+      - <<: *useOnlyOneX
+        subs: [ 'Alternative Chameleon Visuals ESP' ]
+        condition: 'many("(Alt|No)Chameleon(Flash|Visuals)\.esp")'
