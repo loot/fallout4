@@ -7785,7 +7785,7 @@ plugins:
       - link: 'https://www.nexusmods.com/fallout4/mods/26648/'
         name: 'No Sound Chameleon cloak'
     msg:
-      - <<: *alreadyInOrFixedByX
+      - <<: *alreadyInX
         subs: [ 'Alternative Chameleon Visuals' ]
         condition: 'active("AltChameleonVisuals.esp") or active("NoChameleonFlash.esp")'
         
