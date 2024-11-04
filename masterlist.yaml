@@ -2053,7 +2053,7 @@ plugins:
   - name: '(PPF|PRP.*|CAF-Fixups|ScrapEverythingUltimatePrevis)\.es[mp]'
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/46403/'
-        name: 'Previsibines Repair Pack'
+        name: 'Previsibines Repair Pack Stable Branch - PRP'
   - name: 'PRP.esp'
     group: *preVisCombinedGroup
     inc: [ 'FROST.esp' ]
