@@ -536,11 +536,11 @@ groups:
     description: 'A group for patches that resolve conflicts.'
     after: [ *worldSettingsGroup ]
 
-  - name: &lateChangesGroup Late Fixes & Changes
+  - name: &dynamicPatchesGroup Dynamic Patches
     after: [ *conflictResPatchGroup ]
 
-  - name: &dynamicPatchesGroup Dynamic Patches
-    after: [ *lateChangesGroup ]
+  - name: &lateChangesGroup Late Fixes & Changes
+    after: [ *dynamicPatchesGroup ]
 
 plugins:
 ###### Official DLC plugins ######
