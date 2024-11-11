@@ -528,8 +528,11 @@ groups:
     description: 'A group for FROST modules that need to be sorted late.'
     after: [ *horizonGroup ]
 
-  - name: &highPriorityGroup High Priority Overrides
+  - name: &coreGroup Core Mods
     after: [ *frostGroup ]
+
+  - name: &highPriorityGroup High Priority Overrides
+    after: [ *coreGroup ]
 
   - name: &lateLoadersGroup Late Loaders
     after: [ *highPriorityGroup ]
