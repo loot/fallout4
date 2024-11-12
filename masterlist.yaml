@@ -531,8 +531,14 @@ groups:
   - name: &coreGroup Core Mods
     after: [ *frostGroup ]
 
-  - name: &highPriorityGroup High Priority Overrides
+  - name: &coreAddonsGroup Core Add-ons
     after: [ *coreGroup ]
+
+  - name: &corePatchesGroup Core Patches
+    after: [ *coreAddonsGroup ]
+
+  - name: &highPriorityGroup High Priority Overrides
+    after: [ *corePatchesGroup ]
 
   - name: &lateLoadersGroup Late Loaders
     after: [ *highPriorityGroup ]
