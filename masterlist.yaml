@@ -5029,9 +5029,10 @@ plugins:
         itm: 4
 
 ###### Horizon ######
-  - name: 'Z_(Architect|Horizon)\.es(m|p)'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/17374/' ]
   - name: 'Z_Horizon.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/17374/'
+        name: 'Horizon'
     group: *horizonGroup
     after:
       - 'advancedAITweaks.esp'
