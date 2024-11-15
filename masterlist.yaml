@@ -528,8 +528,11 @@ groups:
     description: 'A group for FROST modules that need to be sorted late.'
     after: [ *horizonGroup ]
 
-  - name: &coreGroup Core Mods
+  - name: &mediumPriorityGroup Medium Priority Overrides
     after: [ *frostGroup ]
+
+  - name: &coreGroup Core Mods
+    after: [ *mediumPriorityGroup ]
 
   - name: &coreEarlyPatchesGroup Core Mods - Early Patches
     after: [ *coreGroup ]
