@@ -531,14 +531,20 @@ groups:
   - name: &coreGroup Core Mods
     after: [ *frostGroup ]
 
-  - name: &coreAddonsGroup Core Add-ons
+  - name: &coreEarlyPatchesGroup Core Mods - Early Patches
     after: [ *coreGroup ]
 
-  - name: &corePatchesGroup Core Patches
+  - name: &coreTweaksGroup Core Mods - Tweaks
+    after: [ *coreEarlyPatchesGroup ]
+
+  - name: &coreAddonsGroup Core Mods - Add-ons
+    after: [ *coreTweaksGroup ]
+
+  - name: &coreLatePatchesGroup Core Mods - Late Patches
     after: [ *coreAddonsGroup ]
 
   - name: &highPriorityGroup High Priority Overrides
-    after: [ *corePatchesGroup ]
+    after: [ *coreLatePatchesGroup ]
 
   - name: &lateLoadersGroup Late Loaders
     after: [ *highPriorityGroup ]
