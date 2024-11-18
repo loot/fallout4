@@ -5033,7 +5033,7 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/17374/'
         name: 'Horizon'
-    group: *horizonGroup
+    group: *coreGroup
     after:
       - 'advancedAITweaks.esp'
       - 'Arbitration - Better Combat AI.esp'
