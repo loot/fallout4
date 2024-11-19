@@ -5258,14 +5258,14 @@ plugins:
   - name: 'Z_Architect_Weather.esp'
     after: [ 'Z_Architect_TexturePack01.esp' ]
   - name: 'Z_Architect_WorldFixes.esp'
-    group: 'Underrides'
+    group: *underridesGroup
     after:
       - 'Z_Architect_WorldManager.esp'
       - 'Z_Architect_WorldManager_DLC.esp'
   - name: 'Z_Architect_WorldManager.esp'
-    group: 'Underrides'
+    group: *underridesGroup
   - name: 'Z_Architect_WorldManager_DLC.esp'
-    group: 'Underrides'
+    group: *underridesGroup
   - name: 'Z_Extras.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/17374/'
