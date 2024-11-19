@@ -5167,11 +5167,13 @@ plugins:
     after:
       - 'Z_Horizon_DEFUI.esp'
       - 'Z_Horizon_Optional_ShortNaming.esp'
+    inc: [ 'Z_Horizon_Mode_Scavenger.esp' ]
   - name: 'Z_Horizon_Mode_Scavenger.esp'
     group: *coreTweaksGroup
     after:
       - 'Z_Horizon_DEFUI.esp'
       - 'Z_Horizon_Optional_ShortNaming.esp'
+    inc: [ 'Z_Horizon_Desolation.esp' ]
   - name: 'Z_Horizon_Optional_ShortNaming.esp'
     group: *coreTweaksGroup
     after: [ 'Z_Horizon_DEFUI.esp' ]
