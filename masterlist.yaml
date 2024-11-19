@@ -5226,6 +5226,7 @@ plugins:
     group: *highPriorityGroup
   - name: 'Z_Architect_TexturePack01.esp'
   - name: 'Z_Architect_Weather.esp'
+    after: [ 'Z_Architect_TexturePack01.esp' ]
   - name: 'Z_Architect_WorldFixes.esp'
     group: 'Underrides'
   - name: 'Z_Architect_WorldManager.esp'
