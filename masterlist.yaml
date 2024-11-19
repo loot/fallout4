@@ -5105,6 +5105,9 @@ plugins:
   - name: 'Z_Horizon_Patch_CC_ArmorPaint_Shi.esl'
   # Graphic T-Shirt Pack #
   - name: 'Z_Horizon_Patch_CC_BrandedAttire.esp'
+    after:
+      - 'Z_Horizon.esp'
+      - 'Z_Horizon_DLC_All.esp'
   # Handmade Shotgun #
   - name: 'Z_Horizon_Patch_CC_HandmadeShotgun.esp'
     after: [ 'Z_Horizon_DLC_All.esp' ]
@@ -5256,6 +5259,9 @@ plugins:
     after: [ 'Z_Architect_TexturePack01.esp' ]
   - name: 'Z_Architect_WorldFixes.esp'
     group: 'Underrides'
+    after:
+      - 'Z_Architect_WorldManager.esp'
+      - 'Z_Architect_WorldManager_DLC.esp'
   - name: 'Z_Architect_WorldManager.esp'
     group: 'Underrides'
   - name: 'Z_Architect_WorldManager_DLC.esp'
