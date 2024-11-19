@@ -5164,12 +5164,24 @@ plugins:
     group: *coreTweaksGroup
   - name: 'Z_Horizon_Desolation.esp'
     group: *coreTweaksGroup
+    after:
+      - 'Z_Horizon_DEFUI.esp'
+      - 'Z_Horizon_Optional_ShortNaming.esp'
   - name: 'Z_Horizon_Mode_Scavenger.esp'
     group: *coreTweaksGroup
+    after:
+      - 'Z_Horizon_DEFUI.esp'
+      - 'Z_Horizon_Optional_ShortNaming.esp'
   - name: 'Z_Horizon_Optional_ShortNaming.esp'
     group: *coreTweaksGroup
+    after: [ 'Z_Horizon_DEFUI.esp' ]
   - name: 'Z_Horizon_StrictCarryWeight.esp'
     group: *coreTweaksGroup
+    after:
+      - 'Z_Horizon_DEFUI.esp'
+      - 'Z_Horizon_Desolation.esp'
+      - 'Z_Horizon_Mode_Scavenger.esp'
+      - 'Z_Horizon_Optional_ShortNaming.esp'
   ### Horizon - Add-ons ###
   - name: 'Z_Architect.esm'
   - name: 'Z_Architect_CaravanRobots.esp'
