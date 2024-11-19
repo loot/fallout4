@@ -4652,19 +4652,6 @@ plugins:
   - name: 'IV_Misc_BoiledWaterBottles.esp'
     after: [ 'aFrostMod.esp' ]
 
-  - name: 'ChillGhouls.esp'
-    url:
-      - link: 'https://www.nexusmods.com/fallout4/mods/38223/'
-        name: 'More Ghouls For Frost'
-    tag:
-      - Delev
-      - Relev
-    dirty:
-      - <<: *quickClean
-        crc: 0x4DF259D1
-        util: '[FO4Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout4/mods/2737)'
-        itm: 5
-
   - name: 'FCF_.*\.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/59652/'
@@ -4751,42 +4738,6 @@ plugins:
         util: '[FO4Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 3
 
-  - name: 'FROSTExtPR.*\.esp'
-    url:
-      - link: 'https://www.nexusmods.com/fallout4/mods/54950/'
-        name: 'FROST - Exterior Cell Fixes and FPS Boost'
-  - name: 'FROSTExtPR.esp'
-    group: *frostGroup
-    inc:
-      - 'FROSTfix.esp'
-      - 'FROST Vanilla Signs Removal.esp'
-    msg:
-      - *alreadyInOrFixedByFCF
-      - <<: *patchProvided
-        subs: [ 'FROST Nuka World AddOn' ]
-        condition: 'active("FrostNukaWorld.esp") and not active("FROSTExtPR_NW.esp")'
-      - <<: *patchProvided
-        subs: [ 'FROST The Forest Patch' ]
-        condition: 'active("FROST The Forest Patch.esp") and not active("FROSTExtPR_Forest.esp")'
-      - <<: *patchProvided
-        subs: [ 'FROST The Marshland DLC Patch' ]
-        condition: 'active("Frost_Marshlands_Patch.esp") and not active("FROSTExtPR_Marshland.esp")'
-      - <<: *patchProvided
-        subs: [ 'Ultra Exterior Lighting' ]
-        condition: 'active("UltraExteriorLighting.esp") and not active("FROSTExtPR_UEL.esp")'
-      - *useInsteadFCF
-    clean:
-      - crc: 0x08C0A86B
-        util: 'FO4Edit v4.0.3h (Hotfix 1)'
-  - name: 'FROSTExtPR_Forest.esp'
-    req:
-      - name: 'FROST The Forest Patch.esp'
-        display: '[FROST The Forest Patch](https://www.nexusmods.com/fallout4/mods/52003/)'
-  - name: 'FROSTExtPR_Marshland.esp'
-    req: [ 'FROSTExtPR.esp' ]
-  - name: 'FROSTExtPR_UEL.esp'
-    req: [ 'UltraExteriorLighting.esp' ]
-
   - name: 'FROSTfix.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/26182/'
@@ -4802,16 +4753,6 @@ plugins:
         crc: 0xE55FEBDC
         util: '[FO4Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 6
-
-  - name: 'FROST_FIX.esp'
-    url:
-      - link: 'https://www.nexusmods.com/fallout4/mods/28822/'
-        name: 'LevelUpMenuEx'
-    req: [ 'FROST.esp' ]
-    msg:
-      - <<: *alreadyInOrFixedByX
-        subs: [ 'FROST Unofficial Updates' ]
-        condition: 'active("RedsFrostFixes.esp")'
 
   - name: 'FROST - Hunkered Down(-Settlements)?\.esp'
     url:
@@ -4830,38 +4771,6 @@ plugins:
     clean:
       - crc: 0x28A74F67
         util: 'FO4Edit v4.0.3h (Hotfix 1)'
-
-  - name: 'FROSTIntPR.*\.esp'
-    url:
-      - link: 'https://www.nexusmods.com/fallout4/mods/48425/'
-        name: 'FROST Interior Cell Fixes'
-  - name: 'FROSTIntPR.esp'
-    group: *frostGroup
-    after:
-      - 'FROSTExtPR.esp'
-      - 'FROSTfix.esp'
-    msg:
-      - *alreadyInOrFixedByFCF
-      - <<: *patchProvided
-        subs: [ 'FROST More Starting Locations' ]
-        condition: 'version("FROSTIntPR.esp", "2.2", >=) and active("FROSTmoreDoors.esp") and not active("FROSTIntPR_MoreDoors.esp")'
-      - <<: *patchProvided
-        subs: [ 'FROST Nuka World AddOn' ]
-        condition: 'version("FROSTIntPR.esp", "2.2", >=) and active("FrostNukaWorld.esp") and not active("FROSTIntPR_NW.esp")'
-      - <<: *patchProvided
-        subs: [ 'Ultra Interior Lighting' ]
-        condition: 'version("FROSTIntPR.esp", "2.2", >=) and active("UltraInteriorLighting.esp") and not active("FROSTIntPR_UIL.esp")'
-      - <<: *patchProvided
-        subs: [ 'Ultra Interior Lighting & FROST Nuka World AddOn' ]
-        condition: 'version("FROSTIntPR.esp", "2.2", >=) and active("FROSTIntPR_NW.esp") and active("FROSTIntPR_UIL.esp") and not active("FROSTIntPR_NW_UIL.esp")'
-      - *useInsteadFCF
-    clean:
-      - crc: 0xFC27D866
-        util: 'FO4Edit v4.0.3h (Hotfix 1)'
-      - crc: 0xBFFEA3DE
-        util: 'FO4Edit v4.0.3h (Hotfix 1)'
-  - name: 'FROSTIntPR_UIL.esp'
-    req: [ 'UltraInteriorLighting.esp' ]
 
   - name: 'FROST - It Snowed.esp'
     url:
@@ -4979,18 +4888,6 @@ plugins:
         util: '[FO4Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 21
 
-  - name: 'FROST Vanilla Signs Removal.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/53867/' ]
-    after: [ 'FROSTfix.esp' ]
-    msg:
-      - *alreadyInOrFixedByFCF
-      - <<: *alreadyInX
-        subs: [ 'FROST - Exterior Cell Fixes' ]
-        condition: 'active("FROSTExtPR.esp")'
-    clean:
-      - crc: 0xF699C893
-        util: 'FO4Edit v4.0.3h (Hotfix 1)'
-
   - name: 'FROST_WorkshopPatch.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/48699/'
@@ -5001,15 +4898,6 @@ plugins:
     clean:
       - crc: 0x90F57865
         util: 'FO4Edit v4.0.3h (Hotfix 1)'
-
-  - name: 'Grhk_FROST_(VIS-G_)?Crossbow_Patch\.esp'
-    url:
-      - link: 'https://www.nexusmods.com/fallout4/mods/28833/'
-        name: 'FROST - Crossbows of the Commonwealth Patch'
-    inc: [ 'Frost PatchCrossbow.esp' ]
-    msg:
-      - <<: *useInstead
-        subs: [ '[FROST Better Crossbow Weapon Patch](https://www.nexusmods.com/fallout4/mods/53168/)' ]
 
   - name: 'Human Cooking [Frost].esp'
     url:
@@ -5031,16 +4919,6 @@ plugins:
       - crc: 0xAA5298C3
         util: 'FO4Edit v4.0.4b'
 
-  - name: 'RRTV_FROST_DT_Workbenches.esp'
-    url:
-      - link: 'https://www.nexusmods.com/fallout4/mods/39619/'
-        name: 'FROST Downtown Linked Workbenches'
-    clean:
-      - crc: 0xCF1D9083
-        util: 'FO4Edit v4.0.3h (Hotfix 1)'
-      - crc: 0xE52E3662
-        util: 'FO4Edit v4.0.3h (Hotfix 1)'
-
   - name: 'shep frost downtown rooms.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/25491/'
@@ -5048,17 +4926,6 @@ plugins:
     clean:
       - crc: 0x1EB90950
         util: 'FO4Edit v4.0.3h (Hotfix 1)'
-
-  - name: 'xxFrost_Dogmeat.esp'
-    url:
-      - link: 'https://www.nexusmods.com/fallout4/mods/44674/'
-        name: 'Frost - Dogmeat Resurrected'
-    inc: [ 'AmazingFollowerTweaks.esp' ]
-    dirty:
-      - <<: *quickClean
-        crc: 0x6E9FB64D
-        util: '[FO4Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout4/mods/2737)'
-        itm: 4
 
 ###### Horizon ######
   - name: 'Z_Horizon.esp'
