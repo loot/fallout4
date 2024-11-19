@@ -5186,16 +5186,42 @@ plugins:
   - name: 'Z_Architect.esm'
   - name: 'Z_Architect_CaravanRobots.esp'
     group: *coreAddonsGroup
+    after:
+      - 'Z_Architect_Extras.esp'
+      - 'Z_Extras.esp'
   - name: 'Z_Architect_Empire.esp'
     group: *coreAddonsGroup
+    after:
+      - 'Z_Architect_CaravanRobots.esp'
+      - 'Z_Architect_Extras.esp'
+      - 'Z_Architect_HomePlate.esp'
+      - 'Z_Extras.esp'
   - name: 'Z_Architect_EnhancedSettlements.esp'
     group: *coreAddonsGroup
+    after:
+      - 'Z_Architect_CaravanRobots.esp'
+      - 'Z_Architect_Empire.esp'
+      - 'Z_Architect_Extras.esp'
+      - 'Z_Architect_HomePlate.esp'
+      - 'Z_Extras.esp'
   - name: 'Z_Architect_EnhancedSettlements_DLC.esp'
     group: *coreAddonsGroup
+    after:
+      - 'Z_Architect_CaravanRobots.esp'
+      - 'Z_Architect_Empire.esp'
+      - 'Z_Architect_Extras.esp'
+      - 'Z_Architect_EnhancedSettlements.esp'
+      - 'Z_Architect_HomePlate.esp'
+      - 'Z_Extras.esp'
   - name: 'Z_Architect_Extras.esp'
     group: *coreAddonsGroup
+    after: [ 'Z_Extras.esp' ]
   - name: 'Z_Architect_HomePlate.esp'
     group: *coreAddonsGroup
+    after:
+      - 'Z_Architect_CaravanRobots.esp'
+      - 'Z_Architect_Extras.esp'
+      - 'Z_Extras.esp'
   - name: 'Z_Architect_Lighting.esp'
     group: *highPriorityGroup
   - name: 'Z_Architect_TexturePack01.esp'
