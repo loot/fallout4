@@ -5118,25 +5118,41 @@ plugins:
   - name: 'Z_BlurRemoval_Vanilla.esp'
   - name: 'Z_CameraAddon.esp'
   - name: 'Z_Horizon_DEFUI.esp'
+    group: *coreTweaksGroup
   - name: 'Z_Horizon_Desolation.esp'
+    group: *coreTweaksGroup
   - name: 'Z_Horizon_Mode_Scavenger.esp'
+    group: *coreTweaksGroup
   - name: 'Z_Horizon_Optional_ShortNaming.esp'
+    group: *coreTweaksGroup
   - name: 'Z_Horizon_StrictCarryWeight.esp'
+    group: *coreTweaksGroup
   ### Horizon - Add-ons ###
   - name: 'Z_Architect.esm'
   - name: 'Z_Architect_CaravanRobots.esp'
+    group: *coreAddonsGroup
   - name: 'Z_Architect_Empire.esp'
+    group: *coreAddonsGroup
   - name: 'Z_Architect_EnhancedSettlements.esp'
+    group: *coreAddonsGroup
   - name: 'Z_Architect_EnhancedSettlements_DLC.esp'
+    group: *coreAddonsGroup
   - name: 'Z_Architect_Extras.esp'
+    group: *coreAddonsGroup
   - name: 'Z_Architect_HomePlate.esp'
+    group: *coreAddonsGroup
   - name: 'Z_Architect_Lighting.esp'
+    group: *highPriorityGroup
   - name: 'Z_Architect_TexturePack01.esp'
   - name: 'Z_Architect_Weather.esp'
   - name: 'Z_Architect_WorldFixes.esp'
+    group: 'Underrides'
   - name: 'Z_Architect_WorldManager.esp'
+    group: 'Underrides'
   - name: 'Z_Architect_WorldManager_DLC.esp'
+    group: 'Underrides'
   - name: 'Z_Extras.esp'
+    group: *coreAddonsGroup
 
 ###### Sim Settlements ######
   - name: 'SimSettlements.esm'
