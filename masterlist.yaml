@@ -5068,11 +5068,21 @@ plugins:
       - 'FROST.esp'
       - 'SurvivalOptions.esp'
   - name: 'Z_Horizon_DLC_All.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/17374/'
+        name: 'Horizon'
   ### Horizon - Official Patches ###
   # Crossbows of the Commonwealth #
   - name: 'Z_Horizon_Patch_Crossbow.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/17374/'
+        name: 'Horizon'
     after: [ 'Z_Horizon_DLC_All.esp' ]
   ### Horizon - Official Creation Club Patches ###
+  - name: 'Z_Horizon_Patch_CC_(ArmorPaint_(Army|Enclave|Gunner|Shark|Institute|Minutemen|Nuka|Pickman|Railroad|Shi)|BrandedAttire|HandmadeShotgun|HorseArmor|Prey|PowerArmorSkin_(Blue|Chrome|Camo01|Green|Black|Orange|Patriotic|Pink|Purple|Red|Camo02|Tan|White|Yellow)|WeaponPaint_(Army|AtomCats|Enclave|Gunner|HotRod|Shark|Minutemen|Pickman|Railroad|Shi|Institute))\.es[lp]'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/17374/'
+        name: 'Horizon'
   # Armor Paint Job - Army #
   - name: 'Z_Horizon_Patch_CC_ArmorPaint_Army.esl'
   # Armor Paint Job - Enclave #
@@ -5155,11 +5165,22 @@ plugins:
   # Weapon Paint Job - The Institute #
   - name: 'Z_Horizon_Patch_CC_WeaponPaint_Institute.esl'
   ### Horizon - Tweaks ###
+  - name: 'Z_BlurRemoval(_Low|_Original|_Vanilla)?\.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/17374/'
+        name: 'Horizon'
   - name: 'Z_BlurRemoval.esp'
   - name: 'Z_BlurRemoval_Low.esp'
   - name: 'Z_BlurRemoval_Original.esp'
   - name: 'Z_BlurRemoval_Vanilla.esp'
   - name: 'Z_CameraAddon.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/17374/'
+        name: 'Horizon'
+  - name: 'Z_Horizon_(DEFUI|Desolation|Mode_Scavenger|Optional_ShortNaming|StrictCarryWeight)\.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/17374/'
+        name: 'Horizon'
   - name: 'Z_Horizon_DEFUI.esp'
     group: *coreTweaksGroup
   - name: 'Z_Horizon_Desolation.esp'
@@ -5185,6 +5206,10 @@ plugins:
       - 'Z_Horizon_Mode_Scavenger.esp'
       - 'Z_Horizon_Optional_ShortNaming.esp'
   ### Horizon - Add-ons ###
+  - name: 'Z_Architect(_(CaravanRobots|Empire|EnhancedSettlements|EnhancedSettlements_DLC|Extras|HomePlate|Lighting|TexturePack01|Weather|WorldFixes|WorldManager|WorldManager_DLC))?\.es[mp]'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/17374/'
+        name: 'Horizon'
   - name: 'Z_Architect.esm'
   - name: 'Z_Architect_CaravanRobots.esp'
     group: *coreAddonsGroup
@@ -5236,6 +5261,9 @@ plugins:
   - name: 'Z_Architect_WorldManager_DLC.esp'
     group: 'Underrides'
   - name: 'Z_Extras.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/17374/'
+        name: 'Horizon'
     group: *coreAddonsGroup
 
 ###### Sim Settlements ######
