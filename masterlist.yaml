@@ -5072,45 +5072,84 @@ plugins:
   # Crossbows of the Commonwealth #
   - name: 'Z_Horizon_Patch_Crossbow.esp'
   ### Horizon - Official Creation Club Patches ###
+  # Armor Paint Job - Army #
   - name: 'Z_Horizon_Patch_CC_ArmorPaint_Army.esl'
+  # Armor Paint Job - Enclave #
   - name: 'Z_Horizon_Patch_CC_ArmorPaint_Enclave.esl'
+  # Armor Paint Job - Gunners #
   - name: 'Z_Horizon_Patch_CC_ArmorPaint_Gunner.esl'
-  - name: 'Z_Horizon_Patch_CC_ArmorPaint_Institute.esl'
-  - name: 'Z_Horizon_Patch_CC_ArmorPaint_Minutemen.esl'
-  - name: 'Z_Horizon_Patch_CC_ArmorPaint_Nuka.esl'
-  - name: 'Z_Horizon_Patch_CC_ArmorPaint_Pickman.esl'
-  - name: 'Z_Horizon_Patch_CC_ArmorPaint_Railroad.esl'
+  # Armor Paint Job - Hot Rod Shark #
   - name: 'Z_Horizon_Patch_CC_ArmorPaint_Shark.esl'
+  # Armor Paint Job - Institute #
+  - name: 'Z_Horizon_Patch_CC_ArmorPaint_Institute.esl'
+  # Armor Paint Job - Minutemen #
+  - name: 'Z_Horizon_Patch_CC_ArmorPaint_Minutemen.esl'
+  # Armor Paint Job - Nuka Cherry #
+  - name: 'Z_Horizon_Patch_CC_ArmorPaint_Nuka.esl'
+  # Armor Paint Job - Pickmen #
+  - name: 'Z_Horizon_Patch_CC_ArmorPaint_Pickman.esl'
+  # Armor Paint Job - Railroad #
+  - name: 'Z_Horizon_Patch_CC_ArmorPaint_Railroad.esl'
+  # Armor Paint Job - Shi #
   - name: 'Z_Horizon_Patch_CC_ArmorPaint_Shi.esl'
+  # Graphic T-Shirt Pack #
   - name: 'Z_Horizon_Patch_CC_BrandedAttire.esp'
+  # Handmade Shotgun #
   - name: 'Z_Horizon_Patch_CC_HandmadeShotgun.esp'
+  # Horse Power Armor #
   - name: 'Z_Horizon_Patch_CC_HorseArmor.esp'
-  - name: 'Z_Horizon_Patch_CC_PowerArmorSkin_Black.esl'
-  - name: 'Z_Horizon_Patch_CC_PowerArmorSkin_Blue.esl'
-  - name: 'Z_Horizon_Patch_CC_PowerArmorSkin_Camo01.esl'
-  - name: 'Z_Horizon_Patch_CC_PowerArmorSkin_Camo02.esl'
-  - name: 'Z_Horizon_Patch_CC_PowerArmorSkin_Chrome.esl'
-  - name: 'Z_Horizon_Patch_CC_PowerArmorSkin_Green.esl'
-  - name: 'Z_Horizon_Patch_CC_PowerArmorSkin_Orange.esl'
-  - name: 'Z_Horizon_Patch_CC_PowerArmorSkin_Patriotic.esl'
-  - name: 'Z_Horizon_Patch_CC_PowerArmorSkin_Pink.esl'
-  - name: 'Z_Horizon_Patch_CC_PowerArmorSkin_Purple.esl'
-  - name: 'Z_Horizon_Patch_CC_PowerArmorSkin_Red.esl'
-  - name: 'Z_Horizon_Patch_CC_PowerArmorSkin_Tan.esl'
-  - name: 'Z_Horizon_Patch_CC_PowerArmorSkin_White.esl'
-  - name: 'Z_Horizon_Patch_CC_PowerArmorSkin_Yellow.esl'
+  # Morgan's Space Suit #
   - name: 'Z_Horizon_Patch_CC_Prey.esp'
+  # Power Armor Paint Job - Blue #
+  - name: 'Z_Horizon_Patch_CC_PowerArmorSkin_Blue.esl'
+  # Power Armor Paint Job - Chrome #
+  - name: 'Z_Horizon_Patch_CC_PowerArmorSkin_Chrome.esl'
+  # Power Armor Paint Job - Desert Camo #
+  - name: 'Z_Horizon_Patch_CC_PowerArmorSkin_Camo01.esl'
+  # Power Armor Paint Job - Green #
+  - name: 'Z_Horizon_Patch_CC_PowerArmorSkin_Green.esl'
+  # Power Armor Paint Job - Onyx #
+  - name: 'Z_Horizon_Patch_CC_PowerArmorSkin_Black.esl'
+  # Power Armor Paint Job - Orange #
+  - name: 'Z_Horizon_Patch_CC_PowerArmorSkin_Orange.esl'
+  # Power Armor Paint Job - Patriotic #
+  - name: 'Z_Horizon_Patch_CC_PowerArmorSkin_Patriotic.esl'
+  # Power Armor Paint Job - Pink #
+  - name: 'Z_Horizon_Patch_CC_PowerArmorSkin_Pink.esl'
+  # Power Armor Paint Job - Purple #
+  - name: 'Z_Horizon_Patch_CC_PowerArmorSkin_Purple.esl'
+  # Power Armor Paint Job - Red #
+  - name: 'Z_Horizon_Patch_CC_PowerArmorSkin_Red.esl'
+  # Power Armor Paint Job - Swamp Camo #
+  - name: 'Z_Horizon_Patch_CC_PowerArmorSkin_Camo02.esl'
+  # Power Armor Paint Job - Tan #
+  - name: 'Z_Horizon_Patch_CC_PowerArmorSkin_Tan.esl'
+  # Power Armor Paint Job - White #
+  - name: 'Z_Horizon_Patch_CC_PowerArmorSkin_White.esl'
+  # Power Armor Paint Job - Yellow #
+  - name: 'Z_Horizon_Patch_CC_PowerArmorSkin_Yellow.esl'
+  # Weapon Paint Job - Army #
   - name: 'Z_Horizon_Patch_CC_WeaponPaint_Army.esl'
+  # Weapon Paint Job - Atom Cats #
   - name: 'Z_Horizon_Patch_CC_WeaponPaint_AtomCats.esl'
+  # Weapon Paint Job - Enclave #
   - name: 'Z_Horizon_Patch_CC_WeaponPaint_Enclave.esl'
+  # Weapon Paint Job - Gunners #
   - name: 'Z_Horizon_Patch_CC_WeaponPaint_Gunner.esl'
+  # Weapon Paint Job - Hot Rod Flames #
   - name: 'Z_Horizon_Patch_CC_WeaponPaint_HotRod.esl'
-  - name: 'Z_Horizon_Patch_CC_WeaponPaint_Institute.esl'
-  - name: 'Z_Horizon_Patch_CC_WeaponPaint_Minutemen.esl'
-  - name: 'Z_Horizon_Patch_CC_WeaponPaint_Pickman.esl'
-  - name: 'Z_Horizon_Patch_CC_WeaponPaint_Railroad.esl'
+  # Weapon Paint Job - Hot Rod Shark #
   - name: 'Z_Horizon_Patch_CC_WeaponPaint_Shark.esl'
+  # Weapon Paint Job - Minutemen #
+  - name: 'Z_Horizon_Patch_CC_WeaponPaint_Minutemen.esl'
+  # Weapon Paint Job - Pickman #
+  - name: 'Z_Horizon_Patch_CC_WeaponPaint_Pickman.esl'
+  # Weapon Paint Job - Railroad #
+  - name: 'Z_Horizon_Patch_CC_WeaponPaint_Railroad.esl'
+  # Weapon Paint Job - Shi #
   - name: 'Z_Horizon_Patch_CC_WeaponPaint_Shi.esl'
+  # Weapon Paint Job - The Institute #
+  - name: 'Z_Horizon_Patch_CC_WeaponPaint_Institute.esl'
   ### Horizon - Tweaks ###
   - name: 'Z_BlurRemoval.esp'
   - name: 'Z_BlurRemoval_Low.esp'
