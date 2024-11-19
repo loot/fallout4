@@ -2599,7 +2599,7 @@ plugins:
 
   - name: 'Pip-Boy Flashlight.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/10840/' ]
-    group: *frostGroup
+    group: *mediumPriorityGroup
     after:
       - 'Clarity.esp'
       - 'EnhancedLightsandFX.esp'
@@ -4414,7 +4414,7 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/64755/'
         name: 'We Can Live In - Natick Substation'
-    group: *frostGroup
+    group: *mediumPriorityGroup
   - name: 'WCLI_NatickSubstation.esp'
     after:
       - 'Another Pine Forest Mod.esp'
