@@ -556,12 +556,8 @@ groups:
   - name: &scrapGroup Scrap Everything
     after: [ *fhoGroup ]
 
-  - name: &frostGroup FROST Survival Simulator
-    description: 'A group for FROST modules that need to be sorted late.'
-    after: [ *scrapGroup ]
-
   - name: &mediumPriorityGroup Medium Priority Overrides
-    after: [ *frostGroup ]
+    after: [ *scrapGroup ]
 
   - name: &coreGroup Core Mods
     after: [ *mediumPriorityGroup ]
