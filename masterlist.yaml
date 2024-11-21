@@ -4584,6 +4584,56 @@ plugins:
     group: *conflictResPatchGroup
 
 ###### FROST Survival Simulator ######
+  - name: 'FROST.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/18898/'
+        name: 'FROST Survival Simulator'
+  ##### FROST Core Fixes & Updates #####
+  - name: 'aFrostMod.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/48847/'
+        name: 'FROST Plus'
+
+  - name: 'FROST - It Snowed.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/49094/'
+        name: 'FROST It Snowed Winter Textures'
+
+  - name: 'FCF_(Main|Previsibines|Hotfix)\.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/59652/'
+        name: 'FROST Cell Fixes (FCF)'
+  - name: 'FCF_Main.esp'
+  - name: 'FCF_Previsibines.esp'
+  - name: 'FCF_Hotfix.esp'
+  ### FROST Cell Fixes - Patches ###
+  - name: 'FCF_Previsibines-(Drawbridges|JSRSRegions|MFG|MMHelipad.cdx|MMHelipad|Oberland|TheForest|TheMarshlands|WinterRedone)\.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/59652/'
+        name: 'FROST Cell Fixes (FCF)'
+
+  - name: 'FROST - UFO4P Patch.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/57372/'
+        name: 'FROST - UFO4P Compatibility Patch'
+
+  - name: 'RedsFrost(Fixes|BlurRemoval|ExplosionEffects|NukaWorldSnow)\.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/65485/'
+        name: 'Frost Official Updates (Redux)'
+  - name: 'RedsFrostFixes.esp'
+  - name: 'RedsFrostBlurRemoval.esp'
+  - name: 'RedsFrostExplosionEffects.esp'
+  - name: 'RedsFrostNukaWorldSnow.esp'
+  ### Frost Official Updates - Patches ###
+  - name: 'RedsFrost(CampsitePatch|SCM)\.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/65485/'
+        name: 'Frost Official Updates (Redux)'
+  # Campsite - Simple Wasteland Camping #
+  - name: 'RedsFrostCampsitePatch.esp'
+  # Survival Configuration Menu #
+  - name: 'RedsFrostSCM.esp'
 
 ###### Horizon ######
   - name: 'Z_Horizon.esp'
