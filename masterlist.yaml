@@ -4595,11 +4595,16 @@ plugins:
       - link: 'https://www.nexusmods.com/fallout4/mods/48847/'
         name: 'FROST Plus'
     group: *coreGroup
+    after: [ 'RedsFrostFixes.esp' ]
 
   - name: 'FROST - It Snowed.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/49094/'
         name: 'FROST It Snowed Winter Textures'
+    after:
+      - 'aFrostMod.esp'
+      - 'FROST - UFO4P Patch.esp'
+      - 'RedsFrostFixes.esp'
 
   - name: 'FCF_(Main|Previsibines|Hotfix)\.esp'
     url:
@@ -4634,6 +4639,11 @@ plugins:
   - name: 'RedsFrostExplosionEffects.esp'
     group: *coreTweaksGroup
   - name: 'RedsFrostNukaWorldSnow.esp'
+    after:
+      - 'aFrostMod.esp'
+      - 'FROST.esp'
+      - 'FROST - UFO4P Patch.esp'
+      - 'RedsFrostFixes.esp'
   ### Frost Official Updates - Patches ###
   - name: 'RedsFrost(CampsitePatch|SCM)\.esp'
     url:
