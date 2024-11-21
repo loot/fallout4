@@ -4594,7 +4594,6 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/48847/'
         name: 'FROST Plus'
-    group: *coreGroup
     after: [ 'RedsFrostFixes.esp' ]
 
   - name: 'FROST - It Snowed.esp'
@@ -4626,14 +4625,12 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/57372/'
         name: 'FROST - UFO4P Compatibility Patch'
-    group: *coreGroup
 
   - name: 'RedsFrost(Fixes|BlurRemoval|ExplosionEffects|NukaWorldSnow)\.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/65485/'
         name: 'Frost Official Updates (Redux)'
   - name: 'RedsFrostFixes.esp'
-    group: *coreGroup
   - name: 'RedsFrostBlurRemoval.esp'
     group: *coreTweaksGroup
   - name: 'RedsFrostExplosionEffects.esp'
