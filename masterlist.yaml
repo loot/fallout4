@@ -4588,11 +4588,13 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/18898/'
         name: 'FROST Survival Simulator'
+    group: *coreGroup
   ##### FROST Core Fixes & Updates #####
   - name: 'aFrostMod.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/48847/'
         name: 'FROST Plus'
+    group: *coreGroup
 
   - name: 'FROST - It Snowed.esp'
     url:
@@ -4604,8 +4606,11 @@ plugins:
       - link: 'https://www.nexusmods.com/fallout4/mods/59652/'
         name: 'FROST Cell Fixes (FCF)'
   - name: 'FCF_Main.esp'
+    group: *lateLoadersGroup
   - name: 'FCF_Previsibines.esp'
+    group: *lateLoadersGroup
   - name: 'FCF_Hotfix.esp'
+    group: *latePatchesGroup
   ### FROST Cell Fixes - Patches ###
   - name: 'FCF_Previsibines-(Drawbridges|JSRSRegions|MFG|MMHelipad.cdx|MMHelipad|Oberland|TheForest|TheMarshlands|WinterRedone)\.esp'
     url:
@@ -4616,14 +4621,18 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/57372/'
         name: 'FROST - UFO4P Compatibility Patch'
+    group: *coreGroup
 
   - name: 'RedsFrost(Fixes|BlurRemoval|ExplosionEffects|NukaWorldSnow)\.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/65485/'
         name: 'Frost Official Updates (Redux)'
   - name: 'RedsFrostFixes.esp'
+    group: *coreGroup
   - name: 'RedsFrostBlurRemoval.esp'
+    group: *coreTweaksGroup
   - name: 'RedsFrostExplosionEffects.esp'
+    group: *coreTweaksGroup
   - name: 'RedsFrostNukaWorldSnow.esp'
   ### Frost Official Updates - Patches ###
   - name: 'RedsFrost(CampsitePatch|SCM)\.esp'
@@ -4632,8 +4641,10 @@ plugins:
         name: 'Frost Official Updates (Redux)'
   # Campsite - Simple Wasteland Camping #
   - name: 'RedsFrostCampsitePatch.esp'
+    group: *coreLatePatchesGroup
   # Survival Configuration Menu #
   - name: 'RedsFrostSCM.esp'
+    group: *coreLatePatchesGroup
 
 ###### Horizon ######
   - name: 'Z_Horizon.esp'
