@@ -4653,6 +4653,8 @@ plugins:
   - name: 'RedsFrostSCM.esp'
     group: *coreLatePatchesGroup
 
+  ##### FROST - Location Overhauls #####
+
   ##### FROST - New Locations #####
 
   ##### FROST - 3rd Party Patches #####
