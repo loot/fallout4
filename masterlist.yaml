@@ -4589,7 +4589,7 @@ plugins:
       - link: 'https://www.nexusmods.com/fallout4/mods/18898/'
         name: 'FROST Survival Simulator'
     group: *coreGroup
-  ##### FROST Core Fixes & Updates #####
+  ##### FROST - Core Fixes & Updates #####
   - name: 'aFrostMod.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/48847/'
@@ -4652,6 +4652,10 @@ plugins:
   # Survival Configuration Menu #
   - name: 'RedsFrostSCM.esp'
     group: *coreLatePatchesGroup
+
+  ##### FROST - New Locations #####
+
+  ##### FROST - 3rd Party Patches #####
 
 ###### Horizon ######
   - name: 'Z_Horizon.esp'
