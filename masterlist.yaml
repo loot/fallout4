@@ -4589,6 +4589,9 @@ plugins:
       - link: 'https://www.nexusmods.com/fallout4/mods/18898/'
         name: 'FROST Survival Simulator'
     group: *coreGroup
+    tag:
+      - Delev
+      - Relev
 
   ##### FROST - Core Fixes & Updates #####
   - name: 'aFrostMod.esp'
@@ -4596,6 +4599,9 @@ plugins:
       - link: 'https://www.nexusmods.com/fallout4/mods/48847/'
         name: 'FROST Plus'
     after: [ 'RedsFrostFixes.esp' ]
+    tag:
+      - Delev
+      - Relev
     dirty:
       - <<: *quickClean
         crc: 0xA16FBAF9
@@ -4704,6 +4710,9 @@ plugins:
       - link: 'https://www.nexusmods.com/fallout4/mods/65485/'
         name: 'Frost Official Updates (Redux)'
   - name: 'RedsFrostFixes.esp'
+    tag:
+      - Delev
+      - Relev
     clean:
       - crc: 0x058C0744
         util: 'FO4Edit v4.1.5k'
@@ -4785,6 +4794,7 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/50618/'
         name: 'FROST Dark Calling - Supermutant Locations Overhaul'
+    tag: [ Relev ]
     dirty:
       - <<: *quickClean
         crc: 0xA670E8B0
@@ -4841,6 +4851,9 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/53168/'
         name: 'FROST Better Crossbow Weapon Patch'
+    tag:
+      - Delev
+      - Relev
     clean:
       - crc: 0x711D8410
         util: 'FO4Edit v4.1.5k'
