@@ -4618,20 +4618,6 @@ plugins:
       - crc: 0x6CB98211
         util: 'FO4Edit v4.1.5k'
 
-  - name: 'FROST - It Snowed.esp'
-    url:
-      - link: 'https://www.nexusmods.com/fallout4/mods/49094/'
-        name: 'FROST It Snowed Winter Textures'
-    after:
-      - 'aFrostMod.esp'
-      - 'FROST - UFO4P Patch.esp'
-      - 'RedsFrostFixes.esp'
-    dirty:
-      - <<: *quickClean
-        crc: 0x8FB5CE1C
-        util: '[FO4Edit v4.1.5k](https://www.nexusmods.com/fallout4/mods/2737)'
-        itm: 5
-
   - name: 'FCF_(Main|Previsibines|Hotfix)\.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/59652/'
@@ -4756,6 +4742,19 @@ plugins:
         util: 'FO4Edit v4.1.5k'
 
   ##### FROST - AudioVisual #####
+  - name: 'FROST - It Snowed.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/49094/'
+        name: 'FROST It Snowed Winter Textures'
+    after:
+      - 'aFrostMod.esp'
+      - 'FROST - UFO4P Patch.esp'
+      - 'RedsFrostFixes.esp'
+    dirty:
+      - <<: *quickClean
+        crc: 0x8FB5CE1C
+        util: '[FO4Edit v4.1.5k](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 5
 
   ##### FROST - AudioVisual - Weather & Lighting #####
   - name: 'Frost-Snowy-Weathers.esp'
