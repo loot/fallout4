@@ -4589,12 +4589,34 @@ plugins:
       - link: 'https://www.nexusmods.com/fallout4/mods/18898/'
         name: 'FROST Survival Simulator'
     group: *coreGroup
+
   ##### FROST - Core Fixes & Updates #####
   - name: 'aFrostMod.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/48847/'
         name: 'FROST Plus'
     after: [ 'RedsFrostFixes.esp' ]
+    dirty:
+      - <<: *quickClean
+        crc: 0xA16FBAF9
+        util: '[FO4Edit v4.1.5k](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 5
+  - name: '(IV_(HC_Perk_Updated|Misc_BoiledWaterBottles)|SimplifiedSorting_aFrostMod)\.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/48847/'
+        name: 'FROST Plus'
+  - name: 'IV_HC_Perk_Updated.esp'
+    clean:
+      - crc: 0xDD38D30F
+        util: 'FO4Edit v4.1.5k'
+  - name: 'IV_Misc_BoiledWaterBottles.esp'
+    clean:
+      - crc: 0xFC196C90
+        util: 'FO4Edit v4.1.5k'
+  - name: 'SimplifiedSorting_aFrostMod.esp'
+    clean:
+      - crc: 0x6CB98211
+        util: 'FO4Edit v4.1.5k'
 
   - name: 'FROST - It Snowed.esp'
     url:
@@ -4604,6 +4626,11 @@ plugins:
       - 'aFrostMod.esp'
       - 'FROST - UFO4P Patch.esp'
       - 'RedsFrostFixes.esp'
+    dirty:
+      - <<: *quickClean
+        crc: 0x8FB5CE1C
+        util: '[FO4Edit v4.1.5k](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 5
 
   - name: 'FCF_(Main|Previsibines|Hotfix)\.esp'
     url:
@@ -4611,30 +4638,99 @@ plugins:
         name: 'FROST Cell Fixes (FCF)'
   - name: 'FCF_Main.esp'
     group: *lateLoadersGroup
+    dirty:
+      - <<: *quickClean
+        crc: 0x3E8C9221
+        util: '[FO4Edit v4.1.5k](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 2
   - name: 'FCF_Previsibines.esp'
     group: *lateLoadersGroup
+    clean:
+      - crc: 0xB8064B39
+        util: 'FO4Edit v4.1.5k'
   - name: 'FCF_Hotfix.esp'
     group: *latePatchesGroup
+    clean:
+      - crc: 0x202BE196
+        util: 'FO4Edit v4.1.5k'
   ### FROST Cell Fixes - Patches ###
   - name: 'FCF_Previsibines-(Drawbridges|JSRSRegions|MFG|MMHelipad.cdx|MMHelipad|Oberland|TheForest|TheMarshlands|WinterRedone)\.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/59652/'
         name: 'FROST Cell Fixes (FCF)'
+  # Drawbridges by Spiffyskytrooper #
+  - name: 'FCF_Previsibines-Drawbridges.esp'
+    clean:
+      - crc: 0x196158DA
+        util: 'FO4Edit v4.1.5k'
+  # JSRS Sound Mod #
+  - name: 'FCF_Previsibines-JSRSRegions.esp'
+    clean:
+      - crc: 0x4F55738C
+        util: 'FO4Edit v4.1.5k'
+      - crc: 0x0C1FCB30
+        util: 'FO4Edit v4.1.5k'
+  # Medford Memorial Helipad #
+  - name: 'FCF_Previsibines-MMHelipad.esp'
+    clean:
+      - crc: 0xAF7056D0
+        util: 'FO4Edit v4.1.5k'
+  # More Feral Ghouls #
+  - name: 'FCF_Previsibines-MFG.esp'
+    clean:
+      - crc: 0x4B20CC85
+        util: 'FO4Edit v4.1.5k'
+  # Rebuild Oberland Station #
+  - name: 'FCF_Previsibines-Oberland.esp'
+    clean:
+      - crc: 0xE922EE42
+        util: 'FO4Edit v4.1.5k'
+  # The Forest DLC - For Hunters and Hikers #
+  - name: 'FCF_Previsibines-TheForest.esp'
+    clean:
+      - crc: 0x6234C9BF
+        util: 'FO4Edit v4.1.5k'
+  # The Marshland DLC - For Swampmonsters and Toxic People #
+  - name: 'FCF_Previsibines-TheMarshlands.esp'
+    clean:
+      - crc: 0x1990D58C
+        util: 'FO4Edit v4.1.5k'
+  # Winter Redone #
+  - name: 'FCF_Previsibines-WinterRedone.esp'
+    dirty:
+      - <<: *quickClean
+        crc: 0x8CD1F208
+        util: '[FO4Edit v4.1.5k](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 2
 
   - name: 'FROST - UFO4P Patch.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/57372/'
         name: 'FROST - UFO4P Compatibility Patch'
+    dirty:
+      - <<: *quickClean
+        crc: 0x82E7398A
+        util: '[FO4Edit v4.1.5k](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 1
 
   - name: 'RedsFrost(Fixes|BlurRemoval|ExplosionEffects|NukaWorldSnow)\.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/65485/'
         name: 'Frost Official Updates (Redux)'
   - name: 'RedsFrostFixes.esp'
+    clean:
+      - crc: 0x058C0744
+        util: 'FO4Edit v4.1.5k'
   - name: 'RedsFrostBlurRemoval.esp'
     group: *coreTweaksGroup
+    clean:
+      - crc: 0xAC7612E0
+        util: 'FO4Edit v4.1.5k'
   - name: 'RedsFrostExplosionEffects.esp'
     group: *coreTweaksGroup
+    clean:
+      - crc: 0x9ECEEE3B
+        util: 'FO4Edit v4.1.5k'
   - name: 'RedsFrostNukaWorldSnow.esp'
     after:
       - 'aFrostMod.esp'
@@ -4649,21 +4745,106 @@ plugins:
   # Campsite - Simple Wasteland Camping #
   - name: 'RedsFrostCampsitePatch.esp'
     group: *coreLatePatchesGroup
+    clean:
+      - crc: 0xA506ADC8
+        util: 'FO4Edit v4.1.5k'
   # Survival Configuration Menu #
   - name: 'RedsFrostSCM.esp'
     group: *coreLatePatchesGroup
+    clean:
+      - crc: 0xF555F82E
+        util: 'FO4Edit v4.1.5k'
 
   ##### FROST - AudioVisual #####
 
   ##### FROST - AudioVisual - Weather & Lighting #####
+  - name: 'Frost-Snowy-Weathers.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/49227/'
+        name: 'FROST - Snowy Weathers'
+    clean:
+      - crc: 0x4B533F1B
+        util: 'FO4Edit v4.1.5k'
 
   ##### FROST - Location Overhauls #####
+  - name: 'FROST - Hunkered Down(-Settlements)?\.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/50008/'
+        name: 'FROST Hunkered Down - Commonwealth Overhaul'
+  - name: 'FROST - Hunkered Down.esp'
+    dirty:
+      - <<: *quickClean
+        crc: 0x36F6C4F1
+        util: '[FO4Edit v4.1.5k](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 2
+  - name: 'FROST - Hunkered Down-Settlements.esp'
+    clean:
+      - crc: 0x28A74F67
+        util: 'FO4Edit v4.1.5k'
+
+  - name: 'FROST - SuperMutantLocations.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/50618/'
+        name: 'FROST Dark Calling - Supermutant Locations Overhaul'
+    dirty:
+      - <<: *quickClean
+        crc: 0xA670E8B0
+        util: '[FO4Edit v4.1.5k](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 21
 
   ##### FROST - New Locations #####
+  - name: 'FROST - AccessibleArcJet.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/53923/'
+        name: 'FROST - Accessible ArcJet'
+    clean:
+      - crc: 0x76A517AA
+        util: 'FO4Edit v4.1.5k'
+
+  - name: 'FROST - AccessibleFortHagen.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/55398/'
+        name: 'FROST - Accessible Fort Hagen'
+    clean:
+      - crc: 0xEEC07FD4
+        util: 'FO4Edit v4.1.5k'
+
+  - name: 'FROST - AccessibleFortStrong.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/54873/'
+        name: 'FROST - Accessible Fort Strong'
+    clean:
+      - crc: 0xBB53B6B5
+        util: 'FO4Edit v4.1.5k'
+
+  - name: 'FROST - AccessibleMedTekResearch.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/54564/'
+        name: 'FROST - Accessible Med-Tek Research'
+    dirty:
+      - <<: *quickClean
+        crc: 0xC1842D79
+        util: '[FO4Edit v4.1.5k](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 3
 
   ##### FROST - New Player Homes #####
+  - name: 'shep frost downtown rooms.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/25491/'
+        name: 'Frost Downtown Monohome'
+    clean:
+      - crc: 0x1EB90950
+        util: 'FO4Edit v4.1.5k'
 
   ##### FROST - 3rd Party Patches #####
+  # Crossbows of the Commonwealth #
+  - name: 'Frost PatchCrossbow.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/53168/'
+        name: 'FROST Better Crossbow Weapon Patch'
+    clean:
+      - crc: 0x711D8410
+        util: 'FO4Edit v4.1.5k'
 
 ###### Horizon ######
   - name: 'Z_Horizon.esp'
