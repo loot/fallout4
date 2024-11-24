@@ -4779,6 +4779,11 @@ plugins:
         util: 'FO4Edit v4.1.5k'
 
   ##### FROST - Gameplay #####
+  - name: 'FROST Downtown Workbenches.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/82462/'
+        name: 'FROST - Downtown Workbenches'
+
   - name: 'FROST - LootableCars.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/57960/'
