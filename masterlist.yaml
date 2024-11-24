@@ -4789,6 +4789,10 @@ plugins:
     clean:
       - crc: 0xD1DA4916
         util: 'FO4Edit v4.1.5k'
+  - name: 'FROST_LLCars_(Intermediate|Realistic|Scarcity)\.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/57960/'
+        name: 'FROST - Lootable and Locked Cars'
   - name: 'FROST_LLCars_Intermediate.esp'
     clean:
       - crc: 0x6884BF6A
