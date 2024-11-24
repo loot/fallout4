@@ -4589,6 +4589,21 @@ plugins:
       - link: 'https://www.nexusmods.com/fallout4/mods/18898/'
         name: 'FROST Survival Simulator'
     group: *coreGroup
+    msg:
+      - <<: *alsoUseX
+        subs: [ '[FROST Cell Fixes](https://www.nexusmods.com/fallout4/mods/59652/)' ]
+        condition: 'active("Unofficial Fallout 4 Patch.esp") and active("RedsFrostFixes.esp") and active("aFrostMod.esp") and not active("FCF_Main.esp")'
+      - <<: *alsoUseX
+        subs: [ '[Frost Official Updates (Redux)](https://www.nexusmods.com/fallout4/mods/65485/)' ]
+        condition: 'active("DLCCoast.esm") and active("DLCNukaWorld.esm") and active("DLCRobot.esm") and not active("RedsFrostFixes.esp")'
+      - <<: *alsoUseX
+        subs: [ '[FROST Plus](https://www.nexusmods.com/fallout4/mods/48847/)' ]
+        condition: 'active("DLCCoast.esm") and active("DLCNukaWorld.esm") and active("DLCRobot.esm") and not active("aFrostMod.esp")'
+      - <<: *patch3rdParty
+        subs:
+          - 'Crossbows of the Commonwealth'
+          - '[FROST Better Crossbow Weapon Patch](https://www.nexusmods.com/fallout4/mods/53168/)'
+        condition: 'active("Crossbow.esp") and not active("Frost PatchCrossbow.esp")'
     tag:
       - Delev
       - Relev
