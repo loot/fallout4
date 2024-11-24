@@ -4717,10 +4717,18 @@ plugins:
       - crc: 0x058C0744
         util: 'FO4Edit v4.1.5k'
   - name: 'RedsFrostBlurRemoval.esp'
+    after:
+      - 'aFrostMod.esp'
+      - 'FROST.esp'
+      - 'FROST - UFO4P Patch.esp'
+      - 'RedsFrostFixes.esp'
     clean:
       - crc: 0xAC7612E0
         util: 'FO4Edit v4.1.5k'
   - name: 'RedsFrostExplosionEffects.esp'
+    after:
+      - 'aFrostMod.esp'
+      - 'FROST - UFO4P Patch.esp'
     clean:
       - crc: 0x9ECEEE3B
         util: 'FO4Edit v4.1.5k'
@@ -4775,12 +4783,16 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/57960/'
         name: 'FROST - Lootable and Locked Cars'
+    after:
+      - 'FROST - It Snowed.esp'
+      - 'FROST - UFO4P Patch.esp'
 
   ##### FROST - Location Overhauls #####
   - name: 'FROST - Hunkered Down(-Settlements)?\.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/50008/'
         name: 'FROST Hunkered Down - Commonwealth Overhaul'
+    after: [ 'FROST - It Snowed.esp' ]
   - name: 'FROST - Hunkered Down.esp'
     dirty:
       - <<: *quickClean
@@ -4796,6 +4808,7 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/50618/'
         name: 'FROST Dark Calling - Supermutant Locations Overhaul'
+    after: [ 'FROST - It Snowed.esp' ]
     tag: [ Relev ]
     dirty:
       - <<: *quickClean
