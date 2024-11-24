@@ -4774,6 +4774,8 @@ plugins:
       - crc: 0x4B533F1B
         util: 'FO4Edit v4.1.5k'
 
+  ##### FROST - Gameplay #####
+
   ##### FROST - Location Overhauls #####
   - name: 'FROST - Hunkered Down(-Settlements)?\.esp'
     url:
