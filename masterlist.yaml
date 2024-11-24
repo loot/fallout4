@@ -4783,6 +4783,9 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/82462/'
         name: 'FROST - Downtown Workbenches'
+    clean:
+      - crc: 0x917875AB
+        util: 'FO4Edit v4.1.5k'
 
   - name: 'FROST - LootableCars.esp'
     url:
