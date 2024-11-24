@@ -4775,6 +4775,10 @@ plugins:
         util: 'FO4Edit v4.1.5k'
 
   ##### FROST - Gameplay #####
+  - name: 'FROST - LootableCars.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/57960/'
+        name: 'FROST - Lootable and Locked Cars'
 
   ##### FROST - Location Overhauls #####
   - name: 'FROST - Hunkered Down(-Settlements)?\.esp'
