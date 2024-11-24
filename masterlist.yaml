@@ -4717,12 +4717,10 @@ plugins:
       - crc: 0x058C0744
         util: 'FO4Edit v4.1.5k'
   - name: 'RedsFrostBlurRemoval.esp'
-    group: *coreTweaksGroup
     clean:
       - crc: 0xAC7612E0
         util: 'FO4Edit v4.1.5k'
   - name: 'RedsFrostExplosionEffects.esp'
-    group: *coreTweaksGroup
     clean:
       - crc: 0x9ECEEE3B
         util: 'FO4Edit v4.1.5k'
@@ -4739,13 +4737,11 @@ plugins:
         name: 'Frost Official Updates (Redux)'
   # Campsite - Simple Wasteland Camping #
   - name: 'RedsFrostCampsitePatch.esp'
-    group: *coreLatePatchesGroup
     clean:
       - crc: 0xA506ADC8
         util: 'FO4Edit v4.1.5k'
   # Survival Configuration Menu #
   - name: 'RedsFrostSCM.esp'
-    group: *coreLatePatchesGroup
     clean:
       - crc: 0xF555F82E
         util: 'FO4Edit v4.1.5k'
