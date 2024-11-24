@@ -4786,6 +4786,21 @@ plugins:
     after:
       - 'FROST - It Snowed.esp'
       - 'FROST - UFO4P Patch.esp'
+    clean:
+      - crc: 0xD1DA4916
+        util: 'FO4Edit v4.1.5k'
+  - name: 'FROST_LLCars_Intermediate.esp'
+    clean:
+      - crc: 0x6884BF6A
+        util: 'FO4Edit v4.1.5k'
+  - name: 'FROST_LLCars_Realistic.esp'
+    clean:
+      - crc: 0x9DCCED94
+        util: 'FO4Edit v4.1.5k'
+  - name: 'FROST_LLCars_Scarcity.esp'
+    clean:
+      - crc: 0x11030383
+        util: 'FO4Edit v4.1.5k'
 
   ##### FROST - Location Overhauls #####
   - name: 'FROST - Hunkered Down(-Settlements)?\.esp'
