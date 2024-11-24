@@ -4902,6 +4902,74 @@ plugins:
         util: 'FO4Edit v4.1.5k'
 
   ##### FROST - Deprecated & Outdated Files #####
+  - name: 'FROSTfix.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/26182/'
+        name: 'FROST - Unofficial Boston FPS Fix'
+    msg:
+      - *alreadyInOrFixedByFCF
+      - *deprecated
+      - *useInsteadFCF
+
+  - name: 'FROSTmoreDoors.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/46320/'
+        name: 'FROST - More Starting Locations'
+    msg:
+      - <<: *alreadyInX
+        subs: [ '[Frost Official Updates (Redux)](https://www.nexusmods.com/fallout4/mods/65485/)' ]
+        condition: 'active("RedsFrostFixes.esp")'
+      - *deprecated
+
+  - name: 'Frost - NewGame.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/50344/'
+        name: 'Frost - Functional New Game'
+    msg:
+      - <<: *alreadyInX
+        subs: [ '[FROST Plus](https://www.nexusmods.com/fallout4/mods/48847/)' ]
+        condition: 'active("aFrostMod.esp")'
+      - *deprecated
+
+  - name: 'FrostNukaWorld.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/39985/'
+        name: 'FROST - Nuka World AddOn'
+    msg:
+      - <<: *alreadyInOrFixedByX
+        subs: [ '[Frost Official Updates (Redux)](https://www.nexusmods.com/fallout4/mods/65485/)' ]
+        condition: 'active("RedsFrostFixes.esp")'
+      - *deprecated
+
+  - name: 'Frost PipTab.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/47585/'
+        name: 'FROST Sanity Tab'
+    msg:
+      - <<: *alreadyInX
+        subs: [ '[Frost Official Updates (Redux)](https://www.nexusmods.com/fallout4/mods/65485/)' ]
+        condition: 'active("RedsFrostFixes.esp")'
+      - *deprecated
+
+  - name: 'FROST Portable Instant Workbench.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/53252/'
+        name: 'FROST Survival Kit'
+    msg:
+      - <<: *alreadyInX
+        subs: [ '[Frost Official Updates (Redux)](https://www.nexusmods.com/fallout4/mods/65485/)' ]
+        condition: 'active("RedsFrostFixes.esp")'
+      - *deprecated
+
+  - name: 'FROST_WorkshopPatch.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/48699/'
+        name: 'FROST - Workshop DLC Patch'
+    msg:
+      - <<: *alreadyInOrFixedByX
+        subs: [ '[Frost Official Updates (Redux)](https://www.nexusmods.com/fallout4/mods/65485/)' ]
+        condition: 'active("RedsFrostFixes.esp")'
+      - *deprecated
 
 ###### Horizon ######
   - name: 'Z_Horizon.esp'
