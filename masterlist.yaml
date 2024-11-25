@@ -4969,6 +4969,7 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/53168/'
         name: 'FROST Better Crossbow Weapon Patch'
+    group: *coreLatePatchesGroup
     tag:
       - Delev
       - Relev
