@@ -3499,6 +3499,9 @@ plugins:
     after:
       - 'Scrap Everything - Ultimate Edition.esp'
       - 'WorkshopRearranged.esp'
+    clean:
+      - crc: 0x53946009
+        util: 'FO4Edit v4.1.5k'
 
   - name: 'NickValentineRomance.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/13717/' ]
