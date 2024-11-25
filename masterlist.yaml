@@ -4678,6 +4678,7 @@ plugins:
         util: 'FO4Edit v4.1.5k'
   # JSRS Sound Mod #
   - name: 'FCF_Previsibines-JSRSRegions.esp'
+    after: [ 'FCF_Previsibines-MMHelipad.esp' ]
     clean:
       - crc: 0x4F55738C
         util: 'FO4Edit v4.1.5k'
