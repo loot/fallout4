@@ -4766,11 +4766,13 @@ plugins:
         name: 'Frost Official Updates (Redux)'
   # Campsite - Simple Wasteland Camping #
   - name: 'RedsFrostCampsitePatch.esp'
+    group: *coreLatePatchesGroup
     clean:
       - crc: 0xA506ADC8
         util: 'FO4Edit v4.1.5k'
   # Survival Configuration Menu #
   - name: 'RedsFrostSCM.esp'
+    group: *coreLatePatchesGroup
     clean:
       - crc: 0xF555F82E
         util: 'FO4Edit v4.1.5k'
