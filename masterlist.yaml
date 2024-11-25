@@ -4282,9 +4282,14 @@ plugins:
   - name: 'PLI_USAF_Satellite_Station_Olivia.esp'
     after:
       - 'EnhancedLightsandFX.esp'
+      - 'FCF_Hotfix.esp'
+      - 'FCF_Main.esp'
+      - 'FCF_Previsibines.esp'
+      - 'FROST.esp'
       - 'Raider Children.esp'
       - 'ProjectValkyrie.esp'
       - 'PRP.esp'
+      - 'PRPFX-Merged.esp'
     msg:
       - <<: *patchProvided
         subs: [ 'Enhanced Lights and FX' ]
