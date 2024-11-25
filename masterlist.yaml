@@ -4298,8 +4298,8 @@ plugins:
         subs: [ 'Mutilated Dead Bodies' ]
         condition: 'active("MutilatedDeadBodies.esp") and not active("PLIUSAFSSO - MDB Patch.esp")'
     clean:
-      - crc: 0xB3EC0D5B
-        util: 'FO4Edit v4.0.4b'
+      - crc: 0x60BE3AED
+        util: 'FO4Edit v4.1.5k'
 
   - name: 'RedRocket_DC_F-ESL.esp'
     url:
