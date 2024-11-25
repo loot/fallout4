@@ -553,11 +553,8 @@ groups:
     description: 'A group for the mod Faction Housing Overhaul.'
     after: [ *interiorLightingGroup ]
 
-  - name: &scrapGroup Scrap Everything
-    after: [ *fhoGroup ]
-
   - name: &mediumPriorityGroup Medium Priority Overrides
-    after: [ *scrapGroup ]
+    after: [ *fhoGroup ]
 
   - name: &coreGroup Core Mods
     after: [ *mediumPriorityGroup ]
