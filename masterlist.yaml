@@ -4804,7 +4804,10 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/82462/'
         name: 'FROST - Downtown Workbenches'
-    after: [ 'FROST - It Snowed.esp' ]
+    group: *coreAddonsGroup
+    after:
+      - 'FROST - It Snowed.esp'
+      - 'shep frost downtown rooms.esp'
     clean:
       - crc: 0x917875AB
         util: 'FO4Edit v4.1.5k'
@@ -4813,9 +4816,12 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/57960/'
         name: 'FROST - Lootable and Locked Cars'
+    group: *coreAddonsGroup
     after:
       - 'FROST - It Snowed.esp'
       - 'FROST - UFO4P Patch.esp'
+      - 'FROST Downtown Workbenches.esp'
+      - 'shep frost downtown rooms.esp'
     clean:
       - crc: 0xD1DA4916
         util: 'FO4Edit v4.1.5k'
@@ -4841,14 +4847,26 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/50008/'
         name: 'FROST Hunkered Down - Commonwealth Overhaul'
-    after: [ 'FROST - It Snowed.esp' ]
+    after:
+      - 'FROST - AccessibleArcJet.esp'
+      - 'FROST - AccessibleFortHagen.esp'
+      - 'FROST - AccessibleFortStrong.esp'
+      - 'FROST - AccessibleMedTekResearch.esp'
+      - 'FROST - It Snowed.esp'
+      - 'FROST - LootableCars.esp'
+      - 'FROST - SuperMutantLocations.esp'
+      - 'FROST Downtown Workbenches.esp'
+      - 'shep frost downtown rooms.esp'
   - name: 'FROST - Hunkered Down.esp'
+    group: *coreAddonsGroup
     dirty:
       - <<: *quickClean
         crc: 0x36F6C4F1
         util: '[FO4Edit v4.1.5k](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 2
   - name: 'FROST - Hunkered Down-Settlements.esp'
+    group: *coreAddonsGroup
+    after: [ 'FROST - Hunkered Down.esp' ]
     clean:
       - crc: 0x28A74F67
         util: 'FO4Edit v4.1.5k'
@@ -4857,7 +4875,16 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/50618/'
         name: 'FROST Dark Calling - Supermutant Locations Overhaul'
-    after: [ 'FROST - It Snowed.esp' ]
+    group: *coreAddonsGroup
+    after:
+      - 'FROST - AccessibleArcJet.esp'
+      - 'FROST - AccessibleFortHagen.esp'
+      - 'FROST - AccessibleFortStrong.esp'
+      - 'FROST - AccessibleMedTekResearch.esp'
+      - 'FROST - It Snowed.esp'
+      - 'FROST - LootableCars.esp'
+      - 'FROST Downtown Workbenches.esp'
+      - 'shep frost downtown rooms.esp'
     tag: [ Relev ]
     dirty:
       - <<: *quickClean
@@ -4870,6 +4897,13 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/53923/'
         name: 'FROST - Accessible ArcJet'
+    group: *coreAddonsGroup
+    after:
+      - 'FROST - AccessibleFortStrong.esp'
+      - 'FROST - AccessibleMedTekResearch.esp'
+      - 'FROST - LootableCars.esp'
+      - 'FROST Downtown Workbenches.esp'
+      - 'shep frost downtown rooms.esp'
     clean:
       - crc: 0x76A517AA
         util: 'FO4Edit v4.1.5k'
@@ -4878,6 +4912,14 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/55398/'
         name: 'FROST - Accessible Fort Hagen'
+    group: *coreAddonsGroup
+    after:
+      - 'FROST - AccessibleArcJet.esp'
+      - 'FROST - AccessibleFortStrong.esp'
+      - 'FROST - AccessibleMedTekResearch.esp'
+      - 'FROST - LootableCars.esp'
+      - 'FROST Downtown Workbenches.esp'
+      - 'shep frost downtown rooms.esp'
     clean:
       - crc: 0xEEC07FD4
         util: 'FO4Edit v4.1.5k'
@@ -4886,6 +4928,12 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/54873/'
         name: 'FROST - Accessible Fort Strong'
+    group: *coreAddonsGroup
+    after:
+      - 'FROST - AccessibleMedTekResearch.esp'
+      - 'FROST - LootableCars.esp'
+      - 'FROST Downtown Workbenches.esp'
+      - 'shep frost downtown rooms.esp'
     clean:
       - crc: 0xBB53B6B5
         util: 'FO4Edit v4.1.5k'
@@ -4894,6 +4942,11 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/54564/'
         name: 'FROST - Accessible Med-Tek Research'
+    group: *coreAddonsGroup
+    after:
+      - 'FROST - LootableCars.esp'
+      - 'FROST Downtown Workbenches.esp'
+      - 'shep frost downtown rooms.esp'
     dirty:
       - <<: *quickClean
         crc: 0xC1842D79
@@ -4905,6 +4958,7 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/25491/'
         name: 'Frost Downtown Monohome'
+    group: *coreAddonsGroup
     clean:
       - crc: 0x1EB90950
         util: 'FO4Edit v4.1.5k'
