@@ -3496,7 +3496,6 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/60363/'
         name: 'I''m Talking to You'
-    group: *lowPriorityGroup
     after: [ 'WorkshopRearranged.esp' ]
 
   - name: 'NickValentineRomance.esp'
