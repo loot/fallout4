@@ -4437,7 +4437,6 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/64755/'
         name: 'We Can Live In - Natick Substation'
-    group: *mediumPriorityGroup
   - name: 'WCLI_NatickSubstation.esp'
     after:
       - 'Another Pine Forest Mod.esp'
