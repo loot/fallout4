@@ -2205,6 +2205,11 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/41449/'
         name: 'Winter Redone'
+    dirty:
+      - <<: *quickClean
+        crc: 0x2177A54F
+        util: '[FO4Edit v4.1.5k](https://www.nexusmods.com/fallout4/mods/2737)'
+        udr: 25
   - name: 'Winter Redone - (ELFX|FROST|IE|PRP|UIL|Water Plants|WCP)\.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/41449/'
