@@ -2592,6 +2592,7 @@ plugins:
 
   - name: 'Pip-Boy Flashlight.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/10840/' ]
+    # TODO: Check against any mods grouped after default group.
     after:
       - 'Clarity.esp'
       - 'EnhancedLightsandFX.esp'
