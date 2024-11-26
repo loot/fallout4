@@ -2201,6 +2201,9 @@ plugins:
         util: '[FO4Edit v4.0.4b](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 2
 
+  - name: 'Winter Redone.esp'
+  - name: 'Winter Redone - (ELFX|FROST|IE|PRP|UIL|Water Plants|WCP)\.esp'
+
 ###### AudioVisual - Fixes ######
   - name: 'Airport_Glass_Transparency_Fix\.es[lp]'
     url:
