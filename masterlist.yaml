@@ -2492,6 +2492,9 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/82752/'
         name: 'WETTER'
+    clean:
+      - crc: 0x2C0F35D6
+        util: 'FO4Edit v4.1.5k'
 
 ###### AudioVisual - Weather & Lighting ######
   - name: 'Clarity( Decreased Saturation Addon| Far Harbor Fog Clouds Removed| Stronger Godrays Addon)?\.esp'
