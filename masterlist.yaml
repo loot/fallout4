@@ -2492,6 +2492,7 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/82752/'
         name: 'WETTER'
+    group: *waterOverhaulsGroup
     inc: [ 'Vivid Waters.esp' ]
     clean:
       - crc: 0x2C0F35D6
