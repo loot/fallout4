@@ -4439,6 +4439,11 @@ plugins:
         name: 'We Can Live In - Natick Substation'
     after:
       - 'Another Pine Forest Mod.esp'
+      # The rules below are not strictly required, added to match expected order.
+      - '3DNPC_FO4.esp'
+      - 'BTInteriors_Project.esp'
+      - 'FCF_Main.esp'
+      - 'prp.esp'
     msg:
       - <<: *compatIssuesWithX
         subs: [ 'Natick Power Substation Player Settlement' ]
