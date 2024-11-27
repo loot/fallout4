@@ -4484,6 +4484,9 @@ plugins:
       - <<: *patchProvided
         subs: [ 'Waushakum Pond Settlement' ]
         condition: 'active("PondSettlement.esp") and (not active("WCLINS_Previs.esp") or (not checksum("WCLINS_Previs.esp", 0BEADEC1) and not checksum("WCLINS_Previs.esp", 26F48A9B) and not checksum("WCLINS_Previs.esp", 8004C20D)))'
+    clean:
+      - crc: 0x7FF4130D
+        util: 'FO4Edit v4.1.5k'
   - name: 'WCLINS_((AF|DHBOSS|FR|FRNR|MW)_Patch|Previs)\.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/64755/'
