@@ -2470,7 +2470,7 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/16425/'
         name: 'Vivid Waters - a Water overhaul for Fallout 4'
-    group: *worldSettingsGroup
+    group: *waterOverhaulsGroup
     after:
       - 'WET.esp'
       - 'WET Murkier.esp'
