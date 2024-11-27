@@ -2478,7 +2478,7 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/20775/'
         name: 'WET - Water Enhancement Textures'
-    group: *lowPriorityGroup
+    group: *waterOverhaulsGroup
     after: [ 'Clarity.esp' ]
     clean:
       - crc: 0x6D78FE76
