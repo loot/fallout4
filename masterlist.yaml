@@ -2480,6 +2480,9 @@ plugins:
         name: 'WET - Water Enhancement Textures'
     group: *lowPriorityGroup
     after: [ 'Clarity.esp' ]
+    clean:
+      - crc: 0x6D78FE76
+        util: 'FO4Edit v4.1.5k'
 
 ###### AudioVisual - Weather & Lighting ######
   - name: 'Clarity( Decreased Saturation Addon| Far Harbor Fog Clouds Removed| Stronger Godrays Addon)?\.esp'
