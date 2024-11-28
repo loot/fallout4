@@ -2509,7 +2509,7 @@ plugins:
         subs:
           - 'True Storms'
           - '[Clarity - True Storms](https://www.nexusmods.com/fallout4/mods/65462/)'
-        condition: 'active("TrueStormsFO4.esm") and not active("TrueStorms_Clarity.esp")'
+        condition: 'version("Clarity.esp", "4.3", ==) and active("TrueStormsFO4.esm") and not active("TrueStorms_Clarity.esp")'
       - <<: *patcherScriptAvailable
         subs:
           - '[FO4Edit](https://www.nexusmods.com/fallout4/mods/2737/)'
