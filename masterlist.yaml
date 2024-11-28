@@ -2504,7 +2504,6 @@ plugins:
       - link: 'https://www.nexusmods.com/fallout4/mods/31991/'
         name: 'Clarity - A Visual Overhaul'
   - name: 'Clarity.esp'
-    after: [ 'WorkshopRearranged.esp' ]
     msg:
       - <<: *patch3rdParty
         subs:
