@@ -2520,7 +2520,7 @@ plugins:
           - '[Various Synthesis Patchers](https://www.nexusmods.com/fallout4/mods/66836/)'
       - <<: *requiresResources
         subs: [ '[Clarity 4.2](https://www.nexusmods.com/fallout4/mods/31991/)' ]
-        condition: 'not file("Materials/SetDressing/MemoryLoungeMeshes/MemoryLoungerGlass01.BGEM")'
+        condition: 'not file("Materials/SetDressing/MemoryLounge/MemoryLoungerGlass01.BGEM")'
     clean:
       # Version: 4.2
       - crc: 0xACA71BEF
