@@ -2499,7 +2499,7 @@ plugins:
         util: 'FO4Edit v4.1.5k'
 
 ###### AudioVisual - Weather & Lighting ######
-  - name: 'Clarity( Decreased Saturation Addon| Far Harbor Fog Clouds Removed| Stronger Godrays Addon)?\.esp'
+  - name: 'Clarity( Decreased Saturation Addon| Far Harbor Fog Clouds Removed| Stronger Godrays Addon|TS)?\.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/31991/'
         name: 'Clarity - A Visual Overhaul'
