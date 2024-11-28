@@ -2284,7 +2284,7 @@ plugins:
     group: *fixesGroup
     after: [ 'FO4LODGen.esp' ]
   - name: 'FOLIP - Before Generation.esp'
-    group: *lowPriorityGroup
+    group: *folipBeforeGenGroup
     after: [ 'WorkshopRearranged.esp' ]
     msg: [ *disableAfterGeneratingLODwithxLODGen ]
 
