@@ -2518,6 +2518,29 @@ plugins:
         subs:
           - '[Synthesis](https://github.com/Mutagen-Modding/Synthesis/)'
           - '[Various Synthesis Patchers](https://www.nexusmods.com/fallout4/mods/66836/)'
+    clean:
+      # Version: 4.2
+      - crc: 0xACA71BEF
+        util: 'FO4Edit v4.1.5k'
+      # Version: 4.3
+      - crc: 0x096860FE
+        util: 'FO4Edit v4.1.5k'
+  - name: 'Clarity Decreased Saturation Addon.esp'
+    clean:
+      - crc: 0x07169FC2
+        util: 'FO4Edit v4.1.5k'
+  - name: 'Clarity Far Harbor Fog Clouds Removed.esp'
+    clean:
+      - crc: 0x108D74F5
+        util: 'FO4Edit v4.1.5k'
+  - name: 'Clarity Stronger Godrays Addon.esp'
+    clean:
+      - crc: 0xD920DB36
+        util: 'FO4Edit v4.1.5k'
+  - name: 'ClarityTS.esp'
+    clean:
+      - crc: 0x08CD27DE
+        util: 'FO4Edit v4.1.5k'
 
   - name: 'EnhancedLightsandFX.esp'
     url:
