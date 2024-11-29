@@ -2549,7 +2549,6 @@ plugins:
         name: 'Enhanced Lights and FX'
       - link: 'https://www.nexusmods.com/fallout4/mods/54872/'
         name: 'Optimization Patches Collection'
-    group: *interiorLightingGroup
     clean:
       - crc: 0x8FC528DB
         util: 'FO4Edit v4.0.3h (Hotfix 1)'
@@ -2560,7 +2559,6 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/6796/'
         name: 'PhotoRealistic Commonwealth'
-    group: *interiorLightingGroup
     dirty:
       - <<: *quickClean
         crc: 0xBA16C65A
@@ -2573,7 +2571,6 @@ plugins:
       - link: 'https://www.nexusmods.com/fallout4/mods/8768/'
         name: 'Interiors Enhanced: Darker Ambient Light and Fog'
   - name: 'InteriorsEnhanced-All-In-One.esp'
-    group: *interiorLightingGroup
     after:
       - 'EnhancedLightsandFX.esp'
       - 'UltraInteriorLighting.esp'
@@ -2592,7 +2589,6 @@ plugins:
         subs: [ 'InteriorsEnhanced-All-In-One.esp' ]
         condition: 'active("InteriorsEnhanced-All-In-One.esp") and active("DLCRobot.esm") and active("DLCCoast.esm") and active("DLCworkshop03.esm") and active("DLCNukaWorld.esm")'
   - name: 'InteriorsEnhanced.esp'
-    group: *interiorLightingGroup
     after:
       - 'EnhancedLightsandFX.esp'
       - 'UltraInteriorLighting.esp'
