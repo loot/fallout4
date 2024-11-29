@@ -4535,11 +4535,12 @@ plugins:
     dirty:
       - <<: *quickClean
         crc: 0x842B406B
-        util: '[FO4Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout4/mods/2737)'
+        util: '[FO4Edit v4.1.5k](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 122
+      # Far Harbour
       - <<: *quickClean
         crc: 0x9F6AA351
-        util: '[FO4Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout4/mods/2737)'
+        util: '[FO4Edit v4.1.5k](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 127
 
   - name: 'Eli_Faction Housing Overhaul - Institute.esp'
