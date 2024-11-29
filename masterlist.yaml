@@ -4515,6 +4515,12 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/15814/'
         name: 'Faction Housing Overhaul - All In One'
+    after:
+      - 'Clarity.esp'
+      - 'EnhancedLightsandFX.esp'
+      - 'InteriorsEnhanced-All-In-One.esp'
+      - 'UltraInteriorLighting.esp'
+      # Could also go after PRP Full, but it needs a patch either way.
     msg:
       - <<: *useVersionFarHarbor
         type: warn
@@ -4529,6 +4535,36 @@ plugins:
         crc: 0x9F6AA351
         util: '[FO4Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 127
+
+  - name: 'Eli_Faction Housing Overhaul - Institute.esp'
+    after:
+      - 'Clarity.esp'
+      - 'EnhancedLightsandFX.esp'
+      - 'InteriorsEnhanced-All-In-One.esp'
+      - 'UltraInteriorLighting.esp'
+      # Could also go after PRP Full, but it needs a patch either way.
+
+  - name: 'Eli_Faction Housing Overhaul - Prydwen.esp'
+    after:
+      - 'Clarity.esp'
+      - 'InteriorsEnhanced-All-In-One.esp'
+      - 'UltraInteriorLighting.esp'
+
+  - name: 'Eli_Faction Housing Overhaul - Railroad HQ.esp'
+    after:
+      - 'Clarity.esp'
+      - 'EnhancedLightsandFX.esp'
+      - 'InteriorsEnhanced-All-In-One.esp'
+      - 'UltraInteriorLighting.esp'
+      # Could also go after PRP Full, but it needs a patch either way.
+
+  - name: 'Eli_Faction Housing Overhaul - V81.esp'
+    after:
+      - 'Clarity.esp'
+      - 'EnhancedLightsandFX.esp'
+      - 'InteriorsEnhanced-All-In-One.esp'
+      - 'UltraInteriorLighting.esp'
+      # Could also go after PRP Full, but it needs a patch either way.
 
 ###### New Characters - Allies ######
   - name: 'AGNISNikaCola01.esp'
