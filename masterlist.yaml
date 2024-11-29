@@ -545,12 +545,8 @@ groups:
     description: 'A group for modules that fix issues with PreVis and PreCombined files.'
     after: [ *lowPriorityGroup ]
 
-  - name: &interiorLightingGroup Interior Lighting
-    description: 'A group for modules that only modify interior lighting.'
-    after: [ *preVisCombinedGroup ]
-
   - name: &mediumPriorityGroup Medium Priority Overrides
-    after: [ *interiorLightingGroup ]
+    after: [ *preVisCombinedGroup ]
 
   - name: &coreGroup Core Mods
     after: [ *mediumPriorityGroup ]
