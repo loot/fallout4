@@ -4537,6 +4537,9 @@ plugins:
         itm: 127
 
   - name: 'Eli_Faction Housing Overhaul - Institute.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/15767/'
+        name: 'Faction Housing Overhaul - Institute Director''s Quarters'
     after:
       - 'Clarity.esp'
       - 'EnhancedLightsandFX.esp'
@@ -4545,12 +4548,18 @@ plugins:
       # Could also go after PRP Full, but it needs a patch either way.
 
   - name: 'Eli_Faction Housing Overhaul - Prydwen.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/13218/'
+        name: 'Faction Housing Overhaul - Prydwen Quarters'
     after:
       - 'Clarity.esp'
       - 'InteriorsEnhanced-All-In-One.esp'
       - 'UltraInteriorLighting.esp'
 
   - name: 'Eli_Faction Housing Overhaul - Railroad HQ.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/13490/'
+        name: 'Faction Housing Overhaul - Railroad HQ'
     after:
       - 'Clarity.esp'
       - 'EnhancedLightsandFX.esp'
@@ -4558,7 +4567,15 @@ plugins:
       - 'UltraInteriorLighting.esp'
       # Could also go after PRP Full, but it needs a patch either way.
 
+  - name: 'Eli_Faction Housing Overhaul  - The Castle.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/15504/'
+        name: 'Faction Housing Overhaul - The Castle'
+
   - name: 'Eli_Faction Housing Overhaul - V81.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/13035/'
+        name: 'Faction Housing Overhaul - Vault 81'
     after:
       - 'Clarity.esp'
       - 'EnhancedLightsandFX.esp'
