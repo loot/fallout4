@@ -2221,7 +2221,6 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/38360/'
         name: 'Better Landscape Grass'
-    group: *lowPriorityGroup
     dirty:
       - <<: *quickClean
         crc: 0x7E2E53AF
@@ -2635,7 +2634,6 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/57680/'
         name: 'Lightweight Lighting - A Weather and Interior Lighting Overhaul'
-    group: *lowPriorityGroup
     after: [ 'Clarity.esp' ]
 
   - name: 'Pip-Boy Flashlight.esp'
@@ -3322,7 +3320,6 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/52121/'
         name: 'Vault 88 Essentials'
-    group: *lowPriorityGroup
     after:
       - 'Clarity.esp'
       - 'WorkshopRearranged.esp'
@@ -3331,7 +3328,6 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/43643/'
         name: 'Vault-Tec Workshop Overhaul Redux (VTWOR)'
-    group: *lowPriorityGroup
     after:
       - 'Clarity.esp'
       - 'WorkshopRearranged.esp'
@@ -3345,7 +3341,6 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/16181/'
         name: 'Workshop Rearranged'
-    group: *lowPriorityGroup
   - name: 'WorkshopRearranged.esp'
     msg:
       - <<: *compatNotes
