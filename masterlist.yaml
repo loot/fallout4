@@ -4553,6 +4553,9 @@ plugins:
       - 'InteriorsEnhanced-All-In-One.esp'
       - 'UltraInteriorLighting.esp'
       # Could also go after PRP Full, but it needs a patch either way.
+    clean:
+      - crc: 0xF951DA97
+        util: 'FO4Edit v4.1.5k'
 
   - name: 'Eli_Faction Housing Overhaul - Prydwen.esp'
     url:
@@ -4562,6 +4565,16 @@ plugins:
       - 'Clarity.esp'
       - 'InteriorsEnhanced-All-In-One.esp'
       - 'UltraInteriorLighting.esp'
+    dirty:
+      - <<: *quickClean
+        crc: 0x2A059B23
+        util: '[FO4Edit v4.1.5k](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 2
+      # Map Marker Enabled
+      - <<: *quickClean
+        crc: 0x37E7916B
+        util: '[FO4Edit v4.1.5k](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 2
 
   - name: 'Eli_Faction Housing Overhaul - Railroad HQ.esp'
     url:
@@ -4573,11 +4586,26 @@ plugins:
       - 'InteriorsEnhanced-All-In-One.esp'
       - 'UltraInteriorLighting.esp'
       # Could also go after PRP Full, but it needs a patch either way.
+    dirty:
+      - <<: *quickClean
+        crc: 0xADAECC41
+        util: '[FO4Edit v4.1.5k](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 1
+      # Far Harbour
+      - <<: *quickClean
+        crc: 0xB81C909E
+        util: '[FO4Edit v4.1.5k](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 1
 
   - name: 'Eli_Faction Housing Overhaul  - The Castle.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/15504/'
         name: 'Faction Housing Overhaul - The Castle'
+    dirty:
+      - <<: *quickClean
+        crc: 0x827F4230
+        util: '[FO4Edit v4.1.5k](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 13
 
   - name: 'Eli_Faction Housing Overhaul - V81.esp'
     url:
@@ -4589,6 +4617,11 @@ plugins:
       - 'InteriorsEnhanced-All-In-One.esp'
       - 'UltraInteriorLighting.esp'
       # Could also go after PRP Full, but it needs a patch either way.
+    dirty:
+      - <<: *quickClean
+        crc: 0xD6F083B9
+        util: '[FO4Edit v4.1.5k](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 88
 
 ###### New Characters - Allies ######
   - name: 'AGNISNikaCola01.esp'
