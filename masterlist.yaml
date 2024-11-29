@@ -4617,6 +4617,7 @@ plugins:
       - 'InteriorsEnhanced-All-In-One.esp'
       - 'UltraInteriorLighting.esp'
       # Could also go after PRP Full, but it needs a patch either way.
+    tag: [ Delev ]
     dirty:
       - <<: *quickClean
         crc: 0xD6F083B9
