@@ -4521,6 +4521,12 @@ plugins:
       - 'InteriorsEnhanced-All-In-One.esp'
       - 'UltraInteriorLighting.esp'
       # Could also go after PRP Full, but it needs a patch either way.
+    inc:
+      - 'Eli_Faction Housing Overhaul - Institute.esp'
+      - 'Eli_Faction Housing Overhaul - Prydwen.esp'
+      - 'Eli_Faction Housing Overhaul - Railroad HQ.esp'
+      - 'Eli_Faction Housing Overhaul  - The Castle.esp'
+      - 'Eli_Faction Housing Overhaul - V81.esp'
     msg:
       - <<: *useVersionFarHarbor
         type: warn
