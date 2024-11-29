@@ -4586,6 +4586,10 @@ plugins:
       - 'InteriorsEnhanced-All-In-One.esp'
       - 'UltraInteriorLighting.esp'
       # Could also go after PRP Full, but it needs a patch either way.
+    msg:
+      - <<: *useVersionFarHarbor
+        type: warn
+        condition: 'active("DLCCoast.esm") and checksum("Eli_Faction Housing Overhaul - Railroad HQ.esp", ADAECC41)'
     dirty:
       - <<: *quickClean
         crc: 0xADAECC41
