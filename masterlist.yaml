@@ -4095,8 +4095,8 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/68293/'
         name: 'Boston Public Library Settlement'
-    after: [ 'PRP.esp' ]
   - name: 'BostonLibrarySettlement.esp'
+    after: [ 'PRP.esp' ]
     msg:
       - <<: *patchProvided
         subs: [ 'Automatron' ]
