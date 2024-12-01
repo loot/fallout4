@@ -5146,11 +5146,6 @@ plugins:
         name: 'krrptd''s FROST Patch Compendium'
   - name: 'FROST - (ELO|LootableVertibirds|M38|Shatter) Patch\.esp'
     group: *coreLatePatchesGroup
-  - name: 'FROST - LootableVertibirds Patch.esp'
-    msg:
-      - <<: *requiresX
-        subs: [ '[Lootable Vertibirds](https://www.nexusmods.com/fallout4/mods/46217/)' ]
-        condition: 'not file("LootableVertibirds(-BoSOnly|-NWFHWrecks)?\.esp")'
   - name: 'FROST - M38 Patch.esp'
     msg:
       - <<: *requiresX
