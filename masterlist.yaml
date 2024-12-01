@@ -4108,10 +4108,28 @@ plugins:
       - <<: *patchProvided
         subs: [ 'Sim Settlements 2 - Chapter 2' ]
         condition: 'active("SS2_XPAC_Chapter2.esm") and not active("BostonLibrarySettlementSS2.esp")'
+    clean:
+      - crc: 0x22D7ED47
+        util: 'FO4Edit v4.1.5k'
+  - name: 'BostonLibrarySettlementPRP.esp'
+    clean:
+      - crc: 0x9B88E0BB
+        util: 'FO4Edit v4.1.5k'
+  - name: 'BostonLibrarySettlementRobots.esp'
+    clean:
+      - crc: 0xF24553C1
+        util: 'FO4Edit v4.1.5k'
+  - name: 'BostonLibrarySettlementSS2.esp'
+    clean:
+      - crc: 0x57C15B35
+        util: 'FO4Edit v4.1.5k'
   - name: 'LibraryExtras.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/68293/'
         name: 'Boston Public Library Settlement'
+    clean:
+      - crc: 0xD000CD50
+        util: 'FO4Edit v4.1.5k'
 
   - name: 'Bunker Hill D(CnR_F-ESL|eep Clean ESL-F)\.esp'
     url:
