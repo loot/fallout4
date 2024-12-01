@@ -4329,6 +4329,23 @@ plugins:
       - link: 'https://www.nexusmods.com/fallout4/mods/68273/'
         name: 'Nuka-World Transit Center Settlement'
     group: *preVisCombinedGroup
+  - name: 'OCsNukaTransitCenter.esp'
+    dirty:
+      - <<: *quickClean
+        crc: 0x14C3C151
+        util: '[FO4Edit v4.1.5k](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 5
+      # PRP 74
+      - <<: *quickClean
+        crc: 0x7FD747A5
+        util: '[FO4Edit v4.1.5k](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 5
+  - name: 'OCsNukaTransitSettlement.esp'
+    dirty:
+      - <<: *quickClean
+        crc: 0xD17750A5
+        util: '[FO4Edit v4.1.5k](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 5
 
   - name: 'PLI_?USAF(_Satellite_Station_Olivia|SSO - (ELFX|MDB) Patch)\.esp'
     url:
