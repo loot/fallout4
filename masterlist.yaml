@@ -4095,7 +4095,6 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/68293/'
         name: 'Boston Public Library Settlement'
-    group: *preVisCombinedGroup
     after: [ 'PRP.esp' ]
   - name: 'BostonLibrarySettlement.esp'
     msg:
