@@ -5144,6 +5144,8 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/57553/'
         name: 'krrptd''s FROST Patch Compendium'
+  - name: 'FROST - (ELO|LootableVertibirds|M38|Shatter) Patch\.esp'
+    group: *coreLatePatchesGroup
 
   ##### FROST - Deprecated & Outdated Files #####
   - name: 'FROSTfix.esp'
