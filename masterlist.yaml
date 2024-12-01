@@ -4096,7 +4096,12 @@ plugins:
       - link: 'https://www.nexusmods.com/fallout4/mods/68293/'
         name: 'Boston Public Library Settlement'
   - name: 'BostonLibrarySettlement.esp'
-    after: [ 'PRP.esp' ]
+    after:
+      - 'Clarity.esp'
+      - 'EnhancedLightsandFX.esp'
+      - 'InteriorsEnhanced-All-In-One.esp'
+      - 'PRP.esp'
+      - 'UltraInteriorLighting.esp'
     msg:
       - <<: *patchProvided
         subs: [ 'Automatron' ]
