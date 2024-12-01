@@ -5156,6 +5156,8 @@ plugins:
       - <<: *requiresX
         subs: [ '[The M38 Gas Mask](https://www.nexusmods.com/fallout4/mods/43058/)' ]
         condition: 'not file("M38 Gas Mask Replacer\.es[lp]")'
+  - name: 'FROST - Shatter Patch.esp'
+    after: [ 'SimplifiedSorting_aFrostMod.esp' ]
 
   ##### FROST - Deprecated & Outdated Files #####
   - name: 'FROSTfix.esp'
