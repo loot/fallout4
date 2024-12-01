@@ -4331,6 +4331,10 @@ plugins:
     after: [ 'UltraExteriorLighting.esp' ]
     tag: [ Keywords ]
   - name: 'OCsNukaTransitCenter.esp'
+    msg:
+      - <<: *useVersion
+        subs: [ 'Previsibines Repair Pack' ]
+        condition: 'active("prp.esp") and checksum("OCsNukaTransitCenter.esp", 14C3C151)'
     dirty:
       - <<: *quickClean
         crc: 0x14C3C151
