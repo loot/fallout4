@@ -5010,6 +5010,11 @@ plugins:
       - link: 'https://www.nexusmods.com/fallout4/mods/57961/'
         name: 'FROST - Mauser Pistol'
   - name: 'FROST - Mauser.esp'
+    inc: [ 'Mauser.esp' ]
+    msg:
+      - <<: *includesX
+        subs: [ '[Mauser Pistol](https://www.nexusmods.com/fallout4/mods/14141/)' ]
+        condition: 'file("Mauser.esp")'
     clean:
       - crc: 0xA7F079F4
         util: 'FO4Edit v4.1.5k'
