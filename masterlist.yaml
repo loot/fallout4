@@ -5199,6 +5199,7 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/52003/'
         name: 'FROST The Forest Patch'
+    group: *coreLatePatchesGroup
     dirty:
       - <<: *quickClean
         crc: 0xD74F911B
