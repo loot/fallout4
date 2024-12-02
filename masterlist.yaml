@@ -4804,7 +4804,7 @@ plugins:
       - crc: 0x6CB98211
         util: 'FO4Edit v4.1.5k'
 
-  - name: 'FCF_(Main|Previsibines|Hotfix)\.esp'
+  - name: 'FCF_(Main|Previsibines|Hotfix|HotfixELFX)\.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/59652/'
         name: 'FROST Cell Fixes (FCF)'
@@ -4826,7 +4826,7 @@ plugins:
       - crc: 0x202BE196
         util: 'FO4Edit v4.1.5k'
   ### FROST Cell Fixes - Patches ###
-  - name: 'FCF_Previsibines-(Drawbridges|JSRSRegions|MFG|MMHelipad.cdx|MMHelipad|Oberland|TheForest|TheMarshlands|WinterRedone)\.esp'
+  - name: 'FCF_Previsibines-(Drawbridges|ELFX|JSRSRegions|MFG|MMHelipad.cdx|MMHelipad|Oberland|TheForest|TheMarshlands|WinterRedone|WinterRedoneELFX)\.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/59652/'
         name: 'FROST Cell Fixes (FCF)'
