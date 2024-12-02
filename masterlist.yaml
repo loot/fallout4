@@ -4381,6 +4381,9 @@ plugins:
       - link: 'https://www.nexusmods.com/fallout4/mods/59993/'
         name: 'People Live In - USAF Satellite Station Olivia'
   - name: 'PLIUSAFSSO_Previs.esp'
+    after:
+      - 'PLIUSAFSSO - MDB Patch.esp'
+      - 'PLIUSAFSSO_MU_Patch.esp'
     clean:
       - crc: 0x5AB506A1
         util: 'FO4Edit v4.1.5k'
