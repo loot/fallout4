@@ -5144,6 +5144,12 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/60243/'
         name: 'FROST - JSRS Patch'
+    clean:
+      - crc: 0x1B322271
+        util: 'FO4Edit v4.1.5k'
+      # Frost Official Updates (Redux) - Explosion Effects
+      - crc: 0x1293014E
+        util: 'FO4Edit v4.1.5k'
 
   # krrptd's FROST Patch Compendium #
   - name: '((FROST - (ELO|LootableVertibirds|M38|Shatter) Patch|Patchy Ghouls)|FROST( Monohome_NoRadio|_NoECZNReset|_NoLeapingFerals)|No Geiger Sounds|PLI_USAF_Olivia FROSTified)\.esp'
