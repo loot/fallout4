@@ -4380,6 +4380,28 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/59993/'
         name: 'People Live In - USAF Satellite Station Olivia'
+  - name: 'PLIUSAFSSO_Previs.esp'
+    clean:
+      - crc: 0x5AB506A1
+        util: 'FO4Edit v4.1.5k'
+      # ELFX
+      - crc: 0xAD111166
+        util: 'FO4Edit v4.1.5k'
+  # More Uniques - Unique Weapons Expansion Patch #
+  - name: 'PLIUSAFSSO_MU_Patch.esp'
+    clean:
+      - crc: 0xC3117263
+        util: 'FO4Edit v4.1.5k'
+  # Mutilated Dead Bodies #
+  - name: 'PLIUSAFSSO - MDB Patch.esp'
+    clean:
+      - crc: 0x6EE80370
+        util: 'FO4Edit v4.1.5k'
+  # Sim Settlements 2 - Chapter 3 #
+  - name: 'PLIUSAFSSO_SS2CH3_Patch.esp'
+    clean:
+      - crc: 0x55D37EEE
+        util: 'FO4Edit v4.1.5k'
 
   - name: 'RedRocket_DC_F-ESL.esp'
     url:
