@@ -4818,6 +4818,7 @@ plugins:
   - name: 'FCF_Previsibines.esp'
     group: *lateLoadersGroup
     clean:
+      # Vanilla
       - crc: 0xB8064B39
         util: 'FO4Edit v4.1.5k'
   - name: 'FCF_Hotfix.esp'
@@ -4885,6 +4886,7 @@ plugins:
   # Winter Redone #
   - name: 'FCF_Previsibines-WinterRedone.esp'
     dirty:
+      # Vanilla
       - <<: *quickClean
         crc: 0x8CD1F208
         util: '[FO4Edit v4.1.5k](https://www.nexusmods.com/fallout4/mods/2737)'
