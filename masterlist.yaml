@@ -4368,6 +4368,8 @@ plugins:
       - 'ProjectValkyrie.esp'
       - 'PRP.esp'
       - 'PRPFX-Merged.esp'
+      - 'UltraInteriorLighting.esp'
+      - 'Winter Redone.esp'
     msg:
       - <<: *patchProvided
         subs: [ 'Mutilated Dead Bodies' ]
