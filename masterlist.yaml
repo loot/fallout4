@@ -5004,6 +5004,10 @@ plugins:
       - crc: 0x11030383
         util: 'FO4Edit v4.1.5k'
 
+  ##### FROST - Items #####
+
+  ##### FROST - Items - New Weapons #####
+
   ##### FROST - Location Overhauls #####
   - name: 'FROST - Hunkered Down(-Settlements)?\.esp'
     url:
