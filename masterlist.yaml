@@ -5144,6 +5144,7 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/60243/'
         name: 'FROST - JSRS Patch'
+    group: *coreLatePatchesGroup
     after: [ 'RedsFrostExplosionEffects.esp' ]
     clean:
       - crc: 0x1B322271
