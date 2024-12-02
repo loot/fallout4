@@ -5159,6 +5159,7 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/57048/'
         name: 'FROST - Zap Gun Patch'
+    group: *coreLatePatchesGroup
     clean:
       - crc: 0x71178AE0
         util: 'FO4Edit v4.1.5k'
