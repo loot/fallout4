@@ -5009,6 +5009,7 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/57961/'
         name: 'FROST - Mauser Pistol'
+    group: *coreAddonsGroup
   - name: 'FROST - Mauser.esp'
     inc: [ 'Mauser.esp' ]
     msg:
