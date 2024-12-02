@@ -5155,6 +5155,10 @@ plugins:
     after: [ 'SimplifiedSorting_aFrostMod.esp' ]
 
   ##### FROST - 3rd Party Patches - Weapons #####
+  - name: 'Frost Zap Gun Patch.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/57048/'
+        name: 'FROST - Zap Gun Patch'
 
   ##### FROST - Deprecated & Outdated Files #####
   - name: 'FROSTfix.esp'
