@@ -5199,6 +5199,11 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/52003/'
         name: 'FROST The Forest Patch'
+    dirty:
+      - <<: *quickClean
+        crc: 0xD74F911B
+        util: '[FO4Edit v4.1.5k](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 2
 
   ##### FROST - 3rd Party Patches - Weapons #####
   - name: 'Frost Zap Gun Patch.esp'
