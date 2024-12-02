@@ -4360,6 +4360,7 @@ plugins:
     after:
       - 'EnhancedLightsandFX.esp'
       - 'FCF_Hotfix.esp'
+      - 'FCF_HotfixELFX.esp'
       - 'FCF_Main.esp'
       - 'FCF_Previsibines.esp'
       - 'FROST.esp'
