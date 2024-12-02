@@ -4352,11 +4352,10 @@ plugins:
         util: '[FO4Edit v4.1.5k](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 5
 
-  - name: 'PLI_?USAF(_Satellite_Station_Olivia|SSO - (ELFX|MDB) Patch)\.esp'
+  - name: 'PLI_USAF_Satellite_Station_Olivia.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/59993/'
         name: 'People Live In - USAF Satellite Station Olivia'
-  - name: 'PLI_USAF_Satellite_Station_Olivia.esp'
     after:
       - 'EnhancedLightsandFX.esp'
       - 'FCF_Hotfix.esp'
@@ -4377,6 +4376,10 @@ plugins:
     clean:
       - crc: 0x60BE3AED
         util: 'FO4Edit v4.1.5k'
+  - name: 'PLIUSAFSSO(_Previs| - MDB Patch|_MU_Patch|_SS2CH3_Patch)\.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/59993/'
+        name: 'People Live In - USAF Satellite Station Olivia'
 
   - name: 'RedRocket_DC_F-ESL.esp'
     url:
