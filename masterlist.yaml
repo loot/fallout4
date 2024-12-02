@@ -5211,6 +5211,9 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/51987/'
         name: 'FROST - The Marshland DLC Patch'
+    clean:
+      - crc: 0xF45899BC
+        util: 'FO4Edit v4.1.5k'
 
   ##### FROST - 3rd Party Patches - Weapons #####
   - name: 'Frost Zap Gun Patch.esp'
