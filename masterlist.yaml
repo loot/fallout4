@@ -5194,6 +5194,12 @@ plugins:
   - name: 'FROST - Shatter Patch.esp'
     after: [ 'SimplifiedSorting_aFrostMod.esp' ]
 
+  # The Forest DLC - For Hunters and Hikers #
+  - name: 'FROST The Forest Patch.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/52003/'
+        name: 'FROST The Forest Patch'
+
   ##### FROST - 3rd Party Patches - Weapons #####
   - name: 'Frost Zap Gun Patch.esp'
     url:
