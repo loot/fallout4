@@ -5154,6 +5154,8 @@ plugins:
   - name: 'FROST - Shatter Patch.esp'
     after: [ 'SimplifiedSorting_aFrostMod.esp' ]
 
+  ##### FROST - 3rd Party Patches - Weapons #####
+
   ##### FROST - Deprecated & Outdated Files #####
   - name: 'FROSTfix.esp'
     url:
