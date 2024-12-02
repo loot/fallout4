@@ -5206,6 +5206,12 @@ plugins:
         util: '[FO4Edit v4.1.5k](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 2
 
+  # The Marshland DLC - For Swampmonsters and Toxic People #
+  - name: 'Frost_Marshlands_Patch.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/51987/'
+        name: 'FROST - The Marshland DLC Patch'
+
   ##### FROST - 3rd Party Patches - Weapons #####
   - name: 'Frost Zap Gun Patch.esp'
     url:
