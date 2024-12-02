@@ -5005,6 +5005,10 @@ plugins:
         util: 'FO4Edit v4.1.5k'
 
   ##### FROST - Items #####
+  - name: 'FROST - Mauser(_308CAL)?\.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/57961/'
+        name: 'FROST - Mauser Pistol'
 
   ##### FROST - Items - New Weapons #####
 
