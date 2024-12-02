@@ -5214,6 +5214,10 @@ plugins:
         condition: 'not file("M38 Gas Mask Replacer\.es[lp]")'
   - name: 'FROST - Shatter Patch.esp'
     after: [ 'SimplifiedSorting_aFrostMod.esp' ]
+  - name: 'PLI_USAF_Olivia FROSTified.esp'
+    after:
+      - 'PLIUSAFSSO - MDB Patch.esp'
+      - 'PLIUSAFSSO_MU_Patch.esp'
 
   # The Forest DLC - For Hunters and Hikers #
   - name: 'FROST The Forest Patch.esp'
