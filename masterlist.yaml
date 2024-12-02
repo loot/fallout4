@@ -5218,6 +5218,7 @@ plugins:
     after:
       - 'PLIUSAFSSO - MDB Patch.esp'
       - 'PLIUSAFSSO_MU_Patch.esp'
+    inc: [ 'PLIUSAFSSO_Previs.esp' ]
 
   # The Forest DLC - For Hunters and Hikers #
   - name: 'FROST The Forest Patch.esp'
