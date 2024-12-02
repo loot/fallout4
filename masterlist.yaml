@@ -4370,9 +4370,6 @@ plugins:
       - 'PRPFX-Merged.esp'
     msg:
       - <<: *patchProvided
-        subs: [ 'Enhanced Lights and FX' ]
-        condition: 'active("EnhancedLightsandFX.esp") and not active("PLI_USAFSSO - ELFX Patch.esp")'
-      - <<: *patchProvided
         subs: [ 'Mutilated Dead Bodies' ]
         condition: 'active("MutilatedDeadBodies.esp") and not active("PLIUSAFSSO - MDB Patch.esp")'
     clean:
