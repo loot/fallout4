@@ -2301,6 +2301,11 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/41449/'
         name: 'Winter Redone'
+  - name: 'Winter Redone - FROST.esp'
+    group: *coreLatePatchesGroup
+    after:
+      - 'FROST - It Snowed.esp'
+      - 'FROST - UFO4P Patch.esp'
 
 ###### AudioVisual - Models & Textures ######
   - name: 'AWHD(2|4)K(Full|Automatron|Energy|Explosives|FarHarbour|Heavy|Melee|NoDLC|NukaWorld|Pipe|Pistols|Rifles|Shotgun)\.esp'
