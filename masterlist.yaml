@@ -2332,6 +2332,10 @@ plugins:
         crc: 0xE968CEAE
         util: '[FO4Edit v4.1.5k](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 1
+  - name: 'Winter Redone - WCP.esp'
+    req:
+      - 'Winter Commonwealth Pines.esp'
+      - 'Winter Redone.esp'
 
 ###### AudioVisual - Models & Textures ######
   - name: 'AWHD(2|4)K(Full|Automatron|Energy|Explosives|FarHarbour|Heavy|Melee|NoDLC|NukaWorld|Pipe|Pistols|Rifles|Shotgun)\.esp'
