@@ -524,11 +524,11 @@ groups:
   - name: &texturesGroup Texture Overhauls
     after: [ *ccGroup ]
 
-  - name: &UnofficialPatchesGroup Unofficial Patches
+  - name: &unofficialPatchesGroup Unofficial Patches
     after: [ *texturesGroup ]
 
   - name: &fixesGroup Fixes
-    after: [ *UnofficialPatchesGroup ]
+    after: [ *unofficialPatchesGroup ]
 
   - name: &frameworksGroup Resources & Frameworks
     description: 'A group for mods that provide resources and/or a framework for other mods to use.'
@@ -1570,7 +1570,7 @@ plugins:
         name: 'Unofficial Fallout 4 Patch (AFK Mods)'
       - link: 'https://www.nexusmods.com/fallout4/mods/4598/'
         name: 'Unofficial Fallout 4 Patch (Nexus Mods)'
-    group: *UnofficialPatchesGroup
+    group: *unofficialPatchesGroup
     msg:
       - <<: *obsolete
         condition: 'readable("../Fallout4.exe") and version("../Fallout4.exe", "1.10.980.0", >=) and version("Unofficial Fallout 4 Patch.esp", "2.1.7", <)'
