@@ -524,8 +524,11 @@ groups:
   - name: &texturesGroup Texture Overhauls
     after: [ *ccGroup ]
 
-  - name: &fixesGroup Fixes
+  - name: &UnofficialPatchesGroup Unofficial Patches
     after: [ *texturesGroup ]
+
+  - name: &fixesGroup Fixes
+    after: [ *UnofficialPatchesGroup ]
 
   - name: &frameworksGroup Resources & Frameworks
     description: 'A group for mods that provide resources and/or a framework for other mods to use.'
