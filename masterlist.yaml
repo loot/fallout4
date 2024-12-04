@@ -1570,7 +1570,7 @@ plugins:
         name: 'Unofficial Fallout 4 Patch (AFK Mods)'
       - link: 'https://www.nexusmods.com/fallout4/mods/4598/'
         name: 'Unofficial Fallout 4 Patch (Nexus Mods)'
-    group: *fixesGroup
+    group: *UnofficialPatchesGroup
     msg:
       - <<: *obsolete
         condition: 'readable("../Fallout4.exe") and version("../Fallout4.exe", "1.10.980.0", >=) and version("Unofficial Fallout 4 Patch.esp", "2.1.7", <)'
