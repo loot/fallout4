@@ -1577,8 +1577,8 @@ plugins:
           - 'Fallout 4'
         condition: 'readable("../Fallout4.exe") and version("../Fallout4.exe", "1.10.980.0", <) and version("Unofficial Fallout 4 Patch.esp", "2.1.6", >=)'
     clean:
-      - crc: 0xEA3A509B
-        util: 'FO4Edit v4.1.5f'
+      - crc: 0xFA0D51A0
+        util: 'FO4Edit v4.1.5k'
 
 ###### Modding Tools - Generated Files ######
   - name: 'Bashed Patch.*\.esp'
