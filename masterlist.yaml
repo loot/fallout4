@@ -2301,11 +2301,37 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/41449/'
         name: 'Winter Redone'
+  - name: 'Winter Redone - Water Plants.esp'
+    clean:
+      - crc: 0xB36DF45A
+        util: 'FO4Edit v4.1.5k'
+  ### Winter Redone - Patches ####
+  - name: 'Winter Redone - ELFX.esp'
+    clean:
+      - crc: 0xE1871271
+        util: 'FO4Edit v4.1.5k'
   - name: 'Winter Redone - FROST.esp'
     group: *coreLatePatchesGroup
     after:
       - 'FROST - It Snowed.esp'
       - 'FROST - UFO4P Patch.esp'
+    clean:
+      - crc: 0xF13E75F8
+        util: 'FO4Edit v4.1.5k'
+  - name: 'Winter Redone - IE.esp'
+    clean:
+      - crc: 0x1187B638
+        util: 'FO4Edit v4.1.5k'
+  - name: 'Winter Redone - PRP.esp'
+    clean:
+      - crc: 0x02B22E28
+        util: 'FO4Edit v4.1.5k'
+  - name: 'Winter Redone - UIL.esp'
+    dirty:
+      - <<: *quickClean
+        crc: 0xE968CEAE
+        util: '[FO4Edit v4.1.5k](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 1
 
 ###### AudioVisual - Models & Textures ######
   - name: 'AWHD(2|4)K(Full|Automatron|Energy|Explosives|FarHarbour|Heavy|Melee|NoDLC|NukaWorld|Pipe|Pistols|Rifles|Shotgun)\.esp'
