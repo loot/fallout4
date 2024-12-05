@@ -1674,6 +1674,9 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/60074/'
         name: 'Random Encounter Framework'
+    clean:
+      - crc: 0x77EDB728
+        util: 'FO4Edit v4.1.5k'
 
   - name: 'WorkshopFramework(_ScriptOverride)?\.es[mp]'
     url:
