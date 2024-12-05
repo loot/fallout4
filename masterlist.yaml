@@ -1671,6 +1671,9 @@ plugins:
         util: 'FO4Edit v4.0.4c'
 
   - name: 'REFramework.esm'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/60074/'
+        name: 'Random Encounter Framework'
 
   - name: 'WorkshopFramework(_ScriptOverride)?\.es[mp]'
     url:
