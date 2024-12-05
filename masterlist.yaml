@@ -2286,6 +2286,7 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/62207/'
         name: 'Simple Puddle Reflection Flicker Fix (Water and Blood)'
+    group: *worldSettingsGroup
     clean:
       - crc: 0xEB022ECC
         util: 'FO4Edit v4.1.5k'
