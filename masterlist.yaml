@@ -2283,6 +2283,9 @@ plugins:
     msg: [ *disableAfterGeneratingLODwithxLODGen ]
 
   - name: 'PuddleReflectionFix.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/62207/'
+        name: 'Simple Puddle Reflection Flicker Fix (Water and Blood)'
 
   - name: 'Wetness Shader Fix.esp'
     url:
