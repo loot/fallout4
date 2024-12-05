@@ -1670,6 +1670,8 @@ plugins:
       - crc: 0x18C8411F
         util: 'FO4Edit v4.0.4c'
 
+  - name: 'REFramework.esm'
+
   - name: 'WorkshopFramework(_ScriptOverride)?\.es[mp]'
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/35004/'
