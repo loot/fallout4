@@ -2282,6 +2282,8 @@ plugins:
     group: *folipBeforeGenGroup
     msg: [ *disableAfterGeneratingLODwithxLODGen ]
 
+  - name: 'PuddleReflectionFix.esp'
+
   - name: 'Wetness Shader Fix.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/23389/'
