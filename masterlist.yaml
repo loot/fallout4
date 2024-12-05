@@ -1675,6 +1675,9 @@ plugins:
       - link: 'https://www.nexusmods.com/fallout4/mods/60074/'
         name: 'Random Encounter Framework'
     group: *frameworksGroup
+    msg:
+      - <<: *compatPatch
+        subs: [ '[Random Encounter Framework Patch Hub](https://www.nexusmods.com/fallout4/mods/67757/)' ]
     clean:
       - crc: 0x77EDB728
         util: 'FO4Edit v4.1.5k'
