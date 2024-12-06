@@ -2776,6 +2776,7 @@ plugins:
       - crc: 0x3D8D8377
         util: 'FO4Edit v4.1.5k'
   - name: 'TrueStormsFO4-NukaWorld.esp'
+    after: [ 'TrueStormsFO4-FarHarbor.esp' ]
     msg:
       - <<: *alreadyInX
         subs: [ 'TrueStormsFO4-NukaWorld-FH-Compat.esp' ]
@@ -2784,11 +2785,19 @@ plugins:
       - crc: 0xB787C674
         util: 'FO4Edit v4.1.5k'
   - name: 'TrueStormsFO4-NukaWorld-FH-Compat.esp'
-    after: [ 'TrueStormsFO4-NukaWorld.esp' ]
+    after:
+      - 
+      - 'TrueStormsFO4-NukaWorld.esp'
+      - 'TrueStormsFO4-NukaWorld-FH-Compat.esp'
     clean:
       - crc: 0xBF7144FB
         util: 'FO4Edit v4.1.5k'
   # Optional Add-ons #
+  - name: 'TrueStormsFO4-(EarlierSunsets(FH)?|FarHarborExtraRads|GlowingSeaExtraRads)\.esp'
+    after:
+      - 'TrueStormsFO4-FarHarbor.esp'
+      - 'TrueStormsFO4-NukaWorld.esp'
+      - 'TrueStormsFO4-NukaWorld-FH-Compat.esp'
   - name: 'TrueStormsFO4-EarlierSunsets.esp'
     dirty:
       - <<: *quickClean
@@ -2797,6 +2806,7 @@ plugins:
         itm: 2
   - name: 'TrueStormsFO4-EarlierSunsetsFH.esp'
     req: [ 'TrueStormsFO4.esm' ]
+    after: [ 'TrueStormsFO4-EarlierSunsets.esp' ]
     clean:
       - crc: 0x56D16171
         util: 'FO4Edit v4.1.5k'
