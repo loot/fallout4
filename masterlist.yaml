@@ -2786,9 +2786,8 @@ plugins:
         util: 'FO4Edit v4.1.5k'
   - name: 'TrueStormsFO4-NukaWorld-FH-Compat.esp'
     after:
-      - 
+      - 'TrueStormsFO4-FarHarbor.esp'
       - 'TrueStormsFO4-NukaWorld.esp'
-      - 'TrueStormsFO4-NukaWorld-FH-Compat.esp'
     clean:
       - crc: 0xBF7144FB
         util: 'FO4Edit v4.1.5k'
