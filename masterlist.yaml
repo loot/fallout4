@@ -2762,23 +2762,23 @@ plugins:
       - crc: 0xBA0A331E
         util: 'FO4Edit v4.0.2'
 
+  - name: 'TrueStormsFO4(-FarHarbor(ExtraRads)?|-NukaWorld(-FH-Compat)?|-EarlierSunsets(FH)?|-GlowingSeaExtraRads)?\.es[mp]'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/4472/'
+        name: 'True Storms - Wasteland Edition (Thunder-Rain-Weather Redone)'
   - name: 'TrueStormsFO4.esm'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/4472/' ]
     clean:
       - crc: 0x55ff3f4c
         util: FO4Edit v3.2.1
   - name: 'TrueStormsFO4-FarHarbor.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/4472/' ]
     clean:
       - crc: 0x3d8d8377
         util: FO4Edit v3.2.1
   - name: 'TrueStormsFO4-FarHarborExtraRads.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/4472/' ]
     clean:
       - crc: 0x3aab7174
         util: FO4Edit v3.2.1
   - name: 'TrueStormsFO4-GlowingSeaExtraRads.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/4472/' ]
     clean:
       - crc: 0x5a642319
         util: FO4Edit v3.2.1
