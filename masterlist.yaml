@@ -2776,6 +2776,10 @@ plugins:
       - crc: 0x3D8D8377
         util: 'FO4Edit v4.1.5k'
   - name: 'TrueStormsFO4-NukaWorld.esp'
+    msg:
+      - <<: *alreadyInX
+        subs: [ 'TrueStormsFO4-NukaWorld-FH-Compat.esp' ]
+        condition: 'active("DLCCoast.esm") and active("DLCNukaWorld.esm") and active("TrueStormsFO4-NukaWorld-FH-Compat.esp")'
     clean:
       - crc: 0xB787C674
         util: 'FO4Edit v4.1.5k'
