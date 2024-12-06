@@ -3442,6 +3442,10 @@ plugins:
         util: 'FO4Edit v4.0.4'
 
 ###### Gameplay - Economy & Item Balance ######
+  - name: 'LootedWorld(_DLCCoast|_DLCNukaWorld|_DLCRobot|_TrapRewards)?\.esl'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/62110/'
+        name: 'Looted World'
 
 ###### Gameplay - NPC Balance & Distribution ######
   - name: 'MortalSettlers.esp'
