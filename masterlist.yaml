@@ -2770,10 +2770,13 @@ plugins:
     clean:
       - crc: 0x55ff3f4c
         util: FO4Edit v3.2.1
+  # DLC Patches #
   - name: 'TrueStormsFO4-FarHarbor.esp'
     clean:
       - crc: 0x3d8d8377
         util: FO4Edit v3.2.1
+  # Earlier Sunset #
+  # Extra Rads #
   - name: 'TrueStormsFO4-FarHarborExtraRads.esp'
     clean:
       - crc: 0x3aab7174
