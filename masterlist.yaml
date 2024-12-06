@@ -3447,6 +3447,7 @@ plugins:
       - link: 'https://www.nexusmods.com/fallout4/mods/62110/'
         name: 'Looted World'
   - name: 'LootedWorld.esl'
+    after: [ 'Ownership Fixes.esp' ]
     dirty:
       - <<: *quickClean
         crc: 0x689C503D
