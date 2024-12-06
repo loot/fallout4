@@ -3446,6 +3446,26 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/62110/'
         name: 'Looted World'
+  - name: 'LootedWorld.esl'
+    dirty:
+      - <<: *quickClean
+        crc: 0x689C503D
+        util: '[FO4Edit v4.1.5k](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 15
+  - name: 'LootedWorld_DLCCoast.esl'
+    clean:
+      - crc: 0x018A3FD8
+        util: 'FO4Edit v4.1.5k'
+  - name: 'LootedWorld_DLCNukaWorld.esl'
+    clean:
+      - crc: 0x4F13DA63
+        util: 'FO4Edit v4.1.5k'
+  - name: 'LootedWorld_DLCRobot.esl'
+    clean:
+      - crc: 0xD6C9E898
+        util: 'FO4Edit v4.1.5k'
+  - name: 'LootedWorld_TrapRewards.esl'
+    # Do not clean - ITM reverts change made by UFO4P. Removes Reward.
 
 ###### Gameplay - NPC Balance & Distribution ######
   - name: 'MortalSettlers.esp'
