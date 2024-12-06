@@ -2796,10 +2796,12 @@ plugins:
         util: '[FO4Edit v4.1.5k](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 2
   - name: 'TrueStormsFO4-EarlierSunsetsFH.esp'
+    req: [ 'TrueStormsFO4.esm' ]
     clean:
       - crc: 0x56D16171
         util: 'FO4Edit v4.1.5k'
   - name: 'TrueStormsFO4-FarHarborExtraRads.esp'
+    req: [ 'TrueStormsFO4.esm' ]
     clean:
       - crc: 0x3AAB7174
         util: 'FO4Edit v4.1.5k'
