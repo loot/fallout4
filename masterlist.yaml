@@ -3448,6 +3448,11 @@ plugins:
         name: 'Looted World'
   - name: 'LootedWorld.esl'
     after: [ 'Ownership Fixes.esp' ]
+    tag:
+      - Actors.DeathItem
+      - Delev
+      - Invent.Remove
+      - Relev
     dirty:
       - <<: *quickClean
         crc: 0x689C503D
@@ -3457,6 +3462,7 @@ plugins:
     after: [ 'LootedWorld.esl' ]
   - name: 'LootedWorld_DLCCoast.esl'
     after: [ 'LootedWorld_DLCRobot.esl' ]
+    tag: [ Invent.Remove ]
     clean:
       - crc: 0x018A3FD8
         util: 'FO4Edit v4.1.5k'
@@ -3464,6 +3470,9 @@ plugins:
     after:
       - 'LootedWorld_DLCCoast.esl'
       - 'LootedWorld_DLCRobot.esl'
+    tag:
+      - Invent.Remove
+      - Relev
     clean:
       - crc: 0x4F13DA63
         util: 'FO4Edit v4.1.5k'
@@ -3473,6 +3482,7 @@ plugins:
         util: 'FO4Edit v4.1.5k'
   - name: 'LootedWorld_TrapRewards.esl'
     # Do not clean - ITM reverts change made by UFO4P. Removes Reward.
+    tag: [ Delev ]
 
 ###### Gameplay - NPC Balance & Distribution ######
   - name: 'MortalSettlers.esp'
