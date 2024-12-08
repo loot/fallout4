@@ -1774,10 +1774,23 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/74945/'
         name: 'Community Fixes Merged'
+    dirty:
+      - <<: *quickClean
+        crc: 0xCB6B7C8A
+        util: '[FO4Edit v4.1.5k](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 7
   - name: '(community fixes merged - weapon mod fixes|loot logic and reduction - cfm) patch\.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/74945/'
         name: 'Community Fixes Merged'
+  - name: 'community fixes merged - weapon mod fixes patch.esp'
+    clean:
+      - crc: 0xC4018ACC
+        util: 'FO4Edit v4.1.5k'
+  - name: 'loot logic and reduction - cfm patch.esp'
+    clean:
+      - crc: 0x675E4189
+        util: 'FO4Edit v4.1.5k'
 
   - name: 'CompanionBugfixExperimental.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/2679/' ]
