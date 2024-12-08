@@ -1771,6 +1771,13 @@ plugins:
     msg: [ *alreadyInUFO4P ]
 
   - name: 'community fixes merged.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/74945/'
+        name: 'Community Fixes Merged'
+  - name: '(community fixes merged - weapon mod fixes|loot logic and reduction - cfm) patch\.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/74945/'
+        name: 'Community Fixes Merged'
 
   - name: 'CompanionBugfixExperimental.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/2679/' ]
