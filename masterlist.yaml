@@ -1774,6 +1774,7 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/74945/'
         name: 'Community Fixes Merged'
+    group: *fixesGroup
     tag:
       - Actors.ACBS
       - Actors.AIData
