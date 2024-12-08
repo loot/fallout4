@@ -1770,6 +1770,8 @@ plugins:
     group: *fixesGroup
     msg: [ *alreadyInUFO4P ]
 
+  - name: 'community fixes merged.esp'
+
   - name: 'CompanionBugfixExperimental.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/2679/' ]
     group: *fixesGroup
