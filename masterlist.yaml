@@ -1774,6 +1774,21 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/74945/'
         name: 'Community Fixes Merged'
+    tag:
+      - Actors.ACBS
+      - Actors.AIData
+      - Actors.DeathItem
+      - Actors.Factions
+      - Actors.Spells
+      - Actors.Voice
+      - Delev
+      - Destructible
+      - Invent.Add
+      - Invent.Remove
+      - Keywords
+      - Names
+      - NPC.Perks.Add
+      - NPC.Race
     dirty:
       - <<: *quickClean
         crc: 0xCB6B7C8A
@@ -1784,10 +1799,15 @@ plugins:
       - link: 'https://www.nexusmods.com/fallout4/mods/74945/'
         name: 'Community Fixes Merged'
   - name: 'community fixes merged - weapon mod fixes patch.esp'
+    tag:
+      - Names
     clean:
       - crc: 0xC4018ACC
         util: 'FO4Edit v4.1.5k'
   - name: 'loot logic and reduction - cfm patch.esp'
+    tag:
+      - Delev
+      - Relev
     clean:
       - crc: 0x675E4189
         util: 'FO4Edit v4.1.5k'
