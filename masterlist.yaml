@@ -1783,12 +1783,16 @@ plugins:
       - Actors.Voice
       - Delev
       - Destructible
+      # - Graphics
       - Invent.Add
       - Invent.Remove
       - Keywords
       - Names
       - NPC.Perks.Add
       - NPC.Race
+      # - Sound
+      # - Stats
+      # - Text
     dirty:
       - <<: *quickClean
         crc: 0xCB6B7C8A
@@ -1801,6 +1805,7 @@ plugins:
   - name: 'community fixes merged - weapon mod fixes patch.esp'
     tag:
       - Names
+      # - Text
     clean:
       - crc: 0xC4018ACC
         util: 'FO4Edit v4.1.5k'
