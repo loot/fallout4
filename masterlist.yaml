@@ -2188,6 +2188,8 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/46403/'
         name: 'Previsibines Repair Pack Stable Branch - PRP'
+  - name: 'PRF.esm'
+    group: *frameworksGroup
   - name: 'PRP.esp'
     group: *preVisCombinedGroup
     inc: [ 'FROST.esp' ]
