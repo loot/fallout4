@@ -5019,6 +5019,8 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/64990/'
         name: 'ELFX - PreVis PreCombine Patch'
+  - name: 'ELFX-PreVis.esp'
+    after: [ 'prp.esp' ]
 
 ###### FROST Survival Simulator ######
   - name: 'FROST.esp'
