@@ -2190,12 +2190,30 @@ plugins:
         name: 'Previsibines Repair Pack Stable Branch - PRP'
   - name: 'PRF.esm'
     group: *frameworksGroup
+    clean:
+      # OG
+      - crc: 0x33482837
+        util: 'FO4Edit v4.1.5k'
+      # NG
+      - crc: 0x271F8050
+        util: 'FO4Edit v4.1.5k'
   - name: 'PRP.esp'
     group: *preVisCombinedGroup
     inc: [ 'FROST.esp' ]
     msg:
       - *alreadyInOrFixedByFCF
       - *useInsteadFCF
+    clean:
+      # OG
+      - crc: 0xFE43355E
+        util: 'FO4Edit v4.1.5k'
+      # NG
+      - crc: 0x0F289B46
+        util: 'FO4Edit v4.1.5k'
+  - name: 'prp-compat-pointlookout.esp'
+    clean:
+      - crc: 0xECD2C98E
+        util: 'FO4Edit v4.1.5k'
 
 ###### AudioVisual ######
   - name: 'ConcealedArmor\.es[mp]'
