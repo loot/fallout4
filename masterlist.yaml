@@ -2005,6 +2005,9 @@ plugins:
     group: *fixesGroup
 
   - name: 'Ownership Fixes.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/56885/'
+        name: 'Ownership Fixes'
 
   - name: 'Perk Magazine Material Fix.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/6906/' ]
