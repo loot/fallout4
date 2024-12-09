@@ -2218,6 +2218,9 @@ plugins:
     msg:
       - *alreadyInOrFixedByFCF
       - *useInsteadFCF
+      - <<: *useInstead
+        subs: [ '[Previsibines Repair Pack Lite - PRPFX](https://www.nexusmods.com/fallout4/mods/64405/)' ]
+        condition: 'active("Z_Horizon.esp")'
     clean:
       # OG
       - crc: 0xFE43355E
