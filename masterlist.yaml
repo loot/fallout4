@@ -5015,6 +5015,10 @@ plugins:
     group: *conflictResPatchGroup
 
 ###### 3rd Party Patches - Previs ######
+  - name: 'ELFX-(PreVis|eXoPatch|DCGuard_Overhaul|Firelance2\.5|Hunkered Down|IntWayneGorski|OAR|Phase4DLC|TrainBar)\.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/64990/'
+        name: 'ELFX - PreVis PreCombine Patch'
 
 ###### FROST Survival Simulator ######
   - name: 'FROST.esp'
