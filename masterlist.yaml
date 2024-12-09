@@ -2211,6 +2211,9 @@ plugins:
       - crc: 0x0F289B46
         util: 'FO4Edit v4.1.5k'
   - name: 'prp-compat-pointlookout.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/46403/'
+        name: 'Previsibines Repair Pack Stable Branch - PRP'
     clean:
       - crc: 0xECD2C98E
         util: 'FO4Edit v4.1.5k'
