@@ -2199,7 +2199,22 @@ plugins:
         util: 'FO4Edit v4.1.5k'
   - name: 'PRP.esp'
     group: *preVisCombinedGroup
-    inc: [ 'FROST.esp' ]
+    inc:
+      - 'BostonFPSFixAIO.esp'
+      - 'BostonFPSFixAIO_VD.esp'
+      - 'BostonFPSFixAutomatron.esp'
+      - 'BostonFPSFixFarHarbor.esp'
+      - 'BostonFPSFixVD.esp'
+      - 'BostonFPSFix-NukaWorld.esp'
+      - 'BostonFPSFix-Vanilla.esp'
+      - 'FROST.esp'
+      - 'PaladinBaileyRedRocket.esp'
+      - 'PRPFX-BostonAirport.esp'
+      - 'PRPFX-BostonCommon.esp'
+      - 'PRPFX-Corvega.esp'
+      - 'PRPFX-Financial.esp'
+      - 'PRPFX-Merged.esp'
+      - 'Z_Horizon.esp'
     msg:
       - *alreadyInOrFixedByFCF
       - *useInsteadFCF
