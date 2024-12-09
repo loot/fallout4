@@ -2008,6 +2008,7 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/56885/'
         name: 'Ownership Fixes'
+    group: *fixesGroup
     dirty:
       - <<: *quickClean
         crc: 0xBBDB7452
