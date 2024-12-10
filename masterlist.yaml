@@ -4318,6 +4318,11 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/43979/'
         name: 'Fourville'
+    dirty:
+      - <<: *quickClean
+        crc: 0xF943D9D4
+        util: '[FO4Edit v4.1.5k](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 9
 
 ###### Locations - Overhauls ######
   - name: 'AbernathyFarm_DC_F-ESL.esp'
