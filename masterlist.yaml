@@ -4304,7 +4304,7 @@ plugins:
         itm: 1
         udr: 1
 
-###### Locations - New Dungeons ######
+###### Locations - New ######
   - name: 'DWUK_LexingtonInteriors.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/19120/'
