@@ -5031,6 +5031,10 @@ plugins:
         util: '[FO4Edit v4.1.5k](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 53
   # ELFX - PreVis PreCombine Patch - Optional #
+  - name: 'ELFX-(DCGuard_Overhaul|Phase4DLC|TrainBar)\.esp'
+    after: [ 'ELFX-PreVis.esp' ]
+  - name: 'ELFX-(DCGuard_Overhaul|Firelance2\.5|Hunkered Down|IntWayneGorski|OAR|Phase4DLC|TrainBar)\.esp'
+    after: [ 'ELFX-eXoPatch.esp' ]
   - name: 'ELFX-DCGuard_Overhaul.esp'
     clean:
       - crc: 0x7276956B
