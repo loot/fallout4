@@ -4314,6 +4314,11 @@ plugins:
         subs: [ 'In **DWUK_LexingtonInteriors.esp**, remove **000E081D** and **0006496C** & change the X position of **xx00266B** (**xx** is the plugin''s load order index) to **-36328.71875**.' ]
         condition: 'checksum("DWUK_LexingtonInteriors.esp", EFA1570A)'
 
+  - name: 'Vault4.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/43979/'
+        name: 'Fourville'
+
 ###### Locations - Overhauls ######
   - name: 'AbernathyFarm_DC_F-ESL.esp'
     url:
