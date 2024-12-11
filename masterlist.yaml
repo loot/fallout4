@@ -4979,8 +4979,21 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/66724/'
         name: 'Diamond City Expansion - eXoPatch'
+  - name: 'DiamondCityExpansion-eXoPatch.esp'
+    dirty:
+      - <<: *quickClean
+        crc: 0x3F041E21
+        util: '[FO4Edit v4.1.5k](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 33
   - name: 'DiamondCity-PreVis.esp'
     after: [ 'PRP.esp' ]
+    clean:
+      - crc: 0xD96D34F6
+        util: 'FO4Edit v4.1.5k'
+  - name: 'DiamondCity-PreVis-Ambience.esp'
+    clean:
+      - crc: 0x6F73BED5
+        util: 'FO4Edit v4.1.5k'
 
   - name: 'ELFX-(PreVis|eXoPatch|DCGuard_Overhaul|Firelance2\.5|Hunkered Down|IntWayneGorski|OAR|Phase4DLC|TrainBar)\.esp'
     url:
