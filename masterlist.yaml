@@ -4993,6 +4993,11 @@ plugins:
       - crc: 0xD96D34F6
         util: 'FO4Edit v4.1.5k'
   - name: 'DiamondCity-PreVis-Ambience.esp'
+    inc: [ 'StoryWealthLocation-DiamondCity.esp' ]
+    msg:
+      - <<: *alreadyInX
+        subs: [ '[A StoryWealth Location - Diamond City](https://www.nexusmods.com/fallout4/mods/64140/)' ]
+        condition: 'active("StoryWealthLocation-DiamondCity.esp")'
     clean:
       - crc: 0x6F73BED5
         util: 'FO4Edit v4.1.5k'
