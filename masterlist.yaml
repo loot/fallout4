@@ -5030,7 +5030,13 @@ plugins:
       - link: 'https://www.nexusmods.com/fallout4/mods/64990/'
         name: 'ELFX - PreVis PreCombine Patch'
   - name: 'ELFX-PreVis.esp'
-    after: [ 'prp.esp' ]
+    after:
+      - 'Depravity.esp'
+      - 'FastTravelFromQuestHubs.esp'
+      - 'prp.esp'
+      - 'Vault4.esp'
+      - 'Vault4-eXoPatch.esp'
+      - 'Vault4-PreVis.esp'
     clean:
       - crc: 0xB17A1478
         util: 'FO4Edit v4.1.5k'
