@@ -5084,10 +5084,14 @@ plugins:
       - link: 'https://www.nexusmods.com/fallout4/mods/61080/'
         name: 'Fourville - eXoPatch'
   - name: 'Vault4-eXoPatch.esp'
+    after:
+      - 'Depravity.esp'
+      - 'FastTravelFromQuestHubs.esp'
     clean:
       - crc: 0xD61F84C1
         util: 'FO4Edit v4.1.5k'
   - name: 'Vault4-PreVis.esp'
+    after: [ 'Vault4-FastTravel.esp' ]
     clean:
       - crc: 0x9FA52AC4
         util: 'FO4Edit v4.1.5k'
@@ -5105,6 +5109,7 @@ plugins:
       - crc: 0x2EF262D4
         util: 'FO4Edit v4.1.5k'
   - name: 'Vault4-ELFX-PreVis.esp'
+    after: [ 'Vault4-PreVis.esp' ]
     clean:
       - crc: 0xD7DB3B41
         util: 'FO4Edit v4.1.5k'
