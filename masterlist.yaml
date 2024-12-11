@@ -4986,7 +4986,9 @@ plugins:
         util: '[FO4Edit v4.1.5k](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 33
   - name: 'DiamondCity-PreVis.esp'
-    after: [ 'PRP.esp' ]
+    after:
+      - 'PRP.esp'
+      - 'Stm_DiamondCityExpansion_x_LowerVolume.esp'
     clean:
       - crc: 0xD96D34F6
         util: 'FO4Edit v4.1.5k'
