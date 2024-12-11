@@ -4975,10 +4975,11 @@ plugins:
         util: 'FO4Edit v4.0.4'
 
 ###### 3rd Party Patches ######
-  - name: 'DiamondCity-PreVis.esp'
+  - name: 'DiamondCity(Expansion-eXoPatch|-PreVis(-Ambience)?)\.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/66724/'
         name: 'Diamond City Expansion - eXoPatch'
+  - name: 'DiamondCity-PreVis.esp'
     after: [ 'PRP.esp' ]
 
   - name: 'ELFX-(PreVis|eXoPatch|DCGuard_Overhaul|Firelance2\.5|Hunkered Down|IntWayneGorski|OAR|Phase4DLC|TrainBar)\.esp'
