@@ -5111,9 +5111,6 @@ plugins:
       - link: 'https://www.nexusmods.com/fallout4/mods/61080/'
         name: 'Fourville - eXoPatch'
   - name: 'Vault4-eXoPatch.esp'
-    after:
-      - 'Depravity.esp'
-      - 'FastTravelFromQuestHubs.esp'
     clean:
       - crc: 0xD61F84C1
         util: 'FO4Edit v4.1.5k'
