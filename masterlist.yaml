@@ -5116,6 +5116,7 @@ plugins:
         util: 'FO4Edit v4.1.5k'
   - name: 'Vault4-PreVis.esp'
     after: [ 'Vault4-FastTravel.esp' ]
+    inc: [ 'StoryWealthLocation-DiamondCity.esp' ]
     clean:
       - crc: 0x9FA52AC4
         util: 'FO4Edit v4.1.5k'
@@ -5134,6 +5135,7 @@ plugins:
         util: 'FO4Edit v4.1.5k'
   - name: 'Vault4-ELFX-PreVis.esp'
     after: [ 'Vault4-PreVis.esp' ]
+    inc: [ 'StoryWealthLocation-DiamondCity.esp' ]
     clean:
       - crc: 0xD7DB3B41
         util: 'FO4Edit v4.1.5k'
