@@ -3920,6 +3920,9 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/47908/'
         name: 'Synthetic Player'
+    clean:
+      - crc: 0xFE923A5E
+        util: 'FO4Edit v4.1.5k'
 
   - name: 'Spare Railroad as Institute.esp'
     url:
