@@ -3947,13 +3947,12 @@ plugins:
         util: '[FO4Edit v4.0.4c](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 2
 
-  - name: '.*StartMeUp.*\.esp'
+  - name: 'StartMeUp.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/18946/'
         name: 'Start Me Up'
       - link: 'https://www.nexusmods.com/fallout4/mods/56984/'
         name: 'Start Me Up Redux'
-  - name: 'StartMeUp.esp'
     inc:
       - 'DualSurvivors.esp'
       - 'Interview.esp'
@@ -3982,7 +3981,18 @@ plugins:
       # Normal-XDI
       - crc: 0xC1DA3B8B
         util: 'FO4Edit v4.0.4c'
+  ### Start Me Up Both Versions - Patches ###
   - name: 'StartMeUpNukaWorldPatch.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/18946/'
+        name: 'Start Me Up'
+      - link: 'https://www.nexusmods.com/fallout4/mods/56984/'
+        name: 'Start Me Up Redux'
+  ### Start Me Up Original - Patches ###
+  - name: 'StartMeUp(FarHarborPatch| VIS)\.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/18946/'
+        name: 'Start Me Up'
     clean:
       # FDI
       - crc: 0x6A96C646
@@ -3990,6 +4000,11 @@ plugins:
       # Normal-XDI
       - crc: 0x6E0B1BE9
         util: 'FO4Edit v4.0.4c'
+  ### Start Me Up Redux - Patches ###
+  - name: 'StartMeUp( Killable Synth Shaun|ShaunDefaultAppearance)\.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/56984/'
+        name: 'Start Me Up Redux'
   - name: 'StartMeUpShaunDefaultAppearance.esp'
     msg: [ *optional ]
 
