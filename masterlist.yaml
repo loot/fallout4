@@ -3975,12 +3975,21 @@ plugins:
         subs: [ 'Horizon' ]
         condition: 'active("Z_Horizon.esp") and not active("StartMeUpRedux_Horizon.esp")'
     clean:
+      # Basic
+      - crc: 0x2A8C9385
+        util: 'FO4Edit v4.1.5k'
       # FDI
-      - crc: 0x29DC9048
-        util: 'FO4Edit v4.0.4c'
+      - crc: 0x0E2861FA
+        util: 'FO4Edit v4.1.5k'
       # Normal-XDI
-      - crc: 0xC1DA3B8B
-        util: 'FO4Edit v4.0.4c'
+      - crc: 0x0EB1FB7E
+        util: 'FO4Edit v4.1.5k'
+      # Redux FDI
+      - crc: 0x71A97283
+        util: 'FO4Edit v4.1.5k'
+      # Redux Normal-XDI
+      - crc: 0x6652871D
+        util: 'FO4Edit v4.1.5k'
   ### Start Me Up Both Versions - Patches ###
   - name: 'StartMeUpNukaWorldPatch.esp'
     url:
@@ -3988,25 +3997,58 @@ plugins:
         name: 'Start Me Up'
       - link: 'https://www.nexusmods.com/fallout4/mods/56984/'
         name: 'Start Me Up Redux'
+    dirty:
+      # FDI
+      - <<: *quickClean
+        crc: 0xCAC97332
+        util: '[FO4Edit v4.1.5k](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 2
+      # Normal-XDI
+      - <<: *quickClean
+        crc: 0x1F650480
+        util: '[FO4Edit v4.1.5k](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 2
+      # Redux FDI
+      - <<: *quickClean
+        crc: 0x90CA0F0C
+        util: '[FO4Edit v4.1.5k](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 2
+      # Redux Normal-XDI
+      - <<: *quickClean
+        crc: 0xD797797D
+        util: '[FO4Edit v4.1.5k](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 2
   ### Start Me Up Original - Patches ###
   - name: 'StartMeUp(FarHarborPatch| VIS)\.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/18946/'
         name: 'Start Me Up'
+  - name: 'StartMeUpFarHarborPatch.esp'
     clean:
       # FDI
-      - crc: 0x6A96C646
-        util: 'FO4Edit v4.0.4c'
+      - crc: 0xACC01679
+        util: 'FO4Edit v4.1.5k'
       # Normal-XDI
-      - crc: 0x6E0B1BE9
-        util: 'FO4Edit v4.0.4c'
+      - crc: 0x59EC18DE
+        util: 'FO4Edit v4.1.5k'
+  - name: 'StartMeUp VIS.esp'
+    clean:
+      - crc: 0xC3637BA8
+        util: 'FO4Edit v4.1.5k'
   ### Start Me Up Redux - Patches ###
   - name: 'StartMeUp( Killable Synth Shaun|ShaunDefaultAppearance)\.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/56984/'
         name: 'Start Me Up Redux'
+  - name: 'StartMeUp Killable Synth Shaun.esp'
+    clean:
+      - crc: 0xF88A1E51
+        util: 'FO4Edit v4.1.5k'
   - name: 'StartMeUpShaunDefaultAppearance.esp'
     msg: [ *optional ]
+    clean:
+      - crc: 0xAD49CDCC
+        util: 'FO4Edit v4.1.5k'
 
   - name: 'WhoIsTheGeneral.esp'
     url:
