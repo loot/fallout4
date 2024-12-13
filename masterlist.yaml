@@ -3917,6 +3917,9 @@ plugins:
         util: 'FO4Edit v4.0.4'
 
   - name: 'SKKSyntheticPlayer.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/47908/'
+        name: 'Synthetic Player'
 
   - name: 'Spare Railroad as Institute.esp'
     url:
