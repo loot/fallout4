@@ -3971,6 +3971,12 @@ plugins:
       - <<: *patchIncluded
         subs: [ 'DLC Nuka-World' ]
         condition: 'version("StartMeUp.esp", "6.7", >=) and active("DLCNukaWorld.esm") and not active("StartMeUpNukaWorldPatch.esp")'
+      - <<: *patchProvided
+        subs: [ 'DLC Far Harbor' ]
+        condition: 'version("StartMeUp.esp", "6.7", <) and active("DLCCoast.esm") and not active("StartMeUpFarHarborPatch.esp")'
+      - <<: *patchProvided
+        subs: [ 'DLC Nuka-World' ]
+        condition: 'version("StartMeUp.esp", "6.7", <) and active("DLCNukaWorld.esm") and not active("StartMeUpNukaWorldPatch.esp")'
     clean:
       # Basic
       - crc: 0x2A8C9385
