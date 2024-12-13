@@ -3958,7 +3958,8 @@ plugins:
       - 'Interview.esp'
       - 'Killable Children.esp'
       - 'NoraSpouse.esm'
-      - 'WastelandOperator.esp'
+      - name: 'WastelandOperator.esp'
+        condition: 'version("StartMeUp.esp", "6.7", >=)'
     msg:
       - <<: *obsolete
         subs: [ '[Start Me Up Redux](https://www.nexusmods.com/fallout4/mods/56984/)' ]
