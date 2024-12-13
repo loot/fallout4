@@ -3916,6 +3916,8 @@ plugins:
       - crc: 0x7C5856B7
         util: 'FO4Edit v4.0.4'
 
+  - name: 'SKKSyntheticPlayer.esp'
+
   - name: 'Spare Railroad as Institute.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/19835/'
