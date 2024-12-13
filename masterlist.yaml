@@ -3970,7 +3970,7 @@ plugins:
         condition: 'version("StartMeUp.esp", "6.7", <)'
       - <<: *patchIncluded
         subs: [ 'DLC Nuka-World' ]
-        condition: 'active("DLCNukaWorld.esm") and not active("StartMeUpNukaWorldPatch.esp")'
+        condition: 'version("StartMeUp.esp", "6.7", >=) and active("DLCNukaWorld.esm") and not active("StartMeUpNukaWorldPatch.esp")'
     clean:
       # Basic
       - crc: 0x2A8C9385
