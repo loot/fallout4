@@ -4038,6 +4038,7 @@ plugins:
       - link: 'https://www.nexusmods.com/fallout4/mods/56984/'
         name: 'Start Me Up Redux'
   - name: 'StartMeUp Killable Synth Shaun.esp'
+    after: [ 'StartMeUpShaunDefaultAppearance.esp' ]
     clean:
       - crc: 0xF88A1E51
         util: 'FO4Edit v4.1.5k'
