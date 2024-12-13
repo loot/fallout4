@@ -4017,6 +4017,10 @@ plugins:
       - link: 'https://www.nexusmods.com/fallout4/mods/18946/'
         name: 'Start Me Up'
   - name: 'StartMeUpFarHarborPatch.esp'
+    msg:
+      - <<: *alreadyInX
+        subs: [ 'Start Me Up Redux' ]
+        condition: 'version("StartMeUp.esp", "5.0", >=)'
     clean:
       # FDI
       - crc: 0xACC01679
