@@ -3971,9 +3971,6 @@ plugins:
       - <<: *patchIncluded
         subs: [ 'DLC Nuka-World' ]
         condition: 'active("DLCNukaWorld.esm") and not active("StartMeUpNukaWorldPatch.esp")'
-      - <<: *patchProvided
-        subs: [ 'Horizon' ]
-        condition: 'active("Z_Horizon.esp") and not active("StartMeUpRedux_Horizon.esp")'
     clean:
       # Basic
       - crc: 0x2A8C9385
