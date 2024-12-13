@@ -4046,6 +4046,12 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/56984/'
         name: 'Start Me Up Redux'
+  - name: 'PlayerCommentsStartMeUpPiperFix.esp'
+    dirty:
+      - <<: *quickClean
+        crc: 0x3A27B98D
+        util: '[FO4Edit v4.1.5k](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 11
   - name: 'StartMeUp Killable Synth Shaun.esp'
     after: [ 'StartMeUpShaunDefaultAppearance.esp' ]
     clean:
