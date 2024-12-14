@@ -3819,9 +3819,63 @@ plugins:
         name: 'Player Comments and Head Tracking'
     dirty:
       - <<: *quickClean
-        crc: 0xCA93C583
-        util: '[FO4Edit v4.0.4c](https://www.nexusmods.com/fallout4/mods/2737)'
-        itm: 4
+        crc: 0x5EF4CD2F
+        util: '[FO4Edit v4.1.5k](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 1
+  - name: 'PlayerComments_3DNPC_FO4_Patch.esp'
+    clean:
+      - crc: 0xA8B8B71D
+        util: 'FO4Edit v4.1.5k'
+  - name: 'PlayerComments_BeastMaster_Patch.esp'
+    dirty:
+      - <<: *quickClean
+        crc: 0x149EBD3F
+        util: '[FO4Edit v4.1.5k](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 1
+  - name: 'PlayerComments_CZRPatch.esp'
+    clean:
+      - crc: 0xDF9C984B
+        util: 'FO4Edit v4.1.5k'
+  - name: 'PlayerComments_IceBreakerCDO-Piper_Patch.esp'
+    clean:
+      - crc: 0x896A559A
+        util: 'FO4Edit v4.1.5k'
+  - name: 'PlayerComments_IcebreakerCDO-Settlements_MainVersion_Patch.esp'
+    clean:
+      - crc: 0xE81E194B
+        util: 'FO4Edit v4.1.5k'
+  - name: 'PlayerComments_ImmersiveGenericDialogues_Patch.esp'
+    clean:
+      - crc: 0x17B41E38
+        util: 'FO4Edit v4.1.5k'
+  - name: 'PlayerComments_NoraSpouse_Patch.esp'
+    dirty:
+      - <<: *quickClean
+        crc: 0x3E1816FC
+        util: '[FO4Edit v4.1.5k](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 3
+  - name: 'PlayerComments_PiperCaitCurieDialogueOverhaul_Patch.esp'
+    dirty:
+      - <<: *quickClean
+        crc: 0x6E7C44AD
+        util: '[FO4Edit v4.1.5k](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 19
+  - name: 'PlayerComments_SKKSyntheticPlayer_Patch.esp'
+    clean:
+      - crc: 0x69B80667
+        util: 'FO4Edit v4.1.5k'
+  - name: 'PlayerCommentsStartMeUpPatch.esp'
+    dirty:
+      - <<: *quickClean
+        crc: 0xB5471406
+        util: '[FO4Edit v4.1.5k](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 3
+  - name: 'PlayerComments_UFO4P_Patch.esp'
+    dirty:
+      - <<: *quickClean
+        crc: 0xBD0F3225
+        util: '[FO4Edit v4.1.5k](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 6
 
   - name: 'VisibleCompanionAffinity.esp'
     url:
