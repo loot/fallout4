@@ -3822,6 +3822,10 @@ plugins:
         crc: 0x5EF4CD2F
         util: '[FO4Edit v4.1.5k](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 1
+  - name: 'PlayerComments(_)?(BeastMaster|CZR|IceBreakerCDO-(Piper|Settlements_MainVersion)|ImmersiveGenericDialogues|NoraSpouse|PiperCaitCurieDialogueOverhaul|SKKSyntheticPlayer|StartMeUp|UFO4P)(_)?Patch\.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/22166/'
+        name: 'Player Comments and Head Tracking'
   - name: 'PlayerComments_3DNPC_FO4_Patch.esp'
     clean:
       - crc: 0xA8B8B71D
