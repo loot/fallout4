@@ -4504,6 +4504,12 @@ plugins:
         name: 'Combat Zone Restored'
       - link: 'https://www.nexusmods.com/fallout4/mods/59329/'
         name: 'Combat Zone Restored - Restored'
+    after:
+      - 'Clarity.esp'
+      - 'EnhancedLightsandFX.esp'
+      - 'InteriorsEnhanced-All-In-One.esp'
+      - 'prp.esp'
+      - 'UltraInteriorLighting.esp'
     dirty:
       - <<: *reqManualFix
         crc: 0x74BE02DE
