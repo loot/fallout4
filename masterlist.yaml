@@ -4502,6 +4502,8 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/21498/'
         name: 'Combat Zone Restored'
+      - link: 'https://www.nexusmods.com/fallout4/mods/59329/'
+        name: 'Combat Zone Restored - Restored'
     dirty:
       - <<: *reqManualFix
         crc: 0x74BE02DE
