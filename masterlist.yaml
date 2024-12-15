@@ -4509,6 +4509,10 @@ plugins:
         crc: 0x74BE02DE
         util: '[FO4Edit v4.1.5k](https://www.nexusmods.com/fallout4/mods/2737)'
         nav: 1
+      - <<: *quickClean
+        crc: 0x54E0CB42
+        util: '[FO4Edit v4.1.5k](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 2
 
   - name: 'CountyCrossing_DCnR_F-ESL.esp'
     url:
