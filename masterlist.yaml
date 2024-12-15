@@ -4510,6 +4510,14 @@ plugins:
       - 'InteriorsEnhanced-All-In-One.esp'
       - 'prp.esp'
       - 'UltraInteriorLighting.esp'
+    msg:
+      - <<: *patchUpdateAvailable
+        subs: [ '[Combat Zone Restored - Restored](https://www.nexusmods.com/fallout4/mods/59329/)' ]
+        condition: 'checksum("CombatZoneRestored.esp", 74BE02DE)'
+      - <<: *requiresResources
+        type: error
+        subs: [ '[Combat Zone Restored](https://www.nexusmods.com/fallout4/mods/21498/)' ]
+        condition: 'not file("CombatZoneRestored - Main.BA2") and not file("CombatZoneRestored - Textures.BA2")'
     dirty:
       - <<: *reqManualFix
         crc: 0x74BE02DE
