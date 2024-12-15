@@ -4499,7 +4499,9 @@ plugins:
       - 'PRP.esp'
 
   - name: 'CombatZoneRestored.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/21498/' ]
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/21498/'
+        name: 'Combat Zone Restored'
     dirty:
       # 1.02
       - <<: *reqManualFix
