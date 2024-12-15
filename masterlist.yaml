@@ -4503,10 +4503,9 @@ plugins:
       - link: 'https://www.nexusmods.com/fallout4/mods/21498/'
         name: 'Combat Zone Restored'
     dirty:
-      # 1.02
       - <<: *reqManualFix
         crc: 0x74BE02DE
-        util: '[FO4Edit v4.0.2f](https://www.nexusmods.com/fallout4/mods/2737)'
+        util: '[FO4Edit v4.1.5k](https://www.nexusmods.com/fallout4/mods/2737)'
         nav: 1
 
   - name: 'CountyCrossing_DCnR_F-ESL.esp'
