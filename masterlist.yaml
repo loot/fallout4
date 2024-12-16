@@ -540,8 +540,11 @@ groups:
   - name: &veryEarlyLoadersGroup Very Early Loaders
     after: [ *frameworksGroup ]
 
-  - name: &earlyLoadersGroup Early Loaders
+  - name: &dialogueOverhaulsGroup Dialogue Overhauls
     after: [ *veryEarlyLoadersGroup ]
+
+  - name: &earlyLoadersGroup Early Loaders
+    after: [ *dialogueOverhaulsGroup ]
 
   - name: default
     after:
