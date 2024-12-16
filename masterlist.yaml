@@ -537,8 +537,11 @@ groups:
   - name: &underridesGroup Underrides
     after: [ *frameworksGroup ]
 
-  - name: &earlyLoadersGroup Early Loaders
+  - name: &veryEarlyLoadersGroup Very Early Loaders
     after: [ *frameworksGroup ]
+
+  - name: &earlyLoadersGroup Early Loaders
+    after: [ *veryEarlyLoadersGroup ]
 
   - name: default
     after:
