@@ -537,8 +537,13 @@ groups:
   - name: &underridesGroup Underrides
     after: [ *frameworksGroup ]
 
+  - name: &earlyLoadersGroup Early Loaders
+    after: [ *frameworksGroup ]
+
   - name: default
-    after: [ *underridesGroup ]
+    after:
+      - *earlyLoadersGroup
+      - *underridesGroup
 
   - name: &lowPriorityGroup Low Priority Overrides
     description: 'A group for modules that must load after most other mods.'
