@@ -2221,6 +2221,11 @@ plugins:
       - <<: *useInstead
         subs: [ '[Previsibines Repair Pack Lite - PRPFX](https://www.nexusmods.com/fallout4/mods/64405/)' ]
         condition: 'active("Z_Horizon.esp")'
+      - <<: *patch3rdParty
+        subs:
+          - 'Sim Settlements 2'
+          - '[Sim Settlements 2 - Previsibines Expansion Pack](https://www.nexusmods.com/fallout4/mods/57947/)'
+        condition: 'active("SS2.esm") and not active("PRP-SS2-CR.esm")'
     clean:
       # OG
       - crc: 0xFE43355E
@@ -5195,19 +5200,13 @@ plugins:
       - crc: 0xCC23660F
         util: 'FO4Edit v4.0.4b'
 
-  - name: 'PRP-SS2(-Fixes)?\.esp'
+  - name: 'PRP-SS2-CR.esm'
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/57947/'
-        name: 'Previsibines Repair Pack (PRP) - Sim Settlements 2 Upgrade Kit'
-    after: [ 'PRP.esp' ]
-  - name: 'PRP-SS2.esp'
+        name: 'Sim Settlements 2 - Previsibines Expansion Pack'
     clean:
-      - crc: 0xA10039EC
-        util: 'FO4Edit v4.0.4b'
-  - name: 'PRP-SS2-Fixes.esp'
-    clean:
-      - crc: 0x8419BC27
-        util: 'FO4Edit v4.0.4b'
+      - crc: 0xB8F49BAC
+        util: 'FO4Edit v4.1.5f'
 
   - name: 'PRP-(SE-)?Vault120\.esp'
     url:
