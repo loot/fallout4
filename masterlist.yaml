@@ -4355,6 +4355,12 @@ plugins:
         util: 'FO4Edit v4.0.3h (Hotfix 1)'
 
 ###### Items ######
+  - name: 'Eli_Armour_Compendium.esp'
+    url: [ 'https://www.nexusmods.com/fallout4/mods/22431/' ]
+    clean:
+      - crc: 0xF47F8248
+        util: 'FO4Edit v4.1.5f'
+
   - name: 'WestTekTacticalOptics(-AWKCR)?\.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/12220/'
@@ -8344,26 +8350,6 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout4/mods/23391/' ]
     clean:
       - crc: 0x5FD8E15C
-        util: 'FO4Edit v4.0.2f'
-  - name: 'Eli_Armour_Compendium.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/22431/' ]
-    dirty:
-      - <<: *quickClean
-        crc: 0xDD0BDC85
-        util: '[FO4Edit v4.0.2f](https://www.nexusmods.com/fallout4/mods/2737)'
-        itm: 2
-    clean:
-      - crc: 0x8715CF62
-        util: 'FO4Edit v4.0.2f'
-  - name: 'Eli Armor Compendium AE Patch.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/22431/' ]
-    dirty:
-      - <<: *quickClean
-        crc: 0xE40FB60A
-        util: '[FO4Edit v4.0.2f](https://www.nexusmods.com/fallout4/mods/2737)'
-        itm: 1
-    clean:
-      - crc: 0x9E3E233E
         util: 'FO4Edit v4.0.2f'
 
   - name: 'AGNISNikaCola01-XDI patch.esp'
