@@ -3862,6 +3862,12 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/30509/'
         name: 'Minutemen Takeover - Nuka World'
+      - link: 'https://www.nexusmods.com/fallout4/mods/58248/'
+        name: 'Minutemen Take Over Nuka World Bugfix'
+    msg:
+      - <<: *useInstead
+        subs: [ '[Minutemen Take Over Nuka World Bugfix](https://www.nexusmods.com/fallout4/mods/58248)' ]
+        condition: 'checksum("BetterOpenSeason.esp", 5D36CF8E) or checksum("BetterOpenSeason.esp", 8A9010FA)'
     dirty:
       - <<: *quickClean
         crc: 0x5D36CF8E
@@ -3870,6 +3876,9 @@ plugins:
     clean:
         # Original
       - crc: 0x8A9010FA
+        util: 'FO4Edit v4.1.5f'
+        # Bugfix
+      - crc: 0x019DBD45
         util: 'FO4Edit v4.1.5f'
 
   - name: 'CWPointLookoutFO4(Patch)?\.es[lm]'
