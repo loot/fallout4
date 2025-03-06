@@ -2184,11 +2184,11 @@ plugins:
       - crc: 0x0E248104
         util: 'FO4Edit v4.0.3h (Hotfix 1)'
 
-  - name: '(PPF|PRP)(-Compat-PointLookout)?\.es[mp]'
+  - name: '(ppf|prp)(-compat-pointlookout)?\.es[mp]'
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/46403/'
         name: 'Previsibines Repair Pack Stable Branch - PRP'
-  - name: 'PPF.esm'
+  - name: 'ppf.esm'
     group: *frameworksGroup
     clean:
       # OG
@@ -2197,7 +2197,7 @@ plugins:
       # NG
       - crc: 0x16C77309
         util: 'FO4Edit v4.1.5f'
-  - name: 'PRP.esp'
+  - name: 'prp.esp'
     group: *preVisCombinedGroup
     inc:
       - 'BostonFPSFixAIO.esp'
@@ -2223,7 +2223,7 @@ plugins:
         condition: 'active("Z_Horizon.esp")'
       - <<: *patchProvided
         subs: [ 'Fallout 4 - Point Lookout' ]
-        condition: 'active("CWPointLookoutFO4.esm") and not active("PRP-Compat-PointLookout.esp")'
+        condition: 'active("CWPointLookoutFO4.esm") and not active("prp-compat-pointlookout.esp")'
       - <<: *patch3rdParty
         subs:
           - 'Sim Settlements 2'
@@ -2236,7 +2236,7 @@ plugins:
       # NG
       - crc: 0x0F289B46
         util: 'FO4Edit v4.1.5f'
-  - name: 'PRP-Compat-PointLookout.esp'
+  - name: 'prp-compat-pointlookout.esp'
     clean:
       - crc: 0x5D58B4BE
         util: 'FO4Edit v4.1.5f'
