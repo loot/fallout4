@@ -309,7 +309,7 @@ common:
   - &alreadyInOrFixedByPRPv0_59
     <<: *alreadyInOrFixedByX
     subs: [ 'Previsibines Repair Pack v0.59+' ]
-    condition: 'active("PPF.esm") and version("PPF.esm", "0.59", >=)'
+    condition: 'active("ppf.esm") and version("ppf.esm", "0.59", >=)'
 
   # &disableAfterGeneratingXwithY
   - &disableAfterGeneratingLODwithxLODGen
@@ -1983,7 +1983,7 @@ plugins:
     msg:
       - <<: *alreadyInOrFixedByX
         subs: [ 'Previsibines Repair Pack' ]
-        condition: 'active("PPF.esm")'
+        condition: 'active("ppf.esm")'
 
   - name: 'MTM-(SlocumJoeCorporateHQReceptionCeiling|FensParkviewApartmentWall)Fixed\.es[lp]'
     url:
@@ -1996,7 +1996,7 @@ plugins:
     msg:
       - <<: *alreadyInOrFixedByX
         subs: [ 'Previsibines Repair Pack' ]
-        condition: 'active("PPF.esm")'
+        condition: 'active("ppf.esm")'
 
   - name: 'MTM-VaultAnnounceWarning.esp'
     url:
@@ -2103,7 +2103,7 @@ plugins:
     group: *preVisCombinedGroup
     inc:
       - 'FROST.esp'
-      - 'PRP.esp'
+      - 'prp.esp'
     msg:
       - *alreadyInOrFixedByFCF
       - *useInsteadFCF
@@ -2274,8 +2274,8 @@ plugins:
         util: 'FO4Edit v4.0.4b'
   - name: 'VotWStarlightDriveIn.esp'
     after:
-      - name: 'PRP.esp'
-        condition: 'version("PRP.esp", "0.57", >=)'
+      - name: 'prp.esp'
+        condition: 'version(prp.esp", "0.57", >=)'
     dirty:
       - <<: *quickClean
         crc: 0x31FB0B86
@@ -2329,7 +2329,7 @@ plugins:
       - *alreadyInOrFixedByFCF
       - <<: *alreadyInOrFixedByX
         subs: [ 'Previsibines Repair Pack v0.57+' ]
-        condition: 'active("PPF.esm")'
+        condition: 'active("ppf.esm")'
 
   - name: 'FO4LODGen(-|-DLC)?(Coast-WindTurbines|Coast|FullModelLOD|HighTrees|NukaWorld|Workshop03)?\.esp'
     url:
@@ -4427,7 +4427,7 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/65539/'
         name: 'Abernathy Farm Deep Clean'
-    after: [ 'PRP.esp' ]
+    after: [ 'prp.esp' ]
 
   - name: 'atlanticofficesf23.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/25401/' ]
@@ -4447,7 +4447,7 @@ plugins:
       - 'Clarity.esp'
       - 'EnhancedLightsandFX.esp'
       - 'InteriorsEnhanced-All-In-One.esp'
-      - 'PRP.esp'
+      - 'prp.esp'
       - 'UltraInteriorLighting.esp'
     msg:
       - <<: *patchProvided
@@ -4455,7 +4455,7 @@ plugins:
         condition: 'active("DLCRobot.esm") and not active("BostonLibrarySettlementRobots.esp")'
       - <<: *patchProvided
         subs: [ 'Previsibines Repair Pack' ]
-        condition: 'active("PRP.esp") and not active("BostonLibrarySettlementPRP.esp")'
+        condition: 'active("prp.esp") and not active("BostonLibrarySettlementPRP.esp")'
       - <<: *patchProvided
         subs: [ 'Sim Settlements 2 - Chapter 2' ]
         condition: 'active("SS2_XPAC_Chapter2.esm") and not active("BostonLibrarySettlementSS2.esp")'
@@ -4493,7 +4493,7 @@ plugins:
         name: 'Bunker Hill Deep Clean and Remodel'
     after:
       - 'BostonFPSFixAIO.esp'
-      - 'PRP.esp'
+      - 'prp.esp'
 
   - name: 'Coastal ?Cottage[_ ]DCnR(_F-ESL)?\.esp'
     url:
@@ -4501,7 +4501,7 @@ plugins:
         name: 'Coastal Cottage Deep Clean and Remodel'
     after:
       - 'BostonFPSFixAutomatron.esp'
-      - 'PRP.esp'
+      - 'prp.esp'
 
   - name: 'CombatZoneRestored.esp'
     url:
@@ -4539,7 +4539,7 @@ plugins:
         name: 'County Crossing Deep Clean and Remodel'
     after:
       - 'BostonFPSFixAIO.esp'
-      - 'PRP.esp'
+      - 'prp.esp'
 
   - name: 'Cov-TBH-DCnR(_F-ESL)?\.esp'
     url:
@@ -4547,25 +4547,25 @@ plugins:
         name: 'Covenant and Taffington BH Deep Clean and Remodel'
     after:
       - 'BostonFPSFixAIO.esp'
-      - 'PRP.esp'
+      - 'prp.esp'
 
   - name: 'Croup ?Manor(_DCnR_F-ESL| Deep Clean and Remodel)\.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/64614/'
         name: 'Croup Manor Deep Clean and Remodel'
-    after: [ 'PRP.esp' ]
+    after: [ 'prp.esp' ]
 
   - name: 'DaltonFarm_DCnR_F-ESL.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/65680/'
         name: 'Dalton Farm Deep Clean'
-    after: [ 'PRP.esp' ]
+    after: [ 'prp.esp' ]
 
   - name: 'EchoLakeLumber_DCnR_F-ESL.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/65719/'
         name: 'Echo Lake Lumber Deep Clean and Remodel'
-    after: [ 'PRP.esp' ]
+    after: [ 'prp.esp' ]
 
   - name: 'EgretTours_DCnR_F-ESL.esp'
     url:
@@ -4573,7 +4573,7 @@ plugins:
         name: 'Egret Tours Marina Deep Clean and Remodel'
     after:
       - 'BostonFPSFixAIO.esp'
-      - 'PRP.esp'
+      - 'prp.esp'
 
   - name: 'Fallon''s Basement Overhaul.esp'
     url:
@@ -4600,7 +4600,7 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/57729/'
         name: 'Welcome to Fallon''s - Revisited'
-    after: [ 'PRP.esp' ]
+    after: [ 'prp.esp' ]
     clean:
       - crc: 0xDC6139D4
         util: 'FO4Edit v4.0.4b'
@@ -4609,19 +4609,19 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/64869/'
         name: 'Finch Farm Deep Clean'
-    after: [ 'PRP.esp' ]
+    after: [ 'prp.esp' ]
 
   - name: 'Graygarden(_DCnR_F-ESL| Deep Clean and Remodel)\.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/64677/'
         name: 'Graygarden Deep Clean and Remodel'
-    after: [ 'PRP.esp' ]
+    after: [ 'prp.esp' ]
 
   - name: 'Greentop(Nursery_DCnr_F-ESL| Deep Clean and Remodel)\.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/64605/'
         name: 'Greentop Nursery Deep Clean and Remodel'
-    after: [ 'PRP.esp' ]
+    after: [ 'prp.esp' ]
 
   - name: 'Hangmans ?Alley(_DC_F-ESL| Deep Clean)\.esp'
     url:
@@ -4629,7 +4629,7 @@ plugins:
         name: 'Hangman''s Alley Deep Clean and Removable Shack'
     after:
       - 'BostonFPSFixAIO.esp'
-      - 'PRP.esp'
+      - 'prp.esp'
 
   - name: 'JamaicaPlains_DCnR_F-ESL.esp'
     url:
@@ -4637,13 +4637,13 @@ plugins:
         name: 'Jamaica Plains Deep Clean and Remodel'
     after:
       - 'BostonFPSFixAIO.esp'
-      - 'PRP.esp'
+      - 'prp.esp'
 
   - name: 'KingsportLighthouse_DCnR_F-ESL.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/64896/'
         name: 'Kingsport Lighthouse Deep Clean and Remodel'
-    after: [ 'PRP.esp' ]
+    after: [ 'prp.esp' ]
 
   - name: 'LongfellowsCabin_DCnR_F-ESL.esp'
     url:
@@ -4651,19 +4651,19 @@ plugins:
         name: 'Longfellow''s Cabin Deep Clean and Remodel'
     after:
       - 'BostonFPSFixAIO.esp'
-      - 'PRP.esp'
+      - 'prp.esp'
 
   - name: 'MechanistLair_DC_F-ESL.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/66010/'
         name: 'Mechanist Lair Deep Clean'
-    after: [ 'PRP.esp' ]
+    after: [ 'prp.esp' ]
 
   - name: 'MurkwaterConstruction_DCnR_F-ESL.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/65295/'
         name: 'Murkwater Construction Deep Clean and Rebuild'
-    after: [ 'PRP.esp' ]
+    after: [ 'prp.esp' ]
 
   - name: 'NationalParkVC_DCnR_F-ESL.esp'
     url:
@@ -4671,7 +4671,7 @@ plugins:
         name: 'National Park Visitor Center Deep Clean and Remodel'
     after:
       - 'BostonFPSFixAIO.esp'
-      - 'PRP.esp'
+      - 'prp.esp'
 
   - name: 'NordhagenBeach_DC_F-ESL.esp'
     url:
@@ -4679,7 +4679,7 @@ plugins:
         name: 'Nordhagen Beach Deep Clean'
     after:
       - 'BostonFPSFixAIO.esp'
-      - 'PRP.esp'
+      - 'prp.esp'
 
   - name: 'NukaWorldRedRocket_DC_F-ESL.esp'
     url:
@@ -4687,7 +4687,7 @@ plugins:
         name: 'Nuka World Red Rocket Deep Clean'
     after:
       - 'BostonFPSFixAIO.esp'
-      - 'PRP.esp'
+      - 'prp.esp'
 
   - name: 'OberlandStation_DCnR_F-ESL.esp'
     url:
@@ -4696,7 +4696,7 @@ plugins:
     after:
       - 'BostonFPSFixAutomatron.esp'
       - 'BostonFPSFix-Vanilla.esp'
-      - 'PRP.esp'
+      - 'prp.esp'
     clean:
       - crc: 0x0A0B8EA2
         util: 'FO4Edit v4.0.4c'
@@ -4742,7 +4742,7 @@ plugins:
       - 'FROST.esp'
       - 'Raider Children.esp'
       - 'ProjectValkyrie.esp'
-      - 'PRP.esp'
+      - 'prp.esp'
       - 'PRPFX-Merged.esp'
       - 'UltraInteriorLighting.esp'
       - 'Winter Redone.esp'
@@ -4787,7 +4787,7 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/65543/'
         name: 'Red Rocket Deep Clean'
-    after: [ 'PRP.esp' ]
+    after: [ 'prp.esp' ]
 
   - name: 'sakhalinwasteland.esp'
     url:
@@ -4807,13 +4807,13 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/65561/'
         name: 'Sanctuary Deep Clean and Remodel'
-    after: [ 'PRP.esp' ]
+    after: [ 'prp.esp' ]
 
   - name: 'SomervillePlace_DCnR_F-ESL.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/65226/'
         name: 'Somerville Place Deep Clean and Remodel'
-    after: [ 'PRP.esp' ]
+    after: [ 'prp.esp' ]
 
   - name: 'SpectacleIsland_DCnR_F-ESL.esp'
     url:
@@ -4821,7 +4821,7 @@ plugins:
         name: 'Spectacle Island Deep Clean and Remodel'
     after:
       - 'BostonFPSFixAIO.esp'
-      - 'PRP.esp'
+      - 'prp.esp'
 
   - name: 'Starlight(Drivein_DCnR_F-ESL| Deep Clean)\.esp'
     url:
@@ -4829,25 +4829,25 @@ plugins:
         name: 'Starlight Deep Clean'
     after:
       - 'BostonFPSFixAIO.esp'
-      - 'PRP.esp'
+      - 'prp.esp'
 
   - name: 'Sunshide ?Tidings[_ ]DCnR(_F-ESL)?\.esp' # sic
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/64837/'
         name: 'Sunshine Tidings Deep Clean and Remodel'
-    after: [ 'PRP.esp' ]
+    after: [ 'prp.esp' ]
 
   - name: 'TaffingtonBH[_ ]DCnR[_ ]No ?Cov(_F-ESL)?\.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/64546/'
         name: 'Taffington Boathouse Deep Clean and Remodel'
-    after: [ 'PRP.esp' ]
+    after: [ 'prp.esp' ]
 
   - name: 'Tenpines(OutpostZimonja_DCnR_F-ESL| Bluff Deep Clean)\.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/64700/'
         name: 'Tenpines and Outpost Zimonja Deep Clean and Rebuild'
-    after: [ 'PRP.esp' ]
+    after: [ 'prp.esp' ]
 
   - name: 'TheCastle_DC_F-ESL.esp'
     url:
@@ -4855,19 +4855,19 @@ plugins:
         name: 'The Castle Deep Clean'
     after:
       - 'BostonFPSFixAIO.esp'
-      - 'PRP.esp'
+      - 'prp.esp'
 
   - name: 'TheSlog(_DC_F-ESL| Deep Clean)\.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/64630/'
         name: 'The Slog Deep Clean and Remodel'
-    after: [ 'PRP.esp' ]
+    after: [ 'prp.esp' ]
 
   - name: 'Vault88_DC_F-ESL.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/65943/'
         name: 'Vault 88 Deep Clean and Remodel'
-    after: [ 'PRP.esp' ]
+    after: [ 'prp.esp' ]
 
   - name: 'Vault 88 - Redefined Layout V1.3.1.esp'
     url:
@@ -4891,7 +4891,7 @@ plugins:
         name: 'Warwick Homestead Deep Clean'
     after:
       - 'BostonFPSFixAIO.esp'
-      - 'PRP.esp'
+      - 'prp.esp'
 
   - name: 'WCLI_NatickSubstation.esp'
     url:
@@ -4942,7 +4942,7 @@ plugins:
         name: 'Aloot''s Home Plate'
     after:
       - 'EnhancedLightsandFX.esp'
-      - 'PRP.esp'
+      - 'prp.esp'
       - 'PRP-Compat-Clarity-42.esp'
       - 'PRP-Compat-Clarity-43.esp'
       - 'PRP-Compat-IntEnh.esp'
@@ -5115,7 +5115,7 @@ plugins:
         itm: 33
   - name: 'DiamondCity-PreVis.esp'
     after:
-      - 'PRP.esp'
+      - 'prp.esp'
       - 'Stm_DiamondCityExpansion_x_LowerVolume.esp'
     clean:
       - crc: 0xD96D34F6
@@ -5212,7 +5212,7 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/58584/'
         name: 'PRP - More than 20 Previsibines Under the Sea'
-    after: [ 'PRP.esp' ]
+    after: [ 'prp.esp' ]
     msg:
       - <<: *useOnlyOneX
         subs: [ 'PRP - More than 20 Previsibines Under the Sea ESP' ]
