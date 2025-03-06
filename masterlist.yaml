@@ -2275,7 +2275,7 @@ plugins:
   - name: 'VotWStarlightDriveIn.esp'
     after:
       - name: 'prp.esp'
-        condition: 'version(prp.esp", "0.57", >=)'
+        condition: 'version("prp.esp", "0.57", >=)'
     dirty:
       - <<: *quickClean
         crc: 0x31FB0B86
