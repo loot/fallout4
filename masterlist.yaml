@@ -3864,7 +3864,8 @@ plugins:
       - name: 'XDI.esm'
         display: '[Extended Dialogue Interface](https://www.nexusmods.com/fallout4/mods/27216/)'
     msg:
-      - <<: *obsolete
+      - <<: *patchUpdateAvailable
+        subs: [ '[Fallout 4 Point Lookout - Patch - 1.14](https://www.nexusmods.com/fallout4/mods/60330/)' ]
         condition: 'not active("CWPointLookoutFO4Patch.esl")'
       - <<: *alsoUseX
         subs: [ '[Point Lookout - Essential Fixes and Additions](https://www.nexusmods.com/fallout4/mods/86304/)' ]
