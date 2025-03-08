@@ -3865,6 +3865,7 @@ plugins:
         display: '[Extended Dialogue Interface](https://www.nexusmods.com/fallout4/mods/27216/)'
     msg:
       - <<: *patchUpdateAvailable
+        type: warn
         subs: [ '[Fallout 4 Point Lookout - Patch - 1.14](https://www.nexusmods.com/fallout4/mods/60330/)' ]
         condition: 'not active("CWPointLookoutFO4Patch.esl")'
       - <<: *alsoUseX
