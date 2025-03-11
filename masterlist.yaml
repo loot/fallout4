@@ -268,7 +268,7 @@ common:
   - &alreadyInUFO4P
     <<: *alreadyInX
     subs: [ 'Unofficial Fallout 4 Patch' ]
-    condition: 'active("Unofficial Fallout 4 Patch.esp")'
+    condition: 'active("unofficial fallout 4 patch.esp")'
   - &alreadyInValsPicks
     <<: *alreadyInX
     subs: [ 'Val''s Picks' ]
@@ -328,7 +328,7 @@ common:
   - &useInsteadFCF
     <<: *useInstead
     subs: [ '[FROST Cell Fixes](https://www.nexusmods.com/fallout4/mods/59652/)' ]
-    condition: 'active("Unofficial Fallout 4 Patch.esp") and active("RedsFrostFixes.esp") and active("aFrostMod.esp") and not active("FCF_Main.esp")'
+    condition: 'active("unofficial fallout 4 patch.esp") and active("RedsFrostFixes.esp") and active("aFrostMod.esp") and not active("FCF_Main.esp")'
 
   # &useVersion
   - &useVersionAutomatron
@@ -1568,7 +1568,7 @@ plugins:
     group: *fixesGroup
     msg: [ *alreadyInUFO4P ]
 
-  - name: 'Unofficial Fallout 4 Patch.esp'
+  - name: 'unofficial fallout 4 patch.esp'
     url:
       - link: 'https://www.afkmods.com/index.php?/files/file/1765-unofficial-fallout-4-patch/'
         name: 'Unofficial Fallout 4 Patch (AFK Mods)'
@@ -1577,16 +1577,16 @@ plugins:
     group: *unofficialPatchesGroup
     msg:
       - <<: *obsolete
-        condition: 'readable("../Fallout4.exe") and version("../Fallout4.exe", "1.10.980.0", >=) and version("Unofficial Fallout 4 Patch.esp", "2.1.7", <)'
+        condition: 'readable("../Fallout4.exe") and version("../Fallout4.exe", "1.10.980.0", >=) and version("unofficial fallout 4 patch.esp", "2.1.7", <)'
       - <<: *versionXIncY
         type: warn
         subs:
           - 'Unofficial Fallout 4 Patch'
           - 'Fallout 4'
-        condition: 'readable("../Fallout4.exe") and version("../Fallout4.exe", "1.10.980.0", <) and version("Unofficial Fallout 4 Patch.esp", "2.1.6", >=)'
+        condition: 'readable("../Fallout4.exe") and version("../Fallout4.exe", "1.10.980.0", <) and version("unofficial fallout 4 patch.esp", "2.1.6", >=)'
     clean:
       - crc: 0xFA0D51A0
-        util: 'FO4Edit v4.1.5k'
+        util: 'FO4Edit v4.1.5f'
 
 ###### Modding Tools - Generated Files ######
   - name: 'Bashed Patch.*\.esp'
@@ -1694,7 +1694,7 @@ plugins:
         name: 'Workshop Framework (Bethesda.net Mods)'
   - name: 'WorkshopFramework.esm'
     group: *frameworksGroup
-    after: [ 'Unofficial Fallout 4 Patch.esp' ]
+    after: [ 'unofficial fallout 4 patch.esp' ]
     inc:
       - name: 'Moddable Plasma Caster.esp'
         detail: 'See Sim Settlements 2''s [compatibility notes](https://wiki.simsettlements2.com/getting-started/known-issues#the-p-113-a-highly-moddable-heavy-plasma-caster) on Workshop Framework'
@@ -1735,7 +1735,7 @@ plugins:
     group: *fixesGroup
     msg:
       - <<: *alreadyInUFO4P
-        condition: 'active("Unofficial Fallout 4 Patch.esp") and version("Unofficial Fallout 4 Patch.esp", "2.0.5", >=)'
+        condition: 'active("unofficial fallout 4 patch.esp") and version("unofficial fallout 4 patch.esp", "2.0.5", >=)'
     clean:
       - crc: 0x193547FD
         util: 'FO4Edit v3.2.65'
@@ -1745,7 +1745,7 @@ plugins:
     group: *fixesGroup
     msg:
       - <<: *alreadyInUFO4P
-        condition: 'active("Unofficial Fallout 4 Patch.esp") and version("Unofficial Fallout 4 Patch.esp", "2.0.2", >=)'
+        condition: 'active("unofficial fallout 4 patch.esp") and version("unofficial fallout 4 patch.esp", "2.0.2", >=)'
 
   - name: 'CarPhysicsDeathBugfix.esp'
     url:
@@ -2023,7 +2023,7 @@ plugins:
     group: *fixesGroup
     msg:
       - <<: *alreadyInUFO4P
-        condition: 'active("Unofficial Fallout 4 Patch.esp") and version("Unofficial Fallout 4 Patch.esp", "1.0.5", >=)'
+        condition: 'active("unofficial fallout 4 patch.esp") and version("unofficial fallout 4 patch.esp", "1.0.5", >=)'
 
   - name: 'Pipe_Revolver_Tuned_Receiver.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/8570/' ]
@@ -5374,7 +5374,7 @@ plugins:
     msg:
       - <<: *alsoUseX
         subs: [ '[FROST Cell Fixes](https://www.nexusmods.com/fallout4/mods/59652/)' ]
-        condition: 'active("Unofficial Fallout 4 Patch.esp") and active("RedsFrostFixes.esp") and active("aFrostMod.esp") and not active("FCF_Main.esp")'
+        condition: 'active("unofficial fallout 4 patch.esp") and active("RedsFrostFixes.esp") and active("aFrostMod.esp") and not active("FCF_Main.esp")'
       - <<: *alsoUseX
         subs: [ '[Frost Official Updates (Redux)](https://www.nexusmods.com/fallout4/mods/65485/)' ]
         condition: 'active("DLCCoast.esm") and active("DLCNukaWorld.esm") and active("DLCRobot.esm") and not active("RedsFrostFixes.esp")'
