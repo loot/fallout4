@@ -6318,6 +6318,21 @@ plugins:
       - crc: 0x2E9877AB
         util: 'FO4Edit v4.1.5f'
 
+  - name: 'SS2Extended.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/73394/'
+        name: 'Sim Settlements 2 - Chapter 3 (Nexus Mods)'
+      - link: 'https://mods.bethesda.net/en/fallout4/mod-detail/4259846/'
+        name: 'Sim Settlements 2 - Extended (Bethesda.net Mods)'
+    dirty:
+      - <<: *quickClean
+        crc: 0xA083CF25
+        util: '[FO4Edit v4.1.5f](https://www.nexusmods.com/fallout4/mods/2737/)'
+        itm: 14
+    clean:
+      - crc: 0xC044B460
+        util: 'FO4Edit v4.1.5f'
+
   - name: 'ohSIM_Sim2_Settlements_Scrappers_Addon.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/48846/'
