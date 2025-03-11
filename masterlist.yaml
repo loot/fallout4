@@ -6270,14 +6270,22 @@ plugins:
     msg:
       - <<: *patch3rdParty
         subs:
-          - '[Extended Dialogue Interface](https://www.nexusmods.com/fallout4/mods/27216)'
-          - '[SS2 - XDI Compatibility Patch](https://www.nexusmods.com/fallout4/mods/48254)'
+          - '[Extended Dialogue Interface](https://www.nexusmods.com/fallout4/mods/27216/)'
+          - '[SS2 - XDI Compatibility Patch](https://www.nexusmods.com/fallout4/mods/48254/)'
         condition: 'active("XDI.esm") and not active("SS2_XDI Patch.esp") and not active("SS2_XDI Patch-Basic.esp") and not active("SS2_XDI Patch-Basic_esl.esp")'
       - <<: *patch3rdParty
         subs:
           - '[Horizon](https://www.nexusmods.com/fallout4/mods/17374/)'
           - '[Sim Settlements 2 - Horizon Patch](https://www.nexusmods.com/fallout4/mods/54186/)'
         condition: 'active("Z_Horizon.esp") and not active("SS_Addon_Horizon.esp")'
+    dirty:
+      - <<: *quickClean
+        crc: 0xEFA5DEE6
+        util: '[FO4Edit v4.1.5f](https://www.nexusmods.com/fallout4/mods/2737/)'
+        itm: 2
+    clean:
+      - crc: 0x62056C3C
+        util: 'FO4Edit v4.1.5f'
 
   - name: 'ohSIM_Sim2_Settlements_Scrappers_Addon.esp'
     url:
