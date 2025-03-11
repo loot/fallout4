@@ -6673,34 +6673,30 @@ plugins:
 
   - name: 'Homemaker - Bunker Disabler SK.esp'
     msg: [ *obsolete ]
-  - name: 'Homemaker - Bunker Disabler.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/1478/' ]
   - name: 'Homemaker - Greenhouse and Bunker Disabler SK.esp'
     msg: [ *obsolete ]
-  - name: 'Homemaker - Greenhouse and Bunker Disabler.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/1478/' ]
   - name: 'Homemaker - Greenhouse Disabler SK.esp'
     msg: [ *obsolete ]
-  - name: 'Homemaker - Greenhouse Disabler.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/1478/' ]
   - name: 'Homemaker - SK Integration Patch.esp'
     msg: [ *obsolete ]
   - name: 'Homemaker - SKE Integration Patch.esp'
     msg: [ *obsolete ]
   - name: 'Homemaker - SSEx Compatibility Patch.esp'
     msg: [ *obsolete ]
-  - name: 'Homemaker - Streetlights Use Passive Power.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/1478/' ]
   - name: 'Homemaker - Unlocked Institute Objects SK.esp'
     msg: [ *obsolete ]
-  - name: 'Homemaker - Unlocked Institute Objects.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/1478/' ]
 
+  - name: 'Homemaker( - (Bunker Disabler|Greenhouse Disabler|Greenhouse and Bunker Disabler|Streetlights Use Passive Power|Unlocked Institute Objects)|MenuFixer)?\.es[mp]'
+    url: 
+      - link: 'https://www.nexusmods.com/fallout4/mods/1478/'
+        name: 'Homemaker - Expanded Settlements'
   - name: 'Homemaker.esm'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/1478/' ]
     msg:
       - <<: *obsolete
         condition: 'version("Homemaker.esm", "1.50", <)'
+    clean:
+      - crc: 0x23927824
+        util: 'FO4Edit v4.1.5f'
 
   - name: 'SettlementKeywords.esm'
     url: [ 'https://www.nexusmods.com/fallout4/mods/12226/' ]
