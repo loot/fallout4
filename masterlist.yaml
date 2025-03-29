@@ -1592,7 +1592,7 @@ plugins:
           - 'Fallout 4'
         condition: 'readable("../Fallout4.exe") and version("../Fallout4.exe", "1.10.980.0", <) and version("unofficial fallout 4 patch.esp", "2.1.6", >=)'
     clean:
-      - crc: 0xFA0D51A0
+      - crc: 0x348712D0
         util: 'FO4Edit v4.1.5f'
 
 ###### Modding Tools - Generated Files ######
