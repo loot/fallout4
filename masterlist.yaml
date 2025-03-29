@@ -318,6 +318,13 @@ common:
       - 'LOD'
       - 'xLODGen'
 
+  # &patch3rdParty
+  - &patch3rdParty_REFPH
+    <<: *patch3rdParty
+    subs:
+      - 'Random Encounter Framework'
+      - '[Random Encounter Framework Patch Hub](https://www.nexusmods.com/fallout4/mods/67757/)'
+
   # &requiresMCM_X
   - &requiresMCM
     <<: *requiresMCM_X
