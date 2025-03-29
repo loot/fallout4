@@ -1806,32 +1806,9 @@ plugins:
       # - Sound
       # - Stats
       # - Text
-    dirty:
-      - <<: *quickClean
-        crc: 0x9DD10683
-        util: '[FO4Edit v4.1.5f](https://www.nexusmods.com/fallout4/mods/2737)'
-        itm: 7
     clean:
-      - crc: 0x9A5A921E
+      - crc: 0xB838A1FD
         util: 'FO4Edit v4.1.5f'
-  - name: '(community fixes merged - weapon mod fixes|loot logic and reduction - cfm) patch\.esp'
-    url:
-      - link: 'https://www.nexusmods.com/fallout4/mods/74945/'
-        name: 'Community Fixes Merged'
-  - name: 'community fixes merged - weapon mod fixes patch.esp'
-    tag:
-      - Names
-      # - Text
-    clean:
-      - crc: 0xC4018ACC
-        util: 'FO4Edit v4.1.5k'
-  - name: 'loot logic and reduction - cfm patch.esp'
-    tag:
-      - Delev
-      - Relev
-    clean:
-      - crc: 0x675E4189
-        util: 'FO4Edit v4.1.5k'
 
   - name: 'CompanionBugfixExperimental.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/2679/' ]
