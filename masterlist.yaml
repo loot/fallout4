@@ -1592,7 +1592,7 @@ plugins:
           - 'Fallout 4'
         condition: 'readable("../Fallout4.exe") and version("../Fallout4.exe", "1.10.980.0", <) and version("unofficial fallout 4 patch.esp", "2.1.6", >=)'
     clean:
-      - crc: 0xFA0D51A0
+      - crc: 0x348712D0
         util: 'FO4Edit v4.1.5f'
 
 ###### Modding Tools - Generated Files ######
@@ -1806,32 +1806,9 @@ plugins:
       # - Sound
       # - Stats
       # - Text
-    dirty:
-      - <<: *quickClean
-        crc: 0x9DD10683
-        util: '[FO4Edit v4.1.5f](https://www.nexusmods.com/fallout4/mods/2737)'
-        itm: 7
     clean:
-      - crc: 0x9A5A921E
+      - crc: 0xB838A1FD
         util: 'FO4Edit v4.1.5f'
-  - name: '(community fixes merged - weapon mod fixes|loot logic and reduction - cfm) patch\.esp'
-    url:
-      - link: 'https://www.nexusmods.com/fallout4/mods/74945/'
-        name: 'Community Fixes Merged'
-  - name: 'community fixes merged - weapon mod fixes patch.esp'
-    tag:
-      - Names
-      # - Text
-    clean:
-      - crc: 0xC4018ACC
-        util: 'FO4Edit v4.1.5k'
-  - name: 'loot logic and reduction - cfm patch.esp'
-    tag:
-      - Delev
-      - Relev
-    clean:
-      - crc: 0x675E4189
-        util: 'FO4Edit v4.1.5k'
 
   - name: 'CompanionBugfixExperimental.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/2679/' ]
@@ -3859,6 +3836,20 @@ plugins:
         itm: 6
 
 ###### Gameplay - Quests ######
+  - name: 'America Rising - A Tale of the Enclave.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/23923/'
+        name: 'America Rising - A Tale of the Enclave'
+    msg:
+      - <<: *patch3rdParty_REFPH
+        condition: 'active("REFramework.esm") and not active("REPatch_AmericaRisingATaleOfTheEnclave.esp")'
+    dirty:
+      - <<: *quickClean
+        crc: 0xF0DCC10B
+        util: '[FO4Edit v4.1.5f](https://www.nexusmods.com/fallout4/mods/2737/)'
+        itm: 1002
+        udr: 97
+
   - name: 'AmericaRising2.esm'
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/75767/'
@@ -3941,6 +3932,33 @@ plugins:
       - crc: 0x9282A3D2
         util: 'FO4Edit v4.1.5f'
 
+  - name: 'Flashy_CrimeAndPunishment_GunForHire_Addon.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/58431/'
+        name: 'Flashy(JoeR) - Gun For Hire - Commonwealth Mercenary Jobs'
+    msg:
+      - <<: *patch3rdParty_REFPH
+        condition: 'active("REFramework.esm") and not active("REPatch_CrimeAndPunishmentGunForHire.esp")'
+      - <<: *patchIncluded
+        subs: [ 'Diamond City Outskirts' ]
+        condition: 'active("DiamondNewVendors.esp") and not active("GFH_DCO_Patch.esp")'
+      - <<: *patchIncluded
+        subs: [ 'Killable Children' ]
+        condition: 'active("Killable Children.esp") and not active("Flashy_GunForHire_KillableChildrenPatch.esp")'
+      - <<: *patchIncluded
+        subs: [ 'Fallout 2287 - Nuclear Winter' ]
+        condition: 'active("Nuclear Winter.esp") and not active("Flashy_GFH_NuclearWinterPatch.esp")'
+    dirty:
+      - <<: *reqManualFix
+        crc: 0xE319EE5D
+        util: '[FO4Edit v4.1.5f](https://www.nexusmods.com/fallout4/mods/2737/)'
+        itm: 5
+        nav: 1
+      - <<: *reqManualFix
+        crc: 0xBA0BE459
+        util: '[FO4Edit v4.1.5f](https://www.nexusmods.com/fallout4/mods/2737/)'
+        nav: 1
+
   - name: 'NukaWorldReborn.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/32857/'
@@ -3984,6 +4002,24 @@ plugins:
         crc: 0x4AA09552
         util: '[FO4Edit v4.1.5f](https://www.nexusmods.com/fallout4/mods/2737)'
         nav: 1
+
+  - name: 'sectorv.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/38457/'
+        name: 'Sector Five - Rise and Fall'
+    msg:
+      - <<: *patch3rdParty_REFPH
+        condition: 'active("REFramework.esm") and not active("REPatch_SectorFiveRiseAndFall.esp")'
+    dirty:
+      - <<: *reqManualFix
+        crc: 0xC69F0A84
+        util: '[FO4Edit v4.1.5f](https://www.nexusmods.com/fallout4/mods/2737/)'
+        itm: 13
+        nav: 2
+      - <<: *reqManualFix
+        crc: 0xF18A7218
+        util: '[FO4Edit v4.1.5f](https://www.nexusmods.com/fallout4/mods/2737/)'
+        nav: 2
 
   - name: 'SKKFastBOS.esp'
     url:
@@ -4470,6 +4506,17 @@ plugins:
         util: 'FO4Edit v4.0.3h (Hotfix 1)'
 
 ###### Items - New Weapons ######
+  - name: 'AutoAxe.esl'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/49514/'
+        name: 'Capital Wasteland Auto Axe'
+    msg:
+      - <<: *patch3rdParty_REFPH
+        condition: 'active("REFramework.esm") and not active("REPatch_AutoAxe.esp")'
+    clean:
+      - crc: 0xD1643403
+        util: 'FO4Edit v4.1.5f'
+
   - name: 'CROSS_PlasRail.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/13850/' ]
     dirty:
