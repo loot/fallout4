@@ -258,6 +258,12 @@ common:
   - &F4SE
     name: '../f4se_loader.exe'
     display: '[F4SE](https://f4se.silverlock.org)'
+    condition: 'not file("../Fallout4VR.exe")'
+
+  - &F4SEVR
+    name: '../f4sevr_loader.exe'
+    display: '[F4SE VR](https://f4se.silverlock.org)'
+    condition: 'file("../Fallout4VR.exe")'
 
   - &RobCoPatcher
     name: 'F4SE/Plugins/RobCo_Patcher.dll'
@@ -395,6 +401,11 @@ common:
     subs:
       - '**[Fallout 4 Script Extender](https://f4se.silverlock.org)**'
       - '**Fallout 4**'
+  - &versionF4SEIncFO4_VR
+    <<: *versionXIncY
+    subs:
+      - '**[Fallout 4 Script Extender VR](https://f4se.silverlock.org)**'
+      - '**Fallout 4 VR**'
 
 bash_tags:
   - 'Actors.ACBS'
@@ -449,14 +460,20 @@ globals:
     subs:
       - 'F4SE'
       - '[F4SE](https://f4se.silverlock.org)'
-    condition: 'file("F4SE/Plugins/([^\.]+\.dll)") and not file("../f4se_loader.exe")'
+    condition: 'readable("../Fallout4.exe") and file("F4SE/Plugins/([^\.]+\.dll)") and not file("../f4se_loader.exe")'
+  # Missing VR
+  - <<: *scriptExtenderMissing
+    subs:
+      - 'F4SE VR'
+      - '[F4SE VR](https://f4se.silverlock.org)'
+    condition: 'readable("../Fallout4VR.exe") and file("F4SE/Plugins/([^\.]+\.dll)") and not file("../f4sevr_loader.exe")'
 
   # Required Scripts
   - <<: *scriptExtenderRequiredScripts
     subs:
       - 'Fallout 4 Script Extender'
       - '[F4SE](https://f4se.silverlock.org)'
-    condition: 'not file("scripts/F4SE.pex") and file("../f4se_loader.exe")'
+    condition: 'not file("scripts/F4SE.pex") and (file("../f4se_loader.exe") or file("../f4sevr_loader.exe"))'
 
 # Fallout 4 - Latest Version
   # Fallout 4 NG
@@ -473,6 +490,13 @@ globals:
   - <<: *versionUpToDateX
     subs: [ '**Fallout 4 pre-NG**' ]
     condition: 'readable("../Fallout4.exe") and version("../Fallout4.exe", "1.10.163.0", ==)'
+  # Fallout 4 VR
+  - <<: *versionOldX
+    subs: [ '**Fallout 4 VR**' ]
+    condition: 'version("../Fallout4VR.exe", "1.2.72.0", <) and file("../Fallout4VR.exe")'
+  - <<: *versionUpToDateX
+    subs: [ '**Fallout 4 VR**' ]
+    condition: 'version("../Fallout4VR.exe", "1.2.72.0", >=) and file("../Fallout4VR.exe")'
 
 # F4SE - Latest Version
   - <<: *versionOldX
@@ -487,6 +511,12 @@ globals:
   - <<: *versionUpToDateX
     subs: [ '**F4SE pre-NG**' ]
     condition: 'version("../f4se_loader.exe", "0.0.6.23", ==) and readable("../Fallout4.exe") and version("../Fallout4.exe", "1.10.163.0", <=)'
+  - <<: *versionOldX
+    subs: [ '**Script Extender ([F4SE VR](https://f4se.silverlock.org))**' ]
+    condition: 'version("../f4sevr_loader.exe", "0.0.6.20", <) and file("../Fallout4VR.exe") and file("../f4sevr_loader.exe")'
+  - <<: *versionUpToDateX
+    subs: [ '**Script Extender ([F4SE VR](https://f4se.silverlock.org))**' ]
+    condition: 'version("../f4sevr_loader.exe", "0.0.6.20", >=) and file("../Fallout4VR.exe") and file("../f4sevr_loader.exe")'
 
 # F4SE - Runtime Compatibility
   - <<: *versionF4SEIncFO4
@@ -507,6 +537,8 @@ globals:
     condition: 'readable("../Fallout4.exe") and version("../Fallout4.exe", "1.10.114.0", ==) and not version("../f4se_loader.exe", "0.0.6.13", ==)'
   - <<: *versionF4SEIncFO4
     condition: 'readable("../Fallout4.exe") and version("../Fallout4.exe", "1.10.111.0", ==) and not version("../f4se_loader.exe", "0.0.6.12", ==)'
+  - <<: *versionF4SEIncFO4_VR
+    condition: 'version("../Fallout4VR.exe", "1.2.72.0", ==) and version("../f4sevr_loader.exe", "0.0.6.20", <) and file("../f4sevr_loader.exe")'
 
 # F4SE Plugins - Compatibility
   - <<: *versionXIncY
@@ -1657,7 +1689,7 @@ plugins:
     msg:
       - <<: *missingRequirementXforPlugin
         subs: [ '[Address Library for F4SE Plugins](https://www.nexusmods.com/fallout4/mods/47327/)' ]
-        condition: '(readable("../Fallout4.exe") and (not file("F4SE/Plugins/version-1-10-130-0.bin") and version("../Fallout4.exe", "1.10.130.0", ==)) or (not file("F4SE/Plugins/version-1-10-138-0.bin") and version("../Fallout4.exe", "1.10.138.0", ==)) or (not file("F4SE/Plugins/version-1-10-162-0.bin") and version("../Fallout4.exe", "1.10.162.0", ==)) or (not file("F4SE/Plugins/version-1-10-163-0.bin") and version("../Fallout4.exe", "1.10.163.0", ==)))'
+        condition: '(readable("../Fallout4.exe") and (not file("F4SE/Plugins/version-1-10-130-0.bin") and version("../Fallout4.exe", "1.10.130.0", ==)) or (not file("F4SE/Plugins/version-1-10-138-0.bin") and version("../Fallout4.exe", "1.10.138.0", ==)) or (not file("F4SE/Plugins/version-1-10-162-0.bin") and version("../Fallout4.exe", "1.10.162.0", ==)) or (not file("F4SE/Plugins/version-1-10-163-0.bin") and version("../Fallout4.exe", "1.10.163.0", ==)) or (not file("F4SE/Plugins/version-1-2-72-0.bin") and version("../Fallout4VR.exe", "1.2.72.0", ==)))'
     clean:
       - crc: 0x0783E042
         util: 'FO4Edit v4.1.5f'
@@ -2548,6 +2580,12 @@ plugins:
         util: '[FO4Edit v4.0.4b](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 1
 
+  - name: 'Realistic Reverb and Ambiance.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/61140/'
+        name: 'Realistic Reverb and Ambience Overhaul - VR and FP'
+    req: [ 'Ambient Wasteland.esp' ]
+
   - name: 'Reverb and Ambiance Overhaul.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/10189/'
@@ -2963,7 +3001,9 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout4/mods/63998/'
         name: 'This Settlement Does Not Need Your Help - BS Defence Redone'
-    req: [ *F4SE ]
+    req:
+      - *F4SE
+      - *F4SEVR
     msg: [ *requiresMCM ]
     clean:
       - crc: 0xDE92E151
@@ -3267,7 +3307,9 @@ plugins:
       - link: 'https://www.nexusmods.com/fallout4/mods/11960/'
         name: 'Turret Control Panel - TCP'
   - name: 'TurretControlPanel.esp'
-    req: [ *F4SE ]
+    req:
+      - *F4SE
+      - *F4SEVR
     msg: [ *requiresMCM ]
     clean:
       - crc: 0xD85B2D6F
