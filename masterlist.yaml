@@ -1629,7 +1629,7 @@ plugins:
 
 ###### Modding Tools - Generated Files ######
   - name: 'Bashed Patch.*\.esp'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/20032/' ]
+    url: [ 'https://www.nexusmods.com/site/mods/591/' ]
     group: *dynamicPatchesGroup
     after: [ 'FO4Merged.esp' ]
     msg:
