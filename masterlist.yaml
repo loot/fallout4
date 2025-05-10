@@ -1673,7 +1673,9 @@ plugins:
     group: *frameworksGroup
 
   - name: 'BakaFramework.esm'
-    url: [ 'https://www.nexusmods.com/fallout4/mods/43627/' ]
+    url:
+      - link: 'https://www.nexusmods.com/fallout4/mods/43627/'
+        name: 'Baka Framework'
     group: *frameworksGroup
     msg:
       - <<: *missingRequirementXforPlugin
