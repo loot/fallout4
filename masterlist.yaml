@@ -1684,6 +1684,8 @@ plugins:
                       (not file("F4SE/Plugins/version-1-10-138-0.bin") and version("../Fallout4.exe", "1.10.138.0", ==)) or
                       (not file("F4SE/Plugins/version-1-10-162-0.bin") and version("../Fallout4.exe", "1.10.162.0", ==)) or
                       (not file("F4SE/Plugins/version-1-10-163-0.bin") and version("../Fallout4.exe", "1.10.163.0", ==)) or
+                      (not file("F4SE/Plugins/version-1-10-980-0.bin") and version("../Fallout4.exe", "1.10.980.0", ==)) or
+                      (not file("F4SE/Plugins/version-1-10-984-0.bin") and version("../Fallout4.exe", "1.10.984.0", ==)) or
                       (not file("F4SE/Plugins/version-1-2-72-0.bin") and version("../Fallout4VR.exe", "1.2.72.0", ==))
                     )'
     clean:
