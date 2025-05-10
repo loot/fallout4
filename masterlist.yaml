@@ -1688,7 +1688,7 @@ plugins:
                       (not file("F4SE/Plugins/version-1-10-163-0.bin") and version("../Fallout4.exe", "1.10.163.0", ==)) or
                       (not file("F4SE/Plugins/version-1-10-980-0.bin") and version("../Fallout4.exe", "1.10.980.0", ==)) or
                       (not file("F4SE/Plugins/version-1-10-984-0.bin") and version("../Fallout4.exe", "1.10.984.0", ==))
-                    )
+                    )'
       - <<: *missingRequirementXforPlugin
         subs: [ '[VR Address Library for F4SEVR](https://www.nexusmods.com/fallout4/mods/47327/)' ]
         condition: 'not file("F4SE/Plugins/version-1-2-72-0.csv") and version("../Fallout4VR.exe", "1.2.72.0", ==)'
