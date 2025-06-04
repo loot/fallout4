@@ -6451,11 +6451,11 @@ plugins:
         condition: 'active("XDI.esm") and not active("SS2_XDI Patch.esp") and not active("SS2_XDI Patch-Basic.esp") and not active("SS2_XDI Patch-Basic_esl.esp")'
     dirty:
       - <<: *quickClean
-        crc: 0xEFA5DEE6
+        crc: 0x948D35E6
         util: '[FO4Edit v4.1.5f](https://www.nexusmods.com/fallout4/mods/2737/)'
-        itm: 2
+        itm: 1
     clean:
-      - crc: 0x62056C3C
+      - crc: 0x598C5094
         util: 'FO4Edit v4.1.5f'
 
   - name: 'SS2_XPAC_Chapter2.esm'
