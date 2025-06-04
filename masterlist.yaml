@@ -6497,11 +6497,11 @@ plugins:
         name: 'Sim Settlements 2 - Extended (Bethesda.net Mods)'
     dirty:
       - <<: *quickClean
-        crc: 0xA083CF25
+        crc: 0x07AC2511
         util: '[FO4Edit v4.1.5f](https://www.nexusmods.com/fallout4/mods/2737/)'
         itm: 14
     clean:
-      - crc: 0xC044B460
+      - crc: 0x6EA00C66
         util: 'FO4Edit v4.1.5f'
 
   - name: 'ohSIM_Sim2_Settlements_Scrappers_Addon.esp'
