@@ -6470,8 +6470,13 @@ plugins:
           - '[Flashy(JoeR) - Gun For Hire - Commonwealth Mercenary Jobs](https://www.nexusmods.com/fallout4/mods/58431/)'
           - '[Sim Settlements 2 Chapter 2 - Gun For Hire - Door Patch](https://www.nexusmods.com/fallout4/mods/56550/)'
         condition: 'active("Flashy_CrimeAndPunishment_GunForHire_Addon.esp") and not active("SS2_GunForHire_Patch.esp")'
+    dirty:
+      - <<: *quickClean
+        crc: 0x49E5BAF4
+        util: '[FO4Edit v4.1.5f](https://www.nexusmods.com/fallout4/mods/2737/)'
+        itm: 2
     clean:
-      - crc: 0xA0BF1B80
+      - crc: 0x43DBC082
         util: 'FO4Edit v4.1.5f'
 
   - name: 'SS2_XPAC_Chapter3.esm'
