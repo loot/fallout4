@@ -1745,11 +1745,11 @@ plugins:
         detail: 'See Sim Settlements 2''s [compatibility notes](https://wiki.simsettlements2.com/getting-started/known-issues#neutral-vertibirds) on Workshop Framework'
     dirty:
       - <<: *quickClean
-        crc: 0x782EAD7E
+        crc: 0x2070EAE1
         util: '[FO4Edit v4.1.5f](https://www.nexusmods.com/fallout4/mods/2737/)'
         itm: 3
     clean:
-      - crc: 0x36E8A57E
+      - crc: 0x8539C82D
         util: 'FO4Edit v4.1.5f'
   - name: 'WorkshopFramework_ScriptOverride.esp'
     group: *lateChangesGroup
