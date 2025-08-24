@@ -6946,11 +6946,7 @@ plugins:
   - name: 'Homemaker.esm'
     msg:
       - <<: *obsolete
-        condition: 'version("Homemaker.esm", "1.50", <)'
-      - <<: *patchUpdateAvailable
-        type: warn
-        subs: [ '[Homemaker 1.79.6 - Hotfix 6](https://www.nexusmods.com/fallout4/mods/1478/)' ]
-        condition: 'checksum("Homemaker.esm", 5730BA7B)'
+        condition: 'version("Homemaker.esm", "1.77", <)'
     clean:
       - crc: 0x4AF4D5FC
         util: 'FO4Edit v4.1.5f'
