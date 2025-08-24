@@ -1842,7 +1842,7 @@ plugins:
       # - Text
     dirty:
       - <<: *quickClean
-        crc: 0x6A58243F
+        crc: 0x88116DE1
         util: '[FO4Edit v4.1.5f](https://www.nexusmods.com/fallout4/mods/2737/)'
         itm: 2
 
