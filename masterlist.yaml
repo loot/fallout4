@@ -6523,11 +6523,11 @@ plugins:
         name: 'Sim Settlements 2 - Chapter 3 (Bethesda.net Mods)'
     dirty:
       - <<: *quickClean
-        crc: 0x4DA582EA
+        crc: 0xE1DB3BEC
         util: '[FO4Edit v4.1.5f](https://www.nexusmods.com/fallout4/mods/2737/)'
         itm: 2
     clean:
-      - crc: 0x004D26E3
+      - crc: 0x268EFEA1
         util: 'FO4Edit v4.1.5f'
 
   - name: 'SS2Extended.esp'
