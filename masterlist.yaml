@@ -6485,13 +6485,8 @@ plugins:
           - '[Extended Dialogue Interface](https://www.nexusmods.com/fallout4/mods/27216/)'
           - '[SS2 - XDI Compatibility Patch](https://www.nexusmods.com/fallout4/mods/48254/)'
         condition: 'active("XDI.esm") and not active("SS2_XDI Patch.esp") and not active("SS2_XDI Patch-Basic.esp") and not active("SS2_XDI Patch-Basic_esl.esp")'
-    dirty:
-      - <<: *quickClean
-        crc: 0x948D35E6
-        util: '[FO4Edit v4.1.5f](https://www.nexusmods.com/fallout4/mods/2737/)'
-        itm: 1
     clean:
-      - crc: 0x598C5094
+      - crc: 0xB01C9BEB
         util: 'FO4Edit v4.1.5f'
 
   - name: 'SS2_XPAC_Chapter2.esm'
