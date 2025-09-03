@@ -6499,8 +6499,8 @@ plugins:
       - <<: *patch3rdParty
         subs:
           - '[Flashy(JoeR) - Gun For Hire - Commonwealth Mercenary Jobs](https://www.nexusmods.com/fallout4/mods/58431/)'
-          - '[Sim Settlements 2 Chapter 2 - Gun For Hire - Door Patch](https://www.nexusmods.com/fallout4/mods/56550/)'
-        condition: 'active("Flashy_CrimeAndPunishment_GunForHire_Addon.esp") and not active("SS2_GunForHire_Patch.esp")'
+          - '[Sim Settlements 2 Chapter 2 - Gun For Hire - Door Patch](https://www.nexusmods.com/fallout4/mods/56550/) **OR** [Gun For Hire - eXoPatch (Sim Settlements 2 Compat)](https://www.nexusmods.com/fallout4/mods/71877/)'
+        condition: 'active("Flashy_CrimeAndPunishment_GunForHire_Addon.esp") and not (active("SS2_GunForHire_Patch.esp") or active("GunForHire-eXoPatch.esp"))'
     clean:
       - crc: 0x64CCD8DB
         util: 'FO4Edit v4.1.5f'
