@@ -472,13 +472,13 @@ globals:
     condition: 'not file("scripts/F4SE.pex") and (file("../f4se_loader.exe") or file("../f4sevr_loader.exe"))'
 
 # Fallout 4 - Latest Version
-  # Fallout 4 NG
+  # Fallout 4
   - <<: *versionOldX
-    subs: [ '**Fallout 4 NG**' ]
-    condition: 'readable("../Fallout4.exe") and version("../Fallout4.exe", "1.10.163.0", >) and version("../Fallout4.exe", "1.10.984.0", <)'
+    subs: [ '**Fallout 4**' ]
+    condition: 'readable("../Fallout4.exe") and version("../Fallout4.exe", "1.11.137.0", <)'
   - <<: *versionUpToDateX
-    subs: [ '**Fallout 4 NG**' ]
-    condition: 'readable("../Fallout4.exe") and version("../Fallout4.exe", "1.10.984.0", >=)'
+    subs: [ '**Fallout 4**' ]
+    condition: 'readable("../Fallout4.exe") and version("../Fallout4.exe", "1.11.137.0", >=)'
   # Fallout 4 VR
   - <<: *versionOldX
     subs: [ '**Fallout 4 VR**' ]
