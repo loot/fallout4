@@ -510,18 +510,6 @@ globals:
     condition: 'readable("../Fallout4.exe") and version("../Fallout4.exe", "1.10.980.0", ==) and version("../f4se_loader.exe", "0.0.7.1", <) and file("../f4se_loader.exe")'
   - <<: *versionF4SEIncFO4
     condition: 'readable("../Fallout4.exe") and version("../Fallout4.exe", "1.10.163.0", ==) and version("../f4se_loader.exe", "0.0.6.20", <) and file("../f4se_loader.exe")'
-  - <<: *versionF4SEIncFO4
-    condition: 'readable("../Fallout4.exe") and version("../Fallout4.exe", "1.10.162.0", ==) and version("../f4se_loader.exe", "0.0.6.18", <) and file("../f4se_loader.exe")'
-  - <<: *versionF4SEIncFO4
-    condition: 'readable("../Fallout4.exe") and version("../Fallout4.exe", "1.10.138.0", ==) and version("../f4se_loader.exe", "0.0.6.17", <) and file("../f4se_loader.exe")'
-  - <<: *versionF4SEIncFO4
-    condition: 'readable("../Fallout4.exe") and version("../Fallout4.exe", "1.10.130.0", ==) and version("../f4se_loader.exe", "0.0.6.16", <) and file("../f4se_loader.exe")'
-  - <<: *versionF4SEIncFO4
-    condition: 'readable("../Fallout4.exe") and version("../Fallout4.exe", "1.10.120.0", ==) and version("../f4se_loader.exe", "0.0.6.14", <) and file("../f4se_loader.exe")'
-  - <<: *versionF4SEIncFO4
-    condition: 'readable("../Fallout4.exe") and version("../Fallout4.exe", "1.10.114.0", ==) and not version("../f4se_loader.exe", "0.0.6.13", ==)'
-  - <<: *versionF4SEIncFO4
-    condition: 'readable("../Fallout4.exe") and version("../Fallout4.exe", "1.10.111.0", ==) and not version("../f4se_loader.exe", "0.0.6.12", ==)'
   - <<: *versionF4SEIncFO4_VR
     condition: 'version("../Fallout4VR.exe", "1.2.72.0", ==) and version("../f4sevr_loader.exe", "0.0.6.20", <) and file("../f4sevr_loader.exe")'
 
