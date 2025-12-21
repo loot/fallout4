@@ -450,27 +450,6 @@ globals:
 # Latest LOOT Thread
   - *latestLOOTThread
 
-# F4SE
-  # Missing
-  - <<: *scriptExtenderMissing
-    subs:
-      - 'F4SE'
-      - '[F4SE](https://f4se.silverlock.org)'
-    condition: 'readable("../Fallout4.exe") and file("F4SE/Plugins/([^\.]+\.dll)") and not file("../f4se_loader.exe")'
-  # Missing VR
-  - <<: *scriptExtenderMissing
-    subs:
-      - 'F4SE VR'
-      - '[F4SE VR](https://f4se.silverlock.org)'
-    condition: 'readable("../Fallout4VR.exe") and file("F4SE/Plugins/([^\.]+\.dll)") and not file("../f4sevr_loader.exe")'
-
-  # Required Scripts
-  - <<: *scriptExtenderRequiredScripts
-    subs:
-      - 'Fallout 4 Script Extender'
-      - '[F4SE](https://f4se.silverlock.org)'
-    condition: 'not file("scripts/F4SE.pex") and (file("../f4se_loader.exe") or file("../f4sevr_loader.exe"))'
-
 # Latest Version
   # Fallout 4
   - <<: *versionOldX
@@ -523,6 +502,27 @@ globals:
       - '**[Place Everywhere](https://www.nexusmods.com/fallout4/mods/9424)**'
       - 'Fallout 4'
     condition: 'file("F4SE/Plugins/place.dll") and file("../f4se_loader.exe") and readable("../Fallout4.exe") and ((version("F4SE/Plugins/place.dll", "1.18.0.1163", ==) and version("../Fallout4.exe", "1.10.163.0", !=)) or (version("F4SE/Plugins/place.dll", "1.18.0.1163", <) and version("../Fallout4.exe", "1.10.163.0", ==)))'
+
+# F4SE
+  # Missing
+  - <<: *scriptExtenderMissing
+    subs:
+      - 'F4SE'
+      - '[F4SE](https://f4se.silverlock.org)'
+    condition: 'readable("../Fallout4.exe") and file("F4SE/Plugins/([^\.]+\.dll)") and not file("../f4se_loader.exe")'
+  # Missing VR
+  - <<: *scriptExtenderMissing
+    subs:
+      - 'F4SE VR'
+      - '[F4SE VR](https://f4se.silverlock.org)'
+    condition: 'readable("../Fallout4VR.exe") and file("F4SE/Plugins/([^\.]+\.dll)") and not file("../f4sevr_loader.exe")'
+
+  # Required Scripts
+  - <<: *scriptExtenderRequiredScripts
+    subs:
+      - 'Fallout 4 Script Extender'
+      - '[F4SE](https://f4se.silverlock.org)'
+    condition: 'not file("scripts/F4SE.pex") and (file("../f4se_loader.exe") or file("../f4sevr_loader.exe"))'
 
 groups:
   - name: &dlcGroup DLC
