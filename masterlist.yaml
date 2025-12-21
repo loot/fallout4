@@ -471,7 +471,7 @@ globals:
       - '[F4SE](https://f4se.silverlock.org)'
     condition: 'not file("scripts/F4SE.pex") and (file("../f4se_loader.exe") or file("../f4sevr_loader.exe"))'
 
-# Fallout 4 - Latest Version
+# Latest Version
   # Fallout 4
   - <<: *versionOldX
     subs: [ '**Fallout 4**' ]
