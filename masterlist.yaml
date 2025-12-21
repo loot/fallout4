@@ -450,28 +450,7 @@ globals:
 # Latest LOOT Thread
   - *latestLOOTThread
 
-# F4SE
-  # Missing
-  - <<: *scriptExtenderMissing
-    subs:
-      - 'F4SE'
-      - '[F4SE](https://f4se.silverlock.org)'
-    condition: 'readable("../Fallout4.exe") and file("F4SE/Plugins/([^\.]+\.dll)") and not file("../f4se_loader.exe")'
-  # Missing VR
-  - <<: *scriptExtenderMissing
-    subs:
-      - 'F4SE VR'
-      - '[F4SE VR](https://f4se.silverlock.org)'
-    condition: 'readable("../Fallout4VR.exe") and file("F4SE/Plugins/([^\.]+\.dll)") and not file("../f4sevr_loader.exe")'
-
-  # Required Scripts
-  - <<: *scriptExtenderRequiredScripts
-    subs:
-      - 'Fallout 4 Script Extender'
-      - '[F4SE](https://f4se.silverlock.org)'
-    condition: 'not file("scripts/F4SE.pex") and (file("../f4se_loader.exe") or file("../f4sevr_loader.exe"))'
-
-# Fallout 4 - Latest Version
+# Latest Version
   # Fallout 4
   - <<: *versionOldX
     subs: [ '**Fallout 4**' ]
@@ -487,9 +466,9 @@ globals:
     subs: [ '**Fallout 4 VR**' ]
     condition: 'version("../Fallout4VR.exe", "1.2.72.0", >=) and file("../Fallout4VR.exe")'
 
-# F4SE - Latest Version
+  # F4SE
   - <<: *versionOldX
-    subs: [ '**[F4SE](https://www.nexusmods.com/fallout4/mods/42147/) NG**' ]
+    subs: [ '**[F4SE](https://www.nexusmods.com/fallout4/mods/42147/)**' ]
     condition: 'version("../f4se_loader.exe", "0.0.7.7", <) and file("../f4se_loader.exe") and readable("../Fallout4.exe") and version("../Fallout4.exe", "1.11.191.0", >=)'
   - <<: *versionUpToDateX
     subs: [ '**F4SE**' ]
@@ -502,6 +481,8 @@ globals:
     condition: 'version("../f4sevr_loader.exe", "0.0.6.20", >=) and file("../Fallout4VR.exe") and file("../f4sevr_loader.exe")'
 
 # F4SE - Runtime Compatibility
+  - <<: *versionF4SEIncFO4
+    condition: 'readable("../Fallout4.exe") and version("../Fallout4.exe", "1.11.191.0", ==) and version("../f4se_loader.exe", "0.0.7.7", <) and file("../f4se_loader.exe")'
   - <<: *versionF4SEIncFO4
     condition: 'readable("../Fallout4.exe") and version("../Fallout4.exe", "1.11.169.0", ==) and version("../f4se_loader.exe", "0.0.7.6", <) and file("../f4se_loader.exe")'
   - <<: *versionF4SEIncFO4
@@ -523,6 +504,27 @@ globals:
       - '**[Place Everywhere](https://www.nexusmods.com/fallout4/mods/9424)**'
       - 'Fallout 4'
     condition: 'file("F4SE/Plugins/place.dll") and file("../f4se_loader.exe") and readable("../Fallout4.exe") and ((version("F4SE/Plugins/place.dll", "1.18.0.1163", ==) and version("../Fallout4.exe", "1.10.163.0", !=)) or (version("F4SE/Plugins/place.dll", "1.18.0.1163", <) and version("../Fallout4.exe", "1.10.163.0", ==)))'
+
+# F4SE
+  # Missing
+  - <<: *scriptExtenderMissing
+    subs:
+      - 'F4SE'
+      - '[F4SE](https://f4se.silverlock.org)'
+    condition: 'readable("../Fallout4.exe") and file("F4SE/Plugins/([^\.]+\.dll)") and not file("../f4se_loader.exe")'
+  # Missing VR
+  - <<: *scriptExtenderMissing
+    subs:
+      - 'F4SE VR'
+      - '[F4SE VR](https://f4se.silverlock.org)'
+    condition: 'readable("../Fallout4VR.exe") and file("F4SE/Plugins/([^\.]+\.dll)") and not file("../f4sevr_loader.exe")'
+
+  # Required Scripts
+  - <<: *scriptExtenderRequiredScripts
+    subs:
+      - 'Fallout 4 Script Extender'
+      - '[F4SE](https://f4se.silverlock.org)'
+    condition: 'not file("scripts/F4SE.pex") and (file("../f4se_loader.exe") or file("../f4sevr_loader.exe"))'
 
 groups:
   - name: &dlcGroup DLC
