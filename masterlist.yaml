@@ -468,7 +468,7 @@ globals:
 
   # F4SE
   - <<: *versionOldX
-    subs: [ '**[F4SE](https://www.nexusmods.com/fallout4/mods/42147/) NG**' ]
+    subs: [ '**[F4SE](https://www.nexusmods.com/fallout4/mods/42147/)**' ]
     condition: 'version("../f4se_loader.exe", "0.0.7.7", <) and file("../f4se_loader.exe") and readable("../Fallout4.exe") and version("../Fallout4.exe", "1.11.191.0", >=)'
   - <<: *versionUpToDateX
     subs: [ '**F4SE**' ]
