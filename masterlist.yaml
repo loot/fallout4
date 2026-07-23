@@ -613,33 +613,45 @@ plugins:
   - name: 'DLCRobot.esm'
     group: *dlcGroup
     dirty:
-      # v1.10.163
+      # v1.11.221.0 - Steam
       - <<: *quickClean
-        crc: 0xD69027EA
-        util: '[FO4Edit v4.1.5 EXPERIMENTAL](https://www.nexusmods.com/fallout4/mods/2737)'
-        itm: 50
+        crc: 0x6462841A
+        util: '[FO4Edit v4.1.5q](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 51
         udr: 38
         nav: 1
-      # v1.10.980
+      # v1.11.221.0 - Gamepass
+      - <<: *quickClean
+        crc: 0xC91F9230
+        util: '[FO4Edit v4.1.5q](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 51
+        udr: 38
+        nav: 1
+      # v1.11.221.0 - Epic Game Store
       - <<: *quickClean
         crc: 0x8287509F
-        util: '[FO4Edit v4.1.5f](https://www.nexusmods.com/fallout4/mods/2737)'
-        itm: 51
+        util: '[FO4Edit v4.1.5q](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 50
         udr: 38
         nav: 1
   - name: 'DLCworkshop01.esm'
     group: *dlcGroup
     after: [ 'DLCRobot.esm' ]
     dirty:
-      # v1.10.163
+      # v1.11.221.0 - Steam
       - <<: *quickClean
-        crc: 0x47BAE27E
-        util: '[FO4Edit v4.1.5 EXPERIMENTAL](https://www.nexusmods.com/fallout4/mods/2737)'
+        crc: 0x95CE281B
+        util: '[FO4Edit v4.1.5q](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 3
-      # v1.10.980
+      # v1.11.221.0 - Gamepass
+      - <<: *quickClean
+        crc: 0x24BB840E
+        util: '[FO4Edit v4.1.5q](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 3
+      # v1.11.221.0 - Epic Game Store
       - <<: *quickClean
         crc: 0x7EECAA24
-        util: '[FO4Edit v4.1.5f](https://www.nexusmods.com/fallout4/mods/2737)'
+        util: '[FO4Edit v4.1.5q](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 3
   - name: 'DLCCoast.esm'
     group: *dlcGroup
@@ -647,9 +659,22 @@ plugins:
       - 'DLCRobot.esm'
       - 'DLCworkshop01.esm'
     dirty:
+      # v1.11.221.0 - Steam
       - <<: *quickClean
         crc: 0xF1F28026
-        util: '[FO4Edit v4.1.5f](https://www.nexusmods.com/fallout4/mods/2737)'
+        util: '[FO4Edit v4.1.5q](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 83
+        udr: 86
+      # v1.11.221.0 - Gamepass
+      - <<: *quickClean
+        crc: 0xFF82DDC0
+        util: '[FO4Edit v4.1.5q](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 83
+        udr: 86
+      # v1.11.221.0 - Epic Game Store
+      - <<: *quickClean
+        crc: 0xED6F86B8
+        util: '[FO4Edit v4.1.5q](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 83
         udr: 86
   - name: 'DLCworkshop02.esm'
@@ -659,8 +684,15 @@ plugins:
       - 'DLCworkshop01.esm'
       - 'DLCCoast.esm'
     clean:
+      # v1.11.221.0 - Steam
       - crc: 0x83ABC821
-        util: 'FO4Edit v4.1.5f'
+        util: 'FO4Edit v4.1.5q'
+      # v1.11.221.0 - Gamepass
+      - crc: 0x537C3844
+        util: 'FO4Edit v4.1.5q'
+      # v1.11.221.0 - Epic Game Store
+      - crc: 0x31F7E92C
+        util: 'FO4Edit v4.1.5q'
   - name: 'DLCworkshop03.esm'
     group: *dlcGroup
     after:
@@ -669,9 +701,22 @@ plugins:
       - 'DLCCoast.esm'
       - 'DLCworkshop02.esm'
     dirty:
+      # v1.11.221.0 - Steam
       - <<: *quickClean
         crc: 0xE0089FBB
-        util: '[FO4Edit v4.1.5f](https://www.nexusmods.com/fallout4/mods/2737)'
+        util: '[FO4Edit v4.1.5q](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 20
+        udr: 10
+      # v1.11.221.0 - Gamepass
+      - <<: *quickClean
+        crc: 0xD21220D5
+        util: '[FO4Edit v4.1.5q](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 20
+        udr: 10
+      # v1.11.221.0 - Epic Game Store
+      - <<: *quickClean
+        crc: 0x497AEF73
+        util: '[FO4Edit v4.1.5q](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 20
         udr: 10
   - name: 'DLCNukaWorld.esm'
@@ -684,9 +729,24 @@ plugins:
       - 'DLCworkshop03.esm'
     tag: [ Relev ]
     dirty:
+      # v1.11.221.0 - Steam
       - <<: *quickClean
         crc: 0x43D25C56
-        util: '[FO4Edit v4.1.5f](https://www.nexusmods.com/fallout4/mods/2737)'
+        util: '[FO4Edit v4.1.5q](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 193
+        udr: 418
+        nav: 7
+      # v1.11.221.0 - Gamepass
+      - <<: *quickClean
+        crc: 0xD6AFA81A
+        util: '[FO4Edit v4.1.5q](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 193
+        udr: 418
+        nav: 7
+      # v1.11.221.0 - Epic Game Store
+      - <<: *quickClean
+        crc: 0x41894183
+        util: '[FO4Edit v4.1.5q](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 193
         udr: 418
         nav: 7
