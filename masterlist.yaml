@@ -794,8 +794,8 @@ plugins:
   - name: 'ccbgsfo4044-hellfirepowerarmor.esl'
     tag: [ Delev ]
     clean:
-      - crc: 0xE1873D15
-        util: 'FO4Edit v4.1.5f'
+      - crc: 0x17B493C9
+        util: 'FO4Edit v4.1.5q'
   # Makeshift Weapon Pack
   - name: 'ccSBJFO4003-Grenade.esl'
     clean:
@@ -831,13 +831,13 @@ plugins:
   # Armor Paint Job - Army
   - name: 'ccgcafo4023-factionas12army.esl'
     clean:
-      - crc: 0x23E23B29
-        util: 'FO4Edit v4.0.2j'
+      - crc: 0xE155E109
+        util: 'FO4Edit v4.1.5q'
   # Armor Paint Job - Atom Cats
   - name: 'ccgcafo4012-factionas01acat.esl'
     clean:
-      - crc: 0xC501A97C
-        util: 'FO4Edit v4.0.2j'
+      - crc: 0x37F5DC70
+        util: 'FO4Edit v4.1.5q'
   # Armor Paint Job - Bats
   - name: 'ccbgsfo4091-as_bats.esl'
     clean:
@@ -846,8 +846,8 @@ plugins:
   # Armor Paint Job - Brotherhood of Steel
   - name: 'ccgcafo4013-factionas02bos.esl'
     clean:
-      - crc: 0xA9553100
-        util: 'FO4Edit v4.0.2j'
+      - crc: 0xC8E3F127
+        util: 'FO4Edit v4.1.5q'
   # Armor Paint Job - Children of Atom
   - name: 'ccbgsfo4095-as_childrenofatom.esl'
     clean:
@@ -861,28 +861,28 @@ plugins:
   # Armor Paint Job - Gunners
   - name: 'ccgcafo4014-factionas03gun.esl'
     clean:
-      - crc: 0x1BD5A572
-        util: 'FO4Edit v4.0.2j'
+      - crc: 0xF70CBEFC
+        util: 'FO4Edit v4.1.5q'
   # Armor Paint Job - Hot Rod Flames
   - name: 'ccgcafo4021-factionas10hrflames.esl'
     clean:
-      - crc: 0x003EFA40
-        util: 'FO4Edit v4.0.2j'
+      - crc: 0xBD8BCA23
+        util: 'FO4Edit v4.1.5q'
   # Armor Paint Job - Hot Rod Pink
   - name: 'ccgcafo4015-factionas04hrpink.esl'
     clean:
-      - crc: 0x5A4E5142
-        util: 'FO4Edit v4.0.2j'
+      - crc: 0x4A5B5420
+        util: 'FO4Edit v4.1.5q'
   # Armor Paint Job - Hot Rod Shark
   - name: 'ccgcafo4016-factionas05hrshark.esl'
     clean:
-      - crc: 0xA88739AD
-        util: 'FO4Edit v4.0.2j'
+      - crc: 0x582C88D4
+        util: 'FO4Edit v4.1.5q'
   # Armor Paint Job - Institute
   - name: 'ccgcafo4017-factionas06inst.esl'
     clean:
-      - crc: 0x52D787A3
-        util: 'FO4Edit v4.0.2j'
+      - crc: 0xC41F6C82
+        util: 'FO4Edit v4.1.5q'
   # Armor Paint Job - Jack 0'Lantern
   - name: 'ccbgsfo4097-as_jack-olantern.esl'
     clean:
@@ -891,13 +891,13 @@ plugins:
   # Armor Paint Job - Minutemen
   - name: 'ccgcafo4018-factionas07mm.esl'
     clean:
-      - crc: 0x62E57AE9
-        util: 'FO4Edit v4.0.2j'
+      - crc: 0xF734D2BD
+        util: 'FO4Edit v4.1.5q'
   # Armor Paint Job - Nuka Cherry
   - name: 'ccgcafo4019-factionas08nuk.esl'
     clean:
-      - crc: 0x37D90FD3
-        util: 'FO4Edit v4.0.2j'
+      - crc: 0xAFE9A035
+        util: 'FO4Edit v4.1.5q'
   # Armor Paint Job - Pickmen
   - name: 'ccbgsfo4098-as_pickman.esl'
     clean:
@@ -906,8 +906,8 @@ plugins:
   # Armor Paint Job - Railroad
   - name: 'ccgcafo4020-factionas09rr.esl'
     clean:
-      - crc: 0x6A83CD0E
-        util: 'FO4Edit v4.0.2j'
+      - crc: 0x4D9DE9A8
+        util: 'FO4Edit v4.1.5q'
   # Armor Paint Job - Reilly's Rangers
   - name: 'ccbgsfo4099-as_reillysrangers.esl'
     clean:
@@ -931,8 +931,8 @@ plugins:
   # Armor Paint Job - Vault-Tec
   - name: 'ccgcafo4022-factionas11vt.esl'
     clean:
-      - crc: 0x3BFFC8C6
-        util: 'FO4Edit v4.0.2j'
+      - crc: 0x62E9692A
+        util: 'FO4Edit v4.1.5q'
 
   # Pip-Boy Paint Job - Abraxo
   - name: 'ccbgsfo4070-pipabra.esl'
@@ -947,8 +947,8 @@ plugins:
   # Pip-Boy Paint Job - Aquatic Camo
   - name: 'ccbgsfo4005-bluecamo.esl'
     clean:
-      - crc: 0xED47F966
-        util: 'FO4Edit v4.0.2j'
+      - crc: 0xB2849E93
+        util: 'FO4Edit v4.1.5q'
   # Pip-Boy Paint Job - ArcJet
   - name: 'ccbgsfo4071-piparc.esl'
     clean:
@@ -962,8 +962,8 @@ plugins:
   # Pip-Boy Paint Job - Blue
   - name: 'ccbgsfo4002-pipboy(blue).esl'
     clean:
-      - crc: 0x27E9BDE1
-        util: 'FO4Edit v4.0.2j'
+      - crc: 0x3332A750
+        util: 'FO4Edit v4.1.5q'
   # Pip-Boy Paint Job - Children of Atom
   - name: 'cccrsfo4001-pipcoa.esl'
     clean:
@@ -972,8 +972,8 @@ plugins:
   # Pip-Boy Paint Job - Chrome
   - name: 'ccbgsfo4006-pipboy(chrome).esl'
     clean:
-      - crc: 0xB699105C
-        util: 'FO4Edit v4.0.2j'
+      - crc: 0xCC3E8E98
+        util: 'FO4Edit v4.1.5q'
   # Pip-Boy Paint Job - Corvega
   - name: 'ccbgsfo4084-pipretro.esl'
     clean:
@@ -987,8 +987,8 @@ plugins:
   # Pip-Boy Paint Job - Desert Camo
   - name: 'ccbgsfo4003-pipboy(camo01).esl'
     clean:
-      - crc: 0xA3FBAED9
-        util: 'FO4Edit v4.0.2j'
+      - crc: 0x64A326C8
+        util: 'FO4Edit v4.1.5q'
   # Pip-Boy Paint Job - Five-Star Red
   - name: 'ccbgsfo4082-pipprc.esl'
     clean:
@@ -1037,18 +1037,18 @@ plugins:
   # Pip-Boy Paint Job - Nuka-Cola
   - name: 'ccswkfo4002-pipnuka.esl'
     clean:
-      - crc: 0xB6A07FA4
-        util: 'FO4Edit v4.0.2j'
+      - crc: 0x7F958651
+        util: 'FO4Edit v4.1.5q'
   # Pip-Boy Paint Job - Nuka-Cola Quantum
   - name: 'ccswkfo4003-pipquan.esl'
     clean:
-      - crc: 0xA2F66832
-        util: 'FO4Edit v4.0.2j'
+      - crc: 0x6E5D5D91
+        util: 'FO4Edit v4.1.5q'
   # Pip-Boy Paint Job - Onyx
   - name: 'ccbgsfo4001-pipboy(black).esl'
     clean:
-      - crc: 0x7CA905AC
-        util: 'FO4Edit v4.0.2j'
+      - crc: 0xF88D2046
+        util: 'FO4Edit v4.1.5q'
   # Pip-Boy Paint Job - Orange
   - name: 'ccbgsfo4009-piporan.esl'
     clean:
@@ -1087,8 +1087,8 @@ plugins:
   # Pip-Boy Paint Job - Red
   - name: 'ccbgsfo4012-pipboy(red).esl'
     clean:
-      - crc: 0x44BA1BD2
-        util: 'FO4Edit v4.0.2j'
+      - crc: 0xF624BED3
+        util: 'FO4Edit v4.1.5q'
   # Pip-Boy Paint Job - Red Rocket
   - name: 'ccbgsfo4077-piprocket.esl'
     clean:
@@ -1107,8 +1107,8 @@ plugins:
   # Pip-Boy Paint Job - Swamp Camo
   - name: 'ccbgsfo4004-pipboy(camo02).esl'
     clean:
-      - crc: 0x6DAC3906
-        util: 'FO4Edit v4.0.2j'
+      - crc: 0x33440911
+        util: 'FO4Edit v4.1.5q'
   # Pip-Boy Paint Job - Tan
   - name: 'ccbgsfo4013-piptan.esl'
     clean:
@@ -1142,8 +1142,8 @@ plugins:
   # Pip-Boy Paint Job - White
   - name: 'ccbgsfo4014-pipboy(white).esl'
     clean:
-      - crc: 0x42441EC6
-        util: 'FO4Edit v4.0.2j'
+      - crc: 0xCA7A7515
+        util: 'FO4Edit v4.1.5q'
   # Pip-Boy Paint Job - Yellow
   - name: 'ccbgsfo4015-pipyell.esl'
     clean:
@@ -1153,8 +1153,8 @@ plugins:
   # Power Armor Paint Job - Aquatic Camo
   - name: 'ccbgsfo4024-pacamo03.esl'
     clean:
-      - crc: 0xE8B1A14D
-        util: 'FO4Edit v4.0.2j'
+      - crc: 0xCC3B2F5C
+        util: 'FO4Edit v4.1.5q'
   # Power Armor Paint Job - Blue
   - name: 'ccbgsfo4021-powerarmorskinblue.esl'
     clean:
@@ -1168,8 +1168,8 @@ plugins:
   # Power Armor Paint Job - Desert Camo
   - name: 'ccbgsfo4022-powerarmorskin(camo01).esl'
     clean:
-      - crc: 0x7791D2AC
-        util: 'FO4Edit v4.0.2j'
+      - crc: 0xD3FA1B36
+        util: 'FO4Edit v4.1.5q'
   # Power Armor Paint Job - Green
   - name: 'ccbgsfo4027-powerarmorskingreen.esl'
     clean:
@@ -1179,8 +1179,8 @@ plugins:
   - name: 'ccbgsfo4020-powerarmorskin(black).esl'
     dirty:
       - <<: *quickClean
-        crc: 0x970F7E4E
-        util: '[FO4Edit v4.0.2j](https://www.nexusmods.com/fallout4/mods/2737)'
+        crc: 0x124D7386
+        util: '[FO4Edit v4.1.5q](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 2
   # Power Armor Paint Job - Orange
   - name: 'ccbgsfo4028-powerarmorskinorange.esl'
@@ -1210,8 +1210,8 @@ plugins:
   # Power Armor Paint Job - Swamp Camo
   - name: 'ccbgsfo4023-powerarmorskin(camo02).esl'
     clean:
-      - crc: 0xDBD0B9B3
-        util: 'FO4Edit v4.0.2j'
+      - crc: 0xF5B4294D
+        util: 'FO4Edit v4.1.5q'
   # Power Armor Paint Job - Tan
   - name: 'ccbgsfo4032-powerarmorskintan.esl'
     clean:
@@ -1220,8 +1220,8 @@ plugins:
   # Power Armor Paint Job - White
   - name: 'ccbgsfo4033-powerarmorskinwhite.esl'
     clean:
-      - crc: 0x9A5A6629
-        util: 'FO4Edit v4.0.2j'
+      - crc: 0x625668F1
+        util: 'FO4Edit v4.1.5q'
   # Power Armor Paint Job - Yellow
   - name: 'ccbgsfo4034-powerarmorskinyellow.esl'
     clean:
@@ -1236,13 +1236,13 @@ plugins:
   # Weapon Paint Job - Army
   - name: 'ccgcafo4001-factionws01army.esl'
     clean:
-      - crc: 0x9248654F
-        util: 'FO4Edit v4.0.2j'
+      - crc: 0xF3664F97
+        util: 'FO4Edit v4.1.5q'
   # Weapon Paint Job - Atom Cats
   - name: 'ccgcafo4002-factionws02acat.esl'
     clean:
-      - crc: 0x6CD02490
-        util: 'FO4Edit v4.0.2j'
+      - crc: 0xE5BC6EFC
+        util: 'FO4Edit v4.1.5q'
   # Weapon Paint Job - Bats
   - name: 'ccbgsfo4104-ws_bats.esl'
     clean:
@@ -1251,8 +1251,8 @@ plugins:
   # Weapon Paint Job - Brotherhood of Steel
   - name: 'ccgcafo4003-factionws03bos.esl'
     clean:
-      - crc: 0x46CB130B
-        util: 'FO4Edit v4.0.2j'
+      - crc: 0x776B02B5
+        util: 'FO4Edit v4.1.5q'
   # Weapon Paint Job - Children of Atom
   - name: 'ccbgsfo4108-ws_childrenofatom.esl'
     clean:
@@ -1266,23 +1266,23 @@ plugins:
   # Weapon Paint Job - Gunners
   - name: 'ccgcafo4004-factionws04gun.esl'
     clean:
-      - crc: 0xDB2ACEC8
-        util: 'FO4Edit v4.0.2j'
+      - crc: 0x57669E68
+        util: 'FO4Edit v4.1.5q'
   # Weapon Paint Job - Hot Rod Flames
   - name: 'ccgcafo4007-factionws07hrflames.esl'
     clean:
-      - crc: 0xEEADF309
-        util: 'FO4Edit v4.0.2j'
+      - crc: 0x906FA4FC
+        util: 'FO4Edit v4.1.5q'
   # Weapon Paint Job - Hot Rod Pink
   - name: 'ccgcafo4005-factionws05hrpink.esl'
     clean:
-      - crc: 0x5C6E5B0F
-        util: 'FO4Edit v4.0.2j'
+      - crc: 0x022EE86D
+        util: 'FO4Edit v4.1.5q'
   # Weapon Paint Job - Hot Rod Shark
   - name: 'ccgcafo4006-factionws06hrshark.esl'
     clean:
-      - crc: 0xF7F1DF0D
-        util: 'FO4Edit v4.0.2j'
+      - crc: 0xC9E0864D
+        util: 'FO4Edit v4.1.5q'
   # Weapon Paint Job - Jack 0'Lantern
   - name: 'ccbgsfo4111-ws_jack-olantern.esl'
     clean:
@@ -1291,8 +1291,8 @@ plugins:
   # Weapon Paint Job - Minutemen
   - name: 'ccgcafo4009-factionws09mm.esl'
     clean:
-      - crc: 0x7343A0F1
-        util: 'FO4Edit v4.0.2j'
+      - crc: 0x6A2EA70B
+        util: 'FO4Edit v4.1.5q'
   # Weapon Paint Job - Pickman
   - name: 'ccbgsfo4112-ws_pickman.esl'
     clean:
@@ -1301,8 +1301,8 @@ plugins:
   # Weapon Paint Job - Railroad
   - name: 'ccgcafo4010-factionws10rr.esl'
     clean:
-      - crc: 0x87C34017
-        util: 'FO4Edit v4.0.2j'
+      - crc: 0x267272C9
+        util: 'FO4Edit v4.1.5q'
   # Weapon Paint Job - Reilly's Rangers
   - name: 'ccbgsfo4113-ws_reillysrangers.esl'
     clean:
@@ -1321,8 +1321,8 @@ plugins:
   # Weapon Paint Job - The Institute
   - name: 'ccgcafo4008-factionws08inst.esl'
     clean:
-      - crc: 0x3D28DAAA
-        util: 'FO4Edit v4.0.2j'
+      - crc: 0xD050292D
+        util: 'FO4Edit v4.1.5q'
   # Weapon Paint Job - Tunnel Snakes
   - name: 'ccbgsfo4118-ws_tunnelsnakes.esl'
     clean:
@@ -1331,8 +1331,8 @@ plugins:
   # Weapon Paint Job - Vault-Tec
   - name: 'ccgcafo4011-factionws11vt.esl'
     clean:
-      - crc: 0x1678A533
-        util: 'FO4Edit v4.0.2j'
+      - crc: 0x4AC8303F
+        util: 'FO4Edit v4.1.5q'
 
   # Capital Wasteland Mercenaries
   - name: 'ccbgsfo4117-capmerc.esl'
@@ -1344,13 +1344,13 @@ plugins:
   # Chinese Stealth Armor
   - name: 'ccbgsfo4019-chinesestealtharmor.esl'
     clean:
-      - crc: 0xEC5FF59D
-        util: 'FO4Edit v4.0.2j'
+      - crc: 0x9FD375FF
+        util: 'FO4Edit v4.1.5q'
   # Doom Classic Marine Armor
   - name: 'ccbgsfo4041-doommarinearmor.esl'
     clean:
-      - crc: 0x4F309006
-        util: 'FO4Edit v4.0.2j'
+      - crc: 0xA2D4017F
+        util: 'FO4Edit v4.1.5q'
   # Fantasy Hero Set
   - name: 'ccbgsfo4048-dovah.esl'
     clean:
@@ -1359,8 +1359,8 @@ plugins:
   # Graphic T-Shirt Pack
   - name: 'ccawnfo4001-brandedattire.esl'
     clean:
-      - crc: 0x7D56FD4A
-        util: 'FO4Edit v4.0.2j'
+      - crc: 0xE8CDD425
+        util: 'FO4Edit v4.1.5q'
   # Gunners vs. Minutemen
   - name: 'ccgcafo4025-pagunmm.esl'
     dirty:
@@ -1371,18 +1371,18 @@ plugins:
   # Horse Power Armor
   - name: 'ccbgsfo4038-horsearmor.esl'
     clean:
-      - crc: 0x46CC10FC
-        util: 'FO4Edit v4.0.2j'
+      - crc: 0xE8A0FAB7
+        util: 'FO4Edit v4.1.5q'
   # Modular Military Backpack
   - name: 'ccfsvfo4001-modularmilitarybackpack.esl'
     clean:
-      - crc: 0x806FA91B
-        util: 'FO4Edit v4.0.2j'
+      - crc: 0xC9D188CC
+        util: 'FO4Edit v4.1.5q'
   # Morgan's Space Suit
   - name: 'ccbgsfo4016-prey.esl'
     clean:
-      - crc: 0x5D669096
-        util: 'FO4Edit v4.0.2j'
+      - crc: 0xBE1C4991
+        util: 'FO4Edit v4.1.5q'
   # Pint-Sized Slasher
   - name: 'ccbgsfo4035-pint.esl'
     clean:
@@ -1395,6 +1395,11 @@ plugins:
         crc: 0xE662D882
         util: '[FO4Edit v4.1.5f](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 1
+  # Railroad's Clandestine Couture
+  - name: 'ccawnfo4002-factionclothing.esl'
+    clean:
+      - crc: 0xB96DA80A
+        util: 'FO4Edit v4.1.5q'
 
   # Anti-Material Rifle
   - name: 'ccfrsfo4002-antimaterielrifle.esl'
@@ -1404,8 +1409,8 @@ plugins:
   # Captain Cosmos
   - name: 'ccswkfo4001-astronautpowerarmor.esm'
     clean:
-      - crc: 0x5D82B4DD
-        util: 'FO4Edit v4.0.2j'
+      - crc: 0xF1D65A79
+        util: 'FO4Edit v4.1.5q'
   # CR-74L Combat Rifle
   - name: 'ccfrsfo4003-cr75l.esl'
     dirty:
@@ -1416,13 +1421,13 @@ plugins:
   # Doom BFG
   - name: 'ccbgsfo4042-bfg.esl'
     clean:
-      - crc: 0xDB940BF2
-        util: 'FO4Edit v4.0.2j'
+      - crc: 0xEFBE3380
+        util: 'FO4Edit v4.1.5q'
   # Handmade Shotgun
   - name: 'ccfrsfo4001-handmadeshotgun.esl'
     clean:
-      - crc: 0x572E30C2
-        util: 'FO4Edit v4.0.2j'
+      - crc: 0xDC7091F6
+        util: 'FO4Edit v4.1.5q'
   # Manwell Rifle Set
   - name: 'ccsbjfo4002_manwellrifle.esl'
     dirty:
@@ -1433,8 +1438,8 @@ plugins:
   # Prototype Gauss Rifle
   - name: 'ccbgsfo4018-gaussrifleprototype.esl'
     clean:
-      - crc: 0x162B8695
-        util: 'FO4Edit v4.0.2j'
+      - crc: 0xE8010AAE
+        util: 'FO4Edit v4.1.5q'
   # Quake Thunderbolt
   - name: 'ccbgsfo4047-qthund.esl'
     dirty:
@@ -1453,8 +1458,8 @@ plugins:
   - name: 'ccrzrfo4001-tunnelsnakes.esm'
     dirty:
       - <<: *quickClean
-        crc: 0x9D60C5E4
-        util: '[FO4Edit v4.1.5f](https://www.nexusmods.com/fallout4/mods/2737)'
+        crc: 0xEA3D6F58
+        util: '[FO4Edit v4.1.5q](https://www.nexusmods.com/fallout4/mods/2737)'
         itm: 1
   # Zetan Arsenal
   - name: 'ccrzrfo4002-disintegrate.esl'
@@ -1467,8 +1472,8 @@ plugins:
   # Arcade Workshop Pack
   - name: 'ccbgsfo4045-advarccab.esl'
     clean:
-      - crc: 0xD417EBF5
-        util: 'FO4Edit v4.0.2j'
+      - crc: 0xD3B6C4A5
+        util: 'FO4Edit v4.1.5q'
   # Charlestown Condo
   - name: 'cczsef04001-bhouse.esm'
     dirty:
@@ -1479,8 +1484,8 @@ plugins:
   # Coffee and Donuts Workshop Pack
   - name: 'ccfsvfo4003-slocum.esl'
     clean:
-      - crc: 0x11A1B3CA
-        util: 'FO4Edit v4.0.2j'
+      - crc: 0x141A2C7C
+        util: 'FO4Edit v4.1.5q'
   # Holiday Workshop Pack
   - name: 'ccjvdfo4001-holiday.esl'
     clean:
@@ -1489,13 +1494,13 @@ plugins:
   # Home Decor Workshop Pack
   - name: 'cceejfo4001-decorationpack.esl'
     clean:
-      - crc: 0x5BBA49F6
-        util: 'FO4Edit v4.0.2j'
+      - crc: 0x98EF102F
+        util: 'FO4Edit v4.1.5q'
   # Modern Furniture Workshop Pack
   - name: 'ccfsvfo4002-midcenturymodern.esl'
     clean:
-      - crc: 0xE25B25A1
-        util: 'FO4Edit v4.0.2j'
+      - crc: 0x35440C60
+        util: 'FO4Edit v4.1.5q'
   # Neon Flats
   - name: 'cctosfo4002_neonflats.esm'
     dirty:
