@@ -1643,6 +1643,48 @@ plugins:
         util: 'FO4Edit v4.0.2j'
 
 ###### Official BGS Creations ######
+
+  - name: 'bgs_varmintrifle.esp'
+    url:
+      - link: 'https://creations.bethesda.net/en/fallout4/details/59409bbe-2b5e-4191-817a-5bd4692ad21a/The_Varmint_Rifle/'
+        name: 'The Varmint Rifle'
+    group: *bgsCreationsGroup
+    clean:
+      - crc: 0xA30152EF
+        util: 'FO4Edit v4.1.5q'
+
+  - name: 'ptrfo4001_t60pistol.esl'
+    url:
+      - link: 'https://creations.bethesda.net/en/fallout4/details/dd740e06-f7e4-421e-b1b1-3d5f94c62f5e/Brotherhood_of_Steel_T60_Pistol/'
+        name: 'Brotherhood of Steel T60 Pistol'
+    group: *bgsCreationsGroup
+    dirty:
+      - <<: *quickClean
+        crc: 0x9984096A
+        util: '[FO4Edit v4.1.5q](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 2
+
+  - name: 'ptrfo4002_vangraff.esl'
+    url:
+      - link: 'https://creations.bethesda.net/en/fallout4/details/4be8d5f2-e153-407f-9a19-935c74f012d5/Revenge_of_the_Van_Graffs/'
+        name: 'Revenge of the Van Graffs'
+    group: *bgsCreationsGroup
+    dirty:
+      - <<: *quickClean
+        crc: 0x0CCCAE4E
+        util: '[FO4Edit v4.1.5q](https://www.nexusmods.com/fallout4/mods/2737)'
+        itm: 18
+        udr: 1
+
+  - name: 'vchgs001fo4_ncrbeasthunter.esm'
+    url:
+      - link: 'https://creations.bethesda.net/en/fallout4/details/7fc565f2-eaf5-458b-9ec6-55490432970d/Tale_of_the_Beast_Hunter/'
+        name: 'Tale of the Beast Hunter'
+    group: *bgsCreationsGroup
+    clean:
+      - crc: 0x370C0CE8
+        util: 'FO4Edit v4.1.5q'
+
 ###### Base Game Patches ######
   - name: 'UnofficialFallout4Patch.esp'
     url: [ 'https://www.nexusmods.com/fallout4/mods/4526/' ]
