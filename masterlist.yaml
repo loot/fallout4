@@ -532,8 +532,11 @@ groups:
   - name: &ccGroup Creation Club
     after: [ *dlcGroup ]
 
-  - name: &texturesGroup Texture Overhauls
+  - name: &bgsCreationsGroup Bethesda Game Studios Creations
     after: [ *ccGroup ]
+
+  - name: &texturesGroup Texture Overhauls
+    after: [ *bgsCreationsGroup ]
 
   - name: &unofficialPatchesGroup Unofficial Patches
     after: [ *texturesGroup ]
