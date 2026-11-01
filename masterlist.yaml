@@ -5192,6 +5192,7 @@ plugins:
     after:
       - 'PLIUSAFSSO - MDB Patch.esp'
       - 'PLIUSAFSSO_MU_Patch.esp'
+      - 'prp.esp'
     clean:
       - crc: 0x5AB506A1
         util: 'FO4Edit v4.1.5k'
