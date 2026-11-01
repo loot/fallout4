@@ -5167,7 +5167,6 @@ plugins:
       - link: 'https://www.nexusmods.com/fallout4/mods/59993/'
         name: 'People Live In - USAF Satellite Station Olivia'
     after:
-      - 'EnhancedLightsandFX.esp'
       - 'FCF_Hotfix.esp'
       - 'FCF_HotfixELFX.esp'
       - 'FCF_Main.esp'
@@ -5175,11 +5174,16 @@ plugins:
       - 'FROST.esp'
       - 'Raider Children.esp'
       - 'ProjectValkyrie.esp'
-      - 'prp.esp'
       - 'PRPFX-Merged.esp'
       - 'UltraInteriorLighting.esp'
       - 'Winter Redone.esp'
     msg:
+      - <<: *alsoUseX
+        subs: [ 'Previs - Bethesda update file (**PLIUSAFSSO_Previs.esp**)' ]
+        condition: 'active("prp.esp") and not active("EnhancedLightsandFX.esp") and not active("PLIUSAFSSO_Previs.esp")'
+      - <<: *patchProvided
+        subs: [ 'Enhanced Lights and FX' ]
+        condition: 'active("EnhancedLightsandFX.esp") and (not active("PLIUSAFSSO_Previs.esp") or checksum("PLIUSAFSSO_Previs.esp", 5AB506A1))'
       - <<: *patchProvided
         subs: [ 'Mutilated Dead Bodies' ]
         condition: 'active("MutilatedDeadBodies.esp") and not active("PLIUSAFSSO - MDB Patch.esp")'
@@ -5194,6 +5198,7 @@ plugins:
     after:
       - 'PLIUSAFSSO - MDB Patch.esp'
       - 'PLIUSAFSSO_MU_Patch.esp'
+      - 'prp.esp'
     clean:
       - crc: 0x5AB506A1
         util: 'FO4Edit v4.1.5k'
