@@ -5167,7 +5167,6 @@ plugins:
       - link: 'https://www.nexusmods.com/fallout4/mods/59993/'
         name: 'People Live In - USAF Satellite Station Olivia'
     after:
-      - 'EnhancedLightsandFX.esp'
       - 'FCF_Hotfix.esp'
       - 'FCF_HotfixELFX.esp'
       - 'FCF_Main.esp'
@@ -5175,7 +5174,6 @@ plugins:
       - 'FROST.esp'
       - 'Raider Children.esp'
       - 'ProjectValkyrie.esp'
-      - 'prp.esp'
       - 'PRPFX-Merged.esp'
       - 'UltraInteriorLighting.esp'
       - 'Winter Redone.esp'
